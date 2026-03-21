@@ -1,1 +1,36 @@
+# System files
 .remote_inspect/
+.obsidian/
+.claude/
+*.exe
+*.obj
+
+# Large binaries (keep source code, not compiled)
+erdos/848/erdos848_verifier
+erdos/848/erdos848_verifier_asan
+erdos/848/erdos848_verifier_linux
+erdos/848/erdos848_verifier_ref
+erdos/848/erdos848_verifier_v2_linux
+erdos/848/erdos848_verifier_v3
+erdos/848/erdos848_verifier_v4
+
+# AoPS textbook PDFs (copyrighted, keep locally only)
+aopsintro.pdf
+teaching/aopsintro.pdf
+Intermediate*.pdf
+Introduction*.pdf
+Precalculus*.pdf
+The Art of Problem Solving*.pdf
+
+# Keep research PDFs (our own work)
+# !erdos/38/p38_cube_note.pdf
+
+# Compiled
+*.o
+*.pyc
+__pycache__/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini

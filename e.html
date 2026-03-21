@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Unit 4: Imperfect Tense Quiz</title>
+    <style>
+        body {
+            font-family: 'Century Gothic', 'Segoe UI', Arial, sans-serif;
+            background-color: #2a0845; /* Dark purple background */
+            background-image: linear-gradient(315deg, #2a0845 0%, #6441A5 74%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 800px;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        #game-container {
+            width: 90%;
+            max-width: 800px;
+            margin-top: 30px;
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            padding: 40px 30px;
+            box-sizing: border-box;
+        }
+
+        #question-text {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.1s, opacity 0.2s;
+            box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+            word-wrap: break-word;
+        }
+
+        .btn:active {
+            transform: translateY(4px);
+            box-shadow: none;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Blooket-style colors */
+        .btn:nth-child(1) { background-color: #e21b3c; } /* Red */
+        .btn:nth-child(2) { background-color: #1368ce; } /* Blue */
+        .btn:nth-child(3) { background-color: #d89e00; } /* Yellow */
+        .btn:nth-child(4) { background-color: #26890c; } /* Green */
+
+        #feedback {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+
+        .correct-bg { background-color: rgba(38, 137, 12, 0.9); }
+        .wrong-bg { background-color: rgba(226, 27, 60, 0.9); }
+
+        #end-screen {
+            display: none;
+        }
+
+        #start-btn, #restart-btn {
+            background-color: #1368ce;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Mobile friendly */
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div id="score-display">Score: 0</div>
+        <div id="question-counter">Question: 1 / 40</div>
+    </div>
+
+    <div id="game-container">
+        <!-- Main Quiz Screen -->
+        <div id="quiz-screen">
+            <div id="question-text">Loading question...</div>
+            <div class="grid" id="answers-grid">
+                <!-- Buttons injected by JavaScript -->
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen">
+            <h1 id="final-message">Game Over!</h1>
+            <h2 id="final-score">Your Score: 0</h2>
+            <button id="restart-btn" onclick="startQuiz()">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Correct/Wrong Popup -->
+    <div id="feedback">Correct!</div>
+
+    <script>
+        // The complete Unit 4 Question Bank
+        const questionBank = [
+            { q: "What is the imperfect tense used for?", c: "Things you used to do in the past", w: ["Things happening right now", "Things you will do tomorrow", "Things you did once yesterday"] },
+            { q: "What does 'De niño' mean?", c: "As a child", w: ["Tomorrow", "Always", "Never"] },
+            { q: "Translate: los juguetes", c: "the toys", w: ["the games", "the dolls", "the balls"] },
+            { q: "Translate: los muñecos de acción", c: "the action figures", w: ["the stuffed animals", "the dolls", "the cars"] },
+            { q: "Translate: el muñeco de peluche", c: "the stuffed animal", w: ["the board game", "the ball", "the action figure"] },
+            { q: "What does 'jugar al escondite' mean?", c: "to play hide and seek", w: ["to play outside", "to play in the sand", "to play board games"] },
+            { q: "How do you say 'I used to fight with my siblings'?", c: "Me peleaba con mis hermanos", w: ["Me llevaba bien con mis hermanos", "Me portaba bien", "Yo lloraba mucho"] },
+            { q: "What does 'me portaba bien' mean?", c: "I used to behave well", w: ["I used to cry a lot", "I used to get along", "I used to behave badly"] },
+            { q: "Conjugate: Yo (jugar)", c: "jugaba", w: ["jugo", "jugabaís", "jugaban"] },
+            { q: "Conjugate: Nosotros (escribir)", c: "escribíamos", w: ["escribía", "escribimos", "escribían"] },
+            { q: "Conjugate: Tú (tener)", c: "tenías", w: ["tenía", "teníamos", "tenían"] },
+            { q: "Conjugate: Ellos (comer)", c: "comían", w: ["comía", "comíamos", "comías"] },
+            { q: "Conjugate: Yo (vivir)", c: "vivía", w: ["vivías", "vivíamos", "vivían"] },
+            { q: "Which of these is an IRREGULAR verb in the imperfect tense?", c: "ser", w: ["hablar", "comer", "vivir"] },
+            { q: "Irregular Verb: Yo (ser)", c: "era", w: ["iba", "veía", "éramos"] },
+            { q: "Irregular Verb: Nosotros (ser)", c: "éramos", w: ["íbamos", "eran", "eras"] },
+            { q: "Irregular Verb: Ellos (ir)", c: "iban", w: ["eran", "íbamos", "iba"] },
+            { q: "Irregular Verb: Tú (ir)", c: "ibas", w: ["eras", "iba", "íbamos"] },
+            { q: "Irregular Verb: Yo (ver)", c: "veía", w: ["veías", "veíamos", "veían"] },
+            { q: "Which verb means 'to go'?", c: "Ir", w: ["Ser", "Ver", "Tener"] },
+            { q: "Which verb means 'to be'?", c: "Ser", w: ["Ir", "Tener", "Ver"] },
+            { q: "Fill in the blank: Me _____ (gustar) los dinosaurios.", c: "gustaban", w: ["gustaba", "gustan", "gusta"] },
+            { q: "Translate: Me chocaba", c: "I strongly disliked", w: ["I loved", "I liked", "I was interested in"] },
+            { q: "What does 'tímido' mean?", c: "shy", w: ["bossy", "talkative", "rebellious"] },
+            { q: "What does 'hablador' mean?", c: "talkative", w: ["nice", "quiet", "spoiled"] },
+            { q: "What does 'mandón' mean?", c: "bossy", w: ["daring", "friendly", "mean"] },
+            { q: "What does 'mimado' mean?", c: "spoiled", w: ["well-behaved", "quiet", "friendly"] },
+            { q: "What does 'chivato' mean?", c: "tattletale", w: ["rebellious", "mean", "nice"] },
+            { q: "Translate: Yo tenía miedo de la oscuridad.", c: "I was afraid of the dark", w: ["I was afraid of monsters", "I was afraid of spiders", "I was afraid of clowns"] },
+            { q: "What does 'las arañas' mean?", c: "the spiders", w: ["the monsters", "the dark", "the clowns"] },
+            { q: "Reaction phrase: ¡No me digas!", c: "No way!", w: ["Really?", "Me too!", "How scary!"] },
+            { q: "Reaction phrase: ¡Qué chistoso!", c: "How funny!", w: ["How scary!", "You are kidding!", "I didn't know that!"] },
+            { q: "Translate: Yo jugaba a ser un superhéroe", c: "I used to pretend to be a superhero", w: ["I used to play with a superhero", "I used to see a superhero", "I used to like superheroes"] },
+            { q: "What does 'siempre' mean?", c: "always", w: ["often", "every day", "sometimes"] },
+            { q: "Past vs Present: Cuando era chiquita yo ___ (mirar) Barney.", c: "miraba", w: ["miro", "mirábamos", "miraban"] },
+            { q: "Past vs Present: ...pero ahora yo ___ (mirar) Netflix.", c: "miro", w: ["miraba", "mira", "miramos"] },
+            { q: "Translate: No había celulares.", c: "There were no cell phones.", w: ["There was no WiFi.", "In previous generations.", "In middle school."] },
+            { q: "What does 'en la primaria' mean?", c: "In elementary school", w: ["In middle school", "In the past", "In my childhood"] },
+            { q: "Translate: Yo lloraba mucho", c: "I used to cry a lot", w: ["I used to play a lot", "I used to read a lot", "I used to eat a lot"] },
+            { q: "Conjugate: Ella (ir) a la biblioteca.", c: "iba", w: ["era", "veía", "íbamos"] }
+        ];
+
+        let currentQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let isAnswering = false;
+
+        // Shuffle function (Fisher-Yates)
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function startQuiz() {
+            // Reset variables
+            score = 0;
+            currentQuestionIndex = 0;
+            updateScoreboard();
+            
+            // Shuffle all questions
+            currentQuestions = shuffle([...questionBank]);
+            
+            // Show quiz, hide end screen
+            document.getElementById('quiz-screen').style.display = 'block';
+            document.getElementById('end-screen').style.display = 'none';
+
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            isAnswering = false;
+            const qData = currentQuestions[currentQuestionIndex];
+            
+            // Update Text
+            document.getElementById('question-text').innerText = qData.q;
+            document.getElementById('question-counter').innerText = `Question: ${currentQuestionIndex + 1} / ${currentQuestions.length}`;
+
+            // Combine correct and wrong answers, then shuffle them
+            let answers = [qData.c, ...qData.w];
+            answers = shuffle(answers);
+
+            // Create buttons
+            const grid = document.getElementById('answers-grid');
+            grid.innerHTML = ''; // clear old buttons
+            
+            answers.forEach(ans => {
+                const btn = document.createElement('button');
+                btn.className = 'btn';
+                btn.innerText = ans;
+                btn.onclick = () => checkAnswer(ans, qData.c);
+                grid.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedAnswer, correctAnswer) {
+            if (isAnswering) return; // Prevent double clicking
+            isAnswering = true;
+
+            const feedback = document.getElementById('feedback');
+            
+            if (selectedAnswer === correctAnswer) {
+                // Correct
+                score += 100;
+                feedback.innerText = "Correct!";
+                feedback.className = "correct-bg";
+            } else {
+                // Wrong
+                feedback.innerText = "Wrong! \n\n Answer: " + correctAnswer;
+                feedback.className = "wrong-bg";
+            }
+
+            updateScoreboard();
+            
+            // Show feedback overlay
+            feedback.style.opacity = '1';
+
+            // Wait 1.5 seconds, hide feedback, go to next
+            setTimeout(() => {
+                feedback.style.opacity = '0';
+                currentQuestionIndex++;
+                
+                if (currentQuestionIndex < currentQuestions.length) {
+                    loadQuestion();
+                } else {
+                    endQuiz();
+                }
+            }, 1800);
+        }
+
+        function updateScoreboard() {
+            document.getElementById('score-display').innerText = `Score: ${score}`;
+        }
+
+        function endQuiz() {
+            document.getElementById('quiz-screen').style.display = 'none';
+            document.getElementById('end-screen').style.display = 'block';
+            document.getElementById('final-score').innerText = `Final Score: ${score} / ${currentQuestions.length * 100}`;
+            
+            let message = "Good effort!";
+            if (score >= 3500) message = "¡Excelente! You are ready for the test!";
+            else if (score >= 2500) message = "Great job! Keep practicing!";
+            
+            document.getElementById('final-message').innerText = message;
+        }
+
+        // Start game on load
+        startQuiz();
+
+    </script>
+</body>
+</html>
