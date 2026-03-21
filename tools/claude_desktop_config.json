@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "robloxstudio-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "robloxstudio-mcp@latest"
+      ]
+    },
+    "axle": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/Vilin97/axle-mcp",
+        "axle-mcp"
+      ],
+      "env": {
+        "AXLE_API_KEY": "PASTE_YOUR_AXLE_KEY_HERE"
+      }
+    },
+    "aristotle": {
+      "command": "C:\\Users\\z20ma\\Documents\\MathsSTuff\\lean-aristotle-mcp\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "aristotle_mcp"],
+      "env": {
+        "ARISTOTLE_API_KEY": "PASTE_YOUR_ARISTOTLE_KEY_HERE"
+      }
+    }
+  },
+  "preferences": {
+    "localAgentModeTrustedFolders": [
+      "C:\\Users\\z20ma\\Documents\\MathsSTuff"
+    ],
+    "coworkScheduledTasksEnabled": true,
+    "ccdScheduledTasksEnabled": true,
+    "sidebarMode": "chat",
+    "coworkWebSearchEnabled": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "best_pair": {
+    "support": 20,
+    "deltas": [
+      195,
+      15
+    ],
+    "sample_n_values": [
+      594,
+      1000,
+      1836,
+      3604,
+      4774,
+      6750,
+      8316,
+      13750,
+      20250,
+      26026,
+      31096,
+      45954,
+      64206,
+      94500,
+      109174,
+      218500,
+      270864,
+      450856,
+      615384,
+      888250
+    ]
+  },
+  "best_triple": {
+    "support": 0,
+    "deltas": [],
+    "sample_n_values": []
+  },
+  "best_k4": {
+    "support": 0,
+    "deltas": [],
+    "sample_n_values": []
+  },
+  "best_k5": {
+    "support": 0,
+    "deltas": [],
+    "sample_n_values": []
+  }
+}

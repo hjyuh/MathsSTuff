@@ -1,0 +1,119 @@
+You need to clear two different bars, and it helps to separate them.
+
+Bar 1 “This Lean file matches the paper’s proof structure.”
+Bar 2 “This is a full formalization of the paper.”
+
+Right now you are below Bar 1, because your main axiom is stronger than what the paper assumes at that point. The paper’s route is
+
+Corollary 4.2 gives a primitive discriminant point in Ω; then Lemma 3.1 chooses one of ([a,b,c], T[a,b,c], U[a,b,c]) with the right parity; then (3.4) puts that corrected point in K; then Lemma 2.1 gives (x,y,z), and the box (K) gives the bounds. 
+
+Your current file, by contrast, skips that bridge by assuming a post-correction triple ((a',b',c')) that already has the parity and final inequalities baked in. That is stronger than Corollary 4.2 as stated in the paper. The paper’s Corollary 4.2 only says that for any nonempty open relatively compact (U subset V_{mathrm{disc},+1}(mathbb R)), the scaled primitive discriminant set eventually meets (U). 
+
+So here is the real checklist.
+
+## What you must do to match the paper
+
+First, delete the current `axiom duke_elmv_for_omega`.
+
+Replace it with something morally identical to the paper’s Corollary 4.2
+
+ for every nonempty open relatively compact (U subset V_{mathrm{disc},+1}(mathbb R)),
+ for all sufficiently large positive non-square discriminants (d),
+ there exists a primitive ((a,b,c)) with (b^2-4ac=d) and ((asqrt d,bsqrt d,csqrt d)in U).
+
+In your application, since (d=4n), that becomes exactly the paper’s step
+[
+left(frac{a}{2sqrt n},frac{b}{2sqrt n},frac{c}{2sqrt n}right)in Omega.
+]
+That is the key repair.
+
+Then formalize the rest without any extra oracle power
+
+ define (K) exactly as in Section 2,
+ define (T,S,U),
+ prove Lemma 3.1 exactly,
+ define (P_0), verify (P_0,T(P_0),U(P_0)in K),
+ define an actual open relatively compact neighborhood (Omega) with
+  [
+  Omega subset K,quad T(Omega)subset K,quad U(Omega)subset K,
+  ]
+ apply Corollary 4.2 to (Omega),
+ do the parity correction in Lean,
+ prove the corrected point lies in (K),
+ invoke Lemma 2.1,
+ derive (x,y,zsqrt n), hence (x^2,y^2,z^2n).
+
+That would make your Lean development genuinely mirror the proof on the page. The paper’s own structure is exactly dictionary in Section 2, (TSU) and (Omega) in Section 3, Duke–ELMV point-counting and Corollary 4.2 in Section 4, then the final proof in Section 5.
+
+## What you must do to claim “full formalization”
+
+This is the harder bar.
+
+To honestly say full formalization, you cannot leave the Duke–ELMV input as an axiom in your own file.
+
+You need either
+
+ a formal proof of the Section 4 chain inside Lean, or
+ a previously formalized theorem in an imported library that gives you exactly that chain.
+
+Since that part of the paper uses
+
+ (G=mathrm{PGL}_2(mathbb R)),
+ (Gamma=mathrm{PGL}_2(mathbb Z)),
+ the diagonal torus (A),
+ the identification (GA simeq V_{mathrm{disc},+1}(mathbb R)),
+ Radon measures,
+ compactly supported continuous functions,
+ weak- convergence of (mu_d),
+ and the ELMV measure correspondence,
+
+you would need those objects and results formalized too. That is exactly the sophisticated part Tao was pointing at, and it is also exactly what Section 4 of the paper uses. 
+
+So the honest standard is
+
+ No axioms you wrote yourself
+ No `sorry`
+ No hidden strengthened hypotheses
+ Any external deep result must be an actual Lean theorem, not a placeholder
+
+## The smartest intermediate target
+
+Don’t jump straight from where you are to “formalize Duke’s theorem.”
+
+The best next move is
+
+Get to a faithful formalization of “Corollary 4.2 ⇒ Theorem 1.1.”
+
+That means your deepest assumption should be the exact Corollary 4.2 statement, not your current stronger post-correction existence axiom.
+
+If you do that, you can already make a strong and fully honest claim
+
+ I formalized the reduction from Chojecki’s Corollary 4.2 to the final bounded representation theorem.
+
+That is a real achievement.
+
+## One practical suggestion that will help a lot
+
+Do not define (Omega) existentially if you can avoid it.
+
+Instead, choose an explicit neighborhood around (P_0), like a small rational box or ball, and prove directly that it is
+
+ open,
+ relatively compact,
+ contained in (K),
+ sent into (K) by (T) and (U).
+
+That makes the Lean proof cleaner than the paper’s abstract “there exists a neighborhood” line, while still matching the argument.
+
+## The short truth
+
+If you want to say “full formalization”, you need to formalize the homogeneous-dynamics input too.
+
+If you want to say “this fully matches the paper from Corollary 4.2 onward”, then the immediate fix is
+
+ replace your current strong axiom by the exact Corollary 4.2 shape,
+ and prove the parity-correction-to-(K)-to-((x,y,z)) bridge yourself.
+
+That is the line between “nice formal wrapper” and “faithful formal reduction.”
+
+Lets try to get this as a full proof.

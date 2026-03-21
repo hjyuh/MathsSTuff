@@ -1,0 +1,6 @@
+candidates=500
+delta_max=200
+min_support=5
+target_k=5
+skipped_divisor_heavy=0
+kept_deltas=200

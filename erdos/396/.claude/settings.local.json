@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.erdosproblems.com)",
+      "WebFetch(domain:arxiv.org)",
+      "Bash(which gp:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(which gcc:*)",
+      "Bash(where gcc:*)",
+      "Bash(where cl:*)",
+      "Bash(where g++)",
+      "Read(//c/msys64/usr/**)",
+      "Bash(ls /c/mingw*/bin/gcc*)",
+      "Read(//c/Program Files/LLVM/**)",
+      "Bash(where pypy:*)",
+      "Bash(winget list:*)",
+      "mcp__axle__check"
+    ]
+  }
+}

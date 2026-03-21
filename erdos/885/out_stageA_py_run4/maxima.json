@@ -1,0 +1,41 @@
+{
+  "best_pair": {
+    "support": 5,
+    "deltas": [
+      9537,
+      18084
+    ],
+    "sample_n_ids": [
+      135,
+      6094,
+      9597,
+      13234,
+      22233
+    ],
+    "sample_n_values": [
+      336117600,
+      2284286400,
+      3276212940,
+      4335439680,
+      7200816480
+    ]
+  },
+  "best_triple": {
+    "support": 0,
+    "deltas": [],
+    "sample_n_ids": [],
+    "sample_n_values": []
+  },
+  "best_k4": {
+    "support": 0,
+    "deltas": [],
+    "sample_n_ids": [],
+    "sample_n_values": []
+  },
+  "best_k5": {
+    "support": 0,
+    "deltas": [],
+    "sample_n_ids": [],
+    "sample_n_values": []
+  }
+}

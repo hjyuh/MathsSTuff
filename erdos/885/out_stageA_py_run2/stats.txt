@@ -1,0 +1,6 @@
+candidates=22302
+delta_max=20000
+min_support=5
+target_k=5
+skipped_divisor_heavy=0
+kept_deltas=12789

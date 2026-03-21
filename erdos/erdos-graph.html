@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Erdős Problem Connection Graph</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'SF Pro Display', -apple-system, sans-serif; background: #0a0a0f; color: #e0ddd4; overflow: hidden; }
+#app { display: flex; height: 100vh; }
+#sidebar { width: 320px; border-right: 1px solid #1a1a24; padding: 20px; overflow-y: auto; background: #0d0d14; }
+#graph { flex: 1; position: relative; }
+canvas { display: block; }
+h1 { font-size: 18px; font-weight: 500; margin-bottom: 4px; letter-spacing: -0.3px; }
+.subtitle { font-size: 12px; color: #6b6960; margin-bottom: 20px; }
+.search-wrap { position: relative; margin-bottom: 16px; }
+.search-wrap input { width: 100%; padding: 8px 12px; background: #14141e; border: 1px solid #222230; border-radius: 6px; color: #e0ddd4; font-size: 13px; outline: none; }
+.search-wrap input:focus { border-color: #3d5afe; }
+.legend { margin-bottom: 20px; }
+.legend-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #6b6960; margin-bottom: 8px; }
+.legend-item { display: flex; align-items: center; gap: 8px; padding: 3px 0; font-size: 12px; color: #9b9890; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.detail-panel { display: none; }
+.detail-panel.active { display: block; }
+.detail-num { font-size: 28px; font-weight: 600; letter-spacing: -1px; color: #fff; }
+.detail-status { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; margin: 6px 0 12px; }
+.detail-topic { font-size: 12px; color: #6b6960; margin-bottom: 12px; }
+.detail-connections { font-size: 12px; color: #9b9890; }
+.detail-connections a { color: #7b9aff; cursor: pointer; text-decoration: none; }
+.detail-connections a:hover { text-decoration: underline; }
+.detail-link { display: inline-block; margin-top: 12px; font-size: 12px; color: #7b9aff; text-decoration: none; }
+.detail-link:hover { text-decoration: underline; }
+.stats { margin-top: 20px; padding-top: 16px; border-top: 1px solid #1a1a24; }
+.stat-row { display: flex; justify-content: space-between; font-size: 12px; padding: 3px 0; }
+.stat-label { color: #6b6960; }
+.stat-val { color: #e0ddd4; font-weight: 500; }
+.filter-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.chip { padding: 4px 10px; border-radius: 4px; font-size: 11px; background: #14141e; border: 1px solid #222230; cursor: pointer; color: #9b9890; }
+.chip.active { background: #1a1a30; border-color: #3d5afe; color: #7b9aff; }
+.tooltip { position: absolute; background: #1a1a24; border: 1px solid #2a2a34; border-radius: 6px; padding: 8px 12px; font-size: 12px; pointer-events: none; display: none; z-index: 10; }
+</style>
+</head>
+<body>
+<div id="app">
+<div id="sidebar">
+  <h1>Erdős problem graph</h1>
+  <p class="subtitle">Connections between open problems · click a node to explore</p>
+  <div class="search-wrap">
+    <input type="text" id="search" placeholder="Search problem number...">
+  </div>
+  <div class="legend">
+    <div class="legend-title">Status</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#e24b4a"></div>Open</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#5dca5d"></div>Proved</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#1d9e75"></div>Proved (Lean)</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#ef9f27"></div>Disproved</div>
+  </div>
+  <div class="filter-chips">
+    <div class="chip active" data-topic="all">All</div>
+    <div class="chip" data-topic="number theory">Number theory</div>
+    <div class="chip" data-topic="combinatorics">Combinatorics</div>
+    <div class="chip" data-topic="graph theory">Graph theory</div>
+  </div>
+  <div id="detail" class="detail-panel">
+    <div class="detail-num" id="d-num"></div>
+    <div class="detail-status" id="d-status"></div>
+    <div class="detail-topic" id="d-topic"></div>
+    <div class="detail-connections" id="d-conn"></div>
+    <a class="detail-link" id="d-link" href="#" target="_blank">View on erdosproblems.com ↗</a>
+  </div>
+  <div class="stats">
+    <div class="stat-row"><span class="stat-label">Problems shown</span><span class="stat-val" id="s-shown">0</span></div>
+    <div class="stat-row"><span class="stat-label">Connections</span><span class="stat-val" id="s-edges">0</span></div>
+    <div class="stat-row"><span class="stat-label">Clusters</span><span class="stat-val" id="s-clusters">0</span></div>
+  </div>
+</div>
+<div id="graph">
+  <canvas id="canvas"></canvas>
+  <div class="tooltip" id="tooltip"></div>
+</div>
+</div>
+<script>
+// REPLACE THIS WITH OUTPUT FROM scrape_erdos_connections.py FOR FULL DATA
+const PROBLEMS=[{id:686,status:"open",topic:"number theory",links:[677,678,850,388]},{id:677,status:"open",topic:"number theory",links:[686,678]},{id:678,status:"proved_lean",topic:"number theory",links:[677]},{id:850,status:"open",topic:"number theory",links:[686]},{id:388,status:"open",topic:"number theory",links:[686]},{id:728,status:"proved_lean",topic:"number theory",links:[729]},{id:729,status:"proved",topic:"number theory",links:[728]},{id:848,status:"proved",topic:"combinatorics",links:[515]},{id:515,status:"open",topic:"combinatorics",links:[848]},{id:397,status:"proved",topic:"number theory",links:[398]},{id:398,status:"open",topic:"number theory",links:[397]},{id:494,status:"proved",topic:"number theory",links:[339]},{id:339,status:"proved",topic:"number theory",links:[494]},{id:379,status:"proved_lean",topic:"combinatorics",links:[378]},{id:378,status:"open",topic:"combinatorics",links:[379,355]},{id:355,status:"proved",topic:"combinatorics",links:[378]},{id:897,status:"disproved",topic:"number theory",links:[]},{id:707,status:"proved_lean",topic:"combinatorics",links:[]},{id:281,status:"proved",topic:"number theory",links:[]},{id:3,status:"open",topic:"number theory",links:[6]},{id:6,status:"open",topic:"number theory",links:[3]},{id:47,status:"proved_lean",topic:"number theory",links:[264,265]},{id:264,status:"proved",topic:"number theory",links:[47,265,266,268]},{id:265,status:"proved",topic:"number theory",links:[47,264]},{id:266,status:"proved",topic:"number theory",links:[264]},{id:268,status:"proved",topic:"number theory",links:[264]},{id:106,status:"open",topic:"combinatorics",links:[]},{id:77,status:"proved",topic:"graph theory",links:[]},{id:186,status:"proved",topic:"combinatorics",links:[]},{id:426,status:"proved",topic:"graph theory",links:[]},{id:1026,status:"proved",topic:"combinatorics",links:[]},{id:367,status:"disproved",topic:"number theory",links:[]},{id:484,status:"proved",topic:"number theory",links:[]},{id:518,status:"open",topic:"combinatorics",links:[]},{id:621,status:"proved",topic:"number theory",links:[]},{id:822,status:"proved",topic:"number theory",links:[]},{id:903,status:"proved",topic:"combinatorics",links:[]},{id:682,status:"open",topic:"number theory",links:[]},{id:698,status:"proved_lean",topic:"number theory",links:[]},{id:508,status:"open",topic:"graph theory",links:[]},{id:316,status:"disproved",topic:"combinatorics",links:[]}];
+const STATUS_COLORS={open:"#e24b4a",proved:"#5dca5d",proved_lean:"#1d9e75",disproved:"#ef9f27"};
+const STATUS_LABELS={open:"Open",proved:"Proved",proved_lean:"Proved (Lean)",disproved:"Disproved"};
+let nodes=[],edges=[],selectedId=null,hoveredId=null,activeTopic="all";
+const canvas=document.getElementById("canvas"),ctx=canvas.getContext("2d");let W,H,dpr;
+function resize(){const r=canvas.parentElement.getBoundingClientRect();dpr=window.devicePixelRatio||1;W=r.width;H=r.height;canvas.width=W*dpr;canvas.height=H*dpr;canvas.style.width=W+"px";canvas.style.height=H+"px";ctx.setTransform(dpr,0,0,dpr,0,0)}
+window.addEventListener("resize",resize);resize();
+function buildGraph(){const idSet=new Set(PROBLEMS.map(p=>p.id));nodes=PROBLEMS.filter(p=>activeTopic==="all"||p.topic===activeTopic).map(p=>({id:p.id,status:p.status,topic:p.topic,links:p.links,x:W/2+(Math.random()-.5)*400,y:H/2+(Math.random()-.5)*400,vx:0,vy:0}));const nodeIds=new Set(nodes.map(n=>n.id));edges=[];nodes.forEach(n=>{n.links.forEach(t=>{if(nodeIds.has(t)&&n.id<t)edges.push({source:n.id,target:t})})});document.getElementById("s-shown").textContent=nodes.length;document.getElementById("s-edges").textContent=edges.length;const visited=new Set;let clusters=0;function bfs(start){const q=[start];visited.add(start);while(q.length){const c=q.shift();const nd=nodes.find(n=>n.id===c);if(nd)nd.links.forEach(l=>{if(!visited.has(l)&&nodeIds.has(l)){visited.add(l);q.push(l)}})}}nodes.forEach(n=>{if(!visited.has(n.id)){bfs(n.id);clusters++}});document.getElementById("s-clusters").textContent=clusters}
+function getNode(id){return nodes.find(n=>n.id===id)}
+function simulate(){const k=.005,repulse=8000,damp=.92,center=.01;nodes.forEach(a=>{nodes.forEach(b=>{if(a===b)return;let dx=a.x-b.x,dy=a.y-b.y,d=Math.sqrt(dx*dx+dy*dy)||1,f=repulse/(d*d);a.vx+=dx/d*f;a.vy+=dy/d*f})});edges.forEach(e=>{const s=getNode(e.source),t=getNode(e.target);if(!s||!t)return;let dx=t.x-s.x,dy=t.y-s.y,d=Math.sqrt(dx*dx+dy*dy)||1,f=(d-120)*k;s.vx+=dx/d*f;s.vy+=dy/d*f;t.vx-=dx/d*f;t.vy-=dy/d*f});nodes.forEach(n=>{n.vx+=(W/2-n.x)*center;n.vy+=(H/2-n.y)*center;n.vx*=damp;n.vy*=damp;n.x+=n.vx;n.y+=n.vy;n.x=Math.max(30,Math.min(W-30,n.x));n.y=Math.max(30,Math.min(H-30,n.y))})}
+function draw(){ctx.clearRect(0,0,W,H);const connIds=new Set;if(selectedId||hoveredId){const fid=hoveredId||selectedId,fn=getNode(fid);if(fn){connIds.add(fid);fn.links.forEach(l=>connIds.add(l))}}const has=connIds.size>0;edges.forEach(e=>{const s=getNode(e.source),t=getNode(e.target);if(!s||!t)return;const hl=connIds.has(e.source)&&connIds.has(e.target);ctx.beginPath();ctx.moveTo(s.x,s.y);ctx.lineTo(t.x,t.y);ctx.strokeStyle=hl?"rgba(123,154,255,0.6)":has?"rgba(255,255,255,0.03)":"rgba(255,255,255,0.08)";ctx.lineWidth=hl?1.5:.5;ctx.stroke()});nodes.forEach(n=>{const hl=!has||connIds.has(n.id);const r=(n.id===selectedId||n.id===hoveredId)?10:n.links.length>2?7:5;const alpha=hl?1:.15;const c=STATUS_COLORS[n.status]||"#888";ctx.beginPath();ctx.arc(n.x,n.y,r,0,Math.PI*2);const rr=parseInt(c.slice(1,3),16),gg=parseInt(c.slice(3,5),16),bb=parseInt(c.slice(5,7),16);ctx.fillStyle=`rgba(${rr},${gg},${bb},${alpha})`;ctx.fill();if(n.id===selectedId){ctx.strokeStyle="#fff";ctx.lineWidth=2;ctx.stroke()}if(hl&&(r>5||!has)){ctx.fillStyle=`rgba(224,221,212,${hl?.8:.2})`;ctx.font="500 11px -apple-system,sans-serif";ctx.textAlign="center";ctx.fillText("#"+n.id,n.x,n.y-r-5)}})}
+function loop(){simulate();draw();requestAnimationFrame(loop)}
+function showDetail(id){const p=PROBLEMS.find(pp=>pp.id===id);if(!p)return;document.getElementById("detail").classList.add("active");document.getElementById("d-num").textContent="#"+p.id;const st=document.getElementById("d-status");st.textContent=STATUS_LABELS[p.status];st.style.background=STATUS_COLORS[p.status]+"22";st.style.color=STATUS_COLORS[p.status];document.getElementById("d-topic").textContent=p.topic;const cd=document.getElementById("d-conn");cd.innerHTML=p.links.length?"Connected to: "+p.links.map(l=>`<a onclick="selectProblem(${l})">#${l}</a>`).join(", "):"No known connections";document.getElementById("d-link").href=`https://www.erdosproblems.com/${p.id}`}
+function selectProblem(id){selectedId=id;showDetail(id);const n=getNode(id);if(n){n.x=W/2;n.y=H/2}}
+window.selectProblem=selectProblem;
+canvas.addEventListener("click",e=>{const r=canvas.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;let closest=null,minD=20;nodes.forEach(n=>{const d=Math.sqrt((n.x-mx)**2+(n.y-my)**2);if(d<minD){minD=d;closest=n}});if(closest)selectProblem(closest.id);else{selectedId=null;document.getElementById("detail").classList.remove("active")}});
+canvas.addEventListener("mousemove",e=>{const r=canvas.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;let closest=null,minD=20;nodes.forEach(n=>{const d=Math.sqrt((n.x-mx)**2+(n.y-my)**2);if(d<minD){minD=d;closest=n}});hoveredId=closest?closest.id:null;canvas.style.cursor=closest?"pointer":"default";const tip=document.getElementById("tooltip");if(closest){tip.style.display="block";tip.style.left=(e.clientX-r.left+12)+"px";tip.style.top=(e.clientY-r.top-10)+"px";tip.innerHTML=`<strong>#${closest.id}</strong> · ${STATUS_LABELS[closest.status]} · ${closest.topic}`}else tip.style.display="none"});
+document.getElementById("search").addEventListener("input",e=>{const v=e.target.value.replace("#","").trim();if(!v){selectedId=null;return}const id=parseInt(v);const n=getNode(id);if(n)selectProblem(id)});
+document.querySelectorAll(".chip").forEach(c=>{c.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(cc=>cc.classList.remove("active"));c.classList.add("active");activeTopic=c.dataset.topic;buildGraph()})});
+buildGraph();loop();
+</script>
+</body>
+</html>

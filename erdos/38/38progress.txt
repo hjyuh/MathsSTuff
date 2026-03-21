@@ -1,0 +1,474 @@
+# Erdős Problem #38 — Checkpoint at 8.6/10
+
+## Goal
+We are trying to resolve Erdős problem #38.
+
+Problem shape:
+- Need an infinite set `B ⊂ ℕ` that is **not** an additive basis,
+- but for every `A ⊂ ℕ` with Schnirelmann density `d_s(A)=α∈(0,1)` and every `N`,
+- there exists `b ∈ B` such that
+  \[
+  |(A \cup (A+b)) \cap [1,N]| \ge (\alpha + f(\alpha))N
+  \]
+  for some `f(α) > 0`.
+
+Our strongest work so far is on the **half-density slice** `α = 1/2`.
+
+---
+
+## Current score
+**8.6/10**
+
+Meaning:
+- We have a sharp finite obstruction/classification program on `α=1/2`.
+- We have ruled out several tempting local routes.
+- We do **not** yet have the final bridge to one infinite non-basis `B`.
+- The current bottleneck is now very clearly identified.
+
+---
+
+# 1. Frozen facts / theorems
+
+## 1.1 Half-density finite classification above 1/6
+In the finite MPB/Farey model at `α=1/2`, for gain threshold `δ > 1/6`:
+
+- all positive-width survivors are exactly the **1/4-spike** and **3/4-spike** families;
+- all `J_max ≥ 2` survivors are impossible;
+- all surviving `J_max = 1` branches are classified.
+
+Interpretation:
+- finite survivors above `1/6` are now completely understood on the half-density slice.
+
+---
+
+## 1.2 Spike set on dyadic units
+For `q = 2^m`, the half-density survivor ratio set is exactly
+\[
+\mathcal S_q = \{u \in (\mathbb Z/q\mathbb Z)^\times : u \equiv 3 \pmod 4\}.
+\]
+
+Equivalently,
+\[
+\mathcal S_q = \{x : \chi_4(x) = -1\},
+\qquad
+\chi_4(u)=(-1)^{(u-1)/2}.
+\]
+
+And equivalently,
+\[
+\{x:\chi_4(x)=-1\}
+=
+\left\{1+\frac{2}{u},\ 1-\frac{2}{u} : u \equiv 1 \pmod 4\right\}.
+\]
+
+This is the exact algebraic description of the spike survivors.
+
+---
+
+## 1.3 Pair graph outcome
+The spike quotient graph in the half-density dyadic model collapses to mod-4 parity:
+- edges connect opposite mod-4 classes,
+- the graph is complete bipartite,
+- triangle-free,
+- clique number `2`.
+
+Important consequence:
+- pair-graph structure alone is too weak to force growth of `|R_q(B)|`.
+
+---
+
+## 1.4 Mixed-shift exact formula
+For a block construction with block size `q`, total length `Mq`, and shift `b=tq+r`, the gain decomposes exactly into `P/Q` contributions.
+
+For a library of words `W_λ` and block labels `σ`, define:
+- `P_r(W)` from the non-wrap part,
+- `Q_r(W)` from the wrap part,
+- kernel costs
+  \[
+  K_r^P(\lambda,\mu)=|P_r(W_\lambda)\setminus S(W_\mu)|,
+  \qquad
+  K_r^Q(\lambda,\mu)=|Q_r(W_\lambda)\setminus S(W_\mu)|.
+  \]
+
+Then mixed gain is
+\[
+G(tq+r)=\sum_{j=t}^{M-1} K_r^P(\sigma_{j-t},\sigma_j)
++
+\sum_{j=t+1}^{M-1} K_r^Q(\sigma_{j-t-1},\sigma_j).
+\]
+
+This is the exact finite object behind the mixed-shift obstruction program.
+
+---
+
+## 1.5 3-word period-8 mixed-shift theorem
+With
+- `W_0 = 11110000`,
+- `W_1 = 10101010`,
+- `W_2 = 10110100`,
+
+we proved:
+
+### Argmin structure
+For odd residue classes:
+- `r ≡ 1,7 (mod 8)` has monochromatic optimal core `(0,0,0)`,
+- `r ≡ 3,5 (mod 8)` has monochromatic optimal core `(2,2,2)`.
+
+### Correct gap theorem
+The true local gap is not “all non-argmins cost q/4,” but:
+
+- if `(x,z)` stays on the correct monochromatic core, local cost is `q/8 + O(1)`,
+- if `(x,z)` leaves that core, local cost jumps to `q/4 - O(1)`.
+
+This produces bad-edge counting.
+
+### Consequence
+For `1/6 < δ < 3/16`, the same lag `t` cannot support both odd residue families.
+
+---
+
+## 1.6 Cross-lag incompatibility theorem
+Still in the 3-word period-8 model, for `1/6 < δ < 3/16`:
+
+If lag `t` is of odd-family type `F_0` and lag `u` is of odd-family type `F_2`, then
+\[
+M \le t + u + E_t^{(0)} + E_u^{(2)},
+\]
+which yields
+\[
+t+u \ge (3-16\delta)M - O(1).
+\]
+
+So two **small** lags cannot simultaneously support opposite odd residue families.
+
+This was the first genuinely global `(t,r)` theorem, but it only handles odd-vs-odd family conflict.
+
+---
+
+# 2. Dead routes / negative bottlenecks
+
+## 2.1 Period-8 and period-16 same-lag projected-core route is exhausted
+This route is dead for `δ > 1/6`.
+
+### Period-8 4-word search
+Best thresholds:
+- even vs `F_0`: about `0.15282`,
+- even vs `F_2`: about `0.15282`,
+- both are `< 1/6`.
+
+So no period-8 4-word Dyck library containing `W_1=10101010` can force even-vs-odd same-lag contradiction above `1/6`.
+
+### Period-8 odd-vs-odd
+Best same-lag threshold was about `0.17724`, which is **worse** than the already-proved `3/16 = 0.1875`.
+
+### Structured period-16 search
+Did not beat `1/6` on even-vs-odd thresholds.
+
+### Frozen conclusion
+**Stop all low-period same-lag projected-core optimization.**
+
+---
+
+## 2.2 Two-symbol compatibility route is exhausted
+Sub-libraries `{W_0,W_1}` and `{W_1,W_2}` were analyzed.
+
+They do not produce an even-vs-odd same-lag contradiction in the regime `δ > 1/6`.
+
+So:
+- no more 2-symbol local compatibility tuning,
+- no more long-run/low-transition optimization in that submodel.
+
+---
+
+## 2.3 Pure-time route is too weak
+A single early hit at a good residue can make block-word inequalities true for all larger `M`.
+
+So pure-time growth statements like “must realize many times” are false if derived from a single periodic adversary.
+
+Hence:
+- pure-time obstruction alone is not enough,
+- mixed `(t,r)` geometry is essential.
+
+---
+
+# 3. Dyck correction bridge
+
+## 3.1 A5.1 Dyck correction theorem
+For any half-density word `W` with prefix defect
+\[
+H(W)=\max_k (-S(k))_+,
+\]
+there exists a Dyck half-density word `W^#` with
+\[
+|W^\# \triangle W| \le 2H(W).
+\]
+
+This was proved rigorously using:
+- record-minimum flips,
+- then last-crossing flips,
+- while preserving prefix nonnegativity.
+
+## 3.2 Kernel stability
+If words are changed by `m` positions, local mixed costs change by at most linear error in `m`.
+
+Hence:
+- if `H(W)=o(q)`,
+- then Dyck correction perturbs all mixed kernels by `o(q)`.
+
+This is a crucial bridge:
+- we can now design **pre-Dyck** half-density words algebraically/probabilistically,
+- then Dyck-correct them safely.
+
+---
+
+# 4. Random balanced biased blocks
+
+## 4.1 A7.1
+Random balanced sign sequences on length `q` satisfy
+\[
+H(x) \ll \sqrt{q\log q}
+\]
+with high probability.
+
+## 4.2 A7.2
+For any fixed finite Fourier palette, there exist balanced sign words with:
+- prescribed finite-mode Fourier bias of size `c√q`,
+- while still having
+  \[
+  H(x)\ll \sqrt{q\log q}.
+  \]
+
+## 4.3 Meaning
+The algebraic route is technically live:
+- broad-spectrum low-defect balanced words exist,
+- and Dyck correction preserves them.
+
+But that did **not** yet solve the amplitude problem.
+
+---
+
+# 5. Spectral bottleneck (current main theorem-level bottleneck)
+
+## 5.1 A8.1 finite palette residue formula
+For support on
+\[
+\{\pm q/8,\ \pm 3q/8,\ \pm q/4\},
+\]
+cyclic autocorrelation has exact form
+\[
+\mathcal C_f(r)
+=
+A\cos(\pi r/4)
++
+B\cos(3\pi r/4)
++
+C\cos(\pi r/2),
+\]
+so residue-class behavior mod 8 is explicit.
+
+This explains why mod-8 families naturally appear.
+
+---
+
+## 5.2 A8.2 finite-palette CLT-scale bias is too small
+If all active Fourier coefficients satisfy
+\[
+|\widehat f(\xi)|\ll \sqrt q,
+\]
+and only finitely many frequencies are used, then
+\[
+\mathcal C_f(r)=O(1),
+\]
+hence mismatch counts stay at
+\[
+m_W(r)=q/4+O(1).
+\]
+
+Therefore:
+- finite palette,
+- CLT-scale bias,
+- even after Dyck correction,
+
+cannot shift costs down to `δq` for any fixed `δ < 1/4`.
+
+This killed the naive finite-palette spectral dream.
+
+---
+
+## 5.3 A8.3 palette-size lower bound
+If Fourier support size is `s` and each active coefficient is at most `K√q`, then
+\[
+|\mathcal C_f(r)|\le sK^2.
+\]
+So to get correlation of size `ηq`, one needs
+\[
+s \gg q.
+\]
+
+Interpretation:
+- with CLT-scale coefficients, constant-fraction obstruction requires **Θ(q)** many active frequencies.
+
+This is the “diffuse spectrum” mandate.
+
+---
+
+# 6. Spectral feasibility LP (latest bottleneck)
+
+## 6.1 Odd-family LP
+Optimize symmetric nonnegative spectral measures `μ` for
+\[
+\rho(r)=\sum_\xi \mu(\xi)\cos(2\pi \xi r/q),
+\]
+subject to
+- `ρ ≥ η` on `F_0 = {1,7} mod 8`,
+- `ρ ≤ -η` on `F_2 = {3,5} mod 8`.
+
+### Result
+\[
+\eta^* = \frac{1}{\sqrt2},
+\]
+attained by the **atomic** optimizer
+\[
+\mu = \delta_{q/8}.
+\]
+
+So odd-family separation above `1/6` is spectrally feasible, but only by collapsing back to concentrated low-period structure.
+
+---
+
+## 6.2 Diffuseness cap
+If additionally
+\[
+\mu(\xi)\le \alpha \ \ \forall \xi,
+\]
+then
+\[
+\eta^*(\alpha)=\min\Big(\frac1{\sqrt2},\alpha\sqrt2\Big).
+\]
+
+Hence achieving `η ≥ 1/2` already requires
+\[
+\max_\xi \mu(\xi)\ge \frac{1}{2\sqrt2}.
+\]
+
+### Frozen conclusion
+Genuinely diffuse spectrum cannot drive the `δ>1/6` odd-family obstruction.
+
+This is a **bottleneck theorem**, not a win.
+
+---
+
+# 7. What is dead, exactly
+
+The following are now considered dead or exhausted for the target regime:
+
+1. period-8 same-lag projected-core,
+2. period-16 structured same-lag projected-core,
+3. 2-symbol local compatibility,
+4. pure-time obstruction alone,
+5. finite-palette CLT-scale spectral bias,
+6. odd-family-only LP as a route to a full contradiction,
+7. “diffuse spectrum” in the weak sense of all masses `o(1)`.
+
+Do **not** spend more passes on these.
+
+---
+
+# 8. What is still alive
+
+## 8.1 Full spectral feasibility with even classes and mixed geometry
+This is the next exact bottleneck test.
+
+We have **not** yet solved the full spectral feasibility problem that includes:
+- odd family `F_0`,
+- odd family `F_2`,
+- even classes `2,4,6 mod 8`,
+- and ideally the true mixed `P/Q` window geometry or at least the smallest label-matrix approximation of it.
+
+This is the next sharp yes/no fork.
+
+### Suggested order
+1. scalar spectral feasibility with even + odd demands,
+2. then `2×2` PSD matrix spectral feasibility (smallest nontrivial label model).
+
+---
+
+## 8.2 Global bridge to one infinite non-basis `B`
+This is still the biggest missing conceptual piece.
+
+We do **not** have a replacement for bounded additive decomposition / basis-of-order-`k`.
+
+Without this, finite obstructions do not automatically imply the original #38 statement.
+
+This is still one of the main missing proof components.
+
+---
+
+## 8.3 General `α`, not just `1/2`
+Almost all strong theorems so far are on the half-density slice.
+
+We still need:
+- admissible-word machinery for general rational `α=m/q`,
+- the analogue of spike families,
+- and a route that does not collapse when `α ≠ 1/2`.
+
+This is another major missing component.
+
+---
+
+# 9. Deep research conclusions already frozen
+
+From literature review:
+- our local obstruction program is probably **not enough by itself**;
+- extracting Bohr/periodic structure from popular differences may be fundamentally blocked;
+- Ruzsa-type essential-component bounds give only necessary conditions on `B`, not the bridge we need;
+- the most promising external pivot was the algebraic/character viewpoint, but A8 showed the naive finite-palette version is too weak.
+
+So the literature sharpened the pivot, but did not supply the missing theorem.
+
+---
+
+# 10. Exact next task when resuming
+
+## Task 1
+Run the **full spectral feasibility test** in the correct order:
+
+### 1a. Scalar test
+Include simultaneously:
+- odd family `F_0`,
+- odd family `F_2`,
+- even classes,
+- with the sign/amplitude inequalities truly needed for `δ > 1/6`.
+
+Deliver:
+- feasible / infeasible,
+- best margin,
+- whether every optimizer is concentrated,
+- one optimizer if feasible.
+
+### 1b. If scalar survives, run `2×2` PSD matrix test
+This is the smallest label-aware spectral model.
+
+Deliver the same outputs.
+
+### Interpretation
+- If infeasible: strong negative theorem; spectral same-lag route is dead.
+- If feasible only via concentration: still essentially dead.
+- If feasible with genuinely nontrivial spectral geometry: then the route lives.
+
+---
+
+# 11. Honest state summary
+
+We are **not** one lemma away from proving #38.
+
+We **are** at a very good stopping point because:
+- the finite half-density obstruction side is sharp,
+- many dead ends are now rigorously dead,
+- the current live bottleneck is extremely well-isolated,
+- and the next step is unambiguous.
+
+## Resume from here with:
+> “Run the full spectral feasibility test (scalar first, then 2×2 PSD) including even classes and, if possible, the mixed `P/Q` geometry.”
+
+That is the cleanest next fork from the current **8.6/10** position.

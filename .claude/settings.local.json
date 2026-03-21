@@ -1,8 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir -p:*)",
-      "Bash(python -c \":*)"
+      "Bash(gh repo:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(curl:*)",
+      "Bash(git clone:*)",
+      "Bash(/c/Users/z20ma/.gauss/venv/Scripts/gauss.exe --help 2>&1 | head -20)",
+      "Bash(/c/Users/z20ma/.gauss/venv/Scripts/gauss.exe setup:*)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/z20ma/.gauss/venv/Scripts/gauss.exe setup 2>&1)",
+      "Bash(git add:*)",
+      "Bash(git checkout:*)",
+      "Bash(git rm:*)",
+      "Bash(git rebase:*)"
     ]
   }
 }
