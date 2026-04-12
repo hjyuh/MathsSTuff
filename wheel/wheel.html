@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victorian Ferris Wheel Procedural CAD</title>
+    <style>
+        :root {
+            --bg: #0f1118;
+            --bg-soft: rgba(17, 21, 31, 0.9);
+            --panel: rgba(14, 17, 26, 0.9);
+            --panel-border: rgba(212, 175, 55, 0.45);
+            --text: #efefef;
+            --muted: #abb0be;
+            --gold: #d4af37;
+            --gold-bright: #f0cb59;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at top, #252d43 0%, #141823 34%, #0b0d13 70%, #07080c 100%);
+            color: var(--text);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #ui-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 360px;
+            padding: 22px;
+            background: var(--panel);
+            border: 1px solid var(--panel-border);
+            border-radius: 14px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            color: var(--gold);
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            margin: 0 0 16px;
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .stat {
+            padding: 10px 12px;
+            background: var(--bg-soft);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+        }
+
+        .stat-label {
+            display: block;
+            margin-bottom: 4px;
+            color: #c8cdd8;
+            font-size: 0.72rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .stat-value {
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px 14px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 10px;
+            background: rgba(39, 46, 65, 0.92);
+            color: #ffffff;
+            cursor: pointer;
+            transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            border-color: rgba(240, 203, 89, 0.7);
+            background: rgba(50, 58, 80, 0.96);
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .button-grid.four {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .btn-secondary {
+            margin-bottom: 0;
+            padding: 10px;
+            font-size: 0.74rem;
+        }
+
+        .range-row {
+            margin-bottom: 12px;
+            padding: 12px;
+            background: var(--bg-soft);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+        }
+
+        .range-row label {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 10px;
+            color: #d5dac6;
+            font-size: 0.74rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            accent-color: var(--gold);
+        }
+
+        .hint {
+            margin-bottom: 14px;
+            color: #b4bac6;
+            font-size: 0.8rem;
+        }
+
+        #btn-export {
+            margin-bottom: 0;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-bright) 100%);
+            color: #131313;
+            border: none;
+        }
+
+        #btn-export:hover {
+            background: linear-gradient(135deg, #f0cb59 0%, #f7db7f 100%);
+        }
+
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--gold);
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            z-index: 200;
+            pointer-events: none;
+        }
+
+        @media (max-width: 780px) {
+            #ui-panel {
+                top: auto;
+                right: 12px;
+                bottom: 12px;
+                left: 12px;
+                width: auto;
+                padding: 18px;
+            }
+
+            .button-grid.four {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="loading">Building Wheel Geometry...</div>
+
+    <div id="ui-panel" style="display: none;">
+        <h2>Victorian Wheel</h2>
+        <p>Procedural 914 mm wheel study with a print-optimized segmented kit, live motion controls, and a presentation scene that is easier to inspect.</p>
+
+        <div class="stat-grid">
+            <div class="stat">
+                <span class="stat-label">Diameter</span>
+                <span class="stat-value">914 mm</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Axle Bore</span>
+                <span class="stat-value">8.4 mm</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Wheel Segments</span>
+                <span class="stat-value">12 Rim / 12 Cars</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Export</span>
+                <span class="stat-value">Full Print Set</span>
+            </div>
+        </div>
+
+        <button id="btn-toggle">View Mode: Print Layout Kit</button>
+
+        <div class="button-grid four">
+            <button id="btn-camera-hero" class="btn-secondary">Hero</button>
+            <button id="btn-camera-front" class="btn-secondary">Front</button>
+            <button id="btn-camera-top" class="btn-secondary">Top</button>
+            <button id="btn-camera-reset" class="btn-secondary">Reset</button>
+        </div>
+
+        <div class="range-row">
+            <label for="speed-control">
+                <span>Spin Speed</span>
+                <span id="speed-value">7 deg/s</span>
+            </label>
+            <input id="speed-control" type="range" min="0" max="18" step="0.5" value="7">
+        </div>
+
+        <div class="button-grid">
+            <button id="btn-motion" class="btn-secondary">Pause Motion</button>
+            <button id="btn-settle" class="btn-secondary">Settle Cars</button>
+            <button id="btn-focus" class="btn-secondary">Focus Wheel</button>
+        </div>
+
+        <p class="hint">Drag to orbit, right-click to pan, scroll to zoom. Spokes are now merged into single pieces for easier printing.</p>
+        <button id="btn-export">Download STL</button>
+        <button id="btn-export-parts" style="margin-top: 10px;">Export Individual Parts</button>
+    </div>
+
+    <script type="module">
+        import * as THREE from "three";
+        import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+        import { STLExporter } from "three/addons/exporters/STLExporter.js";
+        import * as BufferGeometryUtils from "three/addons/utils/BufferGeometryUtils.js";
+
+        const DEG2RAD = Math.PI / 180;
+        const rIn = 417;
+        const rMid = 437;
+        const rOut = 457;
+        const SPOKE_SECTION_SPECS = [
+            { key: "inner", start: 50, end: 190 },
+            { key: "mid", start: 178, end: 318 },
+            { key: "outer", start: 306, end: rIn }
+        ];
+
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x0f1118);
+        scene.fog = new THREE.FogExp2(0x0f1118, 0.00025);
+
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 10, 10000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setClearColor(0x0f1118);
+        renderer.outputColorSpace = THREE.SRGBColorSpace;
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.1;
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        document.body.appendChild(renderer.domElement);
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.minDistance = 500;
+        controls.maxDistance = 3500;
+
+        let isLayoutMode = false;
+        let motionEnabled = true;
+        let targetSpinRateDeg = Number(document.getElementById("speed-control").value);
+        let currentSpinRateDeg = targetSpinRateDeg;
+        let elapsedTime = 0;
+
+        let assemblyGroup;
+        let layoutGroup;
+        let wheelGroup;
+        const gondolas = [];
+
+        const clock = new THREE.Clock();
+        const presentationGroup = new THREE.Group();
+        const assemblyEnvironment = new THREE.Group();
+        const layoutEnvironment = new THREE.Group();
+        presentationGroup.add(assemblyEnvironment, layoutEnvironment);
+        layoutEnvironment.visible = false;
+        scene.add(presentationGroup);
+
+        const cameraPresets = {
+            assembly: {
+                hero: { position: new THREE.Vector3(1300, 1100, 1600), target: new THREE.Vector3(0, 550, 0) },
+                front: { position: new THREE.Vector3(0, 700, 2350), target: new THREE.Vector3(0, 550, 0) },
+                top: { position: new THREE.Vector3(0, 2600, 60), target: new THREE.Vector3(0, 550, 0) },
+                reset: { position: new THREE.Vector3(1300, 1100, 1600), target: new THREE.Vector3(0, 550, 0) }
+            },
+            layout: {
+                hero: { position: new THREE.Vector3(1700, 1500, 2100), target: new THREE.Vector3(0, 60, 0) },
+                front: { position: new THREE.Vector3(0, 520, 3200), target: new THREE.Vector3(0, 50, 0) },
+                top: { position: new THREE.Vector3(0, 3200, 20), target: new THREE.Vector3(0, 20, 0) },
+                reset: { position: new THREE.Vector3(0, 2300, 1800), target: new THREE.Vector3(0, 20, 0) }
+            }
+        };
+
+        function applyCameraPreset(name) {
+            const presets = isLayoutMode ? cameraPresets.layout : cameraPresets.assembly;
+            const preset = presets[name] || presets.reset;
+            camera.position.copy(preset.position);
+            controls.target.copy(preset.target);
+            controls.update();
+        }
+
+        applyCameraPreset("reset");
+
+        scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+
+        const hemiLight = new THREE.HemisphereLight(0x7e9de0, 0x1c160f, 0.85);
+        scene.add(hemiLight);
+
+        const dirLight = new THREE.DirectionalLight(0xffefcf, 1.45);
+        dirLight.position.set(1100, 2000, 900);
+        dirLight.castShadow = true;
+        dirLight.shadow.mapSize.width = 2048;
+        dirLight.shadow.mapSize.height = 2048;
+        dirLight.shadow.camera.top = 1300;
+        dirLight.shadow.camera.bottom = -1300;
+        dirLight.shadow.camera.left = -1300;
+        dirLight.shadow.camera.right = 1300;
+        scene.add(dirLight);
+
+        const backLight = new THREE.DirectionalLight(0x91b8ff, 0.5);
+        backLight.position.set(-1600, 1200, -1400);
+        scene.add(backLight);
+
+        const rimLight = new THREE.PointLight(0xd4af37, 0.8, 2400);
+        rimLight.position.set(0, 900, 850);
+        scene.add(rimLight);
+
+        const uplightLeft = new THREE.PointLight(0xe1b652, 0.4, 1800);
+        uplightLeft.position.set(-450, 200, 300);
+        scene.add(uplightLeft);
+
+        const uplightRight = new THREE.PointLight(0xe1b652, 0.4, 1800);
+        uplightRight.position.set(450, 200, 300);
+        scene.add(uplightRight);
+
+        const brassMat = new THREE.MeshStandardMaterial({ color: 0xc5a059, roughness: 0.32, metalness: 0.82 });
+        const ironMat = new THREE.MeshStandardMaterial({ color: 0x3a3c44, roughness: 0.7, metalness: 0.56 });
+        const stageMat = new THREE.MeshStandardMaterial({ color: 0x171b23, roughness: 0.94, metalness: 0.08 });
+        const stageInsetMat = new THREE.MeshStandardMaterial({ color: 0x10141d, roughness: 0.92, metalness: 0.12 });
+        const stageTrimMat = new THREE.MeshStandardMaterial({ color: 0x8f7440, roughness: 0.45, metalness: 0.62 });
+        const layoutMat = new THREE.MeshStandardMaterial({ color: 0x151b24, roughness: 0.95, metalness: 0.03 });
+
+        function clean(geo) {
+            let g = geo.clone();
+            if (g.index) g = g.toNonIndexed();
+            if (g.attributes.uv) g.deleteAttribute("uv");
+            if (g.attributes.normal) g.deleteAttribute("normal");
+            g.computeVertexNormals();
+            return g;
+        }
+
+        function merge(geos) {
+            return BufferGeometryUtils.mergeGeometries(geos.map(clean), false);
+        }
+
+        function scaleGeometry(geo, sx = 1, sy = 1, sz = 1) {
+            const scaled = geo.clone();
+            scaled.scale(sx, sy, sz);
+            return clean(scaled);
+        }
+
+        function addDiamondHole(shape, cx, cy, angle, w, h) {
+            const hole = new THREE.Path();
+            const pts = [
+                { x: 0, y: h },
+                { x: w, y: 0 },
+                { x: 0, y: -h },
+                { x: -w, y: 0 }
+            ];
+
+            for (let i = 0; i < pts.length; i++) {
+                const rx = pts[i].x * Math.cos(angle - Math.PI / 2) - pts[i].y * Math.sin(angle - Math.PI / 2);
+                const ry = pts[i].x * Math.sin(angle - Math.PI / 2) + pts[i].y * Math.cos(angle - Math.PI / 2);
+                if (i === 0) hole.moveTo(cx + rx, cy + ry);
+                else hole.lineTo(cx + rx, cy + ry);
+            }
+
+            shape.holes.push(hole);
+        }
+
+        function createPresentationStage() {
+            const group = new THREE.Group();
+
+            const platform = new THREE.Mesh(new THREE.CylinderGeometry(1180, 1260, 70, 72), stageMat);
+            platform.position.y = -35;
+            group.add(platform);
+
+            const inlay = new THREE.Mesh(new THREE.CircleGeometry(980, 72), stageInsetMat);
+            inlay.rotation.x = -Math.PI / 2;
+            inlay.position.y = 1;
+            group.add(inlay);
+
+            [260, 500, 740, 920].forEach((radius, index) => {
+                const ring = new THREE.Mesh(new THREE.TorusGeometry(radius, index === 3 ? 8 : 5, 12, 96), stageTrimMat);
+                ring.rotation.x = Math.PI / 2;
+                ring.position.y = 2 + index * 0.5;
+                group.add(ring);
+            });
+
+            return group;
+        }
+
+        function createLayoutSurface() {
+            const group = new THREE.Group();
+
+            const plane = new THREE.Mesh(new THREE.PlaneGeometry(4600, 3200), layoutMat);
+            plane.rotation.x = -Math.PI / 2;
+            plane.position.y = -4;
+            group.add(plane);
+
+            const grid = new THREE.GridHelper(4600, 46, 0x556174, 0x2a3344);
+            grid.position.y = -3.5;
+            group.add(grid);
+
+            return group;
+        }
+
+        function createBaseStand() {
+            const shape = new THREE.Shape();
+            shape.moveTo(350, 0);
+            shape.lineTo(40, 550);
+            shape.lineTo(4.2, 550);
+            shape.absarc(0, 550, 4.2, 0, Math.PI, true);
+            shape.lineTo(-40, 550);
+            shape.lineTo(-350, 0);
+
+            for (let i = 0; i < 3; i++) {
+                const y = 80 + i * 140;
+                const w = 260 - i * 80;
+                const hole = new THREE.Path();
+                hole.moveTo(0, y + 110);
+                hole.lineTo(w, y);
+                hole.lineTo(w - 20, y - 20);
+                hole.lineTo(-w + 20, y - 20);
+                hole.lineTo(-w, y);
+                shape.holes.push(hole);
+            }
+
+            const frameGeo = new THREE.ExtrudeGeometry(shape, { depth: 20, bevelEnabled: true, bevelThickness: 2, bevelSize: 2 });
+            const frontFrame = frameGeo.clone();
+            frontFrame.translate(0, 0, 70);
+            const backFrame = frameGeo.clone();
+            backFrame.translate(0, 0, -90);
+
+            const basePlate = new THREE.BoxGeometry(800, 20, 240);
+            basePlate.translate(0, 10, 0);
+            const parts = [frontFrame, backFrame, basePlate];
+
+            for (let y = 150; y <= 450; y += 150) {
+                const w = 350 - (y / 550) * 310;
+                const b1 = new THREE.CylinderGeometry(8, 8, 160, 16);
+                b1.rotateX(Math.PI / 2);
+                b1.translate(w, y, 0);
+
+                const b2 = new THREE.CylinderGeometry(8, 8, 160, 16);
+                b2.rotateX(Math.PI / 2);
+                b2.translate(-w, y, 0);
+                parts.push(b1, b2);
+            }
+
+            return merge(parts);
+        }
+
+        function createHub() {
+            const shape = new THREE.Shape();
+            shape.absarc(0, 0, 50, 0, Math.PI * 2, false);
+
+            const hole = new THREE.Path();
+            hole.absarc(0, 0, 4.2, 0, Math.PI * 2, true);
+            shape.holes.push(hole);
+
+            const core = new THREE.ExtrudeGeometry(shape, { depth: 100, bevelEnabled: true, bevelThickness: 2, bevelSize: 2, curveSegments: 32 });
+            core.translate(0, 0, -50);
+
+            const flangeShape = new THREE.Shape();
+            flangeShape.absarc(0, 0, 65, 0, Math.PI * 2, false);
+            flangeShape.holes.push(hole);
+
+            const flange = new THREE.ExtrudeGeometry(flangeShape, { depth: 4, bevelEnabled: false, curveSegments: 32 });
+            const f1 = flange.clone();
+            f1.translate(0, 0, 46);
+            const f2 = flange.clone();
+            f2.translate(0, 0, -50);
+
+            return merge([core, f1, f2]);
+        }
+
+        function createRimSegment() {
+            const layerDepth = 10;
+
+            const shapeA = new THREE.Shape();
+            shapeA.absarc(0, 0, rOut, 0, 30 * DEG2RAD, false);
+            shapeA.absarc(0, 0, rIn, 30 * DEG2RAD, 0, true);
+
+            const shapeB = new THREE.Shape();
+            shapeB.absarc(0, 0, rOut, 2 * DEG2RAD, 32 * DEG2RAD, false);
+            shapeB.absarc(0, 0, rIn, 32 * DEG2RAD, 2 * DEG2RAD, true);
+
+            for (let i = 6; i < 28; i += 6) {
+                if (i === 15) continue;
+                const a = i * DEG2RAD;
+                addDiamondHole(shapeA, rMid * Math.cos(a), rMid * Math.sin(a), a, 8, 14);
+                addDiamondHole(shapeB, rMid * Math.cos(a), rMid * Math.sin(a), a, 8, 14);
+            }
+
+            const pegHole = new THREE.Path();
+            pegHole.absarc(rMid * Math.cos(1 * DEG2RAD), rMid * Math.sin(1 * DEG2RAD), 5.3, 0, Math.PI * 2, true);
+            shapeA.holes.push(pegHole);
+
+            const pivotHole = new THREE.Path();
+            pivotHole.absarc(rMid * Math.cos(15 * DEG2RAD), rMid * Math.sin(15 * DEG2RAD), 4.2, 0, Math.PI * 2, true);
+            shapeA.holes.push(pivotHole);
+            shapeB.holes.push(pivotHole);
+
+            const geoA = new THREE.ExtrudeGeometry(shapeA, { depth: layerDepth, bevelEnabled: false, curveSegments: 32 });
+            geoA.translate(0, 0, layerDepth);
+
+            const geoB = new THREE.ExtrudeGeometry(shapeB, { depth: layerDepth, bevelEnabled: false, curveSegments: 32 });
+
+            const pegGeo = new THREE.CylinderGeometry(5, 5, layerDepth * 2, 16);
+            pegGeo.rotateX(Math.PI / 2);
+            pegGeo.translate(rMid * Math.cos(31 * DEG2RAD), rMid * Math.sin(31 * DEG2RAD), layerDepth);
+
+            const singleRim = merge([geoA, geoB, pegGeo]);
+
+            const frontRim = singleRim.clone();
+            frontRim.translate(0, 0, 40);
+            const backRim = singleRim.clone();
+            backRim.translate(0, 0, -60);
+
+            const braces = [];
+            for (const a of [5, 15, 25]) {
+                const isPivot = a === 15;
+                const brace = new THREE.CylinderGeometry(isPivot ? 4.1 : 3, isPivot ? 4.1 : 3, 100, 16);
+                brace.rotateX(Math.PI / 2);
+                brace.translate(rMid * Math.cos(a * DEG2RAD), rMid * Math.sin(a * DEG2RAD), 0);
+                braces.push(brace);
+            }
+
+            return merge([frontRim, backRim, ...braces]);
+        }
+
+        function createSpoke() {
+            const shape = new THREE.Shape();
+            shape.moveTo(-12, 50);
+            shape.lineTo(12, 50);
+            shape.lineTo(6, rIn);
+            shape.lineTo(-6, rIn);
+
+            for (let y = 80; y <= 380; y += 40) {
+                const hole = new THREE.Path();
+                const w = 6 + ((rIn - y) / (rIn - 50)) * 6 - 3;
+                const h = 15;
+                hole.moveTo(0, y + h);
+                hole.lineTo(w, y);
+                hole.lineTo(0, y - h);
+                hole.lineTo(-w, y);
+                shape.holes.push(hole);
+            }
+
+            const geo = new THREE.ExtrudeGeometry(shape, { depth: 6, bevelEnabled: true, bevelThickness: 1, bevelSize: 0.5 });
+            const frontSpoke = geo.clone();
+            frontSpoke.translate(0, 0, 42);
+            const backSpoke = geo.clone();
+            backSpoke.translate(0, 0, -48);
+
+            const braces = [];
+            for (let y = 120; y <= 360; y += 80) {
+                const brace = new THREE.CylinderGeometry(2, 2, 90, 8);
+                brace.rotateX(Math.PI / 2);
+                brace.translate(0, y, 0);
+                braces.push(brace);
+            }
+
+            return merge([frontSpoke, backSpoke, ...braces]);
+        }
+
+        function createGondola() {
+            const parts = [];
+            const floor = new THREE.BoxGeometry(40, 4, 50);
+            floor.translate(0, 2, 0);
+            parts.push(floor);
+
+            const b1 = new THREE.BoxGeometry(10, 6, 48);
+            b1.translate(14, 5, 0);
+            const b2 = new THREE.BoxGeometry(10, 6, 48);
+            b2.translate(-14, 5, 0);
+            parts.push(b1, b2);
+
+            for (const x of [-18, 18]) {
+                for (const z of [-23, 23]) {
+                    const post = new THREE.BoxGeometry(2, 25, 2);
+                    post.translate(x, 14.5, z);
+                    parts.push(post);
+                }
+            }
+
+            const r1 = new THREE.BoxGeometry(40, 2, 2);
+            r1.translate(0, 26, 23);
+            const r2 = new THREE.BoxGeometry(40, 2, 2);
+            r2.translate(0, 26, -23);
+            const r3 = new THREE.BoxGeometry(2, 2, 50);
+            r3.translate(18, 26, 0);
+            const r4 = new THREE.BoxGeometry(2, 2, 50);
+            r4.translate(-18, 26, 0);
+            parts.push(r1, r2, r3, r4);
+
+            const roof = new THREE.ConeGeometry(35, 20, 4);
+            roof.rotateY(Math.PI / 4);
+            roof.translate(0, 37, 0);
+            parts.push(roof);
+
+            const finial = new THREE.SphereGeometry(3, 16, 16);
+            finial.translate(0, 47, 0);
+            parts.push(finial);
+
+            const h1 = new THREE.BoxGeometry(2, 66, 4);
+            h1.translate(0, 35, 25);
+            const h2 = new THREE.BoxGeometry(2, 66, 4);
+            h2.translate(0, 35, -25);
+            const ring1 = new THREE.TorusGeometry(6, 1.5, 8, 16);
+            ring1.translate(0, 68, 25);
+            const ring2 = new THREE.TorusGeometry(6, 1.5, 8, 16);
+            ring2.translate(0, 68, -25);
+            parts.push(h1, h2, ring1, ring2);
+
+            const geo = merge(parts);
+            geo.translate(0, -68, 0);
+            return geo;
+        }
+
+        function createSupportCap() {
+            const shape = new THREE.Shape();
+            shape.moveTo(-42, 0);
+            shape.lineTo(42, 0);
+            shape.lineTo(42, 78);
+            shape.lineTo(-42, 78);
+            shape.lineTo(-42, 0);
+
+            const hole = new THREE.Path();
+            hole.absarc(0, 54, 4.2, 0, Math.PI * 2, true);
+            shape.holes.push(hole);
+
+            const geo = new THREE.ExtrudeGeometry(shape, { depth: 20, bevelEnabled: true, bevelThickness: 1.2, bevelSize: 1.2 });
+            geo.translate(0, 0, -10);
+            return clean(geo);
+        }
+
+        function createAxleSegment() {
+            return clean(new THREE.CylinderGeometry(4.05, 4.05, 120, 18));
+        }
+
+        function createAxleCoupler() {
+            const shape = new THREE.Shape();
+            shape.absarc(0, 0, 8, 0, Math.PI * 2, false);
+
+            const hole = new THREE.Path();
+            hole.absarc(0, 0, 4.2, 0, Math.PI * 2, true);
+            shape.holes.push(hole);
+
+            const geo = new THREE.ExtrudeGeometry(shape, { depth: 28, bevelEnabled: false, curveSegments: 24 });
+            geo.translate(0, 0, -14);
+            return clean(geo);
+        }
+
+        function createUtilityPin() {
+            return clean(new THREE.CylinderGeometry(2.1, 2.1, 18, 12));
+        }
+
+        function buildPrintableHub() {
+            const profile = [
+                new THREE.Vector2(4.2, -50),
+                new THREE.Vector2(4.2,  50),
+                new THREE.Vector2(65.0, 50),
+                new THREE.Vector2(65.0, 46),
+                new THREE.Vector2(50.0, 46),
+                new THREE.Vector2(50.0, -46),
+                new THREE.Vector2(65.0, -46),
+                new THREE.Vector2(65.0, -50),
+                new THREE.Vector2(4.2, -50)
+            ];
+            const geo = new THREE.LatheGeometry(profile, 64);
+            geo.rotateZ(Math.PI / 2);
+            return clean(geo);
+        }
+
+        function buildPrintableRimSegment() {
+            const shape = new THREE.Shape();
+            shape.absarc(0, 0, rOut, 0, 30 * DEG2RAD, false);
+            shape.absarc(0, 0, rIn, 30 * DEG2RAD, 0, true);
+
+            const pivotHole = new THREE.Path();
+            const a = 15 * DEG2RAD;
+            pivotHole.absarc(rMid * Math.cos(a), rMid * Math.sin(a), 2.2, 0, Math.PI * 2, true);
+            shape.holes.push(pivotHole);
+
+            const geo = new THREE.ExtrudeGeometry(shape, {
+                depth: 100,
+                bevelEnabled: false,
+                curveSegments: 64
+            });
+            geo.translate(0, 0, -50);
+
+            geo.computeBoundingBox();
+            const bb = geo.boundingBox;
+            const cx = (bb.min.x + bb.max.x) / 2;
+            const cy = (bb.min.y + bb.max.y) / 2;
+            geo.translate(-cx, -cy, 0);
+            return clean(geo);
+        }
+
+        function buildPrintableSpoke() {
+            const hubEnd = 50;
+            const rimEnd = rIn;
+            const halfWidthHub = 14;
+            const halfWidthRim = 8;
+
+            const shape = new THREE.Shape();
+            shape.moveTo(-halfWidthHub, hubEnd);
+            shape.lineTo( halfWidthHub, hubEnd);
+            shape.lineTo( halfWidthRim, rimEnd);
+            shape.lineTo(-halfWidthRim, rimEnd);
+            shape.lineTo(-halfWidthHub, hubEnd);
+
+            for (let y = hubEnd + 40; y <= rimEnd - 40; y += 50) {
+                const t = (y - hubEnd) / (rimEnd - hubEnd);
+                const w = THREE.MathUtils.lerp(6, 3, t);
+                const h = 10;
+                const hole = new THREE.Path();
+                hole.moveTo(0, y + h);
+                hole.lineTo( w, y);
+                hole.lineTo(0, y - h);
+                hole.lineTo(-w, y);
+                hole.lineTo(0, y + h);
+                shape.holes.push(hole);
+            }
+
+            const geo = new THREE.ExtrudeGeometry(shape, {
+                depth: 100,
+                bevelEnabled: false,
+                curveSegments: 16
+            });
+            geo.translate(0, 0, -50);
+
+            geo.computeBoundingBox();
+            const bb = geo.boundingBox;
+            const cy = (bb.min.y + bb.max.y) / 2;
+            geo.translate(0, -cy, 0);
+            return clean(geo);
+        }
+
+        function buildPrintableGondola() {
+            const shape = new THREE.Shape();
+            shape.moveTo(-22, -10);
+            shape.lineTo(-22, -50);
+            shape.lineTo( 22, -50);
+            shape.lineTo( 22, -10);
+            shape.lineTo(  4, -10);
+            shape.lineTo(  4,   8);
+            shape.lineTo( -4,   8);
+            shape.lineTo( -4, -10);
+            shape.lineTo(-22, -10);
+
+            const pin = new THREE.Path();
+            pin.absarc(0, 2, 2.4, 0, Math.PI * 2, true);
+            shape.holes.push(pin);
+
+            const geo = new THREE.ExtrudeGeometry(shape, {
+                depth: 30,
+                bevelEnabled: true,
+                bevelThickness: 1.0,
+                bevelSize: 1.0,
+                curveSegments: 24
+            });
+            geo.translate(0, 20, -15);
+            return clean(geo);
+        }
+
+        function buildPrintableSupportCap() {
+            const shape = new THREE.Shape();
+            shape.moveTo(-42, 0);
+            shape.lineTo( 42, 0);
+            shape.lineTo( 42, 78);
+            shape.lineTo(-42, 78);
+            shape.lineTo(-42, 0);
+
+            const hole = new THREE.Path();
+            hole.absarc(0, 54, 4.2, 0, Math.PI * 2, true);
+            shape.holes.push(hole);
+
+            const geo = new THREE.ExtrudeGeometry(shape, {
+                depth: 20,
+                bevelEnabled: true,
+                bevelThickness: 1.2,
+                bevelSize: 1.2,
+                curveSegments: 32
+            });
+            geo.translate(0, -39, -10);
+            return clean(geo);
+        }
+
+        function buildPrintableUtilityPin() {
+            const geo = new THREE.CylinderGeometry(2.1, 2.1, 18, 32);
+            geo.rotateZ(Math.PI / 2);
+            return clean(geo);
+        }
+
+        function spokeHalfWidth(y) {
+            return 12 - ((y - 50) / (rIn - 50)) * 6;
+        }
+
+        function createSpokeSection(spec) {
+            const shape = new THREE.Shape();
+            const startWidth = spokeHalfWidth(spec.start);
+            const endWidth = spokeHalfWidth(spec.end);
+
+            shape.moveTo(-startWidth, spec.start);
+            shape.lineTo(startWidth, spec.start);
+            shape.lineTo(endWidth, spec.end);
+            shape.lineTo(-endWidth, spec.end);
+
+            for (let y = spec.start + 28; y <= spec.end - 24; y += 34) {
+                const width = Math.max(2.4, spokeHalfWidth(y) - 1.8);
+                if (width < 2.6) continue;
+
+                const hole = new THREE.Path();
+                const holeHeight = Math.min(13, Math.max(9, (spec.end - spec.start) * 0.12));
+                hole.moveTo(0, y + holeHeight);
+                hole.lineTo(width, y);
+                hole.lineTo(0, y - holeHeight);
+                hole.lineTo(-width, y);
+                shape.holes.push(hole);
+            }
+
+            const geo = new THREE.ExtrudeGeometry(shape, { depth: 6, bevelEnabled: true, bevelThickness: 0.8, bevelSize: 0.45 });
+            const front = geo.clone();
+            front.translate(0, 0, 42);
+            const back = geo.clone();
+            back.translate(0, 0, -48);
+
+            const braces = [];
+            const sectionHeight = spec.end - spec.start;
+            const braceCount = sectionHeight > 120 ? 2 : 1;
+            for (let i = 0; i < braceCount; i++) {
+                const braceY = THREE.MathUtils.lerp(spec.start + 20, spec.end - 20, braceCount === 1 ? 0.5 : i / (braceCount - 1));
+                const brace = new THREE.CylinderGeometry(2, 2, 90, 8);
+                brace.rotateX(Math.PI / 2);
+                brace.translate(0, braceY, 0);
+                braces.push(brace);
+            }
+
+            return merge([front, back, ...braces]);
+        }
+
+        function addBeamBetween(target, geometry, material, start, end, sx = 1, sz = 1) {
+            const direction = new THREE.Vector3().subVectors(end, start);
+            const length = direction.length();
+            const mesh = new THREE.Mesh(geometry, material);
+            mesh.position.copy(start).add(end).multiplyScalar(0.5);
+            mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize());
+            mesh.scale.set(sx, length, sz);
+            target.add(mesh);
+            return mesh;
+        }
+
+        function addSegmentedBeam(target, geometry, material, start, end, segments, overlap = 0, sx = 1, sz = 1) {
+            const totalLength = start.distanceTo(end);
+            const overlapRatio = overlap / totalLength;
+
+            for (let i = 0; i < segments; i++) {
+                let t0 = i / segments;
+                let t1 = (i + 1) / segments;
+                if (i > 0) t0 -= overlapRatio;
+                if (i < segments - 1) t1 += overlapRatio;
+
+                const p0 = start.clone().lerp(end, Math.max(0, t0));
+                const p1 = start.clone().lerp(end, Math.min(1, t1));
+                addBeamBetween(target, geometry, material, p0, p1, sx, sz);
+            }
+        }
+
+        function buildModularBaseAssembly(target, parts, material) {
+            const railCenters = [-270, -90, 90, 270];
+            const frameZs = [-78, 78];
+
+            [-92, 92].forEach((z) => {
+                railCenters.forEach((x) => {
+                    addBeamBetween(
+                        target,
+                        parts.baseBeamGeo,
+                        material,
+                        new THREE.Vector3(x - 90, 10, z),
+                        new THREE.Vector3(x + 90, 10, z),
+                        1.15,
+                        1.8
+                    );
+                });
+            });
+
+            railCenters.forEach((x) => {
+                addBeamBetween(
+                    target,
+                    parts.baseBeamGeo,
+                    material,
+                    new THREE.Vector3(x, 10, -92),
+                    new THREE.Vector3(x, 10, 92),
+                    1.15,
+                    1.8
+                );
+            });
+
+            frameZs.forEach((z) => {
+                addSegmentedBeam(
+                    target,
+                    parts.baseBeamGeo,
+                    material,
+                    new THREE.Vector3(-320, 22, z),
+                    new THREE.Vector3(-18, 550, z),
+                    3,
+                    8,
+                    0.95,
+                    1.2
+                );
+                addSegmentedBeam(
+                    target,
+                    parts.baseBeamGeo,
+                    material,
+                    new THREE.Vector3(320, 22, z),
+                    new THREE.Vector3(18, 550, z),
+                    3,
+                    8,
+                    0.95,
+                    1.2
+                );
+
+                const cap = new THREE.Mesh(parts.supportCapGeo, material);
+                cap.position.set(0, 496, z);
+                target.add(cap);
+            });
+
+            [190, 330, 470].forEach((y, index, arr) => {
+                const x = THREE.MathUtils.lerp(230, 66, index / (arr.length - 1));
+                [-1, 1].forEach((sign) => {
+                    addBeamBetween(
+                        target,
+                        parts.braceBeamGeo,
+                        material,
+                        new THREE.Vector3(sign * x, y, -78),
+                        new THREE.Vector3(sign * x, y, 78),
+                        1,
+                        1
+                    );
+                });
+            });
+
+            addBeamBetween(
+                target,
+                parts.braceBeamGeo,
+                material,
+                new THREE.Vector3(0, 518, -78),
+                new THREE.Vector3(0, 518, 78),
+                1,
+                1
+            );
+        }
+
+        function addFlatLayoutMesh(target, geometry, material, x, z, options = {}) {
+            const mesh = new THREE.Mesh(geometry, material);
+            mesh.rotation.set(
+                options.rotationX ?? -Math.PI / 2,
+                options.rotationY ?? 0,
+                options.rotationZ ?? 0
+            );
+            mesh.position.set(x, options.y ?? 0, z);
+            target.add(mesh);
+            return mesh;
+        }
+
+        function populatePrintLayout(target, parts) {
+            const railXs = [-1500, -1130, -760, -390, -20, 350, 720, 1090];
+            railXs.forEach((x) => {
+                addFlatLayoutMesh(target, parts.flatRailGeo, ironMat, x, -1220, { rotationY: Math.PI / 2, y: 12 });
+            });
+
+            [-1000, -620, -240, 140].forEach((x) => {
+                addFlatLayoutMesh(target, parts.flatTieGeo, ironMat, x, -980, { rotationY: Math.PI / 2, y: 12 });
+            });
+
+            [-1450, -1170, -890, -610, -330, -50, 230, 510, 790, 1070, 1350, 1630].forEach((x) => {
+                addFlatLayoutMesh(target, parts.flatLegGeo, ironMat, x, -720, { rotationY: Math.PI / 2, y: 12 });
+            });
+
+            [-260, 40].forEach((x) => {
+                addFlatLayoutMesh(target, parts.supportCapGeo, ironMat, x, -980, { y: 10 });
+            });
+
+            [-260, -60, 140, 340, 540, 740, 940].forEach((x) => {
+                addFlatLayoutMesh(target, parts.flatBraceGeo, ironMat, x, -720, { rotationY: Math.PI / 2, y: 10 });
+            });
+
+            const rimXs = Array.from({ length: 12 }, (_, i) => -1700 + i * 310);
+            rimXs.forEach((x) => {
+                addFlatLayoutMesh(target, parts.rimGeo, ironMat, x, -120, { y: 10 });
+            });
+
+            rimXs.forEach((x) => {
+                addFlatLayoutMesh(target, parts.fullSpokeGeo, brassMat, x, 620, { y: 10 });
+            });
+
+            [-1600, -1300, -1000, -700, -400, -100, 200, 500, 800, 1100, 1400, 1700].forEach((x) => {
+                addFlatLayoutMesh(target, parts.gondolaGeo, brassMat, x, 1280, {
+                    rotationX: 0,
+                    rotationY: 0,
+                    rotationZ: Math.PI / 2,
+                    y: 40
+                });
+            });
+
+            addFlatLayoutMesh(target, parts.hubGeo, brassMat, -1690, -980, { y: 52 });
+            [-1480, -1320].forEach((x) => {
+                addFlatLayoutMesh(target, parts.axleSegmentGeo, ironMat, x, -980, { y: 8, rotationY: Math.PI / 2 });
+            });
+            addFlatLayoutMesh(target, parts.axleCouplerGeo, ironMat, -1160, -980, { y: 8, rotationX: 0 });
+
+            const pinXs = Array.from({ length: 24 }, (_, i) => -1680 + i * 140);
+            pinXs.forEach((x) => {
+                addFlatLayoutMesh(target, parts.utilityPinGeo, brassMat, x, 1540, { y: 4, rotationY: Math.PI / 2 });
+            });
+        }
+
+        function settleGondolas() {
+            if (!wheelGroup) return;
+            gondolas.forEach((gondola) => {
+                gondola.userData.angularVelocity = 0;
+                gondola.rotation.z = -wheelGroup.rotation.z;
+            });
+        }
+
+        function setMode(nextLayoutMode) {
+            isLayoutMode = nextLayoutMode;
+
+            if (assemblyGroup && layoutGroup) {
+                assemblyGroup.visible = !isLayoutMode;
+                layoutGroup.visible = isLayoutMode;
+            }
+
+            assemblyEnvironment.visible = !isLayoutMode;
+            layoutEnvironment.visible = isLayoutMode;
+
+            document.getElementById("btn-toggle").innerText = isLayoutMode
+                ? "View Mode: Assembled Architecture"
+                : "View Mode: Print Layout Kit";
+
+            document.getElementById("btn-focus").innerText = isLayoutMode ? "Focus Layout" : "Focus Wheel";
+            applyCameraPreset("reset");
+        }
+
+        function formatSpeed(value) {
+            return `${Number(value).toFixed(value % 1 === 0 ? 0 : 1)} deg/s`;
+        }
+
+        function updateSpeedLabel() {
+            document.getElementById("speed-value").innerText = formatSpeed(targetSpinRateDeg);
+        }
+
+        updateSpeedLabel();
+
+        setTimeout(() => {
+            const hubGeo = createHub();
+            const rimGeo = createRimSegment();
+            const spokeSectionGeos = SPOKE_SECTION_SPECS.map((spec) => createSpokeSection(spec));
+            const fullSpokeGeo = BufferGeometryUtils.mergeGeometries(spokeSectionGeos);
+            const gondolaGeo = createGondola();
+            const supportCapGeo = createSupportCap();
+            const axleSegmentGeo = createAxleSegment();
+            const axleCouplerGeo = createAxleCoupler();
+            const utilityPinGeo = createUtilityPin();
+            const baseParts = {
+                baseBeamGeo: new THREE.BoxGeometry(24, 1, 20),
+                braceBeamGeo: new THREE.BoxGeometry(14, 1, 14),
+                supportCapGeo
+            };
+            const printLayoutParts = {
+                flatRailGeo: scaleGeometry(baseParts.baseBeamGeo, 1.15, 180, 1.8),
+                flatTieGeo: scaleGeometry(baseParts.baseBeamGeo, 1.15, 184, 1.8),
+                flatLegGeo: scaleGeometry(baseParts.baseBeamGeo, 0.95, 214, 1.2),
+                flatBraceGeo: scaleGeometry(baseParts.braceBeamGeo, 1, 156, 1),
+                supportCapGeo,
+                hubGeo,
+                rimGeo,
+                fullSpokeGeo,
+                gondolaGeo,
+                axleSegmentGeo,
+                axleCouplerGeo,
+                utilityPinGeo
+            };
+
+            assemblyGroup = new THREE.Group();
+            layoutGroup = new THREE.Group();
+            scene.add(assemblyGroup, layoutGroup);
+            layoutGroup.visible = false;
+
+            assemblyEnvironment.add(createPresentationStage());
+            layoutEnvironment.add(createLayoutSurface());
+
+            wheelGroup = new THREE.Group();
+            wheelGroup.position.set(0, 550, 0);
+            assemblyGroup.add(wheelGroup);
+
+            const baseAssemblyGroup = new THREE.Group();
+            buildModularBaseAssembly(baseAssemblyGroup, baseParts, ironMat);
+            assemblyGroup.add(baseAssemblyGroup);
+
+            const hubMesh = new THREE.Mesh(hubGeo, brassMat);
+            wheelGroup.add(hubMesh);
+
+            const axleVis = new THREE.Mesh(
+                new THREE.CylinderGeometry(4.2, 4.2, 220, 18).rotateX(Math.PI / 2),
+                ironMat
+            );
+            axleVis.position.set(0, 550, 0);
+            assemblyGroup.add(axleVis);
+
+            for (let i = 0; i < 12; i++) {
+                const angle = i * 30 * DEG2RAD;
+
+                const rim = new THREE.Mesh(rimGeo, ironMat);
+                rim.rotation.z = angle;
+                wheelGroup.add(rim);
+
+                const spoke = new THREE.Mesh(fullSpokeGeo, brassMat);
+                spoke.rotation.z = angle;
+                wheelGroup.add(spoke);
+
+                const gondola = new THREE.Mesh(gondolaGeo, brassMat);
+                gondola.position.set(
+                    rMid * Math.cos(angle + 15 * DEG2RAD),
+                    rMid * Math.sin(angle + 15 * DEG2RAD),
+                    0
+                );
+                gondola.userData.angularVelocity = 0;
+                gondola.userData.phase = i * 0.45;
+                wheelGroup.add(gondola);
+                gondolas.push(gondola);
+            }
+
+            settleGondolas();
+
+            populatePrintLayout(layoutGroup, printLayoutParts);
+
+            scene.traverse((child) => {
+                if (child.isMesh) {
+                    child.castShadow = true;
+                    child.receiveShadow = true;
+                }
+            });
+
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("ui-panel").style.display = "block";
+        }, 500);
+
+        document.getElementById("btn-toggle").addEventListener("click", () => {
+            setMode(!isLayoutMode);
+        });
+
+        document.getElementById("btn-camera-hero").addEventListener("click", () => applyCameraPreset("hero"));
+        document.getElementById("btn-camera-front").addEventListener("click", () => applyCameraPreset("front"));
+        document.getElementById("btn-camera-top").addEventListener("click", () => applyCameraPreset("top"));
+        document.getElementById("btn-camera-reset").addEventListener("click", () => applyCameraPreset("reset"));
+        document.getElementById("btn-focus").addEventListener("click", () => applyCameraPreset("reset"));
+
+        document.getElementById("btn-motion").addEventListener("click", () => {
+            motionEnabled = !motionEnabled;
+            document.getElementById("btn-motion").innerText = motionEnabled ? "Pause Motion" : "Resume Motion";
+        });
+
+        document.getElementById("btn-settle").addEventListener("click", () => {
+            settleGondolas();
+        });
+
+        document.getElementById("speed-control").addEventListener("input", (event) => {
+            targetSpinRateDeg = Number(event.target.value);
+            updateSpeedLabel();
+        });
+
+        function exportGeometryAsSTL(geometry, filename) {
+            const exporter = new STLExporter();
+            const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
+            const stl = exporter.parse(mesh, { binary: true });
+            const blob = new Blob([stl], { type: "application/octet-stream" });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        document.getElementById("btn-export").addEventListener("click", () => {
+            if (!assemblyGroup || !layoutGroup) return;
+
+            const btn = document.getElementById("btn-export");
+            btn.disabled = true;
+            btn.innerText = "Preparing STL...";
+
+            setTimeout(() => {
+                const exporter = new STLExporter();
+                const groupToExport = isLayoutMode ? layoutGroup : assemblyGroup;
+                const previousWheelRotation = wheelGroup ? wheelGroup.rotation.z : 0;
+                const gondolaState = gondolas.map((gondola) => ({
+                    rotation: gondola.rotation.z,
+                    velocity: gondola.userData.angularVelocity
+                }));
+
+                if (!isLayoutMode && wheelGroup) {
+                    wheelGroup.rotation.z = 0;
+                    gondolas.forEach((gondola) => {
+                        gondola.rotation.z = 0;
+                        gondola.userData.angularVelocity = 0;
+                    });
+                    wheelGroup.updateMatrixWorld(true);
+                }
+
+                const stlBinary = exporter.parse(groupToExport, { binary: true });
+
+                if (!isLayoutMode && wheelGroup) {
+                    wheelGroup.rotation.z = previousWheelRotation;
+                    gondolas.forEach((gondola, index) => {
+                        gondola.rotation.z = gondolaState[index].rotation;
+                        gondola.userData.angularVelocity = gondolaState[index].velocity;
+                    });
+                    wheelGroup.updateMatrixWorld(true);
+                }
+
+                const blob = new Blob([stlBinary], { type: "application/octet-stream" });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement("a");
+                link.href = url;
+                link.download = isLayoutMode ? "Victorian_Ferris_Wheel_Kit.stl" : "Victorian_Ferris_Wheel_Assembly.stl";
+                link.click();
+                URL.revokeObjectURL(url);
+
+                btn.disabled = false;
+                btn.innerText = "Download STL";
+            }, 100);
+        });
+
+        document.getElementById("btn-export-parts").addEventListener("click", () => {
+            const btn = document.getElementById("btn-export-parts");
+            btn.disabled = true;
+            btn.innerText = "Exporting Parts...";
+
+            const exports = [
+                { geo: buildPrintableHub(),        name: "hub.stl" },
+                { geo: buildPrintableRimSegment(), name: "rim_segment.stl" },
+                { geo: buildPrintableSpoke(),      name: "spoke.stl" },
+                { geo: buildPrintableGondola(),    name: "gondola.stl" },
+                { geo: buildPrintableSupportCap(), name: "support_cap.stl" },
+                { geo: buildPrintableUtilityPin(), name: "utility_pin.stl" }
+            ];
+
+            let i = 0;
+            const step = () => {
+                if (i >= exports.length) {
+                    btn.disabled = false;
+                    btn.innerText = "Export Individual Parts";
+                    return;
+                }
+                const { geo, name } = exports[i++];
+                exportGeometryAsSTL(geo, name);
+                setTimeout(step, 220);
+            };
+            step();
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            const delta = Math.min(clock.getDelta(), 0.05);
+            elapsedTime += delta;
+
+            if (wheelGroup) {
+                const desiredSpinRate = motionEnabled ? targetSpinRateDeg : 0;
+                currentSpinRateDeg = THREE.MathUtils.lerp(currentSpinRateDeg, desiredSpinRate, Math.min(1, delta * 4));
+
+                if (!isLayoutMode) {
+                    wheelGroup.rotation.z -= currentSpinRateDeg * DEG2RAD * delta;
+                }
+
+                gondolas.forEach((gondola) => {
+                    const windBias = Math.sin(elapsedTime * 0.8 + gondola.userData.phase) * 0.012 * (currentSpinRateDeg / 18);
+                    const targetRotation = -wheelGroup.rotation.z + windBias;
+                    const error = Math.atan2(
+                        Math.sin(targetRotation - gondola.rotation.z),
+                        Math.cos(targetRotation - gondola.rotation.z)
+                    );
+
+                    gondola.userData.angularVelocity += error * 10 * delta;
+                    gondola.userData.angularVelocity *= Math.max(0, 1 - 5 * delta);
+                    gondola.rotation.z += gondola.userData.angularVelocity;
+                });
+            }
+
+            controls.update();
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        window.addEventListener("resize", () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        });
+    </script>
+</body>
+</html>
