@@ -1,0 +1,2 @@
+[console_scripts]
+gauss-mcp = gauss_mcp.__main__:main

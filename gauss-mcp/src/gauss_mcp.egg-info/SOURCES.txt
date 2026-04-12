@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/gauss_mcp/__init__.py
+src/gauss_mcp.egg-info/PKG-INFO
+src/gauss_mcp.egg-info/SOURCES.txt
+src/gauss_mcp.egg-info/dependency_links.txt
+src/gauss_mcp.egg-info/entry_points.txt
+src/gauss_mcp.egg-info/requires.txt
+src/gauss_mcp.egg-info/top_level.txt
