@@ -29,6 +29,8 @@ The Art of Problem Solving*.pdf
 *.o
 *.pyc
 __pycache__/
+*.egg-info/
+.pytest_cache/
 
 # OS
 Thumbs.db

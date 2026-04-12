@@ -1,4 +1,3 @@
-import os
 import tempfile
 from pathlib import Path
 
@@ -7,7 +6,7 @@ import pytest
 
 @pytest.fixture
 def tmp_state_dir(monkeypatch):
-    """Isolate ~/.gauss-mcp/ for each test."""
+    """Override GAUSS_MCP_HOME to a temp dir so state writes don't touch the real ~/.gauss-mcp."""
     with tempfile.TemporaryDirectory() as d:
         monkeypatch.setenv("GAUSS_MCP_HOME", d)
         yield Path(d)

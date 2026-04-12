@@ -22,6 +22,7 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+asyncio_mode = "auto"
 markers = [
     "integration: requires gauss CLI on PATH (deselect with -m 'not integration')",
 ]
