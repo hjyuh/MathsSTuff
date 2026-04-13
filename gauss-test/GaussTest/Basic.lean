@@ -39,3 +39,17 @@ theorem top_window_lcm (a b q : Nat) (hq : 2 ≤ q)
   rw [key]
   calc q ≤ 2 * b := by omega
     _ ≤ (a / Nat.gcd a b) * b := Nat.mul_le_mul_right b hadg
+
+theorem disjoint_coverage_superadd (D1n D2n D1m D2m Dn Dm n m : Nat)
+    (hn : 0 < n) (hm : n < m)
+    (h_n_exact : Dn = D1n + D2n)
+    (h_m_upper : Dm ≤ D1m + D2m)
+    (h1 : m * D1n * 2 ≥ n * D1m)
+    (h2 : m * D2n * 2 ≥ n * D2m) :
+    m * Dn * 2 ≥ n * Dm := by
+  rw [h_n_exact]
+  rw [Nat.mul_add, Nat.add_mul]
+  calc n * Dm
+      ≤ n * (D1m + D2m) := Nat.mul_le_mul_left n h_m_upper
+    _ = n * D1m + n * D2m := Nat.mul_add n D1m D2m
+    _ ≤ m * D1n * 2 + m * D2n * 2 := Nat.add_le_add h1 h2
