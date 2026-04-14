@@ -114,3 +114,9 @@ theorem slot_bound (q r : Nat) (hr : q / 2 < r)
     (a k : Nat) (h1 : a ≤ k * r) (h2 : (k + 2) * r ≤ a + q) : False := by
   have expand : (k + 2) * r = k * r + 2 * r := Nat.add_mul k 2 r
   omega
+
+def Height (q n : Nat) : Nat := n / q
+
+theorem height_ge_three_of_three_mul_le (q n : Nat) (hq : 0 < q) (h : 3 * q ≤ n) :
+    3 ≤ Height q n := by
+  unfold Height; exact (Nat.le_div_iff_mul_le hq).mpr h
