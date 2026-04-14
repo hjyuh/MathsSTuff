@@ -109,3 +109,8 @@ theorem no_small_lcm (a b q : Nat) (hq : 2 ≤ q)
         ≤ 2 * (3 * b) := by omega
       _ ≤ 2 * ((a / Nat.gcd a b) * b) :=
           Nat.mul_le_mul_left 2 (Nat.mul_le_mul_right b hadg3)
+
+theorem slot_bound (q r : Nat) (hr : q / 2 < r)
+    (a k : Nat) (h1 : a ≤ k * r) (h2 : (k + 2) * r ≤ a + q) : False := by
+  have expand : (k + 2) * r = k * r + 2 * r := Nat.add_mul k 2 r
+  omega
