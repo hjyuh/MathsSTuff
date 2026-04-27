@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KasmVNC Browser Workspace MVP</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <main class="shell">
+      <section class="hero">
+        <p id="portal-eyebrow" class="eyebrow">KasmVNC Browser Workspace MVP</p>
+        <h1 id="portal-title">Launch a disposable Chromium workspace from your site.</h1>
+        <p id="portal-lede" class="lede">
+          Each session is a Dockerized Kasm Chromium workspace streamed through your app. The worker stays bound to localhost, and access is bound to your authenticated app session plus a server-issued HTTP-only browser binding cookie.
+        </p>
+        <section class="auth-panel">
+          <div class="auth-row">
+            <p id="account-label" class="section-label">Account</p>
+            <button id="logout-button" class="secondary compact" hidden>Log Out</button>
+          </div>
+          <p id="auth-line" class="status-line">Checking authentication state.</p>
+          <form id="login-form" class="login-form" autocomplete="off">
+            <input id="login-username" name="username" type="text" placeholder="Username" required />
+            <input id="login-password" name="password" type="password" placeholder="Password" required />
+            <button id="login-button" type="submit" class="primary compact">Log In</button>
+          </form>
+          <div id="admin-tools" class="admin-panel" hidden>
+            <div class="auth-row">
+              <p class="section-label">Admin</p>
+              <button id="toggle-admin-credentials" class="secondary compact" type="button">Show Passwords</button>
+            </div>
+            <p id="admin-line" class="status-line">Admin tools are ready. Reveal stored account passwords when needed.</p>
+            <div id="admin-credential-list" class="credential-list" hidden></div>
+          </div>
+        </section>
+        <section id="workspace-choice" class="workspace-choice" hidden>
+          <p class="section-label">Workspace</p>
+          <div class="choice-grid" role="group" aria-label="Workspace type">
+            <button id="choose-kasm" class="choice-card" type="button" data-selected="true">
+              <span>KasmVNC</span>
+              <small>Disposable browser workspace</small>
+            </button>
+            <button id="choose-home-pc" class="choice-card" type="button">
+              <span>Home PC</span>
+              <small>This Windows machine</small>
+            </button>
+          </div>
+        </section>
+        <section id="home-pc-panel" class="home-pc-panel" hidden>
+          <div>
+            <p class="section-label">Home PC</p>
+            <h2>Connect to this computer</h2>
+            <p id="home-pc-line" class="status-line">Home PC access is available for this account.</p>
+          </div>
+          <div class="home-pc-actions">
+            <a id="open-home-pc" class="primary home-pc-link disabled" href="#" target="_blank" rel="noreferrer">Open Direct</a>
+            <button id="open-home-pc-kasm" class="secondary home-pc-link" type="button" disabled>Open via Kasm</button>
+          </div>
+        </section>
+        <div class="actions">
+          <button id="start-session" class="primary" disabled>Start Session</button>
+          <button id="stop-session" class="secondary" disabled>Stop Session</button>
+          <a id="open-session" class="ghost disabled" href="#" target="_blank" rel="noreferrer">Open Fullscreen Tab</a>
+        </div>
+        <p id="status-line" class="status-line">Checking Docker availability.</p>
+      </section>
+
+      <section class="layout">
+        <aside class="panel meta">
+          <div>
+            <p class="section-label">Session</p>
+            <dl class="facts">
+              <div>
+                <dt>Status</dt>
+                <dd id="session-state">Idle</dd>
+              </div>
+              <div>
+                <dt>Expires</dt>
+                <dd id="session-expiry">Not started</dd>
+              </div>
+              <div>
+                <dt>Worker Image</dt>
+                <dd id="worker-image">Checking...</dd>
+              </div>
+              <div>
+                <dt>Quota</dt>
+                <dd id="quota-state">Sign in to view quota</dd>
+              </div>
+            </dl>
+            <div class="resume-panel">
+              <p class="section-label">Resume</p>
+              <div class="resume-row">
+                <select id="session-picker" disabled>
+                  <option value="">No active sessions</option>
+                </select>
+                <button id="resume-session" class="secondary compact" disabled>Resume</button>
+                <button id="refresh-sessions" class="secondary compact" disabled>Refresh</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="section-label">Use</p>
+            <ol class="steps">
+              <li id="use-step-one">Sign in with a configured account.</li>
+              <li id="use-step-two">Start a session.</li>
+              <li id="use-step-three">Wait for the embedded KasmVNC workspace to appear.</li>
+              <li id="use-step-four">Use Chromium inside that workspace to open ChatGPT, Claude, YouTube, or another site and sign in there.</li>
+            </ol>
+          </div>
+
+          <div>
+            <p class="section-label">Limits</p>
+            <ul class="steps">
+              <li>Sessions are disposable and terminate when you stop them or when TTL expires.</li>
+              <li>Site credentials stay inside the remote browser session; this app does not rewrite login pages.</li>
+              <li>Production use still needs real user auth, rate limits, and stronger isolation.</li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="panel viewer">
+          <div class="viewer-header">
+            <div>
+              <p class="section-label">Viewer</p>
+              <h2>Embedded KasmVNC workspace</h2>
+            </div>
+            <p id="viewer-caption" class="viewer-caption">No session running.</p>
+          </div>
+          <div class="viewer-frame">
+            <iframe
+              id="session-frame"
+              title="Remote browser session"
+              loading="eager"
+              allow="autoplay; fullscreen; clipboard-read; clipboard-write; speaker-selection"
+            ></iframe>
+            <div id="viewer-placeholder" class="placeholder">
+              <p>The KasmVNC-backed Chromium workspace will appear here after the container comes online.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
