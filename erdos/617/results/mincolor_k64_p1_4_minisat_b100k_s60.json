@@ -1,0 +1,93 @@
+{
+  "k": 64,
+  "profile": null,
+  "offset": 1,
+  "requested_profiles": 4,
+  "run_profiles": 4,
+  "available_profiles_for_k": 6,
+  "counts": {
+    "sat": 0,
+    "unsat": 0,
+    "unknown": 4
+  },
+  "base_vars": 1625,
+  "base_clauses": 1154726,
+  "base_seconds": 3.34,
+  "solver": "minisat22",
+  "conf_budget": 100000,
+  "max_seconds": 60.0,
+  "rows": [
+    {
+      "profile_index": 1,
+      "k": 64,
+      "profile": [
+        64,
+        64,
+        65,
+        68
+      ],
+      "status": "unknown",
+      "vars": 170601,
+      "clauses": 1492678,
+      "solver": "minisat22",
+      "conf_budget": 100000,
+      "max_seconds": 60.0,
+      "interrupted_by_wall_clock": false,
+      "seconds": 18.086
+    },
+    {
+      "profile_index": 2,
+      "k": 64,
+      "profile": [
+        64,
+        64,
+        66,
+        67
+      ],
+      "status": "unknown",
+      "vars": 170609,
+      "clauses": 1492694,
+      "solver": "minisat22",
+      "conf_budget": 100000,
+      "max_seconds": 60.0,
+      "interrupted_by_wall_clock": true,
+      "seconds": 60.951
+    },
+    {
+      "profile_index": 3,
+      "k": 64,
+      "profile": [
+        64,
+        65,
+        65,
+        67
+      ],
+      "status": "unknown",
+      "vars": 170613,
+      "clauses": 1492702,
+      "solver": "minisat22",
+      "conf_budget": 100000,
+      "max_seconds": 60.0,
+      "interrupted_by_wall_clock": true,
+      "seconds": 61.289
+    },
+    {
+      "profile_index": 4,
+      "k": 64,
+      "profile": [
+        64,
+        65,
+        66,
+        66
+      ],
+      "status": "unknown",
+      "vars": 170617,
+      "clauses": 1492710,
+      "solver": "minisat22",
+      "conf_budget": 100000,
+      "max_seconds": 60.0,
+      "interrupted_by_wall_clock": true,
+      "seconds": 61.396
+    }
+  ]
+}

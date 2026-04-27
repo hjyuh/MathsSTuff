@@ -1,0 +1,10 @@
+{
+  "missing_total": 1268,
+  "bad_subsets": 1258,
+  "restart": 0,
+  "step": 16975,
+  "r": 5,
+  "n": 26,
+  "edges": 325,
+  "subsets": 230230
+}

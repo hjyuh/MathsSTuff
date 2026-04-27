@@ -1,0 +1,10 @@
+{
+  "r": 5,
+  "n": 26,
+  "family": "cyclic_core_plus_arbitrary_star",
+  "variables": 185,
+  "clauses": 1151558,
+  "coverage_clauses": 1151150,
+  "status": "unsat",
+  "assignment": null
+}

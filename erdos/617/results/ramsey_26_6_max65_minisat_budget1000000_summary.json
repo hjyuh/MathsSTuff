@@ -1,0 +1,12 @@
+{
+  "n": 26,
+  "clique": 6,
+  "max_edges": 65,
+  "min_edges": null,
+  "vars": 17225,
+  "clauses": 494455,
+  "solver": "minisat22",
+  "conf_budget": 1000000,
+  "status": "sat",
+  "edge_count": 65
+}

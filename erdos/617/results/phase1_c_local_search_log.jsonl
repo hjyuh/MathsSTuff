@@ -1,0 +1,7 @@
+{"ts": "2026-04-27T01:27:56+00:00", "event": "start", "seed": 617, "steps": 200000, "time_limit_s": 60.0, "noise": 0.05, "temp0": 50.0, "cool": 0.9995, "w0": 1000, "w12": 10, "wk5": 200, "remove_sample": 25, "add_sample": 200, "start": {"bad6_zero": 0, "bad6_dense": 4, "k5": 6, "score": 1240, "edge_count": 65}}
+{"ts": "2026-04-27T01:28:02+00:00", "event": "progress", "step": 2000, "bad6_zero": 0, "bad6_dense": 4, "k5": 6, "score": 1240, "temp": 18.389372607300526, "edge_count": 65}
+{"ts": "2026-04-27T01:28:10+00:00", "event": "progress", "step": 4000, "bad6_zero": 0, "bad6_dense": 4, "k5": 6, "score": 1240, "temp": 6.7633804978026975, "edge_count": 65}
+{"ts": "2026-04-27T01:28:25+00:00", "event": "progress", "step": 6000, "bad6_zero": 0, "bad6_dense": 4, "k5": 6, "score": 1240, "temp": 2.487486481180873, "edge_count": 65}
+{"ts": "2026-04-27T01:28:37+00:00", "event": "progress", "step": 8000, "bad6_zero": 0, "bad6_dense": 4, "k5": 6, "score": 1240, "temp": 0.9148663151611596, "edge_count": 65}
+{"ts": "2026-04-27T01:28:45+00:00", "event": "progress", "step": 10000, "bad6_zero": 0, "bad6_dense": 4, "k5": 6, "score": 1240, "temp": 0.33647635110733354, "edge_count": 65}
+{"ts": "2026-04-27T01:28:56+00:00", "event": "done", "bad6_zero": 0, "bad6_dense": 4, "k5": 6, "score": 1240, "step": 0, "seed": 617, "edge_count": 65, "model_path": null}

@@ -1,0 +1,17 @@
+{
+  "n": 26,
+  "min_edges": 60,
+  "max_edges": 60,
+  "k5_star_projection": true,
+  "lazy_k5_star": true,
+  "lazy_upper6": true,
+  "lazy_rounds": 0,
+  "lazy_clauses": 0,
+  "lazy_upper6_clauses": 0,
+  "lazy_k5_clauses": 0,
+  "vars": 32125,
+  "clauses": 293830,
+  "solver": "glucose4",
+  "conf_budget": 100000,
+  "status": "unknown"
+}

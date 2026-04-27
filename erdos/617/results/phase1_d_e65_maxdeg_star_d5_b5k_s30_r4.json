@@ -1,0 +1,94 @@
+{
+  "status": "incomplete",
+  "agent": "D",
+  "phase": "phase1_no_k5_minimum_colour",
+  "n": 26,
+  "edges": 65,
+  "constraints": {
+    "exact_edges": 65,
+    "every_6_set_has_at_least_one_skeleton_edge": true,
+    "every_6_set_has_at_most_11_skeleton_edges": "lazy",
+    "forbid_k5_skeleton": true
+  },
+  "symmetry": "maxdeg-star",
+  "complete_branch_sweep": false,
+  "possible_max_degree_range": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "branches_requested": 1,
+  "branches_completed": 1,
+  "counts": {
+    "sat": 0,
+    "unsat": 0,
+    "unknown": 1
+  },
+  "solver": "minisat22",
+  "conf_budget": 5000,
+  "max_seconds": 30.0,
+  "max_solve_attempts": 1,
+  "max_lazy_rounds": 4,
+  "max_violations_per_round": 50,
+  "base_vars": 34125,
+  "base_clauses": 363610,
+  "base_counts": {
+    "lower6_clauses": 230230,
+    "forbid_k5_clauses": 65780,
+    "edge_count_clauses": 67600
+  },
+  "build_seconds": 2.037,
+  "rows": [
+    {
+      "branch_id": 0,
+      "branch_label": "maxdeg-star-d5",
+      "status": "unknown",
+      "n": 26,
+      "edges": 65,
+      "solver": "minisat22",
+      "conf_budget": 5000,
+      "max_seconds": 30.0,
+      "max_solve_attempts": 1,
+      "solve_calls": 1,
+      "lazy_rounds": 0,
+      "lazy_upper6_clauses": 0,
+      "base_vars": 34125,
+      "vars_after_lazy": 36625,
+      "base_clauses": 363610,
+      "symmetry_clauses": 5400,
+      "interrupted_by_wall_clock": false,
+      "stats_delta": {
+        "conflicts": 5001,
+        "decisions": 7564,
+        "propagations": 3589055,
+        "restarts": 27
+      },
+      "seconds": 1.05,
+      "symmetry": "maxdeg-star",
+      "root_degree": 5,
+      "safety": "safe when all root-degree branches are swept: choose a maximum-degree vertex as 0, let d be its degree, relabel its neighbors to 1..d and nonneighbors to d+1..n-1, then every other vertex has degree at most d"
+    }
+  ],
+  "safety_notes": {
+    "anchor-mixed": "Safe as a single global branch for 0 < e < C(n,2): relabel a mixed vertex to 0, one neighbor to 1, and one nonneighbor to 2.",
+    "maxdeg-star": "Safe only as a complete sweep over d: every graph has a maximum-degree vertex; after relabeling it to 0, its d neighbors can be labeled 1..d, and all other vertices have degree at most d."
+  }
+}

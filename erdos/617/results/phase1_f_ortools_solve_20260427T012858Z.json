@@ -1,0 +1,61 @@
+{
+  "timestamp_utc": "20260427T013002Z",
+  "backend": "ortools",
+  "mode": "full",
+  "n": 26,
+  "min_edges": 60,
+  "max_edges": 65,
+  "subset_size": 6,
+  "subset_lb": 1,
+  "subset_ub": 11,
+  "forbid_clique_k": 5,
+  "time_limit_s": 60.0,
+  "status": "unknown",
+  "wall_s": 61.520612478256226,
+  "iterations": 1,
+  "constraints_added": 526242,
+  "edge_count": null,
+  "model_path": null,
+  "model_check": null,
+  "model_check_message": null,
+  "notes": {
+    "ortools_status": 0
+  },
+  "env_probe": {
+    "timestamp_utc": "20260427T013002Z",
+    "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+    "executable": "C:\\Python313\\python.exe",
+    "platform": {
+      "system": "Windows",
+      "release": "11",
+      "version": "10.0.26200",
+      "machine": "AMD64"
+    },
+    "cwd": "C:\\Users\\z20ma\\OneDrive\\Documents\\!math",
+    "modules": {
+      "ortools": {
+        "module": "ortools",
+        "ok": true,
+        "version": "9.15.6755"
+      },
+      "z3": {
+        "module": "z3",
+        "ok": true,
+        "version": "4.13.0"
+      },
+      "pulp": {
+        "module": "pulp",
+        "ok": true,
+        "version": "2.8.0",
+        "available_solvers": [
+          "PULP_CBC_CMD"
+        ]
+      },
+      "scipy": {
+        "module": "scipy",
+        "ok": true,
+        "version": "1.17.1"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "r": 5,
+  "n": 26,
+  "family": "cyclic_distance",
+  "variables": 65,
+  "clauses": 1151294,
+  "coverage_clauses": 1151150,
+  "status": "unsat",
+  "assignment": null
+}

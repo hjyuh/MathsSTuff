@@ -1,0 +1,13 @@
+{
+  "n": 26,
+  "clique": 6,
+  "max_edges": 64,
+  "min_edges": null,
+  "vars": 17029,
+  "clauses": 494065,
+  "solver": "minisat22",
+  "conf_budget": 2000000,
+  "status": "sat",
+  "edge_count": 64,
+  "model_path": "erdos\\617\\results\\ramsey_26_6_max64_minisat_budget2000000_summary.model.json"
+}

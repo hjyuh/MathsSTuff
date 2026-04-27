@@ -1,0 +1,11 @@
+{
+  "r": 5,
+  "n": 26,
+  "family": "F5^2_cayley_core_plus_arbitrary_star",
+  "variables": 185,
+  "diff_pairs": 12,
+  "clauses": 1151558,
+  "coverage_clauses": 1151150,
+  "status": "unsat",
+  "assignment": null
+}

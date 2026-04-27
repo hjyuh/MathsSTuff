@@ -1,0 +1,11 @@
+{
+  "n": 26,
+  "clique": 6,
+  "max_edges": 65,
+  "min_edges": null,
+  "vars": 17225,
+  "clauses": 494455,
+  "solver": "glucose4",
+  "conf_budget": 200000,
+  "status": "unknown"
+}

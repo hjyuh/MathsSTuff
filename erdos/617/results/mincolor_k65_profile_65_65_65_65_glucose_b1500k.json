@@ -1,0 +1,41 @@
+{
+  "k": 65,
+  "profile": [
+    65,
+    65,
+    65,
+    65
+  ],
+  "offset": 0,
+  "requested_profiles": 1,
+  "run_profiles": 1,
+  "available_profiles_for_k": 1,
+  "counts": {
+    "sat": 0,
+    "unsat": 0,
+    "unknown": 1
+  },
+  "base_vars": 1625,
+  "base_clauses": 1154726,
+  "base_seconds": 3.861,
+  "solver": "glucose4",
+  "conf_budget": 1500000,
+  "rows": [
+    {
+      "profile_index": 0,
+      "k": 65,
+      "profile": [
+        65,
+        65,
+        65,
+        65
+      ],
+      "status": "unknown",
+      "vars": 170625,
+      "clauses": 1492726,
+      "solver": "glucose4",
+      "conf_budget": 1500000,
+      "seconds": 218.456
+    }
+  ]
+}

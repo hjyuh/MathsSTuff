@@ -1,0 +1,12 @@
+{
+  "r": 2,
+  "solver": "minisat22",
+  "sat": true,
+  "solve_seconds": 2.3365020751953125e-05,
+  "vars": 20,
+  "clauses": 41,
+  "cnf": "erdos\\617\\results\\balanced_r2.cnf",
+  "checked": true,
+  "check_message": "ok",
+  "model": "erdos\\617\\results\\balanced_r2_model.json"
+}

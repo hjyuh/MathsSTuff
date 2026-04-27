@@ -1,0 +1,93 @@
+{
+  "status": "incomplete",
+  "agent": "D",
+  "phase": "phase1_no_k5_minimum_colour",
+  "n": 26,
+  "edges": 60,
+  "constraints": {
+    "exact_edges": 60,
+    "every_6_set_has_at_least_one_skeleton_edge": true,
+    "every_6_set_has_at_most_11_skeleton_edges": "lazy",
+    "forbid_k5_skeleton": true
+  },
+  "symmetry": "anchor-mixed",
+  "complete_branch_sweep": true,
+  "possible_max_degree_range": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "branches_requested": 1,
+  "branches_completed": 1,
+  "counts": {
+    "sat": 0,
+    "unsat": 0,
+    "unknown": 1
+  },
+  "solver": "minisat22",
+  "conf_budget": 50000,
+  "max_seconds": 0.0,
+  "max_solve_attempts": 1,
+  "max_lazy_rounds": 8,
+  "max_violations_per_round": 100,
+  "base_vars": 32125,
+  "base_clauses": 359610,
+  "base_counts": {
+    "lower6_clauses": 230230,
+    "forbid_k5_clauses": 65780,
+    "edge_count_clauses": 63600
+  },
+  "build_seconds": 1.068,
+  "rows": [
+    {
+      "branch_id": 0,
+      "branch_label": "anchor-mixed",
+      "status": "unknown",
+      "n": 26,
+      "edges": 60,
+      "solver": "minisat22",
+      "conf_budget": 50000,
+      "max_seconds": 0.0,
+      "max_solve_attempts": 1,
+      "solve_calls": 1,
+      "lazy_rounds": 0,
+      "lazy_upper6_clauses": 0,
+      "base_vars": 32125,
+      "vars_after_lazy": 32125,
+      "base_clauses": 359610,
+      "symmetry_clauses": 2,
+      "interrupted_by_wall_clock": false,
+      "stats_delta": {
+        "conflicts": 50002,
+        "decisions": 111093,
+        "propagations": 37398586,
+        "restarts": 155
+      },
+      "seconds": 9.848,
+      "symmetry": "anchor-mixed",
+      "safety": "safe for this branch: every nonempty noncomplete graph has a vertex incident to both an edge and a nonedge; relabel it to 0, a neighbor to 1, and a nonneighbor to 2"
+    }
+  ],
+  "safety_notes": {
+    "anchor-mixed": "Safe as a single global branch for 0 < e < C(n,2): relabel a mixed vertex to 0, one neighbor to 1, and one nonneighbor to 2.",
+    "maxdeg-star": "Safe only as a complete sweep over d: every graph has a maximum-degree vertex; after relabeling it to 0, its d neighbors can be labeled 1..d, and all other vertices have degree at most d."
+  }
+}

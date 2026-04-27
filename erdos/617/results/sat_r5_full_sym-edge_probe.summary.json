@@ -1,0 +1,19 @@
+{
+  "status": "not_solved",
+  "mode": "full",
+  "r": 5,
+  "n": 26,
+  "variables": 1625,
+  "clauses": 1154726,
+  "edges": 325,
+  "coverage_clauses": 1151150,
+  "exactly_one_clauses": 3575,
+  "unit_clauses": 1,
+  "symmetry": "edge",
+  "seed": "none",
+  "affine_merge": [
+    0,
+    1
+  ],
+  "summary_path": "C:\\Users\\z20ma\\OneDrive\\Documents\\!math\\erdos\\617\\results\\sat_r5_full_sym-edge_probe.summary.json"
+}

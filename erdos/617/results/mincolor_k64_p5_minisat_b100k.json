@@ -1,0 +1,36 @@
+{
+  "k": 64,
+  "profile": null,
+  "offset": 5,
+  "requested_profiles": 1,
+  "run_profiles": 1,
+  "available_profiles_for_k": 6,
+  "counts": {
+    "sat": 0,
+    "unsat": 0,
+    "unknown": 1
+  },
+  "base_vars": 1625,
+  "base_clauses": 1154726,
+  "base_seconds": 4.149,
+  "solver": "minisat22",
+  "conf_budget": 100000,
+  "rows": [
+    {
+      "profile_index": 5,
+      "k": 64,
+      "profile": [
+        65,
+        65,
+        65,
+        66
+      ],
+      "status": "unknown",
+      "vars": 170621,
+      "clauses": 1492718,
+      "solver": "minisat22",
+      "conf_budget": 100000,
+      "seconds": 29.543
+    }
+  ]
+}

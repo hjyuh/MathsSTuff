@@ -1,0 +1,9 @@
+{
+  "r": 5,
+  "solver": "minisat22",
+  "sat": null,
+  "solve_seconds": 39.579591512680054,
+  "vars": 190065,
+  "clauses": 1531156,
+  "cnf": "erdos\\617\\results\\balanced_r5.cnf"
+}

@@ -1,0 +1,97 @@
+{
+  "mode": "inspect_g_model",
+  "input_path": "erdos\\617\\results\\ramsey_26_6_max65_model_summary.model.json",
+  "translation": {
+    "n": 26,
+    "total_edges": 325,
+    "G_edge_range": [
+      60,
+      65
+    ],
+    "H_edge_range": [
+      260,
+      265
+    ],
+    "G_six_edge_range": [
+      1,
+      11
+    ],
+    "H_six_edge_range": [
+      4,
+      14
+    ],
+    "omega_G_le_4_equiv_alpha_H_le_4": true,
+    "proof": [
+      "e(H) = C(n,2) - e(G).",
+      "For every 6-set S, e_H(S) = 15 - e_G(S), so 1 <= e_G(S) <= 11 becomes 4 <= e_H(S) <= 14.",
+      "A 5-set is independent in H iff it is a K5 in G, so omega(G) <= 4 iff alpha(H) <= 4.",
+      "The upper bound e_H(S) <= 14 is exactly omega(H) <= 5."
+    ]
+  },
+  "analysis": {
+    "edge_count_H": 260,
+    "edge_count_G": 65,
+    "alpha_H_le_4": false,
+    "independent5_violations": 6,
+    "first_independent5": [
+      1,
+      6,
+      13,
+      16,
+      20
+    ],
+    "omega_H_le_5": true,
+    "clique6_violations": 0,
+    "six_edge_range_H": [
+      1,
+      14
+    ],
+    "six_edge_range_H_witnesses": {
+      "min": [
+        3,
+        7,
+        8,
+        10,
+        17,
+        24
+      ],
+      "max": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "six_edge_range_G": [
+      1,
+      14
+    ],
+    "six_edge_range_G_witnesses": {
+      "min": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "max": [
+        3,
+        7,
+        8,
+        10,
+        17,
+        24
+      ]
+    },
+    "lower6_H_violations": 4,
+    "anchor_missing_histogram": {
+      "0": 5,
+      "1": 12,
+      "3": 2,
+      "2": 2
+    }
+  }
+}

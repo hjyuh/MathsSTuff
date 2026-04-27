@@ -1,0 +1,23 @@
+{
+  "n": 26,
+  "min_edges": 65,
+  "max_edges": 65,
+  "k5_star_projection": true,
+  "lazy_k5_star": true,
+  "lazy_upper6": true,
+  "lazy_upper6_card": true,
+  "lazy_k5_aux": true,
+  "lazy_rounds": 80,
+  "lazy_clauses": 172663,
+  "lazy_upper6_clauses": 97929,
+  "lazy_k5_clauses": 74734,
+  "lazy_k5_aux_vars": 2084,
+  "vars": 34125,
+  "vars_after_lazy": 89405,
+  "clauses": 297830,
+  "solver": "minisat22",
+  "conf_budget": 500000,
+  "max_solve_attempts": 3,
+  "solve_calls": 80,
+  "status": "unknown"
+}

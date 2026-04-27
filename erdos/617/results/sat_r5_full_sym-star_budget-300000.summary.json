@@ -1,0 +1,26 @@
+{
+  "status": "unknown",
+  "mode": "full",
+  "r": 5,
+  "n": 26,
+  "variables": 1625,
+  "clauses": 1154730,
+  "edges": 325,
+  "coverage_clauses": 1151150,
+  "exactly_one_clauses": 3575,
+  "unit_clauses": 5,
+  "symmetry": "star",
+  "seed": "none",
+  "affine_merge": [
+    0,
+    1
+  ],
+  "solver": "glucose4",
+  "max_conflicts": 300000,
+  "add_seconds": 2.795,
+  "solve_seconds": 17.22,
+  "total_seconds": 20.028,
+  "pysat_available": true,
+  "clauses_added": 1154730,
+  "summary_path": "erdos\\617\\results\\sat_r5_full_sym-star_budget-300000.summary.json"
+}

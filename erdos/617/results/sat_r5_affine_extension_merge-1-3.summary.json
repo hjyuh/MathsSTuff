@@ -1,0 +1,26 @@
+{
+  "status": "unsat",
+  "mode": "affine-extension",
+  "r": 5,
+  "n": 26,
+  "variables": 125,
+  "clauses": 12895,
+  "edges": 25,
+  "coverage_clauses": 12620,
+  "exactly_one_clauses": 275,
+  "unit_clauses": 0,
+  "symmetry": "n/a",
+  "seed": "affine",
+  "affine_merge": [
+    1,
+    3
+  ],
+  "solver": "glucose4",
+  "max_conflicts": 0,
+  "add_seconds": 0.149,
+  "solve_seconds": 0.001,
+  "total_seconds": 0.15,
+  "pysat_available": true,
+  "clauses_added": 12895,
+  "summary_path": "erdos\\617\\results\\sat_r5_affine_extension_merge-1-3.summary.json"
+}

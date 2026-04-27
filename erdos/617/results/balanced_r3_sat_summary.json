@@ -1,0 +1,9 @@
+{
+  "r": 3,
+  "solver": "glucose4",
+  "sat": false,
+  "solve_seconds": 659.0297632217407,
+  "vars": 135,
+  "clauses": 811,
+  "cnf": "erdos\\617\\results\\balanced_r3.cnf"
+}

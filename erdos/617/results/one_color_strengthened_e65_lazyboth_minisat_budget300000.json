@@ -1,0 +1,17 @@
+{
+  "n": 26,
+  "min_edges": 65,
+  "max_edges": 65,
+  "k5_star_projection": true,
+  "lazy_k5_star": true,
+  "lazy_upper6": true,
+  "lazy_rounds": 20,
+  "lazy_clauses": 114550,
+  "lazy_upper6_clauses": 111020,
+  "lazy_k5_clauses": 3530,
+  "vars": 34125,
+  "clauses": 297830,
+  "solver": "minisat22",
+  "conf_budget": 300000,
+  "status": "unknown"
+}

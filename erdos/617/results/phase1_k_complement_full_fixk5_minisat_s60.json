@@ -1,0 +1,64 @@
+{
+  "mode": "solve",
+  "translation": {
+    "n": 26,
+    "total_edges": 325,
+    "G_edge_range": [
+      60,
+      65
+    ],
+    "H_edge_range": [
+      260,
+      265
+    ],
+    "G_six_edge_range": [
+      1,
+      11
+    ],
+    "H_six_edge_range": [
+      4,
+      14
+    ],
+    "omega_G_le_4_equiv_alpha_H_le_4": true,
+    "proof": [
+      "e(H) = C(n,2) - e(G).",
+      "For every 6-set S, e_H(S) = 15 - e_G(S), so 1 <= e_G(S) <= 11 becomes 4 <= e_H(S) <= 14.",
+      "A 5-set is independent in H iff it is a K5 in G, so omega(G) <= 4 iff alpha(H) <= 4.",
+      "The upper bound e_H(S) <= 14 is exactly omega(H) <= 5."
+    ]
+  },
+  "n": 26,
+  "min_edges": 260,
+  "max_edges": 265,
+  "fix_k5": true,
+  "eager_lower6": false,
+  "lazy_lower6": true,
+  "max_lazy_rounds": 20,
+  "max_violations_per_round": 100,
+  "solver": "minisat22",
+  "conf_budget": 0,
+  "max_seconds": 60.0,
+  "max_solve_attempts": 1,
+  "solve_calls": 1,
+  "solve_seconds": 60.01,
+  "lazy_rounds": 0,
+  "lazy_clauses": 0,
+  "vars": 33125,
+  "vars_after_lazy": 33125,
+  "clauses": 361631,
+  "status": "unknown",
+  "metadata": {
+    "five_set_clauses": 65780,
+    "six_set_clique_clauses": 230230,
+    "lower6_clauses": 0,
+    "anchor": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "anchor_units": 10,
+    "anchor_outside_clauses": 21
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "unknown",
+  "mode": "full",
+  "r": 5,
+  "n": 26,
+  "variables": 1625,
+  "clauses": 1154726,
+  "edges": 325,
+  "coverage_clauses": 1151150,
+  "exactly_one_clauses": 3575,
+  "unit_clauses": 1,
+  "symmetry": "edge",
+  "seed": "none",
+  "affine_merge": [
+    0,
+    1
+  ],
+  "solver": "glucose4",
+  "max_conflicts": 1000000,
+  "add_seconds": 2.21,
+  "solve_seconds": 87.357,
+  "total_seconds": 89.593,
+  "pysat_available": true,
+  "clauses_added": 1154726,
+  "summary_path": "erdos\\617\\results\\sat_r5_full_sym-edge_budget-1000000.summary.json"
+}
