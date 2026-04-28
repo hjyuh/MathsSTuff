@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-13T01-17-09-autoprove-8b30-ep488_separator_superadd",
+  "status": "done",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "-- D-separator superadditivity: if R splits with no cross-edges outside K,\n-- then D_R(n) = D_{R1}(n) + D_{R2}(n) - D_K(n) exactly,\n-- and D_R(m) \u2264 D_{R1}(m) + D_{R2}(m) - D_K(m).\n-- Simplified version: disjoint union case (K = \u2205)\n-- If no element of R1 shares an lcm \u2264 n with any element of R2,\n-- then D_{R1\u222aR2}(n) = D_{R1}(n) + D_{R2}(n)\n\n-- We prove the key building block: for disjoint coverage sets,\n-- the two-point inequality is superadditive.\n\ntheorem disjoint_coverage_superadd (D1n D2n D1m D2m Dn Dm n m : \u2115)\n    (hn : 0 < n) (hm : n < m)\n    (h_n_exact : Dn = D1n + D2n)\n    (h_m_upper : Dm \u2264 D1m + D2m)\n    (h1 : m * D1n * 2 \u2265 n * D1m)\n    (h2 : m * D2n * 2 \u2265 n * D2m) :\n    m * Dn * 2 \u2265 n * Dm := by\n  sorry",
+  "started_at": "2026-04-13T01:17:09Z",
+  "finished_at": "2026-04-13T01:22:28Z",
+  "duration_s": 319.0,
+  "result_text": "## Autoprove Summary\n\n**Reason stopped:** completion\n\n| Metric | Value |\n|--------|-------|\n| Sorries before | 1 |\n| Sorries after | 0 |\n| Cycles run | 1 |\n| Stuck cycles | 0 |\n| Deep invocations | 0 |\n| Time elapsed | ~3m |\n\n**Proof strategy:** Rewrite `Dn = D1n + D2n`, distribute `m * (D1n + D2n) * 2` into `m * D1n * 2 + m * D2n * 2`, then chain:\n\n```\nn * Dm \u2264 n * (D1m + D2m) = n * D1m + n * D2m \u2264 m * D1n * 2 + m * D2n * 2\n```\n\nusing `Nat.mul_le_mul_left` (from `h_m_upper`), `Nat.mul_add` (distributivity), and `Nat.add_le_add` (from `h1`, `h2`).\n\n**Handoff:** All sorries filled. Two unused-variable warnings (`hn`, `hm`) \u2014 these hypotheses aren't needed for the proof but may be wanted for documentation/downstream use.\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-13T01-17-09-autoprove-8b30-ep488_separator_superadd.log",
+  "worker_pid": 7381,
+  "last_heartbeat_at": 1776043343.2757344,
+  "_started_monotonic": 1776043029.0795345
+}

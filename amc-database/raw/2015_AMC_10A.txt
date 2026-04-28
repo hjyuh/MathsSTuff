@@ -1,0 +1,1366 @@
+=== Problem 1 ===
+What is the value of
+
+Choices: {'A': '\\ -125', 'B': '\\ -120', 'C': '\\ \\frac{1}{5}', 'D': '\\ \\frac{5}{24}', 'E': '\\ 25</math>'}
+Answer: C
+
+--- Solution 1 ---
+<math>(2^0-1+5^2-0)^{-1}\times5 = (1-1+25-0)^{-1} \times 5 = 25^{-1} \times 5 = \frac{1}{25} \times 5 = \boxed{\textbf{(C) } \, \frac{1}{5}}</math>.
+
+
+=== Problem 2 ===
+A box contains a collection of triangular and square tiles. There are
+
+Choices: {'A': '\\ 3', 'B': '\\ 5', 'C': '\\ 7', 'D': '\\ 9', 'E': '\\ 11</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>a</math> be the amount of triangular tiles and <math>b</math> be the amount of square tiles.
+
+Triangles have <math>3</math> edges and squares have <math>4</math> edges, so we have a system of equations.
+
+We have <math>a + b</math> tiles total, so <math>a + b = 25</math>.
+
+We have <math>3a + 4b</math> edges total, so <math>3a + 4b = 84</math>.
+
+Multiplying the first equation by <math>3</math> on both sides gives <math>3a + 3b = 3(25) = 75</math>.
+
+Second equation minus the first equation gives <math>b = 9</math>, so the answer is <math>\boxed{\textbf{(D) }9}</math>.
+
+--- Solution 2 ---
+If all of the tiles were triangles, there would be <math>75</math> edges. This is not enough, so there needs to be some squares. Trading a triangle for a square results in one additional edge each time, so we must trade out <math>9</math> triangles for squares. Answer: <math>\boxed{\textbf{(D) }9}</math>
+
+--- Solution 3 ---
+Let <math>x</math> be the number of square tiles. A square has <math>4</math> edges, so the total number of edges from the square tiles is <math>4x</math>. There are <math>25</math> total tiles, which means that there are <math>25-x</math> triangle tiles. A triangle has <math>3</math> edges, so the total number of edges from the triangle tiles is <math>3(25-x)</math>. Together, the total number of edges is <math>4x+3(25-x)=84</math>. Solving our equation, we get that <math>x=9</math> which means that our answer is <math>\boxed{\textbf{(D) }9}</math>.
+
+
+=== Problem 3 ===
+Ann made a 3-step staircase using 18 toothpicks as shown in the figure.  How many toothpicks does she need to add to complete a 5-step staircase?
+
+<asy>
+unitsize(40);
+for(int i=0; i<3; i+=1)
+{
+draw((0,i+0.05)--(0,i+0.95));
+draw((i+0.05,0)--(i+0.95,0));
+for(int j=0; j<3-i; j+=1)
+{
+draw((i+1,j+0.05)--(i+1,j+0.95));
+draw((i+0.05,j+1)--(i+0.95,j+1));
+}
+}
+</asy>
+
+Choices: {'A': '\\ 9', 'B': '\\ 18', 'C': '\\ 20', 'D': '\\ 22', 'E': '\\ 24</math>'}
+Answer: D
+
+--- Solution 1 ---
+We can see that a <math>1</math>-step staircase requires <math>4</math> toothpicks and a <math>2</math>-step staircase requires <math>10</math> toothpicks. Thus, to go from a <math>1</math>-step to <math>2</math>-step staircase, <math>6</math> additional toothpicks are needed and to go from a <math>2</math>-step to <math>3</math>-step staircase, <math>8</math> additional toothpicks are needed. Applying this pattern, to go from a <math>3</math>-step to <math>4</math>-step staircase, <math>10</math> additional toothpicks are needed and to go from a <math>4</math>-step to <math>5</math>-step staircase, <math>12</math> additional toothpicks are needed. Our answer is <math>10+12=\boxed{\textbf{(D)}\ 22}</math>
+
+--- Solution 2 ---
+Alternatively, we can see with the <math>3</math>-step staircase has <math>2[2(3)+2+1]=18</math> toothpicks. Generalizing, we see that a staircase with <math>x</math> steps has <math>2[2x+(x-1)+(x-2)+...+1]</math> toothpicks. So, for <math>x=5</math> steps, we have <math>2[2(5)+4+3+2+1]=40</math> toothpicks. So our answer is <math>40-18=22</math> or <math>D</math>.
+
+--- Solution 3 ---
+If one is too lazy to derive a formula for the number of picks needed for a given number of steps, one can simply see that to get to <math>4</math> steps, we add two blobs that have three picks each (the top and the right), and two more blobs that have two blocks each to form the steps. This adds <math>2\cdot3+2\cdot2=10</math> picks. Then, to get to <math>5</math> steps, we add two more edge blobs with <math>3</math> picks each and <math>3</math> more blobs that have two picks each. We add <math>2\cdot3+3\cdot2=12</math> more for a total increase of <math>10+12=\boxed{\textbf{(D)}
+
+
+=== Problem 4 ===
+Pablo, Sofia, and Mia got some candy eggs at a party.  Pablo had three times as many eggs as Sofia, and Sofia had twice as many eggs as Mia.  Pablo decides to give some of his eggs to Sofia and Mia so that all three will have the same number of eggs.  What fraction of his eggs should Pablo give to Sofia?
+
+Choices: {'A': '\\ \\frac{1}{12}', 'B': '\\ \\frac{1}{6}', 'C': '\\ \\frac{1}{4}', 'D': '\\ \\frac{1}{3}', 'E': '\\ \\frac{1}{2}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Assign a variable to the number of eggs Mia has, say <math>m</math>.  Then, because we are given that Sofia has twice the number of eggs Mia has, Sofia has <math>2m</math> eggs, and Pablo, having three times the number of eggs as Sofia, has <math>6m</math> eggs.
+
+For them to all have the same number of eggs, they must each have <math>\frac{m+2m+6m}{3} = 3m</math> eggs.  This means Pablo must give <math>2m</math> eggs to Mia and <math>m</math> eggs to Sofia, so the answer is <math>\frac{m}{6m} = \boxed{\textbf{(B) }\frac{1}{6}}</math>
+
+--- Solution 2 ---
+Let Mia have <math>1</math> egg. Sofia and Pablo would then have <math>2</math> and <math>6</math> eggs, respectively. If we split the eggs evenly, each would have <math>\frac{1 + 2 + 6}{3} = \frac{9}{3} = 3</math> eggs. Since Sofia needs <math>3 - 2 = 1</math> more egg, Pablo must give her <math>1</math> of his <math>6</math> eggs, or <math>\boxed{\textbf{(B) }\frac{1}{6}}</math>
+
+
+=== Problem 5 ===
+Mr. Patrick teaches math to
+
+Choices: {'A': '\\ 81', 'B': '\\ 85', 'C': '\\ 91', 'D': '\\ 94', 'E': '\\ 95 </math>'}
+Answer: E
+
+--- Solution 1 ---
+If the average of the first <math>14</math> peoples' scores was <math>80</math>, then the sum of all of their tests is <math>14 \cdot 80 = 1120</math>.  When Payton's score was added, the sum of all of the scores became <math>15 \cdot 81 = 1215</math>.  So, Payton's score must be <math>1215-1120 = \boxed{\textbf{(E) }95}</math>
+
+==Alternate Solution==
+
+The average of a set of numbers is the value we get if we evenly distribute the total across all entries. So assume that the first <math>14</math> students each scored <math>80</math>. If Payton also scored an <math>80</math>, the average would still be <math>80</math>. In order to increase the overall average to <math>81</math>, we need to add one more point to all of the scores, including Payton's. This means we need to add a total of <math>15</math> more points, so Payton needs <math>80+15 = \boxed{\textbf{(E) }95}</math>
+
+
+=== Problem 6 ===
+The sum of two positive numbers is
+
+Choices: {'A': '\\ \\frac{5}{4}', 'B': '\\ \\frac{3}{2}', 'C': '\\ \\frac{9}{5}', 'D': '\\ 2', 'E': '\\ \\frac{5}{2} </math>'}
+Answer: B
+
+--- Solution 1 ---
+Let <math>a</math> be the bigger number and <math>b</math> be the smaller.
+
+<math>a + b = 5(a - b)</math>.
+
+Multiplying out gives <math>a + b = 5a - 5b</math> and rearranging gives <math>4a = 6b</math> and factorised into <math>2a = 3b</math> and then solving gives
+
+<math>\frac{a}{b} = \frac32</math>, so the answer is <math>\boxed{\textbf{(B) }\frac32}</math>.
+
+--- Solution 2 ---
+Without loss of generality, let the two numbers be <math>3</math> and <math>2</math>, as they clearly satisfy the condition of the problem. The ratio of the larger to the smaller is <math>\boxed{\textbf{(B) }\frac32}</math>.
+
+
+=== Problem 7 ===
+How many terms are there in the arithmetic sequence
+
+Choices: {'A': '\\ 20', 'B': '\\ 21', 'C': '\\ 24', 'D': '\\ 60', 'E': '\\ 61 </math>'}
+Answer: B
+
+--- Solution 1 ---
+<math>73-13 = 60</math>, so the amount of terms in the sequence <math>13</math>, <math>16</math>, <math>19</math>, <math>\dotsc</math>, <math>70</math>, <math>73</math> is the same as in the sequence <math>0</math>, <math>3</math>, <math>6</math>, <math>\dotsc</math>, <math>57</math>, <math>60</math>. 
+
+In this sequence, the terms are the multiples of <math>3</math> going up to <math>60</math>, and there are <math>20</math> multiples of <math>3</math> in <math>60</math>. 
+
+However, the number 0 must also be included, adding another multiple. So, the answer is <math>\boxed{\textbf{(B)}\ 21}</math>.
+
+--- Solution 2 ---
+Using the formula for arithmetic sequence's nth term, we see that <math>a + (n-1)d \Longrightarrow13 + (n-1)3 =73, \Longrightarrow n = 21</math>
+<math>\boxed{\textbf{(B)}\ 21}</math>.
+
+--- Solution 3 ---
+Minus each of the terms by <math>12</math> to make the the sequence <math>1 , 4 , 7,..., 61</math>. <math>\frac{61-1}{3}=20, 20 + 1 = 21</math>
+
+<math>\boxed{\textbf{(B)}\ 21}</math>.
+
+--- Solution 4 ---
+Subtract each of the terms by <math>10</math> to make the sequence <math>3 , 6 , 9,..., 60, 63</math>. Then divide the each term in the sequence by <math>3</math> to get <math>1, 2, 3,..., 20, 21</math>. Now it is clear to see that there are <math>21</math> terms in the sequence.
+<math>\boxed{\textbf{(B)}\ 21}</math>.
+
+
+=== Problem 8 ===
+Two years ago Pete was three times as old as his cousin Claire. 2 years before that, Pete was four times as old as Claire. In how many years will the ratio of their ages be
+
+Choices: {'A': '\\ 2', 'B': '\\ 4', 'C': '\\ 5', 'D': '\\ 6', 'E': '\\ 8 </math>'}
+Answer: B
+
+--- Solution 1 ---
+This problem can be converted to a system of equations. Let <math>p</math> be Pete's current age and <math>c</math> be Claire's current age. 
+
+The first statement can be written as <math>p-2=3(c-2)</math>. The second statement can be written as <math>p-4=4(c-4)</math>
+
+To solve the system of equations:
+
+
+<math>p=3c-4</math>
+
+<math>p=4c-12</math>
+
+<math>3c-4=4c-12</math>
+
+<math>c=8</math>
+
+<math>p=20.</math>
+
+Let <math>x</math> be the number of years until Pete is twice as old as his cousin.
+
+<math>20+x=2(8+x)</math>
+
+<math>20+x=16+2x</math>
+
+<math>x=4</math>
+
+The answer is <math>\boxed{\textbf{(B) }4}</math>.
+
+
+=== Problem 9 ===
+Two right circular cylinders have the same volume. The radius of the second cylinder is
+
+Choices: {'A': '\\  \\text{The second height is } 10\\% \\text{ less than the first.}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let the radius of the first cylinder be <math>r_1</math> and the radius of the second cylinder be <math>r_2</math>. Also, let the height of the first cylinder be <math>h_1</math> and the height of the second cylinder be <math>h_2</math>. We are told <cmath>r_2=\frac{11r_1}{10}</cmath> <cmath>\pi r_1^2h_1=\pi r_2^2h_2</cmath> Substituting the first equation into the second and dividing both sides by <math>\pi</math>, we get <cmath>r_1^2h_1=\frac{121r_1^2}{100}h_2\implies h_1=\frac{121h_2}{100}.</cmath> Therefore, <math>\boxed{\textbf{(D)}\ \text{The first height is } 21\% \text{ more than the second.}}</math>
+
+
+=== Problem 10 ===
+How many rearrangements of
+
+Choices: {'A': '\\ 0', 'B': '\\ 1', 'C': '\\ 2', 'D': '\\ 3', 'E': '\\ 4</math>'}
+Answer: C
+
+--- Solution 1 ---
+The first thing one would want to do is place a possible letter that works and then stem off of it.  For example, if we start with an <imath>a</imath>, we can only place a <imath>c</imath> or <imath>d</imath> next to it.  Unfortunately, after that step, we can't do too much, since:
+
+<imath>acbd</imath> is not allowed because of the <imath>cb</imath>, and <imath>acdb</imath> is not allowed because of the <imath>cd</imath>. 
+
+We get the same problem if we start with a <imath>d</imath>, since a <imath>b</imath> will have to end up in the middle, causing it to be adjacent to an <imath>a</imath> or <imath>c</imath>.
+
+If we start with a <imath>b</imath>, the next letter would have to be a <imath>d</imath>, and since we can put an <imath>a</imath> next to it and then a <imath>c</imath> after that, this configuration works.  The same approach applies if we start with a <imath>c</imath>.
+
+So the solution must be the two solutions that were allowed, one starting from a <imath>b</imath> and the other with a <imath>c</imath>, giving us:
+
+<cmath>1 + 1 = \boxed{\textbf{(C)}\ 2}.</cmath>
+
+--- Solution 2 ---
+'''Case 1: the first letter is A'''
+
+''Subcase 1: the second letter is C''
+
+The next letter must either be B or D, both of which do not satisfy the conditions.
+
+''Subcase 2: the second letter is D''
+
+The third letter is forced to be B and the fourth is forced to be C, but this doesn't work because B and C are next to each other.
+
+'''Case 2: the first letter is B'''
+
+The next letter is forced to be D, the third letter forced to be A and the last forced to be C. This works.
+
+'''Case 3: the first letter is C'''
+
+The next letter is forced to be A, the third letter is D and the last letter is B. This works.
+
+'''Case 4: the first letter is D'''
+
+''Subcase 1: the second letter is A''
+
+The third letter has to be C and the fourth has to be B but this doesn't work because B and C are next to each other.
+
+''Subcase 2: the second letter is B''
+
+The third letter cannot be A or C, so this doesn't work.
+
+Summing the cases, there are two that work: <imath>BDAC</imath> and <imath>CADB</imath> <imath>\Longrightarrow \boxed{\textbf{(C)}\ 2}</imath>.
+
+--- Solution 3 ---
+We note that <imath>a</imath> must be adjacent to <imath>c</imath> or <imath>d</imath>, <imath>b</imath> must be adjacent to <imath>d</imath>, <imath>c</imath> must be adjacent to <imath>a</imath>, and <imath>d</imath> must be adjacent to <imath>a</imath> or <imath>b</imath>. In other words, the way the letters can be connected is <cmath>c-a-d-b.</cmath> Therefore, the only two possible arrangements are <imath>cadb</imath> and <imath>bdac</imath>, which gives <imath>\boxed{\textbf{(C)}\ 2}</imath>.
+
+--- Solution 4 ---
+Notice that <imath>b</imath> and <imath>c</imath> cannot be in the middle because they would be forced to be next to at least one letter that is next to them in the alphabet(For example, if <imath>b</imath> was in the middle the only letter that can be next to <imath>b</imath> is <imath>d</imath> but since it's in the middle it needs another letter, which means that it's not possible). Therefore you either have a case starting with <imath>b</imath>(then it has to be followed by <imath>d</imath> then <imath>a</imath> then <imath>c</imath>) or starting with <imath>c</imath>, amounting to <imath>\boxed{\textbf{(C)}\ 2}</imath> cases
+
+
+=== Problem 11 ===
+The ratio of the length to the width of a rectangle is
+
+Choices: {'A': '\\ \\frac{2}{7}', 'B': '\\ \\frac{3}{7}', 'C': '\\ \\frac{12}{25}', 'D': '\\ \\frac{16}{25}', 'E': '\\ \\frac{3}{4}</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let the rectangle have length <math>4x</math> and width <math>3x</math>. Then by <math>3-4-5</math> triangles (or the Pythagorean Theorem), we have <math>d = 5x</math>, and so <math>x = \dfrac{d}{5}</math>. Hence, the area of the rectangle is <math>3x \cdot 4x = 12x^2 = \dfrac{12d^2}{25}</math>, so the answer is <math>\boxed{\textbf{(C)}\;\frac{12}{25}}</math>
+
+
+=== Problem 12 ===
+Points
+
+Choices: {'A': '1', 'B': '\\dfrac{\\pi}{2}', 'C': '2', 'D': '\\sqrt{1+\\pi}', 'E': '1+\\sqrt{\\pi} </math>'}
+Answer: C
+
+--- Solution 1 ---
+Since points on the graph make the equation true, substitute <math>\sqrt{\pi}</math> in to the equation and then solve to find <math>a</math> and <math>b</math>.
+
+<math>y^2 + \sqrt{\pi}^4 = 2\sqrt{\pi}^2 y + 1</math>
+
+<math>y^2 + \pi^2 = 2\pi y + 1</math>
+
+<math>y^2 - 2\pi y + \pi^2 = 1</math>
+
+<math>(y-\pi)^2 = 1</math>
+
+<math>y-\pi = \pm 1</math>
+
+<math>y = \pi + 1</math> 
+
+<math>y = \pi - 1</math>
+
+There are only two solutions to the equation <math>(y-\pi)^2 = 1</math>, so one of them is the value of <math>a</math> and the other is <math>b</math>. The order does not matter because of the absolute value sign.
+
+<math>| (\pi + 1) - (\pi - 1) | = 2</math>
+
+The answer is <math>\boxed{\textbf{(C) }2}</math>
+
+--- Solution 2 ---
+This solution is very closely related to Solution #1 and just simplifies the problem earlier to make it easier.
+
+<math>y^2 + x^4 = 2x^2 y + 1</math> can be written as <math>x^4-2x^2y+y^2=1</math>. Recognizing that this is a binomial square, simplify this to <math>(x^2-y)^2=1</math>. This gives us two equations:
+
+<math>x^2-y=1</math> and <math>x^2-y=-1</math>.
+
+One of these <math>y</math>'s is <math>a</math> and one is <math>b</math>. Substituting <math>\sqrt{\pi}</math> for <math>x</math>, we get <math>a=\pi+1</math> and <math>b=\pi-1</math>. 
+
+So, <math>|a-b|=|(\pi+1)-(\pi-1)|=2</math>.
+
+The answer is <math>\boxed{\textbf{(C) }2}</math>
+
+--- Solution 3 ---
+This solution is similar to Solution #1 but uses a different way to find <math>y</math> at the end.
+
+Just like Solution #1, we arrive at the conclusion that <math>y^2 - 2\pi y + \pi^2 = 1</math>.
+
+Simplifying we get:
+
+<math>y^2 - 2\pi y + \pi^2 -1 = 0</math>
+
+We now can factor this quadratic. We must find two terms that multiply to <math>\pi^2 -1</math> and add to <math>2\pi</math>. 
+
+These terms are <math>\pi+1</math> and <math>\pi-1</math>. 
+
+Subtracting one from the other, we get <math>2</math>.
+
+Thus, the answer is <math>\boxed{\textbf{(C) }2}</math>
+
+-DuckDuckGooseGoose
+
+
+=== Problem 13 ===
+Claudia has 12 coins, each of which is a 5-cent coin or a 10-cent coin. There are exactly 17 different values that can be obtained as combinations of one or more of her coins. How many 10-cent coins does Claudia have?
+
+Choices: {'A': '3', 'B': '4', 'C': '5', 'D': '6', 'E': '7 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Let Claudia have <math>x</math> 5-cent coins and <math>\left( 12 - x \right)</math> 10-cent coins. It is easily observed that any multiple of <math>5</math> between <math>5</math> and <math>5x + 10(12 - x) = 120 - 5x</math> inclusive can be obtained by a combination of coins. Thus, <math>24 - x = 17</math> combinations can be made, so <math>x = 7</math>. But the answer is not <math>7,</math> because we are asked for the number of 10-cent coins, which is <math>12 - 7 = \boxed{\textbf{(C) } 5}</math>
+
+--- Solution 2 ---
+Since the coins are 5-cent and 10-cent, all possible values that can be made will be multiples of <math>5.</math> To have exactly 17 different multiples of <math>5,</math> we will need to make up to <math>85</math> cents. There are two solutions from here:
+
+1. Hare and Chicken approach
+
+We assume that the 12 coins are all 10-cent coins. The sum will now be (12)(10) which is 120. 120 is 35 more than 85, and every 10-cent coin we switch for a 5-cent one will reduce the sum by 10-5=5 cents. Since 35/5=7, we will need to switch 7 10-cent coins for 5-cent ones, meaning we will have 7 5-cent coins and 12-7=5 10-cent coins. Therefore, the correct answer is answer choice <math>\boxed{\textbf{(C) } 5}</math>
+
+
+2. Algebra approach
+
+We assume we have (x) 5-cent coins and (12-x)10-cent coins. Then we have the algebra formula 5x+10(12-x)=85 Simplyfying that, we get 120-5x=85, 5x=35, x=7. And since x is the number of 5-cent coins, the number of 10-cent coins is 12-x or 12-7=5. Therefore, the correct answer is answer choice <math>\boxed{\textbf{(C) } 5}</math>
+
+-Alina
+
+--- Solution 3 ---
+Notice that for every <math>d</math> dimes, any multiple of <math>5</math> less than or equal to <math>10d + 5(12-d)</math> is a valid arrangement. Since there are <math>17</math> in our case, we have <math>10d + 5(12-d)=17 \cdot 5 \Rightarrow d=5</math>. Therefore, the answer is <math>\boxed{\textbf{(C) } 5}</math>.
+
+--- Solution 4 ---
+Dividing by 5cents to reduce clutter:
+
+<math>D</math> double coins and <math>S </math> single coins can reach any value between <math>1</math> and <math>2D + S</math>. Set <math>2D + S = 17 </math> and <math>D + S = 12</math>. 
+
+Subtract to get <math>D = \boxed{\textbf{(C) } 5}</math>.
+
+
+=== Problem 14 ===
+The diagram below shows the circular face of a clock with radius
+
+Choices: {'A': "\\mathrm{2 o'clock}", 'B': "\\mathrm{3 o'clock}", 'C': "\\mathrm{4 o'clock}", 'D': "\\mathrm{6 o'clock}", 'E': "\\mathrm{8 o'clock} </math>"}
+Answer: C
+
+--- Solution 1 ---
+The below solutions don't do a great job on telling you why the answer is not <imath>\textbf{(D) }\text{6 o' clock}</imath>. For those who don't understand it, the below video is great on explaining it.
+
+[https://www.youtube.com/watch?v=FUHkTs-Ipfg&t=612s The SAT question everyone got wrong]
+
+Skip to 10:13.
+
+Here is the best approach to the problem, and any problem of this manner.
+
+If you had watched the video (highly recommended), you should have learned that when a circle <imath> A </imath> travels along the outside of any figure <imath> B </imath>, the total number of rotations circle <imath>A </imath> made along the revolution of the figure is just the perimeter <imath>P_B </imath> plus the circumference <imath>C_A </imath> divided by <imath> C_A </imath>, or <imath>\frac{P_B + C_A}{C_A}</imath>. (This is proved in the video as well).
+
+Therefore, the total number of rotations of the smaller circle rotating around the clock is the circumference of the clock, which is <imath> 40\pi </imath>, plus the circumference of the smaller circle, which is <imath> 20\pi </imath>, divided by the circumference of the smaller circle, which is <imath> 20\pi </imath>. Then, we see that the arrow rotates a total of <imath> \frac{40\pi + 20\pi}{20\pi} \Rightarrow \frac{60\pi}{20\pi} \Rightarrow \frac{60}{20} \Rightarrow 3 </imath>.
+
+Finally, because the clock is marked at 12 intervals, each rotation is at every <imath> 12/3 = 4 </imath> hour intervals.
+
+Therefore, if the circle starts at 12:00, then it will make its first full rotation at <imath>\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>, not <imath>\textbf{(D) }\text{6 o' clock}</imath>.
+
+I hope this cleared all confusion. It is important to understand these topics to avoid mistakes on later tests.
+
+--- Solution 2 ---
+The circumference of the clock is twice that of the disk. So, a quarter way around the clock (3:00), the point halfway around the disk will be tangent. The arrow will point to the left. We can see the disk made a 75% rotation from 12 to 3, and 3 is 75% of 4, so it would make 100% rotation from 12 to 4. The answer is <imath>\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>. Similarly, the arrow would be pointing downward at 6:00. It would already have completed three 180 degree turns. Therefore, two 180 degree turns would be completed at 4:00.
+
+--- Solution 3 ---
+The rotation factor of the arrow is the sum of the rates of the regular rotation of the arrow (360° every 360° rotation = 1) and the rotation of the disk around the clock with twice the circumference (360° every 180° = 2). Thus, the rotation factor of the arrow is 3, and so our answer corresponds to 360°/3 = 120°, which is 4 o' clock. <imath>\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>
+
+--- Solution 4 ---
+The arrow travels a path of radius 30 (20 from the interior clock and 10 from the radius of the disk itself). We note that 1 complete rotation of 360 degrees is needed for the arrow to appear up again, so, therefore, the disk must travel its circumference before the arrow goes up. Its circumference is <imath>20\pi</imath>, so that is <imath>20\pi</imath> traveled on a <imath>60\pi</imath> arrow path. This is a ratio of 1/3, so the angle it carves is 120 degrees, which leads us to the correct answer of  4 o' clock. <imath>\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>
+
+--- Solution 5 ---
+Suppose that the small disk also had a clock face on it, and that both disks were toothed wheels, free to rotate around their centers. The part of the picture where they engage would look like this:
+<asy>
+fill(arc((0,0),2,30,150)--cycle,lightgrey);
+draw(arc((0,0),2,30,150));
+draw(1.8*dir(90)--2*dir(90));
+draw(1.8*dir(60)--2*dir(60));
+label("12",1.56*dir(90));
+label("1",1.56*dir(60));
+
+draw(arc((0,3),1,-15,-165));
+draw(0.9*dir(-90)+(0,3)--dir(-90)+(0,3));
+draw(0.9*dir(-60)+(0,3)--dir(-60)+(0,3));
+draw(0.9*dir(-30)+(0,3)--dir(-30)+(0,3));
+label("6",.74*dir(-90)+(0,3));
+label("5",.74*dir(-60)+(0,3));
+label("4",.74*dir(-30)+(0,3));
+</asy>
+The small cog has half the radius, and therefore half the circumference. If the large cog turns <imath>30^\circ</imath> counterclockwise (i.e. 1 hour), the small cog turns <imath>60^\circ</imath> clockwise (i.e. 2 hours).
+<asy>
+fill(arc((0,0),2,30,150)--cycle,lightgrey);
+draw(arc((0,0),2,30,150),EndArcArrow);label("$30^\circ$",2*dir(150),W);
+draw(1.8*dir(120)--2*dir(120));
+draw(1.8*dir(90)--2*dir(90));
+label(rotate(30)*"12",1.56*dir(120));
+label(rotate(30)*"1",1.56*dir(90));
+
+draw(arc((0,3),1,-15,-165),EndArcArrow);label("$60^\circ$",dir(-165)+(0,3),W);
+draw(0.9*dir(-90)+(0,3)--dir(-90)+(0,3));
+draw(0.9*dir(-120)+(0,3)--dir(-120)+(0,3));
+draw(0.9*dir(-150)+(0,3)--dir(-150)+(0,3));
+label(rotate(-60)*"6",.74*dir(-150)+(0,3));
+label(rotate(-60)*"5",.74*dir(-120)+(0,3));
+label(rotate(-60)*"4",.74*dir(-90)+(0,3));
+</asy>
+However, in the original problem the large cog does not rotate; it stays where it is. Therefore we must turn the whole diagram above <imath>30^\circ</imath> clockwise to see what happens when the small cog rolls around it.
+<asy>
+fill(arc((0,0),2,30,150)--cycle,lightgrey);
+draw(arc((0,0),2,30,150));
+draw(1.8*dir(90)--2*dir(90));
+draw(1.8*dir(60)--2*dir(60));
+label("12",1.56*dir(90));
+label("1",1.56*dir(60));
+
+pair c=(1.5,sqrt(27)/2);
+draw(arc(c,1,0,-200),EndArcArrow);label("$90^\circ$",dir(-180)+c,W);
+draw(0.9*dir(-120)+c--dir(-120)+c);
+draw(0.9*dir(-150)+c--dir(-150)+c);
+draw(0.9*dir(-180)+c--dir(-180)+c);
+label(rotate(-90)*"6",.74*dir(-180)+c);
+label(rotate(-90)*"5",.74*dir(-150)+c);
+label(rotate(-90)*"4",.74*dir(-120)+c);
+</asy>
+It turns out that, when the point of tangency moves <imath>30^\circ</imath> clockwise (one hour), from our point of view the small disk rotates <imath>90^\circ</imath> clockwise (three hours) around its center. Thus, for the small disk to perform a complete rotation of <imath>360^\circ</imath> (twelve hours) around its center from our point of view, the point of tangency must move round four hours. So the answer is <imath>\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>
+
+--- Solution 6 ---
+We unfold the big clock and draw the small clock. We know that the small clocks arrow will be facing up again at 6 o clock on the unfolded big clock. However, because of the coin rotation paradox, the small clock actually needs to rotate thrice and not twice to go all the way around the big clock, so the answer would be <imath>\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>. We now draw corresponding arrows at each hour and fold it back again.
+
+--- Solution 7 ---
+We can approach this problem with angle measures. As the circumference of the disk is <imath>10\pi,</imath> and the clock <imath>20 \pi,</imath> we have that 30 degrees, or the angular measure between hours, of the disk is only 15 degrees of the clock. This yields that every two hour ticks that the clock rotates, on the third one, the ticks will meet. However, the disk must rotate 360 degrees in order to come back to its original position, so the angular measure that the disk has covered relative to the clock is simply <imath>12 \cdot 15 \cdot \frac{2}{3},</imath> or <imath>120^\circ</imath> from the 12 starting point, so <imath>\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>.
+
+--- Solution 8 ---
+If the big clock were a flat plane, then the smaller clock could travel <imath>\dfrac{40\pi}{20\pi}=2</imath> full revolutions.
+
+But we also need to account for rotation. If we mark a red dot on the bottom of the small clock/bottom of the arrow, and then drag it around the clock, the direction of the arrow would still change. After traveling around the big clock, the small clock would travel <imath>1</imath> full rotation.
+
+Considering these two movements, the small clock travels 3 full rotations around the big clock so the arrow is next pointing upwards at <imath>\dfrac{12 \text{ o'clock}}{3}=\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>.
+
+--- Solution 9 ---
+The center of rotation is in the center of the smaller circle, but extends to the center of the larger circle. That means the circumference of the circle in relation to the arrow is <imath>60 \pi</imath>. The other circle is <imath>20 \pi</imath> and so that is <imath>\frac{1}{3}</imath>. So <imath>\frac{12}{3} = 4</imath> which is <imath>\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>.
+
+--- Solution 10 ---
+Let the center of the disk be Planet X with orbit eccentricity <imath>0</imath> and the center of the clock be the Sun. Note that the question would then be asking for the solar day of Planet X, rather than the sidereal day. Because planet X is rotating around its axis in the same direction as it is revolving around the Sun, the solar day can be calculated as <imath>d_{solar}=\frac{1}{\frac{1}{y}+\frac{1}{d_{siderial}}}</imath>, where <imath>y</imath> is the length of the year of Planet X and <imath>d_{siderial}</imath> is one sidereal day. It is easy to see that <imath>y=12</imath> and <imath>d_{siderial}=6</imath>, therefore the answer is <imath>\frac{1}{\frac{1}{12}+\frac{1}{6}}=\frac{1}{\frac{1}{4}}=\boxed{\textbf{(C) }4 \ \text{o' clock}}</imath>
+
+
+=== Problem 15 ===
+Consider the set of all fractions
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '\\text{infinitely many} </math>'}
+Answer: B
+
+--- Solution 1 ---
+You can create the equation <math>\frac{x+1}{y+1}=\frac{11x}{10y}</math>
+
+Cross multiplying and combining like terms gives <math>xy + 11x - 10y = 0</math>.
+
+This can be factored into <math>(x - 10)(y + 11) = -110</math>.
+
+<math>x</math> and <math>y</math> must be positive, so <math>x > 0</math> and <math>y > 0</math>, so <math>x - 10> -10</math> and <math>y + 11 > 11</math>.
+
+Using the factors of 110, we can get the factor pairs: <math>(-1, 110),</math> <math>(-2, 55),</math> and <math>(-5, 22).</math>
+
+But we can't stop here because <math>x</math> and <math>y</math> must be relatively prime.
+
+<math>(-1, 110)</math> gives <math>x = 9</math> and <math>y = 99</math>. <math>9</math> and <math>99</math> are not relatively prime, so this doesn't work.
+
+<math>(-2, 55)</math> gives <math>x = 8</math> and <math>y = 44</math>. This doesn't work.
+
+<math>(-5, 22)</math> gives <math>x = 5</math> and <math>y = 11</math>. This does work.
+
+We found one valid solution so the answer is <math>\boxed{\textbf{(B) }1}</math>.
+
+--- Solution 2 ---
+The condition required is <math>\frac{x+1}{y+1}=\frac{11}{10}\cdot\frac{x}{y}</math>.
+
+Observe that <math>x+1 > \frac{11}{10}\cdot x</math> so <math>x</math> is at most <math>9.</math>
+
+By multiplying by <math>\frac{y+1}{x}</math> and simplifying we can rewrite the condition as <math>y=\frac{11x}{10-x}</math>.  Since <math>x</math> and <math>y</math> are integer, this only has solutions for <math>x\in\{5,8,9\}</math>.  However, only the first yields a <math>y</math> that is relative prime to <math>x</math>.
+
+There is only one valid solution so the answer is <math>\boxed{\textbf{(B) }1}</math>
+
+--- Solution 3 ---
+So from this question, we can get \(\frac{x+1}{y+1} = \frac{11x}{10y}\). We can transform this equation into \(x + 11 \cdot \left( \frac{x}{y} \right) = 10\). Two numbers are added to get 10, and one of them, \(x\), is a positive and prime integer. So the other number also has to be a positive integer. Therefore, \(11 \cdot \left( \frac{x}{y} \right)\) is a positive integer. The only possibility of this being true is when \(y\) and 11 cancel out, leaving a singular \(x\). So \(y = 11\) and \(x + x = 10\). Therefore, \(y = 11\) and \(x = 5\).
+
+
+=== Problem 16 ===
+If
+
+Choices: {'A': '10', 'B': '15', 'C': '20', 'D': '25', 'E': '\\text{30} </math>'}
+Answer: B
+
+--- Solution 1 ---
+Note that we can add the two equations to yield the equation
+
+<math>x^2 + y^2 - 4x - 4y + 8 = x + y + 8.</math>
+
+Moving terms gives the equation
+
+<math>x^2+y^2=5 \left( x + y \right).</math>
+
+We can also subtract the two equations to yield the equation
+
+<math>x^2 - y^2 - 4x +4y = y - x.</math>
+
+Moving terms gives the equation
+
+<math>x^2 - y^2 = (x + y)(x - y) = 3x - 3y = 3(x - y).</math>
+
+Because <math>x \neq y,</math> we can divide both sides of the equation by <math>x - y</math> to yield the equation
+
+<math>x + y = 3.</math>
+
+Substituting this into the equation for <math>x^2 + y^2</math> that we derived earlier gives
+
+<math>x^2 + y^2 = 5 \left( x + y \right) = 5 \left( 3 \right) = \boxed{\textbf{(B) } 15}</math>
+
+Note: This may not be the most efficient solution, but it follows a clear and continuous thought process, and is therefore easy to follow.
+
+--- Solution 2 ---
+Subtract <math>4</math> from the left hand side of both equations, and use difference of squares to yield the equations
+
+<math>x = y(y-4)</math>  and  <math>y = x(x-4)</math>.
+
+It may save some time to find two solutions, <math>(0, 0)</math> and <math>(5, 5)</math>, at this point. However, <math> x = y</math> in these solutions.
+
+
+Substitute <math>y = x(x-4)</math> into <math>x = y(y-4)</math>.
+
+
+This gives the equation
+
+<math>x = x(x-4)(x^2-4x-4)</math>
+
+which can be simplified to
+
+<math>x(x^3 - 8x^2 +12x + 15) = 0</math>.
+
+Knowing <math>x = 0</math> and <math> x = 5</math> are solutions is now helpful, as you divide both sides by <math>x(x-5)</math>. This can also be done using polynomial division to find <math>x = 5</math> as a factor. This gives
+
+<math>x^2 - 3x -3 = 0</math>.
+
+Because the two equations <math>x = y(y-4)</math> and <math>y = x(x-4)</math> are symmetric, the <math>x</math> and <math>y</math> values are the roots of the equation, which are <math>x = \frac{3 + \sqrt{21}}{2}</math> and <math>x = \frac{3 - \sqrt{21}}{2}</math>.
+
+Squaring these and adding them together gives
+
+<math>\frac{3^2 + 21 + 6\sqrt{21}}{4} + \frac{3^2 + 21 - 6\sqrt{21}}{4} = \frac{2(3^2 +21)}{4} = \boxed{\textbf{(B) } 15}</math>.
+
+====Alternative Ending
+
+--- Solution 3 ---
+By graphing the two equations on a piece of graph paper, we can see that the point where they intersect that is not on the line <math>y=x</math> is close to the point <math>(4,-1)</math> (or <math>(-1, 4)</math>). <math>(-1)^2+4^2=17</math>, and the closest answer choice to <math>17</math> is <math>\boxed{\textbf{(B) } 15}</math>.
+
+--- Solution 4 ---
+This, by the way, is a really cheap way of solving the problem but as long as you get an answer, it doesn't matter.
+
+Looking at the first given equation, begin searching for solutions. Notice how <math>(4,0)</math> works but when plugged into the
+
+second equation, you get <math>8=4</math>. Now, if you decrease the <math>y</math> value by <math>1</math> to obtain <math>(2+\sqrt3,-1)</math>, plugging it into 
+
+the second equation will yield <math>6+\sqrt3=9</math>. Now, notice how the LHS is now less than the RHS as opposed to what it had 
+
+been when we plugged <math>(4,0)</math> into the second given equation. We then conclude that there must be a solution between 
+
+<math>y=0</math> and <math>y=-1</math>, so calculating <math>x^2+y^2</math> of <math>(4,0)</math> and <math>(2+\sqrt3,-1)</math> we obtain
+
+<cmath>4^2+0^2=16</cmath> and
+<cmath>(2+\sqrt3)^2+(-1)^2=8+4\sqrt3\approx14.9</cmath>
+
+Thus we know the answer to be <math>\boxed{\textbf{(B) } 15}</math>.
+
+This is a really bad solution, but it works. :/
+
+--- Solution 5 ---
+Note: In this solution, I explain my entire thought process and the reason why I did each step, so you can read a more intuitive solution rather than a contrived one.
+
+We first notice that each equation has a <math>4</math>, which inspires us to isolate the <math>4</math> on both equations and equate them to see if we can gather any useful information on <math>x</math> and <math>y.</math> 
+
+Doing this we get <math>(x-2)^2-y = (y-2)^2- x.</math> Now you might be tempted to expand, but notice how we have two perfect squares in our equation: <math>(x-2)^2</math> and <math>(y-2)^2,</math> which motivates us to take advantage of the difference of squares. 
+For simplicity, we suppose that <math>(x-2) = a</math> and <math>(y-2) = b.</math> Thus our equation is now <math>a^2-y = b^2-x.</math> We manipulate this equation by getting the LHS in a form that lets us do difference of squares, so we can rewrite as <math>a^2-b^2 = -(x-y).</math>
+
+Now we can finally use our difference of squares to get <math>(a-b)(a+b) =  -(x-y).</math>
+
+Let's now substitute <math>a</math> and <math>b</math> back to get information solely for <math>x</math> and <math>y.</math> 
+
+Doing this we get, <math>(x-y)(x+y-4) = -(x-y).</math>
+
+Now let us divide <math>x-y</math> on both sides and clean up the equation. When we do this, we get that <math>x+y = 3.</math>
+
+We got <math>x+y = 3,</math> which means that this is fact is only of use if we can obtain it in another way, so we add the LHS and the RHS of both equations and equate them to make our fact of essence. 
+
+Doing that, we get <math>x+y +8 = (x-2)^2+ (y-2)^2.</math> Also, when we set this equation up we not only do we make our fact useful, but we also can see that after expanding the RHS, we get <math>x^2+y^2</math> on the RHS too, which makes it even a better move that we added both equations because remember our goal is to find <math>x^2+y^2.</math>
+
+Expanding and plugging in <math>x+y = 3</math> we get <math>11 = x^2+y^2-4(x+y)+8.</math> <math>x+y=3,</math> so we can plug that in and we get <math>x^2+y^2 = 15</math> or <math>\boxed{\textbf{(B) } 15}</math> after cleaning up some algebra.
+
+--- Solution 6 ---
+Subtract the two equations to get <math>(x-y)= (x+y-4)(y-x) \iff x+y=3</math>. Plugging back into any of the original equations yields <math>x^2-3x=3</math>. However, we know <math>x^2+y^2= x^2+(3-x)^2= 2x^2-6x+9</math>. Then, we can just multiply the first by two and add <math>9</math> to get <math>\boxed{\textbf{(B) } 15}</math>
+
+
+=== Problem 17 ===
+A line that passes through the origin intersects both the line
+
+Choices: {'A': '2\\sqrt{6}', 'B': '2+2\\sqrt{3}', 'C': '6', 'D': '3+2\\sqrt{3}', 'E': '6+\\frac{\\sqrt{3}}{3} </math>'}
+Answer: D
+
+--- Solution 1 ---
+Since the triangle is equilateral and one of the sides is a vertical line, the triangle must have a horizontal line of symmetry, and therefore the other two sides will have opposite slopes. The slope of the other given line is <math>\frac{\sqrt{3}}{3}</math> (which is must be, given 60 degree angle of the triangle, relative to vertical) so the third must be <math>-\frac{\sqrt{3}}{3}</math>. Since this third line passes through the origin, its equation is simply <math>y = -\frac{\sqrt{3}}{3}x</math>. To find two vertices of the triangle, plug in <math>x=1</math> to both the other equations. 
+
+<math>y = -\frac{\sqrt{3}}{3}</math>
+
+<math>y = 1 + \frac{\sqrt{3}}{3}</math>
+
+We now have the coordinates of two vertices, <math>\left(1, -\frac{\sqrt{3}}{3}\right)</math> and <math>\left(1, 1 + \frac{\sqrt{3}}{3}\right)</math>. The length of one side is the distance between the y-coordinates, or <math>1 +  \frac{2\sqrt{3}}{3}</math>.
+
+The perimeter of the triangle is thus <math>3\left(1 +  \frac{2\sqrt{3}}{3}\right)</math>, so the answer is <math>\boxed{\textbf{(D) }3 + 2\sqrt{3}}</math>
+
+Note: We know that the slope for the third line must be <math>-\frac{\sqrt{3}}{3}</math>, as the slope for the second given line is <math>\frac{\sqrt{3}}{3}</math>. The slope is determined from two points on a line, and we pick one of the points to be the point where they intersect. Now, drawing the symmetric line, it splits the first line; x=1 into two equal parts. Now, the second point for the third and second lines have the same x coordinate, but opposite y coordinates.
+
+===Solution 1 Different Approach===
+
+It is important to note that because \( \tan(x) \) represents the slope of a function, then \( \frac{\sqrt{3}}{3} \) is just \( \tan(30^\circ) \). Then, if we reflect \( \frac{\sqrt{3}}{3} x+1 \) over the line \( y=\frac{1}{2} \), we get \( y=-\frac{\sqrt{3}}{3}x \) as our new function.
+
+Given that, we may resume with solution 1.
+
+--- Solution 2 ---
+Draw a line from the y-intercept of the equation  <math>y=1+ \frac{\sqrt{3}}{3} x</math> perpendicular to the line <math>x=1</math>. There is a square of side length 1 inscribed in the equilateral triangle. The problem becomes reduced to finding the perimeter of an equilateral triangle with a square of side length 1 inscribed in it. The side length is <math>2\left(\frac{1}{\sqrt{3}}\right) + 1</math>. After multiplying the side length by 3 and rationalizing, you get <math>\boxed{\textbf{(D) }3 + 2\sqrt{3}}</math>.
+
+--- Solution 3 ---
+Let the intersection point between the line <math>y = 1 + \frac{\sqrt{3}}{3}x</math> and the line that crosses the origin be <math>P</math>.
+
+We drop an altitude from <math>P</math> onto the line <math>x = 1</math>. Since the overall triangle is an equilateral triangle, we are splitting the base (on <math>x=1</math>) in half. As the y-axis is parallel to the line <math>x=1</math>, the altitude from P will also split the y-axis from <math>y=0</math> to <math>y=1</math> in half. From this, we can get that the y-value of P is <math>\frac{1}{2}</math>.
+
+Plugging this into the equation <math>y = 1 + \frac{\sqrt{3}}{3}x</math>, we get that <math>x = -\frac{\sqrt{3}}{2}</math>, and thus our height for the equilateral triangle is <math>1 + \frac{\sqrt{3}}{2}</math>. Using that, we can calculate the perimeter to be <math>\boxed{\textbf{(D) }3 + 2\sqrt{3}}</math>.
+
+--- Solution 4 ---
+<math>1+\frac{\sqrt{3}}{3}x</math> clearly must form a 60 degree angle with <math>x=1</math>. The other line is the one that forms a <math>-60</math> degree angle with <math>x=1</math>. Thus, it must have slope <math>-\frac{\sqrt{3}}{3}</math>, and equation <math>y-0=-\frac{\sqrt{3}}{3}(x-0)</math>.
+
+This equation, <math>x=1</math>, and the x-axis form a 30-60-90 triangle. The length of the short leg is <math>0-(-\frac{\sqrt{3}}{3}(1))</math> or <math>\frac{\sqrt{3}}{3}</math>. Multiplying by 2 gives the hypotenuse and then by 3 gives the perimeter, <math>\boxed{\textbf{(D) }3 + 2\sqrt{3}}</math>
+
+
+=== Problem 18 ===
+Hexadecimal (base-16) numbers are written using numeric digits
+
+Choices: {'A': '17', 'B': '18', 'C': '19', 'D': '20', 'E': '21 </math>'}
+Answer: E
+
+--- Solution 1 ---
+Notice that <math>1000</math> is <math>3E8</math> when converted to hexadecimal (<math>3 \cdot 16^2 + 14 \cdot 16^1 + 8 \cdot 16^0</math>). We will proceed by constructing numbers that consist of only numeric digits in hexadecimal.
+
+The first digit could be <math>0,</math> <math>1,</math> <math>2,</math> or <math>3,</math> and the second two could be any digit <math>0 - 9</math>, giving <math>4 \cdot 10 \cdot 10 = 400</math> combinations. However, this includes <math>000,</math> so this number must be diminished by <math>1.</math>  Therefore, there are <math>399</math> valid <math>n</math> corresponding to those <math>399</math> positive integers less than <math>1000</math> that consist of only numeric digits.  (Notice that <math>399</math> is the least hexadecimal number using only decimal digits before <math>3E8</math>.)  Therefore, our answer is <math>3 + 9 + 9 = \boxed{\textbf{(E) } 21}</math>
+
+--- Solution 2 ---
+First, we set a bound by writing <math>1000</math> in base-<math>16</math>. <math>1000_{10}=3E8_{16}</math>. Therefore, we are considering numbers with a maximum of <math>3</math> digits, and a maximum of <math>3</math> in the <math>256</math>ths-place (the first place in a <math>3</math>-digit number).
+
+Case <math>1</math>: <math>1</math>-digit numbers:
+There are evidently <math>9</math> numbers that fit this category.
+
+Case <math>2</math>: <math>2</math>-digit numbers:
+There are <math>9\cdot10=90</math> numbers that fit this category.
+
+Case <math>3</math>: <math>3</math>-digit numbers:
+There are <math>3\cdot10\cdot10=300</math> numbers that fit this category
+
+Adding these up, we get <math>9+90+300=399</math> numbers. <math>3 + 9 + 9 = \boxed{\textbf{(E) } 21}</math>
+
+--- Solution 3 ---
+We can quickly see that <math>400</math> in hexadecimal = <math>0+0+16^2*4</math> = 1024. If we go down to 399 in hexadecimal, we have <math>9+9*16+3*256</math> which is <math>921</math>, which is obviously less than 1000. Therefore, the answer is <math>3+9+9</math> = <math>\boxed{\textbf{(E) } 21}</math>
+
+
+=== Problem 19 ===
+The isosceles right triangle
+
+Choices: {'A': '\\dfrac{5\\sqrt{2}}{3}', 'B': '\\dfrac{50\\sqrt{3}-75}{4}', 'C': '\\dfrac{15\\sqrt{3}}{8}', 'D': '\\dfrac{50-25\\sqrt{3}}{2}', 'E': '\\dfrac{25}{6} </math>'}
+Answer: D
+
+--- Solution 1 ---
+[[File:2015AMC10AProblem19Picture.png]]
+
+<math>\triangle ADC</math> can be split into a <math>45-45-90</math> right triangle and a <math>30-60-90</math> right triangle by dropping a perpendicular from <math>D</math> to side <math>AC</math>. Let <math>F</math> be where that perpendicular intersects <math>AC</math>.
+
+Because the side lengths of a <math>45-45-90</math> right triangle are in ratio <math>a:a:a\sqrt{2}</math>, <math>DF = AF</math>.
+
+Because the side lengths of a <math>30-60-90</math> right triangle are in ratio <math>a:a\sqrt{3}:2a</math> and <math>AF + FC = 5</math>, <math>DF = \frac{5 - AF}{\sqrt{3}}</math>.
+
+Setting the two equations for <math>DF</math> equal to each other, <math>AF = \frac{5 - AF}{\sqrt{3}}</math>.
+
+Solving gives <math>AF = DF = \frac{5\sqrt{3} - 5}{2}</math>.
+
+The area of <math>\triangle ADC =\frac12 \cdot DF \cdot AC = \frac{25\sqrt{3} - 25}{4}</math>.
+
+<math>\triangle ADC</math> is congruent to <math>\triangle BEC</math>, so their areas are equal.
+
+A triangle's area can be written as the sum of the figures that make it up, so <math>[ABC] = [ADC] + [BEC] + [CDE]</math>.
+
+<math>\frac{25}{2} = \frac{25\sqrt{3} - 25}{4} + \frac{25\sqrt{3} - 25}{4} + [CDE]</math>.
+
+Solving gives <math>[CDE] = \frac{50 - 25\sqrt{3}}{2}</math>, so the answer is <math>\boxed{\textbf{(D) }\frac{50 - 25\sqrt{3}}{2}}</math>
+
+--- Solution 2 ---
+The area of <math>\triangle ABC</math> is <math>12.5</math>, and so the leg length of <math>45 - 45 - 90</math> <math>\triangle ABC</math> is <math>5.</math> Thus, the altitude to hypotenuse <math>AB</math>, <math>CF</math>, has length <math>\dfrac{5}{\sqrt{2}}</math> by <math>45 - 45 - 90</math> right triangles. Now, it is clear that <math>\angle{ACD} = \angle{BCE} = 30^\circ</math>, and so by the Exterior Angle Theorem, <math>\triangle{CDE}</math> is an isosceles <math>30 - 75 - 75</math> triangle. Thus, <math>DF = CF \tan 15^\circ = \dfrac{5}{\sqrt{2}} (2 - \sqrt{3})</math> by the Half-Angle formula, and so the area of <math>\triangle CDE</math> is <math>DF \cdot CF = \dfrac{25}{2} (2 - \sqrt{3})</math>. The answer is thus <math>\boxed{\textbf{(D) } \frac{50 - 25\sqrt{3}}{2}}</math>
+
+--- Solution 3 ---
+Because the area of triangle <math>ABC</math> is <math>12.5</math>, and the triangle is right and isosceles, we can quickly see that the leg length of the triangle <math>ABC</math> is 5. If we put the triangle on the coordinate plane, with vertex <math>C</math> at the origin, and the hypotenuse in the first quadrant, we can use slope-intercept form and tangents to get three lines that intersect at the origin, <math>D</math>, and <math>E</math>. Then, you can use the distance formula to get the length of <math>DE</math>. The height is just <math>\frac{5}{\sqrt{2}}</math>, so the area is just <math>DE \cdot \frac{5}{\sqrt{2}} \cdot \frac{1}{2}=\boxed{\textbf{(D) } \frac{50 - 25\sqrt{3}}{2}}</math>
+
+--- Solution 4 ---
+Just like with Solution 1, we drop a perpendicular from <math>D</math> onto <math>AC</math>, splitting it into a <math>30</math>-<math>60</math>-<math>90</math> triangle and a <math>45</math>-<math>45</math>-<math>90</math> triangle. We find that <math>AF=\frac{5\sqrt{3}-5}{2}</math>.
+
+Now, since <math>\triangle AEC\cong \triangle BDC</math> by ASA, <math>CE=CD</math>. Since, <math>DF=\frac{5\sqrt{3}-5}{2}</math>, <math>DC=2\cdot \frac{5\sqrt{3}-5}{2}=5\sqrt{3}-5</math>. By the sine area formula, <math>[CDE]=\frac{1}{2}\cdot \sin 30\cdot CD^2=\frac{1}{4}\cdot (100-50\sqrt{3})=\frac{50-25\sqrt{3}}{2}\implies \boxed{\textbf{(D)}}</math>
+
+--- Solution 5 ---
+Prerequisite knowledge for this solution: the side ratios of a 30-60-90, and 45-45-90 right triangle.
+
+
+We let point C be the origin. Since <math>\overline{CD}</math> and <math>\overline{CE}</math> trisect <math>\angle ACB = 90^{\circ}</math>, this means <math>m\angle CEB = 30^{\circ}</math> and the equation of <math>\overline{CE}</math> is <math>y=\frac{\sqrt{3}}{3}</math> (you can figure out that the tangent of 30 degrees gives <math>\frac{\sqrt{3}}{3}</math>). Next, we can find A to be at <math>(0, 5)</math> and B at <math>(5, 0)</math>, so the equation of <math>\overline{AB}</math> is <math>y=-x+5</math>. So we have the system:
+
+<cmath>\begin{cases}y=\frac{\sqrt{3}}{3}x\\y=-x+5\end{cases}</cmath>
+
+By substituting values, we can arrive at <math>\frac{3+\sqrt{3}}{3}x=5</math>, or <math>x=5\cdot\frac{3}{3+\sqrt{3}}=\frac{15}{3+\sqrt{3}}</math>. We multiply <math>x=\frac{15}{3+\sqrt{3}}\cdot\frac{3-\sqrt{3}}{3-\sqrt{3}}=\frac{45-15\sqrt{3}}{6}=\frac{15-5\sqrt{3}}{2}</math>.
+
+Dropping an altitude from E onto <math>\overline{CB}</math>, and calling the intersection point G, we find that <math>\triangle EGB</math> is a 45-45-90 triangle with a leg of <math>\frac{15-5\sqrt{3}}{2}\cdot\frac{\sqrt{3}}{3}=\frac{15\sqrt{3}-15}{6}=\frac{5\sqrt{3}-5}{2}</math>. Thus, <math>EB=\frac{5\sqrt{3}-5}{2}\sqrt{2}=\frac{5\sqrt{6}-5\sqrt{2}}{2}</math>.
+
+Dropping an altitude from C onto <math>\overline{AB}</math>, and calling the intersection point H, we find that <math>CH=\frac{5\sqrt{2}}{2}=BH</math>, and by the theorem of betweenness applied to H, E, and B, we get <math>HE=HB-EB=\frac{5\sqrt{2}}{2}-\frac{5\sqrt{6}-5\sqrt{2}}{2}=\frac{10\sqrt{2}-5\sqrt{6}}{2}</math>.
+
+We are almost done. By symmetry, <math>HD=HE</math>, so to find the area of the triangle CED, we only need to multiply HE by CH, <math>\frac{10\sqrt{2}-5\sqrt{6}}{2}\cdot\frac{5\sqrt{2}}{2}=\frac{100-50\sqrt{3}}{4}=\frac{50-25\sqrt{3}}{2}</math>. This is answer choice <math>\boxed{\textbf{(D) } \frac{50-25\sqrt{3}}{2}}</math>
+
+--- Solution 6 ---
+We know that the area of the right triangle is <math>\frac{25}{2}</math> and that the two legs are equal, so we can easily tell that the length of the two legs is <math>5</math>. Thus, the hypotenuse <math>AB = 5\sqrt{2}</math> and <math>\angle{CAB} = \angle{ABC} = 45^{\circ}.</math>
+Let's quickly define <math>F</math> as the point that bisects <math>\angle{ACB}</math> and <math>\overline{AB}</math>. Then, we can say that the area of the desired triangle is <math>DF \cdot AF</math>.
+Let <math>\overline{AD} = \overline{BE} = n.</math> Since <math>D</math> is one of the trisecting points of <math>\angle{ACB}, \angle{ACD} = 30^{\circ}.</math> Because 
+<cmath>\angle{ADC} = 180^{\circ}-\angle{ACD}-\angle{CAB},</cmath>
+<cmath>\angle{ADC} = 180^{\circ} - 45^{\circ} - 30^{\circ} = 105^{\circ}.</cmath>
+Now, we can employ the Law of Sines. It tells us that <math>\frac{\sin(\angle{ADC})}{5} = \frac{\sin(\angle{ACD})}{n}</math>. Plugging in our angle values, we get that <cmath>\frac{\sin(105^{\circ})}{5} = \frac{\sin(30^{\circ})}{n}.</cmath> It's easy to find that <math>\sin(105^{\circ}) = \sin(75^{\circ}) = \frac{\sqrt{2}+\sqrt{6}}{4},</math> and that <math>\sin(30^{\circ}) = \frac{1}{2}</math>. Plugging in these values into our previous equation, we get <cmath>\frac{\sqrt{2}+\sqrt{6}}{20} = \frac{1}{2n}.</cmath> Cross multiplying gets us <cmath>2n\sqrt{2}+2n\sqrt{6} = 20,</cmath> and then we simplify like so: <cmath>2n(\sqrt{2}+\sqrt{6}) = 20\rightarrow</cmath>
+<cmath>n(\sqrt{2}+\sqrt{6}) = 10\rightarrow</cmath>
+<cmath>n = \frac{10}{\sqrt{2}+\sqrt{6}}.</cmath>
+Now, using our definition of <math>n</math>, we know that <math>DF</math> = <math>\frac{AB}{2} - n = \frac{5\sqrt{2}}{2} - \frac{10}{\sqrt{2}+\sqrt{6}}</math>. We want to put this under one common denominator, which is pretty simple to execute. That leaves us with <cmath>\frac{5\sqrt{2} \cdot \sqrt{2}+5\sqrt{2} \cdot \sqrt{6} - 20}{2\sqrt{2} + 2\sqrt{6}}=</cmath>
+<cmath>\frac{10+10\sqrt{3} - 20}{2\sqrt{2} + 2\sqrt{6}}=</cmath>
+<cmath>\frac{10\sqrt{3} - 10}{2(\sqrt{2} + \sqrt{6})}=</cmath>
+<cmath>\frac{2(5\sqrt{3} - 5)}{2(\sqrt{2} + \sqrt{6})}=</cmath>
+<cmath>\frac{5\sqrt{3} - 5}{\sqrt{2} + \sqrt{6}}.</cmath>
+Whew. That was longer than expected. Anyways, quick inspection tells us that <math>AF = \frac{5\sqrt{2}}{2},</math> so now we just have to do some simplifying to find the desired, <math>[CDE]</math>. Let's do that now.
+<cmath>[CDE] = \frac{5\sqrt{3} - 5}{\sqrt{2} + \sqrt{6}} \cdot \frac{5\sqrt{2}}{2}=</cmath>
+<cmath>[CDE] = \frac{25\sqrt{6} - 25\sqrt{2}}{2(\sqrt{2} + \sqrt{6})}=</cmath>
+<cmath>[CDE] = \frac{25(\sqrt{2} - \sqrt{6})}{2(\sqrt{2} + \sqrt{6})}=</cmath>
+(We need to take a quick conjugation break. Note that <math>(\sqrt{2} - \sqrt{6})^2 = 8 - 4\sqrt{3}.</math>)
+<cmath>[CDE] = \frac{25(\sqrt{2} - \sqrt{6})}{2(\sqrt{2} + \sqrt{6})} \cdot \frac{(\sqrt{2} - \sqrt{6})}{(\sqrt{2} - \sqrt{6})}=</cmath>
+<cmath>[CDE] = \frac{200 - 100\sqrt{3}}{2(4)}=</cmath>
+<cmath>[CDE] =\boxed{\frac{50 - 25\sqrt{3}}{2} \text{(D)}.}</cmath>
+
+--- Solution 7 ---
+Drawing the two rays, we get triangles CAD, CDE, and CBE. Notice that triangles CAD and CBE are identical, and triangle CDE is an isosceles triangle with angles CDE=CED=75 and angle DEC=15. 
+
+We draw the height of triangle ABC, which is also the height of triangle CDE. Because triangle CDE is an isosceles triangle, we know the height spilt base DE into 2 equal parts, and triangle CDE into 2 identical 15,75,90 triangle. From the ratio of 15,75,90 triangles,we know that the ratio of the height and half of line DE is equal to the ratio of areas.
+
+
+=== Problem 20 ===
+A rectangle with positive integer side lengths in
+
+Choices: {'A': '100', 'B': '102', 'C': '104', 'D': '106', 'E': '108 </math>'}
+Answer: 
+
+--- Solution 1 ---
+Let the rectangle's length be <math>a</math> and its width be <math>b</math>. Its area is <math>ab</math> and the perimeter is <math>2a+2b</math>.
+
+Then <math>A + P = ab + 2a + 2b</math>. Factoring, we have <math>(a + 2)(b + 2) - 4</math>.
+
+The only one of the answer choices that cannot be expressed in this form is <math>102</math>, as <math>102 + 4</math> is twice a prime. There would then be no way to express <math>106</math> as <math>(a + 2)(b + 2)</math>, keeping <math>a</math> and <math>b</math> as positive integers.
+
+Our answer is then <math>\boxed{B}</math>.
+
+Note: The original problem only stated that <math>A</math> and <math>P</math> were positive integers, not the side lengths themselves. This rendered the problem unsolvable, and so the AMC awarded everyone 6 points on this problem. This wiki has the corrected version of the problem so that the 2015 AMC 10A test can be used for practice.
+
+
+=== Problem 21 ===
+Tetrahedron
+
+Choices: {'A': '3\\sqrt2', 'B': '2\\sqrt5', 'C': '\\dfrac{24}5', 'D': '3\\sqrt3', 'E': '\\dfrac{24}5\\sqrt2</math>'}
+Answer: C
+
+--- Solution 1 ---
+Drop altitudes of triangle <imath>ABC</imath> and triangle <imath>ABD</imath> down from <imath>C</imath> and <imath>D</imath>, respectively. Both will hit the same point; let this point be <imath>T</imath>. Because both triangle <imath>ABC</imath> and triangle <imath>ABD</imath> are 3-4-5 triangles, <imath>CT = DT = \dfrac{3\cdot4}{5} = \dfrac{12}{5}</imath>. Because <imath>CT^{2} + DT^{2} = 2\left(\frac{12}{5}\right)^{2} = \left(\frac{12}{5}\sqrt{2}\right)^{2} = CD^{2}</imath>, it follows that the <imath>CTD</imath> is a right triangle, meaning that <imath>\angle CTD = 90^\circ</imath>, and it follows that planes <imath>ABC</imath> and <imath>ABD</imath> are perpendicular to each other. Now, we can treat <imath>ABC</imath> as the base of the tetrahedron and <imath>TD</imath> as the height. Thus, the desired volume is <cmath>V = \dfrac{1}{3} bh = \dfrac{1}{3}\cdot[ABC]\cdot TD = \dfrac{1}{3} \cdot 6 \cdot \dfrac{12}{5} = \dfrac{24}{5}</cmath> which is answer <imath>\boxed{\textbf{(C) } \dfrac{24}{5}}</imath>
+
+--- Solution 2 ---
+Let the midpoint of <imath>CD</imath> be <imath>E</imath>. We have <imath>CE = \dfrac{6}{5} \sqrt{2}</imath>, and so by the Pythagorean Theorem <imath>AE = \dfrac{\sqrt{153}}{5}</imath> and <imath>BE = \dfrac{\sqrt{328}}{5}</imath>. Because the altitude from <imath>A</imath> of tetrahedron <imath>ABCD</imath> passes touches plane <imath>BCD</imath> on <imath>BE</imath>, it is also an altitude of triangle <imath>ABE</imath>. The area <imath>A</imath> of triangle <imath>ABE</imath> is, by Heron's Formula, given by
+
+<cmath>16A^2 = 2a^2 b^2 + 2b^2 c^2 + 2c^2 a^2 - a^4 - b^4 - c^4 = -(a^2 + b^2 - c^2)^2 + 4a^2 b^2.</cmath>
+Substituting <imath>a = AE, b = BE, c = 5</imath> and performing huge (but manageable) computations yield <imath>A^2 = 18</imath>, so <imath>A = 3\sqrt{2}</imath>. Thus, if <imath>h</imath> is the length of the altitude from <imath>A</imath> of the tetrahedron, <imath>BE \cdot h = 2A = 6\sqrt{2}</imath>. Our answer is thus
+<cmath>V = \dfrac{1}{3} Bh = \dfrac{1}{3} h \cdot BE \cdot \dfrac{6\sqrt{2}}{5} = \dfrac{24}{5},</cmath>
+and so our answer is <imath>\boxed{\textbf{(C) } \dfrac{24}{5}}</imath>
+
+--- Solution 3 ---
+Similar to solution 1, <imath>\triangle CTD</imath> is an isosceles right triangle. <imath>AB</imath> is perpendicular to the plane <imath>CTD</imath>. So, we can cut tetrahedron <imath>ABCD</imath> into 2 tetrahedrons <imath>ACTD</imath> and <imath>BCTD</imath> with <imath>\triangle CTD</imath> as their common base, <imath>BT</imath> and <imath>AT</imath> as their heights.
+
+
+<imath>[CTD]=\frac{1}{2} \cdot CT \cdot DT=\frac{1}{2} \cdot \frac{12}{5} \cdot \frac{12}{5}= \frac{72}{25}</imath>
+
+<imath>V_{ABCD}=V_{ACDT}+V_{BCDT}=\frac{1}{3} \left([CTD] \cdot AT + [CTD] \cdot BT \right)=\frac{1}{3} \cdot [CTD] \cdot (AT+BT)=\frac{1}{3} \cdot [CTD] \cdot AB  =\frac{1}{3} \cdot \frac{72}{25} \cdot 5 </imath>
+
+<imath>= \boxed{\textbf{(C) } \dfrac{24}{5}}</imath>
+
+--- Solution 4 ---
+Note: Please don't ever try doing this in an actual competition. It's fun to do, however.
+
+Using Piero della Francesca's Theorem:
+<cmath>V = \frac{1}{12} \left( \sqrt{-a^2b^2c^2 - a^2d^2e^2 - b^2d^2f^2 - c^2e^2f^2 + a^2c^2d^2 + b^2c^2d^2 + a^2b^2e^2 + b^2c^2e^2 + b^2d^2e^2 + c^2d^2e^2 + a^2b^2f^2 + a^2c^2f^2 + a^2d^2f^2 + c^2d^2f^2 + a^2e^2f^2 + b^2e^2f^2 - c^4d^2 - c^2d^4 - b^4e^2 - b^2e^4 - a^4f^2 - a^2f^4} \right)</cmath>
+Substituting this all in... You get
+<imath>\boxed{\textbf{(C) } \dfrac{24}{5}}</imath>
+
+--- Solution 5 ---
+Set <imath>B</imath> as <imath>(0,0,0)</imath>, <imath>C</imath> at <imath>(4,0,0)</imath>, and <imath>A</imath> at <imath>(4,3,0)</imath>. If we find <imath>D</imath>'s coordinates then the z-coordinate(the last coord) is the height we need since the rest of the coordinates have a z-coord of <imath>0</imath>. Notice that we are given every distance from point <imath>D</imath>, we can use basically satellite-type triangulation. <imath>D</imath> is at every point a radius from points <imath>A,B</imath> and <imath>C</imath>, or a sphere with the center at points <imath>A,B</imath> and <imath>C</imath>. We can set up a system of equations to find where all 3 spheres intersect. 
+<cmath>\begin{split}
+(x-4)^2+(y-3)^2+z^2 &=3^2 \\
+x^2+y^2+z^2 &=4^2 \\
+(x-4)^2+y^2+z^2 &=(\tfrac{12}{5}\sqrt2)^2
+\end{split}</cmath>
+Solving this system of equations gives you:
+<cmath>\begin{split}
+x &=\frac{64}{25} \\
+y &=\frac{48}{25} \\
+z &=\frac{12}{5} 
+\end{split}</cmath>
+Since <imath>z</imath> is the value we need, we can now solve for the volume. The base is just <imath>\frac{3*4}{2}=6</imath>
+<cmath>\begin{split}
+V &=\frac{1}{3}bh \\
+V &=\frac{1}{3}(6)(\frac{12}{5}) \\
+V &=\frac{72}{15} \\
+V &=\boxed{\textbf{(C)}\dfrac{24}{5}}
+\end{split}</cmath>
+
+
+=== Problem 22 ===
+Eight people are sitting around a circular table, each holding a fair coin. All eight people flip their coins and those who flip heads stand while those who flip tails remain seated. What is the probability that no two adjacent people will stand?
+
+Choices: {'A': '\\dfrac{47}{256}', 'B': '\\dfrac{3}{16}', 'C': '\\dfrac{49}{256}', 'D': '\\dfrac{25}{128}', 'E': '\\dfrac{51}{256} </math>'}
+Answer: A
+
+--- Solution 1 ---
+We will count how many valid standing arrangements there are (counting rotations as distinct), and divide by <math>2^8 = 256</math> at the end. We casework on how many people are standing.
+
+Case <math>1:</math> <math>0</math> people are standing. This yields <math>1</math> arrangement.
+
+Case <math>2:</math> <math>1</math> person is standing. This yields <math>8</math> arrangements.
+
+Case <math>3:</math> <math>2</math> people are standing. This yields <math>\dbinom{8}{2} - 8 = 20</math> arrangements, because the two people cannot be next to each other.
+
+Case <math>5:</math> <math>4</math> people are standing. Then the people must be arranged in stand-sit-stand-sit-stand-sit-stand-sit fashion, yielding <math>2</math> possible arrangements.
+
+More difficult is:
+
+Case <math>4:</math> <math>3</math> people are standing. First, choose the location of the first person standing (<math>8</math> choices). Next, choose <math>2</math> of the remaining people in the remaining <math>5</math> legal seats to stand, amounting to <math>6</math> arrangements considering that these two people cannot stand next to each other. However, we have to divide by <math>3,</math> because there are <math>3</math> ways to choose the first person given any three. This yields <math>\dfrac{8 \cdot 6}{3} = 16</math> arrangements for Case <math>4.</math>
+
+Alternate Case <math>4:</math> Use complementary counting. Total number of ways to choose 3 people from 8 which is <math>\dbinom{8}{3}</math>. Sub-case <math>1:</math> three people are next to each other which is <math>\dbinom{8}{1}</math>. Sub-case <math>2:</math> two people are next to each other and the third person is not <math>\dbinom{8}{1}</math> <math>\dbinom{4}{1}</math>. This yields <math>\dbinom{8}{3} - \dbinom{8}{1} - \dbinom{8}{1} \dbinom{4}{1} = 16</math> 
+
+Summing gives <math>1 + 8 + 20 + 2 + 16 = 47,</math> and so our probability is <math>\boxed{\textbf{(A) } \dfrac{47}{256}}</math>.
+
+Alternate: (Quicksolve) - We know that for case 5, there are 8 ways to choose the first person, and 3 ways to choose the first person given any 3 - which means that for the case, there is 8 * something divided by 3. The sum of the other cases is 31/256. Thus, add a multiple of 8 to 31 to get an answer. The options are 31 + 8 = 39, 31 + 16 = 47, 31 + 24 = 55, etc. The only possible answer is 47/256.
+
+==Solution 1.5 (solution 1 but with visuals)== 
+'''Case 1:''' Everyone flips tails
+
+1 way:
+<asy>
+size(50);
+import graph;
+
+real R = 0.5;            // Radius of big circle
+real r = 0.05;         // Radius of small circles
+int n = 8;             // Number of small circles
+
+// Draw big circle
+draw(Circle((0,0), R), linewidth(1));
+
+// Place small circles on circumference
+for (int i = 0; i < n; ++i) {
+  real angle = 2*pi*i/n;
+  pair center = R * dir(degrees(angle));
+  draw(Circle(center, r), linewidth(0.8));
+}
+</asy>
+
+
+'''Case 2:''' One person flips heads 
+
+8 ways:
+<asy>
+size(400);
+import graph;
+
+real R = 1.5;            // Radius of big circle
+real r = 0.2;           // Radius of small circles
+int n = 8;               // Number of small circles
+
+for (int j = 0; j < 8; ++j) {
+  pair centerOffset = (j * 4, 0);  // space between diagrams
+
+  // Draw big circle
+  draw(shift(centerOffset) * Circle((0,0), R), linewidth(1));
+
+  // Draw small circles
+  for (int i = 0; i < n; ++i) {
+    real angle = 2 * pi * i / n;
+    pair pos = R * dir(degrees(angle));
+    pair finalPos = centerOffset + pos;
+
+    if (i == j) {
+      fill(Circle(finalPos, r), black); // Shade this one
+    } else {
+      draw(Circle(finalPos, r), linewidth(0.8)); // Outline others
+    }
+  }
+}
+</asy>
+
+'''Case 3:''' Two people flip heads 
+
+There are <math>\binom{8}{2}</math> ways to choose any <math>2</math> people in the circle and <math>8</math> ways to choose <math>2</math> people adjacent to each other. So this case gives us <math>\binom{8}{2} - 8 = 20</math> ways. An example of choosing two nonadjacent people is shown below. 
+  
+<asy>
+size(50);
+import graph;
+
+real R = 0.5;            // Radius of big circle
+real r = 0.05;           // Radius of small circles
+int n = 8;               // Number of small circles
+
+// Indices of two circles that are one circle apart
+int a = 0;
+int b = 2;
+
+// Compute centers of these two circles
+real angleA = 2*pi*a/n;
+real angleB = 2*pi*b/n;
+
+pair centerA = R * dir(degrees(angleA));
+pair centerB = R * dir(degrees(angleB));
+
+// Draw big circle
+draw(Circle((0,0), R), linewidth(1));
+
+// Draw small circles and shade the two chosen ones
+for (int i = 0; i < n; ++i) {
+  real angle = 2*pi*i/n;
+  pair center = R * dir(degrees(angle));
+  if (i == a || i == b) {
+    fill(Circle(center, r), black);
+  } else {
+    draw(Circle(center, r), linewidth(0.8));
+  }
+}
+
+// Draw line connecting the two shaded circles
+draw(centerA -- centerB, linewidth(1));
+</asy>
+
+
+'''Case 4:''' Three people flip heads
+
+We can choose the first person (shaded gray) in <math>8</math> ways. We can choose the other <math>2</math> people in <math>6</math> ways (purple-blue, yellow-red, green-yellow, green-blue, purple-red, green-red). We divide by <math>3</math> for overcounting to get <math>\frac{8 \cdot 6}{3} = 16</math> ways for this case. 
+
+<asy>
+size(50);
+import graph;
+
+real R = 1.5;   // Radius of big circle
+real r = 0.2;   // Radius of small circles
+int n = 8;      // Number of small circles
+
+pair center = (0, 0);
+
+// Draw big circle
+draw(Circle(center, R), linewidth(1));
+
+// Compute positions (clockwise, starting at top)
+pair[] pts;
+for (int i = 0; i < n; ++i) {
+  real angle = 90 - 360 * i / n; // Start at 90° and go clockwise
+  pts[i] = center + R * dir(angle);
+}
+
+// Draw circles with unique colors for shaded ones
+for (int i = 0; i < n; ++i) {
+  if (i == 0) {
+    fill(Circle(pts[i], r), gray);     // Circle 1
+  } else if (i == 2) {
+    fill(Circle(pts[i], r), red);      // Circle 3
+  } else if (i == 3) {
+    fill(Circle(pts[i], r), blue);     // Circle 4
+  } else if (i == 4) {
+    fill(Circle(pts[i], r), yellow);   // Circle 5
+  } else if (i == 5) {
+    fill(Circle(pts[i], r), purple);   // Circle 6
+  } else if (i == 6) {
+    fill(Circle(pts[i], r), green);    // Circle 7
+  } else {
+    draw(Circle(pts[i], r), linewidth(0.8)); // Others outlined only
+  }
+}
+
+// Draw triangle connecting circles 1, 4, 6 (indices 0, 3, 5)
+draw(pts[0] -- pts[3] -- pts[5] -- cycle, linewidth(1));
+</asy>
+
+'''Case 5:''' 4 people flip heads
+
+2 ways (we can either choose the people shaded in red or blue)
+
+<asy>
+size(50);
+import graph;
+
+real R = 1.5;
+real r = 0.15;
+
+// Circle centers, clockwise starting at top
+pair c0 = (0, R);
+pair c1 = R * dir(45);
+pair c2 = R * dir(90 - 2*45);
+pair c3 = R * dir(90 - 3*45);
+pair c4 = R * dir(90 - 4*45);
+pair c5 = R * dir(90 - 5*45);
+pair c6 = R * dir(90 - 6*45);
+pair c7 = R * dir(90 - 7*45);
+
+// Draw big circle
+draw(Circle((0,0), R), linewidth(1));
+
+// Group 1 vertices (blue)
+pen bluePen = blue + linewidth(1.5);
+filldraw(Circle(c0, r), blue);
+filldraw(Circle(c2, r), blue);
+filldraw(Circle(c4, r), blue);
+filldraw(Circle(c6, r), blue);
+draw(c0--c2--c4--c6--c0, bluePen);
+
+// Group 2 vertices (red)
+pen redPen = red + linewidth(1.5);
+filldraw(Circle(c1, r), red);
+filldraw(Circle(c3, r), red);
+filldraw(Circle(c5, r), red);
+filldraw(Circle(c7, r), red);
+draw(c1--c3--c5--c7--c1, redPen);
+</asy>
+
+It's impossible to have more than 4 people standing without anyone being next to each other, so we stop here. 
+
+The total number of ways is <math>2^8,</math> so the answer is <math>\frac{1 + 8 + 20 + 16 + 2}{2^8} = \boxed{\frac{47}{256}}.</math>
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 2 ---
+We will count how many valid standing arrangements there are counting rotations as distinct and divide by <math>256</math> at the end.
+Line up all <math>8</math> people linearly.  In order for no two people standing to be adjacent, we will place a sitting person to the right of each standing person.  In effect, each standing person requires <math>2</math> spaces and the standing people are separated by sitting people.  We just need to determine the number of combinations of pairs and singles and the problem becomes very similar to pirates and gold aka stars and bars aka sticks and stones aka balls and urns.
+
+If there are <math>4</math> standing, there are <math>{4 \choose 4}=1</math> ways to place them.
+For <math>3,</math> there are <math>{3+2 \choose 3}=10</math> ways.
+etc.
+Summing, we get <math>{4 \choose 4}+{5 \choose 3}+{6 \choose 2}+{7 \choose 1}+{8 \choose 0}=1+10+15+7+1=34</math> ways.
+
+Now we consider that the far right person can be standing as well, so we have
+<math>{3 \choose 3}+{4 \choose 2}+{5 \choose 1}+{6 \choose 0}=1+6+5+1=13</math> ways
+
+Together we have <math>34+13=47</math>, and so our probability is <math>\boxed{\textbf{(A) } \dfrac{47}{256}}</math>.
+
+--- Solution 3 ---
+Because the denominator is always <math>256</math>, we can count the numerator with a recursion. Define <math>c_n</math> and <math>r_n</math> as the number of satisfying arrangements on a circle and row with <math>n</math> seats, respectively. 
+
+Then, observe that <cmath>c_n=r_{n-1}+r_{n-3}</cmath> <cmath>r_n=r_{n-1}+r_{n-2}</cmath>
+(From casework on whether the <math>n</math>th position has <math>T</math> or <math>H</math>.). 
+
+Because <math>r_0=1, r_1=2</math>, we can continue to write out each <math>r_i</math> and hence find <math>c_8=47</math>. Our answer is then <math>\boxed{\textbf{(A) } \dfrac{47}{256}}</math>.
+
+--- Solution 4 ---
+We know that the denominator of the probability is <math>2^8=256</math>. So now we only have to calculate the numerator, which is the number of arrangements for <math>8</math> people at a round table without <math>2</math> or more neighboring people standing.
+
+Denote <math>a_n</math> as number of arrangements for <math>n</math> people at a round table without <math>2</math> or more neighboring people standing. We can see that <math>a_2=3</math>, <math>a_3=4</math>, we are going to prove <math>a_n=a_{n-1}+a_{n-2}</math>
+
+We use <math>1</math> to represent standing people, and <math>0</math> as sitting people. The problem becomes arranging <math>n</math> numbers of <math>0</math> or <math>1</math> around a circle with no consecutive <math>1</math>'s.
+
+We elect one person as the chairman, let him be <math>p_1</math>, the first element in this circular sequence.
+There are <math>2</math> cases to generate the arrangement of <math>n</math> numbers.
+
+<math>Case</math> <math>1:</math> From the arrangement of <math>n-1</math> numbers, add <math>1</math> more number <math>p_n</math> counter-clockwise next to <math>p_1</math>. 
+
+If <math>p_1=1</math>, <math>p_{n-1}p_np_1</math> is <math>001</math>, as the diagram shows:
+
+<asy>
+draw(circle((0, 0), 5));
+pair A, B, C;
+A=(0, 5);
+B=rotate(72)*A;
+C=rotate(144)*A;
+label("$p_1=1$", A, N);
+label("$p_n=0$", B, NW);
+label("$p_{n-1}=0$", C, SW);
+</asy>
+
+If <math>p_1=0</math>, <math>p_{n-1}p_np_1</math> is <math>X00</math>, <math>X</math> could be <math>0</math> or <math>1</math>, as the diagram shows:
+
+<asy>
+draw(circle((0, 0), 5));
+pair A, B, C;
+A=(0, 5);
+B=rotate(72)*A;
+C=rotate(144)*A;
+label("$p_1=0$", A, N);
+label("$p_n=0$", B, NW);
+label("$p_{n-1}=X$", C, SW);
+</asy>
+
+<math>Case</math> <math>2:</math> From the arrangement of <math>n-2</math> numbers, add <math>2</math> more numbers <math>p_{n-1}</math> and <math>p_n</math> counter-clockwise next to <math>p_1</math>.
+
+If <math>p_1=1</math>, then <math>p_{n-2}=0</math>, let <math>p_{n-1}=1, p_n=0</math>, <math>p_{n-1}p_np_1</math> is <math>101</math>, as the diagram shows:
+
+<asy>
+draw(circle((0, 0), 5));
+pair A, B, C;
+A=(0, 5);
+B=rotate(72)*A;
+C=rotate(144)*A;
+label("$p_1=1$", A, N);
+label("$p_n=0$", B, NW);
+label("$p_{n-1}=1$", C, SW);
+</asy>
+
+If <math>p_1=0</math>, then <math>p_{n-2}</math> could be <math>0</math> or <math>1</math>. Let <math>p_{n-1}=0, p_n=1</math>, <math>p_{n-1}p_np_1</math> is <math>010</math>, as the diagram shows:
+
+<asy>
+draw(circle((0, 0), 5));
+pair A, B, C;
+A=(0, 5);
+B=rotate(72)*A;
+C=rotate(144)*A;
+label("$p_1=0$", A, N);
+label("$p_n=1$", B, NW);
+label("$p_{n-1}=0$", C, SW);
+</asy>
+
+From the above <math>2</math> cases and the <math>4</math> diagrams, the arrangements of <math>p_{n-1}p_np_1</math> are mutually exclusive collectively exhaustive, so <math>a_{n}=a_{n-1}+a_{n-2}</math>
+ <math>a_2=3</math>
+ <math>a_3=4</math>
+ <math>a_4=7</math>
+ <math>a_5=11</math>
+ <math>a_6=18</math>
+ <math>a_7=29</math>
+ <math>a_8=47</math>
+
+The answer is <math>\boxed{\textbf{(A) } \dfrac{47}{256}}</math>
+
+This sequence of numbers is called [https://en.wikipedia.org/wiki/Lucas_number Lucas Number].
+
+--- Solution 5 ---
+Note that there are <math>2^8=256</math> cases in total, so it suffices to find the number of satisfying cases. Define <math>h_n</math> and <math>t_n</math> as sequences of <math>h</math>’s and <math>t</math>’s where no <math>2</math> <math>h</math>’s are adjacent. The sequences will end in <math>h</math> and <math>t</math>, respectively (ignore the fact that they are in a circle for now).
+
+In order for a sequence to end in <math>h</math>, the previous term has to be a <math>t</math>; a sequence with a length of <math>n</math> ending in <math>h</math> is equivalent to adding <math>h</math> to the end of a sequence of length <math>n-1</math> that ends with <math>t</math>. This means <math>h_n=t_{n-1}</math>. 
+
+In order for a sequence to end in <math>t</math>, the previous term can be <math>h</math> or <math>t</math>, so <math>t_n=t_{n-1}+h_{n-1}</math>.
+
+Now, we have to take account of the circle. Notice that <math>t_n</math> does not depend on if the people are in a circle or not, but <math>h_n</math> does. To guarantee that some sequence that ends with <math>h</math> does not start with <math>h</math>, we have to add a <math>t</math> in the beginning of the sequence. Since there are <math>n-1</math> terms left, there are <math>h_{n-1}</math> sequences which end with <math>h</math> that satisfy the circle condition.
+
+The length of our sequence is <math>8</math>, so we need to find <math>t_8+h_7</math>. Manipulating our recursions, we can find that <math>t_n=t_{n-1}+t_{n-2}</math>. Now, we proceed to find our terms.
+
+<math>t_1=1</math>
+
+<math>t_2=2</math>
+
+<math>t_3=3</math>
+
+<math>t_4=5</math>
+
+<math>t_5=8</math>
+
+<math>t_6=13</math>
+
+<math>t_7=21</math>
+
+<math>t_8=34</math>
+
+Since <math>h_7=t_6</math> due to the fact that <math>h_n=t_{n-1}</math>, our answer is <math>\frac{34+13}{256}=\boxed{\textbf{(A) } \dfrac{47}{256}}</math>.
+
+--- Solution 6 ---
+There can be 0, 1, 2, 3, or 4 people standing up. 
+
+0 people standing up : 1 way
+
+
+1 person standing up : 8 ways
+
+
+2 people standing up : 8 for the first, 5 for the second, divide by 2 for double count, 20 ways.
+
+
+3 people standing up : we can start drawing, and notice we can only have gaps of (1,1,3) or (2,2,1). Rotating, we get 8+8=16.
+
+
+4 people standing up : must be alternating all the way through. 2 ways
+
+<math>1+8+20+16+2 = 47</math>, since there are <math>2^8=256</math> ways total, the answer is <math>\boxed{\textbf{(A)}\frac{47}{256}}</math>
+
+-skibbysiggy
+
+
+=== Problem 23 ===
+The zeroes of the function
+
+Choices: {'A': '7', 'B': '8', 'C': '16', 'D': '17', 'E': '18</math>'}
+Answer: C
+
+--- Solution 1 ---
+By Vieta's Formula, <math>a</math> is the sum of the integral zeros of the function, and so <math>a</math> is integral.
+
+Because the zeros are integral, the discriminant of the function, <math>a^2 - 8a</math>, is a perfect square, say <math>k^2</math>. Then adding 16 to both sides and completing the square yields
+<cmath>(a - 4)^2 = k^2 + 16.</cmath>
+Therefore <math>(a-4)^2 - k^2 = 16</math> and
+<cmath>((a-4) - k)((a-4) + k) = 16.</cmath>
+Let <math>(a-4) - k = u</math> and <math>(a-4) + k = v</math>; then, <math>a-4 = \dfrac{u+v}{2}</math> and so <math>a = \dfrac{u+v}{2} + 4</math>. Listing all possible <math>(u, v)</math> pairs (not counting transpositions because this does not affect (<math>u + v</math>)), <math>(2, 8), (4, 4), (-2, -8), (-4, -4)</math>, yields <math>a = 9, 8, -1, 0</math>. These <math>a</math> sum to <math>16</math>, so our answer is <math>\boxed{\textbf{(C) }16}</math>.
+
+--- Solution 2 ---
+Let <math>r_1</math> and <math>r_2</math> be the integer zeroes of the quadratic. 
+By [[Vieta's Formulas]], <cmath>r_1 + r_2 = a\text{ and }r_1r_2 = 2a.</cmath>
+
+Plugging the first equation in the second, 
+<cmath>r_1r_2 = 2 (r_1 + r_2).</cmath> 
+
+Rearranging gives 
+<cmath>r_1r_2 - 2r_1 - 2r_2 = 0 \implies (r_1 - 2)(r_2 - 2) = 4.</cmath>
+
+These factors <math>(f_1,f_2)</math> (ignoring order, because we want the sum of factors), can be <math>(1, 4), (-1, -4), (2, 2),</math> or <math>(-2, -2)</math>.
+
+The sum of distinct <math>a = r_1 + r_2 = (f_1+2) + (f_2+2)</math>, and these factors give 
+<cmath>\sum_a a = (5+4) + (-5+4) + (4+4) + (-4+4) = \boxed{\textbf{(C) }16}</cmath>.
+
+--- Solution 3 ---
+Let the roots be <math>r</math> and <math>s</math>. By Vieta's we have that <math>r+s = a</math>, and <math>rs = 2a</math>. So by Simon's Favorite Factoring Trick: <cmath>2r+2s = rs \Longrightarrow rs-2r-2s = 0 \Longrightarrow (r-2)(s-2) = 4.</cmath> Now, we test out values of <math>r</math> and <math>s</math> to see which work. Lets say that <math>r-2 = 1</math>, and <math>s-2 = 4</math>. This implies that <math>(r,s) = (3,6)</math>, so <math>a = 9</math>. Now, we let <math>r-2 = 2</math>, and <math>s-2 = 2</math>, this gives us <math>(r,s) = (4,4)</math>, which gives us a value for <math>a</math> of <math>8</math>. Now, we circle an answer of <math>17</math> and move onto the next problem. Yike! They didn't say that <math>a</math> can't be negative! This is where many people would go wrong. Let <math>r-2 = -1</math>, and <math>s-2 = -4</math>. This gives us that <math>(r,s) = (1,-2)</math>. This results in a value of <math>-1</math> for <math>a</math>. Now, we let <math>r-2 = -2</math>, and <math>s-2 = -2</math>. This gives <math>a = 0</math>. Now, we are done. Our total sum is <math>9+8-1 = \boxed{\textbf{(C) }16}</math>.
+
+-jb2015007 - minor edits by mathlover1205 and PojoDotCom
+
+
+=== Problem 24 ===
+For some positive integers
+
+Choices: {'A': '30', 'B': '31', 'C': '61', 'D': '62', 'E': '63</math>'}
+Answer: B
+
+--- Solution 1 ---
+Let <math>BC = x</math> and <math>CD = AD = y</math> be positive integers. Drop a perpendicular from <math>A</math> to <math>CD</math> to show that, using the Pythagorean Theorem, that
+<cmath>x^2 + (y - 2)^2 = y^2.</cmath>
+Simplifying yields <math>x^2 - 4y + 4 = 0</math>, so <math>x^2 = 4(y - 1)</math>. Thus, <math>y</math> is one more than a perfect square.
+
+The perimeter <math>p = 2 + x + 2y = 2y + 2\sqrt{y - 1} + 2</math> must be less than 2015. Simple calculations demonstrate that <math>y = 31^2 + 1 = 962</math> is valid, but <math>y = 32^2 + 1 = 1025</math> is not. On the lower side, <math>y = 1</math> does not work (because <math>x > 0</math>), but <math>y = 1^2 + 1</math> does work. Hence, there are 31 valid <math>y</math> (all <math>y</math> such that <math>y = n^2 + 1</math> for <math>1 \le n \le 31</math>), and so our answer is <math>\boxed{\textbf{(B) } 31}</math>
+
+--- Solution 2 ---
+Let <math>BC = x</math> and <math>CD = AD = z</math> be positive integers. Drop a perpendicular from <math>A</math> to <math>CD</math>. Denote the intersection point of the perpendicular and <math>CD</math> as <math>E</math>.
+
+<math>AE</math>'s length is <math>x</math>, as well.
+Call <math>ED</math> <math>y</math>.
+By the Pythagorean Theorem,  <math>x^2 + y^2 = (y + 2)^2</math>.
+And so: <math>x^2 = 4y + 4</math>, or <math>y = (x^2-4)/4</math>.
+
+Writing this down and testing, it appears that this holds for all <math>x</math>. However, since there is a dividend of 4, the numerator must be divisible by 4 to conform to the criteria that the side lengths are positive integers.
+In effect, <math>x</math> must be a multiple of 2 to let the side lengths be integers. We test, and soon reach 62. It gives us <math>p = 1988</math>, which is less than 2015. However, 64 gives us <math>2116 > 2015</math>, so we know 62 is the largest we can go up to. Count all the even numbers from 2 to 62, and we get <math>\boxed{\textbf{(B) } 31}</math>.
+
+-jackshi2006
+
+--- Solution 3 ---
+Let <math>BC = n</math> and <math>CD = AD = m</math> be positive integers. Drop a perpendicular from <math>A</math> to <math>CD</math>. Denote the intersection point of the perpendicular and <math>CD</math> as <math>E</math>.
+
+<math>AE</math>'s length is <math>n</math>, and <math>ED = m-2</math>
+By the Pythagorean Theorem,  <math>m^2 = (m-2)^2 + n^2</math>
+, therefore <math>n^2 = 4(m-1)</math>
+
+Notice that 4 is already a perfect square and <math>n</math> is an integer, meaning <math>m-1</math> also has to be a perfect square. 
+We can denote <math>m-1</math> as <math>x^2</math>, therefore we have <math>m = x^2 + 1</math>, <math>n = 2x</math>, and each <math>x</math> will correspond to a pair of <math>(n, m)</math>. 
+
+Since <math>p<2015</math>, <math>2 + n + m + m<2015</math> which gives us <math>n+2m<2013</math>. Substituting <math>x</math> will give us <math>2x+2(x^2 + 1) < 2013</math>, simplify this will again give us <math>x^2 + x + 1 < 1006.5</math>
+Try <math>x = 32</math>, <math>x^2 + x + 1 = 1057 > 1006.5</math>, exceeded
+so <math>x</math> must be less than <math>32</math>
+
+When <math>x=31</math>, <math>x^2 + x + 1 = 993 < 1006.5</math>, <math>x=31</math> works for us.
+
+For <math>x</math> in <math>(0, \infty)</math>, <math>f(x) = x^2 + x + 1</math> increases, therefore for any <math>x<31</math>, <math>f(x) < f(31) < 1006.5</math>
+
+Thus, any <math>x</math> in <math>[1, 31]</math> satisfy the condition that <math>x^2 + x + 1 < 1006.5</math>. <math>x</math> needs to be integer, and there are <math>31</math> integers in the interval <math>[1, 31]</math>. 
+
+Each <math>x</math> corresponds to a <math>(n, m)</math>, meaning there are <math>31</math> possible value for different pairs of <math>(n, m)</math> and lead to <math>\boxed{\textbf{(B) } 31}</math> possible values for the perimeter <math>p</math>.
+
+
+=== Problem 25 ===
+Let
+
+Choices: {'A': '59', 'B': '60', 'C': '61', 'D': '62', 'E': '63</math>'}
+Answer: A
+
+--- Solution 1 ---
+Divide the boundary of the square into halves, thereby forming <math>8</math> segments. Without loss of generality, let the first point <math>A</math> be in the bottom-left segment. Then, it is easy to see that any point in the <math>5</math> segments not bordering the bottom-left segment will be distance at least <math>\dfrac{1}{2}</math> apart from <math>A</math>. Now, consider choosing the second point on the bottom-right segment. The probability for it to be distance at least <math>0.5</math> apart from <math>A</math> is <math>\dfrac{0 + 1}{2} = \dfrac{1}{2}</math> because of linearity of the given probability. (Alternatively, one can set up a coordinate system and use geometric probability.)
+
+If the second point <math>B</math> is on the left-bottom segment, then if <math>A</math> is distance <math>x</math> away from the left-bottom vertex, then <math>B</math> must be up to <math>\dfrac{1}{2} - \sqrt{0.25 - x^2}</math> away from the left-middle point. Thus, using an averaging argument we find that the probability in this case is
+<cmath>\frac{1}{\left( \frac{1}{2} \right)^2} \int_0^{\frac{1}{2}} \dfrac{1}{2} - \sqrt{0.25 - x^2} dx = 4\left( \frac{1}{4} - \frac{\pi}{16} \right) = 1 - \frac{\pi}{4}.</cmath>
+
+(Alternatively, one can equate the problem to finding all valid <math>(x, y)</math> with <math>0 < x, y < \dfrac{1}{2}</math>  such that <math>x^2 + y^2 \ge \dfrac{1}{4}</math>, i.e. <math>(x, y)</math> is outside the unit circle with radius <math>0.5.</math>)
+
+Thus, averaging the probabilities gives
+<cmath>P = \frac{1}{8} \left( 5 + \frac{1}{2} + 1 - \frac{\pi}{4} \right) = \frac{1}{32} \left( 26 - \pi \right).</cmath>
+
+Thus our answer is <math>\boxed{\textbf{(A) } 59}</math>.
+
+~minor edit by [[User: Yiyj1|Yiyj1]]
+
+
+(Why?????)
+
+--- Solution 2 ---
+Let one point be chosen on a fixed side. Then the probability that the second point is chosen on the same side is <math>\frac{1}{4}</math>, on an adjacent side is <math>\frac{1}{2}</math>, and on the opposite side is <math>\frac{1}{4}</math>. We discuss these three cases. 
+
+Case 1: Two points are on the same side. Let the first point be <math>a</math> and the second point be <math>b</math> in the <math>x</math>-axis with <math>0\le a, b\le 1</math>. Consider <math>(a, b)</math> a point on the unit square <math>[0,1]\times [0,1]</math> on the Cartesian plane. The region <math>\{(a,b): |b-a|> \frac{1}{2}\}</math> has the area of  <math>(\frac{1}{2})^2</math>. Therefore, the probability that <math>|b-a|> \frac{1}{2}</math> is <math>\frac{1}{4}</math>. 
+
+Case 2: Two points are on two adjacent sides. Let the two sides be <math>[0,1]</math> on the x-axis and <math>[0,1]</math> on the y-axis and let one point be <math>(a, 0)</math> and the other point be <math>(0, b)</math>. Then <math>0\le a, b\le 1</math> and the distance between the two points is <math>\sqrt{a^2+b^2}</math>. As in Case 1, <math>(a, b)</math> is a point on the unit square <math>[0,1]\times [0,1]</math>. The area of the region <math>\{(a,b): \sqrt{a^2+b^2} \le \frac{1}{2}, 0\le a, b\le 1\}</math> is <math>\frac{\pi}{16}</math> and the area of its complementary set inside the square (i.e. <math>\{(a,b): \sqrt{a^2+b^2} > 1/2, 0\le a, b\le 1\}</math> ) is <math>1-\frac{\pi}{16}</math>. Therefore, the probability that the distance between <math>(a, 0)</math> and <math>(0, b)</math> is at least <math>\frac{1}{2}</math> is <math>1-\frac{\pi}{16}</math>. 
+
+Case 3: Two points are on two opposite sides. In this case, the probability that the distance between the two points is at least <math>1/2</math> is obviously <math>1</math>. 
+
+Thus the probability that the probability that the distance between the two points is at least <math>1/2</math> is given by 
+<cmath>
+\frac{1}{4} \cdot \frac{1}{4}+ \frac{1}{2}\left(1 - \frac{\pi}{16}\right) + \frac{1}{4} =\frac{26-\pi}{32}.
+</cmath>
+Therefore <math>a=26</math>, <math>b=1</math>, and <math>c=32</math>. Thus, <math>a+b+c=59</math> and the answer is <math>\textbf{(A).}</math>
+
+--- Solution 3 ---
+Let our points be called Point A and Point B. Let us first choose Point A to be on some side of the square. We have three cases:
+
+Case 1: Point B is on the same side as Point A: This setup occurs with probability <math>\dfrac{1}{4}.</math>
+This is the standard geometric probability problem. Since Point A and Point B can be anywhere on the side, we can't really "count" all of the possibilities. Hence, we translate the problem to a problem involving areas, which can be a finite value while still "containing" infinitely many points. Let side of a square be a number line from <math>0</math> to <math>1,</math> and <math>a</math> and <math>b</math> be the values representing the positions of Point A and Point B respectively. Our problem now asks for the probability that <math>|a-b| \geq 1/2.</math> Graphing the inequality on a coordinate plane with <math>a</math> and <math>b</math> as the <math>x</math> and <math>y</math>-axes gives us a "good area" of <math>1/4</math> out of a "total area" of <math>1.</math> Hence, the probability the inequality is satisfied is <math>1/4 \div 1 = 1/4.</math>
+
+Case 2: Point B is on a side adjacent to the side with Point A: This setup occurs with probability <math>\dfrac{1}{2}.</math>
+This is a slight deviation of the same geometric probability principle. This time, let the common vertex of the two sides be <math>0,</math> and the sides have side length <math>1.</math> Again, let <math>a</math> and <math>b</math> be the values representing the positions of Point A and Point B respectively, so the Pythagorean Theorem yields <math>\sqrt{a^2+b^2}\geq 1/2,</math> graphing into a quarter circle of radius <math>1/2,</math> and a total area that is <math>1.</math> Hence, our probability is <math>1-\frac{\pi(1/2)^2}{4} = \frac{16-\pi}{16}.</math>
+
+
+Case 3: Point B is on a side opposite to the side with Point A: This setup occurs with probability <math>\dfrac{1}{4}.</math>
+Clearly, the distance between Point A and Point B are at least 1, so it must be at least <math>1/2.</math> The probability in this case is <math>1.</math>
+
+
+Now taking the probabilities of the setups into account, our final probability is <cmath>\frac{1}{4}\cdot \left( \frac{1}{4} \right)+ \frac{1}{2}\cdot \left(\frac{16-\pi}{16}\right) + \frac{1}{4}\cdot \left(1\right)=\frac{26-\pi}{32}.</cmath>Thus <math>(a,b,c)=(26,1,32),</math> so <math>a+b+c= \boxed{\mathbf{(A)}\;59}</math>
+
+==Geometric way to solve case 2==
+The probability of case 2 (if the two points fall on adjacent sides) can be evaluated geometrically. Let the square have vertices at <math>(0,0)</math>, <math>(1,0)</math>, <math>(0,1)</math> and <math>(1,1)</math>, and WLOG, let point <math>A</math> be on the <math>x</math> axis and let point <math>B</math> be on the <math>y</math> axis. Let the midpoint of <math>AB</math> be <math>M</math>. We can draw the following conclusions:
+
+1. <math>M</math> must fall inside the square with vertices at <math>(0,0)</math>, <math>(0.5,0)</math> and <math>(0,0.5)</math> and <math>(0.5,0.5)</math>.
+
+2. <math>M</math> will fall inside the square described above randomly, with a uniform probability of landing anywhere.
+
+3. If and only if <math>M</math> is more than <math>0.25</math> units from the origin will <math>AB</math> be more than <math>0.5</math> units long.
+
+The proof of each of these statements is left as an exercise to the reader.
+
+Thus, the probability of case 2 can be mapped to the probability that a randomly chosen point inside the square with vertices at <math>(0,0)</math>, <math>(0.5,0)</math> and <math>(0,0.5)</math> and <math>(0.5,0.5)</math> is more than <math>0.25</math> units from the origin. By calculating areas, this is <math>\frac{16 - \pi}{16}</math>.
+
+

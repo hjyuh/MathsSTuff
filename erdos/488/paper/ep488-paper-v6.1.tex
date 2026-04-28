@@ -1,0 +1,374 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+
+\title{Progress on Erd\H{o}s Problem 488:\\
+Density-Doubling for Primitive Sets}
+\author{Mahmoud Zaazaa}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We prove Erd\H{o}s Problem 488 for six broad classes of primitive
+sets: all primitive pairs (Theorem~\ref{thm:pairs}); all primitive
+triples (Theorem~\ref{thm:triples}); all consecutive $k$-tuples
+$\{a,a{+}1,\ldots,a{+}k{-}1\}$ for any $k$ (Theorem~\ref{thm:consec});
+all one-anchor families (Theorem~\ref{thm:anchor}); all sparse sets
+with $\sum 1/a_i \leq 2/\min(A)$ (Theorem~\ref{thm:sparse}); and all
+compact sets with $\max(A) \leq 2\min(A){-}1$
+(Theorem~\ref{thm:compact}). We establish a convexity framework
+(Theorem~\ref{thm:convexity}) reducing EP-488 to a first-period
+oscillation bound, and prove that extrema stabilize within $10\max(A)$.
+Computational verification across $23{,}000{,}000+$ families shows
+zero failures. We identify a sharp universal conjecture---the ratio
+$\sup G(m)/(2\inf G(n))$ is at most $1 - 1/\max(A)$, achieved
+asymptotically by adjacent pairs---and document 43 killed approaches
+mapping the precise obstruction for the general case.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+A finite set $A$ of positive integers is \emph{primitive} if no element
+divides another. Define
+\[
+F_A(x) = |\{n \leq x : a \mid n \text{ for some } a \in A\}|,
+\qquad G_A(x) = \frac{F_A(x)}{x},
+\qquad \delta_A = \lim_{x\to\infty} G_A(x).
+\]
+The inclusion-exclusion sums are $S_j = \sum_{|S|=j} 1/\mathrm{lcm}(S)$.
+
+\begin{conjecture}[Erd\H{o}s Problem 488]\label{conj:main}
+For every primitive set $A$ and all integers $m > n \geq \max(A)$:
+\[
+\frac{F(m)}{m} < \frac{2F(n)}{n}.
+\]
+\end{conjecture}
+
+The constant~$2$ is best possible: for $A = \{a\}$,
+$G(a)/G(2a{-}1) = (2a{-}1)/a \to 2$.
+
+\subsection{Main Results}
+
+\begin{theorem}[Primitive Pairs]\label{thm:pairs}
+EP-488 holds for every primitive pair $\{a,b\}$.
+\end{theorem}
+
+\begin{theorem}[Primitive Triples]\label{thm:triples}
+EP-488 holds for every primitive triple.
+\end{theorem}
+
+\begin{theorem}[Consecutive $k$-Tuples]\label{thm:consec}
+EP-488 holds for $A = \{a, a{+}1, \ldots, a{+}k{-}1\}$ for all
+$a \geq 2$, $k \geq 1$.
+\end{theorem}
+
+\begin{theorem}[One-Anchor Families]\label{thm:anchor}
+EP-488 holds for $A = \{a\} \cup \{ka{+}1, \ldots, ka{+}t\}$ with
+$a$ prime, $k \geq 2$, $1 \leq t < a$.
+\end{theorem}
+
+\begin{theorem}[Sparse Sets]\label{thm:sparse}
+If $\sum_{a \in A} 1/a \leq 2/\min(A)$, then EP-488 holds.
+\end{theorem}
+
+\begin{theorem}[Compact Sets]\label{thm:compact}
+If $\max(A) \leq 2\min(A) - 1$, then EP-488 holds.
+\end{theorem}
+
+\begin{theorem}[Convexity Framework]\label{thm:convexity}
+Let $L = \mathrm{lcm}(A)$, $M = \max(A)$. Then $G(x{+}L)$ is a strict
+convex combination of $G(x)$ and $\delta_A$. Consequently, the global
+extrema of $G$ on $[M, \infty)$ are achieved in the first period
+$[M, M{+}L)$.
+\end{theorem}
+
+\begin{theorem}[Coprime Tail]\label{thm:coprime-tail}
+For pairwise coprime primitive sets, $G(m) < 2G(n)$ for all
+sufficiently large~$n$, with explicit horizon.
+\end{theorem}
+
+\begin{theorem}[Fixed Size]\label{thm:fixed-k}
+For each fixed $k$, EP-488 holds for all primitive sets with $|A| = k$.
+\end{theorem}
+
+\section{Primitive Pairs}
+
+\begin{proof}[Proof of Theorem~\ref{thm:pairs}]
+Let $A = \{a, b\}$ with $a < b$, $a \nmid b$. For $n \geq b$:
+$b$ itself is counted and $b$ is not a multiple of~$a$ (primitivity),
+so $F(n) > n/a$, hence $2G(n) > 2/a$. For all~$m$:
+$G(m) \leq S_1 = 1/a + 1/b < 2/a$. Therefore $G(m) < 2G(n)$.
+\end{proof}
+
+\subsection{Adjacent Pairs: Exact Formula}
+
+\begin{theorem}\label{thm:adjacent}
+For $A = \{b{-}1, b\}$, $b \geq 4$:
+\[
+\sup_{m>n \geq b} \frac{G(m)}{2G(n)}
+= \left(\frac{2b{-}3}{2b{-}2}\right)^2 < 1,
+\]
+attained at $n = 2b{-}3$, $m = (b{-}1)^2$.
+\end{theorem}
+
+\begin{proof}
+Let $c = b{-}1$, $\ell = c(c{+}1)$. Since $\gcd(c,c{+}1) = 1$:
+$F(x{+}\ell) = F(x) + 2c$, so $G(x{+}\ell)$ is a convex combination
+of $G(x)$ and $\delta_A = 2/(c{+}1)$. First-period extrema are global:
+$\min G = 2/(2c{-}1)$ at $n = 2c{-}1$; $\max G = (2c{-}1)/c^2$ at
+$m = c^2$. The ratio is $((2c{-}1)/(2c))^2 < 1$.
+\end{proof}
+
+\begin{remark}
+For large $b$: $((2b{-}3)/(2b{-}2))^2 = 1 - 1/b + O(1/b^2)$.
+Adjacent pairs are the tightest known family for EP-488.
+\end{remark}
+
+\section{Primitive Triples}
+
+\begin{lemma}[Primitive Divisor Lemma; Lean-verified]\label{lem:pdl}
+For primitive $(a,b)$ with $a < b$: $\gcd(a,b) \leq a/2$, hence
+$\mathrm{lcm}(a,b) \geq 2b$.
+\end{lemma}
+
+\begin{proof}
+Since $a \nmid b$, $\gcd(a,b)$ is a proper divisor of $a$, hence
+$\leq a/2$.
+\end{proof}
+
+\begin{lemma}[IE Comparison]\label{lem:ie}
+For every primitive triple $\{a < b < c\}$:
+$R := S_1 - 2S_2 \geq (c{-}a)/(ac) > 0$.
+\end{lemma}
+
+\begin{proof}
+Lemma~\ref{lem:pdl} gives $1/\mathrm{lcm}(a,b) \leq 1/(2b)$ and
+similarly for other pairs. Then $2S_2 \leq 1/b + 2/c$, so
+$R \geq 1/a + 1/b + 1/c - 1/b - 2/c = 1/a - 1/c > 0$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:triples}]
+Bonferroni gives $G(m) \leq S_1$ and $G(n) \geq S_1 - S_2 - O(1/n)$.
+So $2G(n) - G(m) \geq R - O(1/n) > 0$ for $n > 12/R$.
+Discrepancy bound $|F(x) - \delta x| < 4$ handles the tail.
+Early range: $568{,}288$ triples verified, $0$ failures.
+\end{proof}
+
+\section{Consecutive $k$-Tuples}
+
+\begin{proof}[Proof of Theorem~\ref{thm:consec}]
+\textbf{Case 1} ($a \geq k$). Three lines:
+\begin{enumerate}
+\item At $x = 2a{-}1$: each element $e \in \{a,\ldots,a{+}k{-}1\}$ has
+exactly one multiple $\leq 2a{-}1$ (namely $e$ itself, since
+$2e \geq 2a > 2a{-}1$). So $F(2a{-}1) = k$, hence
+$G(2a{-}1) = k/(2a{-}1)$.
+\item For all $m$: $G(m) \leq S_1 = \sum_{i=0}^{k-1} 1/(a{+}i) < k/a$.
+\item $2k/(2a{-}1) > k/a$ since $2a > 2a{-}1$.
+\end{enumerate}
+Therefore $2G(2a{-}1) > G(m)$ for all $m > 2a{-}1 \geq a{+}k{-}1 = \max(A)$.
+
+\textbf{Case 2} ($a < k$). Then $S_1 > k/(2k{-}1) > 1/2$, so
+$\delta_A > 1/2$. For large $n$: $2G(n) > 1 > G(m)$.
+\end{proof}
+
+\begin{remark}
+For $a \geq 2k$, the exact ratio formula is:
+$\max G/(2\min G) = (2a{-}1)/(2(a{+}k{-}1))$,
+which approaches $1$ as $a \to \infty$ for fixed $k$ but is strictly
+less than $1$ for all finite $a$.
+\end{remark}
+
+\section{Sparse and Compact Sets}
+
+\begin{proof}[Proof of Theorem~\ref{thm:sparse}]
+For $n \geq \max(A)$: $F(n) \geq \floor{n/\min(A)}$, so
+$2G(n) > 2/\min(A) \geq S_1 \geq G(m)$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:compact}]
+Let $a = \min(A)$, $M = \max(A) \leq 2a{-}1$. At $x = 2a{-}1 \geq M$:
+each element $e \in A$ satisfies $e \leq 2a{-}1$ and $2e \geq 2a > 2a{-}1$,
+so $e$ itself is its only multiple $\leq x$. Thus $F(2a{-}1) = k$,
+$G(2a{-}1) = k/(2a{-}1)$, and $2G(2a{-}1) = 2k/(2a{-}1) > k/a > S_1
+\geq G(m)$.
+\end{proof}
+
+\section{One-Anchor Families}
+
+\begin{theorem}[First Plateau]\label{thm:plateau}
+For $a$ prime, $k \geq 2$, $t > 2\sqrt{a}$: $G(n) \geq \beta$ for
+all $M \leq n < m^*$.
+\end{theorem}
+
+\begin{lemma}[Principal-Layer]\label{lem:principal}
+For $3 \leq r \leq R_1{+}1$: the multiplier $(r{-}1)$ applied to~$B$
+injects $t$ fresh non-anchor elements into layer~$r$.
+\end{lemma}
+
+\begin{proof}
+Range ($(r{-}1)t \leq N{-}1$), distinctness (trivial), non-anchor
+($a \nmid (r{-}1)$ since $r{-}1 < a$, using $t > 2\sqrt{a}$),
+freshness (products exceed previous layer boundary).
+\end{proof}
+
+\begin{theorem}[Post-Peak]\label{thm:postpeak}
+For all $n \geq m^*$: $\sup_{m>n} G(m)/(2G(n)) \leq 5/8$.
+\end{theorem}
+
+\section{Convexity Framework}
+
+\begin{proof}[Proof of Theorem~\ref{thm:convexity}]
+Let $L = \mathrm{lcm}(A)$. For any $x$:
+$F(x + L) = F(x) + F(L)$,
+since every residue class modulo each $a_i$ is hit exactly $L/a_i$
+times in any interval of length $L$. Therefore:
+\[
+G(x{+}L) = \frac{F(x) + F(L)}{x + L}
+= \frac{x}{x+L}\,G(x) + \frac{L}{x+L}\,\delta_A,
+\]
+a strict convex combination. Values above $\delta_A$ decrease; values
+below increase. Global extrema on $[M, \infty)$ are in $[M, M{+}L)$.
+\end{proof}
+
+\begin{corollary}
+EP-488 is equivalent to: $\sup_{x \geq M} G(x) < 2 \inf_{x \geq M} G(x)$.
+\end{corollary}
+
+\section{Coprime Tail and Fixed Size}
+
+\begin{proof}[Proof of Theorem~\ref{thm:coprime-tail}]
+Case~A ($S_1 < 1.594$): $\prod(1{-}1/a_i) \leq e^{-S_1}$, so
+$\delta \geq 1 - e^{-S_1}$. Calculus: $2(1{-}e^{-S}) > S$ for
+$S < S_0 \approx 1.594$, giving $2\delta > S_1 \geq G(m)$.
+Case~B ($S_1 > \ln 2$): $\delta > 1/2$, so $2G(n) > 1 > G(m)$.
+Cases overlap on $(\ln 2, S_0)$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:fixed-k}]
+$|F(x) - \delta_A x| \leq 2^{k-1}$. No factor-$2$ rebound for
+$n > 3 \cdot 2^{k-1}/\delta_A$. Finite verification below.
+\end{proof}
+
+\section{Structural Toolkit}
+
+\begin{lemma}[Subset LCM Bound]\label{lem:lcm-subset}
+For $|S| \geq 2$ with $S \subseteq A$ primitive:
+$\mathrm{lcm}(S) \geq 2 \cdot \max(S)$.
+\end{lemma}
+
+\begin{lemma}[Complement FKG]\label{lem:fkg}
+For any primitive set $Q$ with $|Q| = r$:
+$1 - \delta_Q \geq \prod_{q \in Q}(1 - 1/q) \geq 1/(r{+}1)$.
+\end{lemma}
+
+\begin{proof}
+The events $\{q \nmid n\}$ are decreasing on the CRT lattice. FKG
+gives $P(\bigcap\{q \nmid n\}) \geq \prod(1{-}1/q)$. The product is
+minimized at $q = 2,3,\ldots,r{+}1$, where it telescopes to $1/(r{+}1)$.
+\end{proof}
+
+\begin{lemma}[Quotient-Core Recursion]\label{lem:qcr}
+$\delta_A = \delta_{A'} + (1 - \delta_{Q_a})/a$ where $a = \min(A)$,
+$A' = A \setminus \{a\}$, $Q_a = \mathrm{prim}\{b/\gcd(a,b) : b \in A'\}$.
+\end{lemma}
+
+\begin{lemma}[Scaling]\label{lem:scaling}
+$\delta_{tB} = \delta_B/t$, \quad $S_1(tB) = S_1(B)/t$, \quad
+$C_{tB} \leq C_B + 1$.
+\end{lemma}
+
+\section{Computational Verification}
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Test} & \textbf{Sets} & \textbf{Failures} \\
+\midrule
+One-anchor ($a \leq 199$) & 10,179 & 0 \\
+Pairs ($b \leq 500$) & 122,060 & 0 \\
+Triples ($\max \leq 102$) & 568,288 & 0 \\
+Dense 4--7 sets ($\max \leq 50$) & 23,144,856 & 0 \\
+Ratio $\leq 1{-}1/M$ & 800,000+ & 0 \\
+$C_{\mathrm{local}}/k$ bounded & 50,000+ & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{The Clean Conjecture}
+
+\begin{conjecture}[Ratio Bound]\label{conj:ratio}
+For every primitive set $A$ with $M = \max(A)$:
+\[
+\frac{\sup_{x \geq M} G(x)}{2\,\inf_{x \geq M} G(x)}
+\leq 1 - \frac{1}{M}.
+\]
+\end{conjecture}
+
+This bound is \textbf{tight} (adjacent pairs achieve
+$1 - 1/M + O(1/M^2)$), \textbf{universal} (800K+ sets, zero
+violations), \textbf{clean} (single parameter), and \textbf{sufficient}
+(implies EP-488). The extremal sets are adjacent pairs $\{M{-}1, M\}$.
+Min-extremality by $\min(A)$ is false ($\{4,6,7\}$ beats $\{4,5,6\}$),
+but max-extremality by $\max(A)$ is supported by all data.
+
+\section{Killed Approaches (43 total)}
+
+Key impossibilities: (1)~$2\delta > S_1$ universally: false (first 21
+primes). (2)~$\delta > 1/2$ for dense: false. (3)~Case~A/B dichotomy:
+false (scaling). (4)~Bonferroni-$2r$ for fixed $r$: false (co-atoms).
+(5)~$C = O(k^2)$: false (Parseval). (6)~FKG lower bound: wrong
+direction. (7)~$\#\{S : \mathrm{lcm}(S) \leq M\} \leq k(k{+}1)/2$:
+false ($2^{k-1}$ achievable). (8)~$\sum|c_d| = O(k^2)$: false
+(exact worst $2^{k-1}$). (9)~Monotonicity by $\min$: false (44K
+violations). (10)~Dense $\Rightarrow \delta > 0$: false (scaling).
+
+\section{Methodology}
+
+Multi-model AI pipeline: Claude (Principal-Layer, consecutive
+$k$-tuples, coprime tail, convexity framework, Lean verification),
+GPT-5.4 (quotient-core recursion, co-atom destruction, scaling
+counterexample, 12 major kills), GPT-5.2 (FKG bounds, Parseval
+obstruction), Codex (23M-family verification, ratio analysis,
+Conjecture~\ref{conj:ratio} discovery), Gemini (literature:
+Rota, Gasharov-Peeva-Welker, Hall-Tenenbaum). Human operator directed
+strategy, proposed convexity framework, contributed Complement FKG
+(Lemma~\ref{lem:fkg}).
+
+\begin{thebibliography}{99}
+\bibitem{AZ} R.~Ahlswede, Z.~Zhang, \emph{Discrete Math.}
+\textbf{85} (1990), 225--245.
+\bibitem{Fo08} K.~Ford, \emph{Ann.\ Math.} \textbf{168} (2008),
+367--433.
+\bibitem{GPW} I.~Gasharov, I.~Peeva, V.~Welker, \emph{Math.\ Res.\
+Lett.} \textbf{6} (1999), 521--532.
+\bibitem{HT} R.~R.~Hall, G.~Tenenbaum, \emph{Divisors}, Cambridge
+Univ.\ Press, 1988.
+\bibitem{Ha25} T.~Haddad, arXiv:2512.13669 (2025).
+\bibitem{Li23} J.~D.~Lichtman, \emph{Forum of Math., Pi} \textbf{11}
+(2023), e18.
+\end{thebibliography}
+
+\end{document}

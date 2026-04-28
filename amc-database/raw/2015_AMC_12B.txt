@@ -1,0 +1,980 @@
+=== Problem 1 ===
+What is the value of
+
+Choices: {'A': '\\; -2', 'B': '\\; \\dfrac{1}{16}', 'C': '\\; \\dfrac{7}{4}', 'D': '\\; \\dfrac{9}{4}', 'E': '\\; 6</math>'}
+Answer: C
+
+--- Solution 1 ---
+<math>2-(-2)^{-2}=2-\frac{1}{(-2)^2}=2-\frac{1}{4}=\frac{8}{4}-\frac{1}{4}=\boxed{\textbf{(C) }\frac{7}{4}}</math>
+
+
+=== Problem 2 ===
+Marie does three equally time-consuming tasks in a row without taking breaks. She begins the first task at 1:00 PM and finishes the second task at 2:40 PM. When does she finish the third task?
+
+Choices: {'A': '\\; \\text{3:10 PM}', 'B': '\\; \\text{3:30 PM}', 'C': '\\; \\text{4:00 PM}', 'D': '\\; \\text{4:10 PM}', 'E': '\\; \\text{4:30 PM}</math>'}
+Answer: 
+
+--- Solution 1 ---
+The first two tasks took <math>\text{2:40 PM}-\text{1:00 PM}=100</math> minutes. Thus, each task takes <math>100\div 2=50</math> minutes. So the third task finishes at <math>\text{2:40 PM}+50</math> minutes <math>=\fbox{\textbf{(B)}\; \text{3:30 PM}}</math>.
+
+
+=== Problem 3 ===
+Isaac has written down one integer two times and another integer three times. The sum of the five numbers is 100, and one of the numbers is 28. What is the other number?
+
+Choices: {'A': '\\; 8', 'B': '\\; 11', 'C': '\\; 14', 'D': '\\; 15', 'E': '\\; 18</math>'}
+Answer: A
+
+--- Solution 1 ---
+Let <math>a</math> be the number written two times, and <math>b</math> the number written three times. Then <math>2a + 3b = 100</math>. Plugging in <math>a = 28</math> doesn't yield an integer for <math>b</math>, so it must be that <math>b = 28</math>, and we get <math>2a + 84 = 100</math>. Solving for <math>a</math>, we obtain <math>a = \boxed{\textbf{(A)}\; 8}</math>.
+
+
+=== Problem 4 ===
+Lian, Marzuq, Rafsan, Arabi, Nabeel, and Rahul were in a 12-person race with 6 other people. Nabeel finished 6 places ahead of Marzuq. Arabi finished 1 place behind Rafsan. Lian finished 2 places behind Marzuq. Rafsan finished 2 places behind Rahul. Rahul finished 1 place behind Nabeel. Arabi finished in 6th place. Who finished in 8th place?
+
+Choices: {'A': '\\; \\text{Lian}', 'B': '\\; \\text{Marzuq}', 'C': '\\; \\text{Rafsan}', 'D': '\\; \\text{Nabeel}', 'E': '\\; \\text{Rahul}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Let --- denote any of the 6 racers not named. Then the correct order looks like this:
+
+<cmath>-, \text{Nabeel}, \text{Rahul}, -, \text{Rafsan}, \text{Arabi}, -, \text{Marzuq}, -, \text{Lian}, -, -</cmath>
+
+Thus the 8th place runner is <math>\boxed{\textbf{(B)}\; \text{Marzuq}}</math>.
+
+--- Solution 2 ---
+We list the people out vertically for clarity, starting with Marzuq and working from there.
+
+
+<cmath>1 - </cmath>
+<cmath>2 \text{Nabeel} </cmath>
+<cmath>3 \text{Rahul} </cmath>
+<cmath>4 - </cmath>
+<cmath>5 \text{Rafsan} </cmath>
+<cmath>6 \text{Arabi} </cmath>
+<cmath>7 - </cmath>
+<cmath>8 \text{Marzuq} </cmath>
+
+Thus our answer is <math>\boxed{\textbf{(B)}\; \text{Marzuq}}</math>.
+
+
+=== Problem 5 ===
+The Tigers beat the Sharks 2 out of the 3 times they played. They then played
+
+Choices: {'A': '\\; 35', 'B': '\\; 37', 'C': '\\; 39', 'D': '\\; 41', 'E': '\\; 43</math>'}
+Answer: 
+
+--- Solution 1 ---
+The ratio of the Shark's victories to games played is <math>\frac{1}{3}</math>. For <math>N</math> to be at its smallest, the Sharks must win all the subsequent games because <math>\frac{1}{3} < \frac{95}{100}</math>. Then we can write the equation
+
+<cmath>\frac{1+N}{3+N}=\frac{95}{100}=\frac{19}{20}</cmath>
+
+Cross-multiplying yields <math>20(1+N)=19(3+N)</math>, and we find that <math>N=\fbox{\textbf{(B)}\; 37}</math>.
+
+
+=== Problem 6 ===
+Back in 1930, Tillie had to memorize her multiplication facts from
+
+Choices: {'A': '\\; 0.21', 'B': '\\; 0.25', 'C': '\\; 0.46', 'D': '\\; 0.50', 'E': '\\; 0.75'}
+Answer: A
+
+--- Solution 1 ---
+There are a total of <math>(12+1) \times (12+1) = 169</math> products (don't forget to include the 0's!), and a product is odd if and only if both its factors are odd. There are <math>6</math> odd numbers between <math>0</math> and <math>12</math>, namely <math>1, 3, 5, 7, 9, 11</math> hence the number of odd products is <math>6 \times 6 = 36</math>. Therefore the answer is <math>\frac{36}{169} \doteq \boxed{\textbf{(A)} \, 0.21}</math>.
+
+NOTE: The exact value of <math>\frac{36}{169}</math> is <math>0.21307751...</math>
+
+--- Solution 2 ---
+Note that if we had an <math>11</math> by <math>11</math> multiplication table, the fraction of odd products becomes <math>0.25</math>. If we add the <math>12</math> by <math>12</math>, the fraction of odd products decreases. Because <math>0.21</math> is the only option less than <math>0.25</math>, our answer is <math>\boxed{\textbf{(A)} \, 0.21}</math>.
+
+
+=== Problem 7 ===
+A regular 15-gon has
+
+Choices: {'A': '\\; 24', 'B': '\\; 27', 'C': '\\; 32', 'D': '\\; 39', 'E': '\\; 54</math>'}
+Answer: D
+
+--- Solution 1 ---
+From consideration of a smaller regular polygon with an odd number of sides (e.g. a pentagon), we see that the lines of symmetry go through a vertex of the polygon and bisect the opposite side. Hence <math>L=15</math>, the number of sides / vertices. The smallest angle for a rotational symmetry transforms one side into an adjacent side, hence <math>R = 360^\circ / 15 = 24^\circ</math>, the number of degrees between adjacent sides. Therefore the answer is <math>L + R = 15 + 24 = \boxed{\textbf{(D)} \, 39}</math>.
+
+
+=== Problem 8 ===
+What is the value of
+
+Choices: {'A': '\\; 5', 'B': '\\; \\sqrt[4]{2015}', 'C': '\\; 625', 'D': '\\; 2015', 'E': '\\; \\sqrt[4]{5^{2015}}</math>'}
+Answer: D
+
+--- Solution 1 ---
+<math>(625^{\log_5 2015})^\frac{1}{4}=((5^4)^{\log_5 2015})^\frac{1}{4}=(5^{4 \cdot \log_5 2015})^\frac{1}{4}=(5^{\log_5 2015 \cdot 4})^\frac{1}{4}=((5^{\log_5 2015})^4)^\frac{1}{4}=(2015^4)^\frac{1}{4}=\boxed{\textbf{(D)}\; 2015}</math>
+
+--- Solution 2 ---
+We can rewrite <math>\log_5 2015</math> as as <math>5^x = 2015</math>. Thus, <math>625^{x \cdot \frac{1}{4}} = 5^x = \boxed{2015}.</math>
+
+--- Solution 3 ---
+<math>(625^{\log_5 2015})^{\frac{1}{4}} = (625^{\frac{1}{4}})^{\log_5 2015} = 5^{\log_5 2015} = \boxed{\textbf{(D)}
+
+--- Solution 4 ---
+We note that the year number is just <math>2015</math>, so just guess <math>\boxed{\textbf{(D)} 2015}</math>.
+
+
+Easily the best solution
+(yeah definetly)
+
+
+=== Problem 9 ===
+Larry and Julius are playing a game, taking turns throwing a ball at a bottle sitting on a ledge. Larry throws first. The winner is the first person to knock the bottle off the ledge. At each turn the probability that a player knocks the bottle off the ledge is
+
+Choices: {'A': '\\; \\dfrac{1}{2}', 'B': '\\; \\dfrac{3}{5}', 'C': '\\; \\dfrac{2}{3}', 'D': '\\; \\dfrac{3}{4}', 'E': '\\; \\dfrac{4}{5}</math>'}
+Answer: C
+
+--- Solution 1 ---
+If Larry wins, he either wins on the first move, or the third move, or the fifth move, etc. Let <math>W</math> represent "player wins", and <math>L</math> represent "player loses". Then the events corresponding to Larry winning are <math>W, LLW, LLLLW, LLLLLLW, \ldots</math>
+
+Thus the probability of Larry winning is
+
+<math>\frac{1}{2} + \frac{1}{2^3} + \frac{1}{2^5} + \frac{1}{2^7} + \cdots</math>
+
+This is a geometric series with ratio <math>\frac{1}{2^2}=\frac{1}{4}</math>, hence the answer is <math>\frac{1}{2} \cdot \frac{1}{1 - \frac{1}{4}} = \boxed{\textbf{(C)}\; \frac{2}{3}}</math>.
+
+--- Solution 2 ---
+Break the problem up into two separate cases: (a) Larry wins on the first throw or (b) Larry wins after the first throw.
+
+a: The probability that Larry wins on the first throw is <math>\frac{1}{2}</math>.
+
+b: The probability that Larry wins after the first throw is half the probability that Julius wins because it only occurs half the time. This probability is <math>\frac{1}{2}(1-x)</math>, where <math>x</math> is the probability that Larry wins.
+
+Therefore, <math>x = \frac{1}{2} + \frac{1}{2}(1 - x)</math>. This equation can be solved for <math>x</math> to find that the probability that Larry wins is <math>\boxed{\textbf{(C)}\; \frac{2}{3}}</math>.
+
+
+=== Problem 10 ===
+How many noncongruent integer-sided triangles with positive area and perimeter less than 15 are neither equilateral, isosceles, nor right triangles?
+
+Choices: {'A': '\\; 3', 'B': '\\; 4', 'C': '\\; 5', 'D': '\\; 6', 'E': '\\; 7</math>'}
+Answer: C
+
+--- Solution 1 ---
+Since we want non-congruent triangles that are neither isosceles nor equilateral, we can just list side lengths <math>(a,b,c)</math> with <math>a<b<c</math>. Furthermore, "positive area" tells us that <math>c < a + b</math> and the perimeter constraints means <math>a+b+c < 15</math>.
+
+There are no triangles when <math>a = 1</math> because then <math>c</math> must be less than <math>b+1</math>, implying that <math>b \geq c</math>, contrary to <math>b < c</math>.
+
+When <math>a=2</math>, similar to above, <math>c</math> must be less than <math>b+2</math>, so this leaves the only possibility <math>c = b+1</math>. This gives 3 triangles <math>(2,3,4), (2,4,5), (2,5,6)</math> within our perimeter constraint.
+
+When <math>a=3</math>, <math>c</math> can be <math>b+1</math> or <math>b+2</math>, which gives triangles <math>(3,4,5), (3,4,6), (3,5,6)</math>. Note that <math>(3,4,5)</math> is a right triangle, so we get rid of it and we get only 2 triangles.
+
+All in all, this gives us <math>3+2 = \boxed{\textbf{(C)}\; 5}</math> triangles.
+
+
+=== Problem 11 ===
+The line
+
+Choices: {'A': '\\; 20', 'B': '\\; \\dfrac{360}{17}', 'C': '\\; \\dfrac{107}{5}', 'D': '\\; \\dfrac{43}{2}', 'E': '\\; \\dfrac{281}{13}</math>'}
+Answer: E
+
+--- Solution 1 ---
+Clearly the line and the coordinate axes form a right triangle. Since the x-intercept and y-intercept are 5 and 12 respectively, 5 and 12 are two sides of the triangle that are not the hypotenuse, and are thus two of the three heights. In order to find the third height, we can use different equations of the area of the triangle. Using the lengths we know, the area of the triangle is <math>\tfrac{1}{2} \times 5 \times 12= 30</math>. We can use the hypotenuse as another base to find the third height. Using the distance formula, the length of the hypotenuse is <math>\sqrt{5^2+12^2}=13</math>. Then <math>\frac{1}{2} \times 13 \times h=30</math>, and so <math>h = \frac{60}{13}</math>. Therefore the sum of all the heights is <math>5+12+\frac{60}{13}=\boxed{\textbf{(E)}\; \frac{281}{13}}</math>.
+
+
+=== Problem 12 ===
+Let
+
+Choices: {'A': '\\; 15', 'B': '\\; 15.5', 'C': '\\; 16', 'D': '\\; 16.5', 'E': '\\; 17</math>'}
+Answer: D
+
+--- Solution 1 ---
+The left-hand side of the equation can be factored as <math>(x-b)(x-a+x-c) = (x-b)(2x-(a+c))</math>, from which it follows that the roots of the equation are <math>x=b</math>, and <math>x=\tfrac{a+c}{2}</math>. The sum of the roots is therefore <math>b + \tfrac{a+c}{2}</math>, and the maximum is achieved by choosing <math>b=9</math>, and <math>\{a,c\}=\{7,8\}</math>. Therefore the answer is <math>9 + \tfrac{7+8}{2} = 9 + 7.5 = \boxed{\textbf{(D)}\; 16.5}.</math>
+
+--- Solution 2 ---
+Expand the polynomial. We get <math>(x-a)(x-b)+(x-b)(x-c)=x^2-(a+b)x+ab+x^2-(b+c)x+bc=2x^2-(a+2b+c)x+(ab+bc).</math> 
+
+Now, consider a general quadratic equation <math>ax^2+bx+c=0.</math> The two solutions to this are <cmath>\dfrac{-b}{2a}+\dfrac{\sqrt{b^2-4ac}}{2a}, \dfrac{-b}{2a}-\dfrac{\sqrt{b^2-4ac}}{2a}.</cmath> The sum of these roots is <cmath>\dfrac{-b}{a}.</cmath> 
+
+Therefore, reconsidering the polynomial of the problem, the sum of the roots is <cmath>\dfrac{a+2b+c}{2}.</cmath> Now, to maximize this, it is clear that <math>b=9.</math> Also, we must have <math>a=8, c=7</math> (or vice versa). The reason <math>a,c</math> have to equal these values instead of larger values is because each of <math>a,b,c</math> is distinct.
+
+--- Solution 3 ---
+Expanding gives: <math>2x^2-(a+2b+c)x+(ab+bc).</math>
+
+Dividing by the coefficient of the polynomial, 2, and applying Vieta's formulas we know that the sum of the roots of the polynomial is equal to <math>\frac{a + 2b + c}{2}</math>. Obviously, the largest value should occur when b = 9, and due to symmetrically a = 8, and c = 7, or a = 7 and c = 8. Both of these results give the same final answer of (D). 
+
+More on Vieta's Formulas: https://artofproblemsolving.com/wiki/index.php/Vieta%27s_formulas
+
+--- Solution 4 ---
+Expanding the formula gives: <math>2x^2-(a+2b+c)x+(ab+bc).</math>
+
+Dividing by the coefficient of the polynomial, 2, and applying Vieta's formulas we know that the sum of the roots of the polynomial is equal to <math>\frac{a + 2b + c}{2}</math>. Obviously, the largest value should occur when b = 9, and due to symmetrically a = 8, and c = 7, or a = 7 and c = 8. Both of these results give the same final answer of (D). 
+
+More on Vieta's Formulas: https://artofproblemsolving.com/wiki/index.php/Vieta%27s_formulas
+
+
+=== Problem 13 ===
+Quadrilateral
+
+Choices: {'A': '\\; 3+\\sqrt{5}', 'B': '\\; 6', 'C': '\\; \\dfrac{9}{2}\\sqrt{2}', 'D': '\\; 8-\\sqrt{2}', 'E': '\\; 7</math>'}
+Answer: B
+
+--- Solution 1 ---
+<math>\angle ADB</math> and <math>\angle ACB</math> are both subtended by segment <math>AB</math>, hence <math>\angle ACB = \angle ADB = 40^\circ</math>. By considering <math>\triangle ABC</math>, it follows that <math>\angle ABC = 180^\circ - (70^\circ + 40^\circ) = 70^\circ</math>. Hence <math>\triangle ABC</math> is isosceles, and <math>AC = BC = \boxed{\textbf{(B)}\; 6}.</math>
+
+
+Note: The statement <math>AD=4</math> is not needed.
+
+
+=== Problem 14 ===
+A circle of radius 2 is centered at
+
+Choices: {'A': '\\; 8-\\pi', 'B': '\\; \\pi+2', 'C': '\\; 2\\pi-\\dfrac{\\sqrt{2}}{2}', 'D': '\\; 4(\\pi-\\sqrt{3})', 'E': '\\; 2\\pi-\\dfrac{\\sqrt{3}}{2}</math>'}
+Answer: D
+
+--- Solution 1 ---
+The area of the circle is <math>\pi \cdot 2^2 = 4\pi</math>, and the area of the triangle is <math>\frac{4^2 \cdot\sqrt{3}}{4} = 4\sqrt{3}</math>. The difference between the area of the region that lies inside the circle but outside the triangle and the area of the region that lies inside the triangle but outside the circle is the same as the difference between the area of the circle and the area of the triangle (because from both pieces we are subtracting the area of the two shapes' intersection), so the answer is <math>4\pi-4\sqrt{3}  = \boxed{\textbf{(D)}\;  4(\pi-\sqrt{3})}</math>.
+
+
+=== Problem 15 ===
+At Rachelle's school an A counts 4 points, a B 3 points, a C 2 points, and a D 1 point. Her GPA on the four classes she is taking is computed as the total sum of points divided by 4. She is certain that she will get As in both Mathematics and Science, and at least a C in each of English and History. She thinks she has a
+
+Choices: {'A': '\\; \\frac{11}{72}', 'B': '\\; \\frac{1}{6}', 'C': '\\; \\frac{3}{16}', 'D': '\\; \\frac{11}{24}', 'E': '\\; \\frac{1}{2}</math>'}
+Answer: D
+
+--- Solution 1 ---
+The probability that Rachelle gets a C in English is <math>1-\frac{1}{6}-\frac{1}{4} = \frac{7}{12}</math>.
+
+The probability that she gets a C in History is <math>1-\frac{1}{4}-\frac{1}{3} = \frac{5}{12}</math>.
+
+We see that the sum of Rachelle's "point" scores must be at least 14 since <math>4*3.5 = 14</math>. We know that in Mathematics and Science we have a total point score of 8 (since she will get As in both), so we only need a sum of 6 in English and History. This can be achieved by getting two As, one A and one B, one A and one C, or two Bs. We evaluate these cases.
+
+The probability that she gets two As is <math>\frac{1}{6}\cdot\frac{1}{4} = \frac{1}{24}</math>.
+
+The probability that she gets one A and one B is <math>\frac{1}{6}\cdot\frac{1}{3} + \frac{1}{4}\cdot\frac{1}{4} = \frac{1}{18}+\frac{1}{16} =  \frac{8}{144}+\frac{9}{144} = \frac{17}{144}</math>.
+
+The probability that she gets one A and one C is <math>\frac{1}{6}\cdot\frac{5}{12} + \frac{1}{4}\cdot\frac{7}{12} = \frac{5}{72}+\frac{7}{48} =  \frac{31}{144}</math>.
+
+The probability that she gets two Bs is <math>\frac{1}{4}\cdot\frac{1}{3} = \frac{1}{12}</math>.
+
+Adding these, we get <math>\frac{1}{24} + \frac{17}{144} +  \frac{31}{144} + \frac{1}{12} = \frac{66}{144} = \boxed{\mathbf{(D)}\;  \frac{11}{24}}</math>.
+
+--- Solution 2 ---
+We can break it up into three mutually exclusive cases: A in english, at least a C in history; B in english and at least a B in history; C in english and an A in history. This gives
+
+<cmath>\frac{1}{6} \cdot 1 + \frac{1}{4} \cdot \left(\frac{1}{3} + \frac{1}{4}\right) + \left(1 - \frac{1}{6} - \frac{1}{4}\right) \cdot \frac{1}{4} = \boxed{\textbf{(D)}\; \frac{11}{24}}.</cmath>
+
+--- Solution 3 ---
+Probability she gets a B in English and C in History is <math>\frac{1}{4} \cdot \frac{5}{12} = \frac{5}{48}</math>
+
+Probability she gets a C in English and B in History is <math>\frac{7}{12} \cdot \frac{1}{3} = \frac{7}{36}</math>
+
+Probability she gets a C in English and C in History is <math>\frac{7}{12} \cdot \frac{5}{12} = \frac{35}{144}</math>
+
+In total, the probability she gets any of these cases is <math>\frac{78}{144}</math>. Therefore our answer is <math>1-\frac{78}{144} = \frac{66}{144} = \boxed{\textbf{(D)},}</math> or <math>\frac{11}{24}</math>
+
+--- Solution 4 ---
+Rachelle is certain that she will get an A in Math and Science. She will also get at least a C in both History and English. This means that her baseline GPA is <math>12</math>. We make the observation that if she gets either an A in History or an A in English she will get a GPA of at least <math>3.5</math>. However, she can also get a B in history and a B in English and still get a GPA of <math>3.5</math>. 
+
+The probability that Rachelle gets an A in either History or English is <math>1 - \frac {5}{6} \cdot \frac {3}{4} = \frac {3}{8}</math>. The probability that Rachelle gets a B in both History an English is <math>\frac {1}{3} \cdot \frac {1}{4} = \frac {1}{12}</math>. Summing the two gets the answer of <math>\boxed {\textbf {(D)} \frac {11}{24}}</math>
+
+
+=== Problem 16 ===
+A regular hexagon with sides of length 6 has an isosceles triangle attached to each side. Each of these triangles has two sides of length 8. The isosceles triangles are folded to make a pyramid with the hexagon as the base of the pyramid. What is the volume of the pyramid?
+
+Choices: {'A': '\\; 18', 'B': '\\; 162', 'C': '\\; 36\\sqrt{21}', 'D': '\\; 18\\sqrt{138}', 'E': '\\; 54\\sqrt{21}</math>'}
+Answer: C
+
+--- Solution 1 ---
+The distance from a corner to the center is 6, and from the corner to the top of the pyramid is 8, so the height is <math>\sqrt{8^2 - 6^2} = \sqrt{64 - 36} = \sqrt{28} = 2\sqrt{7}</math>.
+
+The area of the hexagon is
+
+<cmath>\frac{3\sqrt{3}}{2} \cdot (\text{side})^2 = \frac{3\sqrt{3}}{2} \cdot 6^2 = 54\sqrt{3}</cmath>
+
+Thus, the volume of the pyramid is 
+
+<cmath>\frac{1}{3} \times \text{base} \times \text{height} = \frac{ 54\sqrt{3} \cdot 2\sqrt{7}}{3} = \boxed{\textbf{(C)}\; 36\sqrt{21}}</cmath>.
+
+
+=== Problem 17 ===
+An unfair coin lands on heads with a probability of
+
+Choices: {'A': '\\; 5', 'B': '\\; 8', 'C': '\\; 10', 'D': '\\; 11', 'E': '\\; 13</math>'}
+Answer: 
+
+--- Solution 1 ---
+When tossed <math>n</math> times, the probability of getting exactly 2 heads and the rest tails is
+
+<cmath>\dbinom{n}{2} {\left( \frac{1}{4} \right)}^2 {\left( \frac{3}{4} \right) }^{n-2}.</cmath>
+
+Similarly, the probability of getting exactly 3 heads is
+
+<cmath>\dbinom{n}{3}{\left( \frac{1}{4} \right)}^3 {\left( \frac{3}{4} \right) }^{n-3}.</cmath>
+
+Now set the two probabilities equal to each other and solve for <math>n</math>:
+
+<cmath>\dbinom{n}{2}{\left( \frac{1}{4} \right)}^2 {\left( \frac{3}{4} \right) }^{n-2}=\dbinom{n}{3}{\left( \frac{1}{4} \right)}^3 {\left( \frac{3}{4} \right) }^{n-3}</cmath>
+
+<cmath>\frac{n(n-1)}{2!} \cdot \frac{3}{4} = \frac{n(n-1)(n-2)}{3!}  \cdot \frac{1}{4}</cmath>
+
+<cmath>3 = \frac{n-2}{3}</cmath>
+
+<cmath>n-2 = 9</cmath>
+
+<cmath>n = \fbox{\textbf{(D)}\; 11}</cmath>
+
+
+Note: the original problem did not specify <math>n>1</math>, so <math>n=1</math> was a solution, but this was fixed in the Wiki problem text so that the answer would make sense. [[User:Adihaya|— @adihaya]] ([[User talk:Adihaya|talk]]) 15:23, 19 February 2016 (EST)
+
+--- Solution 2 ---
+Bash it out with the answer choices! (not really a rigorous solution)
+
+==Solution 2.5==
+
+In order to test the answer choices efficiently, realize that the probability <math>n</math> flips yielding two heads is of the form:
+
+<math>\dbinom{n}{2}{\left(\frac{1}{4} \cdot \frac{1}{4}\right)}{\left(\frac{3}{4} \cdot \frac{3}{4} \cdot \frac{3}{4} \ldots \right)} = \dbinom{n}{2}{\left(\frac{3^{n-2}}{4^n}\right)}</math>
+
+Similarly, the form for the probability of three heads is:
+
+<math>\dbinom{n}{3}{\left(\frac{3^{n-3}}{4^n}\right)}</math>
+
+The probability of getting three heads (comapred to the probability of getting two) from <math>n</math> flips is missing a factor of <math>3</math> in the numerator. Thus, we need <math>\dbinom{n}{3}</math> to add a factor of <math>3</math> to the numerator of the probability of getting three heads.
+Our testing equation becomes
+
+<cmath>\dbinom{n}{2} \times 3 = \dbinom{n}{3}</cmath>
+
+since after factoring out the <math>3</math> from <math>\dbinom{n}{3}</math>, the remaining factorizations should be equal. 
+
+The only answer choice satisfying this condition is <math>\fbox{\textbf{(D)}\;11}</math>.
+
+-Solution by Joeya
+
+
+=== Problem 18 ===
+For every composite positive integer
+
+Choices: {'A': '\\; \\text{the set of positive integers} \\\\', 'B': '\\; \\text{the set of composite positive integers} \\\\', 'C': '\\; \\text{the set of even positive integers} \\\\', 'D': '\\; \\text{the set of integers greater than 3} \\\\', 'E': '\\; \\text{the set of integers greater than 4}</math>'}
+Answer: D
+
+--- Solution 1 ---
+This problem becomes simple once we recognize that the domain of the function is <math>\{4, 6, 8, 9, 10, 12, 14, 15, \dots\}</math>. By evaluating <math>r(4)</math> to be <math>4</math>, we can see that <math>\textbf{(E)}</math> is incorrect. Evaluating <math>r(6)</math> to be <math>5</math>, we see that both <math>\textbf{(B)}</math> and <math>\textbf{(C)}</math> are incorrect. Since our domain consists of composite numbers, which, by definition, are a product of at least two positive primes, the minimum value of <math>r(n)</math> is <math>4</math>, so <math>\textbf{(A)}</math> is incorrect. That leaves us with <math>\boxed{\textbf{(D)}\; \text{the set of integers greater than }3}</math>.
+
+--- Solution 2 ---
+Think backwards. The range is the same as the numbers <math>y</math> that can be expressed as the sum of two or more prime positive integers.
+
+The lowest number we can get is <math>y = 2+2 = 4</math>. For any number greater than 4, we can get to it by adding some amount of 2's and then possibly a 3 if that number is odd. For example, 23 can be obtained by adding 2 ten times and adding a 3; this corresponds to the argument <math>n = 2^{10} \times 3</math>.  Thus our answer is <math>\boxed{\textbf{(D)}\; \text{the set of integers greater than }3}</math>.
+
+--- Solution 3 ---
+Notice that by the Chicken McNugget Theorem, given <math>2</math>s and <math>3</math>s, we can make any number larger than <math>2\cdot3 - 2 - 3 = 1.</math> We also exclude <math>2</math> and <math>3</math> since they correspond to primes. All other numbers can be written as <math>2a + 3b,</math> which <math>r(2^a3^b)</math> will equal. Thus the answer is <math>D.</math>
+
+--- Solution 4 ---
+Note that <math>r(10)</math> eliminates <math>B</math> and <math>C</math> and <math>r(4)</math> eliminates <math>E</math>. We can easily see that <math>r(n)</math> cannot be less that <math>3</math> by testing <math>2</math> and <math>3</math>. So, the answer is clearly <math>\boxed{\textbf{(D)}\; \text{the set of integers greater than }3}</math>.
+
+
+=== Problem 19 ===
+In
+
+Choices: {'A': '\\; 12+9\\sqrt{3}', 'B': '\\; 18+6\\sqrt{3}', 'C': '\\; 12+12\\sqrt{2}', 'D': '\\; 30', 'E': '\\; 32</math>'}
+Answer: C
+
+--- Solution 1 ---
+<asy>
+pair A,B,C,M,E,W,Z,X,Y;
+A=(2,0);
+B=(0,2);
+C=(0,0);
+M=(A+B)/2;
+W=(-2,2);
+Z=(-2,-0);
+X=(2,4);
+Y=(4,2);
+E=(W+Z)/2;
+draw(A--B--C--cycle);
+draw(W--B--C--Z--cycle);
+draw(A--B--X--Y--cycle);
+dot(M);
+dot(E);
+label("W",W,NW);
+label("Z",Z,SW);
+label("C",C,S);
+label("A",A,S);
+label("B",B,N);
+label("X",X,NE);
+label("Y",Y,SE);
+label("E",E,1.5*plain.W);
+label("M",M,NE);
+draw(circle(M,sqrt(10)));
+</asy>
+First, we should find the center and radius of this circle. We can find the center by drawing the perpendicular bisectors of <math>WZ</math> and <math>XY</math> and finding their intersection point. This point happens to be the midpoint of <math>AB</math>, the hypotenuse. Let this point be <math>M</math>. To find the radius, determine <math>MY</math>, where <math>MY^{2} = MA^2 + AY^2</math>, <math>MA = \frac{12}{2} = 6</math>, and <math>AY = AB = 12</math>. Thus, the radius <math>=r =MY = 6\sqrt5</math>.
+
+Next we let <math>AC = b</math> and <math>BC = a</math>. Consider the right triangle <math>ACB</math> first. Using the Pythagorean theorem, we find that <math>a^2 + b^2 = 12^2 = 144</math>. 
+<asy>
+pair A,B,C,M,E,W,Z,X,Y;
+A=(2,0);
+B=(0,2);
+C=(0,0);
+M=(A+B)/2;
+W=(-2,2);
+Z=(-2,-0);
+X=(2,4);
+Y=(4,2);
+E=(W+Z)/2;
+draw(A--B--C--cycle);
+draw(W--B--C--Z--cycle);
+draw(A--B--X--Y--cycle);
+dot(M);
+dot(E);
+label("W",W,NW);
+label("Z",Z,SW);
+label("C",C,S);
+label("A",A,S);
+label("B",B,N);
+label("X",X,NE);
+label("Y",Y,SE);
+label("E",E,1.5*plain.W);
+label("M",M,NE);
+draw(circle(M,sqrt(10)));
+draw(E--Z--M--cycle,dashed);
+</asy>
+Now, we let <math>E</math> be the midpoint of <math>WZ</math>, and we consider right triangle <math>ZEM</math>. By the Pythagorean theorem, we have that <math>\left(\frac{a}{2}\right)^2 + \left(a + \frac{b}{2}\right)^2 = r^2 = 180</math>. Expanding this equation, we get that
+
+<cmath>\frac{1}{4}(a^2+b^2) + a^2 + ab = 180</cmath>
+<cmath>\frac{144}{4} + a^2 + ab = 180</cmath>
+<cmath>a^2 + ab = 144 = a^2 + b^2</cmath>
+<cmath>ab = b^2</cmath>
+<cmath>b = a</cmath>
+
+This means that <math>ABC</math> is a 45-45-90 triangle, so <math>a = b = \frac{12}{\sqrt2} = 6\sqrt2</math>. Thus the perimeter is <math>a + b + AB = 12\sqrt2 + 12</math> which is answer <math>\boxed{\textbf{(C)}\; 12 + 12\sqrt2}</math>.
+
+--- Solution 2 ---
+The center of the circle on which <math>X</math>, <math>Y</math>, <math>Z</math>, and <math>W</math> lie must be equidistant from each of these four points. Draw the perpendicular bisectors of <math>\overline{XY}</math> and of <math>\overline{WZ}</math>. Note that the perpendicular bisector of <math>\overline{WZ}</math> is parallel to <math>\overline{CW}</math> and passes through the midpoint of <math>\overline{AC}</math>. Therefore, the triangle that is formed by <math>A</math>, the midpoint of <math>\overline{AC}</math>, and the point at which this perpendicular bisector intersects <math>\overline{AB}</math> must be similar to <math>\triangle ABC</math>, and the ratio of a side of the smaller triangle to a side of <math>\triangle ABC</math> is 1:2. Consequently, the perpendicular bisector of <math>\overline{XY}</math> passes through the midpoint of <math>\overline{AB}</math>. The perpendicular bisector of <math>\overline{WZ}</math> must include the midpoint of <math>\overline{AB}</math> as well. Since all points on a perpendicular bisector of any two points <math>M</math> and <math>N</math> are equidistant from <math>M</math> and <math>N</math>, the center of the circle must be the midpoint of <math>\overline{AB}</math>.
+
+Now the distance between the midpoint of <math>\overline{AB}</math> and <math>Z</math>, which is equal to the radius of this circle, is <math>\sqrt{12^2 + 6^2} = \sqrt{180}</math>. Let <math>a=AC</math>. Then the distance between the midpoint of <math>\overline{AB}</math> and <math>Y</math>, also equal to the radius of the circle, is given by <math>\sqrt{\left(\frac{a}{2}\right)^2 + \left(a + \frac{\sqrt{144 - a^2}}{2}\right)^2}</math> (the ratio of the similar triangles is involved here). Squaring these two expressions for the radius and equating the results, we have
+
+<cmath>\left(\frac{a}{2}\right)^2+\left(a+\frac{\sqrt{144-a^2}}{2}\right)^{2} = 180</cmath>
+<cmath>144 - a^2 = a\sqrt{144-a^2}</cmath>
+<cmath>(144-a^2)^2 = a^2(144-a^2)</cmath>
+
+Since <math>a</math> cannot be equal to 12, the length of the hypotenuse of the right triangle, we can divide by <math>(144-a^2)</math>, and arrive at <math>a = 6\sqrt{2}</math>. The length of other leg of the triangle must be <math>\sqrt{144-72} = 6\sqrt{2}</math>. Thus, the perimeter of the triangle is <math>12+2(6\sqrt{2}) = \boxed{\textbf{(C)}\; 12+12\sqrt{2}}</math>.
+
+--- Solution 3 ---
+In order to solve this problem, we can search for similar triangles. Begin by drawing triangle <math>ABC</math> and squares <math>ABXY</math> and <math>ACWZ</math>. Draw segments <math>\overline{YZ}</math> and <math>\overline{WX}</math>. Because we are given points <math>X</math>, <math>Y</math>, <math>Z</math>, and <math>W</math> lie on a circle, we can conclude that <math>WXYZ</math> forms a cyclic quadrilateral. Take <math>\overline{AC}</math> and extend it through a point <math>P</math> on <math>\overline{YZ}</math>. Now, we must do some angle chasing to prove that <math>\triangle WBX</math> is similar to <math>\triangle YAZ</math>. 
+
+Let <math>\alpha</math> denote the measure of <math>\angle ABC</math>. Following this, <math>\angle BAC</math> measures <math>90 - \alpha</math>. By our construction, <math>\overline{CAP}</math> is a straight line, and we know <math>\angle YAB</math> is a right angle. Therefore, <math>\angle PAY</math> measures <math>\alpha</math>. Also, <math>\angle CAZ</math> is a right angle and thus, <math>\angle ZAP</math> is a right angle. Sum <math>\angle ZAP</math> and <math>\angle PAY</math> to find <math>\angle ZAY</math>, which measures <math>90 + \alpha</math>. We also know that <math>\angle WBY</math> measures <math>90 + \alpha</math>. Therefore, <math>\angle ZAY = \angle WBX</math>. 
+
+Let <math>\beta</math> denote the measure of <math>\angle AZY</math>. It follows that <math>\angle WZY</math> measures <math>90 + \beta^\circ</math>. Because <math>WXYZ</math> is a cyclic quadrilateral, <math>\angle WZY + \angle YXW = 180^\circ</math>. Therefore, <math>\angle YXW</math> must measure <math>90 - \beta</math>, and <math>\angle BXW</math> must measure <math>\beta</math>. Therefore, <math>\angle AZY = \angle BXW</math>. 
+
+<math>\angle ZAY = \angle WBX</math> and <math>\angle AZY = \angle BXW</math>, so <math>\triangle AZY \sim \triangle BXW</math>! Let <math>x = AC = WC</math>. By Pythagorean theorem, <math>BC = \sqrt{144-x^2}</math>. Now we have <math>WB = WC + BC = x + \sqrt{144-x^2}</math>, <math>BX = 12</math>, <math>YA = 12</math>, and <math>AZ = x</math>. 
+We can set up an equation: 
+
+<cmath>\frac{YA}{AZ} = \frac{WB}{BX}</cmath>
+<cmath>\frac{12}{x} = \frac{x+\sqrt{144-x^2}}{12}</cmath>
+<cmath>144 = x^2 + x\sqrt{144-x^2}</cmath>
+<cmath>12^2 - x^2 = x\sqrt{144-x^2}</cmath>
+<cmath>12^4 - 2*12^2*x^2 + x^4 = 144x^2 - x^4</cmath>
+<cmath>2x^4 - 3(12^2)x^2 + 12^4 = 0</cmath>
+<cmath>(2x^2 - 144)(x^2 - 144) = 0</cmath>
+
+Solving for <math>x</math>, we find that <math>x = 6\sqrt{2}</math> or <math>x = 12</math>, which we omit. The perimeter of the triangle is <math>12 + x + \sqrt{144-x^2}</math>. Plugging in <math>x = 6\sqrt{2}</math>, we get <math>\boxed{\textbf{(C)}\; 12+12\sqrt{2}}</math>.
+
+
+Alternatively, let <math>BC = S_1, AB = S_2</math> and <math>AC = x</math>. Because <math>\frac{WB}{BX} = \frac{AY}{AZ}</math>, we get that <math>S_2^2 = S_1^2 + S_1x</math>. <math>S_1 = x</math> satisfies the equation because of Pythagorean theorem, so <math>\triangle ABC</math> is right isosceles.
+
+--- Solution 4 ---
+We claim that <math>X</math>, <math>Y</math>, <math>Z</math>, and <math>W</math> lie on a circle if <math>\triangle ACB</math> is an isosceles right triangle.
+
+''Proof:'' If <math>\triangle ACB</math> is an isosceles right triangle, then <math>\angle WAY=180º</math>. Therefore, <math>W</math>, <math>A</math>, and <math>Y</math> are collinear. Since <math>WY</math> and <math>YX</math> form a right angle, <math>WX</math> is the diameter of the circumcircle of <math>\triangle WYX</math>. Similarly, <math>Z</math>, <math>A</math>, and <math>X</math> are collinear, and <math>ZX</math> forms a right angle with <math>ZW</math>. Thus, <math>WX</math> is also the diameter of the circumcircle of <math>\triangle WZX</math>. Therefore, since <math>\triangle WYX</math> and <math>\triangle WZX</math> share a circumcircle, <math>X</math>, <math>Y</math>, <math>Z</math>, and <math>W</math> lie on a circle if <math>\triangle ACB</math> is an isosceles triangle.
+
+If <math>\triangle ACB</math> is isosceles, then its legs have length <math>6\sqrt{2}</math>. The perimeter of <math>\triangle ACB</math> is <math>\boxed{\textbf{(C) }12+12\sqrt{2}}</math>.
+
+--- Solution 5 ---
+Note that because <math>\angle WZA=\angle AYX=90^\circ</math>, these two angles inscribe the semicircle defined by diameter <math>WX</math>. Since <math>A</math> lies on line <math>ZA</math>, and <math>\angle XAY=45^\circ</math> (because <math>ABXY</math> is a square), we can find that <math>\angle ZAY= 180^\circ - 45^\circ = 135^\circ</math>.
+
+Now, we can see that <math>\angle BAC=45^\circ</math> to complete the full <math>360^\circ</math>. Therefore, <math>\triangle ABC</math> is and isosceles right triangle, and <math>AC=BC=6\sqrt2</math>. So Our answer is <math>6\sqrt2 + 6\sqrt 2 + 12 = \boxed{\textbf{(C) }12+12\sqrt{2}}</math>.
+.
+
+--- Solution 6 ---
+We see a circle and little information of position of the shapes inside the triangle, so we think of things associated with circles and think of cyclic quads. We then notice that quadrilateral <math>WXYZ</math> is cyclic. Then we see that <math>\angle W = \angle X</math> making extensions of <math>\overline{WA}</math> and <math>\overline{XZ}</math> diagonals of <math>WXYZ</math>. Let <math>x = \overline{AC}=\overline{AW}</math>. We can see that <math>\overline{AY} = 12\sqrt{2}</math> and <math>\overline{AZ} = x\sqrt{2}</math>. Thus <math>\overline{YZ}^2 = x^2 + (x+12\sqrt{2})^2 = 2x^2 + 24x\sqrt{2} + 288</math>. Let <math>\angle ZAY = \alpha</math>. Then we can see that <math>\angle ZAC</math> and <math>\angle BAY</math> are <math>45</math> degrees, making <math>\angle ZAY</math> <math>\alpha + 90</math> degrees.
+
+We can verify with the cosine addition identity that <math>-\cos{\alpha + 90 degree} = \sin{\alpha}</math> (knowing that <math>\sin{\theta + 90 degree} = \cos{\theta}</math> motivates this). By law of cosine's, <math>\overline{YZ}^2 = (12\sqrt{2})^2 + x\sqrt{2})^2 - 2\cdot 12\sqrt{2} \cdot x\sqrt{2}cos{\alpha + 90 degree} = 288 + x^2 + 48cos{\alpha + 90 degree} = 288 + 2x^2 + 48x\sin{\alpha}</math>. Since <math>\angle{A}</math> is opposite <math>\overline{BC}</math>, <math>\sin{\alpha} = \frac{\sqrt{144-x^2}}{12}</math>. Thus <math>\overline{YZ}^2 = 288 + 2x^2 + 4x\sqrt{144-x^2}</math>.
+
+Setting the first paragraph's <math>\overline{YZ}^2</math> equal to the second:
+<cmath>288 + x^2 + 4x\sqrt{144-x^2}=2x^2 + 24x\sqrt{2} + 288</cmath>
+
+--- Solution 7 ---
+This solution does not use the fact that the four points are cyclic.
+Let <math>CA=x</math>, and <math>CB=y</math>. Looking at the figure, its trivial that the points <math>Z</math>, <math>C</math>, <math>A</math> are concurrent. Construct line <math>ZB</math>. By the right triangle altitude theorem, we have: <cmath>y^2=xy</cmath>.
+By Pythagoras' Theorem, we also have <cmath>x^2 + y^2 = 12^2</cmath>
+Solving the two equations above, we have <math>x=y=6\sqrt2</math>. Hence, the perimeter is <math>12 + x + y = \boxed{\textbf{(C) }12+12\sqrt{2}}</math>.
+
+
+=== Problem 20 ===
+For every positive integer
+
+Choices: {'A': '\\; 0', 'B': '\\; 1', 'C': '\\; 2', 'D': '\\; 3', 'E': '\\; 4</math>'}
+Answer: B
+
+--- Solution 1 ---
+Simply take some time to draw a table of values of <math>f(i,j)</math> for the first few values of <math>i</math>:
+
+<cmath>\begin{array}{|c || c | c | c | c | c |}
+\hline
+i \text{\ \textbackslash\ } j & 0 & 1 & 2 & 3 & 4\\ \hline\hline
+0 & 1 & 2 & 3 & 4 & 0\\ \hline
+1 & 2 & 3 & 4 & 0 & 1\\ \hline
+2 & 3 & 0 & 2 & 4 & 1\\ \hline
+3 & 0 & 3 & 4 & 1 & 0\\ \hline
+4 & 3 & 1 & 3 & 1 & 3\\ \hline
+5 & 1 & 1 & 1 & 1 & 1\\ \hline
+\end{array}</cmath>
+
+Now we claim that for <math>i \ge 5</math>, <math>f(i,j) = 1</math> for all values <math>0 \le j \le 4</math>.  We will prove this by induction on <math>i</math> and <math>j</math>.  The base cases for <math>i = 5</math>, have already been proven.
+
+For our inductive step, we must show that for all valid values of <math>j</math>, <math>f(i, j) = 1</math> if for all valid values of <math>j</math>, <math>f(i - 1, j) = 1</math>.
+
+We prove this itself by induction on <math>j</math>.  For the base case, <math>j=0</math>, <math>f(i, 0) = f(i-1, 1) = 1</math>.  For the inductive step, we need <math>f(i, j) = 1</math> if <math>f(i, j-1) = 1</math>.  Then, <math>f(i, j) = f(i-1, f(i, j-1)).</math>  <math>f(i, j-1) = 1</math> by our inductive hypothesis from our inner induction and <math>f(i-1, 1) = 1</math> from our outer inductive hypothesis.  Thus, <math>f(i, j) = 1</math>, completing the proof.
+
+It is now clear that for <math>i \ge 5</math>, <math>f(i,j) = 1</math> for all values <math>0 \le j \le 4</math>.
+
+Thus, <math>f(2015,2) = \boxed{\textbf{(B)} \; 1}</math>.
+
+--- Solution 2 ---
+We are given that <cmath> f(0,n) \equiv n+1\pmod{5} .</cmath>
+Then, <imath>f(1,n) = f(0, f(1, n-1)) \equiv f(1,n-1) + 1\pmod{5}</imath>. Thus <imath>f(1,n) \equiv n+f(1,0)\pmod{5}</imath>. Since <imath>f(1,0)=f(0,1)=2</imath>, we get 
+<cmath>f(1,n) \equiv n+2\pmod{5} .</cmath>
+Then, <imath>f(2,n) = f(1, f(2, n-1)) \equiv f(2,n-1) + 2\pmod{5}</imath>. Thus <imath>f(2,n) \equiv 2n+f(2,0)\pmod{5}</imath>. Since <imath>f(2,0)=f(1,1)=3</imath>, we get 
+<cmath>f(2,n) \equiv 2n+3\pmod{5} .</cmath>
+Now <imath>f(3,n) = f(2, f(3, n-1)) \equiv 2f(3,n-1) + 3\pmod{5}</imath>. Thus 
+<cmath>\begin{align*}
+    f(3,n) &\equiv 2f(3,n-1) + 3 &\pmod{5} \\
+    2f(3,n-1) &\equiv 2^2f(3,n-2) + 3\cdot 2 &\pmod{5} \\
+    \vdots \qquad &\quad\vdots \quad\qquad \vdots \qquad\qquad \vdots &\\
+    2^{n-1}f(3,1) &\equiv 2^nf(3,0) + 3\cdot 2^{n-1} &\pmod{5} 
+\end{align*}</cmath>
+Adding them all up we get
+<cmath>f(3,n) \equiv 3(2^n-1)\pmod{5} .</cmath>
+This means that <imath>f(3,0)=0</imath>, <imath>f(3,1)=3</imath>, <imath>f(3,2)=4</imath>, <imath>f(3,3)=1</imath>, and <imath>f(3,4)=0</imath>. Thus <imath>f(3,n)</imath> never takes the value 2. 
+
+Since <imath>f(4,n)=f(3,f(4,n-1))</imath>, this implies that <imath>f(4,n) \neq 2</imath> for any <imath>n</imath>. By induction, <cmath>f(3,n) \neq f(3,2) = 4</cmath> for any <imath>n</imath>. It follows that <cmath>f(3,n) \neq f(3,4) = 0</cmath> for any <imath>n</imath>. Thus <imath>f(4,n)</imath> only takes values in <imath>\{1,3\}</imath>. In fact, it alternates between 1 and 3: <imath>f(4,0)=f(3,1)=3</imath>, then  <cmath>f(4,1)=f(3,f(4,0))=f(3,3)=1\implies f(4,2)=f(3,f(4,1))=f(3,1)=3,</cmath> and so on. 
+
+Repeating the argument above, we see that <imath>f(5,n) = f(4, f(5,n-1))</imath> can only take values in <imath>\{1,3\}</imath>. However, <imath>f(5,n-1)\neq 0</imath> for any <imath>n</imath> implies that <cmath>f(5,n)\neq f(4,0)=3</cmath> for any <imath>n</imath>. Thus <imath>f(5,n)=1</imath> for all <imath>n</imath>. We can easily verify this: <imath>f(5,0)=f(4,1)=1</imath>, then <cmath>f(5,1)=f(4,f(5,0))=f(4,1)=1\implies f(5,2)=f(4,f(5,1))=f(4,1)=1</cmath>, and so on.
+
+Then <imath>f(6,0)=f(5,1)=1</imath>. Moreover, <cmath>f(6,n) = f(5,f(6,n-1)) = 1</cmath> for all <imath>n</imath>. Continuing in this manner we see that <imath>f(m,n)=1</imath> for all <imath>m\ge 5</imath>. 
+
+In particular, <imath>f(2015,2) = \boxed{\textbf{(B)} \; 1}</imath>.
+
+-Shihan
+
+-Ethanzhang1001 latex edits
+
+
+=== Problem 21 ===
+Cozy the Cat and Dash the Dog are going up a staircase with a certain number of steps. However, instead of walking up the steps one at a time, both Cozy and Dash jump. Cozy goes two steps up with each jump (though if necessary, he will just jump the last step). Dash goes five steps up with each jump (though if necessary, he will just jump the last steps if there are fewer than 5 steps left). Suppose that Dash takes 19 fewer jumps than Cozy to reach the top of the staircase. Let
+
+Choices: {'A': '\\; 9', 'B': '\\; 11', 'C': '\\; 12', 'D': '\\; 13', 'E': '\\; 15</math>'}
+Answer: D
+
+--- Solution 1 ---
+We can translate this wordy problem into this simple equation:
+
+<cmath>\left\lceil \frac{s}{2} \right\rceil - 19 = \left\lceil \frac{s}{5} \right\rceil</cmath>
+
+We will proceed to solve this equation via casework.
+
+Case 1: <math>\left\lceil \frac{s}{2} \right\rceil = \frac{s}{2}</math>
+
+Our equation becomes <math>\frac{s}{2} - 19 = \frac{s}{5} + \frac{j}{5}</math>, where <math>j \in \{0,1,2,3,4\}</math> Using the fact that <math>s</math> is an integer, we quickly find that <math>j=1</math> and <math>j=4</math> yield <math>s=64</math> and <math>s=66</math>, respectively.
+
+<br>
+
+Case 2: <math>\left\lceil \frac{s}{2} \right\rceil = \frac{s}{2}+\frac{1}{2}</math>
+
+Our equation becomes <math>\frac{s}{2} +\frac{1}{2} - 19 = \frac{s}{5} + \frac{j}{5}</math>, where <math>j \in \{0,1,2,3,4\}</math> Using the fact that <math>s</math> is an integer, we quickly find that <math>j=2</math> yields <math>s=63</math>.
+
+Summing up we get <math>63+64+66=193</math>. The sum of the digits is <math>\boxed{\textbf{(D)}\; 13}</math>.
+
+--- Solution 2 ---
+It can easily be seen that the problem can be expressed by the equation:
+<cmath>\left\lceil \frac{s}{2} \right\rceil - \left\lceil \frac{s}{5} \right\rceil = 19</cmath>
+
+However, because the ceiling function is difficult to work with, we can rewrite the previous equation as:
+
+<cmath>\frac{s+a}{2} - \frac{s+b}{5} = 19</cmath> Where <math>a \in \{0,1\}</math> and <math>b \in \{0,1,2,3,4\}</math> Multiplying both sides by ten and simplifying, we get:
+<cmath>5s+5a-2s-2b=190</cmath>
+<cmath>3s = 190+2b-5a</cmath>
+<cmath>s = 63 + \frac{1+2b-5a}{3}</cmath>
+
+Because s must be an integer, we need to find the values of <math>a</math> and <math>b</math> such that <math>2b-5a \equiv 2 \mod 3</math>. We solve using casework.
+
+Case 1: <math>a = 0</math>
+
+If <math>a = 0</math>, we have <math>2b \equiv 2 \mod 3</math>. We can easily see that <math>b = 1</math> or <math>b = 4</math>, which when plugged into our original equation lead to <math>s = 64</math> and <math>s=66</math> respectively.
+
+<br>
+
+Case 2: <math>a = 1</math>
+
+If <math>a = 1</math>, we have <math>2b-5 \equiv 2 \mod 3</math>, which can be rewritten as <math>2b \equiv 1 \mod 3 </math>. We can again easily see that <math>b = 2</math> is the only solution, which when plugged into our original equation lead to <math>s = 63</math>.
+
+Adding these together we get <math>64+66+63=193</math>. The sum of the digits is <math>\boxed{\textbf{(D)}\; 13}</math>.
+
+--- Solution 3 ---
+As before, we write the equation:
+
+<cmath>\left\lceil \frac{s}{2} \right\rceil - 19 = \left\lceil \frac{s}{5} \right\rceil.</cmath>
+
+To get a ballpark estimate of where <math>s</math> might lie, we remove the ceiling functions to find:
+
+<cmath>\frac{s}{2} - 19 = \frac{s}{5}.</cmath>
+
+This gives <math>\frac{3s}{10} = 19</math>, and thus values for <math>s</math> will be around <math>\frac{190}{3} = 63.\overline3</math>.
+
+Now, to establish some bounds around this estimated working value, we note that if <math>s=60</math>, Cozy takes 30 steps while Dash takes 12, a difference of 18.  If <math>s=70</math>, Cozy takes 35 steps while Dash takes 14, a difference of 21.  When <math>s</math> increases from a multiple of ten, the difference will never decrease beyond what it is at the multiple of ten, and likewise, when it decreases, it never becomes greater than at the multiple of ten, so any working values of <math>s</math> will be between <math>60</math> and <math>70</math>.
+
+Then, by inspection, <math>s=63, 64,</math> or <math>66</math>, so <math>\sum s = 193 \implies \boxed{\textbf{(D)}\; 13}.</math>
+
+--- Solution 4 ---
+Notice that the possible number of steps in the staircase is around 60 to 70. By testing all of the values between 60 and 70, we see that 63, 64 and 66 work. Adding those up gives 193, so the answer is <math>1+9+3=\boxed{\textbf{(D)}\; 13}.</math>
+
+--- Solution 5 ---
+We represent C's steps with <math>2c + a = n</math> and D's steps with <math>5d + b = n</math>, where <math>a \in \{1,2\}</math> and <math>b \in \{1,2,3,4,5\}</math>, where <math>n</math> is the number of steps, <math>c</math> is the number of jumps C takes bar the last one, and <math>d</math> is the number of jumps D takes bar the last.
+The reason for starting at 1 and ending at 5 instead of 0 through 4 is that the last step can be quite problematic to deal with, especially if it is possible to make it in one go, so we treat it as a different jump that can take all possible jump values. We know that D makes it in 19 fewer than C, so <math>c+1-(d+1) = 19 \implies c = 19+d \implies 5d + b = 2(19+d) + a \implies 3d = 38 + a - b</math>.
+ 
+Now that we have this nice equivalence, we can do the thing and it works. 
+
+If we take both sides mod 3 and rearrange, we get <math>b \equiv 2+a \pmod{3}</math>
+This gives us the following satisfactory <math>(a,b)</math> relational pairs: <math>\{(1,3),(2,1),(2,4)\}</math>. We can now just find the corresponding <math>d</math> value for each pair, sum it all up using <math>5d + b = n</math> and sum the digits to reveal <math>\boxed{\textbf{(D)}\; 13}</math> as the answer.
+
+
+==Fake Solve(Less than 1 minute)==
+
+Jumping steps screams Fibonacci numbers, and <math>13</math> is the only Fibonacci Number here. Hence, the answer is <math>\boxed{\textbf{(D)}\; 13}</math>.
+
+Note: Don't try this in an actual exam unless you're really desperate
+
+
+=== Problem 22 ===
+Six chairs are evenly spaced around a circular table. One person is seated in each chair. Each person gets up and sits down in a chair that is not the same chair and is not adjacent to the chair he or she originally occupied, so that again one person is seated in each chair. In how many ways can this be done?
+
+Choices: {'A': '\\; 14', 'B': '\\; 16', 'C': '\\; 18', 'D': '\\; 20', 'E': '\\; 24</math>'}
+Answer: D
+
+--- Solution 1 ---
+Consider shifting every person over three seats left after each person has gotten up and sat back down again, we are doing this because after this transformation we will only have to count the cases in which they will seated either in the same chair or an adjacent chair which will make the problem easier for us. Now, instead of each person being seated not in the same chair and not in an adjacent chair, each person will be seated either in the same chair or an adjacent chair. The problem now becomes the number of ways in which six people can sit down in a chair that is either the same chair or an adjacent chair in a circle.
+
+Consider the similar problem of <math>n</math> people sitting in a chair that is either the same chair or an adjacent chair in a row. Call the number of possibilities for this <math>F_n</math>. Then if the leftmost person stays put, the problem is reduced to a row of <math>n-1</math> chairs, and if the leftmost person shifts one seat to the right, the new person sitting in the leftmost seat must be the person originally second from the left, reducing the problem to a row of <math>n-2</math> chairs. Thus, <math>F_n = F_{n-1} + F_{n-2}</math> for <math>n \geq 3</math>. Clearly <math>F_1 = 1</math> and <math>F_2 = 2</math>, so <math>F_3 = 3</math>, <math>F_4 = 5</math>, and <math>F_5 = 8</math>.
+
+Now consider the six people in a circle and focus on one person. If that person stays put, the problem is reduced to a row of five chairs, for which there are <math>F_5 = 8</math> possibilities. If that person moves one seat to the left, then the person who replaces him in his original seat will either be the person originally to the right of him, which will force everyone to simply shift over one seat to the left, or the person originally to the left of him, which reduces the problem to a row of four chairs, for which there are <math>F_4 = 5</math> possibilities, giving <math>1 + 5 = 6</math> possibilities in all. By symmetry, if that person moves one seat to the right, there are another <math>6</math> possibilities, so we have a total of <math>8+6+6 = \boxed{\textbf{(D)}\; 20}</math> possibilities.
+
+--- Solution 2 ---
+Label the people sitting at the table <math>A, B, C, D, E, F,</math> and assume that they are initially seated in the order <math>ABCDEF</math>. The possible new positions for <math>A, B, C, D, E,</math> and <math>F</math> are respectively (a dash indicates a non-allowed position):
+
+<cmath>\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+- & - & A & A & A & - \\ \hline
+- & - & - & B & B & B \\ \hline
+C & - & - & - & C & C \\ \hline
+D & D & - & - & - & D \\ \hline
+E & E & E & - & - & - \\ \hline
+- & F & F & F & - & - \\ \hline
+\end{tabular}</cmath>
+
+The permutations we are looking for should use one letter from each column, and there should not be any repeated letters:
+
+<math>\begin{tabular}{c}
+CDEFAB \\
+CEAFBD \\
+CEFABD \\
+CEFBAD \\
+CFEABD \\
+CFEBAD \\
+DEAFBC \\
+DEAFCB \\
+DEFABC \\
+DEFACB \\
+DEFBAC \\
+DFEABC \\
+DFEACB \\
+DFEBAC \\
+EDAFBC \\
+EDAFCB \\
+EDFABC \\
+EDFACB \\
+EDFBAC \\
+EFABCD
+\end{tabular}</math>
+
+There are <math>\boxed{\textbf{(D)}\; 20}</math> such permutations.
+
+--- Solution 3 ---
+We can represent each rearrangement as a permutation of the six elements <math>\{1,2,3,4,5,6\}</math> in cycle notation. Note that any such permutation cannot have a 1-cycle, so the only possible types of permutations are 2,2,2-cycles, 4,2-cycles, 3,3-cycles, and 6-cycles. We deal with each case separately.
+
+For 2,2,2-cycles, suppose that one of the 2-cycles switches the people across from each other, i.e. <math>(14)</math>, <math>(25)</math>, or <math>(36)</math>. WLOG, we may assume it to be <math>(14)</math>. Then we could either have both of the other 2-cycles be across from each other, giving the permutation <math>(14)(25)(36)</math> or else neither of the other 2-cycles is across from each other, in which case the only possible permutation is <math>(14)(26)(35)</math>. This can happen for <math>(25)</math> and <math>(36)</math> as well. So since the first permutation is not counted twice, we find a total of <math>1+3=4</math> permutations that are 2,2,2-cycles where at least one of the 2-cycles switches people diametrically opposite from each other. Otherwise, since the elements in a 2-cycle cannot differ by 1, 3, or 5 mod 6, they must differ by 2 or 4 mod 6, i.e. they must be of the same parity. But since we have three odd and three even elements, this is impossible. Hence there are exactly 4 such permutations that are 2,2,2-cycles.
+
+For 4,2-cycles, we assume for the moment that 1 is part of the 2-cycle. Then the 2-cycle can be <math>(13)</math>, <math>(15)</math>, or <math>(14)</math>. The first two are essentially the same by symmetry, and we must arrange the elements 2, 4, 5, 6 into a 4-cycle. However, 5 must have two neighbors that are not next to it, which is impossible, hence the first two cases yield no permutations. If the 2-cycle is <math>(14)</math>, then we must arrange the elements 2, 3, 5, 6 into a 4-cycle. Then 2 must have the neighbors 5 and 6. We find that the 4-cycles <math>(2536)</math> and <math>(2635)</math> satisfy the desired properties, yielding the permutations <math>(14)(2536)</math> and <math>(14)(2635)</math>. This can be done for the 2-cycles <math>(25)</math> and <math>(36)</math> as well, so we find a total of 6 such permutations that are 4,2-cycles.
+
+For 3,3-cycles, note that if 1 neighbor 4, then the third element in the cycle will neighbor one of 1 and 4, so this is impossible. Therefore, the 3-cycle containing 1 must consist of elements 1, 3, and 5. Therefore, we obtain the four 3,3-cycles <math>(135)(246)</math>, <math>(153)(246)</math>, <math>(135)(264)</math>, and <math>(153)(264)</math>.
+
+For 6-cycles, note that the neighbors of 1 can be 3 and 4, 3 and 5, or 4 and 5. In the first case, we may assume that it looks like <math>(314\dots)</math> -- the form <math>(413\dots)</math> is also possible but equivalent to this case. Then we must place the elements 2, 5, and 6. Note that 5 and 6 cannot go together, so 2 must go in between them. Also, 5 cannot neighbor 4, so we are left with one possibility, namely <math>(314625)</math>, which has an analogous possibility <math>(413526)</math>. In the second case, we assume that it looks like <math>(315\dots)</math>. The 2 must go next to the 5, and the 6 must go last (to neighbor the 3), so the only possibility here is <math>(315246)</math>, with the analogous possibility <math>(513642)</math>. In the final case, we may assume that it looks like <math>(415\dots)</math>. Then the 2 and 3 cannot go together, so the 6 must go in between them. Therefore, the only possibility is <math>(415362)</math>, with the analogous possibility <math>(514263)</math>. We have covered all possibilities for 6-cycles, and we have found 6 of them.
+
+Therefore, there are <math>4+6+4+6 = \boxed{\textbf{(D)}\; 20}</math> such permutations.
+
+--- Solution 4 ---
+Notice the question is not any different than counting the cases if someone either stays put or moves one seat to the left or right (as in the above solution). WLOG, say the beginning case is ABCDEF (before any transformations). Thus, we can count these cases up:
+
+Case 1: Everyone stays put.
+Then, there is only one case (ABCDEF).
+
+Case 2: Everyone moves.
+Notice that if A moves to the right to B's seat, B has either two options. B can move to the left (to A's seat) or move to the right to C's seat. If B moves to C's seat, C cannot cancel the loop by going to A's seat, since we set the restriction as each person can only move ONE seat to the left/right. The only way to finish this process would be C moving to D, D moving to E, E moving to F, and F moving to A, achieving FABCDE as a case. Of course, A can move left and the same loop would occur but in the opposite direction (BCDEFA). Thus, we achieve two cases.
+
+Case 3: The movement of seats cancel out each other.
+If A moves to B's seat, B can move to A's seat, canceling the cycle. In this case, we would look to C, where this same thing could happen (note, however, that if C moves to D's seat, D cannot move to E's seat as the loop would be unachievable; furthermore, note that C cannot move to B's seat if A is already there since that would mean A would have to move to C's seat which is restricted).
+
+We can count these cases by grouping each pair and then doing subcases:
+
+Subcase 1: AB CD and EF are grouped.
+Here we have 2*2*2 = 8 cases, but they cannot all stay put since we've already counted that possibility in Case 1, and thus there are 7 cases here.
+
+Subcase 2: BC DE and FA are grouped.
+Here again, we have 2*2*2 = 8 cases, and then subtract the overcounted case to get 7 cases.
+
+Subcase 3: There is overlap so that two people do not change.
+If A and B change seats, D and E could change seats, and this would not have been counted by the previous groupings (since its an odd parity grouping + an even parity grouping). Count this simply by listing out the cases, or notice that this just means the two people sitting three seats away not moving. There are three cases of that happening (A and D not moving, B and E not moving, and C and F not moving).
+
+Look back at all our cases. Sum them up to get <math>1+2+7+7+3 = 20</math>
+
+iron
+
+
+=== Problem 23 ===
+A rectangular box measures
+
+Choices: {'A': '\\; 4', 'B': '\\; 10', 'C': '\\; 12', 'D': '\\; 21', 'E': '\\; 26</math>'}
+Answer: B
+
+--- Solution 1 ---
+We need <cmath>abc = 2(ab+bc+ac) \quad \text{ or } \quad (a-2)bc = 2a(b+c).</cmath>
+Since <math>a\le b</math> and <math>a,b,c</math> are all positive<math>,ac \le bc</math>. From the first equation we get <math>abc \le 6bc</math>. Thus <math>a\le 6</math>. From the second equation we see that <math>a > 2</math>. Thus <math>a\in \{3, 4, 5, 6\}</math>. For the following we need the resulting <math>(b,c)</math> to be positive integers and <math>b</math> and <math>c</math> to satisfy the condition <math>1\leq a \leq b \leq c.</math>
+
+*If <math>a=3</math> we need <math>bc = 6(b+c) \Rightarrow (b-6)(c-6)=36</math>. We get '''five''' roots <math>\{(3, 7, 42), (3, 8, 24), (3,9,18), (3, 10, 15), (3,12,12)\}</math>.
+
+*If <math>a=4</math> we need <math>2bc = 8(b+c) \Rightarrow bc = 4(b+c) \Rightarrow (b-4)(c-4)=16</math>. We get '''three''' roots <math>\{(4,5,20), (4,6,12), (4,8,8)\}</math>.
+
+*If <math>a=5</math> we need <math>3bc = 10(b+c) \Rightarrow 9bc=30(b+c) \Rightarrow (3b-10)(3c-10)=100</math>. We get '''one''' root <math>\{(5,5,10)\}</math>.
+ 
+*If <math>a=6</math> we need <math>4bc = 12(b+c) \Rightarrow bc = 3(b+c) \Rightarrow (b-3)(c-3)=9</math>. We get ''' one''' root <math>\{(6,6,6)\}</math>.
+
+Thus, there are <math>5+3+1+1 = \boxed{\textbf{(B)}\; 10}</math> solutions.
+
+===Supplement===
+Another method for finding the upper bound of <math> a </math> is to multiply <math>abc = 2(ab+bc+ac)</math> by three, allowing us to factor the expression into <math> ab(c-6) + bc(a-6) + ca(b-6) = 0</math>. When <math> a > 6 </math>, all terms are clearly greater than <math>0</math>, as <math>a, b , c</math> must be positive. Therefore, we arrive at a contradiction, and <math> a \leq 6 </math>.
+
+--- Solution 2 ---
+The surface area is <math>2(ab+bc+ca)</math>, and the volume is <math>abc</math>, so equating the two yields 
+
+<cmath>2(ab+bc+ca)=abc.</cmath>
+
+Divide both sides by <math>2abc</math> to obtain <cmath>\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=\frac{1}{2}.</cmath>
+
+First consider the bound of the variable <math>a</math>. Since <math>\frac{1}{a}<\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=\frac{1}{2},</math> we have <math>a>2</math>, or <math>a\geqslant3</math>.
+
+Also note that <math>c \geq b \geq a > 0</math>, hence <math>\frac{1}{a} \geq \frac{1}{b}  \geq \frac{1}{c}</math>.
+Thus, <math>\frac{1}{2}=\frac{1}{a}+\frac{1}{b}+\frac{1}{c} \leq \frac{3}{a}</math>, so <math>a \leq 6</math>.
+
+So we have <math>a=3, 4, 5</math> or <math>6</math>.
+
+Before the casework, let's consider the possible range for <math>b</math> if <math>\frac{1}{b}+\frac{1}{c}=k>0</math>. From <math>\frac{1}{b}<k</math>, we have <math>b>\frac{1}{k}</math>. From <math>\frac{2}{b} \geq \frac{1}{b}+\frac{1}{c}=k</math>, we have <math>b \leq \frac{2}{k}</math>. Thus <math>\frac{1}{k}<b \leq \frac{2}{k}</math>.
+
+When <math>a=3</math>, we get <math>\frac{1}{b}+\frac{1}{c}=\frac{1}{6}</math>, so <math>b=7, 8, 9, 10, 11, 12</math>. We find the solutions <math>(a, b, c)=(3, 7, 42)</math>, <math>(3, 8, 24)</math>, <math>(3, 9, 18)</math>, <math>(3, 10, 15)</math>, <math>(3, 12, 12)</math>, for a total of <math>5</math> solutions.
+
+When <math>a=4</math>, we get <math>\frac{1}{b}+\frac{1}{c}=\frac{1}{4}</math>, so <math>b=5, 6, 7, 8</math>. We find the solutions <math>(a, b, c)=(4, 5, 20)</math>, <math>(4, 6, 12)</math>, <math>(4, 8, 8)</math>, for a total of <math>3</math> solutions.
+
+When <math>a=5</math>, we get <math>\frac{1}{b}+\frac{1}{c}=\frac{3}{10}</math>, so <math>b=5, 6</math>. The only solution in this case is <math>(a, b, c)=(5, 5, 10)</math>.
+
+When <math>a=6</math>, <math>b</math> is forced to be <math>6</math>, and thus <math>(a, b, c)=(6, 6, 6)</math>.
+
+Thus, there are <math>5+3+1+1 = \boxed{\textbf{(B)}\; 10}</math> solutions.
+
+==Simplification of Solution 2==
+The surface area is <math>2(ab+bc+ca)</math>, the volume is <math>abc</math>, so <math>2(ab+bc+ca)=abc</math>.
+
+Divide both sides by <math>2abc</math>, we have: <cmath>\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=\frac{1}{2}.</cmath>
+First consider the bound of the variable <math>a</math>. Since <math>\frac{1}{a}<\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=\frac{1}{2},</math> we have <math>a>2</math>, or <math>a\ge 3</math>.
+
+Also note that <math>c\ge b\ge a>0</math>, we have <math>\frac{1}{a}\ge \frac{1}{b}\ge \frac{1}{c}</math>. Thus, <math>\frac{1}{2}=\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\le \frac{3}{a}</math>, so <math>a\le 6</math>.
+
+So we have <math>a=3, 4, 5</math> or <math>6</math>.
+
+
+We can say <math>\frac{1}{b}+\frac{1}{c}=\frac{1}{q}</math>, where <math>\frac{1}{q} = \frac{1}{2}-\frac{1}{a}</math>.
+
+Notice <math>\emph{\text{immediately}}</math> that <math>b, c > q</math>. This is our key step.
+Then we can say <math>b=q+d</math>, <math>c=q+e</math>. If we clear the fraction about b and c (do the math), our immediate result is that <math>de = q^2</math>. Realize also that <math>d \leq e</math>. 
+
+Now go through cases for <math>a</math> and you end up with the same result. However, now you don't have to guess solutions. For example, when <math>a=3</math>, then <math>de = 36</math> and <math>d=1, 2, 3, 4, 6</math>.
+
+
+=== Problem 24 ===
+Four circles, no two of which are congruent, have centers at
+
+Choices: {'A': '\\; 180', 'B': '\\; 184', 'C': '\\; 188', 'D': '\\; 192', 'E': '\\; 196</math>'}
+Answer: D
+
+--- Solution 1 ---
+First, note that <math>PQ</math> lies on the radical axis of any of the pairs of circles. Suppose that <math>O_1</math> and <math>O_2</math> are the centers of two circles <math>C_1</math> and <math>C_2</math> that intersect exactly at <math>P</math> and <math>Q</math>, with <math>O_1</math> and <math>O_2</math> lying on the same side of <math>PQ</math>, and <math>O_1 O_2=39</math>. Let <math>x=O_1 R</math>, <math>y=O_2 R</math>, and suppose that the radius of circle <math>C_1</math> is <math>r</math> and the radius of circle <math>C_2</math> is <math>\tfrac{5}{8}r</math>.
+
+Then the power of point <math>R</math> with respect to <math>C_1</math> is
+
+<cmath>(r+x)(r-x) = r^2 - x^2 = 24^2</cmath>
+
+and the power of point <math>R</math> with respect to <math>C_2</math> is
+
+<cmath>\left(\frac{5}{8}r + y\right) \left(\frac{5}{8}r - y\right) = \frac{25}{64}r^2 - y^2 = 24^2.</cmath>
+ 
+Also, note that <math>x-y=39</math>.
+
+Subtract the above two equations to find that <math>\tfrac{39}{64}r^2 - x^2 + y^2 = 0</math> or <math>39 r^2 = 64(x^2-y^2)</math>. As <math>x-y=39</math>, we find that <math>r^2=64(x+y) = 64(2y+39)</math>. Plug this into an earlier equation to find that <math>25(2y+39)-y^2=24^2</math>. This is a quadratic equation with solutions <math>y=\tfrac{50 \pm 64}{2}</math>, and as <math>y</math> is a length, it is positive, hence <math>y=57</math>, and <math>x=y+39=96</math>. This is the only possibility if the two centers lie on the same side of their radical axis.
+
+On the other hand, if they lie on opposite sides, then it is clear that there is only one possibility, and then it is clear that <math>O_1 R + O_2 R = O_1 O_2 = 39</math>. Therefore, we obtain exactly four possible centers, and the sum of the desired lengths is <math>57+96+39 = \boxed{\textbf{(D)}\; 192}</math>.
+
+--- Solution 2 ---
+Note that if a circle passes through a pair of points, the center of the circle is on the perpendicular bisector of the line segment between the pair of points. This means that <math>A</math>, <math>B</math>, <math>C</math>, and <math>D</math> are all on the perpendicular bisector of <math>PQ</math>. Let us say the distance from <math>A</math> to the line <math>PQ</math> is some <math>a</math>. Therefore, the distance from <math>B</math> to the line <math>PQ</math> is <math>\sqrt{(\frac{8}{5}\sqrt{a^2 + 24^2})^2 - 24^2}</math>, which comes out to be <math>\sqrt{\frac{64}{25}a^2 + \frac{39}{25}\cdot 576}</math>. Since <math>AB = 39</math>, we have one of <math>\sqrt{\frac{64}{25}a^2 + \frac{39}{25}\cdot 576} \pm a</math> to be equal to <math>39</math>. We can solve both equations to get that out of the four possible solutions, and only two are positive: <math>7</math> and <math>57</math>. Note that since no two circles can be congruent, we need the radius of one of <math>A</math> or <math>C</math> to be <math>7</math> and the other to be <math>57</math>. Plugging in to find the corresponding radii of <math>B</math> and <math>D</math> gives <math>32</math> and <math>96</math>, and adding everything up gives <math>\boxed{\textbf{(D) }192}</math>.
+
+--- Solution 3 ---
+Let's start by drawing <math>PQ</math>. Because all circles contain <math>P</math> and <math>Q</math>, all the centers lie on the perpendicular bisector of <math>PQ</math>, and point <math>R</math> is on this bisector.
+
+For all the circle radii to be different (there can't be two congruent circles), two centers are on the same side of <math>PQ</math>, and two are on the opposite side of <math>PQ</math>. For the latter two circles--call them <math>A</math> and <math>B</math>--<math>AR+BR=39</math>.
+
+Let's consider the next case, where <math>C</math> and <math>D</math> lie on the same side. Construct right triangles from the picture, and use the [[Pythagorean Theorem]] (divide by 3 to negate big numbers). You will get that the distance from <math>R</math> to the closest circle center is <math>57</math>. Therefore, the answer is <math>39+2\cdot57+39=\boxed{\textbf{(D) }192}</math>.
+
+--- Solution 4 ---
+Since the radical axis <math>PQ</math> is perpendicular to the line connecting the center of the circles, we have that <math>A</math>, <math>B</math>, <math>C</math>, <math>D</math>, and <math>R</math> are collinear. WLOG, assume that <math>A</math> and <math>B</math> are on the same side of <math>R</math> and let <math>AR=y</math> and let <math>BP=x</math> so that <math>AP=\frac{5}{8}x</math>.
+
+Then, using the [[Pythagorean Theorem]] on right triangles <math>PBR</math> and <math>PAR</math>,  
+<cmath>(39+y)^2+24^2=x^2\qquad(1)</cmath>
+<cmath>y^2+24^2=\frac{25}{64}x^2\qquad(2)</cmath> Subtracting the <math>(2)</math> from <math>(1)</math> gives <cmath>x^2=64(2y+39)\qquad(3)</cmath>
+Substituting <math>(3)</math> into <math>(2)</math> gives <math>y^2-50y-399=0=(y-57)(y+7).</math>  Taking the positive solution (<math>y>0</math>), <math>y=AR=57</math> and <math>BR=(57)+39=96</math>. 
+
+Since none of the circles are congruent, <math>C</math> and <math>D</math> must be on the opposite side of <math>R</math> so <math>CR+DR=CD=39</math>. Hence, <math>AR+BR+CR+DR=57+96+39=\boxed{\textbf{(D) }192}</math>.
+
+--- Solution 5 ---
+Note that the four circles are coaxial, meaning <math>A,B,C,D,R</math> are all collinear. Let <math>AR=x</math>. By [[Pythagorean Theorem]], the radius of circle <math>A</math> squared would be
+<math>r_A^2 = x^2+24^2</math>
+and the radius of circle <math>B</math> squared would be
+<math>r_B^2 = (x+39)^2+24^2.</math>
+Since <math>r_A^2 = \dfrac{25}{64}r_B^2</math>,
+<cmath>x^2+24^2 = \dfrac{25}{64}((x+39)^2+24^2)</cmath>
+Solving this will give <math>x^2-50x-399 = 0</math>, or <math>x=57, -7</math>; <math>AR = 57</math>. The same equation will apply to <math>CR</math>; <math>CR</math> would be the other root: <math>CR=7</math> (the negative <math>7</math> signals that <math>C</math> is the negative, or opposite, direction of <math>D</math>, about <math>R</math>). Thus, <math>AR = 57</math>, <math>BR = 57+39 = 96</math>, <math>CR = 7</math>, <math>DR = 39-7 = 32</math>, implying
+<math>AR+BR+CR+DR = \boxed{\textbf{(D) }192}</math>.
+
+
+=== Problem 25 ===
+A bee starts flying from point
+
+Choices: {'A': '\\; 2016', 'B': '\\; 2024', 'C': '\\; 2032', 'D': '\\; 2040', 'E': '\\; 2048</math>'}
+Answer: B
+
+--- Solution 1 ---
+Let <math>x=e^{i\pi/6}</math>, a <math>30^\circ</math> counterclockwise rotation centered at the origin. Notice that <math>P_k</math> on the complex plane is:
+
+<cmath>1+2x+3x^2+\cdots+(k+1)x^k</cmath>
+
+We need to find the magnitude of <math>P_{2015}</math> on the complex plane. This is an [[arithmetico-geometric series]]. 
+
+<cmath>\begin{align*} S &=1+2x+3x^2+\cdots+2015x^{2014} \\
+xS &=x+2x^2+3x^3+\cdots+2015x^{2015} \\
+(1-x)S &=1+x+x^2+\cdots+x^{2014}-2015x^{2015} \\
+S &= \frac{1-x^{2015}}{(1-x)^2}-\frac{2015x^{2015}}{1-x} \end{align*} </cmath>
+
+We want to find <math>|S|</math>. First, note that <math>x^{2015}=x^{11}=x^{-1}</math> because <math>x^{12}=1</math>. Therefore
+
+<cmath>S =\frac{1-\frac{1}{x}}{(1-x)^2}-\frac{2015}{x(1-x)}=-\frac{1}{x(1-x)}-\frac{2015}{x(1-x)}=-\frac{2016}{x(1-x)}.</cmath>
+
+Hence, since <math>|x|=1</math>, we have <math>|S| = \frac{2016}{|1-x|}.</math>
+
+Now we just have to find <math>|1-x|</math>. This can just be computed directly:
+
+<cmath>1-x=1-\frac{\sqrt{3}}{2}-\frac{1}{2}i</cmath>
+
+<cmath>|1-x|^2=\left(1-\sqrt{3}+\frac{3}{4}\right)+\frac{1}{4}=2-\sqrt{3}={\left(\frac{\sqrt{6}-\sqrt{2}}{2}\right)}^2</cmath>
+
+<cmath>|1-x|=\frac{\sqrt{6}-\sqrt{2}}{2}</cmath>
+
+Therefore <math>|S|=2016\cdot\frac{2}{\sqrt{6}-\sqrt{2}}=2016\left(\frac{\sqrt{6}+\sqrt{2}}{2}\right)=1008\sqrt{2}+1008 \sqrt{6}</math>.
+
+Thus the answer is <math>1008+2+1008+6=\boxed{\textbf{(B)}\; 2024}</math>.
+
+--- Solution 2 ---
+Here is an alternate solution that does not use complex numbers (highly recommended):
+
+The distance from <math>P_{2015}</math> to <math>P_0</math> can be evaluated using the [[Pythagorean theorem]]. Assuming <math>P_0</math> lies at the origin, we can calculate the distance the bee traveled to <math>P_{2015}</math> by evaluating the distance the bee traveled in the x-direction and the y-direction. Let's start by summing each movement:
+
+<math>x=1\cos{0}+2\cos{30}+3\cos{60}+\cdots+2014\cos{270}+2015\cos{300}</math>
+
+A movement of <math>p</math> units at <math>q</math> degrees is the same thing as a movement of <math>-p</math> units at <math>q-180</math> degrees, so we can adjust all the cosines with arguments greater than <math>180</math> as follows:
+
+<math>x=1\cos{0}+2\cos{30}+3\cos{60}+4\cos{90}+5\cos{120}+6\cos{150}-7\cos{0}-8\cos{30}-\cdots-2015\cos{120}</math>
+
+Grouping terms with like-cosines and factoring out the cosines:
+
+<math>x=(1-7+13-\cdots+2005-2011)\cos{0}+\cdots+(6-12+18-\cdots-2004+2010)\cos{150}</math>
+
+Each sum in the parentheses has <math>336</math> terms (except the very last one, which has <math>335</math>). By pairing each term, we see there are <math>\frac{336}{2}</math> pairs of <math>-6</math>. Therefore, each sum equals <math>168\cdot-6=-1008</math> except the very last sum, which has <math>167</math> pairs of <math>-6</math> plus an extra 2010 and equals <math>167\cdot-6+2010=1008</math>. Plugging in these values:
+
+<math>x=-1008\cos{0}-1008\cos{30}-1008\cos{60}-1008\cos{90}-1008\cos{120}+1008\cos{150}</math>
+<math>x=1008(-1-\frac{\sqrt{3}}{2}-\frac{1}{2}-0+\frac{1}{2}-\frac{\sqrt{3}}{2})=-1008(1+\sqrt{3})</math>
+
+We can find how far the bee traveled in the y-direction using the same logic as above, we arrive at the sum:
+
+<math>y=-1008\sin{0}-1008\sin{30}-1008\sin{60}-1008\sin{90}-1008\sin{120}+1008\sin{150}</math>
+
+<math>y=1008(0-\frac{1}{2}-\frac{\sqrt{3}}{2}-1-\frac{\sqrt{3}}{2}+\frac{1}{2})=-1008(1+\sqrt{3})</math>
+
+Finally, we use the Pythagorean to find the distance from <math>P_0</math>. This distance is given by:
+
+<math>\sqrt{x^2+y^2}=\sqrt{(-1008(1+\sqrt{3}))^2+(-1008(1+\sqrt{3}))^2}=\sqrt{2\cdot1008^2\cdot(1+\sqrt{3})^2}=1008(1+\sqrt{3})\sqrt{2}=1008\sqrt{2}+1008\sqrt{6}</math>, so the answer is <math>1008+2+1008+6=\boxed{\textbf{(B) }2024}</math>.
+
+--- Solution 3 ---
+We first notice that if the bee is turning 30 degrees each turn, it will take 12 turns to be looking in the same direction when the bee initially left. This means we simply need to answer the question; how far will the bee be when the bee is facing in the same direction? 
+
+
+First we use the fact that after 3 turns, the bee will be facing in a direction perpendicular to the the initial direction. From here we can draw a perpendicular from <math>P_2</math> to the line <math>\overline{P_0P_1}</math> intersecting a point <math>C_0</math>. We will also place the point <math>C_1</math> at the intersection of <math>\overline{P_0P_1}</math> and <math>\overline{P_3P_4}</math>. In addition, the point <math>C_2</math> is placed at the perpendicular dropped from <math>P_2</math> to the line <math>\overline{P_3C_1}</math>. We will also set the distance <math>\overline{P_0P_1} = n</math> and thus <math>\overline{P_1P_2} = n+1</math>. With this perpendicular we see that the triangle <math>\triangle{P_1P_2C_0}</math> is a 30-60-90 triangle. This means that the length <math>\overline{P_1C_0} = \frac{(n+1)\sqrt{3}}{2}</math> and the length <math>\overline{C_1C_2} = \frac{n+1}{2}</math>. We can also see that the triangle <math>\triangle{P_2C_1P_3}</math> is a 30-60-90 triangle and thus <math>\overline{C_0C_1} = \frac{n+2}{2}</math> and <math>\overline{C_2P_3} = \frac{(n+2)\sqrt{3}}{2}</math>. Now if we continue this across all <math>P_i</math> and set the point <math>P_0</math> to the coordinates <math>(0, 0)</math>. As you can see, we are inherently putting a “box” around the figure. Doing similar calculations for all four “sides” of this spiral we get that the length
+
+<cmath>\overline{P_0C_1} = n + \frac{(n+1)\sqrt{3}}{2} + \frac{n+2}{2}</cmath>,   <cmath>\overline{C_1C_4} = \frac{(n+1)}{2} + \frac{(n+2)\sqrt{3}}{2} + (n+3) + \frac{(n+4)\sqrt{3}}{2} + \frac{n+5}{2}</cmath>, <cmath>\overline{C_4C_7} = \frac{(n+4)}{2} + \frac{(n+5)\sqrt{3}}{2} + (n+6) + \frac{(n+7)\sqrt{3}}{2} + \frac{n+8}{2}</cmath>, <cmath>\overline{C_7C_{10}} = \frac{(n+7)}{2} + \frac{(n+8)\sqrt{3}}{2} + (n+9) + \frac{(n+10)\sqrt{3}}{2} + \frac{n+11}{2}</cmath>, and finally <cmath>\overline{C_{10}P_{12}} = \frac{(n+10)}{2} + \frac{(n+11)\sqrt{3}}{2}</cmath>. 
+
+Here the point <math>C_4</math> is defined as the intersection of lines <math>\overline{P_3P_4}</math> and <math>\overline{P_6P_7}</math>. The point <math>C_7</math> is defined as the intersection of lines <math>\overline{P_6P_7}</math> and <math>\overline{P_9P_{10}}</math>. Finally, the point <math>C_10</math> is defined as the intersection of lines <math>\overline{P_{9}P_{10}}</math> and <math>\overline{P_{12}P_{13}}</math>. Note that our spiral stops at <math>P_{12}</math> before the next spiral starts. Calculating the offset from the x and the y direction, we see that the offset, or the new point <math>P_{12}</math>, is <math>({-6}, {-6}-12 \sqrt{3})</math>. This is an interesting property that the points’ coordinate changes by a constant offset no matter what <math>n</math> is. Since the new point’s subscript changes by 12 each time and we see that 2016 is divisible by 12, the point <math>P_{2016} = ({-168} \cdot {6}, {168} \cdot ({-6} \sqrt{3} {-12}))</math>. Using similar 30-60-90 triangle properties, we see that <math>P_{2015} = ({-6} \cdot 168-1008 \sqrt{3}, 168({-6} \sqrt{3} - 12) + 1008)</math>. Using the distance formula, the numbers cancel out nicely (1008 is divisible by 168, so take 168 when using the distance formula) and we see that the final answer is <math>(1008)(1+\sqrt{3})(\sqrt{2})</math> which gives us a final answer of <math>\boxed{2024}</math>.
+
+-bowmanrocks32
+
+--- Solution 4 ---
+Suppose that the bee makes a move of distance <math>i</math>. After <math>6</math> turns it will be facing the opposite direction and move <math>i+6</math> units. Combining these opposite movements gives a total movement of <math>-6</math> units in the original direction. This means that every <math>12</math> moves, the bee will move <math>-6</math> units in each direction of <math>0^\circ, 30^\circ, 60^\circ, 90^\circ, 120^\circ, 150^\circ</math>.
+
+We want to find the displacement vector for every <math>12</math> moves. Factoring out the <math>-6</math> for now (which flips the direction), we draw a quick diagram of one unit in each direction.
+<asy>
+draw((0,0)--(1,0)--(1+sqrt(3)/2, 1/2)--(3/2+sqrt(3)/2, 1/2+sqrt(3)/2)--(3/2+sqrt(3)/2, 3/2+sqrt(3)/2)--(1+sqrt(3)/2, 3/2+sqrt(3))--(1, 2+sqrt(3)), EndArrow);
+draw((1,0)--(3/2+sqrt(3)/2, 0), dashed);
+draw((1,2+sqrt(3))--(3/2+sqrt(3)/2, 2+sqrt(3)), dashed);
+draw((3/2+sqrt(3)/2, 2+sqrt(3))--(3/2+sqrt(3)/2, 0), dashed);
+draw((1+sqrt(3)/2,0)--(1+sqrt(3)/2, 1/2)--(3/2+sqrt(3)/2, 1/2), dashed);
+draw((1+sqrt(3)/2,2+sqrt(3))--(1+sqrt(3)/2, 3/2+sqrt(3))--(3/2+sqrt(3)/2, 3/2+sqrt(3)), dashed);
+</asy>
+Using the 30-60-90 triangles, it is clear that the displacement vector (factoring back in the <math>-6</math>) is <math>-6\left\langle 1, 2+\sqrt{3}\right\rangle</math>.
+
+To compute the distance to <math>P_{2015}</math>, we can compute the position of <math>P_{2016}</math> (a multiple of <math>12</math> moves) and then subtract the vector from <math>P_{2015}</math> to <math>P_{2016}</math>.
+
+The bee reaches <math>P_{2016}</math> after <math>\frac{2016}{12} = 168</math> sets of <math>12</math> moves, so the total displacement vector to <math>P_{2016}</math> is <math>168(-6)\left\langle 1, 2+\sqrt{3}\right\rangle = \left\langle -1008, -2006-1008\sqrt{3}\right\rangle</math>.
+
+The bee moves at an angle of <math>-30^\circ</math> from <math>P_{2015}</math> to <math>P_{2016}</math>, so subtracting it means moving an angle of <math>150^\circ</math>. Since the vector is <math>2016</math> units long, by a 30-60-90 triangle, it is <math>\left\langle -1008\sqrt{3}, 1008\right\rangle</math>.
+
+Therefore the total displacement vector to <math>P_{2015}</math> is <math>\left\langle -1008, -2006-1008\sqrt{3}\right\rangle + \left\langle -1008\sqrt{3}, 1008\right\rangle = \left\langle -1008-1008\sqrt{3}, -1008-1008\sqrt{3}\right\rangle</math>. The displacement is thus <math>\sqrt{2}\left|-1008-1008\sqrt{3}\right| = 1008\sqrt{2}+1008\sqrt{6} \implies 1008+2+1008+6 = \boxed{\text{(B) }2024}</math>.
+
+Fun fact: The displacement to <math>P_{2016}</math> is the same as for <math>P_{2015}</math>.
+
+--- Solution 5 ---
+Let <math>P_0</math> be the origin. East would be the real axis in the positive direction. Then we can assign each <math>P_n</math> a complex value. The displacement would then be the magnitude of the complex number.
+
+Notice that after the <math>n</math>th move the value of <math>P_n</math> is <math>P_{n-1}+ne^{\frac{i(n-1)\pi}{6}}</math>. Also notice that after six moves the bee is facing in the opposite direction. And because we have found a recursion, we can add these up. 
+
+Then we have <cmath>P_n=e^{0}+2e^{\frac{i\pi}{6}}+\cdots+2015e^{\frac{2014i\pi}{6}},</cmath> and this becomes <cmath>(1-7+13-\cdots-2011)e^0+(2-8+\cdots-2012)e^{\frac{i\pi}{6}}+\cdots+(6-12+\cdots+2010)e^{\frac{5i\pi}{6}}.</cmath>
+
+Simplifying, we have <cmath>-6\cdot168-6\cdot168e^{\frac{i\pi}{6}}-6\cdot168e^{\frac{2i\pi}{6}}-6\cdot168e^{\frac{3i\pi}{6}}-6\cdot168e^{\frac{4i\pi}{6}}-(2010-6\cdot167)e^{\frac{5i\pi}{6}},</cmath> which eventually simplifies to <cmath>-1008-(2+\sqrt3)1008i,</cmath> and this is a <math>15-75-90</math> triangle which has ratios of <math>1:(2+\sqrt3):(\sqrt2+\sqrt6)</math> so the magnitude is <math>1008\sqrt2+1008\sqrt6</math> and the answer is <math>1008+2+1008+6=\boxed{\text{(B) }2024}</math>.
+
+--- Solution 6 ---
+After each 12 moves, the bee will be facing the same direction as it started. Let <math>P_0</math> be the origin and let <math>P_n</math> (with <math>n</math> divisible by <math>12</math>) be <math>(x,y)</math>. We now notice that each of the move pairs with lengths <math>n+1</math>/<math>n+7</math>, <math>n+2</math>/<math>n+8</math>, <math>n+3</math>/<math>n+9</math>, <math>n+4</math>/<math>n+10</math>, <math>n+5</math>/<math>n+11</math>, <math>n+6</math>/<math>n+12</math> will move the bee 6 units in the directions corresponding to the moves with lengths <math>n+7</math>, <math>n+8</math>, <math>n+9</math>, <math>n+10</math>, <math>n+11</math>, and <math>n+12</math>. This equates to moving the bee from <math>(x,y)</math> to <math>(x-6,y-12-6\sqrt{3})</math>, a move that repeats every 12 moves. Since <math>\frac{2016}{12} = 168</math>, we have that <math>P_(2016) = (-1008, -2016-1008\sqrt{3})</math>. It follows that <math>P_(2015) = (-1008-1008\sqrt{3}, -1008-1008\sqrt{3})</math> so the distance to <math>P_0</math> is <math>1008(\sqrt{2} + \sqrt{6})</math> so the answer is <math>1008 + 2 + 1008 + 6 = \boxed{\text{(B) } 2024}</math>.
+
+- bobjoebilly
+
+

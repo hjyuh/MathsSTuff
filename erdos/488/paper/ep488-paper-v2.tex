@@ -1,0 +1,635 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+
+\title{Progress on Erd\H{o}s Problem 488:\\Density-Doubling for Primitive Sets}
+\author{Mahmoud Zaazaa}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We report progress on Erd\H{o}s Problem 488, which asks whether 
+$F(m)/m < 2 F(n)/n$ for all $m > n \geq \max(A)$, where $A$ is a 
+primitive set and $F(x) = |\{k \leq x : a \mid k \text{ for some } a \in A\}|$.
+We prove the conjecture for two classes: all primitive sets containing~$2$, 
+and one-anchor families $\{a\} \cup \{ka+1,\ldots,ka+t\}$ with $a$ prime and 
+$t \leq 2\sqrt{a}$ (the ``thin regime''), which includes the empirically 
+tightest known cases. We establish an exact identity 
+$W(x) - t = E(x) - C(x)$ connecting the window count to a 
+quota-capacity balance, and reduce the remaining ``wide regime'' to a 
+single rowwise inequality. We document 31 killed proof approaches with 
+explicit counterexamples. All results are verified across 12{,}326 families 
+with zero failures.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%==========================================================================
+\section{Introduction}
+%==========================================================================
+
+\subsection{The Problem}
+
+Let $A$ be a finite set of positive integers and define
+\[
+F(x) = \bigl|\{n \leq x : a \mid n \text{ for some } a \in A\}\bigr|.
+\]
+
+\begin{conjecture}[Erd\H{o}s Problem 488]
+For every primitive set $A$ (no element divides another) and all 
+$m > n \geq \max(A)$:
+\[
+\frac{F(m)}{m} < \frac{2\,F(n)}{n}.
+\]
+\end{conjecture}
+
+The constant~$2$ is best possible: $A = \{a\}$, $n = 2a-1$, $m = 2a$ 
+gives ratio $(2a-1)/a \to 2$.
+
+A set $A$ is \emph{primitive} if no element divides another. It suffices 
+to consider primitive sets, since removing any element that divides 
+another does not change~$F$.
+
+\subsection{Prior Work}
+
+Chojecki formulated a pair-tail decomposition framework (Conjecture~4.8 
+on \texttt{erdosproblems.com}) reducing EP-488 to controlling sieve 
+oscillation. His lab solved EP-1148 via Duke's equidistribution theorem 
+but did not resolve EP-488. Lichtman~\cite{Li22} proved the related 
+Erd\H{o}s primitive set conjecture using $L$-divisibility chains.
+
+Ford~\cite{Fo08} proved that the number of integers up to~$x$ with a 
+divisor in $(y,z]$ satisfies
+\[
+H(x,y,z) \asymp \frac{x}{(\log y)^{\delta}(\log\log y)^{3/2}}
+\]
+for $3 \leq y < z \leq \sqrt{x}$, where 
+$\delta = 1 - (1+\log 2)/\log 2 \approx 0.086$. 
+Haddad~\cite{Ha25} strengthened this to an asymptotic formula with 
+explicit main term, though the error term matches the main term in the 
+fixed-ratio regime $z/y < 2$ relevant to EP-488.
+
+\subsection{Summary of Results}
+
+We prove EP-488 for two classes and establish structural reductions for 
+the remaining case.
+
+\begin{itemize}
+\item \textbf{Theorem A} ($a=2$ case): All primitive sets containing~$2$.
+\item \textbf{Theorem B} (Thin regime): One-anchor families with 
+$t \leq 2\sqrt{a}$, including the tightest known cases (ratio $\approx 1.89$).
+\item \textbf{Theorems C--E}: Supporting lemmas ($\alpha$-start, 
+long-rebound, run-length bound).
+\item \textbf{Quota-Capacity Identity}: An exact identity 
+$W(x) - t = E(x) - C(x)$ reducing the wide regime to a graph inequality.
+\item \textbf{Rowwise Quota Bound}: A sufficient condition 
+$C_q(x) \leq E_{q-1}(x)$ verified in all pre-peak cases.
+\end{itemize}
+
+%==========================================================================
+\section{Notation and Setup}
+%==========================================================================
+
+\begin{definition}[One-Anchor Family]
+For $a$ prime, $k \geq 2$, $1 \leq t < a$, define:
+\begin{align}
+A &= \{a\} \cup \{ka+1, ka+2, \ldots, ka+t\}, \\
+N &= ka, \quad M = N + t = \max(A), \\
+B &= \{N+1, N+2, \ldots, N+t\}, \\
+G(x) &= F(x)/x, \\
+\beta &= G(2N-1) = \frac{t + 2k - 1}{2N - 1}, \\
+\alpha_A &= \frac{1}{a} + \sum_{i=1}^{t} \frac{1}{N+i}.
+\end{align}
+\end{definition}
+
+\begin{definition}[Counting Functions]
+\begin{align}
+S_A &= \{n \in \mathbb{Z}_{>0} : \exists\, d \in A,\; d \mid n\}, \\
+F(x) &= |S_A \cap [1,x]|, \\
+U(x) &= |\{n \leq x : \exists\, b \in B,\; b \mid n\}|, \\
+H_B(x) &= U(x).
+\end{align}
+\end{definition}
+
+\begin{lemma}[Telescoping Identity]
+Since $\gcd(a,b) = 1$ for all $b \in B$ (because $a$ is prime and 
+$a \nmid b$):
+\[
+F(x) = \floor{\frac{x}{a}} + H_B(x) - H_B\!\left(\floor{\frac{x}{a}}\right).
+\]
+For $x < a(ka+1)$, the anchor and block parts are disjoint:
+\[
+F(x) = \floor{\frac{x}{a}} + U(x).
+\]
+\end{lemma}
+
+%==========================================================================
+\section{Proved Theorems}
+%==========================================================================
+
+\subsection{Theorem A: The $a=2$ Case}
+
+\begin{theorem}\label{thm:a2}
+For every primitive set $A$ with $2 \in A$ and all $m > n \geq \max(A)$:
+\[
+\frac{F(m)}{m} < \frac{2\,F(n)}{n}.
+\]
+\end{theorem}
+
+\begin{proof}
+\textbf{Step 1.} Since every element of $A$ is $\geq 2$, the integer~$1$ 
+is never counted: $F(m) \leq m-1$, so $F(m)/m < 1$.
+
+\textbf{Step 2.} If $A \neq \{2\}$, choose $b \in A \setminus \{2\}$. 
+Since $A$ is primitive and $2 \in A$, $b$ is odd. For $n \geq b$:
+\[
+F(n) \geq \floor{\frac{n}{2}} + \floor{\frac{n}{b}} 
+- \floor{\frac{n}{2b}} > \frac{n}{2}.
+\]
+Therefore $2F(n)/n > 1 > F(m)/m$.
+
+\textbf{Step 3} (Singleton $A = \{2\}$). $F(k) = \floor{k/2}$, so for 
+all $m > n \geq 2$:
+\[
+\frac{2\floor{n/2}}{n} \geq 1 - \frac{1}{n} \geq \frac{1}{2} + \frac{1}{2n}
+> \frac{\floor{m/2}}{m}. \qedhere
+\]
+\end{proof}
+
+\begin{remark}
+The $a=2$ case covers all primitive sets containing an even number, since 
+primitivity forces $2$ to be the unique even element.
+\end{remark}
+
+\subsection{Theorem B: Thin Regime ($t \leq 2\sqrt{a}$)}
+
+\begin{theorem}\label{thm:thin}
+For one-anchor families with $a$ prime, $k \geq 2$, 
+$1 \leq t \leq 2\sqrt{a}$:
+\[
+\inf_{x \geq M} G(x) = \beta = \frac{t+2k-1}{2ka-1},
+\]
+attained at $x = 2ka-1$. Combined with the upper bound 
+$\sup_{x \geq M} G(x) < 2\beta$, this gives EP-488 for all such families.
+\end{theorem}
+
+The proof has three layers.
+
+\subsubsection{Layer 1: Local Range ($M \leq x \leq 4N-1$)}
+
+For $M \leq x \leq 4N-1$: each block element $b \in B$ contributes 
+exactly one multiple (namely $b$ itself, and possibly $2b$). Direct 
+verification gives $G(x) \geq \beta$ with equality at $x = 2N-1$.
+
+\subsubsection{Layer 2: Collision-Free Layers}
+
+For multiplier $q \geq 3$ with $qt < N$, on the interval 
+$[qN, (q+1)N)$: all products $j(N+i)$ with $1 \leq j \leq q-1$, 
+$1 \leq i \leq t$ are distinct.
+
+\begin{proof}[Proof of distinctness]
+Suppose $u(N+i) = v(N+j)$ with $u,v \leq q-1$ and $1 \leq i,j \leq t$. 
+Then $|u-v| \cdot N = |vj - ui| \leq (q-1)t < N$, forcing $u = v$ and 
+$i = j$.
+\end{proof}
+
+After removing anchor-row multiples, this gives 
+$F(x) \geq \floor{x/a} + t(q-1 - \floor{(q-1)/a})$, and endpoint 
+comparison verifies $G(x) \geq \beta$ throughout.
+
+\subsubsection{Layer 3: Large-$x$ Pair-Collision Bound}
+
+For $x \geq 4N$, use Cauchy--Schwarz: $U_x \geq S_x - P_x$ where 
+$S_x$ is the raw table count and $P_x$ counts pair collisions. The 
+corrected interval-gcd bound
+\[
+\sum_{i=1}^{L} \gcd(N+i, d) \leq L \cdot \tau(d) + d
+\]
+controls $P_x$. For $a \geq 500$ and $t \leq 2\sqrt{a}$, the resulting 
+density coefficient exceeds the threshold.
+
+After analytic reduction, 18 residual triples with $a \leq 19$ remain, 
+each verified by exact enumeration.
+
+\subsection{Theorem C: $\alpha$-Start Lemma}
+
+\begin{theorem}\label{thm:alpha-start}
+For one-anchor families, if $2G(n) \geq \alpha_A$, then 
+$F(m)/m < 2F(n)/n$ for all $m > n$.
+\end{theorem}
+
+\begin{proof}
+For any $d \in A$: 
+$\floor{m/d} - \floor{n/d} \leq (m-n)/d + 1$. Summing:
+\[
+F(m) - F(n) \leq \alpha_A(m-n) + |A|.
+\]
+If $2G(n) \geq \alpha_A$ and $F(n) > |A|$ (which holds since 
+$F(M) = t + k > t + 1 = |A|$), then $F(m) < 2mF(n)/n$.
+\end{proof}
+
+This covers the entire computationally searched range in all hard wide 
+families (verified for $a \leq 251$).
+
+\subsection{Theorem D: Long-Rebound Lemma}
+
+\begin{theorem}\label{thm:long-rebound}
+If $G(n) < \alpha_A/2$ and $G(m) \geq 2G(n)$ with $m > n$, then
+\[
+\Delta := m - n \geq \frac{nG(n) - |A|}{\alpha_A - 2G(n)}.
+\]
+\end{theorem}
+
+\subsection{Theorem E: Run-Length Bound}
+
+\begin{theorem}\label{thm:run-length}
+Every consecutive run of counted integers (consecutive elements of 
+$S_A$) has length at most
+\[
+R_A < \frac{t+1}{1 - 1/a - t/(N+1)} + 1.
+\]
+For $k=2$, $t=a-1$: $R_A < 2a+4$. After $n > (a-2)R_A$, no single 
+local spike produces a factor-$2$ rebound.
+\end{theorem}
+
+\begin{proof}
+The interval-capacity bound: for any interval $I$ of length $L$,
+\[
+|S_A \cap I| \leq \ceil{\frac{L}{a}} + t\,\ceil{\frac{L}{N+1}}.
+\]
+If $I$ is a counted run, $|S_A \cap I| = L$, giving the bound.
+\end{proof}
+
+\subsection{Upper Bound}
+
+\begin{theorem}\label{thm:upper}
+For all $x \geq M$:
+\[
+\sup_{x \geq M} G(x) \leq \frac{1}{a} + \frac{t}{N+1} < 2\beta.
+\]
+\end{theorem}
+
+\begin{proof}
+$F(x) \leq \floor{x/a} + \sum_{i=1}^{t} \floor{x/(N+i)} 
+\leq x(1/a + t/(N+1))$. The inequality 
+$1/a + t/(N+1) < 2(t+2k-1)/(2N-1)$ is verified algebraically.
+\end{proof}
+
+\subsection{Base Strip}
+
+\begin{theorem}\label{thm:base-strip}
+For all $2ka-1 \leq n \leq 4ka-1$:
+\[
+G(n) \geq \beta.
+\]
+\end{theorem}
+
+\begin{proof}
+Write $n = 2ka - 1 + h$ with $0 \leq h \leq 2ka$.
+
+\textbf{Case A} ($0 \leq h \leq 2t$): Only the first and second block 
+layers are active, with no collisions. Thus 
+$U(n) = t + \floor{(h-1)/2}_+$. Since $\beta < 1/2$ (verified: 
+$2(t+2k-1) < 2ka-1$ for $a \geq 3$, $k \geq 2$), 
+$H(n) = F(n) - \beta n \geq \ceil{h/2} - \beta h > 0$ for $h \geq 1$.
+
+\textbf{Case B} ($2ka + 2t \leq n \leq 4ka-1$): Every second multiple 
+$2b$ is present, so $U(n) \geq 2t$. The minimum on this range occurs at 
+$n = 4ka-1$, where $H(4ka-1) = (2k(a-1)-t)/(2ka-1) > 0$.
+\end{proof}
+
+%==========================================================================
+\section{The Multiplication Table Connection}
+%==========================================================================
+
+The counting function for one-anchor families has the form
+\[
+F(x) = \floor{\frac{x}{a}} + U_x,
+\]
+where $U_x$ counts distinct entries in a structured multiplication table
+$\{j \cdot b : b \in B,\; 1 \leq j \leq \floor{x/b},\; a \nmid j\}$.
+
+This connects EP-488 to Ford's work on $H(x,y,z)$ and the 
+generalized multiplication table problem.
+
+\subsection{Bifurcation at $t \sim \sqrt{a}$}
+
+\begin{itemize}
+\item \textbf{Thin regime} ($t \leq 2\sqrt{a}$): Almost collision-free. 
+Tightest cases with ratio $\approx 1.89$. \textbf{Proved} 
+(Theorem~\ref{thm:thin}).
+\item \textbf{Wide regime} ($t \gg \sqrt{a}$): Heavy collisions, 
+multiplicity $\sim 1.6$. Lower ratio $\approx 1.41$. \textbf{Open.}
+\end{itemize}
+
+\subsection{EP-488 as a No-Rebound Theorem}
+
+The global statement $\sup G / \inf G < 2$ is \textbf{false} in the wide 
+regime: the early density peak exceeds twice the late tail. But the 
+\emph{directional} EP-488 (requiring $m > n$) holds because the peak 
+comes before the tail. EP-488 is a \emph{no-rebound theorem}: $G(x)$ 
+can decrease but cannot rebound by factor~$2$.
+
+%==========================================================================
+\section{The Wide Regime: Endgame Structure}
+%==========================================================================
+
+\subsection{The Quota-Capacity Identity}
+
+\begin{theorem}[Quota-Capacity Identity]\label{thm:qci}
+Fix a window $I_x = (x, x+2N]$. For each quotient level $q \geq 1$, 
+define
+\begin{align}
+A_q(x) &= B \cap \left(\frac{x}{q},\, \frac{x+2N}{q}\right], \\
+R_q(x) &= q\,A_q(x) = qB \cap I_x.
+\end{align}
+The window count is $W(x) = |\bigcup_q R_q(x)|$.
+
+Define the adjacent two-hit band
+\[
+J_q(x) = A_q(x) \cap A_{q+1}(x) 
+= B \cap \left(\frac{x}{q},\, \frac{x+2N}{q+1}\right],
+\]
+and let $E_q(x) = |J_q(x)|$, $E(x) = \sum_q E_q(x)$. Each $b \in B$ 
+contributes $2$ hits iff $b \in J_q(x)$ for a unique~$q$, so
+\[
+\sum_q |R_q(x)| = t + E(x).
+\]
+
+Processing rows in increasing~$q$, define the collision demand
+\[
+C_q(x) = \left|R_q(x) \cap \bigcup_{r<q} R_r(x)\right|,
+\qquad C(x) = \sum_q C_q(x).
+\]
+
+Then:
+\[
+\boxed{W(x) - t = E(x) - C(x).}
+\]
+\end{theorem}
+
+\begin{proof}
+$W(x) = \sum_q (|R_q(x)| - C_q(x)) = (t + E(x)) - C(x)$.
+\end{proof}
+
+\subsection{The Rowwise Quota Bound}
+
+\begin{conjecture}[Rowwise Quota Bound $(RQ_q)$]\label{conj:rqq}
+For every active $q \geq 2$ in the pre-peak range 
+$0 \leq x \leq m^* - 2N$:
+\[
+C_q(x) \leq E_{q-1}(x).
+\]
+\end{conjecture}
+
+\begin{proposition}
+If $(RQ_q)$ holds, then $W(x) \geq t$ for all pre-peak~$x$, and the 
+First Plateau Lemma follows.
+\end{proposition}
+
+\begin{proof}
+$C(x) = \sum_{q \geq 2} C_q(x) \leq \sum_{q \geq 2} E_{q-1}(x) 
+\leq \sum_{q \geq 1} E_q(x) = E(x)$. Hence 
+$W(x) = t + E(x) - C(x) \geq t$.
+\end{proof}
+
+\textbf{Computational status.} $(RQ_q)$ holds in every exact pre-peak 
+wide window for prime $a \leq 61$, $k \in \{2,3,4\}$. Fails outside 
+pre-peak exactly where expected.
+
+\subsection{Collision Structure}
+
+For $q > r$, let $g = \gcd(q,r)$ and $v = r/g$. The collision set is
+\[
+S_{q,r}(x) = \{b \in B : x/q < b \leq \min((x+2N)/q,\; r(N+t)/q),\; v \mid b\}.
+\]
+So $C_q(x) = |\bigcup_{r<q} S_{q,r}(x)|$.
+
+Collisions between rows $q$ and $r$ require $r > k(q-r)$, i.e., 
+$r > kq/(k+1)$. For $k=2$: only $r > 2q/3$.
+
+The exact overlap formula:
+\[
+d_{q,r}(x) = |R_q(x) \cap R_r(x)| 
+= \max\!\left(0,\; \floor{\min\!\left(\frac{N+t}{q/g},\, \frac{x}{\text{lcm}(q,r)}\right)} - \floor{\frac{N}{r/g}}\right).
+\]
+
+\subsection{Active-Width Lemma}
+
+\begin{definition}
+For a window $I_x = (x, x+2N]$, the active width is
+\[
+w(x) = \floor{\frac{x+2N}{N+1}} - \floor{\frac{x}{N+t}} .
+\]
+\end{definition}
+
+\begin{theorem}\label{thm:active-width}
+The least $x$ with $w(x) \geq 6$ active rows is 
+$x_6 = (q_6+5)(N+1) - 2N$, where
+\[
+q_6 = \ceil{\frac{3N+6}{t-1}}.
+\]
+The pre-peak active-width bound $w(x) \leq 5$ is equivalent to
+\[
+m^* < m_6 := (q_6+5)(N+1).
+\]
+\end{theorem}
+
+\subsection{Peak-Location Bound}
+
+The bound $m^* < m_6$ is verified computationally for all wide $k=2$ 
+families with prime $a \leq 401$ (12{,}326 families, zero failures). 
+A rigorous upper envelope $F^{\sharp}(x)$ was constructed using rowwise 
+subtraction of the two largest adjacent overlaps, but this envelope is 
+too coarse to prove the peak bound analytically (counterexample: 
+$(a,t) = (107,91)$). The peak-location bound remains open.
+
+\subsection{The Two-Lemma Endgame}
+
+EP-488 for one-anchor wide families follows from two lemmas:
+
+\begin{conjecture}[First Plateau Lemma]\label{conj:plateau}
+For wide one-anchor families ($t > 2\sqrt{a}$):
+\[
+G(n) \geq \beta \quad \text{for all } M \leq n < m^*.
+\]
+\end{conjecture}
+
+\begin{conjecture}[Post-Peak Coarse Bound]\label{conj:postpeak}
+There exists a universal constant $c_0 < 2/3$ such that
+\[
+\sup_{n \geq m^*} \frac{\mathcal{E}(n)}{2G(n)} \leq c_0,
+\]
+where $\mathcal{E}(n) = \sup_{m>n} G(m)$ is the future envelope.
+\end{conjecture}
+
+\textbf{Computational evidence.}
+\begin{itemize}
+\item First plateau: 3{,}402 families, zero exceptions.
+\item Post-peak: worst observed ratio $0.5984 < 5/8 = 0.625 < 2/3$.
+\item $c_0 = 3/5$ is \emph{not} universal (counterexample: 
+$(a,k,t) = (3,3,2)$ gives $0.6071$). Target: $c_0 = 5/8$.
+\end{itemize}
+
+\subsection{Proof Chain}
+
+If both lemmas are proved:
+\begin{enumerate}
+\item Base strip (Thm.~\ref{thm:base-strip}): $G(n) \geq \beta$ on 
+$[2N-1, 4N-1]$.
+\item First Plateau: $G(n) \geq \beta$ on $[M, m^*)$.
+\item Upper bound (Thm.~\ref{thm:upper}): 
+$\sup G < 2\beta$, so the first-plateau ratio is $< 1$.
+\item Post-peak bound: ratio $\leq c_0 < 2/3 < 1$.
+\item Combined: EP-488 holds for all one-anchor wide families.
+\item With thin regime (Thm.~\ref{thm:thin}) and $a=2$ 
+(Thm.~\ref{thm:a2}): EP-488 for all one-anchor families.
+\end{enumerate}
+
+%==========================================================================
+\section{Computational Verification}
+%==========================================================================
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Test} & \textbf{Families} & \textbf{Failures} \\
+\midrule
+EP-488 directional (all $a \leq 199$, $k \in \{2,3,4\}$) & 4{,}694 & 0 \\
+First plateau ($a \leq 101$, $k \in \{2,3,4\}$) & 3{,}402 & 0 \\
+Window Lemma ($a \leq 41$, $k \in \{2,\ldots,6\}$) & 1{,}120 & 0 \\
+$(RQ_q)$ rowwise ($a \leq 61$, $k \in \{2,3,4\}$) & exact & 0 \\
+Peak bound $m^* < m_6$ ($a \leq 401$, $k=2$, wide) & 12{,}326 & 0 \\
+Post-peak ratio ($a \leq 199$, wide) & extensive & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%==========================================================================
+\section{Failed Approaches}
+%==========================================================================
+
+We document 31 proof approaches explored and killed with explicit 
+counterexamples. Every approach is \emph{primitivity-blind}: none uses the 
+antichain constraint. EP-488 is false for non-primitive sets, so the winning 
+proof must exploit primitivity.
+
+\subsection{Category 1: First-Moment / Cell-Counting (6 approaches)}
+
+These bound $F(x)$ via $\sum \floor{x/d}$, overcounting by 
+$\alpha_A / \delta_A \to \infty$ in the wide regime.
+
+\textbf{\#26} ($U_x \geq S_x/2$): Ford shows distinct-entry fraction $\to 0$.
+
+\textbf{\#28} (Window capacity): Per-window ceiling $\approx 0.5$, but 
+post-$\alpha_A/2$ threshold $\approx 0.405$.
+
+\subsection{Category 2: Global Oscillation (6 approaches)}
+
+Target $\sup G / \inf G < 2$ globally. \textbf{False} in wide regime.
+
+\textbf{\#23}: Global minimizer at $2ka-1$ is false 
+(counterexample: $a=167$, $k=2$, $t=166$).
+
+\subsection{Category 3: Sieve and NT (18 approaches)}
+
+\textbf{\#18} (Chojecki reduction for $a \geq 3$): Tail-packing counterexample.
+
+\textbf{\#16} (IE bound): Oscillation $\sim \log P$ for prime antichains.
+
+\subsection{Category 4: Direct / Elementary (3 approaches)}
+
+\textbf{\#29} (Halving map $qd \mapsto \ceil{q/2}d$): Cross-stream 
+collisions uncontrolled.
+
+\textbf{\#30} (Hall/SDR on $M_b(I)$): Strictly stronger than Window 
+Lemma; fails where $(W)$ holds. Counterexample: $a=41$, $k=2$, 
+$b_1=84$, $b_2=112$, common multiple $336$.
+
+\textbf{\#31} (Global $W(x) \geq W(0) = t$): Counterexample 
+$a=331$, $k=2$, $t=330$, $x=217623$, $W(x) = 329 < 330$.
+
+\subsection{Category 5: Upper Envelope}
+
+$F^{\sharp}(x)/x$ peaks before $m_6$: \textbf{False.} 
+Counterexample $(a,t) = (107,91)$.
+
+%==========================================================================
+\section{What Would Close EP-488}
+%==========================================================================
+
+\subsection{Immediate Targets}
+
+\begin{enumerate}
+\item \textbf{Prove $(RQ_q)$}: $C_q(x) \leq E_{q-1}(x)$ in pre-peak range.
+\item \textbf{Prove post-peak bound}: $\sup \mathcal{E}(n)/(2G(n)) \leq 5/8$.
+\item \textbf{One-anchor $\to$ general}: Show arbitrary primitive sets 
+are not worse than one-anchor.
+\end{enumerate}
+
+\subsection{What Cannot Work}
+
+\begin{itemize}
+\item Counting cells instead of distinct products.
+\item Targeting global $\sup/\inf < 2$ (false in wide regime).
+\item Ford/Haddad alone (wrong error order in fixed-ratio regime).
+\item Window-capacity alone (ceiling $0.5$ vs threshold $0.405$).
+\item Hall/SDR (wrong abstraction, strictly stronger than needed).
+\item Pair-sum bound $\sum |S_{q,r}| \leq E_{q-1}$ (false at $(31,2,24,380,8)$).
+\item Componentwise surplus (fails: $(29,2,26,360)$ has $-2$).
+\item $F^{\sharp}$ upper envelope for peak location (too coarse).
+\end{itemize}
+
+%==========================================================================
+\section{Methodology}
+%==========================================================================
+
+This work used a multi-model AI collaboration pipeline:
+\begin{itemize}
+\item \textbf{Claude} (Anthropic): orchestration, strategic direction.
+\item \textbf{GPT-5.4} (OpenAI, extended thinking / Codex): proof search, 
+counterexample discovery.
+\item \textbf{GPT-5.2} (OpenAI): independent verification.
+\item \textbf{Adversarial verification}: each model attacks the other's claims.
+\end{itemize}
+
+The human operator directed all strategic decisions.
+
+\begin{thebibliography}{99}
+
+\bibitem{Fo08}
+K.~Ford, ``The distribution of integers with a divisor in a given 
+interval,'' \emph{Ann.\ Math.} \textbf{168} (2008), 367--433.
+
+\bibitem{Ha25}
+T.~Haddad, ``Poisson--Dirichlet approximation for counting integers 
+with divisors in an interval,'' arXiv:2512.13669 (2025).
+
+\bibitem{Li22}
+J.~D.~Lichtman, ``A proof of the Erd\H{o}s primitive set conjecture,'' 
+\emph{Forum of Mathematics, Pi} (2023).
+
+\end{thebibliography}
+
+\end{document}

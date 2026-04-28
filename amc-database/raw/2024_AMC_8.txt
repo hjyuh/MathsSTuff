@@ -1,0 +1,1280 @@
+=== Problem 1 ===
+What is the ones digit of <cmath>222{,}222-22{,}222-2{,}222-222-22-2=?</cmath>
+
+Choices: {'A': '0', 'B': '2', 'C': '4', 'D': '6', 'E': '8'}
+Answer: B
+
+--- Solution 1 ---
+We can rewrite the expression as <imath>222,222-(22,222+2,222+222+22+2)</imath>. We note that the units digit of <imath>22,222+2,222+222+22+2</imath> is <imath>0</imath> because all the units digits of the five numbers are <imath>2</imath> and <imath>5\cdot2=10</imath>, which has a units digit of <imath>0</imath>. Now, we have something with a units digit of <imath>0</imath> subtracted from <imath>222,222</imath>, and so the units digit of this expression is <imath>\boxed{\textbf{(B) } 2}</imath>.
+
+--- Solution 2 ---
+<cmath>222,222-22,222 = 200,000</cmath>
+<cmath>200,000 - 2,222 = 197778</cmath>
+<cmath>197778 - 222 = 197556</cmath>
+<cmath>197556 - 22 = 197534</cmath>
+<cmath>197534 - 2 = 197532</cmath>
+So our answer is <imath>\boxed{\textbf{(B) } 2}</imath>. (Note that brute forcing takes lots of time and the AMC8 is a timed test)
+
+--- Solution 3 ---
+We only care about the units digits. Thus, <imath>2-2</imath> ends in <imath>0</imath>, <imath>0-2</imath> after regrouping(10-2) ends in <imath>8</imath>, <imath>8-2</imath> ends in <imath>6</imath>, <imath>6-2</imath> ends in <imath>4</imath>, and <imath>4-2</imath> ends in <imath>\boxed{\textbf{(B) } 2}</imath>.
+
+--- Solution 4 ---
+We just take the units digit of each and subtract, adding an extra ten to the first number so we don't get a negative number:
+<cmath>(12-2)-(2+2+2+2)=10-8=\boxed{\textbf{(B) } 2}</cmath>
+
+--- Solution 5 ---
+<cmath>222{,}222-22{,}222-2{,}222-222-22-2\equiv2-2-2-2-2\equiv-8\equiv\boxed{\textbf{(B) } 2}\pmod{10}</cmath>
+
+--- Solution 6 ---
+We can ignore the other digits and just do <imath>22-2-2-2-2-2</imath>. Because you are subtracting five <imath>2s</imath> and <imath>2\cdot5 = 10</imath>, you subtract <imath>10</imath> from <imath>22</imath>. This gives us 12, so the last digit is <imath>\boxed{\textbf{(B) } 2}</imath>.
+
+
+=== Problem 2 ===
+What is the value of this expression in decimal form?
+<cmath>\frac{44}{11} + \frac{110}{44} + \frac{44}{1100}</cmath>
+
+Choices: {'A': '6.4', 'B': '6.504', 'C': '6.54', 'D': '6.9', 'E': '6.94</math>'}
+Answer: C
+
+--- Solution 1 ---
+We see that <imath>\frac{44}{11}</imath> is <imath>4</imath>; 
+<imath>\frac{110}{44}</imath> simplifies to <imath>\frac{5}{2}</imath>, which is <imath>2.5</imath>; 
+
+and <imath>\frac{44}{1100}</imath> simplifies to <imath>\frac{1}{25}</imath>, which is <imath>0.04</imath>; 
+
+<imath>4+2.5+0.04</imath> reveals <cmath>\frac{44}{11} + \frac{110}{44} + \frac{44}{1100}</cmath> is <imath>\boxed{\text{(C)\ 6.54}}</imath>.
+
+--- Solution 2 ---
+Using brute force we can make <imath>\frac{44}{11}</imath> into <imath>\frac{4400}{1100}</imath>, <imath>\frac{110}{44}</imath> into <imath>\frac{2750}{1100}</imath>, and <imath>\frac{44}{1100}</imath>, and then we add and get <imath>\frac{7194}{1100}</imath> and this simplifies to <imath>\boxed{\text{(C)\ 6.54}}</imath>
+
+
+=== Problem 3 ===
+Four squares of side length
+
+Choices: {'A': '\\ 42', 'B': '\\ 45', 'C': '\\ 49', 'D': '\\ 50', 'E': '\\ 52'}
+Answer: E
+
+--- Solution 1 ---
+We work inwards. The area of the outer shaded square is the area of the whole square minus the area of the second largest square. The area of the inner shaded region is the area of the third largest square minus the area of the smallest square. The sum of these areas is 
+<cmath>10^2 - 9^2 + 7^2 - 4^2 = 100 - 81 + 49 - 16 = 19 + 33 = \boxed{\textbf{(E)}\ 52}</cmath>
+
+This problem appears multiple times in various math competitions including the AMC and MATHCOUNTS.
+
+-Benedict (countmath1)
+
+--- Solution 2 ---
+In solution 1, we can use [[Difference of squares]] to get the answer, rather than calculating the squares of the numbers:
+<cmath>10^2 - 9^2 + 7^2 - 4^2 = (10 - 9)(10 + 9) + (7 - 4)(7 + 4) = 1\cdot19 + 3\cdot11 = 19 + 33 = \boxed{\textbf{(E)}\ 52}</cmath>
+
+
+
+minor edits by Sowthistle2011 :)
+
+--- Solution 3 ---
+Solve for the areas for each square inside the larger one , and then subtract the areas of the white regions from the areas of each square:
+<cmath>(10^2 + 7^2) - (9^2 + 4^2) = 149 - 97 = \boxed{\textbf{(E)}\ 52}</cmath>
+
+-MrTechguyPCMT and anabel.disher
+
+--- Solution 4 ---
+We can calculate it as the sum of the areas of <imath>2</imath> smaller trapezoids and <imath>2</imath> larger trapezoids. 
+<cmath>2\left(\cfrac{(7+4)(7-4)}{2}\right)+2\left(\cfrac{(10+9)(10-9)}{2}\right)=10^2 - 9^2 + 7^2 - 4^2 = 19 + 33 = \boxed{\textbf{(E)}\ 52}</cmath>
+
+-SahanWijetunga
+
+
+=== Problem 4 ===
+When Yunji added all the integers from
+
+Choices: {'A': '5', 'B': '6', 'C': '7', 'D': '8', 'E': '9'}
+Answer: E
+
+--- Solution 1 ---
+basically the one below i guess just explained a lil different. so yes we add <imath>1</imath> - <imath>9</imath> to get <imath>45</imath>. then we see what’s the closet square, which is obviously <imath>36</imath> (i hope we have our squares memorized by now) and then we do <imath>45</imath> minus <imath>36</imath> to get <imath>9</imath> 
+<imath>\boxed{\textbf{(E)}\ 9}</imath>.
+
+Adding numbers 1 through 9 gives us 45. This was her expected sum, but what she got was a perfect square. Since she got that perfect square sum by forgetting a number, that sum is less than 45. The square number right under 45 is 36. So 45 - 36 = 9. So the solution is <imath>\boxed{\textbf{(E)}\ 9}</imath>.
+
+
+=== Problem 5 ===
+Aaliyah rolls 2 standard 6-sided dice. She notices that the product of the two numbers rolled is a multiple of
+
+Choices: {'A': '5', 'B': '6', 'C': '7', 'D': '8', 'E': '9'}
+Answer: B
+
+--- Solution 1 ---
+First, figure out all pairs of numbers whose product is 6. Then, using the process of elimination, we can find the following: 
+
+<imath>\textbf{(A)}</imath> is possible: <imath>2\times 3</imath> 
+
+<imath>\textbf{(C)}</imath> is possible: <imath>1\times 6</imath> 
+
+<imath>\textbf{(D)}</imath> is possible: <imath>2\times 6</imath> 
+
+The only integer that cannot be the sum is <imath>\boxed{\textbf{(B) } 6}</imath>.
+
+We can prove that B is correct because the only ordered pairs that add to 6 is <imath>(1,5)</imath> , <imath>(5,1)</imath>, <imath>(2,4)</imath>, <imath>(4,2)</imath>, and ,<imath>(3,3)</imath>, and these multiply to 5, 8, and 9.
+
+Slight changes
+
+--- Solution 2 ---
+First, see that in order for the two numbers to have a product of 6, it must either have 6 as a factor or have factors that have a product of 6 (Notably <imath>2\times 3</imath>).
+
+When we look at the answer choices, we see that answers <imath>C, D, E</imath> all are more than 6, so they can all be added as a sum of 6. Answer <imath>A</imath> works because <imath>2+3=5</imath>, so 6 is the only answer choice that doesn't work. Thus, the answer is <imath>\boxed{\textbf{(B) } 6}</imath>.
+
+
+=== Problem 6 ===
+Sergei skated around an ice rink, gliding along different paths. The gray lines in the figures below show four of the paths labeled
+
+Choices: {'A': '\\ P,Q,R,S', 'B': '\\ P,R,S,Q', 'C': '\\ Q,S,P,R', 'D': '\\ R,P,S,Q', 'E': '\\ R,S,P,Q'}
+Answer: D
+
+--- Solution 1 ---
+You can measure the lengths of the paths until you find a couple of guaranteed true inferred statements as such:
+<math>Q</math> is greater than <math>S</math>, 
+<math>P</math> is greater than <math>R</math>, 
+and <math>R</math> and <math>P</math> are the smallest two, therefore the order is <math>R, P, S, Q.</math>
+Thus we get the answer <math>\boxed{\textbf{(D)}
+- U-King
+
+--- Solution 2 ---
+Obviously Path Q is the longest path, followed by Path S. 
+
+So, it is down to Paths P and R.
+
+Notice that curved lines are always longer than the straight ones that meet their endpoints, therefore Path P is longer than Path R.
+
+Thus, the order from shortest to longest is <math>\boxed{\textbf{(D) } \text{R, P, S, Q}}</math>.
+
+--- Solution 3 ---
+We can compare paths that look similar, <math>P</math> with <math>R</math> and <math>Q</math> with <math>S</math>. 
+
+<math>R</math> is shorter than <math>P</math> because it replaces curved lines in <math>P</math> with straight lines, and straight lines are always the shortest distance between two points. 
+
+The two straight lines in <math>S</math> can be seen as paths going diagonally straight across the rink, and the straight lines in <math>Q</math> can be seen as initially going diagonally across the rink, before taking a short detour and then finishing its path. Since a straight line between two points is shorter than zig-zagging lines, path <math>S</math> is shorter than path <math>Q</math>. 
+
+The only difference between path <math>P</math> and path <math>S</math> is the straight lines, with <math>P</math> going up and down while <math>S</math> goes diagonally. A right triangle can be drawn from a line from <math>P</math> and a line from <math>S</math>. We can see that the straight lines in <math>P</math> act as the leg of the right triangle while the hypotenuse is the straight lines from <math>S</math>. The legs of a right triangle are always less than the hypotenuse, so <math>P</math> is shorter than <math>S</math>. 
+
+Putting together these inequality statements, the answer is <math>\boxed{\textbf{(D)}
+
+
+=== Problem 7 ===
+A
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '5</math>'}
+Answer: E
+
+--- Solution 1 ---
+We can eliminate B, C, and D, because they are not <imath>21</imath> subtracted by any multiple of <imath>4</imath>. Finally, we see that there is no way to have A, so the solution is <imath>\boxed{\textbf{(E)\ 5}}</imath>.
+
+--- Solution 2 ---
+Let <imath>x</imath> be the number of <imath>1</imath> by <imath>1</imath> tiles. There are <imath>21</imath> squares and each <imath>2</imath> by <imath>2</imath> or <imath>1</imath> by <imath>4</imath> tile takes up 4 squares, so <imath>x \equiv 1 \pmod{4}</imath>, so it is either <imath>1</imath> or <imath>5</imath>. Color the columns, starting with red, then blue, and alternating colors, ending with a red column. There are <imath>12</imath> red squares and <imath>9</imath> blue squares, but each <imath>2</imath> by <imath>2</imath> and <imath>1</imath> by <imath>4</imath> shape takes up an equal number of blue and red squares, so there must be <imath>3</imath> more <imath>1</imath> by <imath>1</imath> tiles on red squares than on blue squares, which is impossible if there is just one, so the answer is <imath>\boxed{\textbf{(E)\ 5}}</imath>, which can easily be confirmed to work.
+
+--- Solution 3 ---
+Suppose there are <imath>a</imath> different <imath>2\times 2</imath> tiles, <imath>b</imath> different <imath>4\times 1</imath> tiles and <imath>c</imath> different <imath>1\times 1</imath> tiles. Since the areas of these tiles must total up to <imath>21</imath> (area of the whole grid), we have 
+<cmath>4a + 4b + c = 21.</cmath>
+Reducing modulo <imath>4</imath> gives <imath>c\equiv 1\pmod{4}</imath>, or <imath>c = 1</imath> or <imath>c = 5</imath>. 
+
+If <imath>c = 1</imath>, then <imath>a + b = 5</imath>. After some testing, there is no valid pair <imath>(a, b)</imath> that works, so the answer must be <imath>\boxed{\textbf{(E)\ 5}}</imath>, which can be constructed in many ways. 
+
+-Benedict T (countmath1)
+
+--- Solution 4 ---
+Since the rectangle is a 3x7 grid, its total area (or the number of 1x1 squares) is 21. To minimize the number of 1x1 squares used, we begin by filling the area with larger shapes. Specifically, we can use two 2x2 squares, each covering 4 squares, and two 1x4 rectangles, each also covering 4 squares. This gives us a total of 4+4=8
+4+4=8 squares filled by larger shapes.After filling 16 squares, we have 5 squares left. We can then fill in 5 additional 1x1 squares, leaving us with a total of 5 1x1 squares.
+
+Thus, the least number of 1x1 squares required is <imath>\boxed{\textbf{(E)\ 5}}</imath>. -AADHYA2012
+
+
+=== Problem 8 ===
+On Monday Taye has
+
+Choices: {'A': '3', 'B': '4', 'C': '5', 'D': '6', 'E': '7</math>'}
+Answer: D
+
+--- Solution 1 ---
+How many dollar values could be on the first day? Only <math>2</math> dollars. The second day, you can either add <math>3</math> dollars, or double, so you can have <math>5</math> dollars, or <math>4</math>. For each of these values, you have <math>2</math> values for each. For <math>5</math> dollars, you have <math>10</math> dollars or <math>8</math>, and for <math>4</math> dollars, you have <math>8</math> dollars or <math>7</math> dollars. Now, you have <math>2</math> values for each of these. For <math>10</math> dollars, you have <math>13</math> dollars or <math>20</math>, for <math>8</math> dollars, you have <math>16</math> dollars or <math>11</math>, for <math>8</math> dollars, you have <math>16</math> dollars or <math>11</math>, and for <math>7</math> dollars, you have <math>14</math> dollars or <math>10</math>.
+
+On the final day, there are 11, 11, 16, and 16 repeating, leaving you with <math>8-2 = \boxed{\textbf{(D)\ 6}}</math> different values.
+
+--- Solution 2 ---
+Continue as in Solution 1 to get <math>7</math>, <math>8</math>, or <math>10</math> dollars by the 2nd day. The only way to get the same dollar amount occurring twice by branching (multiply by <math>2</math> or adding <math>3</math>) from here is if <math>7+3=10\cdot 2</math> or <math>7+3=8\cdot 2</math> which both aren't true. Hence our answer is <math>3\cdot2=\boxed{\textbf{(D)\ 6}}</math>.
+
+--- Solution 3 ---
+Let <math>a</math> represent Taye adding <math>3</math> dollars and <math>d</math> represent Taye doubling his money.
+We can list out all the possibilities:
+<math>a</math> => <math>a</math> => <math>a</math> = <math>11</math>, 
+<math>a</math> => <math>a</math> => <math>d</math> = <math>16</math>, 
+<math>a</math> => <math>d</math> => <math>a</math> = <math>12</math>, 
+<math>a</math> => <math>d</math> => <math>d</math> = <math>20</math>, 
+<math>d</math> => <math>a</math> => <math>a</math> = <math>10</math>, 
+<math>d</math> => <math>a</math> => <math>d</math> = <math>14</math>, 
+<math>d</math> => <math>d</math> => <math>a</math> = <math>11</math>, 
+<math>d</math> => <math>d</math> => <math>d</math> = <math>16</math>. 
+The unique values are <math>10,11,12,14,16,20</math>. Thus, our desired answer is <math>\boxed{\textbf{(D)\ 6}}</math>
+
+
+=== Problem 9 ===
+All the marbles in Maria's collection are red, green, or blue. Maria has half as many red marbles as green marbles and twice as many blue marbles as green marbles. Which of the following could be the total number of marbles in Maria's collection?
+
+Choices: {'A': '24', 'B': '25', 'C': '26', 'D': '27', 'E': '28</math>'}
+Answer: E
+
+--- Solution 1 ---
+Since Maria has half as many red marbles as green, we can call the number of red marbles <imath>x</imath>, and the number of green marbles <imath>2x</imath>.
+Since she has half as many green marbles as blue, we can call the number of blue marbles <imath>4x</imath>. 
+Adding them up, we have: <imath>7x</imath> marbles. The number of marbles therefore must be a multiple of <imath>7</imath>, as <imath>x</imath> represents an integer, so the only possible answer is <imath>\boxed{\textbf{(E) 28}}.</imath>
+
+Minor Edit - Runningmouse
+
+--- Solution 2 ---
+Suppose Maria has <math>g</math> green marbles and <math>t</math> total marbles. She then has <math>\frac{g}{2}</math> red marbles and <math>2g</math> blue marbles. Altogether, Maria has
+<cmath>g + \frac{g}{2} + 2g = \frac{7g}{2} = t</cmath>
+marbles, so <math>g = \dfrac{2t}{7},</math> so <math>t</math> must be a multiple of <math>7</math>. The only multiple of <math>7</math> in the answer choices is <math>\boxed{\textbf{(E) 28}}.</math>
+
+-Benedict T (countmath1) and anabel.disher
+
+--- Solution 3 ---
+This solution is similar to Solution 1. The most simplest and effective way to solve this problem is equations. We have the following equations: 
+
+2r=g
+and 2g=b
+We essentialy want to find out the total number of mables in Maria's collection or in equation terms (r+g+b). 
+Converting that equation and substituting the values we get r+2r+4r=7r 
+Now, we know the total is a multiple of 7 leaving our answer as <math>\boxed{\textbf{(E) 28}}.</math> -AADHYA2012
+
+
+=== Problem 10 ===
+In January 1980 the Moana Loa Observation recorded carbon dioxide
+
+Choices: {'A': '\\ 399', 'B': '\\ 414', 'C': '\\ 420', 'D': '\\ 444', 'E': '\\ 459</math>'}
+Answer: B
+
+--- Solution 1 ---
+This is a time period of <imath>2030 - 1980 = 50</imath> years, so we can expect the ppm to increase by <imath>50*1.515=75.75\approx	76</imath> ppm.
+Since we started with <imath>338</imath> ppm, we have <imath>76+338=\boxed{\textbf{(B)\ 414}}</imath>.
+
+-ILoveMath31415926535
+
+--- Solution 2 ---
+<imath>2030 - 1980 = 50</imath> years.
+The ppm level in 2030 is <imath>338 + 50 * 1.515 = 338 + 75.75 = 413.75</imath> <imath>
+\approx	\boxed{\textbf{(B)\ 414}}</imath>.
+
+--- Solution 3 ---
+From Jan 1980 =338 ppm increase
+
+= 1.515 ppm increased / year
+
+= 50 yrs (in this case)
+=1.515 x 50 
+
+=75.75 
+Thus, 2030 prediction = 338 + 76 = 414 = option B
+
+
+=== Problem 11 ===
+The coordinates of
+
+Choices: {'A': '8', 'B': '9', 'C': '10', 'D': '11', 'E': '12</math>'}
+Answer: D
+
+--- Solution 1 ---
+Since the triangle has a base of <imath>6</imath>, we can plug in that value as the base. Then, we can solve the equation for the height. Doing so gives us, 
+<cmath>\dfrac{6h}{2}=3h=12.</cmath>
+This means that <imath>h=4</imath>, so that means that we have to add 4 to the <imath>y</imath>-coordinate. So the answer is <imath>7+4=\boxed{(D) 11}</imath>
+
+--- Solution 2 ---
+By the Shoelace Theorem, <imath>\triangle ABC</imath> has area <cmath>\frac{1}{2}|(y \cdot 11 + 7 \cdot 5 + 7 \cdot 3) - (3 \cdot 7 + 11 \cdot 7 + 5 \cdot y)| = \frac{1}{2}|(11y + 56) - (98 + 5y)| = \frac{1}{2}|6y - 42|.</cmath> From the problem, this is equal to <imath>12</imath>. We now solve for y.
+
+<imath>\frac{1}{2}|6y - 42| = 12</imath>
+
+<imath>|6y-42| = 24</imath>
+
+<imath>6y - 42 = 24</imath> OR <imath>6y - 42 = -24</imath>
+
+<imath>6y = 66</imath> OR <imath>6y = 18</imath>
+
+<imath>y = 11</imath> OR <imath>y = 3</imath>
+
+However, since, as stated in the problem, <imath>y > 7</imath>, our only valid solution is <imath>\boxed{\textbf{(D)} 11}</imath>.
+
+--- Solution 3 ---
+As in the figure, the triangle is determined by the vectors <imath>\begin{bmatrix}-2 \\ y-7\end{bmatrix}</imath> and <imath>\begin{bmatrix}6\\0\end{bmatrix}</imath>. Recall that the absolute value of the determinant of these vectors is the area of the parallelogram determined by those vectors; the triangle has half the area of that parallelogram. Then we must have that <imath>\frac{1}{2}|\begin{vmatrix}-2 & y-7\\6 & 0\end{vmatrix}| = 12 \implies \begin{vmatrix}-2 & y-7\\6 & 0\end{vmatrix} = \pm 24</imath>. Expanding the determinants, we find that <imath>-6(y-7) = 24</imath> or <imath>-6(y-7) = -24</imath>. Solving each equation individually, we find that <imath>y = 3</imath> or <imath>y = 11</imath>. However, the problem states that <imath>y > 7</imath>, so the only valid solution is <imath>\boxed{\textbf{(D)} 11}</imath>.
+
+~ [https://artofproblemsolving.com/wiki/index.php/User:Cxsmi cxsmi] (again!)
+
+--- Solution 4 ---
+Draw a rectangle so that the hypotenuse is the diagonal of the rectangle. The base is 8 and the height is \( y - 7 \), so the area is
+<imath>{8(y - 7) = 8y - 56}</imath>
+
+Inside the rectangle, there are 2 extra right triangles along with the original triangle. The larger right triangle has an area of half the rectangle, so it has an area of
+
+<imath>{\frac{8y - 56}{2} = 4y - 28}</imath>
+
+The smaller right triangle has a base of 2 and a height of \( y - 7 \), so its area is
+
+<imath>{\frac{2(y - 7)}{2} = y - 7}</imath>
+
+Subtracting the extra right triangles from the area of the rectangle, you get
+
+<imath>{(8y - 56) - (4y - 28) - (y - 7) = 3y - 21}</imath>
+
+Since the problem told us that the original triangle had an area of 12, you get the equation
+
+<imath>{3y - 21 = 12}</imath>
+
+<imath>{3y = 33}</imath>
+
+<imath>{y = 11}</imath>
+
+So the answer to the problem is \( \boxed{\textbf{D}} \).
+
+
+=== Problem 12 ===
+Rohan keeps a total of
+
+Choices: {'A': '\\ 20', 'B': '\\ 21', 'C': '\\ 23', 'D': '\\ 24', 'E': '\\ 26</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let <math>x</math> denote the number of guppies in the first tank.
+
+Then, we have the following for the number of guppies in the rest of the tanks:
+
+* The number of guppies in the second tank is <math>x+1</math>
+* The number of guppies in the third tank is <math>x+1+2</math>
+* The number of guppies in the fourth tank is <math>x+1+2+3</math>
+
+The number of guppies in all of the tanks combined is 90, so we can write the equation
+
+<cmath>(x)+(x+1)+(x+1+2)+(x+1+2+3) = 90.</cmath>
+
+Simplifying the equation gives
+
+<cmath>4x + 10 = 90.</cmath>
+
+Solving the resulting equation gives <math>x = 20</math>, so the number of guppies in the fourth tank is <math>20+1+2+3 = \boxed{\textbf{(E)}\ 26}</math>.
+
+--- Solution 2 ---
+Suppose there are no guppies in the first tank. Then, the number of guppies in the other tanks are <math>1,3,</math> and <math>6,</math> or <math>10</math> guppies in total. We need to add <math>90-10 = 80</math> guppies into <math>4</math> tanks or <math>20</math> guppies in each tank, so the number of guppies in the fourth tank is <math>20+6 = \boxed{\textbf{(E)}\ 26}.</math>
+
+
+=== Problem 13 ===
+Buzz Bunny is hopping up and down a set of stairs, one step at a time. In how many ways can Buzz Bunny start on the ground, make a sequence of
+
+Choices: {'A': '\\ 4', 'B': '\\ 5', 'C': '\\ 6', 'D': '\\ 8', 'E': '\\ 12</math>'}
+Answer: B
+
+--- Solution 1 ---
+Looking at the answer choices, you see that you can list them out. 
+Doing this gets you:
+
+<imath>\mathit{UUDDUD}</imath>
+
+<imath>\mathit{UDUDUD}</imath>
+
+<imath>\mathit{UUUDDD}</imath>
+
+<imath>\mathit{UDUUDD}</imath>
+
+<imath>\mathit{UUDUDD}</imath>
+
+Counting all the paths listed above gets you <imath>\boxed{\textbf{(B)} \ 5}</imath>.
+
+--- Solution 2 ---
+Any combination can be written as some re-arrangement of <imath>\mathit{UUUDDD}</imath>. Clearly we must end going down, and start going up, so we need the number of ways to insert 2 <imath>U</imath>'s and 2 <imath>D</imath>'s into <imath>U\, \_ \, \_ \, \_ \, \_ \, D</imath>. There are <imath>{4\choose 2}=6</imath> ways, but we have to remove the case <imath>\mathit{UDDUUD}</imath>, giving us <imath>\boxed{\textbf{(B)}\ 5}</imath>. 
+
+
+- We know there are no more cases since there will be at least one <imath>U</imath> before we have a <imath>D</imath> (from the first <imath>U</imath>), at least two <imath>U</imath>'S before two <imath>D</imath>'s (since we removed the one case), and at least three <imath>U</imath>'s before three <imath>D</imath>'s, as we end with the third <imath>D</imath>. 
+
+
+with minor edits from
+
+--- Solution 3 ---
+These numbers are clearly the Catalan numbers. Since we have <imath>6</imath> steps, we need the third Catalan number, which is <imath>\boxed{\textbf{(B)}\ 5}</imath>.
+
+with minor edits from
+
+--- Solution 4 ---
+The first step must be a U, last step must be a D. After the third step we can get only position 3 or position 1. In the first case there is only one way: UUUDDD. In the second case we have two way to get this position UDU and UUD. Similarly, we have two way return to position 0 (UDD and DUD). Therefore, we have <imath>1 + 2 \cdot 2 = \boxed{\textbf{(B)}\ 5}</imath>.
+
+with minor edits from
+
+
+=== Problem 14 ===
+What is the distance of the shortest route from A to Z?
+
+<asy>
+/* AMC8 P14 2024, by NUMANA: BUI VAN HIEU, buivanhieu@husc.edu.vn */
+import graph;
+unitsize(2cm);
+real r=0.25;
+// Define the nodes and their positions
+pair[] nodes = { (0,0), (2,0), (1,1), (3,1), (4,0), (6,0) };
+string[] labels = { "A", "M", "X", "Y", "C", "Z" };
+
+// Draw the nodes as circles with labels
+for(int i = 0; i < nodes.length; ++i) {
+    draw(circle(nodes[i], r));
+    label("$" + labels[i] + "$", nodes[i]);
+}
+// Define the edges with their node indices and labels
+int[][] edges = { {0, 1}, {0, 2}, {2, 1}, {2, 3}, {1, 3}, {1, 4}, {3, 4}, {4, 5}, {3, 5} };
+string[] edgeLabels = { "8", "5", "2", "10", "6", "14", "5", "10", "17" };
+pair[] edgeLabelsPos = { S, SE, SW, S, SE, S, SW, S, NE};
+// Draw the edges with labels
+for (int i = 0; i < edges.length; ++i) {
+    pair start = nodes[edges[i][0]];
+    pair end = nodes[edges[i][1]];
+    draw(start + r*dir(end-start) -- end-r*dir(end-start), Arrow);
+    label("$" + edgeLabels[i] + "$", midpoint(start -- end),  edgeLabelsPos[i]);
+}
+// Draw the curved edge with label
+draw(nodes[1]+r * dir(-45)..controls (3, -0.75) and (5, -0.75)..nodes[5]+r * dir(-135), Arrow);
+label("$25$", midpoint(nodes[1]..controls (3, -0.75) and (5, -0.75)..nodes[5]), 2S);
+</asy>
+
+Choices: {'A': '\\ 28', 'B': '\\ 29', 'C': '\\ 30', 'D': '\\ 31', 'E': '\\ 32</math>'}
+Answer: A
+
+--- Solution 1 ---
+We can simply see that path <imath>A \rightarrow X \rightarrow M \rightarrow Y \rightarrow C \rightarrow Z</imath> will give us the smallest value. Adding, <imath>5+2+6+5+10 = \boxed{28}</imath>. This is nice as it’s also the smallest value, solidifying our answer.
+
+You can also simply brute-force it or sort of think ahead - for example, getting from A to M can be done <imath>2</imath> ways; <imath>A \rightarrow X \rightarrow M</imath> (<imath>5+2</imath>) or <imath>A \rightarrow M (8)</imath>, so you should take the shorter route (<imath>5+2</imath>). Another example is M to C, two ways - one is <imath>6+5</imath> and the other is <imath>14</imath>. Take the shorter route. After this, you need to consider a few more times - consider if <imath>5+10</imath> (<imath>Y \rightarrow C \rightarrow Z</imath>) is greater than <imath>17 (Y \rightarrow Z</imath>), which it is not, and consider if <imath>25 (M \rightarrow Z</imath>) is greater than <imath>14+10</imath> (<imath>M \rightarrow C \rightarrow Z</imath>) or <imath>6+5+10</imath> (<imath>M \rightarrow Y \rightarrow C \rightarrow Z</imath>) which it is not. TLDR: <imath>5+2+6+5+10 = \boxed{28}</imath>. [Note: This is probably just the thinking behind the solution.] {Double-note: As MaxyMoosy said, since this answer is the smallest one, it has to be the right answer.}
+
+--- Solution 2 ---
+We can execute [https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm Dijkstra's algorithm] by hand to find the shortest path from <imath>A</imath> to every other town, including <imath>Z</imath>. This effectively proves that, assuming we execute the algorithm correctly, that we will have found the shortest distance. The distance estimates for each step of the algorithm (from <imath>A</imath> to each node) are shown below:
+
+<cmath>\begin{array}{|c|c|c|c|c|c|c|} \hline
+\text{Current node} & A & M & C & X & Y & Z \\ \hline
+A & 0 & 8 & \infty & 5 & \infty & \infty \\
+X & 0 & 7 & \infty & 5 & 15 & \infty \\
+M & 0 & 7 & 21 & 5 & 13 & 32 \\
+Y & 0 & 7 & 18 & 5 & 13 & 30 \\
+C & 0 & 7 & 18 & 5 & 13 & 28 \\
+Z & 0 & 7 & 18 & 5 & 13 & \textbf{28} \\ \hline
+\end{array}</cmath>
+The steps are as follows: starting with the initial node <imath>A</imath>, set <imath>d(A)=0</imath> and <imath>d(v)=\infty</imath> for all <imath>v \in \{M,C,X,Y,Z\}</imath> where <imath>d(v)</imath> indicates the distance from <imath>A</imath> to <imath>v</imath>. Consider the outgoing edges <imath>(A,X)</imath> and <imath>(A,M)</imath> and update the distance estimates <imath>d(X)=5</imath> and <imath>d(M)=8</imath>, completing the first row of the table.
+
+The node <imath>X</imath> is the unvisited node with the lowest distance estimate, so we will consider <imath>X</imath> and its outgoing edges <imath>(X,Y)</imath> and <imath>(X,M)</imath>. The distance estimate <imath>d(Y)</imath> equals <imath>d(X)+10=15</imath>, and the distance estimate <imath>d(M)</imath> updates to <imath>d(X)+2=7</imath>, because <imath>7 < 8</imath>. This completes the second row of the table. Repeating this process for each unvisited node (in order of its distance estimate) yields the correct distance <imath>d(Z) = \boxed{\textbf{(A) } 28}</imath> once the algorithm is complete.
+
+--- Solution 3 ---
+From <imath>A</imath>, we want to find the shortest route to <imath>Z</imath>, so we want to try to find the shortest path through each node (not necessarily all of them). We should follow the arrows, since all of them lead to <imath>Z</imath>. From <imath>A</imath>, there are <imath>2</imath> paths we can take, to <imath>M</imath> <imath>(8)</imath>, or to <imath>X</imath> <imath>(5)</imath>. We travel to <imath>X</imath>, since <imath>5 < 8</imath>. From <imath>X</imath>, we go to <imath>M</imath> <imath>(2 < 10)</imath>, we go to <imath>Y</imath> <imath>6 < 14 < 25</imath>, we go to <imath>C</imath>, <imath>(5 < 17)</imath> and finally go to <imath>Z</imath>. Adding up gives <imath>5 + 2 + 6 + 5 + 10 = 28 = \boxed{\textbf{(A)}}</imath>.
+
+--- Solution 4 ---
+We can cross off a few routes:
+*AM can be crossed off because AXM is shorter
+*XY can be crossed off because XMY is shorter
+*YZ can be crossed off because YCZ is shorter
+*MC can be crossed off because MYC is shorter
+*MZ can be crossed off because MCZ is shorter
+Finally, we are left with a single path AXMYCZ from A to Z which adding it up gives <imath>28 = \boxed{\textbf{(A)}}.</imath>
+
+
+=== Problem 15 ===
+Let the letters
+
+Choices: {'A': '\\ 1089', 'B': '\\ 1098', 'C': '\\ 1107', 'D': '\\ 1116', 'E': '\\ 1125'}
+Answer: 
+
+--- Solution 1 ---
+Let <imath>\overline{FLY}</imath> be the <imath>3</imath>-digit number <imath>100F+10L+Y</imath>.
+
+Repeating a <imath>3</imath>-digit block twice gives
+<cmath>
+\overline{FLYFLY}=1000\cdot \overline{FLY}+\overline{FLY}=1001\cdot \overline{FLY}.
+</cmath>
+Similarly,
+<cmath>
+\overline{BUGBUG}=1001\cdot \overline{BUG}.
+</cmath>
+
+Given <imath>8\cdot \overline{FLYFLY}=\overline{BUGBUG}</imath>, substitute:
+<cmath>
+8(1001\overline{FLY})=1001\overline{BUG}.
+</cmath>
+Divide by <imath>1001</imath>:
+<cmath>
+8\overline{FLY}=\overline{BUG}.
+</cmath>
+
+Since <imath>\overline{BUG}</imath> is a <imath>3</imath>-digit number,
+<cmath>
+100\le 8\overline{FLY}\le 999
+\quad\Rightarrow\quad
+13\le \overline{FLY}\le 124.
+</cmath>
+To maximize <imath>\overline{FLYFLY}</imath>, maximize <imath>\overline{FLY}</imath>.
+
+Try the largest possible value:
+<cmath>
+\overline{FLY}=123
+\quad\Rightarrow\quad
+\overline{BUG}=8\cdot 123=984.
+</cmath>
+The digits <imath>\{1,2,3,9,8,4\}</imath> are all distinct, so this works and is maximal.
+
+Therefore,
+<cmath>
+\overline{FLY}+\overline{BUG}=123+984=1107.
+</cmath>
+
+<cmath>
+\boxed{1107}
+</cmath>
+
+
+=== Problem 16 ===
+Minh enters the numbers
+
+Choices: {'A': '8', 'B': '9', 'C': '10', 'D': '11', 'E': '12'}
+Answer: D
+
+--- Solution 1 ---
+Note you can swap/rotate any configuration of rows, such that all the rows and columns that have a product of 3 are in the top left. Hence the points are bounded by a <imath>a \times b</imath> rectangle. This has <imath>ab</imath> area and <imath>a+b</imath> rows and columns divisible by <imath>3</imath>. We want <imath>ab\ge 27</imath> and <imath>a+b</imath> minimized. 
+
+If <imath>ab=27</imath>, we achieve minimum with <imath>a+b=9+3=12</imath>.
+
+If <imath>ab=28</imath>,our best is <imath>a+b=7+4=11</imath>. Note if <imath>a+b=10</imath>, <imath>ab=25</imath>. Because <imath>25<27</imath>, there is no smaller answer, and we get <imath>\boxed{\textbf{(D)} 11}</imath>. 
+
+- SahanWijetunga
+
+--- Solution 2 ---
+For a row or column to have a product divisible by <imath>3</imath>, there must be a multiple of <imath>3</imath> in the row or column. To create the least amount of rows and columns with multiples of <imath>3</imath>, we must find a way to keep them all together, to minimize the total number of rows and columns with multiples of threes in it. From <imath>1</imath> to <imath>81</imath>, there are <imath>27</imath> multiples of <imath>3</imath> <imath>(81/3 = 27)</imath>. So we have to fill <imath>27</imath> cells with numbers that are multiples of <imath>3</imath>. If we put <imath>25</imath> of these numbers in a <imath>5 * 5</imath> grid, there would be <imath>5</imath> rows and <imath>5</imath> columns (<imath>10</imath> in total), with products divisible by <imath>3</imath>. However, we have <imath>27</imath> numbers, so <imath>2</imath> numbers still need to be put in the <imath>9 * 9</imath> grid. If we put both numbers in the <imath>6</imath>th column, but one in the first row, and one in the second row, (next to the <imath>5</imath> by <imath>5</imath> grid already filled), we would have a total of <imath>6</imath> columns now, and still <imath>5</imath> rows with products that are multiples of <imath>3</imath>. Since <imath>6 + 5 = 11</imath>, the answer is <imath>\boxed{\textbf{(D)} 11}</imath>
+
+
+(minor edit) DehnTwistNil
+
+--- Solution 3 ---
+In the numbers <imath>1</imath> to <imath>81</imath>, there are 27 multiples of three. In order to minimize the rows and columns, the best way is to make a square. However, the closest square is <imath>25</imath>, meaning there are two multiples of three remaining. However, you can place these multiples right above the 5x5 square, meaning the answer is <imath>\boxed{\textbf {(D)} 11}</imath>
+
+Just be better
+
+
+=== Problem 17 ===
+A chess king is said to ''attack'' all squares one step away from it (basically any square right next to it in any direction), horizontally, vertically, or diagonally. For instance, a king on the center square of a 3 x 3 grid attacks all 8 other squares, as shown below. Suppose a white king and a black king are placed on different squares of 3 x 3 grid so that they do not attack each other. In how many ways can this be done?
+
+<asy>
+/* AMC8 P17 2024, revised by Teacher David */
+unitsize(29pt);
+import math;
+add(grid(3,3));
+
+pair [] a = {(0.5,0.5), (0.5, 1.5), (0.5, 2.5), (1.5, 2.5), (2.5,2.5), (2.5,1.5), (2.5,0.5), (1.5,0.5)};
+
+for (int i=0; i<a.length; ++i) {
+    pair x = (1.5,1.5) + 0.4*dir(225-45*i);
+    draw(x -- a[i], arrow=EndArrow());
+}
+
+label("$K$", (1.5,1.5));
+</asy>
+
+Choices: {'A': '\\ 20', 'B': '\\ 24', 'C': '\\ 27', 'D': '\\ 28', 'E': '\\ 32'}
+Answer: E
+
+--- Solution 1 ---
+If you place a king in any of the <imath>4</imath> corners, the other king will have <imath>5</imath> spots to go and there are <imath>4</imath> corners, so <imath>5 \times 4=20</imath>.
+If you place a king in any of the <imath>4</imath> edges, the other king will have <imath>3</imath> spots to go and there are <imath>4</imath> edges so <imath>3 \times 4=12</imath>. 
+That gives us <imath>20+12=32</imath> spots for the other king to go into in total.
+So <imath>\boxed{\textbf{(E)} 32}</imath> is the answer.
+
+--- Solution 2 ---
+We see that the center is not a viable spot for either of the kings to be in, as it would attack all nearby squares.
+
+This gives three combinations: 
+
+Corner-corner: There are 4 corners, and none of them are touching orthogonally or diagonally, so it's <math>\binom{4}{2}=6</math>
+
+Corner-edge: For each corner, there are two edges that don't border it, <math>4\cdot2=8</math> 
+
+Edge-edge: The only possible combinations of this that work are top-bottom and left-right edges, so <math>2</math> for this type
+
+
+<math>6+8+2=16</math>
+
+--- Solution 3 ---
+We see that the center is off-limits for the kings. Additionally, the kings cannot be next to each other. There are <math>24</math> ways for the kings to be placed adjacently: <math>16</math> corner-edge permutations and <math>8</math> edge-edge permutations. In total, there are <math>8P2=56</math> ways to arrange the kings conditions aside. Therefore, our answer is <math>56-24=</math><math>\boxed{\textbf{(E)} 32}</math>
+
+
+=== Problem 18 ===
+Three concentric circles centered at
+
+Choices: {'A': '108', 'B': '120', 'C': '135', 'D': '144', 'E': '150'}
+Answer: A
+
+--- Solution 1 ---
+Let <imath>x=\angle{BOC}</imath>.
+
+We see that the shaded region is the inner ring plus a sector <imath>x^\circ</imath> of the outer ring. Using the formula for the area of a circle (<imath>A = \pi r^2</imath>), we find that the area of <imath>x</imath> is <imath>\left( 4 \pi - \pi \right)+\frac{x}{360} \left( 9 \pi - 4 \pi \right)</imath>. This simplifies to <imath>3 \pi + \frac{x}{360}(5 \pi)</imath>.
+
+The unshaded portion is comprised of the smallest circle plus the sector <imath>(360-x)^\circ</imath> of the outer ring, which evaluates to <imath>\pi + \frac{360-x}{360}(5 \pi)</imath>.
+
+We are told these are equal. Therefore, <imath>3 \pi + \frac{x}{360}(5 \pi) = \pi + \frac{360-x}{360}(5 \pi)</imath>. Solving for <imath>x</imath> reveals <imath>x=\boxed{\textbf{(A) } 108}</imath>.
+
+--- Solution 2 ---
+Notice that for the 3rd most outer ring of the circle, the ratio of the shaded region to non-shaded region is the ratio of <imath>\angle{BOC}</imath> to <imath>360-\angle{BOC}</imath>. With that, all we need to do is solve for the shaded region.
+
+The inner most circle has radius <imath>1</imath>, and the second circle has radius 2. Therefore, the first shaded area has <imath>4 \pi - \pi = 3 \pi</imath> area. The circle has total area <imath>9 \pi</imath>, so the other shaded region must have <imath>1.5 \pi</imath> area, as the non-shaded and shaded area is equivalent. So for the 3rd outer ring, the total area is <imath>9 \pi - 4 \pi = 5 \pi</imath>, so the non-shaded part of the outer ring is <imath>5 \pi - 1.5 \pi = 3.5 \pi</imath>. 
+
+Now as said before, the ratio of these two areas is the ratio of <imath>\angle{BOC}</imath> and <imath>360 - \angle{BOC}</imath>. So, <imath>\frac{3.5}{1.5} = \frac{7}{3}</imath>. We have <imath>7x:3x</imath> where <imath>7x+3x = 360</imath>, <imath>x = 36</imath>, so our answer is <imath>3x = 108, \boxed{(A) 108}</imath>.
+
+--- Solution 3 ---
+The AMC 8 test allows a ruler tool that you can rotate and drag. You can use the tool to make a straight segment (which we know is <imath>180</imath> degrees), and we let the angle of desire be <imath>x</imath>. We can estimate that <imath>180-x</imath> is just about <imath>30</imath> degrees short of <imath>x</imath> itself, so <imath>x-30=180-x</imath>, solving gives <imath>x=105</imath>, therefore the closest answer is <imath>\boxed{\textbf{(A)}\,108}</imath>. 
+
+*Note: This isn't the most accurate method to use on AMC 8s, this is just a quick method if time is short or you do not know how to do the problem and want to guess at it with your best shot.
+
+--- Solution 4 ---
+Suppose the desired angle is some fraction <imath>x</imath> of the total degree measure of the circle. We now compile a list of the shaded and unshaded areas. The inner circle of radius <imath>1</imath> is completely unshaded, so it contributes <imath>1</imath> to the unshaded area. (Everything will be a multiple of <imath>\pi</imath>, so we omit it.) The inner annulus has area <imath>2^2 - 1^2 = 3</imath>, which it contributes to the shaded area. The outer annulus has a total area of <imath>3^2 - 2^2 = 5</imath>; the fraction <imath>x</imath> is shaded, so the shaded portion of the outer annulus contributes <imath>5x</imath> to the shaded area, while the other <imath>1 - x</imath> fraction is unshaded, so the unshaded portion contributes <imath>5(1-x)</imath> to the unshaded area. We now equate and solve. <cmath>1 + 5(1-x) = 3 + 5x</cmath> Upon solving, we find that <imath>x = \frac{3}{10}</imath>, so the degree measure is <imath>360 \cdot \frac{3}{10} = \boxed{\textbf{(A)} 108}</imath>.
+
+--- Solution 5 ---
+Let <imath>\theta = \angle{BOC}</imath>, <imath>A_1</imath> be the area of the inner annulus, <imath>A_2</imath> be the area of the outer annulus sector <imath>BOC</imath> and <imath>A_s</imath> the total area of the shaded regions. Then,
+<cmath>A_1 + A_2 = A_s</cmath>
+<imath>A_s</imath> is half the total area so <imath>A_s = \frac{\pi\cdot3^2}{2} = \frac{9\pi}{2} </imath> <br />
+The area of an annulus with outer radius <imath>R</imath> and inner radius <imath>r</imath> is given by:
+<cmath>A = \pi R^2 - \pi r^2 = \pi(R^2-r^2)</cmath>
+So the area of the inner annulus is <imath>A_1 = \pi (2^2 - 1^2) = 3 \pi</imath> <br />
+The area of the outer annulus sector is
+<cmath>A_2 = \frac{\theta}{360^\circ}\times\pi(3^2-2^2) = \frac{\theta}{360^\circ}\times5\pi</cmath>
+Then we have:
+<cmath> 3\pi + \frac{\theta}{360^\circ}\times 5 \pi = \frac{9\pi}{2} </cmath>
+Solving for <imath>\theta</imath>:
+<cmath>\frac{\theta}{360^\circ}\times 5 \pi = \frac{3\pi}{2}</cmath>
+<cmath>\theta = \frac{3\pi}{2}\times\frac{360^\circ}{5\pi}</cmath>
+<cmath>\theta = \frac{3\times360^\circ}{10}</cmath>
+So our answer is <imath>\theta = 3\times36^\circ, \boxed{(A) 108}</imath>
+
+
+=== Problem 19 ===
+Jordan owns 15 pairs of sneakers. Three fifths of the pairs are red and the rest are white. Two thirds of the pairs are high-top and the rest are low-top. The red high-top sneakers make up a fraction of the collection. What is the least possible value of this fraction?
+
+[[File:2024-amc-8-q19.png|center|500px]]
+
+Choices: {'A': '0', 'B': '\\dfrac{1}{5}', 'C': '\\dfrac{4}{15}', 'D': '\\dfrac{1}{3}', 'E': '\\dfrac{2}{5}'}
+Answer: C
+
+--- Solution 1 ---
+Jordan has <imath>10</imath> high top sneakers, and <imath>6</imath> white sneakers. We would want as many white high-top sneakers as possible, so we set <imath>6</imath> high-top sneakers to be white. Then, we have <imath>10-6=4</imath> red high-top sneakers, so the answer is <imath>\boxed{\dfrac{4}{15}}.</imath>
+
+--- Solution 2 ---
+We first start by finding the number of red and white sneakers. <imath>\frac{3}{5} \times 15=9</imath> red sneakers, so 6 are white. Then <imath>\frac{2}{3} \times 15=10</imath> are high top sneakers, so <imath>5</imath> are low top sneakers. Now think about <imath>15</imath> slots, and the first <imath>10</imath> are labeled high-top sneakers. If we insert the last <imath>5</imath> sneakers as red sneakers, there are <imath>4</imath> leftover red sneakers. Putting those <imath>4</imath> sneakers as high top sneakers, we have our answer as C, or <imath>\boxed{\dfrac{4}{15}}.</imath>
+
+-ermwhatthesigma
+
+
+-slight change by the-guy-with-the"W"hairline-and-a-not-goofy-looking-gyat-with-so-much-recoil-it-bounces-to-the-nearest-blackhole...
+
+--- Solution 3 ---
+There are <imath>\dfrac{3}{5}\cdot 15 = 9</imath> red pairs of sneakers and <imath>6</imath> white pairs. There are also <imath>\dfrac{2}{3}\cdot 15 = 10</imath> high-top pairs of sneakers and <imath>5</imath> low-top pairs. Let <imath>r</imath> be the number of red high-top sneakers and let <imath>w</imath> be the number of white high-top sneakers. It follows that there are <imath>9-r</imath> red pairs of low-top sneakers and <imath>6-r</imath> white pairs. 
+We must have <imath>9-r \leq 5,</imath> in order to have a valid amount of white sneakers. Solving this inequality gives <imath>r\geq 4</imath>, so the smallest possible value for <imath>r</imath> is <imath>4</imath>. This means that there would be <imath>9-4=5</imath> pairs of low-top red sneakers, so there are <imath>0</imath> pairs of low-top white sneakers and <imath>6</imath> pairs of high top white sneakers. This checks out perfectly, so the smallest fraction is <imath>\boxed{\textbf{(C)}\ \frac{4}{15}}.</imath>
+
+-hola
+
+--- Solution 4 ---
+<imath>15 \times \frac{3}{5}=9</imath>, which is the number of red pairs of sneakers. Then, <imath>\frac{2}{3} \times 15=10</imath>, so there are ten pairs of high-top sneakers.  If there are ten high-top sneakers, there are five low top sneakers. To have the lowest amount of high-top red sneakers, all five of the low-top sneakers need to be red. There are four red sneakers remaining so they have to be high-top. So the answer is <imath>\boxed{\textbf{(C)}\ \frac{4}{15}}.</imath>
+
+Answer by AliceDubbleYou
+
+-Minor edit by angieeverfree
+
+-Minor edit by SmartyDigits
+
+--- Solution 5 ---
+Let the number of red high-top sneakers be <imath>x</imath>. Making a two way table we get:
+
+{| border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse;"
+|+ Two-way table
+!  
+! Red
+! White
+! Total
+|-
+! High-top
+| <imath>x</imath> || <imath>10 - x</imath> || <imath>10</imath>
+|-
+! Low-top
+| <imath>9-x</imath> || <imath>x-4</imath> || <imath>5</imath>
+|-
+! Total
+| <imath>9</imath> || <imath>6</imath> || <imath>15</imath>
+|}
+
+From the table we can see that <imath> 4\leq x\leq 9 </imath>. Therefore the minimum value is when <imath>x=4</imath>.
+
+So the answer is <imath>\boxed{\textbf{(C)}\ \frac{4}{15}}.</imath>
+
+
+=== Problem 20 ===
+Any three vertices of the cube
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '6'}
+Answer: D
+
+--- Solution 1 ---
+The only equilateral triangles that can be formed are through the diagonals of the faces of the square. From P you have <imath>3</imath> possible vertices that are possible to form a diagonal through one of the faces. Therefore, there are <imath>3</imath> possible triangles. So the answer is <imath>\boxed{\textbf{(D) }3}</imath>
+
+--- Solution 2 ---
+Each other compatible point must be an even number of edges away from P, so the compatible points are R, V, and T. Therefore, we must choose two of the three points, because P must be a point in the triangle. So, the answer is <imath>{3 \choose 2} = \boxed{\textbf{(D) }3}</imath>
+
+-ILoveMath31415926535
+
+--- Solution 3 ---
+List them out- you get <imath>PRV</imath>, <imath>PRT</imath>, and <imath>PVT</imath>. Therefore, the answer is <imath>\boxed{\textbf{(D) 3}}</imath>
+
+-Anonymussrvusdmathstudent234234
+
+--- Solution 4 ---
+After looking at the cube, we realize that an equilateral triangle can only be formed by three lines that form a diagonal along a face of the cube (such as <imath>PV</imath>). Because the problem has a condition that one of the triangle's vertex must be on <imath>P</imath>, the three diagonals that can be formed are <imath>PT, PR</imath>, and <imath>PV</imath>.
+
+Now, we can choose any of 2 out of the 3 lines we have listed, and connect any of them with another line (for example, if we choose <imath>PT</imath> and <imath>PR</imath>, the third diagonal is <imath>RT</imath>). Thus, there are 3 ways to choose the 3 diagonals, so the answer is <imath>3</imath>, or <imath>\boxed{\textbf{(D) }3}</imath>
+ 
+
+=Video Solutions=
+
+
+=== Problem 21 ===
+A group of frogs (called an ''army'') is living in a tree. A frog turns green when in the shade and turns yellow
+when in the sun. Initially, the ratio of green to yellow frogs was
+
+Choices: {'A': '10', 'B': '12', 'C': '16', 'D': '20', 'E': '24'}
+Answer: E
+
+--- Solution 1 ---
+Let the initial number of green frogs be <math>g</math> and the initial number of yellow frogs be <math>y</math>. Since the ratio of the number of green frogs to yellow frogs is initially <math>3 : 1</math>, <math>g = 3y</math>. Now, <math>3</math> green frogs move to the sunny side and <math>5</math> yellow frogs move to the shade side, thus the new number of green frogs is <math>g + 2</math> and the new number of yellow frogs is <math>y - 2</math>. We are given that <math>\frac{g + 2}{y - 2} = \frac{4}{1}</math>, so <math>g + 2 = 4y - 8</math>, since <math>g = 3y</math>, we have <math>3y + 2 = 4y - 8</math>, so <math>y = 10</math> and <math>g = 30</math>. Thus the answer is <math>(g + 2) - (y - 2) = 32 - 8 = \boxed{(E) \hspace{1 mm} 24}.</math>
+
+-anonchalantdreadhead
+
+--- Solution 2 ---
+Since the original ratio is <math>3:1</math> and the new ratio is <math>4:1</math>, the number of frogs must be a multiple of <math>12</math>, the only solutions left are <math>(B)</math> and <math>(E)</math>.  
+
+Let's start with <math>12</math> frogs: 
+
+We must have <math>9</math> frogs in the shade and <math>3</math> frogs in the sun. After the change, there would be <math>11</math> frogs in the shade and <math>1</math> frog in the sun, which is not a <math>4:1</math> ratio. 
+
+Therefore the answer is: <math>\boxed{(E) \hspace{1 mm} 24}</math>.
+
+-ILoveMath31415926535
+
+--- Solution 3 ---
+The ratio of <math>g</math> (green) to <math>y</math> (yellow) frogs is <math>3:1</math>. When <math>3</math> green frogs move to the sunny side and <math>5</math> yellow frogs move to the shady side, the ratio becomes <math>g + 2:y - 2</math> which is <math>4:1</math>. 
+
+So earlier, <math>\frac{3}{4}</math>, or <math>\frac{15}{20}</math>, of the total frogs were green. Now, <math>\frac{4}{5}</math>, or <math>\frac{16}{20}</math>, of the total frogs are green. When the <math>2</math> frogs transferred from the yellow side to the green, the green side gained <math>\frac{1}{20}</math> of the total amount of frogs. So, <math>2</math> = <math>\frac{1}{20}</math><math>a</math>, where <math>a</math> is the total number of frogs. Solving for <math>a</math> we get <math>a</math> = <math>40</math>.
+
+If the ratio <math>4: 1</math> has a total of <math>40</math>, then we can multiply each of them by <math>\frac{40}{(4 + 1)}</math>, or <math>8</math>, and find that there are <math>32</math> green frogs and <math>8</math> yellow frogs. Therefore, the difference between the green and yellow frogs is <math>\boxed{\textbf{(E) }24}</math>
+
+
+=== Problem 22 ===
+A  roll of tape is
+
+Choices: {'A': '300', 'B': '600', 'C': '1200', 'D': '1500', 'E': '1800'}
+Answer: 
+
+--- Solution 1 ---
+The roll of tape is 1/0.015 ≈ 66 layers thick. In order to find the total length, we have to find the average of each concentric circle and multiply it by <imath>66</imath>. Since the diameter of the small circle is <imath>2</imath> inches and the diameter of the large one is <imath>4</imath> inches, the "middle value" (or mean) is <imath>3</imath>. Therefore, the average circumference is <imath>3\pi</imath>. Multiplying <imath>3\pi \cdot 66</imath> gives approximately <imath>(B) \boxed{600}</imath>.
+
+--- Solution 2 ---
+There are about <imath>\dfrac{1}{0.015}=\dfrac{200}{3}</imath> "full circles" of tape, and with average circumference of <imath>\dfrac{4+2}{2}\pi=3\pi.</imath> <imath>\dfrac{200}{3} \cdot 3\pi=200\pi, </imath> which means the answer is <imath>\boxed{600}</imath>.
+
+--- Solution 3 ---
+We can figure out the length of the tape by considering the side of the tape as a really thin rectangle that has a width of <math>0.015</math> inches. The side of the tape is wrapped into an annulus(The shaded region between 2 circles with the same center), meaning the area of the shaded region is equal to the area of the really thin rectangle. 
+
+The area of the shaded region is <math>\pi(\frac{4}{2})^2 -\pi(\frac{2}{2})^2 = 3\pi</math>, and we divide that by <math>0.015</math> to get <math>200\pi</math>. Approximating <math>\pi</math> to be 3, we get the final answer to be <math>200 \cdot 3 = \textbf {(B) } 600</math>.
+
+--- Solution 4 ---
+The volume of the tape is always the same, but we can either calculate it when the tape is unrolled as a really long, thin rectangular prism, or we can calculate it as a cylinder with a hole cut out of it. When we calculate it as a long rectangular prism, we can say that the length is <math>X</math> (this is what the problem wants!) and the width is <math>Y</math>. Then, the volume is, of course, <math>0.015 \cdot X \cdot Y.</math> Now, notice that the "width" of our rectangular prism is also the "height" of our cylinder with a hole cut out of it. Then, we can calculate the volume as base times height, or in this case, <math>3\pi \cdot Y.</math> Now, since the volume always stays the same, we know that <math>3\pi \cdot Y = 0.015 \cdot X \cdot Y.</math> Cancelling the <math>Y</math>'s give us an equation for <math>X</math>, and if we approximate <math>\pi</math> as <math>3</math>, then <math>X = \boxed {600}</math>.
+
+--- Solution 5 ---
+If you cannot notice that the average diameter is <math>3</math>,
+you can still solve this problem by the following method. 
+
+The same with solution 1, we have <math>\frac{1000}{0.015}</math> layers of tape. If we consider every layers with the diameter <math>2</math>, the length should be <math>\frac{1000}{0.015}2\pi\approx 400</math>. If the diameter is seem as <math>4</math>, the length should be <math>800</math>. So, the length is between <math>400</math> and <math>800</math>, the only possible answer is <math>\boxed{600}</math>.
+
+
+=== Problem 23 ===
+Rodrigo has a very large sheet of graph paper. First he draws a line segment connecting point
+
+Choices: {'A': '6000', 'B': '6500', 'C': '7000', 'D': '7500', 'E': '8000'}
+Answer: C
+
+--- Solution 1 ---
+Let <math>f(x, y)</math> be the number of cells the line segment from <math>(0, 0)</math> to <math>(x, y)</math> passes through. The problem is then  equivalent to finding <cmath>f(5000-2000, 8000-3000)=f(3000, 5000).</cmath> Sometimes the segment passes through lattice points in between the endpoints, which happens <math>\text{gcd}(3000, 5000)-1=999</math> times. This partitions the segment into <math>1000</math> congruent pieces that each pass through <math>f(3, 5)</math> cells, which means the answer is <cmath>1000f(3, 5).</cmath> Note that a new square is entered when the lines pass through one of the lines in the coordinate grid, which for <math>f(3, 5)</math> happens <math>3-1+5-1=6</math> times. Because <math>3</math> and <math>5</math> are relatively prime, no lattice point except for the endpoints intersects the line segment from <math>(0, 0)</math> to <math>(3, 5).</math> This means that including the first cell closest to <math>(0, 0),</math> The segment passes through <math>f(3, 5)=6+1=7</math> cells. Thus, the answer is <math>\boxed{\textbf{(C)}7000}.</math> Alternatively, <math>f(3, 5)</math> can be found by drawing an accurate diagram, leaving you with the same answer.
+
+
+Note: A general form for finding <math>f(x, y)</math> is <math>x+y-\text{gcd}(x, y).</math> We subtract <math>\text{gcd}(x, y)</math> to account for overlapping, when the line segment goes through a lattice point.
+
+
+===Proof of This Claim===
+
+<math>\textbf{Lemma 1 for Problem 23:}</math>
+
+Let <math>p</math> and <math>q</math> be relatively prime positive integers. When a <math>p\times q</math> rectangle is split up into <math>pq</math> unit squares, exactly <math>p + q - 1</math> unit squares are crossed by the diagonal of this rectangle. 
+
+
+<math>\textbf{Proof:}</math>
+
+
+First, we claim that the diagonal does not cross the corner of a unit square. \\\\
+To prove this claim we proceed by way of contradiction. Plot the rectangle on the Cartesian plane at the vertices <math>(0,0),(p,0),(q,p),(0,q).</math> The diagonal has endpoints at <math>(0,0),(q,p)</math>, so its slope is <math>\frac{p}{q}.</math>  Now, suppose the diagonal goes through the corner point <math>(a,b)</math>, where <math>a<q</math> and <math>b<p</math>. The slope of this line is <math>\frac{b}{a}</math>, which must be equal to <math>\frac{p}{q},</math> implying that <math>\frac{p}{q}</math> can be reduced, contradicting the fact that <math>p</math> and <math>q</math> are relatively prime. We conclude that no corner points of a grid entry (unit square) are crossed. \\\\
+Since no corner points are crossed, each time the diagonal crosses either a horizontal or vertical grid line, exactly one more unit square is touched by the diagonal. There are <math>p-1</math> horizontal lines and <math>q-1</math> vertical lines, so there are <math>p + q - 2</math> total lines crossed by the diagonal. This doesn't include the square in the bottom left corner, crossed initially. Therefore, there are <math>p + q-2 + 1 = p + q - 1</math> unit squares crossed by the diagonal and our claim is proven.
+
+<math>\textbf{Lemma 2 for Problem 23:}</math>
+
+
+Let <math>p</math> and <math>q</math> be positive integers. When a <math>p\times q</math> rectangle is split up into <math>pq</math> units squares, exactly <math>p + q - \gcd(p, q)</math> unit squares are crossed by the diagonal of this rectangle.
+
+
+If <math>\gcd (p,q) = 1</math>, then we are done by Lemma 1.
+
+Suppose <math>\gcd(p,q) = k>1</math>, i.e <math>p = ak</math> and <math>q = bk</math>, for positive integers <math>a</math> and <math>b</math>. We can then split the <math>p\times q</math> rectangle up into <math>k</math> <math>\frac{p}{k} \times \frac{q}{k}</math> rectangles, strung together at the diagonal. An example for <math>(p,q)=(4,6)</math> is shown below, where two <math>2\times 3</math> rectangles are strung together: 
+
+<asy>
+unitsize(1cm);
+draw((0,0)--(6,4),linewidth(1));
+currentpen = linewidth(.5);
+for (real i = 0; i <= 6; ++i) {
+    draw((i, 0)--(i, 4));
+}
+for (real i = 0; i < 5; ++i) {
+    draw((0, i)--(6, i));
+}
+
+currentpen = linewidth(1.5);
+for (real i = 0; i <= 3; ++i) {
+    draw((i, 0)--(i, 2));
+}
+for (real i = 0; i <= 2; ++i) {
+    draw((0, i)--(3, i));
+}
+
+for (real i = 3; i <= 6; ++i) {
+    draw((i, 2)--(i, 4));
+}
+for (real i = 3; i <= 5; ++i) {
+    draw((3, i-1)--(6, i-1));
+}
+</asy>
+
+After the diagonal crosses the corner point of a square, the pattern repeats itself with the next one. By Lemma 1, there are <math>\frac{p}{k}+ \frac{q}{k} - 1</math> diagonals crossed in each rectangle. There are <math>k = \gcd (p, q)</math> rectangles, so the number of crossed diagonals in total is
+<cmath>k\left( \frac{p}{k}+ \frac{q}{k} - 1 \right) = p + q - \gcd(p,q).</cmath>
+
+-Benedict T (countmath1)
+
+--- Solution 2 ---
+Draw a line in the lattice (rulers are allowed on the AMC 8) from <imath>(2,3)</imath> to <imath>(5,8)</imath>, and notice that the line crossed 7 blocks in this pattern. Such a pattern is repeated 1000 times between <imath>(2000,3000)</imath> and <imath>(5000,8000)</imath>, so the answer is <imath>\boxed{\textbf{(C)}7000}</imath>.
+
+Note that since the grid only goes from <imath>(0,0)</imath> to <imath>(0,5)</imath>, a line could instead be drawn from <imath>(0,0)</imath> to <imath>(3,5)</imath> so you don't have to manually expand the grid.
+
+
+=== Problem 24 ===
+Jean has made a piece of stained glass art in the shape of two mountains, as shown in the figure below. One mountain peak is
+
+Choices: {'A': '\\ 4', 'B': '\\ 5', 'C': '\\ 4\\sqrt{2}', 'D': '\\ 6', 'E': '\\ 5\\sqrt{2}'}
+Answer: B
+
+--- Solution 1 ---
+Extend the "inner part" of the mountain so that the image is two right triangles that overlap in a third right triangle as shown. 
+<asy>
+unitsize(.2cm);
+draw((0,0)--(8,8)--(11,5)--(18,12)--(30,0)--cycle,linewidth(1));
+draw((11,5)--(6, 0)--(16, 0)--cycle,linewidth(0.5));
+label("$8\sqrt{2}$",(4,4),NW);
+label("$12\sqrt{2}$",(24,6),NE);
+draw((8,8)--(7.5,7.5)--(8,7)--(8.5,7.5)--cycle);
+draw((18,12)--(17.5,11.5)--(18,11)--(18.5,11.5)--cycle);
+draw((11,5)--(11,0),dashed);
+label("$h$",(11,2.5),E);
+</asy>
+The side length of the largest right triangle is <imath>12\sqrt{2},</imath> which means its area is <imath>144.</imath> Similarly, the area of the second largest right triangle is <imath>64</imath> (the side length is <imath>8\sqrt{2}</imath>), and the area of the overlap is <imath>h^2</imath> (the side length is <imath>h\sqrt{2}</imath>). Because the right triangles have a side ratio of 1:1:<imath>\sqrt{2}</imath>.Thus,
+<cmath>144+64-h^2=183,</cmath>
+which means that the answer is <imath>\boxed{\mathbf{(B)}\text{ 5}}.</imath>
+
+
+=== Problem 25 ===
+An airplane has
+
+Choices: {'A': '\\ \\dfrac{8}{15}', 'B': '\\ \\dfrac{32}{55}', 'C': '\\ \\dfrac{20}{33}', 'D': '\\ \\dfrac{34}{55}', 'E': '\\ \\dfrac{8}{11}'}
+Answer: C
+
+--- Solution 1 ---
+Suppose the passengers are indistinguishable. There are <math>\binom{12}{8} = 495</math> total ways to distribute the passengers. We proceed with complementary counting, and instead, will count the number of passenger arrangements such that the couple cannot sit anywhere. Consider the partitions of <math>8</math> among the rows of <math>3</math> seats, to make our lives easier, assuming they are non-increasing. We have <math>(3, 3, 2, 0), (3, 3, 1, 1), (3, 2, 2, 1), (2, 2, 2, 2)</math>. 
+
+
+For the first partition, clearly, the couple will always be able to sit in the row with <math>0</math> occupied seats, so we have <math>0</math> cases here.
+
+
+For the second partition, there are <math>\frac{4!}{2!2!} = 6</math> ways to permute the partition. Now the rows with exactly <math>1</math> passenger must be in the middle, so this case generates <math>6</math> cases.
+
+
+For the third partition, there are <math>\frac{4!}{2!} = 12</math> ways to permute the partition. For rows with <math>2</math> passengers, there are <math>\binom{3}{2} = 3</math> ways to arrange them in the row so that the couple cannot sit there. The row with <math>1</math> passenger must be in the middle. We obtain <math>12 \cdot 3^2 = 108</math> cases.
+
+
+For  the fourth partition, there is <math>1</math> way to permute the partition. As said before, rows with <math>2</math> passengers can be arranged in <math>3</math> ways, so we obtain <math>3^4 = 81</math> cases.
+
+
+Collectively, we obtain a total of <math>6 + 108 + 81 = 195</math> cases. The final probability is <math>1 - \frac{195}{495} = \boxed{\textbf{(C)}
+~[{{SERVER}}/community/user/1096417 blueprimes], [[User:Wrenmath|Wrenmath]]
+
+--- Solution 2 ---
+Suppose the passengers are indistinguishable. 
+
+You could think the question as: if 4 empty seats are placed, what is the probability that there are 2 adjacent seats open?
+
+We proceed by casework.
+
+
+Case 1: There is exactly one pair of open seats. 
+Then the other seat in that row must be occupied. The other two empty seats are distributed across the remaining <imath>3</imath> rows without being adjacent, which is <imath>\binom{9}{2}-6=30</imath> cases per pair of open seats for <imath>30\cdot8=240</imath> total cases. 
+
+
+Case 2: There is one row of open seats. 
+<imath>4</imath> ways to choose the row and <imath>9</imath> to choose the final empty seat for <imath>4\cdot9=36</imath> cases. 
+
+
+Case 3: There are <imath>2</imath> independent pairs of open seats. 
+Choose the <imath>2</imath> rows, then the placement of each pair within each row for <imath>\binom{4}{2}\cdot2^2=24</imath> cases. 
+
+
+In total, we get <imath>240+36+24=300</imath> cases total for a probability of
+<cmath>\frac{300}{\binom{12}{4}}=\frac{300}{495}=\boxed{\mathbf{(C)}
+
+--- Solution 3 ---
+We notice that if we have a middle seat in a row, then the couple cannot sit in that row. So, we perform complementary casework. 
+
+Case 1: Four people sitting in middle seats. 
+
+In this case, there are 4 people left to order, and 8 seats. This gives <math>\dbinom{8}{4}</math> total combinations for this case. 
+
+Case 2: Three people sitting in middle seats.
+
+In this case, there are <math>\dbinom{4}{3}</math> ways to permute the rows in which the middle seat is occupied. For the row in which the people do not occupy the middle row, we must have two people sitting at the ends of the rows to guarantee the couple cannot sit there. So, for the rest of the 3 people, there are 6 possible seats. So, there are <math>\dbinom{4}{3} \cdot \dbinom{6}{3}</math> total combinations. 
+
+Case 3: Two people sitting in middle seats. 
+
+In this case, there are <math>\dbinom{4}{2}</math> ways to permute the rows in which the middle seat is occupied. For the rows in which the people do not occupy the middle row, we must have two people sitting at the ends of the rows to guarantee the couple cannot sit there. So, for the rest of the 2 people, there are 4 possible seats. So, there are <math>\dbinom{4}{2} \cdot \dbinom{4}{2}</math> total combinations.  
+
+Case 4: One person sitting in a middle seat 
+
+In this case, there are <math>\dbinom{4}{1}</math> ways to permute the rows in which the middle seat is occupied. For the rows in which the people do not occupy the middle row, we must have two people sitting at the ends of the rows to guarantee the couple cannot sit there. So, for the rest of the last person, there are 2 possible seats. So, there are <math>\dbinom{4}{1} \cdot \dbinom{2}{1}</math> total combinations.   
+
+Case 5: Zero people sitting in a middle seat
+
+In this case, we must have every person sitting at the ends of the seats. So, there is only 1 combination.  
+
+In total, we have 
+
+<cmath>\dbinom{8}{4} + \dbinom{4}{3} \cdot \dbinom{6}{3} + \dbinom{4}{2} \cdot \dbinom{4}{2} + \dbinom{4}{1} \cdot \dbinom{2}{1} +1</cmath> 
+
+combinations, or 195 combinations. The final step is to find the total amount of combinations without restrictions. This is simply <math>\dbinom{12}{4} = 495</math>. So, finally employing complementary counting, we have that the probability that there will be 2 adjacent seats for the couple is 
+
+<cmath>1 - \dfrac{195}{495} = \dfrac{20}{33}.</cmath>
+
+--- Solution 4 ---
+There are <imath>12\cdot 11 = 132</imath> for two people (the married couple) to be seated. This will be our denominator.
+
+There are <imath>8</imath> pairs of seats that are next to each other in the diagram (<imath>2</imath> per row; left-middle and middle-right). This will be our numerator.
+
+Since there are <imath>8+2=10</imath> total people on the plane, we should multiply our numerator by that to account for all ways the 10 people could be seated (e.x. the husband and the wife could be switched around and it would still work, same applies to the other passengers)
+
+Therefore, our numerator is <imath>8 \cdot 10 = 80</imath>.
+
+This creates the fraction <imath>\frac{80}{132}</imath>, which simplifies to
+<cmath>\boxed{(\text{\bf{C}}) \: \frac{20}{33}}.</cmath>
+
+- Siddharth Mirchandani (svm2020), John Adams Middle School
+
+
+Remark: This solution is flawed because if there are <imath>9+2=11</imath> people on the plane, the probablity could not be calculated this way, because intuitively, the probability should be decreased (as the probability for 9 people and 1 couple is <imath>\frac{19}{55}</imath>), not increased (to be <imath>\frac{2}{3}</imath>). -ericz
+
+--- Solution 5 ---
+Consider the couple seated together and there should be 8 seated ways (2 ways in each row). And the other 8 people can be seated in other 10 seats randomly. 
+
+There will be total <math>8\cdot P(10, 2)</math>
+
+Consider two double counting cases.
+
+
+Case I: the other 8 people are seated in (1, 3) (2, 3), (3, 1), (3, 2), (3, 3), (4, 1), (4, 2), (4, 3)
+
+It was double counted for couple's seats (1, 1) (1, 2) and (2, 1), (2, 2)
+
+There will be <math>\frac{8\cdot 6}{2}\times P(8, 8)</math>
+
+
+Case II: one whole row is empty and the other 8 people are randomly seated in other rows
+
+It was double counted for couple's seats such as (1, 1) (1, 2) and (1, 2) (1, 3)
+
+There will be <math>4\cdot P(9, 8)</math>
+
+
+So the probability is <math>\frac{8\cdot P(10, 2)-\frac{8\cdot 2}{2}\cdot P(8, 8)-4\cdot P(9, 8)}{P(12, 8)}</math>
+
+which simplifies to <cmath>\boxed{(\text{\bf{C}}) \: \frac{20}{33}}.</cmath>
+
+- Orlando Liu Cupertino Middle School
+
+--- Solution 6 ---
+Notice there are <math>\binom{12}{4} = 495</math> ways to distribute <math>4</math> empty seats and <math>8</math> occupied seats without constraints, and that this may be represented as the number of paths from <math>A</math> to <math>B</math> in the directed graph below. This graph is not a diagram of the plane; rather, a node at coordinates <math>(x,y)</math> refers to the number of <math>(occupied,empty)</math> seats that have been placed since leaving <math>A</math>.
+
+Beginning from <math>A</math> we move up one node when adding an empty seat or right one node when adding an occupied seat as we fill the airplane by row. After three such moves, for example, we arrive at the leftmost dashed line, indicating row one is complete. The number adjacent to a node indicates the number of unique paths to a node and is simply the sum of its incoming paths. We arrive at <math>B(8
+<asy>
+size(300);
+
+int xmax = 8;
+int ymax = 4;
+
+int [] path_counts = {1,1,1,1,1,1,1,1,1,
+                      1,2,3, 4, 5,6,7,8,9,
+                      1,3,6,10,15,21,28,36,45,
+                      1,4,10,20,35,56,84,120,165,
+                      1,5,15,35,70,126,210,330,495};
+
+// Draw filled row lines
+draw((3,0)--(0,3), orange+dashed);
+draw((7,-1)--(1,5), orange+dashed);
+draw((9,0)--(4,5), orange+dashed);
+draw((9,3)--(7,5), orange+dashed);
+label(scale(.6)*rotate(-45)*"$row
+label(scale(.6)*rotate(-45)*"$row
+// Draw vertical grid segments: from (x,y) to (x,y+1)
+for (int x = 0; x <= xmax; ++x) {
+  for (int y = 0; y < ymax; ++y) {
+    draw((x,y)--(x,y+1), gray+0.6/*,Arrow(TeXHead,NoFill)*/);
+  }
+}
+
+// Draw horizontal grid segments: from (x,y) to (x+1,y)
+for (int y = 0; y <= ymax; ++y) {
+  for (int x = 0; x <= xmax; ++x) {
+    if (x < xmax)
+      draw((x,y)--(x+1,y), gray+0.6);
+    if (path_counts[x+y*9] > 0) {
+      string s="$"+string(path_counts[x+y*9])+"$";
+      label(scale(.8)*s, (x,y), NE);
+    }
+
+  }
+}
+
+// Axis labels
+label("$full
+label(rotate(90)*"$empty
+label("$A(0,0)$", (0,0), SW);
+label("$B(8
+</asy>
+
+Next, let's modify our graph to accommodate the complementary case where no adjacent empty seats are allowed. Each empty seat must be followed by a full seat — excepting the final end seat in a row — and is indicated by a path rising and curving right. Once again, the number of paths to a node is the sum of incoming paths, and we thus arrive at <math>195</math> ways to distribute <math>4</math> empty seats with none adjacent.
+
+<asy>
+size(300);
+
+int xmax = 8;
+int ymax = 4;
+int [] draw_these_arcs = {1,1,1,1,1,1,1,0,0,
+                     0,1,1,1,1,1,1,1,0,
+                     0,1,1,1,1,1,1,1,0,
+                     0,0,1,1,1,1,1,1,1,
+                     0,0,0,0,0,0,0,0,0};
+
+int [] draw_these_horizontal = {1,1,1,1,1,1,0,0,0,
+                     0,1,1,1,1,1,1,0,0,
+                     0,1,1,1,1,1,1,0,0,
+                     0,0,1,1,1,1,1,1,0,
+                     0,0,1,1,1,1,1,1,0};
+
+int [] path_counts = {1,1,1,1,1,1,1,0,0,
+                     0,1,3,3,4,6,6,7,0,
+                     0,1,1,4,11,11,17,30,0,
+                     0,0,1,6,6,17,45,45,75,
+                     0,0,1,1,7,30,30,75,195};
+
+import geometry;
+
+// Draw filled row lines
+draw((3,0)--(0,3), orange+dashed);
+draw((7,-1)--(1,5), orange+dashed);
+draw((8,1)--(4,5), orange+dashed);
+draw((9,3)--(7,5), orange+dashed);
+label(scale(.6)*rotate(-45)*"$row
+label(scale(.6)*rotate(-45)*"$row
+// Draw grid segments
+for (int x = 0; x <= xmax; ++x) {
+  for (int y = 0; y <= ymax; ++y) {
+    if (draw_these_horizontal[x+y*9] > 0)
+      draw((x,y)--(x+1,y), gray+0.6);
+    if (path_counts[x+y*9] > 0) {
+      string s="$"+string(path_counts[x+y*9])+"$";
+      label(scale(.8)*s, (x,y), NE);
+    }
+    if (draw_these_arcs[x+y*9] > 0) {
+      if ((x+y+1)%3 > 0)
+        draw(arc((x+1,y),1,90,180),gray+0.6); //Draws the arc
+      else
+        draw((x,y)--(x,y+1), gray+0.6);
+    }
+  }
+}
+
+// Axis labels
+label("$full
+label(rotate(90)*"$empty
+label("$A(0,0)$", (0,0), SW);
+label("$B(8
+</asy>
+
+Our lucky couple's final probability of sitting together is <math>1 - \frac{195}{495} = \boxed{\textbf{(C)}
+[[User:Skookum_Math|~Skookum_Math]]
+
+--- Solution 7 ---
+Let's count the complementary case of distributing empty seats with none adjacent. Beginning with the first row, there is <imath>1</imath> way to fill the row with no empty seats. There are <imath>3</imath> ways to complete the row with <imath>1</imath> empty seat. There is <imath>1</imath> way to complete the row with <imath>2</imath> empty seats. There is no way to fit <imath>3</imath> non-adjacent empty seats.
+
+Let's represent these values as a polynomial where the exponents represent the number of empty seats and the coefficients represent the associated number of possible combinations. For the first row, we have <imath>1x^2 + 3x^1 + 1x^0</imath>. We have no intention of assigning or determining any value for <imath>x</imath>. Our polynomial simply keeps our calculations organized.
+
+Let's consider the case of one empty seat in the second row. There are 3 positions it could be in, so we'd represent that as <imath>3x^1</imath>, of course. If we ask how many combinations exist for a single empty seat in the first row and a single empty seat in the second row, we multiply the <imath>3x^1</imath> from the first row by the <imath>3x^1</imath> from the second row and arrive at <imath>9x^2</imath>, i.e., <imath>9</imath> combinations of <imath>2</imath> empty seats with one in each row.
+
+Are there other ways to arrive at <imath>2</imath> empty seats anywhere in the first two rows? Yes, we could have <imath>1x^2</imath> in the first row and <imath>1x^0</imath> in the second row, or vice versa. So the total number of ways to populate <imath>2</imath> empty seats in the first two rows is <imath>1x^2\cdot1x^0 + 3x^1\cdot3x^1 + 1x^0\cdot1x^2 = 11x^2</imath>.
+
+Notice that multiplying our original polynomial <imath>1x^2 + 3x^1 + 1x^0</imath> by the same polynomial for the second row produces the <imath>11x^2</imath> term above, and similarly produces a count of the combinations for every other possible number of empty seats in the first two rows, i.e., <imath>(1x^2 + 3x^1 + 1x^0)^2 = 1x^4 + 6x^3 + 11x^2 + 6x^1 + 1x^0</imath>; how wonderful.
+
+<asy>
+import roundedpath;
+size(150);
+import graph;
+import fontsize;
+
+int [] digits = {
+  -1,-1,1,3,1,
+  -1,-1,1,3,1,
+  -1,-1,1,3,1,
+  -1, 3,9,3,0,
+   1, 3,1,0,0,
+   1, 6,11,6,1
+};
+
+int xmax = 4;
+int ymax = 5;
+real ys = 0.6;
+
+for (int x = 0; x <= xmax; ++x) {
+  for (int y = 0; y <= ymax; ++y) {
+
+    int d = digits[x+(ymax-y)*(xmax+1)];
+    if (d > 0) {
+      string s="$"+string(d)+"$";
+      string s2="$";
+      if (d >= 10)
+        s2=s2+"\,"; // add space left of x
+      if (d >= 100)
+        s2=s2+"
+      s2=s2+"x^"+string(xmax-x)+"$";
+      label(scale(.8)*s, (x,y*ys));
+      if (y < 1 || y > 3) 
+        label(scale(.8)*s2, (x,y*ys), E, gray+0.3);
+    }
+  }
+}
+
+// Draw multiplication symbol
+label("$\times$", (-0.8,4*ys), fontsize(12pt));
+
+// Horizontal line below multiplier
+draw((-1,3.5*ys)--(4.5,3.5*ys));
+
+// Draw addition symbol
+label("$+$", (-0.8,ys), fontsize(12pt));
+
+// Horizontal line below sum
+draw((-1,.6*ys)--(4.5,.6*ys));
+</asy>
+
+We conclude that <imath>(1x^2 + 3x^1 + 1x^0)^4</imath> will contain our answer when considering all four rows of our airplane. Or, using our prior product, <imath>(1x^4 + 6x^3 + 11x^2 + 6x^1 + 1x^0)^2</imath> would be even easier to compute, especially since we only need to make calculations resulting in <imath>x^4</imath> terms, i.e., <imath>x^4\cdot x^0</imath> and <imath>x^3\cdot x^1</imath>, etc. We proceed with <imath>2(1x^4\cdot1x^0 + 6x^3\cdot6x^1) + 11x^2\cdot11x^2 = 195x^4</imath>. There are <imath>195</imath> ways to fit four empty seats in our airplane with no two adjacent. 
+
+<asy>
+import roundedpath;
+size(250);
+import graph;
+import fontsize;
+
+int [] digits = {
+  -1,-1,-1,-1,1,6,11,6,1,
+  -1,-1,-1,-1,1,6,11,6,1,
+  -1,-1,-1,-1,1,6,11,6,1,
+  -1, -1,-1,6,36,66,36,6,0,
+   -1,-1,11,66,121,66,11,0,0,
+  -1,6,36,66,36,6,0,0,0,
+   1,6,11,6,1,0,0,0,0,
+   1,12,58,144,195,144,58,12,1
+};
+
+int xmax = 8;
+int ymax = 7;
+real ys = 0.7;
+
+for (int x = 0; x <= xmax; ++x) {
+  for (int y = 0; y <= ymax; ++y) {
+    int d = digits[x+(ymax-y)*(xmax+1)];
+    if (d > 0) {
+      string s="$"+string(d)+"$";
+      string s2="$";
+      if (d >= 10)
+        s2=s2+"\,"; // add space left of x
+      if (d >= 100)
+        s2=s2+"
+      s2=s2+"x^"+string(xmax-x)+"$";
+
+      label(scale(.8)*s, (x,y*ys));
+      if (y < 1 || y > 5) 
+        label(scale(.8)*s2, (x,y*ys), E, gray+0.3);
+    }
+  }
+}
+
+// Draw multiplication symbol
+label("$\times$", (-0.8,6*ys), fontsize(12pt));
+
+// Horizontal line below multiplier
+draw((-1,5.5*ys)--(8.5,5.5*ys));
+
+// Draw addition symbol
+label("$+$", (-0.8,ys), fontsize(12pt));
+
+// Horizontal line below sum
+draw((-1,.6*ys)--(8.5,.6*ys));
+
+// Draw inclined rounded rectangle
+// Define the two points (ends of the rectangle)
+pair A = (4,0*ys);
+pair B = (4,5*ys);
+real w = 0.3; // Half the total width (i.e., total width = 1.0)
+
+// Compute the unit direction vector from A to B
+pair dir = unit(B - A);
+
+// Compute the perpendicular vector for the width
+pair perp = rotate(90)*dir * w;
+
+// Define the 4 corners of the rectangle (CCW or CW)
+pair p1 = A + perp - dir*w;
+pair p2 = B + perp + dir*w;
+pair p3 = B - perp + dir*w;
+pair p4 = A - perp - dir*w;
+
+// Build the path
+path rect = p1 -- p2 -- p3 -- p4 -- cycle;
+
+// Make it rounded
+path rrect = roundedpath(rect, w/1.1);
+
+// Draw it
+draw(rrect, orange+0.4+1bp);//+1bp);
+</asy>
+
+Dividing this by the number of unconstrained ways to fit four empty seats in our plane gives the probability that our couple cannot sit together.
+
+To compute the number of unconstrained ways to fit four empty seats anywhere in our airplane, we have a choice of calculating <imath>(1x^3 + 3x^2 + 3x^1 +1x^0)^4</imath> or <imath>(1x^1+1x^0)^{12}</imath> or perhaps just <imath>\binom{12}{4} = 495</imath> this time.
+
+Our married couple's final probability of sitting together is <imath>1 - \frac{195}{495} = \boxed{\textbf{(C)}
+[[User:Skookum_Math|~Skookum_Math]]
+
+

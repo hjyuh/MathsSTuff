@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CPCTC — MC Drill (2 proofs)</title>
+<style>
+  :root { --bg:#0f1216; --panel:#161b22; --panel-2:#1c222c; --ink:#e6edf3;
+          --muted:#9da7b3; --accent:#4cc2ff; --accent-2:#f7b955; --line:#2a313c;
+          --good:#3fb950; --bad:#f85149; }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  .wrap{max-width:900px;margin:0 auto;padding:28px 22px 80px}
+  h1{font-size:26px;margin:6px 0 14px}
+  h2{font-size:19px;margin:22px 0 8px;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:4px}
+  h3{font-size:16px;margin:16px 0 6px;color:var(--accent-2)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}
+  .fig{background:#fff;border-radius:10px;padding:12px;border:1px solid var(--line);display:flex;justify-content:center;margin:10px 0}
+  .fig svg{width:100%;height:auto;max-width:420px}
+  .caption{color:var(--muted);font-size:13px;margin-top:6px;text-align:center}
+  .given{background:#1a2332;border-left:3px solid var(--accent);padding:10px 14px;border-radius:6px;margin:10px 0}
+  .prove{background:#2a1f33;border-left:3px solid var(--accent-2);padding:10px 14px;border-radius:6px;margin:10px 0}
+  .mc{background:#1e2a3a;border-radius:10px;padding:14px 16px;margin:14px 0;border-left:3px solid var(--accent-2)}
+  .mc .choices{margin:8px 0 0 0;padding:0;list-style:none}
+  .mc .choices li{margin:4px 0;padding:6px 10px;background:#263447;border-radius:6px;border:1px solid transparent;cursor:default}
+  .mc .choices li strong{color:var(--accent-2);margin-right:6px}
+  table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top}
+  th{background:var(--panel-2);text-align:left;color:var(--accent)}
+  td.num{width:40px;text-align:center;color:var(--muted);font-weight:bold}
+  details{margin:10px 0}
+  details.sol{background:#12241a;border:1px solid #1f4f32;border-radius:8px;padding:8px 14px}
+  details.ans{background:#1d1a2e;border:1px solid #3b3166;border-radius:8px;padding:8px 14px;margin:6px 0}
+  summary{cursor:pointer;color:var(--accent);padding:4px 0;font-weight:bold}
+  .lbl{font-family:Georgia,serif;font-size:16px;fill:#111;font-weight:bold}
+  .tick{stroke:#c0392b;stroke-width:2.5}
+  .tick2{stroke:#1f77b4;stroke-width:2.5}
+  .arc{stroke:#8e44ad;fill:none;stroke-width:2}
+  .arc2{stroke:#e67e22;fill:none;stroke-width:2}
+  .right-angle{stroke:#111;fill:none;stroke-width:1.5}
+  .note{color:var(--muted);font-size:14px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>CPCTC Drill — Multiple-Choice the Hard Parts</h1>
+<p class="note">For each proof, the 2 genuinely hard decisions are multiple choice. Pick your answer, then reveal. If you get both MCs right, writing the full proof is almost mechanical — try it, then reveal the solution to check.</p>
+
+<!-- ================= PROOF 1 ================= -->
+<div class="card">
+  <h2>Proof 1 — "Bowtie" with a midpoint</h2>
+
+  <div class="given">
+    <strong>Given:</strong> Segments AB and CD intersect at point M. M is the midpoint of AB. ∠A ≅ ∠B.
+  </div>
+  <div class="prove">
+    <strong>Prove:</strong> CM ≅ DM
+  </div>
+
+  <div class="fig">
+    <svg viewBox="0 0 380 240">
+      <!-- AB horizontal -->
+      <line x1="40" y1="120" x2="340" y2="120" stroke="#111" stroke-width="2"/>
+      <!-- CD diagonal-ish crossing at M -->
+      <line x1="120" y1="30" x2="260" y2="210" stroke="#111" stroke-width="2"/>
+      <!-- M point -->
+      <circle cx="190" cy="120" r="3" fill="#111"/>
+      <!-- tick marks AM ≅ BM (single red ticks) -->
+      <line x1="110" y1="115" x2="120" y2="125" class="tick"/>
+      <line x1="260" y1="115" x2="270" y2="125" class="tick"/>
+      <!-- arc showing ∠A -->
+      <path d="M 58 120 A 16 16 0 0 0 70 108" class="arc"/>
+      <!-- arc showing ∠B (match) -->
+      <path d="M 322 120 A 16 16 0 0 1 310 108" class="arc"/>
+      <!-- labels -->
+      <text x="24" y="126" class="lbl">A</text>
+      <text x="346" y="126" class="lbl">B</text>
+      <text x="114" y="24" class="lbl">C</text>
+      <text x="262" y="224" class="lbl">D</text>
+      <text x="194" y="134" style="font-family:Georgia,serif;font-size:14px;fill:#111;font-weight:bold">M</text>
+    </svg>
+  </div>
+  <div class="caption">Red ticks: AM ≅ MB (midpoint). Purple arcs at A and B: ∠A ≅ ∠B (given). The two segments cross at M.</div>
+
+  <div class="mc">
+    <strong>MC-1A.</strong> Which two triangles contain the pieces you need to prove CM ≅ DM?
+    <ul class="choices">
+      <li><strong>a)</strong> △ABC and △ABD</li>
+      <li><strong>b)</strong> △ACM and △BDM</li>
+      <li><strong>c)</strong> △ACD and △BCD</li>
+      <li><strong>d)</strong> △AMD and △BMC</li>
+    </ul>
+    <details class="ans"><summary>Reveal answer</summary>
+      <p><strong>(b) △ACM and △BDM.</strong> CM lives in △ACM (vertices A, C, M). DM lives in △BDM (vertices B, D, M). Rule of thumb: the segment you want to prove congruent must be an <em>actual side</em> of the triangle you pick.</p>
+      <p class="note">Why not (d) △AMD and △BMC? Those triangles don't exist as distinct figures in this bowtie — AMD would require a segment from A to D, which isn't drawn.</p>
+    </details>
+  </div>
+
+  <div class="mc">
+    <strong>MC-1B.</strong> You have three pieces: AM ≅ BM, ∠A ≅ ∠B, and one more you need to spot from the figure. Which theorem will prove △ACM ≅ △BDM?
+    <ul class="choices">
+      <li><strong>a)</strong> SSS</li>
+      <li><strong>b)</strong> SAS</li>
+      <li><strong>c)</strong> ASA</li>
+      <li><strong>d)</strong> AAS</li>
+      <li><strong>e)</strong> HL</li>
+    </ul>
+    <details class="ans"><summary>Reveal answer</summary>
+      <p><strong>(c) ASA.</strong> Count first: ∠A, ∠B are 1 angle pair. The hidden third piece is <strong>∠AMC ≅ ∠BMD (vertical angles)</strong> — that's a second angle pair. Plus AM ≅ BM. That's <strong>2 angles + 1 side</strong>.</p>
+      <p>Is it ASA or AAS? Side AM connects A and M. One angle is at A, the other is at M. The side connects both angle vertices → <strong>included → ASA</strong>.</p>
+    </details>
+  </div>
+
+  <details class="sol">
+    <summary>Reveal full two-column proof (try writing it first)</summary>
+    <table>
+      <tr><th style="width:40px">#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td class="num">1</td><td>M is the midpoint of AB</td><td>Given</td></tr>
+      <tr><td class="num">2</td><td>AM ≅ BM</td><td>Definition of midpoint</td></tr>
+      <tr><td class="num">3</td><td>∠A ≅ ∠B</td><td>Given</td></tr>
+      <tr><td class="num">4</td><td>∠AMC ≅ ∠BMD</td><td>Vertical angles are congruent</td></tr>
+      <tr><td class="num">5</td><td>△ACM ≅ △BDM</td><td>ASA (from 3, 2, 4)</td></tr>
+      <tr><td class="num">6</td><td><strong>CM ≅ DM</strong></td><td><strong>CPCTC</strong></td></tr>
+    </table>
+  </details>
+</div>
+
+<!-- ================= PROOF 2 ================= -->
+<div class="card">
+  <h2>Proof 2 — Overlapping triangles with a shared angle</h2>
+
+  <div class="given">
+    <strong>Given:</strong> In △ABC, point D is on side AB and point E is on side AC. AB ≅ AC. AD ≅ AE.
+  </div>
+  <div class="prove">
+    <strong>Prove:</strong> BE ≅ CD
+  </div>
+
+  <div class="fig">
+    <svg viewBox="0 0 360 280">
+      <!-- outer triangle ABC -->
+      <polygon points="180,30 60,240 300,240" fill="#e8f4fd" stroke="#111" stroke-width="2.5"/>
+      <!-- D on AB (closer to A), E on AC -->
+      <!-- AB goes from (180,30) to (60,240). D roughly 40% down -->
+      <circle cx="132" cy="114" r="3" fill="#111"/>
+      <!-- AC goes from (180,30) to (300,240). E roughly 40% down -->
+      <circle cx="228" cy="114" r="3" fill="#111"/>
+      <!-- segments BE (from B=60,240 to E=228,114) -->
+      <line x1="60" y1="240" x2="228" y2="114" stroke="#c0392b" stroke-width="2" opacity="0.85"/>
+      <!-- segments CD (from C=300,240 to D=132,114) -->
+      <line x1="300" y1="240" x2="132" y2="114" stroke="#c0392b" stroke-width="2" opacity="0.85"/>
+      <!-- tick marks to show AB ≅ AC (single red, on upper halves of AB and AC) -->
+      <line x1="154" y1="66" x2="166" y2="74" class="tick"/>
+      <line x1="206" y1="66" x2="194" y2="74" class="tick"/>
+      <!-- tick marks to show AD ≅ AE (double blue, on segments from A down to D/E) -->
+      <line x1="162" y1="72" x2="156" y2="80" class="tick2"/>
+      <line x1="168" y1="78" x2="162" y2="86" class="tick2"/>
+      <line x1="198" y1="72" x2="204" y2="80" class="tick2"/>
+      <line x1="192" y1="78" x2="198" y2="86" class="tick2"/>
+      <!-- angle A arc -->
+      <path d="M 168 52 A 16 16 0 0 0 192 52" class="arc"/>
+      <!-- labels -->
+      <text x="174" y="22" class="lbl">A</text>
+      <text x="44" y="250" class="lbl">B</text>
+      <text x="306" y="250" class="lbl">C</text>
+      <text x="112" y="112" class="lbl">D</text>
+      <text x="232" y="112" class="lbl">E</text>
+    </svg>
+  </div>
+  <div class="caption">Red single ticks: AB ≅ AC. Blue double-ticks: AD ≅ AE. Purple arc at A highlights ∠A. We want BE ≅ CD (the red crossing segments).</div>
+
+  <div class="mc">
+    <strong>MC-2A.</strong> Which two triangles contain BE and CD?
+    <ul class="choices">
+      <li><strong>a)</strong> △ABE and △ACD</li>
+      <li><strong>b)</strong> △ABC and △ADE</li>
+      <li><strong>c)</strong> △BDE and △CED</li>
+      <li><strong>d)</strong> △ABD and △ACE</li>
+    </ul>
+    <details class="ans"><summary>Reveal answer</summary>
+      <p><strong>(a) △ABE and △ACD.</strong></p>
+      <ul>
+        <li>BE is a side of △ABE (vertices A, B, E). ✓</li>
+        <li>CD is a side of △ACD (vertices A, C, D). ✓</li>
+      </ul>
+      <p class="note">Tempting trap: (d) △ABD and △ACE contain AD/AE and AB/AC, but they do <em>not</em> contain BE or CD. CPCTC rule — the triangles must contain the pieces you're asked to prove congruent.</p>
+    </details>
+  </div>
+
+  <div class="mc">
+    <strong>MC-2B.</strong> The third piece you need (beyond AB ≅ AC and AD ≅ AE) is hiding in the figure. What is it, and which theorem does it unlock?
+    <ul class="choices">
+      <li><strong>a)</strong> ∠B ≅ ∠C, giving AAS</li>
+      <li><strong>b)</strong> BD ≅ CE, giving SSS</li>
+      <li><strong>c)</strong> ∠A ≅ ∠A (reflexive / common angle), giving SAS</li>
+      <li><strong>d)</strong> DE ∥ BC, giving ASA</li>
+    </ul>
+    <details class="ans"><summary>Reveal answer</summary>
+      <p><strong>(c) ∠A ≅ ∠A (reflexive / common angle), giving SAS.</strong></p>
+      <p>Both triangles share the angle at vertex A. This is the <em>reflexive property on an angle</em> — same idea as reflexive on a side, just applied to an angle that both triangles share.</p>
+      <p>Count: AB ≅ AC (side), AD ≅ AE (side), ∠A ≅ ∠A (angle). 2 sides + 1 angle. The angle's vertex is A, and both sides (AB, AC match with AD, AE) emanate from A → angle is included → <strong>SAS</strong>.</p>
+      <p class="note">Key takeaway: reflexive is not just for sides. When two triangles share a vertex and the angle at that vertex is part of both triangles, you can use ∠X ≅ ∠X as the third piece.</p>
+    </details>
+  </div>
+
+  <details class="sol">
+    <summary>Reveal full two-column proof (try writing it first)</summary>
+    <p><strong>Vertex correspondence for △ABE ≅ △ACD:</strong> A↔A, B↔C, E↔D. So AB pairs with AC, AE pairs with AD, and BE pairs with CD. ✓</p>
+    <table>
+      <tr><th style="width:40px">#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td class="num">1</td><td>AB ≅ AC</td><td>Given</td></tr>
+      <tr><td class="num">2</td><td>AD ≅ AE</td><td>Given</td></tr>
+      <tr><td class="num">3</td><td>∠A ≅ ∠A</td><td>Reflexive property</td></tr>
+      <tr><td class="num">4</td><td>△ABE ≅ △ACD</td><td>SAS (from 1, 3, 2)</td></tr>
+      <tr><td class="num">5</td><td><strong>BE ≅ CD</strong></td><td><strong>CPCTC</strong></td></tr>
+    </table>
+    <p class="note">Notice line 4 matches <strong>side (AB=AC) — angle (∠A) — side (AE=AD)</strong>. The included angle at A is what makes this SAS instead of SSA.</p>
+  </details>
+</div>
+
+<div class="card">
+  <h2>Pattern to internalize</h2>
+  <p>Every CPCTC drill you do is building the same two reflexes:</p>
+  <ol>
+    <li><strong>Triangle-finder reflex:</strong> the pair you're asked to prove congruent must be actual sides (or angles) of the two triangles you pick. If the pair isn't in those triangles, you picked wrong triangles.</li>
+    <li><strong>Hidden-piece reflex:</strong> you'll almost always have 2 given pieces, and the 3rd piece hides in the figure. The usual suspects:
+      <ul>
+        <li>Vertical angles (two lines crossing → a pair of equal angles)</li>
+        <li>Reflexive side (shared segment = both triangles have it)</li>
+        <li>Reflexive angle (shared vertex-angle = both triangles have it)</li>
+        <li>Alternate interior angles (parallel lines cut by a transversal)</li>
+        <li>Right angles (perpendicular → two 90° angles = congruent)</li>
+        <li>Midpoint → two congruent halves</li>
+        <li>Angle bisector → two congruent sub-angles</li>
+      </ul>
+    </li>
+  </ol>
+  <p>When both reflexes fire automatically, CPCTC proofs become 4-line pattern completion. That's the goal.</p>
+</div>
+
+</div>
+</body>
+</html>

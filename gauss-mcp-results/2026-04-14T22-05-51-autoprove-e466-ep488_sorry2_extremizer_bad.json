@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-14T22-05-51-autoprove-e466-ep488_sorry2_extremizer_bad",
+  "status": "running",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "-- SORRY 2: extremizer implies bad block\n-- If D(m)/m > 2D(n)/n at a run-end, the block at height n/q is bad\n\ndef Covered (C : Finset \u2115) (q t : \u2115) : Prop :=\n  \u00ac(q \u2223 t) \u2227 \u2203 r \u2208 C, r \u2223 t\n\ninstance (C : Finset \u2115) (q t : \u2115) : Decidable (Covered C q t) :=\n  inferInstanceAs (Decidable (\u00ac(q \u2223 t) \u2227 \u2203 r \u2208 C, r \u2223 t))\n\nnoncomputable def Dfun (C : Finset \u2115) (q x : \u2115) : \u2115 :=\n  ((Finset.range (x + 1)).filter fun t => Covered C q t).card\n\ndef TopWindow (C : Finset \u2115) (q : \u2115) : Prop :=\n  \u2200 r \u2208 C, q / 2 < r \u2227 r < q\n\ndef Height (q n : \u2115) : \u2115 := n / q\n\ndef Block (q j : \u2115) : Finset \u2115 :=\n  Finset.Icc ((j - 1) * q + 1) (j * q)\n\nnoncomputable def BlockCov (C : Finset \u2115) (q j : \u2115) : \u2115 :=\n  ((Block q j).filter fun t => Covered C q t).card\n\nnoncomputable def Slot (q j r : \u2115) : Finset \u2115 :=\n  (Block q j).filter fun t => \u00ac(q \u2223 t) \u2227 r \u2223 t\n\nnoncomputable def SlotMass (C : Finset \u2115) (q j : \u2115) : \u2115 :=\n  \u2211 r \u2208 C, (Slot q j r).card\n\ndef BadBlock (C : Finset \u2115) (q j : \u2115) : Prop :=\n  2 * BlockCov C q j < SlotMass C q j\n\ndef RunEndExtremal (C : Finset \u2115) (q n m : \u2115) : Prop :=\n  q \u2264 n \u2227 n < m \u2227\n  \u00ac Covered C q n \u2227 Covered C q (n + 1) \u2227\n  Covered C q m \u2227 \u00ac Covered C q (m + 1) \u2227\n  (Dfun C q m : \u211a) / m > 2 * (Dfun C q n : \u211a) / n\n\ntheorem extremizer_implies_bad_block (C : Finset \u2115) (n m q : \u2115) (hq : 2 \u2264 q)\n    (hExt : RunEndExtremal C q n m) (hTop : TopWindow C q) :\n    BadBlock C q (Height q n) := by\n  sorry",
+  "started_at": "2026-04-14T22:05:51Z",
+  "finished_at": null,
+  "duration_s": null,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-14T22-05-51-autoprove-e466-ep488_sorry2_extremizer_bad.log",
+  "worker_pid": 16392,
+  "last_heartbeat_at": 1776209010.5049224,
+  "_started_monotonic": 1776204351.9612117
+}

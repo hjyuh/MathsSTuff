@@ -50,6 +50,10 @@ const config = {
   workspaceBrowserZoom: Number(process.env.RBI_WORKSPACE_BROWSER_ZOOM ?? 1.25),
   audioEnabled: parseBoolean(process.env.RBI_AUDIO_ENABLED, true),
   pcmAudioEnabled: parseBoolean(process.env.RBI_AUDIO_PCM, false),
+  dnsLabEnabled: parseBoolean(process.env.RBI_DNS_LAB_ENABLED, false),
+  workerDnsMode: process.env.RBI_WORKER_DNS_MODE?.trim() || 'system',
+  workerDnsServers: process.env.RBI_WORKER_DNS_SERVERS?.trim() || '',
+  chromeDohTemplate: process.env.RBI_CHROME_DOH_TEMPLATE?.trim() || '',
   janitorEnabled: parseBoolean(process.env.RBI_ENABLE_JANITOR, true),
   janitorIntervalMs: Number(process.env.RBI_JANITOR_INTERVAL_SECONDS ?? 120) * 1000,
   appLabel: process.env.RBI_APP_LABEL?.trim() || 'remote-browser-isolation-mvp'
@@ -98,6 +102,10 @@ const sessionManager = new SessionManager({
   workspaceBrowserZoom: config.workspaceBrowserZoom,
   audioEnabled: config.audioEnabled,
   pcmAudioEnabled: config.pcmAudioEnabled,
+  dnsLabEnabled: config.dnsLabEnabled,
+  defaultDnsMode: config.workerDnsMode,
+  defaultDnsServers: config.workerDnsServers,
+  defaultDohTemplate: config.chromeDohTemplate,
   janitorEnabled: config.janitorEnabled,
   janitorIntervalMs: config.janitorIntervalMs,
   appLabel: config.appLabel
@@ -388,7 +396,8 @@ function buildSiteRouter(site) {
 
       const session = await sessionManager.createSession({
         ownerId: request.rbiUser.id,
-        initialUrl
+        initialUrl,
+        dnsProfile: request.body?.dnsProfile
       });
 
       const internalSession = sessionManager.getSession(session.id);
@@ -398,7 +407,7 @@ function buildSiteRouter(site) {
 
       response.status(201).json(serializeSiteSession(site, session, request));
     } catch (error) {
-      const status = /Docker is required/.test(error.message) ? 503 : 500;
+      const status = /Docker is required/.test(error.message) ? 503 : isClientConfigurationError(error) ? 400 : 500;
       response.status(status).json({
         error: error.message
       });
@@ -1286,6 +1295,10 @@ function parseBoolish(value) {
 function parseBoolean(value, defaultValue) {
   const parsed = parseBoolish(value);
   return parsed === null ? defaultValue : parsed;
+}
+
+function isClientConfigurationError(error) {
+  return /\b(DNS lab mode|DNS server|Custom DNS mode|Chromium secure DNS mode|DoH template)\b/i.test(error?.message ?? '');
 }
 
 function parseTrustProxy(value) {

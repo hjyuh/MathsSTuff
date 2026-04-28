@@ -1,0 +1,11 @@
+{
+  "best_rowsets": [],
+  "delta_max": 200000,
+  "delta_universe_count": 6,
+  "pair_cache_count": 15,
+  "pair_record_count": 14,
+  "rowset_count": 0,
+  "triple_count": 1,
+  "witness_count": 0,
+  "x_bound": 1000000000
+}

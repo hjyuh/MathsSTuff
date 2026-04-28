@@ -11,6 +11,50 @@ const execFileAsync = promisify(execFile);
 const WORKSPACE_USERNAME = 'kasm_user';
 const WORKSPACE_PORT = 6901;
 const AUDIO_PORT = 4901;
+const PUBLIC_CLOUDFLARE_DOH_TEMPLATE = 'https://cloudflare-dns.com/dns-query';
+
+const DNS_MODE_DEFINITIONS = new Map([
+  [
+    'system',
+    {
+      label: 'Docker default DNS',
+      servers: [],
+      dohTemplate: ''
+    }
+  ],
+  [
+    'cloudflare-malware',
+    {
+      label: 'Cloudflare malware DNS',
+      servers: ['1.1.1.2', '1.0.0.2'],
+      dohTemplate: ''
+    }
+  ],
+  [
+    'cloudflare-family',
+    {
+      label: 'Cloudflare family DNS',
+      servers: ['1.1.1.3', '1.0.0.3'],
+      dohTemplate: ''
+    }
+  ],
+  [
+    'custom-dns',
+    {
+      label: 'Custom DNS servers',
+      servers: [],
+      dohTemplate: ''
+    }
+  ],
+  [
+    'browser-doh',
+    {
+      label: 'Chromium secure DNS',
+      servers: [],
+      dohTemplate: PUBLIC_CLOUDFLARE_DOH_TEMPLATE
+    }
+  ]
+]);
 
 export class SessionManager {
   constructor(options = {}) {
@@ -40,6 +84,12 @@ export class SessionManager {
     this.workspaceBrowserZoom = normalizeZoom(options.workspaceBrowserZoom, 1.25);
     this.audioEnabled = options.audioEnabled ?? true;
     this.pcmAudioEnabled = options.pcmAudioEnabled ?? false;
+    this.dnsLabEnabled = Boolean(options.dnsLabEnabled);
+    this.defaultDnsProfile = normalizeDnsProfile({
+      mode: options.defaultDnsMode,
+      dnsServers: options.defaultDnsServers,
+      dohTemplate: options.defaultDohTemplate
+    });
     this.janitorEnabled = options.janitorEnabled ?? true;
     this.janitorIntervalMs = options.janitorIntervalMs ?? 2 * 60 * 1000;
 
@@ -91,6 +141,9 @@ export class SessionManager {
         workspaceBrowserZoom: this.workspaceBrowserZoom,
         audioEnabled: this.audioEnabled,
         pcmAudioEnabled: this.audioEnabled ? this.pcmAudioEnabled : false,
+        dnsLabEnabled: this.dnsLabEnabled,
+        dnsDefaultProfile: serializeDnsProfile(this.defaultDnsProfile),
+        dnsModes: getDnsModeOptions(),
         janitorEnabled: this.janitorEnabled
       };
     } catch (error) {
@@ -112,6 +165,9 @@ export class SessionManager {
         workspaceBrowserZoom: this.workspaceBrowserZoom,
         audioEnabled: this.audioEnabled,
         pcmAudioEnabled: this.audioEnabled ? this.pcmAudioEnabled : false,
+        dnsLabEnabled: this.dnsLabEnabled,
+        dnsDefaultProfile: serializeDnsProfile(this.defaultDnsProfile),
+        dnsModes: getDnsModeOptions(),
         janitorEnabled: this.janitorEnabled
       };
     }
@@ -125,6 +181,7 @@ export class SessionManager {
 
     const dockerVersion = await this.ensureDocker();
     const initialUrl = normalizeInitialUrl(options.initialUrl);
+    const dnsProfile = this.resolveSessionDnsProfile(options.dnsProfile);
     const id = createHexToken(8);
     const viewerToken = createHexToken(24);
     const workspacePassword = createReadablePassword(14);
@@ -150,6 +207,7 @@ export class SessionManager {
       dockerVersion,
       streamProtocol: 'https',
       initialUrl,
+      dnsProfile,
       workspaceUsername: WORKSPACE_USERNAME,
       workspacePassword,
       workspaceAuthorization
@@ -221,7 +279,8 @@ export class SessionManager {
       connectPath: `/api/sessions/${session.id}/browser/`,
       dockerVersion: session.dockerVersion,
       profilePersistenceEnabled: Boolean(session.profileVolumeName),
-      profileScope: session.profileVolumeName ? this.profileScope : null
+      profileScope: session.profileVolumeName ? this.profileScope : null,
+      dnsProfile: serializeDnsProfile(session.dnsProfile ?? this.defaultDnsProfile)
     };
   }
 
@@ -286,6 +345,8 @@ export class SessionManager {
       `codex.rbi.session=${session.id}`,
       '--label',
       `codex.rbi.owner=${sanitizeDockerName(session.ownerId)}`,
+      '--label',
+      `codex.rbi.dnsMode=${sanitizeDockerName(session.dnsProfile.mode)}`,
       '-p',
       `${this.listenHost}:${session.hostPort}:${this.streamPort}`,
       '--shm-size=1g',
@@ -296,10 +357,14 @@ export class SessionManager {
       '-e',
       `VNC_RESOLUTION=${this.workspaceResolution}`,
       '-e',
-      `CHROME_CLI=${this.buildChromeCli(session.initialUrl)}`,
+      `CHROME_CLI=${this.buildChromeCli(session.initialUrl, session.dnsProfile)}`,
       '-e',
       `KASM_SVC_AUDIO=${this.audioEnabled ? '1' : '0'}`
     ];
+
+    for (const dnsServer of session.dnsProfile.servers) {
+      args.push('--dns', dnsServer);
+    }
 
     if (session.audioHostPort) {
       args.push('-p', `${this.listenHost}:${session.audioHostPort}:${AUDIO_PORT}`);
@@ -408,11 +473,26 @@ export class SessionManager {
     ].join(' ');
   }
 
-  buildChromeCli(initialUrl) {
+  resolveSessionDnsProfile(input) {
+    if (!this.dnsLabEnabled) {
+      return this.defaultDnsProfile;
+    }
+
+    return normalizeDnsProfile(input, this.defaultDnsProfile);
+  }
+
+  buildChromeCli(initialUrl, dnsProfile) {
     const args = [
       `--force-device-scale-factor=${this.workspaceBrowserZoom}`,
       '--high-dpi-support=1'
     ];
+
+    if (dnsProfile?.dohTemplate) {
+      args.push('--dns-over-https-mode=secure');
+      args.push(`--dns-over-https-templates=${dnsProfile.dohTemplate}`);
+    } else {
+      args.push('--dns-over-https-mode=off');
+    }
 
     if (initialUrl) {
       args.push(initialUrl);
@@ -623,6 +703,101 @@ function normalizeInitialUrl(value) {
   } catch {
     return '';
   }
+}
+
+function getDnsModeOptions() {
+  return [...DNS_MODE_DEFINITIONS.entries()].map(([mode, definition]) => ({
+    mode,
+    label: definition.label,
+    servers: definition.servers,
+    dohTemplate: definition.dohTemplate
+  }));
+}
+
+function normalizeDnsProfile(input = {}, fallbackProfile = null) {
+  const requestedMode = String(input?.mode ?? fallbackProfile?.mode ?? 'system').trim().toLowerCase();
+  const definition = DNS_MODE_DEFINITIONS.get(requestedMode);
+  if (!definition) {
+    throw new Error(`Invalid DNS lab mode "${requestedMode}".`);
+  }
+
+  const profile = {
+    mode: requestedMode,
+    label: definition.label,
+    servers: [...definition.servers],
+    dohTemplate: definition.dohTemplate
+  };
+
+  if (requestedMode === 'custom-dns') {
+    const servers = parseDnsServers(input?.dnsServers ?? input?.servers ?? fallbackProfile?.servers ?? []);
+    if (!servers.length) {
+      throw new Error('Custom DNS mode requires at least one DNS server IP address.');
+    }
+    profile.servers = servers;
+  }
+
+  if (requestedMode === 'browser-doh') {
+    const dohTemplate = normalizeDohTemplate(input?.dohTemplate ?? fallbackProfile?.dohTemplate ?? definition.dohTemplate);
+    if (!dohTemplate) {
+      throw new Error('Chromium secure DNS mode requires a DoH HTTPS template.');
+    }
+    profile.dohTemplate = dohTemplate;
+    profile.servers = parseDnsServers(input?.dnsServers ?? input?.servers ?? fallbackProfile?.servers ?? []);
+  }
+
+  return profile;
+}
+
+function serializeDnsProfile(profile) {
+  const normalized = normalizeDnsProfile(profile);
+  return {
+    mode: normalized.mode,
+    label: normalized.label,
+    servers: normalized.servers,
+    dohTemplate: normalized.dohTemplate
+  };
+}
+
+function parseDnsServers(value) {
+  const rawValues = Array.isArray(value) ? value : String(value ?? '').split(/[,\s]+/g);
+  const servers = [];
+  for (const rawValue of rawValues) {
+    const server = String(rawValue ?? '').trim();
+    if (!server) {
+      continue;
+    }
+
+    if (!net.isIP(server)) {
+      throw new Error(`Invalid DNS server "${server}". Use IPv4 or IPv6 addresses only.`);
+    }
+
+    if (!servers.includes(server)) {
+      servers.push(server);
+    }
+  }
+
+  if (servers.length > 6) {
+    throw new Error('DNS lab mode supports up to 6 DNS server addresses per session.');
+  }
+
+  return servers;
+}
+
+function normalizeDohTemplate(value) {
+  const raw = String(value ?? '').trim();
+  if (!raw) {
+    return '';
+  }
+
+  if (raw.length > 2048 || /\s/.test(raw)) {
+    throw new Error('DoH template must be a single HTTPS URL under 2048 characters.');
+  }
+
+  if (!/^https:\/\/[^/?#{}]+(?:[/?#]|$)/i.test(raw)) {
+    throw new Error('DoH template must start with an HTTPS URL, such as https://cloudflare-dns.com/dns-query.');
+  }
+
+  return raw;
 }
 
 function buildDockerErrorMessage(configuredDockerBin, error) {

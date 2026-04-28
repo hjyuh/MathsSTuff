@@ -1,0 +1,2157 @@
+=== Problem 1 ===
+What is the value in simplest form of the following expression?<cmath>\sqrt{1} + \sqrt{1+3} + \sqrt{1+3+5} + \sqrt{1+3+5+7}</cmath>
+
+Choices: {'A': '5', 'B': '4 + \\sqrt{7} + \\sqrt{10}', 'C': '10', 'D': '15', 'E': '4 + 3\\sqrt{3} + 2\\sqrt{5} + \\sqrt{7}</math>'}
+Answer: C
+
+--- Solution 1 ---
+We have <cmath>\sqrt{1} + \sqrt{1+3} + \sqrt{1+3+5} + \sqrt{1+3+5+7} = \sqrt{1} + \sqrt{4} + \sqrt{9} + \sqrt{16}\ = 1 + 2 + 3 + 4 = \boxed{\textbf{(C) } 10}.</cmath>
+Note: This comes from the fact that the sum of the first <math>n</math> odds is <math>n^2</math>.
+
+
+=== Problem 2 ===
+What is the value of the following expression?
+<cmath>\frac{100^2-7^2}{70^2-11^2} \cdot \frac{(70-11)(70+11)}{(100-7)(100+7)}</cmath>
+
+Choices: {'A': '1', 'B': '\\frac{9951}{9950}', 'C': '\\frac{4780}{4779}', 'D': '\\frac{108}{107}', 'E': '\\frac{81}{80} </math>'}
+Answer: A
+
+--- Solution 1 ---
+Using difference of squares to factor the left term, we get
+<cmath>\frac{100^2-7^2}{70^2-11^2} \cdot \frac{(70-11)(70+11)}{(100-7)(100+7)} = \frac{(100-7)(100+7)}{(70-11)(70+11)} \cdot \frac{(70-11)(70+11)}{(100-7)(100+7)}.</cmath>
+Cancelling all the terms, we get <math>\boxed{\textbf{(A) } 1}</math> as the answer.
+
+
+=== Problem 3 ===
+The ratio of
+
+Choices: {'A': '4:3', 'B': '3:2', 'C': '8:3', 'D': '4:1', 'E': '16:3 </math>'}
+Answer: E
+
+--- Solution 1 ---
+We have <cmath>\frac wy = \frac wx \cdot \frac xz \cdot \frac zy = \frac43\cdot\frac61\cdot\frac23=\frac{16}{3},</cmath> from which <math>w:y=\boxed{\textbf{(E)}\ 16:3}.</math>
+
+--- Solution 2 ---
+We need to somehow link all three of the ratios together. We can start by connecting the last two ratios together by multiplying the last ratio by two. 
+
+<math>z:x=1:6=2:12</math>, and since <math>y:z=3:2</math>, we can link them together to get <math>y:z:x=3:2:12</math>.
+
+Finally, since <math>x:w=3:4=12:16</math>, we can link this again to get: <math>y:z:x:w=3:2:12:16</math>, so <math>w:y = \boxed{\textbf{(E)}\ 16:3}</math>.
+
+--- Solution 3 ---
+We have the equations <math>\frac{w}{x}=\frac{4}{3}</math>, <math>\frac{y}{z}=\frac{3}{2}</math>, and <math>\frac{z}{x}=\frac{1}{6}</math>.
+Clearing denominators, we have <math>3w = 4x</math>, <math>2y = 3z</math>, and <math>6z = x</math>. 
+Since we want <math>\frac{w}{y}</math>, we look to find <math>y</math> in terms of <math>x</math> since we know the relationship between <math>x</math> and <math>w</math>.
+We begin by multiplying both sides of <math>2y = 3z</math> by two, obtaining <math>4y = 6z</math>. We then substitute that into <math>6z = x</math> 
+to get <math>4y = x</math> . Now, to be able to substitute this into out first equation, we need to have <math>4x</math> on the RHS. 
+Multiplying both sides by <math>4</math>, we have <math>16y = 4x</math>. 
+Substituting this into our first equation, we have <math>3w = 16y</math>, or <math>\frac{w}{y}=\frac{16}{3}</math>, so our answer is <math>\boxed{\textbf{(E)}\ 16:3}</math>.
+
+--- Solution 4 ---
+WLOG, let <math>w=4</math> and <math>x=3</math>. 
+
+Since the ratio of <math>z</math> to <math>x</math> is <math>1:6</math>, we can substitute in the value of <math>x</math> to get <math>\frac{z}{3}=\frac{1}{6} \implies z=\frac{1}{2}</math>. 
+
+The ratio of <math>y</math> to <math>z</math> is <math>3:2</math>, so <math>\frac{y}{\frac{1}{2}}=\frac{3}{2} \implies y=\frac{3}{4}</math>. 
+
+The ratio of <math>w</math> to <math>y</math> is then <math>\frac{4}{\frac{3}{4}}=\frac{16}{3}</math> so our answer is <math>\boxed{\textbf{(E)}\ 16:3}</math>.
+
+--- Solution 5 ---
+We have <math>\frac{w}{x}=\frac{4}{3}, \frac{y}{z}=\frac{3}{2}, \frac{z}{x}=\frac{1}{6}.</math> Find LCD: <math>\frac{w}{x}=\frac{8}{6}, \frac{z}{x}=\frac{1}{6}</math>, we have <math>\frac{w}{z}=\frac{8}{1}.</math> Similarly, <math>\frac{w}{z}=\frac{16}{2}, \frac{y}{z}=\frac{3}{2},</math> so <math>\frac{w}{y}=\frac{16}{3},</math> <math>\boxed{\textbf{(E)}\ 16:3}</math>.
+
+
+=== Problem 4 ===
+The acute angles of a right triangle are
+
+Choices: {'A': '2', 'B': '3', 'C': '5', 'D': '7', 'E': '11</math>'}
+Answer: D
+
+--- Solution 1 ---
+Since the three angles of a triangle add up to <math>180^{\circ}</math> and one of the angles is <math>90^{\circ}</math> because it's a right triangle, <math>a^{\circ} + b^{\circ} = 90^{\circ}</math>.
+
+The greatest prime number less than <math>90</math> is <math>89</math>. If <math>a=89^{\circ}</math>, then <math>b=90^{\circ}-89^{\circ}=1^{\circ}</math>, which is not prime.
+
+The next greatest prime number less than <math>90</math> is <math>83</math>. If <math>a=83^{\circ}</math>, then <math>b=7^{\circ}</math>, which IS prime, so we have our answer <math>\boxed{\textbf{(D)}\ 7}</math>
+
+--- Solution 2 ---
+Looking at the answer choices, only <math>7</math> and <math>11</math> are coprime to <math>90</math>. Testing <math>7</math>, the smaller angle, makes the other angle <math>83</math> which is prime, therefore our answer is <math>\boxed{\textbf{(D)}\ 7}</math>
+
+--- Solution 3 ---
+It is clear that <math>\gcd(a,b)=1.</math> By the Euclidean Algorithm, we have <cmath>\gcd(a,b)=\gcd(a+b,b)=\gcd(90,b)=1,</cmath> so <math>90</math> and <math>b</math> are relatively prime.
+
+The least such prime number <math>b</math> is <math>7,</math> from which <math>a=90-b=83</math> is also a prime number. Therefore, the answer is <math>\boxed{\textbf{(D)}\ 7}.</math>
+
+
+=== Problem 5 ===
+Teams
+
+Choices: {'A': '21', 'B': '27', 'C': '42', 'D': '48', 'E': '63</math>'}
+Answer: C
+
+--- Solution 1 ---
+Suppose team <math>A</math> has played <math>g</math> games in total so that it has won <math>\frac23g</math> games.
+It follows that team <math>B</math> has played <math>g+14</math> games in total so that it has won <math>\frac23g+7</math> games.
+
+We set up and solve an equation for team <math>B</math>'s win ratio:
+<cmath>\begin{align*}
+\frac{\frac23g+7}{g+14}&=\frac58 \\
+\frac{16}{3}g+56&=5g+70 \\
+\frac13g&=14 \\
+g&=\boxed{\textbf{(C) } 42}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+If we consider the number of games team <math>B</math> has played as <math>x</math> and the number of games that team <math>A</math> has played as <math>y</math>, then we can set up the following system of equations:
+<cmath>\begin{align*}
+\frac{5}{8}x &= \frac{2}{3}y+7, \\
+\frac{3}{8}x &= \frac{1}{3}y+7.
+\end{align*}</cmath>
+The first system equated the number of wins of each team, while the second system equates the number of losses by each team. By multiplying the second equation by <math>2</math> and solving the system, we get <math>y = 42</math> or answer choice <math>\boxed{\textbf{(C) } 42}.</math>
+
+--- Solution 3 ---
+First, let us assign some variables. Let
+<cmath>A_w=2x, \ A_l=x, \ A_g=3x,</cmath>
+<cmath>B_w=5y, \ B_l=3y, \ B_g=8y,</cmath>
+where <math>X_w</math> denotes number of games won, <math>X_l</math> denotes number of games lost, and <math>X_g</math> denotes total games played for <math>X\in \{A, B\}</math>. Using the given information, we can set up the following two equations:
+<cmath>\begin{align*}
+B_w=A_w+7&\implies 5y=2x+7, \\
+B_l=A_l+7&\implies 3y=x+7.
+\end{align*}</cmath>
+We can solve through substitution, as the second equation can be written as <math>x=3y-7</math>, and plugging this into the first equation gives <math>5y=6y-7\implies y=7</math>, which means <math>x=3(7)-7=14</math>. Finally, we want the total number of games team <math>A</math> has played, which is <math>A_g=3(14)=\boxed{\textbf{(C) } 42}</math>.
+
+--- Solution 4 ---
+Using the information from the problem, we can note that team <math>A</math> has lost <math>\frac{1}{3}</math> of their matches. Using the answer choices, we can construct the following list of possible win-lose scenarios for <math>A,</math> represented in the form <math>(w, l)</math> for convenience:
+<cmath>\begin{align*}
+\textbf{(A)} &\implies (14, 7) \\
+\textbf{(B)} &\implies (18, 9) \\
+\textbf{(C)} &\implies (28, 14) \\
+\textbf{(D)} &\implies (32, 16) \\
+\textbf{(E)} &\implies (42, 21)
+\end{align*}</cmath>
+Thus, we have <math>5</math> matching <math>B</math> scenarios, simply adding <math>7</math> to <math>w</math> and <math>l.</math> We can then test each of the five <math>B</math> scenarios for <math>\frac{w}{w+l} = \frac{5}{8}</math> and find that <math>(35, 21)</math> fits this description. Then working backwards and subtracting <math>7</math> from <math>w</math> and <math>l</math> gives us the point <math>(28, 14),</math> making the answer <math>\boxed{\textbf{(C) } 42}.</math>
+
+--- Solution 5 ---
+Let's say that team <math>A</math> plays <math>n</math> games in total. Therefore, team <math>B</math> must play <math>n + 14</math> games in total (7 wins, 7 losses) Since the ratio of <math>A</math> is <cmath>\frac{2}{3} \implies n \equiv 0 \pmod{3}</cmath> Similarly, since the ratio of <math>B</math> is <cmath>\frac{5}{8} \implies n + 14 \equiv 0 \pmod{8}</cmath> Now, we can go through the answer choices and see which ones work:
+<cmath>\begin{align*}
+\textbf{(A) } 21 &\implies 21 + 14 = 35 \not \equiv 0\pmod{8} \\
+\textbf{(B) } 27 &\implies 27 + 14 = 41 \not \equiv 0\pmod{8} \\
+\textbf{(C) } 42 &\implies 42 + 14 = 56  \equiv 0\pmod{8} \\
+\textbf{(D) } 48 &\implies 48 + 14 = 62 \not \equiv 0\pmod{8} \\
+\textbf{(E) } 63 &\implies 63 + 14 = 77 \not \equiv 0\pmod{8} \\
+\end{align*}</cmath>
+So we can see <math>\boxed{\textbf{(C) } 42}</math> is the only valid answer.
+
+
+=== Problem 6 ===
+For all integers
+
+Choices: {'A': '\\text{a multiple of 4}', 'B': '\\text{a multiple of 10}', 'C': '\\text{a prime number}', 'D': '\\text{a perfect square}', 'E': '\\text{a perfect cube}</math>'}
+Answer: D
+
+--- Solution 1 ---
+We first expand the expression:
+<cmath>\frac{(n+2)!-(n+1)!}{n!} = \frac{(n+2)(n+1)n!-(n+1)n!}{n!}.</cmath>
+We can now divide out a common factor of <math>n!</math> from each term of the numerator:
+<cmath>(n+2)(n+1)-(n+1).</cmath>
+Factoring out <math>(n+1),</math> we get <cmath>[(n+2)-1](n+1) = (n+1)^2,</cmath>
+which proves that the answer is <math>\boxed{\textbf{(D) } \text{a perfect square}}.</math>
+
+--- Solution 2 ---
+In the numerator, we factor out an <math>n!</math> to get <cmath>\frac{(n+2)!-(n+1)!}{n!} = (n+2)(n+1)-(n+1).</cmath> Now, without loss of generality, test values of <math>n</math> until only one answer choice is left valid:
+
+* <math>n = 1 \implies (3)(2) - (2) = 4,</math> knocking out <math>\textbf{(B)},\textbf{(C)},</math> and <math>\textbf{(E)}.</math>
+
+* <math>n = 2 \implies (4)(3) - (3) = 9,</math> knocking out <math>\textbf{(A)}.</math>
+
+This leaves <math>\boxed{\textbf{(D) } \text{a perfect square}}</math> as the only answer choice left.
+
+This solution does not consider the condition <math>n \geq 9.</math> The reason is that, with further testing it becomes clear that for all <math>n,</math> we get <cmath>(n+2)(n+1)-(n+1) = (n+1)^{2},</cmath> as proved in Solution 1. The condition <math>n \geq 9</math> was added most likely to encourage picking <math>\textbf{(B)}</math> and discourage substituting smaller values into <math>n.</math>
+
+
+=== Problem 7 ===
+Two nonhorizontal, non vertical lines in the
+
+Choices: {'A': '\\ \\frac16', 'B': '\\ \\frac23', 'C': '\\  \\frac32', 'D': '\\ 3', 'E': '\\ 6</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let the intersection point be the origin. Let <math>(a,b)</math> be a point on the line of lesser slope. The mutliplication of <math>a+bi</math> by cis 45.
+<math>(a+bi)(\frac{1}{\sqrt 2 }+i*\frac{1}{\sqrt 2 })=\frac{1}{\sqrt 2 }((a-b)+(a+b)*i)</math> and therefore <math>(a-b, a+b)</math> lies on the line of greater slope.
+
+Then, the rotation of <math>(a,b)</math> by 45 degrees gives a line of slope <math>\frac{a+b}{a-b}</math>.
+
+We get the equation <math>\frac{6b}{a}=\frac{a+b}{a-b}\implies a^2-5ab+6b^2=(a-3b)(a-2b)=0</math> and this gives our answer to be <math>\mathbf{(C)} \frac{3}{2}</math>.
+
+--- Solution 2 ---
+Let the lines intersect at the origin. The problem is basically saying a line <math>y = ax</math> is rotated <math>45^\circ</math> and becomes a new line <math>y = 6ax.</math> In polar form, <math>x = r\cos\theta</math> and <math>y = r\sin\theta</math>. Rotating <math>45^\circ</math> counterclockwise gives us 
+
+<cmath>x' = r\cos(\theta + 45^\circ) = r(\cos\theta \cos 45^\circ - \sin\theta \sin 45^\circ) = \frac{\sqrt{2}}{2}(x-y) = \frac{\sqrt{2}}{2}x(1-a)</cmath>
+
+<cmath>y' = r\sin(\theta + 45^\circ) = r(\sin\theta \cos 45^\circ + \cos\theta \sin 45^\circ) = \frac{\sqrt{2}}{2}(x+y) = \frac{\sqrt{2}}{2}x(1+a)</cmath>
+
+So the slope of the new line is <math>\frac{y'}{x'} = \frac{1 + a}{1 - a}.</math> 
+
+Now we have <math>\frac{1 + a}{1 - a} = 6a.</math>
+
+Solving gives us <math>a = \frac{1}{2}</math> or <math>\frac{1}{3}.</math> The product is maximized when <math>a = \frac{1}{2}, 6a = 3.</math> So the answer is <math>\boxed{\frac{3}{2}}.</math>
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 3 ---
+Intersect at the origin and select a point on each line to define vectors <math>\mathbf{v}_{i}=(x_{i},y_{i})</math>.
+Note that <math>\theta=45^{\circ}</math> gives equal magnitudes of the vector products
+<cmath>\mathbf{v}_1\cdot\mathbf{v}_2 = v_{1}v_{2}\cos\theta \quad\mathrm{and}\quad
+|\mathbf{v}_1\times\mathbf{v}_2| = v_{1}v_{2}\sin\theta .</cmath>
+
+Substituting coordinate expressions for vector products, we find
+<cmath>\mathbf{v}_1\cdot\mathbf{v}_2 = |\mathbf{v}_1\times\mathbf{v}_2|
+\ \implies\ x_{1}x_{2}+y_{1}y_{2} = x_{1}y_{2}-x_{2}y_{1} .</cmath>
+Divide this equation by <math>x_{1}x_{2}</math> to obtain
+<cmath>1+m_{1}m_{2} = m_{2}-m_{1} ,</cmath>
+where <math>m_{i}=y_{i}/x_{i}</math> is the slope of line <math>i</math>.
+Taking <math>m_{2}=6m_{1}</math> , we obtain
+<cmath>6m_{1}^{2}-5m_{1}+1 = 0
+\ \implies\ m_{1} \in \{\frac{1}{3},\frac{1}{2}\} .</cmath>
+The latter solution gives the largest product of slopes <math>m_{1}m_{2} = 6m_{1}^2 = \frac{3}{2} . \quad \boxed{\textbf{(C)}}</math>
+
+--- Solution 4 ---
+Place on coordinate plane.
+Lines are <math>y=mx, y=6mx.</math> The intersection point at the origin.
+Goes through <math>(0,0),(1,m),(1,6m),(1,0).</math>
+So by law of sines, <math>\frac{5m}{\sin{45^{\circ}}} = \frac{\sqrt{1+m^2}}{1/(\sqrt{1+36m^2})},</math> lettin <math>a=m^2</math> we want <math>6a.</math>
+Simplifying gives <math>50a = (1+a)(1+36a),</math> so <math>36a^2-13a+1=0 \implies 36(a-1/4)(a-1/9)=0,</math> so max <math>a=1/4,</math> and <math>6a=3/2 \quad \boxed{(C)}.</math>
+
+Law of sines on the green triangle with the red angle (45 deg) and blue angle, where sine blue angle is <math>1/(\sqrt{1+36m^2})</math> from right triangle w vertices <math>(0,0),(1,0),(1,6m).</math>
+
+--- Solution 5 ---
+Let one of the lines have equation <math>y=ax</math>. Let <math>\theta</math> be the angle that line makes with the x-axis, so <math>\tan(\theta)=a</math>. The other line will have a slope of <math>\tan(45^{\circ}+\theta)=\frac{\tan(45^{\circ})+\tan(\theta)}{1-\tan(45^{\circ})\tan(\theta)} = \frac{1+a}{1-a}</math>. Since the slope of one line is <math>6</math> times the other, and <math>a</math> is the smaller slope, <math>6a = \frac{1+a}{1-a} \implies 6a-6a^2=1+a \implies 6a^2-5a+1=0 \implies a=\frac{1}{2},\frac{1}{3}</math>. If <math>a = \frac{1}{2}</math>, the other line will have slope <math>\frac{1+\frac{1}{2}}{1-\frac{1}{2}} = 3</math>. If <math>a = \frac{1}{3}</math>, the other line will have slope <math>\frac{1+\frac{1}{3}}{1-\frac{1}{3}} = 2</math>. The first case gives the bigger product of <math>\frac{3}{2}</math>, so our answer is <math>\boxed{\textbf{(C)}\  \frac32}</math>.
+
+--- Solution 6 ---
+Let the smaller slope be <math>m</math>, then the larger slope is <math>6m</math>. Since we want the greatest product we begin checking each answer choice, starting with (E). 
+
+<math>6m^2=6</math>.
+
+<math>m^2=1</math>.
+
+This gives <math>m=1</math> and <math>6m=6</math>. Checking with a protractor we see that this does not form a 45 degree angle.
+
+Using this same method for the other answer choices, we eventually find that the answer is <math>\boxed{\textbf{(C)}\  \frac32}</math> since our slopes are <math>\frac12</math> and <math>3</math> which forms a perfect 45 degree angle.
+
+--- Solution 7 ---
+If you have this formula memorized then it will be very easy to do: If <math>\theta</math> is the angle between two lines with slopes <math>m_1</math> and <math>m_2</math>, then <math>\tan(\theta)=\frac{m_1-m_2}{1+m_1m_2}</math>.
+
+Now let the smaller slope be <math>m</math>, thus the other slope is <math>6m</math>. Using our formula above: <cmath>\tan(45^\circ)=\frac{6m-m}{1+6m^2} \implies 6m^2-5m+1=0 \implies (2m-1)(3m-1)=0.</cmath> Therefore the two possible values for <math>m</math> are <math>\tfrac{1}{2}</math> and <math>\tfrac{1}{3}</math>. We choose the larger one and thus our answer is <cmath>6m^2=6 \cdot \frac{1}{4} = \frac{3}{2} \implies \boxed{\mathbf{(C)}}.</cmath>
+
+
+=== Problem 8 ===
+How many ordered pairs of integers
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '\\text{infinitely many}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Rearranging the terms and and completing the square for <math>y</math> yields the result <math>x^{2020}+(y-1)^2=1</math>. Then, notice that <math>x</math> can only be <math>0</math>, <math>1</math> and <math>-1</math> because any value of <math>x^{2020}</math> that is greater than 1 will cause the term <math>(y-1)^2</math> to be less than <math>0</math>, which is impossible as <math>y</math> must be real. Therefore, plugging in the above values for <math>x</math> gives the ordered pairs <math>(0,0)</math>, <math>(1,1)</math>, <math>(-1,1)</math>, and <math>(0,2)</math> gives  a  total  of <math>\boxed{\textbf{(D) }4}</math> ordered pairs.
+
+--- Solution 2 ---
+Bringing all of the terms to the LHS, we see a quadratic equation <cmath>y^2 - 2y + x^{2020} = 0</cmath> in terms of <math>y</math>. Applying the quadratic formula, we get <cmath>y = \frac{2\pm\sqrt{4-4\cdot1\cdot x^{2020}}}{2}=\frac{2\pm\sqrt{4(1-x^{2020})}}{2}.</cmath> In order for <math>y</math> to be real, which it must be given the stipulation that we are seeking integral answers, we know that the discriminant, <math>4(1-x^{2020})</math> must be nonnegative. Therefore, <cmath>4(1-x^{2020}) \geq 0 \implies x^{2020} \leq 1.</cmath> Here, we see that we must split the inequality into a compound, resulting in <math>-1 \leq x \leq 1</math>. 
+
+The only integers that satisfy this are <math>x \in \{-1,0,1\}</math>. Plugging these values back into the quadratic equation, we see that <math>x = \{-1,1\}</math> both produce a discriminant of <math>0</math>, meaning that there is only 1 solution for <math>y</math>. If <math>x = \{0\}</math>, then the discriminant is nonzero, therefore resulting in two solutions for <math>y</math>. 
+
+Thus, the answer is <math>2 \cdot 1 + 1 \cdot 2 = \boxed{\textbf{(D) }4}</math>.
+
+
+=== Solution 3: Solve for x first ===
+Set it up as a quadratic in terms of y:
+<cmath>y^2-2y+x^{2020}=0</cmath>
+Then the discriminant is
+<cmath>\Delta = 4-4x^{2020}</cmath>
+This will clearly only yield real solutions when <math>|x^{2020}| \leq 1</math>, because the discriminant must be positive.
+Then <math>x=-1,0,1</math>. Checking each one:
+<math>-1</math> and <math>1</math> are the same when raised to the 2020th power:
+<cmath>y^2-2y+1=(y-1)^2=0</cmath>
+This has only has solutions <math>1</math>, so <math>(\pm 1,1)</math> are solutions.
+Next, if <math>x=0</math>:
+<cmath>y^2-2y=0 \Rightarrow y(y-2)=0</cmath>
+Which has 2 solutions, so <math>(0,2)</math> and <math>(0,0)</math>.
+
+These are the only 4 solutions, so our answer is <math>\boxed{\textbf{(D) } 4}</math>.
+
+
+=== Solution 4: Solve for y first ===
+Move the <math>y^2</math> term to the other side to get <math>x^{2020}=2y-y^2 = y(2-y)</math>. 
+
+Because <math>x^{2020} \geq 0</math> for all <math>x</math>, then <math>y(2-y) \geq 0 \Rightarrow y = 0,1,2</math>. 
+
+If <math>y=0</math> or <math>y=2</math>, the right side is <math>0</math> and therefore <math>x=0</math>. 
+
+When <math>y=1</math>, the right side become <math>1</math>, therefore <math>x=1,-1</math>. 
+
+Our solutions are <math>(0,2)</math>, <math>(0,0)</math>, <math>(1,1)</math>, <math>(-1,1)</math>. These are the only <math>4</math> solutions, so the answer is <math>\boxed{\textbf{(D) } 4}</math> 
+
+- wwt7535
+
+
+=== Solution 5: Similar to solution 4===
+Since <math>x^{2020}</math> and <math>y^2</math> are perfect squares, they are both nonnegative. That means <math>y^2</math> plus a nonnegative number equals <math>2y</math>, which means <math>y^2 \leq 2y.</math> The only possible integer values for <math>y</math> are <math>0, 1, 2</math>.
+
+For <math>y=0</math>, <math>x</math> can only be <math>0</math>.
+
+For <math>y=1</math>, <math>x^2=1</math> so <math>x=1, -1</math>.
+
+For <math>y=2</math>, <math>x</math> can only be <math>0</math> as well.
+
+This gives us the solutions <math>(0, 0)</math>, <math>(1, 1)</math>, <math>(-1, 1)</math>, and <math>(0, 2)</math>. These are the only solutions, so there is a total of <math>\boxed{\textbf{(D) } 4}</math> ordered pairs.
+
+- kc1374
+
+=== Solution 6: (Casework)===
+We see that <math>x</math> has to be <math>1</math>, <math>0</math>, or <math>-1</math>, as any other integer would make this value too large. We also know that because <math>2020</math> is even, both <math>-1</math>, and <math>1</math> for <math>x</math> will yield the same <math>x^{2020}</math> value of <math>1</math>. 
+
+'''Case 1''': <math>x=0</math>. This gives us that <math>y^2 = 2y</math>. Dividing both sides by <math>y</math> gives us <math>y = 2</math>. Additionally, we know intuitively that <math>y = 0</math> is also a case, which gives us 2 possibilities for this case.
+
+'''Case 2''': <math>x = 1</math> or <math>-1</math>. This gives us that <math>1 + y^2 = 2y</math>. Bringing the <math>2y</math> to the other side, we have a simple quadratic.  <math>y^2-2y + 1 = 0</math>. Factor to get <math>(y-1)^2 = 0</math> so <math>y = 1</math>. Because this works for <math>x</math> as <math>-1</math> and <math>1</math>, there are 2 possibilities for this case.
+
+Adding the cases gets us our final answer of <math>\boxed{\textbf{(D) } 4}</math> ordered pairs.
+
+=== Solution 7: (Casework)===
+We can move the <math>y^2</math> term to the other side to obtain <math>x^{2020} = 2y - y^2</math>, which can be easily factored into <math>x^{2020} = (2-y)y</math>. If we raise each side to the power 1/2020, we get <math>x = ((2-y)(y))^{1/2020}</math>. Since we're dealing with integer values, the inside of the square root and thus <math>(2-y)y</math> must be greater than <math>0</math>. For this to happen, <math>y</math> must be between <math>0</math> and <math>2</math> inclusive. Testing each integer value, we get the cases:
+
+<math>\textbf{Case 1}</math>: When <math>y=0</math>, then <math>y(2-y)</math> is also 0, and since the square root of <math>0</math> is <math>0</math>, <math>x</math> must also be <math>0</math>. So our first pair of solutions is <math>(0,0)</math>. 
+
+<math>\textbf{Case 2}</math>: When <math>y=1</math>, then <math>y(2-y)</math> is also 1. The possible values for <math>x</math> are <math>1</math> and <math>-1</math>, so we get 2 more pairs of solutions: <math>(1, -1)</math> and <math>(1,1)</math>. 
+
+<math>\textbf{Case 3}</math>: When <math>y=2</math>, then <math>y(2-y)</math> is <math>0</math>, and since the square root of <math>0</math> is <math>0</math>, <math>x</math> must also be <math>0</math> - so we get one more pair of solutions, <math>(2,0)</math>
+
+If we count all these pairs(<math>(0,0),(1,-1),(1,1),(2,0)</math>), we have 4 pairs of solutions, so our answer is  <math>\boxed{\textbf{(D) } 4}</math> ordered pairs. 
+
+- youtube.com/indianmathguy
+
+
+=== Problem 9 ===
+A three-quarter sector of a circle of radius
+
+Choices: {'A': '\\ 3\\pi \\sqrt5', 'B': '\\ 4\\pi \\sqrt3', 'C': '\\ 3 \\pi \\sqrt7', 'D': '\\ 6\\pi \\sqrt3', 'E': '\\ 6\\pi \\sqrt7</math>'}
+Answer: C
+
+--- Solution 1 ---
+Notice that when the cone is created, the 2 shown radii when merged will become the slant height of the cone and the intact circumference of the circle will become the circumference of the base of the cone. 
+
+We can calculate that the intact circumference of the circle is <math>8\pi\cdot\frac{3}{4}=6\pi</math>. Since that is also equal to the circumference of the cone, the radius of the cone is <math>3</math>. We also have that the slant height of the cone is <math>4</math>. Therefore, we use the Pythagorean Theorem to calculate that the height of the cone is <math>\sqrt{4^2-3^2}=\sqrt7</math>. The volume of the cone is <math>\frac{1}{3}\cdot\pi\cdot3^2\cdot\sqrt7=\boxed{\textbf{(C)}\ 3 \pi \sqrt7 }</math>
+
+-PCChess
+
+--- Solution 2 ---
+Using a ruler, measure a circle of radius 4 and cut out the circle and then the quarter missing. Then, fold it into a cone and measure the diameter to be 6 cm <math>\implies r=3</math>. You can form a right triangle with sides 3, 4, and then through the Pythagorean theorem the height <math>h</math> is found to be <math>h^2 = 4^{2} - 3^{2} \implies h = \sqrt{7}</math>. The volume of a cone is <math>\frac{1}{3}\pi r^{2}h</math>. Plugging in we find <math>V = 3\pi \sqrt{7} \implies \boxed{\textbf{(C)}}</math>
+
+- DBlack2021
+
+--- Solution 3 ---
+The radius of the given <math>\frac{3}{4}</math> - circle will end up being the slant height of the cone. Thus, the radius and height of the cone are legs of a right triangle with hypotenuse <math>4</math>. The volume of a cone is <math>\frac{1}{3}\pi r^{2}h</math>. Using this with the options, we can take out the <math>\pi</math> and multiply the coefficient of the radical by <math>3</math> to get <math>r^{2}h</math>. We can then use the <math>r</math> and <math>h</math> values to see that the only option that satisfies <math>r^2+h^2=4^2=16</math> is <math>\boxed{\textbf{(C)}}</math>
+
+- ColtsFan10
+
+
+=== Problem 10 ===
+In unit square
+
+Choices: {'A': '\\frac{\\sqrt5}{12}', 'B': '\\frac{\\sqrt5}{10}', 'C': '\\frac{\\sqrt5}{9}', 'D': '\\frac{\\sqrt5}{8}', 'E': '\\frac{2\\sqrt5}{15}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Call the midpoint of <math>\overline{AB}</math> point <math>N.</math> Draw in <math>\overline{NM}</math> and <math>\overline{NP}.</math> Note that <math>\angle{NPM}=90^{\circ}</math> due to Thales's Theorem.
+<asy>
+/* Made by QIDb602; edited by MRENTHUSIASM */
+size(180);
+pair A, B, C, D, M, N, O, P;
+O = origin;
+A = (-1/2,-1/2);
+B = (-1/2,1/2);
+C = (1/2,1/2);
+D = (1/2,-1/2);
+M = midpoint(C--D);
+N = midpoint(A--B);
+path p;
+p = Circle(O,1/2);
+P = intersectionpoints(A--M,p)[0];
+fill(N--A--M--cycle,yellow);
+dot("$\omega$",O,1.5*(0,1),linewidth(4));
+dot("$A$",A,1.5*SW,linewidth(4));
+dot("$B$",B,1.5*NW,linewidth(4));
+dot("$C$",C,1.5*NE,linewidth(4));
+dot("$D$",D,1.5*SE,linewidth(4));
+dot("$M$",M,1.5*E,linewidth(4));
+dot("$N$",N,1.5*W,linewidth(4));
+dot("$P$",P,1.5*dir(60),linewidth(4));
+markscalefactor=0.00625;
+draw(rightanglemark(A,N,M),red);
+draw(rightanglemark(N,P,A),red);
+draw(A--B--C--D--cycle^^A--M^^P--N--M^^p);
+</asy>
+Using the Pythagorean theorem, <math>AM=\frac{\sqrt{5}}{2}.</math> Now we just need to find <math>AP</math> using similar triangles <math>\triangle APN\sim\triangle ANM:</math>
+<cmath>\begin{align*}
+\frac{AP}{AN}&=\frac{AN}{AM} \\
+\frac{AP}{1/2}&=\frac{1/2}{\sqrt5/2} \\
+AP&=\boxed{\textbf{(B) } \frac{\sqrt5}{10}}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Let <math>N</math> be the midpoint of <math>\overline{AB},</math> from which <math>\angle ANM=90^\circ.</math> Note that <math>\angle NPM=90^\circ</math> by the Inscribed Angle Theorem.
+
+We have the following diagram:
+<asy>
+/* Made by MRENTHUSIASM */
+size(180);
+pair A, B, C, D, M, N, O, P;
+O = origin;
+A = (-1/2,-1/2);
+B = (-1/2,1/2);
+C = (1/2,1/2);
+D = (1/2,-1/2);
+M = midpoint(C--D);
+N = midpoint(A--B);
+path p;
+p = Circle(O,1/2);
+P = intersectionpoints(A--M,p)[0];
+fill(N--P--A--cycle,yellow);
+fill(N--P--M--cycle,green);
+dot("$\omega$",O,1.5*(0,1),linewidth(4));
+dot("$A$",A,1.5*SW,linewidth(4));
+dot("$B$",B,1.5*NW,linewidth(4));
+dot("$C$",C,1.5*NE,linewidth(4));
+dot("$D$",D,1.5*SE,linewidth(4));
+dot("$M$",M,1.5*E,linewidth(4));
+dot("$N$",N,1.5*W,linewidth(4));
+dot("$P$",P,1.5*dir(60),linewidth(4));
+markscalefactor=0.00625;
+draw(rightanglemark(A,N,M),red);
+draw(rightanglemark(N,P,A),red);
+draw(A--B--C--D--cycle^^A--M^^P--N--M^^p);
+</asy>
+Since <math>AN=\frac12</math> and <math>NM=1,</math> we get <math>AM=\frac{\sqrt5}{2}</math> by the Pythagorean Theorem. 
+
+Let <math>AP=x.</math> It follows that <math>PM=\frac{\sqrt5}{2}-x.</math> Applying the Pythagorean Theorem to right <math>\triangle ANP</math> gives <math>NP^2=\left(\frac12\right)^2-x^2,</math> and applying the Pythagorean Theorem to right <math>\triangle MNP</math> gives <math>NP^2=1^2-\left(\frac{\sqrt5}{2}-x\right)^2.</math> Equating the expressions for <math>NP^2</math> produces
+<cmath>\begin{align*}
+\left(\frac12\right)^2-x^2&=1^2-\left(\frac{\sqrt5}{2}-x\right)^2 \\
+\frac14-x^2&=1-\frac54+\sqrt5x-x^2 \\
+\frac12&=\sqrt5x.
+\end{align*}</cmath>
+Finally, dividing both sides by <math>\sqrt5</math> and then rationalizing the denominator, we obtain <math>x=\frac{1}{2\sqrt5}=\boxed{\textbf{(B) } \frac{\sqrt5}{10}}.</math>
+
+--- Solution 3 ---
+Let circle <math>\omega</math> intersect <math>\overline{AB}</math> at point <math>N</math>. By Power of a Point, we have <math>AN^2=AP\cdot AM</math>. We know <math>AN=\frac{1}{2}</math> because <math>N</math> is the midpoint of <math>\overline{AB}</math>, and we can easily find <math>AM</math> by the Pythagorean Theorem, which gives us <math>AM=\sqrt{1^2+\left(\frac{1}{2}\right)^2}=\frac{\sqrt{5}}{2}</math>. Our equation is now <math>\frac{1}{4}=AP\cdot \frac{\sqrt{5}}{2}</math>, or <math>AP=\frac{2}{4\sqrt{5}}=\frac{1}{2\sqrt{5}}=\frac{\sqrt{5}}{2\cdot 5}</math>, thus our answer is 
+<math>\boxed{\textbf{(B) } \frac{\sqrt5}{10}}.</math>
+
+--- Solution 4 ---
+Let <math>O</math> be the center of the circle and the point of tangency between <math>\omega</math> and <math>\overline{AD}</math> be represented by <math>K</math>. We know that <math>\overline{AK} = \overline{KD} = \overline{DM} = \frac{1}{2}</math>. Consider the right triangle <math>\bigtriangleup ADM</math>. Let <math>\measuredangle AMD = \theta</math>. 
+
+Since <math>\omega</math> is tangent to <math>\overline{DC}</math> at <math>M</math>, <math>\measuredangle PMO = 90 - \theta</math>. Now, consider <math>\bigtriangleup POM</math>. This triangle is iscoceles because <math>\overline{PO}</math> and <math>\overline{OM}</math> are both radii of <math>\omega</math>. Therefore, <math>\measuredangle POM = 180 - 2(90 - \theta) = 2\theta</math>. 
+
+We can now use Law of Cosines on <math>\angle{POM}</math> to find the length of <math>{PM}</math> and subtract it from the length of <math>{AM}</math> to find <math>{AP}</math>. Since <math>\cos{\theta} = \frac{1}{\sqrt{5}}</math> and <math>\sin{\theta} = \frac{2}{\sqrt{5}}</math>, the double angle formula tells us that <math>\cos{2\theta} = -\frac{3}{5}</math>. We have
+<cmath>
+PM^2 = \frac{1}{2} - \frac{1}{2}\cos{2\theta} \implies PM = \frac{2\sqrt{5}}{5}.
+</cmath>
+By Pythagorean theorem, we find that <math>AM = \frac{\sqrt{5}}{2} \implies AP=\boxed{\textbf{(B) } \frac{\sqrt5}{10}}</math>.
+
+--- Solution 5 ---
+Take <math>O</math> as the center and draw segment <math>ON</math> perpendicular to <math>AM</math>, <math>ON\cap AM=N</math>, link <math>OM</math>. Then we have <math>OM\parallel AD</math>. So <math>\angle DAM=\angle OMA</math>. Since <math>AD=2AM=2OM=1</math>, we have <math>\cos\angle DAM=\cos\angle OMP=\frac{2}{\sqrt{5}}</math>. As a result, <math>NM=OM\cos\angle OMP=\frac{1}{2}\cdot \frac{2}{\sqrt{5}}=\frac{1}{\sqrt{5}}.</math> Thus <math>PM=2NM=\frac{2}{\sqrt{5}}=\frac{2\sqrt{5}}{5}</math>. Since <math>AM=\frac{\sqrt{5}}{2}</math>, we have <math>AP=AM-PM=\boxed{\textbf{(B) } \frac{\sqrt5}{10}}</math>.
+
+--- Solution 6 ---
+Place circle <math>\omega</math> in the Cartesian plane such that the center lies on the origin. Then we can easily find the equation for <math>\omega</math> as <math>x^2+y^2=\frac{1}{4}</math>, because it is not translated and the radius is <math>\frac{1}{2}</math>. 
+
+We have <math>A=\left(-\frac{1}{2}, \frac{1}{2}\right)</math> and <math>M=\left(0, -\frac{1}{2}\right)</math>. The slope of the line passing through these two points is <math>\frac{\frac{1}{2}+\frac{1}{2}}{-\frac{1}{2}-0}=\frac{1}{-\frac{1}{2}}=-2</math>, and the <math>y</math>-intercept is simply <math>M</math>. This gives us the line passing through both points as <math>y=-2x-\frac{1}{2}</math>. 
+
+We substitute this into the equation for the circle to get <math>x^2+\left(-2x-\frac{1}{2}\right)^2=\frac{1}{4}</math>, or <math>x^2+4x^2+2x+\frac{1}{4}=\frac{1}{4}</math>. Simplifying gives <math>x(5x+2)=0</math>. The roots of this quadratic are <math>x=0</math> and <math>x=-\frac{2}{5}</math>, but if <math>x=0</math> we get point <math>M</math>, so we only want <math>x=-\frac{2}{5}</math>.
+
+We plug this back into the linear equation to find <math>y=\frac{3}{10}</math>, and so <math>P=\left(-\frac{2}{5}, \frac{3}{10}\right)</math>. Finally, we use distance formula on <math>A</math> and <math>P</math> to get <math>AP=\sqrt{\left(-\frac{5}{10}+\frac{4}{10}\right)^2+\left(\frac{5}{10}-\frac{3}{10}\right)^2}=\sqrt{\frac{1}{100}+\frac{4}{100}}=\boxed{\textbf{(B) } \frac{\sqrt5}{10}}</math>.
+
+
+=== Problem 11 ===
+As shown in the figure below, six semicircles lie in the interior of a regular hexagon with side length <math>2</math> so that the diameters of the semicircles coincide with the sides of the hexagon. What is the area of the shaded region—inside the hexagon but outside all of the semicircles?
+
+<asy>
+size(140);
+fill((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--cycle,gray(0.4));
+fill(arc((2,0),1,180,0)--(2,0)--cycle,white);
+fill(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle,white);
+fill(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle,white);
+fill(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle,white);
+fill(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle,white);
+fill(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle,white);
+draw((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--(1,0));
+draw(arc((2,0),1,180,0)--(2,0)--cycle);
+draw(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle);
+draw(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle);
+draw(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle);
+draw(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle);
+draw(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle);
+label("$2$",(3.5,3sqrt(3)/2),NE);
+</asy>
+
+<math> \textbf {(A) } 6\sqrt{3}-3\pi \qquad \textbf {(B) } \frac{9\sqrt{3}}{2} - 2\pi\ \qquad \textbf {(C) } \frac{3\sqrt{3}}{2} - \frac{\pi}{3} \qquad \textbf {(D) } 3\sqrt{3} - \pi \qquad \textbf {(E) } \frac{9\sqrt{3}}{2} - \pi </math>
+
+Answer: D
+
+--- Solution 1 ---
+<asy>
+real x=sqrt(3);
+real y=2sqrt(3);
+real z=3.5;
+real a=x/2;
+real b=0.5;
+real c=3a;
+pair A, B, C, D, E, F;
+A = (1,0);
+B = (3,0);
+C = (4,x);
+D = (3,y);
+E = (1,y);
+F = (0,x);
+
+fill(A--B--C--D--E--F--A--cycle,grey);
+fill(arc((2,0),1,0,180)--cycle,white);
+fill(arc((2,y),1,180,360)--cycle,white);
+fill(arc((z,a),1,60,240)--cycle,white);
+fill(arc((b,a),1,300,480)--cycle,white);
+fill(arc((b,c),1,240,420)--cycle,white);
+fill(arc((z,c),1,120,300)--cycle,white);
+draw(A--B--C--D--E--F--A);
+draw(arc((z,c),1,120,300));
+draw(arc((b,c),1,240,420));
+draw(arc((b,a),1,300,480));
+draw(arc((z,a),1,60,240));
+draw(arc((2,y),1,180,360));
+draw(arc((2,0),1,0,180));
+label("2",(z,c),NE);
+
+pair X,Y,Z;
+X = (1,0);
+Y = (2,0);
+Z = (1.5,a);
+pair d = 1.9*dir(7);
+dot(X);
+dot(Y);
+dot(Z);
+label("A",X,SW);
+label("B",Y,SE);
+label("C",Z,N);
+draw(X--Y--Z--A);
+label("1",(1.5,0),S);
+label("1",(1.75,a/2),dir(30));
+draw(anglemark(Y,X,Z,8),blue);
+label("$60^\circ$",anglemark(Y,X,Z),d);
+</asy>
+
+Let point <math>A</math> be a vertex of the regular hexagon, let point <math>B</math> be the midpoint of the line connecting point <math>A</math> and a neighboring vertex, and let point <math>C</math> be the second intersection of the two semicircles that pass through point <math>A</math>. Then, <math>BC = 1</math>, since <math>B</math> is the center of the semicircle with radius <math>1</math> that <math>C</math> lies on, <math>AB = 1</math>, since <math>B</math> is the center of the semicircle with radius <math>1</math> that <math>A</math> lies on, and <math>\angle BAC = 60^\circ</math>, as a regular hexagon has angles of 120<math>^\circ</math>, and <math>\angle BAC</math> is half of any angle in this hexagon. Now, since <math>AB = BC</math>, <math>\angle ACB = \angle BAC = 60^\circ</math>. Since the angles in a triangle sum to 180<math>^\circ</math>, <math>\angle ABC</math> is also 60<math>^\circ</math>. Therefore, <math>\triangle ABC</math> is an equilateral triangle with side lengths of <math>1</math>.
+
+<asy>
+real x=sqrt(3);
+real y=2sqrt(3);
+real z=3.5;
+real a=x/2;
+real b=0.5;
+real c=3a;
+pair A, B, C, D, E, F;
+A = (1,0);
+B = (3,0);
+C = (4,x);
+D = (3,y);
+E = (1,y);
+F = (0,x);
+
+fill(A--B--C--D--E--F--A--cycle,grey);
+fill(arc((2,0),1,0,180)--cycle,white);
+fill(arc((2,y),1,180,360)--cycle,white);
+fill(arc((z,a),1,60,240)--cycle,white);
+fill(arc((b,a),1,300,480)--cycle,white);
+fill(arc((b,c),1,240,420)--cycle,white);
+fill(arc((z,c),1,120,300)--cycle,white);
+draw(A--B--C--D--E--F--A);
+draw(arc((z,c),1,120,300));
+draw(arc((b,c),1,240,420));
+draw(arc((b,a),1,300,480));
+draw(arc((z,a),1,60,240));
+draw(arc((2,y),1,180,360));
+draw(arc((2,0),1,0,180));
+pair G,H,I,J,K;
+G = (2,0);
+H = (2.5,a);
+I = (1.5,a);
+J = (1,0);
+K = (3,0);
+pair d = 2.7*dir(78);
+dot(G);
+dot(H);
+dot(I);
+dot(J);
+dot(K);
+label("2",(z,c),NE);
+label("1",(1.5,0),S);
+label("1",(2.5,0),S);
+add(pathticks(G--J,1,0.5,0,3,red));
+add(pathticks(I--J,1,0.5,0,3,red));
+add(pathticks(G--I,1,0.5,0,3,red));
+add(pathticks(G--H,1,0.5,0,3,red));
+add(pathticks(G--K,1,0.5,0,3,red));
+add(pathticks(K--H,1,0.5,0,3,red));
+label("$60^\circ$",anglemark(H,G,I),d);
+draw(anglemark(H,G,I,8),blue);
+label("$60^\circ$",G,2*dir(146));
+draw(anglemark(I,G,J,8),blue);
+label("$60^\circ$",G,2.8*dir(28));
+draw(anglemark(K,G,H,8),blue);
+draw(G--J--I--G);
+draw(G--H--K--G);
+</asy>
+
+Since the area of a regular hexagon can be found with the formula <math>\frac{3\sqrt{3}s^2}{2}</math>, where <math>s</math> is the side length of the hexagon, the area of this hexagon is <math>\frac{3\sqrt{3}(2^2)}{2} = 6\sqrt{3}</math>. Since the area of an equilateral triangle can be found with the formula <math>\frac{\sqrt{3}}{4}s^2</math>, where <math>s</math> is the side length of the equilateral triangle, the area of an equilateral triangle with side lengths of <math>1</math> is <math>\frac{\sqrt{3}}{4}\left(1^2\right) = \frac{\sqrt{3}}{4}</math>. Since the area of a circle can be found with the formula <math>\pi r^2</math>, the area of a sixth of a circle with radius <math>1</math> is <math>\frac{\pi(1^2)}{6} = \frac{\pi}{6}</math>. In each sixth of the hexagon, there are two equilateral triangles colored white, each with an area of <math>\frac{\sqrt{3}}{4}</math>, and one-sixth of a circle with radius <math>1</math> colored white, with an area of <math>\frac{\pi}{6}</math>. The rest of the sixth is colored gray. Therefore, the total area that is colored white in each sixth of the hexagon is <math>2\left(\frac{\sqrt{3}}{4}\right) + \frac{\pi}{6}</math>, which equals <math>\frac{\sqrt{3}}{2} + \frac{\pi}{6}</math>, and the total area colored white is <math>6\left(\frac{\sqrt{3}}{2} + \frac{\pi}{6}\right)</math>, which equals <math>3\sqrt{3} + \pi</math>. Since the area colored gray equals the total area of the hexagon minus the area colored white, the area colored gray is <math>6\sqrt{3} - (3\sqrt{3} + \pi)</math>, which equals <math>\boxed{\textbf{(D) }3\sqrt{3} - \pi}</math>.
+
+--- Solution 2 ---
+First, subdivide the hexagon into 24 equilateral triangles with side length 1:
+<asy> size(140); fill((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--cycle,gray(0.4)); fill(arc((2,0),1,180,0)--(2,0)--cycle,white); fill(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle,white); fill(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle,white); fill(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle,white); fill(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle,white); fill(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle,white); draw((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--(1,0)); draw(arc((2,0),1,180,0)--(2,0)--cycle); draw(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle); draw(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle); draw(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle); draw(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle); draw(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle); label("$2$",(3.5,3sqrt(3)/2),NE); 
+draw((1,0)--(3,2sqrt(3)));
+draw((3,0)--(1,2sqrt(3)));
+draw((4,sqrt(3))--(0,sqrt(3)));
+draw((2,0)--(3.5,3sqrt(3)/2));
+draw((3.5,sqrt(3)/2)--(2,2sqrt(3)));
+draw((3.5,3sqrt(3)/2)--(0.5,3sqrt(3)/2));
+draw((2,2sqrt(3))--(0.5,sqrt(3)/2));
+draw((2,0)--(0.5,3sqrt(3)/2));
+draw((3.5,sqrt(3)/2)--(0.5,sqrt(3)/2));
+</asy>
+Now note that the entire shaded region is just 6 times this part:
+<asy> size(100);
+fill((2,sqrt(3))--(2.5,3sqrt(3)/2)--(2,2sqrt(3))--(1.5,3sqrt(3)/2)--cycle,gray(0.4));
+fill(arc((2,2sqrt(3)),1,240,300)--(2,2sqrt(3))--cycle,white); 
+draw(arc((2,2sqrt(3)),1,240,300)--(2,2sqrt(3))--cycle);
+label("$1$",(2.25,7sqrt(3)/4),NE); 
+draw((2,sqrt(3))--(2.5,3sqrt(3)/2)--(2,2sqrt(3))--(1.5,3sqrt(3)/2)--cycle);
+draw((2.5,3sqrt(3)/2)--(1.5,3sqrt(3)/2));
+</asy>
+The entire rhombus is just 2 equilateral triangles with side lengths of 1, so it has an area of:
+<cmath> 2\cdot\frac{\sqrt{3}}{4}=\frac{\sqrt{3}}{2}</cmath>
+The sector that is not included has an area of:
+<cmath> \frac16 \cdot\pi \cdot1^2 = \frac{\pi}{6}</cmath>
+Hence, the area of the shaded region in that section is <cmath>\frac{\sqrt{3}}{2}-\frac{\pi}{6}</cmath>
+For a final area of:
+<cmath>6\left(\frac{\sqrt{3}}{2}-\frac{\pi}{6}\right)=3\sqrt{3}-\pi\Rightarrow \boxed{\mathrm{(D)}}</cmath>
+
+--- Solution 3 ---
+We can see there are six congruent "leaves" on the original figure, and let us say the total area of them is <math>S</math>. If we make a circle with radius one in the circle (the dashed one), we can get another six congruent "leaves", and they are the same as the old six ones. So the area of the six new leaves can also be represented by <math>S</math>. 
+Then the area of the shaded region can be expressed in the following two ways:
+
+<math>[1]</math>. <math>\textbf{Area}</math> of hexagon - (<math>\textbf{Area}</math> of six semicircles <math>-</math> <math>\textbf{Area}</math> of six <math>\textbf{old}</math> "leaves") <math>=</math> <math>\frac{\sqrt{3}}{4} \cdot 4 \cdot 6 - (3\pi - S);</math>
+
+<math>[2]</math>. <math>\textbf{Area}</math>  of  dashed  circle <math>-</math> <math>\textbf{Area}</math> of six <math>\textbf{new}</math> "leaves" = <math>\pi - S;</math>
+
+Then we have <math>\frac{\sqrt{3}}{4} \cdot 4 \cdot 6 - (3\pi - S) = \pi - S</math>     
+
+<math>S = 2\pi - 3\sqrt{3}</math>
+
+Plugging <math>S</math> back in to either <math>[1]</math> or <math>[2]</math>, we can solve for the shaded area <math>= 3\sqrt{3} - \pi</math>  <math>\rightarrow\boxed{\mathrm{(D)}}</math>
+
+--RyanZ@BRS
+
+--Extremelysupercooldude (Minor latex and grammar edits)
+
+
+<asy>
+size(140);
+fill((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--cycle,gray(0.4));
+fill(arc((2,0),1,180,0)--(2,0)--cycle,white);
+fill(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle,white);
+fill(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle,white);
+fill(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle,white);
+fill(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle,white);
+fill(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle,white);
+draw((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--(1,0));
+draw(arc((2,0),1,180,0)--(2,0)--cycle);
+draw(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle);
+draw(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle);
+draw(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle);
+draw(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle);
+draw(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle);
+label("$2$",(3.5,3sqrt(3)/2),NE);
+draw(Arc((2,sqrt(3)), 1, 0, 360),dashed+linewidth(.5));
+</asy>
+
+--- Solution 4 ---
+We can set several variables.
+
+Let <math>x</math> be the area of the shaded region, and let <math>y</math> be the area of one of the 'leaf-shaped' regions.
+
+<asy>
+size(140);
+fill((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--cycle,gray(0.4));
+fill(arc((2,0),1,180,0)--(2,0)--cycle,white);
+fill(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle,white);
+fill(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle,white);
+fill(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle,white);
+fill(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle,white);
+fill(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle,white);
+draw((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--(1,0));
+label("$2$",(3.5,3sqrt(3)/2),NE);
+label("$x$",(2,1.6),N);
+label("$y$",(1.3,3.2),S);
+draw(arc((2,0),1,180,0)--(2,0)--cycle);
+draw(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle);
+draw(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle);
+draw(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle);
+draw(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle);
+draw(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle);
+draw((2.5,3sqrt(3)/2)--(1.5,3sqrt(3)/2));
+draw((2.5,0.87)--(3,2sqrt(3)/2));
+draw((3,2sqrt(3)/2)--(2.5,3sqrt(3)/2));
+draw((1,1.73)--(1.5,2.6));
+draw((1.5,0.87)--(1,1.73));
+draw((2.5,sqrt(3)/2)--(1.5,sqrt(3)/2));
+label("$1$", (1.2,2.2),W);
+</asy>
+
+We then can connect the vertices of <math>x</math>, and we end up with another hexagon, with side length <math>1</math>. Since each of the regions that are outside of <math>x</math> but inside of the smaller hexagon is half of <math>y</math>, their total area is <math>\frac{6y}{2} = 3y</math>. The smaller hexagon minus this region would be <math>x</math>. So,
+<cmath>x= \frac{3\sqrt{3}}{2} \cdot 1^{2} - 3y</cmath>
+
+Also, the area of the larger hexagon minus the semicircles ''then add'' back <math>6y</math> would also be <math>x</math>. (Note that by just subtracting the semicircles from the larger hexagon would result in an overlap of <math>6y</math>.) So,
+
+<cmath>x= \frac{3\sqrt{3}}{2} \cdot 2^{2} - 3\pi + 6y</cmath>
+
+Equating the equations, we have
+
+<cmath>\begin{align*}
+\frac{3\sqrt{3}}{2} \cdot 1^{2} - 3y &= \frac{3\sqrt{3}}{2} \cdot 2^{2} - 3\pi + 6y \\
+\frac{3\sqrt{3}}{2} - 3y &= 6\sqrt{3} - 3\pi + 6y \\
+\end{align*}</cmath>
+Solving for <math>y</math>, we have
+
+<cmath>\begin{align*}
+9y &= \frac{3\sqrt{3}}{2} - 6\sqrt{3} + 3\pi \\
+&=-\frac{9\sqrt{3}}{2} + 3\pi \\
+\end{align*}</cmath>
+
+Then, we can plug this back into 
+
+<cmath>x= \frac{3\sqrt{3}}{2} \cdot 1^{2} - 3y</cmath>
+
+Since <math>9y = -\frac{9\sqrt{3}}{2} + 3\pi</math>, dividing by <math>3</math> gives 
+
+<cmath>\begin{align*}
+3y &= -\frac{9\sqrt{3}}{2} \times \frac{1}{3} + \pi \\
+&=-\frac{3\sqrt{3}}{2} + \pi \\
+\end{align*}</cmath>
+
+Therefore, <math>x = \frac{3\sqrt{3}}{2} - (-\frac{3\sqrt{3}}{2} + \pi) \implies x= \boxed{\textbf{(D)}
+
+--- Solution 5 ---
+<asy>
+size(140);
+fill((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--cycle,gray(0.4));
+fill(arc((2,0),1,180,0)--(2,0)--cycle,white);
+fill(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle,white);
+fill(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle,white);
+fill(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle,white);
+fill(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle,white);
+fill(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle,white);
+draw((1,0)--(3,0)--(4,sqrt(3))--(3,2sqrt(3))--(1,2sqrt(3))--(0,sqrt(3))--(1,0));
+label("$2$",(3.5,3sqrt(3)/2),NE);
+draw(arc((2,0),1,180,0)--(2,0)--cycle);
+draw(arc((3.5,sqrt(3)/2),1,60,240)--(3.5,sqrt(3)/2)--cycle);
+draw(arc((3.5,3sqrt(3)/2),1,120,300)--(3.5,3sqrt(3)/2)--cycle);
+draw(arc((2,2sqrt(3)),1,180,360)--(2,2sqrt(3))--cycle);
+draw(arc((0.5,3sqrt(3)/2),1,240,420)--(0.5,3sqrt(3)/2)--cycle);
+draw(arc((0.5,sqrt(3)/2),1,300,480)--(0.5,sqrt(3)/2)--cycle);
+draw((2.5,3sqrt(3)/2)--(1.5,3sqrt(3)/2));
+draw((2.5,0.87)--(3,2sqrt(3)/2));
+draw((3,2sqrt(3)/2)--(2.5,3sqrt(3)/2));
+draw((1,1.73)--(1.5,2.6));
+draw((1.5,0.87)--(1,1.73));
+draw((2.5,sqrt(3)/2)--(1.5,sqrt(3)/2));
+label("$1$", (2, 0.9), S);
+draw((1.43, 1)--(2, 0)--(2.57, 1));
+</asy>
+
+First we connect every vertex of the shaded portion to another, forming an equilateral hexagon. Each interior angle of this hexagon is <math>120^{\circ},</math> the interior angles of the new triangle are all <math>60^{\circ}</math>. As the radius of the semicircle is <math>1</math>, we know that this hexagon has side length <math>1</math>, so its area is given by the combined area of six equilateral triangles with side length <math>1</math>, or <math>\frac{\sqrt{3}}{4}\cdot 6 = \frac{3\sqrt{3}}{2}.</math>
+
+Now, we have to subtract off the six mini-sectors between the triangle and the shaded area. The area of one of these mini-sectors is the difference between a <math>60^{\circ}</math> sector of the semicircle and the equilateral we just drew. The area of a sector is just <math>\frac{\pi}{6}</math>, and the area of a triangle is <math>\frac{\sqrt{3}}{4}.</math> Therefore our combined area of the mini-sectors is 
+<cmath>6\left(\frac{\pi}{6} - \frac{\sqrt{3}}{4}\right) = \pi-\frac{3\sqrt{3}}{2}.</cmath>
+Subtracting this from the area of the (smaller) hexagon, the desired area is 
+
+<cmath>\frac{3\sqrt{3}}{2} -\left(\pi - \frac{3\sqrt{3}}{2}\right) = \boxed{\textbf{(D)} 
+-Benedict T (countmath1)
+
+
+=== Problem 12 ===
+Let
+
+Choices: {'A': '\\ 96', 'B': '\\ 98', 'C': '\\  44\\sqrt5', 'D': '\\ 70\\sqrt2', 'E': '\\ 100</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let <math>O</math> be the center of the circle, and <math>X</math> be the midpoint of <math>\overline{CD}</math>. Let <math>CX=a</math> and <math>EX=b</math>. This implies that <math>DE = a - b</math>. Since <math>CE = CX + EX = a + b</math>, we now want to find <math>(a+b)^2+(a-b)^2=2(a^2+b^2)</math>. Since <math>\angle CXO</math> is a right angle, by Pythagorean theorem <math>a^2 + b^2 = CX^2 + OX^2 = (5\sqrt{2})^2=50</math>. Thus, our answer is <math>2\times50=\boxed{\textbf{(E)}\ 100}</math>.
+
+--- Solution 2 ---
+Let <math>O</math> be the center of the circle, and <math>X</math> be the midpoint of <math>CD</math>. Draw triangle <math>OCD</math>, and median <math>OX</math>. Because <math>OC = OD</math>, <math>OCD</math> is isosceles, so <math>OX</math> is also an altitude of <math>OCD</math>. <math>OE = 5\sqrt2 - 2\sqrt5</math>, and because angle <math>OEC</math> is <math>45</math> degrees and triangle <math>OXE</math> is right, <math>OX = EX = \frac{5\sqrt2 - 2\sqrt5}{\sqrt2} = 5 - \sqrt{10}</math>. Because triangle <math>OXC</math> is right, <math>CX = \sqrt{(5\sqrt2)^2 - (5 - \sqrt{10})^2} = \sqrt{15 + 10\sqrt{10}}</math>. Thus, <math>CD = 2\sqrt{15 + 10\sqrt{10}}</math>. 
+
+We are looking for <math>CE^2</math> + <math>DE^2</math> which is also <math>(CE + DE)^2 - 2 \cdot CE \cdot DE</math>. 
+
+Because <math>CE + DE = CD = 2\sqrt{15 + 10\sqrt{10}}</math>, <math>(CE + DE)^2 = CD^2=4(15 + 10\sqrt{10}) = 60 + 40\sqrt{10}</math>. 
+
+By Power of a Point, <math>CE \cdot DE = AE \cdot BE = 2\sqrt5\cdot(10\sqrt2 - 2\sqrt5) = 20\sqrt{10} - 20</math>, so <math>2 \cdot CE \cdot DE = 40\sqrt{10} - 40</math>. 
+
+Finally, <math>CE^2 + DE^2 = (CE+ED)^2-2\cdot CE \cdot DE=(60 + 40\sqrt{10}) - (40\sqrt{10} - 40) = \boxed{\textbf{(E)}\ 100}</math>.
+
+--- Solution 3 ---
+Let <math>O</math> be the center of the circle. Notice how <math>OC = OD = r</math>, where <math>r</math> is the radius of the circle. By applying the law of cosines on triangle <math>OCE</math>, <cmath>r^2=CE^2+OE^2-2(CE)(OE)\cos{45}=CE^2+OE^2-(CE)(OE)\sqrt{2}.</cmath>
+
+Similarly, by applying the law of cosines on triangle <math>ODE</math>, <cmath>r^2=DE^2+OE^2-2(DE)(OE)\cos{135}=DE^2+OE^2+(DE)(OE)\sqrt{2}.</cmath>
+
+By subtracting these two equations, we get <cmath>CE^2-DE^2-(CE)(OE)\sqrt{2}-(DE)(OE)\sqrt{2}=0.</cmath> We can rearrange it to get <cmath>CE^2-DE^2=(CE)(OE)\sqrt{2}+(DE)(OE)\sqrt{2}=(CE+DE)(OE\sqrt{2}).</cmath>
+
+Because both <math>CE</math> and <math>DE</math> are both positive, we can safely divide both sides by <math>(CE+DE)</math> to obtain <math>CE-DE=OE\sqrt{2}</math>. Because <math>OE = OB - BE = 5\sqrt{2} - 2\sqrt{5}</math>, <cmath>(CE-DE)^2 = CE^2+DE^2 - 2(CE)(DE) = (OE\sqrt{2})^2 =2(5\sqrt{2} - 2\sqrt{5})^2 = 140 - 40\sqrt{10}.</cmath>
+
+Through power of a point, we can find out that <math>(CE)(DE)=20\sqrt{10} - 20</math>, so <cmath>CE^2+DE^2 = (CE-DE)^2+ 2(CE)(DE)= (140 - 40\sqrt{10}) + 2(20\sqrt{10} - 20) = \boxed{\textbf{(E)}\ 100}.</cmath>
+
+--- Solution 4 ---
+<asy>
+/* Made by sofas103; edited by MRENTHUSIASM */
+size(250);
+
+pair O, A, B, C, D, E, D1;
+O = origin;
+A = (-5*sqrt(2),0);
+B = (5*sqrt(2),0);
+E = (5*sqrt(2)-2*sqrt(5),0);
+path p;
+p = Circle(O,5*sqrt(2));
+C = intersectionpoint(p,E--E+10*dir(135));
+D = intersectionpoint(p,E--E+10*dir(-45));
+D1 = (D.x,-D.y);
+draw(p);
+dot("$O$",O,1.5*S,linewidth(4));
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$E$",E,1.5*dir(180+135/2),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$D'$",D1,1.5*dir(D1),linewidth(4));
+draw(A--B^^C--D^^C--D1--O--cycle^^D1--E);
+</asy>
+Let <math>O</math> be the center of the circle. By reflecting <math>D</math> across the line <math>AB</math> to produce <math>D'</math>, we have that <math>\angle BED'=45</math>. Since <math>\angle AEC=45</math>, <math>\angle CED'=90</math>. Since <math>DE=ED'</math>, by the Pythagorean Theorem, our desired solution is just <math>CD'^2</math>.
+Looking next to circle arcs, we know that <math>\angle AEC=\frac{\overarc{AC}+\overarc{BD}}{2}=45</math>, so <math>\overarc{AC}+\overarc{BD}=90</math>. Since <math>\overarc{BD'}=\overarc{BD}</math>, and <math>\overarc{AC}+\overarc{BD'}+\overarc{CD'}=180</math>, <math>\overarc{CD'}=90</math>. Thus, <math>\angle COD'=90</math>.
+Since <math>OC=OD'=5\sqrt{2}</math>, by the Pythagorean Theorem, the desired <math>CD'^2= \boxed{\textbf{(E)}\ 100}</math>.
+
+--- Solution 5 ---
+Basically, by PoP, you have that <cmath>CE \times DE = (10\sqrt{2}-2\sqrt{5})(2\sqrt{5}) = 20\sqrt{10} - 20.</cmath> Therefore, as <math>CE^2 + DE^2 = (CD)^2 - 2(CE \times DE),</math> basically, once you find <math>CD^2,</math> the problem is done. Now, this is an IMPORTANT concept: If you have a circle which you know the radius of and you want to find the length of a chord of that circle, drop an altitude from the center of the circle to the chord to find distance between the center of the circle and the chord. 
+ 	
+In this case, let <math>M</math> be the midpoint of chord <math>CD.</math> Notice that now we can use our <math>45^\circ{}</math> angle, since <math>OME</math> is a <math>45^\circ{}-45^\circ{}-90^\circ{}</math> triangle so that <math>ME = x</math> and <math>OE = x\sqrt{2}.</math> However, we have that <math>OE = 5\sqrt{2}-2\sqrt{5},</math> so that <math>x = 5 - \sqrt{10}.</math> Now, notice that <math>x^2 = 35 - 10\sqrt{10},</math> so that <cmath>CM^2 = 50 - x^2 = 50 - (35 - 10\sqrt{10}) = 15 + 10 \sqrt{10}</cmath> and <cmath>CD^2 = 60 + 40\sqrt{10}.</cmath> Therefore, <cmath>CE^2 + DE^2 = CD^2 - 2(CE \times DE) = (60+40\sqrt{10}) - 2(2\sqrt{10} - 20) = (60+40\sqrt{10}) + (40-40\sqrt{10}) = \boxed{\textbf{(E)}\ 100}.</cmath> 
+	
+This may not be the “shortest solution”, but in my opinion is very well motivated and doesn’t require much creativity. [Not requiring much creativity, it also saves more time than you’d think. ;)]
+
+--- Solution 6 ---
+<asy>
+/* Made by sofas103; edited by MRENTHUSIASM */
+size(250);
+
+pair O, A, B, C, D, E, P, Q;
+O = origin;
+A = (-5*sqrt(2),0);
+B = (5*sqrt(2),0);
+E = (5*sqrt(2)-2*sqrt(5),0);
+P = (5*sqrt(2), -4.5);
+Q=(5*sqrt(2)-2*sqrt(5)-0.5, 0);
+path p;
+p = Circle(O,5*sqrt(2));
+C = intersectionpoint(p,E--E+10*dir(135));
+D = intersectionpoint(p,E--E+10*dir(-45));
+draw(p);
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$E$",E,1.5*dir(180+135/2),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$P$",P,1.5*dir(P),linewidth(4));
+label("$45^{\circ}$",Q,NW);
+draw(A--B^^C--P--B);
+draw((5*sqrt(2), 0)--(5*sqrt(2)-0.4, 0)--(5*sqrt(2)-0.4, -0.4)--(5*sqrt(2), -0.4));
+</asy>
+For ease of notation, let <math>x = DE</math> and <math>y=EC</math>. 
+Extend <math>\overline{CD}</math> to point <math>P</math> until <math>\overline{BP}</math> is perpendicular to <math>AB</math>. It's given that <math>\angle AEC = 45^{\circ}</math>, so, by vertical angles, we have <math>\angle BEP = \angle EPB = 45^{\circ}</math>. 
+
+Since <math>PEB</math> is a <math>45-45-90</math> right triangle, we have <math>BE = BP = 2\sqrt{5}</math> and <math>PE=2\sqrt{10}</math>. Hence, <math>PD = 2\sqrt{10}-x.</math>
+
+By Power of a Point, we have
+
+<cmath>PB^2 = PD\cdot PC</cmath>
+<cmath>20 = \left(2\sqrt{10}-x\right)\left(y + 2\sqrt{10}\right).</cmath>
+
+Isolating the variables after expanding gives <math>x-y = 2\sqrt{10}-10.</math>
+
+Using Power of a Point again, we have 
+
+<cmath>DE\cdot EC = BE\cdot EA</cmath>
+<cmath>xy = 2\sqrt{5}\left(10\sqrt{2}-2\sqrt{5} \right)</cmath>
+<cmath>xy = 20\sqrt{10}-20.</cmath>
+To get <math>x^2 + y^2</math>, we can perform the operation <math>(x-y)^2 + 2xy</math>. Plugging these values in, 
+
+<cmath>(x-y)^2 + 2xy = \left(2\sqrt{10}-10\right)^2 + 2\left(20\sqrt{10}-20\right)</cmath>
+<cmath> = 40 + 100 - 40\sqrt{10} + 40\sqrt{10} - 40 = \boxed{\textbf{(E)}\ 100}</cmath>
+
+-Benedict T (countmath1)
+
+--- Solution 7 ---
+Perhaps not reliable in general, but very useful as a last resort.
+The choice of the radius <math>5\sqrt2</math> is strange, and is probably motivated by a nice answer in the end, so we only consider integer options. Notice that a 5 also appears in the condition <math>BE=2\sqrt5</math>, therefore it will likely be present in the answer as well; the only integer containing a factor of 5 amongst the choices is 100, thus the answer is  <math>\boxed{\textbf{(E)}\ 100}</math>
+
+--- Solution 8 ---
+set the origin at E (instead of circle center O) will reduce calculation. 
+line CD is y= -x ,   
+let OE = a , circle radius r=<math>5\sqrt{2}</math>,  
+circle <math>(x + a)^2 + y^2 = r^2</math>  intersects line y = -x at 2 points <math> C(X_c, Y_c)</math> and <math> D(X_d, Y_d) </math>
+<math>X_c = -Y_c </math> , <math>X_d = -Y_d </math> 
+
+substitute y with x , circle becomes  <math>(x + a)^2 + y^2 = (x + a)^2 + (-x)^2 = 2x^2 + 2ax + a^2 - r^2 = 0 </math>
+
+<math>X_c , X_d</math> will be 2 roots of above quadratic and we will apply vieta <math>X_c+ X_d , X_c \cdot X_d </math> below
+
+<cmath> CE^2 + DE^2 = ( (-X_c) + Y_c)^2 +  ( X_d + (- Y_d) )^2 \\
+= ( (-X_c) + (-X_c))^2 +  ( X_d + (X_d) )^2  \\
+= 4 (X_c^2 + X_d^2) \\
+= 4 ((X_c + X_d)^2) -  2X_cX_d \\
+= 4 ( (\frac{-2a}{2 \cdot  2})^2 + \frac{a^2- r^2}{2} ) 
+
+</cmath>
+
+plug in a = OE  = OB - OE  = <math> 5\sqrt{2} - 2 \sqrt{5} </math> and <math>r = 5\sqrt{2}</math> we get answer <math>\boxed{\textbf{(E) }100}</math>.
+[[Image:2020_AMC_12B_P20.PNG|thumb|center|600px]]
+
+
+=== Problem 13 ===
+Which of the following is the value of
+
+Choices: {'A': '1', 'B': '\\sqrt{\\log_5{6}}', 'C': '2', 'D': '\\sqrt{\\log_2{3}}+\\sqrt{\\log_3{2}}', 'E': '\\sqrt{\\log_2{6}}+\\sqrt{\\log_3{6}}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Recall that:
+<ol style="margin-left: 1.5em;">
+  <li><math>\log_b{(uv)}=\log_b u + \log_b v.</math></li><p>
+  <li><math>\log_b u\cdot\log_u b=1.</math></li><p>
+</ol>
+We use these properties of logarithms to rewrite the original expression:
+<cmath>\begin{align*}
+\sqrt{\log_2{6}+\log_3{6}}&=\sqrt{(\log_2{2}+\log_2{3})+(\log_3{2}+\log_3{3})} \\
+&=\sqrt{2+\log_2{3}+\log_3{2}} \\
+&=\sqrt{\left(\sqrt{\log_2{3}}+\sqrt{\log_3{2}}\right)^2} \\
+&=\boxed{\textbf{(D) } \sqrt{\log_2{3}}+\sqrt{\log_3{2}}}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+First,
+<cmath>\sqrt{\log_2{6}+\log_3{6}} = \sqrt{\frac{\log{6}}{\log{2}} + \frac{\log{6}}{\log{3}}} = \sqrt{\frac{\log{6}\cdot\log{3} + \log{6}\cdot\log{2}}{\log{3}\cdot\log{2}}} = \sqrt{\frac{\log{6}(\log 2 + \log 3)}{\log 2\cdot \log 3}}.</cmath>
+From here, 
+<cmath>\begin{align*}\sqrt{\frac{\log{6}(\log 2 + \log 3)}{\log 2\cdot \log 3}}
+&= \sqrt{\frac{(\log 2 + \log 3)(\log 2 + \log 3)}{\log 2\cdot \log 3}}
+&= \sqrt{\frac{(\log 2 + \log 3)^2}{\log 2\cdot \log 3}}
+&= \frac{\log 2}{\sqrt{\log 2\cdot\log 3}} + \frac{\log 3}{\sqrt{\log 2\cdot\log 3}} \\
+&= \sqrt{\frac{\log 2}{\log 3}} + \sqrt{\frac{\log 3}{\log 2}} \\
+&= \sqrt{\log_3 2} + \sqrt{\log_2 3}.
+\end{align*}</cmath>
+Answer: <math>\boxed{\textbf{(D) } \sqrt{\log_2{3}}+\sqrt{\log_3{2}}}</math>
+
+Note that in this solution, even the most minor steps have been written out. On the actual test, this solution would be quite fast, and much of it could easily be done in your head.
+
+--- Solution 3 ---
+Using the knowledge of the powers of <math>2</math> and <math>3,</math> we know that <math>\log_2{6}>2.5</math> and <math>\log_3{6}>1.5.</math> Therefore, <cmath>\sqrt{\log_2{6}+\log_3{6}}>\sqrt{2.5+1.5}=2.</cmath> Only choices <math>\textbf{(D)}</math> and <math>\textbf{(E)}</math> are greater than <math>2,</math> but <math>\textbf{(E)}</math> is certainly incorrect: If we compare the squares of the original expression and <math>\textbf{(E)},</math> then they are clearly not equal. So, the answer is <math>\boxed{\textbf{(D) } \sqrt{\log_2{3}}+\sqrt{\log_3{2}}}.</math>
+
+--- Solution 4 ---
+Note: Only use this method if all else fails and you cannot find a way to simplify the logarithms.
+
+We can see that <math>\log_2{6}</math> is greater than <math>2</math> and less than <math>3.</math> Additionally, since <math>6</math> is halfway between <math>2^2</math> and <math>2^3,</math> knowing how exponents increase more the larger <math>x</math> is, we can deduce that <math>\log_2{6}</math> is just above halfway between <math>2</math> and <math>3.</math> We can guesstimate this as <math>\log_2{6} \approx 2.55.</math> (It's actually about <math>2.585.</math>)
+
+Next, we think of <math>\log_3{6}.</math> This is greater than <math>1</math> and less than <math>2.</math> As <math>6</math> is halfway between <math>3^1</math> and <math>3^2,</math> and similar to the logic for <math>\log_2{6},</math> we know that <math>\log_3{6}</math> is just above halfway between <math>1</math> and <math>2.</math> We guesstimate this as <math>\log_3{6} \approx 1.55.</math> (It's actually about <math>1.631.</math>)
+
+So, <math>\log_2{6} + \log_3{6}</math> is approximately <math>4.1.</math> The square root of that is just above <math>2,</math> maybe <math>2.02.</math> We cross out all choices below <math>\textbf{(C)}</math> since they are less than <math>2,</math> and <math>\textbf{(E)}</math> can't possibly be true unless either <math>\log_2{6}</math> and/or <math>\log_3{6}</math> is <math>0</math> (You can prove this by squaring.). Thus, the only feasible answer is <math>\boxed{\textbf{(D) } \sqrt{\log_2{3}}+\sqrt{\log_3{2}}}.</math>
+
+
+=== Problem 14 ===
+Bela and Jenn play the following game on the closed interval
+
+Choices: {'A': '\\text{ Bela will always win.}', 'B': '\\text{ Jenn will always win.}', 'C': '\\text{ Bela will win if and only if }n \\text{ is odd.}</math>'}
+Answer: A
+
+--- Solution 1 ---
+We use game theory.
+
+Notice how they say Optimal Strategy. This means that each player plays the best move in any scene.
+
+We then solve through cases.
+
+We set \( n > 4 \), \( n \) is even. Say \( n = 10 \). Then, we see that Bela could pick either 3 or 4, and then Jenn would be forced to choose either 1(2), 5, or 6. But notice how you can only make one move, and 1 and \( [5,6] \) are on opposite sides. So therefore, Bela will always win.
+
+We set \( n > 4 \), \( n \) is odd. Say \( n = 9 \). This is even easier! Bela could just choose the middle, and then again, Jenn would be forced to pick a move that Bela could just replicate and win. So, Bela will also always win.
+
+Through deduction, our answer is <math>\boxed{\textbf{(A)} \text{ Bela will always win.}}</math>
+
+<math>\textit{But that's just a theory, a game theory!}</math>
+
+--- Solution 2 ---
+If Bela selects the middle number in the range <math>[0, n]</math> and then mirror whatever number Jenn selects, then if Jenn can select a number within the range, so can Bela. Jenn will always be the first person to run out of a number to choose, so the answer is <math>\boxed{\textbf{(A)} \text{ Bela will always win.}}</math>
+
+--- Solution 3 ---
+First of all, realize that the parity of <math>n</math> likely has no effect on the strategy, since Bela obviously wins when <math>n=1</math>, and it's not hard to find a winning strategy for <math>n=2</math> or <math>n=3</math> (start with <math>n/2</math>).  Similarly, there is no reason the strategy would change when <math>n>8.</math>
+
+So we are left with <math>\textbf{(A)}</math> and <math>\textbf{(B)}.</math> From here it is best to try out random numbers and try to find the strategy that will let Bela win, but if you can't find it, realize that it is more likely the answer is <math>\boxed{\textbf{(A)} \text{ Bela will always win}}</math> since Bela has the first move and thus has more control.
+
+--- Solution 4 ---
+We can just play the game. We can draw a number line to <math>9</math> and assume Bela and Jenn will only play the integer values. From now after playing one round of the game, Bela will win so answers <math>\textbf{(B)},\textbf{(D)},</math> and <math>\textbf{(E)}</math> are eliminated. Now we want to test if Bela will win if <math>n</math> is even so we can draw another number line this time up to <math>10</math>. Now after playing the game, we can find that Bela won yet again so the answer is <math>\boxed{\textbf{(A)} \text{ Bela will always win}}.</math>
+
+-minor edits by jjbros
+
+--- Solution 5 ---
+Play out <math>n=5</math> and <math>n=6</math>. In the first case, Bela can choose <math>0</math> and win, and in the second case, Bela can choose <math>1</math> and win (try it out). This rules out <math>\textbf{(B)}</math>, <math>\textbf{(C)}</math>, and <math>\textbf{(D)}</math>.
+
+Next, consider <math>\textbf{(E)}</math>. Assume for the sake of contradiction that this is true; an alternate way of stating this is that for <math>n>8</math>, the second player always wins (we ignore the "only if" statement). Thus, <math>n=9</math> is a win for the second player. Consider <math>n=11</math>. If Bela chooses <math>11</math>, then the game becomes an <math>n=9</math> case where the first player is instead Jenn. However, by the claim that the second player should win <math>n>8</math>, this game should be a win for Bela, but we have already stated that any games with <math>n>8</math> should be a win for Jenn, which is a contradiction. Thus <math>\textbf{(E)}</math> is incorrect, and so the answer is $\boxed{\textbf{(A)} \text{ Bela will always win}}
+
+
+=== Problem 15 ===
+There are 10 people standing equally spaced around a circle. Each person knows exactly 3 of the other 9 people: the 2 people standing next to her or him, as well as the person directly across the circle. How many ways are there for the 10 people to split up into 5 pairs so that the members of each pair know each other?
+
+Choices: {'A': '11', 'B': '12', 'C': '13', 'D': '14', 'E': '15</math>'}
+Answer: C
+
+--- Solution 1 ---
+Consider the <imath>10</imath> people to be standing in a circle, where two people opposite of each other form a diameter of the circle.
+
+Let us use casework on the number of pairs that form a diameter of the circle.
+
+Case 1: <imath>0</imath> diameters
+
+There are <imath>2</imath> ways: either <imath>1</imath> pairs with <imath>2</imath>, <imath>3</imath> pairs with <imath>4</imath>, and so on or <imath>10</imath> pairs with <imath>1</imath>, <imath>2</imath> pairs with <imath>3</imath>, etc. So <imath>\boxed{\textbf{2}}</imath> cases.
+
+Case 2: <imath>1</imath> diameter
+
+There are <imath>5</imath> possible diameters to draw (everyone else pairs with the person next to them). So <imath>\boxed{\textbf{5}}</imath> cases.
+
+Note that there cannot be <imath>2</imath> diameters since there would be one person on either side that will not have a pair adjacent to them. The only scenario forced is when the two people on either side would be paired up across a diameter. Thus, a contradiction will arise.
+
+Case 3: <imath>3</imath> diameters
+
+There are <imath>5</imath> possible sets of <imath>3</imath> diameters to draw.
+Notice we are technically choosing the number of ways to choose a pair of two diameters that are neighbors to each other. This means we can choose the first diameter in the pair, and have only two diameters to choose from for the second in the pair. This means we have <imath>5 \cdot 2=10</imath> possibilities for choosing 5 neighboring diameters. However, notice that there are duplicates, so we divide the <imath>10</imath> possibilities by <imath>2</imath> to get <imath>\boxed{\textbf{5}}</imath>.
+
+Note that there cannot be a case with <imath>4</imath> diameters because then there would have to be <imath>5</imath> diameters for the two remaining people as they have to be connected with a diameter. A contradiction arises.
+
+Case 4: <imath>5</imath> diameters
+
+There is only <imath>\boxed{\textbf{1}}</imath> way to do this.
+
+Thus, in total there are <imath>2+5+5+1=\boxed{\textbf{(C) }13}</imath> possible ways.
+
+
+=== Problem 16 ===
+An urn contains one red ball and one blue ball. A box of extra red and blue balls lie nearby. George performs the following operation four times: he draws a ball from the urn at random and then takes a ball of the same color from the box and returns those two matching balls to the urn. After the four iterations the urn contains six balls. What is the probability that the urn contains three balls of each color?
+
+Choices: {'A': '\\frac16', 'B': '\\frac15', 'C': '\\frac14', 'D': '\\frac13', 'E': '\\frac12</math>'}
+Answer: B
+
+--- Solution 1 ---
+Suppose that we have a deck, currently containing just one black card. We then insert <math>n</math> red cards one-by-one into the deck at random positions. It is easy to see using induction, that the black card is randomly situated in the deck. 
+
+Now, suppose that we have this deck again, with only one black card. Each time we pick a red ball, we place a card above the black card, and each time we pick a blue ball, we place a card below the black card. It is easy to see that the probability that the card is inserted into the top part of the deck is simply equal to the number of red balls divided by the total number of balls, and the probability that the card is inserted into the bottom part of the deck is equal to the number of blue balls divided by the total number of balls. Therefore, this is equivalent to inserting the card randomly into the deck.
+
+Finally, four more red cards will be inserted into the deck, and so the black card can be in five possible positions. Only one corresponds to having three balls of each type. Our probability is thus <math>\frac{1}{5}</math>, and so the answer is <math>\boxed{\textbf{B}}</math>.
+
+--- Solution 2 ---
+Let <math>R</math> denote the action where George selects a red ball and <math>B</math> denote the action where he selects a blue one. Now, in order to get <math>3</math> balls of each color, he needs <math>2</math> more of both <math>R</math> and <math>B</math>.
+
+There are 6 cases: <math>RRBB, RBRB, RBBR, BBRR, BRBR, BRRB</math> (we can confirm that there are only <math>6</math> since <math>\binom{4}{2}=6</math>). However we can clump <math>RRBB + BBRR</math>, <math>RBRB + BRBR</math>, and <math>RBBR + BRRB</math> together since they are equivalent by symmetry.
+
+
+<math>\textbf{CASE 1: }</math> <math>RRBB</math> and <math>BBRR</math>
+
+Let's find the probability that he picks the balls in the order of <math>RRBB</math>. 
+
+The probability that the first ball he picks is red is <math>\frac{1}{2}</math>. 
+
+Now there are <math>2</math> reds and <math>1</math> blue in the urn. The probability that he picks red again is now <math>\frac{2}{3}</math>.
+
+There are <math>3</math> reds and <math>1</math> blue now. The probability that he picks a blue is <math>\frac{1}{4}</math>. 
+
+Finally, there are <math>3</math> reds and <math>2</math> blues. The probability that he picks a blue is <math>\frac{2}{5}</math>.
+
+So the probability that the <math>RRBB</math> case happens is <math>\frac{1}{2} \cdot \frac{2}{3} \cdot \frac{1}{4} \cdot \frac{2}{5} = \frac{1}{30}</math>. However, since the <math>BBRR</math> case is the exact same by symmetry, case 1 has a probability of <math>\frac{1}{30} \cdot 2 = \frac{1}{15}</math> chance of happening.
+
+
+<math>\textbf{CASE 2: }</math> <math>RBRB</math> and <math>BRBR</math>
+
+Let's find the probability that he picks the balls in the order of <math>RBRB</math>. 
+
+The probability that the first ball he picks is red is <math>\frac{1}{2}</math>. 
+
+Now there are <math>2</math> reds and <math>1</math> blue in the urn. The probability that he picks blue is <math>\frac{1}{3}</math>.
+
+There are <math>2</math> reds and <math>2</math> blues now. The probability that he picks a red is <math>\frac{1}{2}</math>. 
+
+Finally, there are <math>3</math> reds and <math>2</math> blues. The probability that he picks a blue is <math>\frac{2}{5}</math>.
+
+So the probability that the <math>RBRB</math> case happens is <math>\frac{1}{2} \cdot \frac{1}{3} \cdot \frac{1}{2} \cdot \frac{2}{5} = \frac{1}{30}</math>. However, since the <math>BRBR</math> case is the exact same by symmetry, case 2 has a probability of <math>\frac{1}{30} \cdot 2 = \frac{1}{15}</math> chance of happening.
+
+
+<math>\textbf{CASE 3: }</math> <math>RBBR</math> and <math>BRRB</math>
+
+Let's find the probability that he picks the balls in the order of <math>RBBR</math>. 
+
+The probability that the first ball he picks is red is <math>\frac{1}{2}</math>. 
+
+Now there are <math>2</math> reds and <math>1</math> blue in the urn. The probability that he picks blue is <math>\frac{1}{3}</math>.
+
+There are <math>2</math> reds and <math>2</math> blues now. The probability that he picks a blue is <math>\frac{1}{2}</math>. 
+
+Finally, there are <math>2</math> reds and <math>3</math> blues. The probability that he picks a red is <math>\frac{2}{5}</math>.
+
+So the probability that the <math>RBBR</math> case happens is <math>\frac{1}{2} \cdot \frac{1}{3} \cdot \frac{1}{2} \cdot \frac{2}{5} = \frac{1}{30}</math>. However, since the <math>BRRB</math> case is the exact same by symmetry, case 3 has a probability of <math>\frac{1}{30} \cdot 2 = \frac{1}{15}</math> chance of happening.
+
+Adding up the cases, we have <math>\frac{1}{15}+\frac{1}{15}+\frac{1}{15}=\boxed{\textbf{(B) }\frac15}</math>
+
+--- Solution 3 ---
+We know that we need to find the probability of adding 2 red and 2 blue balls in some order.
+There are 6 ways to do this, since there are <math>\binom{4}{2}=6</math> ways to arrange <math>RRBB</math> in some order.
+We will show that the probability for each of these 6 ways is the same.
+
+We first note that the denominators should be counted by the same number. This number is <math>2 \cdot 3 \cdot 4 \cdot 5=120</math>. This is because 2, 3, 4, and 5 represent how many choices there are for the four steps. No matter what the <math>k-th</math> step involves <math>k+1</math> numbers to choose from.
+
+The numerators are the number of successful operations. No matter the order, the first time a red is added will come from 1 choice and the second time will come from 2 choices, since that is how many reds are in the urn originally.
+The same goes for the blue ones. The numerator must equal <math>(1 \cdot 2)^2</math>.
+
+Therefore, the probability for each of the orderings of <math>RRBB</math> is <math>\frac{4}{120}=\frac{1}{30}</math>. There are 6 of these, so the total probability is <math>\boxed{\bf{(B)} \frac{1}{5}}</math>.
+
+--- Solution 4 ---
+First, notice that when George chooses a ball he just adds another ball of the same color. On George's first move, he either chooses the red or the blue with a <math>\frac{1}{2}</math> chance each. We can assume he chooses Red(chance <math>\frac{1}{2}</math>), and then multiply the final answer by two for symmetry. Now, there are two red balls and one blue ball in the urn. Then, he can either choose another Red(chance <math>\frac{2}{3}</math>), in which case he must choose two blues to get three of each, with probability <math>\frac{1}{4}\cdot\frac{2}{5}=\frac{1}{10}</math> or a blue for two blue and two red in the urn, with chance <math>\frac{1}{3}</math>. If he chooses blue next, he can either choose a red then a blue, or a blue then a red. Each of these has a <math>\frac{1}{2}\cdot\frac{2}{5}</math> for total of <math>2\cdot\frac{1}{5}=\frac{2}{5}</math>. The total probability that he ends up with three red and three blue is <math>2\cdot\frac{1}{2}(\frac{2}{3}\cdot\frac{1}{10}+\frac{1}{3}\cdot\frac{2}{5})=\frac{1}{15}+\frac{2}{15}=\boxed{\bf{(B)} \frac{1}{5}}</math>.
+
+
+==Solution 4 Alternate==
+A solution pretty similar to the above is as follows.
+
+Your only two cases of having 3R and 3B after 4 iterations are (without regard to order; if you do order, you multiply by 2 on both the top and the bottom and yield the same result):
+
+1|1 -> 2|1 -> 3|1 -> 3|2 -> 3|3, and this occurs with probability (1)(2/3)(1/4)(2/5)=1/15.
+
+1|1 -> 2|1 -> 2|2 -> 3|2 -> 3|3, and this occurs with probability (1)(1/3)(1)(2/5)=2/15. Probability of 2|2->3|2 is 1 because it doesn't matter what you do. We don't count for order here so either ball you put from the box into of the urn is going to get you a 3|2 distribution. Same argument goes for the iteration from 1|1 to 2|1.
+
+Summing these two up we get <math>\frac{1}{15}+\frac{2}{15}=\boxed{\bf{(B)} \frac{1}{5}}.</math>
+
+mathboy282
+
+--- Solution 5 ---
+Let the probability that the urn ends up with more red balls be denoted <math>P(R)</math>. Since this is equal to the probability there are more blue balls, the probability there are equal amounts is <math>1-2P(R)</math>. <math>P(R) =</math> the probability no more blues are chosen plus the probability only 1 more blue is chosen. The first case, <math>P(\text{no more blues}) = \frac{1}{2}\cdot\frac{2}{3}\cdot\frac{3}{4}\cdot\frac{4}{5}=\frac{1}{5}</math>.
+
+The second case, <math>P(\text{1 more blue}) = 4\cdot\frac{1\cdot1\cdot2\cdot3}{2\cdot3\cdot4\cdot5} = \frac{1}{5}</math>. Thus, the answer is <math>1-2\left(\frac{1}{5}+\frac{1}{5}\right)=1-\frac{4}{5}=\boxed{\textbf{(B)}\ \frac{1}{5}}</math>.
+
+--- Solution 6 ---
+Here <math>X</math> stands for R or B, and <math>Y</math> for the remaining color.
+After 3 rounds one can either have a <math>4+1</math> configuration (<math>XXXXY</math>), or <math>3+2</math> configuration (<math>XXXYY</math>). The probability of getting to <math>XXXYYY</math> from <math>XXXYY</math> is  <math>\frac{2}{5}</math>. Observe that the probability of arriving to <math>4+1</math> configuration is  <cmath>\frac{2}{3} \cdot \frac{3}{4} = \frac{1}{2}</cmath> (<math>\frac{2}{3}</math> to get from <math>XXY</math> to <math>XXXY</math>, <math>\frac{3}{4}</math> to get from <math>XXXY</math> to <math>XXXXY</math>). Thus the probability of arriving to <math>3+2</math> configuration is also <math>\frac{1}{2}</math>, and the answer is <cmath>\frac{1}{2} \cdot \frac{2}{5} = \boxed{\textbf{(B)}\ \frac{1}{5}}. </cmath>
+
+--- Solution 7 ---
+We can use dynamic programming to solve this problem.
+
+We let <math>dp[i][j]</math> be the probability that we end up with <math>i</math> red balls and <math>j</math> blue balls.
+Notice that there are only two ways that we can end up with <math>i</math> red balls and <math>j</math> blue balls: one is by fetching a red ball from the urn when we have <math>i - 1</math> red balls and <math>j</math> blue balls and the other is by fetching a blue ball from the urn when we have <math>i</math> red balls and <math>j - 1</math> blue balls.
+
+Then we have
+<math>dp[i][j] = \frac{i - 1}{i - 1 + j} dp[i - 1][j] + \frac{j - 1}{i - 1 + j} dp[i][j - 1]</math>
+
+Then we start can with <math>dp[1][1] = 1</math> and try to compute <math>dp[3][3]</math>.
+
+<cmath>\begin{array}{|c || c | c | c | c | c |}
+\hline
+i \text{\ \textbackslash\ } j & 1 & 2 & 3\\ \hline\hline
+1 & 1 & 1/2 & 1/3\\ \hline
+2 & 1/2 & 1/3 & 1/4\\ \hline
+3 & 1/3 & 1/4 & 1/5\\ \hline
+\end{array}</cmath>
+The answer is <math>\boxed{\textbf{(B)}\ \frac{1}{5}}</math>.
+
+(Solution by CircleOO)
+
+--- Solution 8 ---
+Basically, George is picking a ball and adding another ball of that color to the urn. Basically, he needs to pick a red ball twice and a blue ball twice to get 3 red and 3 blue balls in the urn. The number of ways to choose a red ball twice is <math>1\cdot 2</math> (at the start there's 1 red ball, then he needs to choose it again when there's 2, and then there is 3 red balls so he doesn't need to choose it again). Similarly the number of ways to choose blue balls twice is 2. <math>2\cdot 2</math> = 4 ways to choose 2 red balls and 2 blue balls (not considering order). The total number of ways is <math>2\cdot 3\cdot 4\cdot 5</math>. Adding order to the 4 ways to choose 2 red and 2 blue balls, it is 4C2 because out of the 4 ball choosings, 2 of them must be red, and we automatically make the other ones blue. <math>\frac{\binom42 \cdot 2 \cdot 2}{2 \cdot 3 \cdot 4 \cdot 5} = \frac{1}{5}</math>.
+
+--- Solution 9 ---
+Notice that the answer can either be (1R, 5B) (2R, 4B) (3R, 3B) (4R, 2B) or (5R, 1B). Also, the answer choices are all really basic. Just guess that each of these cases are equal by symmetry so the probability of (3R, 3B) is <math>\boxed{\textbf{(B)}\ \frac{1}{5}}</math>.
+
+-unhappyfarmer
+
+
+=== Problem 17 ===
+How many polynomials of the form
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <imath>P(x) = x^5+ax^4+bx^3+cx^2+dx+2020</imath>. We first notice that <imath>\frac{-1+i\sqrt{3}}{2} = e^{2\pi i / 3}</imath>.  That is because of Euler's Formula : <imath>e^{ix} = \cos(x) + i \cdot \sin(x)</imath>. <imath>\frac{-1+i\sqrt{3}}{2}</imath> = <imath>-\frac{1}{2} + i \cdot \frac {\sqrt{3}}{2}</imath> = <imath>\cos(120^\circ) + i \cdot \sin(120^\circ) = e^{ 2\pi i / 3}</imath>.
+
+In order <imath>r</imath> to be a root of <imath>P</imath>, <imath>re^{2\pi i / 3}</imath> must also be a root of P, meaning that 3 of the roots of <imath>P</imath> must be <imath>r</imath>, <imath>re^{i\frac{2\pi}{3}}</imath>, <imath>re^{i\frac{4\pi}{3}}</imath>. However, since <imath>P</imath> is degree 5, there must be two additional roots. Let one of these roots be <imath>w</imath>, if <imath>w</imath> is a root, then <imath>we^{2\pi i / 3}</imath> and <imath>we^{4\pi i / 3}</imath> must also be roots. However, <imath>P</imath> is a fifth degree polynomial, and can therefore only have <imath>5</imath> roots. This implies that <imath>w</imath> is either <imath>r</imath>, <imath>re^{2\pi i / 3}</imath>, or <imath>re^{4\pi i / 3}</imath>. Thus we know that the polynomial <imath>P</imath> can be written in the form <imath>(x-r)^m(x-re^{2\pi i / 3})^n(x-re^{4\pi i / 3})^p</imath>. Moreover, by Vieta's, we know that there is only one possible value for the magnitude of <imath>r</imath> as <imath>||r||^5 = 2020</imath>, meaning that the amount of possible polynomials <imath>P</imath> is equivalent to the possible sets <imath>(m,n,p)</imath>. In order for the coefficients of the polynomial to all be real, <imath>n = p</imath> due to <imath>re^{2\pi i / 3}</imath> and <imath>re^{4 \pi i / 3}</imath> being conjugates and since <imath>m+n+p = 5</imath>, (as the polynomial is 5th degree) we have two possible solutions for <imath>(m, n, p)</imath> which are <imath>(1,2,2)</imath> and <imath>(3,1,1)</imath> yielding two possible polynomials. The answer is thus <imath>\boxed{\textbf{(C) } 2}</imath>.
+
+--- Solution 2 ---
+Let <imath>x_1=r</imath>, then <cmath>x_2=\frac{-1+i\sqrt{3}}{2} r,</cmath> <cmath>x_3=\left( \frac{-1+i\sqrt{3}}{2} \right) ^2 r =\left( \frac{-1-i\sqrt{3}}{2} \right) r,</cmath> <cmath>x_4=\left( \frac{-1+i\sqrt{3}}{2} \right) ^3 r=r,</cmath> which means <imath>x_4</imath> is the same as <imath>x_1</imath>.
+
+Now we have 3 different roots of the polynomial, <imath>x_1</imath>, <imath>x_2</imath>, and <imath>x_3</imath>. Next, we will prove that all 5 roots of the polynomial must be chosen from those 3 roots. Let us assume that there is one root <imath>x_4=p</imath> which is different from the three roots we already know, then there must be two other roots, <cmath>x_5=\left( \frac{-1+i\sqrt{3}}{2} \right) ^2 p =\left( \frac{-1-i\sqrt{3}}{2} \right) p,</cmath> <cmath>x_6=\left( \frac{-1+i\sqrt{3}}{2} \right) ^3 p=p,</cmath> different from all known roots. We get 6 different roots for the polynomial, which contradicts the limit of 5 roots. Therefore the assumption of a different root is wrong, thus the roots must be chosen from <imath>x_1</imath>, <imath>x_2</imath>, and <imath>x_3</imath>.
+
+The polynomial then can be expressed as <imath>f(x)=(x-x_1)^m (x-x_2)^n (x-x_3)^q</imath>, where <imath>m</imath>, <imath>n</imath>, and <imath>q</imath> are non-negative integers and <imath>m+n+q=5</imath>. Since <imath>a</imath>, <imath>b</imath>, <imath>c</imath> and <imath>d</imath> are real numbers, then <imath>n</imath> must be equal to <imath>q</imath>. By Vieta's we have <imath>mr + n(\frac{-1+i\sqrt{3}}{2}) + q(\frac{-1-i\sqrt{3}}{2}) =</imath> a real number. Therefore <imath>(m,n,q)</imath> can only be <imath>(1,2,2)</imath> or <imath>(3,1,1)</imath>, so the answer is <imath>\boxed{\mathbf{(C)} 2}</imath>.
+
+~Yelong_Li, [[User:grogg007|grogg007]] added the part with vieta's
+
+--- Solution 3 ---
+Call <imath>\frac{-1+\sqrt{3}}{2}=q</imath>. We have <imath>r</imath>, <imath>qr</imath>, and <imath>q^2r</imath> having to be roots, and since <imath>q^3=1</imath>, we must choose 2 more roots out of these three such that the condition that <imath>a</imath>, <imath>b</imath>, <imath>c</imath>, and <imath>d</imath> are all real. There are <imath>\fbox{2}</imath> ways to do this because of the fundamental theorem of algebra, these being <imath>\left(qr,qr^2\right)</imath> and <imath>\left(r,r\right)</imath> because to satisfy FTA if <imath>z</imath> is a root then so must its conjugate.
+
+--- Solution 4 ---
+<asy>
+import graph;
+draw(Circle((0,0),10));
+draw((0,0)--(-5,8.6602540378),red);
+draw((0,0)--(10,0),red);
+draw((0,0)--(-5,-8.6602540378),red);
+</asy>
+
+Due to Euler's Formula, <imath>\frac{-1+i\sqrt3}2</imath> is a 120 degree rotation CCW; therefore, the problem stipulates that a root must be followed by a root rotated 120 degrees CCW, and that the rotated root must also have yet another root 240 degrees CCW. Therefore, all roots must come similar groups of <imath>3</imath>. We cannot have <imath>6</imath> roots from <imath>2</imath> groups, and we cannot have <imath>0</imath> roots, so the <imath>3</imath> distinct roots, when drawn (with <imath>2</imath> with multiplicities not shown), must look like the figure above.
+
+As for the magnitudes of the roots, as all roots pictured above have the same magnitude, there is <imath>1</imath> possible magnitude for each root, which is <imath>\sqrt[5]{2020}</imath>, meaning we don't have to care about the scale of the diagram.
+
+To satisfy the complex conjugate root theorem (that if the coefficients are real, any root of a+bi must have a root of a-bi), the figure depicting all <imath>5</imath> roots must be symmetrical across the horizontal axis. Without consideration for roots with multiplicities, there are <imath>3</imath> axes of symmetry for this shape, and two unique ways to align one of the axes of symmetry such that it's parallel to the horizontal axis, the other such case created by reflecting across the vertical axis.
+
+However, not only must the magnitudes multiply to <imath>2020</imath>, but the product of the roots must be *positive* <imath>2020</imath>. Only one of the above cases can satisfy this condition (If there exists a configuration that multiplies to <imath>-2020</imath>, then reflecting across the vertical axis flips the sign creating the <imath>+2020</imath> case, with the converse also being true. As each case guarantees the existence of the other, and while at least one case is guaranteed to exist in the first place, we know there is exactly <imath>1</imath> of each case that remain, with <imath>1</imath> prevailing <imath>+2020</imath> case to use.
+
+Now, when taking roots with multiplicities back into consideration, the singular case has <imath>2</imath> ways to assign multiplicities while preserving symmetry: either both collating to the horizontal root, or through one being distributed to each of the angled roots (This corresponds to the <imath>(2,2,1)</imath> and <imath>(3,1,1)</imath> cases discussed earlier).
+
+Therefore, the final answer is <imath>\boxed{\mathbf{(C)} 2}</imath>.
+
+
+=== Problem 18 ===
+In square
+
+Choices: {'A': '\\frac{7}{3}', 'B': '8-4\\sqrt2', 'C': '1+\\sqrt2', 'D': '\\frac{7}{4}\\sqrt2', 'E': '2\\sqrt2</math>'}
+Answer: B
+
+--- Solution 1 ---
+Since the total area is <math>4</math>, the side length of square <math>ABCD</math> is <math>2</math>. We see that since triangle <math>HAE</math> is a right isosceles triangle with area 1, we can determine sides <math>HA</math> and <math>AE</math> both to be <math>\sqrt{2}</math>. Now, consider extending <math>FB</math> and <math>IE</math> until they intersect. Let the point of intersection be <math>K</math>. We note that <math>EBK</math> is also a right isosceles triangle with side <math>2-\sqrt{2}</math> and find its area to be <math>3-2\sqrt{2}</math>. Now, we notice that <math>FIK</math> is also a right isosceles triangle (because <math>\angle EKB=45^\circ</math>) and find it's area to be <math>\frac{1}{2}</math><math>FI^2</math>. This is also equal to <math>1+3-2\sqrt{2}</math> or <math>4-2\sqrt{2}</math>. Since we are looking for <math>FI^2</math>, we want two times this. That gives <math>\boxed{\textbf{(B)}\ 8-4\sqrt{2}}</math>.
+
+--- Solution 2 ---
+Draw the auxiliary line <math>AC</math>. Denote by <math>M</math> the point it intersects with <math>HE</math>, and by <math>N</math> the point it intersects with <math>GF</math>. Last, denote by <math>x</math> the segment <math>FN</math>, and by <math>y</math> the segment <math>FI</math>. We will find two equations for <math>x</math> and <math>y</math>, and then solve for <math>y^2</math>. 
+
+Since the overall area of <math>ABCD</math> is <math>4 \;\; \Longrightarrow \;\;  AB=2</math>, and <math>AC=2\sqrt{2}</math>. In addition, the area of <math>\bigtriangleup AME = \frac{1}{2} \;\; \Longrightarrow \;\; AM=1</math>.
+
+The two equations for <math>x</math> and <math>y</math> are then:
+
+<math>\bullet</math> Length of <math>AC</math>: <math>1+y+x = 2\sqrt{2}  \;\; \Longrightarrow \;\; x = (2\sqrt{2}-1) - y</math> 
+
+<math>\bullet</math> Area of CMIF: <math>\frac{1}{2}x^2+xy = \frac{1}{2}  \;\; \Longrightarrow \;\; x(x+2y)=1</math>.
+
+Substituting the first into the second, yields 
+<math>\left[\left(2\sqrt{2}-1\right)-y\right]\cdot \left[\left(2\sqrt{2}-1\right)+y\right]=1</math>
+
+Solving for <math>y^2</math> gives <math>\boxed{\textbf{(B)}\ 8-4\sqrt{2}}</math>
+
+--- Solution 3 ---
+Plot a point <math>F'</math> such that <math>F'I</math> and <math>AB</math> are parallel and extend line <math>FB</math> to point <math>B'</math> such that <math>FIB'F'</math> forms a square. Extend line <math>AE</math> to meet line <math>F'B'</math> and point <math>E'</math> is the intersection of the two. The area of this square is equivalent to <math>FI^2</math>. We see that the area of square <math>ABCD</math> is <math>4</math>, meaning each side is of length 2. The area of the pentagon <math>EIFF'E'</math> is <math>2</math>. Length <math>AE=\sqrt{2}</math>, thus <math>EB=2-\sqrt{2}</math>. Triangle <math>EB'E'</math> is isosceles, and the area of this triangle is <math>\frac{1}{2}(4-2\sqrt{2})(2-\sqrt{2})=6-4\sqrt{2}</math>. Adding these two areas, we get <cmath>2+6-4\sqrt{2}=8-4\sqrt{2}\rightarrow \boxed{\textbf{(B)}\ 8-4\sqrt{2}}</cmath>. --OGBooger
+
+--- Solution 4 ---
+We can easily observe that the area of square <math>ABCD</math> is 4 and its side length is 2 since all four regions that build up the square has area 1. 
+Extend <math>FI</math> and let the intersection with <math>AB</math> be <math>K</math>. Connect <math>AC</math>, and let the intersection of <math>AC</math> and <math>HE</math> be <math>L</math>.
+Notice that since the area of triangle <math>AEH</math> is 1 and <math>AE=AH</math> , <math>AE=AH=\sqrt{2}</math>, therefore <math>BE=HD=2-\sqrt{2}</math>.
+Let <math>CG=CF=m</math>, then <math>BF=DG=2-m</math>.
+Also notice that <math>KB=2-m</math>, thus <math>KE=KB-BE=2-m-(2-\sqrt{2})=\sqrt{2}-m</math>.
+Now use the condition that the area of quadrilateral <math>BFIE</math> is 1, we can set up the following equation: 
+<math>\frac{1}{2}(2-m)^2-\frac{1}{4}(\sqrt{2}-m)^2=1</math>
+We solve the equation and yield <math>m=\frac{8-2\sqrt{2}-\sqrt{64-32\sqrt{2}}}{2}</math>.
+Now notice that
+<math>FI=AC-AL-\frac{m}{\sqrt{2}}=2\sqrt{2}-1-\frac{\sqrt{2}}{2} \cdot \frac{8-2\sqrt{2}-\sqrt{64-32\sqrt{2}}}{2}</math>
+<math>=2\sqrt{2}-1-\frac{8\sqrt{2}-4-\sqrt{128-64\sqrt2}}{4}</math>
+<math>=\frac{\sqrt{128-64\sqrt{2}}}{4}</math>.
+Hence <math>FI^2=\frac{128-64\sqrt{2}}{16}=8-4\sqrt{2}</math>.  -HarryW
+
+--- Solution 5 ---
+<asy>
+real x=2sqrt(2);
+real y=2sqrt(16-8sqrt(2))-4+2sqrt(2);
+real z=2sqrt(8-4sqrt(2));
+real k= 8-2sqrt(2);
+real l= 2sqrt(2)-4;
+pair A, B, C, D, E, F, G, H, I, J, L, M, K;
+A = (0,0);
+B = (4,0);
+C = (4,4);
+D = (0,4);
+E = (x,0);
+F = (4,y);
+G = (y,4);
+H = (0,x);
+I = F + z * dir(225);
+L = (k,0);
+M = F + z * dir(315);
+K = (4,l);
+
+draw(A--B--C--D--A);
+draw(H--E);
+draw(J--G^^F--I);
+draw(F--M);
+draw(M--L);
+draw(E--K,dashed+linewidth(.5));
+draw(K--L,dashed+linewidth(.5));
+draw(B--L);
+draw(rightanglemark(G, J, I), linewidth(.5));
+draw(rightanglemark(F, I, E), linewidth(.5));
+draw(rightanglemark(F, M, L), linewidth(.5));
+fill((4,0)--(k,0)--M--(4,y)--cycle, gray);
+dot("$A$", A, S);
+dot("$C$", C, dir(90));
+dot("$D$", D, dir(90));
+dot("$E$", E, S);
+dot("$G$", G, N);
+dot("$H$", H, W);
+dot("$I$", I, SW);
+dot("$J$", J, SW);
+dot("$K$", K, S);
+dot("$F(G)$", F, E);
+dot("$H'$", L, S);
+dot("$B(D)$", B, S);
+
+
+</asy>
+Easily, we can find that: quadrilateral <imath>BFIE</imath> and <imath>DHJG</imath> are congruent with each other, so we can move <imath>DHJG</imath> to the shaded area (<imath>F</imath> and <imath>G</imath>, <imath>B</imath> and <imath>D</imath> overlapping) to form a square <imath>FIKJ'</imath> (<imath>DG</imath> = <imath>FB</imath>, <imath>CG</imath> = <imath>FC</imath>, <imath>{\angle} CGF</imath> = <imath>{\angle}CFG</imath> = <imath>45^{\circ}</imath> so <imath>{\angle} IFJ'= 90^{\circ}</imath>). Then we can solve <imath>AH</imath> = <imath>AE</imath> = <imath>\sqrt{2}</imath>, <imath>EB</imath> = <imath>2-\sqrt{2}</imath>, <imath>EK</imath> = <imath>2\sqrt{2}-2</imath>. 
+
+<imath>FI^2=\text{area of} \: BFIE+\text{area of} \:FJ'H'B+\text{area of} \:EH'K \\= 1 + 1 + \frac{1}{2}(2\sqrt{2}-2)^2=8-4\sqrt{2}\rightarrow \boxed{\textbf{(B)}\ 8-4\sqrt{2}}</imath>
+
+--Ryan Zhang @BRS
+--Minor edit by WhySean38
+
+--- Solution 6 ---
+<asy>
+real x=2sqrt(2);
+real y=2sqrt(16-8sqrt(2))-4+2sqrt(2);
+real z=2sqrt(8-4sqrt(2));
+pair A, B, C, D, E, F, G, H, I, J, K, L;
+A = (0,0);
+B = (4,0);
+C = (4,4);
+D = (0,4);
+E = (x,0);
+F = (4,y);
+G = (y,4);
+H = (0,x);
+I = F + z * dir(225);
+J = G + z * dir(225);
+K = (4-x,4);
+L = J + 1.68 * dir(45);
+
+draw(A--B--C--D--A);
+draw(H--E);
+draw(J--G^^F--I);
+draw(H--K,dashed+linewidth(.5));
+draw(L--K,dashed+linewidth(.5));
+draw(rightanglemark(G, J, I), linewidth(.5));
+draw(rightanglemark(F, I, E), linewidth(.5));
+draw(rightanglemark(H, K, L), linewidth(.5));
+draw(rightanglemark(K, L, G), linewidth(.5));
+
+dot("$A$", A, S);
+dot("$B$", B, S);
+dot("$C$", C, dir(90));
+dot("$D$", D, dir(90));
+dot("$E$", E, S);
+dot("$F$", F, dir(0));
+dot("$G$", G, N);
+dot("$H$", H, W);
+dot("$I$", I, SW);
+dot("$J$", J, SW);
+dot("$K$", K, N);
+dot("$L$", L, S);
+</asy>
+
+<math>[ABCD] = 4</math>, <math>AB = 2</math>, <math>[AHE] = 1</math>, <math>AH = AE = \sqrt{2}</math>, <math>DH = 2 - \sqrt{2}</math>, <math>JL = HK = \sqrt{2} \cdot DH = 2 \sqrt{2} - 2</math>
+
+Because <math>ABCD</math> is a square and <math>AH = AE</math>, <math>AC</math> is the line of symmetry of pentagon <math>CDHEB</math>. Because <math>[DHJG] = [BFIE]</math>, <math>DHJG</math> is the reflection of <math>BFIE</math> about line <math>AC</math>
+
+Let <math>FI = GJ = x</math>, <math>KL = LG = GJ - LJ = x - 2 \sqrt{2} + 2</math>
+
+<math>[DHK] = \frac{(2 - \sqrt{2})^2}{2} = 3 - 2 \sqrt {2}</math>
+
+<math>[GKL] = \frac{(x - 2 \sqrt{2} + 2)^2}{2} = \frac{x^2}{2} + 2x - 2x \sqrt{2} - 4 \sqrt{2} + 6</math>
+
+<math>[HKJL] = (x - 2 \sqrt{2} + 2) \cdot (2 \sqrt{2} - 2) = 2x \sqrt{2} - 2x + 8 \sqrt{2} -12</math>
+
+<cmath>[DHK] + [GKL] + [HKLJ] = [DHJG]</cmath>
+
+<cmath>3 - 2 \sqrt {2} +  \frac{x^2}{2} + 2x - 2x \sqrt{2} - 4 \sqrt{2} + 6 + 2x \sqrt{2} - 2x + 8 \sqrt{2} -12= 1</cmath>
+
+<cmath>\frac{x^2}{2} + 2 \sqrt{2} - 4 = 0</cmath>
+
+<cmath>x^2 = 8 - 4 \sqrt{2}</cmath>
+
+<cmath>FI^2 = \boxed{\textbf{(B)}\ 8-4\sqrt{2}}</cmath>
+
+--- Solution 7 ---
+Note that the side length of <math>ABCD</math> is 2 and thus the diagonal is of length <math>2\sqrt{2}</math>. However, the height to side <math>HE</math> in triangle <math>HAE</math> is 1, implying that <math>CM = 2\sqrt{2}-1</math> where <math>M</math> is the midpoint of <math>JI</math>. From here suppose that <math>N</math> is the midpoint of <math>\overline{FG}</math> and let <math>x = NC</math>, which means <math>FG=2x</math>. The area of the pentagon is then 
+<cmath>[FIJG]+[GCF]=GF \cdot FI + x^2 = (2x)(2\sqrt{2}-1-x)+x^2=1</cmath>
+Solving this quadratic for <math>x</math> yields <math>x=2\sqrt{2}-1 \pm \sqrt{8-4\sqrt{2}}</math> (technically the smaller value is the correct one but it doesn’t matter for our purposes). We can then calculate <math>FI^2 = (2\sqrt{2} -1 -x)^2 = \boxed{\textbf{(B) } 8-4\sqrt{2}}</math>.
+
+--- Solution 8 ---
+We extend <math>\overline{FB}</math> and <math>\overline{IE}</math> to meet at a point <math>X</math>. Since <math>\angle AEI = \angle BEX</math> and <math>FX</math> is parallel to <math>DA</math>, we know that <math>\triangle{BEX} \sim \triangle{AEH}</math>, and because <math>\angle BXE = \angle IXF</math> and <math>\angle XBE = \angle XIF</math>, we can conclude that <math>\triangle{BEX} \sim \triangle{AEH} \sim \triangle{IFX}</math>. 
+
+Now, because <math>\triangle{AEH}</math> is isosceles, right, and has an area of 1, we can conclude that <math>AE = AH = \sqrt{2}</math> and that <math>BE = 2-\sqrt{2}</math>. Armed with this knowledge, and setting <math>IF = a</math> and the area of <math>\triangle{BEX} = b</math>, we can use similarity to say that 
+<cmath>(\frac{a}{2-\sqrt{2}})^2 = \frac{1+b}{b}</cmath>
+Since we know the side lengths of <math>\triangle{BEX}</math> due to the fact that it is also an isosceles right triangle, we know that the area is <math>\frac{(2-\sqrt{2})^2}{2}</math>.
+Simplifying further and plugging in values, we have
+<cmath>\frac{a^2}{(2-\sqrt{2})^2} = 1 + \frac{2}{(2-\sqrt{2})^2)}</cmath>
+Multiplying by <math>(2-\sqrt{2})^2</math> on both sides, we get 
+<cmath>a^2 = (2-\sqrt{2})^2 + 2 = \boxed{\textbf{(B)}\ 8-4\sqrt{2}}</cmath>
+
+
+=== Problem 19 ===
+Square
+
+Choices: {'A': '\\ 2^{37}', 'B': '\\ 3\\cdot 2^{36}', 'C': '\\  2^{38}', 'D': '\\ 3\\cdot 2^{37}', 'E': '\\ 2^{39}</math>'}
+Answer: C
+
+--- Solution 1 ---
+For each transformation:
+<ol style="margin-left: 1.5em;">
+  <li>Each labeled vertex will move to an adjacent position.</li><p>
+  <li>The labeled vertices will maintain the consecutive order <math>ABCD</math> in either direction (clockwise or counterclockwise).</li><p>
+  <li><math>L</math> and <math>R</math> will retain the direction of the labeled vertices, but <math>H</math> and <math>V</math> will alter the direction of the labeled vertices.</li><p>
+</ol>
+After the <math>19</math>th transformation, vertex <math>A</math> will be at either <math>(1,-1)</math> or <math>(-1,1).</math> All possible configurations of the labeled vertices are shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+unitsize(7mm);
+label("$A$",(1,0));
+label("$B$",(1,1));
+label("$C$",(0,1));
+label("$D$",(0,0));
+
+label("$C$",(5,0));
+label("$D$",(5,1));
+label("$A$",(4,1));
+label("$B$",(4,0));
+
+label("$A$",(9,0));
+label("$D$",(9,1));
+label("$C$",(8,1));
+label("$B$",(8,0));
+
+label("$C$",(13,0));
+label("$B$",(13,1));
+label("$A$",(12,1));
+label("$D$",(12,0));
+
+label("\textbf{Configuration}",(-5,0.5));
+label("\textbf{The 20th}",(-5,-1.5));
+label("\textbf{Transformation}",(-5,-2.25));
+label("$L$",(0.5,-1.875));
+label("$R$",(4.5,-1.875));
+label("$H$",(8.5,-1.875));
+label("$V$",(12.5,-1.875));
+</asy>
+Each sequence of <math>19</math> transformations generates one valid sequence of <math>20</math> transformations. Therefore, the answer is <math>4^{19}=\boxed{\textbf{(C)}\ 2^{38}}.</math>
+
+--- Solution 2 ---
+Let <math>(+)</math> denote counterclockwise/starting orientation and <math>(-)</math> denote clockwise orientation.
+Let <math>1,2,3,</math> and <math>4</math> denote which quadrant <math>A</math> is in.
+
+Realize that from any odd quadrant and any orientation, the <math>4</math> transformations result in some permutation of <math>(2+, 2-, 4+, 4-).</math>
+
+The same goes that from any even quadrant and any orientation, the <math>4</math> transformations result in some permutation of <math>(1+, 1-, 3+, 3-).</math>
+
+We start our first <math>19</math> moves by doing whatever we want, <math>4</math> choices each time. Since <math>19</math> is odd, we must end up on an even quadrant. 
+
+As said above, we know that exactly one of the four transformations will give us <math>(1+),</math> and we must use that transformation.
+
+Thus, the answer is <math>4^{19}=\boxed{\textbf{(C)}\ 2^{38}}.</math>
+
+--- Solution 3 ---
+Notice that any '''pair''' of transformations either swaps the <imath>x</imath> and <imath>y</imath>-coordinates, negates the <imath>x</imath> and <imath>y</imath>-coordinates, swaps and negates the <imath>x</imath> and <imath>y</imath>-coordinates, or leaves the original unchanged. Furthermore, notice that for each of these results, if we apply another pair of transformations, one of these results will happen again, and with equal probability. Therefore, no matter what state we are in after we apply the first <imath>9</imath> pairs of transformations, there is a <imath>\frac{1}{4}</imath> chance the last pair of transformations will return the figure to its original position. Therefore, the answer is <imath>\frac{4^{20}}{8} = 2^{37} = \boxed{\textbf{(A)}\ 2^{37}}.</imath>
+
+--- Solution 4 ---
+The total number of sequences is <math>4^{20}=2^{40}.</math>
+
+Note that there can only be an even number of reflections since they result in the same anti-clockwise orientation of the vertices <math>A,B,C,D.</math> Therefore, the probability of having the same anti-clockwise orientation with the original arrangement after the transformation is <math>\frac{1}{2}.</math>
+
+Next, the even number of reflections means that there must be an even number of rotations since their sum is even. Even rotations result in only the original position or a <math>180^{\circ}</math> rotation of it. 
+
+Since rotation <math>R</math> and rotation <math>L</math> cancel each other out, the difference between the numbers of them define the final position. The probability of the transformation returning the vertices to the original position, given that there are even number of rotations, is equivalent to the probability that
+
+<center><math>|n(R)-n(L)|\equiv0\pmod{4}</math> when <math>|n(H)-n(V)|\equiv0\pmod{4}</math></center>
+
+<center>or</center>
+
+<center><math>|n(R)-n(L)|\equiv2\pmod{4}</math> when <math>|n(H)-n(V)|\equiv2\pmod{4}</math></center>
+
+which is again, <math>\frac{1}{2}.</math>
+
+Therefore, the answer is <math>2^{40}\cdot\frac{1}{2}\cdot\frac{1}{2}=\boxed{\textbf{(C)}\ 2^{38}}.</math>
+
+--- Solution 5 ---
+This problem is a [https://en.wikipedia.org/wiki/Dihedral_group Dihedral Group] problem, <math>D_4</math>, in [https://en.wikipedia.org/wiki/Group_theory Group Theory].
+
+The transformation has associativity, for <math>x, y, z \in 	\{ L, R, H, V \}</math>, <math>(x \circ y) \circ z = x \circ (y \circ z)</math>.
+
+Let <math>I</math> be the initial state of the square <math>A(1,1), B(-1,1), C(-1,-1),</math> and <math>D(1,-1)</math>.
+<cmath>\begin{align}
+R \circ L = L \circ R = V \circ V = H \circ H = I\\
+V \circ H = R \circ R = H \circ V = L \circ L\\
+H \circ R = L \circ H = V \circ L = R \circ V\\
+V \circ R = L \circ V = H \circ L = R \circ H
+\end{align}</cmath>
+It's not hard to see that after a series of transformations from initial state <math>I</math> to initial state <math>I</math>, the number of transformations must be even. Denote <math>f(2n)</math> be the number of sequences of <math>2n</math> transformations from initial state <math>I</math> to initial state <math>I</math>. We are going to prove <math>f(2n) = 4^{2n-1}</math>.
+
+For each transformation composite operator, there are <math>4</math> replacements. 
+
+For example, when <math>n = 2</math>:
+<cmath>R \circ R \circ R \circ R = (R \circ R) \circ R \circ R = I.</cmath>
+From <math>(2)</math>, <math>R \circ R = V \circ H = H \circ V = L \circ L</math>, so <math>R \circ R</math> can be replaced with <math>V \circ H</math>, <math>H \circ V</math>, <math>L \circ L</math> without changing the result. Suppose we choose <math>V \circ H</math>, then <cmath>(R \circ R) \circ R \circ R = (V \circ H) \circ R \circ R = V \circ (H \circ R) \circ R.</cmath>
+From <math>(3)</math>, <math>H \circ R = L \circ H = V \circ L = R \circ V</math>, so <math>H \circ R</math> can be replaced with <math>L \circ H</math>, <math>V \circ L</math>, <math>R \circ V</math> without changing the result. Suppose we choose <math>R \circ V</math>, then <cmath>V \circ (H \circ R) \circ R = V \circ (R \circ V) \circ R = V \circ R \circ (V \circ R).</cmath>
+From <math>(4)</math>, <math>V \circ R = L \circ V = H \circ L = R \circ H</math>, so <math>V \circ R</math> can be replaced with <math>L \circ V</math>, <math>H \circ L</math>, <math>R \circ H</math> without changing the result. Suppose we choose <math>H \circ L</math>, then <cmath>V \circ R \circ (V \circ R) =V \circ R \circ (H \circ L) = V \circ R \circ H \circ L = I.</cmath>
+So, we have <math>f(4) = 4^{4-1}</math>:
+<cmath>\underbrace{R \circ R \circ R \circ R \circ \dots R \circ R \circ R}_{2n}.</cmath>
+With <math>2n</math> <math>R</math> transformations, it will go from initial state to initial state. There are <math>2n-1</math> transformation composite operators <math>\circ</math> between the transformations, and each pair of transformations surrounding the transformations composite operator <math>\circ</math> have <math>4</math> options. So, we have <math>f(2n) = 4^{2n-1}</math>, from which <math>f(20) = 4^{20-1} = \boxed{\textbf{(C)}\ 2^{38}}</math>.
+
+<u><b>Side Note</b></u>
+
+Equations <math>(2)</math>, <math>(3)</math>, <math>(4)</math> are equivalent. Here I will prove that <math>(2)</math> is equivalent to <math>(3)</math>.
+
+From <math>(1)</math>, <math>R \circ L = V \circ V</math>. We have
+<cmath>H \circ (R \circ L) = H \circ (V \circ V) = (H \circ V) \circ V.</cmath>
+From <math>(2)</math>, <math>H \circ V = V \circ H = L \circ L</math>. We have
+<cmath>(H \circ V) \circ V = (V \circ H) \circ V = V \circ (H \circ V) = V \circ (L \circ L).</cmath>
+So, <cmath>(H \circ R) \circ L = H \circ (R \circ L) = V \circ (L \circ L) = (V \circ L) \circ L.</cmath>
+It follows that <math>H \circ R = V \circ L</math>, which is <math>(3)</math>.
+
+--- Solution 6 ---
+The number of possible ways to orient a square using this method <math>20</math> times would be <math>4^{20}</math>, as for each of the transformations we can only use the four transformations <math>L</math>, <math>V</math>, <math>H</math>, or <math>R</math>.
+
+After 20 transformations, there are only 4 possible outcomes, as parity prohibits the other 4 outcomes. By symmetry, all <math>4</math> of these possibilities are equally likely. Thus, our answer is <math>\frac{4^{20}}{4} = 4^{19}=\boxed{\textbf{(C)}\ 2^{38}}.</math>
+
+--- Solution 7 ---
+Let <math>x</math> represent rotating <math>\overline{AC}</math> <math>90^\circ</math> counterclockwise about the origin and let <math>y</math> represent rotating <math>\overline{BD}</math> <math>90^\circ</math> counterclockwise about the origin. Then, note that the transformations <math>L, V, H,</math> and <math>R</math> can be encoded by <math>xy, \tfrac{1}{xy}, \tfrac{y}{x},</math> and <math>\tfrac{x}{y},</math> respectively. Thus, we wish to compute the sum of the coefficients of the terms of the form <math>cx^{4a}y^{4b}</math> for <math>a, b, c \ge 0</math> in the polynomial <cmath>(xy+\tfrac{1}{xy}+\tfrac{y}{x}+\tfrac{x}{y})^{20}.</cmath> We can factor the polynomial to get <cmath>((x+\tfrac{1}{x})(y+\tfrac{1}{y}))^{20} = (x+\tfrac{1}{x})^{20}(y+\tfrac{1}{y})^{20}.</cmath> We can multiply the polynomial by <math>x^{20}y^{20}</math> and it wouldn't affect the sum of the coefficients of the terms of the form <math>cx^{4a}y^{4b},</math> so we can now work with <cmath>(x^2+1)^{20}(y^2+1)^{20}.</cmath> Now, it is very evident that we will get a term of the form <math>cx^{4a}y^{4b}</math> exactly when the first part of the polynomial contributes an even number of <math>x^2</math>'s and the second part of the polynomial contributes an even number of <math>y^2</math>'s, so the answer is
+\begin{align*}
+\left(\binom{20}{0} + \binom{20}{2} + \ldots + \binom{20}{20}\right)\left(\binom{20}{0} + \binom{20}{2} + \ldots + \binom{20}{20}\right) &= 2^{19} \cdot 2^{19} \\
+&= \boxed{\text{(C)} \ 2^{38}}.
+\end{align*}
+<math>\square</math>
+
+
+=== Problem 20 ===
+Two different cubes of the same size are to be painted, with the color of each face being chosen independently and at random to be either black or white. What is the probability that after they are painted, the cubes can be rotated to be identical in appearance?
+
+Choices: {'A': '\\ \\frac{9}{64}', 'B': '\\ \\frac{289}{2048}', 'C': '\\  \\frac{73}{512}', 'D': '\\ \\frac{147}{1024}', 'E': '\\ \\frac{589}{4096}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Define two ways of painting to be in the same <math>class</math> if one can be rotated to form the other.
+
+We can count the number of ways of painting for each specific <math>class</math>.
+
+Case 1: Black-white color distribution is 0-6 (out of 6 total faces)
+
+Trivially <math>1^2 = 1</math> way to paint the cubes.
+
+Case 2: Black-white color distribution is 1-5
+
+Trivially all <math>\dbinom{6}{5} = 6</math> ways belong to the same <math>class</math>, so <math>6^2</math> ways to paint the cubes.
+
+Case 3: Black-white color distribution is 2-4
+
+There are two <math>classes</math> for this case: the <math>class</math> where the two black faces are touching and the other <math>class</math> where the two black faces are on opposite faces. There are <math>3</math> members of the latter <math>class</math> since there are <math>3</math> unordered pairs of <math>2</math> opposite faces of a cube. Thus, there are <math>\dbinom{6}{4} - 3 = 12</math> members of the former <math>class</math>. Thus, <math>12^2 + 3^2</math> ways to paint the cubes for this case.
+
+Case 4: Black-white color distribution is 3-3
+
+By simple intuition, there are also two <math>classes</math> for this case, the <math>class</math> where the three black faces meet at a single vertex, and the other class where the three black faces are in a "straight line" along the edges of the cube. Note that since there are <math>8</math> vertices in a cube, there are <math>8</math> members of the former class and <math>\dbinom{6}{3} - 8 = 12</math> members of the latter class. Thus, <math>12^2 + 8^2</math> ways to paint the cubes for this case.
+
+Note that by symmetry (since we are only switching the colors), the number of ways to paint the cubes for black-white color distributions 4-2, 5-1, and 6-0 is 2-4, 1-5, and 0-6 (respectively).
+
+Thus, our total answer is<cmath>\frac{2(6^2 + 1^2 + 12^2 + 3^2) + 12^2 + 8^2}{2^{12}} = \frac{588}{4096} = \boxed{\textbf{(D) } \frac{147}{1024}}.</cmath>
+
+
+-fidgetboss_4000
+
+
+=== Problem 21 ===
+How many positive integers
+
+Choices: {'A': '2', 'B': '4', 'C': '6', 'D': '30', 'E': '32</math>'}
+Answer: C
+
+--- Solution 1 ---
+We can first consider the equation without a floor function:
+
+<cmath>\dfrac{n+1000}{70} = \sqrt{n} </cmath>
+
+Multiplying both sides by 70 and then squaring:
+
+<cmath>n^2 + 2000n + 1000000 = 4900n</cmath>
+
+Moving all terms to the left:
+
+<cmath>n^2 - 2900n + 1000000 = 0</cmath>
+
+Now we can determine the factors:
+
+<cmath>(n-400)(n-2500) = 0</cmath>
+
+This means that for <math>n = 400</math> and <math>n = 2500</math>, the equation will hold without the floor function.
+
+Now we can simply check the multiples of 70 around 400 and 2500 in the original equation, which we abbreviate as <math>L=R</math>.
+
+For <math>n = 330</math>, <math>L=19</math> but <math>18^2 < 330 < 19^2</math> so <math>R=18</math>
+
+For <math>n = 400</math>,  <math>L=20</math> and  <math>R=20</math>
+
+For <math>n = 470</math>,  <math>L=21</math>,  <math>R=21</math>
+
+For <math>n = 540</math>, <math>L=22</math> but <math>540 > 23^2</math> so   <math>R=23</math>
+
+Now we move to <math>n = 2500</math>
+
+For <math>n = 2430</math>,  <math>L=49</math> and <math>49^2 < 2430 < 50^2</math> so <math>R=49</math>
+
+For <math>n = 2360</math>,  <math>L=48</math> and <math>48^2 < 2360 < 49^2</math> so <math>R=48</math>
+
+For <math>n = 2290</math>,  <math>L=47</math> and <math>47^2 < 2360 < 48^2</math> so  <math>R=47</math>
+
+For <math>n = 2220</math>, <math>L=46</math> but <math>47^2 < 2220</math> so  <math>R=47</math>
+
+For <math>n = 2500</math>,  <math>L=50</math> and <math>R=50</math>
+
+For <math>n = 2570</math>, <math>L=51</math> but <math>2570 < 51^2</math> so <math>R=50</math>
+
+Therefore we have 6 total solutions, <math>n = 400, 470, 2290, 2360, 2430, 2500 = \boxed{\textbf{(C) 6}}</math>
+
+--- Solution 2 ---
+This is my first solution here, so please forgive me for any errors.
+
+We are given that <cmath>\frac{n+1000}{70}=\lfloor\sqrt{n}\rfloor.</cmath>
+
+We know <math>\lfloor\sqrt{n}\rfloor</math> must be an integer, which means that <math>n+1000</math> is divisible by <math>70</math>. As <math>1000\equiv 20\pmod{70}</math>, this means that <math>n\equiv 50\pmod{70}</math>, so we can write <math>n=70k+50</math> for <math>k\in\mathbb{Z}</math>. Note that <math>n</math> has to be nonnegative for <math>\sqrt{n}</math> to be defined. Thus, <math>n = 70k + 50 \geq 0</math>. Simplifying this, we have <math>k \geq -5/7</math>. In other words, <math>k</math> also has to be nonnegative.
+
+Therefore, <cmath>\frac{n+1000}{70}=\frac{70k+1050}{70}=k+15=\lfloor\sqrt{70k+50}\rfloor.</cmath>
+
+Also, we can say that <math>\sqrt{70k+50}-1 < k+15</math> and <math>k+15\leq\sqrt{70k+50}.</math>
+
+Since <math>k</math> is nonnegative, both sides of the second inequality are nonnegative, so we can square them to get <math>k^{2}+30k+225\leq70k+50\implies k^{2}-40k+175\leq 0\implies (k-5)(k-35)\leq0\implies 5\leq k\leq 35</math>.
+
+Similarly, solving the first inequality gives us <math>k < 19-\sqrt{155}</math> or <math>k > 19+\sqrt{155}.</math>
+
+We know that <math>\sqrt{155}</math> is larger than <math>12</math> and smaller than <math>13</math>, so instead, we can say <math>k\leq 6</math> or <math>k\geq 32</math>.
+
+Combining this with <math>5\leq k\leq 35</math>, we get <math>k=5,6,32,33,34,35</math> are all solutions for <math>k</math> that give a valid solution for <math>n</math>, meaning that our answer is <math>\boxed{\textbf{(C) 6}}</math>.
+-Solution By Qqqwerw
+
+--- Solution 3 ---
+We start with the given equation<cmath>\dfrac{n+1000}{70} = \lfloor \sqrt{n} \rfloor</cmath>From there, we can start with the general inequality that <math>\lfloor \sqrt{n} \rfloor \leq \sqrt{n} < \lfloor \sqrt{n} \rfloor + 1</math>. This means that<cmath>\dfrac{n+1000}{70} \leq \sqrt{n} < \dfrac{n+1070}{70}</cmath>Solving each inequality separately gives us two inequalities:<cmath>n - 70\sqrt{n} +1000 \leq 0 \rightarrow (\sqrt{n}-50)(\sqrt{n}-20)\leq 0 \rightarrow 20\leq \sqrt{n} \leq 50</cmath><cmath>n-70\sqrt{n}+1070 > 0 \rightarrow \sqrt{n} < 35-\sqrt{155} , \sqrt{n} > 35+\sqrt{155}</cmath>Simplifying and approximating decimals yields 2 solutions for one inequality and 4 for the other. Hence, the answer is <math>2+4 = \boxed{\textbf{(C) } 6}</math>.
+
+--- Solution 4 ---
+Let <math>n</math> be uniquely of the form <math>n=k^2+r</math> where <math>0 \le r \le 2k \; \bigstar</math>. Then, <cmath> \frac{k^2+r+1000}{70} = k</cmath> Rearranging and completeing the square gives <cmath>(k-35)^2 + r = 225</cmath> <cmath>\Rightarrow r = (k-20)(50-k)\; \smiley</cmath> This gives us <cmath>(k-35)^2 \le (k-35)^2+r=225 \le (k-35)^2 + 2k</cmath> Solving the left inequality shows that <math>20 \le k \le 50</math>. Combing this with the right inequality gives that <cmath>(k-35)^2+r=225 \le (k-35)^2 + 2k \le (k-35)^2+100 </cmath> which implies either <math>k \ge 47</math> or <math>k \le 23</math>. By directly computing the cases for <math>k = 20, 21, 22, 23, 47, 48, 49, 50</math> using <math>\smiley</math>, it follows that only <math> k = 22, 23</math> yield and invalid <math>r</math> from <math>\bigstar</math>. Since each <math>k</math> corresponds to one <math>r</math> and thus to one <math>n</math> (from <math>\smiley</math> and the original form), there must be 6 such <math>n</math>.
+
+--- Solution 5 ---
+Since the right-hand-side is an integer, so must be the left-hand-side. Therefore, we must have <math>n\equiv -20\pmod{70}</math>; let <math>n=70j-20</math>. The given equation becomes<cmath>j+14 = \lfloor \sqrt{70j-20} \rfloor</cmath>
+
+Since <math>\lfloor x \rfloor \leq x < \lfloor x \rfloor +1</math> for all real <math>x</math>, we can take <math>x=\sqrt{70j-20}</math> with <math>\lfloor x \rfloor =j+14</math> to get
+<cmath>j+14 \leq \sqrt{70j-20} < j+15</cmath>
+We can square the inequality to get<cmath>196+28j+j^{2} \leq 70j-20 < 225 + 30j + j^{2}</cmath>
+The left inequality simplifies to <math>(j-36)(j-6) \leq 0</math>, which yields <cmath>6 \le j \le 36.</cmath>
+The right inequality simplifies to <math>(j-20)^2 - 155 > 0</math>, which yields <cmath>j < 20 - \sqrt{155} < 8 \quad \text{or} \quad j > 20 + \sqrt{155} > 32</cmath> 
+
+Solving <math>j < 8</math>, and <math>6 \le j \le 36</math>, we get <math>6 \le j < 8</math>, for <math>2</math> values <math>j\in \{6, 7\}</math>.
+
+Solving <math>j >32</math>, and <math>6 \le j \le 36</math>, we get <math>32 < j \le 36</math>, for <math>4</math> values <math>k\in \{33, \ldots , 36\}</math>.
+ 
+Thus, our answer is <math>2 + 4 = \boxed{\textbf{(C) }6}</math>
+
+--- Solution 6 ---
+Set <math>x=\sqrt{n}</math> in the given equation and solve for <math>x</math> to get <math>x^2 = 70 \cdot \lfloor x \rfloor - 1000</math>. Set <math>k = \lfloor x \rfloor \ge 0</math>; since <math>\lfloor x \rfloor^2 \le x^2 < (\lfloor x \rfloor + 1)^2</math>, we get  <cmath>k^2 \le  70k - 1000 < k^2 + 2k + 1.</cmath>
+The left inequality simplifies to <math>(k-20)(k-50) \le 0</math>, which yields <cmath>20 \le k \le 50.</cmath>
+The right inequality simplifies to <math>(k-34)^2 > 155</math>, which yields <cmath>k < 34 - \sqrt{155} < 22 \quad \text{or} \quad k > 34 + \sqrt{155} > 46</cmath> 
+Solving <math>k < 22</math>, and <math>20 \le k \le 50</math>, we get <math>20 \le k < 22</math>, for <math>2</math> values <math>k\in \{20, 21\}</math>.
+
+Solving <math>k >46</math>, and <math>20 \le k \le 50</math>, we get <math>46 < k \le 50</math>, for <math>4</math> values <math>k\in \{47, \ldots , 50\}</math>.
+
+Thus, our answer is <math>2 + 4 = \boxed{\textbf{(C) }6}</math>
+
+--- Solution 7 ---
+If <math>n</math> is a perfect square, we can write <math>n = k^2</math> for a positive integer <math>k</math>, so <math>\lfloor \sqrt{n} \rfloor = \sqrt{n} = k.</math> The given equation turns into 
+
+\begin{align*}
+\frac{k^2 + 1000}{70} &= k \\
+k^2 - 70k + 1000 &= 0 \\
+(k-20)(k-50) &= 0,
+\end{align*}
+
+so <math>k = 20</math> or <math>k= 50</math>, so <math>n = 400, 2500.</math>
+
+If <math>n</math> is not square, then we can say that, for a positive integer <math>k</math>, we have 
+\begin{align*}
+k^2 < &n < (k+1)^2 \\
+k^2 + 1000 < &n + 1000  = 70\lfloor \sqrt{n} \rfloor = 70k< (k+1)^2 + 1000 \\
+k^2 + 1000 < &70k < (k+1)^2 + 1000.
+\end{align*}
+
+To solve this inequality, we take the intersection of the two solution sets to each of the two inequalities 
+<math>k^2 + 1000 < 70k</math> and <math>70k < (k+1)^2 + 1000</math>. To solve the first one, we have 
+
+\begin{align*}
+k^2 - 70k + 1000 &< 0 \\
+(k-20)(k-50) &< 0\\
+\end{align*}
+<math>k\in (20, 50),</math> because the portion of the parabola between its two roots will be negative. 
+
+The second inequality yields 
+
+\begin{align*}
+70k &< k^2 + 2k + 1 + 1000 \\
+0 &< k^2 -68k + 1001.
+\end{align*}
+This time, the inequality will hold for all portions of the parabola that are not on or between the its two roots, which are <math>34 + \sqrt{155}>46</math> and <math>34-\sqrt{155}<22</math> (they are roughly equal, but this is to ensure that we do not miss any solutions). 
+
+Notation wise, we need all integers <math>k</math> such that 
+
+<cmath>k \in \left(20, 50\right) \cap \left(-\infty,34 - \sqrt{155} \right)</cmath>
+or 
+<cmath>k \in \left(20, 50\right) \cap \left(34 + \sqrt{155}, \infty \right).</cmath>
+
+For the first one, since our uppoer bound is a little less than <math>22</math>, the <math>k</math> that works is <math>21</math>. For the second, our lower bound is a little more than <math>46</math>, so the <math>k</math> that work are <math>47, 48,</math> and  <math>49</math>. 
+
+<math>\boxed{\textbf{(C) }6}</math> total solutions for <math>n</math>, since each value of <math>k</math> corresponds to exactly one value of <math>n</math>. 
+
+-Benedict T (countmath1)
+
+--- Solution 8 ---
+First, express <math>\lfloor \sqrt{n} \rfloor = \sqrt{n} - \{\sqrt{n}\}</math> and simplify the equation out:
+<math>\newline</math>
+\begin{align*}
+n + 1000 = 70 \sqrt{n} - 70 \{\sqrt{n}\} \newline
+\end{align*}
+For simplicity, define <math>a = \sqrt{n}</math>.
+Then, <math>a^2 + 1000 = 70a - 70 \{a\}</math>
+Rearranging and factoring: <math>(a-20)(a-50) = -70 \{a\}</math>
+We know that <math>0 \leq \{a\} < 1</math>, so we can set <math>\{a\} = 0</math> to obtain <math>a = 20, 50 \implies n = 400, 2500</math>. 
+For the next solutions, we can use the quadratic formula on the equation <math>a^2 - 70a + (1000+70\{a\}) = 0</math>:
+<math>\newline</math>
+\begin{align*}
+a = 35 \pm \sqrt{1225 - (1000 + 70\{a\})} = 35 \pm \sqrt{225-70\{a\}}
+\end{align*}
+<math>\newline</math>
+Since \(a = 35 \pm \sqrt{225 - 70\{a\}}\) must produce real values of \(a\) that satisfy \(\lfloor a \rfloor = a - \{a\}\), the expression inside the square root must correspond to a value of \(a\) whose integer part stays consistent. Therefore, we only consider values of \(\{a\}\) that make \(a\) land near an integer, which happens when \(\sqrt{225 - 70\{a\}}\) is close to an integer. 
+<math>\newline</math>
+From earlier, we can use the bounds of <math>\{a\}</math> to find out that <math>225-70\{a\}</math> will approach a minimum of <math>225-70 = 155</math> but never reach it. Now, we can just list out the perfect squares between 155 and 225, as setting <math>225-70\{a\}</math> equal to that perfect square will result in an integer value of <math>a</math> corresponding to an integer value of <math>n</math>.
+<math>\newline</math>
+The two perfect squares that satisfy these restrictions are <math>k = 13</math> and <math>k = 14</math>. Then, <math>a = 35 \pm 14 \implies a = 49, 21</math> and <math>a = 35 \pm 13 \implies a = 48, 22</math>. 
+<math>\newline</math>
+We know that each value of <math>a = \sqrt{n}</math> corresponds to exactly one value of <math>n</math>, so we have a total of <math>2 + 4 = \boxed{\textbf{(C) }6}</math> total solutions for <math>n</math>.
+
+
+=== Problem 22 ===
+What is the maximum value of
+
+Choices: {'A': '\\ \\frac{1}{16}', 'B': '\\ \\frac{1}{15}', 'C': '\\ \\frac{1}{12}', 'D': '\\ \\frac{1}{10}', 'E': '\\ \\frac{1}{9}</math>'}
+Answer: C
+
+--- Solution 1 ---
+We proceed by using AM-GM. We get <math>\frac{(2^t-3t) + 3t}{2}</math> <math>\ge \sqrt{(2^t-3t)(3t)}</math>. Thus, squaring gives us that <math>4^{t-1} \ge (2^t-3t)(3t)</math>. Remembering what we want to find, we divide both sides of the inequality by the positive amount of <math>\frac{1}{3\cdot4^t}</math>. We get the maximal values as <math>\boxed{(C)  
+\frac{1}{12}}</math>, and we are done.
+
+--- Solution 2 ---
+Set <math> u = t2^{-t}</math>. Then the expression in the problem can be written as <cmath>R = - 3t^24^{-t} + t2^{-t}= - 3u^2 + u = - 3 (u - 1/6)^2 + \frac{1}{12} \le \frac{1}{12} .</cmath> It is easy to see that <math>u =\frac{1}{6}</math> is attained for some value of <math>t</math> between <math>t = 0</math> and <math>t = 1</math>, thus the maximal value of <math>R</math> is <math>\textbf{(C)}\ \frac{1}{12}</math>.
+
+--- Solution 3 ---
+We want to maximize <math>f(t) = \frac{(2^t-3t)t}{4^t} = \frac{t\cdot 2^t-3t^2}{4^t}</math>. We can use the first derivative test. Use quotient rule to get the following:
+<cmath>
+\frac{(2^t + t\cdot \ln{2} \cdot 2^t - 6t)4^t - (t\cdot 2^t - 3t^2)4^t \cdot 2\ln{2}}{(4^t)^2} = 0 \implies 2^t + t\cdot \ln{2} \cdot 2^t - 6t = (t\cdot 2^t - 3t^2) 2\ln{2} 
+</cmath>
+<cmath>
+\implies 2^t + t\cdot \ln{2}\cdot 2^t - 6t = 2t\ln{2} \cdot 2^t - 6t^2 \ln{2}
+</cmath>
+<cmath>
+\implies 2^t(1-t\cdot \ln{2}) = 6t(1 - t\cdot \ln{2}) \implies 2^t = 6t
+</cmath>Therefore, we plug this back into the original equation to get <math>\boxed{\textbf{(C)} \frac{1}{12}}</math>
+
+--- Solution 4 ---
+First, substitute <math>2^t = x (\log_2{x} = t)</math> so that 
+<cmath>
+\frac{(2^t-3t)t}{4^t} = \frac{x\log_2{x}-3(\log_2{x})^2}{x^2}
+</cmath>
+
+Notice that 
+<cmath>
+\frac{x\log_2{x}-3(\log_2{x})^2}{x^2} = \frac{\log_2{x}}{x}-3\Big(\frac{\log_2{x}}{x}\Big)^2.
+</cmath>
+
+When seen as a function, <math>\frac{\log_2{x}}{x}-3\Big(\frac{\log_2{x}}{x}\Big)^2</math> is a synthesis function that has <math>\frac{\log_2{x}}{x}</math> as its inner function.
+
+If we substitute <math>\frac{\log_2{x}}{x} = p</math>, the given function becomes a quadratic function that has a maximum value of <math>\frac{1}{12}</math> when <math>p = \frac{1}{6}</math>.
+
+
+Now we need to check if <math>\frac{\log_2{x}}{x}</math> can have the value of <math>\frac{1}{6}</math> in the range of real numbers.
+
+In the range of (positive) real numbers, function <math>\frac{\log_2{x}}{x}</math> is a continuous function whose value gets infinitely smaller as <math>x</math> gets closer to 0 (as <math>log_2{x}</math> also diverges toward negative infinity in the same condition). When <math>x = 2</math>, <math>\frac{\log_2{x}}{x} = \frac{1}{2}</math>, which is larger than <math>\frac{1}{6}</math>.
+
+Therefore, we can assume that <math>\frac{\log_2{x}}{x}</math> equals to <math>\frac{1}{6}</math> when <math>x</math> is somewhere between 1 and 2 (at least), which means that the maximum value of <math>\frac{(2^t-3t)t}{4^t}</math> is <math>\boxed{\textbf{(C)}\ \frac{1}{12}}</math>.
+
+--- Solution 5 ---
+Let the maximum value of the function be <math>m</math>. Then we have <cmath>\frac{(2^t-3t)t}{4^t} = m \implies m2^{2t} - t2^t + 3t^2 = 0.</cmath>
+Solving for <math>2^{t}</math>, we see <cmath>2^{t} = \frac{t}{2m} \pm \frac{\sqrt{t^2 - 12mt^2}}{2m} = \frac{t}{2m} \pm \frac{t\sqrt{1 - 12m}}{2m}.</cmath> We see that <math>1 - 12m \geq 0 \implies m \leq \frac{1}{12}.</math> Therefore, the answer is <math>\boxed{\textbf{(C)}\ \frac{1}{12}}</math>.
+
+--- Solution 6 ---
+Let <math>z=2^t.</math> Then, 
+
+<cmath>\frac{\left(2^t-3t\right)t}{4^t}=\frac{\left(z-3t\right)t}{z^2} = \frac{-3t^2+zt}{z^2}.</cmath>
+
+Upon inspection, the numerator of this expression grows at a relatively faster rate than the denominator, when <math>t</math> is close to <math>0</math>.
+
+As the numerator is a quadratic in <math>t</math> with a negative leading coefficient, its maximum value occurs at <math>t=\frac{-z}{2\cdot -3}=\frac{z}{6},</math> or when <math>6t=2^t.</math> Therefore, 
+
+<cmath>\frac{\left(2^t-3t\right)t}{4^t}=\frac{\left(6t-3t\right)t}{(6t)^2}=\frac{3t^2}{36t^2}=\boxed{\textbf{(C)}\ \frac{1}{12}}.</cmath>
+
+
+-Benedict T (countmath1)
+
+--- Solution 7 ---
+Note that
+<cmath>\dfrac{(2^t-3t)t}{4^t}=\dfrac{t\cdot 2^t}{4^t}-\dfrac{3t^2}{4^t}=\dfrac{t}{2^t}-3\left(\dfrac{t}{2^t}\right)^2.</cmath>
+Let <math>x=\frac{t}{2^t}.</math> Then, the expression becomes <math>x-3x^2,</math> which is minimized at <math>x=\frac{1}{6}</math>, giving a value of <math>\boxed{\textbf{(C)}\ \frac{1}{12}}.</math>
+
+
+
+Note: <math>\frac{t}{2^t}=\frac{1}{6}</math> is possible as <math>\frac{t}{2^t}</math> is continuous and that <math>\frac{0}{2^0}=0</math> and <math>\frac{2}{2^2}=\frac{1}{2}</math> so by the Intermediate Value Theorem (or just by intuition), there must be a <math>t</math> between <math>0</math> and <math>2</math> that satisfies <math>\frac{t}{2^t}=\frac{1}{6}.</math>
+
+
+=== Problem 23 ===
+How many integers
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ 3', 'D': '\\ 4', 'E': '\\ 5</math>'}
+Answer: B
+
+--- Solution 1 ---
+For <math>n=2</math>, we see that if <math>z_{1}+z_{2}=0</math>, then <math>z_{1}=-z_{2}</math>, so they are evenly spaced along the unit circle.
+
+For <math>n=3</math>, WLOG, we can set <math>z_{1}=1</math>. Notice that now Re<math>(z_{2}+z_{3})=-1</math> and Im<math>\{z_{2}\}</math> = <math>-</math>Im<math>\{z_{3}\}</math>. This forces <math>z_{2}</math> and <math>z_{3}</math> to be equal to <math>e^{i\frac{2\pi}{3}}</math> and <math>e^{-i\frac{2\pi}{3}}</math>, meaning that all three are equally spaced along the unit circle.
+
+We can now show that we can construct complex numbers when <math>n\geq 4</math> that do not satisfy the conditions in the problem.
+
+Suppose that the condition in the problem holds for some <math>n=k</math>. We can now add two points <math>z_{k+1}</math> and <math>z_{k+2}</math> anywhere on the unit circle such that <math>z_{k+1}=-z_{k+2}</math>, which will break the condition. Now that we have shown that <math>n=2</math> and <math>n=3</math> works, by this construction, any <math>n\geq 4</math> does not work, making the answer <math>\boxed{\textbf{(B)} 2}</math>.
+
+-Solution by Qqqwerw
+-Minor edit made by HappySharks
+
+
+=== Problem 24 ===
+Let
+
+Choices: {'A': '112', 'B': '128', 'C': '144', 'D': '172', 'E': '184</math>'}
+Answer: A
+
+--- Solution 1 ---
+Note that <imath>96 = 2^5 \cdot 3</imath>. Since there are at most six not necessarily distinct factors <imath>>1</imath> multiplying to <imath>96</imath>, we have six cases: <imath>k=1, 2, ..., 6.</imath> Now we look at each of the six cases.
+
+
+<imath>k=1</imath>: We see that there is <imath>1</imath> way, merely <imath>96</imath>.
+
+<imath>k=2</imath>: This way, we have the <imath>3</imath> in one slot and <imath>2</imath> in another, and symmetry. The four other <imath>2</imath>'s leave us with <imath>5</imath> ways and symmetry doubles us so we have <imath>10</imath>.
+
+<imath>k=3</imath>: We have <imath>3, 2, 2</imath> as our baseline. We need to multiply by <imath>2</imath> in <imath>3</imath> places, and see that we can split the remaining three powers of <imath>2</imath> in a manner that is <imath>3-0-0</imath>, <imath>2-1-0</imath> or <imath>1-1-1</imath>. A <imath>3-0-0</imath> split has <imath>6 + 3 = 9</imath> ways of happening (<imath>24-2-2</imath> and symmetry; <imath>2-3-16</imath> and symmetry), a <imath>2-1-0</imath> split has <imath>6 \cdot 3 = 18</imath> ways of happening (due to all being distinct) and a <imath>1-1-1</imath> split has <imath>3</imath> ways of happening (<imath>6-4-4</imath> and symmetry) so in this case we have <imath>9+18+3=30</imath> ways.
+
+<imath>k=4</imath>: We have <imath>3, 2, 2, 2</imath> as our baseline, and for the two other <imath>2</imath>'s, we have a <imath>2-0-0-0</imath> or <imath>1-1-0-0</imath> split. The former grants us <imath>4+12=16</imath> ways (<imath>12-2-2-2</imath> and symmetry and <imath>3-8-2-2</imath> and symmetry) and the latter grants us also <imath>12+12=24</imath> ways (<imath>6-4-2-2</imath> and symmetry and <imath>3-4-4-2</imath> and symmetry) for a total of <imath>16+24=40</imath> ways.
+
+<imath>k=5</imath>: We have <imath>3, 2, 2, 2, 2</imath> as our baseline and one place to put the last two: on another two or on the three. On the three gives us <imath>5</imath> ways due to symmetry and on another two gives us <imath>5 \cdot 4 = 20</imath> ways due to symmetry. Thus, we have <imath>5+20=25</imath> ways.
+
+<imath>k=6</imath>: We have <imath>3, 2, 2, 2, 2, 2</imath> and symmetry and no more twos to multiply, so by symmetry, we have <imath>6</imath> ways.
+
+
+Thus, adding, we have <imath>1+10+30+40+25+6=\boxed{\textbf{(A) } 112}</imath>.
+
+--- Solution 2 ---
+As before, note that <imath>96=2^5\cdot3</imath>, and we need to consider 6 different cases, one for each possible value of <imath>k</imath>, the number of factors in our factorization. However, instead of looking at each individually, find a general form for the number of possible factorizations with <imath>k</imath> factors. First, the factorization needs to contain one factor that is itself a multiple of <imath>3</imath>. There are <imath>k</imath> to choose from. That leaves <imath>k-1</imath> slots left to fill, each of which must contain at least one factor of <imath>2</imath>. Once we have filled in a <imath>2</imath> to each of the remaining slots, we're left with <imath>5-(k-1)=6-k</imath> twos. 
+
+Consider the remaining <imath>6-k</imath> factors of <imath>2</imath> left to assign to the <imath>k</imath> factors. Using stars and bars, the number of ways to do this is:
+<cmath>{{(6-k)+k-1}\choose{6-k}}={5\choose{6-k}}</cmath> This makes <imath>k{5\choose{6-k}}</imath> possibilities for each k.
+
+To obtain the total number of factorizations, add all possible values for k: <cmath>\sum_{k=1}^6 k{5\choose{6-k}}=1+10+30+40+25+6=\boxed{\textbf{(A) } \text{112}}.</cmath>
+
+--- Solution 3 ---
+Begin by examining <imath>f_1</imath>. <imath>f_1</imath> can take on any value that is a factor of <imath>96</imath> except <imath>1</imath>. For each choice of <imath>f_1</imath>, the resulting <imath>f_2...f_k</imath> must have a product of <imath>96/f_1</imath>. This means the number of ways the rest <imath>f_a</imath>, <imath>1<a<=k</imath> can be written by the scheme stated in the problem for each <imath>f_1</imath> is equal to <imath>D(96/f_1)</imath>, since the product of <imath>f_2 \cdot f_3... \cdot f_k=x</imath> is counted as one valid product if and only if <imath>f_1 \cdot x=96</imath>, the product <imath>x</imath> has the properties that factors are greater than <imath>1</imath>, and differently ordered products are counted separately.
+
+For example, say the first factor is <imath>2</imath>. Then, the remaining numbers must multiply to <imath>48</imath>, so the number of ways the product can be written beginning with <imath>2</imath> is <imath>D(48)</imath>. To add up all the number of solutions for every possible starting factor, <imath>D(96/f_1)</imath> must be calculated and summed for all possible <imath>f_1</imath>, except <imath>96</imath> and <imath>1</imath>, since a single <imath>1</imath> is not counted according to the problem statement. The <imath>96</imath> however, is counted, but only results in <imath>1</imath> possibility, the first and only factor being <imath>96</imath>. This means 
+
+<imath>D(96)=D(48)+D(32)+D(24)+D(16)+D(12)+D(8)+D(6)+D(4)+D(3)+D(2)+1</imath>. 
+
+Instead of calculating D for the larger factors first, reduce <imath>D(48)</imath>, <imath>D(32)</imath>, and <imath>D(24)</imath> into sums of <imath>D(m)</imath> where <imath>m<=16</imath> to ease calculation. Following the recursive definition <imath>D(n)=(</imath>sums of <imath>D(c))+1</imath> where c takes on every divisor of n except for 1 and itself, the sum simplifies to 
+
+<imath>D(96)=(D(24)+D(16)+D(12)+D(8)+D(6)+D(4)+D(3)+D(2)+1)</imath>
++<imath>(D(16)+D(8)+D(4)+D(2)+1)+D(24)+D(16)+D(12)+D(8)+D(6)+D(4)+D(3)+D(2)+1.</imath>
+
+<imath>D(24)=D(12)+D(8)+D(6)+D(4)+D(3)+D(2)+1</imath>, so the sum further simplifies to 
+
+<imath>D(96)=3D(16)+4D(12)+5D(8)+4D(6)+5D(4)+4D(3)+5D(2)+5</imath>, after combining terms. From quick casework,
+
+<imath>D(16)=8, D(12)=8, D(8)=4, D(6)=3, D(4)=2, D(3)=1</imath> and <imath>D(2)=1</imath>. Substituting these values into the expression above, 
+
+<imath>D(96)=3 \cdot 8+4 \cdot 8+5 \cdot 4+4 \cdot 3+5 \cdot 2+4 \cdot 1+5 \cdot 1+5=\boxed{\textbf{(A) } 112}</imath>.
+
+--- Solution 4 ---
+Note that <imath>96 = 3 \cdot 2^5</imath>, and that <imath>D</imath> of a perfect power of a prime is relatively easy to calculate. Also note that you can find <imath>D(96)</imath> from <imath>D(32)</imath> by simply totaling the number of ways there are to insert a <imath>3</imath> into a set of numbers that multiply to <imath>32</imath>.
+
+First, calculate <imath>D(32)</imath>. Since <imath>32 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2</imath>, all you have to do was find the number of ways to divide the <imath>2</imath>'s into groups, such that each group has at least one <imath>2</imath>. By stars and bars, this results in <imath>1</imath> way with five terms, <imath>4</imath> ways with four terms, <imath>6</imath> ways with three terms, <imath>4</imath> ways with two terms, and <imath>1</imath> way with one term. (The total, <imath>16</imath>, is not needed for the remaining calculations.)
+
+Then, to get <imath>D(96)</imath>, in each possible <imath>D(32)</imath> sequence, insert a <imath>3</imath> somewhere in it, either by placing it somewhere next to the original numbers (in one of <imath>n+1</imath> ways, where <imath>n</imath> is the number of terms in the <imath>D(32)</imath> sequence), or by multiplying one of the numbers by <imath>3</imath> (in one of <imath>n</imath> ways). There are <imath>2+1=3</imath> ways to do this with one term, <imath>3+2=5</imath> with two, <imath>7</imath> with three, <imath>9</imath> with four, and <imath>11</imath> with five.
+
+The resulting number of possible sequences is <imath>3 \cdot 1 + 5 \cdot 4 + 7 \cdot 6 + 9 \cdot 4 + 11 \cdot 1 = \boxed{\textbf{(A) }112}</imath>. ~[[User:emerald_block|emerald_block]]
+
+--- Solution 5 ---
+Consider the arrangement of the prime factors of 96 in a line <imath>(2,2, 2, 2, 2, 3)</imath>.  An arrangement of factors can be created by placing "dividers" to group primes.  For example, <imath>(2, 2, |, 2, 2, 2, |, 3)</imath> is equivalent to the arrangement <imath>4 \cdot 8 \cdot 3</imath>.  Because there are <imath>6</imath> ways to order the prime factors, and <imath>2^5</imath> ways to place dividers, this gives us an initial <imath>6 \cdot  2^5</imath> ways to arrange divisors.  
+
+However, through this method, we overcount cases where <imath>3</imath> is combined with another factor.  For example, the arrangement <imath>4 \cdot 6 \cdot 4</imath> can be written as <imath>(2, 2, |, 2, 3, |, 2, 2)</imath> or <imath>(2, 2, |, 3, 2, |, 2, 2)</imath>.  Precisely, we double count any case with <imath>6</imath> as a factor, triple count any case with <imath>12</imath>, quadruple count any case with <imath>24</imath>, etc.    
+
+Now, consider all cases where <imath>3</imath> must be grouped with at least one <imath>2</imath>.  This can be expressed in the same "line" format as <imath>(2, 2, 2, 2, 6)</imath>, where dividers can again be placed to group divisors.  In this case, there are <imath>5</imath> ways to order divisors, and <imath>2^4</imath> ways to place dividers, so we have an <imath>5 \cdot 2^4</imath> possible sequences for this case.  Notice that in this format, we double count cases where <imath>12</imath> is a factor, we triple count cases where <imath>24</imath> is a factor, etc.  Precisely, for any case counted <imath>n</imath> times in the first step, it is counted <imath>n - 1</imath> times in this step.  Thus, if we subtract, we count each case exactly once.  
+
+So, we get:
+
+<imath>6 \cdot  2^5 - 5 \cdot 2^4 = \boxed{\textbf{(A) }112}</imath>. ~[[User:hdai1122|hdai1122]]
+
+--- Solution 6 ---
+First we factor <imath>32</imath> into <imath>m</imath> numbers <imath>g_1, \cdots, g_m</imath> where <imath>g_i>1,i=1,\ldots,m</imath>. By applying stars and bars there are <imath>\binom{5-1}{m-1}</imath> ways. Then we can either insert <imath>3</imath> into each of the <imath>m+1</imath> spaces between (or beyond) <imath>g_i</imath>'s, or multiply it to one of the <imath>g_i</imath>'s, a total of <imath>2m+1</imath> ways. Hence the answer to the problem is
+
+<cmath>
+\sum_{m=1}^5 (2m+1)\binom{5-1}{m-1} = \sum_{n=0}^4 (2n+3) \binom{4}{n} = 8\sum_{n=0}^4 \frac{n}{4} \binom{4}{n} + 3 \sum_{n=0}^4 \binom{4}{n} = 8 \sum_{n=0}^4 \binom{3}{n-1} + 3\sum_{n=0}^4 \binom{4}{n} = 8 \cdot 2^3 + 3\cdot 2^4 = \boxed{\textbf{(A) }112}.
+</cmath>
+
+--- Solution 7 ---
+Note that <imath>96 = 2^5 \cdot 3</imath>. <imath>D(n)</imath> depends on dividing <imath>2^5</imath> into different terms, which is the [https://en.wikipedia.org/wiki/Partition_(number_theory) integer partition] of <imath>5</imath>.
+
+Divide <imath>96</imath> into <imath>1</imath> term:
+
+There is only one way. <imath>\underline{\textbf{1}}</imath>
+
+
+Divide <imath>96</imath> into <imath>2</imath> terms:
+
+ Case <imath>1</imath>: <imath>3</imath> is alone
+ <imath>(2^5,3)</imath> has <imath>{\textbf{2}}</imath> different arrangements.
+
+ Case <imath>2</imath>: <imath>3</imath> is with <imath>2^n</imath>
+ <imath>5 = 1 + 4 = 2 + 3</imath>. For <imath>(2, 2^4)</imath> and <imath>(2^2, 2^3)</imath>, <imath>3</imath> can be with any term from the <imath>2</imath> tuples, and the number of  arrangement of the <imath>2</imath> terms is <imath>2</imath>. <imath>2 \cdot 2 \cdot 2 = {\textbf{8}}</imath>
+
+<imath>2 + 8 = \underline{\textbf{10}}</imath>
+
+
+Divide <imath>96</imath> into <imath>3</imath> terms:
+
+ Case <imath>1</imath>: <imath>3</imath> is alone
+ <imath>5 = 2 + 3 = 1 + 4</imath>. For <imath>(2^2, 2^3, 3)</imath> and <imath>(2, 2^4, 3)</imath>, there are <imath>3!</imath> arrangements each. <imath>2 \cdot 3! = {\textbf{12}}</imath>
+
+ Case <imath>2</imath>: <imath>3</imath> is with <imath>2^n</imath>
+ <imath>5 = 1 + 1 + 3 = 1 + 2 + 2</imath>. For <imath>(2, 2, 2^3)</imath> and <imath>(2, 2^2, 2^2)</imath>, <imath>3</imath> can be with any term from the <imath>2</imath> tuples. If <imath>3</imath> is with <imath>2^3</imath> for the first tuple, or <imath>2</imath> for the second tuple, the number of arrangements is <imath>3</imath> for each. If <imath>3</imath> is with <imath>2</imath> for the first tuple, or <imath>2^2</imath> for the second tuple, the number of arrangements is <imath>6</imath> for each. <imath>2 \cdot 3 + 2 \cdot 6 = {\textbf{18}}</imath>
+
+<imath>12 + 18 = \underline{\textbf{30}}</imath>
+
+
+Divide <imath>96</imath> into <imath>4</imath> terms:
+
+ Case <imath>1</imath>: <imath>3</imath> is alone
+ <imath>5 = 1 + 1 + 3 = 1 + 2 + 2</imath>. For <imath>(2, 2, 2^3, 3)</imath> and <imath>(2, 2^2, 2^2, 3)</imath>, there are <imath>\frac{4!}{2!}</imath> arrangements each. <imath>2 \cdot \frac{4!}{2!} = {\textbf{24}}</imath>
+
+ Case <imath>2</imath>: <imath>3</imath> is with <imath>2^n</imath>
+ <imath>5 = 1 + 1 + 1 + 2</imath>. For <imath>(2, 2, 2, 2^2)</imath>, <imath>3</imath> can be with any term from the tuple. If <imath>3</imath> is with <imath>2^2</imath>, the number of arrangements is <imath>\frac{4!}{3!}</imath>. If <imath>3</imath> is with <imath>2</imath>, the number of arrangements is <imath>\frac{4!}{2!}</imath>.
+ <imath>\frac{4!}{3!} + \frac{4!}{2!} = {\textbf{16}}</imath>
+
+<imath>24 + 16 = \underline{\textbf{40}}</imath>
+
+
+Divide <imath>96</imath> into <imath>5</imath> terms:
+
+When dividing <imath>5</imath> into <imath>5</imath> parts there are <imath>2</imath> cases.
+
+ Case <imath>1</imath>: <imath>3</imath> is alone
+ <imath>5 = 1 + 1 + 1 + 2</imath>. For <imath>(2, 2, 2, 2^2, 3)</imath>, there are <imath>\frac{5!}{3!}</imath> arrangements. <imath>\frac{5!}{3!} = {\textbf{20}}</imath>
+
+ Case <imath>2</imath>: <imath>3</imath> is with <imath>2^n</imath>
+ <imath>5 = 1 + 1 + 1 + 1 + 1</imath>. For <imath>(2, 2, 2, 2, 2)</imath>, <imath>3</imath> can only be with <imath>2</imath>. The number of arrangements is <imath>\frac{5!}{4!} = \textbf{5}</imath>
+
+<imath>20 + 5 = \underline{\textbf{25}}</imath>
+
+
+Divide <imath>96</imath> into <imath>6</imath> terms:
+
+<imath>5 = 1 + 1 + 1 + 1 + 1</imath>. The number of arrangements of <imath>(2, 2, 2, 2, 2, 3)</imath> is <imath>\frac{6!}{5!} = \underline{\textbf{6}}</imath>
+
+
+<imath> 1 + 10 + 30 + 40 + 25 + 6 = \boxed{\textbf{(A) }112}</imath>
+
+--- Solution 8 ---
+Ignore the <imath>3</imath> first and first count <imath>2^{x_1+x_2+...+x^n}=32</imath> which <imath>x_1+x_2+...+x_n=5</imath>. This implies that <imath>n</imath> is less than or equal to <imath>5</imath>. Now, we can see that <imath>3</imath> can lie between the two <imath>x_i, x_{i+1}</imath>, or contribute to one of them. This gives <imath>2k+1</imath> if <imath>x_1+...+x_k=5</imath>. Now, just sum up gives <imath>\binom{5-1}{5-1}\cdot 11+\binom{5-1}{4-1}\cdot 9+\binom{5-1}{3-1}\cdot 7+\binom{5-1}{2-1}\cdot 5+\binom{5-1}{1-1}\cdot 3=\boxed{112}</imath>.
+
+--- Solution 9 ---
+Consider how we partition the factors of <imath>96 = 2^5\cdot 3</imath>. For each <imath>k</imath>, there are two cases. Either we can put the <imath>2</imath>s into <imath>k</imath> nonzero parts, so that the <imath>3</imath> shares a partition with some <imath>2</imath>s, which can be done in <imath>k\binom{5-(k-1)+(k-1)-1}{k-2} = k\binom{4}{k-2}</imath> ways, or we can put the <imath>2</imath>s into <imath>k-1</imath> nonzero parts and put the <imath>3</imath> in its own partition, which can be done in <imath>k\binom{5-k+k-1}{k-1} = k\binom{4}{k-1}</imath> ways. Summing over all <imath>k</imath>, we have 
+<cmath>\sum_{k=1}^6 k\binom{4}{k-2} + \sum_{k=1}^6 k\binom{4}{k-1}.</cmath> 
+
+But <imath>\sum_{k=1}^6 k\binom{4}{k-2} = 2\binom{4}{0}+3\binom{4}{1} + \dots + 6\binom{4}{4} = 4 \cdot \sum_{i=0}^4 \binom{4}{i} = 4 \cdot 2^4 = 64</imath>. Similarly, <imath>\sum_{k=1}^6 k\binom{4}{k-1} = 3\cdot 2^4 = 48</imath>. So our answer is <imath>64+48 = \boxed{\textbf{(A) }112}</imath>.
+
+--- Solution 10 ---
+After careful inspection we notice that for each respect value of k, there are a certain number of unique set of numbers that form total word arrangements. Using case work we can deduce that for each respective k value:
+
+k = 1:
+96
+
+k = 2:
+2 48, 
+3 32, 
+4 24, 
+6 16, 
+8 12
+
+k = 3:
+2 6 8, 
+2 3 16, 
+3 4 8, 
+2 4 12, 
+2 2 24, 
+4 4 6
+
+k = 4:
+2 2 3 8, 
+2 3 4 4, 
+2 2 2 12, 
+2 2 4 6
+
+k = 5:
+2 2 2 3 4, 
+2 2 2 2 6
+
+k = 6:
+2 2 2 2 2 3
+
+Using the word arrangement formula (<imath>\frac{n!}{f1!f2!...fn!}</imath>, where <imath>n</imath> is the total number of letters in the word, and <imath>f</imath> is the frequency of each respective letter for instance in "aabc" the letter "a" has a frequency of 2, b has 1, and c has 1)  for each respective set of unique integers we obtain the sum <imath>1 + 10 + 30 + 40 + 25 + 6 = 112 = \boxed{\textbf{(A) }112}</imath>
+
+--- Solution 11 ---
+This question is like [[2010 AMC 8 Problems/Problem 25|2010 AMC 8 problem 25]], if we treat each prime factor of <imath>96 = 2^5 \cdot 3</imath> as a step, this is a recursive problem of climbing stairs.
+
+The stair can be designed like
+<asy> size(8cm); defaultpen(fontsize(10pt)); draw((0, 1) -- (5, 1) ^^ (1, 0) -- (1, 1) ^^ (2, 0) -- (2, 1) ^^ (3, 0) -- (3, 1) ^^ (4, 0) -- (4, 1) ^^ (5, 0) -- (5, 1)); draw((0, 2) -- (0, 0) -- (6, 0), Arrows); label("2", (6, 0), E); label("3", (0, 2), N); label("start", (0, 0), SW); label("end", (5, 1), NE);</asy>
+
+In this grid, we can only take any number of steps to the right or up, so the number of each point is the sum of all numbers to its left and below it. We label the points to obtain number of paths.
+<asy> size(8cm); defaultpen(fontsize(10pt)); draw((0, 1) -- (5, 1) ^^ (1, 0) -- (1, 1) ^^ (2, 0) -- (2, 1) ^^ (3, 0) -- (3, 1) ^^ (4, 0) -- (4, 1) ^^ (5, 0) -- (5, 1)); draw((0, 2) -- (0, 0) -- (6, 0), Arrows); label("2", (6, 0), E); label("3", (0, 2), N); label("start", (0, 0), SW); label("end", (5, 1), NE); label("1", (0, 0), NW); label("1", (1, 0), NW); label("2", (2, 0), NW); label("4", (3, 0), NW); label("8", (4, 0), NW); label("16", (5, 0), NW); label("1", (0, 1), NW); label("3", (1, 1), NW); label("8", (2, 1), NW); label("20", (3, 1), NW); label("48", (4, 1), NW); label("112", (5, 1), NW);</asy>
+
+The result is <imath>\boxed{\textbf{(A) }112}</imath>
+
+--- Solution 12 ---
+There are <imath>2^4=16</imath> ways of placing (or not placing) <imath>\times</imath>’s between five <imath>2</imath>’s. These placements can be grouped into <imath>8</imath> pairs such that in each pair, the total number of <imath>\times</imath>’s is <imath>4</imath>.
+
+In each pair, there are <imath>4+2=6</imath> powers of <imath>2</imath> and <imath>6+2=8</imath> spaces between/beyond these powers. We can either multiply <imath>3</imath> with one of the powers, or place <imath>3</imath> in the spaces between/beyond the powers (so that we have a single <imath>3</imath> in the product), giving a total of <imath>6+8=14</imath> ways of decomposing <imath>96</imath> into products greater than <imath>1</imath>.
+
+The answer is then <imath>8\cdot 14=112</imath>.
+
+
+=== Problem 25 ===
+For each real number
+
+Choices: {'A': '\\ \\frac{7}{12}', 'B': '\\ 2 - \\sqrt{2}', 'C': '\\ \\frac{1+\\sqrt{2}}{4}', 'D': '\\ \\frac{\\sqrt{5}-1}{2}', 'E': '\\ \\frac{5}{8}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Let's start first by manipulating the given inequality.
+
+<cmath>\sin^{2}{(\pi x)}+\sin^{2}{(\pi y)}>1</cmath>
+<cmath>\sin^{2}{(\pi x)}>1-\sin^{2}{(\pi y)}=\cos^{2}{(\pi y)}</cmath>
+
+Let's consider the boundary cases: <math>\sin{(\pi x)}=\pm \cos{(\pi y)}</math>.
+
+<cmath>\sin{(\pi x)}=\pm \cos{(\pi y)}=\sin{(\tfrac 12 {\pi}\pm \pi y)}</cmath>
+
+Solving the first case gives us <cmath>y=\tfrac{1}{2}-x \quad \textrm{and} \quad  y=x-\tfrac{1}{2}.</cmath> Solving the second case gives us <cmath>y=x+\tfrac{1}{2}\quad \textrm{and} \quad y=\tfrac{3}{2}-x.</cmath> If we graph these equations in <math>[0,1]\times[0,1]</math>, we get a rhombus shape. 
+<asy>
+defaultpen(fontsize(9)+0.8); size(200);
+pen p=fontsize(10);
+pair A,B,C,D,A1,A2,B1,B2,C1,C2,D1,D2,I,L;
+A=MP("(0,0)",origin,down+left,p); B=MP("(1,0)",right,down+right,p); C=MP("(1,1)",right+up,up+right,p);  D=MP("(0,1)",up,up+left,p);
+A1=MP("",extension(A,B,(0.5,0),(0,0.5)),2*down,p); dot(A1);
+A2=MP("",extension(A,D,(0.5,0),(0,0.5)),2*left,p); dot(A2);
+B1=MP("",extension(B,C,(0.5,0),(0,-0.5)),2*right,p); dot(B1);
+B2=MP("",extension(C,D,(0.5,1),(0,0.5)),2*up,p); dot(B2);
+real a=0.7;
+draw(A1--B1--B2--A2--cycle, gray+0.6);
+draw(a*right--a*right+up, royalblue);
+draw(A1--B2, royalblue+dashed);
+draw(A--B--C--D--A, black+1.2);
+dot("$(a,0)$",(a,0),down); dot("$(a,1)$",(a,1),up);
+</asy>
+Testing points in each section tells us that the inside of the rhombus satisfies the inequality in the problem statement.
+
+From the region graph, notice that in order to maximize <math>P(a)</math>, <math>a\geq\tfrac{1}{2}</math>. We can solve the rest with geometric probability.
+
+Instead of maximizing <math>P(a)</math>, we minimize <math>Q(a)=1-P(a)</math>. <math>Q(a)</math> consists of two squares (each broken into two triangles), one of area <math>\tfrac{1}{4}</math> and another of area <math>(a-\tfrac 12)^2</math>. To calculate <math>Q(a)</math>, we divide this area by <math>a</math>, so <cmath>Q(a) = \frac{1}{a}\left(\frac{1}{4}+(a-\tfrac 12)^2\right) = \frac{1}{a}\left(\frac{1}{2}+a^2-a\right)= a+\frac 1{2a}-1.</cmath>
+
+By AM-GM, <math>a+\frac{1}{2a}\geq 2\sqrt{\frac{a}{2a}}=\sqrt{2}</math>, which we can achieve by setting <math>a=\frac{\sqrt{2}}{2}</math>.
+
+Therefore, the maximum value of <math>P(a)</math> is <math>1-\min(Q(a))</math>, which is <math>1-(\sqrt{2}-1) =\boxed{\textbf{(B)}\ 2 - \sqrt{2}}</math>
+
+--- Solution 2 ---
+<cmath>\sin^2{(\pi x)} + \sin^2{(\pi y)} > 1, \quad \sin^2{(\pi x)} - (1 - \sin^2{(\pi y)} ) > 0, \quad \sin^2{(\pi x)} - \cos^2{(\pi y)} > 0</cmath>
+
+<cmath>( \sin{(\pi x)} + \cos{(\pi y)} )(\sin{(\pi x)} - \cos{(\pi y)})> 0, \quad \left( \sin{(\pi x)} + \sin{( \frac{\pi}{2} - \pi y)} \right) \left( \sin{(\pi x)} - \sin{(\frac{\pi}{2} - \pi y)} \right)> 0</cmath>
+
+<cmath>2\sin{\left( \frac{ \pi x + \frac{\pi}{2} - \pi y }{2} \right)} \cos{\left( \frac{ \pi x - \frac{\pi}{2} + \pi y }{2} \right)} 2 \sin{\left( \frac{ \pi x - \frac{\pi}{2} + \pi y }{2} \right)} \cos{\left( \frac{ \pi x + \frac{\pi}{2} - \pi y }{2} \right)} > 0 </cmath>
+
+<cmath>2\sin{\left( \frac{ \pi x + \frac{\pi}{2} - \pi y }{2} \right)} \cos{\left( \frac{ \pi x + \frac{\pi}{2} - \pi y }{2} \right)} 2 \sin{\left( \frac{ \pi x - \frac{\pi}{2} + \pi y }{2} \right)} \cos{\left( \frac{ \pi x - \frac{\pi}{2} + \pi y }{2} \right)} > 0 </cmath>
+
+<cmath>\sin{\left(\pi x + \frac{\pi}{2} - \pi y\right)} \sin{\left( \pi x - \frac{\pi}{2} + \pi y \right)} > 0 </cmath>
+
+If <math>\sin{\left(\pi x + \frac{\pi}{2} - \pi y\right)} > 0</math> and <math> \sin{\left( \pi x - \frac{\pi}{2} + \pi y \right)} > 0 </math>
+
+<cmath>0 < \pi x + \frac{\pi}{2} - \pi y < \pi \quad \text{and} \quad 0 < \pi x - \frac{\pi}{2} + \pi y < \pi</cmath>
+
+<cmath>0 < x + \frac{1}{2} - y < 1 \quad \text{and} \quad 0 < x - \frac{1}{2} + y < 1</cmath>
+
+<cmath>x - \frac{1}{2} < y < x + \frac{1}{2} \quad \text{and} \quad -x + \frac{1}{2} < y < -x + \frac{3}{2}</cmath>
+
+If <math>\sin{\left(\pi x + \frac{\pi}{2} - \pi y\right)} < 0</math> and <math> \sin{\left( \pi x - \frac{\pi}{2} + \pi y \right)} < 0 </math>
+
+<cmath>\pi < \pi x + \frac{\pi}{2} - \pi y < 2\pi \quad \text{and} \quad \pi < \pi x - \frac{\pi}{2} + \pi y < 2\pi</cmath>
+
+<cmath>1 < x + \frac{1}{2} - y < 2 \quad \text{and} \quad 1 < x - \frac{1}{2} + y < 2</cmath>
+
+<cmath> x - \frac{3}{2} < y < x - \frac{1}{2} \quad \text{and} \quad -x + \frac{3}{2} < y < -x + \frac{5}{2}</cmath>
+
+Notice that <math>\sin{\left(\pi x + \frac{\pi}{2} - \pi y\right)} < 0</math> and <math> \sin{\left( \pi x - \frac{\pi}{2} + \pi y \right)} < 0 </math> cannot be true, because that means <math>x</math> is in the interval <math>[1, 2]</math>. Thus, <math>y</math> is in the the boundaries <math>x - \frac{1}{2} < y < x + \frac{1}{2}</math>, and <math>-x + \frac{1}{2} < y < -x + \frac{3}{2}</math>.
+
+Finishing like Solution 1, 3, or 4 gives <math>P(a) =\boxed{\textbf{(B)}\ 2 - \sqrt{2}}</math>
+
+--- Solution 3 ---
+We find the same region as in the first solution or the second solution, and again notice we must have <math>a \geq \frac{1}{2}</math>. 
+
+We now express <math>P</math> as a function of <math>b=(1-a)</math>. The triangle on the right of the line <math>x=b</math> is an isosceles right triangle with altitude <math>b</math>, so it has area <math>b^2</math>. The total area of the region to the left of <math>x=b</math> has area <math>1-b</math>. So 
+<cmath>P(b) = \frac{1/2 - b^2}{1-b}</cmath>
+Differentiating using the quotient rule, we find <math>P</math> has local extrema at
+<cmath>P'(b) = \frac{(1-h)(-2h)-(-1/2 - h^2)(-1)}{(1-h)^2} = 0</cmath>
+Setting the numerator equal to <math>0</math> and solving the quadratic, we find <math>P</math> has extrema at <math>b = 1 \pm \frac{\sqrt{2}}{2}</math>. Only <math>b=1-\frac{\sqrt 2}{2}</math> is within the desired region. Plugging in, we get <math>P(1-\frac{\sqrt 2}{2}) = \boxed{\textbf{(B)}\ 2 - \sqrt{2}}</math> as our solution. We also need to check <math>P(b=0) = 1/2</math>. But <math>1/2 < 2 - \sqrt{2}</math>, and if this isn't immediately obvious, <math>1/2</math> isn't an answer choice anyways.
+
+--- Solution 4 ---
+We find the same region as in the first solution or the second solution, and again notice <math>a \geq \frac{1}{2}</math>. 
+
+The numerator of <math>P(a)</math> is the area of the triangle with vertices <math>(0, \frac12), (\frac12, 0), (\frac12, 1)</math> plus the area of the rectangle with vertices <math>(\frac12,0), (a,0), (a,1), (\frac12,1)</math> subtract the area of the isosceles right triangle between <math>x=a, y=0,x - \frac{1}{2}</math> and the isosceles right triangle between <math>x=a, y=1, -x + \frac{3}{2}</math>. The denominator of <math>P(a)</math> is the area of rectangle with vertices <math>(0,0), (a,0), (a,1), (0,1)</math>.
+
+<cmath>P(a) = \frac{ \frac14 + a - \frac12 -(a - \frac12)^2 }{a} = \frac{a - \frac14 -a^2 + a - \frac14 }{a} = \frac{-a^2 + 2a - \frac12 }{a} = -a + 2 - \frac{1}{2a}</cmath>
+
+By the power rule, <math>P'(a) = -1 - \frac12(-1)\frac{1}{a^2} = -1 + \frac{1}{2a^2}</math>. Solving <math>P'(a) = 0</math>, we find that <math>a = \frac{ \sqrt{2} }{2}</math>
+
+<math>\because P'(a) = 0</math> when <math>a = \frac{ \sqrt{2} }{2}</math>, <math>P'(a)</math> is positive when <math>a < \frac{ \sqrt{2} }{2}</math>, and <math>P'(a)</math> is negative when <math>a > \frac{ \sqrt{2} }{2}</math>
+
+<math>\therefore P(a)</math> has a local maximum when <math>a = \frac{ \sqrt{2} }{2}</math>.
+
+<cmath>P(\frac{ \sqrt{2} }{2}) = - \frac{\sqrt{2} }{2} + 2 - \frac{1}{2 \cdot  \frac{\sqrt{2} }{2}} =\boxed{\textbf{(B)}\ 2 - \sqrt{2}}</cmath>
+
+--- Solution 5 ---
+Comparing the diagram of <math>\sin^{2}{(\pi x)}</math> and <math>\cos^{2}{(\pi y)}</math>, we can see if we let <math>x=k</math>, then <math>y\in (0+\lvert \dfrac{1}{2}-k\rvert,1-\lvert\dfrac{1}{2}-k\rvert)</math> will satisfy the above inequality.
+
+Thus, we can write that 
+<cmath>P(a) = \frac{1}{a} (\int_0^{a}1-2\lvert\frac{1}{2}-x\rvert{\rm d}x)</cmath>
+<cmath>P(a) = \frac{1}{a} (\int_0^{\frac{1}{2}}2x{\rm d}x + \int_{\frac{1}{2}}^{a}2-2x{\rm d}x) = -a+2-\frac{1}{2a}</cmath>
+
+Then it is easy to find that <math>P(a)</math> is maximized when <math>a=\dfrac{\sqrt{2}}{2}</math>, which give us <math>P(\dfrac{\sqrt{2}}{2})=\boxed{\textbf{(B)}\ 2 - \sqrt{2}}</math>
+
+

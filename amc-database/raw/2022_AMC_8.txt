@@ -1,0 +1,1165 @@
+=== Problem 1 ===
+The Math Team designed a logo shaped like a multiplication symbol, shown below on a grid of 1-inch squares. What is the area of the logo in square inches?
+
+<asy>
+defaultpen(linewidth(0.5));
+size(5cm);
+defaultpen(fontsize(14pt));
+label("$\textbf{Math}$", (2.1,3.7)--(3.9,3.7));
+label("$\textbf{Team}$", (2.1,3)--(3.9,3));
+filldraw((1,2)--(2,1)--(3,2)--(4,1)--(5,2)--(4,3)--(5,4)--(4,5)--(3,4)--(2,5)--(1,4)--(2,3)--(1,2)--cycle, mediumgray*0.5 + lightgray*0.5);
+
+draw((0,0)--(6,0), gray);
+draw((0,1)--(6,1), gray);
+draw((0,2)--(6,2), gray);
+draw((0,3)--(6,3), gray);
+draw((0,4)--(6,4), gray);
+draw((0,5)--(6,5), gray);
+draw((0,6)--(6,6), gray);
+
+draw((0,0)--(0,6), gray);
+draw((1,0)--(1,6), gray);
+draw((2,0)--(2,6), gray);
+draw((3,0)--(3,6), gray);
+draw((4,0)--(4,6), gray);
+draw((5,0)--(5,6), gray);
+draw((6,0)--(6,6), gray);
+</asy>
+
+Choices: {'A': '10', 'B': '12', 'C': '13', 'D': '14', 'E': '15</math>'}
+Answer: A
+
+--- Solution 1 ---
+We can see that there are 4 whole squares, since the area of each square will be 1, 4 * 1 = 4. Next, there are 12 half squares, and 2 half squares are 1 whole square, so 12/2 = 6 whole squares. The area of this will be 6 * 1 = 6. Finally, we can add the 2 numbers. 4 + 6  = <math>\boxed{\textbf{(A)}
+
+--- Solution 2 ---
+Draw the following four lines as shown:
+<asy>
+usepackage("mathptmx");
+defaultpen(linewidth(0.5));
+size(5cm);
+defaultpen(fontsize(14pt));
+label("$\textbf{Math}$", (2.1,3.7)--(3.9,3.7));
+label("$\textbf{Team}$", (2.1,3)--(3.9,3));
+filldraw((1,2)--(2,1)--(3,2)--(4,1)--(5,2)--(4,3)--(5,4)--(4,5)--(3,4)--(2,5)--(1,4)--(2,3)--(1,2)--cycle, mediumgray*0.5 + lightgray*0.5);
+
+draw((0,0)--(6,0), gray);
+draw((0,1)--(6,1), gray);
+draw((0,2)--(6,2), gray);
+draw((0,3)--(6,3), gray);
+draw((0,4)--(6,4), gray);
+draw((0,5)--(6,5), gray);
+draw((0,6)--(6,6), gray);
+
+draw((0,0)--(0,6), gray);
+draw((1,0)--(1,6), gray);
+draw((2,0)--(2,6), gray);
+draw((3,0)--(3,6), gray);
+draw((4,0)--(4,6), gray);
+draw((5,0)--(5,6), gray);
+draw((6,0)--(6,6), gray);
+
+draw((3,4)--(4,3), red);
+draw((4,3)--(3,2), red);
+draw((3,2)--(2,3), red);
+draw((2,3)--(3,4), red);
+</asy>
+
+We see these lines split the figure into five squares with side length <math>\sqrt2</math>. Thus, the area is <math>5\cdot\left(\sqrt2\right)^2=5\cdot 2 = \boxed{\textbf{(A) } 10}</math>.
+
+--- Solution 3 ---
+There are <math>5</math> lattice points in the interior of the logo and <math>12</math> lattice points on the boundary of the logo. Because of Pick's Theorem, the area of the logo is <math>5+\frac{12}{2}-1=\boxed{\textbf{(A) } 10}</math>.
+
+--- Solution 4 ---
+Notice that the area of the figure is equal to the area of the <math>4 \times 4</math> square subtracted by the <math>12</math> triangles that are half the area of each square, which is <math>1</math>. The total area of the triangles not in the figure is <math>12 \cdot \frac{1}{2} = 6</math>, so the answer is <math>16-6 = \boxed{\textbf{(A) } 10}</math>.
+
+--- Solution 5 ---
+Draw the following four lines as shown:
+
+<asy>
+usepackage("mathptmx");
+defaultpen(linewidth(0.5));
+size(5cm);
+defaultpen(fontsize(14pt));
+label("$\textbf{Math}$", (2.1,3.7)--(3.9,3.7));
+label("$\textbf{Team}$", (2.1,3)--(3.9,3));
+filldraw((1,2)--(2,1)--(3,2)--(4,1)--(5,2)--(4,3)--(5,4)--(4,5)--(3,4)--(2,5)--(1,4)--(2,3)--(1,2)--cycle, mediumgray*0.5 + lightgray*0.5);
+
+draw((0,0)--(6,0), gray);
+draw((0,1)--(6,1), gray);
+draw((0,2)--(6,2), gray);
+draw((0,3)--(6,3), gray);
+draw((0,4)--(6,4), gray);
+draw((0,5)--(6,5), gray);
+draw((0,6)--(6,6), gray);
+
+draw((0,0)--(0,6), gray);
+draw((1,0)--(1,6), gray);
+draw((2,0)--(2,6), gray);
+draw((3,0)--(3,6), gray);
+draw((4,0)--(4,6), gray);
+draw((5,0)--(5,6), gray);
+draw((6,0)--(6,6), gray);
+
+draw((2,4)--(4,4), red);
+draw((4,4)--(4,2), red);
+draw((4,2)--(2,2), red);
+draw((2,2)--(2,4), red);
+</asy>
+
+The area of the big square is <math>4</math>, and the area of each triangle is <math>0.5</math>. There are <math>12</math> of these triangles, so the total area of all the triangles is <math>0.5\cdot12=6</math>. Therefore, the area of the entire figure is <math>4+6=\boxed{\textbf{(A) } 10}</math>.
+
+--- Solution 6 ---
+The coordinates are <math>(1,2), (2,1), (3,2), (4,1), (5,2), (4,3), (5,4), (4,5), (3,4), (2,5), (1,4), (2,3)</math>
+Use the [[Shoelace Theorem]] to get <math>\boxed{\textbf{(A)}
+
+--- Solution 7 ---
+If the triangles are rearranged such that the gaps are filled, there would be a <math>4</math> by <math>2</math> rectangle, and two <math>1</math> by <math>1</math> squares are present. Thus, the answer is <math>\boxed{\textbf{(A)}
+
+
+=== Problem 2 ===
+Consider these two operations:
+<cmath>\begin{align*}
+a \, \blacklozenge \, b &= a^2 - b^2\\
+a \, \bigstar \, b &= (a - b)^2
+\end{align*}</cmath>
+What is the value of
+
+Choices: {'A': '{-}20', 'B': '4', 'C': '16', 'D': '100', 'E': '220</math>'}
+Answer: D
+
+--- Solution 1 ---
+We can find a general solution to any <imath>((a \, \blacklozenge \, b) \, \bigstar \, c)</imath>.
+<cmath> ((a \, \blacklozenge \, b) \, \bigstar \, c)</cmath>
+<cmath> =((a^2-b^2) \, \bigstar \, c) </cmath>
+<cmath> =(a^2-b^2-c)^2 </cmath>
+<cmath> =a^4+b^4-(a^2)(b^2)-2(a^2)(c)-(b^2)(a^2)+2(b^2)(c)+c^2 </cmath>
+<cmath> =5^4+3^4-(5^2)(3^2)-2(5^2)(6)-(3^2)(5^2)+2(3^2)(6)+6^2 </cmath>
+<cmath> =625+81-225-300-225+108+36 </cmath>
+<cmath> =\boxed{\textbf{(D) } 100} </cmath>
+
+
+
+
+
+To time wasting
+
+just go to solution 2
+
+--- Solution 2 ---
+The problem is basically ((5^2-3^2)-6)^2
+
+=(16-6)^2
+=10^2
+100 = option D
+
+
+=== Problem 3 ===
+When three positive integers
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4</math>'}
+Answer: E
+
+--- Solution 1 ---
+The positive divisors of <math>100</math> are <cmath>1,2,4,5,10,20,25,50,100.</cmath>
+It is clear that <math>10\leq c\leq50,</math> so we apply casework to <math>c:</math>
+
+* If <math>c=10,</math> then <math>(a,b,c)=(2,5,10).</math>
+
+* If <math>c=20,</math> then <math>(a,b,c)=(1,5,20).</math>
+
+* If <math>c=25,</math> then <math>(a,b,c)=(1,4,25).</math>
+
+* If <math>c=50,</math> then <math>(a,b,c)=(1,2,50).</math>
+
+Together, the numbers <math>a,b,</math> and <math>c</math> can be chosen in <math>\boxed{\textbf{(E) } 4}</math> ways.
+
+--- Solution 2 ---
+The positive divisors of <math>100</math> are <cmath>1,2,4,5,10,20,25,50,100.</cmath>
+We apply casework to <math>a</math>:
+
+If <math>a=1</math>, then there are <math>3</math> cases:
+
+* <math>b=2,c=50</math>
+
+* <math>b=4,c=25</math>
+
+* <math>b=5,c=20</math>
+
+If <math>a=2</math>, then there is only <math>1</math> case:
+
+* <math>b=5,c=10</math>
+
+In total, there are <math>3+1=\boxed{\textbf{(E) } 4}</math> ways to choose distinct positive integer values of <math>a,b,c</math>.
+
+
+=== Problem 4 ===
+The letter <b>M</b> in the figure below is first reflected over the line <imath>q</imath> and then reflected over the line <imath>p</imath>. What is the resulting image?
+
+<asy>
+// pog diagram
+usepackage("newtxtext");
+size(3cm);
+draw((-1,0)--(1,0)); draw((0,-1)--(0,1)); label("$\textbf{\textsf{M}}$",(0.25,0.6));
+draw((-0.8,-0.8)--(0.8,0.8),linewidth(1.1)); label("$p$", (-1,0),NE); label("$q$", (-0.75,-0.75), N*1.5);
+</asy>
+
+<asy>
+// pog diagram
+usepackage("newtxtext");
+size(12.5cm);
+draw((-1,0)--(1,0)); draw((0,-1)--(0,1)); label(rotate(90)*"$\textbf{\textsf{M}}$",(0.6,-0.25));
+draw((-0.8,-0.8)--(0.8,0.8),linewidth(1.1)); 
+label("$\textbf{(A)}$",(-1,1),W);
+draw((2,0)--(4,0)); draw((3,-1)--(3,1)); label(rotate(270)*"$\textbf{\textsf{M}}$",(2.8,0.7));
+draw((2.2,-0.8)--(3.8,0.8),linewidth(1.1)); 
+label("$\textbf{(B)}$",(2,1),W);
+draw((5,0)--(7,0)); draw((6,-1)--(6,1)); label(rotate(90)*"$\textbf{\textsf{M}}$",(5.4,0.2));
+draw((5.2,-0.8)--(6.8,0.8),linewidth(1.1)); 
+label("$\textbf{(C)}$",(5,1),W);
+draw((-1,-2.5)--(1,-2.5)); draw((0,-3.5)--(0,-1.5)); label(rotate(180)*"$\textbf{\textsf{M}}$",(-0.25,-3.1));
+draw((-0.8,-3.3)--(0.8,-1.7),linewidth(1.1)); 
+label("$\textbf{(D)}$",(-1,-1.5),W);
+draw((2,-2.5)--(4,-2.5)); draw((3,-3.5)--(3,-1.5)); label(rotate(270)*"$\textbf{\textsf{M}}$",(3.6,-2.75));
+draw((2.2,-3.3)--(3.8,-1.7),linewidth(1.1)); 
+label("$\textbf{(E)}$",(2,-1.5),W);
+</asy>
+
+Answer: E
+
+--- Solution 1 ---
+When <b>M</b> is first reflected over the line <math>q,</math> we obtain the following diagram:
+<asy>
+/* Made by MRENTHUSIASM */
+usepackage("newtxtext");
+size(3cm);
+draw((-1,0)--(1,0)); draw((0,-1)--(0,1)); label(rotate(270)*"$\textbf{\textsf{M}}$",(0.6,0.25));
+draw((-0.8,-0.8)--(0.8,0.8),linewidth(1.1)); 
+</asy>
+When <b>M</b> is then reflected over the line <math>p,</math> we obtain the following diagram:
+<asy>
+/* Made by MRENTHUSIASM */
+usepackage("newtxtext");
+size(3cm);
+draw((-1,0)--(1,0)); draw((0,-1)--(0,1)); label(rotate(270)*"$\textbf{\textsf{M}}$",(0.6,-0.25));
+draw((-0.8,-0.8)--(0.8,0.8),linewidth(1.1)); 
+</asy>
+Therefore, the answer is <math>\boxed{\textbf{(E)}}.</math>
+
+
+=== Problem 5 ===
+Anna and Bella are celebrating their birthdays together. Five years ago, when Bella turned
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '~5</math>'}
+Answer: C
+
+--- Solution 1 ---
+Five years ago, Bella was <imath>6</imath> years old, and the kitten was <imath>0</imath> years old.
+
+Today, Bella is <imath>11</imath> years old, and the kitten is <imath>5</imath> years old. It follows that Anna is <imath>30-11-5=14</imath> years old.
+
+Therefore, Anna is <imath>14-11=\boxed{\textbf{(C) } 3}</imath> years older than Bella.
+
+--- Solution 2 ---
+We assume that
+
+a)the current age of Anna = a
+
+b) the current age of Bella = b
+
+b-5=6
+
+Thus, b = 11 
+
+Kitten = 5 (as the it got it 5 years ago)
+
+Since the total age of kitten and girls = 30, 
+
+then a = 30-(11+5)
+
+=30 - 16
+
+=14 years.
+
+BUT THIS IS NOT THE FINAL ANSWER!!!
+
+a-b = 14-11 = 3 = option C
+
+
+=== Problem 6 ===
+Three positive integers are equally spaced on a number line. The middle number is
+
+Choices: {'A': '4', 'B': '5', 'C': '6', 'D': '7', 'E': '8</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let the smallest number be <math>x.</math> It follows that the largest number is <math>4x.</math>
+
+Since <math>x,15,</math> and <math>4x</math> are equally spaced on a number line, we have
+<cmath>\begin{align*}
+4x-15 &= 15-x \\
+5x &= 30 \\
+x &= \boxed{\textbf{(C) } 6}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Let the common difference of the arithmetic sequence be <math>d</math>. Consequently, the smallest number is <math>15-d</math> and the largest number is <math>15+d</math>. As the largest number is <math>4</math> times the smallest number, <math>15+d=60-4d\implies d=9</math>. Finally, we find that the smallest number is <math>15-9=\boxed{\textbf{(C) } 6}</math>.
+
+--- Solution 3 ---
+Let the smallest number be <math>x</math>. Because <math>x</math> and <math>4x</math> are equally spaced from <math>15</math>, <math>15</math> must be the average. By adding <math>x</math> and <math>4x</math> and dividing by <math>2</math>, we get that the mean is also <math>2.5x</math>. We get that <math>2.5x=15</math>, and solving gets <math>x=\boxed{\textbf{(C) } 6}</math>.
+
+--- Solution 4 ---
+Since the problem is giving us the options, we can try all of them. The differences MUST be equal because the numbers have to be evenly spaced on the number line. We see that 4 cannot work because 15 - 4 = 11, and 4 * 4 = 16. 16 - 15 is not 11, so this option does not work. Next, we can try 5. We see that this also does not work because 15 - 5 = 10, and 5 * 4 = 20. 20 - 15 = 5, and this is not 10. We can then try 6 to see that it does work. 15 - 6 = 9, and 6 * 4 = 24. 24 - 15 = 9. The differences are equivalent, so we can see that 6 indeed does work. Therefore, the answer is <math>\boxed{\textbf{(C)}
+
+
+=== Problem 7 ===
+When the World Wide Web first became popular in the
+
+Choices: {'A': '0.6', 'B': '10', 'C': '1800', 'D': '7200', 'E': '36000'}
+Answer: B
+
+--- Solution 1 ---
+Notice that the number of kilobits in this song is <math>4.2 \cdot 8000 = 8 \cdot 7 \cdot 6 \cdot 100.</math>
+
+We must divide this by <math>56</math> in order to find out how many seconds this song would take to download: <math>\frac{\cancel{8}\cdot\cancel{7}\cdot6\cdot100}{\cancel{56}} = 600.</math>
+
+Finally, we divide  this number by <math>60</math> because this is the number of <i><b>seconds</b></i> to get the answer <math>\frac{600}{60}=\boxed{\textbf{(B) } 10}.</math>
+
+--- Solution 2 ---
+We seek a value of <math>x</math> that makes the following equation true, since every other quantity equals <math>1</math>.
+
+<cmath>\frac{x\ \text{min}}{4.2\ \text{mb}} \cdot \frac{56\ \text{kb}}{1\ \text{sec}} \cdot \frac{1\ \text{mb}}{8000\ \text{kb}} \cdot \frac{60\ \text{sec}}{1\ \text{min}} = 1.</cmath>
+Solving yields <math>x=\boxed{\textbf{(B) } 10}</math>.
+
+-Benedict T (countmath1)
+
+
+=== Problem 8 ===
+What is the value of <cmath>\frac{1}{3}\cdot\frac{2}{4}\cdot\frac{3}{5}\cdots\frac{18}{20}\cdot\frac{19}{21}\cdot\frac{20}{22}?</cmath>
+
+Choices: {'A': '\\frac{1}{462}', 'B': '\\frac{1}{231}', 'C': '\\frac{1}{132}', 'D': '\\frac{2}{213}', 'E': '\\frac{1}{22}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Note that common factors (from <math>3</math> to <math>20,</math> inclusive) of the numerator and the denominator cancel. Therefore, the original expression becomes <cmath>\frac{1}{\cancel{3}}\cdot\frac{2}{\cancel{4}}\cdot\frac{\cancel{3}}{\cancel{5}}\cdots\frac{\cancel{18}}{\cancel{20}}\cdot\frac{\cancel{19}}{21}\cdot\frac{\cancel{20}}{22}=\frac{1\cdot2}{21\cdot22}=\frac{1}{21\cdot11}=\boxed{\textbf{(B) } \frac{1}{231}}.</cmath>
+
+--- Solution 2 ---
+The original expression becomes <cmath>\frac{20!}{22!/2!} = \frac{20! \cdot 2!}{22!} = \frac{20! \cdot 2}{20! \cdot 21 \cdot 22} = \frac{2}{21 \cdot 22} = \frac{1}{21 \cdot 11} = \boxed{\textbf{(B) } \frac{1}{231}}.</cmath>
+
+
+=== Problem 9 ===
+A cup of boiling water (
+
+Choices: {'A': '~77', 'B': '~86', 'C': '~92', 'D': '~98', 'E': '~104</math>'}
+Answer: B
+
+--- Solution 1 ---
+Initially, the difference between the water temperature and the room temperature is <math>212-68=144</math> degrees Fahrenheit.
+
+After <math>5</math> minutes, the difference between the temperatures is <math>144\div2=72</math> degrees Fahrenheit.
+
+After <math>10</math> minutes, the difference between the temperatures is <math>72\div2=36</math> degrees Fahrenheit.
+
+After <math>15</math> minutes, the difference between the temperatures is <math>36\div2=18</math> degrees Fahrenheit. At this point, the water temperature is <math>68+18=\boxed{\textbf{(B) } 86}</math> degrees Fahrenheit.
+
+<u><b>Remark</b></u>
+
+Alternatively, we can condense the solution above into the following equation: <cmath>68+(212-68)\cdot\left(\frac12\right)^{\tfrac{15}{5}}=86.</cmath>
+
+
+=== Problem 10 ===
+One sunny day, Ling decided to take a hike in the mountains. She left her house at <math>8 \, \textsc{am}</math>, drove at a constant speed of <math>45</math> miles per hour, and arrived at the hiking trail at <math>10 \, \textsc{am}</math>. After hiking for <math>3</math> hours, Ling drove home at a constant speed of <math>60</math> miles per hour. Which of the following graphs best illustrates the distance between Ling’s car and her house over the course of her trip?
+
+<asy>
+unitsize(12);
+usepackage("mathptmx");
+defaultpen(fontsize(8)+linewidth(.7));
+int mod12(int i) {if (i<13) {return i;} else {return i-12;}}
+void drawgraph(pair sh,string lab) {
+for (int i=0;i<11;++i) {
+for (int j=0;j<6;++j) {
+draw(shift(sh+(i,j))*unitsquare,mediumgray);
+}
+}
+draw(shift(sh)*((-1,0)--(11,0)),EndArrow(angle=20,size=8));
+draw(shift(sh)*((0,-1)--(0,6)),EndArrow(angle=20,size=8));
+for (int i=1;i<10;++i) {
+draw(shift(sh)*((i,-.2)--(i,.2)));
+}
+label("8\tiny{\textsc{am}}",sh+(1,-.2),S);
+ 
+for (int i=2;i<9;++i) {
+label(string(mod12(i+7)),sh+(i,-.2),S);
+}
+label("4\tiny{\textsc{pm}}",sh+(9,-.2),S);
+for (int i=1;i<6;++i) {
+label(string(30*i),sh+(0,i),2*W);
+}
+draw(rotate(90)*"Distance (miles)",sh+(-2.1,3),fontsize(10));
+label("$\textbf{("+lab+")}$",sh+(-2.1,6.8),fontsize(12));
+}
+drawgraph((0,0),"A");
+drawgraph((15,0),"B");
+drawgraph((0,-10),"C");
+drawgraph((15,-10),"D");
+drawgraph((0,-20),"E");
+dotfactor=6;
+draw((1,0)--(3,3)--(6,3)--(8,0),linewidth(.9));
+dot((1,0)^^(3,3)^^(6,3)^^(8,0));
+pair sh = (15,0);
+draw(shift(sh)*((1,0)--(3,1.5)--(6,1.5)--(8,0)),linewidth(.9));
+dot(sh+(1,0)^^sh+(3,1.5)^^sh+(6,1.5)^^sh+(8,0));
+pair sh = (0,-10);
+draw(shift(sh)*((1,0)--(3,1.5)--(6,1.5)--(7.5,0)),linewidth(.9));
+dot(sh+(1,0)^^sh+(3,1.5)^^sh+(6,1.5)^^sh+(7.5,0));
+pair sh = (15,-10);
+draw(shift(sh)*((1,0)--(3,4)--(6,4)--(9.3,0)),linewidth(.9));
+dot(sh+(1,0)^^sh+(3,4)^^sh+(6,4)^^sh+(9.3,0));
+pair sh = (0,-20);
+draw(shift(sh)*((1,0)--(3,3)--(6,3)--(7.5,0)),linewidth(.9));
+dot(sh+(1,0)^^sh+(3,3)^^sh+(6,3)^^sh+(7.5,0));
+</asy>
+
+Answer: E
+
+--- Solution 1 ---
+Note that:
+<ul style="list-style-type:square;">
+  <li><b>At <imath>\boldsymbol{8 \, \footnotesize\textbf{AM},}</imath> Ling's car was <imath>\boldsymbol{0}</imath> miles from her house.</b></li><p>
+  <li>From <imath>8 \, \textsc{am}</imath> to <imath>10 \, \textsc{am},</imath> Ling drove to the hiking trail at a constant speed of <imath>45</imath> miles per hour. <p>
+<b>It follows that at <imath>\boldsymbol{10 \, \footnotesize\textbf{AM},}</imath> Ling's car was <imath>\boldsymbol{45\cdot2=90}</imath> miles from her house.</b></li><p>
+  <li>From <imath>10 \, \textsc{am}</imath> to <imath>1 \, \textsc{pm},</imath> Ling did not move her car. <p>
+<b>It follows that at <imath>\boldsymbol{1 \, \footnotesize\textbf{PM},}</imath> Ling's car was still <imath>\boldsymbol{90}</imath> miles from her house.</b></li><p>
+  <li>From <imath>1 \, \textsc{pm},</imath> Ling drove home at a constant speed of <imath>60</imath> miles per hour. So, she arrived home <imath>90\div60=1.5</imath> hour later. <p>
+<b>It follows that at <imath>\boldsymbol{2:30 \, \footnotesize\textbf{PM},}</imath> Ling's car was <imath>\boldsymbol{0}</imath> miles from her house.</b></li><p>
+</ul>
+Therefore, the answer is <imath>\boxed{\textbf{(E)}}.</imath>
+
+--- Solution 2 ---
+Ling's trip took <imath>2</imath> hours, thus she traveled for <imath>2 \times 45=90</imath> miles. Choices <imath>\textbf{(B)}</imath>, <imath>\textbf{(C)}</imath>, and <imath>\textbf{(D)}</imath> are eliminated. 
+Ling drove <imath>45</imath> miles per hour (mph) to the mountains, and <imath>60</imath> mph back to her house, so the rightmost slope must be steeper than the leftmost one. Choice <imath>\textbf {(A)}</imath> is eliminated.
+This leaves us with <imath>\boxed{\textbf{(E)}}</imath>.
+
+--- Solution 3 ---
+Using the <imath>\text{speed} = \frac{\text{distance}}{\text{time}}</imath> formula, and plugging in the values <imath>45</imath> mph and <imath>2</imath> hrs, we get that the distance from Ling's house to the mountains is <imath>90</imath> miles. That means the first slope ends at <imath>90,</imath> so choices <imath>\textbf{(B)}, \textbf{(C)},</imath> and <imath>\textbf{(D)}</imath> are eliminated.
+
+Furthermore, if the distance is <imath>90</imath> miles, and Ling is returning home at <imath>60</imath> mph, it must have taken her <imath>1.5</imath> hours. Adding <imath>1.5</imath> and <imath>3</imath> (how long she hiked for) to her arrival time, <imath>10</imath> AM, we see she must have come back home at <imath>2:30</imath> PM. Choice <imath>\textbf{(A)}</imath> is eliminated, so the only valid choice left is choice <imath>\boxed{\textbf{(E)}}.</imath>
+
+
+=== Problem 11 ===
+Henry the donkey has a very long piece of pasta. He takes a number of bites of pasta, each time eating
+
+Choices: {'A': '~34', 'B': '~38', 'C': '~41', 'D': '~44', 'E': '~47</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let's say that the first strand of pasta he had is x. The first time he takes a bite of this strand will make it 2 pieces. This is x - 3. The second time he takes the bites of EACH strand will become (x - 3) * 3(2). The 2 is for the two bites he took, 1 for each strand. This equation is showing that for every bite that he is taking, he is taking off 3 inches. This is being showed in the 3(2). He took 2 bites, each taking off 3 inches. Now, the problem is stating that their are 10 pieces of pasta and the TOTAL length is 17 inches. We have to plug in the total number of bites to the equation (x - 3) * 3( ). To find this out, we can see that for the number of strands there are, he took 1 less bite than that number. For example, if there are 2 pieces, he took 1 bite to get those. Since there are 10 pieces, he took 9 bites. The equation then becomes, (x - 3) * 3(9) = 17. To solve this, x = 44. Therefore, the answer is <imath>\boxed{\textbf{(D) } 44}</imath>.
+
+--- Solution 2 ---
+If there are <imath>10</imath> pieces of pasta, Henry took <imath>10-1=9</imath> bites. Each of these <imath>9</imath> bites took <imath>3</imath> inches of pasta out, so all his bites in total took away <imath>9\cdot 3 = 27</imath> inches of pasta. Thus, the original piece of pasta was <imath>27+17=\boxed{\textbf{(D) } 44}</imath> inches long.
+
+
+=== Problem 12 ===
+The arrows on the two spinners shown below are spun. Let the number
+
+Choices: {'A': '~\\dfrac{1}{16}', 'B': '~\\dfrac{1}{8}', 'C': '~\\dfrac{1}{4}', 'D': '~\\dfrac{3}{8}', 'E': '~\\dfrac{1}{2}</math>'}
+Answer: B
+
+--- Solution 1 ---
+First, we calculate that there are a total of <math>4\cdot4=16</math> possibilities. Now, we list all of two-digit perfect squares. <math>64</math> and <math>81</math> are the only ones that can be made using the spinner. Consequently, there is a <math>\frac{2}{16}=\boxed{\textbf{(B) }\dfrac{1}{8}}</math> probability that the number formed by the two spinners is a perfect square.
+
+--- Solution 2 ---
+There are <math>4 \cdot 4 = 16</math> total possibilities of <math>N</math>. We know <math>N=10A+B</math>, which <math>A</math> is a number from spinner <math>A</math>, and <math>B</math> is a number from spinner <math>B</math>. Also, notice that there are no perfect squares in the <math>50</math>s or <math>70</math>s, so only  <math>4-2=2</math> values of N work, namely <math>64</math> and <math>81</math>. Hence, <math>\frac{2}{16}=\boxed{\textbf{(B) }\dfrac{1}{8}}</math>.
+
+--- Solution 3 ---
+We can see that the smallest number on the spinner 1 is 5. Possibilities for 5 are 51,52,53, and 54
+Second one is 6 in which we get 61,62,63,64. We see that 64 is a square number.
+The next number is 7. Possibilities are 71,72,73, and 74. None of them are squares.
+Finally, we have 8. 81,82,83, and 84 are the numbers possible. 81 is a perfect square.
+As our trusty probability formula tells us, probability is the number of desired outcomes over possible outcomes.
+The possible outcomes are 16 and the desired outcomes are 2. The fraction is 2/16. In simplest terms, it is 1/8.
+Bringing to answer choice (B)
+
+
+=== Problem 13 ===
+How many positive integers can fill the blank in the sentence below?
+
+“One positive integer is _____ more than twice another, and the sum of the two numbers is
+
+Choices: {'A': '6', 'B': '7', 'C': '8', 'D': '9', 'E': '10</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <imath>m</imath> and <imath>n</imath> be positive integers such that <imath>m>n</imath> and <imath>m+n=28.</imath> It follows that <imath>m=2n+d</imath> for some positive integer <imath>d.</imath> We wish to find the number of possible values for <imath>d.</imath>
+
+By substitution, we have <imath>(2n+d)+n=28,</imath> from which <imath>d=28-3n.</imath> Note that <imath>n=1,2,3,\ldots,9</imath> each generate a positive integer for <imath>d,</imath> so there are <imath>\boxed{\textbf{(D) } 9}</imath> possible values for <imath>d.</imath>
+
+
+=== Problem 14 ===
+In how many ways can the letters in
+
+Choices: {'A': '1', 'B': '4', 'C': '12', 'D': '24', 'E': '120</math>'}
+Answer: D
+
+--- Solution 1 ---
+All valid arrangements of the letters must be of the form <cmath>\textbf{E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E}.</cmath>
+The problem is equivalent to counting the arrangements of <imath>\textbf{B},\textbf{K},\textbf{P},</imath> and <imath>\textbf{R}</imath> into the four blanks, in which there are <imath>4!=\boxed{\textbf{(D) } 24}</imath> ways.
+
+
+=== Problem 15 ===
+Laszlo went online to shop for black pepper and found thirty different black pepper options varying in weight and price, shown in the scatter plot below. In ounces, what is the weight of the pepper that offers the lowest price per ounce?
+
+<asy>
+//diagram by pog
+size(5.5cm);
+usepackage("mathptmx");
+defaultpen(mediumgray*0.5+gray*0.5+linewidth(0.63));
+add(grid(6,6));
+label(scale(0.7)*"$1$", (1,-0.3), black);
+label(scale(0.7)*"$2$", (2,-0.3), black);
+label(scale(0.7)*"$3$", (3,-0.3), black);
+label(scale(0.7)*"$4$", (4,-0.3), black);
+label(scale(0.7)*"$5$", (5,-0.3), black);
+label(scale(0.7)*"$1$", (-0.3,1), black);
+label(scale(0.7)*"$2$", (-0.3,2), black);
+label(scale(0.7)*"$3$", (-0.3,3), black);
+label(scale(0.7)*"$4$", (-0.3,4), black);
+label(scale(0.7)*"$5$", (-0.3,5), black);
+label(scale(0.8)*rotate(90)*"Price (dollars)", (-1,3.2), black);
+label(scale(0.8)*"Weight (ounces)", (3.2,-1), black);
+dot((1,1.2),black);
+dot((1,1.7),black);
+dot((1,2),black);
+dot((1,2.8),black);
+
+dot((1.5,2.1),black);
+dot((1.5,3),black);
+dot((1.5,3.3),black);
+dot((1.5,3.75),black);
+
+dot((2,2),black);
+dot((2,2.9),black);
+dot((2,3),black);
+dot((2,4),black);
+dot((2,4.35),black);
+dot((2,4.8),black);
+
+dot((2.5,2.7),black);
+dot((2.5,3.7),black);
+dot((2.5,4.2),black);
+dot((2.5,4.4),black);
+
+dot((3,2.5),black);
+dot((3,3.4),black);
+dot((3,4.2),black);
+
+dot((3.5,3.8),black);
+dot((3.5,4.5),black);
+dot((3.5,4.8),black);
+
+dot((4,3.9),black);
+dot((4,5.1),black);
+
+dot((4.5,4.75),black);
+dot((4.5,5),black);
+
+dot((5,4.5),black);
+dot((5,5),black);
+</asy>
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '5</math>'}
+Answer: C
+
+--- Solution 1 ---
+By the answer choices, we can disregard the points that do not have integer weights. As a result, we obtain the following diagram:
+
+<asy>
+//diagram by pog
+size(5.5cm);
+usepackage("mathptmx");
+defaultpen(mediumgray*0.5+gray*0.5+linewidth(0.63));
+add(grid(6,6));
+label(scale(0.7)*"$1$", (1,-0.3), black);
+label(scale(0.7)*"$2$", (2,-0.3), black);
+label(scale(0.7)*"$3$", (3,-0.3), black);
+label(scale(0.7)*"$4$", (4,-0.3), black);
+label(scale(0.7)*"$5$", (5,-0.3), black);
+label(scale(0.7)*"$1$", (-0.3,1), black);
+label(scale(0.7)*"$2$", (-0.3,2), black);
+label(scale(0.7)*"$3$", (-0.3,3), black);
+label(scale(0.7)*"$4$", (-0.3,4), black);
+label(scale(0.7)*"$5$", (-0.3,5), black);
+label(scale(0.8)*rotate(90)*"Price (dollars)", (-1,3.2), black);
+label(scale(0.8)*"Weight (ounces)", (3.2,-1), black);
+dot((1,1.2),black);
+dot((1,1.7),black);
+dot((1,2),black);
+dot((1,2.8),black);
+
+dot((2,2),black);
+dot((2,2.9),black);
+dot((2,3),black);
+dot((2,4),black);
+dot((2,4.35),black);
+dot((2,4.8),black);
+
+dot((3,2.5),blue);
+dot((3,3.4),black);
+dot((3,4.2),black);
+
+dot((4,3.9),black);
+dot((4,5.1),black);
+
+dot((5,4.5),black);
+dot((5,5),black);
+</asy>
+
+We then proceed in the same way that we had done in Solution 1. Following the steps, we figure out the blue dot that yields the lowest slope, along with passing the origin. We then can look at the x-axis(in this situation, the weight) and figure out it has <imath>\boxed{\textbf{(C) } 3}</imath> ounces.
+
+--- Solution 2 ---
+We can find the lowest point in each line (<imath>1</imath>, <imath>2</imath>, <imath>3</imath>, <imath>4</imath>, or <imath>5</imath>) and find the price per pound. (Note that we don't need to find the points higher than the points below since we are finding the lowest price per pound.)
+
+<asy>
+//diagram by pog
+size(5.5cm);
+usepackage("mathptmx");
+defaultpen(mediumgray*0.5+gray*0.5+linewidth(0.63));
+add(grid(6,6));
+label(scale(0.7)*"$1$", (1,-0.3), black);
+label(scale(0.7)*"$2$", (2,-0.3), black);
+label(scale(0.7)*"$3$", (3,-0.3), black);
+label(scale(0.7)*"$4$", (4,-0.3), black);
+label(scale(0.7)*"$5$", (5,-0.3), black);
+label(scale(0.7)*"$1$", (-0.3,1), black);
+label(scale(0.7)*"$2$", (-0.3,2), black);
+label(scale(0.7)*"$3$", (-0.3,3), black);
+label(scale(0.7)*"$4$", (-0.3,4), black);
+label(scale(0.7)*"$5$", (-0.3,5), black);
+label(scale(0.8)*rotate(90)*"Price (dollars)", (-1,3.2), black);
+label(scale(0.8)*"Weight (ounces)", (3.2,-1), black);
+dot((1,1.2),red);
+dot((1,1.7),black);
+dot((1,2),black);
+dot((1,2.8),black);
+
+dot((2,2),green);
+dot((2,2.9),black);
+dot((2,3),black);
+dot((2,4),black);
+dot((2,4.35),black);
+dot((2,4.8),black);
+
+dot((3,2.5),blue);
+dot((3,3.4),black);
+dot((3,4.2),black);
+
+dot((4,3.9),orange);
+dot((4,5.1),black);
+
+dot((5,4.5),purple);
+dot((5,5),black);
+</asy>
+
+The red dot has a price per pound of something that is larger than <imath>1</imath>. The green dot has a price per pound of <imath>1</imath>. The blue dot has a price per pound of something like <imath>\frac{2.5}{3}</imath>. The orange dot has a price per pound that is less than <imath>1</imath>, but is very close to it. The purple dot has a price per pound of something like <imath>\frac{4.5}{5}</imath>. We see that choices <imath>\textbf{(A)}</imath>, <imath>\textbf{(B)}</imath>,and <imath>\textbf{(D)}</imath> are eliminated. Also, <imath>\frac{4.5}{5} > \frac{2.5}{3}</imath> thus the answer is <imath>\boxed{\textbf{(C) } 3}</imath>.
+
+
+=== Problem 16 ===
+Four numbers are written in a row. The average of the first two is
+
+Choices: {'A': '24', 'B': '25', 'C': '26', 'D': '27', 'E': '28</math>'}
+Answer: B
+
+--- Solution 1 ---
+Note that the sum of the first two numbers is <math>21\cdot2=42,</math> the sum of the middle two numbers is <math>26\cdot2=52,</math> and the sum of the last two numbers is <math>30\cdot2=60.</math>
+
+It follows that the sum of the four numbers is <math>42+60=102,</math> so the sum of the first and last numbers is <math>102-52=50.</math> Therefore, the average of the first and last numbers is <math>50\div2=\boxed{\textbf{(B) } 25}.</math>
+
+--- Solution 2 ---
+Let <math>a,b,c,</math> and <math>d</math> be the four numbers in that order. We are given that
+<cmath>\begin{align*}
+\frac{a+b}{2} &= 21, &(1) \\
+\frac{b+c}{2} &= 26, &(2) \\
+\frac{c+d}{2} &= 30, &(3)
+\end{align*}</cmath>
+and we wish to find <math>\frac{a+d}{2}.</math>
+
+We add <math>(1)</math> and <math>(3),</math> then subtract <math>(2)</math> from the result: <cmath>\frac{a+d}{2}=21+30-26=\boxed{\textbf{(B) } 25}.</cmath>
+
+--- Solution 3 ---
+Let <imath>a,b,c,</imath> and <imath>d</imath> be the four numbers in that order. We are given that
+<cmath>\begin{align*}
+\frac{a+b}{2} &= 21, &(1) \\
+\frac{b+c}{2} &= 26, &(2) \\
+\frac{c+d}{2} &= 30, &(3)
+\end{align*}</cmath>
+and we wish to find <imath>\frac{a+d}{2}.</imath>
+
+If we subtract <imath>(2)</imath> from <imath>(3)</imath>, we get <cmath>\frac{c+d}{2}-\frac{b+c}{2}=\frac{d-b}{2}=4.</cmath>
+So if we multiply by <imath>2</imath> then we get <imath>d=b+8.</imath> Looking at our question: <cmath>\frac{a+d}{2}=\frac{a+b+8}{2}=\frac{a+b}{2}+\frac{8}{2}=21+4=\boxed{\textbf{(B) } 25}.</cmath>
+
+
+=== Problem 17 ===
+If
+
+Choices: {'A': '~0', 'B': '~2', 'C': '~4', 'D': '~6', 'E': '~8</math>'}
+Answer: B
+
+--- Solution 1 ---
+Notice that once <math>n>8,</math> the units digit of <math>n!!</math> will be <math>0</math> because there will be a factor of <math>10.</math> Thus, we only need to calculate the units digit of <cmath>2!!+4!!+6!!+8!! = 2+8+48+48\cdot8.</cmath> We only care about units digits, so we have <math>2+8+8+8\cdot8,</math> which has the same units digit as <math>2+8+8+4.</math> The answer is <math>\boxed{\textbf{(B) } 2}.</math>
+
+--- Solution 2 ---
+We can see that after <math>8!!</math> in the sequence, the units digit is always <math>0</math> (every value after <math>8!!</math> is a multiple of <math>10</math>). Therefore, our answer is the sum of the units digits of <math>2!!, 4!!, 6!!,</math> and <math>8!!</math> respectively. This sum is equal to <math>2 + 8 + 8 + 4</math>, or <math>\boxed{\textbf{(B) } 2}.</math>
+
+
+=== Problem 18 ===
+The midpoints of the four sides of a rectangle are
+
+Choices: {'A': '20', 'B': '25', 'C': '40', 'D': '50', 'E': '80</math>'}
+Answer: C
+
+--- Solution 1 ---
+The midpoints of the four sides of every rectangle are the vertices of a rhombus whose area is half the area of the rectangle: Note that the diagonals of the rhombus have the same lengths as the sides of the rectangle.
+
+Let <imath>A=(-3,0), B=(2,0), C=(5,4),</imath> and <imath>D=(0,4).</imath> Note that <imath>A,B,C,</imath> and <imath>D</imath> are the vertices of a rhombus whose diagonals have lengths <imath>AC=4\sqrt{5}</imath> and <imath>BD=2\sqrt{5}.</imath> It follows that the dimensions of the rectangle are <imath>4\sqrt{5}</imath> and <imath>2\sqrt{5},</imath> so the area of the rectangle is <imath>4\sqrt{5}\cdot2\sqrt{5}=\boxed{\textbf{(C) } 40}.</imath>
+
+--- Solution 2 ---
+If a rectangle has area <imath>K,</imath> then the area of the quadrilateral formed by its midpoints is <imath>\frac{K}{2}.</imath>
+
+Define points <imath>A,B,C,</imath> and <imath>D</imath> as Solution 1 does. Since <imath>A,B,C,</imath> and <imath>D</imath> are the midpoints of the rectangle, the rectangle's area is <imath>2[ABCD].</imath> Now, note that <imath>ABCD</imath> is a parallelogram since <imath>AB=CD</imath> and <imath>\overline{AB}\parallel\overline{CD}.</imath> As the parallelogram's height from <imath>D</imath> to <imath>\overline{AB}</imath> is <imath>4</imath> and <imath>AB=5,</imath> its area is <imath>4\cdot5=20.</imath> Therefore, the area of the rectangle is <imath>20\cdot2=\boxed{\textbf{(C) } 40}.</imath>
+
+--- Solution 3 ---
+Graph paper is not permitted on the AMC 8. Still, blank scratch paper is provided, and with that, you can draw a makeshift coordinate plane and "graph" some dots. It doesn't have to be very exact, but do make reasonable estimates on the locations of the points. Once you graph the dots and look around, it becomes apparent that the only rectangle that would make sense would be if the length were from (-3,0) to (5,4), and the width would have to be from (0,4) to (2,0). With that in mind, use the distance formula to solve for the length and width. The distance formula is as follows:
+
+<imath>d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}</imath>
+
+
+Simply put the coordinates into the formula to get the distance between the two points. Using the formula, the length is <imath>\sqrt{80}</imath>, and the width is <imath>\sqrt{20}</imath>. Now, multiply the length and width together to get <imath>\boxed{\textbf{(C) } 40}.</imath>
+
+
+=== Problem 19 ===
+Mr. Ramos gave a test to his class of
+
+Choices: {'A': '~2', 'B': '~3', 'C': '~4', 'D': '~5', 'E': '~6</math>'}
+Answer: C
+
+--- Solution 1 ---
+We notice that <imath>13</imath> students have scores under <imath>85</imath> currently, and only <imath>5</imath> have scores over <imath>85</imath>. We find the median of these two numbers, getting:
+
+<cmath>13-5=8</cmath>
+<cmath>\frac{8}{2}=4</cmath>
+<cmath>13-4=9</cmath>
+
+Thus, we realize that <imath>4</imath> students must have their score increased by <imath>5</imath>.
+
+So, the correct answer is <imath>\boxed{\textbf{(C)}4}</imath>.
+
+--- Solution 2 ---
+We notice that if we number each of the dots from bottom to top in each column (<imath>65</imath>'s, <imath>70</imath>'s, <imath>75</imath>'s, etc.) to find the median, the second and third dots in the "<imath>80</imath>'s" column correspond to the tenth and eleventh values in the set (or the closest values to the median). To make the median now <imath>85</imath>, we must add <imath>5</imath> to the tenth and eleventh values in the set (or the second and third dots in the "<imath>80</imath>'s" column), as well as all the dots above it in the "<imath>80</imath>'s" column. So, the correct answer is <imath>\boxed{\textbf{(C)}4}</imath>.
+
+
+=== Problem 20 ===
+The grid below is to be filled with integers in such a way that the sum of the numbers in each row and the sum of the numbers in each column are the same. Four numbers are missing. The number
+
+Choices: {'A': '{-}1', 'B': '5', 'C': '6', 'D': '8', 'E': '9</math>'}
+Answer: D
+
+--- Solution 1 ---
+The sum of the numbers in each row is <imath>12</imath>. Consider the second row. In order for the sum of the numbers in this row to equal <imath>12</imath>, the two shaded numbers must add up to <imath>13</imath>:
+<asy>
+unitsize(0.5cm);
+fill((-3,1)--(1,1)--(1,-1)--(-3,-1)--cycle,mediumgray);
+draw((3,3)--(-3,3));
+draw((3,1)--(-3,1));
+draw((3,-3)--(-3,-3));
+draw((3,-1)--(-3,-1));
+draw((3,3)--(3,-3));
+draw((1,3)--(1,-3));
+draw((-3,3)--(-3,-3));
+draw((-1,3)--(-1,-3));
+label((-2,2),"$-2$");
+label((0,2),"$9$");
+label((2,2),"$5$");
+label((2,0),"$-1$");
+label((2,-2),"$8$");
+label((-2,-2),"$x$");
+</asy>
+If two numbers add up to <imath>13</imath>, one of them must be at least <imath>7</imath>: If both shaded numbers are no more than <imath>6</imath>, their sum can be at most <imath>12</imath>. Therefore, for <imath>x</imath> to be larger than the three missing numbers, <imath>x</imath> must be at least <imath>8</imath>. We can construct a working scenario where <imath>x=8</imath>:
+<asy>
+unitsize(0.5cm);
+draw((3,3)--(-3,3));
+draw((3,1)--(-3,1));
+draw((3,-3)--(-3,-3));
+draw((3,-1)--(-3,-1));
+draw((3,3)--(3,-3));
+draw((1,3)--(1,-3));
+draw((-3,3)--(-3,-3));
+draw((-1,3)--(-1,-3));
+label((-2,2),"$-2$");
+label((0,2),"$9$");
+label((2,2),"$5$");
+label((2,0),"$-1$");
+label((2,-2),"$8$");
+label((-2,-2),"$8$");
+label((0,-2),"$-4$");
+label((-2,0),"$6$");
+label((0,0),"$7$");
+</asy>
+So, our answer is <imath>\boxed{\textbf{(D) } 8}</imath>.
+
+--- Solution 2 ---
+The sum of the numbers in each row is <imath>-2+9+5=12,</imath> and the sum of the numbers in each column is <imath>5+(-1)+8=12.</imath>
+
+Let <imath>y</imath> be the number in the lower middle. It follows that <imath>x+y+8=12,</imath> or <imath>x+y=4.</imath>
+
+We express the other two missing numbers in terms of <imath>x</imath> and <imath>y,</imath> as shown below:
+<asy>
+unitsize(0.5cm);
+draw((3,3)--(-3,3));
+draw((3,1)--(-3,1));
+draw((3,-3)--(-3,-3));
+draw((3,-1)--(-3,-1));
+draw((3,3)--(3,-3));
+draw((1,3)--(1,-3));
+draw((-3,3)--(-3,-3));
+draw((-1,3)--(-1,-3));
+label((-2,2),"$-2$");
+label((0,2),"$9$");
+label((2,2),"$5$");
+label((2,0),"$-1$");
+label((2,-2),"$8$");
+label((-2,-2),"$x$");
+label((0,-2),"$y$",red+fontsize(11)); label((-2,0),"$y{+}10$",red+fontsize(11)); label((0,0),"$x{-}1$",red+fontsize(11)); 
+</asy>
+We have <imath>x>x-1, x>y+10,</imath> and <imath>x>y.</imath> Note that the first inequality is true for all values of <imath>x.</imath> We only need to solve the second inequality so that the third inequality is true for all values of <imath>x.</imath> By substitution, we get <imath>x>(4-x)+10,</imath> from which <imath>x>7.</imath>
+
+Therefore, the smallest possible value of <imath>x</imath> is <imath>\boxed{\textbf{(D) } 8}.</imath>
+
+--- Solution 3 ---
+This is based on the Solution 2 above and it is perhaps a little simpler than that.
+
+Let <imath>y</imath> be the number in the lower middle. Applying summation to first two columns yields the following.
+
+<asy>
+unitsize(0.5cm);
+draw((3,3)--(-3,3));
+draw((3,1)--(-3,1));
+draw((3,-3)--(-3,-3));
+draw((3,-1)--(-3,-1));
+draw((3,3)--(3,-3));
+draw((1,3)--(1,-3));
+draw((-3,3)--(-3,-3));
+draw((-1,3)--(-1,-3));
+label((-2,2),"$-2$");
+label((0,2),"$9$");
+label((2,2),"$5$");
+label((2,0),"$-1$");
+label((2,-2),"$8$");
+label((-2,-2),"$x$");
+label((0,-2),"$y$",red+fontsize(11)); label((-2,0),"$14{-}x$",red+fontsize(11)); label((0,0),"$3{-}y$",red+fontsize(11)); 
+</asy>
+
+Since <imath>x</imath> is greater than the other three, we have <imath>x>14-x,</imath> or <imath>x>7.</imath>
+
+Therefore, the smallest possible value of <imath>x</imath> is <imath>\boxed{\textbf{(D) } 8}.</imath>
+
+--- Solution 4 ---
+Note that the sum of the rows and columns must be <imath>8+5-1=12</imath>. We proceed to test the answer choices.
+
+Testing <imath>\textbf{(A)}</imath>, when <imath>x = -1</imath>, the number above <imath>x</imath> must be <imath>15</imath>, which contradicts the precondition that the numbers surrounding <imath>x</imath> is less than <imath>x</imath>.
+
+Testing <imath>\textbf{(B)}</imath>, the number above <imath>x</imath> is <imath>9</imath>, which does not work.
+
+Testing <imath>\textbf{(C)}</imath>, the number above <imath>x</imath> is <imath>8</imath>, which does not work.
+
+Testing <imath>\textbf{(D)}</imath>, the number above <imath>x</imath> is <imath>6</imath>, which ''does'' work. Hence, the answer is <imath>\boxed{\textbf{(D) }8}</imath>.
+
+We do not need to test <imath>\textbf{(E)}</imath>, because the problem asks for the '''smallest''' value of <imath>x</imath>.
+
+--- Solution 5 ---
+The sum of the numbers in each column and row should be <imath>5+(-1)+8=12</imath>. If we look at the <imath>1^{\text{st}}</imath> column, the gray squares (shown below) sum to <imath>12-(-2)=14</imath>.
+
+<asy>
+draw((3,3)--(-3,3));
+draw((3,1)--(-3,1));
+draw((3,-3)--(-3,-3));
+draw((3,-1)--(-3,-1));
+draw((3,3)--(3,-3));
+draw((1,3)--(1,-3));
+draw((-3,3)--(-3,-3));
+draw((-1,3)--(-1,-3));
+label((-2,2),"$-2$");   
+label((0,2),"$9$");
+label((2,2),"$5$");
+label((2,0),"$-1$");
+label((2,-2),"$8$");
+label((-2,-2),"$x$");
+filldraw((-3,-3)--(-1,-3)--(-1,-1)--(-3,-1)--cycle, lightgray, black+linewidth(1));
+filldraw((-1,-1)--(-3,-1)--(-3,1)--(-1,1)--cycle, lightgray, black+linewidth(1));
+label(scale(1)*"All credits for original unedited asymptote for the problem go to whoever made the asymptote in the 'Problem' section.", (-0,-5), S);
+</asy>
+
+'''If''' square <imath>x</imath> has to be '''greater than or equal to''' the three blank squares, then the least <imath>x</imath> can be is half the sum of the value of the gray squares, which is <imath>14\div2=7</imath>. But square <imath>x</imath> has to be '''greater than''' and '''''not''''' '''greater than or equal to''' the three blank squares, so the least <imath>x</imath> can be is <imath>7+1=8</imath>. Testing for the other rows and columns (it might be smaller than the other two squares!), we find that the smallest <imath>x</imath> can be is indeed <imath>8</imath>; the other two squares are less than <imath>8</imath>. Therefore, the answer is <imath>\boxed{\text{(D) }8}</imath>.
+
+
+=== Problem 21 ===
+Steph scored
+
+Choices: {'A': '7', 'B': '8', 'C': '9', 'D': '10', 'E': '11'}
+Answer: C
+
+--- Solution 1 ---
+Let <imath>x</imath> be the number of shots that Candace made in the first half, and let <imath>y</imath> be the number of shots Candace made in the second half. Since Candace and Steph took the same number of attempts, with an equal percentage of baskets scored, we have <imath>x+y=10+15=25.</imath> In addition, we have the following inequalities: <cmath>\frac{x}{12}<\frac{15}{20} \implies x<9,</cmath> and <cmath>\frac{y}{18}<\frac{10}{10} \implies y<18.</cmath> Pairing this up with <imath>x+y=25</imath> we see the <i><b>only</b></i> possible solution is <imath>(x,y)=(8,17),</imath> for an answer of <imath>17-8 = \boxed{\textbf{(C) } 9}.</imath>
+
+--- Solution 2 ---
+Clearly, Steph made <imath>15 + 10 = 25</imath> shots in total. Also, due to parity reasons, the difference between the amount of shots Candace made in the first and second half must be odd. Thus, we can just test 7, 9, and 11, and after doing so we find that the answer is <imath>\boxed{\textbf{(C) } 9}.</imath>
+
+--- Solution 3 ---
+Steph made 75 percent of his shots in the first half. He makes all of his shots in the second half. The most baskets Candace could have made in the first half is 8 baskets. The most she could have made in the second half is 17 baskets. Steph makes 25 and misses 5 baskets and the only way for Candace to make 25 shots is to make 8 in the first half and 17 in the second. Thus, <imath>17 - 8 = \boxed{\textbf{(C) } 9}.</imath>
+
+
+=== Problem 22 ===
+A bus takes
+
+Choices: {'A': '17', 'B': '19', 'C': '20', 'D': '21', 'E': '23</math>'}
+Answer: A
+
+--- Solution 1 ---
+Initially, suppose that the bus is at Stop <imath>0</imath> (starting point) and Zia is at Stop <imath>3.</imath>
+
+We construct the following table of <imath>5</imath>-minute intervals:
+<cmath>\begin{array}{c||c|c}
+& & \\ [-2.5ex]
+\textbf{Time} & \textbf{Bus's Location} & \textbf{Zia's Location} \\ [0.5ex]
+\hline
+& & \\ [-2ex]
+\boldsymbol{5} \ \textbf{Minutes} & \text{Stop} \ 2 \ \text{(Waiting)} & \text{Stop} \ 4 \\
+\boldsymbol{10} \ \textbf{Minutes} & \text{Midpoint of Stops} \ 3 \ \text{and} \ 4 & \text{Stop} \ 5 \\
+\boldsymbol{15} \ \textbf{Minutes} & \text{Stop} \ 5 \ \text{(Leaving)} & \text{Stop} \ 6
+\end{array}</cmath>
+Note that Zia will wait for the bus after <imath>15</imath> minutes, and the bus will arrive <imath>2</imath> minutes later.
+
+Therefore, the answer is <imath>15+2=\boxed{\textbf{(A) } 17}.</imath>
+
+--- Solution 2 ---
+Since Zia will wait for the bus if the bus is at the previous stop, we can create an equation to solve for when the bus is at the previous stop. The bus travels <imath>\frac{1}{3}</imath> of a stop per minute, and Zia travels <imath>\frac{1}{5}</imath> of a stop per minute. Now we create the equation, <imath>\frac{1}{3}m = \frac{1}{5}m + 3 - 1</imath> (the <imath>-1</imath> accounts for us wanting to find when the bus reaches the stop before Zia's). Solving, we find that <imath>m=15.</imath> Now Zia has to wait <imath>2</imath> minutes for the bus to reach her, so our answer is <imath>15+2=\boxed{\textbf{(A) } 17}.</imath>
+
+
+=== Problem 23 ===
+A
+
+Choices: {'A': '39', 'B': '42', 'C': '78', 'D': '84', 'E': '96</math>'}
+Answer: D
+
+--- Solution 1 ---
+We will only consider cases where the three identical symbols are the same column, but at the end we shall double our answer as the same holds true for rows. There are <imath>3</imath> ways to choose a column with all <imath>\bigcirc</imath>'s and <imath>2</imath> ways to choose a column with all <imath>\triangle</imath>'s. The third column can be filled in <imath>2^3=8</imath> ways. Therefore, we have a total of <imath>3\cdot2\cdot8=48</imath> cases. However, we overcounted the cases with <imath>2</imath> complete columns of with one symbol and <imath>1</imath> complete column with another symbol. This happens in <imath>2\cdot3=6</imath> cases. <imath>48-6=42</imath>. However, we have to remember to double our answer, giving us <imath>\boxed{\textbf{(D) }84}</imath> ways to complete the grid.
+
+
+=== Problem 24 ===
+The figure below shows a polygon
+
+Choices: {'A': '~112', 'B': '~128', 'C': '~192', 'D': '~240', 'E': '~288</math>'}
+Answer: C
+
+--- Solution 1 ---
+While imagining the folding, <imath>\overline{AB}</imath> goes on <imath>\overline{BC},</imath> <imath>\overline{AH}</imath> goes on <imath>\overline{CI},</imath> and <imath>\overline{EF}</imath> goes on <imath>\overline{FG}.</imath> So, <imath>BJ=CI=8</imath> and <imath>FG=BC=8.</imath> Also, <imath>\overline{HJ}</imath> becomes an edge parallel to <imath>\overline{FG},</imath> so that means <imath>HJ=8.</imath>
+
+Since <imath>GH=14,</imath> then <imath>JG=14-8=6.</imath> So, the area of <imath>\triangle BJG</imath> is <imath>\frac{8\cdot6}{2}=24.</imath> If we let <imath>\triangle BJG</imath> be the base, then the height is <imath>FG=8.</imath> So, the volume is <imath>24\cdot8=\boxed{\textbf{(C)} 
+
+==Remark==
+After folding polygon <imath>ABCDEFGH</imath> on the dotted lines, we obtain the following triangular prism:
+<asy>
+/* Made by MRENTHUSIASM */
+usepackage("mathptmx");
+size(200);
+defaultpen(linewidth(0.8));
+import graph3;
+import solids;
+
+currentprojection=orthographic((0.3,-0.3,0.3));
+triple J, G, B, A, H, F;
+J = (0,0,0);
+G = (6,0,0);
+B = (0,8,0);
+A = (0,8,8);
+H = (0,0,8);
+F = (6,0,8);
+draw(surface(B--J--G--cycle),yellow);
+draw(surface(H--A--F--cycle),yellow);
+draw(B--J,dashed);
+draw(G--J--H--A--B^^A--F--H^^F--G^^B--G);
+draw((0.5,0,0)--(0.5,0.5,0)--(0,0.5,0)^^(0.5,0,8)--(0.5,0.5,8)--(0,0.5,8));
+dot("$A=C$",A,1.5*E);
+dot("$B$",B,1.5*E);
+dot("$D=J$",J,1.5*W);
+dot("$F$",F,1.5*E);
+dot("$H=I$",H,1.5*W);
+dot("$E=G$",G,1.5*E);
+label("$8$",midpoint(A--H),1.5*NW,red);
+label("$6$",midpoint(H--F),1.5*S,red);
+label("$8$",midpoint(H--J),1.5*W,red);
+</asy>
+
+
+=== Problem 25 ===
+A cricket randomly hops between
+
+Choices: {'A': '\\frac{2}{9}', 'B': '\\frac{19}{80}', 'C': '\\frac{20}{81}', 'D': '\\frac{1}{4}', 'E': '\\frac{7}{27}'}
+Answer: E
+
+--- Solution 1 ---
+Let <imath>A</imath> denote the leaf where the cricket starts and <imath>B</imath> denote one of the other <imath>3</imath> leaves. Note that:
+
+* If the cricket is at <imath>A,</imath> then the probability that it hops to <imath>B</imath> next is <imath>1.</imath>
+
+* If the cricket is at <imath>B,</imath> then the probability that it hops to <imath>A</imath> next is <imath>\frac13.</imath>
+
+* If the cricket is at <imath>B,</imath> then the probability that it hops to <imath>B</imath> next is <imath>\frac23.</imath>
+
+We apply casework to the possible paths of the cricket:
+<ol style="margin-left: 1.5em;">
+  <li><imath>A \rightarrow B \rightarrow A \rightarrow B \rightarrow A</imath> <p>
+The probability for this case is <imath>1\cdot\frac13\cdot1\cdot\frac13=\frac19.</imath></li><p>
+  <li><imath>A \rightarrow B \rightarrow B \rightarrow B \rightarrow A</imath> <p>
+The probability for this case is <imath>1\cdot\frac23\cdot\frac23\cdot\frac13=\frac{4}{27}.</imath></li><p>
+</ol>
+Together, the probability that the cricket returns to <imath>A</imath> after <imath>4</imath> hops is <imath>\frac19+\frac{4}{27}=\boxed{\textbf{(E) }\frac{7}{27}}.</imath>
+
+--- Solution 2 ---
+We can label the leaves as shown below:
+[[File:2022 AMC 8 Problem 25 Picture 2.png|center|600px]]
+Carefully counting cases, we see that there are <imath>7</imath> ways for the cricket to return to leaf <imath>A</imath> after four hops if its first hop was to leaf <imath>B</imath>:
+<ol style="margin-left: 1.5em;">
+  <li><imath>A \rightarrow B \rightarrow A \rightarrow B \rightarrow A</imath></li><p>
+  <li><imath>A \rightarrow B \rightarrow A \rightarrow C \rightarrow A</imath></li><p>
+  <li><imath>A \rightarrow B \rightarrow A \rightarrow D \rightarrow A</imath></li><p>
+  <li><imath>A \rightarrow B \rightarrow C \rightarrow B \rightarrow A</imath></li><p>
+  <li><imath>A \rightarrow B \rightarrow C \rightarrow D \rightarrow A</imath></li><p>
+  <li><imath>A \rightarrow B \rightarrow D \rightarrow B \rightarrow A</imath></li><p>
+  <li><imath>A \rightarrow B \rightarrow D \rightarrow C \rightarrow A</imath></li><p>
+</ol>
+By symmetry, we know that there are <imath>7</imath> ways if the cricket's first hop was to leaf <imath>C</imath>, and there are <imath>7</imath> ways if the cricket's first hop was to leaf <imath>D</imath>. So, there are <imath>21</imath> ways in total for the cricket to return to leaf <imath>A</imath> after four hops.
+
+Since there are <imath>3^4 = 81</imath> possible ways altogether for the cricket to hop to any other leaf four times, the answer is <imath>\frac{21}{81} = \boxed{\textbf{(E) }\frac{7}{27}}</imath>.
+
+--- Solution 3 ---
+There are always three possible leaves to jump to every time the cricket decides to jump, so there is a total number of <imath> 3^4 </imath> routes. Let <imath>A</imath> denote the leaf cricket starts at, and <imath>B, C, D</imath> be the other leaves. If we want the cricket to move to leaf <imath> A </imath> for its last jump, the cricket cannot jump to leaf <imath> A </imath> for its third jump. Also, considering that the cricket starts at leaf <imath> A </imath>, he cannot jump to leaf <imath> A </imath> for its first jump. Note that there are <imath> 3\cdot2=6 </imath> paths if the cricket moves to leaf <imath> A </imath> for its third jump. Therefore, we can conclude that the total number of possible paths for the cricket to return to leaf <imath> A </imath> after four jumps is <imath> 3^3 - 6 = 21 </imath>, so the answer is <imath> \frac{21}{3^4} = \frac{21}{81}=\boxed{\textbf{(E) }\frac{7}{27}} </imath>.
+
+~[[User:Bloggish|Bloggish]]
+
+--- Solution 4 ---
+Denote <imath>P_n</imath> to be the probability that the cricket would return back to the first point after <imath>n</imath> hops. Then, we get the recursive formula <cmath>P_n = \frac13(1-P_{n-1})</cmath> because if the leaf is not on the target leaf, then there is a <imath>\frac13</imath> probability that it will make it back.
+
+With this formula and the fact that <imath>P_1=0</imath> (After one hop, the cricket can never be back to the target leaf.), we have <cmath>P_2 = \frac13, P_3 = \frac29, P_4 = \frac7{27},</cmath> so our answer is <imath>\boxed{\textbf{(E) }\frac{7}{27}}</imath>.
+
+--- Solution 5 ---
+Let <imath>A</imath> denote the leaf cricket starts at, and <imath>B, C, D</imath> be the other leaves, similar to Solution 2.
+
+Let <imath>A(n)</imath> be the probability the cricket lands on <imath>A</imath> after <imath>n</imath> hops, <imath>B(n)</imath> be the probability the cricket lands on <imath>B</imath> after crawling <imath>n</imath> hops, etc.
+
+Note that <imath>A(1)=0</imath> and <imath>B(1)=C(1)=D(1)=\frac13.</imath> For <imath>n\geq2,</imath> the probability that the cricket land on each leaf after <imath>n</imath> hops is <imath>\frac13</imath> the sum of the probability the cricket land on other leaves after <imath>n-1</imath> hops. So, we have
+<cmath>\begin{align*}
+A(n) &= \frac13 \cdot [B(n-1) + C(n-1) + D(n-1)], \\
+B(n) &= \frac13 \cdot [A(n-1) + C(n-1) + D(n-1)], \\
+C(n) &= \frac13 \cdot [A(n-1) + B(n-1) + D(n-1)], \\
+D(n) &= \frac13 \cdot [A(n-1) + B(n-1) + C(n-1)].
+\end{align*}</cmath>
+It follows that <imath>A(n) = B(n-1) = C(n-1) = D(n-1).</imath>
+
+We construct the following table:
+<cmath>\begin{array}{c|cccc}
+ &  &  &  & \\ [-2ex]
+n & A(n) & B(n) & C(n) & D(n) \\ [1ex]
+\hline
+ &  &  &  & \\ [-1ex]
+1 & 0 & \frac13 & \frac13 & \frac13 \\
+ &  &  &  & \\
+2 & \frac13 & \frac29 & \frac29 & \frac29 \\
+ &  &  &  & \\
+3 & \frac29 & \frac{7}{27} & \frac{7}{27} & \frac{7}{27} \\
+ &  &  &  & \\
+4 & \frac{7}{27} & \frac{20}{81} & \frac{20}{81} & \frac{20}{81} \\ [1ex]
+\end{array}</cmath>
+Therefore, the answer is <imath>A(4)=\boxed{\textbf{(E) }\frac{7}{27}}</imath>.
+
+--- Solution 6 ---
+Assign the leaves to <imath>0, 1, 2,</imath> and <imath>3</imath> modulo <imath>4,</imath> and let <imath>0</imath> be the starting leaf. We then use generating functions with relation to the change of leaves. For example, from <imath>3</imath> to <imath>1</imath> would be a change of <imath>2,</imath> and from <imath>1</imath> to <imath>2</imath> would be a change of <imath>1.</imath> This generating function is equal to <imath>(x+x^2+x^3)^4.</imath> It is clear that we want the coefficients in the form of <imath>x^{4n},</imath> where <imath>n</imath> is a positive integer. One application of roots of unity filter gives us a successful case count of <imath>\frac{81+1+1+1}{4} = 21.</imath>
+
+Therefore, the answer is <imath>\frac{21}{3^4}=\boxed{\textbf{(E) }\frac{7}{27}}.</imath>
+
+--- Solution 7 ---
+Let the leaves be <imath>(0,0), (0,1), (1,0),</imath> and <imath>(1,1)</imath> on the coordinate plane, with the cricket starting at <imath>(0,0)</imath>. Then we write a generating function. We denote <imath>x</imath> a change in the x-value of the cricket, and similarly for <imath>y</imath>. Then our generating function is <imath>(x+y+xy)^4,</imath> and we wish to compute the number of terms in which the exponents of both x and y are even. To do this, we first square to get <imath>(x^2 + y^2 + x^2y^2 + 2xy + 2x^2y + 2xy^2)^2</imath>. Note that every term squared will give even powers for x and y, so that gives us <imath>3 + 4\cdot3 = 15.</imath> Then every combination of <imath>x^2, y^2,</imath> and <imath>x^2y^2</imath> will also give us even powers for x and y, so that yields <imath>6</imath> more terms, for a total of <imath>21.</imath> Now in total there <imath>3^4 = 81</imath> possible sequences, so <imath>21/81</imath> gives us the answer of <imath>\boxed{\textbf{(E) }\frac{7}{27}}.</imath>
+
+
+==Remark==
+
+This problem is a reduced version of [https://artofproblemsolving.com/wiki/index.php/1985_AIME_Problems/Problem_12 1985 AIME Problem 12], changing <imath>7</imath> steps into <imath>4</imath> steps.
+
+This problem is also similar to [https://artofproblemsolving.com/wiki/index.php/2003_AIME_II_Problems/Problem_13 2003 AIME II Problem 13].
+
+
+\begin{solution}
+At each hop, the cricket must move to one of the other three leaves with equal probability.
+Thus the total number of possible hop sequences of length <imath>4</imath> is
+\[
+3^4 = 81.
+\]
+
+We count the number of \emph{favorable} sequences in which the cricket is on the starting
+leaf after the fourth hop.
+
+---
+
+\textbf{Case 1: The cricket returns to the starting leaf exactly once.}
+
+Since the cricket cannot remain on the same leaf, the only way for it to return exactly once
+and still end at the starting leaf is for the return to occur on the \emph{fourth hop}.
+
+\begin{itemize}
+\item Hop 1: From the starting leaf, there are <imath>3</imath> choices.
+\item Hop 2: The cricket is on a non-starting leaf; it must avoid returning, so there are <imath>2</imath> choices.
+\item Hop 3: Again, the cricket is on a non-starting leaf and must avoid returning, giving <imath>2</imath> choices.
+\item Hop 4: The cricket must return to the starting leaf, which is <imath>1</imath> favorable choice.
+\end{itemize}
+
+Thus the number of favorable sequences in Case 1 is
+\[
+3 \cdot 2 \cdot 2 \cdot 1 = 12.
+\]
+
+---
+
+\textbf{Case 2: The cricket returns to the starting leaf exactly twice.}
+
+With four hops and no ability to stay in place, the only possible return pattern is
+\[
+\text{start} \to \text{other} \to \text{start} \to \text{other} \to \text{start},
+\]
+which corresponds to hops <imath>2</imath> and <imath>4</imath> being returns.
+
+\begin{itemize}
+\item Hop 1: From the starting leaf, there are <imath>3</imath> choices.
+\item Hop 2: The cricket must return to the starting leaf (<imath>1</imath> choice).
+\item Hop 3: From the starting leaf, there are again <imath>3</imath> choices.
+\item Hop 4: The cricket must return to the starting leaf (<imath>1</imath> choice).
+\end{itemize}
+
+Thus the number of favorable sequences in Case 2 is
+\[
+3 \cdot 1 \cdot 3 \cdot 1 = 9.
+\]
+
+---
+
+\textbf{Conclusion.}
+
+The total number of favorable sequences is
+\[
+12 + 9 = 21.
+\]
+Therefore, the desired probability is
+\[
+\frac{21}{81} = \boxed{\frac{7}{27}}.
+\]
+\end{solution}
+
+

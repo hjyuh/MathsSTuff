@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-15T00-01-23-autoprove-e70c-ep488_sorry3_bbds_v2",
+  "status": "error",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "-- SORRY 3: Bad Block Descent Strategy (BBDS) core\n-- If a bad block exists at height j >= 4, then a bad block exists at some j' in [3, j)\n\ndef TopWindow (C : Finset \u2115) (q : \u2115) : Prop :=\n  \u2200 r \u2208 C, q / 2 < r \u2227 r < q\n\ndef Block (q j : \u2115) : Finset \u2115 :=\n  Finset.Icc ((j - 1) * q + 1) (j * q)\n\nnoncomputable def Slot (q j r : \u2115) : Finset \u2115 :=\n  (Block q j).filter fun t => \u00ac(q \u2223 t) \u2227 r \u2223 t\n\nnoncomputable def BlockCov (C : Finset \u2115) (q j : \u2115) : \u2115 :=\n  ((Block q j).filter fun t => \u00ac(q \u2223 t) \u2227 \u2203 r \u2208 C, r \u2223 t).card\n\nnoncomputable def SlotMass (C : Finset \u2115) (q j : \u2115) : \u2115 :=\n  \u2211 r \u2208 C, (Slot q j r).card\n\ndef BadBlock (C : Finset \u2115) (q j : \u2115) : Prop :=\n  2 * BlockCov C q j < SlotMass C q j\n\ntheorem bad_block_descends_ge_three (C : Finset \u2115) (q j : \u2115)\n    (hTop : TopWindow C q)\n    (hj : 4 \u2264 j) (hbad : BadBlock C q j) :\n    \u2203 j', 3 \u2264 j' \u2227 j' < j \u2227 BadBlock C q j' := by\n  sorry",
+  "started_at": "2026-04-15T00:01:23Z",
+  "finished_at": "2026-04-15T00:04:20Z",
+  "duration_s": 177.12,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "You've hit your limit \u00b7 resets 8pm (America/Chicago)"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-15T00-01-23-autoprove-e70c-ep488_sorry3_bbds_v2.log",
+  "worker_pid": 574,
+  "last_heartbeat_at": 1776211456.3748484,
+  "_started_monotonic": 1776211283.8297155
+}

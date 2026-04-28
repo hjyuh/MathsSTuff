@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-15T00-51-30-draft-6274-codex_backend_smoke_draft_2026_04_14",
+  "status": "error",
+  "session_id": "",
+  "command": "/draft",
+  "input": "In Lean, draft a proof that for any natural number n, n + 0 = n.",
+  "started_at": "2026-04-15T00:51:30Z",
+  "finished_at": "2026-04-15T00:51:30Z",
+  "duration_s": 0.42,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Error: stdin is not a terminal"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-15T00-51-30-draft-6274-codex_backend_smoke_draft_2026_04_14.log",
+  "worker_pid": 622,
+  "last_heartbeat_at": 1776214290.6254694,
+  "_started_monotonic": 1776214290.4968424
+}

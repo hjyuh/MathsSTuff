@@ -1,0 +1,262 @@
+{
+  "z_values": [
+    54,
+    258,
+    606,
+    762
+  ],
+  "known_shifts": [
+    24640,
+    405405,
+    1723680
+  ],
+  "base_index": 0,
+  "prime_bound": 150,
+  "max_classes": 5000000,
+  "m_bound": 100000000,
+  "classes": 2239488,
+  "modulus": 308570246985,
+  "tested": 703,
+  "hits": [
+    {
+      "m": 166,
+      "shift": 24640,
+      "known_shift": true,
+      "roots": [
+        166,
+        302,
+        626,
+        778
+      ]
+    },
+    {
+      "m": 639,
+      "shift": 405405,
+      "known_shift": true,
+      "roots": [
+        639,
+        687,
+        879,
+        993
+      ]
+    },
+    {
+      "m": 1314,
+      "shift": 1723680,
+      "known_shift": true,
+      "roots": [
+        1314,
+        1338,
+        1446,
+        1518
+      ]
+    }
+  ],
+  "prime_data": [
+    {
+      "p": 3,
+      "survivors": 3,
+      "density": 1.0,
+      "used": true
+    },
+    {
+      "p": 5,
+      "survivors": 2,
+      "density": 0.4,
+      "used": true
+    },
+    {
+      "p": 7,
+      "survivors": 2,
+      "density": 0.2857142857142857,
+      "used": true
+    },
+    {
+      "p": 11,
+      "survivors": 4,
+      "density": 0.36363636363636365,
+      "used": true
+    },
+    {
+      "p": 13,
+      "survivors": 6,
+      "density": 0.46153846153846156,
+      "used": true
+    },
+    {
+      "p": 17,
+      "survivors": 8,
+      "density": 0.47058823529411764,
+      "used": false
+    },
+    {
+      "p": 19,
+      "survivors": 6,
+      "density": 0.3157894736842105,
+      "used": true
+    },
+    {
+      "p": 23,
+      "survivors": 6,
+      "density": 0.2608695652173913,
+      "used": true
+    },
+    {
+      "p": 29,
+      "survivors": 8,
+      "density": 0.27586206896551724,
+      "used": false
+    },
+    {
+      "p": 31,
+      "survivors": 6,
+      "density": 0.1935483870967742,
+      "used": true
+    },
+    {
+      "p": 37,
+      "survivors": 6,
+      "density": 0.16216216216216217,
+      "used": true
+    },
+    {
+      "p": 41,
+      "survivors": 6,
+      "density": 0.14634146341463414,
+      "used": true
+    },
+    {
+      "p": 43,
+      "survivors": 8,
+      "density": 0.18604651162790697,
+      "used": false
+    },
+    {
+      "p": 47,
+      "survivors": 10,
+      "density": 0.2127659574468085,
+      "used": false
+    },
+    {
+      "p": 53,
+      "survivors": 10,
+      "density": 0.18867924528301888,
+      "used": false
+    },
+    {
+      "p": 59,
+      "survivors": 14,
+      "density": 0.23728813559322035,
+      "used": false
+    },
+    {
+      "p": 61,
+      "survivors": 8,
+      "density": 0.13114754098360656,
+      "used": false
+    },
+    {
+      "p": 67,
+      "survivors": 12,
+      "density": 0.1791044776119403,
+      "used": false
+    },
+    {
+      "p": 71,
+      "survivors": 9,
+      "density": 0.1267605633802817,
+      "used": false
+    },
+    {
+      "p": 73,
+      "survivors": 7,
+      "density": 0.0958904109589041,
+      "used": false
+    },
+    {
+      "p": 79,
+      "survivors": 10,
+      "density": 0.12658227848101267,
+      "used": false
+    },
+    {
+      "p": 83,
+      "survivors": 15,
+      "density": 0.18072289156626506,
+      "used": false
+    },
+    {
+      "p": 89,
+      "survivors": 18,
+      "density": 0.20224719101123595,
+      "used": false
+    },
+    {
+      "p": 97,
+      "survivors": 15,
+      "density": 0.15463917525773196,
+      "used": false
+    },
+    {
+      "p": 101,
+      "survivors": 16,
+      "density": 0.15841584158415842,
+      "used": false
+    },
+    {
+      "p": 103,
+      "survivors": 17,
+      "density": 0.1650485436893204,
+      "used": false
+    },
+    {
+      "p": 107,
+      "survivors": 19,
+      "density": 0.17757009345794392,
+      "used": false
+    },
+    {
+      "p": 109,
+      "survivors": 18,
+      "density": 0.1651376146788991,
+      "used": false
+    },
+    {
+      "p": 113,
+      "survivors": 16,
+      "density": 0.1415929203539823,
+      "used": false
+    },
+    {
+      "p": 127,
+      "survivors": 18,
+      "density": 0.14173228346456693,
+      "used": false
+    },
+    {
+      "p": 131,
+      "survivors": 16,
+      "density": 0.12213740458015267,
+      "used": false
+    },
+    {
+      "p": 137,
+      "survivors": 18,
+      "density": 0.13138686131386862,
+      "used": false
+    },
+    {
+      "p": 139,
+      "survivors": 17,
+      "density": 0.1223021582733813,
+      "used": false
+    },
+    {
+      "p": 149,
+      "survivors": 22,
+      "density": 0.1476510067114094,
+      "used": false
+    }
+  ],
+  "stopped_early": false
+}

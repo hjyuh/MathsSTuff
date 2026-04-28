@@ -1,0 +1,41 @@
+{
+  "n_seed": {
+    "mode": "n-seed",
+    "N_values": [
+      79200,
+      227205,
+      1258560
+    ],
+    "delta_max": 5000,
+    "common_delta_count": 4,
+    "common_deltas": [
+      36,
+      468,
+      692,
+      1028
+    ]
+  },
+  "delta_seed": {
+    "mode": "delta-seed",
+    "deltas": [
+      36,
+      468,
+      692,
+      1028
+    ],
+    "x_bound": 10000000,
+    "support": 3,
+    "sample_N_values": [
+      79200,
+      227205,
+      1258560
+    ],
+    "common_delta_count_up_to_bound": 4,
+    "common_deltas_up_to_bound": [
+      36,
+      468,
+      692,
+      1028
+    ]
+  }
+}

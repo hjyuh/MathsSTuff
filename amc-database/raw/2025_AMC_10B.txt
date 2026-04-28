@@ -1,0 +1,2937 @@
+=== Problem 1 ===
+The instructions on a
+
+Choices: {'A': '16', 'B': '17', 'C': '18', 'D': '19', 'E': '20'}
+Answer: B
+
+--- Solution 1 ---
+<imath>\frac{350}{20}</imath> is <imath>17.5</imath>. We round down to find the maximum he can make (he cannot brew half of a cup), so the answer is <imath>\boxed{\text{(B) }17}</imath>.
+
+--- Solution 2 ---
+We can use <imath>340</imath>-grams if we use <imath>17</imath> mugs. This is because <imath>20 \cdot 17 = 340</imath>. We cannot use <imath>18</imath> because that would mean using <imath>360</imath>-grams. The answer is <imath>\boxed{17}</imath>.
+
+Note that you can also find this by finding <imath>\lfloor \frac{350}{20} \rfloor = 17.</imath>
+
+--- Solution 3 ---
+Dividing <imath>350</imath> by <imath>20</imath>, we get <imath>17</imath> with a remainder of <imath>10</imath>. However, <imath>10</imath> grams cannot make a properly brewed large mug of coffee, as stated in the problem. We can only count fully brewed mugs of coffee, hence the answer is <imath>\boxed{\text{(B) }17}</imath>.
+
+
+
+==Solution 4 - Cheese (Sort of)==
+We multiply <imath>20</imath> by each of the answer choices to see if we can find which one is closest and under <imath>350.</imath> First, we try solution <imath>\text{A}</imath>, which is <imath>16</imath>. <imath>16 \cdot 20 = 320,</imath> which is <imath>30</imath> off from 350, so <imath>\text{A}</imath> cannot be the answer, because we can add another <imath>20</imath>. Moving on to answer choice <imath>\text{B},</imath> <imath>17 \cdot 20 = 340.</imath> We notice that <imath>350-340=10,</imath> and so we cannot add another <imath>20</imath> to get closer but less than <imath>350.</imath> (The next number, <imath>18</imath>, would result in <imath>20 \cdot 18=360,</imath> which is more than <imath>350</imath>.) So, the answer is <imath>\boxed{\text{(B) }17}.</imath>
+
+(note - the actual cheese solution would likely include every single answer choice, but I use a bit of intellect in this solution)
+
+
+=== Problem 2 ===
+Jerry wrote down the ones digit of each of the first
+
+Choices: {'A': '~9025', 'B': '~9070', 'C': '~9090', 'D': '~9115', 'E': '~9160'}
+Answer: D
+
+--- Solution 1 ---
+By a modulo <imath>10</imath> argument, the ones digits repeat with period <imath>10</imath> in the following order:
+<cmath>1,4,9,6,5,6,9,4,1,0</cmath>
+The sum of the numbers can be verified to be <imath>45</imath>.
+
+There are <imath>202</imath> periods that occur from <imath>1</imath> to <imath>2025</imath>, and there are five extra numbers, those being <imath>1,4,9,6,5</imath>, corresponding to <imath>2021,2022,2023,2024,2025</imath>. The sum of these numbers is <imath>25</imath>.
+
+Hence, the total is
+<cmath>202\cdot 45+25=9090+25=\boxed{\textbf{(D)}
+
+--- Solution 2 ---
+Let <imath>x\equiv n\quad\textrm{(mod 10)}</imath>. We have <imath>x^2\equiv n^2\quad\textrm{(mod 10)}</imath>. So, the numbers must repeat in patterns of <imath>10</imath>. Listing them out gives:
+<cmath>1,4,9,6,5,6,9,4,1,0.</cmath>These numbers sum to <imath>45</imath>, so the sum of the first <imath>2020</imath> numbers is <imath>45\cdot202=9090</imath>. Since we need <imath>5</imath> more numbers, we add <imath>1+4+9+6+5=25</imath> to our answer to get <imath>\boxed{\textbf{(D)}
+
+--- Solution 3 ---
+The ones digit of a square number is determined by the ones digit of the base.  
+We can find the pattern by looking at the ones digits of the first ten positive squares:
+
+
+\begin{aligned}
+1^2 &= 1 \\
+2^2 &= 4 \\
+3^2 &= 9 \\
+4^2 &= 16 \quad (\text{ones digit } 6) \\
+5^2 &= 25 \quad (\text{ones digit } 5) \\
+6^2 &= 36 \quad (\text{ones digit } 6) \\
+7^2 &= 49 \quad (\text{ones digit } 9) \\
+8^2 &= 64 \quad (\text{ones digit } 4) \\
+9^2 &= 81 \quad (\text{ones digit } 1) \\
+10^2 &= 100 \quad (\text{ones digit } 0)
+\end{aligned}
+
+
+The sequence of ones digits is:
+
+
+<imath>1</imath>, <imath>4</imath>, <imath>9</imath>, <imath>6</imath>, <imath>5</imath>, <imath>6</imath>, <imath>9</imath>, <imath>4</imath>, <imath>1</imath>, <imath>0</imath> 
+
+
+
+This pattern of ten digits repeats for every subsequent group of ten squares (e.g., \(11^2\) has the same ones digit as \(1^2\), \(12^2\) as \(2^2\), etc.).
+
+
+<imath>1</imath> + <imath>4</imath> + <imath>9</imath> + <imath>6</imath> + <imath>5</imath> + <imath>6</imath> + <imath>9</imath> + <imath>4</imath> + <imath>1</imath> + <imath>0</imath> = <imath>45</imath> 
+
+
+We now divide by <imath>10</imath> as the pattern repeats every <imath>10</imath> terms: <imath>2025</imath>/<imath>10</imath> results in <imath>202</imath> full cycles with a remainder of <imath>5</imath>. The sum of the <imath>202</imath> full cycles is:
+
+
+<imath>202</imath> * <imath>45</imath> = <imath>9090</imath> 
+
+
+However, we must add back <imath>5</imath> digits, as we had a remainder of <imath>5</imath> when we divided <imath>2025</imath> by <imath>10</imath>. Therefore, the sum of the remaining <imath>5</imath> digits is:
+
+
+<imath>1</imath> + <imath>4</imath> + <imath>9</imath> + <imath>6</imath> + <imath>5</imath> = <imath>25</imath> 
+
+
+Thus, the total sum is:
+
+
+<imath>9090</imath> + <imath>25</imath> = <imath>9115</imath> 
+
+Therefore, the answer is <imath>\boxed{\textbf{(D)}
+
+==Solution 4: Modular Arithmetic; Ultra-Rigorous, Not Recommended==
+
+We want the sum of the ones digits of 
+\( 1^2, 2^2, 3^2, \ldots, 2025^2 \). The normal way is to notice the pattern repeats every 10, but instead we will approach this with more modular arithmetic than any sane person would tolerate.
+
+Let \( f(n) = n^2 \mod 10 \), which extracts the ones digit of \( n^2 \).
+We want
+
+<cmath>
+S = \sum_{n=1}^{2025} f(n).
+</cmath>
+
+First observe the basic periodicity result:
+Since \( n^2 \mod 10 \) depends only on \( n \mod 10 \), we have
+
+<cmath>
+f(n+10) \equiv f(n) \pmod{10}.
+</cmath>
+
+We will pretend this is deep.
+
+Now compute all residues \( n \mod 10 \) and their corresponding \( n^2 \mod 10 \):
+
+<cmath>
+\begin{array}{c c}
+0^2 & \equiv 0 \\
+1^2 & \equiv 1 \\
+2^2 & \equiv 4 \\
+3^2 & \equiv 9 \\
+4^2 & \equiv 6 \\
+5^2 & \equiv 5 \\
+6^2 & \equiv 6 \\
+7^2 & \equiv 9 \\
+8^2 & \equiv 4 \\
+9^2 & \equiv 1.
+\end{array}
+</cmath>
+
+Instead of immediately summing these, we treat the 10-term sequence as a modular function over the ring \( \mathbb{Z}/10\mathbb{Z} \).
+Define the sequence \( a_k = (k^2 \mod 10) \) for \( k \in \mathbb{Z}/10\mathbb{Z} \).
+We want the sum
+
+<cmath>
+T = \sum_{k=0}^9 a_k = 0 + 1 + 4 + 9 + 6 + 5 + 6 + 9 + 4 + 1 = 45.
+</cmath>
+
+Next, determine how many full cycles of length 10 lie in the first 2025 integers.
+Compute
+
+<cmath>
+2025 \mod 10 \equiv 5.
+</cmath>
+
+Then
+
+<cmath>
+2025 = 10 \cdot 202 + 5.
+</cmath>
+
+So we have 202 complete cycles plus 5 extra terms.
+
+Sum contributed by the full cycles:
+
+<cmath>
+202 \cdot 45.
+</cmath>
+
+We now compute this entirely modulo 10 even though we need the actual sum.
+First,
+
+<cmath>
+202 \equiv 2 \pmod{10}, \quad 45 \equiv 5 \pmod{10},
+</cmath>
+
+so
+
+<cmath>
+202 \cdot 45 \equiv 2 \cdot 5 = 10 \equiv 0 \pmod{10}.
+</cmath>
+
+This tells us nothing useful, so abandon that and compute normally:
+
+<cmath>
+202 \cdot 45 = (200 \cdot 45) + (2 \cdot 45) = 9000 + 90 = 9090.
+</cmath>
+
+Now handle the leftover 5 terms: \( n = 1, 2, 3, 4, 5 \).
+Compute \( n^2 \mod 10 \) again even though we already have it:
+
+<cmath>
+1^2 \equiv 1, \quad 2^2 \equiv 4, \quad 3^2 \equiv 9, \quad 4^2 \equiv 6, \quad 5^2 \equiv 5.
+</cmath>
+
+Sum:
+
+<cmath>
+1 + 4 + 9 + 6 + 5 = 25.
+</cmath>
+
+The full sum is
+
+<cmath>
+S = 9090 + 25 = 9115.
+</cmath>
+
+To unnecessarily verify using modular decomposition, write
+
+<cmath>
+S \equiv \sum_{n=1}^{2025} n^2 \pmod{10}.
+</cmath>
+
+We can compute the entire sum of squares formula modulo 10 and compare.
+Using
+
+<cmath>
+\sum_{n=1}^N n^2 = \frac{N(N+1)(2N+1)}{6},
+</cmath>
+
+take \( N = 2025 \).
+Reduce everything modulo 10 first:
+
+<cmath>
+2025 \equiv 5, \quad 2026 \equiv 6, \quad 4051 \equiv 1 \pmod{10}.
+</cmath>
+
+Now compute
+
+<cmath>
+5 \cdot 6 \cdot 1 = 30.
+</cmath>
+
+Thus
+
+<cmath>
+\sum_{n=1}^{2025} n^2 \equiv 30 \cdot 6^{-1} \pmod{10}.
+</cmath>
+
+Compute the inverse of 6 modulo 10.
+Solve \( 6x \equiv 1 \pmod{10} \).
+No such \( x \) exists because \( \gcd(6, 10) = 2 \neq 1 \).
+Therefore this modular-verification method is unusable, so we immediately stop and simply trust the earlier cycle-counting method.
+
+Thus the sum of the ones digits of the first 2025 squares is
+
+<cmath>
+9115.
+</cmath>
+
+
+=== Problem 3 ===
+A Pascal-like triangle has
+
+Choices: {'A': '11', 'B': '13', 'C': '14', 'D': '16', 'E': '17'}
+Answer: D
+
+--- Solution 1 ---
+If we find the sum for each rows, I'll only do the first 5, we find that row 1 has sum <imath>10</imath>, row 2 has sum <imath>11</imath>, row 3 has sum <imath>22</imath>, row 4 has sum <imath>44</imath>, and row 5 has sum <imath>88</imath>. we can see that excluding the first row each row has sum <imath>11*2^{n-2}</imath> where <imath>n</imath> is the row. This means the 11th row will have sum <imath>11*2^9=11*512=5632</imath>. The sum of the digits of <imath>5632</imath> is <imath>16</imath>, so the answer is <imath>\boxed{\textbf{(D) }16}</imath>.
+
+
+===Why each row is twice the previous row===
+Notice that the sum of each row is the slightly different than the normal Pascal's triangle, so the sum of the numbers is similar. Here's a proof of why each number in the normal Pascal's triangle is twice the previous number.
+To prove that the sum of each row is <imath>2</imath> times the previous row, use the equation <imath>{(1+1)}^n</imath> with the normal Pascal's triangle and use the binomial theorem from there.
+
+Example: In the fifth row of Pascal's triangle, the numbers are <imath>1, 4, 6, 4, 1</imath>. The first number can be represented by <imath>{4 \choose 0} = 1</imath>, the second by <imath>{4 \choose 1} = 4</imath>, the third by  <imath>{4 \choose 2} = 6</imath>, the fourth by  <imath>{4 \choose 3} = 4</imath>, and the last by  <imath>{4 \choose 4} = 1</imath>. The sum of these five numbers is <imath>16</imath> which is also <imath>2^{4}</imath>. 
+Using the binomial theorem with <imath>{(1+1)}^4</imath>, we get <imath>1 + 4 + 6 + 4 + 1 = 16</imath>, the same results in Pascal's triangle. We could also solve <imath>{(1+1)}^4</imath> by converting it to <imath>2^4 = 16</imath>, proving the identity that all rows in Pascal's triangle are exactly twice the previous row and can be represented by <imath>2^{n}</imath>.
+
+--- Solution 2 ---
+In this Pascal's Triangle-like sequence, after row 2, each number in row <imath>x</imath> applies twice to row <imath>x+1</imath>. The numbers in row 2 are <imath>10</imath> and <imath>1</imath>, and these numbers each apply twice to the next row (<imath>10, 10+1</imath>, and <imath>1</imath> are the numbers in row 3, which can be rewritten as <imath>10*2+1*2</imath>.) With this pattern, we know that after row 2
+the sum of the numbers doubles, and proceed with Solution 1's continuation to get <imath>\boxed{\textbf{(D) }16}</imath>.
+
+--- Solution 3 ---
+We can write out the first <imath>11</imath> rows with direct computation. Since no calculators are allowed, you will spend at least 5 minutes on this problem, so I do not recommend this way. Here are the first <imath>11</imath> rows.
+
+
+<cmath>10</cmath>
+<cmath>10\qquad 1</cmath>
+<cmath>10\qquad 11\qquad 1</cmath>
+<cmath>10\qquad 21\qquad 12\qquad 1</cmath>
+<cmath>10\qquad 31\qquad 33\qquad 13\qquad 1</cmath>
+<cmath>10\qquad 41\qquad 64\qquad 46\qquad 14\qquad 1</cmath>
+<cmath>10\qquad 51\qquad 105\qquad 110\qquad 60\qquad 15\qquad 1</cmath>
+<cmath>10\qquad 61\qquad 156\qquad 215\qquad 170\qquad 75\qquad 16\qquad 1</cmath>
+<cmath>10\qquad 71\qquad 217\qquad 371\qquad 385\qquad 245\qquad 91\qquad 17\qquad 1</cmath>
+<cmath>10\qquad 81\qquad 288\qquad 588\qquad 756\qquad 630\qquad 336\qquad 108\qquad 18\qquad 1</cmath>
+<cmath>10\qquad 91\qquad 369\qquad 876\qquad 1344\qquad 1386\qquad 966\qquad 444\qquad 126\qquad 19\qquad 1</cmath>
+
+Summing the last row gives <imath>10+91+369+876+1344+1386+966+444+126+19+1 = 5632</imath>. Summing the digits of <imath>5632</imath> gives <imath>5+6+3+2 = \boxed{\textbf{(D) } 16}</imath>.
+
+Edit: After brute forcing two or three lines, it is clear that the number doubles (<imath>11, 22, 44, 88</imath>...), and you can use this to find <imath>5632</imath> which gives <imath>5+6+3+2 = \boxed{\textbf{(D) } 16}</imath>.
+
+--- Solution 4 ---
+We can just take the entire triangle modulo <imath>9</imath> since all the answer choices have different modulo <imath>9</imath> and because a number is congruent to the sum of the digits of it mod <imath>9</imath>. Thus, since <imath>10\cong1</imath> (mod <imath>9</imath>) it just becomes Pascal's triangle, and the sum of the elements on the 11th row is <imath>2^{11-1}=1024</imath>, and since <imath>1024\cong7</imath> (mod <imath>9</imath>), the only feasible answer choice is <imath>16</imath> since it is the only answer choice that is <imath>7</imath> mod <imath>9</imath>, thus the answer is <imath>\boxed{\textbf{(D) } 16}</imath>
+
+--- Solution 5 ---
+We can start brute forcing the first few rows and figure out the pattern that for row <imath>n</imath> where <imath>n</imath> is a natural number, the sum of the numbers in row <imath>n</imath> is <imath>11(2^{n-2})</imath>. Now we gamble on this pattern (which is mostly correct for AMC 10 problems) and plug in <imath>11</imath> into <imath>n</imath> which results in <imath>5632</imath> as the sum of all the numbers in that row. Thus, the answer is <imath>5 + 6 + 3 + 2 = \boxed{\textbf{D) }16}</imath>
+
+--- Solution 6 ---
+If you failed or sillied the AMC 10 A Question 19, then during the AMC 10 B you gained the experience to know that each row probably doubles in these Pascal-like problems, either in retrospect or during the actual AMC 10 A. 
+However, we should probably check, in case you sillied this problem because you didn't check something stupid on the 10 A. 
+It is a good decision to check, because we realize that the first row does not conform to the doubling rule, and only the rows right after it do. 
+The rest of the solution is similar to how we solve the AMC 10 A Question 19, except less bashy because we only want the sum, not a specific number, and we are given the row number instead of the sum. 
+So, we end up getting the sum to be <imath>5632</imath>, so the answer is <imath>\boxed{\textbf{D) }16}</imath>.
+
+--- Solution 7 ---
+We want the sum of the digits of the sum of all entries in the 11th row of this "Pascal-ish" triangle. We will solve this with far more modular arithmetic than required, even though everything collapses into a simple closed form.
+
+Let the 11th row be indexed as row \( n = 11 \), with the top row being \( n = 1 \).
+Define row sums by \( S_n \).
+
+Each row begins with 10 and ends with 1.
+For the interior entries, each behaves like a binomial coefficient but with the row starting shifted.
+
+So an entry in row \( n \) looks like:
+
+Row \( n \): \( 10,  \binom{n-2}{1} + 1,  \binom{n-2}{2} + \binom{n-2}{1}, \dots,  \binom{n-2}{n-2} + \binom{n-2}{n-3}, 1 \)
+
+But this is too reasonable, so instead we use generating functions and modular arithmetic.
+
+Define the polynomial for row \( n \):
+
+<cmath>
+P_n(x) = 10x^0 + \sum_{k=1}^{n-2} \left( \binom{n-2}{k} 10 + \binom{n-2}{k-1} \right) x^k + x^{n-1}.
+</cmath>
+
+The sum of the row is \( P_n(1) \).
+So compute:
+
+<cmath>
+P_n(1) = 10 + \sum_{k=1}^{n-2} \left( 10 \binom{n-2}{k} + \binom{n-2}{k-1} \right) + 1.
+</cmath>
+
+Break into two sums:
+
+<cmath>
+P_n(1) = 10 + 10 \sum_{k=1}^{n-2} \binom{n-2}{k} + \sum_{k=1}^{n-2} \binom{n-2}{k-1} + 1.
+</cmath>
+
+We know:
+
+<cmath>
+\sum_{k=1}^{n-2} \binom{n-2}{k} = (2^{n-2} - 1),
+</cmath>
+since it’s the full binomial sum minus the \( k=0 \) term.
+
+Also,
+
+<cmath>
+\sum_{k=1}^{n-2} \binom{n-2}{k-1} = \sum_{j=0}^{n-3} \binom{n-2}{j} = (2^{n-2} - \binom{n-2}{n-2}) = (2^{n-2} - 1).
+</cmath>
+
+So both sums are exactly \( 2^{n-2} - 1 \), but we pretend otherwise and compute them modulo several numbers unnecessarily.
+
+Since we need row \( n = 11 \), compute:
+
+\( n-2 = 9 \).
+
+Compute powers of 2 modulo various bases even though we need the exact value.
+
+First:
+
+\( 2^9 = 512 \).
+
+But we do:
+
+\( 2^1 \equiv 2 \pmod{10},  2^2 \equiv 4,  2^3 \equiv 8,  2^4 \equiv 6,  2^5 \equiv 2, \) cycle of length 4.
+
+Since \( 9 \equiv 1 \pmod{4} \),
+
+\( 2^9 \equiv 2^1 \equiv 2 \pmod{10} \).
+
+This tells us nothing, but we keep it.
+
+Now compute the sums:
+
+<cmath>
+\sum_{k=1}^9 \binom{9}{k} = 2^9 - 1 = 511,
+</cmath>
+<cmath>
+\sum_{k=1}^9 \binom{9}{k-1} = 511.
+</cmath>
+
+Substitute everything:
+
+<cmath>
+P_{11}(1) = 10 + 10(511) + (511) + 1.
+</cmath>
+
+Compute in pieces:
+
+\( 10(511) = 5110 \).
+
+Then
+
+\( 10 + 5110 = 5120, 5120 + 511 = 5631, 5631 + 1 = 5632 \).
+
+So the sum of the entries in the 11th row is:
+
+5632.
+
+We need the sum of its digits:
+
+\( 5 + 6 + 3 + 2 = 16 \).
+
+Answer:
+
+16.
+
+
+=== Problem 4 ===
+The value of the two-digit number
+
+Choices: {'A': '~7', 'B': '~9', 'C': '~10', 'D': '~11', 'E': '~14'}
+Answer: A
+
+--- Solution 1 ---
+By definition of bases, <imath>\underline{a}
+
+
+
+===Remark===
+The first equation comes from the following idea. In base <imath>10</imath>, a two-digit number can be represented as <imath>10</imath> times the tens digit plus the units digit, or <imath>10^1 \cdot a + 10^0 \cdot b</imath>. If we insert the base numbers into this expression for <imath>\underline{a}
+Note that this method applies to any number of digits as well as decimals.
+
+--- Solution 2 ---
+Since <imath>a</imath> and <imath>b</imath> are both digits base <imath>7</imath>, they must be from <imath>0</imath> to <imath>6</imath>. Furthermore, <imath>\underline{a}</imath> must be strictly greater than <imath>b</imath> because two-digit representations in base <imath>7</imath> exceed the values of those in base <imath>9</imath>. Starting from testing <imath>\text{(A)}</imath>, we see that the combination <imath>(a, b) = (4, 3)</imath> satisfies the condition. The answer is <imath>\boxed{\textbf{(A)}
+
+--- Solution 3 ---
+We interpret the two-digit numbers literally:
+
+In base 7:
+<cmath>
+\overline{a} \ \overline{b} = 7a + b.
+</cmath>
+In base 9:
+<cmath>
+\overline{b} \ \overline{a} = 9b + a.
+</cmath>
+The condition is
+<cmath>
+7a + b = 9b + a.
+</cmath>
+We want \( a + b \), but we will milk modular arithmetic as much as possible.
+
+Start with the equation:
+<cmath>
+7a + b = 9b + a.
+</cmath>
+Rearrange:
+<cmath>
+7a - a = 9b - b,
+</cmath>
+<cmath>
+6a = 8b,
+</cmath>
+<cmath>
+3a = 4b.
+</cmath>
+This already says \( \frac{a}{b} = \frac{4}{3} \).
+But instead of finishing, we now do highly unnecessary modular analysis.
+
+First, reduce the equation modulo 3:
+<cmath>
+3a - 4b \equiv 0 \pmod{3}.
+</cmath>
+Compute residues:
+<cmath>
+3a \equiv 0 \pmod{3} \text{ always.}
+</cmath>
+<cmath>
+4b \equiv b \pmod{3}.
+</cmath>
+So:
+<cmath>
+0 - b \equiv 0 \pmod{3} \Rightarrow b \equiv 0 \pmod{3}.
+</cmath>
+Thus \( b \in \{0, 3, 6\} \) (since digits in base 7 must be \( 0 \le b \le 6 \)).
+
+Now reduce the same equation modulo 4:
+
+Original condition \( 3a = 4b \).
+Modulo 4:
+<cmath>
+3a \equiv 0 \pmod{4}.
+</cmath>
+Since \( \gcd(3, 4) = 1 \), the multiplicative inverse of 3 modulo 4 is 3, because
+<cmath>
+3 \cdot 3 = 9 \equiv 1 \pmod{4}.
+</cmath>
+Multiply both sides of
+<cmath>
+3a \equiv 0 \pmod{4}
+</cmath>
+by 3:
+<cmath>
+a \equiv 0 \pmod{4}.
+</cmath>
+Thus \( a \in \{0, 4\} \), because digits in base 7 satisfy \( 0 \le a \le 6 \).
+
+We now have:
+<cmath>
+a \in \{0, 4\}, b \in \{0, 3, 6\}.
+</cmath>
+Next impose the original equation \( 3a = 4b \) exactly, not just modularly.
+
+Test combinations:
+
+\( a = 0 \):
+<cmath>
+3a = 0, 4b = 4b.
+</cmath>
+For equality we need \( b = 0 \).
+That gives \( (a, b) = (0, 0) \), but this represents the “two-digit” numbers \( 00_7 \) and \( 00_9 \).
+Technically valid but trivial; we check the problem expectation: since it asks “What is \( a + b \)?”, zero is possible but let's check the other option.
+
+\( a = 4 \):
+Solve
+<cmath>
+3 \cdot 4 = 4b,
+</cmath>
+<cmath>
+12 = 4b,
+</cmath>
+<cmath>
+b = 3.
+</cmath>
+Check that digits are valid:
+
+\( a = 4 \) is allowed in base 7.
+
+\( b = 3 \) is allowed in base 7 and base 9.
+
+Now confirm the original equation explicitly using base values:
+
+Left side (base 7 number \( \overline{ab} \)):
+<cmath>
+7a + b = 7 \cdot 4 + 3 = 28 + 3 = 31.
+</cmath>
+Right side (base 9 number \( \overline{ba} \)):
+<cmath>
+9b + a = 9 \cdot 3 + 4 = 27 + 4 = 31.
+</cmath>
+Equality holds.
+
+Thus the nontrivial valid solution is
+<cmath>
+(a, b) = (4, 3).
+</cmath>
+Compute:
+<cmath>
+a + b = 4 + 3 = 7.
+</cmath>
+Final answer:
+\( 7 \).
+
+--- Solution 4 ---
+Write both integers as linear expressions and equate them
+<cmath>7a+b = 9b+a</cmath>
+To find solutions to this, we can put everything on one side so it equals <imath>0</imath>
+<cmath>6a-8b=0</cmath>
+Now, assuming a coordinate form <imath>(a, b)</imath> you can quite easily see that <imath>(8, 6)</imath> is a solution. However, this violates the fact that <imath>a</imath> and <imath>b</imath> are less than 7. You can see that just taking half of them gets you <imath>(4,3)</imath>, and that no other solution would work without exceeding, so, the answer is
+
+<imath>\boxed{\textbf{(A)}
+
+
+=== Problem 5 ===
+In
+
+Choices: {'A': '~20', 'B': '~30', 'C': '~40', 'D': '~50', 'E': '~60'}
+Answer: C
+
+--- Solution 1 ---
+Let us extend <imath>\overline{AO}</imath> to meet <imath>\odot{O}</imath> at <imath>D</imath>. 
+
+Since <imath>m\angle{ABC}=130</imath>°, by the Inscribed Angle Theorem, the measure of major arc <imath>\overarc{AC}=260</imath>°. <imath>\overline{AD}</imath> is a diameter of <imath>\odot{O}</imath>, so the measure of top arc <imath>\overarc{AD}=180</imath>, so <imath>m\overarc{CD}=260-180=80</imath>° and <imath>m\angle{CAO}=\boxed{\textbf{(C) }40\textbf{°}}</imath>.
+
+
+Edit : What should we use to make it?
+
+--- Solution 2 ---
+Since <imath>\angle ABC = 130^\circ</imath>, by the Inscribed Angle Theorem, it intercepts the major arc <imath>AC</imath>, so that arc has measure <imath>260^\circ</imath>. Point <imath>O</imath> is the circumcenter, and is therefore outside of triangle ABC. Therefore, the minor arc <imath>AC</imath> has measure <imath>360^\circ - 260^\circ = 100^\circ</imath>. The central angle <imath>\angle AOC</imath> subtends the minor arc <imath>AC</imath>, so <imath>\angle AOC = 100^\circ</imath>. Because <imath>OA = OC</imath> are radii of the circumcircle, <imath>\triangle AOC</imath> is isosceles, so <imath>\angle CAO = \angle ACO</imath>. Let <imath>\angle CAO = \angle ACO = x</imath>. Then <imath>x + x + 100^\circ = 180^\circ</imath>, so <imath>2x = 80^\circ</imath> and <imath>x = 40^\circ</imath>. Thus, <imath>\angle CAO = \boxed{40^\circ}</imath>.
+
+
+
+
+Below is a diagram to help visualize the problem : 
+
+<asy>
+size(220);
+
+// Choose coordinates so that angle B is obtuse (
+pair B = (0,0);
+pair C = (3,0);
+pair A = 3*dir(130);
+
+// Circumcenter of triangle ABC (outside since angle at B is obtuse)
+pair O = circumcenter(A,B,C);
+
+// Draw circumcircle
+draw(circle(O, abs(O - A)), gray(0.7));
+
+// Draw triangle ABC
+draw(A--B--C--cycle);
+
+// Draw radii OA and OC
+draw(O--A, dashed);
+draw(O--C, dashed);
+
+// Label points
+dot("$A$", A, NE);
+dot("$B$", B, S);
+dot("$C$", C, SE);
+dot("$O$", O, N);
+</asy>
+
+--- Solution 3 ---
+Extend line <imath>\overline{AO}</imath> to meet <imath>\odot{O}</imath> at <imath>D</imath>.
+We can now easily see that quadrilateral <imath>ABCD</imath> is a cyclic quadrilateral, thus <imath>\angle ABC + \angle ADC = 180^{\circ}</imath>.
+
+Since <imath>\angle ABC = 130^{\circ}</imath>, <imath>\angle ADC = 50^{\circ}</imath>.
+
+We also know that <imath>\triangle ODC</imath> is isosceles because of the two radii. Thus <imath>\angle DOC = 180^{\circ} - 2{\times} \angle ADC</imath>. <imath>\angle DOC = 80^{\circ}</imath>.
+
+By the inscribed angle theorem, <imath>\angle CAO</imath> is half of <imath>\angle DOC</imath>.
+
+So <imath>\angle CAO = \boxed{\textbf{(C) }40\textbf{°}}</imath>.
+
+--- Solution 4 ---
+We want \( \angle CAO \), where \( O \) is the circumcenter of \( \triangle ABC \).
+You could finish this instantly using a known circumcenter–inscribed angle fact, but we instead perform a ridiculously unnecessary trigonometric demolition, explicitly using all side lengths and more law-of-cosines/law-of-sines machinery than any rational human would use.
+
+We are given:
+
+\( AB = 10 \)
+
+\( AC = 18 \)
+
+\( \angle B = 130^\circ \)
+
+Let’s denote the standard opposite-side notation:
+
+\( a = BC, b = AC = 18, c = AB = 10 \),
+
+with angles
+
+\( A = \angle A, B = 130^\circ, C = \angle C \).
+
+We ultimately want \( \angle CAO \), the angle between segment \( AC \) and segment \( AO \), i.e. the angle at \( A \) between the side \( AC \) and the radius from \( A \) to the circumcenter.
+
+The circumcenter angle fact says this angle is half of something simple, but we refuse to use that and instead bulldoze our way through.
+
+
+===STEP 1: FIND SIDE \( a = BC \) USING THE LAW OF COSINES
+
+
+\( a^2 = b^2 + c^2 - 2bc \cos B \).
+
+Substitute:
+
+\( a^2 = 18^2 + 10^2 - 2(18)(10) \cos(130^\circ) \).
+
+Compute pieces:
+
+\( 18^2 = 324, 10^2 = 100, 2 \cdot 18 \cdot 10 = 360 \).
+
+Also \( \cos(130^\circ) = \cos(180^\circ - 50^\circ) = - \cos(50^\circ) \).
+
+Thus
+
+\( a^2 = 424 - 360(- \cos 50^\circ) = 424 + 360 \cos 50^\circ \).
+
+We keep it in this exact ugly form to guarantee unnecessary work.
+
+
+===STEP 2: FIND ANGLE \( A \) VIA THE LAW OF COSINES
+
+
+Apply the law of cosines again:
+
+\( \cos A = \frac{b^2 + c^2 - a^2}{2bc} \).
+
+We know
+
+\( b^2 + c^2 = 324 + 100 = 424 \).
+
+So:
+
+\( \cos A = \frac{424 - (424 + 360 \cos 50^\circ)}{2(18)(10)} \).
+
+Simplify numerator:
+
+\( 424 - 424 - 360 \cos 50^\circ = -360 \cos 50^\circ \).
+
+Denominator is:
+
+\( 2 \cdot 18 \cdot 10 = 360 \).
+
+Thus:
+
+\( \cos A = - \cos 50^\circ \).
+
+Therefore:
+
+\( A = 180^\circ - 50^\circ = 130^\circ \).
+
+We now observe: angles \( A \) and \( B \) are both \( 130^\circ \).
+That means triangle \( ABC \) is isosceles with \( a = c \).
+This checks with our earlier expression:
+
+\( a^2 = 424 + 360 \cos 50^\circ, c^2 = 100 \).
+
+Indeed \( \cos 50^\circ \approx 0.6428 \), so:
+
+\( a^2 \approx 424 + 231.4 = 655.4, a \approx 25.6 \).
+
+This does not equal 10.
+So the triangle is not isosceles, but the angle result is correct because the big angles correspond to the longest sides, so \( A = 130^\circ \) is consistent with \( b = 18 \) being largest.
+
+
+===STEP 3: RELATION OF \( \angle CAO \) TO THE CENTRAL ANGLE
+The circumcenter \( O \) satisfies:
+
+\( AO = BO = CO = R \), the circumradius.
+
+\( \angle COA \) is the central angle subtending arc \( CACACA \).
+
+\( \angle CAO \) is half of \( \angle COA \) in triangle \( CAOCAOCAO \), because it's an isosceles triangle with sides \( AO = COAO = COAO=CO \).
+
+But we refuse to use the simple arc-angle fact, so we compute the central angle via the law of cosines on triangle \( AOCAOCAOC \):
+In \( \triangle AOC \):
+
+\( AO = CO = R \),
+
+\( AC = b = 18 \),
+
+\( \angle AOC = \theta \) (the central angle opposite side \( ACACAC \)).
+
+Then:
+<cmath>
+b^2 = AO^2 + CO^2 - 2(AO)(CO)\cos\theta
+</cmath>
+<cmath>
+18^2 = R^2 + R^2 - 2R^2\cos\theta
+</cmath>
+<cmath>
+324 = 2R^2(1 - \cos\theta).
+</cmath>
+We need \( R \).
+Use the circumradius formula:
+<cmath>
+R = \frac{a}{2\sin A}.
+</cmath>
+Take:
+
+\( a = \sqrt{424 + 360\cos50^\circ} \),
+
+\( A = 130^\circ \).
+
+Compute \( \sin 130^\circ = \sin 50^\circ \).
+So:
+<cmath>
+R = \frac{\sqrt{424 + 360\cos 50^\circ}}{2\sin 50^\circ}.
+</cmath>
+Square it:
+<cmath>
+R^2 = \frac{424 + 360\cos50^\circ}{4\sin^2 50^\circ}.
+</cmath>
+Plug into the earlier central-angle equation:
+<cmath>
+324 = 2\left(\frac{424 + 360\cos50^\circ}{4\sin^2 50^\circ}\right)(1 - \cos\theta).
+</cmath>
+Simplify:
+<cmath>
+324 = \frac{424 + 360\cos50^\circ}{2\sin^2 50^\circ}(1 - \cos\theta).
+</cmath>
+Multiply both sides:
+<cmath>
+\frac{648\sin^2 50^\circ}{424 + 360\cos50^\circ} = 1 - \cos\theta.
+</cmath>
+At this point any sane person would stop. We instead simplify by using the fact that this \( \theta \) is twice the inscribed angle at \( B \) that subtends side \( ACACAC \). That is:
+<cmath>
+\theta = 2A = 2\cdot130^\circ = 260^\circ.
+</cmath>
+But that exceeds \( 180^\circ \); the triangle uses the smaller central angle, which is:
+<cmath>
+\theta = 360^\circ - 260^\circ = 100^\circ.
+</cmath>
+Thus:
+<cmath>
+\angle COA = 100^\circ.
+</cmath>
+Finally, because triangle \( AOCAOC \) is isosceles (\( AO = CO \)), the angles at \( A \) and \( C \) satisfy:
+<cmath>
+\angle CAO = \frac{180^\circ - \theta}{2}.
+</cmath>
+So:
+<cmath>
+\angle CAO = \frac{180^\circ - 100^\circ}{2} = \frac{80^\circ}{2} = 40^\circ.
+</cmath>
+Therefore:
+\( \boxed{40^\circ} \).
+
+
+=== Problem 6 ===
+The line
+
+Choices: {'A': '18', 'B': '19', 'C': '20', 'D': '21', 'E': '22'}
+Answer: C
+
+--- Solution 1 ---
+We solve this by finding the areas of trapezoids. The line is <imath>y = \frac{1}{3}x + 1</imath>.
+Total Area (<imath>A_{\text{total}}</imath>) of Lower Region:
+The region from <imath>x=0</imath> to <imath>x=2</imath> is a trapezoid.
+<cmath> A_{\text{total}} = \frac{1}{2}(y(0) + y(2)) \times (2 - 0) = \frac{1}{2}\left(1 + \frac{5}{3}\right)(2) = \frac{8}{3} </cmath>
+Half Area (<imath>A_{\text{half}}</imath>):
+The area of the region from <imath>x=0</imath> to <imath>x=a</imath> must be <imath>\frac{1}{2}A_{\text{total}}</imath>.
+<cmath> A_{\text{half}} = \frac{1}{2} \times \frac{8}{3} = \frac{4}{3} </cmath>
+Solve for <imath>a</imath>:
+This half-region is also a trapezoid.
+<cmath> A_{\text{half}} = \frac{1}{2}(y(0) + y(a)) \times (a - 0) = \frac{4}{3} </cmath>
+<cmath> \frac{1}{2}\left(1 + \left(\frac{1}{3}a + 1\right)\right)a = \frac{4}{3} </cmath>
+<cmath> \frac{1}{2}\left(2 + \frac{a}{3}\right)a = \frac{4}{3} </cmath>
+<cmath> a + \frac{a^2}{6} = \frac{4}{3} </cmath>
+Multiplying by 6 gives the quadratic equation:
+<cmath> a^2 + 6a - 8 = 0 </cmath>
+<cmath> a = \frac{-6 \pm \sqrt{6^2 - 4(1)(-8)}}{2} = \frac{-6 \pm \sqrt{68}}{2} = \frac{-6 \pm 2\sqrt{17}}{2} = -3 \pm \sqrt{17} </cmath>
+Since <imath>a</imath> must be positive, <imath>a = \sqrt{17} - 3</imath>.
+<cmath> s + t = 17 + 3 = 20 </cmath>
+The correct option is <imath>C</imath>.
+
+Note: We can find the area of the trapezoid by integrating. We have the area is <imath>\int_{0}^{2} \frac{1}{3}x + 1 \ dx = \frac{1}{6}x^2 + x \bigg|_{x=0}^{2} = \frac{8}{3}</imath>. But this sort of destroys the purpose of this simple solution without calculus. With calculus, the solution below would be the most efficient.
+
+--- Solution 2 ---
+The intersection of the line <imath>y = \frac{1}{3}x + 1</imath> and the square is the point <imath>(2, \frac{5}{3})</imath>. The total area of the trapezoid formed by the line and the square is thus <imath>\frac{1}{2}(2)(\frac{5}{3} + 1) = \frac{8}{3}</imath>. 
+
+The left trapezoidal region's area is equivalent to the area under the line <imath>y = \frac{1}{3}x + 1</imath> from <imath>x = 0</imath> to <imath>x = a</imath>, which can be evaluated using a definite integral. Setting the integral equal to half of the trapezoidal area, we get:
+<cmath>\int_{0}^{a} \left(\frac{x}{3} + 1\right)\, dx = \frac{4}{3}</cmath>
+<cmath>\frac{1}{6}a^2 + a = \frac{4}{3}</cmath>
+<cmath>a^2 + 6a - 8 = 0</cmath>
+
+We now use the quadratic formula:
+<cmath>a = \frac{-6 \pm \sqrt{(-6)^2 - 4(1)(8)}}{2} = \sqrt{17} - 3</cmath>
+
+Our answer is <imath>17 + 3 = \boxed{\textbf{(C) 20}}</imath>
+
+--- Solution 3 ---
+We know <imath>a</imath> must be between 1 and 2 because the area from <imath>0,0</imath> to <imath>1,0</imath> is less than the area from <imath>1,0</imath> to <imath>2,0</imath>. We also know <imath>\sqrt{s}+t</imath> must be equal to one of the integers from 18-22. We can try out possibilities for a knowing these two things and we find that <imath>a</imath> must be equal to <imath>\sqrt{s}-3</imath> when <imath>x</imath> equals one of the 3 integers <imath>17, 18, 19</imath> because if <imath>s</imath> is less than <imath>16</imath>, <imath>t</imath> will have to be <imath>2</imath> to make sure its between <imath>1</imath> and <imath>2</imath> and any choice for <imath>s+2</imath> will be less than <imath>18</imath>. The same (kind of) applies for numbers greater than <imath>19</imath> because the smallest <imath>(20)</imath> added to <imath>3</imath> will be more than <imath>22</imath>. If we assume that <imath>s</imath> is in the simplest form then <imath>s</imath> cannot be <imath>18</imath>. We are then left with <imath>a=\sqrt{17}-3</imath> or <imath>a=\sqrt{19}-3</imath>. We can just plug in one of them for <imath>a</imath> and see if it works or not and determine that <imath>a</imath> must be <imath>\sqrt{17}-3</imath> so the answer is <imath>\boxed{\textbf{(C)} 20}</imath>
+
+--- Solution 4 ---
+We consider the lower region defined by the set of points \( (x, y) \) inside the square with \( 0 \le x \le 2 \), \( 0 \le y \le 2 \) and lying below the line \( y = \frac{1}{3}x + 1 \). Instead of directly integrating, we parametrize this line in an unnecessarily complicated form: write \( x = 3(t - 1) \), so \( y = t \). This parametrization makes no geometric sense for area, so we abandon it immediately and return to Cartesian coordinates.
+
+The area of the lower region is
+<cmath>
+A_{\text{lower}} = \int_0^2 \left(\frac{1}{3}x + 1\right) dx.
+</cmath>
+Rather than compute this, we expand the integrand into a Taylor polynomial about \( x = 1 \) even though it is already linear. The Taylor expansion is
+<cmath>
+\frac{1}{3}x + 1 = \left(\frac{1}{3}(1) + 1\right) + \frac{1}{3}(x - 1) = \frac{4}{3} + \frac{1}{3}(x - 1).
+</cmath>
+Integrating this form:
+<cmath>
+A_{\text{lower}} = \int_0^2 \left(\frac{4}{3} + \frac{1}{3}(x - 1)\right) dx.
+</cmath>
+Compute each part separately even though it's pointless:
+<cmath>
+\int_0^2 \frac{4}{3} \, dx = \frac{8}{3}, \quad \int_0^2 \frac{1}{3}(x - 1) \, dx = \frac{1}{3}\left[\frac{1}{2}x^2 - x\right]_0^2 = \frac{1}{3}(2 - 2) = 0.
+</cmath>
+Thus \( A_{\text{lower}} = \frac{8}{3} \), matching the normal computation.
+
+Half of this is \(\frac{4}{3}\). So the vertical line \( x = a \) must satisfy
+<cmath>
+\int_0^a \left(\frac{1}{3}x + 1\right) dx = \frac{4}{3}.
+</cmath>
+Now we sabotage this simple integral by performing a substitution. Let \( u = \frac{1}{3}x + 1 \), so \( x = 3(u - 1) \) and \( dx = 3 \, du \). When \( x = 0 \), \( u = 1 \). When \( x = a \), \( u = \frac{1}{3}a + 1 \). The integral becomes
+<cmath>
+\int_{u=1}^{u=\frac{1}{3}a + 1} u \cdot 3 \, du = 3 \int_1^{\frac{1}{3}a + 1} u \, du.
+</cmath>
+Evaluate this:
+<cmath>
+3\left[\frac{1}{2}u^2\right]_1^{\frac{1}{3}a + 1} = \frac{3}{2}\left(\left(\frac{1}{3}a + 1\right)^2 - 1\right).
+</cmath>
+We set this equal to \(\frac{4}{3}\):
+<cmath>
+\frac{3}{2}\left(\left(\frac{1}{3}a + 1\right)^2 - 1\right) = \frac{4}{3}.
+</cmath>
+Multiply both sides by 2:
+<cmath>
+3\left(\left(\frac{1}{3}a + 1\right)^2 - 1\right) = \frac{8}{3}.
+</cmath>
+Multiply both sides by 3:
+<cmath>
+9\left(\left(\frac{1}{3}a + 1\right)^2 - 1\right) = 8.
+</cmath>
+Now expand:
+<cmath>
+\left(\frac{1}{3}a + 1\right)^2 = \frac{1}{9}a^2 + \frac{2}{3}a + 1.
+</cmath>
+Substitute:
+<cmath>
+9\left(\frac{1}{9}a^2 + \frac{2}{3}a + 1 - 1\right) = 8.
+</cmath>
+Cancel the ones:
+<cmath>
+9\left(\frac{1}{9}a^2 + \frac{2}{3}a\right) = 8.
+</cmath>
+Distribute the 9:
+<cmath>
+a^2 + 6a = 8.
+</cmath>
+We arrive—after that absurd detour—at the same quadratic as before.
+
+Solve the quadratic using a deliberately bloated method. Complete the square:
+
+Start with:
+<cmath>
+a^2 + 6a - 8 = 0.
+</cmath>
+Move the constant:
+<cmath>
+a^2 + 6a = 8.
+</cmath>
+Add 9 to both sides because \((6/2)^2 = 9\):
+<cmath>
+a^2 + 6a + 9 = 17.
+</cmath>
+Left-hand side is \((a + 3)^2\):
+<cmath>
+(a + 3)^2 = 17.
+</cmath>
+Take square roots:
+<cmath>
+a + 3 = \pm \sqrt{17}.
+</cmath>
+Since \( a \) is in \( [0, 2] \), take the positive root:
+<cmath>
+a = \sqrt{17} - 3.
+</cmath>
+This matches the form \( \sqrt{s} - t \) with \( s = 17, t = 3 \).
+Thus
+<cmath>
+s + t = 20.
+</cmath>
+
+
+=== Problem 7 ===
+Frances stands
+
+Choices: {'A': '~3\\frac27', 'B': '~3\\frac37', 'C': '~3\\frac47', 'D': '~3\\frac57', 'E': '~3\\frac67'}
+Answer: C
+
+--- Solution 1 ---
+Let Frances's location be <imath>F</imath>, the locked gate be <imath>L</imath>, the box be <imath>B</imath>, the unlocked gate on the west be <imath>U</imath>, and the unlocked gate on the east be <imath>V</imath>.
+We are given that <imath>FL = 15</imath>, <imath>LB = x</imath>, <imath>BV</imath> = 9, and <imath>LU = 8</imath>. Because <imath>FL</imath> is vertical and the fence is horizontal, <imath>m \angle FLU = m \angle FLV = 90^\circ</imath>. 
+
+If Frances takes the western path, she must first travel the length of <imath>FV</imath>, and then <imath>x + 8</imath> meters. By the Pythagorean theorem, <imath>FV = \sqrt{8^2 + 15^2} = 17</imath>. The remaining distance from Francis and the box of chocolates after she walks that distance is <imath>8 + x</imath> meters. Thus, the distance Francis travels if she takes the western path is <imath>25 + x</imath>.
+
+If Frances takes the eastern path, she first travels <imath>\sqrt{(x + 9)^2 + 15^2} = \sqrt{(x + 9)^2 + 225}</imath> meters, and then <imath>9</imath> more meters. Her total distance on the eastern path is <imath>\sqrt{(x + 9)^2 + 225} + 9</imath> meters.
+
+Now, we set the two distances equal to each other:
+<cmath>x + 25 = \sqrt{(x + 9)^2 + 225} + 9</cmath>
+<cmath>x + 16 = \sqrt{(x + 9)^2 + 225}</cmath>
+<cmath>x^2 + 32x + 256 = (x + 9)^2 + 225</cmath>
+<cmath>x^2 + 32x + 256 = x^2 + 18x + 81 + 225</cmath>
+<cmath>14x = 50</cmath>
+<cmath>x = \frac{50}{14} = \frac{25}{7}.</cmath>
+This corresponds with the answer <imath>\boxed{\textbf{(C)}\hspace{3pt}3\frac{4}{7}}</imath>.
+
+--- Solution 2 ---
+Let
+<cmath>
+F = \begin{pmatrix} 0 \\ -15 \end{pmatrix}, \quad
+B = \begin{pmatrix} x \\ 0 \end{pmatrix}, \quad
+E = \begin{pmatrix} x+9 \\ 0 \end{pmatrix}, \quad
+W = \begin{pmatrix} -8 \\ 0 \end{pmatrix}.
+</cmath>
+The paths’ lengths are
+<cmath>
+D_E = \|E - F\|_2 + \|B - E\|_2, \quad
+D_W = \|W - F\|_2 + \|B - W\|_2.
+</cmath>
+Compute:
+<cmath>
+\|E - F\|_2 = \sqrt{(x+9)^2 + 15^2}, \quad
+\|B - E\|_2 = \sqrt{9^2} = 9, \quad
+\|W - F\|_2 = \sqrt{(-8)^2 + 15^2} = 17, \quad
+\|B - W\|_2 = |x+8|.
+</cmath>
+Set \( D_E = D_W \):
+<cmath>
+\sqrt{(x+9)^2 + 225} + 9 = 17 + |x+8| \implies \sqrt{(x+9)^2 + 225} = |x+8| + 8
+</cmath>
+Square both sides:
+<cmath>
+(x+9)^2 + 225 = (x+16)^2 \implies x^2 + 18x + 306 = x^2 + 32x + 256
+</cmath>
+<cmath>
+14x = 50 \implies x = \frac{25}{7}.
+</cmath>
+
+Therefore, our answer is \( \frac{25}{7} \) or <imath>\boxed{\textbf{(C)}\hspace{3pt}3\frac{4}{7}}</imath>.
+
+
+=== Problem 8 ===
+Emmy says to Max, "I ordered
+
+Choices: {'A': '~7', 'B': '~8', 'C': '~11', 'D': '~14', 'E': '~15'}
+Answer: C
+
+--- Solution 1 ---
+The problem is essentially telling us that <imath>\underline A
+<cmath>A+B+B+B+A=2A+3B\equiv 0\pmod{9}</cmath>
+This means that <imath>A</imath> must be divisible by <imath>3</imath>, or otherwise <imath>2A+3B</imath> would not be divisible by <imath>3</imath> and thus <imath>9</imath>. Since <imath>A\ne0</imath>, we must have one of <imath>A=3,6,9</imath>.
+
+But <imath>A</imath> must be even or else the entire number would not be even and thus would not be divisible by <imath>4</imath>. Hence <imath>A=6</imath>. Then, <imath>2\cdot 6+3B\equiv 0\pmod{9}</imath>, so <imath>4+B\equiv 0\pmod{3}</imath>, and thus <imath>B\equiv 2\pmod{3}</imath>. This yields <imath>B=2,5,8</imath>, of which <imath>B=5</imath> is the only number that allows <imath>\underline A
+
+--- Solution 2 ---
+A number is divisible by <imath>36</imath> if it divisible by <imath>4</imath>, and <imath>9</imath>. The divisibility rule for <imath>4</imath> requires the last 2 digits to also be a multiple of <imath>4</imath>. The divisibility rule for 9 requires the sum of all digits to be divisible by <imath>9</imath>. Using the first condition <imath>A+B</imath> is a multiple of 4. We can list out all possibilities for this, since both <imath>A</imath> and <imath>B</imath> are digits. The possibilities are  <imath>(1,2),(1,6),...(9,6)</imath> for <imath>A</imath>, and <imath>B</imath> respectively. There are a total of <imath>2</imath> digits that are <imath>A</imath>'s and <imath>3</imath> that are <imath>B</imath>'s. So if the digits sum to <imath>9</imath>, then <imath>2A+3B</imath> is a multiple of 9. We can try plugging in numbers from our list earlier into the equation <imath>2A+3B</imath> to find what values set the expression equal to a multiple of <imath>9</imath>. By trying numbers <imath>A=6</imath>, and <imath>B=5</imath>. So then <imath>A+B</imath> yields 
+
+<imath>6+5=\boxed{\textbf{(C)}
+
+
+=== Problem 9 ===
+How many ordered triples of integers
+
+Choices: {'A': '\\ 4', 'B': '\\ 8', 'C': '\\ 11', 'D': '\\ 15', 'E': '\\ 17'}
+Answer: 
+
+--- Solution 1 ---
+We have:
+<cmath>
+\begin{cases}
+x+y+z \ge 2, \\
+-x+y+z \le 2, \\
+x-y+z \le 2, \\
+x+y-z \le 2.
+\end{cases}
+</cmath>
+Subtract the second inequality from the first:
+<cmath>(x+y+z)-(-x+y+z) \ge 2-2 \quad\Rightarrow\quad 2x \ge 0 \Rightarrow x\ge 0.</cmath>By symmetry in <imath>x,y,z,</imath> we also obtain
+<cmath>
+y\ge 0,\qquad z\ge 0.
+</cmath>
+WLOG & by symmetry, let
+<cmath>
+0 \le x \le y \le z.
+</cmath>
+up to permutation. From the second inequality of we have <imath>y+z \le 2+x.</imath> Using <imath>x\le y</imath>, we get
+<cmath>
+y+z \le 2+y \quad\Rightarrow\quad z \le 2.
+</cmath>
+Hence, <imath>0 \le x \le y \le z \le 2.</imath> Divide into casework on <imath>x:</imath>
+Case 1: <imath>x=0</imath>
+Then the first two inequalities become
+<cmath>y+z \ge 2,\qquad y+z \le 2 \Rightarrow y+z=2</cmath>And because we have <imath>0\le y\le z\le 2, (y,z)=(0,2), (1,1).</imath>
+
+Case 2: <imath>x=1</imath>
+<cmath>1+y+z \ge 2 \Rightarrow y+z\ge 1,\qquad
+-1+y+z \le 2 \Rightarrow y+z \le 3.</cmath><imath>1\le y\le z\le 2</imath>, so <imath>(y,z)=(1,1)\ \text{or}\ (1,2).</imath>
+
+Case 3: <imath>x=2</imath>
+<cmath>
+2+y+z \ge 2 \qquad
+-2+y+z \le 2 \Rightarrow y+z \le 4.
+</cmath><imath>2\le y\le z\le 2</imath> so the only combination <imath>(y,z)=(2,2).</imath>
+
+Thus up to permutation we have <imath>(0,0,2),\ (0,1,1),\ (1,1,1),\ (1,1,2),\ (2,2,2)</imath>
+
+Now count distinct ordered triples for each set of three numbers under symmetry: <imath>3+3+3+1+1=\boxed{11}.</imath>
+
+--- Solution 2 ---
+From the beginning of Solution 1, we know that
+<cmath>
+0 \le x, y, z \le 2
+</cmath>
+Since each variable has to be an integer, the number of permutations of <imath>(x, y, z)</imath> is
+<cmath>
+3 \cdot 3 \cdot 3 = 27
+</cmath>
+Simplifying the first equation, we get
+<cmath>
+x+y+z \ge 2
+</cmath>
+, which is false only if <imath>x+y+z</imath> is <imath>0</imath> or <imath>1</imath>. There is <imath>1</imath> permutation for <imath>x, y, z</imath> all being <imath>0</imath> and <imath>3</imath> permutations for each of the variables being <imath>1</imath> while the rest are <imath>0</imath>.
+
+The only values for <imath>-x+y+z</imath> that don't satisfy the second equation are <imath>3</imath> and <imath>4</imath>.
+
+Case 1: <imath>y</imath> and <imath>z</imath> are both <imath>2</imath>
+
+<imath>x</imath> can be either <imath>0</imath> or <imath>1</imath>, which yields two cases. Since the last two equations are symmetric to the second one, there are a total of <imath>2 \cdot 3=6</imath> permutations.
+
+Case 2: One of either <imath>y</imath> or <imath>z</imath> is <imath>1</imath>, and the other is <imath>2</imath>
+
+In this case, <imath>-x+y+z</imath> can only reach <imath>3</imath> when <imath>x</imath> is <imath>0</imath>. Since the last three equations are all symmetric as stated in the first case, there are a total of (since <imath>y</imath> and <imath>z</imath> can be <imath>1</imath> and <imath>2</imath> and vice versa) <imath>2 \cdot 3=6</imath> permutations.
+
+<imath>27-1-3-6-6=\boxed{11}</imath> solutions.
+
+
+=== Problem 10 ===
+Let
+
+Choices: {'A': '~2', 'B': '~3', 'C': '~4', 'D': '~5', 'E': '~6'}
+Answer: A
+
+--- Solution 1 ---
+Observe that both <imath>f(n)</imath> and <imath>g(n)</imath> can be factored using RZT. By trying out a few values, we get that <imath>n = -1</imath> is a root of <imath>f(n)</imath>. Then, we can use synthetic division (regular polynomial division works, too) to get the other roots of <imath>f(n)</imath>, which are <imath>n = 4</imath> and <imath>n = 2</imath>. Now we factor <imath>g(n)</imath>. By inspection, <imath>n = -1</imath> also works on <imath>g(n)</imath>, and so synthetic division and factoring the remaining quadratic gets us the roots <imath>n = 3</imath> and <imath>n = 4.</imath> We can now express <imath>\frac{f(n)}{g(n)}</imath> as:
+<cmath>\frac{(n + 1)(n - 4)(n - 2)}{(n + 1)(n - 4)(n - 3)}.</cmath> We can cancel the top and bottom to get:
+<cmath>\frac{(n - 2)}{(n - 3)}</cmath> 
+
+Notice that the only values for which this expression is an integer are <imath>n = 4</imath> and <imath>n = 2</imath>, because they both cause the denominator to have a magnitude of <imath>1</imath>. However, <imath>n = 4</imath> is an extraneous solution as plugging it back into the original expression would make it evaluate to <imath>\frac{0}{0}</imath>. Our answer is then <imath>\boxed{\textbf{(A)}\hspace{3pt} 2}</imath>.
+
+--- Solution 2 ---
+We have <imath>\frac{f(n)}{g(n)} = \frac{n^3-5n^2+2n+8}{n^3-6n^2+5n+12} = 1 + \frac{n^2-3n-4}{n^3-6n^2+5n+12}.</imath> We factor the numerator as <imath>(n-4)(n+1)</imath>. Using synthetic division on the numerator's roots to factor the denominator, we find that the denominator is equivalent to <imath>(n+1)(n-3)(n-4)</imath>.
+
+Simplifying, we get <imath>\frac{f(n)}{g(n)} = 1 + \frac{1}{n-3}</imath>. We '''must''' not include the solutions <imath>n=-1, 3,</imath> or <imath>4</imath>, or the fraction will be undefined.
+
+To have <imath>\frac{1}{n-3}</imath> be an integer, <imath>n-3 = 1</imath> or <imath>-1</imath>. This would make <imath>n = 2</imath> or <imath>4</imath>. Remember, <imath>4</imath> is not allowed, so we have only one possible value of <imath>n=\boxed{\textbf{(A)} 2}</imath>.
+
+--- Solution 3 ---
+Start by factoring the cubics. We see that grouping doesn't work, so we must use rational roots with synthetic division.
+Let's start with <imath>f(n)</imath>
+<cmath>f(n)=n^3-5n^2+2n+8</cmath>
+We know by the Rational Root Theorem that the possible solution of a polynomial form <imath>a_{n}^{n}+{a_{n-1}^{n-1}+...a_{a}}</imath> has the form <imath>\pm\frac{p}{q}</imath> where <imath>p</imath> is a factor of <imath>a_{0}</imath> and <imath>q</imath> is a factor of <imath>a_{n}</imath>. In our case, that's <imath>\frac{\pm 1, 2, 4, 8}{\pm 1}</imath>.
+
+We know that for any function <imath>f(x)</imath> if <imath>f(A) = 0</imath> then <imath>(x-A)</imath> is a factor so we just plug in the possible roots and see which is a zero
+<cmath>f(1) = 1-5+2+8 \neq 0</cmath>
+<cmath>f(2) = 8-20+4+8 = 0</cmath>
+Aha! <imath>(n-2)</imath> is a factor of <imath>f(n)</imath>
+
+By synthetic division,
+<cmath>
+\begin{array}{r|rrrr}
+2 & 1 & -5 & 2 & 8 \\
+  &   & 2 & -6 & -8 \\
+\hline
+  & 1 & -3 & -4 & 0
+\end{array}</cmath>
+<cmath>f(n) = (n-2)(n^{2}-3n-4)</cmath>
+<cmath>f(n) = (n-4)(n-2)(n+1)</cmath>
+Now, we do the same with <imath>g(n)</imath>.
+<cmath>g(n)=n^3-6n^2+5n+12</cmath>
+Factoring by grouping doesn't work so we look at the factor pairs of 6 which are simply <imath>1 \cdot 6</imath> and <imath>2 \cdot 3</imath> and their respective flipped pairs.
+<cmath>g(1)=1-6+5+12 \neq 0</cmath>
+<cmath>g(2)=8-24+10+12 \neq 0</cmath>
+<cmath>g(3)=27-54+15+12 = 0</cmath>
+So <imath>(n-3)</imath> is a factor of <imath>g(n)</imath>
+
+By synthetic division
+<cmath>
+\begin{array}{r|rrrr}
+3 & 1 & -6 & 5 & 12 \\
+  &   & 3 & -9 & -12 \\
+\hline
+  & 1 & -3 & -4 & 0 
+\end{array}</cmath>
+<cmath>g(n) = (n-3)(n^{2}-3n-4)</cmath>
+<cmath>g(n) = (n-4)(n-3)(n+1)</cmath>
+<cmath>\frac{f(n)}{g(n)} = \frac{(n-4)(n-2)(n+1)}{(n-4)(n-3)(n+1)} = \frac{n-2}{n-3} \forall g(n) \neq 0</cmath>
+Now we just find all integers <imath>\{n \mid\frac{n-2}{n-3} \in \mathbb{Z} \}</imath>. Since this is really just an integer being divided by the number <imath>1</imath> less than itself, <imath>\frac{f(n)}{g(n)} \in \mathbb{Z}</imath> if and only if <imath>g(n) \neq 0</imath> and the denominator has magnitude <imath>1</imath>
+ 
+
+We immediately see if <imath>n=2</imath>, <imath>\frac{n-2}{n-3} = 0</imath>, and it's valid since <imath>n-2</imath> wasn't a factor of <imath>g(n).</imath>
+
+We also see <imath>n=4</imath> but <imath>n-4</imath> is a factor of <imath>g(n)</imath> making it extraneous. 
+
+Precisely, <imath>\{n \in \{(-\infty, 2) \cup (2, 4) \cup (4, \infty)\} \cap \mathbb{Z} \mid \frac{n-2}{n-3} \notin \mathbb{Z}\}</imath> (just putting it out there).
+
+This means <imath>n=2</imath> was our only solution <imath>\implies \boxed{\textbf{(A)}
+
+
+=== Problem 11 ===
+On Monday,
+
+Choices: {'A': '\\frac{1}{16}', 'B': '\\frac{3}{16}', 'C': '\\frac{1}{4}', 'D': '\\frac{3}{8}', 'E': '\\frac{1}{2}'}
+Answer: B
+
+--- Solution 1 ---
+On Monday, the first tutor has 6 choices for kids to be assigned to, the second has 5, and so on. Hence, there are <imath>6!</imath> possible ways to assign the tutors to the kids. On Tuesday, there are <imath>\binom{6}{2}</imath> ways to choose the kid-tutor pairs that remain the same from Monday. For the other 4 kids, they need to be assigned to the other tutors in such a way that none of those kids are assigned to the same tutor that they were assigned to on Monday. There are <imath>9</imath> ways to do this. Thus, our final answer is <imath>\frac{\binom{6}{2} \cdot 9}{6!}</imath> or <imath>\boxed{\textbf{(B)}\hspace{3pt}\frac{3}{16}}</imath>. 
+
+
+Remark: We can get <imath>9</imath> either by listing all the possible configurations or by rounding <imath>\frac{4!}{e}</imath>. This is called a derangement and is notated as <imath>!n</imath>. It can be calculated with the explicit formula <imath>!n = n!\sum _{i=0}^{n}\frac{(-1)^{i}}{i!}</imath>
+
+More commonly, one could also use PIE, 24 - 24 + 12 - 4 + 1 = 9 ways
+
+--- Solution 2 ---
+Label students \( S_1, \ldots, S_6 \) and tutors \( T_1, \ldots, T_6 \). Let the Monday assignment be fixed. For Tuesday, we consider permutations of the 6 students. We want exactly 2 fixed points in this permutation (i.e., exactly 2 students meet the same tutor again).
+
+Number of permutations of 6 elements with exactly \( k \) fixed points is
+<cmath>
+\binom{6}{k} D_{6-k}
+</cmath>
+where \( D_n \) is the number of derangements of \( n \) elements \( \left( n! \sum_{i=0}^n \frac{(-1)^i}{i!} \right) \).
+
+For \( k=2 \):
+<cmath>
+\text{\# favorable permutations} = \binom{6}{2} D_4.
+</cmath>
+Compute \( D_4 \) via the standard formula:
+<cmath>
+D_4 = 4! \left( 1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \frac{1}{4!} \right) = 24 \left( 1 - 1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{24} \right) = 24 \left( \frac{12 - 4 + 1}{24} \right) = 9.
+</cmath>
+Thus favorable permutations = \( \binom{6}{2} \cdot 9 = 15 \cdot 9 = 135 \).
+
+Total permutations for Tuesday = \( 6! = 720 \).
+
+Therefore, the probability:
+<cmath>
+P = \frac{135}{720} = \frac{27}{144} = \frac{3}{16}.
+</cmath>
+
+Answer:
+\( \frac{3}{16} \)
+
+--- Solution 3 ---
+We do not care about what order the students are distributed on Monday. We do care about Monday's order on Tuesday. There are \( \binom{6}{2} = 15 \) ways to choose two of the six tutors to have the same student. Now, we must deal with the remaining 4.
+
+Label each of those 4 students A, B, C, or D. Then, label each of the tutors 1, 2, 3, 4. We know there are 24 possible arrangements from student to tutor. The pigeonhole principle states that no more than 4 of the remaining students can be paired with the same tutor. Thus, either 1, 2, 3, or 4 of the remaining students have the same tutor. If we have 1 student, there is \( \binom{4}{1} = 4 \) ways to choose that 1 student, and then the remaining students can be organized in \( 3! \) ways. However, this overcounts the cases in which we have 2 students, which there is \( \binom{4}{2} = 6 \) ways to choose those 2 students, and the remainder of the students is arranged in \( 2! \) ways. This then undercounts 3, which can be done in \( \binom{4}{3} = 4 \) ways, and then overcounts 4, which can be done in \( \binom{4}{4} = 1 \) way. Thus, through the principle of inclusion-exclusion, we have a total of \( 24-24+12-4+1 = 9 \) total cases in which none of the students are with their assigned teachers. Thus, the answer is <imath> \binom{6}{2} \cdot \frac{9}{6!} = \boxed{\textbf{B.
+
+
+=== Problem 12 ===
+The figure below shows an equilateral triangle, a rhombus with a
+
+Choices: {'A': '\\ T=H=R', 'B': '\\ H<R=T', 'C': '\\ H=R<T', 'D': '\\ H<R<T', 'E': '\\ H<T<R'}
+Answer: C
+
+--- Solution 1 ---
+<asy>
+/* Figure by reda */
+unitsize(15);
+real r = 1 + sqrt(3);
+
+
+draw(r*dir(90) -- r*dir(210) -- r*dir(330) -- cycle);
+filldraw(circle(dir(90), sqrt(3)/2), rgb("#CCC9E6"));
+filldraw(circle(dir(210), sqrt(3)/2), rgb("#CCC9E6"));
+filldraw(circle(dir(330), sqrt(3)/2), rgb("#CCC9E6"));
+draw(dir(90)+dir(-30)*sqrt(3) -- dir(90)+dir(210)*sqrt(3) ^^
+    dir(210)+dir(90)*sqrt(3) -- dir(210)+dir(-30)*sqrt(3) ^^
+    dir(330)+dir(90)*sqrt(3) -- dir(330)+dir(210)*sqrt(3), red+dashed);
+label("$T$", (0, -3.5));
+
+
+draw(shift(8, 0)*(r*dir(90) -- r*dir(180)/sqrt(3) -- r*dir(270) -- r*dir(0)/sqrt(3) -- cycle));
+filldraw(shift(8, 0)*circle(dir(90)*r/3, r/3), rgb("#CCC9E6"));
+filldraw(shift(8, 0)*circle(dir(270)*r/3, r/3), rgb("#CCC9E6"));
+draw(shift(8, 0)*(r*dir(180)/sqrt(3) -- r*dir(0)/sqrt(3)), red+dashed);
+label("$R$", (8, -3.5));
+
+
+draw(shift(16, 0)*(r*dir(0) -- r*dir(60) -- r*dir(120) -- r*dir(180) -- r*dir(240) -- r*dir(300) -- cycle));
+for (int i = 30; i <= 330; i += 60) {
+    filldraw(shift(16, 0)*circle(r*dir(i)/sqrt(3), r/2/sqrt(3)), rgb("#CCC9E6"));
+    draw(shift(16, 0)*((0, 0) -- r*dir(i - 30)), red+dashed);
+}
+label("$H$", (16, -3.5));
+</asy>
+
+To solve this problem, we can dissect the different shapes into equilateral triangles. We can keep figure <imath>T</imath> the same, and then divide the rhombus <imath>R</imath> into two equilateral triangles (as a result of one of the angles equaling <imath>60^\circ</imath>), with one circle in each that is the incircle to its triangle. We can do the same for the hexagon <imath>H</imath>, dividing it into six equilateral triangles with one circle in each, and each circle is tangent to the triangle that encloses it.
+
+We can see that <imath>H = R</imath>, since the proportion of the shaded circles to the unshaded portions in the rhombus and the hexagon is the same. Both are equal to an equilateral triangle with a circle inscribed in it; therefore they have an equal ratio. We can use this to estimate that the ratio of the circle to the triangle is the largest for the first figure, as we can obviously see this through intuition and observation.
+
+Furthermore, there is no answer choice for <imath>T < H = R</imath>, and it is evidently not <imath>H = R = T</imath>. Hence, the answer to the question is as follows:
+<imath>
+\boxed{\textbf{(C)}\ H = R < T}.
+</imath>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~Wen_Liang (definitely did something [wink wink])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+
+
+..
+
+
+
+
+
+
+
+
+
+
+
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Reda_mandymath reda_mandymath] (add figure).
+
+--- Solution 2 ---
+Notice that there is only one answer choice that contains <imath>H = R</imath> where they are all not equal. This means if we prove that <imath>H = R</imath> and one of these two isn't equal to T, we have the answer <imath>C</imath>. To do this, notice that the rhombus can be divided into two congruent equilateral triangles with inscribed circles. This is the same as the hexagon but with 6 triangles and 6 inscribed circles, proving that <imath>H = R</imath>. We cannot do the same for the triangle, so the answer is <imath>\boxed{\textbf{(C) }H=R < T}.</imath>
+
+
+Note that this solution is similar to the previous one
+
+
+=== Problem 13 ===
+The altitude to the hypotenuse of a
+
+Choices: {'A': '~\\frac 37', 'B': '~\\frac{\\sqrt3}{4}', 'C': '~\\frac 49', 'D': '~\\frac{5}{11}', 'E': '~\\frac{4\\sqrt3}{15}'}
+Answer: A
+
+--- Solution 1 ---
+Without loss of generality, let <imath>\triangle ABC</imath> have side-lengths <imath>AB=2, BC=2\sqrt{3},</imath> and <imath>AC=4.</imath> Let <imath>D</imath> be the foot of the perpendicular from <imath>B</imath> to <imath>\overline{AC}, \ E</imath> be the midpoint of <imath>\overline{AB},</imath> and <imath>F</imath> be the intersection of <imath>\overline{CE}</imath> and <imath>\overline{BD}.</imath> Note that <imath>\triangle ADB</imath> and <imath>\triangle BDC</imath> are both <imath>30^\circ{-}60^\circ{-}90^\circ</imath> triangles. From the side-length ratio, we get <imath>AD=1</imath> and <imath>DC=3.</imath>
+
+We obtain the following diagram:
+<asy>
+/* Made by MRENTHUSIASM */
+size(250);
+pair A, B, C, D, E, F;
+A = (0,1);
+B = origin;
+C = (sqrt(3),0);
+D = foot(B,A,C);
+E = midpoint(A--B);
+F = intersectionpoint(B--D,C--E);
+
+markscalefactor=0.008;
+draw(rightanglemark(A,B,C)^^rightanglemark(B,D,C),red+linewidth(1.25));
+draw(A--B--C--cycle,linewidth(1.25));
+draw(B--D^^C--E,linewidth(1.25));
+label("$1$",midpoint(A--E),1.5*W,red);
+label("$1$",midpoint(E--B),1.5*W,red);
+label("$2\sqrt{3}$",midpoint(B--C),1.5*S,red);
+label("$x$",midpoint(D--F),1.25*dir(-45),red);
+label("$y$",midpoint(F--B),1.5*dir(-10),red);
+label("$30^{\circ}$",C,7*dir(165),red);
+label("$60^{\circ}$",A,4*dir(-63),red);
+label("$1$",midpoint(A--D),1.5*midpoint(A--D),red);
+label("$3$",midpoint(D--C),1.5*dir(70),red);
+label("$A$",A,1.5*NW);
+label("$B$",B,1.5*SW);
+label("$C$",C,1.5*SE);
+label("$D$",D,1.5*NE);
+label("$E$",E,1.5*W);
+label("$F$",F,2*dir(-75));
+</asy>
+From here, we will proceed with [[mass points]]. Throughout this solution, we will use <imath>W_P</imath> to denote the weight of point <imath>P.</imath>
+
+Let <imath>W_C=1.</imath> Since <imath>3AD=DC,</imath> it follows that <imath>W_A=3</imath> and <imath>W_D=W_C+W_A=4.</imath> Since <imath>AE=EB</imath> and <imath>W_A=3,</imath> it follows that <imath>W_B=3.</imath>
+
+Now we focus on <imath>\overline{BD}:</imath> Since <imath>W_B=3</imath> and <imath>W_D=4,</imath> we have <imath>\frac{DF}{FB}=\frac xy=\frac34.</imath> Therefore, the answer is <cmath>\frac{x}{x+y}=\frac{3}{3+4}=\boxed{\textbf{(A) } \dfrac{3}{7}}.</cmath>
+
+--- Solution 2 ---
+This solution refers to the diagram in Solution 1, with the definitions slightly modified.
+
+Let <imath>AB=2</imath>. Label the foot of the median <imath>M</imath> and the foot of the altitude <imath>H</imath>. In <imath>\triangle ABH</imath>, we construct the midsegment <imath>\overline{MP}</imath>, which is parallel to <imath>\overline{BH}</imath> and half as long as <imath>\overline{BH}</imath>. In addition, let <imath>F</imath> be the intersection of <imath>\overline{CM}</imath> and <imath>\overline{BH}</imath>.
+
+We obtain the following diagram:
+<asy>
+/* Made by MRENTHUSIASM */
+
+size(250);
+pair A, B, C, H, M, F, P;
+
+A = (0,1);
+B = origin;
+C = (sqrt(3),0);
+H = foot(B,A,C);
+M = midpoint(A--B);
+F = intersectionpoint(B--H,C--M);
+P = midpoint(A--H);
+markscalefactor=0.008;
+draw(rightanglemark(A,B,C)^^rightanglemark(B,H,C),red+linewidth(1.25));
+draw(A--B--C--cycle,linewidth(1.25));
+draw(B--H^^C--M,linewidth(1.25));
+draw(M--P,dashed+linewidth(1.25));
+label("$1$",midpoint(A--M),1.5*W,red);
+label("$1$",midpoint(M--B),1.5*W,red);
+label("$2\sqrt{3}$",midpoint(B--C),1.5*S,red);
+label("$x$",midpoint(H--F),1.25*dir(-45),red);
+label("$y$",midpoint(F--B),1.5*dir(-10),red);
+label("$30^{\circ}$",C,7*dir(165),red);
+label("$60^{\circ}$",A,4*dir(-63),red);
+label("$\frac{1}{2}$",midpoint(A--P),1.5*midpoint(A--P),red);
+label("$\frac{1}{2}$",midpoint(P--H),1.5*midpoint(H--H),red);
+label("$3$",midpoint(H--C),1.5*dir(70),red);
+label("$A$",A,1.5*NW);
+label("$B$",B,1.5*SW);
+label("$C$",C,1.5*SE);
+label("$H$",H,1.5*NE);
+label("$M$",M,1.5*W);
+label("$P$",P,1.5*NE);
+label("$F$",F,2*dir(-75));
+</asy>
+
+We can calculate that <imath>PH=\frac{1}{2}</imath> and <imath>HC=3</imath> By similar triangles <imath>\triangle HFC \sim \triangle PMC</imath>, we have <imath>\frac{x}{PM}=\frac{HC}{PC}=\frac{3}{3+\frac{1}{2}}=\frac{6}{7}</imath>. Also by similar triangles <imath>\triangle PMA \sim \triangle HBA</imath>, we have <imath>\frac{PM}{x+y}=\frac{1}{2}</imath>. Combining these, we get <imath>\frac{x}{x+y}=\boxed{\textbf{(A) } \dfrac{3}{7}}</imath>.
+
+Note: Thanks MRENTHUSIASM for original diagram.
+
+--- Solution 3 ---
+This solution refers to the definitions and the diagram in Solution 1.
+
+Let <imath>M</imath> be the midpoint of <imath>\overline{AC},</imath> so <imath>DM=1.</imath> Let <imath>G</imath> be the intersection of <imath>\overline{BM}</imath> and <imath>\overline{CE},</imath> so <imath>G</imath> is the centroid of <imath>\triangle ABC.</imath> In addition, we construct <imath>\overline{DE},</imath> as shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+size(250);
+pair A, B, C, D, E, F, M, G;
+A = (0,1);
+B = origin;
+C = (sqrt(3),0);
+D = foot(B,A,C);
+E = midpoint(A--B);
+F = intersectionpoint(B--D,C--E);
+M = midpoint(A--C);
+G = centroid(A,B,C);
+
+markscalefactor=0.008;
+draw(rightanglemark(A,B,C)^^rightanglemark(B,D,C),red+linewidth(1.25));
+draw(A--B--C--cycle,linewidth(1.25));
+draw(B--D^^C--E,linewidth(1.25));
+draw(E--D^^B--M,dashed+linewidth(1.25));
+label("$1$",midpoint(A--E),1.5*W,red);
+label("$1$",midpoint(E--B),1.5*W,red);
+label("$2\sqrt{3}$",midpoint(B--C),1.5*S,red);
+label("$x$",midpoint(D--F),1.25*dir(-45),red);
+label("$y$",midpoint(F--B),1.5*dir(-10),red);
+label("$30^{\circ}$",C,7*dir(165),red);
+label("$60^{\circ}$",A,4*dir(-63),red);
+label("$1$",midpoint(A--D),1.5*midpoint(A--D),red);
+label("$1$",midpoint(D--M),1.5*midpoint(D--M),red);
+label("$A$",A,1.5*NW);
+label("$B$",B,1.5*SW);
+label("$C$",C,1.5*SE);
+label("$D$",D,1.5*D);
+label("$E$",E,1.5*W);
+label("$F$",F,2*dir(-75));
+label("$M$",M,1.5*M);
+label("$G$",G,1.5*S);
+</asy>
+In any right triangle, since the median to the hypotenuse is half as long as the hypotenuse, we get <imath>BM=\frac{1}{2}AC=2.</imath> Moreover, in any triangle, since the centroid divides each median into parts in the ratio <imath>2:1,</imath> with the centroid being twice as close to the midpoint of a side as it is to the opposite vertex, we get <imath>BG=\frac43</imath> and <imath>GM=\frac23.</imath>
+
+Note that <imath>\triangle ABM</imath> is an equilateral triangle with side-length <imath>2.</imath> By the SAS similarity, we have <imath>\triangle ABM \sim \triangle AED.</imath> Therefore, we conclude that <imath>ED=1</imath> and <imath>\overline{ED}\parallel\overline{BM}.</imath>
+
+By the AA Similarity, we have <imath>\triangle DEF \sim \triangle BGF,</imath> from which <imath>\frac xy = \frac{1}{4/3} = \frac34.</imath> It follows that <cmath>\frac{x}{x+y}=\frac{3}{3+4}=\boxed{\textbf{(A) } \dfrac{3}{7}}.</cmath>
+
+--- Solution 4 ---
+This solution refers to the definitions and the diagram in Solution 1.
+
+Since <imath>E</imath> is the midpoint of <imath>\overline{AB}</imath>, we have <imath>AE=1</imath>, and because <imath>\angle A=60^\circ</imath> and <imath>AD=1</imath>, <imath>\triangle AED</imath> is equilateral. Its perpendicular bisector meets <imath>\overline{AE}</imath> at <imath>H</imath>, giving <imath>AH=HE=\tfrac12</imath> and <imath>DH=\tfrac{\sqrt3}{2}</imath>.
+
+Extend <imath>\overline{CE}</imath> past <imath>E</imath> to <imath>G</imath> so that <imath>\overline{GD}</imath> is parallel to <imath>\overline{BC}</imath> and is the perpendicular bisector of <imath>\overline{AE}</imath>, so <imath>H</imath> lies on both <imath>\overline{GD}</imath> and <imath>\overline{AE}</imath>:
+
+<asy>
+size(325);
+pair A, B, C, D, E, F, G, H;
+
+A = (0,2);
+B = origin;
+C = (2*sqrt(3),0);
+D = foot(B,A,C);
+E = midpoint(A--B);
+F = intersectionpoint(B--D,C--E);
+
+// G and H for the parallel/perpendicular construction
+G = (-sqrt(3), 1.5);
+H = (0, 1.5);
+
+markscalefactor=0.015;
+
+// Draw figure
+draw(rightanglemark(A,B,C)^^rightanglemark(B,D,C),red+linewidth(1.25));
+draw(A--B--C--cycle,linewidth(1.25));
+draw(B--D,linewidth(1.25));
+draw(C--E,linewidth(1.25));
+draw(A--E,linewidth(1.25));
+draw(E--G,dashed+linewidth(1.25));
+draw(G--D,dashed+linewidth(1.25));
+draw(E--D,dashed+linewidth(1.25));
+
+// equal tick marks
+add(pathticks(A--E, 1, .5, 0, 12, red+linewidth(1.25)));
+add(pathticks(E--B, 1, .5, 0, 12, red+linewidth(1.25)));
+
+// labels
+label("$x$",midpoint(D--F),1.25*dir(-45),red);
+label("$y$",midpoint(F--B),1.5*dir(-10),red);
+label("$30^{\circ}$",C,7*dir(165),red);
+label("$60^{\circ}$",A,4*dir(-63),red);
+
+label("$1$",midpoint(E--B),2.5*W,red);
+label("$2\sqrt{3}$",midpoint(B--C),1.5*S,red);
+label("$1$",midpoint(A--D),1.5*midpoint(A--D),red);
+label("$3$",midpoint(D--C),1.5*dir(70),red);
+
+// Point labels
+label("$A$",A,1.5*NW);
+label("$B$",B,1.5*SW);
+label("$C$",C,1.5*SE);
+label("$D$",D,1.5*NE);
+label("$E$",E,1.5*W);
+label("$F$",F,2*dir(-75));
+label("$G$",G,1.5*NW);
+label("$H$",H,1.5*dir(135));
+</asy>
+
+By AA similarity, <imath>\triangle BCE \sim \triangle HGE</imath> because <imath>\angle BEC=\angle HEG</imath> and <imath>\angle BCE=\angle HGE</imath> (<imath>GD\parallel BC</imath>). Thus <imath>\frac{GH}{BC}=\frac{HE}{BE}</imath>, and with <imath>HE=\tfrac{1}{2}</imath>, <imath>BE=1</imath>, and <imath>BC=2\sqrt3</imath>, we get <imath>\frac{GH}{2\sqrt3}=\frac{\frac{1}{2}}{1}</imath> so <imath>GH=\sqrt3</imath>.
+
+Also by AA similarity, <imath>\triangle BCF \sim \triangle DGF</imath> because <imath>\angle BFC=\angle DFG</imath> and <imath>\angle BCF=\angle DGF</imath> (<imath>GD\parallel BC</imath>). Therefore <imath>\frac{DF}{BF}=\frac{DG}{BC}</imath>. Since <imath>DG=DH+HG=\frac{\sqrt3}{2}+\sqrt3=\frac{3\sqrt3}{2}</imath> and <imath>BC=2\sqrt3</imath>, we obtain <imath>\frac{DF}{BF}=\frac{x}{y}=\frac{\frac{3\sqrt3}{2}}{2\sqrt3}=\frac{3}{4}</imath>, so <imath>y=\frac43x</imath>.
+
+Finally, <imath>\frac{x}{x+y}=\frac{x}{x+\frac{4}{3}x}=\frac{x}{\frac{7}{3}x}=\boxed{\textbf{(A) } \dfrac{3}{7}}</imath>.
+
+--- Solution 5 ---
+This solution refers to the definitions in Solution 1. 
+
+Draw a line perpendicular to <imath>BC</imath> from <imath>D</imath>, intersecting <imath>BC</imath> at <imath>G</imath>, and intersecting <imath>CE</imath> at <imath>H</imath>. Let <imath>a = AE</imath>. We know that <imath>\triangle DHF \sim \triangle BEF</imath> by AA. We also know that <imath>AE = EB = DA</imath>. We find that <imath>BG = \frac{a\sqrt{3}}{2}</imath>, and <imath>GC = BC - BG = 2a\sqrt{3} - \frac{a\sqrt{3}}{2} = \frac{3a\sqrt{3}}{2}</imath>. Because <imath>\triangle CHG \sim \triangle CEB</imath>, <imath>HG = \frac{a}{2a\sqrt{3}} \cdot \frac{3a\sqrt{3}}{2} = \frac{3}{4}a</imath>, and <imath>DG = \frac{3}{2}a</imath> due to 30-60-90 triangle properties, <imath>DH = \frac{3}{4}a</imath>. Because <imath>\triangle DHF \sim \triangle BEF</imath>, <imath>\frac{DH}{EB} = \frac{DF}{FB}</imath>, <imath>\frac{\frac{3a}{4}}{a} = \frac{3}{4} = \frac{DF}{FB}</imath>, and <imath>\frac{DF}{DB}=\boxed{\textbf{(A) } \dfrac{3}{7}}</imath>.
+
+(You can tell <imath>DF</imath> is shorter than <imath>FB</imath> visually)
+
+--- Solution 6 ---
+WLOG, let the triangle have hypotenuse <imath>12</imath>. Situate it in the coordinate plane such the A is at <imath>(0,0)</imath>, B is at <imath>(6,0)</imath>, and C is at <imath>(6,6\sqrt{3})</imath>. 
+
+Let <imath>h</imath> be the altitude from <imath>A</imath> to <imath>BC</imath>.
+From the area formula we get  
+<imath>1/2 \cdot 6\cdot6\sqrt{3} =1/2\cdot12\cdot h</imath>
+
+<imath>h = 3\sqrt{3}</imath>
+
+The shortest side is <imath>AB</imath> with side length <imath>6</imath>, so the median from <imath>C</imath> to <imath>AB</imath> will be at <imath>(3,0)</imath>.
+Finding the equation of the line through that point to C, find that the slope is 
+<imath>\frac{6\sqrt{3}-0}{6-3}=2\sqrt3</imath>. 
+Plugging the point <imath>(3,0)</imath> into <imath>y=2\sqrt{3}x+b</imath>, we get that <imath>0=6\sqrt{3}+b</imath>, which simplifies to 
+<imath>b=-6\sqrt{3}</imath>
+So, the equation of the line of the median from <imath>C</imath> is 
+<imath>y=2\sqrt{3}x-6\sqrt3</imath>
+
+The line of the altitude from <imath>B</imath> to the hypotenuse is perpendicular to the line of the hypotenuse which has slope <imath>6\sqrt{3}/6=\sqrt{3}</imath>
+
+So, the altitude line has slope <imath>\frac{-1}{\sqrt{3}}=-\frac{\sqrt{3}}{3}</imath>, and the line passes through the point <imath>B = (6,0)</imath>
+Solving for the equation using similar methods above, we get 
+<imath>y=-\frac{\sqrt{3}}{3}x+2\sqrt{3}</imath>
+
+Using the two equations and solving for their intersection, we get 
+<imath>y=2\sqrt{3}x-6\sqrt3=-\frac{\sqrt{3}}{3}x+2\sqrt{3}</imath>, which simplifies to 
+<imath>8\sqrt3=\frac{7\sqrt{3}}{3}x</imath>, so 
+<imath>x=24/7</imath>
+Using this <imath>x</imath> value, we get 
+<imath>y=2\sqrt{3}\cdot24/7-6\sqrt{3}=6\sqrt{3}/7</imath>
+
+Finding the distance from this intersection to B, 
+<imath>d=\sqrt{(6-24/7)^2+(0-6\sqrt{3}/7)^2} = \sqrt{324/49+108/49}=\frac{12\sqrt{3}}{7}</imath>
+
+This is greater than half of the calculated altitude value from above (<imath>3\sqrt{3}</imath>), so the shorter side length is 
+<imath>3\sqrt{3}-\frac{12\sqrt{3}}{7}=\frac{9\sqrt{3}}{7}</imath>
+
+Lastly, taking the ratio of the lengths,
+<imath>\frac{\frac{9\sqrt{3}}{7}}{3\sqrt{3}}=\frac{9}{21}=\boxed{\textbf{(A) } \dfrac{3}{7}}</imath>
+
+-Failure.net (minor edits and latex edits by Wen_Liang)
+
+--- Solution 7 ---
+Notice that the smaller right triangle with the original <imath>30^\circ</imath> angle can be obtained with a dilation and a reflection over the original triangle’s angle bisector. Hence it is not too hard to see that the original median is a symmedian to this smaller triangle. Recall that the barycentric equation for the symmedian is in the form <imath>\frac x{a^2}=\frac y{b^2}</imath>, and we have <imath>a,b=\sqrt3,2</imath> in a <imath>30^\circ-60^\circ-90^\circ</imath> triangle. Hence <imath>x:y=4:3</imath> and we get the ratio <imath>\textbf{(A) } \dfrac{3}{7}</imath>, or A relatively quickly.
+
+--- Solution 8 ---
+Let the triangle be called <imath>\triangle ABC</imath>, with <imath>\angle C=90^{\circ}</imath> and <imath>\angle A=30^{\circ}</imath>. Then let the altitude from <imath>C</imath> intersect with <imath>AB</imath> at a point <imath>D</imath>, and the median from <imath>A</imath> intersect <imath>BC</imath> at the point <imath>E</imath>. WLOG, let <imath>AB=2</imath>, <imath>AC=\sqrt{3}</imath>, and <imath>BC=1</imath>. Then <imath>BE=EC=\frac12</imath>, and by similar triangles, <imath>DBC</imath> is also <imath>30^{\circ}{-}60^{\circ}{-}90^{\circ}</imath>, and so <imath>DB=\frac12</imath> and hence <imath>AD=\frac32</imath>. Therefore, <imath>DC=\sqrt{3}\cdot\frac12=\frac{\sqrt{3}}2</imath>. Also, we have that <imath>\tan(\angle EAC)=\frac1{2\sqrt{3}}\implies\angle EAC=\arctan\left(\frac1{2\sqrt{3}}\right)</imath>. Hence, <imath>\angle BAE=30^{\circ}-\arctan\left(\frac1{2\sqrt{3}}\right)</imath>. Now we can set up to solve for <imath>x</imath>; we have that <imath>\tan(\angle BAE)=\frac{x}{\frac32}</imath>. <imath>\tan(\angle BAE)=\frac{\frac1{\sqrt{3}}-\frac1{2\sqrt{3}}}{1+\frac1{\sqrt{3}}\cdot\frac1{2\sqrt{3}}}=\frac{\frac1{2\sqrt{3}}}{\frac76}=\frac1{2\sqrt{3}}\cdot\frac67=\frac{\sqrt{3}}7</imath>. Hence <imath>x=\frac32\cdot\frac{\sqrt{3}}7=\frac{3\sqrt{3}}{14}</imath>, and therefore since we found earlier that <imath>x+y=DC=\frac{\sqrt{3}}2</imath>, we have that <imath>\frac{x}{x+y}=\frac{\frac{3\sqrt{3}}{14}}{\frac{\sqrt{3}}2}=\boxed{\textbf{(A) } \dfrac{3}{7}}</imath>.
+
+--- Solution 9 ---
+Let the triangle be <imath>\triangle ABC</imath>, where <imath>\angle A=30^\circ</imath>, <imath>\angle B=60^\circ</imath>, and <imath>\angle C=90^\circ</imath>. Let the point where the altitude of <imath>AB</imath> and <imath>AB</imath> intersect be <imath>G</imath>. Let the intersection between the median of <imath>CB</imath> and the altitude of <imath>AB</imath> be <imath>E</imath>. <imath>x=EG</imath> and <imath>y=CE</imath>.
+
+Draw a segment, <imath>DF</imath>, so that it is perpendicular to <imath>AC</imath> and passes through <imath>E</imath>. This creates two small <imath>30^\circ{-}60^\circ{-}90^\circ</imath> triangles, <imath>\triangle ECD</imath> and <imath>\triangle EFG</imath>. Using the Side-Splitter Thm., we know that <imath>DE=EF</imath>. Let <imath>DE=EF=2</imath>. Using the rules of <imath>30^\circ{-}60^\circ{-}90^\circ</imath> triangles, we can find that <imath>x=EG=\frac{2}{2}\cdot\sqrt{3}=\sqrt{3}</imath> and that <imath>y=CE=\frac{2}{\sqrt{3}}\cdot2=\frac{4}{\sqrt{3}}=\frac{4\sqrt{3}}{3}</imath>. Therefore, <cmath>\frac{x}{x+y}=\frac{\sqrt{3}}{\sqrt{3}+\frac{4\sqrt{3}}{3}}=\frac{\sqrt{3}}{\frac{3\sqrt{3}}{3}+\frac{4\sqrt{3}}{3}}=\frac{\sqrt{3}}{\frac{7\sqrt{3}}{3}}=\sqrt{3}\cdot\frac{3}{7\sqrt{3}}=\frac{3\sqrt{3}}{7\sqrt{3}}=\boxed{\textbf{(A) } \dfrac{3}{7}}.</cmath>
+
+--- Solution 10 ---
+Since rulers are allowed on the AMC 10, we can draw out the figure accurately with a ruler. Draw a <imath>30-60-90</imath> triangle at any scale that you want (I used <imath>1</imath> inch, <imath>\sqrt{3}</imath> inches, and <imath>2</imath> inches for my sides), then draw the altitude to the hypotenuse and the median to the shortest side on the triangle. Find the ratio of the short part of the altitude divided by the median and the total length of the altitude. Assuming that you drew accurately, the answer is then <imath>\boxed{\textbf{(A) } \dfrac{3}{7}}</imath>.
+
+--- Solution 11 ---
+<asy>
+unitsize(0.3mm);
+/* Generated by Cloud's Excalidraw to Asymptote */
+draw((-561, -520)--(-553, -515)--(-548, -523)--(-556, -528)--cycle, rgb(0.94, 0.54, 0)+linewidth(1)+solid);draw((-700, -590)--(-691, -590)--(-691, -599)--(-700, -599)--cycle, rgb(0.94, 0.54, 0)+linewidth(1)+solid);draw((-567, -510)--(-559, -505)--(-554, -513)--(-562, -518)--cycle, rgb(0.94, 0.54, 0)+linewidth(1)+solid);draw((-701, -260)--(-701, -600)--(-501, -600)--(-701, -260), rgb(0.11, 0.11, 0.11)+linewidth(2)+solid);
+draw((-701, -260)--(-601, -600), rgb(0.11, 0.11, 0.11)+linewidth(2)+solid);
+draw((-701, -600)--(-553, -515), rgb(0.11, 0.11, 0.11)+linewidth(2)+solid);
+draw((-648, -594)--(-648, -606), rgb(0.94, 0.54, 0)+linewidth(2)+solid);
+draw((-553, -594)--(-553, -606), rgb(0.94, 0.54, 0)+linewidth(2)+solid);
+draw((-602, -600)--(-552, -515), rgb(0.11, 0.11, 0.11)+linewidth(2)+solid);
+filldraw(shift(-701, -601) * rotate(0) * ellipse((0, 0), 4, 4), rgb(0.11, 0.11, 0.11), rgb(0, 0, 0)+linewidth(0)+solid);
+filldraw(shift(-601, -601) * rotate(0) * ellipse((0, 0), 4, 4), rgb(0.11, 0.11, 0.11), rgb(0, 0, 0)+linewidth(0)+solid);
+filldraw(shift(-502, -600) * rotate(0) * ellipse((0, 0), 4, 4), rgb(0.11, 0.11, 0.11), rgb(0, 0, 0)+linewidth(0)+solid);
+filldraw(shift(-701, -262) * rotate(0) * ellipse((0, 0), 4, 4), rgb(0.11, 0.11, 0.11), rgb(0, 0, 0)+linewidth(0)+solid);
+filldraw(shift(-552, -515) * rotate(0) * ellipse((0, 0), 4, 4), rgb(0.11, 0.11, 0.11), rgb(0, 0, 0)+linewidth(0)+solid);
+filldraw(shift(-616, -551) * rotate(0) * ellipse((0, 0), 4, 4), rgb(0.11, 0.11, 0.11), rgb(0, 0, 0)+linewidth(0)+solid);
+draw((-519, -598)--(-517, -590)--(-511, -586), rgb(0.87, 0.19, 0.19)+linewidth(2)+solid);
+draw((-699, -582)--(-691, -584)--(-687, -590), rgb(0.87, 0.19, 0.19)+linewidth(2)+solid);
+draw((-545, -530)--(-552, -532)--(-558, -530), rgb(0.87, 0.19, 0.19)+linewidth(2)+solid);
+draw((-593, -588)--(-587, -593)--(-586, -599), rgb(0.87, 0.19, 0.19)+linewidth(2)+solid);
+draw((-520, -555)--(-530, -561), rgb(0.94, 0.54, 0)+linewidth(2)+solid);
+draw((-583, -557)--(-573, -563), rgb(0.94, 0.54, 0)+linewidth(2)+solid);
+label("$B$", (-500, -616.5), fontsize(20pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$A$", (-702, -618.5), fontsize(20pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$C$", (-702, -247.5), fontsize(20pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$1$", (-649, -623), fontsize(16pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$1$", (-555, -622), fontsize(16pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$1$", (-507, -548), fontsize(16pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$2\sqrt{3}$", (-732.5, -457), fontsize(16pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$3$", (-596, -385), fontsize(16pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$D$", (-635, -544.5), fontsize(20pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$M$", (-602, -620.5), fontsize(20pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+label("$E$", (-534, -502.5), fontsize(20pt) + rgb(0.11, 0.11, 0.11)+linewidth(1)+solid);
+</asy>
+WLOG <imath>\overline{AB} = 2</imath> as the problem statement concerns only lengths ratios.
+Draw <imath>\overline{EM}</imath> connecting the median of <imath>\triangle ABE</imath> to right angle <imath>\angle E</imath>, we know that by inscribing right <imath>\triangle ABE</imath> in a circle and by Thales theorem, <imath>\overline{ME} = \overline{MA} = \overline{MB}</imath> the circumradius.
+<imath>\overline{MB} = \overline{ME} \iff \triangle BEM \text{ is isosceles}</imath>, and because <imath>\angle B = 60^\circ</imath>, then <imath>\angle E = 60^\circ</imath>, making <imath>\triangle BEM</imath> equilateral. 
+
+Let <imath>\overline{AD} = x</imath> and <imath>\overline{DE} = y</imath>. By <imath>30^\circ - 60^\circ - 90^\circ</imath> special right triangle
+<cmath>\sqrt{3} = \overline{AE} = x + y</cmath>
+<cmath>\overline{AM} = \sqrt{(2\sqrt{3})^2 + 1^2} = \sqrt{13}</cmath>
+<cmath>\overline{CD} = \sqrt{y^2 + 3^2} = \sqrt{y^2 + 9} = \sqrt{x^2 - 2\sqrt{3}x + 12}</cmath>
+<cmath>\overline{DM} = \sqrt{x^2 + 1^2 - 2 \cdot 1 \cdot x \cdot \cos{30^\circ} } = \sqrt{x^2 - \sqrt{3}x + 1}</cmath>
+<cmath>\overline{CD} + \overline{DM} = \overline{AM}</cmath>
+<cmath>\sqrt{x^2 - 2\sqrt{3}x + 12} + \sqrt{x^2 - \sqrt{3}x + 1} = \sqrt{13}</cmath>
+Algebra:
+\begin{align*}
+\sqrt{x^2 - 2\sqrt{3}x + 12} &= \sqrt{13} - \sqrt{x^2 - \sqrt{3}x + 1}\\
+x^2 - 2\sqrt{3}x + 12 &= x^2 - \sqrt{3}x + 1 + 13 - 2\sqrt{13(x^2 - \sqrt{3}x + 1)}\\
+-\sqrt{3}x - 2 &= -2\sqrt{13(x^2 - \sqrt{3}x + 1)}\\
+3x^2 + 4\sqrt{3}x + 4 &= 4\cdot13(x^2 - \sqrt{3}x + 1)\\
+49x^2 - 56\sqrt{3}x + 48 &= 0\\
+(7x-4\sqrt{3})^2 &= 0
+\end{align*}
+<imath>x = \frac{4\sqrt{3}}{7}</imath>
+<imath>y = \frac{3\sqrt{3}}{7}</imath>
+<imath>x</imath> is defined to be minimum of those lengths, so <imath>x = \frac{3\sqrt{3}}{7}</imath>.
+Hence <imath>\frac{x}{x+y} = \boxed{\textbf{(A) } \dfrac{3}{7}}</imath>.
+
+--- Solution 12 ---
+Let the triangle have vertices \( A \) (opposite hypotenuse), \( B \), \( C \). Let the shortest side be \( AB \), so the median is from \( C \) to midpoint \( M \) of \( AB \). Let \( h \) be the altitude from \( C \) to hypotenuse \( BC \). Represent everything vectorially:
+
+\( \vec{A}, \vec{B}, \vec{C} \in \mathbb{R}^2 \). Let the hypotenuse vector be \( \vec{u} = \vec{B} - \vec{C} \). The altitude from \( C \) is along \( \vec{v} \) perpendicular to \( \vec{u} \). The median vector is \( \vec{w} = \vec{M} - \vec{C} \).
+
+We want the intersection point \( P \) along the altitude such that \( \vec{P} = \vec{C} + t \vec{v} \) lies on the median: \( \vec{P} = \vec{C} + s \vec{w} \). But vectors \( \vec{v} \) and \( \vec{w} \) are not parallel. Solve for scalar \( t \) using projection formula:
+
+<cmath>
+t = \frac{\vec{w} \cdot \vec{v}}{|\vec{v}|^2}.
+</cmath>
+
+Take \( x = |\vec{C}P| = t |\vec{v}| \) and \( x + y = |\vec{v}| \). So
+
+<cmath>
+\frac{x}{x+y} = \frac{t |\vec{v}|}{|\vec{v}|} = t = \frac{\vec{w} \cdot \vec{v}}{|\vec{v}|^2}.
+</cmath>
+
+Now we just need vectors \( \vec{v} \) and \( \vec{w} \). Let the triangle be standard 30‑60‑90: shortest side along \( \vec{AB} = \hat{i} \), height along \( \hat{j} \). Then \( \vec{v} \) is perpendicular to hypotenuse \( \vec{u} = \vec{B} - \vec{C} \), say \( \vec{u} = (1, -\sqrt{3}) \), so \( \vec{v} = (\sqrt{3}, 1) \) (perpendicular). Median: \( \vec{w} = \vec{M} - \vec{C} = (1/2, 0) - (0, \sqrt{3}) = (1/2, -\sqrt{3}) \).
+
+Compute the projection:
+
+<cmath>
+t = \frac{\vec{w} \cdot \vec{v}}{|\vec{v}|^2} = \frac{(1/2)(\sqrt{3}) + (-\sqrt{3})(1)}{(\sqrt{3})^2 + 1^2} = \frac{\frac{\sqrt{3}}{2} - \sqrt{3}}{4} = \frac{-\frac{\sqrt{3}}{2}}{4} = -\frac{\sqrt{3}}{8}.
+</cmath>
+
+Take absolute value (distance along altitude) \( x = |t| |\vec{v}| = (\frac{\sqrt{3}}{8}) \cdot 2 = \frac{\sqrt{3}}{4} \) (after proper scaling).
+
+Thus the ratio
+
+<cmath>
+\frac{x}{x+y} = \frac{{3}}{7}.
+</cmath>
+
+Answer:
+
+<cmath>
+\boxed{\textbf{(A) } \dfrac{3}{7}}.
+</cmath>
+
+--- Solution 13 ---
+Let the triangle have vertices A, B, and C on the 60,90,and 30 angles, respectively. Let E be the intersection of the median from C and AB, let F be the intersection of the altitude from B to AC, and let P be the intersection of CE and BF. WLOG let A be (0,2), B be (0,0), and C be (2√3,0). In order to find the ratio of PF to BF, we need to find the coordinates of F and P. First, slope of AC is -1/√3, so the slope of BF is √3. So, the equation for AC is y = (-1√3)x+2 and for BF y = √3x. Finally, E is the midpoint of AB, E is at (0,1), the slope of CE is -1/2√3, and the equation for CE is y = (-1/2√3)x+1. Setting the equations for AC and BF equal, we find the intersection is F at (√3 /2,3/2). Setting the equations for CE and BF equal, we find the intersection is P at (2√3 /7, 6/7). Because BF goes through the origin, we can find BP/BF by dividing the y-coordinates of P and F, getting 4/7. Thus, PF/BF = 1-BP/BF = 1-4/7 = 3/7.
+
+
+=== Problem 14 ===
+Nine athletes, no two of whom are the same height, try out for the basketball team. One at a time, they draw a wristband at random, without replacement, from a bag containing
+
+Choices: {'A': '\\frac29', 'B': '\\frac 27', 'C': '\\frac9{28}', 'D': '\\frac13', 'E': '\\frac38'}
+Answer: C
+
+--- Solution 1 ---
+We will arrange the nine athletes in a line, with the first three being in the blue group, the next three being in the red group, and the last three being in the green group. Suppose the three tallest athletes are named <imath>A, B, C</imath>, in some order. 
+
+We have <imath>3!</imath> ways to choose which group each of these athletes can be in. We then have <imath>3 \cdot 3 \cdot 3</imath> ways to determine which of the three positions in that group they can take. From here, we must distribute the remaining six athletes in the remaining six spaces, which can be done in <imath>6!</imath> ways.
+
+There are therefore <imath>6 \cdot 27 \cdot 6!</imath> favorable outcomes. There are also <imath>9!</imath> total ways to arrange the athletes with no restrictions. Our answer is <imath>\frac{6 \cdot 27 \cdot 6!}{9!} = \frac{6 \cdot 27}{9 \cdot 8 \cdot 7} = \boxed{\textbf{(C) }\frac{9}{28}}.</imath>
+
+--- Solution 2 ---
+Let the three tallest athletes be <imath>A_1</imath> (tallest), <imath>A_2</imath> (second-tallest), and <imath>A_3</imath> (third-tallest).
+
+The condition "the captains are <imath>A_1, A_2, \text{and } A_3</imath>" is equivalent to the condition "<imath>A_1, A_2, \text{and } A_3</imath> must all be in different-colored groups." We can find this probability by considering them drawing bands sequentially. 
+Athlete <imath>A_1</imath> (Tallest): <imath>A_1</imath> draws a band. It can be any of the 9 bands. <imath>A_1</imath> will always be a captain, so the probability is 1. We now have 8 bands left.
+Athlete <imath>A_2</imath> (2nd Tallest): <imath>A_2</imath> must draw a band of a different color than <imath>A_1</imath>.
+There are 8 bands left in the bag.
+<imath>A_1</imath> took one band, so 2 bands of that color remain.
+The other 6 bands (3 of one color, 3 of another) are "good" bands for <imath>A_2</imath>.
+The probability of <imath>A_2</imath> drawing a different color is <imath>P(A_2) = \frac{6}{8}</imath>. Athlete <imath>A_3</imath> (3rd Tallest): <imath>A_3</imath> must draw a band of the third, remaining color.
+We assume <imath>A_1</imath> and <imath>A_2</imath> were successful, so there are 7 bands left.
+<imath>A_1</imath> took a band of color 1. <imath>A_2</imath> took a band of color 2.
+There are 3 bands of color 3 (the "good" color) still in the bag.
+The probability of <imath>A_3</imath> drawing the last color is <imath>P(A_3) = \frac{3}{7}</imath>.
+The total probability is the product of these independent probabilities:
+<cmath> P(\text{Total}) = P(A_1) \times P(A_2) \times P(A_3) </cmath>
+<cmath> P(\text{Total}) = 1 \times \frac{6}{8} \times \frac{3}{7} = \frac{18}{56} </cmath>
+Simplifying the fraction:
+<cmath> \frac{18}{56} = \frac{9}{28} </cmath>
+
+The correct option is (C).
+
+--- Solution 3 ---
+There are <imath>\binom{9}{3}\binom{6}{3}</imath> ways to assign rubber bands to the athletes. Now we have to find the number of ways for the team captains to be the 3 tallest people. Each of the 3 tallest people must have a different rubber band color, and there are <imath>3! = 6</imath> ways to permute their individual rubber band colors.
+
+For the other 6 people, there are <imath>\binom{6}{2}\binom{4}{2}</imath> ways to assign rubber bands to them. 
+
+Thus, our probability is <imath>\frac{3! \cdot \binom{6}{2}\binom{4}{2}}{\binom{9}{3}\binom{6}{3}} = \boxed{\textbf{(C)}\hspace{3pt}\frac{9}{28}}</imath>.
+
+--- Solution 4 ---
+We have <imath>\binom{9}{3}\cdot \binom{6}{3}\cdot \binom{3}{3}=1680</imath> ways to select the people in each team, and we must divide by <imath>3!</imath> ways to order the teams. This gives us <imath>\frac{1680}{3!}=280</imath> total ways to create the teams.
+
+To have the three team captains be the tallest, we need them to be in separate teams. There is <imath>1</imath> way to do this, and then we have <imath>6</imath> people remaining. There are <imath>\binom{6}{2}\cdot \binom{4}{2}\cdot \binom{2}{2} = 90</imath> ways to place two more people on each team.
+
+Our probability is <imath>\frac{90}{280} = \boxed{\textbf{(C)} \frac{9}{28}}</imath>.
+
+--- Solution 5 ---
+Assume the tallest person is in the red group. Then the second person has 6 spots to go out of 8 remaining (1 was taken away). Then the third tallest person has 3 spots to go out of 7 remaining. <imath>\frac{6}{8} \cdot \frac{3}{7}</imath> is the same as <imath>\boxed{\textbf{(C) }\frac{9}{28}}.</imath>
+
+--- Solution 6 ---
+Upon realizing that the denominator is a multiple of <imath>7</imath>, and that there are a bunch of <imath>3</imath>'s in the numerator (just do some C&P with the right logic that could even be a bit flawed) we can make an educated guess that the answer must be <imath>\boxed{\textbf{(C) }\frac{9}{28}}.</imath>
+
+--- Solution 7 ---
+WLOG, assume that the three tallest people are the first ones to draw. Irrespective of where the first person goes, the probability that the second and third person go on different teams is
+<imath>\frac{6}{8}</imath> and <imath>\frac{3}{7}</imath>, respectively, yielding
+<imath>\boxed{\textbf{(C) }\frac{9}{28}}.</imath>
+
+
+==Solultion 8==
+
+We can visualize the nine athletes as a <imath>3 \times 3</imath> grid, where each row represents a color group and each row contains 3 positions. We want the three tallest athletes to become captains. This happens exactly when each of the three tallest athletes occupies a different row.
+
+Total ways to choose positions for the three tallest athletes: <imath>\binom{9}{3} = 84</imath>
+
+Favorable ways (exactly one of the three tallest athletes in each row): <imath>3^3=27</imath>
+
+Thus, our probability is <imath>\frac{27}{84} = \boxed{\textbf{(C) }\frac{9}{28}}.</imath>
+
+
+=== Problem 15 ===
+The sum <cmath>\sum_{k=1}^{\infty} \frac{1}{k^3 + 6k^2 + 8k}</cmath> can be expressed as
+
+Choices: {'A': '89', 'B': '97', 'C': '102', 'D': '107', 'E': '129'}
+Answer: D
+
+--- Solution 1 ---
+Through partial sum decomposition we obtain
+<cmath> \frac{1}{k^3 + 6k^2 + 8k} = \frac{1}{8} \left( \frac{1}{k} - \frac{2}{k+2} + \frac{1}{k+4} \right), </cmath> 
+
+so one can write the expression as 
+
+\begin{align*}
+\frac{1}{8} \sum_{k=1}^\infty \left( \frac{1}{k} - \frac{2}{k+2} + \frac{1}{k+4} \right)
+&=
+\frac{1}{8} \sum_{k=1}^\infty \left( \frac{1}{k} - \frac{1}{k+2}-\frac{1}{k+2} + \frac{1}{k+4} \right)
+\\
+&=
+\frac{1}{8} \sum_{k=1}^\infty \left( \frac{1}{k} - \frac{1}{k+2} \right)+ \frac{1}{8} \sum_{k=1}^\infty \left( \frac{1}{k+4} - \frac{1}{k+2} \right)
+\\
+&=
+\frac{1}{8} \sum_{k=1}^{\infty} \left( \frac{1}{k} - \frac{1}{k+2} \right) - \frac{1}{8} \sum_{k=1}^{\infty} \left( \frac{1}{k+2} - \frac{1}{k+4} \right)
+\\
+&=
+\frac{1}{8} \sum_{k=1}^{\infty} \left( \frac{1}{k} - \frac{1}{k+2} \right) - \frac{1}{8} \sum_{k=3}^{\infty} \left( \frac{1}{k} - \frac{1}{k+2} \right)
+\\
+&=
+\frac{1}{8} \sum_{k=1}^{2} \left( \frac{1}{k} - \frac{1}{k+2} \right)
+\end{align*}
+Simplifying the sum and multiplying results in <imath> \frac{11}{96} </imath>, in which we finally have <imath> 11 + 96 = </imath> <imath>\boxed{\textbf{(D)}
+
+Note: For more info on Partial Sum Decompositions; AoPS Intermediate Algebra Chapter 17.2 (Telescoping) gives a brief introduction to them, which is sufficient enough to solve this problem. AoPS Intermediate Counting and Probability Chapter 14.6 also gives a brief introduction to them.
+
+--- Solution 2 ---
+We decompose <imath>\frac{1}{k^3 + 6k^2 + 8k}</imath> into the sum of 3 partial fractions. We can factor <imath>\frac{1}{k^3 + 6k^2 + 8k}</imath> as <imath>\frac{1}{k(k + 2)(k + 4)}</imath>. We can write this as <imath>\frac{1}{k(k + 2)(k + 4)} = \frac{A}{k} + \frac{B}{k + 2} + \frac{C}{k + 4}</imath>. Multiplying this by <imath>k(k + 2)(k + 4)</imath> gives <imath>1 = A(k + 2)(k + 4) + Bk(k + 4) + Ck(k + 2)</imath>. If <imath>k = 0</imath>, then <imath>8A = 1</imath>, meaning <imath>A = \frac{1}{8}</imath>, if <imath>k = -2</imath>, then <imath>B(-2)(2) = -4B = 1</imath>, meaning <imath>B = -\frac{1}{4}</imath>, and if <imath>k = -4</imath>, <imath>8C = 1</imath>, <imath>C = \frac{1}{8}</imath>. We have <cmath>\sum_{k=1}^{\infty} \frac{1}{k^3 + 6k^2 + 8k} = \sum_{k = 1}^{\infty} \frac{1/8}{k} - \frac{1/4}{k + 2} + \frac{1/8}{k + 4}.</cmath>
+
+Subtracting the first 2 fractions is 
+
+<cmath>
+\frac{1}{8} (1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots) - \frac{1}{4} (\frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \cdots)
+</cmath>
+Since <imath>\frac{1}{8}</imath> is half of <imath>\frac{1}{4}</imath>, this is equal to <imath>\frac{3}{16} - \frac{1}{8} (\frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \cdots)</imath>. We subtract the third fraction from this.
+
+<cmath>
+\frac{3}{16} - \frac{1}{8} (\frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \cdots) + \frac{1}{8} (\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \cdots) = \frac{3}{16} - \frac{1}{8} (\frac{7}{12}) = \frac{3}{16} - \frac{7}{96} = \frac{11}{96},
+</cmath>
+
+meaning the answer is <imath>\boxed{\textbf{(D) } 107}</imath>.
+
+--- Solution 3 ---
+We can factor the expression as <imath>\sum_{k = 1}^{\infty} \dfrac{1}{k(k+2)(k+4)}</imath>.
+Notice we can express this as a telescoping fractions, <imath>\dfrac{1}{k(k+2)(k+4)} = \dfrac{1}{4}\left(\dfrac{1}{k(k+2)}-\dfrac{1}{(k+2)(k+4)}\right)</imath>, thus the expression becomes, <imath>\dfrac{1}{4}\left(\sum_{k = 1}^{\infty} \left(\dfrac{1}{k(k+2)}-\dfrac{1}{(k+2)(k+4)}\right)\right)</imath>. Writing out the first few terms where <imath>n</imath> is a positive integer, we see that the middle cancels, <imath>\dfrac{1}{4}\left(\dfrac{1}{1\cdot3}+\dfrac{1}{2\cdot4}+\dfrac{1}{3\cdot5}+\dots+\dfrac{1}{n(n+2)}-\dfrac{1}{3\cdot5}-\dfrac{1}{4\cdot6}-\dots-\dfrac{1}{(n+1)(n+3)}-\dfrac{1}{(n+2)(n+4)}\right)</imath>, leaving behind <imath>\dfrac{1}{4}\left(\dfrac{1}{1\cdot3}+\dfrac{1}{2\cdot4}-\dfrac{1}{(n+1)(n+3)}-\dfrac{1}{(n+2)(n+4)}\right)</imath>. As <imath>n</imath> goes to infinity, the last two fractions approach zero, thus the sum is <imath>\dfrac{1}{4}\left(\dfrac{1}{3}+\dfrac{1}{8}\right) = \dfrac{1}{4}\left(\dfrac{11}{24}\right) = \dfrac{11}{96}</imath>, <imath>a = 11</imath>, <imath>b = 96</imath>, 
+
+<imath>11+96 = \boxed{\text{(D) }107}.</imath>
+
+--- Solution 4 ---
+First, factoring the denominator gives <cmath>\frac{1}{k^3 + 6k^2 + 8k} = \frac{1}{k(k+2)(k+4)}.</cmath> 
+
+We now proceed with partial fraction decomposition. There are numerous methods to do this quickly, but one of the fastest is known as the Heaviside cover-up method. We "cover" one of the factors in the denominator and set <imath>k</imath> equal to whatever value makes that factor zero. By covering up that factor, we ignore the factor that results in division by zero. What results is the numerator of the corresponding partial fraction. 
+
+First, we set <imath>k=0</imath> to find the numerator of <imath>\frac1k.</imath> We have <imath>\frac{1}{(0+2)(0+4)}=\frac18,</imath> so this is the numerator for <imath>\frac1k.</imath> Next, we set <imath>k=-2</imath> to find the numerator of <imath>\frac{1}{k+2}:</imath> we see that <imath>\frac{1}{(-2)(-2+4)}=-\frac14</imath> is thus the numerator for <imath>\frac{1}{k+2}.</imath> Finally, we set <imath>k=-4,</imath> giving <imath>\frac{1}{(-4)(-2)}=\frac18.</imath>
+
+Thus, our partial fraction decomposition is \begin{align*}\frac{1}{k^3 + 6k^2 + 8k} &= \frac{1}{k(k+2)(k+4)} \\
+&= \frac{1/8}{k} - \frac{1/4}{k+2} + \frac{1/8}{k+4}. \end{align*}
+
+We see that this telescopes. Writing out a few terms, we see:
+
+\begin{align*}
+\sum_{k=1}^\infty \left( \frac{1}{8}\cdot\frac{1}{k} - \frac{1}{4}\cdot\frac{1}{k+2} + \frac{1}{8}\cdot\frac{1}{k+4} \right) 
+&= \left(\frac{1}{8}\cdot\frac{1}{1} + \frac{1}{8}\cdot\frac{1}{2} + \frac{1}{8}\cdot\frac{1}{3} + \frac{1}{8}\cdot\frac{1}{4} + \frac{1}{8}\cdot\frac{1}{5} + \frac{1}{8}\cdot\frac{1}{6} + \dots\right) \\
+&+ \left(\phantom{\frac{1}{8}\cdot\frac{1}{1} + \frac{1}{8}\cdot\frac{1}{2}\;}- \frac{2}{8}\cdot\frac{1}{3} - \frac{2}{8}\cdot\frac{1}{4} - \frac{2}{8}\cdot\frac{1}{5} - \frac{2}{8}\cdot\frac{1}{6} - \dots\right) \\
+&+ \left(\phantom{\frac{1}{8}\cdot\frac{1}{1} + \frac{1}{8}\cdot\frac{1}{2} + \frac{1}{8}\cdot\frac{1}{3} + \frac{1}{8}\cdot\frac{1}{4}\;}+ \frac{1}{8}\cdot\frac{1}{5} + \frac{1}{8}\cdot\frac{1}{6} + \dots\right).
+\end{align*}
+
+We see that the terms telescope, leaving us with a final sum of <cmath>\frac{1}{8}\cdot\frac{1}{1} + \frac{1}{8}\cdot\frac{1}{2} + \frac{1}{8}\cdot\frac{1}{3} + \frac{1}{8}\cdot\frac{1}{4} - \frac{2}{8}\cdot\frac{1}{3} - \frac{2}{8}\cdot\frac{1}{4}=\frac18+\frac1{16}-\frac1{24}-\frac1{32}=\frac{11}{96}.</cmath>
+
+Hence, the answer is <imath>\boxed{\textbf{(D) }107.}</imath>
+
+--- Solution 5 ---
+We start by factoring the cubic denominator as <imath>k^3+6k^2+8k=k(k+2)(k+4)</imath>
+Quickly, we can do partial fraction decomposition by the cover-up method
+<cmath>\frac{1}{k(k+2)(k+4)}=\frac{A}{k}+\frac{B}{k+2}+\frac{C}{k+4}</cmath>
+<imath>k=0</imath> yields <imath>A=\frac{1}{8}</imath>
+
+<imath>k=-2</imath> yields <imath>B=-\frac{1}{4}</imath>
+
+<imath>k=-4</imath> yields <imath>C=\frac{1}{8}</imath>
+
+Now, we have
+<cmath>\sum_{k=1}^{\infty} \left(\frac{\frac{1}{8}}{k}-\frac{\frac{1}{4}}{k+2}+\frac{\frac{1}{8}}{k+4}\right)=\frac{1}{8}\sum_{k=1}^{\infty} \left(\frac{1}{k}-\frac{2}{k+2}+\frac{1}{k+4}\right)</cmath>
+Now, let's evaluate this series then multiply by <imath>\frac{1}{8}</imath> at the end. We break this into 
+<cmath>\sum_{k=1}^{\infty} \frac{1}{k}-2\sum_{k=1}^\infty\frac{1}{k+2}+\sum_{k=1}^{\infty}\frac{1}{k+4}=\sum_{k=1}^{\infty} \frac{1}{k}-2\sum_{k=3}^\infty\frac{1}{k}+\sum_{k=5}^{\infty}\frac{1}{k}=\frac{3}{2}-\sum_{k=3}^\infty\frac{1}{k}+\sum_{k=5}^\infty\frac{1}{k}=\frac{3}{2}-\left(\frac{1}{3}+\frac{1}{4}\right)=\frac{18}{12}-\frac{4}{12}-\frac{3}{12}=\frac{11}{12}</cmath>
+Then, <cmath>\frac{1}{8}\cdot\frac{11}{12}=\frac{11}{96} \implies 11+96=\boxed{\textbf{(D) }107}</cmath>
+
+--- Solution 6 ---
+We start by factoring the cubic denominator as <imath>k^3+6k^2+8k=k(k+2)(k+4)</imath> Quickly, we can do partial fraction decomposition by the cover-up method <cmath>\frac{1}{k(k+2)(k+4)}=\frac{A}{k}+\frac{B}{k+2}+\frac{C}{k+4}</cmath> <imath>k=0</imath> yields <imath>A=\frac{1}{8}</imath>
+
+<imath>k=-2</imath> yields <imath>B=-\frac{1}{4}</imath>
+
+<imath>k=-4</imath> yields <imath>C=\frac{1}{8}</imath>
+
+Now, we have <cmath>\sum_{k=1}^{\infty} \left(\frac{\frac{1}{8}}{k}-\frac{\frac{1}{4}}{k+2}+\frac{\frac{1}{8}}{k+4}\right)=\frac{1}{8}\sum_{k=1}^{\infty} \left(\frac{1}{k}-\frac{2}{k+2}+\frac{1}{k+4}\right)</cmath>
+Now, notice that 
+<cmath>\frac{1}{k}=\int_0^1x^{k-1} \ dx</cmath>
+and we could apply this to the rest
+<cmath>\frac{2}{k+2}=2\int_0^1x^{k+1} \ dx</cmath>
+<cmath>\frac{1}{k+4}=\int_0^1x^{k+3} \ dx</cmath>
+Now, our sum is
+<cmath>\frac{1}{8}\sum_{k=1}^\infty\int_0^1\left(x^{k-1}-2x^{k+1}+x^{k+3}\right) \ dx</cmath>
+Swapping the sum and integral (check out some resources to learn about when you can do this), yields
+<cmath>\frac{1}{8}\int_0^1\sum_{k=1}^\infty\left(x^{k-1}-2x^{k+1}+x^{k+3}\right) \ dx</cmath>
+<cmath>\frac{1}{8}\int_0^1 \left(x^{4}-2x^2+1\right)\sum_{k=1}^\infty x^{k-1} \ dx</cmath>
+Then, using the geometric series formula for <imath>|x|<1</imath> and factoring the polynomial
+<cmath>\frac{1}{8}\int_0^1 \left(x^{4}-2x^2+1\right)\left(\frac{1}{1-x}\right) \ dx=</cmath>
+<cmath>\frac{1}{8}\int_0^1 \frac{(1-x^2)^2}{1-x} \ dx= \ \frac{1}{8}\int_0^1 \frac{(1-x)(1+x)(1-x)(1+x)}{1-x} \ dx=</cmath>
+<cmath>\frac{1}{8}\int_0^1 (1+x)(1-x)(1+x) \ dx=</cmath>
+<cmath>\frac{1}{8}\int_0^1 (-x^3-x^2+x+1) \ dx=</cmath>
+<cmath>\frac{1}{8}\left(-\frac{1}{4}-\frac{1}{3}+\frac{1}{2}+1\right)=\frac{1}{8}\left(\frac{11}{12}\right)=\frac{11}{96} \implies 11+96=\boxed{107}</cmath>
+
+Note: This isn't exactly the cleanest solution. I wouldn't recommend this on the actual AMC.
+
+
+=== Problem 16 ===
+A circle has been divided into 6 sectors of different sizes. Then 2 of the sectors are painted red, 2 painted green, and 2 painted blue so that no two neighboring sectors are painted the same color. One such coloring is shown below.
+
+<asy>
+unitsize(1.7cm);
+pair O = (0, 0);
+real R = 2;
+
+pair A = (R, 0);
+pair B = (0.5*R, 0.866*R);
+pair C = (0, R);
+pair D = (-R, 0);
+pair E = (-0.954*R, -0.3*R);
+pair F = (-0.22*R, -0.975*R);
+
+path sector1 = O -- A .. arc(O,A,B) -- cycle;
+path sector2 = O -- B .. arc(O,B,C) -- cycle;
+path sector3 = O -- C .. arc(O,C,D) -- cycle;
+path sector4 = O -- D .. arc(O,D,E) -- cycle;
+path sector5 = O -- E .. arc(O,E,F) -- cycle;
+path sector6 = O -- F .. arc(O,F,A) -- cycle;
+
+pen r = rgb(255, 120, 120); 
+pen g = rgb(120, 255, 120); 
+pen b = rgb(120, 120, 255);
+filldraw(sector1, g);
+filldraw(sector2, r);
+filldraw(sector3, b);
+filldraw(sector4, r);
+filldraw(sector5, g);
+filldraw(sector6, b);
+
+draw(circle(O, R));
+
+defaultpen(fontsize(12pt));
+label("green", (0.57*R, 0.32*R));
+label("red", (0.16*R, 0.63*R));
+label("blue", (-0.45*R, 0.45*R));
+label("red", (-0.69*R, -0.1*R));
+label("green", (-0.45*R, -0.5*R));
+label("blue", (0.39*R, -0.49*R));
+</asy>
+
+How many different colorings are possible?
+
+Choices: {'A': '~12', 'B': '~16', 'C': '~18', 'D': '~24', 'E': '~28'}
+Answer: D
+
+--- Solution 1 ---
+Let’s do this simply. use the formula: n! / (n-r)! n is our starting number (<imath>6</imath>) and r is our amount (here it is two as we are doing pairs.) so <imath>6</imath>! (for this you kinda have to have your factorials memorized) divided by <imath>4</imath>! (we get that from <imath>6</imath>-<imath>2</imath>) which is <imath>30</imath>. but it says no two parts of the same color can touch. we simply count how many touching pairs there are to get <imath>6</imath>. so it’s <imath>30</imath> - <imath>6</imath> which is our answer <imath>\boxed{\textbf{(D) } 24}</imath>
+
+
+Create an arbitrary six slice circular diagram. The first slice has 3 options, and the second has 2, third has 2, fourth has 2, fifth has 2, and the sixth has only 1 color to be chosen.
+
+Understand that if \( \mathbb{X} \) is the set containing all possible cases of the circle, then \( \mathbb{X} \) has a correlation to another set, call it \( \mathbb{K} \), which contains all the colors. This can be quite easily sought as a rotation of one element in \( \mathbb{X} \) that accurately maps to another element in \( \mathbb{X} \) is considered the same.
+
+In simpler terms, to account for overlapping cases in \( \mathbb{X} \), one must divide by 2 (as two colorings that are rotated are considered different, and we don't want that as it defeats the purpose of "unique").
+
+Then, multiplying out we have \( 3 \times 2^4 = 48 \). Dividing by 2 to account for overlap in \( \mathbb{X} \), we get \( 48/2 \) or
+<imath>\boxed{\textbf{(D) } 24}</imath>
+
+--- Solution 2 ---
+Model the circle as the <imath>6</imath>-cycle \(C_6\) with labeled positions \(1,2,3,4,5,6\) in circular order. We count proper colorings using \(R,G,B\), each appearing exactly twice.
+
+There are two structural possibilities for how the two copies of each color are placed:
+
+
+{Case 1: All three colors occupy opposite positions.}
+
+
+Opposite positions in \(C_6\) are the three pairs \((1,4), (2,5), (3,6)\). If each color occupies one opposite pair, then the colors must alternate around the circle, yielding a pattern of the form
+{<imath>A,B,C,A,B,C</imath>}
+
+for some ordering \((A,B,C)\) of \((R,G,B)\). The number of such colorings is <imath>3!</imath> = <imath>6</imath>
+
+
+{Case 2: Exactly one color occupies opposite positions.}
+
+
+Choose the color that is opposite: \(3\) choices. Choose which opposite pair it occupies: \(3\) choices one of \((1,4), (2,5), (3,6)\)), for a total of \(3\cdot 3 = 9\) placements.
+
+Removing those two opposite positions leaves two disjoint adjacent pairs among the remaining four positions. For example, if the opposite color is at \((1,4)\), the remaining positions \(\{2,3,5,6\}\) form the two adjacent pairs \((2,3)\) and \((5,6)\). The other two colors must each appear twice, and no adjacent positions may match; therefore each pair must be colored with different colors, and to achieve two copies of each color overall, the two pairs must be complementary:
+
+<imath>(2,3)</imath> is <imath>(G,B)</imath> or <imath>(B,G)</imath>, and then <imath>(5,6)</imath> in the opposite ordering.
+
+This gives \(2\) valid assignments for the four positions per fixed opposite placement.
+
+Hence, this case contributes
+\(9\cdot 2 = 18\)
+
+Summing the <imath>2</imath> cases
+
+<imath>6</imath> + <imath>18</imath> = <imath>24</imath>
+
+<imath>\boxed{\textbf{(D) } 24}</imath>.
+
+--- Solution 3 ---
+We can also case differently.
+
+Let us call the sectors <imath>1</imath>, <imath>2</imath>, <imath>3</imath>, <imath>4</imath>, <imath>5</imath>, and <imath>6</imath> going clockwise around the circle. We, without loss of generality, assume <imath>1</imath> to be colored <imath>R</imath>. Additionally, without loss of generality, assume <imath>2</imath> to be colored <imath>B</imath>. We will nullify these assumptions by multiplying by a factor of <imath>6</imath> at the end.
+
+We case on the color of sector <imath>6</imath>.
+
+===Case 1: Sector <imath>6</imath> is colored <imath>B</imath>===
+
+Each color is used two times, so we have one <imath>R</imath> and two <imath>G</imath>s left to distribute between <imath>3</imath>, <imath>4</imath>, and <imath>5</imath>. Obviously, the <imath>G</imath>s cannot be adjacent and thus the only possible coloring is <imath>(3, 4, 5) = (G, R, G)</imath>.
+
+There is <imath>1</imath> solution for this case.
+
+===Case 2: Sector <imath>6</imath> is colored <imath>G</imath>===
+
+In this case, we have we have one <imath>R</imath>, one <imath>B</imath>, and one <imath>G</imath> left to distribute between <imath>3</imath>, <imath>4</imath>, and <imath>5</imath>. Since <imath>3</imath>, <imath>4</imath>, and <imath>5</imath>, are all distinct colors, the only restrictions on this case are that <imath>3</imath> cannot be colored <imath>B</imath> and <imath>5</imath> cannot be colored <imath>G</imath>.
+
+Quick casework shows that if <imath>3</imath> is colored <imath>R</imath>, there are one solution <imath>(3, 4, 5) = (R, G, B)</imath> and if <imath>3</imath> is colored <imath>G</imath> then there are two solutions <imath>(3, 4, 5) = (G, R, B)</imath> and <imath>(3, 4, 5) = (G, B, R)</imath>.
+
+There are <imath>3</imath> solutions for this case.
+
+
+
+Thus, the total number of solutions is: <cmath>6 \cdot (1 + 3) = \boxed{\textbf{(D) } 24}</cmath>
+
+--- Solution 4 ---
+We can also have the following two cases:
+===Case 1: The three colors on the top semicircle are all different===
+Then, three are 6 different ways to rearrange the top. For the bottom, the leftmost one has one restriction and the rightmost one has one restriction. Let's say the leftmost cannot be red and the rightmost cannot be green WLOG. Then, we can have the cases (from left to right): {green, blue, red}, {green, red, blue}, and {blue, green, red}. So, there are 3 different ways to rearrange the bottom. So, ,for case one, there are <imath>6\times3=18</imath> different ways to rearrange.
+
+===Case 2: The three colors on the top has one pair of the same colors===
+Then, there are 3 ways to choose the same color and then 2 ways to choose the color that is only put in once. After choosing all of that, the bottom then will be fixed (try it yourself if you think it is not). So, case 2 has <imath>3\times2=6</imath> ways to rearrange.
+
+After combining the 2 cases, we get <imath>18+6=24</imath> cases, so our answer is <imath>\boxed{\textbf{(D) } 24}</imath>.
+
+--- Solution 5 ---
+Let's assume that the colors do not matter, so let's just start with Red in the very top sector. 
+The fact that the sectors are distinct in size does not matter at all, so just ignore that. 
+If Red is in the top sector, then we have 3 cases:
+
+Case 1: Red is also in the 3rd sector (going clockwise from the top one)
+Thus, this is only one case because there are already 2 that are together, so the colors of those 2 must be distinct. 
+
+Case 2: Red is also in the sector directly opposite. 
+There are 2 cases for this; we can have all the colors being opposite, or we can have a case where everything is symmetric. 
+
+Case 3: Red is also in the 5th sector
+This is basically congruent (symmetric) to the first case, so we also only have 1 case. 
+
+Adding all these up, we have <imath>1+2+1=4</imath> cases in total.
+
+However, we did not consider color yet. Because there are 3 colors, they can be permuted <imath>3!=6</imath> ways.  
+
+Therefore, <imath>6\times4=24</imath>, so our answer is <imath>\boxed{\textbf{(D) } 24}</imath>.
+
+--- Solution 6 ---
+We want to find the number of cases where we can arrange the colors <imath>A</imath>, <imath>B</imath>, and <imath>C</imath>, fixing <imath>A</imath> at the top, and assuming <imath>B</imath> and <imath>C</imath> are symmetrical, so switching all instances of them wouldn't count. Starting from the top-left sector and moving clockwise, we could do <imath>ABCACB</imath>, which is what was on the example, <imath>ABCABC</imath>, <imath>ABACBC</imath>, or <imath>ABCBAC</imath>, so there are four cases. Then, we can just multiply the number of cases by <imath>6</imath>, because that's how many ways we can rearrange <imath>A</imath>, <imath>B</imath>, and <imath>C</imath>, to get <imath>\boxed{\textbf{(D) } 24}</imath>.
+Additionally, we could cheese by noting that the answer is just the number of cases times <imath>6</imath>, so the answer choice must be a multiple of <imath>6</imath>, so it's either <imath>\boxed{\textbf{(C) } 18}</imath> or <imath>\boxed{\textbf{(D) } 24}</imath>, in which case it's possible to just guess the fifty-fifty.
+
+
+=== Problem 17 ===
+Consider a decreasing sequence of
+
+Choices: {'A': '1013', 'B': '1014', 'C': '1016', 'D': '2016', 'E': '2025'}
+Answer: B
+
+--- Solution 1 ---
+Since the mean of the first three terms is <imath>2025</imath>, their sum is 
+<imath>2025 * 3 = 6075</imath>.
+Then, incorporating the fourth term makes the mean <imath>2025-1=2024</imath>, so their sum must be 
+
+<imath>2024 * 4 = 8096</imath>, implying that the 4th term is 
+<imath>8096-6075=2021</imath>
+Doing the same for the 5th term,
+
+<imath>2023 * 5= 10115</imath>, 5th term is 
+
+<imath>10115-8096=2019</imath>
+
+Algebraically, we can model this pattern for the <imath>k</imath>th term = x as
+
+<imath>(k-1)(2029-k) + x = (k)(2028-k)</imath>
+
+<imath>2029k-2029-k^2+k+x=2028k-k^2</imath>
+
+<imath>x=2029-2k</imath>
+
+So the maximum <imath>k\le n</imath> for which <imath>x</imath> is positive is 1014, giving our answer 
+<imath>n=\boxed{\textbf{(B) }1014}</imath>
+
+--- Solution 2 ---
+The average of the first 3 terms in the sequence is 2025, which means <cmath>\frac{x_1 + x_2 + x_3}{3} = 2025,</cmath> so <imath>x_1 + x_2 + x_3 = 6075</imath>.
+
+For <imath>k = 4</imath>, we have <cmath>\frac{x_1 + x_2 + x_3 + x_4}{4} = 2025 - 1 = 2024,</cmath> so <imath>x_1 + x_2 + x_3 + x_4 = 8096</imath>. We know <imath>x_1 + x_2 + x_3 = 6075</imath>, so <cmath>x_4 = 8096 - 6075 = 2021.</cmath>
+
+For <imath>k = 5</imath>, we have <cmath>\frac{x_1 + x_2 + x_3 + x_4 + x_5}{5} = 2024 - 1 = 2023.</cmath> That means <imath>x_1 + x_2 + x_3 + x_4 + x_5 = 10115</imath>. We know <imath>x_1 + x_2 + x_3 + x_4 = 8096</imath>, so <cmath>x_5 = 10115 - 8096 = 2019.</cmath>
+
+Continuing on for <imath>k = 6, 7, 8, \ldots</imath>, we can see that each term decreases by 2. So, <cmath>x_6 = 2017,\ x_7 = 2015,\ x_8 = 2013,\ \text{and likewise,}\ x_3 = 2023,\ x_2 = 2025,\ x_1 = 2027.</cmath>
+
+To find the greatest possible value of <imath>n</imath>, we need to find when the numbers in this sequence become negative. The general term is <cmath>x_n = 2027 - 2(n-1).</cmath> We require <imath>x_n > 0</imath>, so <cmath>2027 - 2(n-1) > 0.</cmath> This simplifies to <cmath>2027 > 2n - 2 \Rightarrow 2029 > 2n \Rightarrow n < 1014.5.</cmath>
+
+Thus the greatest possible integer value of <imath>n</imath> is <imath>1014</imath>, so the answer is <imath>\text{(B) } 1014</imath>.
+
+--- Solution 3 ---
+Assume that the first three terms are <imath>2026</imath>, <imath>2025</imath>, and <imath>2024</imath>, respectively. The average of the first four terms is <imath>2025-1=2024</imath>, which means the fourth term is <imath>2021</imath>. Continuing this process, we realize that the next term is <imath>2019</imath> and each subsequent term is 2 fewer. This means the <imath>n^{th}</imath> term of this sequence where <imath>n>5</imath> is the the <imath>{n-1}^{th}</imath> term minus 2. Realizing this is an arithmetic sequence and all the terms must be positive, we get the answer, <imath>\boxed{\textbf{(B) }1014}</imath>
+
+--- Solution 4 ---
+If the first k terms average to <imath>2028-k</imath>, note that they sum to <imath>2028k-k^2</imath>. Then, <imath>k+1</imath> terms average to <imath>2027-k</imath>, so they sum to <imath>-k^2+2026k+2027</imath>, so the <imath>{k+1}^{th}</imath> term is <imath>(-k^2+2026k+2027)-(2028k-k^2)</imath>, where <imath>k \ge 3</imath>, so <imath>{k+1}^{th}</imath> term is <imath>2027-2k</imath>. Note that for this to be positive, <imath>k \le 1013</imath>, so <imath>k+1</imath>th term is the 1014th term, answer is 1014.
+
+--- Solution 5 ---
+From the previous solution, we derive the sum of the first <imath>k</imath> terms to be equal to <imath>2028k-k^2</imath>. Taking a derivative of this, we get <imath>2028-2k</imath>. Since the only local extreme is at <imath>k=1014</imath>, answer must be <imath>\boxed{\textbf{(B) }1014}</imath>
+
+
+=== Problem 18 ===
+What is the ones digit of the sum
+<cmath>\lfloor \sqrt{1} \rfloor + \lfloor \sqrt{2} \rfloor + \lfloor \sqrt{3} \rfloor + \dots + \lfloor \sqrt{2025} \rfloor?</cmath>(Recall that
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '5', 'E': '8'}
+Answer: D
+
+--- Solution 1 ---
+All terms from the 1st to the 3rd will equal 1, because the value inside the floor function will be greater than or equal to <imath>\sqrt{1} = 1</imath> but less than <imath>\sqrt{4} = 2</imath>. Following this logic, all terms from the 4th to the 8th will equal 2, all terms from the 9th to the 15th will equal 3, and all terms from number <imath>n^2</imath> to <imath>(n + 1)^2 - 1</imath> will equal <imath>\sqrt{n}</imath>. Thus, there will be 3 terms equal to 1, 5 terms equal to 2, and so on. Writing out a few terms of the total sum, we have:
+<cmath>1 \cdot 3 + 2 \cdot 5 + 3 \cdot 7 + \dots + 44 \cdot 89</cmath>
+The expression above can be written in summation format as:
+
+<cmath>\sum_{n=1}^{44} n(2n + 1).</cmath> We can expand this to the following:
+<cmath>\sum_{n=1}^{44} 2n^2 + \sum_{n=1}^{44} n</cmath>
+Using the sum of integers formulas, this becomes
+<cmath>\frac{2 \cdot 44 \cdot 45 \cdot 89}{6} + \frac{44 \cdot 45}{2}</cmath>
+The units digit of that expression evaluates to 0. However, we excluded <imath>\lfloor \sqrt{2025} \rfloor = 45</imath> from our sum because it appears only once in the sequence, so we have to add it back into our expression. Our final answer is <imath>\boxed{\textbf{(D)}\hspace{3pt}5}</imath>.
+
+--- Solution 2 ---
+We quickly realize that from <imath>1^2</imath> to <imath>2^2 - 1</imath>, the floor of the square root is always <imath>1</imath>, from <imath>2^2</imath> to <imath>3^2 - 1</imath>, the floor of the square root is always <imath>3</imath>, and so on. So, we have <imath>1\cdot3 + 2\cdot5 + 3\cdot7 + 4\cdot9 + ... 44\cdot89 + 45</imath>. Now, we can bash for the first digit of each of these products and find that 
+<imath>1\cdot3</imath> has unit digit <imath>3</imath>
+<imath>2\cdot5</imath> has unit digit <imath>0</imath>
+<imath>3\cdot7</imath> has unit digit <imath>1</imath>
+<imath>4\cdot9</imath> has unit digit <imath>6</imath>
+<imath>5\cdot11</imath> has unit digit <imath>5</imath>
+<imath>6\cdot13</imath> has unit digit <imath>8</imath>
+<imath>7\cdot15</imath> has unit digit <imath>5</imath>
+<imath>8\cdot17</imath> has unit digit <imath>6</imath>
+<imath>9\cdot19</imath> has unit digit <imath>1</imath>
+<imath>10 \cdot 21</imath> has unit digit <imath>0</imath>
+And so, we see that a loop has been established for <imath>1-10, 11-20, 21-30, 31-40</imath> (In normal sums that would be <imath>1^2 - 10^2, 11^2 - 20^2</imath>, etc.
+Sum the first <imath>10</imath> numbers to find that it is equal to <imath>5</imath>(mod <imath>10</imath>), and multiply by <imath>4</imath> to account for <imath>1</imath> to <imath>40</imath>. Now we have <imath>0</imath>, and we must add the first <imath>4</imath> numbers of the loop again to get <imath>0</imath>, and add <imath>45</imath> for the last number. Thus, we get <imath>\boxed{(D)5}</imath> as the ones digit.
+
+-henryli3333
+
+Latex edits and minor edits by Wen_Liang
+
+==Solution 3: Units Digits!==
+As stated in the first Solution, we can notice that the first to third terms will equal 1, the second to eighth terms will equal <imath>2</imath>, and so on. This is because the square roots of <imath>5</imath>, <imath>6,</imath> and <imath>7</imath> are in between <imath>2</imath> and <imath>3,</imath> so using floor function, they would equal <imath>2</imath>.This concept applies to all the following numbers.
+
+We can notice that the pattern goes like:
+<imath>1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4,\dots44, 44, 44, 44, 45</imath>
+The square roots of perfect squares will not have to be rounded down through the floor function, so to make it easier, we can pull those numbers out. By doing this we get, <imath>(1+2+3+4+5+6+7+\dots+44+45)</imath>, since <imath>\sqrt{2025} = 45</imath> and <imath>\sqrt{1} = 1</imath>. 
+
+Pulling out these numbers leaves us with 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, and so on. By looking at the remaining numbers, we can notice a pattern! There are two 1s, four 2s, six 3s, eight 4s...all the way until eighty-eight 44s! This can be simplified into, <imath>2(1)+4(2)+6(3)+8(4)+10(5)+13(6)+\dots+88(44)</imath>. Notice that the problem is asking for the units digit, so we can do some simple multiplication to find another pattern. 
+
+We will expand our second expression:
+\begin{align*}
+2\cdot1=2 \\
+4\cdot2=8 \\
+6\cdot3=8 \\
+8\cdot4=32 \\
+10\cdot5=50 \\
+12\cdot6=72 \\
+14\cdot7=98 \\
+16\cdot8=128 \\
+18\cdot9=162 \\
+20\cdot10=200 \\
+\end{align*}
+
+By looking only at the units digit:
+\begin{align*}
+2\cdot1=2 \\
+4\cdot2=8 \\
+6\cdot3=8 \\
+8\cdot4=2 \\
+10\cdot5=0 \\
+12\cdot6=2 \\
+14\cdot7=8 \\
+16\cdot8=8 \\
+18\cdot9=2 \\
+20\cdot10=0 \\
+\end{align*}
+
+Huh..a pattern! It seems that this expression cycles in a pattern of <imath>2,8,8,2,0</imath>. And notice again, if you add up the digits, <imath>2+8+8+2+0=20</imath>. Notice that the unit's digit is <imath>0</imath>. 
+
+However, we can't immediately assume that the cycle ends neatly, so we must do a quick check with the last four terms of the sequence: <imath>82(41)+84(42)+86(43)+88(44)</imath>. 
+The units digits end up being <imath>2+8+8+2</imath>, so this time we're lucky and the cycle ends neatly. As a result, we know that because the cycle adds up to <imath>20</imath> and doesn't stop mid-cycle, the units digit will be <imath>0.</imath>
+
+Now, we can't just go ahead and give up because we got <imath>0</imath> as our answer. We still have our first expression to deal with. <imath>(1+2+3+4+5+\dots+44+45)</imath> By using the sum of numbers formula, we get: <imath>(45(1+45))/2</imath>, which simplifies to: <imath>45\cdot23 = 1035.</imath> Since our second expression will have a unit digit of <imath>0</imath>, we get <imath>0+5 = \boxed{\textbf{(D)}\hspace{3pt}5}</imath>, as our answer.
+
+
+==Solution For Magic Square Association Problem==
+We know that <imath>\lfloor </imath>n<imath> \rfloor</imath> is the lowest integer less or equal than <imath>x</imath>. We also know that <imath>\sqrt{4}=2</imath>, so that <imath>\lfloor \sqrt{1} \rfloor</imath>, <imath>\lfloor \sqrt{2} \rfloor</imath>, and <imath>\lfloor \sqrt{3}\rfloor</imath> all are <imath>1</imath>. <imath>1-1+1=1</imath>, so the first <imath>3</imath> terms equals one. Then, we look to the next <imath>4</imath> terms. <imath>\lfloor \sqrt{4} \rfloor</imath>, <imath>\lfloor \sqrt{5} \rfloor</imath>, <imath>\lfloor \sqrt{6} \rfloor</imath>, <imath>\lfloor \sqrt{7} \rfloor</imath>, and <imath>\lfloor \sqrt{8} \rfloor</imath> all equals 2, making a total of <imath>2+2-2+2-2=-2</imath> Then all the values from <imath>\lfloor \sqrt{9} \rfloor</imath> to <imath>\lfloor \sqrt{15} \rfloor</imath> all equals 3, so now all the terms that equal <imath>3</imath> or <imath>-3</imath> have a grand total of<imath>3-3+3-3+3-3+3=3</imath>. We quickly see a pattern. All the terms that equals <imath>1</imath> or <imath>-1</imath> have a total of <imath>1</imath>, then <imath>-2</imath>, then <imath>3</imath>, and so on. <imath>\sqrt{2025}=45</imath>, so then we can quickly figure out the value to be <imath>1-2+3-4+5-6+7-\dots+45</imath>. <imath>1-2=-1</imath>, <imath>3-4=-1</imath>, and <imath>5-6</imath> to be <imath>-1</imath>, all the way to <imath>43-44</imath>. We can see that <imath>43</imath> is the <imath>22</imath>nd odd number, so that we have <imath>-22+45=\boxed{\textbf{}\hspace{3pt}23}</imath>.
+
+
+==Solution 5: Induction, Units Digits: No hard algebra involved! (easiest)==
+Sure, somehow this is #18, but we can solve this problem with basically no algebra or any hard formulas. Also no confusing summation notation or modular arithmetic because we hate those! 
+
+Recall that the perfect squares differ by odd numbers. What does this mean?
+
+Well, it means that from all <imath>\lfloor \sqrt{1} \rfloor</imath> to <imath>\lfloor \sqrt{3} \rfloor</imath> , it will equal 1, for 3 values because <imath>3-1+1=3</imath>
+
+Likewise, from <imath>\lfloor \sqrt{4} \rfloor</imath> to <imath>\lfloor \sqrt{8} \rfloor</imath>, it will equal 2, for 5 values because <imath>8-4+1=5</imath>
+
+Therefore, we can infer that there will be <imath>2n+1</imath> copies of each number <imath>n</imath>. 
+
+So, the entire sum will be 
+<cmath>1 \cdot 3 + 2 \cdot 5 + 3 \cdot 7 + \dots + 44 \cdot 89 + 45</cmath>
+
+We could <imath>(mod 10)</imath> this, but that is too hard, so let's try to just look at the units digit for each term. 
+For example, the first two terms units digit will be 
+
+<imath>1*3\equiv3</imath> 
+
+<imath>2*5\equiv0</imath>
+
+From here, you could just bash out all of them because there are only 45 (which isn't too bad to do, especially considering this is #18 and a lot of people here have already finished the first 15 problems). 
+
+However, that is kinda dumb to do in competition, so let's try to use induction!
+
+Once we get to the 11th, 12th, 13th, such terms it will actually be congruent to the first 10 terms, because we are only looking at the units digits. 
+
+So, we can just compute the first 10 terms from 1-10, because that will be much quicker:
+
+<imath>1*3\equiv3</imath> 
+
+<imath>2*5\equiv0</imath>
+
+<imath>3*7\equiv1</imath>
+
+<imath>4*9\equiv6</imath>
+
+<imath>5*11\equiv5</imath>
+
+<imath>6*13\equiv8</imath>
+
+<imath>7*15\equiv5</imath>
+
+<imath>8*17\equiv6</imath>
+
+<imath>9*19\equiv1</imath>
+
+<imath>10*21\equiv0</imath>
+
+Adding all these up, we have <imath>3+0+1+6+5+8+5+6+1+0\equiv35\equiv5</imath>
+
+Then, the units digit of the first 40 will be equal to <imath>5*4\equiv20\equiv0</imath>
+
+So, we just have to find the last 5 now
+
+The first 4 is obviously <imath>3+0+1+6\equiv10\equiv0</imath>, then adding the 45th term:
+
+<imath>1*45\equiv5</imath>
+
+Finally, we add all these together:
+
+<imath>0+0+5\equiv5</imath>
+
+And therefore our answer is <imath>\boxed{\textbf{(D)}\hspace{3pt}5}</imath>.
+
+
+=== Problem 19 ===
+A container has a
+
+Choices: {'A': '70', 'B': '85', 'C': '90', 'D': '95', 'E': '105'}
+Answer: D
+
+--- Solution 1 ---
+Extend the edges pointing downwards to converge at a point <imath>A</imath> to form a square pyramid. Consider 3 square pyramids, the large one formed by the top vertices of the original figure and <imath>A</imath>, the middle one formed by the medians running through the sides of the original figure and point <imath>A</imath>, and the smaller one formed by the bottom vertices of the original figure and point <imath>A</imath>. Note that all pyramids are similar since they are all essentially scaled by a certain factor.
+
+The median length is <imath>\frac{3+1}{2}=2</imath>
+
+Using side length to volume ratios, find that the volumes must have ratios <imath>1:8:27</imath>
+Then, you get that the ratio of the volume thus filled to the volume that we must fill is equivalent to 
+<imath>8-1:27-8 =  7:19</imath>.
+Thus, it will take 
+<imath>\frac{19}{7}</imath> 
+more time to fill the remaining volume giving us an answer of 
+<imath>\frac{19}{7} * 35 = \boxed{\textbf{(D) }95}</imath>
+
+-Failure.net
+
+--- Solution 2 ---
+Note that dividing this shape along the midline gives two truncated pyramids with base areas \(1\) and \(4\), and \(4\) and \(9\) (a truncated pyramid is a pyramid is cut at some point parallel to the base to reach a shape with bases that are squares). Using the truncated pyramid volume formula
+
+<cmath>V = \frac{1}{3}h\,(A_1 + A_2 + \sqrt{A_1A_2}),</cmath>
+
+we get volumes
+
+<cmath>\frac{1}{3}h(1 + 4 + \sqrt{4}) \qquad\text{and}\qquad \frac{1}{3}h(4 + 9 + \sqrt{36}).</cmath>
+
+Writing their ratio, we obtain
+
+<cmath>\frac{13 + 6}{5 + 2} = \frac{19}{7}.</cmath>
+
+Thus,
+
+<cmath>35 \cdot \frac{19}{7} = 95.</cmath>
+
+So the remaining time is \(\boxed{95}\).
+
+-Cyrus825
+
+--- Solution 3 ---
+The volume that was filled in 35 minutes can be represented as <imath>\int_1^2 s^2 \text{d}s = \frac{1}{3}\left(2^3 - 1^3\right) = \frac{7}{3}</imath> where <imath>s</imath> represents the side length of the horizontal cross-sectional square. Then, the volume that remains to be filled is <imath>\int_2^3 s^2 \text{d}s = \frac{1}{3}\left(3^3 - 2^3\right) = \frac{19}{3}.</imath> Since the filling rate is the same, the amount of time this will take is <imath>35 \cdot \frac{3}{7} \cdot \frac{19}{3} = \boxed{\textbf{(D) }95}</imath>
+
+-grape1984
+
+--- Solution 4 ---
+Extend the bottom of the container to form an upside down square pyramid. Then take a diagonal cross section as shown below.
+
+<asy>
+size(220);
+
+// Outer (largest) upside-down isosceles triangle
+pair A = (0,-4);      // bottom vertex
+pair B = (-3,0);      // left base point
+pair C = (3,0);       // right base point
+
+draw(A--B--C--cycle);
+
+// Middle triangle (scaled toward A)
+real k2 = 0.6;
+pair B2 = A + k2*(B - A);
+pair C2 = A + k2*(C - A);
+draw(A--B2--C2--cycle);
+
+// Smallest triangle (scaled toward A)
+real k3 = 0.3;
+pair B3 = A + k3*(B - A);
+pair C3 = A + k3*(C - A);
+draw(A--B3--C3--cycle);
+
+// --- Heights (altitudes) ---
+
+// Outer triangle height
+pair mid1 = (B + C)/2;
+draw(mid1--A);
+label("$x_1$", midpoint(mid1--A)+(0.25,1.25));   // centered on the segment
+label("$3\sqrt{2}$", midpoint(mid1--A)+(3.4,2));   // centered on the segment
+
+// Middle triangle height
+pair mid2 = (B2 + C2)/2;
+draw(mid2--A);
+label("$x_2$", midpoint(mid2--A)+(0.25,0.65));   // centered on the segment
+label("$2\sqrt{2}$", midpoint(mid2--A)+(2.3,1.2));   // centered on the segment
+
+// Smallest triangle height
+pair mid3 = (B3 + C3)/2;
+draw(mid3--A);
+label("$x_3$", midpoint(mid3--A)+(0.25,0.25));   // centered on the segment
+label("$\sqrt{2}$", midpoint(mid3--A)+(1.2,0.6));   // centered on the segment
+</asy>
+
+You can notice that there are several similar triangles, so we write several equations.
+<cmath>\frac{x_3}{x_1+x_2+x_3}=\frac{\sqrt{2}}{3\sqrt{2}}</cmath>
+<cmath>\frac{x_3}{x_2+x_3}=\frac{\sqrt{2}}{2\sqrt{2}}</cmath>
+
+Then solve the system to get: <cmath>x_1=x_2=x_3=x</cmath>
+
+Write the volumes of the three pyramids with sides of the bases 1,2, and 3 respectively:
+<cmath>V_1=\frac{x}{3}</cmath>
+<cmath>V_2=\frac{8x}{3}</cmath>
+<cmath>V_3=9x</cmath>
+
+The volumes of the part of the container below the midline and above it are.
+
+<cmath>V_2-V_1=\frac{7x}{3}</cmath> and <cmath>V_3-V_2=\frac{19x}{3}</cmath> 
+
+Then the time <imath>t</imath> for the top to fill up is given by <cmath>\frac{\frac{19x}{3}}{\frac{7x}{3}}=\frac{t}{35}</cmath> 
+Therefore  <imath>t=\boxed{\mathbf{(D)}\ 95}</imath>
+
+-AARONPICK2
+
+
+=== Problem 20 ===
+Four congruent semicircles are inscribed in a square of side length
+
+Choices: {'A': '3', 'B': '5', 'C': '8', 'D': '9', 'E': '11'}
+Answer: A
+
+--- Solution 1 ---
+Let the radius of the large semicircles be <imath>r</imath>, and let the diameter of the inner be <imath>D</imath>. Draw lines as follows:
+
+<asy>
+import geometry;
+size(6cm);
+
+real r = (sqrt(3)-1)/2, R = (sqrt(2) - 1)*(sqrt(3)-1)/2;
+draw((0,0) -- (1,0) -- (1, 1) -- (0,1) -- cycle);
+draw(arc((r, 0), r, 0, 180));
+draw(arc((1, r), r, 90, 270));
+draw(arc((1 - r, 1), r, 180, 360));
+draw(arc((0, 1 - r), r, 270, 450));
+draw(circle((1/2,1/2),R));
+draw((0.36602540378,0)--(0, 0.63397459622),dashed);
+label(“$r$”,(0,0.45),W);
+label(“$1-2r$”,(0,0.15),W);
+label(“$r$”,(0.15,0),S);
+label(“$r$”,(0.1,0.45),NE);
+label(“$r$”,(0.275,0.15),NE);
+label(“$r$”,(0.4,0.15),E);
+label(“$r$”,(0.6,0.85),E);
+label(“$D$”,(0.485,0.5),E);
+draw((0.36602540378,0)--(0.63397459622,1),dashed);
+label(“$r$”,(0.45,1),N);
+label(“$1-2r$”,(0.15,1),N);
+</asy>
+By the Pythagorean Theorem, <imath>r^2+(1-r)^2=(2r)^2</imath>, so <imath>2r^2+2r-1=0</imath>. Hence <imath>r=\frac{\sqrt{3}-1}{2}</imath> (we take the positive solution).
+
+Now apply the Pythagorean Theorem on the quadrilateral’s altitude down to get <imath>(1-2r)^2+1=(2r+D)^2</imath>. Solving yields <imath>2r+D=\sqrt{8-4\sqrt{3}}=\sqrt{6}-\sqrt{2}</imath>. Then <imath>D=\sqrt{6}-\sqrt{2}-\sqrt{3}+1=(\sqrt{3}-1)(\sqrt{2}-1)</imath>. Hence the answer is <imath>3-1+2-1=\boxed{\textbf{(A) } 3}</imath>.
+
+--- Solution 2 ---
+We have the diagram: 
+
+<asy>
+import geometry;
+size(6cm);
+
+real r = (sqrt(3)-1)/2, R = (sqrt(2) - 1)*(sqrt(3)-1)/2;
+draw((0,0) -- (1,0) -- (1, 1) -- (0,1) -- cycle);
+draw(arc((r, 0), r, 0, 180));
+draw(arc((1, r), r, 90, 270));
+draw(arc((1 - r, 1), r, 180, 360));
+draw(arc((0, 1 - r), r, 270, 450));
+draw(circle((1/2,1/2),R));
+draw((0.36602540378,0)--(0, 0.63397459622),dashed);
+draw((0.63397459622,1)--(0, 0.63397459622),dashed);
+draw((0.63397459622,1)--(1, 0.36602540378),dashed);
+draw((0.36602540378,0)--(1, 0.36602540378),dashed);
+label(“$x$”,(0.15,0),S);
+label(“$x$”,(0.1,0.45),SW);
+label(“$x$”,(0.275,0.15),SW);
+label(“$x$”,(0.22,0.64));
+label(“$r$”,(0.45,0.55));
+draw((0.5,0.5)--(0, 0.63397459622),dashed);
+draw((0.36602540378,0)--(0.5,0.5),dashed);
+draw((0.18301270189,0.31698729811)--(0.5,0.5),dashed);
+label("$J$",(0.20301270189,0.29698729811),SW);
+label(“$O$”,(0.485,0.5),E);
+label("$A$",(0,1),NW);
+label("$B$",(1,1),NE);
+label("$D$",(0,0),SW);
+label("$C$",(1,0),SE);
+label("$G$",(0.36602540378,0),S);
+label("$H$",(0, 0.63397459622),W);
+label("$E$",(0.63397459622,1),N);
+label("$F$",(1, 0.36602540378),E);
+
+label(“$\sqrt3 x$”,(0,0.3),W);
+</asy>
+
+We label the vertices of the square <imath>A</imath>,<imath>B</imath>,<imath>C</imath>, and <imath>D</imath>, the centers of the semicircle <imath>E</imath>, <imath>F</imath>, <imath>G</imath>, and <imath>H</imath>, and the center of the small circle <imath>O</imath>. Lets call the radius of the big semicircle <imath>x</imath> and the radius of the small circle <imath>r</imath>. 
+
+Looking at <imath>\triangle HDG</imath>, we can see it is a right triangle as <imath>ABCD</imath> is a square, and we can also observe that since <imath>DG</imath> is <imath>x</imath> and the hypotenuse <imath>GH</imath> is exactly twice at <imath>2x</imath>, <imath>\triangle HDG</imath> is a <imath>30-60-90^\circ</imath> triangle. That means <imath>HD</imath> is equal to <imath>\sqrt3 x</imath>.
+
+Upon inspection, we can also see that <imath>AH</imath> is equal to <imath>x</imath>, and since <imath>ABCD</imath> is a unit square with all sides equal to <imath>1</imath>, we can set the equation <imath>HD+AH=1</imath>, <cmath>x+\sqrt3 x = 1</cmath>, so solving for <imath>x</imath>, we get that <cmath>x=\frac{\sqrt{3}-1}{2}</cmath>
+
+Then, if we compose an auxiliary line from <imath>O</imath> perpendicular to <imath>HG</imath> at <imath>J</imath>, we can observe that <imath>\triangle HOJ</imath> is an isosceles right triangle. That means <imath>x+r=\sqrt2 x</imath> (<imath>1-1-\sqrt2</imath> relations), which means <cmath>r=(\sqrt2 -1)x</cmath>
+
+We're asked to find the diameter of the small circle, so we can multiply the equation by <imath>2</imath> to get <cmath>2r=2(\sqrt2 -1)x</cmath>
+
+Plugging x in, the <imath>2</imath> multiplied and the <imath>2</imath> in the denominator cancel out, and we get <cmath>2r=2(\sqrt2 -1)(\frac{\sqrt{3}-1}{2})</cmath> <cmath>2r=(\sqrt2 -1)(\sqrt3 -1)</cmath>
+
+<imath>a</imath>, <imath>b</imath>, <imath>c</imath>, and <imath>d</imath> are <imath>2</imath>, <imath>-1</imath>, <imath>3</imath> respectively, and <imath>-1</imath>, so <imath>2+(-1)+3+(-1)</imath> gets us <imath>\boxed{\textbf{(A) } 3}</imath>
+
+-Neo
+
+--- Solution 3 ---
+Let the centers of the four circles on <imath>AB</imath>, <imath>BC</imath>, <imath>CD</imath>, and <imath>AD</imath> be <imath>E</imath>, <imath>F</imath>, <imath>G</imath>, and <imath>H</imath>, respectively. Let <imath>r_1</imath> be equal to the radius of one of the semicircles and <imath>r_2</imath> be the radius of the inner circle. From the diagram from solution 2, we can easily recognize that <imath>\triangle DHG</imath> is a <imath>30-60-90</imath> triangle. We now form an equation <imath>r_1 + r_1\sqrt{3} = 1</imath>. Solving for <imath>r_1</imath> we will get <imath>\frac{\sqrt{3}-1}{2}</imath> as the radius. We now need to recognize that <imath>EFGH</imath> is a square. We can also see that <imath>HF = 2r_1+2r_2</imath>. Because <imath>EFGH</imath> is a square, and <imath>HG = 2r_1</imath>, we can figure out that <imath>HF = 2r_1\sqrt{2}</imath>. The final step is to plug in <imath>r_1</imath> and solve for <imath>2r_2</imath> (not <imath>r_2</imath> as the question asks for the diameter).
+
+<imath>2(\frac{\sqrt{3}-1}{2})\sqrt{2} = 2(\frac{\sqrt{3}-1}{2}) + 2r_2</imath>
+
+<imath>(\sqrt{3}-1)\sqrt{2} = \sqrt{3}-1 + 2r_2</imath>
+
+<imath>(\sqrt{3}-1)(\sqrt{2}-1) = 2r_2</imath>
+
+Thus, the answer is <imath>3 - 1 + 2 - 1 = \boxed{\textbf{(A)}3}</imath>
+
+--- Solution 4 ---
+We realize that we can connect the radii of the semicircles to form an inner square (let <imath>r</imath> denote the radius of the semicircles and <imath>d</imath> denote their diameter)
+<asy>
+import geometry;
+size(6cm);
+
+real r = (sqrt(3)-1)/2, R = (sqrt(2) - 1)*(sqrt(3)-1)/2;
+draw((0,0) -- (1,0) -- (1, 1) -- (0,1) -- cycle);
+draw((1,0.366025403784) -- (0.366025403784, 0));
+draw((0.366025403784, 0) -- (0, 0.63397459621));
+draw((1,0.366025403784) -- (0.63397459621, 1));
+draw((0.63397459621, 1) -- (0, 0.63397459621));
+draw(arc((r, 0), r, 0, 180));
+draw(arc((1, r), r, 90, 270));
+draw(arc((1 - r, 1), r, 180, 360));
+draw(arc((0, 1 - r), r, 270, 450));
+draw(circle((1/2,1/2),R));
+draw(brace((0,0), (0, 0.63397459621)), black+0.4bp);
+draw(brace((0.366025403784), (0,0)), black+0.4bp);
+label("$1-r$", (-0.2, 0.3169872981));
+label("$r$", (0.8, 0.28));
+label("$r$", (0.18301270189, -0.08));
+label("$r$", (0.55, 0.139));
+</asy>
+To find the length of the inner square, we apply the Pythagorean Theorem
+<cmath>(1 - r)^{2}+r^{2}= (2r)^{2}</cmath>
+We now substitute <imath>r = \frac{d}{2}</imath>
+<cmath>(1 - \frac{d}{2})^2+(\frac{d}{2})^{2}= d^{2}</cmath>
+<cmath>1-d + \frac{d^2}{4}+\frac{d^{2}}{4}= d^{2}</cmath>
+<cmath>\frac{d^{2}}{2} -d+1= d^{2}</cmath>
+<cmath>d^{2} -2d+2= 2d^{2}</cmath>
+<cmath>-d^{2} -2d+2= 0</cmath>
+<cmath>d^{2} +2d-2= 0</cmath>
+<cmath>d = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}</cmath>
+<cmath>d = \frac{-2 \pm \sqrt{4-4(-2)}}{2}</cmath>
+<cmath>d = \frac{-2 \pm \sqrt{12}}{2}</cmath>
+We must only consider the positive solution
+<cmath>d = \frac{-2 + \sqrt{12}}{2}</cmath>
+<cmath>d = \frac{-2 + 2\sqrt{3}}{2}</cmath>
+<cmath>d = -1 + \sqrt{3}</cmath>
+<cmath>d = \sqrt{3} -1</cmath>
+The diagonal of the inner square measures <imath>d\sqrt{2}</imath>.
+It can also be represented as <imath>d+ d_{1}</imath> where <imath>d_1</imath> denotes small circle's diameter. I demonstrate this below
+<asy>
+import geometry;
+size(6cm);
+real r = (sqrt(3)-1)/2, R = (sqrt(2) - 1)*(sqrt(3)-1)/2;
+draw((0,0) -- (1,0) -- (1, 1) -- (0,1) -- cycle);
+draw((1,0.366025403784) -- (0.366025403784, 0));
+draw((0.366025403784, 0) -- (0, 0.63397459621));
+draw((1,0.366025403784) -- (0.63397459621, 1));
+draw((0.63397459621, 1) -- (0, 0.63397459621));
+draw((1,0.366025403784) -- (0, 0.63397459621));
+draw(brace((1,0.366025403784), (0.649, 0.456)), black+0.4bp);
+draw(brace((0.354, 0.54),(0, 0.63397459621)), black+0.4bp);
+draw(brace((0.649, 0.456),(0.354, 0.54)), black+0.4bp);
+draw(arc((r, 0), r, 0, 180));
+draw(arc((1, r), r, 90, 270));
+draw(arc((1 - r, 1), r, 180, 360));
+draw(arc((0, 1 - r), r, 270, 450));
+draw(circle((1/2,1/2),R));
+label("$r$", (0.81, 0.338));
+label("$r$", (0.164, 0.515));
+label("$d_{1}$", (0.49, 0.42));
+</asy>
+<cmath>2r+d_{1} = d+d_{1}</cmath>
+Therefore, we equate them, find <imath>d_{1}</imath>, and substitute <imath>d= \sqrt{3}-1</imath>
+<cmath> d+d_{1} = d\sqrt{2}</cmath>
+<cmath> d_{1} = d\sqrt{2} - d</cmath>
+<cmath> d_{1} = d(\sqrt{2} - 1)</cmath>
+<cmath>d_{1} = (\sqrt{2}-1)(\sqrt{3}-1)</cmath>
+<cmath>2+3-2 = 3 \implies \boxed{\textbf{(A) } 3}</cmath>
+
+
+=== Problem 21 ===
+Each of the
+
+Choices: {'A': '3', 'B': '9', 'C': '12', 'D': '18', 'E': '27'}
+Answer: C
+
+--- Solution 1 ---
+Denote <imath>1=\text{red}</imath>, <imath>2=\text{blue}</imath>, <imath>3=\text{yellow}</imath>. We need <imath>1\to 2\to 3\to 1</imath>.
+
+WLOG place <imath>1</imath> in the center <imath>(0,0)</imath>, <imath>2</imath> on the left edge <imath>(-1,0)</imath>, <imath>3</imath> on the top-left corner <imath>(-1,1)</imath>.
+<cmath>
+\begin{bmatrix}
+3 & 0 & 0 \\
+2 & 1 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
+</cmath>
+<imath>3</imath> must see <imath>1</imath>, so the top edge <imath>(0,1)</imath> must also have <imath>1</imath>. Then, <imath>1</imath> must see <imath>2</imath>, so the top-right corner <imath>(1,1)</imath> becomes <imath>2</imath>, which must see <imath>3</imath>, so the right edge <imath>(1,0)</imath> must have <imath>3</imath>.
+<cmath>
+\begin{bmatrix}
+3 & 1 & 2 \\
+2 & 1 & 3 \\
+0 & 0 & 0
+\end{bmatrix}
+</cmath>
+Now this bottom-right corner can vary either as <imath>1</imath>, <imath>2</imath> or <imath>3</imath>.
+Cases on <imath>(1,-1)</imath>:
+If <imath>1</imath>:
+<cmath>
+\begin{bmatrix}
+3 & 1 & 2 \\
+2 & 1 & 3 \\
+3 & 2 & 1
+\end{bmatrix}
+</cmath>
+but the 3 needs a 1 and does not have it, so there are <imath>0</imath> cases.
+If <imath>2</imath>:
+<cmath>
+\begin{bmatrix}
+3 & 1 & 2 \\
+2 & 1 & 3 \\
+b & a & 2
+\end{bmatrix}
+</cmath>
+if <imath>a=1</imath>, <imath>b</imath> can be <imath>1</imath> or <imath>3</imath>. If <imath>a=2</imath>, <imath>b=3</imath>, but the 3 needs a 1 and can't get it. 
+If <imath>a=3</imath>, <imath>b=1,2</imath>, so there are <imath>4</imath> cases in total.
+If <imath>3</imath>:
+<cmath>
+\begin{bmatrix}
+3 & 1 & 2 \\
+2 & 1 & 3 \\
+2 & 1 & 3
+\end{bmatrix}
+</cmath>
+Since the 2 in the bottom left corner does not have a 3 nearby, there are <imath>0</imath> cases.
+
+WLOG the center fixes a factor of <imath>3</imath>, so the answer is <imath>4\cdot 3=\boxed{\textbf{(C) } 12}</imath>.
+
+
+- hey random question did u get silver in IMO ? W if u did ,lwky nice solution =)
+
+--- Solution 2 ---
+This solution is complex, but gives the answer in less than a couple minutes and saves the bearing of casework, so proceed as a last resort.
+
+Also yes this solution is inspired from 3Blue1Brown's Olympiad Counting video.
+
+We will find the arrangement that contains the least possible occurrences of a color \( a \) and the most occurrences of a color \( b \), in which we will then use the circular gap theorem \( C_n A \) on all integers \( x \) such that \( x \in [a,b] \) and \( (a,b,x) \in \mathbb{Z}^+ \).
+
+The average number of colors \( M \) is simply \( 9/3 = 3 \) (9 slots divided by 3 colors). So we see that the interval contains \( a < 3 < b \). We also have that the minimal number of colors is clearly 1 (it doesn't take much to show a case that contains only one color). The challenge is to find the maximal number, which is \( b \).
+
+We see that there must be at least one of each color, so \( b \) can be a maximum of 6. However, we can see that 6 clearly cannot be \( b \), as if we have a configuration of 6 colors, that would mean that through the constraints in the problem, the other three colors are already uniquely determined. However, now there is no slots in the grid, and we cannot satisfy all the requirements, so \( b \le 5 \).
+
+However, we also find that \( b \ne 5 \), as the four colors, say blue already determine 2 other colors, say yellow, which determine another 2 colors, say red. However, now there is one color left! This color must be blue (as there are 5), but if there is one blue an no yellow to satisfy the condition, then the case is simply impossible. Therefore, \( b \le 4 \).
+
+We can try to do the same thing for 4, but we will see that \( b=4 \) satisfies the prerequisites.
+
+Therefore, \( a=1 \) and \( b=4 \), in which we then use the circular gap theorem
+
+<cmath>
+C_n A = \frac{n}{k} \binom{n-k-1}{k-1}
+</cmath>
+
+For \( n=x : x \in [a,b] \), \( (a,b,x) \in \mathbb{Z}^+ \) and \( 0 < k \le \left\lfloor\frac{n}{2}\right\rfloor : k \in \mathbb{Z}^+ \)
+
+And so, we do so!
+
+For \( n=1 \), \( C_n A = 1 \) (note that every <imath>\binom{n}{0}=1</imath>)
+
+For \( n=2 \), \( C_n A = 2 \)
+
+For \( n=3 \), \( C_n A = 3 \)
+
+For \( n=4 \), \( C_n A = 6 \)
+
+Our answer is just the sum of all four of these, which is \( 6+3+2+1 \) or <imath>\boxed{\textbf{(C) } 12}</imath>
+
+
+btw the actual theorem name for \( C_n A \) isn't actually the Circular Gap Theorem. I just call it that because I honestly don't know the name of it. It is a pretty neat theorem however, and I first learned it from this AIME problem here: [https://artofproblemsolving.com/wiki/index.php?title=1983_AIME_Problems/Problem_7 1983 AIME Q7 Sol. 9].
+
+It is apparently a closed form for the number of ways to write <imath>n</imath> as the sum of <imath>k</imath> positive circular cycles for <imath>n \ge 2</imath>, and for <imath>0<n \le 1</imath>, the value is just 1.
+
+--- Solution 3 ---
+We begin by WLOG-ing the center box as red, denoted R.
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+ &  &  \\ \hline
+ & R &  \\ \hline
+ &  &  \\ \hline
+\end{tabular}
+</cmath>
+We will then consider the upper edge box, for now we'll assume it to be blue (it will be clear later)
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+ & B &  \\ \hline
+ & R &  \\ \hline
+ &  &  \\ \hline
+\end{tabular}
+</cmath>
+Now we consider the upper right box, which is forced to be yellow as it would be redundant due to reflection through the center column.
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+ & B & Y \\ \hline
+ & R &  \\ \hline
+ &  &  \\ \hline
+\end{tabular}
+</cmath>
+Now, working in a clockwise direction, the right edge box is forced to be red, the bottom corner therefore is forced to be blue, and the bottom edge is forced to be yellow.
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+ & B & Y \\ \hline
+ & R & R \\ \hline
+ & Y & B \\ \hline
+\end{tabular}
+</cmath>
+Now we must consider the bottom left corner. If we set the bottom left corner to red, the left edge therefore must be blue, but then nothing can be filled in for the top left box (red causes left edge to violate the blue -> yellow rule, blue fails for a multitude of reasons, and yellow violates the yellow -> red rule).
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+? & B & Y \\ \hline
+B & R & R \\ \hline
+R & Y & B \\ \hline
+\end{tabular}
+</cmath>
+However, the other two colors both work:
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+Y & B & Y \\ \hline
+R & R & R \\ \hline
+Y & Y & B \\ \hline
+\end{tabular}
+</cmath>
+and
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+Y & B & Y \\ \hline
+R & R & R \\ \hline
+B & Y & B \\ \hline
+\end{tabular}
+</cmath>
+Now we can prove why the second case works: We have a red box on the edge, therefore the above box is a rotation of the box in step 2 with a red on the upper edge.
+
+Additionally, given that the upper edge box is not red, we have two cases, we assumed that it was blue and worked down, but now we will denote what boxes it forces (denoted as f'):
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+ & 2 & f' \\ \hline
+ & R & R \\ \hline
+ & f' & f' \\ \hline
+\end{tabular}
+</cmath>
+Combining the forced boxes from the lower left corner (the f forced boxes) and the forced boxes from the upper edge (the f' forced boxes), we get the following table:
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+f & 2 & f' \\ \hline
+f & R & R \\ \hline
+2 & f' & f' \\ \hline
+\end{tabular}
+</cmath>
+From this, we can write the box in terms of number of cases of that box (remember that we WLOG-ed the center as red, so 3 cases there):
+<cmath>
+\begin{tabular}{|c|c|c|}
+\hline
+1 & 2 & 1 \\ \hline
+1 & 3 & 1 \\ \hline
+2 & 1 & 1 \\ \hline
+\end{tabular}
+</cmath>
+By multiplication, we get <imath>2\cdot 3 \cdot 2=\boxed{\textbf{(C) } 12}</imath>.
+
+
+=== Problem 22 ===
+A seven-digit positive integer is chosen at random. What is the probability that the number is divisible by
+
+Choices: {'A': '\\frac{3}{14}', 'B': '\\frac{3}{11}', 'C': '\\frac{2}{7}', 'D': '\\frac{4}{11}', 'E': '\\frac{3}{7}'}
+Answer: A
+
+--- Solution 1 ---
+Let the number be represented as <imath>\overline{a_1a_2a_3a_4a_5a_6a_7}.</imath> 
+
+We first seek to find the number of seven-digit integers with <imath>a_1+a_2+a_3+a_4+a_5+a_6+a_7 = 61.</imath> We would love to do stars and bars
+here, but we have the condition that <imath>0 \leq a_n \leq 9.</imath> Therefore, we define <imath>a_n' = 9-a_n \implies a_n = 9-a_n'.</imath> This is a bijective operation, so the total number of integers doesn't change when we use these digits instead. Substituting in gives that 
+
+\begin{align*}
+\sum_{k=1}^{7}{(9-a'_k)} &= 61, \\
+a_1' + a_2' + a_3' + a_4' + a_5' + a_6' + a_7' &= 2.
+\end{align*}
+
+Since the <imath>a_n'</imath> are nonnegative integers and the condition <imath>a_n' \leq 9</imath> doesn't matter with a sum less than 9, we can do stars and bars to figure out the number of permutations of digits that satisfy the constraint: <imath>{{2+6}\choose {2}} = {8\choose 2} = 28.</imath>
+
+Now, we need to find how many of these integers are divisible by <imath>11.</imath> We can use the divisibility by <imath>11</imath> rule, which says that <imath>(a_1+a_3+a_5+a_7) - (a_2+a_4+a_6) = 11k</imath> for some integer <imath>k.</imath> Notice that <imath>k \geq 1</imath> because, otherwise, <imath>a_2+a_4+a_6 > 27</imath> which is the maximum sum of three digits. In addition, <imath>k \leq 1</imath> because, otherwise <imath>a_1+a_3+a_5+a_7 > 36</imath> which is the maximum sum of four digits. Therefore <imath>k = 1.</imath>
+
+Then we have that <imath>(a_1+a_3+a_5+a_7) - (a_2+a_4+a_6) = 11,</imath> so <imath>a_1+a_3+a_5+a_7 = 36</imath> and <imath>a_2+a_4+a_6 = 25.</imath> The first equation can only result in <imath>a_1=a_3=a_5=a_7 = 9.</imath> The second equation can be rewritten in a similar manner as before to get that \begin{align*}
+(9-a_2') + (9-a_4') + (9-a_6') &= 25, \\
+a_2' + a_4' + a_6' &= 2.
+\end{align*}
+
+Again, with stars and bars, there exists <imath>{{2+2}\choose {2}} = {4\choose 2} = 6</imath> ordered triples of <imath>(a_2, a_4, a_6)</imath>. 
+
+Therefore, our answer is <cmath>\frac{6}{28} = \boxed{\text{(A)\ } \frac{3}{14}}.</cmath>
+
+--- Solution 2 ---
+Note the divisibility rule of 11. The sum of every other digit minus the sum of the rest of the digits must be divisible by 11.
+
+The maximum possible sum of digits in a 7-digit number is 63 (<imath>9999999</imath>). Since the sum of the digits in the mystery number is 61, we have two possible scenarios. Either 5 digits are 9 and 2 digits are 8 (ex: <imath>9899989</imath>, <imath>9999988</imath>), or 6 digits are 9 and 1 digit is 7 (<imath>9979999</imath>). Going case by case, there are 7 numbers involving six digits as 9 and one as 7 and 21 numbers involving five digits as 9 and two digits as eight, giving a total 28 possible numbers. 
+
+Utilizing the divisibility rule, it can be seen that in order to satisfy the rule, the 7 or both 8s must be in the even positions (such that the number satisfies <imath>9X9X9X9</imath>). There are 3 numbers that satisfy <imath>9X9X9X9</imath> where one of the <imath>X</imath> is 7 and the other two are 9, and 3 numbers that satisfy <imath>9X9X9X9</imath> where 2 of the <imath>X</imath> are 8 and the other is 9, giving 6 satisfying numbers. Therefore, the answer is <cmath>\frac{6}{28} = \boxed{\text{(A)\ } \frac{3}{14}}.</cmath>.
+
+
+=== Problem 23 ===
+A rectangular grid of squares has
+
+Choices: {'A': '7', 'B': '10', 'C': '11', 'D': '12', 'E': '19'}
+Answer: C
+
+--- Solution 1 ---
+Let's say <imath>n</imath> is one of the numbers that got written twice in the same box. Suppose it is at column <imath>x</imath> and row <imath>y</imath>. We will write an expression for <imath>n</imath> in terms of <imath>x</imath> and <imath>y</imath> in two ways: from Horace's perspective and Vera's perspective.
+
+From Horace's perspective, <imath>n = (y-1)(141) + x</imath>. This is because there are <imath>y-1</imath> full rows before <imath>n</imath>, and we then need <imath>x</imath> more numbers to reach <imath>n</imath>. Similarly, Vera will say <imath>n = (x-1)(91) + y</imath>.
+
+We now have the Diophantine equation
+<cmath>(y-1)(141) + x = (x-1)(91)+y</cmath>
+<cmath>141y-141+x = 91x-91+y</cmath>
+<cmath>140y=90x+50</cmath>
+<cmath>14y = 9x + 5</cmath>
+One such solution is, of course, <imath>x=y=1</imath>. We find further solutions by adding <imath>14</imath> to <imath>x</imath> and <imath>9</imath> to <imath>y</imath>. For example, the second solution is <imath>(15,10)</imath>. This continues until <imath>(141,91)</imath> is reached. There are <imath>\boxed{11}</imath> ordered pairs in this list.
+
+--- Solution 2 ---
+For these types of problems, we essentially analyze residues, so it is more convenient to work with 0-indexing: <imath>c=0,1,2,\dots,90</imath>, <imath>r=0,1,2,\dots,140</imath>.
+
+Then <imath>n=91r+c+1=141c+r+1\iff 9r=14c</imath>. We must have <imath>(r,c)=(0,0),(14,9),(28,18),\dots,(140,90)</imath> so <imath>\boxed{ \textbf{(C)}
+
+--- Solution 3 ---
+After indexing to 0, we imagine a line that passes from <imath>(0,0)</imath> to <imath>(140,90)</imath>. We know we are looking for all lattice points that lie on this line (this intuitively makes sense, because any points above the line would have column numbers far ahead of the rows, and vice versa). 
+
+Therefore, we know that the number of points must divide both <imath>140</imath> and <imath>90</imath>. The GCD of the two is 10. We also account for point <imath>(0,0)</imath>, and get that <imath>10+1=\boxed{ \textbf{(C)}
+
+--- Solution 4 ---
+Observe that Horaces number can be expressed as the remainder of the row number plus the column number so <imath>H</imath>(Horaces Number)<imath>=91(c-1)</imath>(column addition)<imath>+r</imath>(remainder of division) and do the same for Vera <imath>V=141(r-1)+c</imath>.The condition is <imath>H=V</imath> so set the equations equal to each other. <imath>91(c-1)+r=141(r-1)+c</imath> so <imath>91c-91+r=141r-141+c</imath>,<imath>140r=90c+50</imath>.This a linear Diophantine equation and the 1st solution is <imath>(1,1)</imath> where the solution repeats every <imath>lcm(90,140)=1260</imath> there are <imath>11</imath> solutions so <imath>\boxed{\textbf{(C)}11}</imath> is correct.
+
+
+=== Problem 24 ===
+A frog hops along the number line according to the following rules.
+
+Choices: {'A': '\\frac{1}{101}', 'B': '\\frac{1}{100}', 'C': '\\frac{1}{99}', 'D': '\\frac{1}{98}', 'E': '\\frac{1}{97}'}
+Answer: E
+
+--- Solution 1 ---
+We will solve this using states. Let <imath>P_n</imath> be the probability of reaching <imath>4</imath>, given that you start from <imath>n</imath>. We want to find <imath>P_0</imath>. Of course, <imath>P_4 = 1</imath>. We also know that
+<cmath>P_3  = \frac{1}{4}P_4 + \frac{1}{4}P_2</cmath>
+<cmath>P_2 = \frac{1}{4}P_3 + \frac{1}{4}P_1</cmath>
+<cmath>P_1 = \frac{1}{4}P_2 + \frac{1}{4}P_0</cmath>
+<cmath>P_0 = \frac{1}{2}P_1.</cmath>
+Solving the system, we find that <imath>P_1 = \frac{2}{97}</imath> and <imath>P_0 = \boxed{\frac{1}{97}}.</imath>
+
+--- Solution 2 ---
+Let <imath>p(n)</imath> be the probability of reaching the end once we have reached lilypad <imath>n</imath>. These probabilities satisfy a finite difference equation
+
+<cmath>p(n+1) - 4p(n) + p(n-1) = 0</cmath>
+
+with boundary conditions
+
+<cmath>\begin{align*}
+2p_0 &= p_1&\text{(fixed derivative/Neumann)}\\
+p_4 &= 1&\text{(fixed constant/Dirichlet).}
+\end{align*}</cmath>
+
+The difference equation's characteristic polynomial
+
+<cmath>\lambda^2 - 4r + 1</cmath>
+
+has roots
+
+<cmath>2\pm \sqrt 3</cmath>
+
+so the probabilities equal
+
+<cmath>p(n) = A\left(2+\sqrt 3\right)^2 + B\left(2-\sqrt 3\right)^2</cmath>
+
+for some coefficients <imath>A</imath> and <imath>B</imath>. Plugging this into the boundary conditions gives
+
+<cmath>\begin{align*}
+2(A + B) = A\left(2 + \sqrt3\right) + B\left(2 - \sqrt3\right)&\iff A=B\\
+A\left(97+56\sqrt3\right) + B\left(97 - 56\sqrt3\right)=1&\iff 97(A+B) + \cancel{56(A-B)\sqrt3} = 1.
+\end{align*}</cmath>
+
+Thus,
+
+<cmath>p(0) = A+B = \boxed{\textbf{(E)}\quad\frac{1}{97}}.</cmath>
+
+--- Solution 3 ---
+Let <imath>P_n</imath> be the probability that the frog eventually reaches position <imath>n</imath>, given that it is at position <imath>n-1</imath>.
+
+From position 1, the frog moves to 2 with probability <imath>\frac{1}{2}</imath>, or disappears with probability <imath>\frac{1}{2}</imath>. Hence
+<imath>P_1 = \frac{1}{2}</imath>.
+
+From position 2, the frog moves to 3 with probability <imath>\frac{1}{4}</imath>, back to 1 with probability <imath>\frac{1}{4}</imath>, or disappears with probability <imath>\frac{1}{2}</imath>. Using <imath>P_1 = \frac{1}{2}</imath>, we have
+<imath>P_2 = \frac{1}{4} + \frac{1}{4} \cdot \frac{1}{2} P_2 = \frac{1}{4} + \frac{1}{8} P_2 \implies \frac{7}{8} P_2 = \frac{1}{4} \implies P_2 = \frac{2}{7}</imath>.
+
+From position 3, similarly,
+<imath>P_3 = \frac{1}{4} + \frac{1}{4} \cdot \frac{2}{7} P_3 = \frac{1}{4} + \frac{1}{14} P_3 \implies \frac{13}{14} P_3 = \frac{1}{4} \implies P_3 = \frac{7}{26}</imath>.
+
+From position 4,
+<imath>P_4 = \frac{1}{4} + \frac{1}{4} \cdot \frac{7}{26} P_4 \implies \frac{97}{104} P_4 = \frac{1}{4} \implies P_4 = \frac{26}{97}</imath>.
+
+Finally, multiplying the probabilities along the path from 1 to 4 (including the initial step from 0 to 1): <imath>\frac{1}{2} \cdot \frac{2}{7} \cdot \frac{7}{26} \cdot \frac{26}{97} = \boxed{ \textbf{(E) } \frac1{97} }</imath>
+
+<div class="noprint">
+
+
+=== Problem 25 ===
+Square
+
+Choices: {'A': 'A', 'B': 'B', 'C': 'C', 'D': 'D', 'E': '\\text{The path continues forever.}'}
+Answer: B
+
+--- Solution 1 ---
+For this question, I cheesed it by just drawing the path with a ruler and an compass, and you can find that the path eventually terminates at vertex B by doing so. Therefore, the answer is <imath>\boxed{\mathbf{(B)\,\mathnormal{B}}}</imath>.
+
+
+Note - Protractors are not allowed on the AMC Exam, but you can sort of achieve the same thing with a compass
+
+Remark: I actually did this on the test, and I didn't even sketch out the diagram either. I had like a minute left on the clock, and I traced the path of the line lightly on my screen (I was taking digital version) and somehow got it correctly lol. I didn't even use a compass or anything either 🤣
+
+--- Solution 2 ---
+First, let me introduce the reflection trick.  Basically, instead of bending the line segment a bunch of times, map any path of the line segment into a reflected square, reflecting the square about the segment that the ray touches.  Every time this happens, we map the latest square onto a new one.  After we do this many times, the entire path becomes a straight line:
+
+[https://ibb.co/VkCbKNT Illustration link, hosted on imgbb (I'm too tired to use Asymptote)]
+
+So now, we could just imagine the whole reflection path as a huge straight ray in the coordinate plane.  When it lands upon a <imath>x</imath> and <imath>y</imath> both divisible by <imath>4</imath>, since a corner reflected is still a corner, we can then trace the corner back.
+
+Note that by some trivial arithmetic you get that <imath>PD=4-\frac{8}{5}=\frac{12}{5}</imath>, and if we let <imath>A</imath> be the origin of a coordinate plane, <imath>AD</imath> be the <imath>y</imath>-axis and <imath>AB</imath> be the <imath>x</imath>-axis, the slope of <imath>PQ</imath> is <imath>\frac{12}{5}\div\frac{10}{3}</imath> using rise over run, which is <imath>\frac{18}{25}</imath>.  Trivially, the <imath>y</imath>-intercept of <imath>PQ</imath> is <imath>\frac{8}{5}</imath>, so the equation of <imath>PQ</imath> becomes
+<cmath> y=\frac{18}{25}x+\frac{8}{5} </cmath>
+and you want both <imath>x</imath> and <imath>y</imath> to be divisible by <imath>4</imath>.  Right off the bat, note that the denominator in the linear term is <imath>25</imath>, so to have any chance of <imath>y</imath> being an integer AT ALL, <imath>x</imath> must be divisible by <imath>5</imath> (else the resulting fraction will have something over <imath>25</imath> plus something over <imath>5</imath>, so there's extra <imath>1/25</imath>s.)
+
+Therefore, <imath>x</imath> must be a multiple of <imath>20</imath>.  Then let's try <imath>x=20</imath>!  We get <imath>y=16</imath>, which is divisible by <imath>4</imath>!  Yay!!!  You might start to sweat about the exact path and how to trace the vertices now, but that does not matter: we can see that if we first reflect to the right and then up, it's no difference than if we went up and then right.  So it doesn't matter if we do all the horizontal or vertical reflections all together.
+
+[https://ibb.co/fYJc6Ks1 Illustration link, hosted on imgbb (I'm too tired to use Asymptote)]
+
+Now you can just label a random square <imath>ABCD</imath>, and reflect to the right <imath>4</imath> times (since you already have 1 square) and then up <imath>3</imath> times.  You'll then notice that <imath>(20,16)</imath> is just a copy of <imath>\boxed{\mathbf{(B)\,\mathnormal{B}}}</imath>.
+
+--- Solution 3 ---
+<asy>
+unitsize(20);
+pair _A, _B, _C, _D, _P, _Q;
+_A = (0, 0);
+_B = (0, 4);
+_C = (4, 4);
+_D = (4, 0);
+_P = (0, 8/5);
+_Q = (4, 10/3);
+draw(_A -- _B -- _C -- _D -- _A ^^ _P -- _Q);
+draw(extension(_P, _Q, _B, _C) -- _Q -- 2*_C - extension(_P, _Q, _B, _C), dashed);
+label("$A$", _A, SW);
+label("$B$", _B, NW);
+label("$C$", _C, NE);
+label("$D$", _D, SE);
+label("$P$", _P, W);
+label("$Q$", _Q, SE);
+</asy>
+
+The square can be placed with <imath>A=(0,0),B=(4,0),C=(4,4),D=(0,4)</imath>. Then <cmath>P=(0,\frac{8}{5}),Q=(\frac{10}{3},4).</cmath> 
+
+Straight line reflection is equivalent to passing through. The straight line from <imath>P</imath> to <imath>Q</imath> is 
+<cmath>y = \frac{18}{25}x + \frac{8}{5}</cmath>
+<cmath>25y = 18x + 40 \equiv 4 \pmod{18}</cmath>
+
+Notice that <imath>25 \times 2 \equiv 7 \times 2 \equiv -4 \pmod{18}</imath>, so <imath>25 \times (-2) \equiv 4 \pmod{18}</imath>, <imath>y \equiv -2 \equiv 16 \pmod{18}</imath>, then <imath>x = 20</imath>, the line passed through <imath>(20, 16)</imath>.
+
+From <imath>(0, \frac{8}{5})</imath> to <imath>(20, 16)</imath>, <imath>x</imath> coordinate increases 20 whole units, <imath>y</imath> coordinate increases 15 whole units. Excluding the case where <imath>PQ</imath> passes through a lattice point at the final grid point, the segment <imath>PQ</imath> crosses integer grid lines a total of <imath>(20 - 1) + (15 - 1) = 33</imath> times. Each time the line crosses an integer grid line, it corresponds to one reflection; every four reflections, the path completes a full rotation within the square. <imath>33 \equiv 1 \pmod{4}</imath>, 
+after one reflection off side <imath>CD</imath>, the line <imath>PQ</imath> will pass through point <imath>\boxed{\textbf{(B) }B}</imath>.
+
+
+==Upgraded Solution 1==
+Use the scratch paper's corner and fold it to necessary to mold and replicate angles, then use a straightedge to trace it.
+
+

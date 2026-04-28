@@ -26,6 +26,11 @@ const homePcPanel = document.querySelector('#home-pc-panel');
 const homePcLine = document.querySelector('#home-pc-line');
 const openHomePcLink = document.querySelector('#open-home-pc');
 const openHomePcKasmButton = document.querySelector('#open-home-pc-kasm');
+const dnsLabPanel = document.querySelector('#dns-lab-panel');
+const dnsModeSelect = document.querySelector('#dns-mode');
+const dnsServersInput = document.querySelector('#dns-servers');
+const dohTemplateInput = document.querySelector('#doh-template');
+const dnsLabLine = document.querySelector('#dns-lab-line');
 
 const startButton = document.querySelector('#start-session');
 const stopButton = document.querySelector('#stop-session');
@@ -34,6 +39,7 @@ const statusLine = document.querySelector('#status-line');
 const sessionState = document.querySelector('#session-state');
 const sessionExpiry = document.querySelector('#session-expiry');
 const workerImage = document.querySelector('#worker-image');
+const sessionDnsMode = document.querySelector('#session-dns-mode');
 const viewerCaption = document.querySelector('#viewer-caption');
 const sessionFrame = document.querySelector('#session-frame');
 const viewerPlaceholder = document.querySelector('#viewer-placeholder');
@@ -88,12 +94,29 @@ openLink.addEventListener('click', (event) => {
 });
 
 openHomePcLink.addEventListener('click', (event) => {
-  event.preventDefault();
-  openHomePcInNewTab();
+  if (!getHomePcUrl()) {
+    event.preventDefault();
+    setStatus('Home PC access is not configured yet.', true);
+    return;
+  }
+
+  setStatus('Opened Home PC access in a new tab.', false);
 });
 
 openHomePcKasmButton.addEventListener('click', async () => {
   await openHomePcViaKasm();
+});
+
+dnsModeSelect.addEventListener('change', () => {
+  renderDnsLabControls();
+});
+
+dnsServersInput.addEventListener('input', () => {
+  renderDnsLabControls();
+});
+
+dohTemplateInput.addEventListener('input', () => {
+  renderDnsLabControls();
 });
 
 resumeButton.addEventListener('click', async () => {
@@ -151,6 +174,7 @@ async function loadHealth() {
   const health = await response.json();
   state.health = health;
   workerImage.textContent = health.image;
+  configureDnsLabFromHealth(health);
   const audioMode = health.audioEnabled ? (health.pcmAudioEnabled ? 'PCM high-fidelity audio' : 'compressed audio') : 'audio disabled';
   setStatus(
     health.ok
@@ -394,14 +418,27 @@ async function createSession(options = {}) {
   startButton.disabled = true;
   setStatus(options.statusMessage || 'Starting a new browser worker. This takes a few seconds.', false);
 
+  const dnsProfileResult = readDnsProfileRequest();
+  if (!dnsProfileResult.ok) {
+    startButton.disabled = false;
+    setDnsLabStatus(dnsProfileResult.error, true);
+    setStatus(dnsProfileResult.error, true);
+    return null;
+  }
+
+  const requestBody = {
+    initialUrl: options.initialUrl || undefined
+  };
+  if (dnsProfileResult.value) {
+    requestBody.dnsProfile = dnsProfileResult.value;
+  }
+
   const response = await fetch(apiUrl('/sessions'), {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
     },
-    body: JSON.stringify({
-      initialUrl: options.initialUrl || undefined
-    })
+    body: JSON.stringify(requestBody)
   });
 
   const payload = await readJson(response);
@@ -843,64 +880,154 @@ function writeLoadingTab(targetWindow, message) {
   } catch {}
 }
 
-function openHomePcInNewTab() {
-  const homePcUrl = getHomePcUrl();
-  if (!homePcUrl) {
-    setStatus('Home PC access is not configured yet.', true);
+function configureDnsLabFromHealth(health) {
+  if (!health?.dnsLabEnabled) {
     return;
   }
 
-  const remoteWindow = window.open('about:blank', '_blank');
-  if (!remoteWindow) {
-    setStatus('Popup blocked. Allow popups for this site, then try again.', true);
+  const modes = Array.isArray(health.dnsModes) ? health.dnsModes : [];
+  if (modes.length) {
+    const selectedBefore = dnsModeSelect.value;
+    dnsModeSelect.innerHTML = '';
+    for (const mode of modes) {
+      const option = document.createElement('option');
+      option.value = mode.mode;
+      option.textContent = mode.label;
+      dnsModeSelect.append(option);
+    }
+
+    const defaultMode = health.dnsDefaultProfile?.mode || 'system';
+    const selectedStillExists = modes.some((mode) => mode.mode === selectedBefore);
+    const defaultExists = modes.some((mode) => mode.mode === defaultMode);
+    dnsModeSelect.value = selectedStillExists ? selectedBefore : (defaultExists ? defaultMode : modes[0].mode);
+  }
+
+  const defaultProfile = health.dnsDefaultProfile;
+  if (defaultProfile?.servers?.length && !dnsServersInput.value) {
+    dnsServersInput.value = defaultProfile.servers.join(',');
+  }
+  if (defaultProfile?.dohTemplate && !dohTemplateInput.value) {
+    dohTemplateInput.value = defaultProfile.dohTemplate;
+  }
+}
+
+function readDnsProfileRequest() {
+  if (!state.health?.dnsLabEnabled) {
+    return {
+      ok: true,
+      value: null
+    };
+  }
+
+  const mode = dnsModeSelect.value || state.health.dnsDefaultProfile?.mode || 'system';
+  const dnsServers = dnsServersInput.value.trim();
+  const dohTemplate = dohTemplateInput.value.trim();
+
+  if (mode === 'custom-dns' && !dnsServers) {
+    return {
+      ok: false,
+      error: 'Enter at least one custom DNS server IP before starting the session.'
+    };
+  }
+
+  if (mode === 'browser-doh' && !dohTemplate && !state.health.dnsDefaultProfile?.dohTemplate) {
+    return {
+      ok: false,
+      error: 'Enter a DoH HTTPS template before starting the session.'
+    };
+  }
+
+  return {
+    ok: true,
+    value: {
+      mode,
+      dnsServers: dnsServers || undefined,
+      dohTemplate: dohTemplate || undefined
+    }
+  };
+}
+
+function renderDnsLabControls() {
+  const enabled = Boolean(state.health?.dnsLabEnabled);
+  dnsLabPanel.hidden = !enabled;
+  if (!enabled) {
     return;
   }
 
-  const serializedHomePcUrl = JSON.stringify(homePcUrl);
+  const hasSession = Boolean(state.session);
+  const mode = dnsModeSelect.value || state.health?.dnsDefaultProfile?.mode || 'system';
+  const canEdit = Boolean(state.auth && state.health?.ok && !hasSession);
+  const customDnsField = dnsServersInput.closest('.dns-field');
+  const dohField = dohTemplateInput.closest('.dns-field');
+  const showDnsServers = mode === 'custom-dns' || mode === 'browser-doh';
+  const showDohTemplate = mode === 'browser-doh';
+
+  dnsModeSelect.disabled = !canEdit;
+  dnsServersInput.disabled = !canEdit || !showDnsServers;
+  dohTemplateInput.disabled = !canEdit || !showDohTemplate;
+  customDnsField.hidden = !showDnsServers;
+  dohField.hidden = !showDohTemplate;
+
+  const validation = readDnsProfileRequest();
+  if (!validation.ok) {
+    setDnsLabStatus(validation.error, true);
+    return;
+  }
+
+  const preview = validation.value ? formatDnsProfile(expandDnsProfilePreview(validation.value)) : formatDnsProfile(state.health?.dnsDefaultProfile);
+  setDnsLabStatus(`Next session: ${preview}.`, false);
+}
+
+function expandDnsProfilePreview(profile) {
+  const definition = getDnsModeDefinition(profile.mode);
+  const servers = parseList(profile.dnsServers || definition?.servers?.join(',') || '');
+  const dohTemplate = profile.dohTemplate || definition?.dohTemplate || '';
+  return {
+    mode: profile.mode,
+    label: definition?.label || profile.mode,
+    servers,
+    dohTemplate
+  };
+}
+
+function getDnsModeDefinition(mode) {
+  return (state.health?.dnsModes || []).find((item) => item.mode === mode) || null;
+}
+
+function formatDnsProfile(profile) {
+  if (!profile) {
+    return 'Not started';
+  }
+
+  const label = profile.label || getDnsModeDefinition(profile.mode)?.label || profile.mode || 'DNS';
+  const servers = Array.isArray(profile.servers) ? profile.servers : parseList(profile.servers);
+  if (profile.dohTemplate) {
+    return `${label} (${formatDohHost(profile.dohTemplate)})`;
+  }
+  if (servers.length) {
+    return `${label} (${servers.join(', ')})`;
+  }
+  return label;
+}
+
+function formatDohHost(value) {
   try {
-    remoteWindow.opener = null;
-    remoteWindow.document.open();
-    remoteWindow.document.write(`<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Open Home PC</title>
-    <style>
-      :root { color-scheme: dark; }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: #030712;
-        color: #e5e7eb;
-        font: 500 16px/1.5 system-ui, sans-serif;
-      }
-      a {
-        color: #7ce0ff;
-      }
-    </style>
-  </head>
-  <body>
-    <p>Opening Chrome Remote Desktop. <a id="fallback-link" href="#">Continue manually</a></p>
-    <script>
-      (() => {
-        const targetUrl = ${serializedHomePcUrl};
-        document.getElementById('fallback-link').href = targetUrl;
-        window.setTimeout(() => {
-          window.location.replace(targetUrl);
-        }, 80);
-      })();
-    </script>
-  </body>
-</html>`);
-    remoteWindow.document.close();
+    return new URL(value).host;
   } catch {
-    remoteWindow.location.href = homePcUrl;
+    const match = /^https:\/\/([^/?#{}]+)/i.exec(String(value ?? ''));
+    return match?.[1] || 'DoH';
+  }
+}
+
+function parseList(value) {
+  if (Array.isArray(value)) {
+    return value.map((entry) => String(entry ?? '').trim()).filter(Boolean);
   }
 
-  setStatus('Opened Home PC access in a fresh tab.', false);
+  return String(value ?? '')
+    .split(/[,\s]+/g)
+    .map((entry) => entry.trim())
+    .filter(Boolean);
 }
 
 function render() {
@@ -933,7 +1060,7 @@ function render() {
   openLink.classList.toggle('disabled', homePcSelected || !hasSession);
   openLink.href = hasSession ? 'about:blank' : '#';
   openHomePcLink.classList.toggle('disabled', !getHomePcUrl());
-  openHomePcLink.href = getHomePcUrl() ? 'about:blank' : '#';
+  openHomePcLink.href = getHomePcUrl() || '#';
   openHomePcKasmButton.disabled = !hasAuth || !getHomePcUrl();
   homePcLine.textContent = getHomePcUrl()
     ? 'Home PC access is available for this account.'
@@ -941,6 +1068,7 @@ function render() {
   homePcLine.dataset.tone = getHomePcUrl() ? 'ok' : 'error';
   sessionState.textContent = hasSession ? session.state : 'Idle';
   sessionExpiry.textContent = hasSession ? formatDate(session.expiresAt) : 'Not started';
+  sessionDnsMode.textContent = hasSession ? formatDnsProfile(session.dnsProfile) : formatDnsProfile(state.health?.dnsDefaultProfile);
   quotaState.textContent = hasAuth
     ? maxSessions > 0
       ? `${activeSessions} / ${maxSessions} active`
@@ -973,6 +1101,8 @@ function render() {
   } else {
     viewerPlaceholder.querySelector('p').textContent = 'The KasmVNC-backed Chromium workspace will appear here after the container comes online.';
   }
+
+  renderDnsLabControls();
 }
 
 function renderSessionPicker() {
@@ -1145,6 +1275,11 @@ function setAuthStatus(message, isError) {
 function setAdminStatus(message, isError) {
   adminLine.textContent = message;
   adminLine.dataset.tone = isError ? 'error' : 'ok';
+}
+
+function setDnsLabStatus(message, isError) {
+  dnsLabLine.textContent = message;
+  dnsLabLine.dataset.tone = isError ? 'error' : 'ok';
 }
 
 function resetAdminCredentials() {

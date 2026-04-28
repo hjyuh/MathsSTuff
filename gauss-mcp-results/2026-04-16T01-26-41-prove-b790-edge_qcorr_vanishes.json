@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T01-26-41-prove-b790-edge_qcorr_vanishes",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- Edge q-correction vanishes: if L > n/2 and q \u2224 L, then lcm(L,q) > n. -/\ntheorem edge_qcorr_vanishes (L q n : \u2115)\n    (hq : 0 < q) (hL : 0 < L)\n    (hLn : L \u2264 n) (hLbig : n < 2 * L)\n    (hqL : \u00ac q \u2223 L) :\n    n / Nat.lcm L q = 0 := by\n  sorry",
+  "started_at": "2026-04-16T01:26:41Z",
+  "finished_at": "2026-04-16T01:43:39Z",
+  "duration_s": 1017.85,
+  "result_text": "Proof compiles cleanly with zero diagnostics.\n\n## Cycle 1 Complete\n\n**Filled: 1/1 sorry** \u2014 `edge_qcorr_vanishes`\n\n**Proof strategy:** Since `Nat.lcm L q` is a multiple of `L` and `q \u2224 L` implies `lcm(L,q) \u2260 L`, the lcm must be at least `2 * L > n`, so `n / lcm(L,q) = 0`.\n\nThe proof is already in `GaussTest/Basic.lean:134-152`.\n\nCommit this? **[yes / yes-all / no / never]**\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T01-26-41-prove-b790-edge_qcorr_vanishes.log",
+  "worker_pid": 3395,
+  "last_heartbeat_at": 1776303817.5579057,
+  "_started_monotonic": 1776302801.6614861
+}

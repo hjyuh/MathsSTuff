@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T22-57-23-prove-cede-ep488_v51_G2_resubmit_deg3_partner",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v51 / G2 (resubmit): Degree-3 partner at 3a forced to 2:3 edge\n-- Under a \u2208 (q/2, 3q/5), if b \u2208 (q/2, q] is a partner at height 3a with b \u2260 a,\n-- then 2b = 3a. (Rules out 3a/4 and 3a/5 as partners via top-window constraint.)\n\nimport Mathlib.Tactic\n\ntheorem deg3_partner_at_3a\n    {q a b : \u2115}\n    (hq : 0 < q)\n    (ha_lb : q / 2 < a) (ha_ub : 5 * a < 3 * q)\n    (hb_lb : q / 2 < b) (hb_ub : b \u2264 q)\n    (hne : a \u2260 b)\n    (hratio : 3 * a = 2 * b \u2228 3 * a = 4 * b \u2228 3 * a = 5 * b) :\n    3 * a = 2 * b := by\n  sorry\n",
+  "started_at": "2026-04-16T22:57:23Z",
+  "finished_at": "2026-04-16T23:53:18Z",
+  "duration_s": 3355.79,
+  "result_text": "Commit this?\n- **File:** `EP488_Deg3Partner.lean` (new, 17 lines)\n- **Message:** `fill: deg3_partner_at_3a - omega rules out 3a/4 and 3a/5 partners via top-window bounds`\n\n**[yes / yes-all / no / never]**\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-57-23-prove-cede-ep488_v51_G2_resubmit_deg3_partner.log",
+  "worker_pid": 4456,
+  "last_heartbeat_at": 1776383596.0612354,
+  "_started_monotonic": 1776380243.2778666
+}

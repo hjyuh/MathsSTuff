@@ -1,0 +1,1436 @@
+=== Problem 1 ===
+Ike and Mike go into a sandwich shop with a total of
+
+Choices: {'A': '6', 'B': '7', 'C': '8', 'D': '9', 'E': '10</math>'}
+Answer: D
+
+--- Solution 1 ---
+We know that the sandwiches cost <imath>4.50</imath> dollars. Guessing will bring us to multiplying <imath>4.50</imath> by 6, which gives us <imath>27.00</imath>. Since they can spend <imath>30.00</imath> they have <imath>3</imath> dollars left. Since soft drinks cost <imath>1.00</imath> dollar each, they can buy 3 soft drinks, which makes them spend <imath>30.00</imath>  Since they bought 6 sandwiches and 3 soft drinks, they bought a total of <imath>9</imath> items. Therefore, the answer is <imath>\boxed{\textbf{(D) }9}</imath>.
+
+- SBose
+
+--- Solution 2 ---
+Let <imath>s</imath> be the number of sandwiches and <imath>d</imath> be the number of sodas. We have to satisfy the equation of
+<cmath>4.50s+d=30</cmath>
+In the question, it states that Ike and Mike buys as many sandwiches as possible. 
+So, we drop the number of sodas for a while.
+We have: 
+<cmath>\begin{align*}
+4.50s&=30 \\
+s&=\frac{30}{4.5} \\
+s&=6R3
+\end{align*}</cmath>
+We don't want a remainder so the maximum number of sandwiches is <imath>6</imath>.
+The total money spent is <imath>6\cdot 4.50=27</imath>.
+The number of dollar left to spent on sodas is <imath>30-27=3</imath> dollars.
+<imath>3</imath> dollars can buy <imath>3</imath> sodas leading us to a total of 
+<imath>6+3=9</imath> items. 
+Hence, the answer is <imath>\boxed{\textbf{(D) }9}</imath>.
+
+- by interactivemath
+
+--- Solution 3 ---
+If the two could by fractions of sandwiches, they'd be able to buy <imath>\frac{30.00\text{ dollars}}{4.50\frac{\text{dollars}}{\text{sandwich}}}=6\frac{2}{3}</imath> sandwiches. But they can only buy a whole number of sandwiches, so they can buy <imath>6</imath>, which costs <imath>6\cdot\$4.50=\$27</imath>. So they have <imath>\$3</imath> left over, from which they can buy <imath>3</imath> drinks (since they each cost <imath>\$1</imath>, for a total item count of <imath>6+3=9</imath> items. The answer is <imath>\boxed{\textbf{(D)}}</imath>
+
+-Elihemi
+
+
+=== Problem 2 ===
+Three identical rectangles are put together to form rectangle
+
+Choices: {'A': '45', 'B': '75', 'C': '100', 'D': '125', 'E': '150'}
+Answer: E
+
+--- Solution 1 ---
+We can see that there are <imath>2</imath> rectangles lying on top of the other and that is the same as the length of one rectangle. Now we know that the shorter side is <imath>5</imath>, so the bigger side is <imath>10</imath>, if we do <imath>5 \cdot 2 = 10</imath>. Now we get the sides of the big rectangle being <imath>15</imath> and <imath>10</imath>, so the area is <imath>\boxed{\textbf{(E)}\ 150}</imath>.
+
+--- Solution 2 ---
+Using the diagram we find that the larger side of the small rectangle is <imath>2</imath> times the length of the smaller side. Therefore, the longer side is <imath>5 \cdot 2 = 10</imath>. So the area of the identical rectangles is <imath>5 \cdot 10 = 50</imath>. We have 3 identical rectangles that form the large rectangle. Therefore the area of the large rectangle is <imath>50 \cdot 3 = \boxed{\textbf{(E)}\ 150}</imath>.
+
+--- Solution 3 ---
+We see that if the short sides are 5, the long side has to be <imath>5\cdot2=10</imath> because the long side is equal to the 2 short sides and because the rectangles are congruent. If that is to be, then the long side of the BIG rectangle(rectangle <imath>ABCD</imath>)
+is <imath>10+5=15</imath> because long side + short side of the small rectangle is <imath>15</imath>. The short side of rectangle <imath>ABCD</imath> is <imath>10</imath> because it is the long side of the short rectangle. Multiplying <imath>15</imath> and <imath>10</imath> together gets us <imath>15\cdot10</imath> which is <imath>\boxed{\textbf{(E)}\ 150}</imath>.
+
+--- Solution 4 ---
+We see that the <imath>2</imath> rectangles lying on top of each other give us the height of the rectangle. Using what we know, we can find out that the <imath>2</imath> rectangles put together is a square. So, we can infer that the length of the rectangles is <imath>10</imath>. Adding that to the width of the third rectangle which is <imath>5</imath>, we get that the length of the rectangle is <imath>15</imath>. Multiplying <imath>10</imath> and <imath>15</imath> gives us <imath>15\cdot10</imath> which is <imath>\boxed{\textbf{(E)}\ 150}</imath>.
+
+--- Solution 5 ---
+There are two rectangles lying on the side and one standing up. Given that one small side is 5, we can determine that two of the small sides make up a big side which means that the long side is equal to 10. The top side of the rectangle is made up of one small side and one long side, therefore the dimensions for the rectangle is 10x15. 10 multiplied by 15 is 150, hence the answer <imath>\boxed{\textbf{(E)}\ 150}</imath>.
+
+<imath>\textbf{Remark}</imath>
+ALL THESE SOLUTIONS ARE VERY, VERY SIMILAR
+
+
+=== Problem 3 ===
+Which of the following is the correct order of the fractions
+
+Choices: {'A': '\\frac{15}{11}< \\frac{17}{13}< \\frac{19}{15}', 'B': '\\frac{15}{11}< \\frac{19}{15}<\\frac{17}{13}', 'C': '\\frac{17}{13}<\\frac{19}{15}<\\frac{15}{11}', 'D': '\\frac{19}{15}<\\frac{15}{11}<\\frac{17}{13}', 'E': '\\frac{19}{15}<\\frac{17}{13}<\\frac{15}{11}</math>'}
+Answer: E
+
+--- Solution 1 ---
+We take a common denominator:
+<cmath>\frac{15}{11},\frac{19}{15}, \frac{17}{13} = \frac{15\cdot 15 \cdot 13}{11\cdot 15 \cdot 13},\frac{19 \cdot 11 \cdot 13}{15\cdot 11 \cdot 13}, \frac{17 \cdot 11 \cdot 15}{13\cdot 11 \cdot 15} = \frac{2925}{2145},\frac{2717}{2145},\frac{2805}{2145}.</cmath>
+
+Since <imath>2717<2805<2925</imath> it follows that the answer is <imath>\boxed{\textbf{(E)}\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}</imath>.
+
+Another approach to this problem is using the properties of one fraction being greater than another, also known as the <b>butterfly method</b>. That is, if 
+<imath>\frac{a}{b}>\frac{c}{d}</imath>, then it must be true that <imath>a * d</imath> is greater than <imath>b * c</imath>. Using this approach, we can check for <b>at least</b> two distinct pairs of fractions and find out the greater one of those two, logically giving us the expected answer of <imath>\boxed{\textbf{(E)}\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}</imath>.
+
+-xMidnightFirex
+
+
+- Clearness by doulai1
+
+- Alternate Solution by Nivaar
+
+Remark: Instead of evaluating ad and bc to see which is bigger, difference of squares is sufficient. -Supernova77
+
+--- Solution 2 ---
+When <math>\frac{x}{y}>1</math> and <math>z>0</math>, <math>\frac{x+z}{y+z}<\frac{x}{y}</math>. Hence, the answer is <math>\boxed{\textbf{(E)}\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}</math>.
+
+This is also similar to Problem 20 on the 2012 AMC 8.
+
+--- Solution 3 ---
+We use our insane mental calculator to find out that <math>\frac{15}{11} \approx 1.36</math>, <math>\frac{19}{15} \approx 1.27</math>, and <math>\frac{17}{13} \approx 1.31</math>. Thus, our answer is <math>\boxed{\textbf{(E)}\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}</math>.
+
+--- Solution 4 ---
+Suppose each fraction is expressed with denominator <math>2145</math>: <math>\frac{2925}{2145}, \frac{2717}{2145}, \frac{2805}{2145}</math>. Clearly <math>2717<2805<2925</math> so the answer is <math>\boxed{\textbf{(E)}}</math>.
+
+*Note: Duplicate of Solution 1
+
+==Solution 5 -SweetMango77==
+We notice that each of these fractions' numerator <math>-</math> denominator <math>=4</math>. If we take each of the fractions, and subtract <math>1</math> from each, we get <math>\frac{4}{11}</math>, <math>\frac{4}{15}</math>, and <math>\frac{4}{13}</math>. These are easy to order because the numerators are the same, we get <math>\frac{4}{15}<\frac{4}{13}<\frac{4}{11}</math>. Because it is a subtraction by a constant, to order them, we keep the inequality signs to get <math>\boxed{\textbf{(E)}\;\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}</math>.
+
+--- Solution 5 ---
+Adding on to Solution 5, we can turn each of the fractions <math>\frac{15}{11}</math>, <math>\frac{17}{13}</math>, and <math>\frac{19}{15}</math> into <math>1</math><math>\frac{4}{11}</math>, <math>1</math><math>\frac{4}{13}</math>, and <math>1</math><math>\frac{4}{15}</math>, respectively. We now subtract <math>1</math> from each to get <math>\frac{4}{11}</math>, <math>\frac{4}{15}</math>, and <math>\frac{4}{13}</math>. Since their numerators are all 4, this is easy because we know that <math>\frac{1}{15}<\frac{1}{13}<\frac{1}{11}</math> and therefore <math>\frac{4}{15}<\frac{4}{13}<\frac{4}{11}</math>. Reverting them to their original fractions, we can now see that the answer is <math>\boxed{\textbf{(E)}\;\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}</math>.
+
+--- Solution 6 ---
+As you can see that the difference between the numerator and denominator is 4, you can guess the relative ratios and you can scale down and make it <math>\frac{9}{5},\frac{7}{3},</math> and <math>\frac{5}{1},</math>. Using this, you can very clearly tell that <math>\frac{5}{1},</math> is the greatest and therefore <math>\frac{15}{11}</math>, is the greatest. You can use the same method to find the other 2 orders. This gives the answer of <math>\boxed{\textbf{(E)}\;\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}</math>.
+
+Note-this answer only works in some circumstances, and overall solution 6 is much better.
+
+
+=== Problem 4 ===
+Quadrilateral
+
+Choices: {'A': '60', 'B': '90', 'C': '105', 'D': '120', 'E': '144</math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+draw((-12,0)--(0,5));
+draw((0,5)--(12,0));
+draw((12,0)--(0,-5));
+draw((0,-5)--(-12,0));
+draw((0,0)--(12,0));
+draw((0,0)--(0,5));
+draw((0,0)--(-12,0));
+draw((0,0)--(0,-5));
+dot((-12,0));
+dot((0,5));
+dot((12,0));
+dot((0,-5));
+label("A",(-12,0),W);
+label("B",(0,5),N);
+label("C",(12,0),E);
+label("D",(0,-5),S);
+label("E",(0,0),SW);
+</asy>
+
+A rhombus has sides of equal length. Because the perimeter of the rhombus is <imath>52</imath>, each side is <imath>\frac{52}{4}=13</imath>. In a rhombus, diagonals are perpendicular and bisect each other, which means <imath>\overline{AE}</imath> = <imath>12</imath> = <imath>\overline{EC}</imath>.
+
+Consider one of the
+
+
+<asy>
+draw((-12,0)--(0,5));
+draw((0,0)--(-12,0));
+draw((0,0)--(0,5));
+dot((-12,0));
+dot((0,5));
+label("A",(-12,0),W);
+label("B",(0,5),N);
+label("E",(0,0),SE);
+</asy>
+
+<imath>\overline{AB}</imath> = <imath>13</imath>, and <imath>\overline{AE}</imath> = <imath>12</imath>. Using the Pythagorean theorem, we find that <imath>\overline{BE}</imath> = <imath>5</imath>.
+You know the Pythagorean triple, (5, 12, 13).
+
+Thus the values of the two diagonals are <imath>\overline{AC}</imath> = <imath>24</imath> and <imath>\overline{BD}</imath> = <imath>10</imath>.
+The area of a rhombus is = <imath>\frac{d_1\cdot{d_2}}{2}</imath> = <imath>\frac{24\cdot{10}}{2}</imath> = <imath>120</imath>
+
+<imath>\boxed{\textbf{(D)}\ 120}</imath>
+
+--- Solution 2 ---
+Right off the bat, we can see that the perimeter of the figure is 52. Dividing this by four, we can get that each side is equal to 13. By drawing a line perpendicular to the one given, we can split the figure into four right triangles. 12 (24/2) is equal to the height of one small right triangle, and 13 is the slanted side. Using the Pythagorean theorem we can find that 169 (13 squared) - 144 (12 squared) = 25 (five squared). With this, we can determine that each small right triangle equals 30. Multiplying that by four we can get <imath>\boxed{\textbf{(D)}\ 120}</imath>.
+
+
+=== Problem 5 ===
+A tortoise challenges a hare to a race. The hare eagerly agrees and quickly runs ahead, leaving the slow-moving tortoise behind, believing that he will win, the hare stops to take a nap. Meanwhile, the tortoise walks at a slow, steady pace for the entire race. The hare wakes up and runs to the finish line, only to find the tortoise already there. Which of the following graphs matches the description of the race, showing the distance <imath>d</imath> traveled by the two animals over time <imath>t</imath> from start to finish?
+
+[[File:2019_AMC_8_-4_Image_1.png|900px]]
+
+[[File:2019_AMC_8_-4_Image_2.png|600px]]
+
+Answer: B
+
+--- Solution 1 ---
+First, the tortoise walks at a constant rate, ruling out <math>(D)</math>. Second, when the hare is resting, the distance will stay the same, ruling out <math>(E)</math> and <math>(C)</math>. Third, the tortoise wins the race, meaning that the non-constant one should go off the graph last, ruling out <math>(A)</math>. The answer <math>\boxed{\textbf{(B)}}</math> is the only one left.
+
+<!--Note to the original author of this solution: "we shouldn't be able to edit" is incorrect (if its definition is what I think it is), because I was able to edit. Also, I deleted that, (but did nothing else)-->
+
+
+=== Problem 6 ===
+There are
+
+Choices: {'A': '\\frac{1}{5}', 'B': '\\frac{1}{4}', 'C': '\\frac{2}{5}', 'D': '\\frac{9}{20}', 'E': '\\frac{1}{2}</math>'}
+Answer: C
+
+--- Solution 1 ---
+<asy>
+draw((0,0)--(0,8));
+draw((0,8)--(8,8));
+draw((8,8)--(8,0));
+draw((8,0)--(0,0));
+dot((0,0));
+dot((0,1));
+dot((0,2));
+dot((0,3));
+dot((0,4));
+dot((0,5));
+dot((0,6));
+dot((0,7));
+dot((0,8));
+
+dot((1,0));
+dot((1,1));
+dot((1,2));
+dot((1,3));
+dot((1,4));
+dot((1,5));
+dot((1,6));
+dot((1,7));
+dot((1,8));
+
+dot((2,0));
+dot((2,1));
+dot((2,2));
+dot((2,3));
+dot((2,4));
+dot((2,5));
+dot((2,6));
+dot((2,7));
+dot((2,8));
+
+dot((3,0));
+dot((3,1));
+dot((3,2));
+dot((3,3));
+dot((3,4));
+dot((3,5));
+dot((3,6));
+dot((3,7));
+dot((3,8));
+
+dot((4,0));
+dot((4,1));
+dot((4,2));
+dot((4,3));
+dot((4,4));
+dot((4,5));
+dot((4,6));
+dot((4,7));
+dot((4,8));
+
+dot((5,0));
+dot((5,1));
+dot((5,2));
+dot((5,3));
+dot((5,4));
+dot((5,5));
+dot((5,6));
+dot((5,7));
+dot((5,8));
+
+dot((6,0));
+dot((6,1));
+dot((6,2));
+dot((6,3));
+dot((6,4));
+dot((6,5));
+dot((6,6));
+dot((6,7));
+dot((6,8));
+
+dot((7,0));
+dot((7,1));
+dot((7,2));
+dot((7,3));
+dot((7,4));
+dot((7,5));
+dot((7,6));
+dot((7,7));
+dot((7,8));
+
+dot((8,0));
+dot((8,1));
+dot((8,2));
+dot((8,3));
+dot((8,4));
+dot((8,5));
+dot((8,6));
+dot((8,7));
+dot((8,8));
+label("P",(4,4),NE);
+draw((0,4)--(3,4));
+draw((0,8)--(3,5));
+draw((8,8)--(5,5));
+draw((4,8)--(4,5));
+draw((4,0)--(4,3));
+draw((0,0)--(3,3));
+draw((8,0)--(5,3));
+draw((5,4)--(8,4));
+</asy>
+Lines of symmetry go through point <math>P</math>, and there are <math>8</math> directions the lines could go, and there are <math>4</math> dots at each direction.<math>\frac{4\times8}{80}=\boxed{\textbf{(C)} \frac{2}{5}}</math>.
+
+--- Solution 2 ---
+Divide the grid into 4 4x5 quadrants. Each row of 5 points has 1 point on a horizontal/vertical line of symmetry + 1 point on a diagonal line of symmetry: <math>\boxed{\textbf{(C)} \frac{2}{5}}</math>.
+
+
+=== Problem 7 ===
+Shauna takes five tests, each worth a maximum of
+
+Choices: {'A': '48', 'B': '52', 'C': '66', 'D': '70', 'E': '74</math>'}
+Answer: A
+
+--- Solution 1 ---
+We should notice that we can turn the information we are given into a linear equation and just solve for our set variables. I'll use the variables <imath>x</imath> and <imath>y</imath> for the scores on the last two tests. <cmath>\frac{76+94+87+x+y}{5} = 81,</cmath> <cmath>\frac{257+x+y}{5} = 81.</cmath> We can now cross multiply to get rid of the denominator. <cmath>257+x+y = 405,</cmath> <cmath>x+y = 148.</cmath> Now that we have this equation, we will assign <imath>y</imath> as the lowest score of the two other tests, and so: <cmath>x = 100,</cmath> <cmath>y=48.</cmath> Now we know that the lowest score on the two other tests is <imath>\boxed{\textbf{(A)}\ 48}</imath>.
+
+--- Solution 2 ---
+Right now, she scored <imath>76, 94,</imath> and <imath>87</imath> points, for a total of <imath>257</imath> points. She wants her average to be <imath>81</imath> for her <imath>5</imath> tests, so she needs to score <imath>405</imath> points in total. This means she needs to score a total of <imath>405-257= 
+148</imath> points in her next <imath>2</imath> tests. Since the maximum score she can get on one of her <imath>2</imath> tests is <imath>100</imath>, the least possible score she can get is <imath>\boxed{\textbf{(A)}\ 48}</imath>.
+
+Note: You can verify that <imath>\boxed{48}</imath> is the right answer because it is the lowest answer out of the 5. Since it is possible to get 48, we are guaranteed that that is the right answer.
+
+--- Solution 3 ---
+We can compare each of the scores with the average of <imath>81</imath>:
+<imath>76</imath> <imath>\rightarrow</imath> <imath>-5</imath>,
+<imath>94</imath> <imath>\rightarrow</imath> <imath>+13</imath>,
+<imath>87</imath> <imath>\rightarrow</imath> <imath>+6</imath>,
+<imath>100</imath> <imath>\rightarrow</imath> <imath>+19</imath>;
+
+So the last one has to be <imath>-33</imath> (since all the differences have to sum to <imath>0</imath>), which corresponds to <imath>81-33 = \boxed{48}</imath>.
+
+--- Solution 4 ---
+We know that she scored <imath>76, 94,</imath> and <imath>87</imath> points on her first <imath>3</imath> tests for a total of <imath>257</imath> points and that she wants her average to be <imath>81</imath> for her <imath>5</imath> total tests. Therefore, she needs to score a total of <imath>405</imath> points. In addition, one of the final <imath>2</imath> tests needs to be the maximum of <imath>100</imath> points, to make the final test score—the one that we are looking for—the lowest score possible for her to earn. We can now see here that the sum of <imath>76+94+100</imath> has a units digit of <imath>0</imath> and that the final test score must have a units digit ending with a <imath>5</imath>. Now, <imath>87</imath> needs to be added to a number that makes the sum divisible by <imath>5</imath>. Among the answer choices of <imath>48, 52, 66, 70,</imath> and <imath>74</imath>, only <imath>\boxed{\textbf{(A)}\ 48}</imath> has a units digit that works. (<imath>48+87=135</imath>, giving us a units digit of <imath>5</imath>.)
+
+--- Solution 5 ---
+For Shauna to get an average of <imath>81</imath>, she needs to score a total of <imath>81 \times 5 = 405</imath>. One of the final two tests must earn a score of <imath>100</imath> to ensure the final test score is the lowest possible. <imath>76+94+87+100 = 357</imath>, and <imath>405-357 = \boxed{\textbf{(A)}\ 48}</imath>.
+
+--- Solution 6 ---
+81 times 5 = 405. Adding the units digits of 76, 94, 87, and 100 gives 7. To end with five the fifth score ends with 8 so the answer is <imath>\boxed{\textbf{(A)}\ 48}</imath>.
+
+
+=== Problem 8 ===
+Gilda has a bag of marbles. She gives
+
+Choices: {'A': '20', 'B': '33\\frac{1}{3}', 'C': '38', 'D': '45', 'E': '54</math>'}
+Answer: E
+
+--- Solution 1 ---
+After Gilda gives <math>20</math>% of the marbles to Pedro, she has <math>80</math>% of the marbles left. If she then gives <math>10</math>% of what's left to Ebony, she has <math>(0.8*0.9)</math> = <math>72</math>% of what she had at the beginning. Finally, she gives <math>25</math>% of what's left to her brother, so she has <math>(0.75*0.72)</math> <math>\boxed{\textbf{(E)}\ 54}</math> of what she had in the beginning left.
+
+--- Solution 2 ---
+WOLG, suppose that Gilda has <math>100</math> marbles. 
+
+Then, she gives Pedro 20% of <math>100</math>, which equals <math>20</math>, leaving her with <math>80</math> marbles.
+
+Out of <math>80</math> marbles, she gives 10% of <math>80</math>, which is 8 to Ebony. 
+
+Thus, she remains with <math>72</math> marbles. 
+
+Then, she gives 25% of <math>72</math>, which equals <math>18</math> to Jimmy, finally leaving her with <math>54</math>. 
+
+And, <math>\frac{54}{100}</math>=54%=<math>\boxed{\textbf{(E)}\ 54}</math>.
+
+--- Solution 3 ---
+Use this when you have about 10 minutes left and your brain does not function correctly.
+
+Since she gave away 20% and 10% of what is left and then another 25% of what is actually left, we can do 20+10+25 or 55%. But it is actually going to be a bit more than 55% because 10% of what is left is not 10% of the total amount. So, the only option that is greater than 100% - 55% is <imath>\boxed{\textbf{(E)}\ 54}</imath>.
+
+
+=== Problem 9 ===
+Alex and Felicia each have cats as pets. Alex buys cat food in cylindrical cans that are
+
+Choices: {'A': '1:4', 'B': '1:2', 'C': '1:1', 'D': '2:1', 'E': '4:1</math>'}
+Answer: B
+
+--- Solution 1 ---
+Using the formula for the volume of a cylinder <imath>\pi r^2 h</imath>, we get Alex, <imath>108\pi</imath>, and Felicia, <imath>216\pi</imath>. We can quickly notice that <imath>\pi</imath> cancels out on both sides and that Alex's volume is <imath>1/2</imath> of Felicia's leaving <imath>1/2 = \boxed{\textbf{(B)}\ 1:2}</imath> as the answer.
+
+--- Solution 2 ---
+Using the formula for the volume of a cylinder, we get that the volume of Alex's can is <imath>3^2\cdot12\cdot\pi</imath>, and that the volume of Felicia's can is <imath>6^2\cdot6\cdot\pi</imath>. Now, we divide the volume of Alex's can by the volume of Felicia's can, so we get <imath>\frac{1}{2}</imath>, which is <imath>\boxed{\textbf{(B)}\ 1:2}</imath>.    
+             
+-(Algebruh123)2020
+
+--- Solution 3 ---
+The ratio of the numbers is <imath>1/2</imath>. Looking closely at the formula <imath>r^2 * h * \pi</imath>, we see that the <imath>r * h * \pi</imath> will cancel, meaning that the ratio of them will be <imath>\frac{1(2)}{2(2)}</imath> = <imath>\boxed{\textbf{(B)}\ 1:2}</imath>.
+
+-Lcz
+
+--- Solution 4 ---
+The second can is <imath>\cdot 2</imath> size in each of 2 dimensions, and <imath>\cdot 1/2</imath> size in 1 dimension. <imath> 2^2/2
+= \boxed{\textbf{(B)}\ 1:2}</imath>.
+
+--- Solution 5 ---
+Without calculating much, you can do
+(<imath>\pi ra^2) \cdot ha</imath> <-- which is Alex's volume, with ra being Alex's radius<imath> (1/2 \cdot</imath> diameter), and <imath>ha</imath> being her cylinders height<imath>
+(\pi rf^2) \cdot hf <-- </imath>which is Felicia's volume, with <imath>rf</imath> being Felicia's radius, and <imath>hf</imath> being her cylinders height.
+Since we need the ratio between Alexa's and Felicias, we can do <imath>(\pi ra^2)\cdot ha/(\pi rf^2)\cdot hf</imath> The <imath>\pi</imath> cancel out, then substitute back in the numbers, which gives you:
+
+<imath>(3^2 \cdot 12)/(6^2 \cdot 6) = (9 \cdot 12)/(36 \cdot 6) = 18/36 = 1/2 = 1:2</imath>
+
+-wahahaqueenie
+
+
+=== Problem 10 ===
+The diagram shows the number of students at soccer practice each weekday during last week. After computing the mean and median values, Coach discovers that there were actually
+
+Choices: {'A': '</math>'}
+Answer: B
+
+--- Solution 1 ---
+On Monday, <imath>20</imath> people come. On Tuesday, <imath>26</imath> people come. On Wednesday, <imath>16</imath> people come. On Thursday, <imath>22</imath> people come. Finally, on Friday, <imath>16</imath> people come. <imath>20+26+16+22+16=100</imath>, so the mean is <imath>20</imath>. The median is <imath>(16, 16, 20, 22, 26)</imath> <imath>20</imath>. The coach figures out that actually <imath>21</imath> people come on Wednesday. The new mean is <imath>21</imath>, while the new median is <imath>(16, 20, 21, 22, 26)</imath> <imath>21</imath>. Also, the median increases by <imath>1</imath> because now the median is <imath>21</imath> instead of <imath>20</imath>. The median and mean both change, so the answer is <imath>\boxed{\textbf{(B)}}</imath>.
+
+Another way to compute the change in mean is to notice that the sum increased by <imath>5</imath> with the correction. So, the average increased by <imath>5/5 = 1</imath>. Then, the median is computed the same way.
+
+
+=== Problem 11 ===
+The third-grade class at Lincoln Elementary School has
+
+Choices: {'A': '16', 'B': '23', 'C': '31', 'D': '39', 'E': '70</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>x</math> be the number of students taking both a math and a foreign language class.
+
+By P-I-E, we get <math>70 + 54 - x</math> = <math>93</math>. 
+
+Solving gives us <math>x = 31</math>.
+
+But we want the number of students taking only a math class,
+
+which is <math>70 - 31 = 39</math>.
+
+<math>\boxed{\textbf{(D)}\ 39}</math>
+
+
+:):):):):):)
+
+--- Solution 2 ---
+We have <math>70 + 54 = 124</math> people taking classes. However, we over-counted the number of people who take both classes. If we subtract the original amount of people who take classes we get that <math>31</math> people took the two classes. To find the amount of people who took only math class, we subtract the people who didn't take only one math class, so we get <math>70 - 31 = \boxed{\textbf{(D)} \, 39}</math>. 
+
+-fath2012
+
+--- Solution 3 ---
+<asy>
+draw(circle((-0.5,0),1));
+draw(circle((0.5,0),1));
+label("$\huge{x}$", (0, 0));
+label("$70-x$", (-1, 0));
+label("$54-x$", (1, 0));
+</asy>
+
+We know that the sum of all three areas is <math>93</math>
+So, we have: 
+<cmath>93 = 70-x+x+54-x</cmath>
+<cmath>93 = 70+54-x</cmath>
+<cmath>93 = 124 - x</cmath>
+<cmath>-31=-x</cmath>
+<cmath>x=31</cmath>
+
+We are looking for the number of students in only math. This is <math>70-x</math>. Substituting <math>x</math> with <math>31</math>, our answer is <math>\boxed{39}</math>.
+
+-mathnerdnair
+
+--- Solution 4 ---
+We are looking for students in math only, which is the complement (exactly the rest of the students) compared to those taking a language class. Since <math>54</math> students take a language (with or without math), we subtract that from the total number of students. Since <math>93-54= 39,</math> our answer is <math>\boxed{(D)  39}.</math> (It's not necessary to know that <math>70</math> students take math.)
+
+--- Solution 5 ---
+Associated video - https://www.youtube.com/watch?v=onPaMTO3dSA
+
+
+=== Problem 12 ===
+The faces of a cube are painted in six different colors: red
+
+Choices: {'A': '\\text{red}', 'B': '\\text{white}', 'C': '\\text{green}', 'D': '\\text{brown}', 'E': '\\text{purple}</math>'}
+Answer: A
+
+--- Solution 1 ---
+<math>B</math> is on the top, and <math>R</math> is on the side, and <math>G</math> is on the right side. That means that (image <math>2</math>) <math>W</math> is on the left side. From the third image, you know that <math>P</math> must be on the bottom since <math>G</math> is sideways. That leaves us with the back, so the back must be <math>A</math>. The front is opposite of the back, so the answer is <math>\boxed{\textbf{(A)}\ R}</math>.
+
+--- Solution 2 ---
+Looking closely, we can see that all faces are connected with <math>R</math> except for <math>A</math>. Thus, the answer is <math>\boxed{\textbf{(A)}\ R}</math>.
+
+It is A, just draw it out!
+
+--- Solution 3 ---
+From pic 1 and 2, we know that the G's opposite is W. From pic 1 and 3, the B's opposite is P. So the <math>A</math>'s opposite is <math>\boxed{\textbf{(A)}\ R}</math>.
+
+--- Solution 4 ---
+Associated video - https://www.youtube.com/watch?v=K5vaX_EzjEM
+
+
+=== Problem 13 ===
+A ''palindrome'' is a number that has the same value when read from left to right or from right to left. (For example, 12321 is a palindrome.) Let
+
+Choices: {'A': '2', 'B': '3', 'C': '4', 'D': '5', 'E': '6</math>'}
+Answer: A
+
+--- Solution 1 ---
+Note that the only positive 2-digit palindromes are multiples of 11, namely <math>11, 22, \ldots, 99</math>. Since <math>N</math> is the sum of 2-digit palindromes, <math>N</math> is necessarily a multiple of 11. The smallest 3-digit multiple of 11 which is not a palindrome is 110, so <math>N=110</math> is a candidate solution. We must check that 110 can be written as the sum of three distinct 2-digit palindromes; this suffices as <math>110=77+22+11</math>. Then, <math>N = 110</math>, and the sum of the digits of <math>N</math> is <math>1+1+0 = \boxed{\textbf{(A) }2}</math>.
+
+*There are other sets of 2-digit numbers that satisfy this rule. Some of them are <math>110 = 11+33+66</math> and <math>110 = 22+33+55</math>
+
+--- Solution 2 ---
+We already know that two-digit palindromes can only be two-digit multiples of 11; which are: <math>11, 22, 33, 44, 55, 66, 77, 88,</math> and <math>99</math>. Since this is clear, we will need to find out the least multiple of 11 that is not a palindrome. Then, we start counting. <math>110 \ldots</math> Aha! This multiple of 11, 110, not only isn’t a palindrome, but it also is the sum of three distinct two-digit palindromes, for example: 11 + 22 + 77, 22 + 33 + 55, and 44 + 11 + 55! The sum of <math>N</math>’s digits is  <math>1+1+0 = \boxed{\textbf{(A) }2}</math>.
+
+Thank you to the writer of Solution 1 for inspiring me to create this!
+
+EarthSaver 15:13, 11 June 2021 (EDT)
+
+--- Solution 3 ---
+As stated above, two-digit palindromes can only be two-digit multiples of 11. We can see that if we add anything that are multiples of 11 together, we will again get a multiple of 11. For instance, <imath>11+22=33</imath>. Since we know this fact and we are finding the smallest value possible, we can start with the first three-digit multiple of 11 which is <imath>110</imath>. Since this is not a palindrome and can be the sum of 3 two-digit palindromes (see above solutions for more details), <imath>110</imath> fits the bill. We can see that the sum of <imath>110</imath> 's digits is <imath>1+1+0 = \boxed{\textbf{(A) }2}</imath>.
+
+--- Solution 4 ---
+Two digit palindromes are two digit multiples of 11. When we take <imath>33 \times 3</imath>, we get 99, therefore 4 numbers that work for this would be <imath>33, 33, 33</imath> and <imath>11</imath>. To convert this into three numbers, we can subtract <imath>11</imath> from the first <imath>33</imath>, then add both <imath>11</imath>s to the last <imath>33</imath> to get the set <imath>22, 33</imath> and <imath>55</imath>. <imath>22+33+55 = 110</imath> and <imath>1+1+0 = \boxed{\textbf{(A) }2}</imath>.
+
+
+=== Problem 14 ===
+Isabella has
+
+Choices: {'A': '\\text{Monday}', 'B': '\\text{Tuesday}', 'C': '\\text{Wednesday}', 'D': '\\text{Thursday}', 'E': '\\text{Friday}</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <imath>\text{Day
+}1</imath> to <imath>\text{Day\\ }2</imath> denote a day where one coupon is redeemed and the day when the second coupon is redeemed. 
+
+If she starts on a <imath>\text{Monday}</imath>, she redeems her next coupon on <imath>\text{Thursday}</imath>. 
+
+<imath>\text{Thursday}</imath> to <imath>\text{Sunday}</imath>.
+
+Thus, <imath>\textbf{(A)}\ \text{Monday}</imath> is incorrect.
+
+
+If she starts on a <imath>\text{Tuesday}</imath>, she redeems her next coupon on <imath>\text{Friday}</imath>.
+
+<imath>\text{Friday}</imath> to <imath>\text{Monday}</imath>.
+
+<imath>\text{Monday}</imath> to <imath>\text{Thursday}</imath>.
+
+<imath>\text{Thursday}</imath> to <imath>\text{Sunday}</imath>.
+
+Thus <imath>\textbf{(B)}\ \text{Tuesday}</imath> is incorrect.
+
+
+If she starts on a <imath>\text{Wednesday}</imath>, she redeems her next coupon on <imath>\text{Saturday}</imath>.
+
+<imath>\text{Saturday}</imath> to <imath>\text{Tuesday}</imath>.
+
+<imath>\text{Tuesday}</imath> to <imath>\text{Friday}</imath>.
+
+<imath>\text{Friday}</imath> to <imath>\text{Monday}</imath>.
+
+<imath>\text{Monday}</imath> to <imath>\text{Thursday}</imath>.
+
+And on <imath>\text{Thursday}</imath>, she redeems her last coupon. 
+
+
+No Sunday occured; thus, <imath>\boxed{\textbf{(C)}\ \text{Wednesday}}</imath> is correct. 
+
+
+Checking for the other options, 
+
+
+If she starts on a <imath>\text{Thursday}</imath>, she redeems her next coupon on <imath>\text{Sunday}</imath>.
+
+Thus, <imath>\textbf{(D)}\ \text{Thursday}</imath> is incorrect.
+
+
+If she starts on a <imath>\text{Friday}</imath>, she redeems her next coupon on <imath>\text{Monday}</imath>.
+
+<imath>\text{Monday}</imath> to <imath>\text{Thursday}</imath>.
+
+<imath>\text{Thursday}</imath> to <imath>\text{Sunday}</imath>.
+
+
+Checking for the other options gave us negative results; thus, the answer is <imath>\boxed{\textbf{(C)}\ \text{Wednesday}}</imath>.
+
+--- Solution 2 ---
+Let the days of the week be numbers<imath>\pmod 7</imath>. <imath>3</imath> and <imath>7</imath> are coprime, so continuously adding <imath>3</imath> to a number<imath>\pmod 7</imath> will cycle through all numbers from <imath>0</imath> to <imath>6</imath>. If a string of 6 numbers in this cycle does not contain <imath>0</imath>, then if you minus 3 from the first number of this cycle, it will always be <imath>0</imath>. So, the answer is <imath>\boxed{\textbf{(C) Wednesday}}</imath>.
+
+--- Solution 3 ---
+Start counting on Sunday, to maximize the number of 10-day jumps before reaching Sunday again. Add the 10 (<imath>\equiv 3 \pmod 7</imath>) days to reach the first coupon day on <imath>\boxed{\textbf{(C)\ Wednesday}}</imath>.
+
+
+Note: This only works when 7 and 3 are relatively prime. Otherwise, you’d prefer to start on a day whose distance from Sunday is relatively prime to the jump size.
+
+--- Solution 4 ---
+Let Sunday be Day 0, Monday be Day 1, Tuesday be Day 2, and so forth. We see that Sundays fall on Day <imath>n</imath>, where n is a multiple of seven. If Isabella starts using her coupons on Monday (Day 1), she will fall on a Day that is a multiple of seven, a Sunday (her third coupon will be "used" on Day 21). Similarly, if she starts using her coupons on Tuesday (Day 2), Isabella will fall on a Day that is a multiple of seven (Day 42). Repeating this process, if she starts on Wednesday (Day 3), Isabella will first fall on a Day that is a multiple of seven, Day 63 (13, 23, 33, 43, 53 are not multiples of seven), but on her seventh coupon, of which she only has six. So, the answer is <imath>\boxed{\textbf{(C)}\text{ Wednesday}}</imath>.
+
+--- Solution 5 ---
+There is a ten day gap, so every time you are 3 days ahead. For Sunday to be the 7th day you must be 6 days ahead, so 6x3 = 18. 18 days prior is the same as 4 days prior to Sunday which is <imath>\boxed{\textbf{(C)}\text{ Wednesday}}</imath>.
+
+
+=== Problem 15 ===
+On a beach,
+
+Choices: {'A': '\\frac{14}{85}', 'B': '\\frac{7}{25}', 'C': '\\frac{2}{5}', 'D': '\\frac{4}{7}', 'E': '\\frac{7}{10}</math>'}
+Answer: B
+
+--- Solution 1 ---
+The number of people wearing caps and sunglasses is 
+<math>\frac{2}{5}\cdot35=14</math>. So then, 14 people out of the 50 people wearing sunglasses also have caps.
+ 
+<math>\frac{14}{50}=\boxed{\textbf{(B)}\frac{7}{25}}</math>
+
+--- Solution 2 ---
+Let <imath>A</imath> be the event that a randomly selected person is wearing sunglasses, and let <imath>B</imath> be the event that a randomly selected person is wearing a cap. We can write <imath>P(A \cap B)</imath> in two ways: <imath>P(A)P(B|A)</imath> or <imath>P(B)P(A|B)</imath>. Suppose there are <imath>t</imath> people in total. Then <cmath>P(A) = \frac{50}{t}</cmath> and <cmath>P(B) = \frac{35}{t}.</cmath> Additionally, we know that the probability that someone is wearing sunglasses given that they wear a cap is <imath>\frac{2}{5}</imath>, so <imath>P(A|B) = \frac{2}{5}</imath>. We let <imath>P(B|A)</imath>, which is the quantity we want to find, be equal to <imath>x</imath>. Substituting in, we get <cmath>\frac{50}{t} \cdot x = \frac{35}{t} \cdot \frac{2}{5}</cmath><cmath>\implies 50x = 35 \cdot \frac{2}{5}</cmath>
+<cmath>\implies 50x = 14</cmath>
+<cmath>\implies x = \frac{14}{50}</cmath>
+<cmath>= \boxed{\textbf{(B)}
+Note: This solution makes use of the dependent events probability formula, <imath>P(A \cap B) = P(A)P(B|A)</imath>, where <imath>P(B|A)</imath> represents the probability that <imath>B</imath> occurs given that <imath>A</imath> has already occurred and <imath>P(A \cup B)</imath> represents the probability of both <imath>A</imath> and <imath>B</imath> happening.
+
+
+=== Problem 16 ===
+Qiang drives
+
+Choices: {'A': '45', 'B': '62', 'C': '90', 'D': '110', 'E': '135'}
+Answer: D
+
+--- Solution 1 ---
+The only option that is easily divisible by <imath>55</imath> is <imath>110</imath>, which gives 2 hours of travel. And, the formula is <imath>\frac{15}{30} + \frac{110}{55} = \frac{5}{2}</imath>.
+
+And, <imath>\text{Average Speed}</imath> = <imath>\frac{\text{Total Distance}}{\text{Total Time}}</imath>.
+ 
+Thus, <imath>\frac{125}{50} = \frac{5}{2}</imath>.
+
+Both are equal and thus our answer is <imath>\boxed{\textbf{(D)}\ 110}.</imath>
+
+--- Solution 2 ---
+To calculate the average speed, simply evaluate the total distance over the total time. Let the number of additional miles he has to drive be <imath>x.</imath> Therefore, the total distance is <imath>15+x</imath> and the total time (in hours) is <cmath>\frac{15}{30}+\frac{x}{55}=\frac{1}{2}+\frac{x}{55}.</cmath> We can set up the following equation: <cmath>\frac{15+x}{\frac{1}{2}+\frac{x}{55}}=50.</cmath> Simplifying the equation, we get <cmath>15+x=25+\frac{10x}{11}.</cmath> Solving the equation yields <imath>x=110,</imath> so our answer is <imath>\boxed{\textbf{(D)}\ 110}</imath>.
+
+--- Solution 3 ---
+If he travels <imath>15</imath> miles at a speed of <imath>30</imath> miles per hour, he travels for 30 min. Average rate is total distance over total time so <imath>(15+d)/(0.5 + t) = 50</imath>, where d is the distance left to travel and t is the time to travel that distance. Solve for <imath>d</imath> to get <imath>d = 10+50t</imath>. You also know that he has to travel <imath>55</imath> miles per hour for some time, so <imath>d=55t</imath>. Plug that in for d to get <imath>55t = 10+50t</imath> and <imath>t=2</imath> and since <imath>d=55t</imath>, <imath>d = 2\cdot55 =110</imath>, the answer is <imath>\boxed{\textbf{(D)}\ 110}</imath>.
+
+--- Solution 4 ---
+Let <imath>h</imath> be the amount of hours Qiang drives after his first 15 miles. Average speed, which we know is <imath>50</imath> mph, means total distance over total time. For 15 miles at 30 mph, the time taken is <imath>\frac{1}{2}</imath> hour, so the total time for this trip would be <imath>\frac{1}{2} + h</imath> hours. For the total distance, 15 miles are traveled in the first part and <imath>55h</imath> miles in the second. This gives the following equation: 
+
+
+<cmath>\dfrac{15+55h}{\frac{1}{2}+h} = 50.</cmath> 
+
+
+
+
+Cross multiplying, we get that <imath>15 + 55h = 50h + 25</imath>, and simple algebra gives <imath>h=2</imath>. In 2 hours traveling at 55 mph, the distance traveled is <imath>\frac{2 \hspace{0.05 in} \text{hours}}{1} \cdot \frac{55 \hspace{0.05 in} \text{miles}}{1 \hspace{0.05 in} \text{hour}} = 2 \cdot 55 \hspace{0.05 in} \text{miles} = 110 \hspace{0.05 in} \text{miles}</imath>, which is choice <imath>\boxed{\textbf{(D)}\ 110}</imath>.
+
+
+=== Problem 17 ===
+What is the value of the product 
+
+<cmath>\left(\frac{1\cdot3}{2\cdot2}\right)\left(\frac{2\cdot4}{3\cdot3}\right)\left(\frac{3\cdot5}{4\cdot4}\right)\cdots\left(\frac{97\cdot99}{98\cdot98}\right)\left(\frac{98\cdot100}{99\cdot99}\right)?</cmath>
+
+Choices: {'A': '\\frac{1}{2}', 'B': '\\frac{50}{99}', 'C': '\\frac{9800}{9801}', 'D': '\\frac{100}{99}', 'E': '50</math>'}
+Answer: B
+
+--- Solution 1 ---
+We rewrite: <cmath>\frac{1}{2}\cdot\left(\frac{3\cdot2}{2\cdot3}\right)\left(\frac{4\cdot3}{3\cdot4}\right)\cdots\left(\frac{99\cdot98}{98\cdot99}\right)\cdot\frac{100}{99}</cmath>
+
+The middle terms cancel, leaving us with
+
+<cmath>\left(\frac{1\cdot100}{2\cdot99}\right)= \boxed{\textbf{(B)}\frac{50}{99}}</cmath>
+
+--- Solution 2 ---
+If you calculate the first few values of the equation, all of the values tend to be around <imath>\frac{1}{2}</imath>, but are not equal to it. The answer closest to <imath>\frac{1}{2}</imath> but not equal to it is <imath>\boxed{\textbf{(B)}\frac{50}{99}}</imath>.
+
+--- Solution 3 ---
+Rewriting the numerator and the denominator, we get <math>\frac{\frac{100! \cdot 98!}{2}}{\left(99!\right)^2}</math>. We can simplify by canceling 99! on both sides, leaving us with: <math>\frac{100 \cdot 98!}{2 \cdot 99!}</math> We rewrite <math>99!</math> as <math>99 \cdot 98!</math> and cancel <math>98!</math>, which gets <math>\boxed{\textbf{(B)}\frac{50}{99}}</math>.
+
+--- Solution 4 ---
+All of the terms have the form <math>\frac{k^2-1}{k^2}</math>, which is <math><1</math>, so the product is <math><1</math>, so we eliminate options (D) and (E). (C) is too close to 1 to be possible. The partial products seem to be approaching 1/2, so we guess that 1/2 is the limit/asymptote, and so any finite product would be slightly larger than 1/2. Therefore, by process of elimination and a small guess, we get that the answer is <math>\boxed{\textbf{(B)}\frac{50}{99}}</math>.
+
+--- Solution 5 ---
+The product
+<cmath>
+\left(\frac{1 \cdot 3}{2 \cdot 2}\right) \left(\frac{2 \cdot 4}{3 \cdot 3}\right) \left(\frac{3 \cdot 5}{4 \cdot 4}\right) \cdots \left(\frac{98 \cdot 100}{99 \cdot 99}\right)
+</cmath>
+can be simplified by observing that in each individual fraction, the numerator and denominator contain factors that cancel out with adjacent terms. Specifically, the factor 3 in the numerator of the first fraction cancels with the 3 in the denominator of the second fraction, the 4 in the numerator of the second fraction cancels with the 4 in the denominator of the third fraction, and so on. This telescoping cancellation continues throughout the entire product.
+
+After all the cancellations, only the first factor of the first fraction, \( \frac{1}{2} \), and the last factor of the last fraction, \( \frac{100}{99} \), remain. The value of the product is therefore:
+<cmath>
+\frac{1}{2} \cdot \frac{100}{99} = \frac{50}{99}.
+</cmath>
+Thus, the value of the product is:
+(B) \(\frac{50}{99}\).
+
+-- Rayansh Mankad(SharpWhiz17)
+
+
+=== Problem 18 ===
+The faces of each of two fair dice are numbered 1, 2, 3, 5, 7, and 8. When the two dice are tossed, what is the probability that their sum will be an even number?
+
+Choices: {'A': '\\frac{4}{9}', 'B': '\\frac{1}{2}', 'C': '\\frac{5}{9}', 'D': '\\frac{3}{5}', 'E': '\\frac{2}{3}</math>'}
+Answer: 
+
+--- Solution 1 ---
+We have <imath>2</imath> dice with <imath>2</imath> evens and <imath>4</imath> odds on each die. For the sum to be even, the 2 rolls must be <imath>2</imath> odds or <imath>2</imath> evens. 
+
+Ways to roll <imath>2</imath> odds (Case <imath>1</imath>): The total number of ways to obtain <imath>2</imath> odds on 2 rolls is <imath>4*4=16</imath>, as there are <imath>4</imath> possible odds on the first roll and <imath>4</imath> possible odds on the second roll.
+
+Ways to roll <imath>2</imath> evens (Case <imath>2</imath>): Similarly, we have <imath>2*2=4</imath> ways to obtain 2 evens. Probability is <imath>\frac{20}{36}=\frac{5}{9}</imath>, or <imath>\framebox{C}</imath>.
+
+--- Solution 2 ---
+We count the ways to get an odd. If the sum is odd, then we must have an even and an odd. The probability of an even is <imath>\frac{1}{3}</imath> , and the probability of an odd is <imath>\frac{2}{3}</imath>. We have to multiply by <imath>2</imath> because the even and odd can be in any order. This gets us <imath>\frac{4}{9}</imath>, so the answer is <imath>1 - \frac{4}{9} = \frac{5}{9} = \boxed{(\textbf{C})}</imath>.
+
+--- Solution 3 ---
+To get an even, you must get either 2 odds or 2 evens. The probability of getting 2 odds is <imath>\frac{4}{6} \times \frac{4}{6}</imath>. The probability of getting 2 evens is <imath>\frac{2}{6} \times \frac{2}{6}</imath>. If you add them together, you get <imath>\frac{16}{36} + \frac{4}{36}</imath> = <imath>\boxed{(\textbf{C})  \frac{5}{9}}</imath>.
+
+
+=== Problem 19 ===
+In a tournament there are six teams that play each other twice. A team earns
+
+Choices: {'A': '22', 'B': '23', 'C': '24', 'D': '26', 'E': '30</math>'}
+Answer: C
+
+--- Solution 1 ---
+Each team wins once and loses once to get the highest points.  For a win, we have <imath>3</imath> points, so a team gets <imath>3\times2=6</imath> points if they each win a game and lose a game. Against the other 3 teams, there are 6 games. If each team wins each of those six games, they get <imath>3\cdot6=18</imath> points This  brings a total of <imath>18+6=\boxed {\textbf {(C) }24}</imath> points. 
+
+--------------------------
+Note that this can be easily seen to be the best case as follows. Let <imath>x_A</imath> be the number of points <imath>A</imath> gets, <imath>x_B</imath> be the number of points <imath>B</imath> gets, and <imath>x_C</imath> be the number of points <imath>C</imath> gets. Since <imath>x_A = x_B = x_C</imath>, to maximize <imath>x_A</imath>, we can just maximize <imath>x_A + x_B + x_C</imath>. But in each match, if one team wins then the total sum increases by <imath>3</imath> points, whereas if they tie, the total sum increases by <imath>2</imath> points. So, it is best if there are the fewest ties possible.
+
+--- Solution 2 ---
+We can name the top three teams as <math>A</math>, <math>B</math>, and <math>C</math>. We can see that (respective scores of) <math>A=B=C</math> because these teams have the same points. If we look at the matches that involve the top three teams, we see that there are some duplicates: <math>AB</math>, <math>BC</math>, and <math>AC</math> come twice. In order to even out the scores and get the maximum score, we can say that in match <math>AB</math>, <math>A</math> and <math>B</math> each win once out of the two games that they play. We can say the same thing for <math>AC</math> and <math>BC</math>. This tells us that each team <math>A</math>, <math>B</math>, and <math>C</math> win and lose twice. This gives each team a total of <math>3 + 3 + 0 + 0 = 6</math> points. Now, we need to include the other three teams. We can label these teams as <math>D</math>, <math>E</math>, and <math>F</math>. We can write down every match that <math>A, B,</math> or <math>C</math> plays in that we haven't counted yet: <math>AD</math>, <math>AD</math>, <math>AE</math>, <math>AE</math>, <math>AF</math>, <math>AF</math>, <math>BD</math>, <math>BD</math>, <math>BE</math>, <math>BE</math>, <math>BF</math>, <math>BF</math>, <math>CD</math>, <math>CD</math>, <math>CE</math>, <math>CE</math>, <math>CF</math>, and <math>CF</math>. We can say <math>A</math>, <math>B</math>, and <math>C</math> win each of these in order to obtain the maximum score that <math>A</math>, <math>B</math>, and <math>C</math> can have. If <math>A</math>, <math>B</math>, and <math>C</math> win all six of their matches, <math>A</math>, <math>B</math>, and <math>C</math> will have a score of <math>18</math>. <math>18 + 6</math> results in a maximum score of <math>\boxed{\textbf{(C) }24}</math>
+<!-- Edited by Lvluo -->
+
+--- Solution 3 ---
+To start, we calculate how many games each team plays. Each team can play against <math>5</math> other teams twice, so there are <math>10</math> games that each team plays. So the answer is <math>10\cdot 3</math> which is <math>30</math> But wait... if we want <math>3</math> teams to have the same amount of points, there can't possibly be a team who wins all their games. Let the top three teams be <math>A,B</math>, and <math>C.</math> <math>A</math> plays <math>B</math> and <math>C</math> twice, so in order to maximize the games being played, we can split it <math>50-50</math> between the <math>4</math> games <math>A</math> plays against <math>B</math> or <math>C</math>. We find that we just subtract <math>2</math> games or <math>6</math> points. Therefore the answer is <math>30-6</math>, <math>24</math>
+or <math>\boxed{\textbf{(C) }24}</math>
+
+--- Solution 4 ---
+Let the top <math>3</math> teams be <math>A, B, C</math> and the bottom teams to be <math>D, E, F</math>. There are <math>2</math> types of games the winners (<math>A, B, C</math>) can play: Winners vs losers and Winner vs Winner.
+
+Case 1: Winner vs Loser
+
+For A, it would be <math>AD, AE, AF</math>. We want to maximize this or make <math>A</math> win in all <math>6</math> (<math>3\times2</math>) games. Therefore, A would get <math>6\times3</math> points or <math>18</math>.
+
+Case 2: Winner vs Winner
+
+There are <math>_{3}P_{2}=\frac{3!}{1!}=6</math> games they can play against each other. Since we want each <math>3</math> to have an equal amount. Each team should win <math>2</math> games and get <math>6</math> points. In total, <math>18+6=\boxed{\textbf{(C) }24}</math>
+
+--- Solution 5 ---
+Name the teams A, B, C, D, E, and F.
+As we know that the top three teams, A, B, and C, tied, we can just focus on one, A. When A plays B or C, we want them to both win one and lose one, maximising the points for both teams. When A plays D, E, or F, we want A to win both times. This adds up to <imath>3+3</imath>(top teams)<imath>+6+6+6</imath> (other teams), which equals 24 points.
+
+This solution is by far the fastest and probably most used
+
+
+=== Problem 20 ===
+How many different real numbers
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '4', 'E': '8</math>'}
+Answer: D
+
+--- Solution 1 ---
+We have that <imath>(x^2-5)^2 = 16</imath> if and only if <imath>x^2-5 = \pm 4</imath>. If <imath>x^2-5 = 4</imath>, then <imath>x^2 = 9 \implies x = \pm 3</imath>, giving 2 solutions. If <imath>x^2-5 = -4</imath>, then <imath>x^2 = 1 \implies x = \pm 1</imath>, giving 2 more solutions. All four of these solutions work, so the answer is <imath>\boxed{\textbf{(D) }4}</imath>. Further, the equation is a [[quartic Equation|quartic]] in <imath>x</imath>, so by the [https://artofproblemsolving.com/wiki/index.php/Fundamental_Theorem_of_Algebra Fundamental Theorem of Algebra], there can be at most four real solutions.
+
+--- Solution 2 ---
+We can expand <imath>(x^2-5)^2</imath> to get <imath>x^4-10x^2+25</imath>, so now our equation is <imath>x^4-10x^2+25=16</imath>. Subtracting <imath>16</imath> from both sides gives us <imath>x^4-10x^2+9=0</imath>. Now, we can factor the left-hand side to get <imath>(x^2-9)(x^2-1)=0</imath>. If <imath>x^2-9</imath> and/or <imath>x^2-1</imath> equals <imath>0</imath>, then the entire left side will equal <imath>0</imath>. Since the solutions can be both positive and negative, we have <imath>4</imath> solutions: <imath>-3,3,-1,1</imath> (we can find these solutions by setting <imath>x^2-9</imath> and <imath>x^2-1</imath> equal to <imath>0</imath> and solving for <imath>x</imath>). So, the answer is <imath>\boxed{\textbf{(D) }4}</imath>. Note: every positive root can also be shown as negative
+
+--- Solution 3 ---
+Subtract 16 from both sides and factor using difference of squares: 
+
+
+
+<cmath>(x^2 - 5)^2 = 16 </cmath>
+<cmath>(x^2 - 5)^2 - 16 =0 </cmath>
+<cmath>(x^2 - 5)^2 - 4^2 = 0 </cmath>  
+<cmath>[(x^2 - 5)-4][(x^2 - 5) + 4] = 0</cmath>
+<cmath>(x^2 - 9)(x^2 - 1) =0 </cmath>
+<cmath>(x+3)(x-3)(x+1)(x-1) = 0. </cmath>
+
+
+Quite obviously, this equation has <imath>\boxed{\textbf{(D) }4}</imath> solutions.
+
+--- Solution 4 ---
+Associated Video - https://www.youtube.com/watch?v=Q5yfodutpsw
+
+https://youtu.be/0AY1klX3gBo
+
+--- Solution 5 ---
+https://youtu.be/5BXh0JY4klM (Uses a difference of squares & factoring method, different from above solutions)
+
+--- Solution 6 ---
+https://www.youtube.com/watch?v=44vrsk_CbF8&list=PLLCzevlMcsWNBsdpItBT4r7Pa8cZb6Viu&index=2
+
+
+=== Problem 21 ===
+What is the area of the triangle formed by the lines
+
+Choices: {'A': '4', 'B': '8', 'C': '10', 'D': '12', 'E': '16</math>'}
+Answer: E
+
+--- Solution 1 ---
+First, we need to find the coordinates where the graphs intersect. 
+
+We want the points x and y to be the same. Thus, we set <math>5=x+1,</math> and get <math>x=4.</math> Plugging this into the equation, <math>y=1-x,</math> 
+<math>y=5</math>, and <math>y=1+x</math> intersect at <math>(4,5)</math>, we call this line x.
+
+Doing the same thing, we get <math>x=-4.</math> Thus, <math>y=5</math>. Also,
+<math>y=5</math> and <math>y=1-x</math> intersect at <math>(-4,5)</math>, and we call this line y.
+
+It's apparent the only solution to <math>1-x=1+x</math> is <math>0.</math> Thus, <math>y=1.</math>
+<math>y=1-x</math> and <math>y=1+x</math> intersect at <math>(0,1)</math>, we call this line z.
+
+Using the [[Shoelace Theorem]] we get: <cmath>\left(\frac{(20-4)-(-20+4)}{2}\right)=\frac{32}{2}</cmath> <math>=</math> So, our answer is <math>\boxed{\textbf{(E)}\ 16.}</math>
+
+We might also see that the lines <math>y</math> and <math>x</math> are mirror images of each other. This is because, when rewritten, their slopes can be multiplied by <math>-1</math> to get the other. As the base is horizontal, this is an isosceles triangle with base 8, as the intersection points have a distance of 8. The height is <math>5-1=4,</math> so <math>\frac{4\cdot 8}{2} = \boxed{\textbf{(E)} 16.}</math>
+
+
+Warning: Do not use the distance formula for the base then use Heron's formula. It will take you half of the time you have left!
+
+--- Solution 2 ---
+Graphing the lines, using the intersection points we found in Solution 1, we can see that the height of the triangle is 4, and the base is 8. Using the formula for the area of a triangle, we get <imath>\frac{4\cdot8}{2}</imath>, which is equal to <imath>\boxed{\textbf{(E)}\ 16}</imath>.
+
+--- Solution 3 ---
+<math>y = x + 1</math> and <math>y = -x + 1</math> have <math>y</math>-intercepts at <math>(0, 1)</math> and slopes of <math>1</math> and <math>-1</math>, respectively. Since the product of these slopes is <math>-1</math>, the two lines are perpendicular. From <math>y = 5</math>, we see that <math>(-4, 5)</math> and <math>(4, 5)</math> are the other two intersection points, and they are <math>8</math> units apart. By symmetry, this triangle is a <math>45-45-90</math> triangle, so the legs are <math>4\sqrt{2}</math> each and the area is <math>\frac{(4\sqrt{2})^2}{2} = \boxed{\textbf{(E)}\ 16}</math>.
+
+
+=== Problem 22 ===
+A store increased the original price of a shirt by a certain percent and then decreased the new price by the same percent. Given that the resulting price was
+
+Choices: {'A': '16', 'B': '20', 'C': '28', 'D': '36', 'E': '40'}
+Answer: E
+
+--- Solution 1 ---
+Suppose the fraction of discount is <imath>x</imath>. That means <imath>(1-x)(1+x)=0.84</imath>; so, <imath>1-x^{2}=0.84</imath>, and <imath>(x^{2})=0.16</imath>, procuring <imath>x=0.4</imath>. Therefore, the price was increased and decreased by <imath>40</imath>%, or <imath>\boxed{\textbf{(E)}\ 40}</imath>.
+
+==Solution 1.1 == 
+
+After the first increase by <imath>p</imath> percent, the shirt price became <imath>(1+p)</imath> times greater than the original. Upon the decrease in p percent on this price, the shirt price became <imath>(1-p)</imath> times less than <imath>(1+p)</imath>, or <imath>(1-p)(1+p)</imath>. We know that this price is <imath>84</imath> percent of the original, so <imath>(1-p)(1+p) = 0.84</imath>. 
+
+
+
+From here, we can list the factors of <imath>0.84</imath> and see which are equidistant from <imath>1</imath>. We see that <imath>0.6</imath> and <imath>1.4</imath> are both <imath>0.4</imath> from <imath>1</imath>, so <imath>p = 0.4 = 40 \%</imath>, or choice <imath>\boxed{\textbf{(E)}\ 40}</imath>.
+
+--- Solution 2 ---
+We can try out every option and see which one works. By this method, we get <imath>\boxed{\textbf{(E)}\ 40}</imath>.
+
+--- Solution 3 ---
+Let x be the discount. We can also work in reverse such as (<imath>84</imath>)<imath>(\frac{100}{100-x})</imath><imath>(\frac{100}{100+x})</imath> = <imath>100</imath>.
+
+Thus, <imath>8400</imath> = <imath>(100+x)(100-x)</imath>. Solving for <imath>x</imath> gives us <imath>x = 40, -40</imath>. But <imath>x</imath> has to be positive. Thus, <imath>x</imath> = <imath>40</imath>.
+
+==Solution 4 
+Let our original cost be <imath>\$ 100.</imath> We are looking for a result of <imath>\$ 84,</imath> then. We try 16% and see it gets us higher than 84. We try 20% and see it gets us lower than 16 but still higher than 84. We know that the higher the percent, the less the value. We try 36, as we are not progressing much, and we are close! We try <imath>\boxed{40\%}</imath>, and we have the answer; it worked.
+(OR: try (C) first to eliminate 2 answer choices)
+
+--- Solution 4 ---
+Let our original cost be <imath>\$ 100</imath>, so we are looking for a whole number of <imath>\$ 84</imath>. Also, we can see that (A), (C), and (D) give us answers with decimals while we know that (B) and (E) give us whole numbers. Therefore, we only need to try these two: (B) <imath>\$100</imath> increased by 20% = <imath>\$120</imath>, and <imath>\$120</imath> decreased by 20% = <imath>\$96</imath>, a whole number, and (E) <imath>\$100</imath> increased by 40% = <imath>\$140</imath>, and <imath>\$140</imath> decreased by 40% = <imath>\$84</imath>, a whole number.
+
+Thus, <imath>40</imath>% or <imath>\boxed{\textbf{(E)}\ 40}</imath> is the answer.
+
+--- Solution 5 ---
+First find the prime factors of 84. These are 2,2,3 and 7. Using this, try the answers. For example, 100*1.2/1.2. This is equal to 120*0.8. If you find the factors of 12 and 8, you find that there is no seven and too many 2's. So <imath>\boxed{\textbf{(B)}\ 20}</imath> is out. Using the same method, you can find that 116*0.84 is out, as 84 already has all the factors of 84. 128*0.72 and 136*0.64 both don't have seven as a factor, so <imath>\boxed{\textbf{(A)}\ 16}</imath>, <imath>\boxed{\textbf{(C)}\ 28}</imath>, and <imath>\boxed{\textbf{(D)}\ 36}</imath> is out.  This leaves 140*0.6, which has just the right amount of factors (2^2,3, and 7). Therefore, the answer is <imath>\boxed{\textbf{(E)}\ 40}</imath>
+
+
+=== Problem 23 ===
+After Euclid High School's last basketball game, it was determined that
+
+Choices: {'A': '10', 'B': '11', 'C': '12', 'D': '13', 'E': '14</math>'}
+Answer: B
+
+--- Solution 1 ---
+Given the information above, we start with the equation <math>\frac{t}{4}+\frac{2t}{7} + 15 + x = t</math>, where <math>t</math> is the total number of points scored and <math>x\le 14</math> is the number of points scored by the remaining 7 team members, we can simplify to obtain the Diophantine equation <math>x+15 = \frac{13}{28}t</math>, or <math>28x+28\cdot 15=13t</math>. Since <math>t</math> is necessarily divisible by 28, let <math>t=28u</math> where <math>u \ge 0</math> and divide by 28 to obtain <math>x + 15 = 13u</math>. Then, it is easy to see <math>u=2</math> (<math>t=56</math>) is the only candidate remaining, giving <math>x=\boxed{\textbf{(B)} 11}</math>. 
+
+-scrabbler94
+
+~Minor Edits by [[User: Wrenmath|Wrenmath]]
+
+--- Solution 2 ---
+We first start by setting the total number of points as <math>28</math>, since <math>\text{LCM}(4,7) = 28</math>. However, we see that this does not work since we surpass the number of points just with the information given (<math>28\cdot\frac{1}{4}+28\cdot\frac{2}{7} + 15 = 30</math> <math>(> 28)</math> ). Next, we can see that the total number of points scored is <math>56</math> as, if it is more than or equal to <math>84</math>, at least one of the others will score more than 2 points. With this, we have that Alexa, Brittany, and Chelsea score: <math>56\cdot\frac{1}{4}+56\cdot\frac{2}{7} + 15 = 45</math>, and thus, the other seven players would have scored a total of <math>56-45 = \boxed{\textbf{(B)} 11}</math>. (We see that this works since we could have <math>4</math> of them score <math>2</math> points, and the other <math>3</math> of them score <math>1</math> point.) 
+
+-aops5234 -Edited by [[User: Penguin_Spellcaster|Penguin_Spellcaster]]
+
+==Solution 3 — Modular Arithmetic ==
+
+Adding together Alexa's and Brittany's fractions, we get <math>\frac{15}{28}</math> as the fraction of the total number of points they scored together. However, this is just a ratio, so we can introduce a variable: <math>\frac{15x}{28x}</math> where <math>x</math> is the common ratio. Let <math>y</math> and <math>z</math> and <math>w</math> be the number of people who scored 1, 2, and 0 points, respectively. Writing an equation, we have <math>\frac{13x}{28x} = 15 + y + 2z + 0w.</math> We want all of our variables to be integers. Thus, we want <math>15 + y + 2z = 0 \pmod {13}.</math> Simplifying, <math>y+2z = 11 \pmod {13}.</math> The only possible value, as this integer sum has to be less than <math>7 \cdot 2 + 1 = 15,</math> must be 11. Therefore, <math>y+2z = 11,</math> and the answer is <math>\boxed{ \textbf{(B) 11}}</math>.
+
+- ab2024
+
+==Solution 4: Answer choices==
+We can rewrite the question as an algebraic equation: <imath>\frac{1}{4} T + \frac{2}{7} T + 15 + y = x</imath>, where <imath>x</imath> represents the total amount of points and <imath>y</imath> the amount of points the <imath>7</imath> other players scored. From there, we add the two fractions to get <imath>\frac{15}{28} x + 15 + y = x</imath>. Subtracting <imath>\frac{15}{28} x</imath> from both sides, we get <imath>\frac{13}{28} x = y + 15</imath>. We multiply each side by <imath>28</imath> to get rid of the denominator, in which we get <imath>13x = 420 + 28y</imath>. Now let’s think of this logically. This equation is telling us that if you add <imath>420</imath> and <imath>28</imath> times the amount of points scored by the extra <imath>7</imath> players, you get <imath>13</imath> times the amount of points total. And since we have to have a whole number of points total, this means that <imath>420 + 28y</imath> must be divisible by <imath>13</imath>. Plugging in all the answer choices for <imath>y</imath>, we find that the only answer that makes <imath>420 + 28y</imath> divisible by <imath>13</imath> is <imath>\boxed{ \textbf{(B) 11}}</imath>.
+
+
+=== Problem 24 ===
+In triangle
+
+Choices: {'A': '24', 'B': '30', 'C': '32', 'D': '36', 'E': '40</math>'}
+Answer: B
+
+--- Solution 1 ---
+We use the line-segment ratios to infer area ratios and height ratios.
+
+Areas:
+
+<imath>AD:DC = 1:2 \implies AD:AC = 1:3 \implies [ABD] =\frac{[ABC]}{3} = 120</imath>.
+
+<imath>BE:BD = 1:2 \text{ (midpoint)}  \implies  [ABE] = \frac{[ABD]}{2} = \frac{120}{2} = 60</imath>.
+
+Heights:
+
+Let <imath>h_A</imath> = height (of altitude) from <imath>\overline{BC}</imath> to <imath>A</imath>.
+
+<imath>AD:DC = 1:2  \implies CD:CA = 2:3  \implies  \text{height } h_D</imath> from <imath>\overline{BC}</imath> to <imath>D</imath> is <imath>\frac{2}{3}h_A</imath>.
+
+
+<imath>BE:BD = 1:2 \text{ (midpoint)}  \implies  \text{height } h_E</imath> from <imath>\overline{BC}</imath> to <imath>E</imath> is <imath>\frac{1}{2} h_D = \frac{1}{2}(\frac{2}{3} h_A) = \frac{1}{3} h_A</imath>. 
+
+
+Conclusion:
+
+<imath>\frac{[EBF]} {[ABF]} =  \frac{[EBF]} {[EBF] + [ABE]} =   \frac{[EBF]} {[EBF]+60}</imath>,  and also <imath>\frac{[EBF]} {[ABF]} = \frac{h_E}{h_A} = \frac{1}{3} </imath>.
+
+
+So, <imath>\frac{[EBF]} {[EBF] + 60} =  \frac{1}{3}</imath>, and thus, <imath>[EBF] = \boxed{\textbf{(B) }30}</imath>
+
+--- Solution 2 ---
+Draw <imath>X</imath> on <imath>\overline{AF}</imath> such that <imath>\overline{XD}</imath> is parallel to <imath>\overline{BC}</imath>.
+
+Triangles <imath>BEF</imath> and <imath>EXD</imath> are similar, and since <imath>BE = ED</imath>, they are also congruent, and so <imath>XE=EF</imath> and <imath>XD=BF</imath>.
+ 
+<imath>AC:AD = 3</imath> implies <imath>\frac{AF}{AX} = 3 = \frac{FC}{XD} = \frac{FC}{BF}</imath>, so <imath>BC=BF + 3BF = 4BF</imath>, <imath> BF=\frac{BC}{4}</imath>. 
+
+
+Since <imath>XE=EF</imath>,  <imath>AX = XE = EF</imath>, and since <imath>AX + XE + EF = AF</imath>, all of these are equal to <imath>\frac{AF}{3}</imath>, and so the altitude of triangle <imath>BEF</imath> is equal to <imath>\frac{1}{3}</imath> of the altitude of <imath>ABC</imath>. 
+
+The area of <imath>ABC</imath> is <imath>360</imath>, so the area of<imath> \triangle EBF=\frac{1}{3} \cdot \frac{1}{4} \cdot 360=\boxed{\textbf{(B) }30}</imath>.
+
+--- Solution 3 ---
+<asy>
+/* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki go to User:Azjps/geogebra */
+import graph; size(7cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -6.28, xmax = 6.28, ymin = -5.49, ymax = 5.73;  /* image dimensions */
+pen wrwrwr = rgb(0.3803921568627451,0.3803921568627451,0.3803921568627451); 
+ /* draw figures */
+draw((0.28,2.39)--(-2.8,-1.17), linewidth(2) + wrwrwr); 
+draw((-2.8,-1.17)--(3.78,-1.05), linewidth(2) + wrwrwr); 
+draw((3.78,-1.05)--(0.28,2.39), linewidth(2) + wrwrwr); 
+draw((-2.8,-1.17)--(1.2887445398528459,1.3985482236874887), linewidth(2) + wrwrwr); 
+draw((0.28,2.39)--(-0.7199623188673492,-1.1320661821070033), linewidth(2) + wrwrwr); 
+draw(circle((-0.1,2.93), 0.46818799642878495), linewidth(2) + wrwrwr); 
+draw(circle((-0.1,2.93), 0.46818799642878495), linewidth(2) + wrwrwr); 
+draw(circle((4.48,-1.28), 0.46818799642878506), linewidth(2) + wrwrwr); 
+draw(circle((1.98,1.56), 0.46818799642878495), linewidth(2) + wrwrwr); 
+draw(circle((-3.36,-1.62), 0.46818799642878517), linewidth(2) + wrwrwr); 
+draw(circle((0.16,0.14), 0.46818799642878495), linewidth(2) + wrwrwr); 
+draw(circle((-0.74,-1.81), 0.46818799642878495), linewidth(2) + wrwrwr); 
+ /* dots and labels */
+dot((0.28,2.39),dotstyle); 
+label("$A$", (0.36,2.59), NE * labelscalefactor); 
+dot((-2.8,-1.17),dotstyle); 
+label("$B$", (-2.72,-0.97), NE * labelscalefactor); 
+dot((3.78,-1.05),dotstyle); 
+label("$C$", (3.86,-0.85), NE * labelscalefactor); 
+dot((1.2887445398528459,1.3985482236874887),dotstyle); 
+label("$D$", (1.36,1.59), NE * labelscalefactor); 
+dot((-0.7199623188673492,-1.1320661821070033),dotstyle); 
+label("$F$", (-0.64,-0.93), NE * labelscalefactor); 
+dot((-0.2815567696989588,0.41208536204620183),linewidth(4pt) + dotstyle); 
+label("$E$", (-0.2,0.57), NE * labelscalefactor); 
+label("2", (-0.18,2.81), NE * labelscalefactor,wrwrwr); 
+label("1", (4.4,-1.39), NE * labelscalefactor,wrwrwr); 
+label("3", (1.9,1.45), NE * labelscalefactor,wrwrwr); 
+label("3", (-3.44,-1.73), NE * labelscalefactor,wrwrwr); 
+label("6", (0.08,0.03), NE * labelscalefactor,wrwrwr); 
+label("4", (-0.82,-1.93), NE * labelscalefactor,wrwrwr); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+ /* end of picture */
+</asy>
+
+First, when we see the problem, we see ratios, and we see that this triangle basically has no special properties (right, has medians, etc.) and this screams [[Mass_points|mass points]] at us. 
+
+The triangle we will consider is <imath>\triangle ABC</imath> (obviously), and we will let <imath>E</imath> be the center of mass, so that <imath>D</imath> balances <imath>A</imath> and <imath>C</imath> (this is true since <imath>E</imath> balances <imath>B</imath> and <imath>D</imath>, but <imath>E</imath> also balances <imath>A</imath> and <imath>B</imath> and <imath>C</imath> so <imath>D</imath> balances <imath>A</imath> and <imath>C</imath>), and <imath>F</imath> balances <imath>B</imath> and <imath>C</imath>.
+
+We know that <imath>AD:CD=1:2</imath> and <imath>D</imath> balances <imath>A</imath> and <imath>C</imath> so we assign <imath>2</imath> to <imath>A</imath> and <imath>1</imath> to <imath>C</imath>. Then, since <imath>D</imath> balances <imath>A</imath> and <imath>C</imath>, we get <imath>D = A + C = 2 + 1 = 3</imath> (by mass points addition).
+
+Next, since <imath>E</imath> balances <imath>B</imath> and <imath>D</imath> in a ratio of <imath>BE:DE=1:1</imath>, we know that <imath>B=D=3</imath>. Similarly, by mass points addition, <imath>E=B+D=3+3=6</imath>.
+
+Finally, <imath>F</imath> balances <imath>B</imath> and <imath>C</imath> so <imath>F=B+C=3+1=4</imath>. We can confirm we have done everything right by noting that <imath>E</imath> balances <imath>A</imath> and <imath>F</imath>, so <imath>E</imath> should equal <imath>A+F</imath>, which it does.
+
+Now that our points have weights, we can solve the problem. <imath>BF:FC=1:3</imath> so <imath>BF:BC=1:4</imath> so <imath>[ABF]=\frac{1}{4}[ABC]=90</imath>. Also, <imath>EF:EA=2:4=1:2</imath> so <imath>EF:AF=1:3</imath> so <imath>[EBF]=\frac{1}{3}[ABF]=\boxed{\textbf{(B) }30}</imath>.
+
+-Firebolt360 and Brudder
+
+Note: We can also find the ratios of the areas using the reciprocal of the product of the mass points of <imath>EBF</imath> over the product of the mass points of <imath>ABC</imath> which is <imath>\frac{2\times3\times1}{3\times6\times4}\times360</imath> which also yields <imath>\boxed{\textbf{(B) }30}</imath>.
+
+-Brudder
+
+--- Solution 4 ---
+<imath>\frac{BF}{FC}</imath> is equal to <imath>\frac{\textrm{The area of triangle ABF}}{\textrm{The area of triangle ACF}}</imath>. The area of triangle <imath>ABE</imath> is equal to <imath>60</imath> because it is equal to one-half of the area of triangle <imath>ABD</imath>, which is equal to one-third of the area of triangle <imath>ABC</imath>, which is <imath>360</imath>. The area of triangle <imath>ACE</imath> is the sum of the areas of triangles <imath>AED</imath> and <imath>CED</imath>, which is respectively <imath>60</imath> and <imath>120</imath>. So, <imath>\frac{BF}{FC}</imath> is equal to <imath>\frac{60}{180}</imath>=<imath>\frac{1}{3}</imath>, so the area of triangle <imath>ABF</imath> is <imath>90</imath>. That minus the area of triangle <imath>ABE</imath> is <imath>\boxed{\textbf{(B) }30}</imath>.
+
+--- Solution 5 ---
+Extend <math>\overline{BD}</math> to <math>G</math> such that <math>\overline{AG} \parallel \overline{BC}</math> as shown:
+<asy>
+size(8cm);
+pair A, B, C, D, E, F, G;
+B = (0,0);
+A = (2, 3);
+C = (5, 0);
+D = (3, 2);
+E = (1.5, 1);
+F = (1.25, 0);
+G = (4.5, 3);
+
+draw(A--B--C--A--G--B);
+draw(A--F);
+label("$A$", A, N);
+label("$B$", B, WSW);
+label("$C$", C, ESE);
+label("$D$", D, dir(0)*1.5);
+label("$E$", E, SE);
+label("$F$", F, S);
+label("$G$", G, ENE);
+</asy>
+Then, <math>\triangle ADG \sim \triangle CDB</math> and <math>\triangle AEG \sim \triangle FEB</math>. Since <math>CD = 2AD</math>, triangle <math>CDB</math> has four times the area of triangle <math>ADG</math>. Since <math>[CDB] = 240</math>, we get <math>[ADG] = 60</math>.
+
+Since <math>[AED]</math> is also <math>60</math>, we have <math>ED = DG</math> because triangles <math>AED</math> and <math>ADG</math> have the same height and same areas and so their bases must be the congruent. Thus, triangle <math>AEG</math> has twice the side lengths and therefore four times the area of triangle <math>BEF</math>, giving <math>[BEF] = (60+60)/4 = \boxed{\textbf{(B) }30}</math>.
+
+<asy>
+size(8cm);
+pair A, B, C, D, E, F, G;
+B = (0,0);
+A = (2, 3);
+C = (5, 0);
+D = (3, 2);
+E = (1.5, 1);
+F = (1.25, 0);
+G = (4.5, 3);
+
+draw(A--B--C--A--G--B);
+draw(A--F);
+label("$A$", A, N);
+label("$B$", B, WSW);
+label("$C$", C, ESE);
+label("$D$", D, dir(0)*1.5);
+label("$E$", E, SE);
+label("$F$", F, S);
+label("$G$", G, ENE);
+label("$60$", (A+E+D)/3);
+label("$60$", (A+E+B)/3);
+label("$60$", (A+G+D)/3);
+label("$30$", (B+E+F)/3);
+</asy>
+(Credit to MP8148 for the idea)
+
+--- Solution 6 ---
+<asy>
+size(8cm);
+pair A, B, C, D, E, F;
+B = (0,0);
+A = (2, 3);
+C = (5, 0);
+D = (3, 2);
+E = (1.5, 1);
+F = (1.25, 0);
+
+draw(A--B--C--A--D--B);
+draw(A--F);
+draw(E--C);
+label("$A$", A, N);
+label("$B$", B, WSW);
+label("$C$", C, ESE);
+label("$D$", D, dir(0)*1.5);
+label("$E$", E, SSE);
+label("$F$", F, S);
+label("$60$", (A+E+D)/3);
+label("$60$", (A+E+B)/3);
+label("$120$", (D+E+C)/3);
+label("$x$", (B+E+F)/3);
+label("$120-x$", (F+E+C)/3);
+</asy>
+As before, we figure out the areas labeled in the diagram. Then, we note that <cmath>\dfrac{EF}{AE} = \dfrac{x}{60} = \dfrac{120-x}{180}</cmath>
+Even simpler:  <cmath>\dfrac{EF}{AE} = \dfrac{x}{60} = \dfrac{120}{240}</cmath>
+Solving gives <math>x = \boxed{\textbf{(B) }30}</math>. 
+(Credit to scrabbler94 for the idea)
+
+--- Solution 7 ---
+Let <math>ADB</math> be a right triangle, and <math>BD=CD</math>
+
+Let <math>A=(-2\sqrt{30}, 0)</math>
+
+<math>B=(0, 4\sqrt{30})</math>
+
+<math>C=(4\sqrt{30}, 0)</math>
+
+<math>D=(0, 0)</math>
+
+<math>E=(0, 2\sqrt{30})</math>
+
+<math>F=(\sqrt{30}, 3\sqrt{30})</math>
+
+The line <math>\overleftrightarrow{AE}</math> can be described with the equation <math>y=x-2\sqrt{30}</math>
+
+The line <math>\overleftrightarrow{BC}</math> can be described with <math>x+y=4\sqrt{30}</math>
+
+Solving, we get <math>x=3\sqrt{30}</math> and <math>y=\sqrt{30}</math>
+
+Now we can find <math>EF=BF=2\sqrt{15}</math>
+
+$[\bigtriangleup EBF]=\frac{(2\sqrt{15})^2}{2}=\boxed{\textbf{(B) }30}\$
+
+
+-Trex4days
+
+--- Solution 8 ---
+<asy>
+ /* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki go to User:Azjps/geogebra */
+import graph; size(15cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -6.61, xmax = 16.13, ymin = -6.4, ymax = 6.42;  /* image dimensions */
+
+ /* draw figures */
+draw(circle((0,0), 5), linewidth(2)); 
+draw((-4,-3)--(4,3), linewidth(2)); 
+draw((-4,-3)--(0,5), linewidth(2)); 
+draw((0,5)--(4,3), linewidth(2)); 
+draw((12,-1)--(-4,-3), linewidth(2)); 
+draw((0,5)--(0,-5), linewidth(2)); 
+draw((-4,-3)--(0,-5), linewidth(2)); 
+draw((4,3)--(0,2.48), linewidth(2)); 
+draw((4,3)--(12,-1), linewidth(2)); 
+draw((-4,-3)--(4,3), linewidth(2)); 
+ /* dots and labels */
+dot((0,0),dotstyle); 
+label("E", (0.27,-0.24), NE * labelscalefactor); 
+dot((-5,0),dotstyle); 
+dot((-4,-3),dotstyle); 
+label("B", (-4.45,-3.38), NE * labelscalefactor); 
+dot((4,3),dotstyle); 
+label("$D$", (4.15,3.2), NE * labelscalefactor); 
+dot((0,5),dotstyle); 
+label("A", (-0.09,5.26), NE * labelscalefactor); 
+dot((12,-1),dotstyle); 
+label("C", (12.23,-1.24), NE * labelscalefactor); 
+dot((0,-5),dotstyle); 
+label("$G$", (0.19,-4.82), NE * labelscalefactor); 
+dot((0,2.48),dotstyle); 
+label("I", (-0.33,2.2), NE * labelscalefactor); 
+dot((0,0),dotstyle); 
+label("E", (0.27,-0.24), NE * labelscalefactor); 
+dot((0,-2.5),dotstyle); 
+label("F", (0.23,-2.2), NE * labelscalefactor); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+ /* end of picture */
+</asy>
+
+Let <math>A[\Delta XYZ]</math> = <math>\text{Area of Triangle XYZ}</math> 
+
+
+<math>A[\Delta ABD]: A[\Delta DBC] :: 1:2 :: 120:240</math>
+
+
+<math>A[\Delta ABE] = A[\Delta AED] = 60</math> (the median divides the area of the triangle into two equal parts)
+
+
+Construction: Draw a circumcircle around <math>\Delta ABD</math> with <math>BD</math> as is diameter. Extend <math>AF</math> to <math>G</math> such that it meets the circle at <math>G</math>. Draw line <math>BG</math>.
+
+
+<math>A[\Delta ABD] = A[\Delta ABG] = 120</math> (Since <math>\square ABGD</math> is cyclic)
+
+
+But <math>A[\Delta ABE]</math> is common in both with an area of 60. So, <math>A[\Delta AED] = A[\Delta BEG]</math>.
+
+Therefore <math>A[\Delta AED] \cong A[\Delta BEG]</math> (SAS Congruency Theorem).
+
+In <math>\Delta AED</math>, let <math>DI</math> be the median of <math>\Delta AED</math>,
+
+which means <math>A[\Delta AID] = 30 = A[\Delta EID]</math>.
+
+
+Rotate <math>\Delta DEA</math> to meet <math>D</math> at <math>B</math> and <math>A</math> at <math>G</math>. <math>DE</math> will fit exactly in <math>BE</math> (both are radii of the circle). From the above solutions, <math>\frac{AE}{EF} = 2:1</math>.
+
+<math>AE</math> is a radius and <math>EF</math> is half of it implies <math>EF</math> = <math>\frac{radius}{2}</math>,
+
+which means <math>A[\Delta BEF] \cong A[\Delta DEI]</math>.
+
+Thus, <math>A[\Delta BEF] = \boxed{\textbf{(B) }30}</math>.
+
+--- Solution 9 ---
+<asy>
+import geometry;
+unitsize(2cm);
+pair A,B,C,DD,EE,FF, M;
+B = (0,0); C = (3,0); M = (1.45,0);
+A = (1.2,1.7);
+DD = (2/3)*A+(1/3)*C;
+EE = (B+DD)/2;
+FF = intersectionpoint(B--C,A--A+2*(EE-A));
+draw(A--B--C--cycle);
+draw(A--FF); 
+draw(B--DD);dot(A); 
+label("$A$",A,N);
+dot(B); 
+label("$B$",
+B,SW);dot(C); 
+label("$C$",C,SE);
+dot(DD); 
+label("$D$",DD,NE);
+dot(EE); 
+label("$E$",EE,NW);
+dot(FF); 
+label("$F$",FF,S);
+draw(EE--M,StickIntervalMarker(1,1));
+label("$M$",M,S);
+draw(A--DD,invisible,StickIntervalMarker(1,1));
+dot((DD+C)/2);
+draw(DD--C,invisible,StickIntervalMarker(2,1));
+</asy>
+Using the ratio of <imath>\overline{AD}</imath> and <imath>\overline{CD}</imath>, we find the area of <imath>\triangle ADB</imath> is <imath>120</imath> and the area of <imath>\triangle BDC</imath> is <imath>240</imath>. Also using the fact that <imath>E</imath> is the midpoint of <imath>\overline{BD}</imath>, we know <imath>\triangle ADE = \triangle ABE = 60</imath>.
+Let <imath>M</imath> be a point such <imath>\overline{EM}</imath> is parellel to <imath>\overline{CD}</imath>. We immediatley know that <imath>\triangle BEM \sim BDC</imath> by <imath>2</imath>. Using that we can conclude <imath>EM</imath> has ratio <imath>1</imath>. Using <imath>\triangle EFM \sim \triangle AFC</imath>, we get <imath>EF:AE = 1:2</imath>. Therefore using the fact that <imath>\triangle EBF</imath> is in <imath>\triangle ABF</imath>, the area has ratio <imath>\triangle BEF : \triangle ABE=1:2</imath> and we know <imath>\triangle ABE</imath> has area <imath>60</imath> so <imath>\triangle BEF</imath> is <imath>\boxed{\textbf{(B) }30}</imath>. 
+(If you found this, go to https://1drv.ms/w/c/bbc8cfaa9b369656/IQBUDSu4GwyFRpMw3y2BHoj2ATCED3SVbgcFIJaX3picCzk?e=4IkGnu)
+
+- fath2012
+
+--- Solution 10 ---
+<asy>
+unitsize(2cm);
+pair A,B,C,D,E,F,a,b,c,d,e,f;
+A = (2,3);
+B = (0,2); 
+C = (2,0);
+D = (2/3)*A+(1/3)*C;
+E = (B+D)/2;
+F = intersectionpoint(B--C,A--A+2*(E-A));
+a = (0,0);
+b = (1,0);
+c = (2,1);
+d = (1,3);
+e = (0,3);
+f = (0,1);
+draw(a--C,dashed);
+draw(f--c,dashed);
+draw(e--A,dashed);
+draw(a--e,dashed);
+draw(b--d,dashed);
+draw(A--B--C--cycle);
+draw(A--F); 
+draw(B--D);
+dot(A); 
+label("$A$",A,NE);
+dot(B); 
+label("$B$",B,dir(180));
+dot(C); 
+label("$C$",C,SE);
+dot(D); 
+label("$D$",D,dir(0));
+dot(E); 
+label("$E$",E,SE);
+dot(F); 
+label("$F$",F,SW);
+</asy>
+<b>Note:</b> If graph paper is unavailable, this solution can still be used by constructing a small grid on a sheet of blank paper.<br>
+<br>
+As triangle <math>ABC</math> is loosely defined, we can arrange its points such that the diagram fits nicely on a coordinate plane. By doing so, we can construct it on graph paper and be able to visually determine the relative sizes of the triangles.<br>
+<br>
+As point <math>D</math> splits line segment <math>\overline{AC}</math> in a <math>1:2</math> ratio, we draw <math>\overline{AC}</math> as a vertical line segment <math>3</math> units long. Point <math>D</math> is thus <math>1</math> unit below point <math>A</math> and <math>2</math> units above point <math>C</math>. By definition, Point <math>E</math> splits line segment <math>\overline{BD}</math> in a <math>1:1</math> ratio, so we draw <math>\overline{BD}</math> <math>2</math> units long directly left of <math>D</math> and draw <math>E</math> directly between <math>B</math> and <math>D</math>, <math>1</math> unit away from both.<br>
+<br>
+We then draw line segments <math>\overline{AB}</math> and <math>\overline{BC}</math>. We can easily tell that triangle <math>ABC</math> occupies <math>3</math> square units of space. Constructing line <math>AE</math> and drawing <math>F</math> at the intersection of <math>AE</math> and <math>BC</math>, we can easily see that triangle <math>EBF</math> forms a right triangle occupying <math>\frac{1}{4}</math> of a square unit of space.<br>
+<br>
+The ratio of the areas of triangle <math>EBF</math> and triangle <math>ABC</math> is thus <math>\frac{1}{4}\div3=\frac{1}{12}</math>, and since the area of triangle <math>ABC</math> is <math>360</math>, this means that the area of triangle <math>EBF</math> is <math>\frac{1}{12}\times360=\boxed{\textbf{(B) }30}</math>. 
+
+~[[User:emerald_block|emerald_block]]<br>
+<br>
+<b>Additional note:</b> There are many subtle variations of this triangle; this method is one of the more compact ones. 
+
+~[[User:i_equal_tan_90|i_equal_tan_90]]
+
+--- Solution 11 ---
+<asy>
+unitsize(2cm);
+pair A,B,C,DD,EE,FF,G;
+B = (0,0); C = (3,0); 
+A = (1.2,1.7);
+DD = (2/3)*A+(1/3)*C;
+EE = (B+DD)/2;
+FF = intersectionpoint(B--C,A--A+2*(EE-A));
+G = (1.5,0);
+draw(A--B--C--cycle);
+draw(A--FF); 
+draw(B--DD); 
+draw(G--DD);
+label("$A$",A,N);
+label("$B$",
+B,SW); 
+label("$C$",C,SE);
+label("$D$",DD,NE); 
+label("$E$",EE,NW);
+label("$F$",FF,S);
+label("$G$",G,S);
+</asy>
+We know that <math>AD = \dfrac{1}{3} AC</math>, so <math>[ABD] = \dfrac{1}{3} [ABC] = 120</math>. Using the same method, since <math>BE = \dfrac{1}{2} BD</math>, <math>[ABE] = \dfrac{1}{2} [ABD] = 60</math>. Next, we draw <math>G</math> on <math>\overline{BC}</math> such that <math>\overline{DG}</math> is parallel to <math>\overline{AF}</math> and create segment <math>DG</math>. We then observe that <math>\triangle AFC \sim \triangle DGC</math>, and since <math>AD:DC = 1:2</math>, <math>FG:GC</math> is also equal to <math>1:2</math>. Similarly (no pun intended), <math>\triangle DBG \sim \triangle EBF</math>, and since <math>BE:ED = 1:1</math>, <math>BF:FG</math> is also equal to <math>1:1</math>. Combining the information in these two ratios, we find that <math>BF:FG:GC = 1:1:2</math>, or equivalently, <math>BF = \dfrac{1}{4} BC</math>. Thus, <math>[BFA] = \dfrac{1}{4} [BCA] = 90</math>. We already know that <math>[ABE] = 60</math>, so the area of <math>\triangle EBF</math> is <math>[BFA] - [ABE] = \boxed{\textbf{(B) }30}</math>. 
+
+~[[User: i_equal_tan_90|i_equal_tan_90]]
+
+--- Solution 12 ---
+The picture is misleading. Assume that the triangle ABC is a right triangle. 
+
+Then, find two factors of <math>720</math> that are the closest together so that the picture becomes easier in your mind. Quickly searching for squares near <math>720</math> to use difference of squares, we find <math>24</math> and <math>30</math> as our numbers. Then, the coordinates of D are <math>(10,16)</math>(note, A=0,0). E is then <math>(5,8)</math>. Then the equation of the line AE is <math>-16x/5+24=y</math>. Plugging in <math>y=0</math>, we have <math>x=\dfrac{15}{2}</math>. Now notice that we have both the height and the base of EBF. 
+
+Solving for the area, we have <math>(8)(15/2)(1/2)=30</math>.
+
+--- Solution 13 ---
+<math>AD : DC = 1:2</math>, so <math>ADB</math> has area <math>120</math> and <math>CDB</math> has area <math>240</math>. <math>BE = ED</math> so the area of <math>ABE</math> is equal to the area of <math>ADE = 60</math>.
+Draw <math>\overline{DG}</math> parallel to <math>\overline{AF}</math>.<br> 
+Set area of BEF = <math>x</math>.  BEF is similar to BDG in ratio of 1:2<br> 
+so area of BDG = <math>4x</math>, area of EFDG=<math>3x</math>, and area of CDG<math>=240-4x</math>.<br>
+CDG is similar to CAF in ratio of 2:3 so area CDG = <math>4/9</math> area CAF, and area AFDG=<math>5/4</math> area CDG.<br> 
+Thus, <math>60+3x=5/4(240-4x)</math> and <math>x=30</math>.
+
+
+== Solution 15 - Geometry & Algebra==
+<asy>
+unitsize(2cm);
+pair A,B,C,DD,EE,FF;
+B = (0,0); C = (3,0); 
+A = (1.2,1.7);
+DD = (2/3)*A+(1/3)*C;
+EE = (B+DD)/2;
+FF = intersectionpoint(B--C,A--A+2*(EE-A));
+draw(A--B--C--cycle);
+draw(A--FF); 
+draw(DD--FF,blue);
+draw(B--DD);dot(A); 
+label("$A$",A,N);
+dot(B); 
+label("$B$",
+B,SW);dot(C); 
+label("$C$",C,SE);
+dot(DD); 
+label("$D$",DD,NE);
+dot(EE); 
+label("$E$",EE,NW);
+dot(FF); 
+label("$F$",FF,S);
+</asy>
+
+We draw line <math>FD</math> so that we can define a variable <math>x</math> for the area of <math> \triangle BEF = \triangle DEF</math>. Knowing that <math> \triangle ABE</math> and <math> \triangle ADE</math> share both their height and base, we get that <math>ABE = ADE = 60</math>.
+
+Since we have a rule where 2 triangles, (<math>\triangle A</math> which has base <math>a</math> and vertex <math>c</math>),  and (<math>\triangle B</math> which has Base <math>b</math> and vertex <math>c</math>)who share the same vertex (which is vertex <math>c</math> in this case), and share a common height, their relationship is : Area of <math>A : B = a : b</math> (the length of the two bases),  we can list the equation where <math>\frac{ \triangle ABF}{\triangle ACF} = \frac{\triangle DBF}{\triangle DCF}</math>. Substituting <math>x</math> into the equation we get: 
+
+<cmath>\frac{x+60}{300-x} = \frac{2x}{240-2x}</cmath> <cmath>(2x)(300-x) = (60+x)(240-x)</cmath> <cmath>600-2x^2 = 14400 - 120x + 240x - 2x^2</cmath> <cmath>480x = 14400</cmath> and we now have that <math> \triangle BEF=30</math>.
+
+--- Solution 14 ---
+<asy>
+size(8cm);
+pair A, B, C, D, E, F;
+B = (0,0);
+A = (2, 3);
+C = (5, 0);
+D = (3, 2);
+E = (1.5, 1);
+F = (1.25, 0);
+
+draw(A--B--C--A--D--B);
+draw(A--F);
+draw(E--C);
+label("$A$", A, N);
+label("$B$", B, WSW);
+label("$C$", C, ESE);
+label("$D$", D, dir(0)*1.5);
+label("$E$", E, SSE);
+label("$F$", F, S);
+label("$60$", (A+E+D)/3);
+label("$60$", (A+E+B)/3);
+label("$120$", (D+E+C)/3);
+label("$x$", (B+E+F)/3);
+label("$120-x$", (F+E+C)/3);
+</asy>
+Since <math>AD:DC=1:2</math> thus <math>\triangle ABD=\frac{1}{3} \cdot 360 = 120.</math>
+
+Similarly, <math>\triangle DBC = \frac{2}{3} \cdot 360 = 240.</math>
+
+Now, since <math>E</math> is a midpoint of <math>BD</math>, <math>\triangle ABE = \triangle AED = 120 \div 2 = 60.</math>
+
+We can use the fact that <math>E</math> is a midpoint of <math>BD</math> even further. Connect lines <math>E</math> and <math>C</math> so that <math>\triangle BEC</math> and <math>\triangle DEC</math> share 2 sides.
+
+We know that <math>\triangle BEC=\triangle DEC=240 \div 2 = 120</math> since <math>E</math> is a midpoint of <math>BD.</math>
+
+Let's label <math>\triangle BEF</math> <math>x</math>. We know that <math>\triangle EFC</math> is <math>120-x</math> since <math>\triangle BEC = 120.</math>
+
+Note that with this information now, we can deduct more things that are needed to finish the solution.
+
+Note that <math>\frac{EF}{AE} = \frac{120-x}{180} = \frac{x}{60}.</math> because of triangles <math>EBF, ABE, AEC,</math> and <math>EFC.</math>
+
+We want to find <math>x.</math>
+
+This is a simple equation, and solving we get <math>x=\boxed{\textbf{(B)}30}.</math>
+
+--- Solution 15 ---
+<asy>
+size(8cm);
+pair A, B, C, D, E, F;
+B = (0,0);
+A = (2, 3);
+C = (5, 0);
+D = (3, 2);
+E = (1.5, 1);
+F = (1.25, 0);
+
+draw(A--B--C--A--D--B);
+draw(A--F);
+draw(E--C);
+label("$A$", A, N);
+label("$B$", B, WSW);
+label("$C$", C, ESE);
+label("$D$", D, dir(0)*1.5);
+label("$E$", E, SSE);
+label("$F$", F, S);
+label("$60$", (A+E+D)/3);
+label("$60$", (A+E+B)/3);
+label("$120$", (D+E+C)/3);
+</asy>
+
+Because <imath>AD:DC=1:2</imath> and <imath>E</imath> is the midpoint of <imath>BD</imath>, we know that the areas of <imath>ABE</imath> and <imath>AED</imath> are <imath>60</imath> and the areas of <imath>DEC</imath> and <imath>EBC</imath> are <imath>120</imath>.
+<cmath>\frac{[EBF]}{[EFC]} = \frac{[ABF]}{[AFC]} = \frac{ [ABE]}{[AEC]} = \frac{60}{180}</cmath>
+<imath>[EBF] = \frac{120}{4} = \boxed{\textbf{(B) }30}</imath>
+
+
+=== Problem 25 ===
+Alice has 24 apples. In how many ways can she share them with Becky and
+Chris so that each of the three people has at least two apples?
+
+Choices: {'A': '105', 'B': '114', 'C': '190', 'D': '210', 'E': '380</math>'}
+Answer: C
+
+--- Solution 1 ---
+Note: This solution uses the non-negative version for stars and bars. A solution using the positive version of stars is similar (first removing an apple from each person instead of 2).
+
+This method uses the counting method of stars and bars (non-negative version). Since each person must have at least <imath>2</imath> apples, we can remove <imath>2*3</imath> apples from the total that need to be sorted. With the remaining <imath>18</imath> apples, we can use stars and bars to determine the number of possibilities. Assume there are <imath>18</imath> stars in a row, and <imath>2</imath> bars, which will be placed to separate the stars into groups of <imath>3</imath>. In total, there are <imath>18</imath> spaces for stars <imath>+ 2</imath> spaces for bars, for a total of <imath>20</imath> spaces. We can now do <imath>20 \choose 2</imath>. This is because if we choose distinct <imath>2</imath> spots for the bars to be placed, each combo of <imath>3</imath> groups will be different, and all apples will add up to <imath>18</imath>. We can also do this because the apples are indistinguishable. <imath>20 \choose 2</imath> is <imath>190</imath>, therefore the answer is <imath>\boxed{\textbf{(C) }190}</imath>.
+
+--- Solution 2 ---
+Consider an unordered triple <imath> (a,b,c) </imath> where <imath> a+b+c=24 </imath> and <imath> a,b,c </imath> are not necessarily distinct. Then, we will either have <imath> 1 </imath>, <imath> 3 </imath>, or <imath> 6 </imath> distinguishable ways to assign <imath> a </imath>, <imath> b </imath>, and <imath> c </imath> to Alice, Becky, and Chris. Thus, our answer will be <imath> x+3y+6z </imath> for some nonnegative integers <imath> x,y,z </imath>. Notice that we only have <imath> 1 </imath> way to assign the numbers <imath> a,b,c </imath> to Alice, Becky, and Chris when <imath> a=b=c </imath>. As this only happens <imath> 1 </imath> way (<imath>a=b=c=8</imath>), our answer is <imath> 1+3y+6z </imath> for some <imath> y,z </imath>. Finally, notice that this implies the answer is <imath> 1 </imath> mod <imath> 3 </imath>. The only answer choice that satisfies this is <imath> \boxed{\textbf{(C) }190} </imath>. 
+
+-BorealBear
+
+--- Solution 3 ---
+Since each person needs to have at least two apples, we can simply give each person two, leaving <imath> 24 - 2\times3=18 </imath> apples. For the remaining apples, if Alice is going to have <imath> a </imath> apples, Becky is going to have <imath> b </imath> apples, and Chris is going to have <imath> c </imath> apples, we have indeterminate equation <imath> a+b+c=18 </imath>. Currently, we can see that <imath> 0 \leq a\leq 18 </imath> where <imath> a </imath> is an integer, and when <imath> a </imath> equals any number in the range, there will be <imath> 18-a+1=19-a </imath> sets of values for <imath> b </imath> and <imath> c </imath>. Thus, there are <imath> 19 + 18 + 17 + \cdots + 1 = \boxed{\textbf{(C) }190} </imath> possible sets of values in total.
+
+~[[User:Bloggish|Bloggish]]
+
+

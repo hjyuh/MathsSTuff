@@ -1,0 +1,15 @@
+name = "RequestProject"
+defaultTargets = ["ep488_v51_A1_theta_regression", "ep488_v51_A3_tree_to_host"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.28.0"
+
+[[lean_lib]]
+name = "ep488_v51_A1_theta_regression"
+globs = ["ep488_v51_A1_theta_regression"]
+
+[[lean_lib]]
+name = "ep488_v51_A3_tree_to_host"
+globs = ["ep488_v51_A3_tree_to_host"]

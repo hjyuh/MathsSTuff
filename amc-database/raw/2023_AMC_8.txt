@@ -1,0 +1,1186 @@
+=== Problem 1 ===
+What is the value of
+
+Choices: {'A': '\\ 0', 'B': '\\ 6', 'C': '\\ 10', 'D': '\\ 18', 'E': '\\ 24'}
+Answer: D
+
+--- Solution 1 ---
+By the [[order of operations]], we have <cmath>(8 \times 4 + 2) - (8 + 4 \times 2) = (32+2) - (8+8) = 34 - 16 = \boxed{\textbf{(D)}\ 18}.</cmath>
+
+--- Solution 2 ---
+We can simplify the expression above in another way: <cmath>(8 \times 4 + 2) - (8 + 4 \times 2)=8\times4+2-8-4\times2=32+2-8-8=34-16=\boxed{\textbf{(D)}\ 18}.</cmath>
+
+
+=== Problem 2 ===
+A square piece of paper is folded twice into four equal quarters, as shown below, then cut along the dashed line. When unfolded, the paper will match which of the following figures?
+<asy> 
+//Restored original diagram. Alter it if you would like, but it was made by TheMathGuyd,
+// Diagram by TheMathGuyd. I even put the lined texture :)
+// Thank you Kante314 for inspiring thicker arrows. They do look much better
+size(0,3cm);
+path sq = (-0.5,-0.5)--(0.5,-0.5)--(0.5,0.5)--(-0.5,0.5)--cycle;
+path rh = (-0.125,-0.125)--(0.5,-0.5)--(0.5,0.5)--(-0.125,0.875)--cycle;
+path sqA = (-0.5,-0.5)--(-0.25,-0.5)--(0,-0.25)--(0.25,-0.5)--(0.5,-0.5)--(0.5,-0.25)--(0.25,0)--(0.5,0.25)--(0.5,0.5)--(0.25,0.5)--(0,0.25)--(-0.25,0.5)--(-0.5,0.5)--(-0.5,0.25)--(-0.25,0)--(-0.5,-0.25)--cycle;
+path sqB = (-0.5,-0.5)--(-0.25,-0.5)--(0,-0.25)--(0.25,-0.5)--(0.5,-0.5)--(0.5,0.5)--(0.25,0.5)--(0,0.25)--(-0.25,0.5)--(-0.5,0.5)--cycle;
+path sqC = (-0.25,-0.25)--(0.25,-0.25)--(0.25,0.25)--(-0.25,0.25)--cycle;
+path trD = (-0.25,0)--(0.25,0)--(0,0.25)--cycle;
+path sqE = (-0.25,0)--(0,-0.25)--(0.25,0)--(0,0.25)--cycle;
+filldraw(sq,mediumgrey,black);
+draw((0.75,0)--(1.25,0),currentpen+1,Arrow(size=6));
+//folding
+path sqside = (-0.5,-0.5)--(0.5,-0.5);
+path rhside = (-0.125,-0.125)--(0.5,-0.5);
+transform fld = shift((1.75,0))*scale(0.5);
+draw(fld*sq,black);
+int i;
+for(i=0; i<10; i=i+1)
+{
+  draw(shift(0,0.05*i)*fld*sqside,deepblue);
+}
+path rhedge = (-0.125,-0.125)--(-0.125,0.8)--(-0.2,0.85)--cycle;
+filldraw(fld*rhedge,grey);
+path sqedge = (-0.5,-0.5)--(-0.5,0.4475)--(-0.575,0.45)--cycle;
+filldraw(fld*sqedge,grey);
+filldraw(fld*rh,white,black);
+int i;
+for(i=0; i<10; i=i+1)
+{
+  draw(shift(0,0.05*i)*fld*rhside,deepblue);
+}
+draw((2.25,0)--(2.75,0),currentpen+1,Arrow(size=6));
+//cutting
+transform cut = shift((3.25,0))*scale(0.5);
+draw(shift((-0.01,+0.01))*cut*sq);
+draw(cut*sq);
+filldraw(shift((0.01,-0.01))*cut*sq,white,black);
+int j;
+for(j=0; j<10; j=j+1)
+{
+draw(shift(0,0.05*j)*cut*sqside,deepblue);
+}
+draw(shift((0.01,-0.01))*cut*(0,-0.5)--shift((0.01,-0.01))*cut*(0.5,0),dashed);
+//Answers Below, but already Separated
+//filldraw(sqA,grey,black);
+//filldraw(sqB,grey,black);
+//filldraw(sq,grey,black);
+//filldraw(sqC,white,black);
+//filldraw(sq,grey,black);
+//filldraw(trD,white,black);
+//filldraw(sq,grey,black);
+//filldraw(sqE,white,black);
+</asy>
+
+<asy>
+// Diagram by TheMathGuyd.
+size(0,7.5cm);
+path sq = (-0.5,-0.5)--(0.5,-0.5)--(0.5,0.5)--(-0.5,0.5)--cycle;
+path rh = (-0.125,-0.125)--(0.5,-0.5)--(0.5,0.5)--(-0.125,0.875)--cycle;
+path sqA = (-0.5,-0.5)--(-0.25,-0.5)--(0,-0.25)--(0.25,-0.5)--(0.5,-0.5)--(0.5,-0.25)--(0.25,0)--(0.5,0.25)--(0.5,0.5)--(0.25,0.5)--(0,0.25)--(-0.25,0.5)--(-0.5,0.5)--(-0.5,0.25)--(-0.25,0)--(-0.5,-0.25)--cycle;
+path sqB = (-0.5,-0.5)--(-0.25,-0.5)--(0,-0.25)--(0.25,-0.5)--(0.5,-0.5)--(0.5,0.5)--(0.25,0.5)--(0,0.25)--(-0.25,0.5)--(-0.5,0.5)--cycle;
+path sqC = (-0.25,-0.25)--(0.25,-0.25)--(0.25,0.25)--(-0.25,0.25)--cycle;
+path trD = (-0.25,0)--(0.25,0)--(0,0.25)--cycle;
+path sqE = (-0.25,0)--(0,-0.25)--(0.25,0)--(0,0.25)--cycle;
+
+//ANSWERS
+real sh = 1.5;
+label("$\textbf{(A)}$",(-0.5,0.5),SW);
+label("$\textbf{(B)}$",shift((sh,0))*(-0.5,0.5),SW);
+label("$\textbf{(C)}$",shift((2sh,0))*(-0.5,0.5),SW);
+label("$\textbf{(D)}$",shift((0,-sh))*(-0.5,0.5),SW);
+label("$\textbf{(E)}$",shift((sh,-sh))*(-0.5,0.5),SW);
+filldraw(sqA,mediumgrey,black);
+filldraw(shift((sh,0))*sqB,mediumgrey,black);
+filldraw(shift((2*sh,0))*sq,mediumgrey,black);
+filldraw(shift((2*sh,0))*sqC,white,black);
+filldraw(shift((0,-sh))*sq,mediumgrey,black);
+filldraw(shift((0,-sh))*trD,white,black);
+filldraw(shift((sh,-sh))*sq,mediumgrey,black);
+filldraw(shift((sh,-sh))*sqE,white,black);
+</asy>
+
+Answer: E
+
+--- Solution 1 ---
+Notice that when we unfold the paper along the vertical fold line, we get the following shape:
+
+
+<asy>
+
+size(90);
+path sq = (-0.5,0)--(0.5,0)--(0.5,0.5)--(-0.5,0.5)--cycle;
+path trE = (-0.25,0)--(0.25,0)--(0,0.25)--cycle;
+
+real sh = 1.5;
+filldraw(shift((sh,-sh))*sq,mediumgrey,black);
+filldraw(shift((sh,-sh))*trE,white,black);
+
+size(90);
+path sq = (-0.5,-0.5)--(0.5,-0.5)--(0.5,0.5)--(-0.5,0.5)--cycle;
+path sqE = (-0.25,0)--(0,-0.25)--(0.25,0)--(0,0.25)--cycle;
+
+real sh = 1.5;
+filldraw(shift((sh,-sh))*sq,mediumgrey,black);
+filldraw(shift((sh,-sh))*sqE,white,black);
+</asy>
+
+Therefore the answer is <imath>\boxed{\textbf{(E)}}</imath>.
+
+--- Solution 2 ---
+When you fold the paper in that specific way, it shows the top left square. That means that any cut you make on that folded part will look like that on that top left square. Since it is folded into four parts, the cut will reflect on all of the other 3 parts. Since there is a cut diagonally on the bottom right of that square, that will reflect on the other squares, making the shape of <imath>\boxed{\textbf{(E)}}</imath> <asy>
+
+size(90);
+path sq = (-0.5,0)--(0.5,0)--(0.5,0.5)--(-0.5,0.5)--cycle;
+path trE = (-0.25,0)--(0.25,0)--(0,0.25)--cycle;
+
+real sh = 1.5;
+filldraw(shift((sh,-sh))*sq,mediumgrey,black);
+filldraw(shift((sh,-sh))*trE,white,black);
+
+size(90);
+path sq = (-0.5,-0.5)--(0.5,-0.5)--(0.5,0.5)--(-0.5,0.5)--cycle;
+path sqE = (-0.25,0)--(0,-0.25)--(0.25,0)--(0,0.25)--cycle;
+
+real sh = 1.5;
+filldraw(shift((sh,-sh))*sq,mediumgrey,black);
+filldraw(shift((sh,-sh))*sqE,white,black);
+</asy>
+
+
+=== Problem 3 ===
+<i>Wind chill</i> is a measure of how cold people feel when exposed to wind outside. A good estimate for wind chill can be found using this calculation
+<cmath>(\text{wind chill}) = (\text{air temperature}) - 0.7 \times (\text{wind speed}),</cmath>
+where temperature is measured in degrees Fahrenheit
+
+Choices: {'A': '\\ 18', 'B': '\\ 23', 'C': '\\ 28', 'D': '\\ 32', 'E': '\\ 35'}
+Answer: B
+
+--- Solution 1 ---
+By substitution, we have
+<cmath>\begin{align*}
+(\text{wind chill}) &= 36 - 0.7 \times 18 \\
+&= 36 - 12.6 \\
+&= 23.4 \\
+&\approx \boxed{\textbf{(B)}\ 23}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+<math>0.7</math> is very close to <math>\frac{2}{3}</math> - therefore, we can substitute <math>\frac{2}{3}</math> into the equation to get <cmath>36 - \frac{2}{3} \cdot 18 = 36 - 12 = 24.</cmath> As <math>\frac{2}{3}</math> is slightly less than <math>0.7</math>, the correct answer is slightly less than <math>24</math>. Therefore, the answer is <math>\boxed{\textbf{(B)}\ 23}</math>.
+
+--- Solution 3 ---
+0.7 is equivalent to 7/10. 7/10 times 18 is 126/10, which is 12.6. Since the air temperature is 36 degrees Fahrenheit, 36 - 12.6 is 23.4, which is the closest to <math>\boxed{\textbf{(B)}\ 23}</math>.
+
+
+=== Problem 4 ===
+The numbers from
+
+Choices: {'A': '\\ 0', 'B': '\\ 1', 'C': '\\ 2', 'D': '\\ 3', 'E': '\\ 4'}
+Answer: D
+
+--- Solution 1 ---
+We fill out the grid, as shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+size(175);
+
+void ds(pair p) {
+	filldraw((0.5,0.5)+p--(-0.5,0.5)+p--(-0.5,-0.5)+p--(0.5,-0.5)+p--cycle,mediumgrey);
+}
+
+ds((0.5,4.5));
+ds((1.5,3.5));
+ds((3.5,1.5));
+ds((4.5,0.5));
+
+add(grid(7,7,grey+linewidth(1.25)));
+
+int adj = 1;
+int curUp = 2;
+int curLeft = 4;
+int curDown = 6;
+int curRight = 8;
+
+label("$1$",(3.5,3.5));
+
+for (int len = 3; len<=7; len+=2)
+{
+	for (int i=1; i<=len-1; ++i) 
+   		{
+			label("$"+string(curUp)+"$",(3.5+adj,3.5-adj+i));
+    		label("$"+string(curLeft)+"$",(3.5+adj-i,3.5+adj)); 
+    		label("$"+string(curDown)+"$",(3.5-adj,3.5+adj-i));
+    		label("$"+string(curRight)+"$",(3.5-adj+i,3.5-adj));
+    		++curDown;
+    		++curLeft;
+    		++curUp;
+    		++curRight;
+		}
+	++adj;
+    curUp = len^2 + 1;
+    curLeft = len^2 + len + 2;
+    curDown = len^2 + 2*len + 3;
+    curRight = len^2 + 3*len + 4;
+}
+
+draw((4,4)--(3,4)--(3,3)--(5,3)--(5,5)--(2,5)--(2,2)--(6,2)--(6,6)--(1,6)--(1,1)--(7,1)--(7,7)--(0,7)--(0,0)--(7,0),linewidth(2));
+</asy>
+From the four numbers that appear in the shaded squares, <math>\boxed{\textbf{(D)}\ 3}</math> of them are prime: <math>19,23,</math> and <math>47.</math>
+
+--- Solution 2 ---
+Note that given time constraint, it's better to only count from perfect squares (in pink), as shown below:
+<asy>
+/* Grid Made by MRENTHUSIASM */
+/* Squares pattern solution input by TheMathGuyd */
+size(175);
+
+void ds(pair p) {
+	filldraw((0.5,0.5)+p--(-0.5,0.5)+p--(-0.5,-0.5)+p--(0.5,-0.5)+p--cycle,mediumgrey);
+}
+
+void ps(pair p) {
+	filldraw((0.5,0.5)+p--(-0.5,0.5)+p--(-0.5,-0.5)+p--(0.5,-0.5)+p--cycle,pink+opacity(0.3));
+}
+real ts = 0.5;
+
+ds((0.5,4.5));label("$39$",(0.5,4.5));
+ds((1.5,3.5));label("$19$",(1.5,3.5));
+ds((3.5,1.5));label("$23$",(3.5,1.5));
+ds((4.5,0.5));label("$47$",(4.5,0.5));
+
+ps((3.5,3.5));label("$1$",(3.5,3.5));
+ps((4.5,2.5));label("$9$",(4.5,2.5));
+ps((5.5,1.5));label("$25$",(5.5,1.5));
+ps((6.5,0.5));label("$49$",(6.5,0.5));
+ps((3.5,4.5));label("$4$",(3.5,4.5));
+ps((2.5,5.5));label("$16$",(2.5,5.5));
+ps((1.5,6.5));label("$36$",(1.5,6.5));
+label(scale(ts)*"$\leftarrow$",(1,6),NE);
+label(scale(ts)*"$+1$",(1,6),NW);
+label(scale(ts)*"$\downarrow$",(1,6),SW);
+label(scale(ts)*"$+2$",(1,5),NW);
+label(scale(ts)*"$\downarrow$",(1,5),SW);
+label(scale(ts)*"$+3$",(1,4),NW);
+label(scale(ts)*"$+1$",(2,5),NW);
+label(scale(ts)*"$\downarrow$",(2,5),SW);
+label(scale(ts)*"$+2$",(2,4),NW);
+label(scale(ts)*"$\downarrow$",(2,4),SW);
+label(scale(ts)*"$+3$",(2,3),NW);
+
+label(scale(ts)*"$\leftarrow$",(5,1),NE);
+label(scale(ts)*"$-1$",(5,1),NW);
+label(scale(ts)*"$\leftarrow$",(4,1),NE);
+label(scale(ts)*"$-2$",(4,1),NW);
+label(scale(ts)*"$\leftarrow$",(6,0),NE);
+label(scale(ts)*"$-1$",(6,0),NW);
+label(scale(ts)*"$\leftarrow$",(5,0),NE);
+label(scale(ts)*"$-2$",(5,0),NW);
+
+add(grid(7,7,grey+linewidth(1.25))); //USES OLYMPIAD.ASY
+
+draw((4,4)--(3,4)--(3,3)--(5,3)--(5,5)--(2,5)--(2,2)--(6,2)--(6,6)--(1,6)--(1,1)--(7,1)--(7,7)--(0,7)--(0,0)--(7,0),linewidth(2));
+</asy>
+From the four numbers that appear in the shaded squares, <math>\boxed{\textbf{(D)}\ 3}</math> of them are prime: <math>19,23,</math> and <math>47.</math>
+
+--- Solution 3 ---
+Since the last shaded square is very close to the final number, which is 49, we can easily subtract two instead of having to count all the way there. Then, we can count (:P).
+
+
+=== Problem 5 ===
+A lake contains
+
+Choices: {'A': '\\ 1250', 'B': '\\ 1500', 'C': '\\ 1750', 'D': '\\ 1800', 'E': '\\ 2000'}
+Answer: B
+
+--- Solution 1 ---
+Note that <cmath>\frac{\text{number of trout}}{\text{total number of fish}} = \frac{30}{180} = \frac16.</cmath> So, the total number of fish is <math>6</math> times the number of trout. Since the lake contains <math>250</math> trout, there are <math>250\cdot6=\boxed{\textbf{(B)}\ 1500}</math> fish in the lake.
+
+
+=== Problem 6 ===
+The digits
+
+Choices: {'A': '\\ 0', 'B': '\\ 8', 'C': '\\ 9', 'D': '\\ 16', 'E': '\\ 18'}
+Answer: C
+
+--- Solution 1 ---
+First, let us consider the case where <math>0</math> is a base: This would result in the entire expression being <math>0.</math> Contrastingly, if <math>0</math> is an exponent, we will get a value greater than <math>0.</math> <math>3^2\times2^0=9</math> is greater than <math>2^3\times2^0=8</math> and <math>2^2\times3^0=4.</math> Therefore, the answer is <math>\boxed{\textbf{(C) }9}.</math>
+
+--- Solution 2 ---
+The maximum possible value of using the digits <math>2,0,2,</math> and <math>3</math>: We can maximize our value by keeping the <math>3</math> and <math>2</math> together in one power (the biggest with the biggest and the smallest with the smallest). This shows <math>3^{2}\times2^{0}=9\times1=9.</math> (We don't want <math>0^{2}</math> because that is <math>0</math>.) It is going to be <math>\boxed{\textbf{(C)}\ 9}.</math>
+
+--- Solution 3 ---
+Trying all <math>12</math> distinct orderings, we see that the only possible values are <math>0,4,8,</math> and <math>9,</math> the greatest of which is <math>\boxed{\textbf{(C)}\ 9}.</math>
+
+--- Solution 4 ---
+There are two 2’s and one 3.  To make use of them all, use 2 and 3 as the bases and 2 and 0 as the exponents.
+
+--- Solution 5 ---
+If 0 is a base, then the whole expression becomes 0. Therefore, 0 must be an exponent. But since <math>2^0</math>=<math>3^0</math>=<math>1</math>, we do not want to waste our 3 on the 0. We will have a 3 and a 2 left, and since <math>3^2</math> is greater than <math>2^3</math>, we get <math>3^2\cdot2^0</math>=<math>9</math>.
+
+
+=== Problem 7 ===
+A rectangle, with sides parallel to the
+
+Choices: {'A': '\\ 0', 'B': '\\ 1', 'C': '\\ 2', 'D': '\\ 3', 'E': '\\ 4'}
+Answer: B
+
+--- Solution 1 ---
+If we extend the lines, we have the following diagram:
+<asy>
+usepackage("mathptmx");
+size(9cm);
+draw((0,-.5)--(0,11),EndArrow(size=.15cm));
+draw((1,0)--(1,11),mediumgray);
+draw((2,0)--(2,11),mediumgray);
+draw((3,0)--(3,11),mediumgray);
+draw((4,0)--(4,11),mediumgray);
+draw((5,0)--(5,11),mediumgray);
+draw((6,0)--(6,11),mediumgray);
+draw((7,0)--(7,11),mediumgray);
+draw((8,0)--(8,11),mediumgray);
+draw((9,0)--(9,11),mediumgray);
+draw((10,0)--(10,11),mediumgray);
+draw((11,0)--(11,11),mediumgray);
+draw((12,0)--(12,11),mediumgray);
+draw((13,0)--(13,11),mediumgray);
+draw((14,0)--(14,11),mediumgray);
+draw((15,0)--(15,11),mediumgray);
+draw((16,0)--(16,11),mediumgray);
+
+draw((-.5,0)--(17,0),EndArrow(size=.15cm));
+draw((0,1)--(17,1),mediumgray);
+draw((0,2)--(17,2),mediumgray);
+draw((0,3)--(17,3),mediumgray);
+draw((0,4)--(17,4),mediumgray);
+draw((0,5)--(17,5),mediumgray);
+draw((0,6)--(17,6),mediumgray);
+draw((0,7)--(17,7),mediumgray);
+draw((0,8)--(17,8),mediumgray);
+draw((0,9)--(17,9),mediumgray);
+draw((0,10)--(17,10),mediumgray);
+
+draw((-.13,1)--(.13,1));
+draw((-.13,2)--(.13,2));
+draw((-.13,3)--(.13,3));
+draw((-.13,4)--(.13,4));
+draw((-.13,5)--(.13,5));
+draw((-.13,6)--(.13,6));
+draw((-.13,7)--(.13,7));
+draw((-.13,8)--(.13,8));
+draw((-.13,9)--(.13,9));
+draw((-.13,10)--(.13,10));
+
+draw((1,-.13)--(1,.13));
+draw((2,-.13)--(2,.13));
+draw((3,-.13)--(3,.13));
+draw((4,-.13)--(4,.13));
+draw((5,-.13)--(5,.13));
+draw((6,-.13)--(6,.13));
+draw((7,-.13)--(7,.13));
+draw((8,-.13)--(8,.13));
+draw((9,-.13)--(9,.13));
+draw((10,-.13)--(10,.13));
+draw((11,-.13)--(11,.13));
+draw((12,-.13)--(12,.13));
+draw((13,-.13)--(13,.13));
+draw((14,-.13)--(14,.13));
+draw((15,-.13)--(15,.13));
+draw((16,-.13)--(16,.13));
+
+label(scale(.7)*"$1$", (1,-.13), S);
+label(scale(.7)*"$2$", (2,-.13), S);
+label(scale(.7)*"$3$", (3,-.13), S);
+label(scale(.7)*"$4$", (4,-.13), S);
+label(scale(.7)*"$5$", (5,-.13), S);
+label(scale(.7)*"$6$", (6,-.13), S);
+label(scale(.7)*"$7$", (7,-.13), S);
+label(scale(.7)*"$8$", (8,-.13), S);
+label(scale(.7)*"$9$", (9,-.13), S);
+label(scale(.7)*"$10$", (10,-.13), S);
+label(scale(.7)*"$11$", (11,-.13), S);
+label(scale(.7)*"$12$", (12,-.13), S);
+label(scale(.7)*"$13$", (13,-.13), S);
+label(scale(.7)*"$14$", (14,-.13), S);
+label(scale(.7)*"$15$", (15,-.13), S);
+label(scale(.7)*"$16$", (16,-.13), S);
+
+label(scale(.7)*"$1$", (-.13,1), W);
+label(scale(.7)*"$2$", (-.13,2), W);
+label(scale(.7)*"$3$", (-.13,3), W);
+label(scale(.7)*"$4$", (-.13,4), W);
+label(scale(.7)*"$5$", (-.13,5), W);
+label(scale(.7)*"$6$", (-.13,6), W);
+label(scale(.7)*"$7$", (-.13,7), W);
+label(scale(.7)*"$8$", (-.13,8), W);
+label(scale(.7)*"$9$", (-.13,9), W);
+label(scale(.7)*"$10$", (-.13,10), W);
+
+draw((0,10)--(17,1.5),blue);
+draw((0,0)--(17,17/3),blue);
+
+dot((0,0),linewidth(4));
+label(scale(.75)*"$A$", (0,0), NE);
+dot((3,1),linewidth(4));
+label(scale(.75)*"$B$", (3,1), NE);
+
+dot((0,10),linewidth(4));
+label(scale(.75)*"$C$", (0,10), NE);
+dot((2,9),linewidth(4));
+label(scale(.75)*"$D$", (2,9), NE);
+
+draw((15,3)--(16,3)--(16,5)--(15,5)--cycle,linewidth(1.125));
+dot((15,3),linewidth(4));
+dot((16,3),linewidth(4));
+dot((16,5),linewidth(4));
+dot((15,5),linewidth(4));
+</asy>
+Therefore, we see that the answer is <imath>\boxed{\textbf{(B)}\ 1}.</imath>
+
+--- Solution 2 ---
+Note that the <imath> y </imath>-intercepts of line <imath> AB </imath> and line <imath> CD </imath> are <imath> 0 </imath> and <imath> 10 </imath>. If the analytic expression for line <imath> AB </imath> is <imath> y=k_{1}x </imath>, and the analytic expression for line <imath> CD </imath> is <imath> y=k_{2}x+10 </imath>, we have equations: <imath> 3k_{1} = 1 </imath> and <imath> 2k_{2} + 10 = 9 </imath>. Solving these equations, we can find out that <imath> k_{1} = \frac{1}{3}</imath> and <imath>k_{2} = -\frac{1}{2}</imath>. Therefore, we can determine that the expression for line <imath> AB </imath> is <imath> y=\frac{1}{3}x </imath> and the expression for line <imath> CD </imath> is <imath> y=-\frac{1}{2}x + 10 </imath>. When <imath> x=15 </imath>, the coordinates that line <imath> AB </imath> and line <imath> CD </imath> pass through are <imath> (15, 5) </imath> and <imath> \left(15, \frac{5}{2}\right) </imath>, and <imath> (15, 5) </imath> lies perfectly on one vertex of the rectangle while the <imath> y </imath> coordinate of <imath> \left(15, \frac{5}{2}\right) </imath> is out of the range <imath> 3 \leq y \leq 5 </imath> (lower than the bottom left corner of the rectangle <imath> (15, 3) </imath>). Considering that the <imath> y </imath> value of the line <imath> CD </imath> will only decrease, and the <imath> y </imath> value of the line <imath> AB </imath> will only increase, there will not be another point on the rectangle that lies on either of the two lines. Thus, we can conclude that the answer is <imath>\boxed{\textbf{(B)}\ 1}.</imath>
+
+~[[User:Bloggish|Bloggish]]
+
+
+=== Problem 8 ===
+Lola, Lolo, Tiya, and Tiyo participated in a ping pong tournament. Each player competed against each of the other three players exactly twice. Shown below are the win-loss records for the players. The numbers
+
+Choices: {'A': '\\ \\texttt{000101}', 'B': '\\ \\texttt{001001}', 'C': '\\ \\texttt{010000}', 'D': '\\ \\texttt{010101}', 'E': '\\ \\texttt{011000}'}
+Answer: A
+
+--- Solution 1 ---
+We can calculate the total number of wins (<math>1</math>'s) by seeing how many matches were players, which is <math>12</math> matches played. Then, we can calculate the # of wins already on the table, which is <math>5 + 3 + 2 = 10</math>, so there are <math>12 - 10 = 2</math> wins left in the mystery player. Now, we will make the key observation that there is only <math>2</math> wins (<math>1</math>'s) per column as there are <math>2</math> winners and <math>2</math> losers in each round. Strategically looking through the columns counting the <math>1</math>'s and putting our own <math>2</math> <math>1</math>'s when the column isn't already full yields <math>\boxed{\textbf{(A)}\ \texttt{000101}}</math>.
+
+--- Solution 2 ---
+In total, there will be <imath>\binom{4}{2} \cdot 2 = 6 \cdot 2 = 12</imath> games because there are <imath>\binom{4}{2}</imath> ways to choose a pair of people from the four players. And, each player will play each other player exactly twice. Each of these <imath>12</imath> games will have <imath>1</imath> winner and <imath>1</imath> loser, so there will be a total of <imath>12</imath> <imath>1</imath>'s and <imath>12</imath> <imath>0</imath>'s in the win-loss table. Therefore, Tiyo will have <imath>12-10=2</imath> <imath>1</imath>'s and <imath>12-8=4</imath> <imath>0</imath>'s in his record.
+
+Now, all we have to do is figure out the order of these <imath>1</imath>'s and <imath>0</imath>'s. In every round, there are two games; the players are split into two pairs and the people in those pairs play each other. Thus, every round should have <imath>2</imath> winners and <imath>2</imath> losers which means that every column of the win-loss table should have <imath>2</imath> <imath>1</imath>'s and <imath>2</imath> <imath>0</imath>'s. Looking at the filled-in table so far, we see that columns <imath>4</imath> and <imath>6</imath> need one more <imath>1</imath>, so Tiyo must have <imath>1</imath>'s in those columns and <imath> 0</imath>'s gone in the others. 
+Therefore, our answer is <imath>\boxed{\textbf{(A)}\ \texttt{000101}}.</imath>
+
+
+Remark: Note that we can skip straight to the reasoning used in the second paragraph (which is Solution 3 below).
+
+TRICK!:(We can just figure out the missing one by looking at the other 3 numbers provided)
+
+Minor edit - Runningmouse
+
+--- Solution 3 ---
+We can look one by one. We see that Lola and Lolo won the first game and Tiya lost. This shows that Tiyo must have lost as well because the results must be <math>2</math> wins and <math>2</math> loses. We use the same logic for games <math>2</math> and <math>3</math>, giving us <math>0</math>'s again. We look at the choices, and we see A is the only that starts with <math>3</math> <math>0</math>'s
+
+This shows our answer is <math>\boxed{\textbf{(A)}\ \texttt{000101}}.</math>
+
+--- Solution 4 ---
+We look at the scores. Notice how every column of numbers represents one round. We see that each column either has 2 wins and 1 loss, or 2 losses and 1 win. So, we come to the conclusion that Tiyo’s score must make it 2:2. So, now we solve. The first column has two wins already, and only one loss, so we decide that Tiyo lost (0). The second column also has to wins, so we give Tiyo 0. The third column follows this as well. In the fourth column, we see that Lola and Lolo both lost, and Tiya is the only one who won (1), so Tiyo also won (1). The fifth column follows the same as the first three, and the last column shows that Tiyo also won. So, Tiyo got: 000101. The only option that fits this is A.
+
+--- Solution 5 ---
+There should be two wins and two losses in each column of the graph of the win-loss records.
+Thus, for the first column, there are already two wins and a loss, which means that, for the column to have the same amount of wins and losses, Tiyo would have to lose.
+Use the same logic for the other columns, and find that the answer is A, or 000101.
+
+--- Solution 6 ---
+Each player has six games and there are four players so there will be 6 x 4 = 24 games. Total wins and losses of all players should be equal so there should be 12 total wins and losses among all players. By counting, it is known that there are already 10 total wins and 8 total losses. Tiyo's games must make each of these 12 so he will have 2 wins and 4 losses. 
+
+However, this leaves three different answers. To tell which is correct, we look at the 4th game of all players. There is 1 win and 2 losses, forcing Tiyo's 4th game to be a win.
+
+Therefore, the answer is <math>\boxed{\textbf{(A)}\ \texttt{000101}}.</math>
+
+
+=== Problem 9 ===
+Malaika is skiing on a mountain. The graph below shows her elevation, in meters, above the base of the mountain as she skis along a trail. In total, how many seconds does she spend at an elevation between
+
+Choices: {'A': '\\ 6', 'B': '\\ 8', 'C': '\\ 10', 'D': '\\ 12', 'E': '\\ 14'}
+Answer: B
+
+--- Solution 1 ---
+We mark the time intervals in which Malaika's elevation is between <imath>4</imath> and <imath>7</imath> meters in red, as shown below:
+<asy>
+// Diagram by TheMathGuyd. Found cubic, so graph is perfect.
+import graph;
+size(8cm);
+int i;
+for(i=1; i<9; i=i+1)
+{
+draw((-0.2,2i-1)--(16.2,2i-1), mediumgrey);
+draw((2i-1,-0.2)--(2i-1,16.2), mediumgrey);
+draw((-0.2,2i)--(16.2,2i), grey);
+draw((2i,-0.2)--(2i,16.2), grey);
+}
+Label f; 
+f.p=fontsize(6); 
+xaxis(-0.5,17.8,Ticks(f, 2.0),Arrow()); 
+yaxis(-0.5,17.8,Ticks(f, 2.0),Arrow()); 
+real f(real x) 
+{ 
+return -0.03125 x^(3) + 0.75x^(2) - 5.125 x + 14.5; 
+} 
+draw(graph(f,0,15.225),currentpen+1);
+draw(graph(f,2,4)^^graph(f,6,10)^^graph(f,12,14),red+currentpen+2);
+real dpt=2;
+real ts=0.75;
+transform st=scale(ts);
+label(rotate(90)*st*"Elevation (meters)",(-dpt,8));
+label(st*"Time (seconds)",(8,-dpt));
+</asy>
+The requested time intervals are:
+
+* from the <imath>2</imath>nd to the <imath>4</imath>th seconds
+
+* from the <imath>6</imath>th to the <imath>10</imath>th seconds
+
+* from the <imath>12</imath>th to the <imath>14</imath>th seconds
+
+In total, Malaika spends <imath>(4-2) + (10-6) + (14-12) = \boxed{\textbf{(B)}\ 8}</imath> seconds at such elevation.
+
+--- Solution 2 ---
+Notice that the entire section between the <imath>2</imath> second mark and the <imath>14</imath> second mark is between the <imath>4</imath> and <imath>7</imath> feet elevation level except the <imath>2</imath> seconds where she skis just under the <imath>4</imath> feet mark and when she skis just above the <imath>7</imath> feet mark, making the answer <imath>14-2-2-2=\boxed{\textbf{(B)}\ 8}.</imath>
+
+
+=== Problem 10 ===
+Harold made a plum pie to take on a picnic. He was able to eat only
+
+Choices: {'A': '\\ \\frac{1}{12}', 'B': '\\ \\frac{1}{6}', 'C': '\\ \\frac{1}{4}', 'D': '\\ \\frac{1}{3}', 'E': '\\ \\frac{5}{12}'}
+Answer: D
+
+--- Solution 1 ---
+Note that:
+
+* Harold ate <math>\frac14</math> of the pie. After that, <math>1-\frac14=\frac34</math> of the pie was left behind.
+
+* The moose ate <math>\frac13\cdot\frac34 = \frac14</math> of the pie. After that, <math>\frac34 - \frac14 = \frac12</math> of the pie was left behind.
+
+* The porcupine ate <math>\frac13\cdot\frac12 = \frac16</math> of the pie. After that, <math>\frac12 - \frac16 = \boxed{\textbf{(D)}\ \frac{1}{3}}</math> of the pie was left behind.
+
+More simply, we can condense the solution above into the following equation: <cmath>\left(1-\frac14\right)\left(1-\frac13\right)\left(1-\frac13\right) = \frac34\cdot\frac23\cdot\frac23 = \frac13.</cmath>
+
+--- Solution 2 ---
+Because Harold ate <math>\frac14</math> of the pie, there must be <math>\frac34</math> of the pie he had at the start left. Because the moose ate <math>\frac13</math> of the pie, there must be <math>\frac23</math> of the pie the moose had at the start left. Because the porcupine ate <math>\frac13</math> of the pie, there must be <math>\frac23</math> of the pie the porcupine had at the start left. Therefore, the answer must be <math>\frac34\times\frac23\times\frac23=\boxed{\textbf{(D)}\ \frac{1}{3}}</math> of the pie left.
+
+
+==Remark==
+This problem is a great example of the implementation of <b>remaining portions</b>. This concept, in short, refers to the method of finding out what remains of a whole when part of it is taken. If you look closely at our solution, we can see that the denominator is the same when we said Harold ate <math>\frac14</math> of the pie and we got <math>\frac34</math> of the pie left. We can also see the numerator is just the denominator minus the old denominator.
+
+
+=== Problem 11 ===
+NASA’s Perseverance Rover was launched on July
+
+Choices: {'A': '\\ 6{,}000', 'B': '\\ 12{,}000', 'C': '\\ 60{,}000', 'D': '\\ 120{,}000', 'E': '\\ 600{,}000'}
+Answer: C
+
+--- Solution 1 ---
+Note that <imath>6.5</imath> months is approximately <imath>6.5\cdot30\cdot24</imath> hours. Therefore, the speed (in miles per hour) is <cmath>\frac{292{,}526{,}838}{6.5\cdot30\cdot24} \approx \frac{300{,}000{,}000}{6.5\cdot30\cdot24} = \frac{10{,}000{,}000}{6.5\cdot24} \approx \frac{10{,}000{,}000}{6.4\cdot25} = \frac{10{,}000{,}000}{160} = 62500 \approx \boxed{\textbf{(C)}\ 60{,}000}.</cmath>
+As the answer choices are far apart from each other, we can ensure that the approximation is correct.
+
+
+==Solution 2.1
+
+--- Solution 2 ---
+The rover traveled about <imath>292{,}526{,}838 \approx 300{,}000{,}000</imath> miles. <imath>6.5</imath> months is about <imath>6\cdot 30 + 15 = 180 + 15 = 195 \approx 200</imath> days. <imath>200</imath> days is about <imath>200\cdot 24 \approx 200\cdot 25 = 5{,}000</imath> hours. <imath>\frac{300{,}000{,}000}{5{,}000} = \boxed{\textbf{(C)}\ 60{,}000}</imath>
+
+==Remark==
+This problem is a great example of a situation where rounding all the numbers to ones we can easily work with is an excellent first step. In any competitive timed test, especially the AMC, if you see problems that require you to choose answers that are the closest, this is a sign to you that you can speed through this problem and move on quickly. 
+The rounding being: <imath>\frac{30000000}{200*20}</imath>
+
+
+=== Problem 12 ===
+The figure below shows a large white circle with a number of smaller white and shaded circles in its
+interior. What fraction of the interior of the large white circle is shaded?
+
+<asy>
+// Diagram by TheMathGuyd
+size(6cm);
+draw(circle((3,3),3));
+filldraw(circle((2,3),2),lightgrey);
+filldraw(circle((3,3),1),white);
+filldraw(circle((1,3),1),white);
+filldraw(circle((5.5,3),0.5),lightgrey);
+filldraw(circle((4.5,4.5),0.5),lightgrey);
+filldraw(circle((4.5,1.5),0.5),lightgrey);
+int i, j;
+for(i=0; i<7; i=i+1)
+{
+draw((0,i)--(6,i), dashed+grey);
+draw((i,0)--(i,6), dashed+grey);
+}
+</asy>
+
+Choices: {'A': '\\ \\frac{1}{4}', 'B': '\\ \\frac{11}{36}', 'C': '\\ \\frac{1}{3}', 'D': '\\ \\frac{19}{36}', 'E': '\\ \\frac{5}{9}'}
+Answer: B
+
+--- Solution 1 ---
+First, the total area of the radius </imath>3<imath> circle is simply just </imath>9\cdot \pi<imath> when using our area of a circle formula. 
+
+Now from here, we have to find our shaded area. This can be done by adding the areas of the </imath>\frac{1}{2}<imath>-radius circles and add; then, take the area of the </imath>1<imath> radius circles and subtract that from the area of the </imath>2<imath> radius circle to get our resulting complex shape area. Adding these up, we will get </imath>3\cdot \frac{1}{4} \pi + 4 \pi -\pi - \pi = \frac{3}{4} \pi + 2 \pi = \frac{11\cdot \pi}{4}<imath>.
+
+So, our answer is </imath>\frac {\frac{11}{4} \pi}{9 \pi} = \boxed{\textbf{(B)}\ \frac{11}{36}}<imath>.
+
+
+Minor edits by 
+Minor edits by 
+</imath>$
+
+<imath>
+
+--- Solution 2 ---
+Pretend each circle is a square. The large shaded circle is a square with area </imath>16
+-claregu
+LaTeX (edits -apex304, CoOlPoTaToEs, KGINSPECTORBOI, SlimeKnight, rickastleylover99)
+</imath>
+
+
+=== Problem 13 ===
+Along the route of a bicycle race,
+
+Choices: {'A': '\\ 8', 'B': '\\ 16', 'C': '\\ 24', 'D': '\\ 48', 'E': '\\ 96'}
+Answer: D
+
+--- Solution 1 ---
+Suppose that the race is <imath>d</imath> miles long. The water stations are located at <cmath>\frac{d}{8}, \frac{2d}{8}, \ldots, \frac{7d}{8}</cmath> miles from the start, and the repair stations are located at <cmath>\frac{d}{3}, \frac{2d}{3}</cmath> miles from the start.
+
+We are given that <imath>\frac{3d}{8}=\frac{d}{3}+2,</imath> from which  
+<cmath>\begin{align*}
+\frac{9d}{24}&=\frac{8d}{24}+2 \\
+\frac{d}{24}&=2 \\
+d&=\boxed{\textbf{(D)}\ 48}.
+\end{align*}</cmath>
+
+==Solution😆==
+
+S___ 💧___ 💧__*_ 💧___ 💧___ 💧_*__ 💧___ 💧___E
+
+Step 1 : 7 💧 —> 8 sections; 2 repair—> 3 sections;
+
+( Devisable by 24)
+
+Step 2, by 1st repair is 2 miles away to 3rd 💧;
+3rd 💧 Is 3/8 to starting point;
+1st repair Is 1/3 to starting point ;
+
+Step 3: calculate!
+2/(3/8-1/3) =48
+
+
+=== Problem 14 ===
+Nicolas is planning to send a package to his friend Anton, who is a stamp collector. To pay for the postage, Nicolas would like to cover the package with a large number of stamps. Suppose he has a collection of
+
+Choices: {'A': '\\ 45', 'B': '\\ 46', 'C': '\\ 51', 'D': '\\ 54', 'E': '\\ 55'}
+Answer: E
+
+--- Solution 1 ---
+Let's use the most stamps to make <imath>7.10.</imath> We have <imath>20</imath> of each stamp, <imath>5</imath>-cent (nickels), <imath>10</imath>-cent (dimes), and <imath>25</imath>-cent (quarters).
+
+If we want the highest number of stamps, we must have the highest number of the smaller value stamps (like the coins above). We can use <imath>20</imath> nickels and <imath>20</imath> dimes to bring our total cost to <imath>7.10 - 3.00 = 4.10</imath>. However, when we try to use quarters, the <imath>25</imath> cents don’t fit evenly, so we have to give back <imath>15</imath> cents to make the quarter amount <imath>4.25</imath>. The most efficient way to do this is to give back a  <imath>10</imath>-cent (dime) stamp and a <imath>5</imath>-cent (nickel) stamp to have <imath>38</imath> stamps used so far. Now, we just use <imath>\frac{425}{25} = 17</imath> quarters to get a grand total of <imath>38 + 17 = \boxed{\textbf{(E)}\ 55}</imath>.
+
+--- Solution 2 ---
+The value of his entire stamp collection is <math>8</math> dollars. To make <math>\$7.10</math> with stamps, he should remove <math>90</math> cents worth of stamps with as few stamps as possible. To do this, he should start by removing as many <math>25</math> cent stamps as possible as they have the greatest denomination. He can remove at most <math>3</math> of these stamps. He still has to remove <math>90-25\cdot3=15</math> cents worth of stamps. This can be done with one <math>5</math> and <math>10</math> cent stamp. In total, he has <math>20\cdot3=60</math> stamps in his entire collection. As a result, the maximum number of stamps he can use is <math>20\cdot3-5=\boxed{\textbf{(E)}\ 55}</math>.
+
+
+=== Problem 15 ===
+Viswam walks half a mile to get to school each day. His route consists of
+
+Choices: {'A': '\\ 4', 'B': '\\ 4.2', 'C': '\\ 4.5', 'D': '\\ 4.8', 'E': '\\ 5'}
+Answer: B
+
+--- Solution 1 ---
+Note that Viswam walks at a constant speed of <imath>60</imath> blocks per hour as he takes <imath>1</imath> minute to walk each block. After walking <imath>5</imath> blocks, he has taken <imath>5</imath> minutes and has <imath>5</imath> minutes remaining to walk <imath>7</imath> blocks. Therefore, he must walk at a speed of <imath>7 \cdot 60 \div 5 = 84</imath> blocks per hour to get to school on time, from the time he starts his detour. Since he normally walks <imath>\frac{1}{2}</imath> mile, which is equal to <imath>10</imath> blocks, <imath>1</imath> mile is equal to <imath>20</imath> blocks. Therefore, he must walk at <imath>84 \div 20 = 4.2</imath> mph from the time he starts his detour to get to school on time, so the answer is <imath>\boxed{\textbf{(B)}\ 4.2}</imath>.
+
+--- Solution 2 ---
+Viswam walks <imath>10</imath> blocks, or half a mile, in <imath>10</imath> minutes. Therefore, he walks at a rate of <imath>3</imath> mph. When he takes his detour, he must travel <imath>7</imath> blocks instead of <imath>5</imath>. Our final equation is <imath>\frac{7}{5} \times 3 = \frac{21}{5} = \boxed{\textbf{(B)}\ 4.2}</imath>.
+
+
+
+Note: In the second half of his journey, he is travelling 7/5 as far as he originally expected to, so he needs to travel at 7/5 the speed to get there on time.
+
+--- Solution 3 ---
+When calculating the speed of his normal route, we get:
+
+<math>\frac{0.5 \mathrm{miles}}{10 \mathrm{minutes}}= \frac{3 \mathrm{miles}}{60 \mathrm{minutes}}</math>
+
+Keep in mind that his route is <math>10</math> blocks long. Since we count <math>7</math> blocks when the detour starts, than this would mean that he has <math>\frac{7}{10}</math> miles left to walk, considering the normal amount of blocks that he usually walks. Multiplying by <math>6</math> to get the rate, we get, <math>\frac{42}{10}=4.2</math>
+
+Therefore, the answer is <math>\boxed{\textbf{(B)}\ 4.2}</math>.
+
+
+=== Problem 16 ===
+The letters
+
+Choices: {'A': '~132\\text{ Ps, }134\\text{ Qs, }134\\text{ Rs}'}
+Answer: C
+
+--- Solution 1 ---
+In our <math>5\times5</math> grid, there are <math>8,9</math> and <math>8</math> of the letters <math>\text{P}, \text{Q},</math> and <math>\text{R}</math>, respectively, and in a <math>2\times2</math> grid, there are <math>1,2</math> and <math>1</math> of the letters <math>\text{P}, \text{Q},</math> and <math>\text{R}</math>, respectively. We see that in both grids, there are <math>x, x+1,</math> and <math>x</math> of the <math>\text{P}, \text{Q},</math> and <math>\text{R}</math>, respectively. This is because in any <math>n\times n</math> grid with <math>n\equiv2\pmod3</math>, there are <math>x, x+1,</math> and <math>x</math> of the <math>\text{P}, \text{Q},</math> and <math>\text{R}</math>, respectively. We can see that the only answer choice which satisfies this condition is <math>\boxed{\textbf{(C)}
+
+--- Solution 2 ---
+Since <imath>20\equiv2\pmod3</imath> and <imath>\text{Q}</imath> is in the 2nd diagonal, it is also in the 20th diagonal, and so we find that there are <imath>2(2 + 5 + 8 + 11 + 14 + 17) + 20 = 134 \text{Qs}</imath>. Since all the <imath>\text{P}</imath>'s and <imath>\text{R}</imath>'s are symmetric, the answer is <imath>\boxed{\textbf{(C)}
+~[[User:ILoveMath67|ILoveMath67]]
+user I lik math
+
+--- Solution 3 ---
+Notice that rows <math>x</math> and <math>x+3</math> are the same, for any <math>1 \leq x \leq 17.</math> Additionally, rows <math>1, 2,</math> and <math>3</math> collectively contain the same number of <math>\text{P}</math>s, <math>\text{Q}</math>s, and <math>\text{R}</math>s, because the letters are just substituted for one another. Therefore, the number of <math>\text{P}</math>s, <math>\text{Q}</math>s, and <math>\text{R}</math>s in the first <math>18</math> rows is <math>120</math>. The first row has <math>7</math> <math>\text{P}</math>s, <math>7</math> <math>\text{Q}</math>s, and <math>6</math> <math>\text{R}</math>s, and the second row has <math>6</math> <math>\text{P}</math>s, <math>7</math> <math>\text{Q}</math>s, and <math>7</math> <math>\text{R}</math>s. Adding these up, we obtain <math>\boxed{\textbf{(C)}
+
+--- Solution 4 ---
+This solution refers to the full diagram in Solution 4.
+
+Note the <math>\text{Q}</math> diagonals are symmetric. The <math>\text{R}</math> and <math>\text{P}</math> diagonals are not symmetric, but are reflections of each other about the <math>\text{Q}</math> diagonals: 
+
+* The upper <math>\text{Q}</math> diagonal of length <math>2</math> is surrounded by a <math>\text{P}</math> diagonal of length <math>3</math> and an <math>\text{R}</math> diagonal of length <math>1.</math>
+
+* The lower <math>\text{Q}</math> diagonal of length <math>2</math> is surrounded by a <math>\text{P}</math> diagonal of length <math>1</math> and an <math>\text{R}</math> diagonal of length <math>3.</math>
+
+When looking at a pair of <math>Q</math> diagonals of the same length <math>x,</math> there is a total of <math>2x</math> <math>\text{R}</math>s and <math>\text{P}</math>s next to these <math>2</math> diagonals.
+
+The main diagonal of <math>20</math> <math>\text{Q}</math>s has <math>19</math> <math>\text{P}</math>s and <math>19</math> <math>\text{R}</math>s next to it.  Thus, the total is <math>x+1</math> <math>\text{Q}</math>s, <math>x</math> <math>\text{P}</math>s, <math>x</math> <math>\text{R}</math>s. Therefore, the answer is <math>\boxed{\textbf{(C)}
+
+--- Solution 5 ---
+0
+-Benedict T (countmath1)
+
+--- Solution 6 ---
+We can first observe that <imath>P</imath> shows on diagonals increasing or decreasing by <imath>3.</imath> 
+
+It starts at <imath>1,4,7,9... </imath> and increases in the form <imath>3x-2</imath>. Using our answer choices, <imath>(B)</imath> and <imath>(C)</imath> are the only fits.
+
+<imath>Q</imath> is like this as well, increasing <imath>2,5,8,11....</imath> This means <imath>Q</imath> has to be in the form of <imath>3x-1.</imath> Testing this out leads us with <imath>\boxed{\textbf{(C)}
+
+--- Solution 7 ---
+When we find the letters at the corners, we see that there are 2 other corners with Q's and 1 with R. There are 2 corners with Q and 1 with P and R. Therefore, it makes sense that there should be more Q's than other letters. Only <math>\boxed{\textbf{(C)}
+<b>Only do it this way if there are 30 seconds left on the clock, as it may not always work!</b>
+
+--- Solution 8 ---
+Since there are <math>3</math> letters, there must be a multiple of 3 for the height of the array for the amount of letters to be the same. However, there is one less (<math>21-1=20</math>) so there will be one less letter in each column compared to the other two. Looking at the diagram, the first column starts with a <math>P</math> then a <math>Q</math>. Since it will miss the third letter, <math>R</math>, we write this as <math>-R</math>. We do this process for the remaining 20 columns, and applying the same logic if the first three are <math>-R</math>, <math>-P</math> and <math>-Q</math>, there will be one less <math>-Q</math> meaning that there will be an extra <math>Q</math>. The only answer that has in extra <math>Q</math> is <math>\textbf{(C)}
+
+
+=== Problem 17 ===
+A <i>regular octahedron</i> has eight equilateral triangle faces with four faces meeting at each vertex. Jun will make the regular octahedron shown on the right by folding the piece of paper shown on the left. Which numbered face will end up to the right of
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ 3', 'D': '\\ 4', 'E': '\\ 5'}
+Answer: A
+
+--- Solution 1 ---
+We color face <imath>6</imath> red and face <imath>5</imath> yellow. Note that from the octahedron, face <imath>5</imath> and face <imath>?</imath> do not share anything in common. From the net, face <imath>5</imath> shares at least one vertex with all other faces except face <imath>1,</imath> which is shown in green: 
+<asy>
+/*
+Diagram by TheMathGuyd
+Edited by MRENTHUSIASM
+*/
+import graph;
+// The Solid
+// To save processing time, do not use three (dimensions)
+// Project (roughly) to two
+size(15cm);
+pair Fr, Lf, Rt, Tp, Bt, Bk;
+Lf=(0,0);
+Rt=(12,1);
+Fr=(7,-1);
+Bk=(5,2);
+Tp=(6,6.7);
+Bt=(6,-5.2);
+fill(Tp--Bk--Lf--cycle,red);
+fill(Bt--Bk--Lf--cycle,green);
+fill(Fr--Rt--Tp--cycle,yellow);
+draw(Lf--Fr--Rt);
+draw(Lf--Tp--Rt);
+draw(Lf--Bt--Rt);
+draw(Tp--Fr--Bt);
+draw(Lf--Bk--Rt,dashed);
+draw(Tp--Bk--Bt,dashed);
+label(rotate(-8.13010235)*slant(0.1)*"$Q$", (4.2,1.6));
+label(rotate(21.8014095)*slant(-0.2)*"$?$", (8.5,2.05));
+pair g = (-8,0); // Define Gap transform
+real a = 8;
+draw(g+(-a/2,1)--g+(a/2,1), Arrow()); // Make arrow
+// Time for the NET
+pair DA,DB,DC,CD,O;
+DA = (4*sqrt(3),0);
+DB = (2*sqrt(3),6);
+DC = (DA+DB)/3;
+CD = conj(DC);
+O=(0,0);
+transform trf=shift(3g+(0,3));
+path NET = O--(-2*DA)--(-2DB)--(-DB)--(2DA-DB)--DB--O--DA--(DA-DB)--O--(-DB)--(-DA)--(-DA-DB)--(-DB);
+fill(trf*((DA-DB)--O--DA--cycle),red);
+fill(trf*((DA-DB)--O--(-DB)--cycle),yellow);
+fill(trf*((-2*DA)--(-DA-DB)--(-DA)--cycle),green);
+draw(trf*NET);
+label("$7$",trf*DC);
+label("$Q$",trf*DC+DA-DB);
+label("$5$",trf*DC-DB);
+label("$3$",trf*DC-DA-DB);
+label("$6$",trf*CD);
+label("$4$",trf*CD-DA);
+label("$2$",trf*CD-DA-DB);
+label("$1$",trf*CD-2DA);
+</asy>
+Therefore, the answer is <imath>\boxed{\textbf{(A)}\ 1}.</imath>
+
+--- Solution 2 ---
+We label the octohedron going triangle by triangle until we reach the <imath>?</imath> triangle. The triangle to the left of the <imath>Q</imath> should be labeled with a <imath>6</imath>. Underneath triangle <imath>6</imath> is triangle <imath>5</imath>. The triangle to the right of triangle <imath>5</imath> is triangle <imath>4</imath> and further to the right is triangle <imath>3</imath>. Finally, the side of triangle <imath>3</imath> under triangle <imath>Q</imath> is <imath>2</imath>, so the triangle to the right of <imath>Q</imath> is <imath>\boxed{\textbf{(A)}\ 1}</imath>.
+
+--- Solution 3 ---
+Notice that the triangles labeled <imath>2, 3, 4,</imath> and <imath>5</imath> make the bottom half of the octahedron, as shown below:
+<asy>
+/*
+Diagram by TheMathGuyd
+Edited by MRENTHUSIASM
+*/
+import graph;
+// The Solid
+// To save processing time, do not use three (dimensions)
+// Project (roughly) to two
+size(15cm);
+pair Fr, Lf, Rt, Tp, Bt, Bk;
+Lf=(0,0);
+Rt=(12,1);
+Fr=(7,-1);
+Bk=(5,2);
+Tp=(6,6.7);
+Bt=(6,-5.2);
+dot(Bt,linewidth(5));
+draw(Lf--Fr--Rt);
+draw(Lf--Tp--Rt);
+draw(Lf--Bt--Rt);
+draw(Tp--Fr--Bt);
+draw(Lf--Bk--Rt,dashed);
+draw(Tp--Bk--Bt,dashed);
+label(rotate(-8.13010235)*slant(0.1)*"$Q$", (4.2,1.6));
+label(rotate(21.8014095)*slant(-0.2)*"$?$", (8.5,2.05));
+pair g = (-8,0); // Define Gap transform
+real a = 8;
+draw(g+(-a/2,1)--g+(a/2,1), Arrow()); // Make arrow
+// Time for the NET
+pair DA,DB,DC,CD,O;
+DA = (4*sqrt(3),0);
+DB = (2*sqrt(3),6);
+DC = (DA+DB)/3;
+CD = conj(DC);
+O=(0,0);
+transform trf=shift(3g+(0,3));
+path NET = O--(-2*DA)--(-2DB)--(-DB)--(2DA-DB)--DB--O--DA--(DA-DB)--O--(-DB)--(-DA)--(-DA-DB)--(-DB);
+dot(trf*(-DB),linewidth(5));
+draw(trf*NET);
+label("$7$",trf*DC);
+label("$Q$",trf*DC+DA-DB);
+label("$5$",trf*DC-DB);
+label("$3$",trf*DC-DA-DB);
+label("$6$",trf*CD);
+label("$4$",trf*CD-DA);
+label("$2$",trf*CD-DA-DB);
+label("$1$",trf*CD-2DA);
+</asy>
+Therefore, <imath>\textbf{(B)}, \textbf{(C)}, \textbf{(D)},</imath> and <imath>\textbf{(E)}</imath> are clearly not the correct answer. Thus, the only choice left is <imath>\boxed{\textbf{(A)}\ 1}</imath>.
+
+--- Solution 4 ---
+The first half of the octahedron will need <imath>4</imath> triangles connected to one another to form it. We can choose the triangles <imath>4</imath>, <imath>5</imath>, <imath>6</imath>, and <imath>7</imath> and form the half around the vertex they all share. That leaves triangles <imath>1</imath>, <imath>3</imath>, <imath>2</imath>, and <imath>Q</imath> to form the second half. Triangle <imath>3</imath> will definitely share its sides with triangles <imath>1</imath> and <imath>2</imath>, leaving them to share their second side with triangle <imath>Q</imath>. Since triangle <imath>Q</imath> will certainly share its left side with triangle <imath>2</imath>, the only triangle left to share its right side is triangle <imath>\boxed{\textbf{(A)}\ 1}</imath>
+
+--- Solution 5 ---
+Trace the net on your scratch paper, rip it out, and fold it. You'll see the answer is <imath>\boxed{\textbf{(A)}\ 1}</imath> This is not recommended.
+
+
+=== Problem 18 ===
+Greta Grasshopper sits on a long line of lily pads in a pond. From any lily pad, Greta can jump
+
+Choices: {'A': '\\ 405', 'B': '\\ 407', 'C': '\\ 409', 'D': '\\ 411', 'E': '\\ 413'}
+Answer: D
+
+--- Solution 1 ---
+We have <imath>2</imath> directions going <imath>5</imath> right or <imath>3</imath> left. We can assign a variable to each of these directions. We can call going right <imath>1</imath> direction <imath>\text{X}</imath> and we can call going <imath>1</imath> left <imath>\text{Y}</imath>. We can build an equation of <imath>5\text{X}-3\text{Y}=2023</imath>, where we have to limit the number of moves we do. We can do this by making more of our moves the <imath>5</imath> move turn than the <imath>3</imath> move turn. The first obvious step is to go some amount of moves in the right direction then subtract off in the left direction to land on <imath>2023</imath>. The least amount of <imath>3</imath>’s added to <imath>2023</imath> to make a multiple of <imath>5</imath> is <imath>4</imath> as <imath>2023 + 4(3) = 2035</imath>. So now, we have solved the problem as we just go <imath>\frac{2035}{5} = 407</imath> hops right, and just do 4 more hops left. Yielding <imath>407 + 4 = \boxed{\textbf{(D)}\ 411}</imath> as our answer.
+
+--- Solution 2 ---
+Notice that <imath>2023 \equiv 3\pmod{5}</imath>, and jumping to the left increases the value of Greta's position <imath>\pmod{5}</imath> by <imath>2</imath>. Therefore, the number of jumps to the left must be <imath>4 \pmod{5}</imath>. As the number of jumps to the left increases, so does the number of jumps to the right, we must minimize both, which occurs when we jump <imath>4</imath> to the left and <imath>407</imath> to the right. The answer is <imath>\boxed{\textbf{(D)}\ 411}</imath>.
+
+--- Solution 3 ---
+<imath>5y - 2023</imath> must be divisible by 3. The smallest value of <imath>y</imath> that will achieve this is <imath>407</imath>, which lands it at <imath>2035</imath>. After that, it takes <imath>4</imath> jumps back, making a total of <imath>\boxed{\textbf{(D)}\ 411}</imath>.
+
+
+==Solution 3.1==
+Here is Solution 3 but worded differently:
+We can to go back <imath>3x</imath> steps from <imath>5y</imath> steps we took past <imath>2023</imath>. The other way to say this is we go <imath>3x</imath> steps from <imath>2023</imath> to get to <imath>5y</imath>. What is the least value of <imath>3x</imath>? We need <imath>2023+3x</imath> to end in a <imath>5</imath> or <imath>0</imath>. The least value for <imath>3x</imath>, which makes <imath>2023+3x=2035</imath>, is <imath>4</imath>. <imath>\frac{2035}{5}=407</imath>. Therefore, <imath>407+4=</imath> <imath>\boxed{\textbf{(D)}\ 411}</imath>.
+
+
+=== Problem 19 ===
+An equilateral triangle is placed inside a larger equilateral triangle so that the region between them can be divided into three congruent trapezoids, as shown below. The side length of the inner triangle is
+
+Choices: {'A': '1 : 3', 'B': '3 : 8', 'C': '5 : 12', 'D': '7 : 16', 'E': '4 : 9'}
+Answer: C
+
+--- Solution 1 ---
+All equilateral triangles are similar. For the outer equilateral triangle to the inner equilateral triangle, since their side-length ratio is <imath>\frac32,</imath> their area ratio is <imath>\left(\frac32\right)^2=\frac94.</imath> It follows that the area ratio of three trapezoids to the inner equilateral triangle is <imath>\frac94-1=\frac54,</imath> so the area ratio of one trapezoid to the inner equilateral triangle is <cmath>\frac54\cdot\frac13=\frac{5}{12}=\boxed{\textbf{(C) } 5 : 12}.</cmath>
+
+--- Solution 2 ---
+Subtracting the larger equilateral triangle from the smaller one yields the sum of the three trapezoids. Since the ratio of the side lengths of the larger to the smaller one is <math>3:2</math>, we can set the side lengths as <math>3</math> and <math>2</math>, respectively. So, the sum of the trapezoids is <math>\frac{9\sqrt{3}}{4}-\frac{4\sqrt{3}}{4}=\frac{5}{4}\sqrt{3}</math>. We are also told that the three trapezoids are congruent, thus the area of each of them is <math>\frac{1}{3} \cdot \frac{5}{4}\sqrt{3}=\frac{5}{12}\sqrt{3}</math>. Hence, the ratio is <math>\frac{\frac{5}{12}\sqrt{3}}{\sqrt{3}}=\frac{5}{12}=\boxed{\textbf{(C) } 5 : 12}</math>.
+
+
+=== Problem 20 ===
+Two integers are inserted into the list
+
+Choices: {'A': '\\ 56', 'B': '\\ 57', 'C': '\\ 58', 'D': '\\ 60', 'E': '\\ 61'}
+Answer: D
+
+--- Solution 1 ---
+To double the range, we must find the current range, which is <imath>28 - 3 = 25</imath>, to then double to: <imath>2(25) = 50</imath>. Since we do not want to change the median, we need to get a value less than <imath>8</imath> (as <imath>8</imath> would change the mode) for the smaller, which will be <imath>7</imath>. This fixes <imath>53</imath> for the larger value. Anything less than <imath>3</imath> is not beneficial to the optimization because you want to get the largest range without changing the mode. So, taking our optimal values of <imath>7</imath> and <imath>53</imath>, we have an answer of <imath>7 + 53 = \boxed{\textbf{(D)}\ 60}</imath>.
+
+--- Solution 2 ---
+https://youtu.be/YeCldZn5qD8
+
+
+=== Problem 21 ===
+Alina writes the numbers
+
+Choices: {'A': '\\ 0', 'B': '\\ 1', 'C': '\\ 2', 'D': '\\ 3', 'E': '\\ 4'}
+Answer: C
+
+--- Solution 1 ---
+The group with <imath>5</imath> must have the two other numbers adding up to <imath>10</imath>, since the sum of all the numbers is <imath>(1 + 2 \cdots + 9) = \frac{9(10)}{2} = 45</imath>. The sum of the numbers in each group must therefore be <imath>\frac{45}{3}=15</imath>. We can have <imath>(1, 5, 9)</imath>, <imath>(2, 5, 8)</imath>, <imath>(3, 5, 7)</imath>, or <imath>(4, 5, 6)</imath>. With the first group, we have <imath>(2, 3, 4, 6, 7, 8)</imath> left over. The only way to form a group of <imath>3</imath> numbers that add up to <imath>15</imath> is with <imath>(3, 4, 8)</imath> or <imath>(2, 6, 7)</imath>. One of the possible arrangements is therefore <imath>(1, 5, 9) (3, 4, 8) (2, 6, 7)</imath>. Then, with the second group, we have <imath>(1, 3, 4, 6, 7, 9)</imath> left over. With these numbers, there is no way to form a group of <imath>3</imath> numbers adding to <imath>15</imath>. Similarly, with the third group there is <imath>(1, 2, 4, 6, 8, 9)</imath> left over and we can make a group of <imath>3</imath> numbers adding to <imath>15</imath> with <imath>(1, 6, 8)</imath> or <imath>(2, 4, 9)</imath>. Another arrangement is <imath>(3, 5, 7) (1, 6, 8) (2, 4, 9)</imath>. Finally, the last group has <imath>(1, 2, 3, 7, 8, 9)</imath> left over. There is no way to make a group of <imath>3</imath> numbers adding to <imath>15</imath> with this, so the arrangements are <imath>(1, 5, 9) (3, 4, 8) (2, 6, 7)</imath> and <imath>(3, 5, 7) (1, 6, 8) (2, 4, 9)</imath>. So，there are <imath>\boxed{\textbf{(C)}\ 2}</imath> sets that can be formed.
+
+--- Solution 2 ---
+The sum of the numbers across all equally valued sets is <imath>(1 + 2 \cdots + 9) = \frac{9(10)}{2} = 45</imath>. The value of the numbers in each set would be <imath>\frac{45}{3} = \textbf{15}</imath>. We know that the numbers <imath>9</imath>, <imath>8</imath>, and <imath>7</imath> must belong in different sets, as putting any <imath>2</imath> numbers in <imath>1</imath> set will either pass or match the limit of <imath>15</imath> per set, and we would then still need to add <imath>1</imath> more number after that. Note that these numbers must be distinct, as Alina only has <imath>1</imath> of each number, and order does not matter in the sets. Starting with the set that includes the number <imath>9</imath>, the next two numbers must add up to <imath>6</imath>, and there are <imath>\textbf{2}</imath> ways of doing this <imath>(2,4) (1,5)</imath>. Note we cannot use any number past <imath>6</imath>, as those numbers must be used in the other sets. The next set, which includes the number <imath>8</imath>, must have two numbers that add up to <imath>7</imath>, and there are <imath>\textbf{3}</imath> was to do this <imath>(2,5) (1,6) (3,4)</imath>. The final set, which includes the number <imath>7</imath>, must have <imath>2</imath> numbers that sum up to <imath>8</imath>, and there are <imath>\textbf{2}</imath> ways to do this <imath>(2,6) (3,5)</imath>. Now we have found the number of ways in which each set sums up to <imath>15</imath>. To find the number of ways in which all three sets sum up to <imath>15</imath> concurrently, we must take the minimum of <imath>2</imath>, <imath>3</imath>, and <imath>2</imath>, which gives us an answer of <imath>\boxed{\textbf{(C)}\ 2}</imath> triplets of sets with 3 values, in which each set sum to the same amount
+
+--- Solution 3 ---
+Note that each group of numbers should sum to <imath>\frac{1+2+3+4+5+6+7+8+9}{3} = 15.</imath> Thus, this is equivalent to asking, “How many ways can you fill in a three by three magic square with the integers <imath>1</imath> through <imath>9</imath>?” since we can take the three rows of the magic square as our three groups. If you have closely studied magic squares, you might know that in a three by three magic square that is to be filled in with the integers <imath>1</imath> through <imath>9</imath>, the center of the square would be <imath>5</imath> (the average of the numbers), and the numbers in the corners should be even(*). The such pairs (disregarding order) are <imath>(2,8)</imath> and <imath>(4,6).</imath> Let’s fix the position of <imath>2</imath> to be the top left corner. This would make <imath>8</imath> in the bottom right corner. We can have either <imath>4</imath> or <imath>6</imath> to be in the top right corner, for a total of <imath>\boxed{\textbf{(C)}\ 2}</imath> such groups of three. (The groups are <imath>(8,3,4) (1,5,7) (6,9,2)</imath> and <imath>(8,1,6) (3,5,7) (4,9,2).</imath>)
+Note that if we had instead fixed the position of <imath>4</imath>, <imath>6</imath>, or <imath>8</imath>, they would correspond to one of the two cases, just in a different configuration.
+
+
+(*)We can prove this using proof by contradiction. Label the nine small squares within the magic square from <imath>a</imath> to <imath>i</imath> from left to right, top to bottom. Firstly, we know that <imath>a+i</imath> and <imath>c+g</imath> sum to <imath>10</imath> since the center square is <imath>5</imath>. Thus, <imath>a</imath> and <imath>i</imath> must have the same parity, and so must <imath>c</imath> and <imath>g</imath>. Suppose that <imath>a</imath> and <imath>c</imath> have different parity. Since <imath>a+b+c=15</imath>, <imath>b</imath> must be even. By a similar argument, <imath>h</imath> must also be even, and so must <imath>d</imath> and <imath>f</imath>. Our initial assumption is that one of <imath>a</imath> and <imath>c</imath> is odd and the other is even; however, we end up with six even numbers needed to fill in the square, but there are only four even integers from <imath>1</imath> to <imath>9</imath>. Now suppose that all of <imath>a, c, g,</imath> and <imath>i</imath> are odd. This would make each of <imath>b, d, f,</imath> and <imath>h</imath> odd, but clearly we do not have enough odd numbers to make all nine numbers odd. Thus, each corner square must be even.
+
+--- Solution 4 ---
+To start, we must find the value that all three groups must add to, which is  <imath>\frac{1+2+3+4+5+6+7+8+9}{3} = 15.</imath>. Then, we can notice that the numbers <imath>1, 2,</imath> and <imath>3</imath> must be in different groups because two of them and any other digit 1-9 added together cannot produce 15 (For example, <imath>2+3=5</imath> which means that we need a <imath>10</imath> to sum to 15.  In the same way,  <imath>7, 8,</imath> and <imath>9</imath> cannot be placed in the same group because putting them in the same group would make the numbers greater than 15 (For example, <imath>7+8=15</imath>, meaning that it would be impossible to add another number with making the sum greater than 15.
+Now, we can just use trial and error to solve the problem (this is feasible because there are only <imath>3*2=6</imath> ways to pair a number <imath>1-3</imath> and <imath>7-9</imath> and then add another number <imath>4-6</imath> in order to sum to 15. By trial and error, we see that 1 and 7 must not be paired together because to have a sum of 15, there must be another 7 in the group (The problem only lets us use 1 of each number). This eliminates two of the options we are considering. Now, we only have to check the 4 options where 7 is not in a group with 1. 
+
+By trial and error, we can see that only two cases work:
+
+1. <imath>(1,8,6); (2,9,4); (3,7,5)</imath>
+and
+2. <imath>(1,9,5); (2,7,6); (3,8,4)</imath>
+
+Because we only have two options, the answer is <imath>C</imath>
+(Too bashy, not recommended in the real test if you encounter these problems)
+
+--- Solution 5 ---
+I don't know for sure, but this problem could be the same as picking 3 pairs of lines in a magic square. The only 3 sets that work are either all columns or all rows, as diagonals have only 2 pairs, and they overlap. Giving us 2, or <imath>C</imath>
+(If their are any errors with this, please let me know)
+
+
+CubiksRube's solution is indeed correct to some degree. We know that a magic square has 8 lines where the numbers add up to the same: 15.
+As the question has stated, we need 3 groups of 3 cards for 1 possiblility. There are 2 groups of three groups of three numbers - the horizontal three and the vertical 3 - and they both add to the same number. We don't care about the diagonals because there are only 2 of them and we need 3 groups for 1 possibilitiy.
+
+We also know that this is the only 2 possibilities because otherwise there would be multiple magic squares.
+
+Hence the answer <imath>\boxed{\textbf{(C)}\ 2}</imath>
+
+
+=== Problem 22 ===
+In a sequence of positive integers, each term after the second is the product of the previous two terms. The sixth term is
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ 4', 'D': '\\ 5', 'E': '\\ 10'}
+Answer: D
+
+--- Solution 1 ---
+In this solution, we will use trial and error to solve.
+<imath>4000</imath> can be expressed as <imath>200 \times 20</imath>. We divide <imath>200</imath> by <imath>20</imath> and get <imath>10</imath>, divide <imath>20</imath> by <imath>10</imath> and get <imath>2</imath>, and divide <imath>10</imath> by <imath>2</imath> to get <imath>\boxed{\textbf{(D)}\ 5}</imath>. No one said that they have to be in ascending order!
+
+Solution by [[User:ILoveMath31415926535|ILoveMath31415926535]] and clarification edits by apex304
+Anonymous question here, if 5 is first term, how do you get 10?
+
+
+(answer to anonymous question) "No one said they had to be in ascending order!"
+means after 5, the term doesnt need to increase each time.
+
+--- Solution 2 ---
+Consider the first term is <imath>A</imath> and the second term is <imath>B</imath>. Then, the following terms will be <imath>AB</imath>, <imath>AB^2</imath>, <imath>A^2B^3</imath> and <imath>A^3B^5</imath>. Notice that <imath>4000=2^5\times 5^3</imath>, then we obtain <imath>A=\boxed{\textbf{(D)}\ 5}</imath> and <imath>B=2</imath>. 
+
+Solution by Slimeknight, edited by XingZheZhong
+
+
+=== Problem 23 ===
+Each square in a
+
+Choices: {'A': '\\frac{1}{1024}', 'B': '\\frac{1}{256}', 'C': '\\frac{1}{64}', 'D': '\\frac{1}{16}', 'E': '\\frac{1}{4}'}
+Answer: C
+
+--- Solution 1 ---
+There are <imath>4</imath> cases that the tiling will contain a large gray diamond in one of the smaller <imath>2 \times 2</imath> grids, as shown below:
+<asy>
+size(375);
+
+fill((1,1)--(2,2)--(1,3)--(0,2)--cycle,mediumgray);
+draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,gray);
+draw((1,0)--(1,3)--(2,3)--(2,0),gray);
+draw((0,1)--(3,1)--(3,2)--(0,2),gray);
+
+fill(shift(7,0)*((1,1)--(2,2)--(1,3)--(0,2)--cycle),mediumgray);
+draw(shift(6,0)*((0,0)--(3,0)--(3,3)--(0,3)--cycle),gray);
+draw(shift(6,0)*((1,0)--(1,3)--(2,3)--(2,0)),gray);
+draw(shift(6,0)*((0,1)--(3,1)--(3,2)--(0,2)),gray);
+
+fill(shift(12,-1)*((1,1)--(2,2)--(1,3)--(0,2)--cycle),mediumgray);
+draw(shift(12,0)*((0,0)--(3,0)--(3,3)--(0,3)--cycle),gray);
+draw(shift(12,0)*((1,0)--(1,3)--(2,3)--(2,0)),gray);
+draw(shift(12,0)*((0,1)--(3,1)--(3,2)--(0,2)),gray);
+
+fill(shift(19,-1)*((1,1)--(2,2)--(1,3)--(0,2)--cycle),mediumgray);
+draw(shift(18,0)*((0,0)--(3,0)--(3,3)--(0,3)--cycle),gray);
+draw(shift(18,0)*((1,0)--(1,3)--(2,3)--(2,0)),gray);
+draw(shift(18,0)*((0,1)--(3,1)--(3,2)--(0,2)),gray);
+</asy>
+There are <imath>4^5</imath> ways to decide the <imath>5</imath> white squares for each case, and the cases do not have any overlap.
+
+So, the requested probability is <cmath>\frac{4\cdot4^5}{4^9} = \frac{4^6}{4^9} = \frac{1}{4^3} = \boxed{\textbf{(C) } \frac{1}{64}}.</cmath>
+
+--- Solution 2 ---
+Note that the middle tile can be any of the four tiles. The gray part of the middle tile points towards one of the corners, and for the gray diamond to appear the three adjacent tiles must all be perfect. Thus, the solution is <math>\frac14 \cdot \frac14 \cdot \frac14 = \boxed{\textbf{(C) } \frac{1}{64}}</math>.
+
+--- Solution 3 ---
+Note that each tile must be in its precise place. Because of that, each diamond has a <math>\left(\frac14\right)^4</math> chance of appearing. And since there are 4 placements, our solution is<math>\frac{1}{4^4} \cdot 4 = \boxed{\textbf{(C) } \frac{1}{64}}</math>.
+
+--- Solution 4 ---
+Let <math>S_1, S_2, S_3</math>, and <math>S_4</math> denote the <math>4</math> smaller <math>2 \times 2</math> squares within the <math>3 \times 3</math> square in some order. For each <math>S_i</math>, let <math>X_i = 1</math> if it contains a large gray diamond tiling and <math>X_i = 0</math> otherwise. This means that <math>\mathbb{E}[X_i]</math> is the probability that square <math>S_i</math> has a large gray diamond, so <math>\mathbb{E}[X_1 + X_2 + X_3 + X_4]</math> is our desired probability. However, since there is only one possible way to arrange the squares within every <math>2 \times 2</math> square to form such a tiling, we have <math>\mathbb{E}[X_i] = (\tfrac{1}{4})^4 = \tfrac{1}{256}</math> for all <math>i</math> (as each of the smallest tiles has <math>4</math> possible arrangements), and from the linearity of expectation we get 
+<cmath>\mathbb{E}[X_1 + X_2 + X_3 + X_4] = \mathbb{E}[X_1] + \mathbb{E}[X_2] + \mathbb{E}[X_3] + \mathbb{E}[X_4] = \frac{1}{256} + \frac{1}{256} + \frac{1}{256} + \frac{1}{256} = \boxed{\textbf{(C) } \frac{1}{64}}.</cmath>
+
+Remark 1: This method might be too advanced for the AMC 8, and is probably unnecessary (refer to the other solutions for simpler techniques).
+
+Remark 2: Note that Probability and Expected Value are equivalent in this problem since there will never be two diamonds on one tiling. i.e. <math>X_1 + X_2 + X_3 + X_4 \le 1</math>.
+
+--- Solution 5 ---
+We can start by finding the probability of making a diamond with the squares in ONLY the top-left corner of the square. There are <imath>4\times 4\times 4\times 4 = 256</imath> total cases of putting four random tiles in the top-left corner. Since there is only one favorable case (the case of making a diamond) out of <imath>256</imath> total, the probability of making a diamond is <imath>\frac{1}{256}.</imath> Now, we can simply multiply this by four to account for all corners of the square to get <imath>4\times \frac{1}{256}</imath> or <imath>\boxed{\textbf{(C) } \frac{1}{64}}.</imath>
+
+
+=== Problem 24 ===
+Isosceles triangle
+
+Choices: {'A': '\\ 14.6', 'B': '\\ 14.8', 'C': '\\ 15', 'D': '\\ 15.2', 'E': '\\ 15.4'}
+Answer: A
+
+--- Solution 1 ---
+First, we notice that the smaller isosceles triangles are similar to the larger isosceles triangles. We can find that the area of the gray area in the first triangle is <imath>[ABC]\cdot\left(1-\left(\tfrac{11}{h}\right)^2\right)</imath>. Similarly, we can find that the area of the gray part in the second triangle is <imath>[ABC]\cdot\left(\tfrac{h-5}{h}\right)^2</imath>. These areas are equal, so <imath>1-\left(\frac{11}{h}\right)^2=\left(\frac{h-5}{h}\right)^2</imath>. Simplifying yields <imath>10h=146</imath> so <imath>h=\boxed{\textbf{(A) }14.6}</imath>.
+
+--- Solution 2 ---
+We can call the length of AC as <imath>X</imath>. Therefore, the length of the base of the triangle with height <imath>11</imath> is <imath>\frac{11}{H} = \frac{A}{X}</imath>. Therefore, the base of the smaller triangle is <imath>\frac{11X}{H}</imath>. We find that the area of the trapezoid is <imath>\frac{HX}{2}- \frac{11^2X}{2H}</imath>. 
+
+Using similar triangles once again, we find that the base of the shaded triangle is <imath>\frac{H-5}{H} = \frac{B}{X}</imath>. Therefore, the area is <imath>(H-5)(HX-5X)/2H</imath>. 
+
+Since the areas are the same, we find that <imath>(HX)/2 - 121X/2H = (H-5)(HX-5X)/2H</imath>. Multiplying each side by <imath>2H</imath>, we get <imath>H^2x/X - 121X = h^2X - 5HX - 5HX + 25X</imath>. Therefore, we can subtract <imath>25X + H^2x/X</imath> from both sides, and get <imath>-146X = -10hx</imath>. Finally, we divide both sides by <imath>-x</imath> and get <imath>10h = 146</imath>. <imath>h</imath> is <imath>\boxed{\textbf{(A)}14.6}</imath>.
+
+Solution by CHECKMATE2021 (edits by someone that is unknown)
+
+--- Solution 3 ---
+Since the length of AC does not matter, we can assume the height of triangle ABC is <imath>h</imath>. We assume that the bases of the first triangle are <imath>h</imath> and <imath>11</imath> and the bases of the second triangle are <imath>h-5</imath> and <imath>h</imath>. Therefore, the area of the trapezoid in the first diagram is <imath>h^2/2 - \frac{11^2}{2}</imath>. 
+
+The area of the triangle in the second diagram is now <imath>\frac{(h-5)^2}{2}</imath>. 
+
+Therefore, <imath>\frac{h^2 - 11^2}{2} = \frac{(h-5)^2}{2}</imath>. Multiplying both sides by <imath>2</imath>, we get <imath>h^2 - 121 = h^2 - 10h + 25</imath>. Subtracting <imath>h^2 + 25</imath> from both sides, we get <imath>-146 = -10h</imath> and <imath>h</imath> is <imath>\boxed{\textbf{(A)}14.6}</imath>.
+
+Solution by [[User:ILoveMath31415926535|ILoveMath31415926535]], and [[User:CHECKMATE2021|CHECKMATE2021]] and [[User:London_System|London_System]]
+
+
+=== Problem 25 ===
+Fifteen integers
+
+Choices: {'A': '\\ 8', 'B': '\\ 9', 'C': '\\ 10', 'D': '\\ 11', 'E': '\\ 12'}
+Answer: A
+
+--- Solution 1 ---
+We can find the possible values of the common difference by finding the numbers which satisfy the conditions. To do this, we find the minimum of the last two: <imath>241-20=221</imath>, and the maximum: <imath>250-13=237</imath>. There is a difference of <imath>13</imath> between them, so only <imath>17</imath> and <imath>18</imath> work, as <imath>17\cdot13=221</imath>, so <imath>17</imath> satisfies <imath>221\leq 13x\leq237</imath>. The number <imath>18</imath> is similarly found. <imath>19</imath>, however, is too much.
+
+Now, we check with the first and last equations using the same method. We know <imath>241-10\leq 14x\leq250-1</imath>. Therefore, <imath>231\leq 14x\leq249</imath>. We test both values we just got, and we can realize that <imath>18</imath> is too large to satisfy this inequality. On the other hand, we can now find that the difference will be <imath>17</imath>, which satisfies this inequality.
+
+The last step is to find the first term. We know that the first term can only be from <imath>1</imath> to <imath>3</imath> since any larger value would render the second inequality invalid. Testing these three, we find that only <imath>a_1=3</imath> will satisfy all the inequalities. Therefore, <imath>a_{14}=13\cdot17+3=224</imath>. The sum of the digits is therefore <imath>\boxed{\textbf{(A)}\ 8}</imath>.
+
+--- Solution 2 ---
+Step 1: Express everything in terms of <imath>a_1</imath> and the common difference <imath>d</imath>
+
+
+Since the <imath>15</imath> integers are equally spaced, they form an arithmetic sequence:
+<imath>a_1</imath>, <imath>a_1 + d</imath>, <imath>a_1 + 2d</imath>, <imath>\dots</imath>, <imath>a_1 + 14d.</imath>
+
+So:
+<imath>a_2 = a_1 + d, \quad a_{15} = a_1 + 14d.</imath>
+
+⸻
+
+Step 2: Translate the given inequalities
+
+We are told:
+<imath>1 \le a_1 \le 10, \quad 13 \le a_2 \le 20, \quad 241 \le a_{15} \le 250</imath>.
+
+⸻
+
+Step 3: Find the possible range for <imath>a_{15} - a_2</imath>
+
+We have:
+<imath>a_{15} - a_2 = (a_1 + 14d) - (a_1 + d) = 13d.</imath>
+
+Now, based on the ranges given:
+<imath>a_{15} \text{ can be between } 241 \text{ and } 250,
+a_2 \text{ can be between } 13 \text{ and } 20.</imath>
+
+So the smallest possible value of <imath>a_{15} - a_2</imath> happens when <imath>a_{15}</imath> is smallest and <imath>a_2</imath> is largest:
+<imath>241 - 20 = 221.</imath>
+The largest possible value of <imath>a_{15} - a_2</imath> happens when <imath>a_{15}</imath> is largest and <imath>a_2</imath> is smallest:
+<imath>250 - 13 = 237.</imath>
+
+Hence,
+<imath>221 \le a_{15} - a_2 \le 237.</imath>
+
+⸻
+
+Step 4: Solve for d
+
+Since <imath>a_{15} - a_2 = 13d,
+221 \le 13d \le 237.</imath>
+Divide through by 13:
+<imath>17 \le d \le 18.23.</imath>
+Because <imath>d</imath> is an integer, <imath>d</imath> can only be <imath>17</imath> or <imath>18</imath>.
+
+⸻
+
+Step 5: Check each possible <imath>d</imath>
+
+Case 1: <imath>d = 17</imath>
+Then <imath>a_2 = a_1 + 17 </imath> implies <imath>13 \le a_1 + 17 \le 20 \Rightarrow -4 \le a_1 \le 3.</imath>
+But since <imath>1 \le a_1 \le 10,</imath> the overlap gives <imath>1 \le a_1 \le 3.</imath>
+
+Now check <imath>a_{15} = a_1 + 14(17) = a_1 + 238.</imath>
+We need <imath>241 \le a_{15} \le 250:
+241 \le a_1 + 238 \le 250 \Rightarrow 3 \le a_1 \le 12.</imath>
+The overlap of <imath>1 \le a_1 \le 3</imath> and <imath>3 \le a_1 \le 12</imath> is <imath>a_1 = 3.</imath>
+
+So <imath>a_1 = 3, d = 17.</imath>
+
+⸻
+
+Case 2: <imath>d = 18</imath>
+Then
+<imath>a_2 = a_1 + 18 </imath> implies <imath>13 \le a_1 + 18 \le 20 \Rightarrow -5 \le a_1 \le 2.</imath>
+Within <imath>1 \le a_1 \le 10,</imath> this gives <imath>a_1 = 1 or 2.</imath>
+
+But <imath>a_{15} = a_1 + 14(18) = a_1 + 252,</imath>
+so
+<imath>a_{15} \ge 1 + 252 = 253 > 250,</imath>
+which doesn’t satisfy the given range.
+Hence <imath>d = 18</imath> is impossible.
+
+⸻
+
+Step 6: Compute <imath>a_{14}</imath>
+
+With <imath>a_1 = 3</imath> and <imath>d = 17</imath>,
+<imath>a_{14} = a_1 + 13d = 3 + 13(17) = 3 + 221 = 224.</imath>
+
+⸻
+
+Step 7: Find the sum of digits
+
+<imath>2 + 2 + 4 = 8.</imath>
+
+⸻
+
+✅ Final Answer:
+
+<imath>\boxed{8}</imath>
+
+--- Solution 3 ---
+We are given 15 equally spaced integers, with \( a_1 \) between 1 and 10, \( a_2 \) between 13 and 20, and \( a_{15} \) between 241 and 250. The integers form an arithmetic sequence, so we use the formula \( a_n = a_1 + (n-1) \cdot d \), where \( d \) is the common difference. From the given information, we calculate the range for \( d \) and find that \( d = 17 \) works. Substituting \( a_1 = 3 \) and \( d = 17 \) into the formula, we find \( a_{14} = 3 + 13 \cdot 17 = 224 \). The problem asks for the sum of the digits of \( a_{14} \), so we sum the digits of 224, which are 2, 2, and 4, giving \( 2 + 2 + 4 = 8 \), and the final answer is \( \boxed{8} \).
+
+--- Solution 4 ---
+This solution is similar to Solution 1, but useful if you are not familiar with inequalities. Since the integers form an arithmetic sequence, the distance from <imath>a_1</imath> to <imath>a_{15}</imath> is <imath>14d</imath>, so <imath>a_{15} = a_1 + 14d</imath>. We want <imath>14d</imath> to be the multiple of <imath>14</imath> closest to but not exceeding <imath>241</imath> (since <imath>a_1</imath> cannot be negative), and <imath>14 \cdot 17 = 238</imath> is that value, so <imath>d = 17</imath>. Because <imath>a_2 = a_1 + d</imath> must be at most <imath>20</imath>, we get <imath>a_1 + 17 \le 20</imath>, so <imath>a_1 \le 3</imath>; if <imath>a_1</imath> were <imath>4</imath> or larger, then <imath>a_2</imath> would exceed <imath>20</imath>. Returning to <imath>a_{15} = 14d + a_1</imath>, we have <imath>a_{15} = 238 + a_1</imath>, and since <imath>a_{15} \ge 241</imath>, this forces <imath>a_1 = 3</imath>, giving <imath>a_{15} = 241</imath>. Subtracting <imath>17</imath> then gives <imath>a_{14} = 224</imath>, whose digits sum to <imath>2 + 2 + 4 = 8</imath>, so the answer is <imath>\boxed{\textbf{(A)}\ 8}</imath>.
+
+-ChamzC19
+
+

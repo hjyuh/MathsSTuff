@@ -1,0 +1,16 @@
+name = "RequestProject"
+defaultTargets = ["ep488_bbds_skeleton"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.28.0"
+
+[[lean_lib]]
+name = "ep488_bbds_skeleton"
+globs = ["ep488_bbds_skeleton"]
+
+[[lean_lib]]
+name = "EP488Defs"
+globs = ["EP488Defs"]
+

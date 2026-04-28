@@ -105,7 +105,8 @@ body::before {
 }
 
 .workspace-choice,
-.home-pc-panel {
+.home-pc-panel,
+.dns-lab-panel {
   margin-top: 16px;
   width: min(620px, 100%);
   padding: 16px;
@@ -171,6 +172,44 @@ body::before {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: flex-end;
+}
+
+.dns-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dns-field {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.dns-field-wide {
+  grid-column: 1 / -1;
+}
+
+.dns-field select,
+.dns-field input {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text);
+  font: inherit;
+}
+
+.dns-field select:disabled,
+.dns-field input:disabled {
+  opacity: 0.6;
+}
+
+.dns-field input::placeholder {
+  color: var(--muted);
 }
 
 .auth-row {
@@ -509,6 +548,7 @@ button:disabled,
   }
 
   .choice-grid,
+  .dns-grid,
   .home-pc-panel {
     grid-template-columns: 1fr;
   }
@@ -520,6 +560,10 @@ button:disabled,
 
   .resume-row {
     grid-template-columns: 1fr;
+  }
+
+  .dns-field-wide {
+    grid-column: auto;
   }
 
   .credential-row {

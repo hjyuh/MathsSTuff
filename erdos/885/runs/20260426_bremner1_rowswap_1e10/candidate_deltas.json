@@ -1,0 +1,406 @@
+{
+  "candidate_count": 164,
+  "replacement_delta_max": 200000,
+  "top_candidates": [
+    {
+      "delta": 9090,
+      "seed_column_support": 2
+    },
+    {
+      "delta": 12162,
+      "seed_column_support": 2
+    },
+    {
+      "delta": 21630,
+      "seed_column_support": 2
+    },
+    {
+      "delta": 52290,
+      "seed_column_support": 2
+    },
+    {
+      "delta": 87678,
+      "seed_column_support": 2
+    },
+    {
+      "delta": 750,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 914,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 1410,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 1774,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 2194,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 2450,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 3006,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 3090,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 3262,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 3906,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 4242,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 4974,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 5010,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 5310,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 6510,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 6930,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 7102,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 8082,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 8430,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 9198,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 9234,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 10878,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 11410,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 11502,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 11902,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 13422,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 13438,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 13698,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 13842,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 13890,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 14526,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 15426,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 15746,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 17598,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 17682,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 18450,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 19218,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 19310,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 19390,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 19730,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 20290,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 20926,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 21102,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 22674,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 23742,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 24210,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 25410,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 25746,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 27010,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 28350,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 28434,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 29330,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 30846,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 31086,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 33666,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 34626,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 35218,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 35730,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 36030,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 36162,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 37954,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 38034,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 39870,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 40722,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 41454,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 41874,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 44526,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 44610,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 44866,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 44946,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 45182,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 45294,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 46014,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 47550,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 48018,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 49170,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 50110,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 50450,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 50706,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 51054,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 53694,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 55170,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 56466,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 56898,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 57470,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 61054,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 61374,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 62958,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 63378,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 64110,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 64386,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 66434,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 68754,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 71022,
+      "seed_column_support": 1
+    },
+    {
+      "delta": 71442,
+      "seed_column_support": 1
+    }
+  ]
+}

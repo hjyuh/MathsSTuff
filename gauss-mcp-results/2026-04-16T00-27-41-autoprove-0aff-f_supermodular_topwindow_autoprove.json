@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T00-27-41-autoprove-0aff-f_supermodular_topwindow_autoprove",
+  "status": "error",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "Prove the following theorem. The proof strategy is: set g = gcd(a,b), write a = g*u, b = g*v with gcd(u,v)=1. Let N = n/g, M = m/g. Define F(T) = T - T/u - T/v + T/(u*v). Then the supermodularity defect equals 2*m*F(N) - n*F(M). Use the coarse scaling lemma nF(M) \u2264 mF(N) + 2m + 2n. For (u,v) \u2260 (2,3), show F(N) \u2265 4 by pigeonhole, giving \u0394 \u2265 2(m-n) > 0. For (u,v) = (2,3), use T-1 \u2264 3F(T) \u2264 T+2 and N \u2265 6.\n\n```lean\nimport Mathlib\n\ntheorem f_supermodular_topwindow (m n a b : \u2115)\n    (hmn : n < m)\n    (ha : a \u2264 n / 2) (hb : b \u2264 n / 2)\n    (ha0 : 0 < a) (hb0 : 0 < b) :\n    2 * (m : \u2124) * ((n / Nat.gcd a b : \u2115) : \u2124) - (n : \u2124) * ((m / Nat.gcd a b : \u2115) : \u2124) +\n    (2 * (m : \u2124) * ((n / Nat.lcm a b : \u2115) : \u2124) - (n : \u2124) * ((m / Nat.lcm a b : \u2115) : \u2124)) \u2265\n    2 * (m : \u2124) * ((n / a : \u2115) : \u2124) - (n : \u2124) * ((m / a : \u2115) : \u2124) +\n    (2 * (m : \u2124) * ((n / b : \u2115) : \u2124) - (n : \u2124) * ((m / b : \u2115) : \u2124)) := by\n  sorry\n```",
+  "started_at": "2026-04-16T00:27:41Z",
+  "finished_at": "2026-04-16T00:27:41Z",
+  "duration_s": 0.24,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "resolver_failure",
+    "message": "AutoformalizePreflightError: No active Gauss project found. Use `/project init`, `/project convert`, or `/project use <path>` first. Run `/project init`, `/project convert`, or `/project use <path>` first.",
+    "log_tail": ""
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-27-41-autoprove-0aff-f_supermodular_topwindow_autoprove.log",
+  "worker_pid": 1259,
+  "last_heartbeat_at": 1776299261.311148,
+  "_started_monotonic": 1776299261.1427383
+}

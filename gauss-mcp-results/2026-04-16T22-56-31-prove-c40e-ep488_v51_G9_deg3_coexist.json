@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T22-56-31-prove-c40e-ep488_v51_G9_deg3_coexist",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v51 / G9: Degree-3 coexistence ratio (5.4-\u03b2)\n-- Claim: If a < b are both degree-3 vertices in B_n under the constraints\n-- a \u2208 (q/2, 3q/5) and b \u2208 (q/2, 3q/5), then 5b < 6a.\n--\n-- Proof: a > q/2 gives q < 2a. b < 3q/5 gives 5b < 3q. Combined: 5b < 3q < 6a.\n-- Wait, 5b < 3q and q < 2a gives 5b < 3q < 6a, i.e. 5b < 6a. Direct.\n\nimport Mathlib.Tactic\n\n/-- If q/2 < a, 5b < 3q (from b < 3q/5), and a < b, then 5b < 6a. -/\ntheorem deg3_coexist_ratio\n    {q a b : \u2115}\n    (hq : 0 < q)\n    (ha : q / 2 < a)\n    (hb : 5 * b < 3 * q)\n    (hab : a < b) :\n    5 * b < 6 * a := by\n  sorry\n",
+  "started_at": "2026-04-16T22:56:31Z",
+  "finished_at": "2026-04-16T23:25:18Z",
+  "duration_s": 1726.98,
+  "result_text": "`goals_after: []` \u2014 proof complete, no goals remaining.\n\n## Cycle Complete \u2014 Filled 1/1 sorries\n\n**`deg3_coexist_ratio`** at `GaussTest/Basic.lean:269-277`: closed by `omega`.\n\nThe arithmetic works because `q / 2 < a` in \u2115 implies `q \u2264 2 * a`, so `5 * b < 3 * q \u2264 6 * a`. `omega` sees this chain directly.\n\nCommit this? **[yes / yes-all / no / never]**\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-56-31-prove-c40e-ep488_v51_G9_deg3_coexist.log",
+  "worker_pid": 4082,
+  "last_heartbeat_at": 1776381914.1111414,
+  "_started_monotonic": 1776380191.5156176
+}

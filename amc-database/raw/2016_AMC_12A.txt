@@ -1,0 +1,2114 @@
+=== Problem 1 ===
+What is the value of
+
+Choices: {'A': '\\ 99', 'B': '\\ 100', 'C': '\\ 110', 'D': '\\ 121', 'E': '\\ 132</math>'}
+Answer: B
+
+--- Solution 1 ---
+We can use subtraction of fractions to get <cmath>\frac{11!-10!}{9!} = \frac{11!}{9!} - \frac{10!}{9!} = 110 -10 = \boxed{\textbf{(B)}\;100}.</cmath>
+
+--- Solution 2 ---
+Factoring out <math>9!</math> gives <math>\frac{11!-10!}{9!} = \frac{9!(11 \cdot 10 - 10)}{9!} = 110-10=\boxed{\textbf{(B)}
+
+--- Solution 3 ---
+<math>\dfrac{11!-10!}{9!}</math>
+consider 10 as n 
+<math>\dfrac{(n+1)!-n!}{(n-1)!}</math>
+simpify 
+<math>\dfrac{(n+1)n!+(-1)n!}{(n-1)!}</math> = <math>\dfrac{n(n!)}{(n-1)!}</math> = <math>\dfrac{n(n(n-1)!)}{(n-1)!}</math> = <math>\dfrac{n(n)(1)}{1}</math> = <math>\dfrac{n^2}{1}</math>
+subsitute n as 10 again  
+<math>\dfrac{10^2}{1}</math>
+
+answer is <math>10^2</math> which is <math>\boxed{\textbf{(B)}
+
+--- Solution 4 ---
+We are given the equation <math>\frac{11!-10!}{9!}</math>
+
+This is equivalent to <math>\frac{11(10!) - 1(10!)}{9!}</math>
+Simplifying, we get <math>\frac{(11-1)(10!)}{9!}</math>, which equals <math>10 \cdot 10</math>.
+
+Therefore, the answer is <math>10^2</math> = <math>\boxed{\textbf{(B)}
+
+--- Solution 5 ---
+Let
+<cmath>
+I_n := \int_0^\infty x^n e^{-x} \, dx = n!
+</cmath>
+(the Gamma–integral).
+
+Then
+<cmath>
+\frac{11! - 10!}{9!} = \frac{I_{11} - I_{10}}{I_9} = \frac{\int_0^\infty e^{-x} (x^{11} - x^{10}) \, dx}{I_9}.
+</cmath>
+Integration by parts on the numerator with \( u = x^{11} - x^{10} \), \( dv = e^{-x} \, dx \) (so \( du = (11x^{10} - 10x^9) \, dx \), \( v = -e^{-x} \)) gives
+<cmath>
+\int_0^\infty e^{-x} (x^{11} - x^{10}) \, dx = \left[ -e^{-x} (x^{11} - x^{10}) \right]_0^\infty + \int_0^\infty e^{-x} (11x^{10} - 10x^9) \, dx = 11 I_{10} - 10 I_9,
+</cmath>
+since the boundary term vanishes.
+
+Hence
+<cmath>
+\frac{I_{11} - I_{10}}{I_9} = \frac{11 I_{10}}{I_9} - 10.
+</cmath>
+Do another integration by parts to relate \( I_{10} \) and \( I_9 \):
+<cmath>
+I_{10} = \int_0^\infty x^{10} e^{-x} \, dx = \left[ -x^{10} e^{-x} \right]_0^\infty + 10 \int_0^\infty x^9 e^{-x} \, dx = 10 I_9.
+</cmath>
+Therefore
+<cmath>
+\frac{I_{11} - I_{10}}{I_9} = 11 \cdot 10 - 10 = 100.
+</cmath>
+
+<math>\boxed{(B) 100}</math>.
+
+
+=== Problem 2 ===
+For what value of
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ 3', 'D': '\\ 4', 'E': '\\ 5</math>'}
+Answer: C
+
+--- Solution 1 ---
+We can rewrite <math>10^{x}\cdot 100^{2x}=1000^{5}</math> as <math>10^{5x}=10^{15}</math>:
+<cmath>\begin{split}
+10^x\cdot100^{2x} & =10^x\cdot(10^2)^{2x} \\
+10^x\cdot10^{4x} & =(10^3)^5 \\
+10^{5x} & =10^{15}
+\end{split}</cmath>
+Since the bases are equal, we can set the exponents equal, giving us <math>5x=15</math>. Solving the equation gives us <math>x = \boxed{\textbf{(C)}\;3}.</math>
+
+--- Solution 2 ---
+We can rewrite this expression as <math>\log(10^x \cdot 100^{2x})=\log(1000^5)</math> , which can be simplified to <math>\log(10^{x}\cdot10^{4x})=5\log(1000)</math>, and that can be further simplified to <math>\log(10^{5x})=5\log(10^3)</math> . This leads to <math>5x=15</math>. Solving this linear equation yields <math>x = \boxed{\textbf{(C)}\;3}.</math>
+
+
+=== Problem 3 ===
+The remainder can be defined for all real numbers
+
+Choices: {'A': '-\\frac{3}{8}', 'B': '-\\frac{1}{40}', 'C': '0', 'D': '\\frac{3}{8}', 'E': '\\frac{31}{40}</math>'}
+Answer: B
+
+--- Solution 1 ---
+The value, by definition, is <cmath>\begin{align*}
+\text{rem}\left(\frac{3}{8},-\frac{2}{5}\right)
+&= \frac{3}{8}-\left(-\frac{2}{5}\right)\left\lfloor\frac{\frac{3}{8}}{-\frac{2}{5}}\right\rfloor \\
+&= \frac{3}{8}-\left(-\frac{2}{5}\right)\left\lfloor\frac{3}{8}\times\frac{-5}{2}\right\rfloor \\
+&= \frac{3}{8}-\left(-\frac{2}{5}\right)\left\lfloor\frac{-15}{16}\right\rfloor\\
+&= \frac{3}{8}-\left(-\frac{2}{5}\right)\left(-1\right)\\
+&= \frac{3}{8}-\frac{2}{5}\\
+&= \boxed{\textbf{(B) } -\frac{1}{40}}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Do note that the denominator of the answer will be a multiple of 5 and 8 (40) and that the answer will also be negative. The only answer choice that satisfies this is <imath>\boxed{B}</imath>
+
+
+=== Problem 4 ===
+The mean, median, and mode of the
+
+Choices: {'A': '\\ 50', 'B': '\\ 60', 'C': '\\ 75', 'D': '\\ 90', 'E': '\\ 100</math>'}
+Answer: D
+
+--- Solution 1 ---
+Since <math>x</math> is the mean,
+<cmath>\begin{align*}
+x&=\frac{60+100+x+40+50+200+90}{7}\\
+&=\frac{540+x}{7}.
+\end{align*}</cmath>
+
+Therefore, <math>7x=540+x</math>, so <math>x=\boxed{\textbf{(D) }90}.</math>
+
+Note: if the mean of a set is in the set, it can be discarded and the mean of the remaining numbers will be the same. This means that if using the mean in your reasoning, you can just take the mean of the other 6 numbers, and it'll solve it marginally faster. -[[User:Integralarefun|Integralarefun]] ([[User talk:Integralarefun|talk]]) 18:19, 27 September 2023 (EDT)
+
+--- Solution 2 ---
+Note that <math>x</math> must be the median so it must equal either <math>60</math> or <math>90</math>. You can see that the mean is also <math>x</math>, and by intuition <math>x</math> should be the greater one. <math>x=\boxed{\textbf{(D) }90}.</math>
+
+==Check==
+
+Order the list: <math>\{40,50,60,90,100,200\}</math>. <math>x</math> must be either <math>60</math> or <math>90</math> because it is both the median and the mode of the set. Thus <math>90</math> is correct.
+
+
+=== Problem 5 ===
+Goldbach's conjecture states that every even integer greater than 2 can be written as the sum of two prime numbers (for example,
+
+Choices: {'A': '\\ \\text{an odd integer greater than } 2 \\text{ that can be written as the sum of two prime numbers}\\\\', 'B': '\\ \\text{an odd integer greater than } 2 \\text{ that cannot be written as the sum of two prime numbers}\\\\', 'C': '\\ \\text{an even integer greater than } 2 \\text{ that can be written as the sum of two numbers that are not prime}\\\\', 'D': '\\ \\text{an even integer greater than } 2 \\text{ that can be written as the sum of two prime numbers}\\\\', 'E': '\\ \\text{an even integer greater than } 2 \\text{ that cannot be written as the sum of two prime numbers}</math>'}
+Answer: 
+
+--- Solution 1 ---
+In this case, a counterexample is a number that would prove Goldbach's conjecture false. The conjecture asserts what '''can''' be done with '''even''' integers greater than 2.
+Therefore the solution is <cmath>{\textbf{(E)}\text{ an even integer greater than 2 that cannot be written as the sum of two prime numbers.}}</cmath>
+
+
+=== Problem 6 ===
+A triangular array of
+
+Choices: {'A': '\\ 6', 'B': '\\ 7', 'C': '\\ 8', 'D': '\\ 9', 'E': '\\ 10</math>'}
+Answer: D
+
+--- Solution 1 ---
+We are trying to find the value of <math>N</math> such that <cmath>1+2+3\cdots+(N-1)+N=\frac{N(N+1)}{2}=2016.</cmath> Noticing that <math>\frac{63\cdot 64}{2}=2016,</math> we have <math>N=63,</math> so our answer is <math>\boxed{\textbf{(D) } 9}.</math>
+
+Notice that we were attempting to solve <math>\frac{N(N+1)}{2} = 2016 \Rightarrow N(N+1) = 2016\cdot2 = 4032</math>. Approximating <math>N(N+1) \approx N^2</math>, we were looking for a perfect square that is close to, but less than, <math>4032</math>. Since <math>63^2 = 3969</math>, we see that <math>N = 63</math> is a likely candidate.  Multiplying <math>63\cdot64</math> confirms that our assumption is correct.
+
+--- Solution 2 ---
+Knowing that each row number can stand for the number of coins there are in the row, we can just add until we get <math>2016</math>.
+Notice that <math>1 + 2 + 3 \cdots + 10 = 55.</math> Knowing this, we can say that <math>11 + 12 \cdots + 20 = 155</math> and <math>21 + \cdots +30 =255</math> and so on. This is a quick way to get to the point that N is between 60 and 70. By subtracting from the sum of the number from 1 through 70, we learn that when we subtract <math>70, 69, 68, 67, 66, 65,</math>and <math>64, N = 63.</math> Adding those two digits, we get the answer <math>\boxed{\textbf{(D) } 9}.</math> - CorgiARMY
+
+--- Solution 3 ---
+If you continue from solution one's conclusion that <cmath>\frac{N(N+1)}{2}=2016</cmath>, the equation can be simplified to:
+<cmath>{N(N+1)}=4032</cmath> 
+now we can factorize 4032 into 2^6, 3^2, and 7, this means that N, and N+1 have to be made from some combination of these numbers, and we can try out values until we get that n is 63, and n+1 is 64. Adding the digits of N, we get that the answer is, <math>\boxed{\textbf{(D) } 9}.</math>
+-LIUGRA001
+
+
+=== Problem 7 ===
+Which of these describes the graph of
+
+Choices: {'A': '\\ \\text{two parallel lines}\\\\', 'B': '\\ \\text{two intersecting lines}\\\\', 'C': '\\ \\text{three lines that all pass through a common point}\\\\', 'D': '\\ \\text{three lines that do not all pass through a common point}\\\\', 'E': '\\ \\text{a line and a parabola}</math>'}
+Answer: D
+
+--- Solution 1 ---
+The equation <math>x^2(x+y+1)=y^2(x+y+1)</math> tells us <math>x^2=y^2</math> or <math>x+y+1=0</math> . <math>x^2=y^2</math> generates two lines <math>y=x</math> and <math>y=-x</math> . <math>x+y+1=0</math> is another straight line. The only intersection of <math>y=x</math> and <math>y=-x</math> is <math>(0,0)</math> , which is not on <math>x+y+1=0</math> . Therefore, the graph is three lines that do not have a common intersection, or <math>\boxed{\textbf{(D)}\; \text{three lines that do not all pass through a common point}}</math>
+
+--- Solution 2 ---
+If <math>x+y+1\neq0</math>, then dividing both sides of the equation by <math>x+y+1</math> gives us <math>x^2=y^2</math>. Rearranging and factoring, we get <math>x^2-y^2=(x+y)(x-y)=0</math>. If <math>x+y+1=0</math>, then the equation is satisfied. Thus either <math>x+y=0</math>, <math>x-y=0</math>, or <math>x+y+1=0</math>. These equations can be rearranged into the lines <math>y=-x</math>, <math>y=x</math>, and <math>y=-x-1</math>, respectively. Since these three lines are distinct, the answer is <math>\boxed{\textbf{(D)}\; \text{three lines that do not all pass through a common point}}</math>.
+
+--- Solution 3 ---
+Subtract <math>y^2(x+y+1)</math> on both sides of the equation to get <math>x^2(x+y+1)-y^2(x+y+1)=0</math>. Factoring <math>x+y+1</math> gives us <math>(x+y+1)(x^2-y^2)=(x+y+1)(x+y)(x-y)=0</math>, so either <math>x+y+1=0</math>, <math>x+y=0</math>, or <math>x-y=0</math>. Continue on with the second half of solution 2.
+
+
+=== Problem 8 ===
+What is the area of the shaded region of the given
+
+Choices: {'A': '\\ 4.75', 'B': '\\ 5', 'C': '\\ 5.25', 'D': '\\ 6.5', 'E': '\\ 8</math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+
+size(6cm);
+defaultpen(fontsize(9pt));
+draw((0,0)--(8,0)--(8,5)--(0,5)--cycle);
+filldraw((7,0)--(8,0)--(8,1)--(0,4)--(0,5)--(1,5)--cycle,gray(0.8));
+
+label("$1$",(1/2,5),dir(90));
+label("$7$",(9/2,5),dir(90));
+
+label("$1$",(8,1/2),dir(0));
+
+
+label("$1$",(15/2,0),dir(270));
+label("$7$",(7/2,0),dir(270));
+
+label("$1$",(0,9/2),dir(180));
+label("$4$",(0,2),dir(180));
+
+draw((0,5)--(8,0));
+
+</asy>
+
+The bases of these triangles are all <math>1</math>, and by symmetry, their heights are <math>4</math>, <math>\frac{5}{2}</math>, <math>4</math>, and <math>\frac{5}{2}</math>. Thus, their areas are <math>2</math>, <math>\frac{5}{4}</math>, <math>2</math>, and <math>\frac{5}{4}</math>, which add to the area of the shaded region, which is <math>\boxed{6\frac{1}{2}}</math>.
+
+--- Solution 2 ---
+Find the area of the unshaded area by calculating the area of the triangles and rectangles outside of the shaded region. We can do this by splitting up the unshaded areas into various triangles and rectangles as shown.
+
+<asy>
+
+size(6cm);
+defaultpen(fontsize(9pt));
+draw((0,0)--(8,0)--(8,5)--(0,5)--cycle);
+filldraw((7,0)--(8,0)--(8,1)--(0,4)--(0,5)--(1,5)--cycle,gray(0.8));
+
+label("$1$",(1/2,5),dir(90));
+label("$4$",(6,5),dir(90));
+label("$3$",(5/2,5),dir(90));
+
+label("$1$",(8,1/2),dir(0));
+label("$5/2$",(8,15/4),dir(0));
+label("$3/2$",(8,7/4),dir(0));
+
+label("$1$",(15/2,0),dir(270));
+label("$4$",(2,0),dir(270));
+label("$3$",(11/2,0),dir(270));
+
+label("$1$",(0,9/2),dir(180));
+label("$5/2$",(0,5/4),dir(180));
+label("$3/2$",(0,13/4),dir(180));
+
+draw((0,5/2)--(8,5/2));
+draw((4,0)--(4,5));
+
+</asy>
+
+Notice that the two added lines bisect each of the <math>4</math> sides of the large rectangle.
+
+Subtracting the unshaded area from the total area gives us <math>40-33\frac{1}{2}=\boxed{6\frac{1}{2}}</math>, so the correct answer is <math>\boxed{\textbf{(D)}}</math>.
+
+--- Solution 3 ---
+Notice that we can graph this on the coordinate plane.
+
+The top-left shaded figure has coordinates of <math>(1,5), (0,5), (0,4), \left(4,\frac{5}{2}\right)</math>.
+
+Notice that we can apply the shoelace method to find the area of this polygon.
+
+We find that the area of the polygon is <math>\frac{13}{4}</math>.
+
+However, notice that the two shaded regions are two congruent polygons.
+
+Hence, the total area is <math>\frac{13}{2}\implies \boxed{6\frac{1}{2}}</math>  or  <math>\boxed{D}</math>.
+
+--- Solution 4 ---
+<asy>
+
+size(6cm);
+defaultpen(fontsize(9pt));
+draw((0,0)--(8,0)--(8,5)--(0,5)--cycle);
+filldraw((7,0)--(8,0)--(0,5)--(1,5)--cycle,gray(0.7));
+filldraw((8,0)--(8,1)--(0,4)--(0,5)--cycle,gray(0.9));
+
+label("$1$",(1/2,5),dir(90));
+label("$7$",(9/2,5),dir(90));
+
+label("$1$",(8,1/2),dir(0));
+
+
+label("$1$",(15/2,0),dir(270));
+label("$7$",(7/2,0),dir(270));
+
+label("$1$",(0,9/2),dir(180));
+label("$4$",(0,2),dir(180));
+
+</asy>
+
+Split the region into four parts by the diagonal from the top left to the bottom right. Slide the top and bottom pieces next to each other to form a parallelogram with base <math>1</math> and height <math>\frac{5}{2}</math>, and slide the left and right pieces next to each other to form a parallelogram with base <math>1</math> and height <math>\frac{8}{2}</math>. The total area is then <math>1\cdot\frac{5}{2}+1\cdot\frac{8}{2} = \frac{(5+8)(1)}{2} = \boxed{\textbf{(D)}\ 6\frac{1}{2}}</math>. ~[[User:emerald_block|emerald_block]]
+
+--- Solution 5 ---
+<asy>
+
+size(6cm);
+defaultpen(fontsize(9pt));
+draw((0,0)--(8,0)--(8,5)--(0,5)--cycle);
+filldraw((7,0)--(8,0)--(8,1)--(0,4)--(0,5)--(1,5)--cycle,gray(0.8));
+filldraw((1,0)--(0,0)--(0,1)--(8,4)--(8,5)--(7,5)--cycle,gray(0.8));
+label("$1$",(1/2,5),dir(90));
+label("$6$",(4,5),dir(90));
+label("$1$",(15/2,5),dir(90));
+label("$1$",(8,1/2),dir(0));
+label("$3$",(8,5/2),dir(0));
+label("$1$",(8,9/2),dir(0));
+label("$1$",(15/2,0),dir(270));
+label("$6$",(4,0),dir(270));
+label("$1$",(1/2,0),dir(270));
+label("$1$",(0,9/2),dir(180));
+label("$3$",(0,5/2),dir(180));
+label("$1$",(0,1/2),dir(180));
+</asy>
+
+We can subtract the 4 triangular areas from the overall rectangle. It can be noticed that two triangles have area <math>\frac{6 \cdot \frac{5}{2}}{2} = \frac{15}{2}</math>, and the other two triangles have area <math>\frac{3 \cdot \frac{8}{2}}{2} = 6</math> <math>\Rightarrow</math> the shaded area is <math>(8 \cdot 5) - 2(\frac{15}{2}) - 2(6) = 40 - 15 - 12 = 13</math>. Since the desired area is half the shaded region, our area is <math>\boxed{\textbf{(D)}\ 6\frac{1}{2}}</math>.
+
+--- Solution 6 ---
+Note that the area before and after the intersection is the same, so we can just consider the area before the intersection and double it to get the total area of the shaded region.
+
+There are two linear lines that can be labeled. The first intersects the side of length 5; By letting the bottom left side of the triangle be defined as (0,0), its slope is <math>m = \frac{1-4}{8-0} = -\frac{3}{8}</math>. Therefore,
+<math>\\ y_1 = -\frac{3}{8}x + b</math>
+<math>\\ y_1(0) = b = 4</math>
+<math>\\ y_1 = -\frac{3}{8}x + 4</math>
+
+The second line's equation can be found in a similar fashion. Its slope is <math>m = \frac{0-5}{7-1} = -\frac{5}{6}</math>
+<math>\\ y_2 = -\frac{5}{6}x + b</math>
+<math>\\ y_2(7) = -\frac{35}{6} + b = 0</math>
+<math>\\ b = \frac{35}{6}</math>
+<math>\\ y_2 = -\frac{5}{6}x + \frac{35}{6}</math>
+
+Now we can take the area between lines. One thing to note is that we have to start at the point (1,5) because the rest of <math>y_2</math> is outside of the rectangle.
+
+The area of the remaining shaded part from [0,1) can also be found using an integral. Assume the top side of the rectangle is defined as y = 5. We can find the area between the lines by integrating the expression <math>5 - y_1</math>. 
+
+Now where do the lines meet? 
+<math>\\ y_1 = y_2</math>
+<math>\\ -\frac{3}{8}x + 4 = -\frac{5}{6}x + \frac{35}{6}</math>
+Solving for x yields 4, so the graphs intersect at x = 4.
+
+Now we can integrate.
+
+<math>Area_{shaded} = 2Area_{[0,1)} + 2Area_{(1,4]}</math>
+<math>2Area_{[0,1)} = 2\int_0^1 5 - (-\frac{3}{8}x + 4) dx
+\\ = 2\int_0^1 1 + \frac{3}{8}x dx = 2(x + \frac{3}{16}x^2) \left.\right|_{\;0}^{\;1}
+\\ = 2(1 + \frac{3}{16}1^2) = 2\frac{19}{16} = \frac{19}{8}</math>
+<math>\\ 2Area_{(1,4]} = 2\int_1^4 y_2 - y_1 dx = 2\int_1^4 (-\frac{5}{6}x + \frac{35}{6}) - (-\frac{3}{8}x + 4) dx
+\\ = 2\int_1^4 (-\frac{5}{6} + \frac{3}{8})x + \frac{35}{6} - 4 dx
+\\ = 2\int_1^4 -\frac{11}{24}x + \frac{11}{6} dx = 2(-\frac{11}{48}x^2 + \frac{11}{6}x)\left.\right|_{\;1}^{\;4}
+\\ = 2((-\frac{11}{48}4^2 + \frac{11}{6}4) - (-\frac{11}{48}1^2 + \frac{11}{6}1)) = 2\frac{33}{16} = \frac{33}{8}</math>
+
+<math>Area_{shaded} = 2Area_{[0,1)} + 2Area_{(1,4]} = \frac{19}{8} + \frac{33}{8} = \frac{19+33}{8} = \frac{52}{8} = \frac{13}{2} = 6.5</math>
+
+Therefore, the answer is <math>\boxed{\textbf{(D)}\ 6\frac{1}{2}}</math>
+
+
+=== Problem 9 ===
+The five small shaded squares inside this unit square are congruent and have disjoint interiors. The midpoint of each side of the middle square coincides with one of the vertices of the other four small squares as shown. The common side length is
+
+Choices: {'A': '\\ 7', 'B': '\\ 8', 'C': '\\ 9', 'D': '\\ 10', 'E': '\\ 11</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let <math>s</math> be the side length of the small squares.
+
+The diagonal of the big square can be written in two ways: <math>\sqrt{2}</math> and <math>s \sqrt{2} + s + s \sqrt{2}</math>.
+
+Solving for <math>s</math>, we get <math>s = \frac{4 - \sqrt{2}}{7}</math>, so our answer is <math>4 + 7 \Rightarrow \boxed{\textbf{(E) } 11}</math>
+
+--- Solution 2 ---
+The diagonal of the small square can be written in two ways: <math>s \sqrt(2)</math> and <math>2*(1-2s).</math> Equating and simplifying gives <math>s = \frac{4 - \sqrt{2}}{7}</math>. Hence our answer is <math>4 + 7 \Rightarrow \boxed{\textbf{(E) } 11}.</math>
+
+
+=== Problem 10 ===
+Five friends sat in a movie theater in a row containing
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ 3', 'D': '\\ 4', 'E': '\\ 5</math>'}
+Answer: B
+
+--- Solution 1 ---
+Assume that Edie and Dee were originally in seats 3 and 4. If this were so, there is no possible position for which Bea can move 2 seats to the right. The same applies for seats 2 and 3. This means that either Edie or Dee was originally in an edge seat. If Edie and Dee were in seats 1 and 2, then Bea must have been in seat 3, which would mean that seat 5 would now be occupied and the positioning would not work. So, Edie and Dee are in seats 4 and 5. This means that Bea was originally in seat 1. Ceci must have been in seat 3 to keep seat 1 open, which leaves seat 2.
+
+Thus, Ada was in seat <math>\boxed{\textbf{(B) }2}</math>.
+
+--- Solution 2 ---
+Note that the person (out of A,B,C) that moves the most, moves the amount equal to the sum of what the other 2 move. They essentially make a cycle. D & E are seat fillers and can be ignored. A,B,C take up either seats 1,2,3 or 2,4,5. In each case you find A was originally in seat <math>\boxed{2}</math>
+
+--- Solution 3 ---
+Note that the net displacements in the right direction sum up to <math>0</math>. The sum of the net displacements of Bea, Ceci, Dee, Edie is <math>2-1 = 1</math>, so Ada moved exactly <math>1</math> place to the left. Since Ada ended on an end seat, she must have started on seat <math>\boxed{2}</math>.
+
+
+=== Problem 11 ===
+Each of the
+
+Choices: {'A': '\\ 16', 'B': '\\ 25', 'C': '\\ 36', 'D': '\\ 49', 'E': '\\ 64</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let <math>a</math> be the number of students that can only sing, <math>b</math> can only dance, and <math>c</math> can only act.
+
+Let <math>ab</math> be the number of students that can sing and dance, <math>ac</math> can sing and act, and <math>bc</math> can dance and act.
+
+From the information given in the problem, <math>a + ab + b = 29, b + bc + c = 42,</math> and <math>a + ac + c = 65</math>.
+
+Adding these equations together, we get <math>2(a + b + c) + ab + bc + ac = 136</math>.
+
+Since there are a total of <math>100</math> students, <math>a + b + c + ab + bc + ac = 100</math>.
+
+Subtracting these equations, we get <math>a + b + c = 36</math>.
+
+Our answer is <math>ab + bc + ac = 100 - (a + b + c) = 100 - 36 = \boxed{\textbf{(E)}\; 64}</math>
+
+--- Solution 2 ---
+An easier way to solve the problem:
+Since <math>42</math> students cannot sing, there are <math>100-42=58</math> students who can.
+
+Similarly <math>65</math> students cannot dance, there are <math>100-65=35</math> students who can.
+
+And <math>29</math> students cannot act, there are <math>100-29=71</math> students who can.
+
+Therefore, there are <math>58+35+71=164</math> students in all ignoring the overlaps between <math>2</math> of <math>3</math> talent categories.
+There are no students who have all <math>3</math> talents, nor those who have none <math>(0)</math>, so only <math>1</math> or <math>2</math> talents are viable.
+
+Thus, there are <math>164-100=\boxed{\textbf{(E) }64}</math> students who have <math>2</math> of <math>3</math> talents.
+
+--- Solution 3 ---
+First, we find the number of students that do not have <math>2</math> of the <math>3</math> talents.
+
+Ignoring overlap, this will be <math>42+65+29=136</math> students. 
+
+Accounting for overlap, there will be <math>136-100=36</math> students that do not have <math>2</math> of the <math>3</math> talents.
+
+Note that this is also equal to the number of students that only have <math>1</math> of the <math>3</math> talents
+
+Therefore, the number of students who have <math>2</math> of the <math>3</math> talents is <math>100-36=\boxed{\textbf{(E) }64}</math>
+
+
+=== Problem 12 ===
+In
+
+Choices: {'A': '\\ 3:2', 'B': '\\ 5:3', 'C': '\\ 2:1', 'D': '\\ 7:3', 'E': '\\ 5:2</math>'}
+Answer: C
+
+--- Solution 1 ---
+By the angle bisector theorem, <math>\frac{AB}{AE} = \frac{CB}{CE}</math>
+
+<math>\frac{6}{AE} = \frac{7}{8 - AE}</math> so <math>AE = \frac{48}{13}</math>
+
+Similarly, <math>CD = 4</math>.
+
+There are two ways to solve from here.
+First way: 
+
+Note that <math>DB = 7 - 4 = 3.</math> By the angle bisector theorem on <math>\triangle ADB,</math> <math>\frac{AF}{FD} = \frac{AB}{DB} = \frac{6}{3}.</math> Thus the answer is <math>\boxed{\textbf{(C)}\; 2 : 1}</math>
+
+Second way:
+
+Now, we use [[mass points]]. Assign point <math>C</math> a mass of <math>1</math>.
+
+<math>mC \cdot CD = mB \cdot DB</math> , so <math>mB = \frac{4}{3}</math>
+
+Similarly, <math>A</math> will have a mass of <math>\frac{7}{6}</math>
+
+<math>mD = mC + mB = 1 + \frac{4}{3} = \frac{7}{3}</math>
+
+So <math>\frac{AF}{FD} = \frac{mD}{mA} = \boxed{\textbf{(C)}\; 2 : 1}</math>
+
+--- Solution 2 ---
+Denote <math>[\triangle{ABC}]</math> as the area of triangle ABC and let <math>r</math> be the inradius. Also, as above, use the angle bisector theorem to find that <math>BD = 3</math>. There are two ways to continue from here:
+
+<math>1.</math> Note that <math>F</math> is the incenter. Then, <math>\frac{AF}{FD} = \frac{[\triangle{AFB}]}{[\triangle{BFD}]} = \frac{AB * \frac{r}{2}}{BD * \frac{r}{2}} = \frac{AB}{BD} =  \boxed{\textbf{(C)}\; 2 : 1}</math>
+
+<math>2.</math> Apply the angle bisector theorem on <math>\triangle{ABD}</math> to get <math>\frac{AF}{FD} = \frac{AB}{BD} = \frac{6}{3} = \boxed{\textbf{(C)}\; 2 : 1}</math>
+
+--- Solution 3 ---
+Draw the third angle bisector, and denote the point where this bisector intersects <math>AB</math> as <math>P</math>. Using angle bisector theorem, we see <math>AE=48/13 , EC=56/13, AP=16/5, PB=14/5</math>. Applying [https://artofproblemsolving.com/wiki/index.php/Van_Aubel%27s_Theorem Van Aubel's Theorem], <math>AF/FD=(48/13)/(56/13) + (16/5)/(14/5)=(6/7)+(8/7)=14/7=2/1</math>, and so the answer is <math>\boxed{\textbf{(C)}\; 2 : 1}</math>.
+
+--- Solution 4 ---
+One only needs the angle bisector theorem to solve this question.
+
+The question asks for <math>AF:FD = \frac{AF}{FD}</math>. Apply the angle bisector theorem to <math>\triangle ABD</math> to get
+<cmath>\frac{AF}{FD} = \frac{AB}{BD}.</cmath>
+
+<math>AB = 6</math> is given. To find <math>BD</math>, apply the angle bisector theorem to <math>\triangle BAC</math> to get
+<cmath>\frac{BD}{DC} = \frac{BA}{AC} = \frac{6}{8} = \frac{3}{4}.</cmath>
+
+Since
+<cmath>BD + DC = BC = 7,</cmath>
+it is immediately obvious that <math>BD = 3</math>, <math>DC = 4</math> satisfies both equations.
+
+Thus,
+<cmath>AF:FD = AB:BD = 6:3 = \boxed{\textbf{(C)}\ 2:1}.</cmath>
+~revision by [[User:emerald_block|emerald_block]]
+
+--- Solution 5 ---
+Note that <math>AF</math> and <math>BD</math> look like medians. Assuming they are medians, we mark the answer <math>\boxed{\textbf{(C)}\ 2:1}</math> as we know that the centroid (the point where all medians in a triangle are concurrent) splits a median in a <math>2:1</math> ratio, with the shorter part being closer to the side it bisects.
+~[[User:scthecool|scthecool]]
+Note: This is heavily luck based, and if the figure had not been drawn to scale, this answer would have been wrong. It is advised to not use this in a real competition unless absolutely necessary.
+
+--- Solution 6 ---
+Assume the drawing is to-scale. Use your allotted ruler to measure out each side. Note that <math>AB:BC:AC</math> is equal to <math>6:7:8</math>.
+
+Measure out the length of <math>\overline{AF}</math> in relation to <math>\overline{FD}</math>. This ratio is approximately <math>\boxed{\textbf{(C)}\ 2:1}</math>. Solution by [[User:juwushu|juwushu]].
+
+
+=== Problem 13 ===
+Let
+
+Choices: {'A': '\\ 12', 'B': '\\ 14', 'C': '\\ 16', 'D': '\\ 18', 'E': '\\ 20</math>'}
+Answer: A
+
+--- Solution 1 ---
+Let <math>n = \frac{N}{5}</math>. Then, consider <math>5</math> blocks of <math>n</math> green balls in a line, along with the red ball. Shuffling the line is equivalent to choosing one of the <math>N + 1</math> positions between the green balls to insert the red ball. Less than <math>\frac{3}{5}</math> of the green balls will be on the same side of the red ball if the red ball is inserted inside the middle block of <math>n</math> balls, and there are <math>n - 1</math> positions where this happens. Thus, <math>P(N) = 1 - \frac{n - 1}{N + 1} = \frac{4n + 2}{5n + 1}</math>, so
+
+<cmath>P(N) = \frac{4n + 2}{5n + 1} < \frac{321}{400}.</cmath>
+
+Multiplying both sides of the inequality by <math>400(5n+1)</math>, we have
+
+<cmath>400(4n+2)<321(5n+1),</cmath>
+
+and by the distributive property,
+
+<cmath>1600n+800<1605n+321.</cmath>
+
+Subtracting <math>1600n+321</math> on both sides of the inequality gives us
+
+<cmath>479<5n.</cmath>
+
+Therefore, <math>N=5n>479</math>, so the least possible value of <math>N</math> is <math>480</math>. The sum of the digits of <math>480</math> is <math>\boxed{\textbf{(A) } 12}</math>.
+
+--- Solution 2 ---
+Let <math>N=5</math>, <math>P(N)=1</math> (Given)
+
+
+Let <math>N=10</math>, <math>P(N)=\frac{10}{11}</math>
+
+
+Let <math>N=15</math>, <math>P(N)=\frac{14}{16}</math>
+
+
+Notice that the fraction can be written as <math>1-\frac{\frac{N}{5}-1}{N+1}</math>
+
+Now it's quite simple to write the inequality as <math>1-\frac{\frac{N}{5}-1}{N+1}<\frac{321}{400}</math>
+
+We can subtract <math>1</math> on both sides to obtain <math>-\frac{\frac{N}{5}-1}{N+1}<-\frac{79}{400}</math>
+
+Dividing both sides by <math>-1</math>, we derive <math>\frac{\frac{N}{5}-1}{N+1}>\frac{79}{400}</math>. (Switch the inequality sign when dividing by <math>-1</math>)
+
+We then cross multiply to get <math>80N - 400 > 79N + 79</math>
+
+Finally we get <math>N > 479</math>
+
+To achieve <math>N = 480</math>
+
+So the sum of the digits of <math>N</math> = <math>\boxed{\textbf{(A) } 12}</math>
+
+--- Solution 3 ---
+We are trying to find the number of places to put the red ball, such that <math>\frac{3}{5}</math> of the green balls or more are on one side of it. Notice that we can put the ball in a number of spaces describable with <math>N</math>: Trying a few values, we see that the ball "works" in places <math>1</math> to <math>\frac{2}{5}N + 1</math> and spaces <math>\frac{3}{5}N+1 </math> to <math>N+1</math>. This is a total of <math>\frac{4}{5}N + 2</math> spaces, over a total possible <math>N + 1</math> places to put the ball. So:
+
+<math>\frac{\frac{4}{5}N + 2}{N+1} = \frac{321}{400} \rightarrow N = 479.</math> And we know that the next value is what we are looking for, so <math>N+1 = 480</math>, and the sum of its digits is <math>\boxed{\textbf{(A) } 12}</math>.
+
+--- Solution 4 ---
+Draw <math>N</math> balls as described in the problem. First consider the left side arrangements. Notice that for at least <math>\frac{3}{5}N</math> balls must be to the right of the valid left side arrangements. Since we have <math>N+1</math> balls, we know that there are <math>\frac{2}{5}N+1</math> valid left side arrangements. This also goes for the right side arrangements, for a total of 
+ <math>\frac{4}{5}N + 2</math> spaces, over a total possible <math>N + 1</math> places to put the ball. So:
+
+<math>\frac{\frac{4}{5}N + 2}{N+1} = \frac{321}{400} \rightarrow N = 479.</math> And we know that the next value is what we are looking for, so <math>N+1 = 480</math>, and the sum of its digits is <math>\boxed{\textbf{(A) } 12}</math>.
+
+
+=== Problem 14 ===
+Each vertex of a cube is to be labeled with an integer from
+
+Choices: {'A': '\\ 1', 'B': '\\ 3', 'C': '\\ 6', 'D': '\\ 12', 'E': '\\ 24</math>'}
+Answer: C
+
+--- Solution 1 ---
+Note that the sum of the numbers on each face must be 18, because <math>\frac{1+2+\cdots+8}{2}=18</math>. 
+
+So now consider the opposite edges (two edges which are parallel but not on same face of the cube); they must have the same sum value too.
+
+'''Note:''' It is not too hard to see this through making one side <math>a</math> (another way of saying this is to have two vertices have a sum of <math>a</math>), the side on the same face and parallel to it <math>b.</math> Then, the side diametrically opposite to <math>a</math> must also have a side length of <math>a</math> in order to maintain the constant face sum <math>a+b.</math>) 
+Now think about the points <math>1</math> and <math>8</math>. If they are not on the same edge, they must be endpoints of opposite edges, and we should have <math>1+X=8+Y</math>. However, this scenario would yield no solution for <math>[7,2]</math>, which is a contradiction. (Try drawing out the cube if it doesn't make sense to you.)
+
+The points <math>1</math> and <math>8</math> are therefore on the same side and all edges parallel must also sum to <math>9</math>.
+
+Now we have <math>4</math> parallel sides <math>1-8, 2-7, 3-6, 4-5</math>.
+Thinking about <math>4</math> endpoints, we realize they need to sum to <math>18</math>.
+It is easy to notice only <math>1-7-6-4</math> and <math>8-2-3-5</math> would work.
+
+So if we fix one direction <math>1-8 (</math>or <math>8-1)</math> all other <math>3</math> parallel sides must lay in one particular direction. <math>(1-8,7-2,6-3,4-5)</math> or <math>(8-1,2-7,3-6,5-4)</math>
+
+Now, the problem is the same as arranging <math>4</math> points in a two-dimensional square, which is <math>\frac{4!}{4}=\boxed{\textbf{(C) }6.}</math> This is because for every single arrangement, there is only one way to finish the cube. - AGDude
+
+--- Solution 2 ---
+Again, all faces sum to <math>18.</math> If <math>x,y,z</math> are the vertices next to <math>1</math>, then the remaining vertices are <math>17-x-y, 17-y-z, 17-x-z, x+y+z-16.</math> Now it remains to test possibilities. Note that we must have <math>x+y+z>17.</math> Without loss of generality, let <math>x<y<z.</math>
+<cmath>3,7,8\text{: Does not work.}</cmath> 
+<cmath>4,6,8\text{: Works.}</cmath>
+<cmath>4,7,8\text{: Works.}</cmath> 
+<cmath>5,6,7\text{: Does not work.}</cmath>
+<cmath>5,6,8\text{: Does not work.}</cmath>
+<cmath>5,7,8\text{: Does not work.}</cmath>
+<cmath>6,7,8\text{: Works.}</cmath>
+
+Keeping in mind that a) solutions that can be obtained by rotating each other count as one solution and b) a cyclic sequence is always asymmetrical, we can see that there are two solutions (one with <math>[x, y, z]</math> and one with <math>[z, y, x]</math>) for each combination of <math>x</math>, <math>y</math>, and <math>z</math> from above. So, our answer is <math>3\cdot 2=\boxed{\textbf{(C) }6.}</math> - AGDude
+
+--- Solution 3 ---
+We know the sum of each face is <math>18.</math> If we look at an edge of the cube whose numbers sum to <math>x</math>, it must be possible to achieve the sum <math>18-x</math> in two distinct ways, looking at the two faces which contain the edge. If <math>8</math> and <math>6</math> were on the same edge, it is possible to achieve the desired sum only with the numbers <math>1</math> and <math>3</math> since the values must be distinct. Similarly, if <math>8</math> and <math>7</math> were on the same edge, the only way to get the sum is with <math>1</math> and <math>2</math>. This means that <math>6</math> and <math>7</math> are not on the same edge as <math>8</math>, or in other words they are diagonally across from it on the same face, or on the other end of the cube.
+
+Now we look at three cases, each yielding two solutions which are reflections of each other:
+
+1) <math>6</math> and <math>7</math> are diagonally opposite <math>8</math> on the same face.
+
+2) <math>6</math> is diagonally across the cube from <math>8</math>, while <math>7</math> is diagonally across from <math>8</math> on the same face.
+
+3) <math>7</math> is diagonally across the cube from <math>8</math>, while <math>6</math> is diagonally across from <math>8</math> on the same face.
+
+This means the answer is <math>3\cdot 2=\boxed{\textbf{(C) }6.}</math>
+
+--- Solution 4 ---
+Label the vertices of the cube 1 - 8, with 1, 2, 3, 4 on one face and 5, 6, 7, 8 on the opposite face. There are \( 4^2 \) ways to swap two edges. This gives 16 swapped vertices, now we count invalid applications.
+
+Case 1: 2 Vertices are swapped.
+
+We see that if we swap two vertices, there are some cases where you can form the same two pairs by a rotation. Therefore, we count the ways this can happen. There are only 2 ways, and those are the diagonals, but notice how you can rotate the cube from one diagonal to the other. This cancels out one of the cases, giving us 1 case that is invalid.
+
+Case 2: 3 Vertices are swapped.
+
+We see that for each face, we have 4 cases for each face. Either 1 stays put, 2 stays put, 3 stays put, etc. So there are a total of 8 cases here which are invalid.
+
+Case 3: 4 Vertices are swapped.
+
+It is quite obvious that if you swap all 4 vertices, a simple rotation can just map one figure onto the other. There is then 1 invalid case, which is the only case.
+
+With the 16 possible swaps, we subtract \( 8 + 1 + 1 = 10 \) invalid cases. We are left with \( 16-10=6 \), or <math>\boxed{\textbf{(C) }6.}</math>
+
+
+=== Problem 15 ===
+Circles with centers
+
+Choices: {'A': '0', 'B': '\\frac{\\sqrt{6}}{3}', 'C': '1', 'D': '\\sqrt{6}-\\sqrt{2}', 'E': '\\frac{\\sqrt{6}}{2}</math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+pair P,Q,R,Pp,Qp,Rp;
+pair A,B;
+
+//Variable Definitions
+A=(-5, 0);
+B=(8, 0);
+P=(-2.828,1);
+Q=(0,2);
+R=(4.899,3);
+Pp=foot(P,A,B);
+Qp=foot(Q,A,B);
+Rp=foot(R,A,B);
+path PQR = P--Q--R--cycle;
+//Initial Diagram
+dot(P);
+dot(Q);
+dot(R);
+dot(Pp);
+dot(Qp);
+dot(Rp);
+draw(Circle(P, 1), linewidth(0.8));
+draw(Circle(Q, 2), linewidth(0.8));
+draw(Circle(R, 3), linewidth(0.8));
+draw(A--B,Arrows);
+label("$P$",P,N);
+label("$Q$",Q,N);
+label("$R$",R,N);
+label("$P'$",Pp,S);
+label("$Q'$",Qp,S);
+label("$R'$",Rp,S);
+label("$l$",B,E);
+
+//Added lines
+draw(PQR);
+draw(P--Pp);
+draw(Q--Qp);
+draw(R--Rp);
+
+//Angle marks
+draw(rightanglemark(P,Pp,B));
+draw(rightanglemark(Q,Qp,B));
+draw(rightanglemark(R,Rp,B));
+</asy>
+
+Notice that we can find <math>[P'PQRR']</math> in two different ways: <math>[P'PQQ']+[Q'QRR']</math> and <math>[PQR]+[P'PRR'].</math> Since we want <math>[PQR],</math> we use the latter method, so we have <math>[P'PQQ']+[Q'QRR']=[PQR]+[P'PRR'].</math>      
+<math>\break</math>
+
+<math>P'Q'=\sqrt{PQ^2-(QQ'-PP')^2}=\sqrt{3^2-1^2}=\sqrt{8}=2\sqrt{2}</math>. Additionally, <math>Q'R'=\sqrt{QR^2-(RR'-QQ')^2}=\sqrt{5^2-1^2}=\sqrt{24}=2\sqrt{6}</math>. Therefore, <math>[P'PQQ']=\frac{P'P+Q'Q}{2}*2\sqrt{2}=\frac{1+2}{2}*2\sqrt{2}=3\sqrt{2}</math>. Similarly, <math>[Q'QRR']=5\sqrt6</math>. We can calculate <math>[P'PRR']</math> easily because <math>P'R'=P'Q'+Q'R'=2\sqrt{2}+2\sqrt{6}</math>. <math>[P'PRR']=4\sqrt{2}+4\sqrt{6}</math>. <math>\newline</math>
+
+Plugging into first equation, the two sums of areas, <math>3\sqrt{2}+5\sqrt{6}=4\sqrt{2}+4\sqrt{6}+[PQR],</math> so therefore <math>[PQR]=\boxed{\textbf{(D) }\sqrt{6}-\sqrt{2}.}</math>
+
+--- Solution 2 ---
+Use the [[Shoelace Theorem]].
+
+Let the center of the first circle of radius 1 be at <math>(0, 1)</math>. 
+
+Draw the trapezoid <math>PQQ'P'</math> and using the Pythagorean Theorem, we get that <math>P'Q' = 2\sqrt{2}</math> so the center of the second circle of radius 2 is at <math>(2\sqrt{2}, 2)</math>.
+
+Draw the trapezoid <math>QRR'Q'</math> and using the Pythagorean Theorem, we get that <math>Q'R' = 2\sqrt{6}</math> so the center of the third circle of radius 3 is at <math>(2\sqrt{2}+2\sqrt{6}, 3)</math>.
+
+Now, we may use the [[Shoelace Theorem]]!
+
+<math>(0,1)</math>
+
+<math>(2\sqrt{2}, 2)</math>
+
+<math>(2\sqrt{2}+2\sqrt{6}, 3)</math>
+
+<math>\frac{1}{2}|(2\sqrt{2}+4\sqrt{2}+4\sqrt{6})-(6\sqrt{2}+2\sqrt{2}+2\sqrt{6})|</math>
+
+<math>=\boxed{\textbf{(D) }\sqrt{6}-\sqrt{2}.}</math>
+
+--- Solution 3 ---
+<math>PQ = 3</math> and <math>QR = 5</math> because they are the sum of two radii. <math>QQ' - PP' = 1</math> and <math>RR' - QQ' = 1</math>, the difference of the radii. Using pythagorean theorem, we find that <math>P'Q'</math> and <math>Q'R'</math> are <math>\sqrt{8}</math> and <math>\sqrt{24}</math>, <math>P'R' = \sqrt{8} + \sqrt{24}</math>. 
+
+Draw a perpendicular from <math>P</math> to line <math>RR'</math>, then we can use the Pythagorean theorem to find <math>PR</math>. <math>RR' - PP' = 2</math>. We get <cmath>PR^2 = (\sqrt{8} + \sqrt{24})^2 + 4 = 36 + 16\sqrt{3} \Rightarrow PR = \sqrt{36 + 16\sqrt{3}} = 2\sqrt{9 + 4\sqrt{3}}</cmath>
+
+To make our calculations easier, let <math>\sqrt{9 + 4\sqrt{3}} = a</math>. The semi-perimeter of our triangle is <math>\frac{3 + 5 + 2a}{2} = 4 + a</math>. Symbolize the area of the triangle with <math>A</math>. Using Heron's formula, we have <cmath>A^2 = (4 + a)(4 + a - 2a)(4 + a - 3)(4 + a - 5) = (4 + a)(4 - a)(a + 1)(a - 1) = (16 - a^2)(a^2 - 1)</cmath> We can remove the outer root of a. <cmath>A^2 = (16 - 9 - 4\sqrt{3})(9 + 4\sqrt{3} - 1) = (7 - 4\sqrt{3})(8 + 4\sqrt{3}) = 8 - 4\sqrt{3} \rightarrow A = \sqrt{8 - 4\sqrt{3}}</cmath>
+
+We solve the nested root. We want to turn <math>8 - 4\sqrt{3}</math> into the square of something. If we have <math>(a - b) ^ 2 = 8 - 4\sqrt{3}</math>, then we get <cmath>\begin{cases} a^2 + b^2 = 8 \\ ab = 2\sqrt{3} \end{cases}</cmath> Solving the system of equations, we get <math>a = \sqrt{6}</math> and <math>b = \sqrt{2}</math>. Alternatively, you can square all the possible solutions until you find one that is equal to <math>8 - 4\sqrt{3}.</math> <math>\newline A = \sqrt{8 - 4\sqrt{3}} = \sqrt{(\sqrt{6} - \sqrt{2})^2} = \boxed{\textbf{(D) }\sqrt{6}-\sqrt{2}.}</math>
+
+--- Solution 4 ---
+<asy>
+// Initial Pen Sizing
+size(250);
+defaultpen(linewidth(0.4));
+defaultpen(fontsize(10pt));
+
+// Variable Declarations
+pair P,Q,R,Pp,Qp,Rp,X,Y,Z,A,B;
+
+// Variable Definitions
+A=(-5, 0);
+B=(8, 0);
+P=(-2.828,1);
+Q=(0,2);
+R=(4.899,3);
+X=(0,1);
+Y=(4.899,1);
+Z=(4.899,2);
+Pp=foot(P,A,B);
+Qp=foot(Q,A,B);
+Rp=foot(R,A,B);
+path PQR = P--Q--R--cycle;
+
+//Initial Diagram
+dot(P);
+dot(Q);
+dot(R);
+dot(Pp);
+dot(Qp);
+dot(Rp);
+dot(X);
+dot(Y);
+dot(Z);
+draw(Circle(P, 1), linewidth(0.3));
+draw(Circle(Q, 2), linewidth(0.3));
+draw(Circle(R, 3), linewidth(0.3));
+draw(A--B,Arrows);
+label("$P$",P,N);
+label("$Q$",Q,N);
+label("$R$",R,N);
+label("$P'$",Pp,S);
+label("$Q'$",Qp,S);
+label("$R'$",Rp,S);
+label("$l$",B,E);
+label("$X$",X,NE);
+label("$Y$",Y,E);
+label("$Z$",Z,E);
+
+//Added lines
+filldraw(PQR,gray(0.8));
+draw(P--Pp,linetype("8 8"));
+draw(Q--Qp,linetype("8 8"));
+draw(R--Rp,linetype("8 8"));
+draw(P--Y,linetype("8 8"));
+draw(Q--Z,linetype("8 8"));
+
+//Angle marks
+draw(rightanglemark(R,Y,P));
+draw(rightanglemark(Q,X,P));
+draw(rightanglemark(R,Z,Q));
+
+//Length labeling
+label("$2\sqrt{2}$",P--X,fontsize(8pt));
+label("$2\sqrt{6}$",X--Y,fontsize(8pt));
+label("$2\sqrt{6}$",Q--Z,fontsize(8pt));
+label("$1$",R--Z,E,fontsize(8pt));
+label("$1$",Z--Y,E,fontsize(8pt));
+label("$3$",(-2.828,1.3)--Q,W,fontsize(8pt));
+label("$5$",Q--R,N,fontsize(8pt));
+</asy>
+The above diagram can be achieved relatively simply using basic knowledge of the Pythagorean theorem and the fact that the radius from the center to the point of tangency is perpendicular to the tangent line. From there, observe that <math>[PQRY]</math> can be calculated in two ways: <math>[\triangle PQX] + [QZYX] + [\triangle QRZ]</math> and <math>[\triangle PRY] + [\triangle PQR]</math>. Solving, we get:
+<cmath>
+\begin{align*}
+[\triangle PQR] &= [PQRY] - [\triangle PRY] \\ &= [\triangle PQX] + [QZYX] + [\triangle QRZ] - [\triangle PRY] \\ &= \sqrt{2} + 2\sqrt{6} + \sqrt{6}- 2\sqrt{2}-2\sqrt{6} \\ &= \boxed{\textbf{(D)} \sqrt{6}-\sqrt{2}}
+\end{align*}
+</cmath>
+
+- ColtsFan10, diagram partially borrowed from Solution 1
+
+--- Solution 5 ---
+We can use the Pythagorean theorem to find that the lengths are <math>3,5,\sqrt{36+16\sqrt{3}}</math>. If we apply Heron’s, we know that it must be the sum (or difference) of two or more square roots, by instinct. This means that <math>\boxed{\textbf{(D)} \sqrt{6}-\sqrt{2}}</math> is the answer.
+
+--- Solution 6 ---
+Like Solution 1, we can use the Pythagorean theorem to find <math>P'Q'</math> and <math>Q'R'</math>, which are <math>2\sqrt2</math> and <math>2\sqrt6</math> respectively. Since the only answer choice that has <math>\sqrt2</math> and <math>\sqrt6</math> is <math>D</math>, we can make an educated guess that <math>\boxed{\textbf{(D)} \sqrt{6}-\sqrt{2}}</math> is the answer.
+
+--- Solution 7 ---
+The fastest way to find the area of <math>[PQR]</math> is by breaking it into shapes with easy-to-calculate areas. We can see that the area of the whole shape <math>[PQRR'P']</math> is made up of trapezoids <math>[PP'QQ']</math> and <math>[Q'QRR']</math>. So, <math>[PQR]=[PP'QQ']+[Q'QRR']-[PRR'P']</math>. 
+
+We already know the lengths of <math>PP'</math> and <math>QQ'</math> being <math>1</math> and <math>2</math> respectively (they are the radiuses of the circles). The "height" of the trapezoid is <math>P'Q'=\sqrt{3^2-1^2}=\sqrt{8}=2\sqrt{2}</math> which can be found from the Pythagorean Theorem. So, the area of trapezoid <math>[PP'QQ']=\frac{1+2}2*{(2\sqrt{2})}=3\sqrt{2}</math>. Similarly, we can find the area of trapezoid <math>[Q'QRR']</math>. <math>Q'R'=5\sqrt{6}</math>, so <math>[Q'QRR']=\frac{2+3}2*{(2\sqrt{6})}=5\sqrt{2}</math>.
+
+Now we can put the pieces together. <math>[PQR]=[PP'QQ']+[Q'QRR']-[PRR'P']=3\sqrt{2}+5\sqrt{6}-[PRR'P']=</math>. The area of <math>PRR'P'</math> is the long rectangle <math>[PR"R'P]'+ [PRR"]=4\sqrt{2}+4\sqrt{6}</math>. <math>R"</math> is the point on <math>RR'</math> in which <math>PR"</math> is perpendicular to <math>RR'</math>. 
+
+So, <math>[PQR]=3\sqrt{2}+5\sqrt{6}-(4\sqrt{2}+4\sqrt{6})=\boxed{\textbf{(D) }\sqrt{6}-\sqrt{2}.}</math>
+
+
+=== Problem 16 ===
+The graphs of
+
+Choices: {'A': '\\ 2', 'B': '\\ 3', 'C': '\\ 4', 'D': '\\ 5', 'E': '\\ 6</math>'}
+Answer: D
+
+--- Solution 1 ---
+Setting the first two equations equal to each other, <math>\log_3 x = \log_x 3</math>.
+
+Solving this, we get <math>\left(3, 1\right)</math> and <math>\left(\frac{1}{3}, -1\right)</math>.
+
+Similarly with the last two equations, we get <math>\left(3, -1\right)</math> and <math>\left(\frac{1}{3}, 1\right)</math>.
+
+Now, by setting the first and third equations equal to each other, we get <math>\left(1, 0\right)</math>.
+
+Pairing the first and fourth or second and third equations won't work because then <math>\log x \leq 0</math>.
+
+Pairing the second and fourth equations will yield <math>x = 1</math>, but since you can't divide by <math>\log 1 = 0</math>, it doesn't work.
+
+After trying all pairs, we have a total of <math>5</math> solutions <math>\rightarrow \boxed{\textbf{(D)} 5}</math>
+
+--- Solution 2 ---
+Note that <math>\log_b a =\log_c a / \log_c b</math>.
+
+Then <math>\log_b a = \log_a a / \log_a b = 1/ \log_a b</math>
+
+<math>\log_\frac{1}{a} b = \log_a \frac{1}{a} / \log_a b = -1/ \log_a b</math>
+
+<math>\log_\frac{1}{b} a = -\log_a b</math>
+
+Therefore, the system of equations can be simplified to:
+
+<math>y = t</math>
+
+<math>y = -t</math>
+
+<math>y = \frac{1}{t}</math>
+
+<math>y = -\frac{1}{t}</math>
+
+where <math>t = \log_3 x</math>. Note that all values of <math>t</math> correspond to exactly one positive <math>x</math> value, so all <math>(t,y)</math> intersections will correspond to exactly one <math>(x,y)</math> intersection in the positive-x area.
+
+Graphing this system of functions will generate a total of <math>5</math> solutions <math>\rightarrow \boxed{\textbf{(D)} 5}</math>
+
+
+=== Problem 17 ===
+Let
+
+Choices: {'A': '\\ 1', 'B': '\\ \\frac{2+\\sqrt{3}}{3}', 'C': '\\ \\sqrt{2}', 'D': '\\ \\frac{\\sqrt{2}+\\sqrt{3}}{2}', 'E': '\\ \\sqrt{3}</math>'}
+Answer: B
+
+--- Solution 1 ---
+The center of an equilateral triangle is its centroid, where the three medians meet.
+
+The distance along the median from the centroid to the base is one third the length of the median.
+
+Let the side length of the square be <math>1</math>. The height of <math>\triangle E</math> is <math>\frac{\sqrt{3}}{2},</math> so the distance from <math>E</math> to the midpoint of <math>\overline{AB}</math> is <math>\frac{\sqrt{3}}{2} \cdot \frac{1}{3} = \frac{\sqrt{3}}{6}</math>
+
+<math>EG = 2 \cdot \frac{\sqrt{3}}{6}</math> (from above) <math> + 1</math> (side length of the square).
+
+Since <math>EG</math> is the diagonal of square <math>EFGH</math>, <math>\frac{[EFGH]}{ABCD} = \frac{\frac{EG^2}{2}}{1^2} = \boxed{\textbf{(B) }\frac{2 + \sqrt{3}}{3}}</math>
+
+--- Solution 2 ---
+Note that we can also use coordinates to solve this problem. WLOG, set the side length of square <math>ABCD</math> equal to <math>6</math>.
+
+This makes the coordinates of the square <math>EFGH</math> equal to <math>(-\sqrt{3}, 3), (3, 6+\sqrt{3}), (6+\sqrt{3}, 3),</math> and <math>(3, -\sqrt{3})</math>.
+
+Using the first two points, this gives <math>EF^2 = (3-(-\sqrt{3})^2+(6+\sqrt{3}-3)^2)= (3+\sqrt{3})^2+(3+\sqrt{3})^2 = 24+12
+\sqrt{3}</math>.
+
+Thus, <math>[EFGH]=24+12\sqrt{3}</math>.
+
+Because the side length of <math>ABCD</math> is <math>6</math>, <math>[ABCD] = 36</math>.
+
+Therefore, <math>\frac{[EFGH]}{[ABCD]} = \frac{24+12\sqrt{3}}{36} = \boxed{\textbf{(B) }\frac{2 + \sqrt{3}}{3}}</math>
+
+- Pleaseletmewin
+
+
+=== Problem 18 ===
+For some positive integer
+
+Choices: {'A': '\\ 110', 'B': '\\ 191', 'C': '\\ 261', 'D': '\\ 325', 'E': '\\ 425</math>'}
+Answer: D
+
+--- Solution 1 ---
+Since the prime factorization of <math>110</math> is <math>2 \cdot 5 \cdot 11</math>, we have that the number is equal to <math>2 \cdot 5 \cdot 11 \cdot n^3</math>.  This has <math>2 \cdot 2 \cdot 2=8</math> factors when <math>n=1</math>.  This needs a multiple of 11 factors, which we can achieve by setting <math>n=2^3</math>, so we have <math>2^{10} \cdot 5 \cdot 11</math> has <math>44</math> factors.  To achieve the desired <math>110</math> factors, we need the number of factors to also be divisible by <math>5</math>, so we can set <math>n=2^3 \cdot 5</math>, so <math>2^{10} \cdot 5^4 \cdot 11</math> has <math>110</math> factors.  Therefore, <math>n=2^3 \cdot 5</math>.  In order to find the number of factors of <math>81n^4</math>, we raise this to the fourth power and multiply it by <math>81</math>, and find the factors of that number.  We have <math>3^4 \cdot 2^{12} \cdot 5^4</math>, and this has <math>5 \cdot 13 \cdot 5=\boxed{\textbf{(D) }325}</math> factors.
+
+--- Solution 2 ---
+<imath>110n^3</imath> clearly has at least three distinct prime factors, namely 2, 5, and 11.
+
+The number of factors of <imath>p_1^{n_1}\cdots p_k^{n_k}</imath> is <imath>(n_1+1)\cdots(n_k+1)</imath> when the <imath>p</imath>'s are distinct primes. This tells us that none of these factors can be 1. The number of factors is given as 110. The only way to write 110 as a product of at least three factors without <imath>1</imath>s is <imath>2\cdot 5\cdot 11</imath>.
+
+We conclude that <imath>110n^3</imath> has only the three prime factors 2, 5, and 11 and that the multiplicities are 1, 4, and 10 in some order.  I.e., there are six different possible values of <imath>n</imath> all of the form <imath>n=p_1\cdot p_2^3</imath>.
+
+<imath>81n^4</imath> thus has prime factorization <imath>81n^4=3^4\cdot p_1^4\cdot p_2^{12}</imath> and a factor count of <imath>5\cdot5\cdot13=\boxed{\textbf{(D) }325}</imath>
+
+The expression <imath>110n^3</imath> has at least three distinct prime factors, namely <imath>2, 5,</imath> and <imath>11</imath>.
+
+If a number has prime factorization <imath>p_1^{n_1}\cdots p_k^{n_k},</imath> then its number of positive divisors is <imath>(n_1+1)\cdots(n_k+1),</imath> where the <imath>p_i</imath> are distinct primes. In particular, none of these factors can be equal to <imath>1</imath>.
+
+We are told that <imath>110n^3</imath> has exactly <imath>110</imath> positive divisors. The only way to express <imath>110</imath> as a product of at least three integers greater than <imath>1</imath> is <imath>110 = 2\cdot 5\cdot 11.</imath> Therefore, <imath>110n^3</imath> has exactly three distinct prime factors, which must be <imath>2, 5,</imath> and <imath>11,</imath> and their corresponding exponents are <imath>1, 4,</imath> and <imath>10</imath> in some order.
+
+It follows that <imath>n^3</imath> contributes exponents <imath>3</imath> and <imath>9</imath> to two of these primes, so <imath>n^3 = p_1^3\cdot p_2^9</imath> for distinct primes <imath>p_1, p_2 \in \{2,5,11\}.</imath> Hence, <imath>n = p_1\cdot p_2^3.</imath> There are six possible values of <imath>n</imath> of this form.
+
+Now consider <imath>81n^4.</imath> Since <imath>81 = 3^4</imath> and <imath>n^4 = p_1^4\cdot p_2^{12},</imath> we obtain <imath>81n^4 = 3^4\cdot p_1^4\cdot p_2^{12}.</imath> Applying the divisor formula yields <imath>(4+1)(4+1)(12+1)=5\cdot5\cdot13=\boxed{\textbf{(D) }325}.</imath>
+
+
+=== Problem 19 ===
+Jerry starts at
+
+Choices: {'A': '\\ 69', 'B': '\\ 151', 'C': '\\ 257', 'D': '\\ 293', 'E': '\\ 313</math>'}
+Answer: B
+
+--- Solution 1 ---
+For <math>6</math> to <math>8</math> heads, we are guaranteed to hit <math>4</math>, so the sum here is <math>\binom{8}{2}+\binom{8}{1}+\binom{8}{0}=28+8+1=37</math>.
+
+For <math>4</math> heads, you have to hit the <math>4</math> heads at the start so there's only one way, <math>1</math>.
+
+For <math>5</math> heads, we either start off with <math>4</math> heads, which gives us <math>_4\text{C}_1=4</math> ways to arrange the other flips, or we start off with five heads and one tail, which has <math>6</math> ways minus the <math>2</math> overlapping cases, <math>\text{HHHHHTTT}</math> and <math>\text{HHHHTHTT}</math>. Total ways: <math>8</math>.
+
+Then we sum to get <math>46</math>. There are a total of <math>2^8=256</math> possible sequences of <math>8</math> coin flips, so the probability is <math>\frac{46}{256}=\frac{23}{128}</math>. Summing, we get <math>23+128=\boxed{\textbf{(B) }151}</math>.
+
+--- Solution 2 ---
+Reaching 4 will require either 4, 6, or 8 flips. Therefore we can split into 3 cases: 
+
+(Case 1): The first four flips are heads. Then, the last four flips can be anything so <math>2^4=16</math> possibilities work. 
+
+(Case 2): It takes 6 flips to reach 4. There must be one tail in the first four flips so we don't repeat case 1. The tail can be in one of 4 positions. The next two flips must be heads. The last two flips can be anything so <math>2^2=4</math> flips work. <math>4*4=16</math>. 
+
+(Case 3): It takes 8 flips to reach 4. We can split this case into 2 sub-cases. There can either be 1 or 2 tails in the first 4 flips. 
+
+(1 tail in first four flips). In this case, the first tail can be in 4 positions. The second tail can be in either the 5th or 6th position so we don't repeat case 2. Thus, there are <math>4*2=8</math> possibilities.  
+
+(2 tails in first four flips). In this case, the tails can be in <math>\binom{4}{2}=6</math> positions. 
+
+Adding these cases up and taking the total out of <math>2^8=256</math> yields <math>\frac{16+16+8+6}{256}=\frac{46}{256}=\frac{23}{128}</math>. This means the answer is <math>23+128=\boxed{\textbf{(B) }151}</math>.
+
+--- Solution 3 ---
+(Inspired by https://www.youtube.com/watch?v=EZYzjmd_f2g by Walt S)
+
+Draw a triangle of dots as seen in the video. Now, we'll do something different than he did. Draw a dotted line between dots that correspond to 3 on the number line and dots that correspond to 4 on the number line. This is the threshold that must be passed to have a successful sequence. We consider the three entry points to the immediate right of this line. Doing a tiny bit of fun bashing as we slide down this triangle, we find there is 1 way to cross the line for the first time through the uppermost entry point, 4 ways to cross the line for the first time through the middle entry point, and 14 ways to cross the line for the first time through the lowermost entry point.
+
+Superimpose Pascal's triangle over the dots. Notice that the number of ways to get to a dot is equal to its corresponding number on Pascal's triangle. Rows on Pascal's triangle sum to powers of 2. There are <math>2^4=16</math> ways to get to the 4th row (remember that when working with Pascal's triangle, we start counting with a 0th row), and we found that 1 of them makes us cross the threshold for the first time. There are <math>2^6=64</math> ways to get to the 6th row, and we found that 4 of them make us cross the threshold for the first time. There are <math>2^8=256</math> ways to get to the 8th row, and we found that 14 of them make us cross the threshold for the first time.
+
+Adding up these probabilities <cmath>\frac{1}{16}+\frac{4}{64}+\frac{14}{256}=\frac{23}{128}</cmath> and summing <math>a</math> and <math>b</math>, <cmath>a+b=23+128=\boxed{\textbf{(B)}\ 151}</cmath> we get our answer.
+
+--- Solution 4 ---
+Notice every <math>2</math> flips, there is a <math>\dfrac{1}{4}</math> chance to go <math>2</math> steps left <math>(L),</math> <math>\dfrac{1}{2}</math> chance to stay put <math>(P),</math> and <math>\dfrac{1}{4}</math> chance to move <math>2</math> steps right <math>(R).</math> We have <math>4</math> choices for how to get to <math>4:</math>
+<cmath>RR-1\text{ arrangement}-\dfrac{1}{4}\cdot\dfrac{1}{4}=\dfrac{1}{16}</cmath>
+<cmath>PRR-2\text{ arrangements}-2\cdot\dfrac{1}{2}\cdot\dfrac{1}{4}\cdot\dfrac{1}{4}=\dfrac{1}{16}</cmath>
+<cmath>LRRR-2\text{ arrangements}-2\cdot\dfrac{1}{4}\cdot\dfrac{1}{4}\cdot\dfrac{1}{4}\cdot\dfrac{1}{4}=\dfrac{1}{128}</cmath>
+<cmath>PPRR-3\text{ arrangements}-3\cdot\dfrac{1}{2}\cdot\dfrac{1}{2}\cdot\dfrac{1}{4}\cdot\dfrac{1}{4}=\dfrac{3}{64}</cmath>
+Finally, our answer will be <math>\dfrac{1}{16}+\dfrac{1}{16}+\dfrac{1}{128}+\dfrac{3}{64}=\dfrac{23}{128}\implies a+b=\boxed{\textbf{(B)}\ 151}.</math>
+
+
+=== Problem 20 ===
+A binary operation
+
+Choices: {'A': '\\ 109', 'B': '\\ 201', 'C': '\\ 301', 'D': '\\ 3049', 'E': '\\ 33,601</math>'}
+Answer: A
+
+--- Solution 1 ---
+We see that <math>a \, \diamondsuit \, a = 1</math>, and think of division. Testing, we see that the first condition <math>a \, \diamondsuit \, (b \, \diamondsuit \, c) = (a \, \diamondsuit \, b) \cdot c</math> is satisfied, because <math>\frac{a}{\frac{b}{c}} = \frac{a}{b} \cdot c</math>. Therefore, division can be the operation <math>\diamondsuit</math>. Solving the equation, <cmath>\frac{2016}{\frac{6}{x}} = \frac{2016}{6} \cdot x = 336x = 100\implies x=\frac{100}{336} = \frac{25}{84},</cmath> so the answer is <math>25 + 84 = \boxed{\textbf{(A) }109}</math>.
+
+--- Solution 2 ---
+If the given conditions hold for all nonzero numbers <math>a, b,</math> and <math>c</math>, 
+
+Let <math>a=b=c.</math> From the first two givens, this implies that 
+
+
+<cmath>a\diamondsuit\, (a\diamondsuit\, {a})=(a\diamondsuit\, a)\cdot{a}.</cmath>
+
+
+From <math>a\diamondsuit\,{a}=1,</math> this equation simply becomes <math>a\diamondsuit\,{1}=a.</math>
+
+
+Let <math>c=b.</math> Substituting this into the first two conditions, we see that 
+
+<cmath>a\diamondsuit\, (b\diamondsuit\, {c})=(a\diamondsuit\, {b})\cdot{c} \implies a\diamondsuit\, (b\diamondsuit\, {b})=(a\diamondsuit\, {b})\cdot{b}.</cmath>
+
+Substituting <math>b\diamondsuit\, {b} =1</math>, the second equation becomes
+
+<cmath>a\diamondsuit\, {1}=(a\diamondsuit\, {b})\cdot{b} \implies a=(a\diamondsuit\,{b})\cdot{b}.</cmath>
+
+Since <math>a, b</math> and <math>c</math> are nonzero, we can divide by <math>b</math> which yields,
+
+<cmath>\frac{a}{b}=(a\diamondsuit\, {b}).</cmath>
+
+Now we can find the value of <math>x</math> straightforwardly:
+
+<cmath>\frac{2016}{(\frac{6}{x})}=100 \implies 2016=\frac{600}{x} \implies x=\frac{600}{2016} = \frac{25}{84}.</cmath>
+
+Therefore, <math>a+b=25+84=\boxed{\textbf{A)} 109}</math>
+
+-Benedict T (countmath1)
+
+Note: We only really cared about what <math>a\diamondsuit\,{b}</math> was, so we used the existence of <math>c</math> to get an expression in terms of just <math>a</math> and <math>b</math>.
+
+--- Solution 3 ---
+One way to eliminate the <math>\diamondsuit</math> in this equation is to make <math>a = b</math> so that  <math>a\,\diamondsuit\, (b\,\diamondsuit \,c) = c</math>. In this case, we can make <math>b = 2016</math>.
+
+<cmath>2016 \,\diamondsuit\, (6\,\diamondsuit\, x)=100\implies 
+(2016\, \diamondsuit\, 6) \cdot x = 100</cmath>
+
+By multiplying both sides by <math>\frac{6}{x}</math>, we get:
+
+<cmath>(2016\, \diamondsuit\, 6) \cdot 6 = \frac{600}{x}\implies 
+2016 \, \diamondsuit\, (6\, \diamondsuit\, 6) = \frac{600}{x}</cmath>
+
+Because <math>6\, \diamondsuit\, 6 = 2016\, \diamondsuit\, 2016 = 1:</math>
+
+<cmath>2016 \, \diamondsuit\, (2016\, \diamondsuit\, 2016) = \frac{600}{x}\implies 
+(2016\, \diamondsuit\, 2016) \cdot 2016 = \frac{600}{x}\implies 
+2016 = \frac{600}{x}</cmath>
+
+Therefore, <math>x = \frac{600}{2016} = \frac{25}{84}</math>, so the answer is <math>25 + 84 = \boxed{\textbf{(A) }109.}</math>
+
+--- Solution 4 ---
+We can manipulate the given identities to arrive at a conclusion about the binary operator <math>\diamondsuit</math>.  Substituting <math>b = c</math> into the first identity yields <cmath>( a\ \diamondsuit\ b) \cdot b = a\ \diamondsuit\ (b\ \diamondsuit\  b) = a\ \diamondsuit\  1 = a\ \diamondsuit\ ( a\ \diamondsuit\ a) = ( a\ \diamondsuit\ a) \cdot a = a.</cmath>  Hence, <math>( a\ \diamondsuit\ b) \cdot b = a,</math> or, dividing both sides of the equation by <math>b,</math> <math>( a\ \diamondsuit\ b) = \frac{a}{b}.</math>
+
+Hence, the given equation becomes <math>\frac{2016}{\frac{6}{x}} = 100</math>.  Solving yields <math>x=\frac{100}{336} = \frac{25}{84},</math> so the answer is <math>25 + 84 = \boxed{\textbf{(A) }109.}</math>
+
+--- Solution 5 ---
+<math>2016 \diamondsuit (6 \diamondsuit x) = (2016 \diamondsuit 6) \cdot x = 100</math>
+
+<math>2016 \diamondsuit (2016 \diamondsuit 1) = (2016 \diamondsuit 2016) \cdot 1 = 1 \cdot 1 = 1</math>
+
+<math>2016 \diamondsuit 2016 = 1</math>, <math>2016 \diamondsuit (2016 \diamondsuit 1) = 1</math>, so <math>2016 \diamondsuit 1 = 2016</math>
+
+<math>2016  \diamondsuit 1 = (2016  \diamondsuit 6) \cdot 6</math>, <math>2016 \diamondsuit 6 = \frac{2016  \diamondsuit 1}{6} = 336</math>
+
+<math>x = \frac{100}{2016 \diamondsuit 6} = \frac{100}{336} = \frac{25}{84}</math>, <math>24 + 85 = \boxed{\textbf{(A) }109}</math>
+
+--- Solution 6 ---
+First, looking at the conditions, we know that any nonzero real number <math>a</math> satisfies:
+<math>a \diamondsuit (a \diamondsuit a) = (a \diamondsuit a) \cdot a</math>
+Using the next condition, we get that:
+<math>a \diamondsuit 1 = a</math>
+
+Notice that <math>2016 \diamondsuit 1 = 2016 \diamondsuit (6 \diamondsuit 6) = (2016 \diamondsuit 6) \cdot 6 =  2016</math>. Hence, <math>2016 \diamondsuit 6 = 336</math>. Thus, <math>2016 \diamondsuit (6 \diamondsuit x)=100 \implies (2016 \diamondsuit 6) \cdot x = 100 \implies 336x=100 \implies x=\frac{25}{84}</math>. Therefore, the answer is <math>\boxed{\textbf{(A) }109}</math>
+
+--- Solution 7 ---
+We can rewrite <math>2016\diamondsuit (6\diamondsuit x)=100</math> as <math>2016\diamondsuit 6=\dfrac{100}x.</math> We do a series of algebraic  manipulations: 
+
+<cmath>(2016\diamondsuit 6)\cdot6=\dfrac{600}x</cmath>
+<cmath>2016\diamondsuit (6\diamondsuit 6)=\dfrac{600}x</cmath>
+<cmath>2016\diamondsuit 1=\dfrac{600}x.</cmath>
+
+Let <math>a=2016\diamondsuit 1.</math> 
+
+<cmath>2016a=(2016\diamondsuit 1)\cdot 2016</cmath>
+<cmath>2016a=2016\diamondsuit (1\diamondsuit 2016)</cmath>
+
+We let <math>b=1\diamondsuit 2016.</math> 
+
+<cmath>2016b=(1\diamondsuit 2016)\cdot2016</cmath>
+<cmath>2016b=1\diamondsuit (2016\diamondsuit 2016)</cmath>
+<cmath>2016b=1\diamondsuit 1=1</cmath>
+<cmath>b=\dfrac1{2016}</cmath>
+
+We notice that <math>1\diamondsuit 2016=\dfrac1{2016},</math> which makes <math>a\diamondsuit b</math> look suspiciously like <math>\dfrac ab.</math> Sure enough, when we try the given condition on <math>a\diamondsuit b=\dfrac ab,</math> we see that it works. We evaluate <math>2016\diamondsuit (6\diamondsuit x)=100,</math> and get <math>x=\dfrac{25}{84},</math> and therefore <math>p+q=25+84=109.</math>
+
+
+=== Problem 21 ===
+A quadrilateral is inscribed in a circle of radius
+
+Choices: {'A': '\\ 200', 'B': '\\ 200\\sqrt{2}', 'C': '\\ 200\\sqrt{3}', 'D': '\\ 300\\sqrt{2}', 'E': '\\ 500</math>'}
+Answer: E
+
+--- Solution 1 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, E, F, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(Circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,W);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,ENE);
+label("$O$",O,S);
+label("$\theta$",O,3N);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+//Construction
+E=extension(B,O,A,D);
+
+label("$E$",E,NE);
+
+F=extension(C,O,A,D);
+
+label("$F$",F,NE);
+
+
+//Angle marks
+draw(anglemark(C,O,B));
+
+</asy>
+
+Let <imath>AD</imath> intersect <imath>OB</imath> at <imath>E</imath> and <imath>OC</imath> at <imath>F.</imath>
+
+
+<imath>\overarc{AB}= \overarc{BC}= \overarc{CD}=\theta</imath>
+
+<imath>\angle{BAD}=\frac{1}{2} \cdot \overarc{BCD}=\theta=\angle{AOB}</imath>
+
+
+From there, <imath>\triangle{OAB} \sim \triangle{ABE}</imath>, thus:
+
+<imath>\frac{OA}{AB} = \frac{AB}{BE} = \frac{OB}{AE}</imath>
+
+<imath>OA = OB</imath> because they are both radii of <imath>\odot{O}</imath>. Since <imath>\frac{OA}{AB} = \frac{OB}{AE}</imath>, we have that <imath>200 = AB = AE</imath>. Similarly, <imath>CD = DF</imath>.
+
+<imath>OE = 100\sqrt{2} = \frac{OB}{2}</imath> and <imath>EF=\frac{BC}{2}=100</imath> , so <imath>AD=AE + EF + FD = 200 + 100 + 200 = \boxed{\textbf{(E) } 500}</imath>
+
+--- Solution 2 ---
+To save us from getting big numbers with lots of zeros behind them, let's divide all side lengths by <imath>200</imath> for now, then multiply it back at the end of our solution.
+
+
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, E, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+E=extension(B,D,O,C);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(Circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,W);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,E);
+label("$E$",E,WSW);
+label("$O$",O,S);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+//Construction
+draw(B--D);
+draw(rightanglemark(C,E,D));
+</asy>
+
+Construct quadrilateral <imath>ABCD</imath> on the circle with <imath>AD</imath> being the missing side (Notice that since the side length is less than the radius, it will be very small on the top of the circle). Now, draw the radii from center <imath>O</imath> to <imath>A,B,C,</imath> and <imath>D</imath>. Let the intersection of <imath>BD</imath> and <imath>OC</imath> be point <imath>E</imath>. Notice that <imath>BD</imath> and <imath>OC</imath> are perpendicular because <imath>BCDO</imath> is a kite.
+
+We set lengths <imath>BE=ED</imath> equal to <imath>x</imath> (Solution 1.1 begins from here). By the Pythagorean Theorem,
+<cmath>\sqrt{1^2-x^2}+\sqrt{(\sqrt{2})^2-x^2}=\sqrt{2}</cmath>
+
+We solve for <imath>x</imath>:
+<cmath>1-x^2+2-x^2+2\sqrt{(1-x^2)(2-x^2)}=2</cmath>
+<cmath>2\sqrt{(1-x^2)(2-x^2)}=2x^2-1</cmath>
+<cmath>4(1-x^2)(2-x^2)=(2x^2-1)^2</cmath>
+<cmath>8-12x^2+4x^4=4x^4-4x^2+1</cmath>
+<cmath>8x^2=7</cmath>
+<cmath>x=\frac{\sqrt{14}}{4}</cmath>
+
+By [[Ptolemy's Theorem]],
+<cmath>AB \cdot CD + BC \cdot AD = AC \cdot BD = BD^2 = (2 \cdot BE)^2</cmath>
+
+Substituting values,
+<cmath>1^2+1 \cdot AD = 4{\left( \frac{\sqrt{14}}{4} \right)}^2</cmath>
+<cmath>1+AD=\frac{7}{2}</cmath>
+<cmath>AD=\frac{5}{2}</cmath>
+
+Finally, we multiply back the <imath>200</imath> that we divided by at the beginning of the problem to get <imath>AD=\boxed{\textbf{(E) } 500}</imath>.
+
+--- Solution 3 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+P=RADIUS*dir(270);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("<imath>A</imath>",A,W);
+label("<imath>B</imath>",B,NW);
+label("<imath>C</imath>",C,NE);
+label("<imath>D</imath>",D,E);
+label("<imath>O</imath>",O,S);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+draw(P--A);
+draw(P--B);
+draw(P--C);
+draw(P--D);
+
+
+Draw some point <imath>P</imath> somewhere on major arc <imath>\overarc{AD}</imath>. Let <imath>\angle AOB \cong \angle BOC \cong \angle COD = 2\theta</imath>. Then, by inscribed angle <imath>\angle APB \cong \angle BPC \cong \angle CPD = \theta</imath>. By extended law of sines, we have <imath>\frac{200}{\text{sin}(\theta)} = 2(200\sqrt{2}) \implies \text{sin}(\theta) = \frac{\sqrt{2}}{4}</imath>. Using the triple angle sine formula, we have <imath>\text{sin}(3\theta)=3\text{sin}(\theta) - 4\text{sin}^3(\theta) = \frac{5\sqrt{2}}{8}</imath>.
+Then, again by extended law of sines, we have <imath>\frac{AD}{\text{sin}(3\theta)}=400\sqrt{2}</imath>. Thus, <imath>AD = \text{sin}(3\theta) 400\sqrt{2} = \boxed{500}</imath>.
+
+--- Solution 4 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(Circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,W);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,E);
+label("$O$",O,S);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+</asy>
+
+Let quadrilateral <imath>ABCD</imath> be inscribed in circle <imath>O</imath>, where <imath>AD</imath> is the side of unknown length. Draw the radii from center <imath>O</imath> to all four vertices of the quadrilateral, and draw the altitude of <imath>\triangle BOC</imath> such that it passes through side <imath>AD</imath> at the point <imath>G</imath> and meets side <imath>BC</imath> at point <imath>H</imath>.
+
+By the Pythagorean Theorem, the length of <imath>OH</imath> is
+<cmath>\begin{align*}
+\sqrt{CO^2 - HC^2} &= \sqrt{(200\sqrt{2})^2 - \left(\frac{200}{2}\right)^2}
+\\ &= \sqrt{80000 - 10000}
+\\ &= \sqrt{70000}
+\\ &= 100\sqrt{7}.
+\end{align*}</cmath>
+
+Note that <imath>[ABCDO] = [AOB] + [BOC] + [COD] = [AOD] + [ABCD].</imath> Let the length of <imath>OG</imath> be <imath>h</imath> and the length of <imath>AD</imath> be <imath>x</imath>; then we have that 
+
+<imath> [AOB] + [BOC] + [COD] = \frac{200 \times 100\sqrt{7}}{2} + \frac{200 \times 100\sqrt{7}}{2} + \frac{200 \times 100\sqrt{7}}{2} = \frac{x \times h}{2} + \frac{(100\sqrt{7} - h)(200 + x)}{2} = [AOD] + [ABCD].</imath> 
+
+Furthermore,
+<cmath>\begin{align*}
+h &= \sqrt{OD^2 - GD^2}
+\\ &= \sqrt{(200\sqrt{2})^2 - \left(\frac{x}{2}\right)^2}
+\\ &= \sqrt{80000 - \frac{x^2}{4}}
+\end{align*}</cmath>
+
+Substituting this value of <imath>h</imath> into the previous equation and evaluating for <imath>x</imath>, we get:
+<cmath>\frac{200 \times 100\sqrt{7}}{2} + \frac{200 \times 100\sqrt{7}}{2} + \frac{200 \times 100\sqrt{7}}{2} = \frac{x \times h}{2} + \frac{(100\sqrt{7} - h)(200 + x)}{2}</cmath>
+<cmath>\frac{3 \times 200 \times 100\sqrt{7}}{2} = \frac{x\sqrt{80000 - \frac{x^2}{4}}}{2} + \frac{\left(100\sqrt{7} - \sqrt{80000 - \frac{x^2}{4}}\right)(200 + x)}{2}</cmath>
+<cmath>60000\sqrt{7} = \left(x\sqrt{80000 - \frac{x^2}{4}}\right) + \left(20000\sqrt{7}\right) + \left(100x\sqrt{7}\right) - \left(200\sqrt{80000 - \frac{x^2}{4}}\right) - \left(x\sqrt{80000 - \frac{x^2}{4}}\right)</cmath>
+<cmath>40000\sqrt{7} = 100x\sqrt{7} - 200\sqrt{80000 - \frac{x^2}{4}}</cmath>
+<cmath>400\sqrt{7} = x\sqrt{7} - 2\sqrt{80000 - \frac{x^2}{4}}</cmath>
+<cmath>(x - 400)\sqrt{7} = 2\sqrt{80000 - \frac{x^2}{4}}</cmath>
+<cmath>7(x-400)^2 = 4\left(80000 - \frac{x^2}{4}\right)</cmath>
+<cmath>7x^2 - 5600x + 1120000 = 320000 - x^2</cmath>
+<cmath>8x^2 - 5600x + 800000 = 0</cmath>
+<cmath>x^2 - 700x + 100000 = 0</cmath>
+
+The roots of this quadratic are found by using the quadratic formula:
+<cmath>\begin{align*}
+x &= \frac{-(-700) \pm \sqrt{(-700)^2 - 4 \times 1 \times 100000}}{2 \times 1}
+\\ &= \frac{700 \pm \sqrt{490000 - 400000}}{2}
+\\ &= \frac{700}{2} \pm \frac{\sqrt{90000}}{2}
+\\ &= 350 \pm \frac{300}{2}
+\\ &= 200, 500
+\end{align*}</cmath>
+
+If the length of <imath>AD</imath> is <imath>200</imath>, then <imath>ABCD</imath> would be a square. Thus, the radius of the circle would be
+<cmath>\frac{\sqrt{200^2 + 200^2}}{2} = \frac{\sqrt{80000}}{2} = \frac{200\sqrt{2}}{2} = 100\sqrt{2}</cmath>
+Which is a contradiction. Therefore, our answer is <imath>\boxed{500}.</imath>
+
+--- Solution 5 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(Circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,W);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,E);
+label("$O$",O,S);
+label("$\theta$",O,3N);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+//Angle mark for BOC
+draw(anglemark(C,O,B));
+</asy>
+
+Construct quadrilateral <imath>ABCD</imath> on the circle with <imath>AD</imath> being the missing side (Notice that since the side length is less than the radius, it will be very small on the top of the circle). Now, draw the radii from center <imath>O</imath> to <imath>A,B,C,</imath> and <imath>D</imath>. Apply the [[law of cosines]] on <imath>\Delta BOC</imath>; let <imath> \theta = \angle BOC</imath>. We get the following equation: <cmath>(BC)^{2}=(OB)^{2}+(OC)^{2}-2\cdot OB \cdot OC\cdot \cos\theta</cmath> Substituting the values in, we get <cmath>(200)^{2}=2\cdot (200)^{2}+ 2\cdot (200)^{2}- 2\cdot 2\cdot (200)^{2}\cdot \cos\theta</cmath> Canceling out, we get <cmath>\cos\theta=\frac{3}{4}</cmath>
+Because <imath>\angle AOB</imath>, <imath>\angle BOC</imath>, and <imath>\angle COD</imath> are congruent, <imath>\angle AOD = 3\theta</imath>. To find the remaining side (<imath>AD</imath>), we simply have to apply the law of cosines to <imath>\Delta AOD</imath>. Now, to find <imath>\cos 3\theta</imath>, we can derive a formula that only uses <imath>\cos\theta</imath>: <cmath>\cos 3\theta=\cos (2\theta+\theta)= \cos 2\theta \cos\theta- (2\sin\theta \cos\theta) \cdot \sin \theta</cmath> <cmath>\cos 3\theta= \cos\theta (\cos 2\theta-2\sin^{2}\theta)=\cos\theta (2\cos^{2}\theta-3+2\cos^{2}\theta)</cmath> <cmath>\Rightarrow \cos 3\theta=4\cos^{3}\theta-3\cos\theta</cmath> It is useful to memorize the triple angle formulas (<imath>\cos 3\theta=4\cos^{3}\theta-3\cos\theta, \sin 3\theta=3\sin\theta-4\sin^{3}\theta</imath>).  Plugging in <imath>\cos\theta=\frac{3}{4}</imath>, we get <imath>\cos 3\theta= -\frac{9}{16}</imath>. Now, applying law of cosines on triangle <imath>OAD</imath>, we get <cmath>(AD)^{2}= 2\cdot (200)^{2}+ 2\cdot (200)^{2}+2\cdot 200\sqrt2 \cdot 200\sqrt2 \cdot \frac{9}{16}</cmath> <cmath>\Rightarrow 2\cdot (200)^{2} \cdot (1+1+ \frac{9}{8})=(200)^{2}\cdot \frac{25}{4}</cmath> <cmath>AD=200 \cdot \frac{5}{2}=\boxed{500}</cmath>
+
+--- Solution 6 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, E, F, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+E=foot(A,B,C);
+F=foot(D,B,C);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(Circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,W);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,ENE);
+label("$O$",O,S);
+label("$\theta$",O,3N);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+//Construction
+draw(A--E);
+draw(E--B);
+draw(C--F);
+draw(F--D);
+label("$E$",E,NW);
+label("$F$",F,NE);
+
+//Angle marks
+draw(anglemark(C,O,B));
+draw(rightanglemark(A,E,B));
+draw(rightanglemark(C,F,D));
+</asy>
+
+Construct quadrilateral <imath>ABCD</imath> on the circle <imath>O</imath> with <imath>AD</imath> being the desired side. Then, drop perpendiculars from <imath>A</imath> and <imath>D</imath> to the extended line of <imath>\overline{BC}</imath> and let these points be <imath>E</imath> and <imath>F</imath>, respectively. Also, let <imath>\theta = \angle BOC</imath>. From the [[Law of Cosines]] on <imath>\triangle BOC</imath>, we have <imath>\cos \theta = \frac{3}{4}</imath>.
+
+Now, since <imath>\triangle BOC</imath> is isosceles with <imath>\overline{OB} \cong \overline{OC}</imath>, we have that <imath>\angle BCO = \angle CBO = 90 - \frac{\theta}{2}</imath>. In addition, we know that <imath>\overline{BC} \cong \overline{CD}</imath> as they are both equal to <imath>200</imath> and <imath>\overline{OB} \cong \overline{OC} \cong \overline{OD}</imath> as they are both radii of the same circle. By SSS Congruence, we have that <imath>\triangle OBC \cong \triangle OCD</imath>, so we have that <imath>\angle OCD = \angle BCO = 90 - \frac{\theta}{2}</imath>, so <imath>\angle DCF = \theta</imath>.
+
+Thus, we have <imath>\frac{FC}{DC} = \cos \theta = \frac{3}{4}</imath>, so <imath>FC = 150</imath>. Similarly, <imath>BE = 150</imath>, and <imath>AD = 150 + 200 + 150 = \boxed{500}</imath>.
+
+--- Solution 7 ---
+<asy>
+pathpen = black; pointpen = black;
+size(6cm);
+draw(unitcircle);
+pair A = D("A", dir(50), dir(50));
+pair B = D("B", dir(90), dir(90));
+pair C = D("C", dir(130), dir(130));
+pair D = D("D", dir(170), dir(170));
+pair O = D("O", (0,0), dir(-90));
+draw(A--C, red);
+draw(B--D, blue+dashed);
+draw(A--B--C--D--cycle);
+draw(A--O--C);
+draw(O--B);
+</asy>
+
+Let <imath>s = 200</imath>.  Let <imath>O</imath> be the center of the circle.  Then <imath>AC</imath> is twice the altitude of <imath>\triangle OBC</imath> to <imath>\overline{OB}</imath>.  Since <imath>\triangle OBC</imath> is isosceles we can compute its area to be <imath>\frac{s^2 \sqrt{7}}{4}</imath>, hence <imath>CA = 2 \cdot \tfrac{2 \cdot s^2\sqrt7/4}{s\sqrt2} = s\sqrt{\frac{7}{2}}</imath>.
+
+Now by Ptolemy's Theorem we have <imath>CA^2 = s^2 + AD \cdot s \implies AD = \left(\frac{7}{2}-1\right)s.</imath> This gives us: <cmath>\boxed{\textbf{(E) } 500.}</cmath>
+
+--- Solution 8 ---
+Since all three sides equal <imath>200</imath>, they subtend three equal angles from the center. The right triangle between the center of the circle, a vertex, and the midpoint between two vertices has side lengths <imath>100,100\sqrt{7},200\sqrt{2}</imath> by the Pythagorean Theorem. Thus, the sine of half of the subtended angle is <imath>\frac{100}{200\sqrt{2}}=\frac{\sqrt{2}}{4}</imath>. Similarly, the cosine is <imath>\frac{100\sqrt{7}}{200\sqrt{2}}=\frac{\sqrt{14}}{4}</imath>.
+Since there are three sides, and since <imath>\sin\theta=\sin\left(180-\theta\right)</imath>,we seek to find <imath>2r\sin 3\theta</imath>.
+First, <imath>\sin 2\theta=2\sin\theta\cos\theta=2\cdot\left(\frac{\sqrt{2}}{4}\right)\left(\frac{\sqrt{14}}{4}\right)=\frac{2\sqrt{2}\sqrt{14}}{16}=\frac{\sqrt{7}}{4}</imath> and <imath>\cos 2\theta=\frac{3}{4}</imath> by Pythagorean.
+<cmath>\sin 3\theta=\sin(2\theta+\theta)=\sin 2\theta\cos\theta+\sin \theta\cos 2\theta=\frac{\sqrt{7}}{4}\left(\frac{\sqrt{14}}{4}\right)+\frac{\sqrt{2}}{4}\left(\frac{3}{4}\right)=\frac{7\sqrt{2}+3\sqrt{2}}{16}=\frac{5\sqrt{2}}{8}</cmath>
+<cmath>2r\sin 3\theta=2\left(200\sqrt{2}\right)\left(\frac{5\sqrt{2}}{8}\right)=400\sqrt{2}\left(\frac{5\sqrt{2}}{8}\right)=\frac{800\cdot 5}{8}=\boxed{\textbf{(E)}\text{ 500}}</cmath>
+
+--- Solution 9 ---
+For simplicity, scale everything down by a factor of 100. Let the inscribed trapezoid be <imath>ABCD</imath>, where <imath>AB=BC=CD=2</imath> and <imath>DA</imath> is the missing side length. Let <imath>DA=2x</imath>. If <imath>M</imath> and <imath>N</imath> are the midpoints of <imath>BC</imath> and <imath>AD</imath>, respectively, the height of the trapezoid is <imath>OM-ON</imath>. By the pythagorean theorem, <imath>OM=\sqrt{OB^2-BM^2}=\sqrt7</imath> and <imath>ON=\sqrt{OA^2-AN^2}=\sqrt{8-x^2}</imath>. Thus the height of the trapezoid is <imath>\sqrt7-\sqrt{8-x^2}</imath>, so the area is <imath>\frac{(2+2x)(\sqrt7-\sqrt{8-x^2})}{2}=(x+1)(\sqrt7-\sqrt{8-x^2})</imath>. By [[Brahmagupta's formula]], the area is <imath>\sqrt{(x+1)(x+1)(x+1)(3-x)}</imath>. Setting these two equal, we get <imath>(x+1)(\sqrt7-\sqrt{8-x^2})=\sqrt{(x+1)(x+1)(x+1)(3-x)}</imath>. Dividing both sides by <imath>x+1</imath> and then squaring, we get <imath>7-2(\sqrt7)(\sqrt{8-x^2})+8-x^2=(x+1)(3-x)</imath>. Expanding the right hand side and canceling the <imath>x^2</imath> terms gives us <imath>15-2(\sqrt7)(\sqrt{8-x^2})=2x+3</imath>. Rearranging and dividing by two, we get <imath>(\sqrt7)(\sqrt{8-x^2})=6-x</imath>. Squaring both sides, we get <imath>56-7x^2=x^2-12x+36</imath>. Rearranging, we get <imath>8x^2-12x-20=0</imath>. Dividing by 4 we get <imath>2x^2-3x-5=0</imath>. Factoring we get, <imath>(2x-5)(x+1)=0</imath>, and since <imath>x</imath> cannot be negative, we get <imath>x=2.5</imath>. Since <imath>DA=2x</imath>, <imath>DA=5</imath>. Scaling up by 100, we get <imath>\boxed{\textbf{(E)}\text{ 500}}</imath>.
+
+--- Solution 10 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations, L is used to write alpha= statement
+real RADIUS;
+pair A, B, C, D, E, F, O, L;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+E=extension(A,D,O,B);
+F=extension(A,D,O,C);
+L=midpoint(C--D);
+O=(0,0);
+
+//Path Definitions
+path quad = A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,NW);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,NE);
+label("$E$",E,SW);
+label("$F$",F,SE);
+label("$O$",O,SE);
+dot(O,linewidth(5));
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+//Construction
+label("$\alpha = 90-\frac{\theta}{2}$",L,5NE,rgb(128, 0, 0));
+draw(anglemark(C,O,B));
+label("$\theta$",O,3N);
+draw(anglemark(E,F,O));
+label("$\alpha$",F,3SW);
+draw(anglemark(D,F,C));
+label("$\alpha$",F,3NE);
+draw(anglemark(F,C,D));
+label("$\alpha$",C,3SSE);
+draw(anglemark(C,D,F));
+label("$\theta$",(RADIUS-0.04)*dir(31.586),3WNW);
+</asy>
+Label the points as shown, and let <imath>\angle{EOF} = \theta</imath>. Since <imath>\overline{OB} = \overline{OC}</imath>, and <imath>\triangle{OFE} \sim \triangle{OCB}</imath>, we get that <imath>\angle{EFO} = 90-\frac{\theta}{2}</imath>. We assign <imath>\alpha</imath> to <imath>90-\frac{\theta}{2}</imath> for simplicity. 
+From here, by vertical angles <imath>\angle{CFD} = \alpha</imath>. Also, since <imath>\triangle{OCB} \cong \triangle{ODC}</imath>, <imath>\angle{OCD} = \alpha</imath>. This means that <imath>\angle{CDF} = 180-2\alpha = \theta</imath>, which leads to <imath>\triangle{OCB} \sim \triangle{DCF}</imath>. 
+Since we know that <imath>\overline{CD} = 200</imath>, <imath>\overline{DF} = 200</imath>, and by similar reasoning <imath>\overline{AE} = 200</imath>. 
+Finally, again using similar triangles, we get that <imath>\overline{CF} = 100\sqrt{2}</imath>, which means that <imath>\overline{OF} = \overline{OC} - \overline{CF} = 200\sqrt{2} - 100\sqrt{2} = 100\sqrt{2}</imath>. We can again apply similar triangles (or use Power of a Point) to get <imath>\overline{EF} = 100</imath>, and finally <imath>\overline{AD} = \overline{AE}+\overline{EF}+\overline{FD} = 200+100+200=\boxed{\textbf{(E)}500}</imath> - ColtsFan10
+
+--- Solution 11 ---
+We first scale down by a factor of <imath>200\sqrt{2}</imath>. Let the vertices of the quadrilateral be <imath>A</imath>, <imath>B</imath>, <imath>C</imath>, and <imath>D</imath>, so that <imath>AD</imath> is the length of the fourth side. We draw this in the complex plane so that <imath>D</imath> corresponds to the complex number <imath>1</imath>, and we let <imath>C</imath> correspond to the complex number <imath>z</imath>. Then, <imath>A</imath> corresponds to <imath>z^3</imath> and <imath>B</imath> corresponds to <imath>z^2</imath>. We are given that <imath>\lvert z \rvert = 1</imath> and <imath>\lvert z-1 \rvert = 1/\sqrt{2}</imath>, and we wish to find <imath>\lvert z^3 - 1 \rvert=\lvert z^2+z+1\rvert \cdot \lvert z-1 \rvert=\lvert (z^2+z+1)/\sqrt{2} \rvert</imath>. Let <imath>z=a+bi</imath>, where <imath>a</imath> and <imath>b</imath> are real numbers. Then, <imath>a^2+b^2=1</imath> and <imath>a^2-2a+1+b^2=1/2</imath>; solving for <imath>a</imath> and <imath>b</imath> yields <imath>a=3/4</imath> and <imath>b=\sqrt{7}/4</imath>. Thus, <imath>AD = \lvert z^3 - 1 \rvert = \lvert (z^2+z+1)/\sqrt{2} \rvert = \lvert (15/8 + 5\sqrt{7}/8 \cdot i)/\sqrt{2} \rvert = \frac{5\sqrt{2}}{4}</imath>. Scaling back up gives us a final answer of <imath>\frac{5\sqrt{2}}{4} \cdot 200\sqrt{2} = \boxed{\textbf{(E)} 500}</imath>.
+
+--- Solution 12 ---
+Let angle <imath>C</imath> be <imath>2a</imath>. This way <imath>BD</imath> will be <imath>400sin(a)</imath>. Now we can trig bash. As the circumradius of triangle <imath>BCD</imath> is <imath>200\sqrt{2}</imath>, we can use the formula <cmath>R=\frac{abc}{4A}</cmath> and <cmath>A=\frac{absin(C)}{2}</cmath> and plug in all the values we got to get <cmath>200\sqrt{2}=\frac{200^2 \cdot 400sin(a)}{4 \cdot (\frac{200^2 sin(2a)}{2})}</cmath>. This boils down to <cmath>\sqrt{2}=\frac{sin(a)}{sin{2a}}</cmath>. This expression can further be simplified by the trig identity <cmath>sin(2a)=2sin(a)cos(a)</cmath>. This leads to the final simplified form <cmath>2\sqrt{2}=\frac{1}{cos(a)}</cmath>. Solving this expression gives us <cmath>cos(a)=\frac{\sqrt{2}}{4}</cmath>. However, as we want <imath>sin(a)</imath>, we use the identity <imath>sin^2+cos^2=1</imath>, and substitute  to get that <imath>sin(a)=\frac{\sqrt{14}}{4}</imath>, and therefore BD is <imath>100\sqrt{14}</imath>. 
+
+Then, as <imath>ABCD</imath> is a cyclic quadrilateral, we can use [[Ptolemy’s Theorem]] (with <imath>AD=x</imath>) to get <cmath>14 \cdot 100^2=200x+200^2</cmath>. Finally, we solve to get <imath>\boxed{\textbf{(E) } 500}</imath>.
+
+-dragoon
+
+--- Solution 13 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(Circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,W);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,E);
+label("$O$",O,S);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+</asy>
+Claim: <imath>[ABCD]</imath> is an isosceles trapezoid.
+
+Proof: Notice that <imath>[ABCD]</imath> is cyclic, triangle <imath>BOC</imath> is isosceles, and triangle <imath>AOB</imath> is congruent to <imath>DOC</imath> by SSS congruence. Therefore, <imath>\angle BAD = 180 - \angle BCD = 180-(\angle BCO + \angle DCO)=180-(\angle CBO+\angle ABO) = 180 - \angle ABC = \angle CDA</imath>. Hence, <imath>[ABCD]</imath> is an isosceles trapezoid.
+
+Let <imath>\angle CDA=\alpha</imath>. Notice that the length of the altitude from <imath>C</imath> to <imath>AD</imath> is <imath>200sin(\alpha)</imath>. Furthermore, the length of the altitude from <imath>O</imath> to <imath>BC</imath> is <imath>100\sqrt{7}</imath> by the Pythagorean theorem. Therefore, the length of the altitude from <imath>O</imath> to <imath>AD</imath> is <imath>100\sqrt{7}-200sin\alpha</imath>. Let <imath>F</imath> the feet of the altitude from <imath>O</imath> to <imath>AD</imath>. Then, <imath>FD=(200+400cos(\alpha))/2=100+200cos(\alpha)</imath>, because <imath>AOD</imath> is isosceles. 
+
+Therefore, by the Pythagorean theorem, <imath>(100+200cos(\alpha))^2+(100\sqrt{7}-200sin(\alpha))^2=80000</imath>. Simplifying, we have <imath>1+cos(\alpha)=sin(\alpha) \cdot sqrt{7} \implies cos^2(\alpha)+2cos(\alpha)+1=sin^2(\alpha) \cdot 7 = 7-7cos^2(\alpha) \implies 8cos^2(\alpha)+2cos(\alpha) - 6 =0</imath>. Solving this quadratic, we have <imath>cos(\alpha)=\frac{3}{4}, -1</imath>, but <imath>0<\alpha<180 \implies cos(\alpha)=3/4</imath>. Therefore, <imath>AD=200cos(\alpha)+200cos(\alpha)+200=\boxed{500}</imath>
+
+- [mathMagicOPS]
+
+--- Solution 14 ---
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, E, F, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(Circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,W);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,ENE);
+label("$O$",O,S);
+label("$\theta$",O,3N);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+//Construction
+E=extension(B,O,A,D);
+
+label("$E$",E,NE);
+
+F=extension(C,O,A,D);
+
+label("$F$",F,NE);
+
+
+//Angle marks
+draw(anglemark(C,O,B));
+
+</asy>
+
+Since <imath>AB</imath>, <imath>BC</imath>, and <imath>CD</imath> are congruent chords, the triangles formed by connecting these sides to the circumcenter <imath>O</imath> (i.e., <imath>\triangle AOB</imath>, <imath>\triangle BOC</imath>, <imath>\triangle COD</imath>) are congruent isosceles triangles.
+Let <imath>\alpha = \angle OCB</imath>. In <imath>\triangle BOC</imath>, the side length <imath>BC=200</imath> and <imath>OC = OB = 200\sqrt{2}</imath>. By dropping an altitude from <imath>O</imath> to <imath>BC</imath>, we bisect <imath>BC</imath>. Half the base is <imath>\frac{200}{2} = 100</imath>.
+Using the right triangle formed, we find <imath>\cos(\alpha)</imath>:
+<cmath>\cos(\alpha) = \frac{\text{Adjacent}}{\text{Hypotenuse}} = \frac{100}{200\sqrt{2}} = \frac{\sqrt{2}}{4}</cmath>
+Since <imath>\triangle BOC \cong \triangle COD</imath>, we have <imath>m\angle OCB = m\angle OCD = \alpha</imath>.
+The interior angle measure <imath>m\angle DCB</imath> is given by:
+<cmath>m\angle DCB = m\angle OCB + m\angle OCD = 2\alpha</cmath>
+We calculate <imath>\cos(2\alpha)</imath> using the double-angle identity:
+<cmath>\cos(2\alpha) = 2\cos^2(\alpha) - 1</cmath>
+<cmath>\cos(2\alpha) = 2\left(\frac{\sqrt{2}}{4}\right)^2 - 1 = \frac{1}{4} - 1 = -\frac{3}{4}</cmath>
+Now, apply the Law of Cosines to <imath>\triangle BCD</imath> to find <imath>BD^2</imath>:
+<cmath>BD^2 = BC^2 + CD^2 - 2(BC)(CD)\cos(\angle DCB)</cmath>
+<cmath>BD^2 = 200^2 + 200^2 - 2(200)(200)\left(-\frac{3}{4}\right)</cmath>
+<cmath>BD^2 = 80000 + 60000 = 140000</cmath>
+Since <imath>ABCD</imath> is a cyclic quadrilateral, the opposite angles are supplementary:
+<cmath>m\angle DAB = 180^\circ - m\angle DCB = 180^\circ - 2\alpha</cmath>
+Thus, we find <imath>\cos(\angle DAB)</imath>:
+<cmath>\cos(\angle DAB) = \cos(180^\circ - 2\alpha) = -\cos(2\alpha)</cmath>
+<cmath>\cos(\angle DAB) = -\left(-\frac{3}{4}\right) = \frac{3}{4}</cmath>
+Finally, we apply the Law of Cosines to <imath>\triangle DAB</imath> to find the side length <imath>AD</imath>. Let <imath>AD = a</imath>:
+<cmath>140000 = 200^2 + a^2 - 2(200)(a)\left(\frac{3}{4}\right)</cmath>
+<cmath>140000 = 40000 + a^2 - 300a</cmath>
+Rearranging the terms yields the quadratic equation:
+<cmath>a^2 - 300a - 100000 = 0</cmath>
+We solve this equation by factoring:
+<cmath>(a - 500)(a + 200) = 0</cmath>
+The two possible solutions for <imath>a</imath> are <imath>a=500</imath> and <imath>a=-200</imath>. Since <imath>a</imath> represents a side length, it must be positive, so <imath>a = 500</imath>, which means <imath>AD = 500</imath>, or <imath>\boxed{\textbf{(E) } 500}</imath>.
+
+--- Solution 15 ---
+Let our quadrilateral be ABCD, inscribed in circle O, with unknown side AD
+
+<imath>\newline</imath> Notice that by the problem statement, AB = CD This implies that <imath>AB\parallel CD</imath>, as AB = CD <imath>\iff</imath> 
+<imath>AB\parallel CD</imath> in a circle. 
+<imath>\newline</imath> obviously <imath>m\angle{AOB}=m\angle{BOC} = m\angle{COD}</imath>
+<imath>\newline</imath> By SAS congruency <imath>\triangle{AOB}=\triangle{BOC} = \triangle{COD}</imath>
+<imath>\newline</imath> Draw <imath>\overline{AO}</imath>,<imath>\overline{BO}</imath>,<imath>\overline{CO}</imath>,<imath>\overline{DO}</imath>.
+<imath>\newline</imath> let <imath>\overline{BO}</imath>,<imath>\overline{CO}</imath> <imath>\cap</imath> <imath>\overline{AD}</imath> at P and Q respectively. 
+<imath>\newline</imath> By interior angle theorem, <imath>m\angle{BPA} = m\angle{OBC}</imath> (For the sake of simplicity, we will only prove this on one side, since all triangles are congruent as above, the same applies for the right side)
+<imath>\newline</imath> Notice that ABCO is a kite as <imath>AB = BC = 200</imath> and <imath>OA=OC = 200\sqrt{2}</imath>. Thus, <imath>OB</imath> bisects <imath>\angle{ABC}</imath>. This implies that <imath>\triangle{ABP}</imath>
+<imath>\newline</imath> From this we obtain <imath>\frac{200}{200\sqrt{2}}=\frac{BP}{200}</imath>, from which we obtain <imath>BP = 100\sqrt{2}</imath> and by isosceles triangle theorem, <imath>BP = 200</imath>
+<imath>\newline</imath> Additionally, we obtain <imath>m\angle{BPA}=m\angle{OPQ}</imath> by vertical angles, from which we obtain <imath>\triangle{OPQ}</imath>
+<imath>\newline</imath> The requested length, <imath>AD =</imath> <imath>2*BP+PQ =</imath><imath>\boxed{\textbf{(E) } 500}</imath>.
+
+==Remark (Morley's Trisector Theorem)==
+
+This problem is related to [http://www.cut-the-knot.org/triangle/Morley/Naraniengar.shtml M. T. Naraniengar's proof] of [https://en.wikipedia.org/wiki/Morley%27s_trisector_theorem Morley's Trisector Theorem]. This problem is taken from the figure of the Lemma of M. T. Naraniengar's proof, as shown below.
+
+[[File:NaraniengarLemma.gif|200px]]
+
+If four points <imath>Y'</imath>, <imath>Z</imath>, <imath>Y</imath>, <imath>Z'</imath> satisfy the conditions
+
+<imath>\quad</imath> <imath>1.</imath> <imath>Y'Z = ZY = YZ'</imath> and
+
+<imath>\quad</imath> <imath>2.</imath> <imath>\angle YZY'</imath> = <imath>\angle Z'YZ</imath> = <imath>180^{\circ} - 2a > 60^{\circ}</imath>
+
+then they lie on a circle.
+
+
+The Lemma is used to prove Morley's Trisector Theorem by constructing an equilateral triangle at <imath>YZ</imath> and extending <imath>AY'</imath> and <imath>AZ'</imath> as shown below.
+
+[[File:NaraniengarTheorem.gif|400px]]
+
+
+=== Problem 22 ===
+How many ordered triples
+
+Choices: {'A': '\\ 15', 'B': '\\ 16', 'C': '\\ 24', 'D': '\\ 27', 'E': '\\ 64</math>'}
+Answer: A
+
+--- Solution 1 ---
+We prime factorize <imath>72,600,</imath> and <imath>900</imath>. The prime factorizations are <imath>2^3\times 3^2</imath>, <imath>2^3\times 3\times 5^2</imath> and <imath>2^2\times 3^2\times 5^2</imath>, respectively. Let <imath>x=2^a\times 3^b\times 5^c</imath>, <imath>y=2^d\times 3^e\times 5^f</imath> and <imath>z=2^g\times 3^h\times 5^i</imath>. We know that <cmath>\max(a,d)=3</cmath> <cmath>\max(b,e)=2</cmath> <cmath>\max(a,g)=3</cmath> <cmath>\max(b,h)=1</cmath> <cmath>\max(c,i)=2</cmath> <cmath>\max(d,g)=2</cmath> <cmath>\max(e,h)=2</cmath> and <imath>c=f=0</imath> since <imath>\text{lcm}(x,y)</imath> isn't a multiple of 5. Since <imath>\max(d,g)=2</imath> we know that <imath>a=3</imath>. We also know that since <imath>\max(b,h)=1</imath> that <imath>e=2</imath>. So now some equations have become useless to us...let's take them out. <cmath>\max(b,h)=1</cmath> <cmath>\max(d,g)=2</cmath> are the only two important ones left. We do casework on each now. If <imath>\max(b,h)=1</imath> then <imath>(b,h)=(1,0),(0,1)</imath> or <imath>(1,1)</imath>. Similarly if <imath>\max(d,g)=2</imath> then <imath>(d,g)=(2,0),(2,1),(2,2),(1,2),(0,2)</imath>. Thus our answer is <imath>5\times 3=\boxed{\textbf{(A) }15}.</imath>
+
+--- Solution 2 ---
+It is well known that if the <imath>\text{lcm}(a,b)=c</imath> and <imath>c</imath> can be written as <imath>p_1^ap_2^bp_3^c\dots</imath>, then the highest power of all prime numbers <imath>p_1,p_2,p_3\dots</imath> must divide into either <imath>a</imath> and/or <imath>b</imath>. Or else a lower <imath>c_0=p_1^{a-\epsilon}p_2^{b-\epsilon}p_3^{c-\epsilon}\dots</imath> is the <imath>\text{lcm}</imath>.
+
+Start from <imath>x</imath>:<imath>\text{lcm}(x,y)=72</imath> so <imath>8\mid x</imath> or <imath>9\mid x</imath> or both. But <imath>9\nmid x</imath> because <imath>\text{lcm}(x,z)=600</imath> and <imath>9\nmid 600</imath>.
+So <imath>x=8,24</imath>.
+
+<imath>y</imath> can be <imath>9,18,36</imath> in both cases of <imath>x</imath> but NOT <imath>72</imath> because <imath>\text{lcm}(y,z)=900</imath> and <imath>72\nmid 900</imath>.
+
+So there are six sets of <imath>x,y</imath> and we will list all possible values of <imath>z</imath> based on those.
+
+<imath>25\mid z</imath> because <imath>z</imath> must source all powers of <imath>5</imath>. <imath>z\in\{25,50,75,100,150,300\}</imath>. <imath>z\ne\{200,225\}</imath> because of <imath>\text{lcm}</imath> restrictions.
+
+By different sourcing of powers of <imath>2</imath> and <imath>3</imath>,
+
+<cmath>(8,9):z=300</cmath>
+<cmath>(8,18):z=300</cmath>
+<cmath>(8,36):z=75,150,300</cmath>
+<cmath>(24,9):z=100,300</cmath>
+<cmath>(24,18):z=100,300</cmath>
+<cmath>(24,36):z=25,50,75,100,150,300</cmath>
+
+<imath>z=100</imath> is "enabled" by <imath>x</imath> sourcing the power of <imath>3</imath>. <imath>z=75,150</imath> is uncovered by <imath>y</imath> sourcing all powers of <imath>2</imath>. And <imath>z=25,50</imath> is uncovered by <imath>x</imath> and <imath>y</imath> both at full power capacity.
+
+Counting the cases, <imath>1+1+3+2+2+6=\boxed{\textbf{(A) }15}.</imath>
+
+--- Solution 3 ---
+As said in previous solutions, start by factoring <imath>72, 600,</imath> and <imath>900</imath>. The prime factorizations are as follows: <cmath>72=2^3\cdot 3^2,</cmath> <cmath>600=2^3\cdot 3\cdot 5^2,</cmath> <cmath> \text{and } 900=2^2\cdot 3^2\cdot 5^2</cmath>
+To organize <imath>x,y, \text{ and } z</imath> and their respective LCMs in a simpler way, we can draw a triangle as follows such that <imath>x,y, \text{and } z</imath> are the vertices and the LCMs are on the edges. 
+
+<asy>
+//Variable Declarations
+defaultpen(0.45);
+size(200pt);
+fontsize(15pt);
+pair X, Y, Z;
+real R;
+path tri;
+
+//Variable Definitions
+R = 1;
+X = R*dir(90);
+Y = R*dir(210);
+Z = R*dir(-30);
+tri = X--Y--Z--cycle;
+
+//Diagram
+draw(tri);
+label("$x$",X,N);
+label("$y$",Y,SW);
+label("$z$",Z,SE);
+label("$2^33^25^0$",X--Y,2W);
+label("$2^33^15^2$",X--Z,2E);
+label("$2^23^25^2$",Y--Z,2S);
+</asy>
+
+Now we can split this triangle into three separate ones for each of the three different prime factors <imath>2,3, \text{and } 5</imath>.
+
+<asy>
+//Variable Declarations
+defaultpen(0.45);
+size(200pt);
+fontsize(15pt);
+pair X, Y, Z;
+real R;
+path tri;
+
+//Variable Definitions
+R = 1;
+X = R*dir(90);
+Y = R*dir(210);
+Z = R*dir(-30);
+tri = X--Y--Z--cycle;
+
+//Diagram
+draw(tri);
+label("$x$",X,N);
+label("$y$",Y,SW);
+label("$z$",Z,SE);
+label("$2^3$",X--Y,2W);
+label("$2^3$",X--Z,2E);
+label("$2^2$",Y--Z,2S);
+</asy>
+
+Analyzing for powers of <imath>2</imath>, it is quite obvious that <imath>x</imath> must have <imath>2^3</imath> as one of its factors since neither <imath>y \text{ nor } z</imath> can have a power of <imath>2</imath> exceeding <imath>2</imath>. Turning towards the vertices <imath>y</imath> and <imath>z</imath>, we know at least one of them must have <imath>2^2</imath> as its factors. Therefore, we have <imath>5</imath> ways for the powers of <imath>2</imath> for <imath>y \text{ and } z</imath> since the only ones that satisfy the previous conditions are for ordered pairs <imath>(y,z) \{(2,0)(2,1)(0,2)(1,2)(2,2)\}</imath>.
+
+<asy>
+//Variable Declarations
+defaultpen(0.45);
+size(200pt);
+fontsize(15pt);
+pair X, Y, Z;
+real R;
+path tri;
+
+//Variable Definitions
+R = 1;
+X = R*dir(90);
+Y = R*dir(210);
+Z = R*dir(-30);
+tri = X--Y--Z--cycle;
+
+//Diagram
+draw(tri);
+label("$x$",X,N);
+label("$y$",Y,SW);
+label("$z$",Z,SE);
+label("$3^2$",X--Y,2W);
+label("$3^1$",X--Z,2E);
+label("$3^2$",Y--Z,2S);
+</asy>
+
+Using the same logic as we did for powers of <imath>2</imath>, it becomes quite easy to note that <imath>y</imath> must have <imath>3^2</imath> as one of its factors. Moving onto <imath>x \text{ and } z</imath>, we can use the same logic to find the only ordered pairs <imath>(x,z)</imath> that will work are <imath>\{(1,0)(0,1)(1,1)\}</imath>.
+
+The final and last case is the powers of <imath>5</imath>.
+
+<asy>
+//Variable Declarations
+defaultpen(0.45);
+size(200pt);
+fontsize(15pt);
+pair X, Y, Z;
+real R;
+path tri;
+
+//Variable Definitions
+R = 1;
+X = R*dir(90);
+Y = R*dir(210);
+Z = R*dir(-30);
+tri = X--Y--Z--cycle;
+
+//Diagram
+draw(tri);
+label("$x$",X,N);
+label("$y$",Y,SW);
+label("$z$",Z,SE);
+label("$5^0$",X--Y,2W);
+label("$5^2$",X--Z,2E);
+label("$5^2$",Y--Z,2S);
+</asy>
+
+This is actually quite a simple case since we know <imath>z</imath> must have <imath>5^2</imath> as part of its factorization while <imath>x \text{ and } y</imath> cannot have a factor of <imath>5</imath> in their prime factorization.
+
+Multiplying all the possible arrangements for prime factors <imath>2,3, \text{ and } 5</imath>, we get the answer:
+<cmath>5\cdot3\cdot1=\boxed{\textbf{(A) }15}</cmath>
+
+(Diagrams by ColtsFan10)
+
+--- Solution 4 ---
+The least common multiples with <imath>x</imath> in it are <imath>\text{lcm}(x,y)</imath> and <imath>\text{lcm}(x,z)</imath>. Since <imath>\text{lcm}(y,z)</imath> is without a multiple of <imath>8</imath>, and <imath>\text{lcm}(x,y)</imath> and <imath>\text{lcm}(x,z)</imath> are, we know <imath>x</imath> must be some constant, let's say, <imath>k</imath>, so <imath>x = 8\times k</imath>. Doing the same for <imath>y</imath> and <imath>z</imath>, where you are trying to find the multiples that they are not in vs. what they are in. For <imath>y</imath> you will see that it's lowest is <imath>9</imath>, and for <imath>z</imath> it's <imath>25</imath>. Now in <imath>\text{lcm}</imath>, the <imath>\text{lcm}</imath> of <imath>2</imath> and <imath>3</imath> and <imath>2</imath> and <imath>6</imath> are the same because the <imath>6</imath> can be simplified to <imath>3</imath> since both numbers share a factor of <imath>2</imath> and therefore one can lose it so you don't accidentally overshoot your <imath>\text{lcm}</imath>. For example, <imath>x</imath> can also be <imath>24(3\times 8)</imath>, because when you do <imath>\text{lcm}(x,y)</imath> a factor of <imath>3</imath> from <imath>24</imath> and the <imath>3</imath> from <imath>9</imath>(assuming that it is <imath>9</imath>, but in any other case where it isn't it should still be ending up with <imath>\text{lcm}(x,y) = 72</imath>) match up, and so one factor of <imath>3</imath> is removed, and it's now going to give you an output of <imath>72</imath>. Doing so you find that <imath>x</imath> can be <imath>8</imath> and <imath>24</imath>, <imath>y</imath> can be <imath>9,18</imath> and <imath>36</imath>, <imath>z</imath> can be <imath>25,50,75,100,150</imath> or <imath>300</imath>. Now you can choose a value from these lists to be put in <imath>(x,y,z)</imath>. However if you choose say <imath>x = 8</imath> and <imath>z = 25</imath> the least common multiple is <imath>200</imath>, not <imath>600</imath>. for this kind of case you may need to force a number to have a certain other multiple to be able to reach the desired <imath>\text{lcm}</imath>. If you do casework on <imath>x</imath>, since it has only <imath>8</imath> and <imath>24</imath>, you'll find that there are <imath>\boxed{\textbf{(A) }15}</imath> solutions
+
+
+=== Problem 23 ===
+Three numbers in the interval
+
+Choices: {'A': '\\ \\dfrac{1}{6}', 'B': '\\ \\dfrac{1}{3}', 'C': '\\ \\dfrac{1}{2}', 'D': '\\ \\dfrac{2}{3}', 'E': '\\ \\dfrac{5}{6}</math>'}
+Answer: C
+
+--- Solution 1 ---
+[[File:AMC12 2006 A 23.png|500px|center]]
+
+==Solution 1: Super WLOG==
+
+Because we can let the the sides of the triangle be any variable we want, to make it easier for us when solving, let’s let the side lengths be <math>x,y,</math> and <math>a</math>. WLOG assume <math>a</math> is the largest. Then, <math>x+y>a</math>, meaning the solution is <math>\boxed{\textbf{(C)}\;1/2}</math>, as shown in the graph below.
+<asy>
+pair A = (0,0);
+pair B = (1,0);
+pair C = (1,1);
+pair D = (0,1);
+pair E = (0,0);
+
+draw(A--B--C--D--cycle);
+draw(B--D,dashed);
+fill(B--D--C--cycle,gray);
+
+label("$0$",A,SW);
+label("$a$",B,S);
+label("$a$",D,W);
+label("$y$",(0,.5),W);
+label("$x$",(.5,0),S);
+label("$x+y>a$",(5/7,5/7));
+</asy>
+
+==Solution 2: Conditional Probability==
+
+WLOG, let the largest of the three numbers drawn be <math>a>0</math>.  Then the other two numbers are drawn uniformly and independently from the interval <math>[0,a]</math>.  The probability that their sum is greater than <math>a</math> is <math>\boxed{\textbf{(C)}\;1/2.}</math>
+
+==Solution 3: Calculus==
+
+When <math>a>b</math>, consider two cases:
+
+1) <math>0<a<\frac{1}{2}</math>, then 
+<math>\int_{0}^{\frac{1}{2}} \int_{0}^{a}2b \,\text{d}b\,\text{d}a=\frac{1}{24}</math>
+
+2)<math>\frac{1}{2}<a<1</math>, then 
+<math>\int_{\frac{1}{2}}^{1} \left(\int_{0}^{1-a}2b \,\text{d}b + \int_{1-a}^{a}1+b-a \,db\right)\text{d}a=\frac{5}{24}</math>
+
+<math>a<b</math> is the same. Thus the answer is <math>\frac{1}{2}</math>.
+
+==Solution 4: Geometry==
+
+The probability of this occurring is the volume of the corresponding region within a <math>1 \times 1 \times 1</math> cube, where each point <math>(x,y,z)</math> corresponds to a choice of values for each of <math>x, y,</math> and <math>z</math>. The region where, WLOG, side <math>z</math> is too long, <math>z\geq x+y</math>, is a pyramid with a base of area <math>\frac{1}{2}</math> and height <math>1</math>, so its volume is <math>\frac{\frac{1}{2}\cdot 1}{3}=\frac{1}{6}</math>. Accounting for the corresponding cases in <math>x</math> and <math>y</math> multiplies our answer by <math>3</math>, so we have excluded a total volume of <math>\frac{1}{2}</math> from the space of possible probabilities. Subtracting this from <math>1</math> leaves us with a final answer of <math>\frac{1}{2}</math>.
+
+== Solution 5: More Calculus ==
+
+The probability of this occurring is the volume of the corresponding region within a <math>1 \times 1 \times 1</math> cube, where each point <math>(x,y,z)</math> corresponds to a choice of values for each of <math>x, y,</math> and <math>z</math>.  We take a horizontal cross section of the cube, essentially picking a value for z.  The area where the triangle inequality will not hold is when <math>x + y < z</math>, which has area <math>\frac{z^2}{2}</math> or when <math>x+z<y</math> or <math>y+z<x</math>, which have an area of <math>\frac{(1-z)^2}{2}+\frac{(1-z)^2}{2} = (1-z)^2.</math> Integrating this expression from 0 to 1 in the form
+
+<math>\int_0^1 \left(\frac{z^2}{2} + (1-z)^2\right) dz = \bigg[\frac{z^3}{2} - z^2 + z \biggr |_0^1 = \frac{1}{2} -1 + 1 = \frac{1}{2}</math>
+
+===Solution 5.1 (better explanation)===
+This problem is going to require some geometric probability, so let's dive right in.
+Take three integers <math>x</math>, <math>y</math>, and <math>z</math>. Then for the triangle inequality to hold, the following <math>3</math> inequalities must be true
+
+<cmath>x + y > z</cmath>
+<cmath>y + z > x</cmath>
+<cmath>x + z > y</cmath>
+
+Now, it would be really easy if these equations only had two variables instead of <math>3</math>, because then we could graph it in a <math>2</math>-dimensional plane instead of a <math>3</math>-dimensional cube. So, we assume <math>z</math> is a constant. We will deal with it later.
+
+Now, since we are graphing, we should probably write these equations in terms of <math>y</math> so they are in slope-intercept form and are easier to graph.
+
+<cmath>y > -x + z</cmath>
+<cmath>y > x - z</cmath>
+<cmath>y < x + z</cmath>
+
+Now, note that all solutions <math>(x,y)</math> are in a <math>1</math> <math>x</math> <math>1</math> square in the <math>xy</math>-plane because <math>x</math>, <math>y \in [0, 1]</math>.
+
+I recommend drawing the following figure to get an idea of what is going on.
+The first line is a line with a negative slope that cuts off a <math>45-45-90</math> triangle with side length <math>z</math> of the bottom left corner of the square. The second line is a line with a positive slope that cuts off a <math>45-45-90</math> triangle with side length <math>1-z</math> off the top left corner of the square. The third line also has a positive slope and cuts a <math>45-45-90</math> triangle with side length <math>1 - z</math> off the bottom right corner of the square. 
+
+Note: All triangles are <math>45-45-90</math> because the lines have slopes of <math>1</math> or <math>-1</math>.
+
+Using the <math>></math> and <math><</math> signs in the lines, we see that the area that satisfies all three inequalities is the area not enclosed in the three triangles. So, our plan of attack will be to
+
+Find the area of the triangles -> Subtract that from the area of the square -> Use probability to get the answer.
+
+Except, now, we have one problem. <math>z</math> is still a variable. But, we want <math>z</math> to be a constant. Well, what if we just took the area over every possible value of <math>z</math>? Well, that would be a bit hard, if not impossible to do by hand, but there is a handy math tool that will let us do that: the integral! 
+
+To find the area of the triangles, our plan of attack will be
+
+Find the area in terms of <math>z</math> -> take the integral from <math>0</math> to <math>1</math> of the expression for the area (this will cover every possible value of <math>z</math>
+
+The area of the triangles is 
+
+<cmath>\frac{z^2}{2} + (1-z)^2 = \frac{1}{2}\left(-3x^2 + 4x\right)</cmath>.
+
+The integral from <math>0</math> to <math>1</math> is
+
+<cmath>\frac{1}{2}\int_0^1\left(-3x^2 + 4x\right)dx = \frac{1}{2}</cmath>
+
+The total area of all the possible unit squares is quite obviously
+
+<cmath>\int_0^11dx = 1</cmath>
+
+Thus, the area not enclosed by the triangles is <math>1 - \dfrac{1}{2} = \dfrac{1}{2}</math>, and the total area of the square is <math>1</math>. Thus, the desired probability is 
+
+<cmath>\frac{\frac{1}{2}}{1} = \boxed{\textbf{(C) }\frac12}</cmath>
+
+
+== Solution 7: More WLOG, Complementary Probability ==
+The triangle inequality simplifies to considering only one case: <math>\text{the smallest side+ the second smallest side} > \text{the largest side}</math>. Consider the complement (the same statement, except with a less than or equal to).  Assume (WLOG) <math>a</math> is the largest, so on average <math>a=1/2</math> (now equal to becomes a degenerate case with probability <math>0</math>, so we no longer need to consider it). We now want <math>b+c<1/2</math>, so imagine choosing <math>b+c</math> at once rather than independently. But we know that <math>b+c</math> is between <math>0</math> and <math>2</math>. The complement is thus: <math>(1/2-0)/2=1/4</math>. But keep in mind that we choose each <math>b</math> and <math>c</math> randomly and independently, so if there are <math>k</math> ways to choose <math>b+c</math> together, there are <math>2k</math> ways to choose them separately, and therefore the complement actually doubles to match each case (a good example of this is to restrict b and c to integers such that if <math>b+c=3</math>, then we only count this once, but in reality: we have two cases <math>1+2</math>, and <math>2+1</math>; similar reasoning also generalizes to non-integral values). The complement is then actually <math>2(1/4)=1/2</math>. Therefore, our desired probability is given by <math>1-\text{complement}=1/2, C</math>
+
+== Solution 8: 3D geometry ==
+
+We can draw a 3D space where each coordinate is in the range [0,1]. Drawing the lines <math>x+y>z, x+z>y,</math> and <math>y+z>x,</math> We have a 3D space that consists of two tetrahedrons. One is a regular tetrahedron with side length <math>\sqrt2</math> and the other has 3 sides of length <math>\sqrt2</math> and 3 sides of length <math>1.</math> The volume of this region is <math>\frac 1 2</math>. Hence our solution is <math>C.</math>
+
+== Solution 9(Fastest solution if you have no time): Stick Solution ==
+
+Consider a stick of length <math>1</math>. Cutting the stick at two random points gives a triangle from the three new segments. These two random points must be on opposite sides of the halfway mark. Thus, after the first cut is made, there is <math>\boxed{\textbf{(C) }\frac12}</math> probability that the second cut is on the opposite side.
+
+-this isn't necessarily true: what if the cuts are very very close to the edges? -happypi31415
+
+-Think about it - Judokid
+
+-alanisawesome2018
+
+
+=== Problem 24 ===
+There is a smallest positive real number
+
+Choices: {'A': '\\ 8', 'B': '\\ 9', 'C': '\\ 10', 'D': '\\ 11', 'E': '\\ 12</math>'}
+Answer: B
+
+--- Solution 1 ---
+The acceleration must be zero at the <math>x</math>-intercept; this intercept must be an inflection point for the minimum <math>a</math> value.
+Derive <math>f(x)</math> so that the acceleration <math>f''(x)=0</math>. Using the power rule,
+<cmath>\begin{align*}
+f(x) &= x^3-ax^2+bx-a \\
+f’(x) &= 3x^2-2ax+b \\ 
+f’’(x) &= 6x-2a
+\end{align*}</cmath>
+So <math>x=\frac{a}{3}</math> for the inflection point/root. Furthermore, the slope of the function must be zero - maximum - at the intercept, thus having a triple root at <math>x=a/3</math> (if the slope is greater than zero, there will be two complex roots and we do not want that).
+
+The function with the minimum <math>a</math>:
+
+<cmath>f(x)=\left(x-\frac{a}{3}\right)^3</cmath>
+<cmath>x^3-ax^2+\left(\frac{a^2}{3}\right)x-\frac{a^3}{27}</cmath>
+Since this is equal to the original equation <math>x^3-ax^2+bx-a</math>, equating the coefficients, we get that
+
+<cmath>\frac{a^3}{27}=a\rightarrow a^2=27\rightarrow a=3\sqrt{3}</cmath>
+<cmath>b=\frac{a^2}{3}=\frac{27}{3}=\boxed{\textbf{(B) }9}</cmath>
+
+The actual function:
+<math>f(x)=x^3-\left(3\sqrt{3}\right)x^2+9x-3\sqrt{3}</math>
+
+<math>f(x)=0\rightarrow x=\sqrt{3}</math> triple root. "Complete the cube."
+
+--- Solution 2 ---
+Let the roots of the polynomial be <math>r, s, t</math>. By Vieta's formulas we have <math>r+s+t=a</math>, <math>rs+st+rt=b</math>, and <math>rst=a</math>. Since both <math>a</math> and <math>b</math> are positive, it follows that all 3 roots <math>r, s, t</math> are positive as well, and so we can apply AM-GM to get <cmath>\tfrac 13 (r+s+t) \ge \sqrt[3]{rst} \quad \Rightarrow \quad a \ge 3\sqrt[3]{a}.</cmath> Cubing both sides and then dividing by <math>a</math> (since <math>a</math> is positive we can divide by <math>a</math> and not change the sign of the inequality) yields <cmath>a^2 \ge 27 \quad \Rightarrow \quad a \ge  3\sqrt{3}.</cmath>
+Thus, the smallest possible value of <math>a</math> is <math>3\sqrt{3}</math> which is achieved when all the roots are equal to <math>\sqrt{3}</math>. For this value of <math>a</math>, we can use Vieta's to get <math>b=\boxed{\textbf{(B) }9}</math>.
+
+==Solution 3 (SUPER RISKY) do if you have no time ==
+We see that with cubics, the number <math>3</math> comes up a lot, and as <math>9=3\cdot3</math> has the most relation to <math>3</math>, we can assume <math>b=\boxed{\textbf{(B) }9}</math>.
+
+-Sorry, but the number <math>3</math> doesn't actually come up very often as you said, so this solution might not actually be a good idea. 
+-It's also probably better to get 1.5 points for not answering than using this method. Sorry! 
+==Solution 3.5(SUPER TECHNICAL)==
+
+The question offers us information that there is only one b.
+
+If there are 3 roots, only one of the two operation, increasing b or decreasing b, could let the root become imaginary.
+
+As a result, there could only be one root, and we could thus get the answer.
+
+
+=== Problem 25 ===
+Let
+
+Choices: {'A': '\\ 7986', 'B': '\\ 8002', 'C': '\\ 8030', 'D': '\\ 8048', 'E': '\\ 8064</math>'}
+Answer: E
+
+--- Solution 1 ---
+Consider <math>f(2)</math>. The numbers left on the blackboard will show the hundreds place at the end. In order for the hundreds place to differ by 2, the difference between two perfect squares needs to be at least <math>100</math>. Since <math>100\le (x+1)^2-x^2=2x+1</math>, this first happens at <math>x\ge \lfloor 99/2\rfloor = 50</math>. The perfect squares from here go: <math>2500,  2601, 2704, 2809\dots</math>. Note that the ones and tens also make the perfect squares, <math>1^2,2^2,3^2\dots</math>. After the ones and tens make <math>100</math>, the hundreds place will go up by <math>2</math>, thus reaching our goal. Since <math>10^2=100</math>, the last perfect square to be written will be <math>\left(50+10\right)^2=60^2=3600</math>. The missing number is one less than the number of hundreds <math>(k=2)</math> of <math>3600</math>, or <math>35</math>.
+
+Now consider <math>f(4)</math>. Instead of the difference between two squares needing to be <math>100</math>, the difference must now be <math>10000</math>. This first happens at <math>x\ge 5000</math>. After this point, similarly, <math>\sqrt{10000}=100</math> more numbers are needed to make the <math>10^4</math> th's place go up by <math>2</math>. This will take place at <math>\left(5000+100\right)^2=5100^2= 26010000</math>. Removing the last four digits (the zeros) and subtracting one yields <math>2600</math> for the skipped value.
+
+In general, each new value of <math>f(k+2)</math> will add two digits to the "<math>5</math>" and one digit to the "<math>1</math>". This means that the last number Bernardo writes for <math>k=6</math> is <math>\left(500000+1000\right)^2</math>, the last for <math>k = 8</math> will be <math>\left(50000000+10000\right)^2</math>, and so on until <math>k=2016</math>. Removing the last <math>k</math> digits as Silvia does will be the same as removing <math>k/2</math> trailing zeroes on the number to be squared. This means that the last number on the board for <math>k=6</math> is <math>5001^2</math>, <math>k=8</math> is <math>50001^2</math>, and so on. So the first missing number is <math>5001^2-1,50001^2-1\text{ etc.}</math> The squaring will make a "<math>25</math>" with two more digits than the last number, a "<math>10</math>" with one more digit, and a "<math>1</math>". The missing number is one less than that, so the "1" will be subtracted from <math>f(k)</math>. In other words, <math>f(k) = 25\cdot 10^{k-2}+1\cdot 10^{k/2}</math>.
+
+Therefore:
+
+<cmath>f(2) =35 =25 +10</cmath>
+<cmath>f(4) =2600 =2500 +100</cmath>
+<cmath>f(6) =251000 =250000 +1000</cmath>
+<cmath>f(8) = 25010000 = 25000000 + 10000</cmath>
+
+And so on. The sum <math>f(2) + f(4) + f(6) +\dots + f(2016)</math> is:
+
+<math>2.52525252525\dots 2525\cdot 10^{2015}</math> + <math>1.11111\dots 110\cdot 10^{1008}</math>, with <math>2016</math> repetitions each of "<math>25</math>" and "<math>1</math>". 
+There is no carrying in this addition. Therefore each <math>f(k)</math> adds <math>2 + 5 + 1 = 8</math> to the sum of the digits. 
+Since <math>2n = 2016</math>, <math>8n = 4\cdot 2016 = \boxed{\textbf{(E)}\text{ 8064}}</math>.
+
+--- Solution 2 ---
+We assume <math>n \geq 1</math> for all claims.
+
+We will let <math>g_k(x) = \left \lfloor \frac{x^2}{10^k}\right \rfloor</math>. This is the result when the last k digits are truncated off <math>x^2</math>.
+
+Let <math>x_n</math> = the smallest a, such that <math>g_{2n}(a) - g_{2n}(a-1) \geq 2</math> 
+
+We then have <math>\left \lfloor \frac{a^2}{10^{2n}} \right \rfloor - \left \lfloor \frac{(a-1)^2}{10^{2n}} \right \rfloor \geq 2</math>
+
+'''Claim 1:''' <math>x_n > 5\cdot10^{2n-1}</math>
+
+'''Proof of Claim 1:'''
+
+Assume for the sake of contradiction, we have <math>x_n \leq 5 \cdot 10^{2n-1}</math>
+
+Let <math>c = \frac{2x_n - 1}{10^{2n}}</math>, <math>d = \frac{(x_n-1)^2}{10^{2n}}</math>
+
+Note that since <math>x_n \leq 5 \cdot 10^{2n-1}</math>, we have <math>c < 1</math>
+
+It is well known that <math>\lfloor i+j \rfloor \leq \lfloor i \rfloor + \lfloor j \rfloor + 1</math> for any <math>i</math> and <math>j</math> 
+
+Since <math>x_n</math> satisfies the condition, we have:
+
+<math>1 = \lfloor c \rfloor + 1 \geq  \lfloor{c+d} \rfloor - \lfloor d \rfloor \geq 2</math>
+
+This is a contradiction. <math>\blacksquare</math>
+
+'''Claim 2: <math>x_n = 5 \cdot 10^{2n-1} + 10^n</math>'''
+
+'''Proof of Claim 2:'''
+
+We will show our choice of <math>x_n = 5 \cdot 10^{2n-1} + 10^n</math> satisfies the criteria above.
+
+<math>\left \lfloor \frac{{x_n}^2}{10^{2n}} \right \rfloor - \left \lfloor \frac{(x_n-1)^2}{10^{2n}} \right \rfloor = \left \lfloor \frac{25 \cdot 10^{4n - 2} + 10^{3n} + 10^{2n}}{10^{2n}} \right \rfloor - \left \lfloor \frac{25 \cdot 10^{4n - 2} + 10^{3n}   - 2 \cdot 10^n + 1}{10^{2n}} \right \rfloor </math> 
+
+<math>= (25 \cdot 10^{2n-2} + 10^{n} + 1) - (25 \cdot 10^{2n-2} + 10^{n} - 1) = 2</math>
+
+Now, we will show all values smaller than <math>5 \cdot 10^{2n-1} + 10^n</math> don’t satisfy the criteria.
+We will assume for the sake of contradiction, there exists an <math>x'_n</math> which satisfies the criteria.
+
+We will write <math>x'_n</math> as <math>5 \cdot 10^{2n - 1} + k</math>. By our hypothesis, we have <math>k < 10^n</math>. We also have <math>k > 0</math> by claim 1.
+
+We have <math>\left \lfloor \frac{{x'}_n^2}{10^{2n}} \right \rfloor -  \left \lfloor \frac{(x'_n-1)^2}{10^{2n}} \right \rfloor = \left \lfloor \frac{25 \cdot 10^{4n - 2} + k \cdot 10^{2n} + k^2}{10^{2n}} \right \rfloor - \left \lfloor \frac{25 \cdot 10^{4n - 2} + (k-1) \cdot 10^{2n} + (k-1)^2   }{10^{2n}} \right \rfloor </math>
+
+<math>= (25 \cdot 10^{2n-2} + k) - (25 \cdot 10^{2n-2} + k - 1) = 1 \geq 2.</math> This gets a contradiction. <math>\blacksquare</math>
+
+'''Claim 3: <math>f(2n) = 25 \cdot10^{2n - 2} + 10^{n}</math>. '''
+
+'''Proof of Claim 3:'''
+Because of claim 2, <math>x_n</math> is <math>5 \cdot 10^{2n-1} + 10^n</math>. Note that <math>g_n(x_n)</math> and <math>g_n(x_n - 1)</math> are the first numbers written that will differ by at least 2. Thus, <math>f(2n) = g_n(x_n - 1) + 1 = 25 \cdot 10^{2n-2} + 10^n</math><math>\blacksquare</math>
+
+
+Thus, <math>f(2) + f(4) \dots f(2016) = \underbrace{(2525 \dots 25)}_{1008 \ 25s} + \underbrace{(111111 \dots 1111)}_{1008 \ 1s}</math>. This addition has no regroups/carry overs, so we can just take the sums of the digits of each of the addends, and sum them together to get 8064.<math>\boxed{(E)}</math>
+
+-Alexlikemath
+
+

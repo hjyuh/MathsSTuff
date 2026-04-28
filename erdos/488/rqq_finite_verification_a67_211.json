@@ -1,0 +1,726 @@
+{
+  "primes": [
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97,
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149,
+    151,
+    157,
+    163,
+    167,
+    173,
+    179,
+    181,
+    191,
+    193,
+    197,
+    199,
+    211
+  ],
+  "totals": {
+    "families_checked": 3256,
+    "quadruples_checked": 28652909,
+    "failure_count": 0,
+    "peak_bound_issue_count": 0,
+    "elapsed_seconds": 203.112
+  },
+  "global_worst": {
+    "a": 67,
+    "worst_margin": 0,
+    "family": {
+      "t": 17,
+      "m_star": 2086,
+      "m6": 4185,
+      "quadruples": 4771,
+      "witness": {
+        "x": 151,
+        "q": 2,
+        "E_prev": 0,
+        "C_q": 0,
+        "margin": 0
+      }
+    }
+  },
+  "by_prime": [
+    {
+      "a": 67,
+      "wide_t_count": 50,
+      "quadruples": 149074,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 17,
+        "m_star": 2086,
+        "m6": 4185,
+        "quadruples": 4771,
+        "witness": {
+          "x": 151,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 71,
+      "wide_t_count": 54,
+      "quadruples": 168378,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 17,
+        "m_star": 3195,
+        "m6": 4576,
+        "quadruples": 8606,
+        "witness": {
+          "x": 159,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 73,
+      "wide_t_count": 55,
+      "quadruples": 211420,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 18,
+        "m_star": 2296,
+        "m6": 4704,
+        "quadruples": 5238,
+        "witness": {
+          "x": 164,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 79,
+      "wide_t_count": 61,
+      "quadruples": 235629,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 18,
+        "m_star": 2625,
+        "m6": 5406,
+        "quadruples": 6045,
+        "witness": {
+          "x": 176,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 83,
+      "wide_t_count": 64,
+      "quadruples": 265189,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 19,
+        "m_star": 3403,
+        "m6": 5511,
+        "quadruples": 8668,
+        "witness": {
+          "x": 185,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 89,
+      "wide_t_count": 70,
+      "quadruples": 304623,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 19,
+        "m_star": 4370,
+        "m6": 6265,
+        "quadruples": 11900,
+        "witness": {
+          "x": 197,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 97,
+      "wide_t_count": 77,
+      "quadruples": 350690,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 20,
+        "m_star": 5150,
+        "m6": 7020,
+        "quadruples": 14430,
+        "witness": {
+          "x": 214,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 101,
+      "wide_t_count": 80,
+      "quadruples": 419788,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 21,
+        "m_star": 3345,
+        "m6": 7308,
+        "quadruples": 7551,
+        "witness": {
+          "x": 223,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 103,
+      "wide_t_count": 82,
+      "quadruples": 362906,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 21,
+        "m_star": 4557,
+        "m6": 7659,
+        "quadruples": 11662,
+        "witness": {
+          "x": 227,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 107,
+      "wide_t_count": 86,
+      "quadruples": 478207,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 21,
+        "m_star": 3760,
+        "m6": 8170,
+        "quadruples": 8607,
+        "witness": {
+          "x": 235,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 109,
+      "wide_t_count": 88,
+      "quadruples": 488558,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 21,
+        "m_star": 7328,
+        "m6": 8322,
+        "quadruples": 22572,
+        "witness": {
+          "x": 239,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 113,
+      "wide_t_count": 91,
+      "quadruples": 594311,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 22,
+        "m_star": 4216,
+        "m6": 8626,
+        "quadruples": 9901,
+        "witness": {
+          "x": 248,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 127,
+      "wide_t_count": 104,
+      "quadruples": 739041,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 23,
+        "m_star": 7772,
+        "m6": 10200,
+        "quadruples": 22422,
+        "witness": {
+          "x": 277,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 131,
+      "wide_t_count": 108,
+      "quadruples": 811031,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 23,
+        "m_star": 8280,
+        "m6": 10783,
+        "quadruples": 24008,
+        "witness": {
+          "x": 285,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 137,
+      "wide_t_count": 113,
+      "quadruples": 899644,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 24,
+        "m_star": 5662,
+        "m6": 11275,
+        "quadruples": 13578,
+        "witness": {
+          "x": 298,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 139,
+      "wide_t_count": 115,
+      "quadruples": 891571,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 24,
+        "m_star": 5436,
+        "m6": 11718,
+        "quadruples": 12690,
+        "witness": {
+          "x": 302,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 149,
+      "wide_t_count": 124,
+      "quadruples": 912424,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 25,
+        "m_star": 5814,
+        "m6": 12857,
+        "quadruples": 13479,
+        "witness": {
+          "x": 323,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 151,
+      "wide_t_count": 126,
+      "quadruples": 1163793,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 25,
+        "m_star": 9827,
+        "m6": 13029,
+        "quadruples": 28374,
+        "witness": {
+          "x": 327,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 157,
+      "wide_t_count": 131,
+      "quadruples": 1136859,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 26,
+        "m_star": 6441,
+        "m6": 13545,
+        "quadruples": 15219,
+        "witness": {
+          "x": 340,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 163,
+      "wide_t_count": 137,
+      "quadruples": 1427914,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 26,
+        "m_star": 7371,
+        "m6": 14715,
+        "quadruples": 17976,
+        "witness": {
+          "x": 352,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 167,
+      "wide_t_count": 141,
+      "quadruples": 1278335,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 26,
+        "m_star": 6821,
+        "m6": 15410,
+        "quadruples": 15859,
+        "witness": {
+          "x": 360,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 173,
+      "wide_t_count": 146,
+      "quadruples": 1561853,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 27,
+        "m_star": 7833,
+        "m6": 15962,
+        "quadruples": 19011,
+        "witness": {
+          "x": 373,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 179,
+      "wide_t_count": 152,
+      "quadruples": 1517038,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 27,
+        "m_star": 8809,
+        "m6": 16873,
+        "quadruples": 21959,
+        "witness": {
+          "x": 385,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 181,
+      "wide_t_count": 154,
+      "quadruples": 1738887,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 27,
+        "m_star": 8558,
+        "m6": 17061,
+        "quadruples": 20909,
+        "witness": {
+          "x": 389,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 191,
+      "wide_t_count": 163,
+      "quadruples": 2050352,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 28,
+        "m_star": 9020,
+        "m6": 18384,
+        "quadruples": 21944,
+        "witness": {
+          "x": 410,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 193,
+      "wide_t_count": 165,
+      "quadruples": 2001039,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 28,
+        "m_star": 14508,
+        "m6": 18963,
+        "quadruples": 42906,
+        "witness": {
+          "x": 414,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 197,
+      "wide_t_count": 168,
+      "quadruples": 2071574,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 29,
+        "m_star": 12710,
+        "m6": 18960,
+        "quadruples": 35270,
+        "witness": {
+          "x": 423,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 199,
+      "wide_t_count": 170,
+      "quadruples": 1903690,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 29,
+        "m_star": 15392,
+        "m6": 19152,
+        "quadruples": 46218,
+        "witness": {
+          "x": 427,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    },
+    {
+      "a": 211,
+      "wide_t_count": 181,
+      "quadruples": 2519091,
+      "worst_margin": 0,
+      "worst_family": {
+        "t": 30,
+        "m_star": 10396,
+        "m6": 20727,
+        "quadruples": 25554,
+        "witness": {
+          "x": 452,
+          "q": 2,
+          "E_prev": 0,
+          "C_q": 0,
+          "margin": 0
+        }
+      },
+      "failure_count": 0,
+      "failures": [],
+      "peak_bound_issue_count": 0,
+      "peak_bound_issues": []
+    }
+  ]
+}

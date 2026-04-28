@@ -1,0 +1,68 @@
+{
+  "cap": 5000,
+  "core_multiplier": 2.1,
+  "prime_band": null,
+  "results": [
+    {
+      "buffer": {
+        "kind": "power",
+        "name": "theta=0.36",
+        "parameter": 0.36
+      },
+      "buffered_pairs": 2578,
+      "cap": 5000,
+      "core_multiplier": 2.1,
+      "core_pairs": 13,
+      "prime_band": null,
+      "slabs": {
+        "[1024,2048)": {
+          "backward_clean_max": 0,
+          "backward_clean_mean": 0.0,
+          "backward_clean_zero_fraction": 1.0,
+          "complete_slab": true,
+          "core_states": 1,
+          "forward_clear_max": 0,
+          "forward_clear_mean": 0.0,
+          "forward_clear_zero_fraction": 1.0,
+          "reciprocal_semiprimes_max": 0,
+          "reciprocal_semiprimes_mean": 0.0,
+          "reciprocal_semiprimes_zero_fraction": 1.0,
+          "tested_primes_max": 3,
+          "tested_primes_mean": 3.0,
+          "tested_primes_zero_fraction": 0.0,
+          "valid_core_successors_max": 0,
+          "valid_core_successors_mean": 0.0,
+          "valid_core_successors_zero_fraction": 1.0,
+          "window_multiples_max": 0,
+          "window_multiples_mean": 0.0,
+          "window_multiples_zero_fraction": 1.0
+        },
+        "[2048,4096)": {
+          "backward_clean_max": 1,
+          "backward_clean_mean": 0.16666666666666666,
+          "backward_clean_zero_fraction": 0.8333333333333334,
+          "complete_slab": true,
+          "core_states": 12,
+          "forward_clear_max": 1,
+          "forward_clear_mean": 0.16666666666666666,
+          "forward_clear_zero_fraction": 0.8333333333333334,
+          "reciprocal_semiprimes_max": 1,
+          "reciprocal_semiprimes_mean": 0.16666666666666666,
+          "reciprocal_semiprimes_zero_fraction": 0.8333333333333334,
+          "tested_primes_max": 6,
+          "tested_primes_mean": 4.333333333333333,
+          "tested_primes_zero_fraction": 0.0,
+          "valid_core_successors_max": 1,
+          "valid_core_successors_mean": 0.16666666666666666,
+          "valid_core_successors_zero_fraction": 0.8333333333333334,
+          "window_multiples_max": 2,
+          "window_multiples_mean": 1.0833333333333333,
+          "window_multiples_zero_fraction": 0.08333333333333333
+        }
+      },
+      "source_cap": 4977,
+      "successor_cap": 5023
+    }
+  ],
+  "source_cap": 4977
+}

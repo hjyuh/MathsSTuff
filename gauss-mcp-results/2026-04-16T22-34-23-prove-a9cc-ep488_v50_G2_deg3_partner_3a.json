@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T22-34-23-prove-a9cc-ep488_v50_G2_deg3_partner_3a",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v50 / G2: Degree-3 rigidity (patched U2')\n-- Claim: If deg_B(a) = 3 under top-window and n \u2208 [2q, 3q), then\n--   - 5a \u2264 n, so a < 3q/5\n--   - S_{3a} = {a, 3a/2}, forcing 2 | a\n--   - S_{4a} = {a, 4a/3}, forcing 3 | a\n--   - S_{5a} \u2286 {a, 5a/4, 5a/3}\n--\n-- Proof idea: The v48 left-degree theorem forces the incident heights to be\n-- exactly {3a, 4a, 5a}. For each height, the candidate partners in the top\n-- window are restricted by the constraint that partners must be > q/2.\n-- Since a < 3q/5: 3a/4 < 9q/20 < q/2, 3a/5 < 9q/25 < q/2, so at 3a only 3a/2 works.\n-- Similarly 4a/5 < 12q/25 < q/2, so at 4a only 4a/3 works.\n-- At 5a, partners 5a/4 and 5a/3 are both > q/2 (need verification).\n--\n-- Simplified target: given the hypotheses, show that any b \u2260 a with LCM(a,b) = 3a\n-- and b \u2208 (q/2, q] must satisfy 2*b = 3*a.\n\nimport Mathlib.Tactic\n\n/-- Under the top window with a < 3q/5, if b \u2208 (q/2, q] and LCM(a,b) = 3*a\n    with b \u2260 a, then 2*b = 3*a. -/\ntheorem deg3_partner_at_3a\n    {q a b : \u2115}\n    (hq : 0 < q)\n    (ha_lb : q / 2 < a) (ha_ub : 5 * a < 3 * q)  -- a < 3q/5\n    (hb_lb : q / 2 < b) (hb_ub : b \u2264 q)\n    (hne : a \u2260 b)\n    (hratio : 3 * a = 2 * b \u2228 3 * a = 4 * b \u2228 3 * a = 5 * b) :\n    3 * a = 2 * b := by\n  sorry\n",
+  "started_at": "2026-04-16T22:34:23Z",
+  "finished_at": "2026-04-16T22:34:51Z",
+  "duration_s": 27.68,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca8FJbQbmVQmb7UjM4shH\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-34-23-prove-a9cc-ep488_v50_G2_deg3_partner_3a.log",
+  "worker_pid": 2446,
+  "last_heartbeat_at": 1776378889.2391407,
+  "_started_monotonic": 1776378863.5411248
+}

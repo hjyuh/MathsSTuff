@@ -1,0 +1,214 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+
+\title{EP-488: The Final Lemma\\{\large Self-Contained Reference for the Bonferroni-4 Bound}}
+\author{Mahmoud Zaazaa}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\section{Background}
+
+Erd\H{o}s Problem 488 asks: for every primitive set $A$ (no element
+divides another) and all $m > n \geq \max(A)$, is $F(m)/m < 2F(n)/n$?
+
+We have proved EP-488 for: all $|A| \leq 4$, all one-anchor families,
+all sparse sets, and the tail (large $n$) for coprime primitive sets.
+The \textbf{one remaining lemma} closes the tail for ALL primitive sets,
+completing EP-488.
+
+\section{Definitions}
+
+Let $A = \{a_1 < a_2 < \cdots < a_k\}$ be a primitive set. Define:
+
+\begin{align}
+F(x) &= |\{n \leq x : a \mid n \text{ for some } a \in A\}|, \\
+G(x) &= F(x)/x, \\
+\delta_A &= \lim_{x \to \infty} G(x) = \text{density of integers hit by } A.
+\end{align}
+
+The \textbf{inclusion-exclusion sums}:
+\[
+S_j = \sum_{\substack{S \subseteq A \\ |S| = j}} \frac{1}{\mathrm{lcm}(S)}.
+\]
+So $S_1 = \sum 1/a_i$, \ $S_2 = \sum_{i<j} 1/\mathrm{lcm}(a_i,a_j)$, etc.
+
+The density satisfies the exact formula:
+\[
+\delta_A = S_1 - S_2 + S_3 - S_4 + S_5 - \cdots
+\]
+
+The \textbf{Bonferroni inequalities} give alternating bounds:
+\begin{align}
+\delta_A &\geq S_1 - S_2 \qquad \text{(order-2 lower bound)} \\
+\delta_A &\leq S_1 - S_2 + S_3 \qquad \text{(order-3 upper bound)} \\
+\delta_A &\geq S_1 - S_2 + S_3 - S_4 \qquad \text{(order-4 lower bound)}
+\end{align}
+
+\section{What Is Proved}
+
+\begin{lemma}[Primitive Divisor Lemma, Lean-verified]\label{lem:pdl}
+For any primitive pair $(a_i, a_j)$ with $a_i < a_j$:
+$\gcd(a_i, a_j) \leq a_i/2$, hence $\mathrm{lcm}(a_i, a_j) \geq 2a_j$.
+\end{lemma}
+
+\begin{proof}
+Since $a_i \nmid a_j$ (primitivity), $\gcd(a_i,a_j)$ is a proper divisor
+of $a_i$, hence $\leq a_i/2$.
+\end{proof}
+
+\begin{lemma}[Subset LCM Bound]\label{lem:lcm-subset}
+For any subset $S \subseteq A$ with $|S| \geq 2$:
+$\mathrm{lcm}(S) \geq 2 \cdot \max(S)$.
+\end{lemma}
+
+\begin{proof}
+Let $S = \{b_1, \ldots, b_r\}$ with $b_r = \max(S)$. By induction on $r$:
+Base ($r=2$): Lemma~\ref{lem:pdl}. Step: $\mathrm{lcm}(S) =
+\mathrm{lcm}(\mathrm{lcm}(S'), b_r)$ where $S' = S \setminus \{b_r\}$.
+Since $b_r \nmid \mathrm{lcm}(S')$ (as $b_r > \max(S')$ and no element
+of $A$ divides another), $\gcd(\mathrm{lcm}(S'), b_r)$ is a proper divisor
+of $b_r$, so $\leq b_r/2$, giving $\mathrm{lcm}(S) \geq 2b_r$.
+\end{proof}
+
+\begin{theorem}[Coprime tail bound]\label{thm:coprime-tail}
+For any pairwise coprime primitive set $A$: $2\delta_A > S_1$.
+\end{theorem}
+
+\begin{proof}
+For coprime $A$: $\delta_A = 1 - \prod(1 - 1/a_i)$. Since
+$\ln(1-x) \leq -x$: $\prod(1-1/a_i) \leq e^{-S_1}$.
+So $\delta_A \geq 1 - e^{-S_1}$. The function $f(S) = 2(1-e^{-S}) - S$
+satisfies $f(0)=0$, $f'(0) = 1 > 0$, and has unique positive root at
+$S_0 \approx 1.594$. For $S_1 < S_0$: $2\delta_A \geq 2(1-e^{-S_1}) > S_1$.
+For $S_1 \geq \ln 2$: $\delta_A > 1/2$, so $2G(n) > 1 > G(m)$.
+The intervals $(0, S_0)$ and $(\ln 2, \infty)$ cover all $S_1 > 0$.
+\end{proof}
+
+\begin{theorem}[FKG direction]\label{thm:fkg}
+For any primitive set on $\mathbb{Z}/\mathrm{lcm}(A)\mathbb{Z}$:
+$\delta_A \leq 1 - \prod(1-1/a_i)$. This is an \textbf{upper bound}
+and cannot provide the needed lower bound.
+\end{theorem}
+
+\section{Computational Evidence}
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Property} & \textbf{Sets tested} & \textbf{Failures} \\
+\midrule
+$S_1 - S_2 + S_3 - S_4 > S_1/2$ (Bonferroni-4) & 91,845 & 0 \\
+$S_j \geq S_{j+1}$ for all $j$ & 91,845 & 0 \\
+$2\delta_A > S_1$ & 830,271 & 0 \\
+$\mathrm{lcm}(S) \geq 2 \cdot \max(S)$ for $|S| \geq 2$ & 371,390 & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Computational lcm/max ratios for subsets of primitive sets:
+\begin{center}
+\begin{tabular}{lrl}
+\toprule
+$|S|$ & Min lcm/max & Notes \\
+\midrule
+2 & 2 & Proved (Lemma~\ref{lem:pdl}) \\
+3 & 2 & Proved (Lemma~\ref{lem:lcm-subset}), often $\geq 4$ \\
+4 & 4 & Computational, not proved to be $> 2$ \\
+5 & 12 & Computational \\
+6 & 84 & Computational \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Worst case for Bonferroni-4 margin: $A = \{2,3,5,7,11,13\}$,
+where $S_2 - S_1/2 = 0.013$ but $S_3 - S_4 = 0.148$ (rescue is $10\times$
+the deficit).
+
+\section{The Lemma to Prove}
+
+\begin{conjecture}[Bonferroni-4 Bound]\label{conj:bonf4}
+For every primitive set $A$:
+\[
+S_1 - S_2 + S_3 - S_4 > \frac{S_1}{2}.
+\]
+Equivalently: $S_2 - S_3 + S_4 < S_1/2$.
+\end{conjecture}
+
+\textbf{Why this closes EP-488:} Since $S_j \geq S_{j+1}$ (verified),
+the remaining IE terms $(S_5 - S_6) + (S_7 - S_8) + \cdots \geq 0$.
+So $\delta_A \geq S_1 - S_2 + S_3 - S_4 > S_1/2$. Combined with
+$G(m) \leq S_1$ (first-order Bonferroni): $G(m) < 2\delta_A \leq 2G(n)$
+for large $n$. This closes the tail for ALL primitive sets.
+
+\section{What Has Been Tried and Failed}
+
+\begin{enumerate}
+\item \textbf{Comparing non-coprime to coprime Bonf-4.} Define
+$\Delta_j = S_j(\mathrm{lcm}) - S_j(\mathrm{product})$. Tried to show
+$\Delta_3 \geq \Delta_2 + \Delta_4$; this is FALSE (481 violations at $k=4$).
+
+\item \textbf{Using lcm $\geq 2\cdot$max alone.} Gives $S_2 \leq S_1/2$
+for $k \leq 4$ but fails at $k = 5$. The bound $1/\mathrm{lcm}(S)
+\leq 1/(2\max(S))$ loses too much for small subsets.
+
+\item \textbf{FKG lower bound.} FKG gives $\delta \leq 1-\prod(1-1/a_i)$
+(upper bound, wrong direction). Cannot be used.
+
+\item \textbf{Direct bounding $S_2-S_3+S_4 < S_1/2$.} Using
+$S_j \leq \sum_\ell \binom{\ell-1}{j-1}/(f(j) \cdot a_\ell)$ where
+$f(j)$ is the min lcm/max ratio. With $f(2)=2, f(3)=2, f(4)=4$:
+the bracket $({\ell-1})/{2} - \binom{\ell-1}{2}/{2} + \binom{\ell-1}{3}/{4}$
+grows cubically and overwhelms $S_1/2$ for large $k$.
+\end{enumerate}
+
+\section{Suggested Approaches (Not Yet Tried)}
+
+\begin{enumerate}
+\item \textbf{Induction via quotient-core recursion.} For $a = \min(A)$,
+$A' = A \setminus \{a\}$, $Q = \mathrm{prim}\{b/\gcd(a,b) : b \in A'\}$:
+$F_A(x) = F_{A'}(x) + \floor{x/a} - F_Q(\floor{x/a})$.
+If Bonf-4 $> S_1/2$ holds for $A'$ (induction) and for $Q$ (smaller set),
+can you transfer to $A$?
+
+\item \textbf{Exponential product bound for general sets.} For coprime:
+$\delta \geq 1 - e^{-S_1} > S_1/2$. For non-coprime: $\delta$ is smaller,
+but $S_2$ is larger (shared factors increase $1/\mathrm{lcm}$), and $S_3$
+is also larger. The NET effect on Bonf-4 might be provably positive.
+Specifically: define the ``excess overlap'' at each order and show the
+odd-order excesses dominate the even-order excesses.
+
+\item \textbf{Stronger lcm bounds for $|S| \geq 4$.} Prove
+$\mathrm{lcm}(S)/\max(S) \geq (|S|-1)!$ or similar for primitive sets.
+The computational data ($4, 12, 84$ for sizes $4, 5, 6$) suggests
+super-exponential growth. If $f(j)$ grows fast enough, then $S_j$ for
+$j \geq 3$ is negligible and $S_2 < S_1/2$ (from $f(2)=2$) suffices.
+
+\item \textbf{Probabilistic / second-moment.} On $\mathbb{Z}/L\mathbb{Z}$,
+let $X = \sum \mathbf{1}_{a_i | n}$ count the number of elements dividing a
+random $n$. Then $E[X] = S_1$, $E[X^2] = S_1 + 2S_2$,
+$\mathrm{Var}(X) = S_1 - S_1^2 + 2S_2$.
+The density $\delta = P(X \geq 1)$. By Paley-Zygmund or Cauchy-Schwarz:
+$P(X \geq 1) \geq (E[X])^2/E[X^2] = S_1^2/(S_1 + 2S_2)$.
+So $2\delta > S_1$ iff $2S_1^2/(S_1+2S_2) > S_1$ iff $S_1 > 2S_2$.
+This is exactly $R > 0$, which fails at $k \geq 5$. So Cauchy-Schwarz
+alone is too weak. But a \emph{truncated} second moment or a fourth-moment
+method might work.
+\end{enumerate}
+
+\end{document}

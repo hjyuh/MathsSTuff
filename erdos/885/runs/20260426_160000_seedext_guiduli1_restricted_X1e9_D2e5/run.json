@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "restricted-delta-mine",
+    "--seed",
+    "erdos/885/results/guiduli-example-1-certificate.json",
+    "--x",
+    "1000000000",
+    "--delta-universe",
+    "seed-pairs",
+    "--delta-max",
+    "200000",
+    "--max-deltas",
+    "5000",
+    "--pair-min-support",
+    "4",
+    "--triple-min-support",
+    "3",
+    "--rowset-min-support",
+    "3",
+    "--near-miss-min-support",
+    "3",
+    "--delta-extra-mode",
+    "none",
+    "--out-dir",
+    "erdos/885/runs/20260426_160000_seedext_guiduli1_restricted_X1e9_D2e5"
+  ],
+  "cwd": "C:\\Users\\z20ma\\OneDrive\\Documents\\!math",
+  "git_status_short": " M .claude/settings.local.json\n M gauss-test/GaussTest/Basic.lean\n?? !accelerate/\n?? \"Claude Mythos Preview System Card (2).pdf\"\n?? Introduction_to_Geometry_split_by_chapter/\n?? amc-database-spec.md\n?? amc-database/\n?? curriculum/full_testout_master_plan.md\n?? curriculum/geometry_14day_plan.md\n?? curriculum/geometry_7day_blitz.md\n?? curriculum/geometry_diagnostic_day1.md\n?? docs/plans/2026-03-22-problem-web-redesign.md\n?? docs/plans/2026-03-23-amc-database-design.md\n?? docs/plans/2026-03-23-amc-scraper.md\n?? ep488-continuation-march29.md\n?? ep488-session-log-march28.md\n?? erdos-atlas/\n?? erdos/488/\n?? erdos/509/compass_artifact_wf-ba84b8a4-a910-43f0-9ce7-dfe964ee392a_text_markdown.md\n?? erdos/509/degree2-cassini-and-cubic-reduction.md\n?? erdos/509/erdos509_merge_height_capacity_suppression.md\n?? erdos/509/erdos509_round4_research_pack.md\n?? erdos/509/note_collinear_roots_tau_le_2.md\n?? erdos/509/round3_messages.md\n?? erdos/689/\n?? erdos/783/\n?? erdos/885/algebraic-lifting-notes.md\n?? erdos/885/bremner-acquisition-pass.md\n?? erdos/885/computational-plan.md\n?? erdos/885/full-solution-roadmap.md\n?? erdos/885/known-constructions.md\n?? erdos/885/literature-risk-pass.md\n?? erdos/885/literature-search.md\n?? erdos/885/literature/\n?? erdos/885/notes/\n?? erdos/885/project-roadmap.md\n?? erdos/885/results/\n?? erdos/885/runs/\n?? erdos/885/scripts/\n?? erdos/885/seed-extension-plan.md\n?? erdos/885/sprint-1-synthesis.md\n?? erdos/885/sprint-2-status.md\n?? erdos/candidate-scout-combinatorics.md\n?? erdos/candidate-scout-computational.md\n?? erdos/candidate-scout-covering-sieve.md\n?? erdos/candidate-scout-number-theory.md\n?? gauss-mcp-results/\n?? \"gauss-mcp/C\\357\\200\\272\\357\\201\\234Users\\357\\201\\234z20ma\\357\\201\\234OneDrive\\357\\201\\234Documents\\357\\201\\234!math\\357\\201\\234erdos\\357\\201\\234689\\357\\201\\234gauss-results/\"\n?? gauss-test/.gauss/\n?? gauss-test/.lake/\n?? gauss-test/EP488_Deg3Partner.lean\n?? gauss-test/EP488_DescentAlphabet.lean\n?? gauss-test/G5_DegreeThreeMinimum.lean\n?? gauss-test/GaussAuthRetest.lean\n?? gauss-test/GaussTest.lean\n?? gauss-test/GaussTest/EP488_LeafSurplus.lean\n?? gauss-test/_mcp_snippet_898f7b1fb0754acf959f6b4e1968d6b1.lean\n?? gauss-test/_mcp_snippet_b851cbc275b84cd3bc5d87be3b42cac4.lean\n?? gauss-test/_mcp_snippet_ba78869b46e44190860305d60c123a20.lean\n?? gauss-test/lake-manifest.json\n?? gauss-test/lakefile.toml\n?? gauss-test/lean-toolchain\n?? introtoalgebra/ch19-study-guide.html\n?? introtoalgebra/ch19-study-guide.md\n?? iready-611-drills.md\n?? kap-level4-drills.md\n?? mincerat/\n?? monkeytype_region.txt\n?? remote-browser-isolation-mvp/\n?? series-bible.md\n?? spansih/\n?? tutoring-agreement.md\n?? type_words.py\n?? verify_split_inequality.py\n?? visualize/\n?? wheel/PRINT-PLAN.md\n?? wheel/full_testout_master_plan.md\n?? wheel/parts/\n",
+  "mode": "restricted-delta-mine",
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "script": "scripts/seed_extend.py",
+  "start_time_utc": "2026-04-26T14:27:04.453350+00:00"
+}

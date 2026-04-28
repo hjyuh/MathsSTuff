@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T00-29-11-prove-7bbb-F23_lower_v2",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- F_{2,3}(T) = T \u2212 \u230aT/2\u230b \u2212 \u230aT/3\u230b + \u230aT/6\u230b satisfies T \u2212 1 \u2264 3\u00b7F(T). \n    Proof: case split on T mod 6. -/\ntheorem F23_lower (T : \u2115) :\n    (T : \u2124) - 1 \u2264 3 * ((T : \u2124) - ((T / 2 : \u2115) : \u2124) - ((T / 3 : \u2115) : \u2124) + ((T / 6 : \u2115) : \u2124)) := by\n  sorry",
+  "started_at": "2026-04-16T00:29:11Z",
+  "finished_at": "2026-04-16T00:29:35Z",
+  "duration_s": 23.29,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca6WF7LJp1ar3aYQPsoY9\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-29-11-prove-7bbb-F23_lower_v2.log",
+  "worker_pid": 1265,
+  "last_heartbeat_at": 1776299372.0342553,
+  "_started_monotonic": 1776299351.8215728
+}

@@ -1,0 +1,40 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{burgess1962characters}
+D.~A. Burgess, \emph{On character sums and {$L$}-series}, Proc. London Math.
+  Soc. (3) \textbf{12} (1962), 193--206.
+
+\bibitem{erdos1960kleinste}
+P.~Erd{\H{o}}s, \emph{\"{U}ber die kleinste quadratfreie {Z}ahl einer
+  arithmetischen {R}eihe}, Monatsh. Math. \textbf{\textbf{64}} (1960),
+  314--316, (German).
+
+\bibitem{heath1982least}
+D.~R. Heath-Brown, \emph{The least square-free number in an arithmetic
+  progression}, J. Reine Angew. Math. \textbf{\textbf{332}} (1982), 204--220.
+
+\bibitem{hooley1975note}
+C.~Hooley, \emph{A note on square-free numbers in arithmetic progressions},
+  Bull. London Math. Soc. \textbf{\textbf{7}} (1975), 133--138.
+
+\bibitem{nunes2016squarefree}
+R.~M. Nunes, \emph{Squarefree numbers in large arithmetic progressions},
+  preprint arXiv:1602.00311 (2016).
+
+\bibitem{pierce2005part}
+L.~B. Pierce, \emph{The 3-part of class numbers of quadratic fields}, J. London
+  Math. Soc. (2) \textbf{71} (2005), no.~3, 579--598.
+
+\bibitem{prachar1958kleinste}
+K.~Prachar, \emph{\"{U}ber die kleinste quadratfreie {Z}ahl einer
+  arithmetischen {R}eihe}, Monatsh. Math. \textbf{\textbf{62}} (1958),
+  173--176, (German).
+
+\end{thebibliography}

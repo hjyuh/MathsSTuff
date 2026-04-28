@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-15T00-46-49-autoprove-c8df-gauss_smoke_test_2026_04_14",
+  "status": "error",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "theorem gauss_smoke_test : True := by\n  sorry",
+  "started_at": "2026-04-15T00:46:49Z",
+  "finished_at": "2026-04-15T00:47:08Z",
+  "duration_s": 19.22,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "You're out of extra usage \u00b7 resets 8pm (America/Chicago)"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-15T00-46-49-autoprove-c8df-gauss_smoke_test_2026_04_14.log",
+  "worker_pid": 363,
+  "last_heartbeat_at": 1776214024.8409538,
+  "_started_monotonic": 1776214009.6570652
+}

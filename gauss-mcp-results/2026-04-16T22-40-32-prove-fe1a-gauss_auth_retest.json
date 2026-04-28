@@ -1,0 +1,19 @@
+{
+  "job_id": "2026-04-16T22-40-32-prove-fe1a-gauss_auth_retest",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib.Tactic\n\n/-- Auth retest: trivial lemma. -/\ntheorem gauss_auth_retest (n : \u2115) : n + 0 = n := by\n  sorry\n",
+  "started_at": "2026-04-16T22:40:32Z",
+  "finished_at": "2026-04-16T22:48:46Z",
+  "duration_s": 493.76,
+  "result_text": "## Cycle 1 \u2014 Complete\n\n**Filled: 1/1 sorries**\n\n```lean\n/-- Auth retest: trivial lemma. -/\ntheorem gauss_auth_retest (n : \u2115) : n + 0 = n := by\n  omega\n```\n\nAll three candidates (`simp`, `omega`, `exact Nat.add_zero n`) closed the goal. Used `omega` as the proof term.\n\n**Files touched:** `GaussAuthRetest.lean`\n**Scratch files created:** none\n\n---\n\nCommit this? **[yes / yes-all / no / never]**\n",
+  "lean_code_blocks": [
+    "/-- Auth retest: trivial lemma. -/\ntheorem gauss_auth_retest (n : \u2115) : n + 0 = n := by\n  omega"
+  ],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-40-32-prove-fe1a-gauss_auth_retest.log",
+  "worker_pid": 3242,
+  "last_heartbeat_at": 1776379725.0653543,
+  "_started_monotonic": 1776379232.7021496
+}

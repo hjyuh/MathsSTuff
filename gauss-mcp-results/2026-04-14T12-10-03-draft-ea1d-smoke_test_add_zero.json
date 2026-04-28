@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-14T12-10-03-draft-ea1d-smoke_test_add_zero",
+  "status": "error",
+  "session_id": "",
+  "command": "/draft",
+  "input": "For all natural numbers n, n + 0 = n.",
+  "started_at": "2026-04-14T12:10:03Z",
+  "finished_at": "2026-04-14T12:10:21Z",
+  "duration_s": 17.12,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca3e4dc5aAynFGaxr1MA8\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-14T12-10-03-draft-ea1d-smoke_test_add_zero.log",
+  "worker_pid": 360,
+  "last_heartbeat_at": 1776168619.1225088,
+  "_started_monotonic": 1776168603.9011335
+}

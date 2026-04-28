@@ -1,0 +1,385 @@
+{
+  "seed": "7Q+T",
+  "deltas": [
+    405919289376442418078360270272180320,
+    3823121186351841701216570073724080750,
+    6487931987473374932403363145435040544,
+    11479122486205224284912928889180341600
+  ],
+  "N_values": [
+    352141311171063768154338444924228818478654429709205145144684234052360000,
+    2763217635386512662193167201454100485672734474530722274834114872756343616,
+    9444507527441041902808545250240187682821368793378924643175792040087984400,
+    165949877766328577156677200147308961651443981283357529048416313033210214400
+  ],
+  "results": [
+    {
+      "p": 7,
+      "x_candidate_count": 7,
+      "m_candidate_count": 2,
+      "border_pair_count": 10,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 11,
+      "x_candidate_count": 11,
+      "m_candidate_count": 3,
+      "border_pair_count": 21,
+      "nontrivial_pair_count": 4,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 13,
+      "x_candidate_count": 7,
+      "m_candidate_count": 7,
+      "border_pair_count": 31,
+      "nontrivial_pair_count": 12,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 17,
+      "x_candidate_count": 9,
+      "m_candidate_count": 5,
+      "border_pair_count": 31,
+      "nontrivial_pair_count": 4,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 19,
+      "x_candidate_count": 19,
+      "m_candidate_count": 5,
+      "border_pair_count": 55,
+      "nontrivial_pair_count": 24,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 23,
+      "x_candidate_count": 6,
+      "m_candidate_count": 4,
+      "border_pair_count": 24,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 29,
+      "x_candidate_count": 5,
+      "m_candidate_count": 15,
+      "border_pair_count": 47,
+      "nontrivial_pair_count": 20,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 31,
+      "x_candidate_count": 6,
+      "m_candidate_count": 5,
+      "border_pair_count": 30,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 7,
+          "X2": 18,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 37,
+      "x_candidate_count": 19,
+      "m_candidate_count": 10,
+      "border_pair_count": 120,
+      "nontrivial_pair_count": 58,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 41,
+      "x_candidate_count": 8,
+      "m_candidate_count": 3,
+      "border_pair_count": 24,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 43,
+      "x_candidate_count": 8,
+      "m_candidate_count": 5,
+      "border_pair_count": 40,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 47,
+      "x_candidate_count": 6,
+      "m_candidate_count": 7,
+      "border_pair_count": 42,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 53,
+      "x_candidate_count": 6,
+      "m_candidate_count": 8,
+      "border_pair_count": 48,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 59,
+      "x_candidate_count": 8,
+      "m_candidate_count": 6,
+      "border_pair_count": 48,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 9,
+          "X2": 22,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 61,
+      "x_candidate_count": 6,
+      "m_candidate_count": 8,
+      "border_pair_count": 48,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 16,
+          "X2": 12,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 67,
+      "x_candidate_count": 8,
+      "m_candidate_count": 10,
+      "border_pair_count": 74,
+      "nontrivial_pair_count": 4,
+      "samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 0,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 71,
+      "x_candidate_count": 12,
+      "m_candidate_count": 5,
+      "border_pair_count": 58,
+      "nontrivial_pair_count": 2,
+      "samples": [
+        {
+          "X": 7,
+          "X2": 49,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 73,
+      "x_candidate_count": 8,
+      "m_candidate_count": 6,
+      "border_pair_count": 48,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 6,
+          "X2": 36,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 79,
+      "x_candidate_count": 8,
+      "m_candidate_count": 7,
+      "border_pair_count": 56,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 83,
+      "x_candidate_count": 10,
+      "m_candidate_count": 7,
+      "border_pair_count": 68,
+      "nontrivial_pair_count": 2,
+      "samples": [
+        {
+          "X": 10,
+          "X2": 17,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 89,
+      "x_candidate_count": 10,
+      "m_candidate_count": 7,
+      "border_pair_count": 66,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 97,
+      "x_candidate_count": 9,
+      "m_candidate_count": 7,
+      "border_pair_count": 61,
+      "nontrivial_pair_count": 0,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    },
+    {
+      "p": 101,
+      "x_candidate_count": 10,
+      "m_candidate_count": 8,
+      "border_pair_count": 78,
+      "nontrivial_pair_count": 4,
+      "samples": [
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false
+        }
+      ]
+    }
+  ]
+}

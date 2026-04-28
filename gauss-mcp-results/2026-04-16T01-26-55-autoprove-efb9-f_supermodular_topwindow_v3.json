@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T01-26-55-autoprove-efb9-f_supermodular_topwindow_v3",
+  "status": "running",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "Prove this theorem about floor division supermodularity in the top-window regime. The proof strategy: set g=gcd(a,b), write a=gu, b=gv with gcd(u,v)=1, N=n/g, M=m/g. Then the defect equals 2m*F(N)-n*F(M) where F(T)=T-T/u-T/v+T/(uv). Use coarse scaling (nF(M) \u2264 mF(N)+2m+2n) and F(N)\u22654 for (u,v)\u2260(2,3), and mod-6 bounds T-1\u22643F(T)\u2264T+2 for (u,v)=(2,3).\n\n```lean\nimport Mathlib\n\ntheorem f_supermodular_topwindow (m n a b : \u2115)\n    (hmn : n < m)\n    (ha : a \u2264 n / 2) (hb : b \u2264 n / 2)\n    (ha0 : 0 < a) (hb0 : 0 < b) :\n    2 * (m : \u2124) * ((n / Nat.gcd a b : \u2115) : \u2124) -\n      (n : \u2124) * ((m / Nat.gcd a b : \u2115) : \u2124) +\n    (2 * (m : \u2124) * ((n / Nat.lcm a b : \u2115) : \u2124) -\n      (n : \u2124) * ((m / Nat.lcm a b : \u2115) : \u2124)) \u2265\n    2 * (m : \u2124) * ((n / a : \u2115) : \u2124) -\n      (n : \u2124) * ((m / a : \u2115) : \u2124) +\n    (2 * (m : \u2124) * ((n / b : \u2115) : \u2124) -\n      (n : \u2124) * ((m / b : \u2115) : \u2124)) := by\n  sorry\n```",
+  "started_at": "2026-04-16T01:26:55Z",
+  "finished_at": null,
+  "duration_s": null,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T01-26-55-autoprove-efb9-f_supermodular_topwindow_v3.log",
+  "worker_pid": 3511,
+  "last_heartbeat_at": 1776307097.5997014,
+  "_started_monotonic": 1776302815.064877
+}

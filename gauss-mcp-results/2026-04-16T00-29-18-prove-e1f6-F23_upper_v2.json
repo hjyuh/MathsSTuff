@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T00-29-18-prove-e1f6-F23_upper_v2",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- F_{2,3}(T) satisfies 3\u00b7F(T) \u2264 T + 2. Case split on T mod 6. -/\ntheorem F23_upper (T : \u2115) :\n    3 * ((T : \u2124) - ((T / 2 : \u2115) : \u2124) - ((T / 3 : \u2115) : \u2124) + ((T / 6 : \u2115) : \u2124)) \u2264 (T : \u2124) + 2 := by\n  sorry",
+  "started_at": "2026-04-16T00:29:18Z",
+  "finished_at": "2026-04-16T00:29:36Z",
+  "duration_s": 18.44,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca6WFEko2sBGZ6tvJkbQy\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-29-18-prove-e1f6-F23_upper_v2.log",
+  "worker_pid": 1392,
+  "last_heartbeat_at": 1776299374.1334057,
+  "_started_monotonic": 1776299358.290881
+}

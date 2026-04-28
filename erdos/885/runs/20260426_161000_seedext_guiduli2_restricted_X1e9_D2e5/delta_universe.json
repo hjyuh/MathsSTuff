@@ -1,0 +1,46 @@
+{
+  "delta_max": 200000,
+  "max_deltas": 5000,
+  "mode": "seed-pairs",
+  "seed_rows": [
+    420,
+    3780,
+    61695,
+    154332
+  ],
+  "seed_width": 3,
+  "selected_delta_count": 6,
+  "selected_deltas": [
+    {
+      "delta": 420,
+      "seed_column_support": 3,
+      "source": "seed-row"
+    },
+    {
+      "delta": 3780,
+      "seed_column_support": 3,
+      "source": "seed-row"
+    },
+    {
+      "delta": 13979,
+      "seed_column_support": 2,
+      "source": "seed-pair"
+    },
+    {
+      "delta": 44037,
+      "seed_column_support": 2,
+      "source": "seed-pair"
+    },
+    {
+      "delta": 61695,
+      "seed_column_support": 3,
+      "source": "seed-row"
+    },
+    {
+      "delta": 154332,
+      "seed_column_support": 3,
+      "source": "seed-row"
+    }
+  ],
+  "truncated_extra_count": 0
+}

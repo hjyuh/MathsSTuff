@@ -1,0 +1,407 @@
+arXiv:2306.12855v4  [math.NT]  25 Nov 2024
+CONSECUTIVE RUNS OF SUMS OF TWO SQUARES
+NOAM KIMMEL AND VIVIAN KUPERBERG
+Abstract. We study the distribution of consecutive sums of two squares in arit hmetic
+progressions. If {En}n∈N is the sequence of sums of two squares in increasing order, we show
+that for any modulus q and any congruence classes a1, a2, a3 mod q which are admissible in
+the sense that there are solutions to x2 + y2 ≡ ai mod q, there exist inﬁnitely many n
+with En+i−1 ≡ ai mod q, for i = 1 , 2, 3. We also show that for any r1, r2 ≥ 1, there exist
+inﬁnitely many n with En+i−1 ≡ a1 mod q for 1 ≤ i ≤ r1 and En+i−1 ≡ a2 mod q for
+r1 + 1 ≤ i ≤ r1 + r2.
+1. Introduction
+Dirichlet’s theorem on primes in arithmetic progressions states that for any ﬁxed modulus q
+and any congruence class a mod q with (a, q) = 1, there are inﬁnitely many primes congruent
+to a mod q. The prime number theorem for arithmetic progressions goes furt her, stating that
+the sequence of primes is equidistributed among the reduced residu e classes of a modulus q;
+i.e., if π(x; q, a) denotes the number of primes p ≤ x which are congruent to a mod q and
+(a, q) = 1, then
+π(x; q, a) = li(x)
+φ(q) (1 + o(1)),
+where li( x) :=
+∫ x
+2
+dy
+ln y is the logarithmic integral.
+One can ask the same question about strings of consecutive primes , where much less is
+known. Let pn denote the sequence of primes in ascending order. For a ﬁxed modu lus q
+and an integer r ≥ 1, for any r-tuple a = [ a1, . . . , ar] of reduced residue classes mod q, let
+π(x; q, a) denote the number of strings of consecutive primes matching the residue classes of
+a. Precisely, deﬁne
+(1) π(x; q, a) := # {pn ≤ x : pn+i− 1 ≡ ai (mod q) ∀1 ≤ i ≤ r}.
+Any randomness-based model of the primes would suggest that se quences of consecutive
+primes equidistribute among the possibilities for a, i.e. that π(x; q, a) ∼ π(x)
+φ(q)r as x → ∞ .
+Lemke Oliver and Soundararajan [9] provide a heuristic argument b ased on the Hardy–
+Littlewood k-tuples conjectures for estimating π(x; q, a), conjecturing that the asymptotic
+density is in fact 1
+φ(q)r , but that there are large second-order terms creating biases am ong
+the patterns.
+However, little is known about π(x; q, a) whenever r ≥ 2; in most cases, it is not even
+known that π(x; q, a) tends to inﬁnity with x—i.e., that there are inﬁnitely many strings of
+consecutive primes pn, . . . , pn+r− 1 with pn+i− 1 ≡ ai mod q. If φ(q) = 2, it is an immediate
+Key words and phrases. Sums of two squares, Sieve methods, Arithmetic progressions.
+This research was supported by the European Research Council ( ERC) under the European Union’s
+Horizon 2020 research and innovation program (Grant agreement No. 786758). The second author was
+supported by the NSF Mathematical Sciences Research Program t hrough the grant DMS-2202128.
+1
+
+---PAGE---
+
+2 NOAM KIMMEL AND VIVIAN KUPERBERG
+consequence of Dirichlet’s theorem on primes in arithmetic progress ions that for reduced
+residues a ̸= b mod q, π(x; q, [a, b]) and π(x; q, [b, a]) tend to inﬁnity; Knapowski and Tur´ an
+[8] observed that when φ(q) = 2, all four possible patterns of length 2 occur inﬁnitely often.
+Shiu [15] showed more generally that when every element of a is the same residue class
+mod q, so that a = [ a, . . . , a] for some reduced a mod q, then π(x; q, [a, . . . , a]) tends to
+inﬁnity for all r and for all reduced a mod q. This result was reproven by Banks, Freiberg,
+and Turnage-Butterbaugh [2] using developments in sieve theory. Maynard [11] used sieve
+methods to show further that π(x; q, [a . . . , a]) ≫ π(x), so that a positive density of primes
+begins strings of r consecutive primes all of which are congruent to a mod q.
+For all other cases—that is, for any r ≥ 2 with φ(q) > 2 or r ≥ 3 with φ(q) = 2 and any
+a which is non-constant—it is not known that π(x; q, a) tends to inﬁnity with x.
+In this paper, we consider the analogous question for sums of two s quares. Let E denote
+the set of sums of two squares and let 1E denote its indicator function. Let En denote the
+increasing sequence of sums of two squares, so that
+E = {a2 + b2 : a, b ∈ Z} = {En : n ∈ N}.
+Let N(x) denote the number of sums of two squares less than x. A number n is expressible
+as a sum of two squares if and only if every prime congruent to 3 mod 4 divides n to an
+even power; that is, if n factors as n = ∏
+p pep then ep is even whenever p ≡ 3 mod 4. For a
+modulus q = ∏
+p pep and a congruence class a mod q, write ( a, q) = ∏
+p pfp, where fp ≤ ep
+for all p. There are inﬁnitely many sums of two squares congruent to a mod q if and only if
+the following two conditions hold:
+• for any prime p ≡ 3 mod 4, fp is either even or fp = ep, and
+• if e2 − f2 ≥ 2, then a
+2f2 ̸≡ 3 mod 4.
+We will call a congruence class a mod q admissible if it satisﬁes these conditions, i.e. if there
+exists a solution to x2 + y2 ≡ a mod q.
+For a modulus q, an integer r ≥ 1 and an r-tuple a = [ a1, . . . , ar] of admissible residue
+classes mod q, let
+(2) N(x; q, a) := # {En ≤ x : En+i− 1 ≡ ai mod q ∀1 ≤ i ≤ r}.
+Just as in the prime case, one expects N(x; q, a) to tend to inﬁnity for any tuple of admissible
+residue classes, and in fact one expects N(x; q, a) ≫ N(x) where N(x) is the number of sums
+of two squares less than x; that is, one expects N(x; q, a) to represent a positive proportion
+of sums of two squares. In the case when q ≡ 1 mod 4 is a prime, David, Devin, Nam,
+and Schlitt [4] develop heuristics for second-order terms in the asy mptotics of N(x; q, a)
+analogously to [9]. Their heuristics are based on the analog of the Har dy–Littlewood k-
+tuples conjecture in the setting of sums of two squares, which was developed in [5].
+Unlike in the case for primes, the inﬁnitude of N(x; q, a) has not been proven when r ≥ 2.
+We prove for several speciﬁc cases that N(x; q, a) tends to inﬁnity with x.
+Theorem 1. Let q ≥ 1 be an odd modulus and let a and b be reduced residue classes modulo q.
+Let r ≥ 1, and let a = [a1, . . . , ar] be a tuple of residue classes such that for some 1 ≤ j ≤ r,
+ai = a whenever i ≤ j and ai = b whenever i > j . Then N(x; q, a) tends to inﬁnity with x.
+Theorem 1 relies on stronger sieving results than those that are av ailable in the prime
+case. In particular, McGrath [12] showed that for any m, for large enough k, any admissible
+k-tuple {h1, . . . , hk} can be divided into m sub-tuples or “bins,” such that for inﬁnitely many
+
+---PAGE---
+
+CONSECUTIVE RUNS OF SUMS OF TWO SQUARES 3
+n, for some hi in each bin, n + hi is a sum of two squares. Here and throughout this paper,
+a k-tuple H = {h1, . . . , hk} is admissible if for all primes p, # {H (mod p)} < p . Banks,
+Freiberg, and Maynard [1] used a similar result in the case of primes to show that a positive
+proportion of real numbers are limit points of the sequence of norm alized prime gaps, work
+which was reﬁned in [14] and [13].
+Theorem 1 immediately implies that N(x; q, [a, . . . , a]) tends to inﬁnity whenever a is a
+reduced residue class modulo q, as well as implying that for any two reduced residue classes
+a, b modulo q, N(x; q, [a, b]) tends to inﬁnity. Note that if a and b are reduced residue
+classes modulo q, then they are also admissible; however, Theorem 1 does not apply t o all
+admissible residue classes a and b, since for example 0 mod 5 or 9 mod 27 are admissible
+but not reduced. We believe that Theorem 1 should hold if a and b are only assumed to be
+admissible, and that our technique (along with an appropriate analog of McGrath’s work in
+[12]) should suﬃce, but in the interest of brevity we address only this case.
+Banks, Freiberg, and Turnage-Butterbaugh [2] derive the inﬁnit ude of π(x; q, [a, . . . , a])
+from Maynard’s work in [10] which shows that for any m, for large enough k, and for any
+admissible k-tuple {h1, . . . , hk}, there exist inﬁnitely many n such that m of the n + hi’s
+are simultaneously prime. The key idea is to choose a tuple h1, . . . , hk where all elements
+are congruent mod q, and then choose n to lie in a certain arithmetic progression. If every
+hi is congruent mod q, then any subset of m of the hi’s are also congruent mod q; for this
+reason, their method is restricted to constant patterns. Using in stead McGrath’s more reﬁned
+result for sums of two squares, we can derive the inﬁnitude of N(x; q, a) for patterns a that
+change value once, by having diﬀerent congruence conditions for d iﬀerent bins. However,
+this technique at present does not extend to any speciﬁc pattern taking at least three values,
+since we cannot control how many sums of two squares appear in ea ch bin. In other words, it
+is diﬃcult to distinguish between a pattern of the form [ a, b, c] and one of the form [ a, b, b, c],
+since any bin may contain more than one sum of squares.
+However, the case of r = 3 can be addressed directly.
+Theorem 2. Let q ≥ 1 be a modulus and let a, b, and c be admissible residue classes. Then
+N(x; q, [a, b, c]) tends to inﬁnity with x.
+This theorem relies crucially on Hooley’s [7] work on triple correlations o f sums of two
+squares. Hooley showed that for any h1, h2, h3 ∈ N,
+∑
+n∈ N
+1E(n + h1)1E(n + h2)1E(n + h3)
+is inﬁnite, which he proved using the theory of quadratic forms. Hoo ley’s result is close to
+what we are trying to prove, except that the sums of two squares n+h1, n+h2, and n+h3 are
+not necessarily consecutive, and do not necessarily lie in the correc t congruence classes mod
+q. After restricting n to an arithmetic progression, some of the results on quadratic for ms
+used by Hooley no longer apply, and we need to rely instead on results on equidistribution
+of the roots of a quadratic polynomial. Precisely, we prove the follow ing:
+Proposition 3. Let q be a positive integer, and denote q = ∏
+p pνp. Let a ∈ Z/qZ and let
+h, k ∈ N be such that a, a + h, a + k are all admissible mod q. Assume that νp is even for all
+
+---PAGE---
+
+4 NOAM KIMMEL AND VIVIAN KUPERBERG
+p ≡ 3 mod 4 . Assume also that ν2 is even and that
+a ̸≡ 0 mod 2 ν2− 1
+(a + h) ̸≡ 0 mod 2 ν2− 1
+(a + k) ̸≡ 0 mod 2 ν2− 1.
+(3)
+Then there are inﬁnitely many integers n such that n ≡ a mod q and n, n + h, n + k are all
+sums of two squares.
+Hooley’s work was also adapted in [3] to show that there are inﬁnitely m any triples of
+consecutive sums of two squares with speciﬁed gaps. It would be int eresting to further
+investigate the distribution of consecutive sums of two squares in a rithmetic progressions.
+It is very likely possible to show that N(x; q, a) ≫ N(x) whenever a satisﬁes the assump-
+tions of Theorem 1; the authors intend to address this in a follow-up paper. It is also not
+known whether N(x; q, a) tends to inﬁnity for any pattern a of length ≥ 4 not satisfying the
+assumptions of Theorem 1.
+Finally, the same setup could be applied to other sequences. The wor ks of both Hooley
+and McGrath rely on using the representation function r(n), deﬁned as the number of ways
+to write n = x2 + y2, as a weighted version of 1E. It is not clear what, if anything, may be
+said about arbitrary sets arising by sieving the integers by a set of p rimes of density δ ≤ 1/2,
+for example.
+2. Results for two distinct congruence classes: proof of Theor em 1
+We begin by recalling the result of McGrath [12] on sums of two squar es in separate bins
+of an admissible tuple.
+Theorem 4 (McGrath [12], Propositions 5.2 and 6.2 ) . Let H∗ := {h1, h2, . . . , hk} be an
+admissible tuple such that each hi is divisible by 4. Fix real numbers θ1, θ2 subject to 0 <
+θ1 + θ2 < 1/18 and deﬁne the constant
+∆ = ∆( θ1, θ2) =
+√
+2(π + 2)
+32π
+1 + θ1√ θ1θ2
+.
+Fix a partition H∗ = B1 ∪ B2 ∪ · · ·BM where |B1| ≥ 2∆3 and for i ≥ 2, |Bi|> 27i.
+Then there exist elements ha1, . . . , haM and inﬁnitely many integers n such that haj ∈ Bj
+and n + haj is a sum of two squares for 1 ≤ j ≤ M.
+For what follows, we will need a slight variation of Theorem 4, where th e n guaranteed by
+the conclusion are required to be divisible by a ﬁxed integer g.
+Theorem 5 (McGrath [12], slight variation) . Let g ≥ 1 be an odd integer, and let H∗ :=
+{h1, h2, . . . , hk} be an admissible tuple such that 4|hi and (hi, g) = 1 . Fix real numbers θ1, θ2
+subject to 0 < θ 1 + θ2 < 1/18 and deﬁne the constant
+∆ = ∆( θ1, θ2) =
+√
+2(π + 2)
+32π
+1 + θ1√ θ1θ2
+.
+Fix a partition H∗ = B1 ∪ B2 ∪ · · ·BM where |B1| ≥ 2∆3 and for i ≥ 2, |Bi|> 27i.
+Then there exist elements ha1, . . . , haM and inﬁnitely many integers n such that haj ∈ Bj
+and gn + haj is a sum of two squares for 1 ≤ j ≤ M.
+
+---PAGE---
+
+CONSECUTIVE RUNS OF SUMS OF TWO SQUARES 5
+Proof. In the sieve set-up for the proof of Theorem 4, found on page 14 o f [12], all sieve sums
+are restricted to n lying in a ﬁxed residue class v0 mod W such that ( v0 + hi, W ) = 1 for
+each i, where W is a product over small primes. The existence of v0 is guaranteed by the
+admissibility of the set H.
+In our setting, by the admissibility of H∗ and the fact that ( hi, g) = 1 for all i, we can
+further guarantee the existence of v0 mod [ g, W ], such that ( v0 + hi, W ) = 1 for each i
+and g|v0. The arguments of [12] yield elements ha1, . . . , haM and inﬁnitely many integers
+n ≡ v0 mod [ g, W ] such that haj ∈ Bj and n + haj is a sum of two squares for all j; by our
+choice of v0, each n can be written as gn′, so we have inﬁnitely many integers n′ such that
+gn′ + haj is a sum of two squares for all j, as desired. □
+We now strengthen this result further, by adding to the conclusion the constraint that the
+resulting sums of two squares are consecutive, following the ideas o f [2] and [11] in the prime
+case.
+Theorem 6. Let g ≥ 1 be an odd integer, and let H := {h1, h2, . . . , hk} be an admissible
+tuple of increasing positive integers such that 4|hi, and (hi, g) = 1 . Fix real numbers θ1, θ2
+subject to 0 < θ 1 + θ2 < 1/18 and deﬁne the constant
+∆ = ∆( θ1, θ2) =
+√
+2(π + 2)
+32π
+1 + θ1√ θ1θ2
+.
+Fix a partition H = B1 ∪ B2 ∪ · · ·BM where |B1| ≥ 2∆3 and for i ≥ 2, |Bi|> 27i.
+Then there exist elements ha1, . . . , haM and inﬁnitely many integers n such that haj ∈ Bj
+for all j, gn + haj is a sum of two squares for all j, and for any integer t with h1 < t < h k,
+if gn + t is a sum of two squares, then t ∈ H.
+Proof. Let
+S := {t ∈ N : h1 ≤ t ≤ hk : t ̸∈ { h1, . . . , hk}}.
+Deﬁne a set of distinct primes {qt : t ∈ S} such that for each t, qt ≡ 3 mod 4 and t ̸≡
+hj mod qt for all t. We also choose qt to satisfy qt > g so that ( g, qt) = 1. By the Chinese
+Remainder Theorem, there exists an integer a with ga + t ≡ qt mod q2
+t for all t ∈ S. In
+particular, ga + t ≡ 0 mod qt. Since t ̸≡ hj mod qt, for all t and for all j, ga + hj ̸≡ 0 mod qt.
+Deﬁne A(x) := {gQx + ga + hj}k
+j=1, where Q := ∏
+t∈ S q2
+t . The tuple {ga + hj}k
+j=1 satisﬁes
+the constraints of Theorem 4 with respect to the modulus gQ. Moreover, by our choice of
+Q, g(QN + a) + t ≡ qt mod q2
+t , and thus g(QN + a) + t is not a sum of two squares for any
+h1 < t < h k with t ̸∈ H. This completes the proof. □
+We are now ready to prove Theorem 1.
+Proof of Theorem 1. For a tuple a of length r satisfying the assumptions of Theorem 1, let
+ra denote the number of a’s occurring in a and let rb denote the number of b’s occurring in
+a.
+Let k be large enough that Theorem 6 applies with M = r. We will construct a tuple
+H = {h1, . . . , hk} as follows. First, we can split the index set [1 , k] into bins B1 ∪ · · · ∪BM
+so that the size of the bins satisﬁes the hypotheses of Theorem 6. Then for each i, choose
+hi > h i− 1 such that 4|hi, such that hi ≡ a mod q if i ∈ Bj with aj = a, such that hi ≡ b mod q
+if i ∈ Bj with aj = b, and such that {qx + h1, . . . , qx + hk} is an admissible tuple of linear
+forms.
+
+---PAGE---
+
+6 NOAM KIMMEL AND VIVIAN KUPERBERG
+By Theorem 6, there exist inﬁnitely many tuples ( qn + hi1, . . . , qn + hiL) of consecutive
+sums of two squares such that at least one sum of two squares lies in each bin Bj; note
+that L may be bigger than M, so that each bin may contain multiple sums of two squares.
+However, by the bin constraint, the ﬁrst ra entries in each tuple ( qn + hi1, . . . , qn + hiL)
+must all be congruent to a mod q and the last rb must all be congruent to b mod q, and
+every qn + hi is congruent to either a or b mod q. Moreover, by construction of H, there is
+only one transition point from hij ≡ a mod q to hij ≡ b mod q. Thus there is a sub-tuple
+of each ( qn + hi1, . . . , qn+ hiL) satisfying the desired constraints, so there must be inﬁnitely
+many. □
+3. 3-Tuples: Proof of Theorem 2
+In this section we prove Theorem 2. That is, we show that for any q, and any admissible
+a, b, c ∈ Z/qZ, the pattern [ a, b, c] appears in the sequence ( En mod q) inﬁnitely often.
+3.1. Notation. Throughout this section we will use ( ·, ·) brackets to denote the greatest
+common divisor. We will use [ ·, ..., ·] brackets to denote a tuple of elements. We will denote
+nk∥m to indicate that nk | m but nk+1 ∤ m. For a ∈ Z/qZ, the reduction a mod d is well
+deﬁned for every d |q. For any such d, we write d |a if a ≡ 0 mod d.
+3.2. Proof of Theorem 2. We ﬁrst show how Theorem 2 follows from Proposition 3.
+Proof. Let q be a positive integer, and let a, b, c be admissible mod q. The congruence classes
+a, b, c mod q can be lifted to admissible a2, b2, c2 mod q2. We now show that these can then
+be lifted to admissible a3, b3, c3 mod 4 q2 which also satisfy the condition (3). Indeed, denote
+q2 = 2 αr with r odd and a2 ≡ 2β mod 2 α with β ≤ α. If β < α then any admissible
+lift of a2 to a3 mod 4 q2 will satisfy (3). In the case β = α, of the four possible lifts of a2
+to a3 mod 4 q2 we consider the one which satisﬁes a3 ≡ 2α mod 2 α+2. This choice is both
+admissible and satisﬁes (3). The same argument applies to lifting b2, c2 to b3, c3 mod 4 q2.
+We then ﬁx h < k ∈ N such that a3 + h ≡ b3 mod 4 q2 and a3 + k ≡ c3 mod 4 q2.
+Let {pi : 1 ≤ i < k, i ̸= h} be a set of distinct primes with pi ∤q, pi > k , and pi ≡ 3 mod 4.
+Set
+T = 4q2 ·
+∏
+1≤ i<k
+i̸=h
+p2
+i .
+Let aT ∈ Z/T Z be the congruence class satisfying αT ≡ a3 mod 4 q2 and aT ≡ pi − i mod p2
+i .
+This choice of aT implies that aT , aT + h, aT + k are all admissible mod T , and that the
+requirements of Proposition 3 are satisﬁed. Furthermore, for ea ch 1 ≤ i ≤ k, i ̸= h, k,
+aT + i is not admissible mod T because aT + i ≡ pi mod p2
+i . Thus if an integer n satisﬁes
+n ≡ aT mod T and n, n + h, n + k are sums of two squares, then they must be consecutive
+sums of two squares.
+By Proposition 3, there exist inﬁnitely many n ≡ aT mod T such that n, n + h, and n + k
+are all sums of two squares, and thus consecutive sums of two squ ares. Since n ≡ aT mod T ,
+we also have n ≡ a mod q, and thus by our choice of h and k, n + h ≡ b mod q and
+n + k ≡ c mod q. It follows that there are inﬁnitely many indices t such that
+Et ≡ a, E t+1 ≡ b, E t+2 ≡ c mod q. □
+We now prove Proposition 3.
+
+---PAGE---
+
+CONSECUTIVE RUNS OF SUMS OF TWO SQUARES 7
+Proof. We use the notations from the statement of the proposition.
+Since a is admissible mod q, there exists a solution x0, y0 ∈ Z to
+(4) x2
+0 + y2
+0 ≡ a mod q.
+Since a + h is also admissible mod q, there exist u, v ∈ Z such that
+(5) ( x0 + u)2 + (y0 + v)2 ≡ a + h mod q.
+We claim that x0, y0, u, v can be chosen such that the following conditions are satisﬁed:
+(u, v) |2(x0, y0),
+(u, v) |2ν2/2− 1
+∏
+p|q
+p≡ 3 mod 4
+pνp/2.(6)
+To show this, we consider (4) and (5) modulo diﬀerent primes.
+Case 1 (Primes not dividing q). We can always ensure that ( u, v) | q. Indeed, if u0, v0 is a
+solution, then for every p |v0 such that p ∤q, there exists tp with p ∤u0 + tpq. By choosing
+t ∈ Z such that t ≡ tp mod p for all p | v0, we get that ( u0 + tq, v0) | q. Thus v = v0,
+u = u0 + kq is a solution with ( u, v) |q.
+Case 2 (Primes p ≡ 1 mod 4 that divide q). There exists a solution x0, y0 to (4) such that
+[x0, y0] ̸≡ [0, 0] mod p, even if a ≡ 0 mod p. So we can assume that p ∤ (x0, y0) for any
+p ≡ 1 mod 4 with p|q.
+If p ∤ h, then we must have [ u, v] ̸≡ [0, 0] mod p which implies p ∤ (u, v). As for the case
+p |h, we can choose
+[u, v] ≡ [− 2x0, − 2y0] ̸≡ [0, 0] mod p.
+In either case, we can choose u, v such that p ∤(u, v).
+Case 3 (Primes p ≡ 3 mod 4 that divide q). Assume that pα∥(h, q) and that pβ∥a. We know
+that β is even since a is admissible (and since νp is even).
+Consider ﬁrst the case where β > α . Then pα∥a + h. Since a + h is also admissible, α is
+even as well. Thus we can choose x0, y0, u, v such that
+pβ/2∥(x0, y0)
+pα/2∥(u, v).
+Note that α/2 < β/ 2 ≤ νp/2.
+Next consider the case β < α , so that pβ∥a + h as well and a ≡ a + h mod pβ+1. We can
+choose u, v such that
+[u, v] ≡ [− 2x0, − 2y0] mod pβ/2+1,
+which implies that
+a + h ≡ (x0 + u)2 + (y0 + v)2 ≡ x2
+0 + y2
+0 ≡ a mod pβ+1.
+With this choice, we have pβ/2∥(u, v) since [ − 2x0, − 2y0] ̸≡ [0, 0] mod pβ/2+1.
+Finally consider the case α = β. In this case, we can choose x0, y0, u, v such that
+pα/2∥(x0, y0)
+pα/2∥(x0 + u, y0 + v).
+
+---PAGE---
+
+8 NOAM KIMMEL AND VIVIAN KUPERBERG
+This implies pα/2 | (u, v). We can further choose u, v such that pα/2∥(u, v). Otherwise, if
+pα/2+1 |(u, v), then if we assume W.L.G that pα/2+1 ∤y0 then we can replace v by − 2y0 − v
+which ensures pα/2+1 ∤v.
+In each case, we found that if pδ∥(u, v) then pδ |(x0, y0) and δ ≤ νp/2.
+Case 4 (The prime 2) . Let 2ν2∥q, 2α∥a, and 2 β∥a+h. Since we assumed that a ̸≡ 0 mod 2 ν2− 1,
+we know that α ≤ ν2 − 2. We can choose x0, y0 such that 2 ⌊α/2⌋∥(x0, y0) by choosing
+[x0, y0] ≡
+{
+[0, 0] mod 2 α/2 α is even,
+[2(α− 1)/2, 2(α− 1)/2] mod 2 (α− 1)/2+1 α is odd.
+If β < α , then we can choose u, v such that
+2⌊β/2⌋∥(u, v),
+where ⌊β/2⌋ < ⌊α/2⌋ ≤ ν2/2 − 1.
+Assume now that β ≥ α. If α is even, then x0
+2α/2 and y0
+2α/2 must have opposite parity. In
+this case, if β = α we can pick
+[u, v] ≡ [2α/2, 2α/2] mod 2 α/2+1,
+and if β > α we can pick
+[u, v] ≡ [x0, y0] mod 2 α/2+1.
+If α is odd then x0
+2(α−1)/2 and y0
+2(α−1)/2 must both be odd. In this case, if β > α we can pick
+[u, v] ≡ [x0, y0] mod 2 (α− 1)/2+1,
+and if α = β we can pick
+[u, v] ≡ [2(α− 1)/2+1, 2(α− 1)/2+1] mod 2 (α− 1)/2+2.
+In this case, we have 2 (α− 1)/2+1∥(u, v) and 2 (α− 1)/2∥(x0, y0); this is why the extra factor of 2
+is needed in (6). The condition α ≤ ν2 − 2 ensures that we still have
+1 + ((α − 1)/2 + 1) ≤ ν2
+which is required since we want 2( u, v) |q.
+To summarize, we have now found x0, y0, u, v ∈ Z which simultaneously satisfy (4),(5),
+and (6). Write T := q
+2(u,v) , so that by (6), q |T 2 and q |2(x0, y0)T . For r, s ∈ Z, deﬁne
+x = x(r) = x0 + T r,
+y = y(s) = y0 + T s,
+so that for any n with n = x2 + y2,
+n = x2
+0 + y2
+0 + 2T (rx0 + sy0) + T 2(r2 + s2) ≡ x2
+0 + y2
+0 ≡ a mod q.
+For suitable choices of r, s we will have n + h = (x + u)2 + (y + v)2. For this to hold, we need
+the following equality to hold:
+h = (x + u)2 + (y + v)2 − x2 − y2
+= u2 + v2 + 2u (x0 + rT ) + 2b (y0 + sT )
+= u2 + v2 + 2(ux0 + vy0) + q
+( u
+(u, v)r + v
+(u, v)s
+)
+.
+(7)

@@ -1,0 +1,19 @@
+{
+  "job_id": "2026-04-14T20-45-23-draft-6e83-smoke_codex_add_zero",
+  "status": "done",
+  "session_id": "",
+  "command": "/draft",
+  "input": "In Lean, prove that for any natural number n, n + 0 = n.",
+  "started_at": "2026-04-14T20:45:23Z",
+  "finished_at": "2026-04-14T20:46:21Z",
+  "duration_s": 58.06,
+  "result_text": "Skeleton elaborates cleanly (only the expected `sorry` warning). Here's the final draft:\n\n---\n\n### `nat_add_zero` \u2014 Draft Skeleton\n\n**Claim:** For any natural number *n*, *n* + 0 = *n*.\n\n```lean\ntheorem nat_add_zero (n : Nat) : n + 0 = n := by\n  sorry\n```\n\n**Elaboration check:** Passes (sorry-only warning).\n\n**Notes:**\n- In Lean 4 core, `Nat.add` is defined by recursion on the second argument: `n + 0` definitionally reduces to `n`. This means the proof is just `rfl`.\n- The canonical core library name is `Nat.add_zero`.\n- No imports needed \u2014 this works in bare Lean 4.\n\n---\n\n### Depth Check\n\nWhat would you like to do next?\n\n1. **Show proof state** \u2014 inspect the goal at the `sorry`\n2. **Alternative formalization** \u2014 e.g., term-mode proof, or using `simp`\n3. **Prove it** \u2014 fill the `sorry` (try `/lean4:prove` or `/lean4:autoprove`)\n4. **Save to scratch / write to file** \u2014 persist the skeleton\n",
+  "lean_code_blocks": [
+    "theorem nat_add_zero (n : Nat) : n + 0 = n := by\n  sorry"
+  ],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-14T20-45-23-draft-6e83-smoke_codex_add_zero.log",
+  "worker_pid": 935,
+  "last_heartbeat_at": 1776199578.9096196,
+  "_started_monotonic": 1776199523.4848716
+}

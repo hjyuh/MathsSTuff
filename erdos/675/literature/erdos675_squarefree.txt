@@ -1,0 +1,204 @@
+A SQUAREFREE LOWER BOUND FOR ERDŐS PROBLEM 675
+BOON SUAN HO
+Abstract. LetSbe the set of squarefree positive integers. For N≥1, call t≥1
+admissible if
+1S(a+t) =1S(a) (1 ≤a≤N).
+We prove that, for every fixed positive c <25/72and all sufficiently large N, every
+admissible tis divisible by/producttext
+p≤Ncp2. Hence every such t, and in particular the least
+admissible translate, is larger than exp(Nc). Together with the standard translation
+propertyforthesquarefreeset, provedbelowforcompleteness, thisanswersthesquarefree
+growth subquestion in Erdős Problem 675. The main input is Nunes’s published
+refinement of Heath-Brown’s bound for the least squarefree integer in a reduced residue
+class; the final exponential estimate uses the prime number theorem.
+1.Introduction
+Erdős Problem 675, as recorded by Bloom [ 1], asks about finite repetitions of member-
+ship patterns. A set A⊆Nhas the translation property if, for every N≥1, there is a
+positive integer tNsuch that
+a∈A⇐⇒ a+tN∈A (1≤a≤N). (1.1)
+One part of the problem asks, when Ais the set of squarefree integers, how quickly the
+least such tNmust grow, and in particular whether tN>exp(Nc)for some absolute
+constant c >0. The same problem page also records that elementary sieve theory implies
+the squarefree set has the translation property [ 1]. We include the standard proof of that
+fact in Proposition 1.1 below.
+This note proves that the answer to this squarefree growth subquestion is yes. In fact,
+it proves a uniform divisibility statement for every translate that repeats the first N
+values of the squarefree indicator. The proof of this divisibility statement does not use
+the existence of admissible translates.
+Let
+TS(N) := min {t≥1 :1S(a+t) =1S(a)for all 1≤a≤N}.
+For the squarefree set this minimum is nonempty by Proposition 1.1.
+Proposition 1.1. The set Sof squarefree positive integers has the translation property.
+Proof.FixN≥1, and let
+B:={1≤a≤N:a∈ S}, k :=|B|, P :=/productdisplay
+p≤Np2.
+It is enough to find an integer m≥1such that Pm+ais squarefree for every a∈B.
+Indeed, then t=Pmworks: if a≤Nis not squarefree, then p2|afor some prime p≤N,
+whence p2|a+t; while if a∈B, the chosen property of mgives a+t∈ S.
+1
+2 BOON SUAN HO
+For later use, note that if a∈Bandp≤Nis prime, then
+Pm+a≡a̸≡0 (mod p2),
+because ais squarefree. Thus, when a∈B, the only possible square obstructions to
+Pm+acome from primes q > N.
+For primes q > N, the congruences
+q2|Pm+a (a∈B)
+exclude exactly kresidue classes modulo q2: here (P, q) = 1, and the classes are distinct
+because the elements of Blie between 1andN < q2. For z > N, let Sz(X)be the
+number of integers 1≤m≤Xfor which none of these exclusions occurs for any prime
+N < q ≤z. By the Chinese remainder theorem,
+Sz(X) =Xδz+ON,z(1), δ z:=/productdisplay
+N<q≤z/parenleftbigg
+1−k
+q2/parenrightbigg
+,
+where the product is over primes. Since/summationtext
+qk/q2<∞, the products δztend to a positive
+limit δ=/producttext
+q>N(1−k/q2)>0.
+LetS(X)count the integers 1≤m≤Xfor which Pm+ais squarefree for every
+a∈B. The only obstruction not counted by Sz(X)is the occurrence of some prime
+q > zwith q2|Pm+afor at least one a∈B. For fixed q > Nanda∈B, there is one
+residue class modulo q2form, so there are at most X/q2+ 1such m≤X. Also such a
+prime must satisfy q≤(PX+N)1/2. Hence
+S(X)≥Sz(X)−k/summationdisplay
+z<q≤(PX+N)1/2/parenleftbiggX
+q2+ 1/parenrightbigg
+.
+Dividing by X,
+S(X)
+X≥Sz(X)
+X−k/summationdisplay
+z<q≤(PX+N)1/21
+q2−kπ((PX+N)1/2)
+X,
+where the sums over qare over primes. Letting X→ ∞, with N, P, zfixed, the last term
+tends to zero and Sz(X)/X→δz. Therefore
+lim inf
+X→∞S(X)
+X≥δz−k/summationdisplay
+q>z1
+q2.
+Choose zso large that the right-hand side is positive. Then S(X)>0for all sufficiently
+large X, and therefore such an mexists. This completes the proof. □
+Theorem 1.2. Let0< c < 25/72. There is an integer N0(c)such that, whenever
+N≥N0(c)andt≥1satisfies
+1S(a+t) =1S(a) (1 ≤a≤N), (1.2)
+one has/productdisplay
+p≤Ncp2|t, (1.3)
+A SQUAREFREE LOWER BOUND FOR ERDŐS PROBLEM 675 3
+where the product is over primes. Consequently t >exp(Nc). In particular,
+TS(N)>exp(Nc) ( N≥N0(c)).
+Taking, for example, c= 1/3gives the lower bound asked for in the squarefree part of
+the problem. The exponent 25/72is not claimed to be optimal; it is the exponent obtained
+from the published Nunes least-squarefree-in-progressions input quoted in Section 2.
+The proof is local at each small prime. If p≤Ncandp2∤t, we construct a squarefree
+integer a≤Nsuch that p2|a+t. Then ais squarefree while a+tis not, contradicting
+(1.2). The construction requires finding small squarefree integers in prescribed reduced
+residue classes modulo pandp2.
+2.The squarefree input
+For a modulus q≥1and a reduced residue class rmod q, write L(q, r)for the least
+positive squarefree integer msuch that m≡r(mod q).
+Theorem 2.1 (Nunes, published Corollary 1.2). For every ε >0there is a constant Cε
+such that, uniformly for all q≥1and all rwith (r, q) = 1,
+L(q, r)≤Cεq36/25+ε.
+This is Corollary 1.2 of the published version of Nunes [ 3, Corollary 1.2, p. 484], in the
+notation n(q, a)for the least positive squarefree integer congruent to amod q. Heath-
+Brown’s earlier bound n(q, a)≪q13/9+εis recalled immediately before that corollary in
+[3, p. 484] and is originally due to [2].
+We emphasize that the input used here is the published Mathematika version of
+Nunes, specifically Corollary 1.2; the arXiv preprint is worded differently around the
+squarefree-modulus issue and should not be used for this particular citation. The
+published Corollary 1.2 is stated uniformly for all coprime pairs (a, q) = 1, with no
+squarefree-modulus hypothesis on q. The published paper also makes the relevant non-
+squarefree input explicit in Lemma 1.4, which treats moduli qthat are either squarefree
+or the square of a prime [ 3, Lemma 1.4, p. 485]. Thus Theorem 2.1 applies to the moduli
+q=pandq=p2used below.
+The crucial case is q=p2. There Theorem 2.1 gives
+L(p2, r)≪ε(p2)36/25+ε=p72/25+2 ε,
+and this is what produces the threshold 25/72.
+3.Proof of the theorem
+The key point is the following uniform local divisibility statement.
+Lemma 3.1. Fix0< c < 25/72. There is an integer N1(c)such that, whenever
+N≥N1(c),t≥1satisfies (1.2), and p≤Ncis prime, then p2|t.
+Proof.Choose ε >0so small that
+α1:=c/parenleftbigg72
+25+ 2ε/parenrightbigg
+<1. (3.1)
+4 BOON SUAN HO
+Then also
+α2:=c/parenleftbigg61
+25+ε/parenrightbigg
+<1, (3.2)
+since 61/25 + ε <72/25 + 2 ε. Let Cεbe the constant in Theorem 2.1. Choose N1(c)so
+large that, for all N≥N1(c),
+CεNα1≤Nand CεNα2≤N. (3.3)
+This lower bound for Ndepends only on c, through the chosen εand the corresponding
+constant Cε.
+Letp≤Ncbe prime, and suppose for contradiction that p2∤t. There are two cases.
+Case 1: p∤t.The residue class −tmod p2is reduced. By Theorem 2.1, there is a positive
+squarefree integer asuch that
+a≡ −t(mod p2), a ≤Cε(p2)36/25+ε=Cεp72/25+2 ε.
+Since p≤Nc, equations (3.1) and (3.3) give
+a≤CεNα1≤N.
+Thus 1≤a≤Nandais squarefree. But a+t≡0 (mod p2), soa+tis not squarefree.
+This contradicts (1.2).
+Case 2: p|t, but p2∤t.Write t=pu, with p∤u. The residue class −umod pis reduced.
+By Theorem 2.1, there is a positive squarefree integer bsuch that
+b≡ −u(mod p), b ≤Cεp36/25+ε.
+Because b≡ −u̸≡0 (mod p), we have p∤b. Hence a:=pbis squarefree. Moreover,
+using p≤Ncand (3.3),
+a=pb≤Cεp61/25+ε≤CεNα2≤N.
+Finally,
+a+t=pb+pu=p(b+u),
+andb+u≡0 (mod p), sop2|a+t. Again ais squarefree while a+tis not, contradicting
+(1.2).
+Both alternatives lead to contradictions. Therefore p2|t, as claimed. □
+Proof of Theorem 1.2. LetN2(c)be large enough that
+2ϑ(Nc)> Nc(N≥N2(c)), (3.4)
+where ϑ(x) :=/summationtext
+p≤xlogp. Such an N2(c)exists by the prime number theorem, ϑ(x)∼x.
+PutN0(c) := max {N1(c), N2(c)}.
+Now let N≥N0(c), and let tsatisfy(1.2). By Lemma 3.1, p2|tfor every prime
+p≤Nc. These prime powers are pairwise coprime, and therefore
+/productdisplay
+p≤Ncp2|t.
+This proves (1.3). Since tis positive,
+logt≥2/summationdisplay
+p≤Nclogp= 2ϑ(Nc)> Nc,
+A SQUAREFREE LOWER BOUND FOR ERDŐS PROBLEM 675 5
+where the last inequality is (3.4). Hence t >exp(Nc). □
+Corollary 3.2. The squarefree growth subquestion in Erdős Problem 675 has a positive
+answer: for every fixed 0< c < 25/72, and in particular for c= 1/3, the least translate
+repeating the squarefree pattern on [1, N]satisfies
+TS(N)>exp(Nc)
+for all sufficiently large N.
+Proof.Proposition 1.1 shows that TS(N)is defined, and Theorem 1.2 gives the stated
+lower bound for every admissible translate, hence for the least one. □
+4.Remarks
+Remark 4.1 (Scope). The argument proves only the squarefree lower bound above. It
+does not address the other parts of Erdős Problem 675, such as the translation property
+for sums of two squares or for integers supported on one part of a partition of the primes.
+Remark 4.2 (Dependence on the least-squarefree exponent). The proof uses Theorem 2.1
+as a black box. If, for the moduli needed here, one had instead a bound
+L(q, r)≪εqκ+ε
+for all reduced residue classes, then the same argument would force p2|tfor every prime
+p≤Ncwhenever
+c <min/braceleftbigg1
+2κ,1
+1 +κ/bracerightbigg
+.
+For the published Nunes exponent κ= 36/25, these two quantities are 25/72and25/61,
+so the first is the limiting one. With only Heath-Brown’s earlier exponent κ= 13/9, the
+same argument would give 9/26.
+Acknowledgements
+The proof of this paper was discovered with the assistance of GPT-5.4 Pro. All
+mathematical arguments and claims in the final manuscript were independently verified
+by the author, who takes full responsibility for the paper.
+References
+[1]T. F. Bloom, Erdős Problem #675 ,https://www.erdosproblems.com/675 . Accessed April 18, 2026.
+[2]D. R. Heath-Brown, The least square-free number in an arithmetic progression , J. Reine Angew.
+Math. 332(1982), 204–220.
+[3]R. M. Nunes, On the least squarefree number in an arithmetic progression , Mathematika 63(2017),
+no. 2, 483–498; see especially Corollary 1.2 of the published version. The arXiv preprint https:
+//arxiv.org/abs/1605.03347 differs in wording around the squarefree-modulus issue.

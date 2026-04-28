@@ -1,0 +1,2336 @@
+=== Problem 1 ===
+What is the value of<cmath>2^{1+2+3}-(2^1+2^2+2^3)?</cmath>
+
+Choices: {'A': '0', 'B': '50', 'C': '52', 'D': '54', 'E': '57</math>'}
+Answer: B
+
+--- Solution 1 ---
+We evaluate the given expression to get that <cmath>2^{1+2+3}-(2^1+2^2+2^3)=2^6-(2^1+2^2+2^3)=64-2-4-8=50 \implies \boxed{\text{(B)}}</cmath>
+
+
+=== Problem 2 ===
+Under what conditions is
+
+Choices: {'A': '</math>'}
+Answer: D
+
+--- Solution 1 ---
+One can square both sides to get <math>a^{2}+b^{2}=a^{2}+2ab+b^{2}</math>. Then, <math>0=2ab\implies ab=0</math>. Also, it is clear that both sides of the equation must be nonnegative. The answer is <math>\boxed{\textbf{(D)}}</math>.
+
+--- Solution 2 ---
+Complete the square of the left side by rewriting the radical to be <cmath>\sqrt{(a+b)^{2}-2ab}.</cmath>
+From there it is evident for the square root of the left to be equal to the right, <math>ab</math> must be equal to zero.
+Also, we know that the equivalency of square root values only holds true for nonnegative values of <math>a+b</math>, making the correct answer <math>\boxed{\textbf{(D)}}.</math>
+
+--- Solution 3 ---
+The left side of the original equation is the <b>arithmetic square root</b>, which is always nonnegative. So, we need <math>a+b\ge 0,</math> which refutes <math>\textbf{(B)}</math> and <math>\textbf{(E)}.</math> Next, picking <math>(a,b)=(0,0)</math> refutes <math>\textbf{(A)},</math> and picking <math>(a,b)=(1,2)</math> refutes <math>\textbf{(C)}.</math> By POE (Process of Elimination), the answer is <math>\boxed{\textbf{(D)}}.</math>
+
+--- Solution 4 ---
+If we graph <math>\sqrt{x^2+y^2}=x+y,</math> then we get the union of:
+
+*positive <math>x</math>-axis
+
+*positive <math>y</math>-axis
+
+*origin
+
+Therefore, the answer is <math>\boxed{\textbf{(D)}}.</math>
+
+The graph of <math>\sqrt{x^2+y^2}=x+y</math> is shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+size(200); 
+
+int xMin = -5;
+int xMax = 5;
+int yMin = -5;
+int yMax = 5;
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+draw((xMax,0)--(0,0)--(0,yMax),red+linewidth(1.5));
+</asy>
+
+
+=== Problem 3 ===
+The sum of two natural numbers is
+
+Choices: {'A': '~10{,}272', 'B': '~11{,}700', 'C': '~13{,}362', 'D': '~14{,}238', 'E': '~15{,}426</math>'}
+Answer: D
+
+--- Solution 1 ---
+The units digit of a multiple of <math>10</math> will always be <math>0</math>. We add a <math>0</math> whenever we multiply by <math>10</math>. So, removing the units digit is equal to dividing by <math>10</math>.
+
+Let the smaller number (the one we get after removing the units digit) be <math>a</math>. This means the bigger number would be <math>10a</math>.
+
+We know the sum is <math>10a+a = 11a</math> so <math>11a=17402</math>. So <math>a=1582</math>. The difference is <math>10a-a = 9a</math>. So, the answer is <math>9(1582) = \boxed{\textbf{(D)}
+
+--- Solution 2 ---
+Since the unit's place of a multiple of <math>10</math> is <math>0</math>, the other integer must end with a <math>2</math>, for both integers sum up to a number ending in a <math>2</math>. Thus, the unit's place of the difference must be <math>10-2=8</math>, and the only answer choice that ends with an <math>8</math> is <math>\boxed{\textbf{(D)} 
+Another quick solution is to realize that the sum represents a number <math>n</math> added to <math>10n</math>. The difference is <math>9n</math>, which is <math>\frac{9}{11}</math> of the given sum.
+
+--- Solution 3 ---
+Let the larger number be <math>\underline{AB{,}CD0}.</math> It follows that the smaller number is <math>\underline{A{,}BCD}.</math> Adding vertically, we have 
+<cmath>\begin{array}{cccccc}
+  & A & B & C & D & 0 \\
++\quad &   & A & B & C & D \\
+\hline
+  &   &   &   &   &   \\ [-2.5ex]
+  & 1 & 7 & 4 & 0 & 2 \\
+\end{array}</cmath>
+Working from right to left, we get <cmath>D=2\implies C=8 \implies B=5 \implies A=1.</cmath>
+The larger number is <math>15{,}820</math> and the smaller number is <math>1{,}582.</math> Their difference is <math>15{,}820-1{,}582=\boxed{\textbf{(D)}
+
+--- Solution 4 ---
+We know that the larger number has a units digit of <math>0</math> since it is divisible by 10. If <math>D</math> is the ten's digit of the larger number, then <math>D</math> is the units digit of the smaller number. Since the sum of the natural numbers has a unit's digit of <math>2</math>, <math>D=2</math>. 
+
+The units digit of the larger number is <math>0</math> and the units digit of the smaller number is <math>2</math>, so the positive difference between the numbers is 8. There is only one answer choice that has this units digit, and that is <math>\boxed{\textbf{(D)} 
+(Similar to MRENTHUSIASM's solution)
+
+
+=== Problem 4 ===
+Tom has a collection of
+
+Choices: {'A': '</math>'}
+Answer: D
+
+--- Solution 1 ---
+We are given that
+<cmath>\begin{align*}
+\text{happy}&\Longrightarrow\text{can add}, &(1) \\
+\text{purple}&\Longrightarrow\text{cannot subtract}, \hspace{15mm} &(2) \\
+\text{cannot subtract}&\Longrightarrow\text{cannot add}. &(3)
+\end{align*}</cmath>
+Two solutions follow from here:
+
+===Solution 1.1 (Intuitive)===
+Combining <math>(2)</math> and <math>(3)</math> gives
+<cmath>\begin{align*}
+\text{happy}&\Longrightarrow\text{can add}, &(1) \\
+\lefteqn{\underbrace{\phantom{\text{purple}\Longrightarrow\text{cannot subtract}}}_{(2)}}\text{purple}&\Longrightarrow\overbrace{\text{cannot subtract}\Longrightarrow\text{cannot add}}^{(3)}. \hspace{2.5mm} &(*)
+\end{align*}</cmath>
+Clearly, the answer is <math>\boxed{\textbf{(D)}}.</math>
+
+
+===Solution 1.2 (Rigorous)===
+<i><b>Recall that every conditional statement <math>\boldsymbol{p\Longrightarrow q}</math> is always logically equivalent to its contrapositive <math>\boldsymbol{\lnot q\Longrightarrow\lnot p.}</math></b></i>
+
+Combining <math>(1),(2)</math> and <math>(3)</math> gives <cmath>\lefteqn{\underbrace{\phantom{\text{purple}\Longrightarrow\text{cannot subtract}}}_{(2)}}\text{purple}\Longrightarrow\overbrace{\text{cannot subtract}\Longrightarrow\lefteqn{\underbrace{\phantom{\text{cannot add}\Longrightarrow\text{not happy}}}_{\text{Contrapositive of }(1)}}\text{cannot add}}^{(3)}\Longrightarrow\text{not happy}. \hspace{15mm}(**)</cmath> Applying the hypothetical syllogism to <math>(**),</math> we conclude that <cmath>\text{purple}\Longrightarrow\text{not happy},</cmath> whose contrapositive is <cmath>\text{happy}\Longrightarrow\text{not purple}.</cmath> Therefore, the answer is <math>\boxed{\textbf{(D)}}.</math>
+
+<u><b>Remark</b></u>
+
+The conclusions in the other choices do not follow from <math>(**):</math>
+
+<math>\textbf{(A) }\text{purple}\Longrightarrow\text{can add}</math>
+
+<math>\textbf{(B) }\text{purple}\Longrightarrow\text{happy}</math>
+
+<math>\textbf{(C) }\text{can add}\Longrightarrow\text{purple}</math>
+
+<math>\textbf{(E) }\text{happy}\Longrightarrow\text{cannot subtract}</math>
+
+--- Solution 2 ---
+From Solution 1.1, we can also see this through the process of elimination. 
+Statement <math>A</math> is false because purple snakes cannot add. <math>B</math> is false as well  because since happy snakes can add and purple snakes can not add, purple snakes are not happy snakes. <math>E</math> is false using the same reasoning, purple snakes are not happy snakes so happy snakes can subtract since purple snakes cannot subtract. <math>C</math> is false since snakes that can add are happy, not purple. That leaves statement D. <math>\boxed{\textbf{(D)}}</math> is the only correct statement.
+
+--- Solution 3 ---
+We first convert each statement to "If X, then Y" form:
+
+* If a snake is happy, then it can add.
+
+* If a snake is purple, then it can't subtract.
+
+* If a snake can't subtract, then it can't add.
+
+Now, we simply check the truth value for each statement: 
+<ol style="margin-left: 1.5em;" type="A">
+  <li>Combining the last two propositions, we have
+* If a snake is purple, then it can't add. <p>
+Thus, <math>\textbf{(A)}</math> is never true.</li><p>
+  <li>From the last part, we found that
+* If a snake is purple, then it can't add. <p>
+Also, since the contrapositive of a proposition has the same truth value as the proposition itself, we know, from the first statement, that 
+* If a snake can't add, then it isn't happy. <p>
+Combining these two propositions, we find that 
+* If a snake is purple, then it isn't happy. Purple snakes are not happy.</li><p>
+Thus, <math>\textbf{(B)}</math> is never true.</li><p>
+  <li>From part <math>\textbf{(A)},</math> we found that "If a snake is purple, then it can't add." This implies its contrapositive, "If a snake can add, then it is not purple." is true, meaning <math>\textbf{(C)}</math> is NEVER true. [Thanks again to MRENTHUSIASM for pointing this out!]</li><p>
+  <li>From the first statement, we have 
+* If a snake is happy, then it can add.<p>
+From the contrapositive of the third statement, we have
+* If a snake can add, then it can subtract. <p>
+Then, from the contrapositive of the second statement, we have 
+* If a snake can subtract, then it is not purple. <p>
+Combining all of these yields 
+* If a snake is happy, then it is not purple.<p>
+Thus, <math>\textbf{(D)}</math> is always true.</li><p>
+  <li>From the first proposition, we have 
+* If a snake is happy, then it can add. <p>
+From the contrapositive of the third proposition, we have 
+* If a snake can add, then it can subtract. <p>
+Combining these two propositions gives 
+* If a snake is happy, then it can subtract. <p>
+Thus, <math>\textbf{(E)}</math> is never true.</li><p>
+</ol>
+Therefore, <math>\boxed{\textbf{(D)}}</math> is our answer.
+
+
+=== Problem 5 ===
+When a student multiplied the number
+
+Choices: {'A': '15', 'B': '30', 'C': '45', 'D': '60', 'E': '75</math>'}
+Answer: E
+
+--- Solution 1 ---
+We are given that <math>66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}}\Bigr)-0.5=66\Bigl(\underline{1}.\underline{a} \ \underline{b}\Bigr),</math> from which
+<cmath>\begin{align*}
+66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}}\Bigr)-66\Bigl(\underline{1}.\underline{a} \ \underline{b}\Bigr)&=0.5 \\
+66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}} - \underline{1}.\underline{a} \ \underline{b}\Bigr)&=0.5 \\
+66\Bigl(\underline{0}.\underline{0} \ \underline{0} \ \overline{\underline{a} \ \underline{b}}\Bigr)&=0.5 \\
+66\left(\frac{1}{100}\cdot\underline{0}.\overline{\underline{a} \ \underline{b}}\right)&=\frac12 \\
+\underline{0}.\overline{\underline{a} \ \underline{b}}&=\frac{25}{33} \\
+\underline{0}.\overline{\underline{a} \ \underline{b}}&=0.\overline{75} \\
+\underline{a} \ \underline{b}&=\boxed{\textbf{(E) }75}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+It is known that <math>\underline{0}.\overline{\underline{a} \ \underline{b}}=\frac{\underline{a} \ \underline{b}}{99}</math> and <math>\underline{0}.\underline{a} \ \underline{b}=\frac{\underline{a} \ \underline{b}}{100}.</math> 
+
+Let <math>x=\underline{a} \ \underline{b}.</math> We have <cmath>66\biggl(1+\frac{x}{99}\biggr)-66\biggl(1+\frac{x}{100}\biggr)=0.5.</cmath> Expanding and simplifying give <math>\frac{x}{150}=0.5,</math> so <math>x=\boxed{\textbf{(E) }75}.</math>
+
+--- Solution 3 ---
+We have <cmath>66 \cdot \left(1 + \frac{10a+b}{100}\right) + \frac{1}{2} = 66 \cdot \left(1+ \frac{10a+b}{99}\right).</cmath>
+Expanding both sides, we have <cmath>66 + \frac{33(10a+b)}{50} + \frac{1}{2} = 66 + \frac{2(10a+b)}{3}.</cmath>
+Subtracting <math>66</math> from both sides, we have <cmath>\frac{33(10a+b)}{50} + \frac{1}{2} = \frac{2(10a+b)}{3}.</cmath>
+Multiplying both sides by <math>50 \cdot 3 = 150,</math> we have <cmath>99(10a+b) + 75 = 100(10a+b).</cmath>
+Thus, the answer is <math>10a+b = \boxed{\textbf{(E) }75}.</math>
+
+By letting <math>x=\underline{a} \ \underline{b}=10a+b,</math> this solution is similar to Solution 2. In this solution, we solve for <math>10a+b</math> as a whole.
+
+-mathboy282 (Solution)
+
+--- Solution 4 ---
+Let <math>\underline{a} \ \underline{b}</math> represent the two-digit number <math>ab</math>, not the product of the digits <math>a</math> and <math>b</math>. We can construct fractions for the values <math>1.\underline{a} \ \underline{b}</math>, and <math>1.\overline{\underline{a} \ \underline{b}}</math>, which are <math>\frac{1\underline{a} \ \underline{b}}{100}</math> and <math>\frac{1\underline{a} \ \underline{b}}{99}</math>  respectively. Multiplying by <math>66</math> on both sides and adding <math>1/2</math> to <math>\frac{1\underline{a} \ \underline{b}}{100}</math> and simplifying, we get this: <cmath>\frac{33 * \underline{a}\underline{b} + 25}{50} = \frac{2\underline{a}\underline{b}}{3}.</cmath>
+
+Looking at the answer choices, we notice that all of them are divisible by <math>3</math>. This means that since the right-hand side will result in an integer, the left-hand side needs to as well. This means that the numerator of the left-hand side fraction has to be divisible by <math>50</math>. So, we get this expression:
+
+<math>33 * \underline{a}\underline{b}\ + 25 \equiv 0\pmod{50}. </math>
+
+<math>33 * \underline{a}\underline{b}\ \equiv -25\pmod{50}. </math>
+
+<math>33 * \underline{a}\underline{b}\ \equiv 25\pmod{50}. </math>
+
+This means that the product of <math>33</math> and <math>\underline{a}\underline{b}</math> must have a remainder of <math>25</math> when divided by <math>50</math>. Since it must have a remainder of <math>25</math>, the product should have a units digit of <math>5</math>, which eliminates <math>\textbf{(B) }</math> and <math>\textbf{(D) }</math>. Multiplying <math>33</math> to the rest of the answer choices, the only one which fills this requirement is <math>75</math>, which is <math>\boxed{\textbf{(E) }75}.</math>
+
+
+=== Problem 6 ===
+A deck of cards has only red cards and black cards. The probability of a randomly chosen card being red is
+
+Choices: {'A': '6', 'B': '9', 'C': '12', 'D': '15', 'E': '18</math>'}
+Answer: C
+
+--- Solution 1 ---
+If the probability of choosing a red card is <imath>\frac{1}{3}</imath>, the red and black cards are in ratio <imath>1:2</imath>. This means at the beginning there are <imath>x</imath> red cards and <imath>2x</imath> black cards.
+
+After <imath>4</imath> black cards are added, there are <imath>2x+4</imath> black cards. This time, the probability of choosing a red card is <imath>\frac{1}{4}</imath> so the ratio of red to black cards is <imath>1:3</imath>. This means in the new deck the number of black cards is also <imath>3x</imath> for the same <imath>x</imath> red cards.
+
+So, <imath>3x = 2x + 4</imath> and <imath>x=4</imath> meaning there are <imath>4</imath> red cards in the deck at the start and <imath>2(4) = 8</imath> black cards. 
+
+So, the answer is <imath>8+4 = 12 = \boxed{\textbf{(C) }12}</imath>.
+
+--abhinavg0627
+
+--- Solution 2 ---
+In terms of the number of cards, the original deck is <imath>3</imath> times the red cards, and the final deck is <imath>4</imath> times the red cards. So, the final deck is <imath>\frac43</imath> times the original deck. We are given that adding <imath>4</imath> cards to the original deck is the same as increasing the original deck by <imath>\frac13</imath> of itself. Since <imath>4</imath> cards are equal to <imath>\frac13</imath> of the original deck, the original deck has <imath>4\cdot3=\boxed{\textbf{(C) }12}</imath> cards.
+
+--- Solution 3 ---
+Suppose there were <imath>x</imath> cards in the deck originally. Now, the deck has <imath>x+4</imath> cards, which must be a multiple of <imath>4.</imath>
+
+Only <imath>12+4=16</imath> is a multiple of <imath>4,</imath> so the answer is <imath>x=\boxed{\textbf{(C) }12}.</imath>
+
+--- Solution 4 ---
+By looking at the ratio of black cards to the total number of cards, we can say that there are <imath>2x</imath> black cards and <imath>3x</imath> cards in total. We can write the probability of getting a black card as <imath>\frac{2x}{3x}</imath>. But when we increase the number of black cards by 4 the probability becomes <imath>\frac{3}{4}</imath>. So the equation is:
+<imath>\frac{2x+4}{3x+4}=\frac{3}{4}</imath>,
+<imath>8x+16=9x+12</imath>,
+<imath>x=4</imath>.
+The answer is <imath>3x=\boxed{\textbf{(C) }12}.</imath>
+
+--- Solution 5 ---
+This could in a way be considered a more efficient/alternate version of Solution 4. Since the problem mentions that there is initially a <imath>\frac{1}{3}</imath> chance of getting a red card, we can represent the number of red cards as <imath>\frac{x}{3}</imath>, where <imath>x</imath> is the number of cards in the deck originally. Since the modification to the deck makes no changes to the number of red cards, you can see that if there is a <imath>\frac{1}{4}</imath> probability of having a red card in a deck of <imath>x+4</imath> cards, <imath>\frac{x}{3} = \frac{x+4}{4}</imath>. Solving this for <imath>x</imath> gives <imath>x=\boxed{\textbf{(C) }12}.</imath>
+
+--- Solution 6 ---
+Notice that in a deck with 1 red card and 2 black cards, the probability of a red ball is <imath>\frac{1}{3}</imath>
+
+Adding a single black card would make the chance <imath>\frac{1}{4}</imath>
+
+If we scale this deck by 4, making so that there are 4 red cards and 8 black cards, the original chance is still <imath>\frac{1}{3}</imath>
+
+Adding 4 black cards will make the chance <imath>\frac{1}{4}</imath>
+
+The answer is <imath>\boxed{\textbf{(C) }12}</imath>.
+
+
+=== Problem 7 ===
+What is the least possible value of
+
+Choices: {'A': '0', 'B': '\\frac14', 'C': '\\frac12', 'D': '1', 'E': '2</math>'}
+Answer: D
+
+--- Solution 1 ---
+Expanding, we get that the expression is <math>x^2+2xy+y^2+x^2y^2-2xy+1</math> or <math>x^2+y^2+x^2y^2+1</math>. By the Trivial Inequality (all squares are nonnegative) the minimum value for this is <math>\boxed{\textbf{(D)}
+
+--- Solution 2 ---
+We expand the original expression, then factor the result by grouping:
+<cmath>\begin{align*}
+(xy-1)^2+(x+y)^2&=\left(x^2y^2-2xy+1\right)+\left(x^2+2xy+y^2\right) \\
+&=x^2y^2+x^2+y^2+1 \\
+&=x^2\left(y^2+1\right)+\left(y^2+1\right) \\
+&=\left(x^2+1\right)\left(y^2+1\right).
+\end{align*}</cmath>
+Clearly, both factors are positive. By the Trivial Inequality, we have <cmath>\left(x^2+1\right)\left(y^2+1\right)\geq\left(0+1\right)\left(0+1\right)=\boxed{\textbf{(D)} 
+Note that the least possible value of <math>(xy-1)^2+(x+y)^2</math> occurs at <math>x=y=0.</math>
+
+--- Solution 3 ---
+Like solution 1, expand and simplify the original equation to <imath>x^2+y^2+x^2y^2+1</imath> and let <imath>f(x, y) = x^2+y^2+x^2y^2+1</imath>. To find local extrema, find where <imath>\nabla f(x, y) = \boldsymbol{0}</imath>. First, find the first partial derivative with respect to x and y and find where they are <imath>0</imath>:
+<cmath> \frac{\partial f}{\partial x} = 2x + 2xy^{2} = 2x(1 + y^{2}) = 0 \implies x = 0</cmath>
+<cmath> \frac{\partial f}{\partial y} = 2y + 2yx^{2} = 2y(1 + x^{2}) = 0 \implies y = 0</cmath>
+Thus, there is a local extremum at <imath>(0, 0)</imath>. Because this is the only extremum, we can assume that this is a minimum because the problem asks for the minimum (though this can also be proven using the partial second derivative test) and the global minimum since it's the only minimum, meaning <imath>f(0, 0)</imath> is the minimum of <imath>f(x, y)</imath>. Plugging <imath>(0, 0)</imath> into <imath>f(x, y)</imath>, we find 1 <imath>\implies \boxed{\textbf{(D)} 
+
+Remark:
+Honestly, this isn't even that overkill. I did it this way, and it was not very bashy.
+
+
+=== Problem 8 ===
+A sequence of numbers is defined by
+
+Choices: {'A': '(O,E,O)', 'B': '(E,E,O)', 'C': '(E,O,E)', 'D': '(O,O,E)', 'E': '(O,O,O)</math>'}
+Answer: C
+
+--- Solution 1 ---
+We construct the following table:
+<cmath>\begin{array}{c||c|c|c|c|c|c|c|c|c|c|c}   
+&&&&&&&&&&& \\ [-2.5ex]
+\textbf{Term} &\boldsymbol{D_0}&\boldsymbol{D_1}&\boldsymbol{D_2}&\boldsymbol{D_3}&\boldsymbol{D_4}&\boldsymbol{D_5}&\boldsymbol{D_6}&\boldsymbol{D_7}&\boldsymbol{D_8}&\boldsymbol{D_9}&\boldsymbol{\cdots} \\ 
+\hline \hline
+&&&&&&&&&&& \\ [-2.25ex]
+\textbf{Value} & 0&0&1&1&1&2&3&4&6&9&\cdots \\ \hline  
+&&&&&&&&&&& \\ [-2.25ex]
+\textbf{Parity} & E&E&O&O&O&E&O&E&E&O&\cdots
+\end{array}</cmath>
+Note that <math>(D_7,D_8,D_9)</math> and <math>(D_0,D_1,D_2)</math> have the same parities, so the parity is periodic with period <math>7.</math> Since the remainders of <math>(2021\div7,2022\div7,2023\div7)</math> are <math>(5,6,7),</math> we conclude that <math>(D_{2021},D_{2022},D_{2023})</math> and <math>(D_5,D_6,D_7)</math> have the same parities, namely <math>\boxed{\textbf{(C) }(E,O,E)}.</math>
+
+
+=== Problem 9 ===
+Which of the following is equivalent to<cmath>(2+3)(2^2+3^2)(2^4+3^4)(2^8+3^8)(2^{16}+3^{16})(2^{32}+3^{32})(2^{64}+3^{64})?</cmath>
+
+Choices: {'A': '3^{127}+2^{127}', 'B': '3^{127}+2^{127}+2\\cdot 3^{63}+3\\cdot 2^{63}', 'C': '3^{128}-2^{128}', 'D': '3^{128}+2^{128}', 'E': '5^{127}</math>'}
+Answer: C
+
+--- Solution 1 ---
+By multiplying the entire equation by <math>3-2=1</math>, all the terms will simplify by difference of squares, and the final answer is <math>\boxed{\textbf{(C)} 
+Additionally, we could also multiply the entire equation (we can let it be equal to <math>x</math>) by <math>2-3=-1</math>. The terms again simplify by difference of squares. This time, we get <math>-x=2^{128}-3^{128} \Rightarrow x=3^{128}-2^{128}</math>. Both solutions yield the same answer.
+
+Note: Also notice when you multiply it by the first pair <math>(2+3)</math>, it immediately factors. Notice how it "domino" effects to the others, ultimately collapsing into <math>\boxed{\textbf{(C)}
+
+--- Solution 2 ---
+If you weren't able to come up with the <math>(3 - 2)</math> insight, then you could just notice that the answer is divisible by 
+<math>2 + 3 = 5</math>, and <math>2^2 + 3^2 = 13</math>. We can then use Fermat's Little Theorem for <math>p = 5, 13</math> on the answer choices to determine which of the answer choices are divisible by both <math>5</math> and <math>13</math>. This is <math>\boxed{\textbf{(C)} 
+-mewto
+
+--- Solution 3 ---
+Notice that simplifying the first term gives 5, which means that the units digit of the entire expression must be 5. Also, note how the numbers appear to form multiples of 2, so therefore our answer should contain a power of 2. The only one that satisfies the above properties is <math>\boxed{\textbf{(C)}
+
+--- Solution 4 ---
+After expanding the first few terms, the result after each term appears to be <math>2^{2^n-1} + 2^{2^n-2}\cdot{3^1} + 2^{2^n-3}\cdot{3^2} + \cdots + 2^1\cdot{3^{2^n-2}} + 3^{2^n-1}</math> where <math>n</math> is the number of terms expanded. We can prove this using mathematical induction. The base step is trivial. When expanding another term, all of the previous terms multiplied by <math>2^{2^{n-1}}</math> would give <math>2^{2^n-1} + 2^{2^n-2}\cdot{3^1} + 2^{2^n-3}\cdot{3^2} + \cdots + 2^{2^{n-1}+1}\cdot{3^{2^{n-1}-1}} + 2^{2^{n-1}}\cdot{3^{2^{n-1}}}</math>, and all the previous terms multiplied by <math>3^{2^{n-1}}</math> would give <math>3^{2^n-1} + 3^{2^n-2}\cdot{2^1} + 3^{2^n-3}\cdot{2^2} + \cdots + 3^{2^{n-1}+1}\cdot{2^{2^{n-1}-1}} + 3^{2^{n-1}}\cdot{2^{2^{n-1}}}</math>. Their sum is equal to <math>2^{2^n-1} + 2^{2^n-2}\cdot{3^1} + 2^{2^n-3}\cdot{3^2} + \cdots + 2^1\cdot{3^{2^n-2}} + 3^{2^n-1}</math>, so the proof is complete. Since <math>\frac{3^{2^n}-2^{2^n}}{3-2}</math> is equal to <math>2^{2^n-1} + 2^{2^n-2}\cdot{3^1} + 2^{2^n-3}\cdot{3^2} + \cdots + 2^1\cdot{3^{2^n-2}} + 3^{2^n-1}</math>, the answer is <math>\frac{3^{2^7}-2^{2^7}}{3-2}=\boxed{\textbf{(C)}
+
+--- Solution 5 ---
+We can compute some of the first few partial products, and notice that <math>\prod_{k = 0}^{2^n} (2^{2^n}+3^{2^n}) = 3^{2^{n+1}} - 2^{2^{n+1}}</math>. As we don't have to prove this, we get the product is <math>3^{2^7} - 2^{2^7} = 3^{128} - 2^{128}</math>, and click <math>\boxed{\textbf{(C)}
+
+--- Solution 6 ---
+We notice that the first term is equal to <math>3^2 - 2^2</math>. If we multiply this by the second term, then we will get <math>(3^2 - 2^2)(3^2 + 2^2)</math>, and we can simplify by using difference of squares to obtain <math>3^4 - 2^4</math>. If we multiply this by the third term and simplify using difference of squares again, we get <math>3^8 - 2^8</math>. We can continue down the line until we multiply by the last term, <math>3^{64} + 2^{64}</math>, and get <math>\boxed{\textbf{(C)}
+
+--- Solution 7 ---
+Let’s generalize to <math>x=3</math> and <math>y=2</math>. Then we get:
+<cmath>(y+x)(y^2+x^2)(y^4+x^4)(y^8+x^8)(y^{16}+x^{16})(y^{32}+x^{32})(y^{64}+x^{64}).</cmath>
+We see that the first term is <math>y+x</math>, and the next is <math>y^2+x^2</math>. We realize that if we multiply the first term by <math>y-x</math>, the result by difference of squares will be <math>y^2-x^2</math>: we can proceed to use difference of squares on that. In other words, the equation has the domino effect, and all we need to get started is to multiply the whole equation by <math>y-x</math> (keeping in mind to divide <math>y-x</math> at the end.)
+
+Now we get:
+<cmath>\begin{align*}
+&\hspace{5.125mm}(y-x)(y+x)(y^2+x^2)(y^4+x^4)(y^8+x^8)(y^{16}+x^{16})(y^{32}+x^{32})(y^{64}+x^{64}) \\
+&=(y^2-x^2)(y^2+x^2)(y^4+x^4)(y^8+x^8)(y^{16}+x^{16})(y^{32}+x^{32})(y^{64}+x^{64}) \\
+&=(y^4-x^4)(y^4+x^4)(y^8+x^8)(y^{16}+x^{16})(y^{32}+x^{32})(y^{64}+x^{64}) \\
+& \ \vdots \\
+&=(y^{64}-x^{64})(y^{64}+x^{64}) \\
+&=y^{128}-x^{128}.
+\end{align*}</cmath>
+Now we can plug in <math>y = 2</math> and <math>x = 3:</math> <cmath>(2-3)(2+3)(2^2+3^2)(2^4+3^4)(2^8+3^8)(2^{16}+3^{16})(2^{32}+3^{32})(2^{64}+3^{64}) = 2^{128}-3^{128}.</cmath>
+However, we must not forget to divide by <math>2-3 = -1</math> at the end! Dividing, we get the answer of 
+<cmath>3^{128}-2^{128} = \boxed{\textbf{(C)}
+
+--- Solution 8 ---
+More generally, we have <cmath>\bigl(a^n-b^n\bigr)\bigl(a^n+b^n\bigr)=a^{2n}-b^{2n}\hspace{20mm}(\bigstar)</cmath> by the difference of squares.
+
+Multiplying the original expression by <math>1=3-2</math> and then applying <math>(\bigstar)</math> repeatedly, we get
+<cmath>\begin{align*}
+&\hspace{5.125mm}\bigl(2+3\bigr)\bigl(2^2+3^2\bigr)\bigl(2^4+3^4\bigr)\bigl(2^8+3^8\bigr)\bigl(2^{16}+3^{16}\bigr)\bigl(2^{32}+3^{32}\bigr)\bigl(2^{64}+3^{64}\bigr) \\
+&=\underbrace{\bigl(\hspace{3.25mm}1\hspace{3.25mm}\bigr)}_{3-2}\underbrace{\bigl(2+3\bigr)\bigl(2^2+3^2\bigr)\bigl(2^4+3^4\bigr)\bigl(2^8+3^8\bigr)\bigl(2^{16}+3^{16}\bigr)\bigl(2^{32}+3^{32}\bigr)\bigl(2^{64}+3^{64}\bigr)}_{\text{Apply the }\textbf{Commutative Property of Addition}\text{ to all factors.}} \\
+&=\underbrace{\bigl(3-2\bigr)\bigl(3+2\bigr)}_{\substack{\text{Apply }(\bigstar) \\ \text{to get }3^2-2^2.}}\bigl(3^2+2^2\bigr)\bigl(3^4+2^4\bigr)\bigl(3^8+2^8\bigr)\bigl(3^{16}+2^{16}\bigr)\bigl(3^{32}+2^{32}\bigr)\bigl(3^{64}+2^{64}\bigr) \\
+&=\underbrace{\bigl(3^2-2^2\bigr)\bigl(3^2+2^2\bigr)}_{\substack{\text{Apply }(\bigstar) \\ \text{to get }3^4-2^4.}}\bigl(3^4+2^4\bigr)\bigl(3^8+2^8\bigr)\bigl(3^{16}+2^{16}\bigr)\bigl(3^{32}+2^{32}\bigr)\bigl(3^{64}+2^{64}\bigr) \\
+&=\underbrace{\bigl(3^4-2^4\bigr)\bigl(3^4+2^4\bigr)}_{\substack{\text{Apply }(\bigstar) \\ \text{to get }3^8-2^8.}}\bigl(3^8+2^8\bigr)\bigl(3^{16}+2^{16}\bigr)\bigl(3^{32}+2^{32}\bigr)\bigl(3^{64}+2^{64}\bigr) \\
+& \ \vdots \\
+&=\boxed{\textbf{(C)} 
+\end{align*}</cmath>
+
+--- Solution 9 ---
+One would probably assume that the factorization that this is equal to can be generalized for the pattern <cmath>(2+3)(2^2 + 3^2)(2^4+3^4)\cdots(2^n + 3^n).</cmath>
+So we can take a smaller portion and apply the answer choices there. We get
+<cmath>(2+3)(2^2 + 3^2) = (5)(13) = 65.</cmath>
+We notice that the patterns have a relationship where its either the sum of the powers or the next power not included that is incorporated. So we change the numbers from <math>127</math> to <math>3</math>, <math>128</math> to <math>4</math>, and <math>63</math> to <math>1</math> (since <math>63</math> is the sum of the powers, divided by <math>2</math>, rounded down). Checking the values of the other patterns, the only one that gives <math>65</math> is <math>3^4 - 2^4</math>, which means the answer is <math>\boxed{\textbf{(C)}
+
+
+=== Problem 10 ===
+Two right circular cones with vertices facing down as shown in the figure below contain the same amount of liquid. The radii of the tops of the liquid surfaces are
+
+Choices: {'A': '1:1', 'B': '47:43', 'C': '2:1', 'D': '40:13', 'E': '4:1</math>'}
+Answer: E
+
+--- Solution 1 ---
+<b><u>Initial Scenario</u></b>
+
+Let the heights of the narrow cone and the wide cone be <math>h_1</math> and <math>h_2,</math> respectively. We have the following table:
+<cmath>\begin{array}{cccccc}
+& \textbf{Base Radius} & \textbf{Height} & & \textbf{Volume} & \\ [2ex]
+\textbf{Narrow Cone} & 3 & h_1 & & \frac13\pi(3)^2h_1=3\pi h_1 & \\ [2ex]
+\textbf{Wide Cone} & 6 & h_2 & & \hspace{2mm}\frac13\pi(6)^2h_2=12\pi h_2 &
+\end{array}</cmath>
+Equating the volumes gives <math>3\pi h_1=12\pi h_2,</math> which simplifies to <math>\frac{h_1}{h_2}=4.</math> 
+
+Furthermore, by similar triangles:
+
+* For the narrow cone, the ratio of the base radius to the height is <math>\frac{3}{h_1},</math> which always remains constant.
+
+* For the wide cone, the ratio of the base radius to the height is <math>\frac{6}{h_2},</math> which always remains constant.
+
+Two solutions follow from here:
+
+===Solution 1.1 (Properties of Fractions)===
+<b><u>Final Scenario</u></b>
+
+For the narrow cone and the wide cone, let their base radii be <math>3x</math> and <math>6y</math> (for some <math>x,y>1</math>), respectively. By the similar triangles discussed above, their heights must be <math>h_1x</math> and <math>h_2y,</math> respectively. We have the following table:
+<cmath>\begin{array}{cccccc}
+& \textbf{Base Radius} & \textbf{Height} & & \textbf{Volume} & \\ [2ex]
+\textbf{Narrow Cone} & 3x & h_1x & & \frac13\pi(3x)^2(h_1x)=3\pi h_1 x^3 & \\ [2ex]
+\textbf{Wide Cone} & 6y & h_2y & & \hspace{2.0625mm}\frac13\pi(6y)^2(h_2y)=12\pi h_2 y^3 &
+\end{array}</cmath>
+Recall that <math>\frac{h_1}{h_2}=4.</math> Equating the volumes gives <math>3\pi h_1 x^3=12\pi h_2 y^3,</math> which simplifies to <math>x^3=y^3,</math> or <math>x=y.</math>
+
+Finally, the requested ratio is <cmath>\frac{h_1 x - h_1}{h_2 y - h_2}=\frac{h_1 (x-1)}{h_2 (y-1)}=\frac{h_1}{h_2}=\boxed{\textbf{(E) }4:1}.</cmath>
+<u><b>Remarks</b></u>
+<ol style="margin-left: 1.5em;">
+  <li>This solution uses the following property of fractions: <p> 
+For unequal positive numbers <math>a,b,c</math> and <math>d,</math> if <math>\frac ab = \frac cd = k,</math> then <math>\frac{a\pm c}{b\pm d}=\frac{bk\pm dk}{b\pm d}=\frac{(b\pm d)k}{b\pm d}=k.</math></li><p>
+  <li>This solution shows that, regardless of the shape or the volume of the solid dropped into each cone, the requested ratio stays the same as long as the solid sinks to the bottom and is completely submerged without spilling any liquid.</li><p>
+</ol>
+
+===Solution 1.2 (Bash)===
+<b><u>Final Scenario</u></b>
+
+For the narrow cone and the wide cone, let their base radii be <math>r_1</math> and <math>r_2,</math> respectively; let their rises of the liquid levels be <math>\Delta h_1</math> and <math>\Delta h_2,</math> respectively. We have the following table:
+<cmath>\begin{array}{cccccc}
+& \textbf{Base Radius} & \textbf{Height} & & \textbf{Volume} & \\ [2ex] 
+\textbf{Narrow Cone} & r_1 & h_1+\Delta h_1 & & \frac13\pi r_1^2(h_1+\Delta h_1) & \\ [2ex] 
+\textbf{Wide Cone} & r_2 & h_2+\Delta h_2 & & \frac13\pi r_2^2(h_2+\Delta h_2) &
+\end{array}</cmath>
+By the similar triangles discussed above, we get
+<cmath>\begin{align*}
+\frac{3}{h_1}&=\frac{r_1}{h_1+\Delta h_1} &\implies \quad r_1&=\frac{3}{h_1}(h_1+\Delta h_1), & \hspace{10mm} (1) \\
+\frac{6}{h_2}&=\frac{r_2}{h_2+\Delta h_2} &\implies \quad r_2&=\frac{6}{h_2}(h_2+\Delta h_2). & (2)
+\end{align*}</cmath>
+The volume of the marble dropped into each cone is <math>\frac43\pi(1)^3=\frac43\pi.</math>
+
+Now, we set up an equation for the volume of the narrow cone, then express <math>\Delta h_1</math> in terms of <math>h_1:</math>
+<cmath>\begin{align*}
+\frac13\pi r_1^2(h_1+\Delta h_1) &= 3\pi h_1+\frac43\pi \\
+\frac13 r_1^2(h_1+\Delta h_1) &= 3h_1+\frac43 \\
+\frac13\left(\frac{3}{h_1}(h_1+\Delta h_1)\right)^2(h_1+\Delta h_1) &= 3h_1+\frac43 &&\text{by }(1) \\
+\frac{3}{h_1^2}(h_1+\Delta h_1)^3 &= 3h_1+\frac43 \\
+(h_1+\Delta h_1)^3 &= h_1^3 + \frac{4h_1^2}{9} \\
+\Delta h_1 &= \sqrt[3]{h_1^3 + \frac{4h_1^2}{9}}-h_1.
+\end{align*}</cmath>
+Next, we set up an equation for the volume of the wide cone, then express <math>\Delta h_2</math> in terms of <math>h_2:</math>
+<cmath>\frac13\pi r_2^2(h_2+\Delta h_2) = 12\pi h_2+\frac43\pi.</cmath>
+Using a similar process from above, we get <cmath>\Delta h_2 = \sqrt[3]{h_2^3+\frac{h_2^2}{9}}-h_2.</cmath>
+Recall that <math>\frac{h_1}{h_2}=4.</math> Therefore, the requested ratio is 
+<cmath>\begin{align*}
+\frac{\Delta h_1}{\Delta h_2}&=\frac{\sqrt[3]{h_1^3 + \frac{4h_1^2}{9}}-h_1}{\sqrt[3]{h_2^3+\frac{h_2^2}{9}}-h_2} \\
+&=\frac{\sqrt[3]{(4h_2)^3 + \frac{4(4h_2)^2}{9}}-4h_2}{\sqrt[3]{h_2^3+\frac{h_2^2}{9}}-h_2} \\
+&=\frac{\sqrt[3]{4^3\left(h_2^3 + \frac{h_2^2}{9}\right)}-4h_2}{\sqrt[3]{h_2^3+\frac{h_2^2}{9}}-h_2} \\
+&=\frac{4\sqrt[3]{h_2^3+\frac{h_2^2}{9}}-4h_2}{\sqrt[3]{h_2^3+\frac{h_2^2}{9}}-h_2} \\
+&=\boxed{\textbf{(E) }4:1}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+The heights of the cones are not given, so suppose the heights are very large (i.e. tending towards infinity) in order to approximate the cones as cylinders with base radii <math>3</math> and <math>6</math> and infinitely large height. Then the base area of the wide cylinder is <math>4</math> times that of the narrow cylinder. Since we are dropping a ball of the same volume into each cylinder, the water level in the narrow cone/cylinder should rise <math>\boxed{\textbf{(E) } 4}</math> times as much.
+
+--- Solution 3 ---
+The volume of the shorter cone can be expressed as <math>V_1=3\pi h_1</math>, and the volume of the larger cone can be expressed as <math>V_2=12\pi h_2</math>. We also know that the volume changes by <math>\frac{4\pi}{3}</math>, because the volume of the <math>1</math>cm sphere is <math>\frac{4\pi}{3}</math>.
+
+Taking the derivative of the equations, we get: <math>dV_1=3\pi(dh_1)=\frac{4\pi}{3}</math> and <math>dV_2=12\pi(dh_2)=\frac{4\pi}{3}</math>.
+
+Therefore, <math>dh_1=\frac{4\pi}{3}\cdot\frac{1}{3\pi}=\frac{4}{9}</math> and <math>dh_2=\frac{4\pi}{3}\cdot\frac{1}{12\pi}=\frac{1}{9}</math>. The ratio is <math>\frac{4}{9}:\frac{1}{9}</math> giving us the answer of <math>\boxed{\textbf{(E) }4:1}</math>.
+
+--- Solution 4 ---
+Note that as long as the volumes are equal, the ratio of the heights of Cone 2 to Cone 1 is always <math>1:4</math>. We can prove this as follows:
+
+If we fix Cone 2 to have a certain height, then the volume of the cone is <math>\frac{1}{3}\cdot36\pi{h_1}=12\pi{h_1}</math>. Now if Cone 1 has the same volume, its height would be <math>\frac{12\pi{h_1}}{\frac{1}{3}\cdot9\pi}=\frac{12\pi{h_1}}{3\pi}=4h_1</math>.
+
+So the answer is <math>\boxed{\textbf{(E) } 4 : 1}</math>
+
+Minor edits by: [[User:T3chn0b14d3|T3CHN0B14D3]]
+
+==Remark==
+You can cheese this by letting <math>r_1</math> and <math>r_2</math> be some small integers. I recommend <math>4</math> and <math>1.</math>
+
+
+=== Problem 11 ===
+A laser is placed at the point
+
+Choices: {'A': '2\\sqrt{10}', 'B': '5\\sqrt2', 'C': '10\\sqrt2', 'D': '15\\sqrt2', 'E': '10\\sqrt5</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <math>A=(3,5)</math> and <math>D=(7,5).</math> Suppose that the beam hits and bounces off the <math>y</math>-axis at <math>B,</math> then hits and bounces off the <math>x</math>-axis at <math>C.</math>
+
+When the beam hits and bounces off a coordinate axis, the angle of incidence and the angle of reflection are congruent. Therefore, we straighten up the path of the beam by reflections:
+<ol style="margin-left: 1.5em;">
+  <li>We reflect <math>\overline{BC}</math> about the <math>y</math>-axis to get <math>\overline{BC'}.</math></li><p>
+  <li>We reflect <math>\overline{CD}</math> about the <math>x</math>-axis to get <math>\overline{CD'}</math> with <math>D'=(7,-5),</math> then reflect <math>\overline{CD'}</math> about the <math>y</math>-axis to get <math>\overline{C'D''}</math> with <math>D''=(-7,-5).</math></li><p>
+</ol>
+We obtain the following diagram:
+<asy>
+/* Made by MRENTHUSIASM */
+size(225); 
+
+int xMin = -9;
+int xMax = 9;
+int yMin = -7;
+int yMax = 7;
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+
+pair A = (3,5);
+pair B = (0,2);
+pair C = (2,0);
+pair D = (7,5);
+pair E = (-2,0);
+pair F = (7,-5);
+pair G = (-7,-5);
+
+draw(A--B--C--D,red);
+draw(B--E,heavygreen+dashed);
+draw(C--F,heavygreen+dashed);
+draw(E--G,heavygreen+dashed);
+dot("$A(3,5)$",A,(0,2),linewidth(3.5));
+dot("$B$",B,(-2,0),linewidth(3.5));
+dot("$C$",C,(0,-2),linewidth(3.5));
+dot("$D(7,5)$",D,(0,2),linewidth(3.5));
+dot("$C'$",E,(0,-2),linewidth(3.5));
+dot("$D'(7,-5)$",F,(0,-2),linewidth(3.5));
+dot("$D''(-7,-5)$",G,(0,-2),linewidth(3.5));
+</asy>
+The total distance that the beam will travel is 
+<cmath>\begin{align*}
+AB+BC+CD&=AB+BC+CD' \\
+&=AB+BC'+C'D'' \\
+&=AD'' \\
+&=\sqrt{((3-(-7))^2+(5-(-5))^2} \\
+&=\boxed{\textbf{(C) }10\sqrt2}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Define points <math>A,B,C,</math> and <math>D</math> as Solution 1 does. Moreover, let <math>E</math> be a point on <math>\overline{CD}</math> such that <math>\overline{BE}</math> is perpendicular to the <math>y</math>-axis, and <math>F</math> be a point on <math>\overline{BE}</math> such that <math>\overline{CF}</math> is perpendicular to the <math>x</math>-axis, as shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+size(200); 
+
+int xMin = -3;
+int xMax = 9;
+int yMin = -3;
+int yMax = 7;
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+
+pair A = (3,5);
+pair B = (0,2);
+pair C = (2,0);
+pair D = (7,5);
+pair E = (4,2);
+pair F = (2,2);
+
+draw(A--B--C--D,red);
+draw(A--D^^B--E^^C--F,heavygreen+dashed);
+dot("$A(3,5)$",A,(0,2),linewidth(3.5));
+dot("$B$",B,(-2,0),linewidth(3.5));
+dot("$C$",C,(0,-2),linewidth(3.5));
+dot("$D(7,5)$",D,(0,2),linewidth(3.5));
+dot("$E$",E,(2,0),linewidth(3.5));
+dot("$F$",F,(0,1.5),linewidth(3.5));
+</asy>
+When the beam hits and bounces off a coordinate axis, the angle of incidence and the angle of reflection are congruent, from which <math>\angle ABF=\angle CBF</math> and <math>\angle BCF=\angle ECF.</math> We conclude that <math>\triangle BCF\cong\triangle ECF</math> by ASA, so <math>\angle CBF=\angle CEF.</math> It follows that <math>\angle ABF=\angle CEF</math> by transitive, so <math>\overline{AB}\parallel\overline{CD}</math> by the Converse of the Alternate Interior Angles Theorem.
+
+Note that <math>\overline{AD}\parallel\overline{BE}.</math> Since the opposite sides are parallel, quadrilateral <math>ABED</math> is a parallelogram. From <math>\triangle BCF\cong\triangle ECF,</math> we get <math>BF=EF=2,</math> so <math>C=(2,0).</math>
+
+Let <math>B=(0,b).</math> We equate the slopes of <math>\overline{AB}</math> and <math>\overline{DC}:</math> <cmath>\frac{5-b}{3-0}=\frac{5-0}{7-2},</cmath> from which <math>b=2,</math> or <math>B=(0,2).</math>
+
+By the Distance Formula, we have <math>AB=3\sqrt2,BC=2\sqrt2,</math> and <math>CD=5\sqrt2.</math> The total distance that the beam will travel is <cmath>AB+BC+CD=\boxed{\textbf{(C) }10\sqrt2}.</cmath>
+
+<u><b>Remark</b></u>
+
+When a straight line hits and bounces off a coordinate axis at point <math>P,</math> the ray entering <math>P</math> and the ray leaving <math>P</math> always have negative slopes. In this problem, <math>\overline{AB}</math> and <math>\overline{BC}</math> have negative slopes; <math>\overline{BC}</math> and <math>\overline{CD}</math> have negative slopes. So, <math>\overline{AB}</math> and <math>\overline{CD}</math> have the same slope, or <math>\overline{AB}\parallel\overline{CD}.</math>
+
+--- Solution 3 ---
+Define points <math>A,B,C,</math> and <math>D</math> as Solution 1 does.
+
+Since choices <math>\textbf{(B)}, \textbf{(C)},</math> and <math>\textbf{(D)}</math> all involve <math>\sqrt2,</math> we suspect that one of them is the correct answer. We take a guess in faith that <math>\overline{AB},\overline{BC},</math> and <math>\overline{CD}</math> all form <math>45^\circ</math> angles with the coordinate axes, from which <math>B=(0,2)</math> and <math>C=(2,0).</math> The given condition <math>D=(7,5)</math> verifies our guess, as shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+size(200); 
+
+int xMin = -3;
+int xMax = 9;
+int yMin = -3;
+int yMax = 7;
+
+//Draws the horizontal gridlines
+void horizontalLines()
+{
+  for (int i = yMin+1; i < yMax; ++i)
+  {
+    draw((xMin,i)--(xMax,i), mediumgray+linewidth(0.4));
+  }
+}
+
+//Draws the vertical gridlines
+void verticalLines()
+{
+  for (int i = xMin+1; i < xMax; ++i)
+  {
+    draw((i,yMin)--(i,yMax), mediumgray+linewidth(0.4));
+  }
+}
+
+//Draws the horizontal ticks
+void horizontalTicks()
+{
+  for (int i = yMin+1; i < yMax; ++i)
+  {
+    draw((-3/16,i)--(3/16,i), black+linewidth(1));
+  }
+}
+
+//Draws the vertical ticks
+void verticalTicks()
+{
+  for (int i = xMin+1; i < xMax; ++i)
+  {
+    draw((i,-3/16)--(i,3/16), black+linewidth(1));
+  }
+}
+
+horizontalLines();
+verticalLines();
+horizontalTicks();
+verticalTicks();
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+
+pair A = (3,5);
+pair B = (0,2);
+pair C = (2,0);
+pair D = (7,5);
+
+draw(A--B--C--D,red);
+dot(A,linewidth(3.5));
+dot(B,linewidth(3.5));
+dot(C,linewidth(3.5));
+dot(D,linewidth(3.5));
+label("$A(3,5)$",A,(0,2),UnFill);
+label("$B$",B,(-2,0),UnFill);
+label("$C$",C,(0,-2),UnFill);
+label("$D(7,5)$",D,(0,2),UnFill);
+</asy>
+Following the last paragraph of Solution 2 gives the answer <math>\boxed{\textbf{(C) }10\sqrt2}.</math>
+
+--- Solution 4 ---
+Denote <math>(3, 5)</math> as point <math>P</math> and <math>(7, 5)</math> as point <math>S</math>. Define the point <math>Q</math> on the <math>y</math>-axis that the laser hits as <math>(0, y_1)</math> and the point <math>R</math> on the <math>x</math>-axis that the laser hits as <math>(x_1,0)</math>. The laser will bounce off of the two axes at right angles, so we have that line <math>PQ \parallel RS</math>, meaning they have the same slope which we will denote as <math>k</math>. Line <math>QR</math> will be perpendicular to both <math>PQ</math> and <math>RS</math>, meaning it will have slope <math>-\frac{1}{k}</math>. 
+
+We can write the equations for lines <math>PQ</math> and <math>RS</math> in point-slope form, and then plug in points <math>Q</math> and <math>R</math> into those respective equations to get equations in terms of our three variables. We can also write the equation for line <math>QR</math> in slope-intercept form and plug in point <math>R</math>. Doing this yields
+<cmath>\begin{align*}
+    y_1-5&=k(0-3)\\
+    0-5&=k(x_1-7)\\
+    0&=-\frac{1}{k}x_1+y_1.
+\end{align*}</cmath>
+We can simplify this into the following cubic equation in terms of <math>k</math>:
+<cmath>-3k^3+5k^2-7k+5=0.</cmath>
+Luckily, we notice that the coefficients sum up to zero, so <math>k=1</math>. Now we can solve for the other two, yielding <math>x_1=y_1=2</math>. Now we simply have three <math>45^{\circ}</math>-<math>45^{\circ}</math>-<math>90^{\circ}</math> triangles with leg lengths of <math>3, 2,</math> and <math>5</math>, so our final distance is <cmath>3\sqrt{2}+2\sqrt{2}+5\sqrt{2}=\boxed{\textbf{(C) }10\sqrt2}.</cmath>
+
+
+=== Problem 12 ===
+All the roots of the polynomial
+
+Choices: {'A': '{-}88', 'B': '{-}80', 'C': '{-}64', 'D': '{-}41', 'E': '{-}40</math>'}
+Answer: A
+
+--- Solution 1 ---
+By Vieta's formulas, the sum of the six roots is <math>10</math> and the product of the six roots is <math>16</math>. By inspection, we see the roots are <math>1, 1, 2, 2, 2,</math> and <math>2</math>, so the function is <math>(z-1)^2(z-2)^4=(z^2-2z+1)(z^4-8z^3+24z^2-32z+16)</math>. Therefore, calculating just the <math>z^3</math> terms, we get <math>B = -32 - 48 - 8 = \boxed{\textbf{(A) }{-}88}</math>.
+
+--- Solution 2 ---
+Using the same method as Solution 1, we find that the roots are <math>2, 2, 2, 2, 1,</math> and <math>1</math>. Note that <math>B</math> is the negation of the 3rd symmetric sum of the roots. Using casework on the number of 1's in each of the <math>\binom {6}{3} = 20</math> products <math>r_a \cdot r_b \cdot r_c,</math> we obtain <cmath>B= - \left(\binom {4}{3} \binom {2}{0} \cdot 2^{3} + \binom {4}{2} \binom{2}{1} \cdot 2^{2} \cdot 1 + \binom {4}{1} \binom {2}{2} \cdot 2 \right) = -\left(32+48+8 \right) = \boxed{\textbf{(A) }{-}88}.</cmath>
+
+--- Solution 3 ---
+Same as solution 1, we find the roots are <math>1, 1, 2, 2, 2, 2</math> by Vieta's formula. This next part is brute force expansion.
+<math>-B=\\r_1r_2r_3+r_1r_2r_4+r_1r_2r_5+r_1r_2r_6+\\r_1r_3r_4+r_1r_3r_5+r_1r_3r_6+\\r_1r_4r_5+r_1r_4r_6+\\r_1r_5r_6+\\r_2r_3r_4+r_2r_3r_5+r_2r_3r_6+\\r_2r_4r_5+r_2r_4r_6+\\r_2r_5r_6+\\r_3r_4r_5+r_3r_4r_6+\\r_3r_5r_6+\\r_4r_5r_6\\=2 \times 4 + 4 \times 12 + 8 \times 4\\ =8 + 48 + 32\\B = \boxed{\textbf{(A) }{-}88}</math>
+
+
+=== Problem 13 ===
+Of the following complex numbers
+
+Choices: {'A': '{-}2', 'B': '{-}\\sqrt3+i', 'C': '{-}\\sqrt2+\\sqrt2 i', 'D': '{-}1+\\sqrt3 i', 'E': '2i</math>'}
+Answer: B
+
+--- Solution 1 ---
+First, <math>\textbf{(B)}</math> is <math>2\text{cis}(150)</math>, <math>\textbf{(C)}</math> is <math>2\text{cis}(135)</math>, <math>\textbf{(D)}</math> is <math>2\text{cis}(120)</math>.
+
+Taking the real part of the <math>5</math>th power of each we have:
+
+<math>\textbf{(A): }(-2)^5=-32</math>
+
+<math>\textbf{(B): }32\cos(750)=32\cos(30)=16\sqrt{3}</math>
+
+<math>\textbf{(C): }32\cos(675)=32\cos(-45)=16\sqrt{2}</math>
+
+<math>\textbf{(D): }32\cos(600)=32\cos(240)<0</math>
+
+<math>\textbf{(E): }(2i)^5=32i</math>, whose real part is <math>0</math>
+
+Thus, the answer is <math>\boxed{\textbf{(B) }{-}\sqrt3+i}</math>.
+
+--- Solution 2 ---
+We rewrite each answer choice to the polar form <cmath>z=r\operatorname{cis}\theta=r(\cos\theta+i\sin\theta),</cmath> where <math>r</math> is the magnitude of <math>z</math> such that <math>r\geq0,</math> and <math>\theta</math> is the argument of <math>z</math> such that <math>0\leq\theta<2\pi.</math>
+
+By <b>De Moivre's Theorem</b>, the real part of <math>z^5</math> is <cmath>\operatorname{Re}\left(z^5\right)=r^5\cos{(5\theta)}.</cmath> We construct a table as follows:
+<cmath>\begin{array}{c|ccc|ccc|cclclclcc}
+& & & & & & & & & & & & & & &  \\ [-2ex]
+\textbf{Choice} & & \boldsymbol{r} & & & \boldsymbol{\theta} & & & & & & \multicolumn{1}{c}{\boldsymbol{\operatorname{Re}\left(z^5\right)}} & & & & \\ [0.5ex]
+\hline
+& & & & & & & & & & & & & & &  \\ [-1ex]
+\textbf{(A)} & & 2 & & & \pi & & & &32\cos{(5\pi)}&=&32\cos\pi&=&32(-1)& & \\ [2ex]
+\textbf{(B)} & & 2 & & & \tfrac{5\pi}{6} & & & &32\cos{\tfrac{25\pi}{6}}&=&32\cos{\tfrac{\pi}{6}}&=&32\left(\tfrac{\sqrt3}{2}\right)& & \\ [2ex]
+\textbf{(C)} & & 2 & & & \tfrac{3\pi}{4} & & & &32\cos{\tfrac{15\pi}{4}}&=&32\cos{\tfrac{7\pi}{4}}&=&32\left(\tfrac{\sqrt2}{2}\right)& & \\ [2ex]
+\textbf{(D)} & & 2 & & & \tfrac{2\pi}{3} & & & &32\cos{\tfrac{10\pi}{3}}&=&32\cos{\tfrac{4\pi}{3}}&=&32\left(-\tfrac{1}{2}\right)& & \\ [2ex]
+\textbf{(E)} & & 2 & & & \tfrac{\pi}{2} & & & &32\cos{\tfrac{5\pi}{2}}&=&32\cos{\tfrac{\pi}{2}}&=&32\left(0\right)& & \\ [1ex]
+\end{array}</cmath>
+Clearly, the answer is <math>\boxed{\textbf{(B) }{-}\sqrt3+i}.</math>
+
+--- Solution 3 ---
+We evaluate the fifth power of each answer choice:
+
+* For <math>\textbf{(A)},</math> we have <math>(-2)^5=-32,</math> from which <math>\operatorname{Re}\left((-2)^5\right)=-32.</math>
+
+* For <math>\textbf{(E)},</math> we have <math>(2i)^5=32i,</math> from which <math>\operatorname{Re}\left((2i)^5\right)=0.</math>
+
+We will apply the Binomial Theorem to each of <math>\textbf{(B)},\textbf{(C)},</math> and <math>\textbf{(D)}.</math>
+
+More generally, let <cmath>z=a+bi</cmath> for some real numbers <math>a</math> and <math>b.</math>
+
+Two solutions follow from here:
+
+===Solution 3.1 (Real Parts Only)===
+To find the real part of <math>z^5,</math> we only need the terms with even powers of <math>i:</math>
+<cmath>\begin{align*}
+\operatorname{Re}\left(z^5\right)&=\operatorname{Re}\left((a+bi)^5\right) \\
+&=\sum_{k=0}^{2}\binom{5}{2k}a^{5-2k}(bi)^{2k} \\
+&=\binom50 a^{5}(bi)^{0} + \binom52 a^{3}(bi)^{2} + \binom54 a^{1}(bi)^{4} \\
+&=a^5 - 10a^3b^2 + 5ab^4.
+\end{align*}</cmath>
+We find the real parts of <math>\textbf{(B)},\textbf{(C)},</math> and <math>\textbf{(D)}</math> directly:
+
+* For <math>\textbf{(B)},</math> we have <math>\operatorname{Re}\left(\left(-\sqrt3+i\right)^5\right)=16\sqrt3.</math>
+
+* For <math>\textbf{(C)},</math> we have <math>\operatorname{Re}\left(\left(-\sqrt2+\sqrt2 i\right)^5\right)=16\sqrt2.</math>
+
+* For <math>\textbf{(D)},</math> we have <math>\operatorname{Re}\left(\left(-1+\sqrt3 i\right)^5\right)=-16.</math>
+
+Therefore, the answer is <math>\boxed{\textbf{(B) }{-}\sqrt3+i}.</math>
+
+
+===Solution 3.2 (Full Expansions)===
+The full expansion of <math>z^5</math> is
+<cmath>\begin{align*}
+z^5&=(a+bi)^5 \\
+&=\sum_{k=0}^{5}\binom5k a^{5-k}(bi)^k \\
+&=\binom50 a^{5}(bi)^0+\binom51 a^{4}(bi)^1+\binom52 a^{3}(bi)^2+\binom53 a^{2}(bi)^3+\binom54 a^{1}(bi)^4+\binom55 a^{0}(bi)^5 \\
+&=a^5+5a^4bi-10a^3b^2-10a^2b^3i+5ab^4+b^5i \\
+&=\left(a^5-10a^3b^2+5ab^4\right) + \left(5a^4b-10a^2b^3+b^5\right)i.
+\end{align*}</cmath>
+We find the full expansions of <math>\textbf{(B)},\textbf{(C)},</math> and <math>\textbf{(D)},</math> then extract their real parts:
+
+* For <math>\textbf{(B)},</math> we have <math>\left(-\sqrt3+i\right)^5=16\sqrt3+16i,</math> from which <math>\operatorname{Re}\left(\left(-\sqrt3+i\right)^5\right)=16\sqrt3.</math>
+
+* For <math>\textbf{(C)},</math> we have <math>\left(-\sqrt2+\sqrt2 i\right)^5=16\sqrt2-16\sqrt2i,</math> from which <math>\operatorname{Re}\left(\left(-\sqrt2+\sqrt2 i\right)^5\right)=16\sqrt2.</math>
+
+* For <math>\textbf{(D)},</math> we have <math>\left(-1+\sqrt3i\right)^5=-16-16\sqrt3i,</math> from which <math>\operatorname{Re}\left(\left(-1+\sqrt3 i\right)^5\right)=-16.</math>
+
+Therefore, the answer is <math>\boxed{\textbf{(B) }{-}\sqrt3+i}.</math>
+
+
+=== Problem 14 ===
+What is the value of<cmath>\left(\sum_{k=1}^{20} \log_{5^k} 3^{k^2}\right)\cdot\left(\sum_{k=1}^{100} \log_{9^k} 25^k\right)?</cmath>
+
+Choices: {'A': '21', 'B': '100\\log_5 3', 'C': '200\\log_3 5', 'D': '2{,}200', 'E': '21{,}000</math>'}
+Answer: E
+
+--- Solution 1 ---
+We will apply the following logarithmic identity:
+<cmath>\log_{p^n}{q^n}=\log_{p}{q},</cmath>
+which can be proven by the Change of Base Formula: <cmath>\log_{p^n}{q^n}=\frac{\log_{p}{q^n}}{\log_{p}{p^n}}=\frac{n\log_{p}{q}}{n}=\log_{p}{q}.</cmath>
+Now, we simplify the expressions inside the summations:
+<cmath>\begin{align*}
+\log_{5^k}{{3^k}^2}&=\log_{5^k}{(3^k)^k} \\
+&=k\log_{5^k}{3^k} \\
+&=k\log_{5}{3},
+\end{align*}</cmath>
+and 
+<cmath>\begin{align*}
+\log_{9^k}{25^k}&=\log_{3^{2k}}{5^{2k}} \\
+&=\log_{3}{5}.
+\end{align*}</cmath>
+Using these results, we evaluate the original expression:
+<cmath>\begin{align*}
+\left(\sum_{k=1}^{20} \log_{5^k} 3^{k^2}\right)\cdot\left(\sum_{k=1}^{100} \log_{9^k} 25^k\right)&=\left(\sum_{k=1}^{20} k\log_{5}{3}\right)\cdot\left(\sum_{k=1}^{100} \log_{3}{5}\right) \\
+&= \left(\log_{5}{3}\cdot\sum_{k=1}^{20} k\right)\cdot\left(\log_{3}{5}\cdot\sum_{k=1}^{100} 1\right) \\
+&= \left(\sum_{k=1}^{20} k\right)\cdot\left(\sum_{k=1}^{100} 1\right) \\
+&= \frac{21\cdot20}{2}\cdot100 \\
+&= \boxed{\textbf{(E) }21{,}000}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+First, we can get rid of the <math>k</math> exponents using properties of logarithms: <cmath>\log_{5^k} 3^{k^2} = k^2 \cdot \frac{1}{k} \cdot \log_{5} 3 = k\log_{5} 3 = \log_{5} 3^k.</cmath> (Leaving the single <math>k</math> in the exponent will come in handy later). Similarly, <cmath>\log_{9^k} 25^{k} = k \cdot \frac{1}{k} \cdot \log_{9} 25 = \log_{9} 5^2.</cmath>
+Then, evaluating the first few terms in each parentheses, we can find the simplified expanded forms of each sum using the additive property of logarithms:
+<cmath>\begin{align*}
+\sum_{k=1}^{20} \log_{5} 3^k &= \log_{5} 3^1 + \log_{5} 3^2 + \dots + \log_{5} 3^{20} \\
+&= \log_{5} 3^{(1 + 2 + \dots + 20)} \\
+&= \log_{5} 3^{\frac{20(20+1)}{2}} &&\hspace{15mm}(*) \\
+&= \log_{5} 3^{210}, \\
+\sum_{k=1}^{100} \log_{9} 5^2 &= \log_{9} 5^2 + \log_{9} 5^2 + \dots + \log_{9} 5^2 \\
+&= \log_{9} 5^{2(100)} \\
+&= \log_{9} 5^{200}.
+\end{align*}</cmath>
+In <math>(*),</math> we use the triangular numbers equation: <cmath>1 + 2 + \dots + n = \frac{n(n+1)}{2} = \frac{20(20+1)}{2} = 210.</cmath>
+Finally, multiplying the two logarithms together, we can use the chain rule property of logarithms to simplify:
+<cmath>\log_{a} b\log_{x} y = \log_{a} y\log_{x} b.</cmath>
+Thus,
+<cmath>\begin{align*}
+\left(\log_{5} 3^{210}\right)\left(\log_{3^2} 5^{200}\right) &= \left(\log_{5} 5^{200}\right)\left(\log_{3^2} 3^{210}\right) \\
+&= \left(\log_{5} 5^{200}\right)\left(\log_{3} 3^{105}\right) \\
+&= (200)(105) \\
+&= \boxed{\textbf{(E) }21{,}000}.
+\end{align*}</cmath>
+
+--- Solution 3 ---
+In <math>\sum_{k=1}^{20} \log_{5^k} 3^{k^2},</math> note that the addends are greater than <math>1</math> for all <math>k\geq2.</math>
+
+In <math>\sum_{k=1}^{100} \log_{9^k} 25^k,</math> note that the addends are greater than <math>1</math> for all <math>k\geq1.</math>
+
+We have the inequality <cmath>\left(\sum_{k=1}^{20} \log_{5^k} 3^{k^2}\right)\cdot\left(\sum_{k=1}^{100} \log_{9^k} 25^k\right)>\left(\sum_{k=2}^{20} 1\right)\cdot\left(\sum_{k=1}^{100} 1\right)=19\cdot100=1{,}900,</cmath> which eliminates choices <math>\textbf{(A)}, \textbf{(B)},</math> and <math>\textbf{(C)}.</math> We get the answer <math>\boxed{\textbf{(E) }21{,}000}</math> by either an educated guess or a continued approximation: 
+
+Observe that <math>\sum_{k=1}^{20} \log_{5^k} 3^{k^2} >> \sum_{k=2}^{20} 1 = 19</math> and <math>\sum_{k=1}^{100} \log_{9^k} 25^k\approx\sum_{k=1}^{100} \log_{9^k} 27^k = \sum_{k=1}^{100} \frac{3}{2} = 150.</math> Therefore, we obtain the following rough underestimation: <cmath>\left(\sum_{k=1}^{20} \log_{5^k} 3^{k^2}\right)\cdot\left(\sum_{k=1}^{100} \log_{9^k} 25^k\right)>\left(\sum_{k=2}^{20} 1\right)\cdot\left(\sum_{k=1}^{100} \frac{3}{2}\right)=19\cdot150=2{,}850.</cmath>
+From here, it should be safe to guess that the answer is <math>\textbf{(E)}.</math>
+
+--- Solution 4 ---
+Using the identity <cmath>\log_{p^n}{q^n}=\log_{p}{q},</cmath> simplify <cmath>\begin{align*}
+\log_{5^k}{{3^k}^2}&=\log_{5^k}{(3^k)^k} \\
+&=\log_{5}{3^k} \\
+\end{align*}</cmath>
+and 
+<cmath>\begin{align*}
+\log_{9^k}{25^k}&=\log_{3^{2k}}{5^{2k}} \\
+&=\log_{3}{5}.
+\end{align*}</cmath>. Now we have the product: <cmath>\left(\sum_{k=1}^{20} \log_{5} 3^{k}\right)\cdot\left(\sum_{k=1}^{100} \log_{3} 5\right)</cmath> 
+<cmath>\begin{align*}
+\sum_{k=1}^{20} \log_{5} 3^k &= \log_{5} 3^1 + \log_{5} 3^2 + \dots + \log_{5} 3^{20} \\
+&= \log_{5} 3^{(1 + 2 + \dots + 20)} \\
+&= \log_{5} 3^{\frac{20(20+1)}{2}} \\
+&= \log_{5} 3^{210} \\
+&= {210}\cdot\log_{5} {3}, \\
+\sum_{k=1}^{100}\log_{3} {5} &= {100}\cdot\log_{3} {5}.
+\end{align*}</cmath> 
+With the reciprocal rule the logarithms cancel out leaving: <math>\boxed{\textbf{(E) }21{,}000}.</math>
+
+~[[User:PowerQualimit|PowerQualimit]]
+
+
+=== Problem 15 ===
+A choir director must select a group of singers from among his
+
+Choices: {'A': '47', 'B': '48', 'C': '83', 'D': '95', 'E': '96</math>'}
+Answer: D
+
+--- Solution 1 ---
+Suppose that <math>t</math> tenors and <math>b</math> basses are selected. The requirements are <math>t\equiv b\pmod{4}</math> and <math>(t,b)\neq(0,0).</math>
+
+It follows that <math>b'=8-b</math> basses are not selected. Since the ordered pairs <math>(t,b)</math> and the ordered pairs <math>(t,b')</math> have one-to-one correspondence, we consider the ordered pairs <math>(t,b')</math> instead. The requirements become <math>t\equiv8-b'\pmod{4}</math> and <math>(t,8-b')\neq(0,0),</math> which simplify to <math>t+b'\equiv0\pmod{4}</math> and <math>(t,b')\neq(0,8),</math> respectively.
+
+As <math>t+b'\in\{0,4,8,12\},</math> the total number of such groups is
+<cmath>\begin{align*}
+N&=\binom{14}{0}+\binom{14}{4}+\left[\binom{14}{8}-1\right]+\binom{14}{12} \\
+&=\binom{14}{0}+\binom{14}{4}+\left[\binom{14}{6}-1\right]+\binom{14}{2} \\
+&=1+1001+[3003-1]+91 \\
+&=4095,
+\end{align*}</cmath>
+from which <math>N\equiv\boxed{\textbf{(D) } 95}\pmod{100}.</math>
+
+--- Solution 2 ---
+Suppose that <math>t</math> tenors and <math>b</math> basses are selected. The requirements are <math>t\equiv b\pmod{4}</math> and <math>(t,b)\neq(0,0).</math>
+
+Note that <math>\binom{6}{t}\binom{8}{b}</math> different groups can be formed by selecting <math>t</math> tenors and <math>b</math> basses. Since <math>t-b\in\{-8,-4,0,4\},</math> we apply casework:
+<ol style="margin-left: 1.5em;">
+  <li>If <math>t-b=-8,</math> then <math>\binom{6}{0}\binom{8}{8}</math> different group can be formed.</li><p>
+  <li>If <math>t-b=-4,</math> then <math>\sum_{k=0}^{4}\binom{6}{k}\binom{8}{k+4}</math> different groups can be formed.</li><p>
+  <li>If <math>t-b=0,</math> then <math>\left[\sum_{k=0}^{6}\binom{6}{k}\binom{8}{k}\right]-1</math> different groups can be formed, recalling that <math>(t,b)\neq(0,0).</math></li><p>
+  <li>If <math>t-b=4,</math> then <math>\sum_{k=0}^{2}\binom{6}{k+4}\binom{8}{k}</math> different groups can be formed.</li><p>
+</ol>
+By the combinatorial identity <math>\binom{n}{k}=\binom{n}{n-k}</math> and Vandermonde's Identity <math>\sum_{k=0}^{r}\binom{m}{k}\binom{n}{r-k}=\binom{m+n}{r},</math> we find the total number of such groups:
+<cmath>\begin{align*}
+N&=\binom{6}{0}\binom{8}{8}+\left[\sum_{k=0}^{4}\binom{6}{k}\binom{8}{k+4}\right]+\left[\left[\sum_{k=0}^{6}\binom{6}{k}\binom{8}{k}\right]-1\right]+\left[\sum_{k=0}^{2}\binom{6}{k+4}\binom{8}{k}\right] \\
+&=\binom{6}{0}\binom{8}{0}+\left[\sum_{k=0}^{4}\binom{6}{k}\binom{8}{4-k}\right]+\left[\left[\sum_{k=0}^{6}\binom{6}{6-k}\binom{8}{k}\right]-1\right]+\left[\sum_{k=0}^{2}\binom{6}{2-k}\binom{8}{k}\right] \\
+&=\binom{14}{0}+\binom{14}{4}+\left[\binom{14}{6}-1\right]+\binom{14}{2} \\
+&=1+1001+[3003-1]+91 \\
+&=4095,
+\end{align*}</cmath>
+from which <math>N\equiv\boxed{\textbf{(D) } 95}\pmod{100}.</math>
+
+--- Solution 3 ---
+The problem can be done using a roots of unity filter. Let <math>f(x,y)=(1+x)^8(1+y)^6</math>. By expanding the binomials and distributing, <math>f(x,y)</math> is the generating function for different groups of basses and tenors. That is, <cmath>f(x,y)=\sum_{m=0}^8\sum_{n=0}^6 a_{mn}x^my^n,</cmath>
+where <math>a_{mn}</math> is the number of groups of <math>m</math> basses and <math>n</math> tenors. What we want to do is sum up all values of <math>a_{mn}</math> for which <math>4\mid m-n</math> except for <math>a_{00}=1</math>. To do this, define a new function <cmath>g(x)=f(x,x^{-1})=\sum_{m=0}^8\sum_{n=0}^6 a_{mn}x^{m-n}=(1+x)^8(1+x^{-1})^6.</cmath>
+Now we just need to sum all coefficients of <math>g(x)</math> for which <math>4\mid m-n</math>. Consider a monomial <math>h(x)=x^k</math>. If <math>4\mid k</math>, then <cmath>h(i)+h(-1)+h(-i)+h(1)=1+1+1+1=4.</cmath>
+Otherwise, 
+<cmath>h(i)+h(-1)+h(-i)+h(1)=0.</cmath>
+<math>g(x)</math> is a sum of these monomials so this gives us a method to determine the sum we're looking for:
+<cmath>\frac{g(i)+g(-1)+g(-i)+g(1)}{4}=2^{12}=4096.</cmath>
+(since <math>g(-1)=0</math> and it can be checked that <math>g(i)=-g(-i)</math>). Hence, the answer is <math>4096-1=4095\equiv\boxed{\textbf{(D) } 95}\pmod{100}</math>.
+
+--- Solution 4 ---
+Note that <math>\binom{6}{t}\binom{8}{b}</math> different groups can be formed by selecting <math>t</math> tenors and <math>b</math> basses. By casework, we construct the following table:
+<cmath>\begin{array}{c|c|c|c}
+& & & \\ [-2ex]
+\textbf{\# of Tenors} & \textbf{\# of Basses} & \textbf{\# of Groups} & \textbf{Evaluate \# of Groups} \\ [0.5ex]
+\hline\hline 
+& & & \\ [-2ex]
+0 & 4 & \tbinom{6}{0}\tbinom{8}{4} & 70 \\ [1ex]
+0 & 8 & \tbinom{6}{0}\tbinom{8}{8} & 1 \\ [1ex]
+\hline
+& & & \\ [-2ex]
+1 & 1 & \tbinom{6}{1}\tbinom{8}{1} & 48 \\ [1ex]
+1 & 5 & \tbinom{6}{1}\tbinom{8}{5} & 336 \\ [1ex]
+\hline
+& & & \\ [-2ex]
+2 & 2 & \tbinom{6}{2}\tbinom{8}{2} & 420 \\ [1ex]
+2 & 6 & \tbinom{6}{2}\tbinom{8}{6} & 420 \\ [1ex]
+\hline
+& & & \\ [-2ex]
+3 & 3 & \tbinom{6}{3}\tbinom{8}{3} & 1120 \\ [1ex]
+3 & 7 & \tbinom{6}{3}\tbinom{8}{7} & 160 \\ [1ex]
+\hline
+& & & \\ [-2ex]
+4 & 0 & \tbinom{6}{4}\tbinom{8}{0} & 15 \\ [1ex]
+4 & 4 & \tbinom{6}{4}\tbinom{8}{4} & 1050 \\ [1ex]
+4 & 8 & \tbinom{6}{4}\tbinom{8}{8} & 15 \\ [1ex]
+\hline
+& & & \\ [-2ex]
+5 & 1 & \tbinom{6}{5}\tbinom{8}{1} & 48 \\ [1ex]
+5 & 5 & \tbinom{6}{5}\tbinom{8}{5} & 336 \\ [1ex]
+\hline
+& & & \\ [-2ex]
+6 & 2 & \tbinom{6}{6}\tbinom{8}{2} & 28 \\ [1ex]
+6 & 6 & \tbinom{6}{6}\tbinom{8}{6} & 28 \\ [1ex]
+\end{array}</cmath>
+We find the total number of such groups: <cmath>N=70+1+48+336+420+420+1120+160+15+1050+15+48+336+28+28=4095,</cmath>
+from which <math>N\equiv\boxed{\textbf{(D) } 95}\pmod{100}.</math>
+
+Alternatively, since the answer choices have different units digits, it suffices to find the units digit of <math>N</math> only.
+
+--- Solution 5 ---
+Consider the set of all <math>2^{8+6}=2^{14}</math> possible choirs that can be formed. For a given choir let <math>D</math> be the difference in the number of tenors and bases modulo <math>4</math>, so <math>D = T - B \pmod{4}.</math> Exactly half of all choirs have either <math>D=0</math> or <math>D=2</math>. To see this, pick one of the tenors and note that including or removing him from a choir changes <math>D</math> by <math>\pm1</math>. Of those <math>2^{13}</math> choirs with <math>D=0</math> or <math>D=2</math>, we claim exactly half have <math>D=0</math>. To see this, for any choir having <math>D=0</math> or <math>D=2</math>, we can replace the <math>T</math> tenors with the <math>6 - T</math> tenors who were not in the choir, thereby sending <math>D \mapsto D + 2 \pmod{4}.</math> Excluding the empty choir, there are <math>2^{12}-1 = 4095</math> choirs that meet the conditions of the problem, and the answer is <math>\boxed{\textbf{(D) } 95}</math>.
+
+
+=== Problem 16 ===
+In the following list of numbers, the integer
+
+Choices: {'A': '100.5', 'B': '134', 'C': '142', 'D': '150.5', 'E': '167</math>'}
+Answer: C
+
+--- Solution 1 ---
+There are <imath>1+2+..+199+200=\frac{(200)(201)}{2}=20100</imath> numbers in total. Let the median be <imath>k</imath>. We want to find the median <imath>k</imath> such that
+<cmath> \frac{k(k+1)}{2}=20100/2,</cmath>
+or
+<cmath> k(k+1)=20100.</cmath>
+Note that <imath>\sqrt{20100} \approx 142</imath>. Plugging this value in as <imath>k</imath> gives
+<cmath>\frac{1}{2}(142)(143)=10153.</cmath>
+<imath>10153-142<10050</imath>, so <imath>142</imath> is the <imath>152</imath>nd and <imath>153</imath>rd numbers, and hence, our desired answer. <imath>\fbox{(C) 142}</imath>.
+
+Note that we can derive <imath>\sqrt{20100} \approx 142</imath> through the formula <cmath>\sqrt{n} = \sqrt{a+b} \approx \sqrt{a} + \frac{b}{2\sqrt{a} + 1},</cmath>
+where <imath>a</imath> is a perfect square less than or equal to <imath>n</imath>. We set <imath>a</imath> to <imath>19600</imath>, so <imath>\sqrt{a} = 140</imath>, and <imath>b = 500</imath>. We then have <imath>n \approx 140 + \frac{500}{2(140)+1} \approx 142</imath>. 
+Note by Fasolinka (use answer choices): Once you know that the answer is in the 140s range (200,000 is around 14^2 times 10^2) by the approximation, it is highly improbable for the answer to be anything but C.
+
+--- Solution 2 ---
+The <math>x</math>th number of this sequence is <math>\left\lceil\frac{-1\pm\sqrt{1+8x}}{2}\right\rceil</math> via the quadratic formula. We can see that if we halve <math>x</math> we end up getting <math>\left\lceil\frac{-1\pm\sqrt{1+4x}}{2}\right\rceil</math>. This is approximately the number divided by <math>\sqrt{2}</math>. <math>\frac{200}{\sqrt{2}} = 141.4</math> and since <math>142</math> looks like the only number close to it, it is answer <math>\boxed{(C) 142}</math>
+
+--- Solution 3 ---
+We can look at answer choice <math>\textbf{(C)}</math>, which is <math>142</math> first. That means that the number of numbers from <math>1</math> to <math>142</math> is roughly the number of numbers from <math>143</math> to <math>200</math>.
+
+The number of numbers from <math>1</math> to <math>142</math> is <math>\frac{142(142+1)}{2}</math> which is approximately <math>10000.</math> The number of numbers from <math>143</math> to <math>200</math> is <math>\frac{200(200+1)}{2}-\frac{142(142+1)}{2}</math> which is approximately <math>10000</math> as well. Therefore, we can be relatively sure the answer choice is <math>\boxed{\textbf{(C)} 
+-[[User:PureSwag|PureSwag]]
+
+--- Solution 4 ---
+We can arrange the numbers in the following pattern:
+<cmath>\[
+\begin{array}{cccccc}
+\ &\ &\ &\ &\ 200 & \\
+\ &\ &\ &\ 199 & \ 200 & \\
+\ &\ &\ \iddots& \ \vdots& \ \vdots& \\
+\ &\ 2& \ \cdots& \ 199& \ 200& \\
+1 & \ 2 & \ \cdots& \ 199& \ 200&
+\end{array}
+\]</cmath>
+
+We can see this as a isosceles right triangle, with legs of length <math>200.</math> 
+<asy>draw((0,0)--(200,200)--(200,0)--cycle);
+draw((142,0)--(142,142));
+label("$x$",(142,0)--(142,142),E);
+label("$x$",(0,0)--(142,0),S);
+label("$200$",(200,0)--(200,200),E);
+</asy>
+
+Let <math>x</math> be the side length such that both sides of the triangle have the same area. The desired answer is then around <math>x</math> because about half of the numbers in the list fall on each side.
+
+Solving for <math>x</math> yields:
+<cmath>\begin{align*}
+\frac{x^2}{2} =& \:\frac{1}{2} \cdot \frac{200^2}{2} \\
+x^2 =& \:\frac{1}{2}\cdot 200^2 \\
+x =& \:\frac{200}{\sqrt{2}} = \: 100\sqrt{2} \approx 141.
+\end{align*}</cmath>
+We see that <math>\boxed{(C) \: 142}</math> is the closest to <math>x</math> by far, and thus, can be relatively certain this is the answer.
+
+
+=== Problem 17 ===
+Trapezoid
+
+Choices: {'A': '65', 'B': '132', 'C': '157', 'D': '194', 'E': '215</math>'}
+Answer: D
+
+--- Solution 1 ---
+Angle chasing* reveals that <math>\triangle BPC\sim\triangle BDA</math>, therefore 
+<cmath>2=\frac{BD}{BP}=\frac{AB}{BC}=\frac{AB}{43},</cmath>
+or <math>AB=86</math>.
+
+Additional angle chasing shows that <math>\triangle ABO\sim\triangle CDO</math>, therefore
+<cmath>2=\frac{AB}{CD}=\frac{BO}{OD}=\frac{BP+11}{BP-11},</cmath>
+or <math>BP=33</math> and <math>BD=66</math>.
+
+Since <math>\triangle ADB</math> is right, the Pythagorean theorem implies that
+<cmath>AD=\sqrt{86^2-66^2}=4\sqrt{190}.</cmath>
+The answer is <math>4+190=\boxed{\textbf{(D) }194}</math>.
+
+* Angle Chasing: If we set <math>\angle DBC = \alpha</math>, then we know that <math>\angle DCB = 180^\circ-2\alpha</math> because <math>\triangle DBC</math> is isosceles. Then, <math>\angle BCP = 90^\circ-\alpha</math>, so <math>\angle BPC</math> is a right angle. Because <math>\angle BDC = \alpha</math> and <math>\overline{AB}\parallel\overline{DC}</math>, we conclude that <math>\angle ABD = \alpha</math> too. Lastly, because <math>\triangle BPC</math> and <math>\triangle BDA</math> are both right triangles, they are similar by AA.
+
+--- Solution 2 ---
+Since <math>\triangle BCD</math> is isosceles with base <math>\overline{BD},</math> it follows that median <math>\overline{CP}</math> is also an altitude. Let <math>OD=x</math> and <math>CP=h,</math> so <math>PB=x+11.</math>
+
+Since <math>\angle AOD=\angle COP</math> by vertical angles, we conclude that <math>\triangle AOD\sim\triangle COP</math> by AA, from which <math>\frac{AD}{CP}=\frac{OD}{OP},</math> or <cmath>AD=CP\cdot\frac{OD}{OP}=h\cdot\frac{x}{11}.</cmath> Let the brackets denote areas. Notice that <math>[AOD]=[BOC]</math> (By the same base and height, we deduce that <math>[ACD]=[BDC].</math> Subtracting <math>[OCD]</math> from both sides gives <math>[AOD]=[BOC].</math>). Doubling both sides produces
+<cmath>\begin{align*}
+2[AOD]&=2[BOC] \\
+OD\cdot AD&=OB\cdot CP \\
+x\left(\frac{hx}{11}\right)&=(x+22)h \\
+x^2&=11(x+22).
+\end{align*}</cmath>
+Rearranging and factoring result in <math>(x-22)(x+11)=0,</math> from which <math>x=22.</math>
+
+Applying the Pythagorean Theorem to right <math>\triangle CPB,</math> we have <cmath>h=\sqrt{43^2-33^2}=\sqrt{(43+33)(43-33)}=\sqrt{760}=2\sqrt{190}.</cmath> Finally, we get <cmath>AD=h\cdot\frac{x}{11}=4\sqrt{190},</cmath> so the answer is <math>4+190=\boxed{\textbf{(D) }194}.</math>
+
+--- Solution 3 ---
+Let <math>CP = y</math>. <math>CP</math> a is perpendicular bisector of <math>DB.</math> Then, let <math>DO = x,</math> thus <math>DP = PB = 11+x.</math>
+
+(1) <math>\triangle CPO \sim \triangle ADO,</math> so we get <math>\frac{AD}{x} = \frac{y}{11},</math> or <math>AD = \frac{xy}{11}.</math>
+
+(2) Applying Pythagorean Theorem on <math>\triangle CDP</math> gives <math>(11+x)^2 + y^2 = 43^2.</math>
+
+(3) <math>\triangle BPC \sim \triangle BDA</math> with ratio <math>1:2,</math> so <math>AD = 2y</math> using the fact that <math>P</math> is the midpoint of <math>BD</math>.
+
+Thus, <math>\frac{xy}{11} = 2y,</math> or <math>x = 22.</math> And <math>y = \sqrt{43^2 - 33^2} = 2 \sqrt{190},</math> so <math>AD = 4 \sqrt{190}</math> and the answer is <math>4+190=\boxed{\textbf{(D) }194}.</math>
+
+--- Solution 4 ---
+This solution will refer to the diagram section at the top of this page.
+
+
+We know <math>\angle ABD = \angle BDC = \angle DBC</math>. Let <math>PB = 11 + x</math>. Notice that <math>\triangle ABD</math> is similar to <math>\triangle DOC</math>, so <math>\frac{AB}{43} = \frac{22 + x}{x} \implies AB = \frac{43(22 + x)}{x}</math>. Now we apply the Law of Sines to isosceles triangle <math>\triangle DCB</math>:
+
+<cmath>\frac{\sin(\angle ABD)}{43} = \frac{\sin(180^\circ - 2\angle ABD)}{22 + 2x} = \frac{2\sin(\angle ABD)\cos(\angle ABD)}{22 + 2x}</cmath>
+
+<cmath>\frac{1}{43} = \frac{\cos(\angle ABD)}{11 + x} \implies \cos(\angle ABD) = \frac{11 + x}{43}</cmath>
+
+From right triangle <math>\triangle BAD</math> we already know that <math>\cos(\angle ABD) = \frac{BD}{AB} = \frac{(22 + 2x)x}{43(22 + x)}</math>.
+
+Setting these equations equal to each other gives us:
+<cmath>\frac{(22 + 2x)x}{43(22 + x)} = \frac{11 + x}{43}</cmath>
+
+<cmath>x = 22 \implies BD = 2(11 + x) = 66, AB = \frac{43 \cdot 44}{22} = 86.</cmath>
+
+So <math>AD = \sqrt{86^2 - 66^2} = 4\sqrt{190}</math>. Ans = <math>\boxed{194}</math>.
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 5 ---
+Observe that <math>\triangle BPC</math> is congruent to <math>\triangle DPC</math>; both are similar to <math>\triangle BDA</math>. Let's extend <math>\overline{AD}</math> and <math>\overline{BC}</math> past points <math>D</math> and <math>C</math> respectively, such that they intersect at a point <math>E</math>. Observe that <math>\angle BDE</math> is <math>90</math> degrees, and that <math>\angle DBE \cong \angle PBC \cong \angle DBA \implies \angle DBE \cong \angle DBA</math>. Thus, by ASA, we know that <math>\triangle ABD \cong \triangle EBD</math>, thus, <math>AD = ED</math>, meaning <math>D</math> is the midpoint of <math>AE</math>.
+Let <math>M</math> be the midpoint of <math>\overline{DE}</math>. Note that <math>\triangle CME</math> is congruent to <math>\triangle BPC</math>, thus <math>BC = CE</math>, meaning <math>C</math> is the midpoint of <math>\overline{BE}.</math>
+
+Therefore, <math>\overline{AC}</math> and <math>\overline{BD}</math> are both medians of <math>\triangle ABE</math>. This means that <math>O</math> is the centroid of <math>\triangle ABE</math>; therefore, because the centroid divides the median in a 2:1 ratio, <math>\frac{BO}{2} = DO = \frac{BD}{3}</math>. Recall that <math>P</math> is the midpoint of <math>BD</math>; <math>DP = \frac{BD}{2}</math>. The question tells us that <math>OP = 11</math>; <math>DP-DO=11</math>; we can write this in terms of <math>DB</math>; <math>\frac{DB}{2}-\frac{DB}{3} = \frac{DB}{6} = 11 \implies DB = 66</math>.
+
+We are almost finished. Each side length of <math>\triangle ABD</math> is twice as long as the corresponding side length <math>\triangle CBP</math> or <math>\triangle CPD</math>, since those triangles are similar; this means that <math>AB = 2 \cdot 43 = 86</math>. Now, by Pythagorean theorem on <math>\triangle ABD</math>, <math>AB^{2} - BD^{2} = AD^{2} \implies 86^{2}-66^{2} = AD^{2} \implies AD = \sqrt{3040} \implies AD = 4 \sqrt{190}</math>. 
+
+The answer is <math>4+190 = \boxed{\textbf{(D) }194}</math>.
+
+--- Solution 6 ---
+Since <math>P</math> is the midpoint of isosceles triangle <math>BCD</math>, it would be pretty easy to see that <math>CP\perp BD</math>. Since <math>AD\perp BD</math> as well, <math>AD\parallel CP</math>. Connecting <math>AP</math>, it’s obvious that <math>[ADC]=[ADP]</math>. Since <math>DP=BP</math>, <math>[APB]=[ADC]</math>. 
+
+Since <math>P</math> is the midpoint of <math>BD</math>, the height of <math>\triangle APB</math> on side <math>AB</math> is half that of <math>\triangle ADC</math> on <math>CD</math>. Since <math>[APB]=[ADC]</math>, <math>AB=2CD</math>. 
+
+As a basic property of a trapezoid, <math>\triangle AOB \sim \triangle COD</math>, so <math>\frac{OB}{OD}=\frac{AB}{CD}=2</math>, or <math>OB=2OD</math>. Letting <math>OD=x</math>, then <math>PB=DP=11+x</math>, and <math>OB=22+x</math>. Hence <math>22+x=2x</math> and <math>x=22</math>.
+
+Since <math>\triangle AOD \sim \triangle COP</math>, <math>\frac{AD}{PC}=\frac{OD}{OP}=2</math>. Since <math>PD=11+22=33</math>, <math>PC=\sqrt{43^2-33^2}=\sqrt{760}</math>.
+
+So, <math>AD=2\sqrt{760}=4\sqrt{190}</math>. The correct answer is <math>\boxed{\textbf{(D) }194}</math>.
+
+--- Solution 7 ---
+Let <math>D</math> be the origin of the cartesian coordinate plane, <math>B</math> lie on the positive <math>x</math>-axis, and <math>A</math> lie on the negative <math>y</math>-axis. Then let the coordinates of <math>B = (2a,0), A = (0, -2b).</math> Then the slope of <math>AB</math> is <math>\frac{b}{a}.</math> Since <math>AB \parallel CD</math> the slope of <math>CD</math> is the same. Note that as <math>\triangle DCB</math> is isosceles <math>C</math> lies on <math>x = a.</math> Thus since <math>CD</math> has equation <math>y = \frac{b}{a}x</math> (<math>D</math> is the origin), <math>C = (a,b).</math> Therefore <math>AC</math> has equation <math>y = \frac{3b}{a}x - 2b</math> and intersects <math>BD</math> (<math>x</math>-axis) at <math>O =\left(\frac{2}{3}a, 0\right).</math> The midpoint of <math>BD</math> is <math>P = (a,0),</math> so <math>OP = \frac{a}{3} = 11,</math> from which <math>a = 33.</math> Then by Pythagorean theorem on <math>\triangle DPC</math> (<math>\triangle DBC</math> is isosceles), we have <math>b = \sqrt{43^2 - 33^2} = 2\sqrt{190},</math> so <math>2b=4\sqrt{190}.</math>
+
+Finally, the answer is <math>4+190=\boxed{\textbf{(D) }194}.</math>
+
+--- Solution 8 ---
+[[Image:2021_12A_p17.png|thumb|center|600px|]]
+
+set <math>\angle BDC  = \theta  </math>
+
+<math>BD = 2*DP = 2*43*\cos{\theta}</math>
+
+<math>AB = \frac{BD}{\cos{\angle {DBA}}} = \frac{BD}{\cos{\theta}}=   2 \cdot 43 \cdot \frac{\cos{\theta}}{\cos{\theta}}=86</math>
+
+<math>\frac{OP}{DO}=\frac{CP}{AD}</math>
+
+<math>\frac{11}{43\cdot \cos{\theta}-11}=\frac{43\cdot\sin{\theta}}{86\cdot \sin{\theta}}</math>
+
+<math>\cos{\theta}=\frac{33}{43}</math>
+
+<math>AD=86\cdot \sin{\theta}=2 \sqrt{760}=4\sqrt{190}=\boxed{\textbf{(D)}194}</math>.
+
+
+=== Problem 18 ===
+Let
+
+Choices: {'A': '\\frac{17}{32}', 'B': '\\frac{11}{16}', 'C': '\\frac79', 'D': '\\frac76', 'E': '\\frac{25}{11}</math>'}
+Answer: E
+
+--- Solution 1 ---
+From the answer choices, note that
+<cmath>\begin{align*}
+f(25)&=f\left(\frac{25}{11}\cdot11\right) \\
+&=f\left(\frac{25}{11}\right)+f(11) \\
+&=f\left(\frac{25}{11}\right)+11.
+\end{align*}</cmath>
+On the other hand, we have
+<cmath>\begin{align*}
+f(25)&=f(5\cdot5) \\
+&=f(5)+f(5) \\
+&=5+5 \\
+&=10.
+\end{align*}</cmath>
+Equating the expressions for <math>f(25)</math> produces <cmath>f\left(\frac{25}{11}\right)+11=10,</cmath> from which <math>f\left(\frac{25}{11}\right)=-1.</math> Therefore, the answer is <math>\boxed{\textbf{(E) }\frac{25}{11}}.</math>
+
+<u><b>Remark</b></u>
+
+Similarly, we can find the outputs of <math>f</math> at the inputs of the other answer choices:
+<cmath>\begin{alignat*}{10}
+&\textbf{(A)} \qquad && f\left(\frac{17}{32}\right) \quad && = \quad && 7 \\ 
+&\textbf{(B)} \qquad && f\left(\frac{11}{16}\right) \quad && = \quad && 3 \\ 
+&\textbf{(C)} \qquad && f\left(\frac{7}{9}\right) \quad && = \quad && 1 \\ 
+&\textbf{(D)} \qquad && f\left(\frac{7}{6}\right) \quad && = \quad && 2
+\end{alignat*}</cmath>
+Alternatively, refer to Solutions 2 and 4 for the full processes.
+
+--- Solution 2 ---
+We know that <math>f(p) = f(p \cdot 1) = f(p) + f(1)</math>. By transitive, we have <cmath>f(p) = f(p) + f(1).</cmath>
+Subtracting <math>f(p)</math> from both sides gives <math>0 = f(1).</math>
+Also
+<cmath>f(2)+f\left(\frac{1}{2}\right)=f(1)=0 \implies 2+f\left(\frac{1}{2}\right)=0 \implies f\left(\frac{1}{2}\right) = -2</cmath>
+<cmath>f(3)+f\left(\frac{1}{3}\right)=f(1)=0 \implies 3+f\left(\frac{1}{3}\right)=0 \implies f\left(\frac{1}{3}\right) = -3</cmath>
+<cmath>f(11)+f\left(\frac{1}{11}\right)=f(1)=0 \implies 11+f\left(\frac{1}{11}\right)=0 \implies f\left(\frac{1}{11}\right) = -11</cmath>
+In <math>\textbf{(A)}</math> we have <math>f\left(\frac{17}{32}\right)=17+5f\left(\frac{1}{2}\right)=17-5(2)=7</math>.
+
+In <math>\textbf{(B)}</math> we have <math>f\left(\frac{11}{16}\right)=11+4f\left(\frac{1}{2}\right)=11-4(2)=3</math>.
+
+In <math>\textbf{(C)}</math> we have <math>f\left(\frac{7}{9}\right)=7+2f\left(\frac{1}{3}\right)=7-2(3)=1</math>.
+
+In <math>\textbf{(D)}</math> we have <math>f\left(\frac{7}{6}\right)=7+f\left(\frac{1}{2}\right)+f\left(\frac{1}{3}\right)=7-2-3=2</math>.
+
+In <math>\textbf{(E)}</math> we have <math>f\left(\frac{25}{11}\right)=10+f\left(\frac{1}{11}\right)=10-11=-1</math>.
+
+Thus, our answer is <math>\boxed{\textbf{(E) }\frac{25}{11}}</math>.
+
+--- Solution 3 ---
+Consider the rational <math>\frac{a}{b}</math>, for <math>a,b</math> integers. We have <math>f(a)=f\left(\frac{a}{b}\cdot b\right)=f\left(\frac{a}{b}\right)+f(b)</math>. So <math>f\left(\frac{a}{b}\right)=f(a)-f(b)</math>. Let <math>p</math> be a prime. Notice that <math>f(p^k)=kf(p)</math>. And <math>f(p)=p</math>. So if <math>a=p_1^{a_1}p_2^{a_2}\cdots p_k^{a_k}</math>, <math>f(a)=a_1p_1+a_2p_2+\cdots+a_kp_k</math>. We simply need this to be greater than what we have for <math>f(b)</math>. Notice that for answer choices <math>\textbf{(A)},\textbf{(B)},\textbf{(C)},</math> and <math>\textbf{(D)}</math>, the numerator has fewer prime factors than the denominator, and so they are less likely to work. We check <math>\textbf{(E)}</math> first, and it works, therefore the answer is <math>\boxed{\textbf{(E) }\frac{25}{11}}</math>.
+
+--- Solution 4 ---
+We derive the following properties of <math>f:</math>
+<ol style="margin-left: 1.5em;">
+  <li>By induction, we have <cmath>f\left(\prod_{k=1}^{n}a_k\right)=\sum_{k=1}^{n}f(a_k)</cmath> for all positive rational numbers <math>a_k</math> and positive integers <math>n.</math> <p>
+Since positive powers are just repeated multiplication of the base, it follows that <cmath>f\left(a^n\right)=f\left(\prod_{k=1}^{n}a\right)=\sum_{k=1}^{n}f(a)=nf(a)</cmath> for all positive rational numbers <math>a</math> and positive integers <math>n.</math></li><p>
+  <li>For all positive rational numbers <math>a,</math> we have <cmath>f(a)=f(a\cdot1)=f(a)+f(1),</cmath> from which <math>f(1)=0.</math></li><p>
+  <li>For all positive rational numbers <math>a,</math> we have <cmath>f(a)+f\left(\frac1a\right)=f\left(a\cdot\frac1a\right)=f(1)=0,</cmath> from which <math>f\left({\frac 1a}\right)=-f(a).</math></li><p>
+</ol>
+For all positive integers <math>x</math> and <math>y,</math> suppose <math>\prod_{k=1}^{m}p_k^{d_k}</math> and <math>\prod_{k=1}^{n}q_k^{e_k}</math> are their respective prime factorizations. We get
+<cmath>\begin{align*}
+f\left(\frac xy\right)&=f(x)+f\left(\frac 1y\right) \\
+&=f(x)-f(y) && \hspace{10mm}\text{by Property 3} \\
+&=f\left(\prod_{k=1}^{m}p_k^{d_k}\right)-f\left(\prod_{k=1}^{n}q_k^{e_k}\right) \\
+&=\left[\sum_{k=1}^{m}f\left(p_k^{d_k}\right)\right]-\left[\sum_{k=1}^{n}f\left(q_k^{e_k}\right)\right] && \hspace{10mm}\text{by Property 1} \\
+&=\left[\sum_{k=1}^{m}d_k f\left(p_k\right)\right]-\left[\sum_{k=1}^{n}e_k f\left(q_k\right)\right] && \hspace{10mm}\text{by Property 1} \\
+&=\left[\sum_{k=1}^{m}d_k p_k \right]-\left[\sum_{k=1}^{n}e_k q_k \right].
+\end{align*}</cmath>
+We apply <math>f</math> to each fraction in the answer choices:
+<cmath>\begin{alignat*}{10}
+&\textbf{(A)} \qquad && f\left(\frac{17}{32}\right) \quad && = \quad && f\left(\frac{17^1}{2^5}\right) \quad && = \quad && [1(17)]-[5(2)] \quad && = \quad && 7 \\ 
+&\textbf{(B)} \qquad && f\left(\frac{11}{16}\right) \quad && = \quad && f\left(\frac{11^1}{2^4}\right) \quad && = \quad && [1(11)]-[4(2)] \quad && = \quad && 3 \\ 
+&\textbf{(C)} \qquad && f\left(\frac{7}{9}\right) \quad && = \quad && f\left(\frac{7^1}{3^2}\right)  \quad && = \quad && [1(7)]-[2(3)]  \quad && = \quad && 1 \\ 
+&\textbf{(D)} \qquad && f\left(\frac{7}{6}\right) \quad && = \quad && f\left(\frac{7^1}{2^1\cdot3^1}\right) \quad && = \quad && [1(7)]-[1(2)+1(3)] \quad && = \quad && 2 \\
+&\textbf{(E)} \qquad && f\left(\frac{25}{11}\right) \quad && = \quad && f\left(\frac{5^2}{11^1}\right) \quad && = \quad && [2(5)]-[1(11)] \quad && = \quad && {-}1
+\end{alignat*}</cmath>
+Therefore, the answer is <math>\boxed{\textbf{(E) }\frac{25}{11}}.</math>
+
+--- Solution 5 ---
+Note that answer choices <math>\textbf{(A)}</math> through <math>\textbf{(D)}</math> are <math>\frac{\text{prime}}{\text{composite}},</math> whereas <math>\textbf{(E)}</math> is <math>\frac{\text{composite}}{\text{prime}}.</math> Because the functional equation is related to primes, we hope that the uniqueness of answer choice <math>\boxed{\textbf{(E) }\frac{25}{11}}</math> is enough.
+
+--- Solution 6 ---
+If f(a <math>\cdot</math> b) = f(a) + f(b), and if f(p) = p, then f(p <math>\cdot</math> p) = 2p. You can do this multiple times (Ex: f(p^3) = 3p). You can quickly assume then, that f(p^n) = np. Thus the answer choices can then be rewritten as the product of a prime and another prime to the negative power. Answer choices A-C are straightforward. For D, you can rewrite <math>\frac{1}{6}</math> as <math>\frac{1}{2}</math> <math>\cdot</math> <math>\frac{1}{3}</math>. When you get to E, you get f(25) + f(<math>\frac{1}{11}</math>), which is 10 - 11, which is -1. So the answer is <math>\boxed{\textbf{(E) }\frac{25}{11}}</math>
+
+--- Solution 7 ---
+Note that for each of the answer choices we can multiply the fractions by their denominators to be left with only the numerator and also have the prime factorization of the denominators, then set the function equal to the numerator. This will be shown throughout the solution.
+
+For answer choice <math>\text{(A) }\dfrac{17}{32}</math>, we have <math>f\left(\dfrac{17}{32}\right)</math>. Now, we can set up an equation by multiplying <math>\dfrac{17}{32}</math> by <math>32</math> and setting it equal to <math>17</math>. This will give <math>f\left(32\cdot\dfrac{17}{32}\right)=f(17)\rightarrow f(32)+f\left(\dfrac{17}{32}\right)=f(17)</math>. Our goal is to find <math>f\left(\dfrac{17}{32}\right)</math>, therefore we must find <math>f(32)</math> and <math>f(17)</math>. Since <math>f(p)=p</math> for any prime <math>p</math>, <math>f(17)=17</math>. Taking the prime factorization of <math>32</math> gives <math>2^5</math>, so <math>f(32)=f(2\cdot2\cdot2\cdot2\cdot2)=f(2)+f(2)+f(2)+f(2)+f(2)=5f(2)=5\cdot2=10</math>. Therefore, <math>10+f\left(\dfrac{17}{32}\right)=17</math> and <math>f\left(\dfrac{17}{32}\right)=7</math>
+
+<math>\text{(B) }\dfrac{11}{16}</math>: <math>f\left(\dfrac{11}{16}\right)\rightarrow f\left(16\cdot\dfrac{11}{16}\right)=f(11)</math>
+<math>\rightarrow f(16)+f\left(\dfrac{11}{16}\right)=11\rightarrow 4f(2)+f\left(\dfrac{11}{16}\right)=11</math>
+<math>\rightarrow f\left(\dfrac{11}{16}\right)=3</math>
+
+<math>\text{(C) }\dfrac{7}{9}</math>: <math>f\left(\dfrac{7}{9}\right)\rightarrow f\left(9\cdot\dfrac{7}{9}\right)=f(7)</math>
+<math>\rightarrow f(9)+f\left(\dfrac{7}{9}\right)=7\rightarrow 2f(3)+f\left(\dfrac{7}{9}\right)=7</math>
+<math>\rightarrow f\left(\dfrac{7}{9}\right)=1</math>
+
+<math>\text{(D) }\dfrac{7}{6}</math>: <math>f\left(\dfrac{7}{6}\right)\rightarrow f\left(6\cdot\dfrac{7}{6}\right)=f(7)</math>
+<math>\rightarrow f(6)+f\left(\dfrac{7}{6}\right)=7\rightarrow f(2)+f(3)+f\left(\dfrac{7}{6}\right)=7</math>
+<math>\rightarrow f\left(\dfrac{7}{6}\right)=2</math>
+
+<math>\text{(E) }\dfrac{25}{11}</math>: <math>f\left(\dfrac{25}{11}\right)\rightarrow f\left(11\cdot\dfrac{25}{11}\right)=f(25)</math>
+<math>\rightarrow f(11)+f\left(\dfrac{25}{11}\right)=2f(5)\rightarrow 11+f\left(\dfrac{25}{11}\right)=10</math>
+<math>\rightarrow f\left(\dfrac{25}{11}\right)=-1</math>
+
+Therefore, the answer is <math>\boxed{\text{(E) }\dfrac{25}{11}}</math>
+
+Note: The general strategy here was the setting up of equations to find <math>f(x)</math>. By setting it equal to <math>f(a)</math> where <math>a</math> was an integer, we could take the prime factorization to find the value of <math>f(a)</math> and also set up an equation involving <math>f(\text{denominator})</math> because the denominator was also an integer, therefore we could take the prime factorization and find its value
+
+
+=== Problem 19 ===
+How many solutions does the equation
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4</math>'}
+Answer: C
+
+--- Solution 1 ---
+The ranges of <imath>\frac{\pi}2 \sin x</imath> and <imath>\frac{\pi}2 \cos x</imath> are both <imath>\left[-\frac{\pi}2, \frac{\pi}2 \right],</imath> which is included in the range of <imath>\arcsin,</imath> so we can use it with no issues.
+<cmath>\begin{align*}
+\frac{\pi}2 \cos x &= \arcsin \left( \cos \left( \frac{\pi}2 \sin x\right)\right) \\
+\frac{\pi}2 \cos x &= \arcsin \left( \sin \left( \frac{\pi}2 - \frac{\pi}2 \sin x\right)\right) \\
+\frac{\pi}2 \cos x &= \frac{\pi}2 - \frac{\pi}2 \sin x \\
+\cos x &= 1 - \sin x \\
+\cos x + \sin x &= 1.
+\end{align*}</cmath>
+This only happens at <imath>x = 0, \frac{\pi}2</imath> on the interval <imath>[0,\pi],</imath> because one of <imath>\sin</imath> and <imath>\cos</imath> must be <imath>1</imath> and the other <imath>0.</imath> Therefore, the answer is <imath>\boxed{\textbf{(C) }2}.</imath>
+
+--- Solution 2 ---
+Hmmm, those values <imath> \frac{\pi}{2} \cos(x) </imath> and <imath> \frac{\pi}{2} \sin(x) </imath> look scary. If only there were a way to simplify it...
+
+Well, thanks to trigonometry, we can! Notice the equality condition <imath> \sin\left(\frac{\pi}{2}\cos(x)\right) = \cos\left(\frac{\pi}{2}\sin(x)\right) </imath>. Now, say <imath> \frac{\pi}{2} \cos(x) = \mathcal{A} </imath> and <imath> \frac{\pi}{2} \sin(x) = \mathcal{B} </imath>. Then, we get <imath> \sin(\mathcal{A}) = \cos({\mathcal{B}}) </imath>.
+
+Aha! We know that <imath> \sin\left(\frac{\pi}{4}\right) = \cos\left(\frac{\pi}{4}\right) </imath>! So, the solution set to <imath> \mathcal{A} </imath> or <imath> \mathcal{B} </imath> is <imath> (\mathcal{A},\mathcal{B}) = \frac{\pi}{4} + \pi k : k \in \mathbb{Z} </imath>.
+
+Now, we substitute the values of <imath> \mathcal{A} </imath> and <imath> \mathcal{B} </imath>, primarily, <imath> \frac{\pi}{2} \cos(x) </imath> and <imath> \frac{\pi}{2} \sin(x) </imath> respectively. We then have the two equalities:
+
+<cmath>
+\frac{\pi}{2}\cos(x) = \frac{\pi}{4} + \pi k : k \in \mathbb{Z}
+</cmath>
+
+<cmath>
+\frac{\pi}{2}\sin(x) = \frac{\pi}{4} + \pi k : k \in \mathbb{Z}
+</cmath>
+
+In which multiplying by <imath> \frac{2}{\pi} </imath> on both sides rewards us with
+
+<cmath>
+\cos(x) = \frac{1}{2} + 2k : k \in \mathbb{Z}
+</cmath>
+
+<cmath>
+\sin(x) = \frac{1}{2} + 2k : k \in \mathbb{Z}
+</cmath>
+
+Aha! The values between the interval <imath>[0,\pi]</imath> lie when <imath> k=0 </imath> (because we originally had <imath> \pi k </imath>, so setting <imath> k = 1 </imath> results in <imath> \pi </imath>, in which because we have the value <imath>\frac{1}{2}</imath> at the right, we obtain <imath>\frac{1}{2} + \pi</imath>, which is beyond the interval end bound <imath>\pi</imath>, so the only values that lie within that interval are when <imath> k=0 </imath>). Simplification results in
+
+<cmath>
+\cos(x)=\frac{1}{2}
+</cmath>
+
+<cmath>
+\sin(x)=\frac{1}{2}
+</cmath>
+
+The solutions to <imath> \sin(x)=\frac{1}{2} </imath> is <imath> x= \frac{\pi}{6} + \pi k </imath> and <imath> x= \frac{5\pi}{6} + \pi k </imath>. We negate <imath> \frac{5\pi}{6} + \pi k </imath> because that is not in the interval <imath> [0, \pi] </imath>
+
+Looking at <imath> \cos(x)=\frac{1}{2} </imath>, the solutions are <imath> \frac{\pi}{3} + \pi k </imath> and <imath> \frac{5\pi}{3} + \pi k </imath>. Again, we negate <imath> \frac{5\pi}{3} + \pi k </imath> as it is not in the interval <imath> [0,\pi] </imath>
+
+Now, we have one more thing to consider. The equality condition. Hmm, the two values of <imath>x</imath> seem to be different... Does this affect the equation to have no solutions?
+
+No! Notice how we have <imath> \sin(\cos(x)) = \cos(\sin(y)) </imath>! Additionally, notice how <imath> \frac{\pi}{2} - \frac{\pi}{6} = \frac{\pi}{3} </imath>! Now, assume <imath> x= \frac{\pi}{3} </imath> and <imath> y=\frac{\pi}{6} </imath>. We already know <imath> \sin(x)=\cos(90-x) </imath>! So, we just have <imath> \cos(\cos(x))=\cos(\cos(\frac{\pi}{2}-y)) </imath>, but <imath> \frac{\pi}{2}-y=x </imath>! So, we achieve <imath> \cos(\cos(x)) = \cos(\cos(x)) </imath>, which is always true!
+
+Thus, any solution to this equation is in the form <imath> x= \frac{\pi}{6} + \pi k, \frac{\pi}{3} + \pi k </imath>.
+
+To obtain the degree measure over the interval <imath> [0,\pi] </imath>, we must have <imath> k=0 </imath>. So, we achieve the values <imath> x=\frac{\pi}{6}, \frac{\pi}{3} </imath>, or <imath> x= 30^\circ, 60^\circ </imath>
+
+There are <imath>\boxed{\textbf{(C) }2}</imath> values that satisfy the equation.
+
+--- Solution 3 ---
+By the Cofunction Identity <imath>\cos\theta=\sin\left(\frac{\pi}{2}-\theta\right),</imath> we rewrite the given equation: <cmath>\sin \left(\frac{\pi}2 \cos x\right) = \sin \left(\frac{\pi}2 - \frac{\pi}2 \sin x\right).</cmath>
+Recall that if <imath>\sin\theta=\sin\phi,</imath> then <imath>\theta=\phi+2n\pi</imath> or <imath>\theta=\pi-\phi+2n\pi</imath> for some integer <imath>n.</imath> Therefore, we have two cases:
+<ol style="margin-left: 1.5em;">
+  <li><b><imath>\boldsymbol{\frac{\pi}2 \cos x = \left(\frac{\pi}2 - \frac{\pi}2 \sin x\right) + 2n\pi}</imath> for some integer <imath>\boldsymbol{n}</imath></b> <p>
+We rearrange and simplify: <cmath>\sin x + \cos x = 1 + 4n.</cmath>
+By rough constraints, we know that <imath>-2 < \sin x + \cos x < 2,</imath> from which <imath>-2 < 1 - 4n < 2.</imath> The only possibility is <imath>n=0,</imath> so
+<cmath>\begin{align*}
+\sin x + \cos x &= 1 && (*) \\
+\sin^2 x + \cos^2 x + 2\sin x \cos x &= 1 \\
+2\sin x \cos x &= 0 \\
+\sin(2x) &= 0 \\
+2x &= k\pi \\
+x &= \frac{k\pi}{2}
+\end{align*}</cmath>
+for some integer <imath>k.</imath> <p>
+We get <imath>x=0,\frac{\pi}{2}</imath> for this case. Note that <imath>x=\pi</imath> is an extraneous solution by squaring <imath>(*).</imath></li><p>
+  <li><b><imath>\boldsymbol{\frac{\pi}2 \cos x = \pi - \left(\frac{\pi}2 - \frac{\pi}2 \sin x\right) + 2n\pi}</imath> for some integer <imath>\boldsymbol{n}</imath></b> <p>
+Similar to Case 1, we conclude that <imath>n=0,</imath> so <cmath>\cos x - \sin x = 1.</cmath>
+We get <imath>x=0</imath> for this case.</li><p>
+</ol>
+Together, we obtain <imath>\boxed{\textbf{(C) }2}</imath> solutions: <imath>x=0,\frac{\pi}{2}.</imath>
+
+--- Solution 4 ---
+This problem is equivalent to counting the intersections of the graphs of <imath>y=\sin\left(\frac{\pi}{2}\cos x\right)</imath> and <imath>y=\cos\left(\frac{\pi}{2}\sin x\right)</imath> in the closed interval <imath>[0,\pi].</imath> We construct a table of values, as shown below:
+<cmath>\begin{array}{c|ccc}
+& & & \\ [-2ex]
+& \boldsymbol{x=0} & \boldsymbol{x=\frac{\pi}{2}} & \boldsymbol{x=\pi} \\ [1.5ex]
+\hline
+& & & \\ [-1ex]
+\boldsymbol{\cos x} & 1 & 0 & -1 \\ [1.5ex]
+\boldsymbol{\frac{\pi}{2}\cos x} & \frac{\pi}{2} & 0 & -\frac{\pi}{2} \\ [1.5ex]
+\boldsymbol{\sin\left(\frac{\pi}{2}\cos x\right)} & 1 & 0 & -1 \\ [1.5ex]
+\hline 
+& & & \\ [-1ex]
+\boldsymbol{\sin x} & 0 & 1 & 0 \\ [1.5ex]
+\boldsymbol{\frac{\pi}{2}\sin x} & 0 & \frac{\pi}{2} & 0 \\ [1.5ex]
+\boldsymbol{\cos\left(\frac{\pi}{2}\sin x\right)} & 1 & 0 & 1 \\ [1ex]
+\end{array}</cmath>
+For <imath>x\in[0,\pi],</imath> note that:
+
+* <imath>\frac{\pi}{2}\cos x\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right],</imath> so <imath>\sin\left(\frac{\pi}{2}\cos x\right)\in[-1,1].</imath>
+
+* <imath>\frac{\pi}{2}\sin x\in\left[0,\frac{\pi}{2}\right],</imath> so <imath>\cos\left(\frac{\pi}{2}\sin x\right)\in[0,1].</imath>
+
+For the graphs to intersect, we need <imath>\sin\left(\frac{\pi}{2}\cos x\right)\in[0,1].</imath> This occurs when <imath>\frac{\pi}{2}\cos x\in\left[0,\frac{\pi}{2}\right].</imath>
+
+By the Cofunction Identity <imath>\cos\theta=\sin\left(\frac{\pi}{2}-\theta\right),</imath> we rewrite the given equation:
+<cmath>\sin\left(\frac{\pi}{2}\cos x\right) = \sin\left(\frac{\pi}{2}-\frac{\pi}{2}\sin x\right).</cmath>
+Since <imath>\frac{\pi}{2}\cos x\in\left[0,\frac{\pi}{2}\right]</imath> and <imath>\frac{\pi}{2}\sin x\in\left[0,\frac{\pi}{2}\right],</imath> it follows that <imath>x\in\left[0,\frac{\pi}{2}\right]</imath> and <imath>\frac{\pi}{2}-\frac{\pi}{2}\sin x\in\left[0,\frac{\pi}{2}\right].</imath>
+
+We can apply the arcsine function to both sides, then rearrange and simplify:
+<cmath>\begin{align*}
+\frac{\pi}{2}\cos x &= \frac{\pi}{2}-\frac{\pi}{2}\sin x \\
+\sin x + \cos x &= 1.
+\end{align*}</cmath>
+From Case 1 in Solution 2, we conclude that <imath>(0,1)</imath> and <imath>\left(\frac{\pi}{2},0\right)</imath> are the only points of intersection, as shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+size(600,200); 
+
+real f(real x) { return sin(pi/2*cos(x)); } 
+real g(real x) { return cos(pi/2*sin(x)); }
+
+draw(graph(f,0,pi),red,"$y=\sin\left(\frac{\pi}{2}\cos x\right)$");
+draw(graph(g,0,pi),blue,"$y=\cos\left(\frac{\pi}{2}\sin x\right)$");
+
+real xMin = 0;
+real xMax = 5/4*pi;
+real yMin = -2;
+real yMax = 2;
+
+//Draws the horizontal gridlines
+void horizontalLines()
+{
+  for (real i = yMin+1; i < yMax; ++i)
+  {
+    draw((xMin,i)--(xMax,i), mediumgray+linewidth(0.4));
+  }
+}
+
+//Draws the vertical gridlines
+void verticalLines()
+{
+  for (real i = xMin+pi/2; i < xMax; i+=pi/2)
+  {
+    draw((i,yMin)--(i,yMax), mediumgray+linewidth(0.4));
+  }
+}
+
+//Draws the horizontal ticks
+void horizontalTicks()
+{
+  for (real i = yMin+1; i < yMax; ++i)
+  {
+    draw((-1/8,i)--(1/8,i), black+linewidth(1));
+  }
+}
+
+//Draws the vertical ticks
+void verticalTicks()
+{
+  for (real i = xMin+pi/2; i < xMax; i+=pi/2)
+  {
+    draw((i,-1/8)--(i,1/8), black+linewidth(1));
+  }
+}
+
+horizontalLines();
+verticalLines();
+horizontalTicks();
+verticalTicks();
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+
+pair A[];
+A[0] = (pi/2,0);
+A[1] = (pi,0);
+A[2] = (0,1);
+A[3] = (0,0);
+A[4] = (0,-1);
+
+label("$\frac{\pi}{2}$",A[0],(0,-2.5));
+label("$\pi$",A[1],(0,-2.5));
+label("$1$",A[2],(-2.5,0));
+label("$0$",A[3],(-2.5,0));
+label("$-1$",A[4],(-2.5,0));
+
+dot((0,1),linewidth(5)); 
+dot((pi/2,0),linewidth(5)); 
+
+add(legend(),point(E),40E,UnFill);
+</asy>
+Therefore, the answer is <imath>\boxed{\textbf{(C) }2}.</imath>
+
+--- Solution 5 ---
+For <imath>\sin(a) = \cos(b),</imath> <imath>a</imath> and <imath>b</imath> must be complementary angles, or <imath> a + b = \frac{\pi}{2}.</imath> So we have 
+<cmath>\frac{\pi}{2}(\sin(x) + \cos(x)) = \frac{\pi}{2} \implies \sin(x) + \cos(x) = 1.</cmath> 
+
+We know <imath>\sin^2(x) + \cos^2(x) = 1,</imath> so we can express <imath>\cos(x)</imath> in terms of <imath>\sin(x)</imath> and set those expressions equal to each other: 
+
+<cmath>\sqrt{1 - \sin^2(x)} = 1 - \sin(x) \implies 1 - \sin^2(x) = (1 - \sin(x))^2 \implies \sin(x) = 1.</cmath> 
+
+So now the problem becomes the number of values of <imath>x</imath> on the interval <imath>[0, \pi]</imath> such that <imath>\sin(x) = 1</imath>. It's pretty easy to see that <imath>x</imath> can equal <imath>0</imath> or <imath>\frac{\pi}{2},</imath> so the answer is <imath>\boxed{\textbf{(C) }2}.</imath>
+
+~[[User:grogg007|grogg007]]
+
+
+=== Problem 20 ===
+Suppose that on a parabola with vertex
+
+Choices: {'A': '13', 'B': '\\frac{40}3', 'C': '\\frac{41}3', 'D': '14', 'E': '\\frac{43}3</math>'}
+Answer: B
+
+--- Solution 1 ---
+Let <math>\ell</math> be the directrix of <math>\mathcal P</math>; recall that <math>\mathcal P</math> is the set of points <math>T</math> such that the distance from <math>T</math> to <math>\ell</math> is equal to <math>TF</math>. Let <math>P</math> and <math>Q</math> be the orthogonal projections of <math>F</math> and <math>A</math> onto <math>\ell</math>, and further let <math>X</math> and <math>Y</math> be the orthogonal projections of <math>F</math> and <math>V</math> onto <math>AQ</math>. Because <math>AF < AV</math>, there are two possible configurations which may arise, and they are shown below.
+
+<asy>
+	import olympiad;
+	size(230);
+defaultpen(linewidth(0.8)+fontsize(11pt));
+real d = 1.1, edge = 2.5, Ax = 1.6;
+real f(real x)
+{
+return 1/(4*d) * x * x;
+}
+pair V = origin, F = (0,d), la = (-edge,-d), lb = (edge,-d), A = (Ax, f(Ax));
+pair P = foot(F,la,lb), Q = foot(A,la,lb), X = foot(F,A,Q), Y = foot(V,A,Q);
+draw(P--F--A--V--Y^^F--X--Q^^rightanglemark(F,P,la,4)^^rightanglemark(A,Q,lb,4)^^rightanglemark(A,X,F,4)^^rightanglemark(A,Y,V,4),red);
+draw(graph(f,-2.5,2.5));
+draw(la -- lb);
+dot(F^^A^^V);
+label("$F$",F,NW);
+label("$V$",V,SW);
+label("$A$",A,dir(F--A));
+label("$P$",P,S,red);
+label("$Q$",Q,S,red);
+label("$X$",X,E,red);
+label("$Y$",Y,E,red);
+</asy>
+<asy>
+	import olympiad;
+	size(200);
+defaultpen(linewidth(0.8)+fontsize(11pt));
+real d = 0.7, edge = 2.5, Ax = 1.9;
+real f(real x)
+{
+return 1/(4*d) * x * x;
+}
+pair V = origin, F = (0,d), la = (-edge,-d), lb = (edge,-d), A = (Ax, f(Ax));
+pair P = foot(F,la,lb), Q = foot(A,la,lb), X = foot(F,A,Q), Y = foot(V,A,Q);
+draw(Q--A--F--P^^F--X^^A--V--Y^^rightanglemark(F,P,la,4)^^rightanglemark(A,Q,lb,4)^^rightanglemark(A,X,F,4)^^rightanglemark(A,Y,V,4),red);
+draw(la -- lb);
+draw(graph(f,-2.5,2.5));
+dot(F^^A^^V);
+label("$F$",F,NW);
+label("$V$",V,SW);
+label("$A$",A,dir(F--A));
+label("$P$",P,S,red);
+label("$Q$",Q,S,red);
+label("$X$",X,E,red);
+label("$Y$",Y,E,red);
+</asy>
+Set <math>d = FV</math>, which by the definition of a parabola also equals <math>VP</math>. Then as <math>AQ = AF = 20</math>, we have <math>AY = 20 - d</math> and <math>AX = |20 - 2d|</math>. Since <math>FXYV</math> is a rectangle, <math>FX = VY</math>, so by Pythagorean Theorem on triangles <math>AFX</math> and <math>AVY</math>,
+<cmath>\begin{align*}
+21^2 - (20 - d)^2 &= AV^2 - AY^2 = VY^2\\
+&= FX^2 = AF^2 - AX^2 = 20^2 - (20 - 2d)^2
+\end{align*}</cmath>
+This equation simplifies to <math>3d^2 - 40d + 41 = 0</math>, which has solutions <math>d = \tfrac{20\pm\sqrt{277}}3</math>. Both values of <math>d</math> work - the smaller solution with the bottom configuration and the larger solution with the top configuration - and so the requested answer is <math>\boxed{\textbf{(B)}\ \tfrac{40}{3}}</math>.
+
+--- Solution 2 ---
+Let <math>\mathcal{P}</math> be the parabola, let <math>V</math> be the origin, <math>F</math> lie on the positive <math>y</math> axis, and <math>d=FV</math>. The equation of the parabola is then <math>x^{2}=4dy</math>. If the coordinates of <math>A</math> are <math>(p, q),</math> then <math>p^{2}+q^{2}=441</math> since the distance from the origin to <math>A</math> is <math>21</math>. Note also that the parabola is the set of all points equidistant from <math>F</math> and a line known as its directrix, which in this case is a horizontal line <math>d</math> units below the origin. Since the distance from <math>A</math> to its directrix is equal to <math>AF,</math> then <math>A</math> is <math>20</math> units above this line and therefore <math>q=20-d</math>. Substituting for <math>p</math> and <math>q</math> yields <math>4d(20-d)+(20-d)^{2}=441</math> or <math>(20-d)(20+3d)=441,</math> which simplifies to <math>3d^{2}-40d+41=0</math>. Therefore the sum of all possible values of <math>d</math> is <math>\tfrac{-b}{a}=\boxed{\textbf{(B)}
+
+
+=== Problem 21 ===
+The five solutions to the equation<cmath>(z-1)(z^2+2z+4)(z^2+4z+6)=0</cmath> may be written in the form
+
+Choices: {'A': '7', 'B': '9', 'C': '11', 'D': '13', 'E': '15</math>'}
+Answer: A
+
+--- Solution 1 ---
+The solutions to this equation are <math>z = 1</math>, <math>z = -1 \pm i\sqrt 3</math>, and <math>z = -2\pm i\sqrt 2</math>. Consider the five points <math>(1,0)</math>, <math>\left(-1,\pm\sqrt 3\right)</math>, and <math>\left(-2,\pm\sqrt 2\right)</math>; these are the five points which lie on <math>\mathcal E</math>. Note that since these five points are symmetric about the <math>x</math>-axis, so must <math>\mathcal E</math>.
+
+Now let <math>r=b/a</math> denote the ratio of the length of the minor axis of <math>\mathcal E</math> to the length of its major axis. Remark that if we perform a transformation of the plane which scales every <math>x</math>-coordinate by a factor of <math>r</math>, <math>\mathcal E</math> is sent to a circle <math>\mathcal E'</math>. Thus, the problem is equivalent to finding the value of <math>r</math> such that <math>(r,0)</math>, <math>\left(-r,\pm\sqrt 3\right)</math>, and <math>\left(-2r,\pm\sqrt 2\right)</math> all lie on a common circle; equivalently, it suffices to determine the value of <math>r</math> such that the circumcenter of the triangle formed by the points <math>P_1 = (r,0)</math>, <math>P_2 = \left(-r,\sqrt 3\right)</math>, and <math>P_3 = \left(-2r,\sqrt 2\right)</math> lies on the <math>x</math>-axis.
+
+Recall that the circumcenter of a triangle <math>ABC</math> is the intersection point of the perpendicular bisectors of its three sides. The equations of the perpendicular bisectors of the segments <math>\overline{P_1P_2}</math> and <math>\overline{P_1P_3}</math> are<cmath>y = \tfrac{\sqrt 3}2 + \tfrac{2r}{\sqrt 3}x\qquad\text{and}\qquad y = \tfrac{\sqrt 2}2 + \tfrac{3r}{\sqrt 2}\left(x + \tfrac r2\right)</cmath>respectively. These two lines have different slopes for <math>r\neq 0</math>, so indeed they will intersect at some point <math>(x_0,y_0)</math>; we want <math>y_0 = 0</math>. Plugging <math>y = 0</math> into the first equation yields <math>x = -\tfrac{3}{4r}</math>, and so plugging <math>y=0</math> into the second equation and simplifying yields<cmath>-\tfrac{1}{3r} = x + \tfrac r2 = -\tfrac{3}{4r} + \tfrac{r}{2}.</cmath>Solving yields <math>r=\sqrt{\tfrac 56}</math>.
+
+Finally, recall that the lengths <math>a</math>, <math>b</math>, and <math>c</math> (where <math>c</math> is the distance between the foci of <math>\mathcal E</math>) satisfy <math>c = \sqrt{a^2 - b^2}</math>. Thus the eccentricity of <math>\mathcal E</math> is <math>\tfrac ca = \sqrt{1 - \left(\tfrac ba\right)^2} = \sqrt{\tfrac 16}</math> and the requested answer is <math>\boxed{\textbf{(A) } 7}</math>.
+
+--- Solution 2 ---
+Completing the square in the original equation, we have <cmath>(z-1)\left((z+1)^2+3\right)\left((z+2)^2+2\right)=0,</cmath> from which <math>z=1,-1\pm\sqrt{3}i,-2\pm\sqrt{2}i.</math>
+
+Now, we will find the equation of an ellipse <math>\mathcal E</math> that passes through <math>(1,0),\left(-1,\pm\sqrt3\right),</math> and <math>\left(-2,\pm\sqrt2\right)</math> in the <math>xy</math>-plane. By symmetry, the center of <math>\mathcal E</math> must be on the <math>x</math>-axis.
+
+The formula of <math>\mathcal E</math> is <cmath>\frac{(x-h)^2}{a^2}+\frac{y^2}{b^2}=1, \hspace{44.5mm} (\bigstar)</cmath> with the center <math>(h,0)</math> and the axes' lengths <math>2a</math> and <math>2b.</math>
+
+Plugging the points <math>(1,0),\left(-1,\sqrt3\right),</math> and <math>\left(-2,\sqrt2\right)</math> into <math>(\bigstar),</math> respectively, we have the following system of equations:
+<cmath>\begin{align*}
+\frac{(1-h)^2}{a^2}&=1, \\
+\frac{(-1-h)^2}{a^2}+\frac{{\sqrt3}^2}{b^2}&=1, \\
+\frac{(-2-h)^2}{a^2}+\frac{{\sqrt2}^2}{b^2}&=1.
+\end{align*}</cmath>
+Since <math>t^2=(-t)^2</math> holds for all real numbers <math>t,</math> we clear fractions and simplify:
+<cmath>\begin{align*}
+(1-h)^2&=a^2, \hspace{30.25mm} &(1)\\
+b^2(1+h)^2 + 3a^2 &= a^2b^2, &(2)\\
+b^2(2+h)^2 + 2a^2 &= a^2b^2. &(3)
+\end{align*}</cmath>
+Applying the Transitive Property to <math>(2)</math> and <math>(3),</math> we isolate <math>a^2:</math>
+<cmath>\begin{align*}
+b^2(1+h)^2 + 3a^2 &= b^2(2+h)^2 + 2a^2 \\
+a^2 &= b^2\left((2+h)^2-(1+h)^2\right) \\
+a^2 &= b^2(2h+3). \hspace{26.75mm} (*)
+\end{align*}</cmath>
+Substituting <math>(1)</math> and <math>(*)</math> into <math>(2),</math> we solve for <math>h:</math> 
+<cmath>\begin{align*}
+b^2(1+h)^2 + 3\underbrace{b^2(2h+3)}_{\text{by }(*)} &= \underbrace{(1-h)^2}_{\text{by }(1)}b^2 \\
+(1+h)^2+3(2h+3)&=(1-h)^2 \\
+1+2h+h^2+6h+9&=1-2h+h^2 \\
+10h&=-9 \\
+h&=-\frac{9}{10}.
+\end{align*}</cmath>
+Substituting this into <math>(1),</math> we get <math>a^2=\frac{361}{100}.</math>
+
+Substituting the current results into <math>(*),</math> we get <math>b^2=\frac{361}{120}.</math>
+
+Finally, we obtain
+<cmath>c^2 = a^2-b^2 = 361\left(\frac{1}{100}-\frac{1}{120}\right) = \frac{361}{600},</cmath>
+from which <cmath>\frac{c}{a}=\sqrt{\frac{c^2}{a^2}}=\sqrt{\frac{361/600}{361/100}}=\sqrt{\frac 16}.</cmath>
+The answer is <math>1+6=\boxed{\textbf{(A) } 7}.</math>
+
+The graph of <math>\mathcal E</math> is shown below. Note that the foci are at <math>(h\pm c,0)=\left(-\frac{9}{10}\pm\frac{19\sqrt6}{60},0\right),</math> as shown in the blue points.
+<asy>
+/* Made by MRENTHUSIASM */
+size(220); 
+
+int xMin = -4;
+int xMax = 2;
+int yMin = -3;
+int yMax = 3;
+
+//Draws the horizontal gridlines
+void horizontalLines()
+{
+  for (int i = yMin+1; i < yMax; ++i)
+  {
+    draw((xMin,i)--(xMax,i), mediumgray+linewidth(0.4));
+  }
+}
+
+//Draws the vertical gridlines
+void verticalLines()
+{
+  for (int i = xMin+1; i < xMax; ++i)
+  {
+    draw((i,yMin)--(i,yMax), mediumgray+linewidth(0.4));
+  }
+}
+
+//Draws the horizontal ticks
+void horizontalTicks()
+{
+  for (int i = yMin+1; i < yMax; ++i)
+  {
+    draw((-1/8,i)--(1/8,i), black+linewidth(1));
+  }
+}
+
+//Draws the vertical ticks
+void verticalTicks()
+{
+  for (int i = xMin+1; i < xMax; ++i)
+  {
+    draw((i,-1/8)--(i,1/8), black+linewidth(1));
+  }
+}
+
+horizontalLines();
+verticalLines();
+horizontalTicks();
+verticalTicks();
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+
+draw(ellipse((-9/10,0),19/10,19/sqrt(120)),red);
+
+pair A = (-9/10,0);
+pair B = (1,0);
+pair C = (-1,sqrt(3));
+pair D = (-1,-sqrt(3));
+pair E = (-2,sqrt(2));
+pair F = (-2,-sqrt(2));
+pair G = (-9/10+19/sqrt(600),0);
+pair H = (-9/10-19/sqrt(600),0);
+
+dot(A,red+linewidth(4.5));
+dot(B,red+linewidth(4.5));
+dot(C,red+linewidth(4.5));
+dot(D,red+linewidth(4.5));
+dot(E,red+linewidth(4.5));
+dot(F,red+linewidth(4.5));
+dot(G,blue+linewidth(4.5));
+dot(H,blue+linewidth(4.5));
+
+label("$\left(-\frac{9}{10},0\right)$",A,(0,-2),UnFill);
+label("$(1,0)$",B,(1.5,-2),UnFill);
+label("$\left(-1,\sqrt3\right)$",C,N,UnFill);
+label("$\left(-1,-\sqrt3\right)$",D,S,UnFill);
+label("$\left(-2,\sqrt2\right)$",E,NW,UnFill);
+label("$\left(-2,-\sqrt2\right)$",F,SW,UnFill);
+</asy>
+
+--- Solution 3 ---
+Starting from this system of equations from Solution 2:
+<cmath>\begin{align*}
+\frac{(1-h)^2}{a^2}&=1, \\
+\frac{(-1-h)^2}{a^2}+\frac{{\sqrt3}^2}{b^2}&=1, \\
+\frac{(-2-h)^2}{a^2}+\frac{{\sqrt2}^2}{b^2}&=1.
+\end{align*}</cmath>
+Let <math>A=a^{-2}</math> and <math>B=b^{-2}</math>. Therefore, the system can be rewritten as:
+<cmath>\begin{align*}
+(h^2-2h+1)A&=1, &(1)\\
+(h^2+2h+1)A+3B&=1, &(2)\\
+(h^2+4h+4)A+2B&=1. &(3)
+\end{align*}</cmath>
+Subtracting <math>(1)</math> from <math>(2)</math> and <math>(3)</math>, we get
+<cmath>4hA+3B=0\quad\text{and}\quad 3A-6hA+3B=0.</cmath>
+Plugging the former into the latter and simplifying yields <math>6A=5B</math>. Hence <math>a^2:b^2=6:5</math>. Since <math>c^2=a^2-b^2</math>, we get <math>a^2=6c^2</math>, so the eccentricity is <math>\frac ca=\sqrt{\frac16}</math>.
+
+Therefore, the answer is <math>1+6=\boxed{\textbf{(A) }7}</math>.
+
+--- Solution 4 ---
+The five roots are <math>1,-1+i\sqrt{3},-1-i\sqrt{3},-2+i\sqrt{2},-2-i\sqrt{2}.</math>
+
+So, we express this conic in the form <math>ax^2+by^2+cx+z=0.</math> Note that this conic cannot have the <math>ky</math> term since the roots are symmetric about the <math>x</math>-axis.
+
+Now we have equations
+<cmath>\begin{align*}
+a+c+z&=0, \\
+a+3b-c+z&=0, \\
+4a+2b-2c+z&=0,
+\end{align*}</cmath>
+from which <math>a:b:c=5:6:9.</math>
+
+So, the conic can be written in the form <math>5x^2+6y^2+9x=14.</math> If it is written in the form of <math>\frac{(x-m)^2}{r^2}+\frac{y^2}{s^2}=1,</math> then <math>r^2:s^2=6:5.</math>
+
+Therefore, the desired eccentricity is <math>\sqrt{\frac{\sqrt{6-5}}{6}}=\sqrt{\frac{1}{6}},</math> and the answer is <math>1+6=\boxed{\textbf{(A) }7}.</math>
+
+--- Solution 5 ---
+After calculating the <math>5</math> points that lie on <math>\mathcal E</math>, we try to find a transformation that sends <math>\mathcal E</math> to the unit circle. Scaling about <math>(1, 0)</math> works, since <math>(1, 0)</math> is already on the unit circle and such a transformation will preserve the ellipse's symmetry about the <math>x</math>-axis. If <math>2a</math> and <math>2b</math> are the lengths of the major and minor axes, respectively, then the ellipse will be scaled by a factor of <math>r := \frac1a</math> in the <math>x</math>-dimension and <math>s := \frac1b</math> in the <math>y</math>-dimension.
+
+The transformation then sends the points <math>\left(-1,\pm\sqrt 3\right)</math> and <math>\left(-2,\pm\sqrt 2\right)</math> to the points <math>\left(1-2r, \pm s\sqrt 3\right)</math> and <math>\left(1-3r, \pm s\sqrt 2\right)</math>, respectively. These points are on the unit circle, so
+<cmath>(1-2r)^2 + 3s^2 = 1 \quad \text{and} \quad (1-3r)^2 + 2s^2 = 1.</cmath>
+This yields <cmath>4r^2 + 3s^2 = 4r \quad \text{and} \quad 9r^2 + 2s^2 = 6r,</cmath> from which
+<cmath>\begin{align*}
+12r^2 + 9s^2 &= 18r^2 + 4s^2 \\
+\frac{r^2}{s^2} &= \frac56.
+\end{align*}</cmath>
+Recalling that <math>r = \frac1a</math> and <math>s = \frac1b</math>, this implies <math>\frac{b^2}{a^2} = \frac56</math>. From this, we get
+<cmath>\frac{c^2}{a^2} = \frac{a^2-b^2}{a^2} = 1 - \frac{b^2}{a^2} = \frac{1}{6},</cmath>
+so <math>\frac ca = \sqrt{\frac16}</math>, giving an answer of <math>1 + 6 = \boxed{\textbf{(A) } 7}</math>.
+
+
+=== Problem 22 ===
+Suppose that the roots of the polynomial
+
+Choices: {'A': '{-}\\frac{3}{49}', 'B': '{-}\\frac{1}{28}', 'C': '\\frac{\\sqrt[3]7}{64}', 'D': '\\frac{1}{32}', 'E': '\\frac{1}{28}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>z=e^{\frac{2\pi i}{7}}.</math> Since <math>z</math> is a <math>7</math>th root of unity, we have <math>z^7=1.</math> For all integers <math>k,</math> note that <cmath>\cos\frac{2k\pi}{7}=\operatorname{Re}\left(z^k\right)=\operatorname{Re}\left(z^{-k}\right).</cmath>
+It follows that
+<cmath>\begin{alignat*}{4}
+\cos\frac{2\pi}{7} &= \frac{z+z^{-1}}{2} &&= \frac{z+z^6}{2}, \\
+\cos\frac{4\pi}{7} &= \frac{z^2+z^{-2}}{2} &&= \frac{z^2+z^5}{2}, \\
+\cos\frac{6\pi}{7} &= \frac{z^3+z^{-3}}{2} &&= \frac{z^3+z^4}{2}.
+\end{alignat*}</cmath>
+By geometric series, we conclude that <cmath>\sum_{k=0}^{6}z^k=\frac{1-1}{1-z}=0.</cmath>
+Alternatively, recall that the <math>7</math>th roots of unity satisfy the equation <math>z^7-1=0.</math> By Vieta's Formulas, the sum of these seven roots is <math>0.</math>
+
+As a result, we get <cmath>\sum_{k=1}^{6}z^k=-1.</cmath>
+Let <math>(r,s,t)=\left(\cos{\frac{2\pi}{7}},\cos{\frac{4\pi}{7}},\cos{\frac{6\pi}{7}}\right).</math> By Vieta's Formulas, the answer is
+<cmath>\begin{align*}
+abc&=[-(r+s+t)](rs+st+tr)(-rst) \\
+&=(r+s+t)(rs+st+tr)(rst) \\
+&=\left(\frac{\sum_{k=1}^{6}z^k}{2}\right)\left(\frac{2\sum_{k=1}^{6}z^k}{4}\right)\left(\frac{1+\sum_{k=0}^{6}z^k}{8}\right) \\
+&=\frac{1}{32}\left(\sum_{k=1}^{6}z^k\right)\left(\sum_{k=1}^{6}z^k\right)\left(1+\sum_{k=0}^{6}z^k\right) \\
+&=\frac{1}{32}(-1)(-1)(1) \\
+&=\boxed{\textbf{(D) }\frac{1}{32}}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Let <math>z=e^{\frac{2\pi i}{7}}.</math> In Solution 1, we conclude that <math>\sum_{k=1}^{6}z^k=-1,</math> so <cmath>\sum_{k=1}^{6}\operatorname{Re}\left(z^k\right)=\sum_{k=1}^{6}\cos\frac{2k\pi}{7}=-1.</cmath>
+Since <math>\cos\theta=\cos(2\pi-\theta)</math> holds for all <math>\theta,</math> this sum becomes
+<cmath>\begin{align*}
+2\left(\cos\frac{2\pi}{7}+\cos\frac{4\pi}{7}+\cos\frac{6\pi}{7}\right)&=-1\\
+\cos\frac{2\pi}{7}+\cos\frac{4\pi}{7}+\cos\frac{6\pi}{7}&=-\frac12.
+\end{align*}</cmath>
+Note that <math>\theta=\frac{2\pi}{7},\frac{4\pi}{7},\frac{6\pi}{7}</math> are roots of <cmath>\cos\theta+\cos(2\theta)+\cos(3\theta)=-\frac12, \hspace{15mm} (\bigstar)</cmath> as they can be verified either algebraically (by the identity <math>\cos\theta=\cos(-\theta)=\cos(2\pi-\theta)</math>) or geometrically (by the graph below).
+<asy>
+/* Made by MRENTHUSIASM */
+size(200); 
+
+int xMin = -2;
+int xMax = 2;
+int yMin = -2;
+int yMax = 2;
+int numRays = 24;
+
+//Draws a polar grid that goes out to a number of circles 
+//equal to big, with numRays specifying the number of rays: 
+void polarGrid(int big, int numRays) 
+{
+  for (int i = 1; i < big+1; ++i)
+  {
+    draw(Circle((0,0),i), gray+linewidth(0.4));
+  }
+  for(int i=0;i<numRays;++i) 
+  draw(rotate(i*360/numRays)*((-big,0)--(big,0)), gray+linewidth(0.4));
+}
+
+//Draws the horizontal gridlines
+void horizontalLines()
+{
+  for (int i = yMin+1; i < yMax; ++i)
+  {
+    draw((xMin,i)--(xMax,i), mediumgray+linewidth(0.4));
+  }
+}
+
+//Draws the vertical gridlines
+void verticalLines()
+{
+  for (int i = xMin+1; i < xMax; ++i)
+  {
+    draw((i,yMin)--(i,yMax), mediumgray+linewidth(0.4));
+  }
+}
+
+horizontalLines();
+verticalLines();
+polarGrid(xMax,numRays);
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("Re",(xMax,0),(2,0));
+label("Im",(0,yMax),(0,2));
+
+//The n such that we're taking the nth roots of unity
+int n = 7;
+
+pair A[];
+for(int i = 0; i <= n-1; i+=1) {
+  A[i] = rotate(360*i/n)*(1,0);
+}
+
+label("$1$",A[0],NE, UnFill);
+for(int i =1; i < n; ++i)
+{
+   label("$e^{\frac{" +string(2i)+"\pi i}{" + string(n) + "}}$",A[i],dir(A[i]), UnFill);
+}
+
+draw(Circle((0,0),1),red);
+
+for(int i = 0; i< n; ++i) dot(A[i],linewidth(3.5)); 
+</asy>
+Let <math>x=\cos\theta.</math> We apply the Double-Angle and Triple-Angle Identities to rewrite <math>(\bigstar)</math> in terms of <math>x,</math> and then rearrange:
+<cmath>\begin{align*}
+x+\left(2x^2-1\right)+\left(4x^3-3x\right)&=-\frac12 \\
+4x^3+2x^2-2x-\frac12&=0 \\
+x^3+\frac12 x^2 - \frac12 x - \frac18 &= 0.
+\end{align*}</cmath>
+Recall that the roots are <math>x=\cos\frac{2\pi}{7},\cos\frac{4\pi}{7},\cos\frac{6\pi}{7}.</math>
+
+Therefore, we obtain <math>(a,b,c)=\left(\frac12,-\frac12,-\frac18\right),</math> from which <math>abc=\boxed{\textbf{(D) }\frac{1}{32}}.</math>
+
+--- Solution 3 ---
+We solve for <math>a,b,</math> and <math>c</math> separately:
+<ol style="margin-left: 1.5em;">
+  <li>Solve for <math>a:</math> By Vieta's Formulas, we have <math>a = - \left( \cos \frac{2\pi}7 + \cos \frac{4\pi}7 + \cos \frac{6\pi}7 \right).</math><p>
+The real parts of the <math>7</math>th roots of unity are <math>1, \cos \frac{2\pi}7, \cos \frac{4\pi}7, \cos \frac{6\pi}7, \cos \frac{8\pi}7, \cos \frac{10\pi}7, \cos \frac{12\pi}7</math> and they sum to <math>0.</math> <p>
+Note that <math>\cos\theta=\cos(2\pi-\theta)</math> for all <math>\theta.</math> Excluding <math>1,</math> the other six roots add to <cmath>2\left(\cos \frac{2\pi}7 + \cos \frac{4\pi}7 + \cos \frac{6\pi}7\right) = -1,</cmath> from which <cmath>\cos \frac{2\pi}7 + \cos \frac{4\pi}7 + \cos \frac{6\pi}7 = -\frac12.</cmath>
+Therefore, we get <math>a = -\left(-\frac12\right) = \frac12.</math></li><p>
+  <li>Solve for <math>b:</math> By Vieta's Formulas, we have <math>b = \cos \frac{2\pi}7 \cos \frac{4\pi}7 + \cos \frac{2\pi}7 \cos \frac{6\pi}7 + \cos \frac{4\pi}7 \cos \frac{6\pi}7.</math><p>
+Note that <math>\cos \alpha \cos \beta = \frac{ \cos \left(\alpha + \beta\right) + \cos \left(\alpha - \beta\right) }{2}</math> for all <math>\alpha</math> and <math>\beta.</math> Therefore, we get <cmath>b=\frac{\cos \frac{6\pi}7 + \cos \frac{2\pi}7}2 + \frac{\cos \frac{6\pi}7 + \cos \frac{4\pi}7}2 + \frac{\cos \frac{4\pi}7 + \cos \frac{2\pi}7}2=\cos \frac{2\pi}7 + \cos \frac{4\pi}7 + \cos \frac{6\pi}7=-\frac12.</cmath></li>
+  <li>Solve for <math>c:</math> By Vieta's Formulas, we have <math>c = -\cos \frac{2\pi}7 \cos \frac{4\pi}7 \cos \frac{6\pi}7=-\cos \frac{2\pi}7 \cos \frac{4\pi}7 \cos \frac{8\pi}7.</math> <p>
+We multiply both sides by <math>8 \sin{\frac{2\pi}{7}},</math> then repeatedly apply the angle addition formula for sine:
+<cmath>\begin{align*}
+c \cdot 8 \sin{\frac{2\pi}{7}} &= -8 \sin{\frac{2\pi}{7}} \cos \frac{2\pi}7 \cos \frac{4\pi}7 \cos \frac{8\pi}7 \\
+&= -4 \sin \frac{4\pi}7 \cos \frac{4\pi}7 \cos \frac{8\pi}7 \\
+&= -2 \sin \frac{8\pi}7 \cos \frac{8\pi}7 \\
+&= -\sin \frac{16\pi}7 \\
+&= -\sin \frac{2\pi}7.
+\end{align*}</cmath>
+Therefore, we get <math>c = -\frac18.</math><p>
+</li>
+</ol>
+Finally, the answer is <math>abc=\frac12\cdot\left(-\frac12\right)\cdot\left(-\frac18\right)=\boxed{\textbf{(D) }\frac{1}{32}}.</math>
+
+--- Solution 4 ---
+Note that the sum of the roots of unity equal zero, so the sum of their real parts equal zero, and <math>\operatorname{Re}\left(\omega^{m}\right) = \operatorname{Re}\left(\omega^{-m}\right).</math> We have <cmath>\cos \frac{2 \pi}{7} + \cos \frac{4 \pi}{7} + \cos \frac{6 \pi}{7} = \frac12(0 - \cos 0) = -\frac12,</cmath> so <math>a = \frac{1}{2}.</math>
+
+By the Product-to-Sum Identity, we have 
+<cmath>\begin{align*}
+\cos \frac{2 \pi}{7} \cos \frac{4 \pi}{7} + \cos \frac{2 \pi}{7} \cos \frac{6 \pi}{7} + \cos \frac{4 \pi}{7} \cos \frac{6 \pi}{7} &= \frac{1}{2} \left(2 \cos \frac{2 \pi}{7} + \cos \frac{4 \pi}{7} + \cos \frac{6 \pi}{7} + \cos \frac{8 \pi}{7} + \cos \frac{10 \pi}{7}\right) \\
+&= \frac{1}{2}\left(2 \cos \frac{2 \pi}{7} + 2 \cos \frac{4 \pi}{7} + 2 \cos \frac{6 \pi}{7}\right) \\
+&= \cos \frac{2 \pi}{7} + \cos \frac{4 \pi}{7} + \cos \frac{6 \pi}{7} \\
+&= -\frac{1}{2},
+\end{align*}</cmath>
+so <math>b = -\frac{1}{2}.</math>
+
+By the Product-to-Sum Identity, we have 
+<cmath>\begin{align*}
+\cos \frac{2 \pi}{7} \cos \frac{4 \pi}{7} \cos \frac{6 \pi}{7} &= \frac{1}{2}\cos \frac{6 \pi}{7}\left(\cos \frac{2 \pi}{7} + \cos \frac{6 \pi}{7}\right) \\
+&= \frac{1}{4}\left(\cos \frac{4 \pi}{7} +  \cos \frac{8 \pi}{7}\right) + \frac{1}{4}\left(1 + \cos \frac{12 \pi}{7}\right) \\
+&= \frac{1}{4}\left(1 + \cos\frac{2\pi}{7} + \cos \frac{4\pi}{7} + \cos \frac{6\pi}{7}\right) \\
+&= \frac{1}{8},
+\end{align*}</cmath>
+so <math>c = -\frac{1}{8}.</math>
+
+Finally, we get <math>abc=\boxed{\textbf{(D) }\frac{1}{32}}.</math>
+
+
+== Easy Video Solution by Scholars Foundation Without Complex Numbers and Euler's Identity (Using Trigonometry + Vieta's Formula) ==
+ 
+https://youtu.be/m4N4KN6_tA0
+
+
+=== Problem 23 ===
+Frieda the frog begins a sequence of hops on a
+
+Choices: {'A': '\\frac{9}{16}', 'B': '\\frac{5}{8}', 'C': '\\frac34', 'D': '\\frac{25}{32}', 'E': '\\frac{13}{16}</math>'}
+Answer: D
+
+--- Solution 1 ---
+We will use complementary counting.
+First, the frog can go left with probability <math>\frac14</math>. We observe symmetry, so our final answer will be multiplied by 4 for the 4 directions, and since <math>4\cdot \frac14=1</math>, we will ignore the leading probability.
+
+From the left, she either goes left to another edge (<math>\frac14</math>) or back to the center (<math>\frac14</math>). Time for some casework.
+
+<math>\textbf{Case 1:}</math> She goes back to the center.
+
+Now, she can go in any 4 directions, and then has 2 options from that edge. This gives <math>\frac12</math>. --End case 1
+
+<math>\textbf{Case 2:}</math> She goes to another edge (rightmost).
+
+Subcase 1: She goes back to the left edge. She now has 2 places to go, giving <math>\frac12</math>
+
+Subcase 2: She goes to the center. Now any move works.
+
+<math>\frac14 \cdot \frac12 + \frac14 \cdot 1=\frac18 + \frac 14=\frac38</math> for this case. --End case 2
+
+She goes back to the center in Case 1 with probability <math>\frac14</math>, and to the right edge with probability <math>\frac14</math>
+
+So, our answer is <math>\frac14 \cdot \frac12 + \frac14 \cdot \frac38=\frac14 (\frac12+\frac38)=\frac14 \cdot \frac78 = \frac7{32}</math>
+
+But, don't forget complementary counting. So, we get <math>1-\frac7{32}=\frac{25}{32} \implies \boxed{D}</math>.
+
+--- Solution 2 ---
+We can draw a state diagram with three states: center, edge, and corner. Denote center by M, edge by E, and corner by C. There are a few ways Frieda can reach a corner in four or less moves: EC, EEC, EEEC, EMEC. Then, calculating the probabilities of each of these cases happening, we have <math>1\cdot\tfrac{1}{2}+1\cdot\tfrac{1}{4}\cdot\tfrac{1}{2}+1\cdot\tfrac{1}{4}\cdot\tfrac{1}{4}\cdot\tfrac{1}{2}+1\cdot\tfrac{1}{4}\cdot1\cdot\tfrac{1}{2}=\tfrac{25}{32}</math>, so the answer is <math>\boxed{D}</math>.
+
+--- Solution 3 ---
+Suppose Frieda makes four independent hops without stopping so that each outcome is equally likely.
+
+<u><b>Denominator</b></u>
+
+There are <math>4^4=256</math> ways for Frieda to make four hops without restrictions.
+
+<u><b>Numerator</b></u>
+
+We perform casework on which hop Frieda reaches a corner for the first time:
+
+<ol style="margin-left: 1.5em;">
+  <li>The second hop (The third and the fourth hops have no restrictions.)</li><p>
+The four hops have <math>4, 2, 4, 4</math> options, respectively. So, this case has <math>4\cdot2\cdot4\cdot4=128</math> ways. <p>
+  <li>The third hop (The fourth hop has no restrictions.)</li><p>
+No matter which direction the first hop takes, the second hop must "wrap around". <p>
+The four hops have <math>4, 1, 2, 4</math> options, respectively. So, this case has <math>4\cdot1\cdot2\cdot4=32</math> ways. <p>
+  <li>The fourth hop (There are two subcases based on the second hop.)</li><p>
+     <ol style="margin-left: 1.5em;" type="A">
+       <li>The second hop "wraps around". It follows that the third hop must also "wrap around".</li><p>
+The four hops have <math>4, 1, 1, 2</math> options, respectively. So, this subcase has <math>4\cdot1\cdot1\cdot2=8</math> ways. <p>
+       <li>The second hop returns to the center.</li><p>
+The four hops have <math>4, 1, 4, 2</math> options, respectively. So, this subcase has <math>4\cdot1\cdot4\cdot2=32</math> ways.
+     </ol>
+Together, this case has <math>8+32=40</math> ways.
+</ol>
+
+The numerator is <math>128+32+40=200.</math>
+
+<u><b>Probability</b></u>
+
+The requested probability is <math>\frac{200}{256}=\boxed{\textbf{(D)} 
+<u><b>Remark</b></u>
+
+This problem is quite similar to [[1995_AIME_Problems/Problem_3|1995 AIME Problem 3]].
+
+--- Solution 4 ---
+Let <math>C_n</math> be the probability that Frieda is on the central square after n moves, <math>E_n</math> be the probability that Frieda is on one of the four squares on the middle of the edges after n moves, and <math>V_n</math> (V for vertex) be the probability that Frieda is on a corner after n moves. The only way to reach the center is by moving in <math>1</math> specific direction out of <math>4</math> total directions from the middle of an edge, so <math>C_{n+1}=\frac{E_n}{4}</math>. The ways to reach the middle of an edge are by moving in any direction from the center or by moving in <math>1</math> specific direction from the middle of an edge, so <math>E_{n+1}=C_n+\frac{E_n}{4}</math>. The ways to reach a corner are by simply staying there after reaching there in a previous move or by moving in <math>2</math> specific directions from the middle of an edge, so <math>V_{n+1}=V_n+\frac{E_n}{2}</math>. Since Frieda always start from the center, <math>C_0=1</math>, <math>E_0=0</math>, and <math>V_0=0</math>. We use the previous formulas to work out <math>V_4</math> and find it to be <math>\boxed{\textbf{(D)} 
+-SmileKat32
+
+--- Solution 5 ---
+Imagine an infinite grid of <math>2</math> by <math>2</math> squares such that there is a <math>2</math> by <math>2</math> square centered at <math>(3x, 3y)</math> for all ordered pairs of integers <math>(x, y).</math> 
+
+<asy>
+ dot((0,0)); draw((-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle); draw((-4,-1)--(-4,1)--(-2,1)--(-2,-1)--cycle); draw((2,-1)--(2,1)--(4,1)--(4,-1)--cycle); draw((-1,2)--(-1,4)--(1,4)--(1,2)--cycle); draw((-1,-4)--(-1,-2)--(1,-2)--(1,-4)--cycle); draw((-4,2)--(-2,2)--(-2,4)--(-4,4)--cycle); draw((4,-2)--(2,-2)--(2,-4)--(4,-4)--cycle); draw((4,2)--(2,2)--(2,4)--(4,4)--cycle); draw((-4,-2)--(-2,-2)--(-2,-4)--(-4,-4)--cycle); draw((-3,-3)--(3,-3)--(3,3)--(-3,3)--cycle); draw((-4,0)--(4,0)); draw((0,4)--(0,-4)); 
+</asy>
+
+It is easy to see that the problem is equivalent to Frieda moving left, right, up, or down on this infinite grid starting at <math>(0, 0)</math> (minus the teleportations). Since counting the complement set is easier, we'll count the number of <math>4</math>-step paths such that Frieda never reaches a corner point. 
+
+In other words, since the reachable corner points are <math>(\pm 1, \pm 1), (\pm 1, \pm 2), (\pm 2, \pm 1), </math> and <math>(\pm 2, \pm 2),</math> Frieda can only travel along the collection of points included in <math>S</math>, where <math>S</math> is all points on <math>x=0</math> and <math>y=0</math> such that <math>|y|<4</math> and <math>|x|<4</math>, respectively, plus all points on the big square with side length <math>6</math> centered at <math>(0, 0).</math> We then can proceed with casework:
+
+Case <math>1</math>: Frieda never reaches <math>(0, \pm 3)</math> nor <math>(\pm 3, 0).</math>
+
+When Frieda only moves horizontally or vertically for her four moves, she can do so in <math>2^4 - 4 = 12</math> ways for each case . Thus, <math>12 \cdot 2</math> total paths for the subcase of staying in one direction. (For instance, all length <math>4</math> combinations of <math>F</math> and <math>B</math> except <math>FFFF</math>, <math>BBBB</math>, <math>FFFB</math>, and <math>BBBF</math> for the horizontal direction.) 
+
+There is another subcase where she changes directions during her path. There are four symmetric cases for this subcase depending on which of the four quadrants Frieda hugs. For the first quadrant, the possible paths are <math>FBUD</math>, <math>FBUU</math>, <math>UDFB</math>, and <math>UDFF.</math> Thus, a total of <math>4 \cdot 4 = 16</math> ways for this subcase. 
+
+Total for Case <math>1</math>: <math>24 + 16 = 40</math>
+
+Case <math>2</math>: Frieda reaches <math>(0, \pm 3)</math> or <math>(\pm 3, 0)</math>.
+
+Once Frieda reaches one of the points listed above (by using three moves), she has four choices for her last move. Thus, a total of <math>4 \cdot 4 = 16</math> paths for this case.
+
+Our total number of paths never reaching coroners is thus <math>16+40=56,</math> making for an answer of <cmath>\frac{4^4-56}{4^4} = \boxed{\textbf{(D)} 
+-fidgetboss_4000
+
+--- Solution 6 ---
+We take cases on the number of hops needed to reach a corner. For simplicity, denote <math>E</math> as a move that takes Frieda to an edge, <math>W</math> as wrap-around move and <math>C</math> as a corner move. Also, denote <math>O</math> as a move that takes us to the center.
+
+<b> 2 Hops </b>
+
+Then, Frieda will have to <math>(E, C)</math> as her set of moves. There are <math>4</math> ways to move to an edge, and <math>2</math> corners to move to, for a total of <math>4 \cdot 2 = 8</math> cases here. Then, there are <math>4</math> choices for each move, for a probability of <math>\frac{8}{4 \cdot 4} = \frac{1}{2}</math>. 
+
+<b> 3 Hops </b>
+
+In this case, Frieda must wrap-around. There's only one possible combination, just <math>(E, W, C)</math>. There are <math>4</math> ways to move to an edge, <math>1</math> way to wrap-around (you must continue in the same direction) and <math>2</math> corners, for a total of <math>4 \cdot 1 \cdot 2 = 8</math> cases here. Then, there are <math>4</math> choices for each move, for a probability of <math>\frac{8}{4 \cdot 4 \cdot 4} = \frac{1}{8}</math>. 
+
+<b> 4 Hops </b> 
+
+Lastly, there are two cases we must consider here. The first case is <math>(E, O, E, C)</math>, and the second is <math>(E, W, W, C)</math>. For the first case, there are <math>4</math> ways to move to an edge, <math>1</math> way to return to the center, <math>4</math> ways to move to an edge once again, and <math>2</math> ways to move to a corner. Hence, there is a total of <math>4 \cdot 1 \cdot 4 \cdot 2 = 32</math> cases here. Then, for the second case, there are <math>4</math> ways to move to a corner, <math>1</math> way to wrap-around, <math>1</math> way to wrap-around the way Frieda just came from, and <math>2</math> ways to move to a corner. This implies there are <math>4 \cdot 1 \cdot 1 \cdot 2 = 8</math> cases here. Then, there is a total of <math>8+32 = 40</math> cases, out of a total of <math>4^4 = 256</math> cases, for a probability of <math>\frac{40}{256} = \frac{5}{32}</math>. 
+
+Then, the total probability that Frieda ends up on a corner is <math>\frac{1}{2} + \frac{1}{8} + \frac{5}{32} = \frac{25}{32}</math>, corresponding to choice <math>\boxed{\textbf{(D)}
+
+--- Solution 7 ---
+I denote 3x3 grid by
+
+- HOME square (x1)
+
+- CORN squares (x4)
+
+- SIDE squares (x4)
+
+Transitions:
+
+- HOME always move to SIDE
+
+- CORN is DONE
+
+- SIDE move to HOME with <math>p=1/4,</math> move to SIDE with <math>p=1/4,</math> and move to CORN with <math>p=1/2.</math>
+
+After one move, will be on <math>\text{SIDE}</math> square
+
+After two moves, will be <math>1/2 + 1/4 (\text{HOME}) + 1/4 (\text{SIDE})</math>
+
+After three moves, will be <math>1/2 + 1/4 (\text{SIDE}) + 1/4 (1/2 + 1/4(\text{SIDE}) + 1/4(\text{HOME}))</math>
+
+After four moves, probability on CORN will be <math>1/2 + 1/4 (1/2) + 1/4( 1/2 + 1/4(1/2)) = 1/2 + 1/8 + 5/32 = 25 / 32.</math>
+
+--- Solution 8 ---
+{{main|Markov Chains}}
+
+The grid is symmetrical. Denote the center cell as state Center, the <math>4</math> middle side cells as state Side, the <math>4</math> corner cells as state Corner. We can draw the following State Transition Diagram with [https://en.wikipedia.org/wiki/Markov_chain Markov Chain]. The numbers on the transition arc are the transition probability. 
+[[File:Markov Chain(center side corner).png|900px|center]]
+
+We calculate the probability of different states in each round in the following table by iterating a few more times:
+<!--[https://en.wikipedia.org/wiki/Dynamic_programming Dynamic Programming]:-->
+<cmath>\begin{array}{|c|c|c|c|}
+\hline
+\textbf{Round} & \textbf{Center} & \textbf{Side} & \textbf{Corner}\\
+\hline
+&&&\\
+1 & 0 & 1 & 0\\
+&&&\\
+\hline
+&&&\\
+2 & \frac{1}{4} & \frac{1}{4} & \frac{1}{2}\\
+&&&\\
+\hline
+&&&\\
+3 & \frac{1}{4} \cdot \frac{1}{4} = \frac{1}{16} & \frac{1}{4} + \frac{1}{4} \cdot \frac{1}{4} = \frac{5}{16} & \frac{1}{4} \cdot \frac{1}{2} + \frac{1}{2} = \frac{5}{8}\\
+&&&\\
+\hline
+&&&\\
+4 & \frac{5}{16} \cdot \frac{1}{4} = \frac{5}{64} & \frac{1}{16} + \frac{5}{16} \cdot \frac{1}{4} = \frac{9}{64} & \frac{5}{16} \cdot \frac{1}{2} + \frac{5}{8} = \frac{25}{32}\\
+&&&\\
+\hline
+\end{array}</cmath>
+
+Therefore, the answer is <math>\boxed{\textbf{(D)}
+
+--- Solution 9 ---
+Let us go through the frog’s jumps step by step to find the probability that it will land in a corner. Denote the frog’s position as <math>F</math>:
+<asy>
+ label("$F$",(0,0)); draw((-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle); draw((1,-1)--(1,1)--(3,1)--(3,-1)--cycle); draw((-1,1)--(-1,3)--(1,3)--(1,1)--cycle); draw((-3,-1)--(-3,1)--(-1,1)--(-1,-1)--cycle);  draw((-1,-3)--(-1,-1)--(1,-1)--(1,-3)--cycle); draw((-3,-3)--(3,-3)--(3,3)--(-3,3)--cycle); 
+</asy>
+First notice that since the frog only moves up, down, left or right, it’s original hop will not matter by symmetry, because all first hops will bring the frog at the edge next to two corners. WLOG we let the frog hop up:
+<asy>
+ label("$F$",(0,2)); draw((-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle); draw((1,-1)--(1,1)--(3,1)--(3,-1)--cycle); draw((-1,1)--(-1,3)--(1,3)--(1,1)--cycle); draw((-3,-1)--(-3,1)--(-1,1)--(-1,-1)--cycle);  draw((-1,-3)--(-1,-1)--(1,-1)--(1,-3)--cycle); draw((-3,-3)--(3,-3)--(3,3)--(-3,3)--cycle); 
+</asy>
+Notice that in its second hop, there are two ways for it to move to a corner (left and right) out of four, and thus the probability of Frieda reaching a corner on the second hop is <math>\frac{1}{2}</math>.
+
+There are two other cases for Frieda’s second hop: it could either wrap around to another edge square or move back to the middle. We analyze each of these cases individually, noting that each has probability <math>\frac{1}{4}</math>:
+<asy>
+ label("$F$",(0,-2)); draw((-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle); draw((1,-1)--(1,1)--(3,1)--(3,-1)--cycle); draw((-1,1)--(-1,3)--(1,3)--(1,1)--cycle); draw((-3,-1)--(-3,1)--(-1,1)--(-1,-1)--cycle);  draw((-1,-3)--(-1,-1)--(1,-1)--(1,-3)--cycle); draw((-3,-3)--(3,-3)--(3,3)--(-3,3)--cycle); 
+</asy>
+In this case, there are again <math>2</math> choices to go to a corner on the third hop, go back to the previous square, or go to the middle. Here there is a <math>\frac{1}{2}</math> probability that Frieda will reach a corner on the third hop. If Frieda hops back with a <math>\frac{1}{4}</math> probability, she will again have a <math>\frac{1}{2}</math> chance of reaching a corner on her fourth hop, but after four hops she stops hopping, so there are no more chances for her to reach a corner if she hops back. If she hops to the middle, then her fourth hop cannot reach a corner and that case yields <math>0</math> probability of reaching a corner.
+
+To sum up this case, the total probability of her reaching a corner is <math>\frac{1}{4}\left(\frac{1}{2}+\frac{1}{4}\cdot \frac{1}{2}\right)</math>.
+
+Finally suppose Frieda goes back to her initial position after <math>2</math> steps. Then her third step again doesn’t matter because whatever she does, she will be next to <math>2</math> corners, so the probability of her reaching a corner on her fourth hop in this case is<math> \frac{1}{4}\cdot\frac{1}{2}</math>.
+
+Summing up all the cases, we get 
+<cmath>\frac{1}{2}+\frac{1}{4}\left(\frac{1}{2}+\frac{1}{4}\cdot\frac{1}{2}\right)+\frac{1}{4}\cdot\frac{1}{2} = \frac{1}{2}+\frac{1}{4}\left(\frac{1}{2}+\frac{1}{8}\right)+\frac{1}{8} = \frac{5}{4}\cdot\left(\frac{1}{2}+\frac{1}{8}\right) = \frac{5}{4} \cdot \frac{5}{8} = \boxed{\textbf{(D)}
+
+--- Solution 10 ---
+Denote the center square as <math>C</math>, the edge squares as <math>E</math>, and the corner squares as <math>Co</math>. On the first move, the probability of Frieda on the <math>C</math> is <math>0</math> because she's moving away from the center square. The probability she's on <math>E</math> is <math>1</math> because no matter which direction she goes, she's always going to end up on an edge square. Probability she's on <math>Co</math> equals <math>1 - (0 + 1) = 0</math> by complementary counting. Notice that the probability Frieda will be on the <math>C</math> can be expressed as: <math>P(C) = \frac{1}{4} \cdot P(E from last move)</math> because one-fourth of the moves Frieda takes from an edge square sends her back to <math>C</math>. Also, she can't reach <math>C</math> from a <math>Co</math> square. Now <math>P(E) = P(C from last move) + \frac{1}{4} \cdot P(E from last move)</math> simply from the same logic. We can find <math>P(Co)</math> using complementary counting. On the second move, <math>P(C) = \frac{1}{4} \cdot 1 = \frac{1}{4}</math> and <math>P(E) = 0 + \frac{1}{4} \cdot 1 = \frac{1}{4}</math>. Now <math>P(Co) = 1 - \frac{1}{4} - \frac{1}{4} = \frac{1}{2}</math>. On the third move, <math>P(C) = \frac{1}{4} \cdot \frac{1}{4} = \frac{1}{16}</math> and <math>P(E) = \frac{1}{4} + \frac{1}{4} \cdot \frac{1}{4} = \frac{5}{16}</math>. <math>P(Co) = 1 - \frac{1}{16} - \frac{5}{16} = \frac{5}{8}</math>. Now on the fourth and last move, <math>P(C) = \frac{1}{4} \cdot \frac{5}{16} = \frac{5}{64}</math> and <math>P(E) = \frac{1}{16} + \frac{1}{4} \cdot \frac{5}{16} = \frac{9}{64}</math>. Finally, <math>P(Co) = 1 - \frac{5}{64} - \frac{9}{64} = 1 - \frac{7}{32} = \frac{25}{32}</math>.
+
+
+=== Problem 24 ===
+Semicircle
+
+Choices: {'A': '110', 'B': '114', 'C': '118', 'D': '122', 'E': '126</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <imath>O=\Gamma</imath> be the center of the semicircle and <imath>X=\Omega</imath> be the center of the circle. 
+
+Applying the Extended Law of Sines to <imath>\triangle PQR,</imath> we find the radius of <imath>\odot X:</imath> <cmath>XP=\frac{QR}{2\cdot\sin \angle QPR}=\frac{3\sqrt3}{2\cdot\frac{\sqrt3}{2}}=3.</cmath>
+Alternatively, by the Inscribed Angle Theorem, <imath>\triangle QRX</imath> is a <imath>30^\circ\text{-}30^\circ\text{-}120^\circ</imath> triangle with base <imath>QR=3\sqrt3.</imath> Dividing <imath>\triangle QRX</imath> into two congruent <imath>30^\circ\text{-}60^\circ\text{-}90^\circ</imath> triangles, we get that the radius of <imath>\odot X</imath> is <imath>XQ=XR=3</imath> by the side-length ratios.
+
+Let <imath>M</imath> be the midpoint of <imath>\overline{QR}.</imath> By the Perpendicular Chord Bisector Converse, we have <imath>\overline{OM}\perp\overline{QR}</imath> and <imath>\overline{XM}\perp\overline{QR}.</imath> Together, points <imath>O, X,</imath> and <imath>M</imath> must be collinear.
+
+By the SAS Congruence, we have <imath>\triangle QXM\cong\triangle RXM,</imath> both of which are <imath>30^\circ\text{-}60^\circ\text{-}90^\circ</imath> triangles. By the side-length ratios, we obtain <imath>RM=\frac{3\sqrt3}{2}, RX=3,</imath> and <imath>XM=\frac{3}{2}.</imath> By the Pythagorean Theorem on right <imath>\triangle ORM,</imath> we get <imath>OM=\frac{13}{2}</imath> and <imath>OX=OM-XM=5.</imath> By the Pythagorean Theorem on right <imath>\triangle OXP,</imath> we get <imath>OP=4.</imath>
+
+Let <imath>C</imath> be the foot of the perpendicular from <imath>P</imath> to <imath>\overline{QR},</imath> and <imath>D</imath> be the foot of the perpendicular from <imath>X</imath> to <imath>\overline{PC},</imath> as shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+pair O, X, A, B, P, Q, R, M, C, D;
+O = (0,0);
+X = (4,3);
+A = (-7,0);
+B = (7,0);
+P = (4,0);
+Q = intersectionpoints(Circle(O,7),Circle(X,3))[0];
+R = intersectionpoints(Circle(O,7),Circle(X,3))[1];
+M = midpoint(Q--R);
+C = foot(P,Q,R);
+D = foot(X,P,C);
+fill(P--Q--R--cycle,yellow);
+dot("$O$",O,S);
+dot("$X$",X,N);
+dot("$A$",A,SW);
+dot("$B$",B,SE);
+dot("$P$",P,S);
+dot("$Q$",Q,E);
+dot("$R$",R,N);
+dot("$M$",M,dir(M));
+dot("$C$",C,NE);
+dot("$D$",D,SE);
+markscalefactor=0.0375;
+draw(rightanglemark(O,M,R),red);
+draw(rightanglemark(P,C,M),red);
+draw(rightanglemark(P,D,X),red);
+draw(rightanglemark(O,P,X),red);
+draw(P--Q--R--cycle);
+draw(arc(O, 7, 0, 180)^^A--B^^Circle(X,3));
+draw(O--M^^X--P);
+draw(P--C^^X--D,dashed);
+</asy>
+Clearly, quadrilateral <imath>XDCM</imath> is a rectangle. Since <imath>\angle XPD=\angle OXP</imath> by alternate interior angles, we have <imath>\triangle XPD\sim\triangle OXP</imath> by the AA Similarity, with the ratio of similitude <imath>\frac{XP}{OX}=\frac 35.</imath> Therefore, we get <imath>PD=\frac 95</imath> and <imath>PC=PD+DC=PD+XM=\frac 95 + \frac 32 = \frac{33}{10}.</imath>
+
+The area of <imath>\triangle PQR</imath> is <cmath>\frac12\cdot QR\cdot PC=\frac12\cdot3\sqrt3\cdot\frac{33}{10}=\frac{99\sqrt3}{20},</cmath> from which the answer is <imath>99+3+20=\boxed{\textbf{(D) } 122}.</imath>
+
+--- Solution 2 ---
+<asy>
+size(150);
+draw(circle((7,0),7));
+pair A = (0, 0);
+pair B = (14, 0);
+draw(A--B);
+draw(circle((11,3),3));
+label("$C$", (7, 0), S);
+label("$O$", (11, 3), E);
+label("$P$", (11, 0), S);
+pair C = (7, 0);
+pair O = (11, 3);
+pair P = (11, 0);
+pair Q = intersectionpoints(circle(C, 7), circle(O, 3))[1];
+pair R = intersectionpoints(circle(C, 7), circle(O, 3))[0];
+draw(C--O);
+draw(C--Q);
+draw(C--R);
+draw(Q--R);
+draw(O--P);
+draw(O--Q);
+draw(O--R);
+draw(P--Q);
+draw(P--R);
+label("$Q$", Q, N);
+label("$R$", R, E);
+</asy>
+
+Suppose we label the points as shown in the diagram above, where <imath>C</imath> is the center of the semicircle and <imath>O</imath> is the center of the circle tangent to <imath>\overline{AB}</imath>. Since <imath>\angle QPR = 60^{\circ}</imath>, we have <imath>\angle QOR = 2\cdot 60^{\circ}=120^{\circ}</imath> and <imath>\triangle QOR</imath> is a <imath>30-30-120</imath> triangle, which can be split into two <imath>30-60-90</imath> triangles by the altitude from <imath>O</imath>. Since <imath>QR=3\sqrt{3},</imath> we know <imath>OQ=OR=\tfrac{3\sqrt{3}}{\sqrt{3}}=3</imath> by <imath>30-60-90</imath> triangles. The area of this part of <imath>\triangle PQR</imath> is <imath>\frac{1}{2}bh=\tfrac{3\sqrt{3}}{2}\cdot\tfrac{3}{2}=\tfrac{9\sqrt{3}}{4}</imath>. We would like to add this value to the sum of the areas of the other two parts of <imath>\triangle PQR</imath>.
+
+To find the areas of the other two parts of <imath>\triangle PQR</imath> using the <imath>\sin</imath> area formula, we need the sides and included angles. Here we know the sides but what we don't know are the angles. So it seems like we will have to use an angle from another triangle and combine them with the angles we already know to find these angles easily. We know that <imath>\angle QOR = 120^{\circ}</imath> and triangles <imath>\triangle COQ</imath> and <imath>\triangle COR</imath> are congruent as they share a side, <imath>CQ=CR,</imath> and <imath>OQ=OR</imath>. Therefore <imath>\angle COQ = \angle COR = 120^{\circ}</imath>. Suppose <imath>CO=x</imath>. Then <imath>3^{2}+x^{2}-6x\cos{120^{\circ}}=7^{2}</imath>, and since <imath>\cos{120^{\circ}}=-\tfrac{1}{2}</imath>, this simplifies to <imath>x^{2}+3x=7^{2}-3^{2}\rightarrow x^{2}+3x-40=0</imath>. This factors nicely as <imath>(x-5)(x+8)=0</imath>, so <imath>x=5</imath> as <imath>x</imath> can't be <imath>-8</imath>. Since <imath>CO=5, OP=3</imath> and <imath>\angle OPC=90^{\circ}</imath>, we now know that <imath>\triangle OPC</imath> is a <imath>3-4-5</imath> right triangle. This may be useful info for later as we might use an angle in this triangle to find the areas of the other two parts of <imath>\triangle PQR</imath>.
+
+Let <imath>\angle POC = \alpha</imath>. Then <imath>\sin\alpha = \tfrac{4}{5}, \cos\alpha = \tfrac{3}{5}, \angle QOP = 120+\alpha,</imath> and <imath>\angle POR = 120-\alpha</imath>. The sum of the areas of <imath>\triangle QOP</imath> and <imath>\triangle POR</imath> is <imath>3\cdot 3\cdot\tfrac{1}{2}\cdot\left[\sin(120-\alpha)+\sin(120+\alpha)\right]=\tfrac{9}{2}\left[\sin(120-\alpha)+\sin(120+\alpha)\right],</imath> which we will add to <imath>\tfrac{9\sqrt{3}}{4}</imath> to get the area of <imath>\triangle PQR</imath>. Observe that <cmath>\sin(120-\alpha) = \sin 120\cos\alpha-\sin\alpha\cos 120 = \tfrac{\sqrt{3}}{2}\cdot\tfrac{3}{5}-\tfrac{4}{5}\cdot\tfrac{-1}{2}=\tfrac{3\sqrt{3}}{10}+\tfrac{4}{10}=\tfrac{3\sqrt{3}+4}{10}</cmath>and similarly <imath>\sin(120+\alpha)=\tfrac{3\sqrt{3}-4}{10}</imath>. Adding these two gives <imath>\tfrac{3\sqrt{3}}{5}</imath> and multiplying that by <imath>\tfrac{9}{2}</imath> gets us <imath>\tfrac{27\sqrt{3}}{10},</imath> which we add to <imath>\tfrac{9\sqrt{3}}{4}</imath> to get <imath>\tfrac{54\sqrt{3}+45\sqrt{3}}{20}=\tfrac{99\sqrt{3}}{20}</imath>. The answer is <imath>99+3+20=102+20=\boxed{\textbf{(D)}
+
+--- Solution 3 ---
+<asy> size(300); pair C = (7, 0); draw(arc(C, 7, 0, 180)); pair A = (0, 0), B = (14, 0); draw(A--B); draw(circle((11,3),3)); label("$A$", A, SSE); label("$B$", B, SSW); label("$C$", (A+B)/2, S); label("$O$", (11, 3), E); label("$P$", (11, 0), S); pair  O = (11, 3), P = (11, 0), Q = intersectionpoints(circle(C, 7), circle(O, 3))[1], R = intersectionpoints(circle(C, 7), circle(O, 3))[0], S = (Q+R)/2, N = (121/8, 0), T = (8/11)*N + (3/11)*R, X = (4/7)*T + (3/7)*S; draw(C--O, blue); draw(O--S, red); draw(C--Q); draw(C--R); draw(Q--N--B); draw(O--P); draw(O--Q); draw(O--R); draw(P--Q--R--cycle); draw(B--T); draw(P--X); label("$Q$", Q, NNE); label("$R$", R, E); label("$S$", S, ENE); label("$N$", N, SSE); label("$T$", T, ENE); label("$X$", X, NE); draw(rightanglemark(P, X, Q)); draw(rightanglemark(B, T, R)); draw(rightanglemark(C, S, Q)); </asy>
+Define points as shown above, where <imath>N=\overleftrightarrow{PA}\cap\overleftrightarrow{QR}</imath>. The area of <imath>\triangle PQR</imath> is simply<cmath>\dfrac{1}{2}PX\cdot QR=\dfrac{3\sqrt{3}}{2}PX;</cmath>
+it remains to compute the value of <imath>PX</imath>. Note that <imath>PX</imath> is simply a weighted average of <imath>BT</imath> and <imath>CS;</imath> it is <imath>\dfrac{CP}{BP}</imath> times closer to <imath>BT</imath> than it is to <imath>CS</imath>. Observe that<cmath>CS=\sqrt{CQ^{2}-\left(\dfrac{1}{2}QR\right)^{2}}=\sqrt{7^{2}-\left(\dfrac{3\sqrt{3}}{2}\right)^{2}}=6.5</cmath>
+since the radius of <imath>\Gamma</imath> is <imath>7</imath> as its diameter is <imath>14</imath>. Note also by the Extended Law of Sines the radius of <imath>\Omega</imath> is <imath>\dfrac{3\sqrt{3}}{2\sin 60^{\circ}}=3,</imath> so <imath>OS=3\cos 60^{\circ}=1.5</imath>. Since <imath>C, O,</imath> and <imath>S</imath> are collinear by symmetry we have <imath>CO=CS-OS=5,</imath> so <imath>CP=\sqrt{5^{2}-3^{2}}=4</imath> and <imath>BP=7-4=3</imath>. Therefore, <imath>\triangle OPC</imath> is a <imath>3\text{-}4\text{-}5</imath> right triangle; <imath>\triangle OPC\sim\triangle NSC</imath> since <imath>\angle OPC=\angle CSN=90^{\circ}</imath> and <imath>\angle OCP=\angle NCS=\sin^{-1}\left(\dfrac{3}{5}\right)</imath>. Therefore <imath>\dfrac{CN}{CS}=\cfrac{CO}{CP}=\dfrac{5}{4}</imath> so <imath>CN=\dfrac{5}{4}CS=\dfrac{65}{8}</imath>. Since <imath>\triangle BTN\sim\triangle CSN,</imath> we have <imath>\dfrac{BT}{BN}=\dfrac{CS}{CN}=\dfrac{4}{5}</imath>. Therefore <cmath>BT=\dfrac{4}{5}BN=\dfrac{4}{5}\left(CN-7\right)=\dfrac{4}{5}\cdot\dfrac{9}{8}=\dfrac{36}{40}=0.9;</cmath>
+so <imath>PX</imath> is <imath>\dfrac{4}{3}</imath> times as close to <imath>0.9</imath> as to <imath>6.5;</imath> we can compute <imath>PX=\dfrac{4}{7}BT+\dfrac{3}{7}CS=\dfrac{4}{7}\cdot0.9+\dfrac{3}{7}\cdot6.5=3.3</imath>. The area of <imath>\triangle PQR</imath> is<cmath>\dfrac{3\sqrt{3}}{2}\cdot 3.3=\dfrac{99\sqrt{3}}{20}</cmath>and <imath>99+3+20=\boxed{\textbf{(D)}
+
+--- Solution 4 ---
+Let <imath>O_{1}</imath> be the center of <imath>\odot\Gamma, O_2</imath> be the center of <imath>\odot\Omega,</imath> and <imath>M</imath> be the midpoint of <imath>\overline{QR}.</imath> We have <imath>O_{1}M=\sqrt{7^2-\left(\frac{3\sqrt3}{2}\right)^2}=\frac{13}{2}</imath> and by Extended Law of Sines, the radius of <imath>\odot\Omega</imath> is <imath>\frac{3\sqrt3}{2\sin 60^\circ}=3</imath> so <imath>O_{2}M=3\cos 60^\circ=\frac{3}{2}.</imath> Therefore <imath>O_{1}O_{2}=O_{1}M-O_{2}M=5</imath> and <imath>O_{1}P=\sqrt{5^2 - 3^2}=4.</imath>
+
+Let <imath>X=\overline{AB}\cap\overline{QR}.</imath> Obviously <cmath>\angle O_{1}PO_{2}=\angle O_{1}MX=90^\circ
+Let <imath>H</imath> denote the foot of the altitude from <imath>P</imath> to <imath>\overline{QR}.</imath> Because <imath>\overline{PH}\parallel\overline{O_{1}M},</imath> it follows that <imath>\triangle PHX\sim\triangle O_{1}MX.</imath> This similarity has ratio <cmath>\frac{PX}{O_{1}X}=1-\frac{O_{1}P}{O_{1}X}=1-\frac{4}{\tfrac{65}{8}}=1-\frac{32}{65}=\frac{33}{65}.</cmath> We therefore have <imath>PH=\frac{33}{65}\cdot O_{1}M=\frac{33}{65}\cdot\frac{13}{2}=\frac{33}{10}.</imath>
+
+Finally, the area of <imath>\triangle PQR</imath> is <cmath>\frac{1}{2}\cdot QR\cdot PH=\frac{1}{2}\cdot3\sqrt3\cdot\frac{33}{10}=\frac{99\sqrt3}{20},</cmath> so the answer is <imath>99+3+20=\boxed{\textbf{(D)}
+
+--- Solution 5 ---
+[[File:2021AMC12AP24.png|center|400px]]
+
+By the Law of Sine in <imath>\triangle PQR</imath> and its circumcircle <imath>\odot \Omega</imath>, <imath>2r_{\Omega} = \frac{QR}{ \sin 60^{\circ} } = \frac{ 3\sqrt{3} }{ \frac{ \sqrt{3} }{2} } = 6</imath>, <imath>r_{\Omega} = 3</imath>
+
+<cmath>\Gamma \Omega = \sqrt{r_{\Gamma}^2 - \left( \frac{ QR }{2}\right)^2} - \sqrt{r_{\Omega}^2 - \left( \frac{QR}{2}\right)^2} = \sqrt{7^2 - \left( \frac{ 3 \sqrt{3} }{2}\right)^2} - \sqrt{3^2 - \left( \frac{ 3 \sqrt{3} }{2}\right)^2} = \frac{13}{2} - \frac32 = 5, \quad \Gamma P = \sqrt{5^2 - 3^2} = 4</cmath>
+
+By Power of a Point in <imath>\odot \Gamma</imath> , <imath>PQ \cdot PS = PA \cdot PB = (7+4)(7-4) = 33</imath>. 
+
+By the Law of Sine in <imath>\triangle PRS</imath>, <imath>\frac{PR}{PS} = \frac{ \sin \angle PSR }{ \sin \angle PRS }</imath>
+
+By the Law of Sine in <imath>\triangle QRS</imath> and its circumcircle <imath>\odot \Gamma</imath>, <imath>\frac{QR}{ \sin \angle PSR } = 14</imath>, <imath>\frac{ 3\sqrt{3} }{ \sin \angle PSR } = 14</imath>, <imath>\sin \angle PSR = \frac{ 3\sqrt{3} }{14}</imath>, <imath>\cos \angle PSR = \frac{ 13 }{14}</imath>
+
+<cmath>\sin \angle PRS = \sin ( 60^{\circ} - \angle PSR ) = \sin 60^{\circ} \cos \angle PSR - \sin \angle PSR \cos 60^{\circ} = \frac{ \sqrt{3} }{2} \cdot \frac{ 13 }{14} - \frac{ 3\sqrt{3} }{14} \cdot \frac12 = \frac{ 5\sqrt{3} }{14}</cmath>
+
+<cmath>\frac{PR}{PS} = \frac{ \frac{ 3\sqrt{3} }{14} }{ \frac{ 5\sqrt{3} }{14} } = \frac35, \quad PQ \cdot PR = PQ \cdot PS \cdot \frac{PR}{PS} = 33 \cdot \frac35 = \frac{99}{5}</cmath>
+
+<cmath>[PQR] = \frac12 \cdot \sin 60^{\circ} \cdot PQ \cdot PR = \frac12 \cdot \frac12 \cdot \frac{99}{5} = \frac{ 99\sqrt{3} }{20}, \quad 99 + 3 + 20 = \boxed{\textbf{(D)}
+
+--- Solution 6 ---
+Following Solution 4, We have <imath>O_{1}</imath> (0,0) , <imath>O_{2}</imath> (4,3). 
+We can write the equation of the two circles as: <cmath>\odot\Gamma  :  x^{2}+y^{2}=7^{2}...(1)</cmath>
+<cmath>\odot\Omega :  (x-4)^{2}+(y-3)^{2}=3^{2}...(2)</cmath>
+By substituting (1) into (2), we get <cmath>8x+6y-65=0...(3)</cmath>
+Notice (3) is the relationship between <imath>x</imath> value and <imath>y</imath> value, in other words, (3) is the linear equation that go through <imath>R</imath> and <imath>Q</imath>. 
+Let the height drops from <imath>P</imath> to <imath>QR</imath> at <imath>H</imath>. Therefore, we have <cmath>Area \triangle PQR =\frac{1}{2}\cdot{QR}\cdot{PH}</cmath>
+So <cmath>QR=3\sqrt{3}</cmath> 
+And by distance formula, <imath>PH</imath> is the distance from <imath>P</imath> (4,0) to <imath>\overline{QR}</imath>. <cmath>PH={\frac{|8\cdot4+6\cdot0-65|}{\sqrt{8^{2}+6^{2}}}=\frac{33}{10}}</cmath>
+Thus, We get <cmath>Area \triangle PQR =\frac{1}{2}\cdot3\sqrt{3}\cdot\frac{33}{10}=\frac{99\sqrt{3}}{20}</cmath>
+So the answer is <imath>99+3+20=\boxed{\textbf{(D)}
+
+
+=== Problem 25 ===
+Let
+
+Choices: {'A': '5', 'B': '6', 'C': '7', 'D': '8', 'E': '9</math>'}
+Answer: E
+
+--- Solution 1 ---
+We consider the prime factorization of <math>n:</math> <cmath>n=\prod_{i=1}^{k}p_i^{e_i}.</cmath> By the Multiplication Principle, we have <cmath>d(n)=\prod_{i=1}^{k}(e_i+1).</cmath> Now, we rewrite <math>f(n)</math> as <cmath>f(n)=\frac{d(n)}{\sqrt [3]n}=\frac{\prod_{i=1}^{k}(e_i+1)}{\prod_{i=1}^{k}p_i^{e_i/3}}=\prod_{i=1}^{k}\frac{e_i+1}{p_i^{{e_i}/3}}.</cmath> As <math>f(n)>0</math> for all positive integers <math>n,</math> note that <math>f(a)>f(b)</math> if and only if <math>f(a)^3>f(b)^3</math> for all positive integers <math>a</math> and <math>b.</math> So, <math>f(n)</math> is maximized if and only if <cmath>f(n)^3=\prod_{i=1}^{k}\frac{(e_i+1)^3}{p_i^{{e_i}}}</cmath> is maximized.
+
+For each independent factor <math>\frac{(e_i+1)^3}{p_i^{e_i}}</math> with a fixed prime <math>p_i,</math> where <math>1\leq i\leq k,</math> the denominator grows faster than the numerator, as exponential functions always grow faster than polynomial functions. Therefore, for each prime <math>p_i</math> with <math>\left(p_1,p_2,p_3,p_4,\ldots\right)=\left(2,3,5,7,\ldots\right),</math> we look for the nonnegative integer <math>e_i</math> such that <math>\frac{(e_i+1)^3}{p_i^{e_i}}</math> is a relative maximum:
+<cmath>\begin{array}{c|c|c|c|c} 
+& & & & \\ [-2.25ex]
+\boldsymbol{i} & \boldsymbol{p_i} & \boldsymbol{e_i} & \boldsymbol{\dfrac{(e_i+1)^3}{p_i^{e_i}}} & \textbf{Max?} \\ [2.5ex]
+\hline\hline 
+& & & & \\ [-2ex]
+1 & 2 & 0 & 1 & \\     
+& & 1 & 4 & \\    
+& & 2 & 27/4 &\\    
+& & 3 & 8 & \checkmark\\    
+& & 4 & 125/16 & \\ [0.5ex]
+\hline  
+& & & & \\ [-2ex]
+2 & 3 & 0 & 1 &\\    
+& & 1 & 8/3 & \\    
+& & 2 & 3 &  \checkmark\\    
+& & 3 & 64/27 &  \\ [0.5ex]
+\hline  
+& & & & \\ [-2ex]
+3 & 5 & 0 & 1 &  \\    
+& & 1 & 8/5 &  \checkmark\\    
+& & 2 & 27/25 & \\ [0.5ex]
+\hline  
+& & & & \\ [-2ex]
+4 & 7 & 0 & 1 &  \\    
+& & 1 & 8/7 &  \checkmark\\    
+& & 2 & 27/49 & \\ [0.5ex]
+\hline  
+& & & & \\ [-2ex]
+\geq5 & \geq11 & 0 & 1 & \checkmark \\    
+& & \geq1 & \leq8/11 &   \\ [0.5ex]
+\end{array}</cmath>
+Finally, the positive integer we seek is <math>N=2^3\cdot3^2\cdot5^1\cdot7^1=2520.</math> The sum of its digits is <math>2+5+2+0=\boxed{\textbf{(E) }9}.</math>
+
+Alternatively, once we notice that <math>3^2</math> is a factor of <math>N,</math> we can conclude that the sum of the digits of <math>N</math> must be a multiple of <math>9.</math> Only choice <math>\textbf{(E)}</math> is possible.
+
+--- Solution 2 ---
+The question statement asks for the value of <math>N</math> that maximizes <math>f(N)</math>. Let <math>N</math> start out at <math>1</math>; we will find what factors to multiply <math>N</math> by, in order for <math>N</math> to maximize the function.
+
+First, we will find what power of <math>2</math> to multiply <math>N</math> by. If we multiply <math>N</math> by <math>2^{a}</math>, the numerator of <math>f</math>, <math>d(N)</math>, will multiply by a factor of <math>a+1</math>; this is because the number <math>2^{a}</math> has <math>a+1</math> divisors. The denominator, <math>\sqrt[3]{N}</math>, will simply multiply by <math>\sqrt[3]{2^{a}}</math>. Therefore, the entire function multiplies by a factor of <math>\frac{a+1}{\sqrt[3]{2^{a}}}</math>. We want to find the integer value of <math>a</math> that maximizes this value. By inspection, this is <math>3</math>. Therefore, we multiply <math>N</math> by <math>8</math>; right now, <math>N</math> is <math>8</math>.
+
+Next, we will find what power of <math>3</math> to multiply <math>N</math> by. Similar to the previous step, we wish to find the integer value of <math>a</math> that maximizes <math>\frac{a+1}{\sqrt[3]{3^{a}}}</math>. This value, also by inspection, is <math>2</math>.
+
+We can repeat this step on the rest of the primes to get
+<cmath>N = 2^{3} \cdot 3^{2} \cdot 5 \cdot 7</cmath>
+but from <math>11</math> on, <math>a=0</math> will maximize the value of the function, so the prime is not a factor in <math>N</math>.
+We evaluate <math>N</math> to be <math>2520</math>, so the answer is <math>\boxed{\textbf{(E) }9}</math>.
+
+--- Solution 3 ---
+Using the answer choices to our advantage, we can show that <math>N</math> must be divisible by 9 without explicitly computing <math>N</math>, by exploiting the following fact:
+
+'''Claim''': If <math>n</math> is not divisible by 3, then <math>f(9n) > f(3n) > f(n)</math>.
+
+'''Proof''': Since <math>d(\cdot)</math> is a [[multiplicative function]], we have <math>d(3n) = d(3)d(n) = 2d(n)</math> and <math>d(9n) = 3d(n)</math>. Then
+<cmath>\begin{align*}
+f(3n) &= \frac{2d(n)}{\sqrt[3]{3n}} \approx 1.38 f(n)\\
+f(9n) &= \frac{3d(n)}{\sqrt[3]{9n}} \approx 1.44 f(n)
+\end{align*}
+</cmath>
+Note that the values <math>\frac{2}{\sqrt[3]{3}}</math> and <math>\frac{3}{\sqrt[3]{9}}</math> do not have to be explicitly computed; we only need the fact that <math>\frac{3}{\sqrt[3]{9}} > \frac{2}{\sqrt[3]{3}} > 1</math> which is easy to show by hand.
+
+The above claim automatically implies <math>N</math> is a multiple of 9: if <math>N</math> was not divisible by 9, then <math>f(9N) > f(N)</math> which is a contradiction, and if <math>N</math> was divisible by 3 and not 9, then <math>f(3N) > f(N) > f\left(\frac{N}{3}\right)</math>, also a contradiction. Then the sum of digits of <math>N</math> must be a multiple of 9, so only choice <math>\boxed{\textbf{(E) } 9}</math> works.
+
+-scrabbler94
+
+--- Solution 4 ---
+The problem mentions the sum of digits - recall that if a number is divisible by 9, then so is the sum of its digits. Guess that the answer must therefore be <math>\boxed{\textbf{(E) } 9}</math> .
+
+- youtube.com/indianmathguy
+
+--- Solution 5 ---
+The aim of this problem is to maximize <math>f(N).</math>
+
+Let's start with when <math>N</math> has one prime factor. If this is the case, let <math>a</math> be its exponent. Clearly, <math>2</math> must be the prime factor because regardless of what prime we use, the numerator will only depend on <math>a</math>, so we must minimize the denominator. Therefore, in this case, we want to maximize <math>\frac{a+1}{\sqrt[3]{2^{a}}}</math> (since the <math>N</math> will have <math>a+1</math> factors). By inspection, we find that <math>a=3</math> does the job.
+
+Now notice that we can add another prime factor to <math>N</math>. Since we can split up prime factors and multiplication under prime factorization and cube roots, we just need to maximize the same process for the second prime factor. Again, we go with the next least prime factor to minimize the denominator which is <math>3</math>. To clarify, we want to maximize <math>\frac{b+1}{\sqrt[3]{3^{b}}}</math> (letting the exponent be <math>b</math>). Inspection again gives that <math>b=2</math> is maximal.
+
+We repeat this process two more times, adding a prime factor for <math>5</math> and <math>7</math>. We find by inspection that the maximizing power of 5 is <math>1</math> and the maximizing power of 7 is also <math>1</math>. 
+
+Now, notice that if <math>n>8</math>, then regardless of what exponent we put in the numerator, <math>f(n)=\frac{d(n)}{\sqrt [3]n}</math> will be less than <math>1</math>. This is bad, because then our maximized value of <math>f(N)</math> will decrease. Noting that our next least prime factor is <math>11</math>, we know that we are done.
+
+We evaluate <math>N=2^3*3^2*5^1*7^1</math> to be <math>2520</math>, so the answer is <math>2+5+2+0 = \boxed{\textbf{(E) }9}</math>.
+
+
+==Calculus Remark==
+
+We can find the maximum of the function <math>f(x)=\frac{x+1}{a^{x/3}}</math> for some prime <math>a</math> by taking the derivative and setting it equal to <math>0</math>. We get <math>f'(x) = e^{-\frac{x\ln a}{3}}-\frac{\ln a}{3}xe^{-\frac{x\ln a}{3}}-\frac{\ln a}{3}e^{-\frac{x\ln a}{3}} = 0 \to 1-\frac{\ln a}{3}x - \frac{\ln a}{3}=0 \to \frac{\ln a}{3}x = 1-\frac{\ln a}{3} \to x = \frac{3}{\ln a}\left( 1-\frac{\ln a}{3} \right) = \frac{3}{\ln a}-1</math>. This gives the exponents you need for each prime in the prime factorization of <math>N</math>; however, it outputs real numbers, not positive integers.
+
+

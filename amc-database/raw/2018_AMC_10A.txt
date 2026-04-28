@@ -1,0 +1,1715 @@
+=== Problem 1 ===
+What is the value of <cmath>\left(\left((2+1)^{-1}+1\right)^{-1}+1\right)^{-1}+1?</cmath>
+
+Choices: {'A': '\\frac58', 'B': '\\frac{11}7', 'C': '\\frac85', 'D': '\\frac{18}{11}', 'E': '\\frac{15}8</math>'}
+Answer: B
+
+--- Solution 1 ---
+For all nonzero numbers <imath>a,</imath> recall that <imath>a^{-1}=\frac1a</imath> is the [[reciprocal]] of <imath>a.</imath>
+
+The original expression becomes
+<cmath>\begin{align*}
+\left(\left((2+1)^{-1}+1\right)^{-1}+1\right)^{-1}+1 &= \left(\left(3^{-1}+1\right)^{-1}+1\right)^{-1}+1 \\
+&= \left(\left(\frac13+1\right)^{-1}+1\right)^{-1}+1 \\
+&= \left(\left(\frac43\right)^{-1}+1\right)^{-1}+1 \\
+&= \left(\frac34+1\right)^{-1}+1 \\
+&= \left(\frac74\right)^{-1}+1 \\
+&= \frac47+1 \\
+&= \boxed{\textbf{(B) }\frac{11}7}.
+\end{align*}</cmath>
+
+
+=== Problem 2 ===
+Liliane has
+
+Choices: {'A': '</math>'}
+Answer: A
+
+--- Solution 1 ---
+Let's assume that Jacqueline has <math>1</math> gallon(s) of soda. Then Alice has <math>1.25</math> gallons and Liliane has <math>1.5</math> gallons. Doing division, we find out that <math>\frac{1.5}{1.25}=1.2</math>, which means that Liliane has <math>20\%</math> more soda. Therefore, the answer is <math>\boxed{\textbf{(A)}}</math>.
+
+--- Solution 2 ---
+WLOG, lets use <math>4</math> gallons instead of <math>1</math>. When you work it out, you get <math>6</math> gallons and <math>5</math> gallons. We have <math>6 - 5 = 1</math> is <math>20\%</math> of <math>5</math>. Thus, we reach <math>\boxed{\textbf{(A)}}</math>.
+
+--- Solution 3 ---
+If Jacqueline has <math>x</math> gallons of soda, Alice has <math>1.25x</math> gallons, and Liliane has <math>1.5x</math> gallons. Thus, the answer is <math>\frac{1.5}{1.25}=1.2</math> <math>=></math> Liliane has <math>20\%</math> more soda. Our answer is <math>\boxed{\textbf{(A)}}</math>.
+
+
+=== Problem 3 ===
+A unit of blood expires after
+
+Choices: {'A': '\\text{January 2}', 'B': '\\text{January 12}', 'C': '\\text{January 22}', 'D': '\\text{February 11}', 'E': '\\text{February 12}</math>'}
+Answer: E
+
+--- Solution 1 ---
+The problem says there are <math>10! = 10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1</math> seconds.
+Convert <math>10!</math> seconds to minutes by dividing by <math>60</math>: <math>9\cdot 8\cdot 7\cdot 5\cdot 4\cdot 3\cdot 2</math> minutes.
+Convert minutes to hours by dividing by <math>60</math> again: <math>9\cdot 8\cdot 7\cdot 2</math> hours.
+Convert hours to days by dividing by <math>24</math>: <math>3\cdot 7\cdot 2 = 42</math> days.
+
+Now we need to count <math>42</math> days after January 1. Since we start on Jan. 1, then we can't count that as a day itself. When we reach Jan. 31(The end of the month), we only have counted 30 days. <math>42 - 30 = 12</math>. Count <math>12</math> more days, resulting in <math>\fbox{\textbf{(E) }\text{February 12}}</math>.
+
+--- Solution 2 ---
+There are <math>60 \cdot 60 \cdot 24 = 86400</math> seconds in a day, which means that Yasin's blood expires in <math>10! \div 86400 = 42</math> days. Since there are <math>31</math> days in January (consult a calendar), then <math>42-31+1</math> (Jan 1 doesn't count) is <math>12</math> days into February, so <math>\boxed{\textbf{(E) }\text{February 12}}</math>.
+
+
+=== Problem 4 ===
+How many ways can a student schedule
+
+Choices: {'A': '3', 'B': '6', 'C': '12', 'D': '18', 'E': '24</math>'}
+Answer: E
+
+--- Solution 1 ---
+We must place the classes into the periods such that no two classes are in the same period or in consecutive periods.
+
+Ignoring distinguishability, we can thus list out the ways that three periods can be chosen for the classes when periods cannot be consecutive:
+
+Periods <math>1, 3, 5</math>
+
+
+Periods <math>1, 3, 6</math>
+
+Periods <math>1, 4, 6</math>
+
+Periods <math>2, 4, 6</math>
+
+There are <math>4</math> ways to place <math>3</math> non distinguishable classes into <math>6</math> periods such that no two classes are in consecutive periods. For each of these ways, there are <math>3! = 6</math> orderings of the classes among themselves.
+
+Therefore, there are <math>4 \cdot 6 = \boxed{\textbf{(E) } 24}</math> ways to choose the classes.
+
+-Versailles15625
+
+--- Solution 2 ---
+Counting what we don't want is another slick way to solve this problem. Use PIE (Principle of Inclusion and Exclusion) to count two cases: 1. Two classes consecutive, 2. Three classes consecutive. 
+
+Case 1: Consider two consecutive periods as a "block" of which there are 5 places to put in(1,2; 2,3; 3,4; 4,5; 5,6). Then we simply need to place two classes within the block, <math>3 \cdot 2 </math>. Finally we have 4 periods remaining to place the final math class. Thus there are <math>5 \cdot 3 \cdot 2 \cdot 4</math> ways to place two consecutive math classes with disregard to the third. 
+
+Case 2: Now consider three consecutive periods as a "block" of which there are now 4 places to put in(1,2,3; 2,3,4; 3,4,5; 4,5,6). We now need to arrange the math classes in the block, <math>3 \cdot 2 \cdot 1</math>. Thus there are <math>4 \cdot 3 \cdot 2 \cdot 1</math> ways to place all three consecutive math classes. 
+
+By PIE we subtract Case 1 by Case 2 in order to not overcount:  <math>120-24</math>. Then we subtract that answer from the total ways to place the classes with no restrictions: <math>(6 \cdot 5 \cdot 4) - 96= \boxed{\textbf{(E) } 24}</math>
+
+-LitJamal
+
+--- Solution 3 ---
+We can tackle this problem with a stars-and-bars-ish approach. First, letting math class be 1 and non-math-class be 0, place 0s in between 3 1s:
+<cmath>10101</cmath>
+Now we need to place 1 additional 0. There are 4 places to put it: <cmath>\underline{\hspace{0.3cm}}1\underline{\hspace{0.3cm}}01\underline{\hspace{0.3cm}}01\underline{\hspace{0.3cm}}</cmath> It can be placed in any 1 of the underscores.
+Since there are <math>3!=6</math> ways to order the math classes, the answer is <math>6\cdot 4=\boxed{\textbf{(E) } 24}</math>.
+
+--- Solution 4 ---
+Let <math>M</math> represent a math class and <math>N</math> represent a non-math class. We have _N_N_N_, where the spaces represent the possible spots the <math>M’s</math> could go in. There are <math>4\choose 3</math> ways to choose the spots for the math classes and <math>3!=6</math> ways to order the classes. Hence, the answer is <math>4 \cdot 6 = \boxed{\textbf{(E) } 24}</math>.
+
+
+=== Problem 5 ===
+Alice, Bob, and Charlie were on a hike and were wondering how far away the nearest town was. When Alice said, "We are at least
+
+Choices: {'A': '(0,4)', 'B': '(4,5)', 'C': '(4,6)', 'D': '(5,6)', 'E': '(5,\\infty) </math>'}
+Answer: D
+
+--- Solution 1 ---
+For each of the false statements, we identify its corresponding true statement. Note that:
+<ol style="margin-left: 1.5em;">
+  <li><math>\mathrm{False}\cap\mathrm{True}=\varnothing.</math></li><p>
+  <li><math>\mathrm{False}\cup\mathrm{True}=[0,\infty).</math></li><p>
+</ol>
+We construct the following table:
+<cmath>\begin{array}{c||c|c}
+& &  \\ [-2.5ex]
+\textbf{Hiker} & \textbf{False Statement} & \textbf{True Statement} \\ [0.5ex]
+\hline
+& & \\ [-2ex]
+\textbf{Alice} & [6,\infty) & [0,6) \\ 
+& & \\ [-2.25ex]
+\textbf{Bob} & [0,5] & (5,\infty)  \\
+& & \\ [-2.25ex]
+\textbf{Charlie} & [0,4] & (4,\infty)
+\end{array}</cmath>
+Taking the intersection of the true statements, we have <cmath>[0,6)\cap(5,\infty)\cap(4,\infty)=(5,6)\cap(4,\infty)=\boxed{\textbf{(D) } (5,6)}.</cmath>
+
+--- Solution 2 ---
+Think of the distances as if they are on a number line. Alice claims that <math>d > 6</math>, Bob says <math>d < 5</math>, while Charlie thinks <math>d < 4</math>. This means that all possible numbers less than <math>5</math> and greater than <math>6</math> are included. However, since the three statements are actually false, the distance to the nearest town is one of the numbers not covered. Therefore, the answer is <math>\boxed{\textbf{(D) } (5,6)}</math>.
+
+
+=== Problem 6 ===
+Sangho uploaded a video to a website where viewers can vote that they like or dislike a video. Each video begins with a score of
+
+Choices: {'A': '200', 'B': '300', 'C': '400', 'D': '500', 'E': '600 </math>'}
+Answer: B
+
+--- Solution 1 ---
+If <math>65\%</math> of the votes were likes, then <math>35\%</math> of the votes were dislikes. <math>65\%-35\%=30\%</math>, so <math>90</math> votes is <math>30\%</math> of the total number of votes. Doing quick arithmetic shows that the answer is <math>\boxed{\textbf{(B) } 300}</math>.
+
+--- Solution 2 ---
+Let's consider that Sangho has received 100 votes. This means he has received 65 upvotes and 35 downvotes. Part of these upvotes and downvotes cancel out, so Sangho is now left with a total of 30 upvotes, or a score increase of 30. In order for his score to be 90, Sangho must receive three sets of 100 votes. Therefore, the answer is <math>\boxed{\textbf{(B) } 300}</math>.
+
+-tryanotherangle
+
+--- Solution 3 ---
+Let <math>x</math> be the amount of votes cast, <math>35\%</math> of <math>x</math> would be dislikes and <math>65\%</math> of <math>x</math> would be likes. Since a like earns the video 1 point and a dislike takes 1 point away from the video, the amount of points Sangho's video will have in terms of <math>x</math> is <math>65\%-35\%=30\%</math> of <math>x</math>, or <math>\frac{3}{10}</math> of <math>x</math>. Because Songho's video had a score of 90 points, <math>\frac{3x}{10} = 90</math>. After we solve for <math>x</math>, we get <math>x = \boxed{\textbf{(B) } 300}</math>.
+
+-Mathandski
+
+--- Solution 4 ---
+Let x be the amount of like votes and y be the amount of dislike votes. Then <math>x-y=90</math>. Since <math>65\%</math> of the total votes are like votes,
+<math> 0.65(x+y)=x</math>. then <math>.65y = .35x</math> or <math>13/7</math>y = <math>x</math>. Plugging that in to the original equation, <math> 6/7 y</math> = <math>90</math> and <math> y =105</math>
+Then <math>x=195</math> and the total number of votes is <math> 105+195 = 300</math>. The answer is <math>\boxed{\textbf{(B) } 300}</math>.
+
+-goldenn
+
+--- Solution 5 ---
+Obviously, <math>90/(65\%-35\%) = 90/30\% = 300</math>. The answer is <math>\boxed{\textbf{(B) } 300}</math>.
+
+(Note from <B+: please explain why this solution starts with the word "obviously." May the author or some other editor explain the "obviously" preceding the fraction which is the answer.)
+
+
+=== Problem 7 ===
+For how many (not necessarily positive) integer values of
+
+Choices: {'A': '3', 'B': '4', 'C': '6', 'D': '8', 'E': '9'}
+Answer: E
+
+--- Solution 1 ---
+Note that <cmath>4000\cdot \left(\frac{2}{5}\right)^n=\left(2^5\cdot5^3\right)\cdot \left(2\cdot5^{-1}\right)^n=2^{5+n}\cdot5^{3-n}.</cmath>
+Since this expression is an integer, we need: 
+<ol style="margin-left: 1.5em;">
+  <li><math>5+n\geq0,</math> from which <math>n\geq-5.</math></li><p>
+  <li><math>3-n\geq0,</math> from which <math>n\leq3.</math></li><p>
+</ol>
+Taking the intersection gives <math>-5\leq n\leq3.</math> So, there are <math>3-(-5)+1=\boxed{\textbf{(E) }9}</math> integer values of <math>n.</math>
+
+--- Solution 2 ---
+Note that <math>4000\cdot \left(\frac{2}{5}\right)^n</math> will be an integer if the denominator is a factor of <math>4000</math>. We also know that the denominator will always be a power of <math>5</math> for positive values and a power of <math>2</math> for all negative values. So we can proceed to divide 
+<math>4000</math> by <math>5^n</math> for each increasing positive value of <math>n</math> until we get a non-factor of <math>4000</math> and also divide <math>4000</math> by <math>2^{-n}</math> for each decreasing negative value of <math>n</math>. For positive values we get <math>n= 1, 2, 3</math> and for negative values we get <math>n= -1, -2, -3, -4, -5</math>. Also keep in mind that the expression will be an integer for <math>n=0</math>, which gives us a total of <math>\boxed{\textbf{(E) }9}</math> for <math>n.</math>
+
+--- Solution 3 ---
+The values for <math>n</math> are <math>-5, -4, -3, -2, -1, 0, 1, 2,</math> and <math>3.</math>
+
+The corresponding values for <math>4000\cdot \left(\frac{2}{5}\right)^n</math> are <math>390625, 156250, 62500, 25000, 10000, 4000, 1600, 640,</math> and <math>256,</math> respectively.
+
+In total, there are <math>\boxed{\textbf{(E) }9}</math> values for <math>n.</math>
+
+
+=== Problem 8 ===
+Joe has a collection of
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <math>x</math> be the number of <math>5</math>-cent coins that Joe has. Therefore, he must have <math>(x+3) \ 10</math>-cent coins and <math>(23-(x+3)-x) \ 25</math>-cent coins. Since the total value of his collection is <math>320</math> cents, we can write
+<cmath>\begin{align*}
+5x + 10(x+3) + 25(23-(x+3)-x) &= 320 \\
+5x + 10x + 30 + 500 - 50x &= 320 \\
+35x &= 210 \\
+x &= 6.
+\end{align*}</cmath> 
+Joe has six <math>5</math>-cent coins, nine <math>10</math>-cent coins, and eight <math>25</math>-cent coins. Thus, our answer is 
+<math>8-6 = \boxed{\textbf{(C) } 2}.</math>
+
+--- Solution 2 ---
+Let the number of <math>5</math>-cent coins be <math>x,</math> the number of <math>10</math>-cent coins be <math>x+3,</math> and the number of <math>25</math>-cent coins be <math>y.</math>
+
+Set up the following two equations with the information given in the problem:
+<cmath>5x+10(x+3)+25y=320 \Rightarrow 15x+25y+30=320 \Rightarrow 15x+25y=290</cmath>
+<cmath>x+x+3+y=23 \Rightarrow 2x+3+y=23 \Rightarrow 2x+y=20</cmath>
+
+From there, multiply the second equation by <math>25</math> to get <cmath>50x+25y=500.</cmath>
+
+Subtract the first equation from the multiplied second equation to get <math>35x=210,</math> or <math>x=6.</math>
+
+Substitute <math>6</math> in for <math>x</math> into one of the equations to get <math>y=8.</math>
+
+Finally, the answer is <math>8-6=\boxed{\textbf{(C) } 2}.</math>
+
+- mutinykids
+
+--- Solution 3 ---
+Let <math>n,d,</math> and <math>q</math> be the numbers of <math>5</math>-cent coins, <math>10</math>-cent coins, and <math>25</math>-cent coins in Joe's collection, respectively. We are given that
+<cmath>\begin{align*}
+n+d+q&=23, &(1) \\
+5n+10d+25q&=320, &(2) \\
+d&=n+3. &(3)
+\end{align*}</cmath>
+Substituting <math>(3)</math> into each of <math>(1)</math> and <math>(2)</math> and then simplifying, we have
+<cmath>\begin{align*}
+2n+q&=20, \hspace{17.5mm} &(1\star) \\
+3n+5q&=58. &(2\star)
+\end{align*}</cmath>
+Subtracting <math>(2\star)</math> from <math>5\cdot(1\star)</math> gives <math>7n=42,</math> from which <math>n=6.</math> Substituting this into either <math>(1\star)</math> or <math>(2\star)</math> produces <math>q=8.</math>
+
+Finally, the answer is <math>q-n=\boxed{\textbf{(C) } 2}.</math>
+
+--- Solution 4 ---
+The problem states that there are 23 coins, and subtracting the 3 "extra" 10-cent coins will give 20 coins total. 20 is not a multiple of 3, and so there must be more 25-cent coins. So the "extra" 25-cent coins, when subtracted, should give a multiple of 3. The only answer choice that gives this is <math>\boxed{\textbf{(C) } 2}.</math>
+
+
+=== Problem 9 ===
+All of the triangles in the diagram below are similar to isosceles triangle
+
+Choices: {'A': '16', 'B': '18', 'C': '20', 'D': '22', 'E': '24 </math>'}
+Answer: E
+
+--- Solution 1 ---
+Let <math>x</math> be the area of <math>ADE</math>. Note that <math>x</math> is comprised of the <math>7</math> small isosceles triangles and a triangle similar to <math>ADE</math> with side length ratio <math>3:4</math> (so an area ratio of <math>9:16</math>). Thus, we have <cmath>x=7+\dfrac{9}{16}x.</cmath> This gives <math>x=16</math>, so the area of <math>DBCE=40-x=\boxed{(E) 24}</math>.
+
+--- Solution 2 ---
+Let the base length of the small triangle be <math>x</math>. Then, there is a triangle <math>ADE</math> encompassing the 7 small triangles and sharing the top angle with a base length of <math>4x</math>. Because the area is proportional to the square of the side, let the base <math>BC</math> be <math>\sqrt{40}x</math>. The ratio of the area of triangle <math>ADE</math> to triangle <math>ABC</math> is <math>\left(\frac{4x}{\sqrt{40}x}\right)^2 = \frac{16}{40}</math>. The problem says the area of triangle <math>ABC</math> is <math>40</math>, so the area of triangle <math>ADE</math> is <math>16</math>. So the area of trapezoid <math>DBCE</math> is <math>40 - 16 = \boxed{24}</math>.
+
+--- Solution 3 ---
+Notice <math>\big[DBCE\big]=\big[ABC\big]-\big[ADE\big]</math>.
+Let the base of the small triangles of area 1 be <math>x</math>, then the base length of <math>\Delta ADE=4x</math>. Notice, <math>\left(\frac{DE}{BC}\right)^2=\frac{1}{40}\implies \frac{x}{BC}=\frac{1}{\sqrt{40}}</math>, then <math>4x=\frac{4BC}{\sqrt{40}}\implies \big[ADE\big]=\left(\frac{4}{\sqrt{40}}\right)^2\cdot \big[ABC\big]=\frac{2}{5}\big[ABC\big]</math>
+Thus, <math>\big[DBCE\big]=\big[ABC\big]-\big[ADE\big]=\big[ABC\big]\left(1-\frac{2}{5}\right)=\frac{3}{5}\cdot 40=\boxed{24}.</math>
+
+<asy>
+unitsize(5);
+dot((0,0));
+dot((60,0));
+dot((50,10));
+dot((10,10));
+dot((30,30));
+draw((0,0)--(60,0)--(50,10)--(30,30)--(10,10)--(0,0));
+draw((10,10)--(50,10));
+label("$B$",(0,0),SW);
+label("$C$",(60,0),SE);
+label("$E$",(50,10),E);
+label("$D$",(10,10),W);
+label("$A$",(30,30),N);
+draw((10,10)--(15,15)--(20,10)--(25,15)--(30,10)--(35,15)--(40,10)--(45,15)--(50,10));
+draw((15,15)--(45,15));
+</asy>
+
+--- Solution 4 ---
+The area of <math>ADE</math> is 16 times the area of the small triangle, as they are similar and their side ratio is <math>4:1</math>. Therefore the area of the trapezoid is <math>40-16=\boxed{24}</math>.
+
+--- Solution 5 ---
+You can see that we can create a "stack" of 5 triangles congruent to the 7 small triangles shown here, arranged in a row above those 7, whose total area would be 5. Similarly, we can create another row of 3, and finally 1 more at the top, as follows. We know this cumulative area will be <math>7+5+3+1=16</math>, so to find the area of such trapezoid <math>BCED</math>, we just take <math>40-16=\boxed{24}</math>, like so.
+
+--- Solution 6 ---
+The combined area of the small triangles is <math>7</math>, and from the fact that each small triangle has an area of <math>1</math>, we can deduce that the larger triangle above has an area of <math>9</math> (as the sides of the triangles are in a proportion of <math>\frac{1}{3}</math>, so will their areas have a proportion that is the square of the proportion of their sides, or <math>\frac {1}{9}</math>). Thus, the combined area of the top triangle and the trapezoid immediately below is <math>7 + 9 = 16</math>. The area of trapezoid <math>BCED</math> is thus the area of triangle <math>ABC-16 =\boxed{24}</math>.
+
+--- Solution 7 ---
+You can assume for the base of one of the smaller triangles to be <math>\frac{1}{a}</math> and the height to be <math>2a</math>, giving an area of 1. The larger triangle above the 7 smaller ones then has base <math>\frac{3}{a}</math> and height <math>6a</math>, giving it an area of <math>9</math>. Then the area of triangle <math>ADE</math> is <math>16</math> and <math>40-16=\boxed{24}</math>.
+
+--- Solution 8 ---
+You can construct another trapezoid directly above the one shown, with it's bottom length as the top length of the original. Its area would then be 9/16 of the original. Repeating this process infinitely gives us the sequence <math>7\cdot\left(1+\left(\frac{9}{16}\right)+\left(\frac{9}{16}\right)^2+\left(\frac{9}{16}\right)^3\dots\right)</math> . Using the infinite geometric series sum formula gives us <math>7\cdot\left(\frac{1}{1-\frac{9}{16}}\right)=7\cdot\frac{16}{7}=16</math>. The triangle's area would thus be <math>40-16=\boxed{24}</math>.  
+
+-ConcaveTriangle
+
+--- Solution 9 ---
+Note that the area of an isosceles triangle is equivalent to the square of its height. Using this information, the height of the smallest isosceles triangle is <math>1</math>, and thus its base is <math>2.</math> 
+
+Let <math>h</math> be the height of the top triangle. We can set up a height-to-base similarity ratio, using the top triangle and <math>\triangle{ADE}</math>. The top triangle has a base of <math>3\cdot{2}=6</math>, and <math>DE=4\cdot{2}=8.</math> The height of <math>\triangle{ADE}</math> is <math>h+1</math>, therefore our ratio is <math>\frac{h}{6}=\frac{h+1}{8}</math>, which yields <math>h=3</math> as our answer. 
+
+To find the area of the trapezoid, we can take the area of <math>\triangle{ABC}</math> and subtract the area of <math>\triangle{ADE},</math> whose base is <math>8</math> and height <math>3+1=4</math>. It follows that the area of <math>\triangle{ADE}=16</math>, and subtracting this from <math>40</math> gives us <math>40-16=\boxed{\text{D) }24}</math>.
+
+-Benedict T (countmath1)
+
+--- Solution 10 ---
+Since each of the smallest triangles have area <math>1</math>, we have the combined area of them is <math>7</math>. Also, we know that every triangle is similar to big one. Therefore the triangle above the stack of triangles has area of <math>3^2 = 9</math>, because the side length is <math>3</math>, so we can just square it to find the area. Now to find the area of trapezoid <math>BCDE</math> we can just do: <cmath>40-(9+7) = 40-16=\boxed{\text{E) }24}</cmath>
+-jb2015007
+
+
+=== Problem 10 ===
+Suppose that real number
+
+Choices: {'A': '8', 'B': '\\sqrt{33}+8', 'C': '9', 'D': '2\\sqrt{10}+4', 'E': '12 </math>'}
+Answer: A
+
+--- Solution 1 ---
+We let <imath>a=\sqrt{49-x^2}+\sqrt{25-x^2}</imath>; in other words, we want to find <imath>a</imath>. We know that <imath>a\cdot3=\left(\sqrt{49-x^2}+\sqrt{25-x^2}\right)\cdot\left(\sqrt{49-x^2}-\sqrt{25-x^2}\right)=\left(\sqrt{49-x^2}\right)^2-\left(\sqrt{25-x^2}\right)^2=\left(49-x^2\right)-\left(25-x^2\right)=24.</imath> Thus, <imath>a=\boxed{8}</imath>. 
+
+
+Alternative method:
+Let <imath>a=\sqrt{49-x^2}+\sqrt{25-x^2}</imath>, <imath>b=\sqrt{49-x^2}-\sqrt{25-x^2}</imath>. <imath>a \cdot b=49-x^2 - 25 + x^2 = 24</imath>. The problem states that <imath>b=3</imath>, so we get <imath>a = \frac{24}{3} = 8 </imath>. The answer is <imath>\boxed{\textbf{(A) }8}</imath>.
+
+--- Solution 2 ---
+Let <math>a = \sqrt{49-x^2}</math>, and <math>b = \sqrt{25-x^2}</math>. Solving for the constants in terms of <math>x</math>, <math>a</math> , and <math>b</math>, we get <math>a^2 + x^2 = 49</math>, and <math>b^2 + x^2 = 25</math>. Subtracting the second equation from the first gives us <math>a^2 - b^2 = 24</math>. Difference of squares gives us <math>(a+b)(a-b) = 24</math>. Since we want to find <math>a+b = \sqrt{49-x^2}+\sqrt{25-x^2}</math>, and we know <math>a-b = 3</math>, we get <math>3(a+b) = 24</math>, so <math>a+b = \boxed{\textbf{(A) }8}</math>
+
+--- Solution 3 ---
+We can substitute <math>25 - x^2</math> for <math>a</math>, thus turning the equation into <math>\sqrt{a+24} - \sqrt{a} = 3</math>. Moving the <math>\sqrt{a}</math> to the other side and squaring gives us <math>a + 24 = 9 + 6\sqrt{a} + a</math>, solving for <math>a</math> gives us 25/4. We substitute this value into the expression they asked us to evaluate giving 8.
+
+--- Solution 4 ---
+Move <math>-\sqrt{25-x^2}</math> to the right to get <math>\sqrt{49-x^2} = 3 + \sqrt{25-x^2}</math>. 
+Square both sides to get <math>49-x^2 = 9 + 6\sqrt{25-x^2} + (25-x^2)</math>.
+Simplify to get <math>15 = 6\sqrt{25-x^2}</math>, or <math>\frac{5}{2} = \sqrt{25-x^2}</math>
+Substitute this back into the original equation tog et that <math>\sqrt{49-x^2} = \frac{11}{2}</math>. The answer is <math>\boxed{\textbf{(A) }8}</math>
+
+==Solution 5(Jaideep's Difference of Roots Equals Integer Method)[JDRIM]==
+We are given that, <imath>\sqrt(49-x^2) - \sqrt(25-x^2) = 3</imath>
+We are asked to find, <imath>\sqrt(49-x^2) + \sqrt(25-x^2)</imath>
+Notice that these two expressions are conjugates of one another. Therefore, we can find that by multiply these two conjugates by one another we should be able to find that: <imath>(\sqrt(49-x^2) - \sqrt(25-x^2))(\sqrt(49-x^2) + \sqrt(25-x^2)) = (49-x^2) - (25-x^2) </imath>
+<imath>\Rightarrow 49-x^2-25+x^2 = 24</imath>
+We are already given that the first expression equals 3, thus, our expression now becomes: <imath>3(\sqrt(49-x^2)+\sqrt(25-x^2)) = 24 </imath> <imath>\Rightarrow \sqrt(49-x^2)+\sqrt(25-x^2) = 8 </imath>
+Thus, the answer is <imath>\boxed{\textbf{(A) }8}</imath>
+
+--- Solution 5 ---
+Let \( a = \sqrt{49-x^2} \) and \( b = \sqrt{25-x^2} \). Then, we have (1) \( a - b = 3 \) and \( a^2 = b^2 + 24 \) or (2) \( a^2 -
+b^2 = 24 \). Notice that \( a^2 - b^2 = (a + b)(a - b) \). So, dividing (1) by (2), we get that \( a + b = \sqrt{49 - x^2} + \sqrt{25 
+- x^2} = \frac{24}{3} = 8 \).
+
+
+=== Problem 11 ===
+When
+
+Choices: {'A': '42', 'B': '49', 'C': '56', 'D': '63', 'E': '84</math>'}
+Answer: E
+
+--- Solution 1 ---
+Add possibilities. There are <math>3</math> ways to sum to <math>10</math>, listed below.
+
+<cmath>4,1,1,1,1,1,1: \dbinom{7}{6} = 7</cmath>
+<cmath>3,2,1,1,1,1,1: \dbinom{7}{5}\dbinom{2}{1} = 42</cmath>
+<cmath>2,2,2,1,1,1,1: \dbinom{7}{4} = 35.</cmath>
+
+Add up the possibilities: <math>35+42+7=\boxed{\textbf{(E) }  84}</math>.
+
+--- Solution 2 ---
+Rolling a sum of <math>10</math> with 7 dice can be represented with stars and bars, with 10 stars and 6 bars. Each star represents one of the dots on the dices' faces and the bars represent separation between different dice. However, we must note that each die must have at least one dot on a face, so there must already be 7 stars predetermined. We are left with 3 stars and 6 bars, which we can rearrange in <math>\dbinom{9}{3}=\boxed{\textbf{(E) } 84}</math>
+
+--- Solution 3 ---
+We can use generating functions, where <math>(x+x^2+...+x^6)</math> is the function for each die. We want to find the coefficient of <math>x^{10}</math> in <math>(x+x^2+...+x^6)^7</math>, which is the coefficient of <math>x^3</math> in <math>\left(\frac{1-x^7}{1-x}\right)^7</math>. This evaluates to <math>\dbinom{-7}{3} \cdot (-1)^3=\boxed{\textbf{(E) }84}</math>
+
+--- Solution 4 ---
+If we let each number take its minimum value of 1, we will get 7 as the minimum sum. So we can do <math>10</math> - <math>7</math> = <math>3</math> to find the number of balls we need to distribute to get three more added to the minimum to get 10, so the problem is asking how many ways can you put <math>3</math> balls into <math>7</math> boxes. From there we get <math>\binom{7+3-1}{7-1}=\binom{9}{6}=\boxed{\textbf{(E) }84}</math>
+
+--- Solution 5 ---
+We can use number separation for this problem. If we set each of the dice value to <math>D\{a, b, c, d, e, f, g, h\}</math>, we can say 
+<math>D = 10</math> and each of <math>D</math>'s elements are larger than <math>0</math>. Using the positive number separation formula, which is <math>\dbinom{n-1}{r-1}</math>, we can make the following equations. 
+<cmath>\begin{align*}
+D &= 10 \\
+a+b+c+d+e+f+g &= 10 \\
+\dbinom{10-1}{7-1} &= \\
+\dbinom{9}{6} &= \\
+\dbinom{9}{3} &= \\
+\dfrac{9 \cdot 8 \cdot 7}{3 \cdot 2 \cdot 1} &= \\
+12 \cdot 7 &= \boxed{\textbf{(E) }84} \\
+\end{align*}</cmath>
+
+Note: We are unable to use non-negative number separations due to the fact that the dice *must* be larger than <math>0</math> or positive.
+
+
+=== Problem 12 ===
+How many ordered pairs of real numbers
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '8 </math>'}
+Answer: C
+
+--- Solution 1 ---
+We can solve this by graphing the equations. The second equation looks challenging to graph, but start by graphing it in the first quadrant only (which is easy since the inner absolute value signs can be ignored), then simply reflect that graph into the other quadrants.
+
+The graph looks something like this:
+<asy>
+draw((-3,0)--(3,0), Arrows);
+draw((0,-3)--(0,3), Arrows);
+draw((2,3)--(0,1)--(-2,3), blue);
+draw((-3,2)--(-1,0)--(-3,-2), blue);
+draw((-2,-3)--(0,-1)--(2,-3), blue);
+draw((3,-2)--(1,0)--(3,2), blue);
+draw((-3,2)--(3,0), red);
+dot((-3,2));
+dot((3/2,1/2));
+dot((0,1));
+</asy>
+Now, it becomes clear that there are <imath>\boxed{\textbf{(C) } 3}</imath> intersection points.
+
+(not the author)The lines in the first quadrant are <imath>y=x+1</imath> and <imath>y=x-1</imath> and we reflect them into all quadrants as all instances of variables are in a context where flipping the sign does not affect the overall expression.
+
+--- Solution 2 ---
+<math>x+3y=3</math> can be rewritten to <math>x=3-3y</math>. Substituting <math>3-3y</math> for <math>x</math> in the second equation will give <math>||3-3y|-y|=1</math>. Splitting this question into casework for the ranges of <math>y</math> will give us the total number of solutions. 
+
+<math>\textbf{Case 1:}</math> <math>y>1</math>:
+<math>3-3y</math> will be negative so <math>|3-3y| = 3y-3.</math>
+<math>|3y-3-y| = |2y-3| = 1</math>
+    Subcase 1: <math>y>\frac{3}{2}</math>
+<math>2y-3</math> is positive so <math>2y-3 = 1</math> and <math>y = 2</math> and <math>x = 3-3(2) = -3</math>
+    Subcase 2: <math>1<y<\frac{3}{2}</math>
+<math>2y-3</math> is negative so <math>|2y-3| = 3-2y = 1</math>. <math>2y = 2</math> and so there are no solutions (<math>y</math> can't equal to <math>1</math>)
+
+<math>\textbf{Case 2:}</math> <math>y = 1</math>:
+It is fairly clear that <math>x = 0.</math>
+
+<math>\textbf{Case 3:}</math> <math>y<1</math>:
+<math>3-3y</math> will be positive so <math>|3-3y-y| = |3-4y| = 1</math>
+    Subcase 1: <math>y>\frac{3}{4}</math>
+<math>3-4y</math> will be negative so <math>4y-3 = 1</math> <math>\rightarrow</math> <math>4y = 4</math>. We already have this solution from Case 2 as <math>y = 1</math>.
+    Subcase 2: <math>y<\frac{3}{4}</math>
+<math>3-4y</math> will be positive so <math>3-4y = 1</math> <math>\rightarrow</math> <math>4y = 2</math>. <math>y = \frac{1}{2}</math> and <math>x = \frac{3}{2}</math>.
+Thus, the solutions are: <math>(-3,2), (0,1), \left(\frac{3}{2},\frac{1}{2} \right)</math>, and the answer is <math>\boxed{\textbf{(C) } 3}</math>.
+
+--- Solution 3 ---
+Note that <math>||x| - |y||</math> can take on one of four values where <math>x</math> and <math>y</math> are: <math>x + y</math> (positive, positive), <math>x - y</math> (positive, negative), <math>-x + y</math> (negative, positive), <math>-x -y</math> (negative, negative). So we have 4 cases which we solve by cancellation with the two equations from the problem:
+
+'''Case 1: ||x| - |y|| = x+y  '''
+<cmath>x+3y=3</cmath>
+<cmath>x+y=1</cmath>
+
+Subtracting:
+
+<math>2y=2 \Rightarrow y=1</math> and <math>x=0</math>.
+
+<math>\text{Result: } (0,1)</math>
+
+
+'''Case 2: ||x| - |y|| = x-y'''
+<cmath>x+3y=3</cmath>
+<cmath>x-y=1</cmath>
+
+Subtacting:
+
+<math>4y=2 \Rightarrow y=\dfrac{1}{2}</math> an <math>x=\dfrac{3}{2}</math>.
+
+<math>\text{Result: } \left(\dfrac{3}{2},\dfrac{1}{2}\right)</math>
+
+
+'''Case 3: ||x| - |y|| = -x+y'''
+<cmath>x+3y=3</cmath>
+<cmath>-x+y=1</cmath>
+
+Adding: 
+
+<math>4y=4 \Rightarrow y=1</math> and <math>x=0</math>.
+
+
+<math>\text{Result: } (0,1)</math>. Since this is the same solution as we got in Case 1, we can not count this (otherwise, we would have overcounted).
+
+
+'''Case 4: ||x| - |y|| = -x-y'''
+<cmath>x+3y=3</cmath>
+<cmath>-x-y=1</cmath>
+
+Adding: 
+
+<math>2y=4 \Rightarrow y=2</math> and <math>x=-3</math>.
+
+
+<math>\text{Result: } (-3,2)</math>.
+
+
+'''Answer'''
+
+We solved each case by elimination (either adding the two equations or subtracting), to obtain three solutions: <math>(0, 1)</math>, <math>(-3,2)</math>, <math>\left(\dfrac{3}{2}, \dfrac{1}{2}\right)</math>.
+
+Our answer is <math>\boxed{\textbf{(C) } 3}</math>.
+
+
+'''Contributors'''
+
+--- Solution 4 ---
+Just as in solution <math>2</math>, we derive the equation <math>||3-3y|-|y||=1</math>. If we remove the absolute values, the equation collapses into four different possible values. <math>3-2y</math>, <math>3-4y</math>, <math>2y-3</math>, and <math>4y-3</math>, each equal to either <math>1</math> or <math>-1</math>. Remember that if <math>P-Q=a</math>, then <math>Q-P=-a</math>. Because we have already taken <math>1</math> and <math>-1</math> into account, we can eliminate one of the conjugates of each pair, namely <math>3-2y</math> and <math>2y-3</math>, and <math>3-4y</math> and <math>4y-3</math>. Find the values of <math>y</math> when <math>3-2y=1</math>, <math>3-2y=-1</math>, <math>3-4y=1</math> and <math>3-4y=-1</math>. We see that <math>3-2y=1</math> and <math>3-4y=-1</math> give us the same value for <math>y</math>, so the answer is <math>\boxed{\textbf{(C) } 3}</math>
+
+--- Solution 5 ---
+Just as in solution <math>2</math>, we derive the equation <math>x=3-3y</math>. Squaring both sides in the second equation gives <math>x^2+y^2-2|xy|=1</math>. Putting <math>x=3-3y</math> and doing a little calculation gives <math>10y^2-18y+9-2|3y-3y^2|=1</math>. From here we know that <math>3y-3y^2</math> is either positive or negative.
+
+When positive, we get <math>2y^2-3y+1=0</math> and then, <math>y=1/2</math> or <math>y=1</math>.
+When negative, we get <math>y^2-3y+2=0</math> and then, <math>y=2</math> or <math>y=1</math>. Clearly, there are <math>3</math> different pairs of values and that gives us <math>\boxed{\textbf{(C) } 3}</math>
+
+
+=== Problem 13 ===
+A paper triangle with sides of lengths
+
+Choices: {'A': '1+\\frac12 \\sqrt2', 'B': '\\sqrt3', 'C': '\\frac74', 'D': '\\frac{15}{8}', 'E': '2 </math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+draw((0,0)--(4,0)--(4,3)--(0,0)); label("$A$", (0,0), SW); label("$B$", (4,3), NE); label("$C$", (4,0), SE);  label("$D$", (2,1.5), NW); label("$E$", (3.125,0), S);
+draw ((2,1.5)--(3.125,0),linewidth(1));
+ draw(rightanglemark((0,0),(2,1.5),(3.125,0)));
+</asy>
+
+First, we need to realize that the crease line is just the perpendicular bisector of side <math>AB</math>, the hypotenuse of right triangle <math>\triangle ABC</math>. Call the midpoint of <math>AB</math> point <math>D</math>. Draw this line and call the intersection point with <math>AC</math> as <math>E</math>. Now, <math>\triangle ACB</math> is similar to <math>\triangle ADE</math> by <math>AA</math> similarity. Setting up the ratios, we find that
+<cmath>\frac{BC}{AC}=\frac{DE}{AD} \Rightarrow \frac{3}{4}=\frac{DE}{\frac{5}{2}} \Rightarrow DE=\frac{15}{8}.</cmath>
+Thus, our answer is <math>\boxed{\textbf{(D) } \frac{15}{8}}</math>.
+
+--- Solution 2 ---
+Use the ruler and regular paper you brought to quickly draw a 3-4-5 triangle of any scale (don't trust the diagram in the booklet). Very carefully fold the acute vertices together and make a crease. Measure the crease with the ruler. If you were reasonably careful, you should see that it measures somewhat more than <imath>\frac{7}{4}</imath> units and somewhat less than <imath>2</imath> units. The only answer choice in that range is <imath>\boxed{\textbf{(D) } \frac{15}{8}}</imath>.
+
+This is pretty much a cop-out, but it's allowed in the rules technically. This is basically useless for problems without diagrams.
+
+
+
+(You can't bring graph paper to any of the AMC competitions).
+
+--- Solution 3 ---
+Since <math>\triangle ABC</math> is a right triangle, we can see that the slope of line <math>AB</math> is <math>\frac{BC}{AC}</math> = <math>\frac{3}{4}</math>. We know that if we fold <math>\triangle ABC</math> so that point <math>A</math> meets point <math>B</math> the crease line will be perpendicular to <math>AB</math> and we also know that the slopes of perpendicular lines are negative reciprocals of one another. Then, we can see that the slope of our crease line is <math>-\frac{4}{3}</math>.
+<asy>
+pen dotstyle = black;
+
+draw((0,0)--(4,0)--(4,3)--(0,0));
+fill(origin--(0,0)--(4,3)--(4,0)--cycle, gray);
+
+dot((0,0),dotstyle); 
+label("$A$", (0.03153837092244126,0.07822624343603715), SW); 
+dot((4,0),dotstyle); 
+label("$C$", (4.028913881471271,0.07822624343603715), SE); 
+dot((4,3),dotstyle); 
+label("$B$", (4.028913881471271,3.078221223847919), NE); 
+dot((2,1.5),dotstyle);
+label("$D$", (2.0341528211973956,1.578223733641978), SE); 
+dot((2,0),dotstyle);
+label("$E$", (2.0341528211973956,0.07822624343603715), NE); 
+dot((3.1249518689638927,0),dotstyle);
+label("$F$", (3.1571875913515854,0.07822624343603715), NE); 
+
+label("$4$", (2,0), S);
+label("$3$", (4,1.5), E);
+label("$5$", (2,1.5), NW);
+</asy>
+
+Let us call the midpoint of <math>AB</math> point <math>D</math>, the midpoint of <math>AC</math> point <math>E</math>, and the crease line <math>DF</math>. We know that <math>DE</math> is parallel to <math>BC</math> and that <math>DE</math>'s length is <math>\frac{BC}{2}=\frac{3}{2}</math>. Using our slope calculation from earlier, we can see that<math>-\frac{DE}{EF}=-\frac{\frac{3}{2}}{EF}=-\frac{4}{3}</math>. With this information, we can solve for <math>EF</math>: 
+<cmath>-4EF=(-\frac{3}{2})(3) \Rightarrow -4EF=-\frac{9}{2} \Rightarrow 4EF=\frac{9}{2} \Rightarrow EF=\frac{9}{8}.</cmath>
+We can then use the Pythagorean Theorem to find <math>DF</math>.
+<cmath>\frac{3}{2}^2+\frac{9}{8}^2=DF^2 \Rightarrow \frac{9}{4}+\frac{9\cdot9}{8\cdot8}=DF^2 \Rightarrow \frac{9\cdot2\cdot8}{4\cdot2\cdot8}+\frac{9\cdot9}{8\cdot8}=DF^2 \Rightarrow \frac{9\cdot2\cdot8+9\cdot9}{8\cdot8}=DF^2 \Rightarrow \frac{9(2\cdot8+9)}{8\cdot8}=DF^2</cmath>
+<cmath>\Rightarrow DF=\sqrt{\frac{9(2\cdot8+9)}{8\cdot8}} \Rightarrow DF=\frac{3\cdot5}{8} \Rightarrow DF=\frac{15}{8}</cmath>
+Thus, our answer is <math>\boxed{\textbf{(D) } \frac{15}{8}}</math>.
+
+--- Solution 4 ---
+Make use of the diagram in Solution 3. It can be deduced that <math>AF=BF</math>. Let <math>DF=x</math>. In <math>\triangle ADF</math>, <math>AF^2=x^2+2.5^2 \Rightarrow AF=\sqrt{x^2+2.5^2}</math>. Then <math>FC</math> also would be <math>4-\sqrt{x^2+2.5^2}</math>.
+
+In <math>\triangle BCF</math>, <math>BF^2=FC^2+BC^2 \Rightarrow (\sqrt{x^2+2.5^2})^2=(4-\sqrt{x^2+2.5^2})^2+3^2</math>. After some quick math, we get <math>\sqrt{x^2+2.5^2}=\frac{25}{8}</math>.
+Solving for <math>x</math> will give <math>x=\frac{15}{8}</math>.
+
+<math>\therefore</math> <math>DF=x=</math> <math>\boxed{\textbf{(D) } \frac{15}{8}}</math>.
+
+--- Solution 5 ---
+Like in Solution 3, we can make use of coordinate geometry to solve this problem. Because the length of the crease is constant no matter the positioning of the triangle, reorient the triangle so it has C at the origin and B and A at <math>(0,3)</math> and <math>(4,0)</math> respectively.
+
+<asy>
+draw((0,0)--(0,3)--(4,0)--(0,0));
+label("$C$", (0,0), SW); label("$B$", (0,3), NW); label("$A$", (4,0), SE);
+draw ((2,1.5)--(0.875,0),blue+linewidth(1));
+label("$(\frac{7}{8},0)$", (0.875,0), S); label("$(2,\frac{3}{2})$", (2,1.5), NE);
+draw(rightanglemark((4,0),(2,1.5),(0.875,0)));
+</asy>
+
+We know that each point in the crease is equidistant from <math>A</math> and <math>B</math>, so the crease must pass through the midpoint of <math>AB</math>, which is <math>({2,\frac{3}{2}})</math> , and be perpendicular to hypotenuse <math>AB</math>. The crease therefore has a slope of <math>\frac{4}{3}</math>.
+
+Plugging into point-slope we find that the equation of the crease is, <math>y-y_1=m(x-x_1)\implies y-\frac{3}{2}=\frac{4}{3}(x-2)\implies y=\frac{4}{3}x-\frac{7}{6}</math>
+
+Using 0 for y, we see that the crease intersects <math>AC</math> at <math>(\frac{7}{8},0)</math>. 
+
+By the Distance Formula,
+
+<math>(2-\frac{7}{8})^2+({\frac{3}{2}})^2=d^2 \implies d^2=\frac{225}{64} \implies d=\boxed{\textbf{(D) }\frac{15}{8}}</math>
+
+--- Solution 6 ---
+Let <math>D</math> be a point on AC such that <math>AD=DB</math> and <math>\triangle{ADB}</math> is isosceles. The altitude of this triangle is the crease of the paper triangle.
+
+Setting <math>DC=x</math>, we have a right triangle <math>\triangle{BCD}</math> with legs of x and 3, and, because <math>AD=DB,</math> hypotenuse of <math>(4-x)</math>.
+
+<math>x^2+3^2=(4-x)^2 \implies x^2+9=16-8x+x^2 \implies 8x=7 \implies x=\frac{7}{8}</math>
+
+The area of <math>\triangle{BCD}  \text{ is thus} = \frac{7}{8}*3*\frac{1}{2} \implies \frac{21}{16}.</math> Because <math>[ADB]=[ABC]-[BCD],</math> we can plug in and see that <math>[ADB]=6-\frac{21}{16}=\frac{75}{16}.</math>
+
+Since <math>A=\frac{bh}{2}</math>, we get <math>\frac{75}{16}=\frac{5h}{2} \implies 5h=\frac{75}{8} \implies h=\boxed{\textbf{(D) }\frac{15}{8}}</math>
+
+
+=== Problem 14 ===
+What is the greatest integer less than or equal to <cmath>\frac{3^{100}+2^{100}}{3^{96}+2^{96}}?</cmath>
+
+Choices: {'A': '80', 'B': '81', 'C': '96', 'D': '97', 'E': '625</math>'}
+Answer: A
+
+--- Solution 1 ---
+We write
+<cmath>\frac{3^{100}+2^{100}}{3^{96}+2^{96}}=\frac{3^{96}}{3^{96}+2^{96}}\cdot\frac{3^{100}}{3^{96}}+\frac{2^{96}}{3^{96}+2^{96}}\cdot\frac{2^{100}}{2^{96}}=\frac{3^{96}}{3^{96}+2^{96}}\cdot 81+\frac{2^{96}}{3^{96}+2^{96}}\cdot 16.</cmath>
+Hence we see that our number is a weighted average of 81 and 16, extremely heavily weighted toward 81. Hence the number is ever so slightly less than 81, so the answer is <math>\boxed{\textbf{(A) }80}</math>.
+
+--- Solution 2 ---
+Let's set this value equal to <math>x</math>. We can write
+<cmath>\frac{3^{100}+2^{100}}{3^{96}+2^{96}}=x.</cmath>
+Multiplying by <math>3^{96}+2^{96}</math> on both sides, we get 
+<cmath>3^{100}+2^{100}=x(3^{96}+2^{96}).</cmath>
+Now let's take a look at the answer choices. We notice that <math>81</math>, choice <math>B</math>, can be written as <math>3^4</math>. Plugging this into our equation above, we get
+<cmath>3^{100}+2^{100} \stackrel{?}{=} 3^4(3^{96}+2^{96}) \Rightarrow 3^{100}+2^{100} \stackrel{?}{=} 3^{100}+3^4\cdot 2^{96}.</cmath>
+The right side is larger than the left side because 
+<cmath>2^{100} \leq 2^{96}\cdot 3^4.</cmath>
+This means that our original value, <math>x</math>, must be less than <math>81</math>. The only answer that is less than <math>81</math> is <math>80</math> so our answer is <math>\boxed{A}</math>.
+
+--- Solution 3 ---
+<cmath>\frac{3^{100}+2^{100}}{3^{96}+2^{96}}=\frac{2^{96}\left(\frac{3^{100}}{2^{96}}\right)+2^{96}\left(2^{4}\right)}{2^{96}\left(\frac{3}{2}\right)^{96}+2^{96}(1)}=\frac{\frac{3^{100}}{2^{96}}+2^{4}}{\left(\frac{3}{2}\right)^{96}+1}=\frac{\frac{3^{100}}{2^{100}}\cdot2^{4}+2^{4}}{\left(\frac{3}{2}\right)^{96}+1}=\frac{2^{4}\left(\frac{3^{100}}{2^{100}}+1\right)}{\left(\frac{3}{2}\right)^{96}+1}.</cmath>
+
+We can ignore the 1's on the end because they won't really affect the fraction. So, the answer is very very very close but less than the new fraction.
+
+<cmath>\frac{2^{4}\left(\frac{3^{100}}{2^{100}}+1\right)}{\left(\frac{3}{2}\right)^{96}+1}<\frac{2^{4}\left(\frac{3^{100}}{2^{100}}\right)}{\left(\frac{3}{2}\right)^{96}},</cmath>
+
+<cmath>\frac{2^{4}\left(\frac{3^{100}}{2^{100}}\right)}{\left(\frac{3}{2}\right)^{96}}=\frac{3^{4}}{2^{4}} \cdot 2^{4}=3^{4}=81.</cmath>
+
+So, our final answer is very close but not quite 81, and therefore the greatest integer less than the number is <imath>\boxed{(A) 80}</imath>
+
+--- Solution 4 ---
+Let <math>x=3^{96}</math> and <math>y=2^{96}</math>. Then our fraction can be written as
+<math>\frac{81x+16y}{x+y}=\frac{16x+16y}{x+y}+\frac{65x}{x+y}=16+\frac{65x}{x+y}</math>.
+Notice that 
+<math>\frac{65x}{x+y}<\frac{65x}{x}=65</math>.
+So ,
+<math>16+\frac{65x}{x+y}<16+65=81</math>.
+And our only answer choice less than 81 is <math>\boxed{(A) 80}</math> (RegularHexagon)
+
+--- Solution 5 ---
+Let <math>x=\frac{3^{100}+2^{100}}{3^{96}+2^{96}}</math>. Multiply both sides by <math>(3^{96}+2^{96})</math>, and expand. Rearranging the terms, we get <math>3^{96}(3^4-x)+2^{96}(2^4-x)=0</math>. The left side is decreasing, and it is negative when <math>x=81</math>. This means that the answer must be less than <math>81</math>; therefore the answer is <math>\boxed{(A)}</math>.
+
+--- Solution 6 ---
+A faster solution. Recognize that for exponents of this size <math>3^{n}</math> will be enormously greater than <math>2^{n}</math>, so the terms involving <math>2</math> will actually have very little effect on the quotient. Now we know the answer will be very close to <math>81</math>.
+
+Notice that the terms being added on to the top and bottom are in the ratio <math>\frac{1}{16}</math> with each other, so they must pull the ratio down from 81 very slightly. (In the same way that a new test score lower than your current cumulative grade always must pull that grade downward.) Answer: <math>\boxed{\text{\textbf{(A)}}}</math>.
+
+--- Solution 7 ---
+Notice how <math>\frac{3^{100}+2^{100}}{3^{96}+2^{96}}</math> can be rewritten as <math>\frac{81(3^{96})+16(2^{96})}{3^{96}+2^{96}}=\frac{81(3^{96})+81(2^{96})}{3^{96}+2^{96}}-\frac{65(2^{96})}{3^{96}+2^{96}}=81-\frac{65(2^{96})}{3^{96}+2^{96}}</math>. Note that <math>\frac{65(2^{96})}{3^{96}+2^{96}}<1</math>, so the greatest integer less than or equal to  <math>\frac{3^{100}+2^{100}}{3^{96}+2^{96}}</math> is <math>80</math> or <math>\boxed{\textbf{(A)}}</math>
+
+--- Solution 8 ---
+For positive <math>a, b, c, d</math>, if <math>\frac{a}{b}<\frac{c}{d}</math> then <math>\frac{c+a}{d+b}<\frac{c}{d}</math>. Let <math>a=2^{100}, b=2^{96}, c=3^{100}, d=3^{96}</math>. Then <math>\frac{c}{d}=3^4</math>. So answer is less than 81, which leaves only one choice, 80.
+* Note that the algebra here is synonymous to the explanation given in Solution 6. This is the algebraic reason to the logic of if you get a test score with a lower percentage than your average (no matter how many points/percentage of your total grade it was worth), it will pull your overall grade down.
+
+--- Solution 9 ---
+Try long division, and notice putting <math>3^4=81</math> as the denominator is too big and putting <math>3^4-1=80</math> is too small. So we know that the answer is between <math>80</math> and <math>81</math>, yielding <math>80</math> as our answer.
+
+--- Solution 10 ---
+===Solution 10.1===
+
+We can compare the given value to each of our answer choices. We already know that it is greater than <math>80</math> because otherwise there would have been a smaller answer, so we move onto <math>81</math>. We get:
+
+<math>\frac{3^{100}+2^{100}}{3^{96}+2^{96}} \text{ ? } 3^4</math>
+
+Cross multiply to get:
+
+<math>3^{100}+2^{100} \text{ ? }3^{100}+(2^{96})(3^4)</math>
+
+Cancel out <math>3^{100}</math> and divide by <math>2^{96}</math> to get <math>2^{4} \text{ ? }3^4</math>. We know that <math>2^4 < 3^4</math>, which means the expression is less than <math>81</math> so the answer is <math>\boxed{(A)}</math>.
+
+===Solution 10.2===
+
+We know this will be between 16 and 81 because <math>\frac{3^{100}}{3^{96}} = 3^4 = 81</math> and <math>\frac{2^{100}}{2^{96}} = 2^4 = 16</math>. <math>80=\boxed{(A)}</math> is the only option choice in this range.
+
+
+==Explanation for why 80 is indeed the floor==
+
+We need <math>3^{100}+2^{100} > 80 \cdot 3^{96} + 5 \cdot 2^{100}</math>. Since <math>3^{100} = 81\cdot 3^{96}</math>, this translates to
+<cmath>3^{96} > 4\cdot 2^{100} = 64\cdot 2^{96}.</cmath>
+We now prove that <math>(3/2)^k > k</math> for all positive integers <math>k</math>.
+Clearly, <math>(3/2)^2 = 2.25 > 2</math>. Assume <math>(3/2)^k > k</math> where <math>k\ge 2</math>. Then <math>\left(\frac{3}{2}\right)^{k+1} > \frac{3k}{2} = k + \frac{k}{2}</math>. But since <math>k/2 \ge 1</math>, we have that <math>(3/2)^{k+1} > k+1</math>. By induction (and <math>k=1</math> is trivial), the claim is proven.
+
+Thus, <math>\left(\frac{3}{2}\right)^{96} > 96 > 64</math>. Writing this proof backwards and dividing both sides of the initial equation by <math>80</math> yields <math>80 < \frac{3^{100}+2^{100}}{3^{96}+2^{96}} < 81</math>.
+
+--- Solution 11 ---
+We know that in this problem, <math>3^{96}+2^{96}</math> times some number is equal to <math>3^{100}+2^{100}</math>. Multiplying answer <math>\boxed{\textbf{(B)}}</math> or 81 to <math>3^{96}+2^{96}</math> gives us <math>3^{100}+2^{96}\cdot3^4</math>. We know that <math>3^4\cdot2^{96}</math> is greater than <math>2^{100}</math>, so that means <math>\boxed{\textbf{(B)}}</math> or 81 is too big. That leaves us with only one solution: <math>80=\boxed{\textbf{(A) } 80}.</math>
+
+--- Solution 12 ---
+Dividing by <math>2^{96}</math> in both numerator and denominator, this fraction can be rewritten as <cmath>\frac{81 \times (1.5)^{96} + 16}{(1.5)^{96} + 1}.</cmath> Notice that the <math>+1</math> and the <math>+16</math> will be so insignificant compared to a number such as <math>(1.5)^{96},</math> and that thereby the fraction will be ever so slightly less than <math>81</math>. Thereby, we see that the answer is <math>\boxed{\text{(A)} \ 80}.</math>
+
+--- Solution 13 ---
+If you multiply <math>(3^{96} + 2^{96})</math> by <math>(3^{4} + 2^{4})</math> (to get the exponent up to 100), you'll get <math>(3^{100} + 2^{100}) + 3^{96} \cdot 2^{4} + 2^{96} \cdot 3^{4}</math>. Thus, in the numerator, if you add and subtract by <math>3^{96} \cdot 2^{4}</math> and <math>2^{96} \cdot 3^{4}</math>, you'll get <math>\frac{(3^{4} + 2^{4})(3^{100} + 2^{100}) - 3^{96} \cdot 2^{4} - 2^{96} \cdot 3^{4}}{3^{96}+2^{96}}</math>. You can then take out out the first number to get <math>3^{4} + 2^{4} - \frac{3^{96} \cdot 2^{4} + 2^{96} \cdot 3^{4}}{3^{96}+2^{96}}</math>. This can then be written as <math>87 - \frac{16 \cdot 3^{96} + 16 \cdot 2^{96} + 75 \cdot 2^{96}}{3^{96}+2^{96}}</math>, factoring out the 16 and splitting the fraction will give you <math>87 - 16 - \frac{65 \cdot 2^{96}}{3^{96}+2^{96}}</math>, giving you <math>81 - \frac{65 \cdot 2^{96}}{3^{96}+2^{96}}</math>. While you can roughly say that <math>\frac{65 \cdot 2^{96}}{3^{96}+2^{96}} < 1</math> you can also notice that the only answer choice less than 81 is 80, thus the answer is <math>\boxed{\text{(A)} \ 80}.</math>
+
+--- Solution 14 ---
+If you factor out <math>3^{100}</math> from the numerator and <math>3^{96}</math> from the denominator, you will get <math>\frac{3^{100}\left(1+(\frac{2}{3}\right)^{100})}{3^{96}\left(1+(\frac{2}{3}\right)^{96})}</math>. Divide the numerator and denominator by <math>3^{96}</math> to get <math>\frac{81\left(1+(\frac{2}{3}\right)^{100})}{\left(1+(\frac{2}{3}\right)^{96})}</math>. We see that every time we multiply <math>\frac{2}{3}</math> by itself, it slightly decreases, so <math>1+(\frac{2}{3})^{100}</math> will be ever so slightly smaller than <math>1+(\frac{2}{3})^{96}</math>. Thus, the decimal representation of <math>\frac{\left(1+(\frac{2}{3}\right)^{100})}{\left(1+(\frac{2}{3}\right)^{96})}</math> will be extremely close to <math>1</math>, so our solution will be the largest integer that is less than <math>81</math>. Thus, the answer is <math>\boxed{\text{(A)} \ 80}.</math>
+
+
+=== Problem 15 ===
+Two circles of radius
+
+Choices: {'A': '21', 'B': '29', 'C': '58', 'D': '69', 'E': '93 </math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+draw(circle((0,0),13));
+draw(circle((5,-6.25),5));
+draw(circle((-5,-6.25),5));
+label("$A$", (-8.125,-10.15), S);
+label("$B$", (8.125,-10.15), S);
+draw((0,0)--(-8.125,-10.15));
+draw((0,0)--(8.125,-10.15));
+draw((-5,-6.25)--(5,-6.25));
+draw((-8.125,-10.15)--(8.125,-10.15));
+label("$X$", (0,0), N);
+label("$Y$", (-5,-6.25),NW);
+label("$Z$", (5,-6.25),NE);
+</asy>
+
+Let the center of the surrounding circle be <imath>X</imath>. The circle that is tangent at point <imath>A</imath> will have point <imath>Y</imath> as the center. Similarly, the circle that is tangent at point <imath>B</imath> will have point <imath>Z</imath> as the center. Connect <imath>AB</imath>, <imath>YZ</imath>, <imath>XA</imath>, and <imath>XB</imath>. Now observe that <imath>\triangle XYZ</imath> is similar to <imath>\triangle XAB</imath> by SAS.
+
+Writing out the ratios, we get
+<cmath>\frac{XY}{XA}=\frac{YZ}{AB} \Rightarrow \frac{13-5}{13}=\frac{5+5}{AB} \Rightarrow \frac{8}{13}=\frac{10}{AB} \Rightarrow AB=\frac{65}{4}.</cmath>
+Therefore, our answer is <imath>65+4= \boxed{\textbf{(D) } 69}</imath>.
+
+--- Solution 2 ---
+As in Solution 1, let the center of the surrounding circle be <imath>X</imath>, a tangent circle be tangent at point <imath>A</imath> and have point <imath>Y</imath> as the center, and the other tangent circle be tangent at point <imath>B</imath> and have point <imath>Z</imath> as the center (see the figure in Solution 1). We can deduce that <imath>XY=XZ=8</imath> and <imath>YZ=10</imath>.
+
+Then, by the Law of Cosines, we have 
+<cmath>YZ^2 = XY^2 + XZ^2 - 2(XY)(XZ)\cos{\angle YXZ} \Rightarrow 100  =  64  +  64  -  2 (8) (8)\cos{\angle YXZ}</cmath>
+<cmath>\Rightarrow\cos{\angle YXZ}=\frac{7}{32}</cmath>
+
+Now, notice <imath>XA=XB=13</imath>. Further notice that <imath>\angle YXZ=\angle AXB</imath>. Again, by the Law of Cosines,
+<cmath>AB^2 = XA^2 + XB^2 - 2(XA)(XB)\cos{\angle AXB}</cmath> 
+<cmath>\Rightarrow AB = \sqrt{169 + 169 - 2(13)(13)(\frac{7}{32})} = \frac{65}{4}</cmath>
+Thus, our answer is <imath>65+4= \boxed{\textbf{(D) } 69}</imath>.
+
+
+=== Problem 16 ===
+Right triangle
+
+Choices: {'A': '5', 'B': '8', 'C': '12', 'D': '13', 'E': '15 </math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+unitsize(4);
+pair A, B, C, E, P;
+A=(-20, 0);
+B=origin;
+C=(0,21);
+E=(-21, 20);
+P=extension(B,E, A, C);
+draw(A--B--C--cycle);
+draw(B--P);
+dot("$A$", A, SW);
+dot("$B$", B, SE);
+dot("$C$", C, NE);
+dot("$P$", P, NW);
+</asy>
+
+As the problem has no diagram, we draw a diagram. The hypotenuse has length <math>29</math>. Let <math>P</math> be the foot of the altitude from <math>B</math> to <math>AC</math>. Note that <math>BP</math> is the shortest possible length of any segment. Writing the area of the triangle in two ways, we can solve for <math>BP=\dfrac{20\cdot  21}{29}</math>, which is between <math>14</math> and <math>15</math>. 
+
+Let the line segment be <math>BX</math>, with <math>X</math> on <math>AC</math>. As you move <math>X</math> along the hypotenuse from <math>A</math> to <math>P</math>, the length of <math>BX</math> strictly decreases, hitting all the integer values from <math>20, 19, \dots 15</math> (IVT). Similarly, moving <math>X</math> from <math>P</math> to <math>C</math> hits all the integer values from <math>15, 16, \dots, 21</math>. This is a total of <math>\boxed{(D) 13}</math> distinct line segments.
+(asymptote diagram added by elements2015)
+
+==Solution 2 - Circles
+
+
+=== Problem 17 ===
+Let
+
+Choices: {'A': '\\ 2', 'B': '\\ 3', 'C': '\\ 4', 'D': '\\ 5', 'E': '\\ 7</math>'}
+Answer: C
+
+--- Solution 1 ---
+We start with <math>2</math> because <math>1</math> is not an answer choice. We would have to include every odd number except <math>1</math> to fill out the set, but then <math>3</math> and <math>9</math> would violate the rule, so that won't work.
+
+Experimentation with <math>3</math> shows it's likewise impossible. You can include <math>7,11,</math> and either <math>5</math> or <math>10</math> (which are always safe). But after adding either <math>4</math> or <math>8</math> we have no more valid numbers.
+
+Finally, starting with <math>4,</math> we find that the sequence <math>4,5,6,7,9,11</math> works, giving us <math>\boxed{\textbf{(C)}\ 4}.</math>
+
+--- Solution 2 ---
+We know that all odd numbers except <math>1,</math> namely <math>3, 5, 7, 9, 11,</math> can be used.
+
+Now we have <math>7</math> possibilities to choose from for the last number (out of <math>1, 2, 4, 6, 8, 10, 12</math>). We can eliminate <math>1, 2, 10,</math> and <math>12,</math> and we have <math>4, 6, 8</math> to choose from. However, <math>9</math> is a multiple of <math>3.</math> Now we have to take out either <math>3</math> or <math>9</math> from the list. If we take out <math>9,</math> none of the numbers would work, but if we take out <math>3,</math> we get <cmath>4, 5, 6, 7, 9, 11.</cmath>
+The least number is <math>4,</math> so the answer is <math>\boxed{\textbf{(C)}\ 4}.</math>
+
+--- Solution 3 ---
+We can get the multiples for the numbers in the original set with multiples in the same original set
+<cmath>\begin{align*}
+1&: \ \text{all elements of }\{1,2,\dots,12\} \\
+2&: \ 4,6,8,10,12 \\
+3&: \ 6,9,12 \\
+4&: \ 8,12 \\
+5&: \ 10 \\
+6&: \ 12
+\end{align*}</cmath>
+It will be safe to start with <math>5</math> or <math>6</math> since they have the smallest number of multiples as listed above, but since the question asks for the least, it will be better to try others.
+
+Trying <math>4,</math> we can get <math>4,5,6,7,9,11.</math> So <math>4</math> works.
+Trying <math>3,</math> it won't work, so the least is <math>4.</math> This means the answer is <math>\boxed{\textbf{(C)}\ 4}.</math>
+
+--- Solution 4 ---
+We partition <math>\{1,2,\ldots,12\}</math> into six nonempty subsets such that for every subset, each element is a multiple of all elements less than or equal to itself: <cmath>\{1,2,4,8\}, \ \{3,6,12\}, \ \{5,10\}, \ \{7\}, \ \{9\}, \ \{11\}.</cmath>
+Clearly, <math>S</math> must contain exactly one element from each subset:
+
+* For <math>\{5,10\},</math> we can select either <math>5</math> or <math>10.</math>
+
+* For <math>\{3,6,12\},</math> we can select either <math>6</math> or <math>12.</math> Recall that since <math>9\in S,</math> we cannot select <math>3.</math>
+
+* For <math>\{1,2,4,8\},</math> we can select either <math>4</math> (provided that <math>12\not\in S</math>) or <math>8.</math> Recall that since either <math>6\in S</math> or <math>12\in S,</math> we can select neither <math>1</math> nor <math>2.</math>
+
+If <math>4\in S,</math> then the possibilities of <math>S</math> are <math>\{4,5,6,7,9,11\}</math> or <math>\{4,6,7,9,10,11\}.</math> So, the least possible value of an element in <math>S</math> is <math>\boxed{\textbf{(C)}\ 4}.</math>
+
+<u><b>Remark</b></u>
+
+There exist multiple such partitions of <math>\{1,2,\ldots,12\}</math> into six nonempty subsets, one of which is <cmath>\{1,2,6,12\}, \ \{3,9\}, \ \{4,8\}, \ \{5,10\}, \ \{7\}, \ \{11\}.</cmath>
+Regardless of which partition we use, we will conclude that to minimize the least element of <math>S,</math> the only possibilities for <math>S</math> are <math>\{4,5,6,7,9,11\}</math> or <math>\{4,6,7,9,10,11\}.</math>
+
+--- Solution 5 ---
+We start with 2 as 1 is not an answer option. Our set would be <math>\{2,3,5,7,11\}</math>. We realize we cannot add 12 to the set because 12 is a multiple of 3. Our set only has 5 elements, so starting with 2 won't work. 
+
+We try 3 next. Our set becomes <math>\{3,4,5,7,11\}</math>. We run into the same issue as before so starting with 3 won't work.
+
+We then try 4. Our set becomes <math>\{4,5,6,7,9,11\}</math>. We see we have 6 elements with none being multiples of each other. Therefore our answer is <math>\boxed{\textbf{(C)}\ 4}.</math>
+
+
+=== Problem 18 ===
+How many nonnegative integers can be written in the form <cmath>a_7\cdot3^7+a_6\cdot3^6+a_5\cdot3^5+a_4\cdot3^4+a_3\cdot3^3+a_2\cdot3^2+a_1\cdot3^1+a_0\cdot3^0,</cmath>
+where
+
+Choices: {'A': '512', 'B': '729', 'C': '1094', 'D': '3281', 'E': '59,048 \n </math>'}
+Answer: D
+
+--- Solution 1 ---
+This looks like balanced ternary, in which all the integers with absolute values less than <imath>\frac{3^n}{2}</imath> are represented in <imath>n</imath> digits. There are 8 digits. Plugging in 8 into the formula for the balanced ternary gives a maximum bound of <imath>|x|=3280.5</imath>, which means there are 3280 positive integers, 0, and 3280 negative integers. Since we want all nonnegative integers, there are <imath>3280+1=\boxed{3281}</imath> integers or <imath>\boxed{\textbf{D}}</imath>.
+
+--- Solution 2 ---
+Note that all numbers formed from this sum are either positive, negative or zero. The number of positive numbers formed by this sum is equal to the number of negative numbers formed by this sum, because of symmetry. There is only one way to achieve a sum of zero, if all <imath>a_i=0</imath>. The total number of ways to pick <imath>a_i</imath> from <imath>i=0, 1, 2, 3, ... 7</imath> is <imath>3^8=6561</imath>. <imath>\frac{6561-1}{2}=3280</imath> gives the number of possible negative integers. The question asks for the number of non-negative integers, so subtracting from the total gives <imath>6561-3280=\boxed{\textbf{(D) } 3281}</imath>. (RegularHexagon, KLBBC minor changes)
+
+--- Solution 3 ---
+Note that the number of total possibilities (ignoring the conditions set by the problem) is <imath>3^8=6561</imath>. So, E is clearly unrealistic. 
+
+Note that if <imath>a_7</imath> is 1, then it's impossible for <cmath>a_7\cdot3^7+a_6\cdot3^6+a_5\cdot3^5+a_4\cdot3^4+a_3\cdot3^3+a_2\cdot3^2+a_1\cdot3^1+a_0\cdot3^0,</cmath> to be negative. Therefore, if <imath>a_7</imath> is 1, there are <imath>3^7=2187</imath> possibilities. (We also must convince ourselves that these <imath>2187</imath> different sets of coefficients must necessarily yield <imath>2187</imath> different integer results.)
+
+As A, B, and C are all less than 2187, the answer must be <imath>\boxed{\textbf{(D) } 3281}</imath>
+
+--- Solution 4 ---
+Note that we can do some simple casework:
+If <imath>a_7=1</imath>, then we can choose anything for the other 7 variables, so this give us <imath>3^7</imath>.
+If <imath>a_7=0</imath> and <imath>a_6=1</imath>, then we can choose anything for the other 6 variables, giving us <imath>3^6</imath>.
+If <imath>a_7=0</imath>, <imath>a_6=0</imath>, and <imath>a_5=1</imath>, then we have <imath>3^5</imath>.
+Continuing in this vein, we have <imath>3^7+3^6+\cdots+3^1+3^0</imath> ways to choose the variables' values, except we have to add 1
+because we haven't counted the case where all variables are 0. So our total sum is <imath>\boxed{\textbf{(D) } 3281}</imath>.
+Note that we have counted all possibilities, because the largest positive positive power of 3 must be greater than or equal to the largest negative positive power of 3, for the number to be nonnegative.
+
+--- Solution 5 ---
+This solution has a similar idea to that of above.
+We will start off with casework on <imath>a_{7}</imath>:
+If <imath>a_7 = -1</imath>, we can show that there is no way to assign the values of <imath>-1, 0, 1</imath> to the other <imath>a_{i}</imath>'s for <imath>0 \leq i \leq 6</imath>. This is because even if we make all of the other <imath>a_{i}</imath> equal to <imath>1</imath>, we will have that our number is <imath>(-1)(3^{7}) + (3^{6}+3^{5}+...+3^{0}) = -3^{7} + \frac{3^{7}-1}{3-1}</imath>. However, note that since <imath>\frac{3^{7}-1}{3-1} < 3^{7}</imath>, <imath>-3^{7} + \frac{3^{7}-1}{3-1} < 0</imath>.
+If <imath>a_{7}=0</imath>, we can ignore <imath>a_{7}</imath> and pretend like it never even existed. This then simplifies the problem: the question remains the same, except that instead of having <imath>a_{0}...a_{7}</imath>, we only have <imath>a_{0}...a_{6}</imath>. Now, we introduce some notation: let the number of nonnegative integers that can be written in the form of <imath>a_{n} \cdot 3^{n} + ... + a_{0} \cdot 3^{0}</imath> be denoted as <imath>S_{n}</imath>. Then, the problem is asking us for <imath>S_{7}</imath>, and the total number of nonnegative integers we get from this case is <imath>S_{6}</imath>. Let's keep this in mind and revisit this idea later.
+If <imath>a_{7}=1</imath>, we can show that no matter what values we assign to the rest of the <imath>a_{i}</imath>, we will always get a nonnegative integer (we can make this even stricter and say positive integer). This is because of something we figured out in the first case: <imath>\frac{3^{7}-1}{3-1} < 3^{7}</imath>. So, even if we let <imath>a_{i}=-1</imath> for <imath>0 \leq i \leq 6</imath>, we will still have <imath>3^{7} - (3^{6}+...+3^{0}) > 0</imath>. So, for this case, we have <imath>3^7</imath> possible nonnegative integers.
+Totalling up our values from the three cases, we see that <imath>S_{7} = 0 + S_{6} + 3^{7}</imath>. In fact, using the reasoning from the three cases above, we can deduce that, for all positive integers <imath>n</imath>, <imath>S_{n} = 3^{n} + S_{n-1}</imath>. We can now start building up our values for <imath>S</imath>: <imath>S_{0} = 2</imath> (<imath>a_{0} = 0, 1</imath>), <imath>S_{1} = 3^{1}+S_{0} = 5, S_{2} = 14, ..., S_{6}=1094</imath>. So, we have <imath>S_{7} = 2187 + 1094 = \boxed{3281}</imath>, which is answer choice <imath>\boxed{\text{D}}</imath>.
+
+--- Solution 6 ---
+The key is to realize that this question is basically taking place in <imath>a\in\{0,1,2\}</imath> if each value of <imath>a</imath> was increased by <imath>1</imath>, essentially making it into base <imath>3</imath>. Then the range would be from <imath>0\cdot3^7+</imath> <imath>0\cdot3^6+</imath> <imath>0\cdot3^5+</imath> <imath>0\cdot3^4+</imath> <imath>0\cdot3^3+</imath> <imath>0\cdot3^2+</imath> <imath>0\cdot3^1+</imath> <imath>0\cdot3^0=</imath> <imath>0</imath> to <imath>2\cdot3^7+</imath> <imath>2\cdot3^6+</imath> <imath>2\cdot3^5+</imath> <imath>2\cdot3^4+</imath> <imath>2\cdot3^3+</imath> <imath>2\cdot3^2+</imath> <imath>2\cdot3^1+</imath> <imath>2\cdot3^0=</imath> <imath>3^8-1=</imath> <imath>6561-1=</imath> <imath>6560</imath>, yielding <imath>6561</imath> different values. Since the distribution for all <imath>a_i\in \{-1,0,1\}</imath> the question originally gave is symmetrical, we retain the <imath>3280</imath> positive integers and one <imath>0</imath> but discard the <imath>3280</imath> negative integers. Thus, we are left with the answer, <imath>\boxed{\textbf{(D)} 3281}\qquad</imath>.  --anna0kear
+
+--- Solution 7 ---
+First, set <imath>a_i=0</imath> for all <imath>i\geq1</imath>. The range would be the integers for which <imath>[-1,1]</imath>. If <imath>a_i=0</imath> for all <imath>i\geq2</imath>, our set expands to include all integers such that <imath>-4\leq\mathbb{Z}\leq4</imath>. Similarly, when <imath>i\geq3</imath> we get <imath>-13\leq\mathbb{Z}\leq13</imath>, and when <imath>i\geq4</imath> the range is <imath>-40\leq\mathbb{Z}\leq40</imath>. The pattern continues until we reach <imath>i=7</imath>, where <imath>-3280\leq\mathbb{Z}\leq3280</imath>. Because we are only looking for positive integers, we filter out all <imath>\mathbb{Z}<0</imath>, leaving us with all integers between <imath>0\leq\mathbb{Z}\leq3280</imath>, inclusive. The answer becomes <imath>\boxed{\textbf{(D) } 3281}</imath>.  --anna0kear
+
+--- Solution 8 ---
+To get the number of integers, we can get the highest positive integer that can be represented using <cmath>a_7\cdot3^7+a_6\cdot3^6+a_5\cdot3^5+a_4\cdot3^4+a_3\cdot3^3+a_2\cdot3^2+a_1\cdot3^1+a_0\cdot3^0,</cmath>
+where <imath>a_i\in \{-1,0,1\}</imath> for <imath>0\le i \le 7</imath>.
+
+Note that the least nonnegative integer that can be represented is <imath>0</imath>, when all <imath>a_i=0</imath>. The highest number will be the number when all <imath>a_i=1</imath>. That will be <cmath>3^7+3^6+3^5+3^4+3^3+3^2+3^1+3^0=\frac{3^8-1}{3-1}</cmath> <cmath>=3280</cmath>
+
+Therefore, there are <imath>3280</imath> positive integers and <imath>(3280+1)</imath> nonnegative integers (while including <imath>0</imath>) that can be represented. Our answer is <imath>\boxed{\textbf{(D) } 3281}</imath>
+
+--- Solution 9 ---
+Notice that there are <imath>3^8</imath> options for <imath>a_7, a_6, \cdots a_0</imath> since each <imath>a_i</imath> can take on the value <imath>-1</imath>, <imath>0</imath>, or <imath>1</imath>. Now we want to find how many of them are positive and then we can add one in the end to account for <imath>0</imath> (they are asking for non-negative). 
+
+By symmetry (look out for these on the contest), we see that exactly half of them are positive. So <imath>\lfloor{\tfrac{3^8}{2}}\rfloor = 3280.</imath> Now we will add <imath>1</imath> because of the <imath>0</imath> to account for the non-negative solutions. 
+
+So our final answer is <imath>3280 + 1 = 3281</imath> which is <imath>\boxed{\textbf{(D) } 3281}</imath>.
+
+--- Solution 10 ---
+Obviously, there are <imath>3^8 = 6561</imath> possible, and one of them is 0, so other <imath>6560</imath> are either positive or negative. By the symmetry, we can get the answer is <imath>6560/2 + 1</imath> which is <imath>\boxed{\textbf{(D) } 3281}</imath>.
+
+--- Solution 11 ---
+The solution has to obviously be smaller than <imath>3^{7-0+1}=3^8</imath> but larger than <imath>3^{(7-0+1)-1} = 3^7.</imath> The only remaining answer is <imath>\boxed{\textbf{(D) } 3281}.</imath>
+
+--- Solution 12 ---
+Define Set <imath>S=\{3^0, 3^1, 3^2, 3^3, 3^4, 3^5, 3^6, 3^7\}</imath>.
+
+Suppose <imath>T</imath> is a subset of <imath>S</imath> with <imath>k</imath> values. Then we can express <imath>\sum_{m=0}^{7} a_m3^m</imath> as
+<cmath>\sum_{d \in T} \pm d</cmath>
+
+Even though we can arbitrarily assign <imath>a_d</imath> for all <imath>d \in T</imath> as either <imath>-1</imath> or <imath>1</imath>, because <imath>\sum_{d \in T} \pm d</imath> needs to be nonnegative, for the largest element <imath>n</imath> of <imath>T</imath> <imath>a_n</imath> must be equal to <imath>1</imath>. This means that for any subset <imath>T</imath> with <imath>k</imath> values there are <imath>2^{k-1}</imath> ways to assign <imath>a_d</imath> for all <imath>d \in T</imath>.
+
+Moreover, there are <imath>\binom{8}{k}</imath> subsets <imath>T</imath> of <imath>S</imath> with <imath>k</imath> values. So our total number of positive numbers that could be expressed as <imath>\sum_{m=0}^{7} a_m3^m</imath> is
+<cmath>\sum_{k=1}^{8} \binom{8}{k}2^{k-1}=3280.</cmath>
+
+But wait---the problem is asking for the number of nonnegative numbers, not just positive. So we need to find the cases where <imath>\sum_{m=0}^{7} a_m3^m=0</imath>. Fortunately, this only happens when <imath>T=\emptyset</imath>, so there is only <imath>1</imath> case where this could happen. This could be verified with the fact that <imath>\sum_{m=0}^{7} a_m3^m=0</imath> only occurs when <imath>\{a_0, a_1, a_2, a_3, a_4, a_5, a_6, a_7\}=0</imath>.
+Therefore, the answer is <imath>3280+1=\boxed{\textbf{(D) }3281}</imath>.
+
+
+=== Problem 19 ===
+A number
+
+Choices: {'A': '\\frac{1}{5}', 'B': '\\frac{1}{4}', 'C': '\\frac{3}{10}', 'D': '\\frac{7}{20}', 'E': '\\frac{2}{5} </math>'}
+Answer: E
+
+--- Solution 1 ---
+Since we only care about the units digit, our set <math>\{11,13,15,17,19 \}</math> can be turned into <math>\{1,3,5,7,9 \}</math>. Call this set <math>A</math> and call <math>\{1999, 2000, 2001, \cdots , 2018 \}</math> set <math>B</math>. Let's do casework on the element of <math>A</math> that we choose. Since <math>1\cdot 1=1</math>, any number from <math>B</math> can be paired with <math>1</math> to make <math>1^n</math> have a units digit of <math>1</math>. Therefore, the probability of this case happening is <math>\frac{1}{5}</math> since there is a <math>\frac{1}{5}</math> chance that the number <math>1</math> is selected from <math>A</math>. Let us consider the case where the number <math>3</math> is selected from <math>A</math>. Let's look at the unit digit when we repeatedly multiply the number <math>3</math> by itself:
+<cmath>3\cdot 3=9</cmath>
+<cmath>9\cdot 3=7</cmath> 
+<cmath>7\cdot 3=1</cmath>
+<cmath>1\cdot 3=3</cmath>
+We see that the unit digit of <math>3^x</math>, for some integer <math>x</math>, will only be <math>1</math> when <math>x</math> is a multiple of <math>4</math>. Now, let's count how many numbers in <math>B</math> are divisible by <math>4</math>. This can be done by simply listing:
+<cmath>2000,2004,2008,2012,2016.</cmath>
+There are <math>5</math> numbers in <math>B</math> divisible by <math>4</math> out of the <math>2018-1999+1=20</math> total numbers. Therefore, the probability that <math>3</math> is picked from <math>A</math> and a number divisible by <math>4</math> is picked from <math>B</math> is <math>\frac{1}{5}\cdot \frac{5}{20}=\frac{1}{20}.</math>
+Similarly, we can look at the repeating units digit for <math>7</math>:
+<cmath>7\cdot 7=9</cmath>
+<cmath>9\cdot 7=3</cmath>
+<cmath>3\cdot 7=1</cmath>
+<cmath>1\cdot 7=7</cmath>
+We see that the unit digit of <math>7^y</math>, for some integer <math>y</math>, will only be <math>1</math> when <math>y</math> is a multiple of <math>4</math>. This is exactly the same conditions as our last case with <math>3</math> so the probability of this case is also <math>\frac{1}{20}</math>. 
+Since <math>5\cdot 5=25</math> and <math>25</math> ends in <math>5</math>, the units digit of <math>5^w</math>, for some integer, <math>w</math> will always be <math>5</math>. Thus, the probability in this case is <math>0</math>.
+The last case we need to consider is when the number <math>9</math> is chosen from <math>A</math>. This happens with probability <math>\frac{1}{5}.</math> We list out the repeating units digit for <math>9</math> as we have done for <math>3</math> and <math>7</math>:
+<cmath>9\cdot 9=1</cmath>
+<cmath>1\cdot 9=9</cmath>
+We see that the units digit of <math>9^z</math>, for some integer <math>z</math>, is <math>1</math> only when <math>z</math> is an even number. From the <math>20</math> numbers in <math>B</math>, we see that exactly half of them are even. The probability in this case is <math>\frac{1}{5}\cdot \frac{1}{2}=\frac{1}{10}.</math>
+Finally, we can add all of our probabilities together to get 
+<cmath>\frac{1}{5}+\frac{1}{20}+\frac{1}{20}+\frac{1}{10}=\boxed{\textbf{(E)} 
+(I did not prove yet) 
+{1999, 2000, 2001,..., 2018} is the same as {1,2,3,4,1,2,...,4}, which can be turned into {1,2,3,4}
+
+--- Solution 2 ---
+Since only the units digit is relevant, we can turn the first set into <math>\{1,3,5,7,9\}</math>. Note that <math>x^4 \equiv 1 \mod 10</math> for all odd digits <math>x</math>, except for 5. Looking at the second set, we see that it is a set of all integers between 1999 and 2018. There are 20 members of this set, which means that, <math>\mod 4</math>, this set has 5 values which correspond to <math>\{0,1,2,3\}</math>, making the probability equal for all of them. Next, check the values for which it is equal to <math>1 \mod 10</math>. There are <math>4+1+0+1+2=8</math> values for which it is equal to 1, remembering that <math>5^{4n} \equiv 1 \mod 10</math> only if <math>n=0</math>, which it is not. There are 20 values in total, and simplifying <math>\frac{8}{20}</math> gives us <math>\boxed{\textbf{(E)}
+
+--- Solution 3 ---
+By Euler's Theorem, we have that <math>a^{4} \equiv 1 \pmod {10}</math>, if <math>\gcd(a,10)=1</math>. 
+Hence <math>m=11,13,17,19</math>, <math>n=2000,2004,2008,2012,2016</math> work. 
+
+Also note that <math>11^{\text{any positive integer}}\equiv 1 \pmod {10}</math> because <math>11^b=(10+1)^b=10^b+10^{b-1}1+...+10(1)+1</math>, and the latter <math>\pmod {10}</math> is clearly <math>1</math>. So <math>m=11</math>, <math>n=1999,2001,2002,2003,2005,...,2018</math> work (not counting multiples of 4 as we would be double counting if we did). 
+
+We can also note that <math>19^{2a}\equiv 1 \pmod {10}</math> because <math>19^{2a}=361^{a}</math>, and by the same logic as why <math>11^{\text{any positive integer}}\equiv 1 \pmod {10}</math>, we are done. Hence <math>m=19</math>, and <math>n=2002, 2006, 2010, 2014, 2018</math> work (not counting any of the aforementioned cases as that would be double counting). 
+
+We cannot make any more observations that add more <math>m^n</math> with unit digit <math>1</math>, hence the number of <math>m^n</math> that have units digit one is <math>4\cdot 5+1\cdot 15+1\cdot 5=40</math>. And the total number of combinations of an element of the set of all <math>m</math> and an element of the set of all <math>n</math> is <math>5\cdot 20=100</math>. Hence the desired probability is <math>\frac{40}{100}=\frac{2}{5}</math>, which is answer choice <math>\boxed{\textbf{(E)}
+
+--- Solution 4 ---
+When a number's unit's digit is <math>1</math>, then any power to this number will also end in <math>1</math> (since <math>1^{n}</math> for any <math>n</math> is always <math>1</math>), so we have <math>20</math> choices for <math>11</math>.
+
+When a number's unit's digit is <math>3</math>, then <math>3^{4n}</math> for any <math>n</math> will produce a number ending with 1. So, <math>20 \div 4 = 5</math> choices for <math>13</math>.
+
+<math>5^{n}</math> always ends in 5, so there are <math>0</math> possibilities for <math>15</math>. 
+
+When a number's unit's digit is <math>7</math>, then this is also the same thing with <math>3</math>, so we have <math>5</math> choices.
+
+When a number's unit's digit is <math>9</math>, then <math>9^{2n}</math> will produce a number ending in <math>1</math>, so we have <math>20 \div 2 = 10</math> possibilities. 
+
+Hence, we have a total of <math>5 \cdot 20 = 100</math> ways, so the probability is <math>\frac{20+5+0+5+10}{100} = \frac {40}{100} = \boxed{\textbf{(E)}
+
+
+=== Problem 20 ===
+A scanning code consists of a
+
+Choices: {'A': '\\text{ 510}', 'B': '\\text{ 1022}', 'C': '\\text{ 8190}', 'D': '\\text{ 8192}', 'E': '\\text{ 65,534}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Draw a <math>7 \times 7</math> square.
+
+<cmath> \begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+K & J & H & G & H & J & K \\
+\hline
+J & F & E & D & E & F & J \\
+\hline
+H & E & C & B & C & E & H \\
+\hline
+G & D & B & A & B & D & G \\
+\hline
+H & E & C & B & C & E & H \\
+\hline
+J & F & E & D & E & F & J \\
+\hline
+K & J & H & G & H & J & K \\
+\hline
+\end{tabular} </cmath>
+
+Start from the center and label all protruding cells symmetrically. (Note that "I" is left out of this labelling, so there are only 10 labels, not 11, as ending in K would suggest!)
+
+More specifically, since there are <math>4</math> given lines of symmetry (<math>2</math> diagonals, <math>1</math> vertical, <math>1</math> horizontal) and they split the plot into <math>8</math> equivalent sections, we can take just one-eighth and study it in particular. Each of these sections has <math>10</math> distinct sub-squares, whether partially or in full. So since each can be colored either white or black, we choose <math>2^{10}=1024</math> but then subtract the <math>2</math> cases where all are white or all are black. That leaves us with <math>\fbox{\textbf{(B)} \text{ 1022}}</math>.
+
+There are only ten squares we get to actually choose, and two independent choices for each, for a total of <math>2^{10} = 1024</math> codes. Two codes must be subtracted (due to the rule that there must be at least one square of each color) for an answer of <math>\fbox{\textbf{(B) }1022}</math>.
+
+
+Note that this problem is very similar to the 1996 AIME Problem 7 https://artofproblemsolving.com/wiki/index.php/1996_AIME_Problems/Problem_7.
+
+--- Solution 2 ---
+<asy>
+size(100pt);
+draw((1,0)--(8,0),linewidth(0.5));
+draw((1,2)--(6,2),linewidth(0.5));
+draw((1,4)--(4,4),linewidth(0.5));
+draw((1,6)--(2,6),linewidth(0.5));
+draw((2,6)--(2,0),linewidth(0.5));
+draw((4,4)--(4,0),linewidth(0.5));
+draw((6,2)--(6,0),linewidth(0.5));
+draw((1,0)--(1,7),dashed+linewidth(0.5));
+draw((1,7)--(8,0),dashed+linewidth(0.5));
+</asy>
+
+Imagine folding the scanning code along its lines of symmetry. There will be <math>10</math> regions which you have control over coloring. Since we must subtract off <math>2</math> cases for the all-black and all-white cases, the answer is <math>2^{10}-2=\boxed{\textbf{(B) } 1022.}</math>
+
+--- Solution 3 ---
+<cmath> \begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+T & T & T & X & T & T & T \\
+\hline
+T & T & T & Y& T & T & T \\
+\hline
+T & T & T & Z & T & T & T \\
+\hline
+X & Y & Z & W & Z & Y & X \\
+\hline
+T & T & T & Z & T & T & T \\
+\hline
+T & T & T & Y & T & T & T \\
+\hline
+T & T & T & X & T & T & T \\
+\hline
+\end{tabular} </cmath>
+
+There are <math>3 \times 3</math> squares in the corners of this <math>7 \times 7</math> square, and there is a horizontal and vertical stripe through the middle. Because we need to have symmetry when the diagonals and midpoints of the large square is connected, we can create a table like this: (Different letters represent different color choices between black and white)
+
+<cmath> \begin{tabular}{|c|c|c|}
+\hline
+A & B & C \\
+\hline
+B & D & E \\
+\hline
+C & E & F \\
+\hline
+\end{tabular}</cmath>
+(Note that coloring one <math>3 \times 3</math> square will also determine the colorings of the other <math>3</math> because the large <math>7 \times 7</math> square must look the same when it is rotated by <math>90^\circ</math>)
+
+There are <math>6</math> different letters and <math>2</math> choices of color (black and white) for each letter, so there are <math>2^6=64</math> colorings of a proper <math>3 \times 3</math> square. Now, all that's left are the horizontal and vertical stripes. Using similar logic, we can see that there are <math>4</math> different letters, so there are <math>2^4=16</math> different colorings. Multiplying them together gives <math>16 \times 64 = 1024</math>. Going back to the question, we see that "there must be at least one square of each color in this grid of <math>49</math> squares." We must then eliminate <math>2</math> options: an all-black grid and an all-white grid. <math>1024-2= \boxed{\textbf{(B)} 1022} \\ \phantom{}</math> 
+-hansenhe
+
+
+=== Problem 21 ===
+Which of the following describes the set of values of
+
+Choices: {'A': 'a=\\frac14', 'B': '\\frac14 < a < \\frac12', 'C': 'a>\\frac14', 'D': 'a=\\frac12', 'E': 'a>\\frac12 </math>'}
+Answer: E
+
+--- Solution 1 ---
+Substituting <math>y=x^2-a</math> into <math>x^2+y^2=a^2</math>, we get
+<cmath>x^2+(x^2-a)^2=a^2 \implies x^2+x^4-2ax^2=0 \implies x^2(x^2-(2a-1))=0</cmath>
+Since this is a quartic, there are <math>4</math> total roots (counting multiplicity). We see that <math>x=0</math> always has at least one intersection at <math>(0,-a)</math> (and is in fact a double root). 
+
+The other two intersection points have <math>x</math> coordinates <math>\pm\sqrt{2a-1}</math>. We must have <math>2a-1> 0;</math> otherwise we are in the case where the parabola lies entirely below the circle (tangent at the point <math>(0,-a)</math>). This only results in a single intersection point in the real coordinate plane. Thus, we see that <math>\boxed{\textbf{(E) }a>\frac12}</math>.
+
+(projecteulerlover)
+
+--- Solution 2 ---
+Substituting <math>y = x^2 - a</math> gives <math>x^2 + (x^2 - a)^2 = a^2</math>, which simplifies to <math>x^2 + x^4 - 2x^2a + a^2 = a^2</math>. This further simplifies to <math>x^2(1 + x^2 - 2a) = 0</math>. Thus, either <math>x^2 = 0</math>, or <math>x^2 - 2a + 1 = 0</math>. 
+
+Since we care about <math>a</math>, we consider the second case. We solve in terms of <math>a</math>, giving <math>a = \frac{x^2}{2} + \frac{1}{2}</math>. We see that in order to find the range in which <math>a</math> lies, we must find the vertex of this equation, which turns out to be <math>\left(0, \frac{1}{2}\right)</math>. Hence, we know that the minimum is <math>\frac{1}{2}</math>, which further implies that <math>\boxed{\textbf{(E) }a>\frac12}</math>.
+
+--- Solution 3 ---
+<asy>
+Label f; 
+f.p=fontsize(6);
+xaxis(-2,2,Ticks(f, 0.2)); 
+yaxis(-2,2,Ticks(f, 0.2)); 
+real g(real x) 
+{ 
+return x^2-1; 
+} 
+draw(graph(g, 1.7, -1.7));
+real h(real x) 
+{ 
+return sqrt(1-x^2); 
+} 
+draw(graph(h, 1, -1));
+real j(real x) 
+{ 
+return -sqrt(1-x^2); 
+} 
+draw(graph(j, 1, -1));
+</asy>
+
+Looking at a graph, it is obvious that the two curves intersect at <math>(0, -a)</math>. We also see that if the parabola goes "in" the circle, then by going out of it (as it will), it will intersect five times. This is impossible. Thus, we only look for cases where the parabola becomes externally tangent to the circle. 
+
+We have <math>x^2 - a = -\sqrt{a^2 - x^2}</math>. Squaring both sides and solving yields <math>x^4 - (2a - 1)x^2 = 0</math>. Since <math>x = 0</math> is already accounted for, we only need to find one solution for <math>x^2 = 2a - 1</math>, where the right hand side portion is obviously increasing. Since <math>a = \frac{1}{2}</math> begets <math>x = 0</math> (an overcount), we have <math>\boxed{\textbf{(E) }a>\frac12}</math> as the right answer.
+
+Solution by JohnHankock
+
+--- Solution 4 ---
+This describes a unit parabola, with a circle centered on the axis of symmetry and tangent to the vertex. As the curvature of the unit parabola at the vertex is <math>2</math>, the radius of the circle that matches it has a radius of <math>\frac{1}{2}</math>. This circle is tangent to an infinitesimally close pair of points, one on each side. Therefore, it is tangent to only <math>1</math> point. When a larger circle is used, it is tangent to <math>3</math> points because the points on either side are now separated from the vertex. Therefore, <math>\boxed{\textbf{(E) }a>\frac12}</math> is correct.
+
+--- Solution 5 ---
+Now, let's graph these two equations. We want the blue parabola to be inside this red circle.
+<asy>
+import graph;
+size(6cm);
+draw((0,0)--(0,10),EndArrow);
+draw((0,0)--(0,-10),EndArrow);
+draw((0,0)--(10,0),EndArrow);
+draw((0,0)--(-10,0),EndArrow);
+Label f;
+f.p=fontsize(6);
+xaxis(-10,10);
+yaxis(-10,10);
+real f(real x) 
+{ 
+return x^2-5;
+}
+draw(graph(f,-4,4),blue+linewidth(1));
+draw(circle((0,0),5),red);
+dot(scale(.7)*"$a$",(0,5),NE);
+dot(scale(.7)*"$-a$",(0,-5),N);
+dot(scale(.7)*"$a$",(5,0),NE);
+dot(scale(.7)*"$-a$",(-5,0),SE);
+</asy>
+Then we substitute <math>y</math> into the first equation to get <math>x^2+(x^2-a)^2=a^2</math>. Expanding, we get <math>x^4-2ax^2+x^2=0</math>. Factoring out the <math>x^2</math>, we get <math>x^2(x^2-2a+1)=0</math>. Then we find that <math>x=0</math> or <math>x=\pm\sqrt{2a-1}</math>. Therefore, <math>2a-1>0</math>, which means <math>\boxed{\textbf{(E) }a>\frac12}</math>.
+
+- kante314 -
+
+--- Solution 6 ---
+In order to solve for the values of <math>a</math>, we need to just count multiplicities of the roots when the equations are set equal to each other: in other words, take the derivative. We know that <math>\sqrt{a^2 - x^2} = x^2 - a</math>. Now, we take square of both sides, and rearrange to obtain <math>x^4 - (2a - 1)x^2 = 0</math>. Now, we may take the second derivative of the equation to obtain <math>6x^2 - (2a - 1) = 0</math>. Now, we must take discriminant. Since we need the roots of that equation to be real and not repetitive (otherwise they would not intersect each other at three points), the discriminant must be greater than zero. Thus,
+
+<cmath>b^2 - 4ac > 0 \rightarrow 0 - 4(6)(-(2a - 1)) > 0 \rightarrow a > \frac{1}{2}</cmath>
+The answer is <math>\boxed{\textbf{(E) }a>\frac12}</math> and we are done. 
+
+
+(Edited by OlutosinNGA)
+
+--- Solution 7 ---
+Notice, the equations are of that of a circle of radius a centered at the origin and a parabola translated down by a units. They always intersect at the point <math>(0, a)</math>, and they have symmetry across the <math>y</math>-axis, thus, for them to intersect at exactly <math>3</math> points, it suffices to find the <math>y</math> solution. 
+
+First, rewrite the second equation to <math>y=x^2-a\implies x^2=y+a</math>
+And substitute into the first equation: <math>y+a+y^2=a^2</math> 
+Since we're only interested in seeing the interval in which a can exist, we find the discriminant: <math>1-4a+4a^2</math>. This value must not be less than <math>0</math> (It is the square root part of the quadratic formula). To find when it is <math>0</math>, we find the roots: 
+<cmath>4a^2-4a+1=0 \implies a=\frac{4\pm\sqrt{16-16}}{8}=\frac{1}{2}</cmath>
+Since <math>\lim_{a\to \infty}(4a^2-4a+1)=\infty</math>, our range is <math>\boxed{\textbf{(E) }a>\frac12}</math>.
+
+Solution by ktong
+
+--- Solution 8 ---
+We can see that if <math>a = 1</math>, we know that the points where the two curves intersect are <math>(0, -1), (1, 0)</math> and <math>(-1, 0)</math> .Because there are only <math>3</math> intersections and <math>a > 1/2</math>, as well as <math>a > 1/4</math> we know that either <math>\textbf{(D)}</math> or <math>\textbf{(E)}</math> is the correct answer. Then we can test a number from <math>(1/2, 1/4)</math> to eliminate the remaining answer. So  <math>\boxed{\textbf{(E) }a>\frac12}</math> is the correct answer.
+
+--- Solution 9 ---
+Simply plug in <math>a = \frac{1}{2}, \frac{1}{4}, 1</math> and solve the systems. (This shouldn't take too long.) And then realize that only <math>a=1</math> yields three real solutions for <math>x</math>, so we are done and the answer is <math>\boxed{\textbf{(E) }a>\frac12}</math>.
+
+--- Solution 10 ---
+An ideal solution come to mind is where they intersect at the <math>x</math>-axis at the same time, which is <math>(a, 0)</math> and <math>(-a, 0).</math> Take the root of our <math>y=x^2-a</math> we get <math>x=\sqrt{a}</math>, set them equal we get <math>a=\sqrt{a}.</math> The only answer is <math>1</math> so it only left us with the answer choice <math>\boxed{\textbf{(E) }a>\frac12}</math>.
+
+--- Solution 11 ---
+From observing the graph of the two functions, we notice that there will be exactly 3 solutions when the curvature of <math>y = x^2-a</math> is greater than the curvature of the circle <math>x^2+y^2 = a^2</math> near <math>x=0</math> (this means the graph of <math>y=x^2-a</math> will reside within the circle). Formally, curvature is the magnitude of the rate of change of the unit tangent in respect to arc length. Let there be function <math>r(x)</math> be a vector-valued function. The unit tangent has formula <math>T(x)=\frac{r'(x)}{|r'(x)|}=\frac{dr}{ds}</math>, and arc length has formula <math>s(t)=\int_b^{t}\sqrt{\left( 1+ \left( \frac{dr}{dx} \right) ^2 \right) }dx</math>. We have the relation <math>\frac{ds}{dx}=\sqrt{\left( 1+ \left( \frac{dr}{dx} \right) ^2 \right) }=|r'(x)|</math>. Our goal, curvature, is <math>\kappa= \left| \frac{d^2r}{ds^2} \right| =\frac{dT}{ds}|=\frac1{|\frac{ds}{dt}|}|\frac{dT}{dt}|</math>. After deriving, we end up with the formula:
+<cmath>\kappa = \frac{y^{\prime\prime}}{(1+(y^{\prime})^2)^\frac{3}{2}}</cmath>
+For a circle, curvature is just the inverse of the radius or <math>1/a</math> in our case. For the parabola, we use the equation above:
+<cmath>\kappa = \frac{y^{\prime\prime}}{(1+(y^{\prime})^2)} = \frac{2}{(1+4x^2)^{1.5}}</cmath>
+where <math>\kappa \approx 2</math> when <math>x \approx 0</math>. Since curvature of the parabola should be greater than that of the circle, <math>2>\frac{1}{a}</math> or answer choice <math>\boxed{\textbf{(E)}a>\frac12}</math>.
+
+
+== Remark ==
+The graph of <imath>x^2+y^2=a^2</imath> is a circle with the center <imath>(0,0)</imath> and the radius <imath>|a|.</imath>
+
+The graph of <imath>y=x^2-a</imath> is an upward-opening parabola with the vertex <imath>(0,-a).</imath>
+
+The circle and the parabola are shown here in Desmos: https://www.desmos.com/calculator/rfeknuhjum
+
+Move the slider around for <imath>\frac12\leq a\leq5</imath> to observe that they intersect at exactly <imath>3</imath> points: <imath>(0,-a)</imath> and <imath>\left(\pm\sqrt{2a-1},a-1\right),</imath> provided that <imath>a>\frac12.</imath>
+
+--- Solution 12 ---
+We observe that there is more than one value for <imath>a</imath>, so we can eliminate <imath>(A)</imath> and <imath>(D)</imath>. We can also observe that as we increase <imath>a</imath>, the parabola will always intersect the circle at 3 points, which eliminates <imath>(B)</imath>. Finally, we notice that if the <imath>a=1/4</imath> case is not a perfect square, then <imath>(C)</imath> is not the correct answer.
+
+
+
+Substituting <imath>1/4</imath> for <imath>a</imath>, we get:
+
+
+
+<imath>x^2+y^2=(1/4)^2</imath>
+
+<imath>x^2-1/4=y</imath> --> <imath>x^2=y+1/4</imath>
+
+<imath>y^2+y+1/4=(1/4)^2</imath> --> <imath>y^2+y+3/16</imath>
+
+
+
+From this, we can see that the <imath>a=1/4</imath> case is incorrect, so our final answer is <imath>\boxed{\textbf{(E)}a>\frac12}</imath>.
+
+- WB0s0n
+
+
+=== Problem 22 ===
+Let
+
+Choices: {'A': '\\text{ 5}', 'B': '\\text{ 7}', 'C': '\\text{ 11}', 'D': '\\text{ 13}', 'E': '\\text{ 17}</math>'}
+Answer: D
+
+--- Solution 1 ---
+The GCD information tells us that <math>24</math> divides <math>a</math>, both <math>24</math> and <math>36</math> divide <math>b</math>, both <math>36</math> and <math>54</math> divide <math>c</math>, and <math>54</math> divides <math>d</math>. Note that we have the prime factorizations:
+<cmath>\begin{align*}
+24 &= 2^3\cdot 3,\\
+36 &= 2^2\cdot 3^2,\\
+54 &= 2\cdot 3^3.
+\end{align*}</cmath>
+
+Hence we have
+<cmath>\begin{align*}
+a &= 2^3\cdot 3\cdot w\\
+b &= 2^3\cdot 3^2\cdot x\\
+c &= 2^2\cdot 3^3\cdot y\\
+d &= 2\cdot 3^3\cdot z
+\end{align*}</cmath>
+for some positive integers <math>w,x,y,z</math>. Now if <math>3</math> divides <math>w</math>, then <math>\gcd(a,b)</math> would be at least <math>2^3\cdot 3^2</math> which is too large, hence <math>3</math> does not divide <math>w</math>. Similarly, if <math>2</math> divides <math>z</math>, then <math>\gcd(c,d)</math> would be at least <math>2^2\cdot 3^3</math> which is too large, so <math>2</math> does not divide <math>z</math>. Therefore,
+<cmath>\gcd(a,d)=2\cdot 3\cdot \gcd(w,z)</cmath>
+where neither <math>2</math> nor <math>3</math> divide <math>\gcd(w,z)</math>. In other words, <math>\gcd(w,z)</math> is divisible only by primes that are at least <math>5</math>. The only possible value of <math>\gcd(a,d)</math> between <math>70</math> and <math>100</math> and which fits this criterion is <math>78=2\cdot3\cdot13</math>, so the answer is <math>\boxed{\textbf{(D) }13}</math>.
+
+--- Solution 2 ---
+We can say that <math>a</math> and <math>b</math> 'have' <math>2^3 \cdot 3</math>, that <math>b</math> and <math>c</math> have <math>2^2 \cdot 3^2</math>, and that <math>c</math> and <math>d</math> have <math>3^3 \cdot 2</math>. Combining <math>1</math> and <math>2</math> yields <math>b</math> has (at a minimum) <math>2^3 \cdot 3^2</math>, and thus <math>a</math> has <math>2^3 \cdot 3</math> (and no more powers of <math>3</math> because otherwise <math>\gcd(a,b)</math> would be different). In addition, <math>c</math> has <math>3^3 \cdot 2^2</math>, and thus <math>d</math> has <math>3^3 \cdot 2</math> (similar to <math>a</math>, we see that <math>d</math> cannot have any other powers of <math>2</math>). We now assume the simplest scenario, where <math>a = 2^3 \cdot 3</math> and <math>d = 3^3 \cdot 2</math>. According to this base case, we have <math>\gcd(a, d) = 2 \cdot 3 = 6</math>. We want an extra factor between the two such that this number is between <math>70</math> and <math>100</math>, and this new factor cannot be divisible by <math>2</math> or <math>3</math>. Checking through, we see that <math>6 \cdot 13</math> is the only one that works. Therefore the answer is <math>\boxed{\textbf{(D) } 13}</math>.
+
+Solution by JohnHankock
+
+--- Solution 3 ---
+First off, note that <math>24</math>, <math>36</math>, and <math>54</math> are all of the form <math>2^x\times3^y</math>. The prime factorizations are <math>2^3\times 3^1</math>, <math>2^2\times 3^2</math> and <math>2^1\times 3^3</math>, respectively. Now, let <math>a_2</math> and <math>a_3</math> be the number of times <math>2</math> and <math>3</math> go into <math>a</math>, respectively. Define <math>b_2</math>, <math>b_3</math>, <math>c_2</math>, and <math>c_3</math> similarly. Now, translate the <math>lcm</math>s into the following: 
+<cmath>1) \min(a_2,b_2)=3</cmath> <cmath>2) \min(a_3,b_3)=1</cmath> <cmath>3) \min(b_2,c_2)=2</cmath> <cmath>4) \min(b_3,c_3)=2</cmath> <cmath>5) \min(c_2,d_2)=1</cmath> <cmath>6) \min(c_3,d_3)=3</cmath>
+
+From <math>4)</math>, we see that <math>b_3 \geq 2</math>, thus from <math>2)</math>, <math>a_3 = 1</math>. Similarly, from <math>3)</math>, <math>c_2 \geq 2</math>, thus from <math>5)</math>, <math>d_2 = 1</math>. 
+
+Note also that <math>d_3 \geq 3</math> and <math>a_2 \geq 3</math>. Therefore <cmath>\min(a_2, d_2) = 1</cmath> <cmath>\min(a_3, d_3) = 1</cmath> Thus, <math>\gcd(a, d) = 2 \times 3 \times k</math> for some <math>k</math> having no factors of <math>2</math> or <math>3</math>. 
+
+Since <math>70 < \gcd(a, d) < 100</math>, the only values for k are <math>12, 13, 14, 15, 16</math>, but all have either factors of <math>2</math> or <math>3</math>, except <math>\boxed{\textbf{(D)} 13}</math>. And we're done.
+
+--- Solution 4 ---
+Notice that <math>\gcd (a,b,c,d)=\gcd(\gcd(a,b),\gcd(b,c),\gcd(c,d))=\gcd(24,36,54)=6</math>, so <math>\gcd(d,a)</math> must be a multiple of <math>6</math>. The only answer choice that gives a value between <math>70</math> and <math>100</math> when multiplied by <math>6</math> is <math>\boxed{\textbf{(D) } 13}</math>. - mathleticguyyy + einstein
+
+In the case where there can be 2 possible answers, we can do casework on <math>\gcd(d,a)</math>
+
+--- Solution 5 ---
+Since <math>\gcd (a,b) = 24</math>, <math>a = 24j</math> and <math>b = 24k</math> for some positive integers <math>j,k</math> such that <math>j</math> and <math>k</math> are relatively prime. 
+
+Similarly , since <math>\gcd (b,c) = 36</math>, we have <math>b = 24k</math> and <math>c=36m</math> with the same criteria. However, since <math>24</math> is not a multiple of <math>36</math>, we must contribute an extra <math>3</math> to <math>b</math> in order to make it a multiple of <math>36</math>. So, <math>k</math> is a multiple of three, and it is relatively prime to <math>m</math>.
+
+Finally, <math>\gcd (c,d) = 54</math>, so using the same logic, <math>m</math> is a multiple of <math>3</math> and is relatively prime to <math>n</math> where <math>d = 54n</math>.
+
+Since we can't really do anything with these messy expressions, we should try some sample cases of <math>a,b,c</math> and <math>d</math>. Specifically, we let <math>j = 5, 7, 11, 13</math> or <math>17</math>, and see which one works.
+
+First we let <math>j= 5</math>. Note that all of these values of <math>j</math> work for the first <math>\gcd</math> expression because they are all not divisible by <math>3</math>.
+
+Without the loss of generality, we let <math>k=m=3</math> for all of our sample cases. We can also adjust the value of <math>n</math> in <math>d=54n</math>, since there is no fixed value for <math>\gcd(a,d)</math>; there is only a bound.
+
+So we try to make our bound <math>70 < \gcd(a,d) < 100</math> satisfactory. We do so by letting <math>j=n</math>. 
+
+Testing our first case <math>a=24 \cdot 5</math> and <math>d = 54 \cdot 5</math>, we find that <math>\gcd(a,d) = 30</math>. To simplify our work, we note that <math>\gcd(24,54) = 6</math>, so <math>\gcd(24k, 54k)</math> for all <math>k>1</math> is equal to <math>6k</math>.
+
+So now, we can easily find our values of <math>\gcd(a,b)</math>:
+
+<cmath>\gcd(24 \cdot 5, 54 \cdot 5) = 6 \cdot 5 = 30</cmath>
+
+<cmath>\gcd(24 \cdot 7, 54 \cdot 7) = 6 \cdot 7 = 42</cmath>
+
+<cmath>\gcd(24 \cdot 11, 54 \cdot 11) = 6 \cdot 11 = 66</cmath>
+
+<cmath>\boxed{\gcd(24 \cdot 13, 54 \cdot 13) = 6 \cdot 13 = 78}</cmath>
+
+<cmath>\gcd(24 \cdot 17, 54 \cdot 17) = 6 \cdot 17 = 104</cmath>
+
+We can clearly see that only <math>j=n=13</math> is in the bound <math>70 < \gcd(a,d) < 100</math>. So, <math>13</math> must be a divisor of <math>a</math>, which is answer choice <math>\boxed{\textbf{(D)}}</math>.
+
+-FIREDRAGONMATH16
+
+--- Solution 6 ---
+<asy>
+//Variable Declarations
+defaultpen(0.45);
+size(200pt);
+fontsize(15pt);
+pair X, Y, Z, W;
+real R;
+path quad;
+
+//Variable Definitions
+R = 1;
+X = R*dir(45);
+Y = R*dir(135);
+Z = R*dir(-135);
+W = R*dir(-45);
+quad = X--Y--Z--W--cycle;
+
+//Diagram
+draw(quad);
+label("$b$",X,NE);
+label("$a=2^3 \cdot 3 \cdot p$",Y,NW);
+label("$d=2 \cdot 3^3 \cdot q$",Z,SW);
+label("$c$",W,SE);
+label("$2^3 \cdot 3$",X--Y);
+label("$2^2 \cdot 3^2$",X--W);
+label("$2 \cdot 3^3$",Z--W);
+label("$2 \cdot 3 \cdot k$",Z--Y);
+</asy>
+
+The relationship of <math>a</math>, <math>b</math>, <math>c</math>, and <math>d</math> is shown in the above diagram. <math>gcd(a,d)=2 \cdot 3 \cdot k</math>.
+<math>70 < 6k < 100</math>, <math>12 \le k \le 16</math>, <math>k=\boxed{\textbf{(D) }13}</math>
+
+Note that <math>gcd(b,c)=36</math> is not required to solve the problem.
+
+--- Solution 7 ---
+Just as in solution <math>1</math>, we prime factorize <math>a, b, c</math> and <math>d</math> to observe that 
+
+<math>a=2^3\cdot{3}\cdot{w}</math>
+
+<math>b=2^3\cdot{3^2}\cdot{x}</math>
+
+<math>c=2^2\cdot{3^3}\cdot{y}</math>
+
+<math>d=2\cdot{3^3}\cdot{z}.</math>
+
+Substituting these expressions for <math>a</math> and <math>d</math> into the final given, 
+
+<math>70<\text{gcd}(2\cdot{3^3}\cdot{z}, 2^3\cdot{3}\cdot{w})<100.</math>
+
+The greatest common divisor of these two numbers is already <math>6</math>. If <math>k</math> is what we wish to multiply <math>6</math> by to obtain the gcd of these two numbers, then 
+
+<math>70<6k<100</math>. Testing the answer choices, only <math>13</math> works for <math>k</math> (in order for the compound inequality to hold). so our gcd is <math>78</math>, which means that <math>\boxed{\textbf{(D) }13}</math> must divide <math>a</math>.
+
+-Benedict T (countmath1)
+
+
+=== Problem 23 ===
+Farmer Pythagoras has a field in the shape of a right triangle. The right triangle's legs have lengths
+
+Choices: {'A': '\\frac{25}{27}', 'B': '\\frac{26}{27}', 'C': '\\frac{73}{75}', 'D': '\\frac{145}{147}', 'E': '\\frac{74}{75} </math>'}
+Answer: D
+
+--- Solution 1 ---
+Note that the hypotenuse of the field is <math>5,</math> and the area of the field is <math>6.</math> Let <math>x</math> be the side-length of square <math>S.</math>
+
+We partition the field into a red triangle, a yellow triangle, and a green triangle, as shown below:
+<asy>
+/* Edited by MRENTHUSIASM */
+size(180);
+pair A, B, C, D, F;
+A = origin;
+B = (4,0);
+C = (0,3);
+D = (2/7,2/7);
+F = foot(D,B,C);
+fill(A--D--C--cycle, red);
+fill(A--D--B--cycle, yellow);
+fill(B--D--C--cycle, green);
+draw(A--B--C--cycle);
+label("$5$", midpoint(B--C), NE);
+label("$4$", midpoint(A--B), S);
+label("$3$", midpoint(A--C), W);
+label("$2$", midpoint(D--F), SE);
+label("$S$", midpoint(A--D));
+label("$x$", midpoint((0,2/7)--D), N);
+label("$x$", midpoint((2/7,0)--D), E);
+draw((2/7,0)--D--(0,2/7));
+draw(A--D^^B--D^^C--D, dashed);
+draw(D--F, dashed);
+</asy>
+Let the brackets denote areas. By area addition, we set up an equation for <math>x:</math>
+<cmath>\begin{align*}
+[\text{Red Triangle}]+[\text{Yellow Triangle}]+[\text{Green Triangle}]&=[\text{Field}] \\
+\frac{3x}{2}+\frac{4x}{2}+\frac{5\cdot2}{2}&=6,
+\end{align*}</cmath>
+from which <math>x=\frac27.</math> Therefore, the answer is <cmath>\frac{[\text{Field}]-[S]}{[\text{Field}]}=\frac{6-x^2}{6}=\boxed{\textbf{(D) } \frac{145}{147}}.</cmath>
+
+--- Solution 2 ---
+Let the square have side length <math>x</math>. Connect the upper-right vertex of square <math>S</math> with the two vertices of the triangle's hypotenuse. This divides the triangle in several regions whose areas must add up to the area of the whole triangle, which is <math>6</math>.
+<asy>
+/* Edited by MRENTHUSIASM */
+size(180);
+pair A, B, C, D, F;
+A = origin;
+B = (4,0);
+C = (0,3);
+D = (2/7,2/7);
+F = foot(D,B,C);
+fill(A--(2/7,0)--D--(0,2/7)--cycle, lightgray);
+draw(A--B--C--cycle);
+label("$5$", midpoint(B--C), NE);
+label("$4$", midpoint(A--B), S);
+label("$3$", midpoint(A--C), W);
+label("$2$", midpoint(D--F), SE);
+label("$S$", midpoint(A--D));
+label("$x$", midpoint((0,2/7)--D), N);
+label("$x$", midpoint((2/7,0)--D), E);
+draw((2/7,0)--D--(0,2/7));
+draw(B--D^^C--D, dashed);
+draw(D--F, dashed);
+</asy>
+Square <math>S</math> has area <math>x^2</math>, and the two thin triangle regions have area <math>\dfrac{x(3-x)}{2}</math> and <math>\dfrac{x(4-x)}{2}</math>. The final triangular region with the hypotenuse as its base and height <math>2</math> has area <math>5</math>. Thus, we have <cmath>x^2+\dfrac{x(3-x)}{2}+\dfrac{x(4-x)}{2}+5=6.</cmath>
+Solving gives <math>x=\dfrac{2}{7}</math>. The area of <math>S</math> is <math>\dfrac{4}{49}</math> and the desired ratio is <math>\dfrac{6-\tfrac{4}{49}}{6}=\boxed{\textbf{(D) } \frac{145}{147}}</math>.
+
+Alternatively, once you get <math>x=\frac{2}{7}</math>, you can avoid computation by noticing that there is a denominator of <math>7</math>, so the answer must have a factor of <math>7</math> in the denominator, which only <math>\frac{145}{147}</math> does.
+
+--- Solution 3 ---
+Let the square have side length <math>s</math>. If we were to extend the sides of the square further into the triangle until they intersect on point on the hypotenuse, we'd have a similar right triangle formed between the hypotenuse and the two new lines, and two smaller similar triangles that share a side of length <math>2</math>. Using the side-to-side ratios of these triangles, we can find that the length of the larger similar triangle is <math>\frac{5}{3}(2)=\frac{10}{3}</math>. Now, let's extend this larger similar right triangle to the left until it hits the side of length <math>3</math>. Now, the length is <math>\frac{10}{3}+s</math>, and using the ratios of the side lengths, the height is <math>\frac{3}{4}\left(\frac{10}{3}+s\right)=\frac{5}{2}+\frac{3s}{4}</math>. Looking at the diagram, if we add the height of this triangle to the side length of the square, we'd get <math>3</math>, so
+<cmath>\begin{align*}
+\frac{5}{2}+\frac{3s}{4}+s&=3 \\ 
+\frac{5}{2}+\frac{7s}{4}&=3 \\
+\frac{7s}{4}&=\frac{1}{2} \\
+s&=\frac{2}{7}.
+\end{align*}</cmath>
+So, the area of the square is <math>\left(\frac{2}{7}\right)^2=\frac{4}{49}</math>.
+
+Now comes the easy part--finding the ratio of the areas: <math>\frac{3\cdot 4 \cdot \frac{1}{2} -\frac{4}{49}}{3\cdot 4 \cdot \frac{1}{2}}=\frac{6-\frac{4}{49}}{6}=\frac{294-4}{294}=\frac{290}{294}=\boxed{\textbf{(D) } \frac{145}{147}}</math>.
+
+--- Solution 4 ---
+<asy>
+/* Edited by MRENTHUSIASM */
+size(180);
+pair A, B, C, D, F;
+A = origin;
+B = (4,0);
+C = (0,3);
+D = (2/7,2/7);
+F = foot(D,B,C);
+fill(A--(2/7,0)--D--(0,2/7)--cycle, lightgray);
+draw(A--B--C--cycle);
+label("$4$", midpoint(A--B), S);
+label("$3$", midpoint(A--C), W);
+label("$2$", midpoint(D--F), SE);
+label("$S$", midpoint(A--D));
+label("$\ell$", midpoint((0,2/7)--D), N);
+label("$\ell$", midpoint((2/7,0)--D), E);
+label("$\ell$", midpoint((2/7,2/7+5/2)--(0,2/7+5/2)), S);
+label("$\ell$", midpoint((2/7+10/3,2/7)--(2/7+10/3,0)), W);
+label("$\frac{5}{2}$", midpoint((2/7,2/7+5/2)--D), E);
+label("$\frac{10}{3}$", midpoint((2/7+10/3,2/7)--D), N);
+draw((2/7,0)--D--(0,2/7));
+draw((2/7,2/7+5/2)--D^^(2/7+10/3,2/7)--D, dashed);
+draw((2/7,2/7+5/2)--(0,2/7+5/2)^^(2/7+10/3,2/7)--(2/7+10/3,0), dashed);
+draw(D--F, dashed);
+</asy>
+On the diagram above, find two smaller triangles similar to the large one with side lengths <math>3</math>, <math>4</math>, and <math>5</math>; consequently, the segments with length <math>\frac{5}{2}</math> and <math>\frac{10}{3}</math>.
+
+With <math>\ell</math> being the side length of the square, we need to find an expression for <math>\ell</math>. Using the hypotenuse, we can see that <math>\frac{3}{2}+\frac{8}{3}+\frac{5}{4}\ell+\frac{5}{3}\ell=5</math>. Simplifying, <math>\frac{35}{12}\ell=\frac{5}{6}</math>, or <math>\ell=\frac27</math>.
+
+A different calculation would yield <math>\ell+\frac{3}{4}\ell+\frac{5}{2}=3</math>, so <math>\frac{7}{4}\ell=\frac{1}{2}</math>. In other words, <math>\ell=\frac{2}{7}</math>, while to check, <math>\ell+\frac{4}{3}\ell+\frac{10}{3}=4</math>. As such, <math>\frac{7}{3}\ell=\frac{2}{3}</math>, and <math>\ell=\frac{2}{7}</math>.
+
+Finally, we get <math>A(\Square S)=\ell^2=\frac{4}{49}</math>, to finish. As a proportion of the triangle with area <math>6</math>, the answer would be <math>1-\frac{4}{49\cdot6}=1-\frac{2}{147}=\frac{145}{147}</math>, so <math>\boxed{\textbf{(D) } \frac{145}{147}}</math> is correct.
+
+--- Solution 5 ---
+Let the side length of the square be <math>x</math>. First off, let us make a similar triangle with the segment of length <math>2</math> and the top-right corner of <math>S</math>. Therefore, the longest side of the smaller triangle must be <math>2 \cdot \frac54 = \frac52</math>. We then do operations with that side in terms of <math>x</math>. We subtract <math>x</math> from the bottom, and <math>\frac{3x}{4}</math> from the top. That gives us the equation of <math>3-\frac{7x}{4} = \frac{5}{2}</math>. Solving, <cmath>12-7x = 10 \implies x = \frac{2}{7}.</cmath>
+Thus, <math>x^2 = \frac{4}{49}</math>, so the fraction of the triangle (area <math>6</math>) covered by the square is <math>\frac{2}{147}</math>. The answer is then <math>\boxed{\textbf{(D) } \frac{145}{147}}</math>.
+
+--- Solution 6 ---
+<asy>
+/* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki go to User:Azjps/geogebra */
+import graph; size(180); 
+real labelscalefactor = 1.5; /* changes label-to-point distance */
+// pen dps = linewidth(0.5) + fontsize(10); 
+// defaultpen(dps); /* default pen style */ 
+// pen dotstyle = black; /* point style */ 
+real xmin = -1.6030465381283199, xmax = 7.095084767820557, ymin = -1.3624649422453508, ymax = 4.065350676871526;  /* image dimensions */
+
+ /* draw figures */
+draw((0,0)--(0,3)); 
+draw((0,0)--(4,0)); 
+draw((4,0)--(0,3)); 
+draw((0,0.2857142857142857)--(0.2857142857142857,0.2857142857142857)); 
+draw((0.2857142857142857,0.2857142857142857)--(0.2857142857142857,0)); 
+draw((0.07142857142857142,0)--(1.4857142857142858,1.885714285714286)); 
+label("$A$",(0, 0),SW*labelscalefactor); 
+label("$B$",(4,0),SE*labelscalefactor); 
+label("$C$",(0, 3),N*labelscalefactor); 
+label("$D$",(0.2857142857142857,0),S*labelscalefactor); 
+label("$E$",(0.2857142857142857, 0.2857142857142857),E*labelscalefactor); 
+label("$F$",(0.0714285714, 0),S*labelscalefactor); 
+label("$G$", (1.49, 1.89), NE*labelscalefactor);
+ /* dots and labels */
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+ /* end of picture */
+</asy>
+Let <math>AD=x</math>. Note that <math>\triangle DEF</math> is a <math>3{-}4{-}5</math> triangle, so <math>EF=\frac{5}{4}x</math> and <math>FD=\frac{3}{4}x</math>. <math>BF=BD+FD=4-x+\frac{3}{4}x=4-\frac{1}{4}x</math>. We know that <math>GE</math> is <math>2</math> from the problem so <math>GF=2+\frac{5}{4}x</math>. <math>\triangle FGB</math> is also a <math>3{-}4{-}5</math> triangle with <math>GF:BF=3:5</math>. We now have <math>3\left(4-\frac{1}{4}x\right)=5\left(2+\frac{5}{4}x\right)</math>. Solving this equation, we get that <math>x=\frac{2}{7}</math> so the area of <math>S</math> is <math>\frac{4}{49}</math>. The area of the triangle is <math>\frac{3\cdot 4}{2}=6</math> so the fraction of field that is unplanted is <math>\frac{\frac{4}{49}}{6}=\frac{2}{147}</math>. Thus, the fraction of the field that is planted is <math>1-\frac{2}{147}=\boxed{\textbf{(D) } \frac{145}{147}}</math>.
+
+--- Solution 7 ---
+We use coordinate geometry. Let the right angle be at <math>(0,0)</math> and the hypotenuse be the line <math>3x+4y = 12</math> for <math>0\le x\le 3</math>. Denote the position of <math>S</math> as <math>(s,s)</math>, and by the point to line distance formula, we know that
+<cmath>\begin{align*}
+\frac{|3s+4s-12|}{5} &= 2 \\
+|7s-12| &= 10
+\end{align*}</cmath>
+Solving this, we get <math>s=\frac{22}{7}, \frac{2}{7}</math>. Obviously <math>s<\frac{22}{7}</math>, so <math>s = \frac{2}{7}</math>, and from here, the rest of the solution follows to get <math>\boxed{\textbf{(D) } \frac{145}{147}}</math>.
+
+--- Solution 8 ---
+Let the right angle be at <math>(0,0)</math>, the point <math>(x,x)</math> be the far edge of the unplanted square and the hypotenuse be the line <math>y=-\frac{3}{4}x+3</math>. Since the line from <math>(x,x)</math> to the hypotenuse is the shortest possible distance, we know this line, call it line <math>\l</math>, is perpendicular to the hypotenuse and therefore has a slope of <math>\frac{4}{3}</math>. 
+
+Since we know <math>m=\frac{4}{3}</math> , we can see that the line rises by <math>\frac{8}{5}</math> and moves to the right by <math>\frac{6}{5}</math> to meet the hypotenuse. (Let <math>2 = 5x</math> and the rise be <math>4x</math> and the run be <math>3x</math> and then solve.) Therefore, line <math>\l</math> intersects the hypotenuse at the point <math>\left(x+\frac{6}{5}, x+\frac{8}{5}\right)</math>. Plugging into the equation for the hypotenuse we have <math>x=\frac{2}{7}</math> , and after a bit of computation we get <math>\boxed{\textbf{(D) } \frac{145}{147}}</math>.
+
+--- Solution 9 ---
+Let the side length of the square be <math>a</math>, and the lengths that the line from <math>S</math> hits the hypotenuse be <math>x</math> and <math>5-x</math>. Also, connect the outermost vertex of <math>S</math> to the vertices that <math>S</math> isn't connected to. Note that the line that hits the hypotenuse must create a right angle, since it is the shortest possible distance. This creates two pairs of right triangles that share the same hypotenuse. This means that we can set up a system of equations using the Pythagorean Theorem: 
+<cmath>\begin{align*}
+a^2+(4-a)^2&=(5-x)^2+2^2, \\
+a^2+(3-a)^2&=x^2+2^2.
+\end{align*}</cmath>
+After *some* algebra, we obtain <math>a=\frac{2}{7}</math>, which gives the answer <math>\boxed{\textbf{(D) } \frac{145}{147}}</math>.
+
+--- Solution 10 ---
+We name <i><b>small triangle</b></i> the  triangle similar to given in which unplanted square <math>S</math> is inscribed.
+The height of given triangle is 2.4 units so similarity coefficient is <math>\frac {2.4 - 2}{2.4} = \frac {1}{6}</math> , the  area is <math>\frac {1}{36}</math> of total area.
+
+The ratio of planted area in <i><b>small triangle</b></i> to the area of the square is <math>\frac {3}{8} + \frac {2}{3} = \frac {25}{24}.</math>
+
+The fraction of planted area in <i><b>small triangle</b></i> is <math>\frac {25}{25+24} = \frac {25}{49}.</math>
+
+Therefore, the fraction of the planted  field is <math>\frac {25}{49} \cdot  \frac {1}{36} + \frac {35}{36} = \boxed{\textbf{(D) } \frac{145}{147}}.</math>
+
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+--- Solution 11 ---
+<asy>
+size(240);
+pair A, B, C, D, F, X, Y, P, Q, M, N;
+A = origin; label(A, "$A$", SW);
+B = (4,0); label(B, "$B$", S);
+C = (0,3); label(C, "$C$", W);
+D = (2/7,2/7); label(D, "$D$", NE);
+F = foot(D,B,C); label(F, "$F$", NE);
+X = (2/7,39/14); label(X, "$X$", NE, red);
+Y = (76/21,2/7); label(Y, "$Y$", NE, red);
+P = foot(X,A,C); label(P, "$P$", W, red);
+Q = foot(Y,A,B); label(Q, "$Q$", S, red);
+M = (2/7,0); label(M, "$M$", S);
+N = (0,2/7); label(N, "$N$", W);
+
+fill(A--(2/7,0)--D--(0,2/7)--cycle, lightgray);
+draw(A--B--C--cycle);
+draw((2/7,0)--D--(0,2/7));
+label("$x$", midpoint(A--M), S);
+label("$x$", midpoint(A--N), W);
+label("$2$", midpoint(D--F), SE);
+draw(D--F);
+draw(D--X, red);
+draw(D--Y, red);
+draw(X--P, red);
+draw(Y--Q, red);
+</asy>
+
+Denote <math>A,B,C</math> to be the three vertices of the triangular field. Also denote <math>A,M,D,N</math> to be the vertices of the square <math>S</math>. Let <math>X</math> be on <math>BC</math> such that <math>AC\parallel DX</math> and <math>Y</math> be on <math>BC</math> such that <math>AB\parallel DY</math>. Let <math>P</math> and <math>Q</math> be the foot of the altitudes from <math>X</math> to <math>AC</math> and from <math>Y</math> to <math>AB</math> respectively.
+
+Note that <math>\triangle ABC \sim \triangle DYX \sim \triangle PXC \sim \triangle QBY</math>. Thus, <math>PC = x \cdot \frac34</math> and <math>QB = x \cdot \frac43</math>, making
+<cmath>\begin{align*}
+DX &= 3-x-\dfrac{3}{4}x = 3-\dfrac{7}{4}x, \\
+MQ &= 4-x-\dfrac{4}{3}x = 4-\dfrac{7}{3}x.
+\end{align*}</cmath>
+Also from the similarity ratio is the fact that <math>CX = \frac54 x</math> and <math>BY = \frac53 x</math>, making
+<cmath>XY = 5 - \dfrac{5}{4}x - \dfrac{5}{3}x = 5 - \dfrac{35}{12}x.</cmath>
+Computing the area of <math>\triangle XDY</math> in two ways gives an equation for <math>x</math>:
+<cmath>\begin{align*}
+\left(3-\dfrac{7}{4}x\right)\left(4-\dfrac{7}{3}x\right) &= 2\cdot \left(5 - \dfrac{35}{12}x\right) \\
+10-\dfrac{35}{6}x &= \dfrac{49}{12}x^2 - 14x + 12 \\
+\dfrac{49}{12}x^2 - \dfrac{49}{6}x + 2 &= 0 \\
+49x^2 - 98x + 24 &= 0 \\
+x&=\dfrac{2}{7} \text{ or } \dfrac{12}{7}.
+\end{align*}</cmath>
+But <math>x=\dfrac{12}{7}</math> is extraneous. Thus, the area of square <math>S = x^2 = \dfrac{4}{49}</math>, making the portion of the field that is planted being <cmath>1 - \dfrac{\tfrac{4}{49}}{6} = 1 - \dfrac{2}{147} = \boxed{\textbf{(D) } \frac{145}{147}}.</cmath>
+
+-Solution by sml1809
+
+--- Solution 12 ---
+Let the square have side length <math>x</math>. Note that when <math>x = \dfrac{12}{7}</math>, the square is inscribed and touching the hypotenuse. Denote <math>f(x)</math> to be the minimum distance from the square to the hypotenuse. Notably, <math>f</math> is linear with respect to <math>x</math>. <math>f(0) = \dfrac{12}{5}</math>, because it is simply the length of the hypotenuse's altitude. Similarly, <math>f(\dfrac{12}{7}) = 0</math>. We can find that <math>f(x) = \dfrac{12-7x}{5}</math>. Setting this equal to <math>2</math>, we get that <math>f(\dfrac{2}{7}) = 2</math>. Therefore, the side has side length <math>\dfrac27</math>, and has area <math>\dfrac{4}{49}</math>. So, the unshaded area is <math>1 - \dfrac{\frac{4}{49}}{6} = \boxed{\dfrac{145}{147}}</math>, or <math>(D)</math>.
+
+
+=== Problem 24 ===
+Triangle
+
+Choices: {'A': '60', 'B': '65', 'C': '70', 'D': '75', 'E': '80 </math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>BC = a</math>, <math>BG = x</math>, <math>GC = y</math>, and the length of the perpendicular from <math>BC</math> through <math>A</math> be <math>h</math>. By angle bisector theorem, we have that <cmath>\frac{50}{x} = \frac{10}{y},</cmath> where <math>y = -x+a</math>. Therefore substituting we have that <math>BG=\frac{5a}{6}</math>. By similar triangles, we have that <math>DF=\frac{5a}{12}</math>, and the height of this trapezoid is <math>\frac{h}{2}</math>. Then, we have that <math>\frac{ah}{2}=120</math>. We wish to compute <math>\frac{5a}{8}\cdot\frac{h}{2}</math>, and we have that it is <math>\boxed{\textbf{(D) }75}</math> by substituting.
+
+--- Solution 2 ---
+For this problem, we have <math>\triangle{ADE}\sim\triangle{ABC}</math> because of SAS and <math>DE = \frac{BC}{2}</math>. Therefore, <math>\bigtriangleup ADE</math> is a quarter of the area of <math>\bigtriangleup ABC</math>, which is <math>30</math>. Subsequently, we can compute the area of quadrilateral <math>BDEC</math> to be <math>120 - 30 = 90</math>. Using the angle bisector theorem in the same fashion as the previous problem, we get that <math>\overline{BG}</math> is <math>5</math> times the length of <math>\overline{GC}</math>. We want the larger piece, as described by the problem. Because the heights are identical, one area is <math>5</math> times the other, and <math>\frac{5}{6} \cdot 90 = \boxed{\textbf{(D) }75}</math>.
+
+--- Solution 3 ---
+The ratio of the <math>\overline{BG}</math> to <math>\overline{GC}</math> is <math>5:1</math> by the Angle Bisector Theorem, so area of <math>\bigtriangleup ABG</math> to the area of <math>\bigtriangleup ACG</math> is also <math>5:1</math> (They have the same height). Therefore, the area of <math>\bigtriangleup ABG</math> is <math>\frac{5}{5+1}\times120=100</math>. Since <math>\overline{DE}</math> is the midsegment of <math>\bigtriangleup ABC</math>, so <math>\overline{DF}</math> is the midsegment of <math>\bigtriangleup ABG</math> . Thus, the ratio of the area of <math>\bigtriangleup ADF</math> to the area of <math>\bigtriangleup ABG</math> is <math>1:4</math>, so the area of <math>\bigtriangleup ACG</math> is <math>\frac{1}{4}\times100=25</math>. Therefore, the area of quadrilateral <math>FDBG</math> is <math>[ABG]-[ADF]=100-25=\boxed{\textbf{(D) }75}</math>
+
+--- Solution 4 ---
+The area of quadrilateral <math>FDBG</math> is the area of <math>\bigtriangleup ABG</math> minus the area of <math>\bigtriangleup ADF</math>. Notice, <math>\overline{DE} || \overline{BC}</math>, so <math>\bigtriangleup ABG \sim \bigtriangleup ADF</math>, and since <math>\overline{AD}:\overline{AB}=1:2</math>, the area of <math>\bigtriangleup ADF:\bigtriangleup ABG=(1:2)^2=1:4</math>. Given that the area of <math>\bigtriangleup ABC</math> is <math>120</math>, using <math>\frac{bh}{2}</math> on side <math>AB</math> yields <math>\frac{50h}{2}=120\implies h=\frac{240}{50}=\frac{24}{5}</math>. Using the Angle Bisector Theorem, <math>\overline{BG}:\overline{BC}=50:(10+50)=5:6</math>, so the height of <math>\bigtriangleup ABG: \bigtriangleup ACB=5:6</math>. Therefore our answer is <math>\big[ FDBG\big] = \big[ABG\big]-\big[ ADF\big] = \big[ ABG\big]\big(1-\frac{1}{4}\big)=\frac{3}{4}\cdot \frac{bh}{2}=\frac{3}{8}\cdot 50\cdot \frac{5}{6}\cdot \frac{24}{5}=\frac{3}{8}\cdot 200=\boxed{\textbf{(D) }75}</math>
+
+--- Solution 5 ---
+We try to find the area of quadrilateral <math>FDBG</math> by subtracting the area outside the quadrilateral but inside triangle <math>ABC</math>. Note that the area of <math>\triangle ADE</math> is equal  to <math>\frac{1}{2} \cdot 25 \cdot 5 \cdot \sin{A}</math> and the area of triangle <math>ABC</math> is equal to <math>\frac{1}{2} \cdot 50 \cdot 10 \cdot \sin A</math>. The ratio <math>\frac{[ADE]}{[ABC]}</math> is thus equal to <math>\frac{1}{4}</math> and the area of triangle <math>ADE</math> is <math>\frac{1}{4} \cdot 120 = 30</math>. Let side <math>BC</math> be equal to <math>6x</math>, then <math>BG = 5x, GC = x</math> by the angle bisector theorem. Similarly, we find the area of triangle <math>AGC</math> to be <math>\frac{1}{2} \cdot 10 \cdot x \cdot \sin C</math> and the area of triangle <math>ABC</math> to be <math>\frac{1}{2} \cdot 6x \cdot 10 \cdot \sin C</math>. A ratio between these two triangles yields <math>\frac{[ACG]}{[ABC]} = \frac{x}{6x} = \frac{1}{6}</math>, so <math>[AGC] = 20</math>. Now we just need to find the area of triangle <math>AFE</math> and subtract it from the combined areas of <math>[ADE]</math> and <math>[ACG]</math>, since we count it twice. Note that the angle bisector theorem also applies for <math>\triangle ADE</math> and <math>\frac{AE}{AD} = \frac{1}{5}</math>, so thus <math>\frac{EF}{ED} = \frac{1}{6}</math> and we find <math>[AFE] = \frac{1}{6} \cdot 30 = 5</math>, and the area outside <math>FDBG</math> must be <math> [ADE] + [AGC] - [AFE] = 30 + 20 - 5 = 45</math>, and we finally find  <math>[FDBG] = [ABC] - 45 = 120 -45 = \boxed{\textbf{(D) }75}</math>, and we are done. 
+
+=
+
+--- Solution 6 ---
+Let our reference triangle be <math>\triangle ABC</math>. Consequently, we have <math>A=(1,0,0)</math>, <math>B=(0,1,0)</math>, <math>C=(0,0,1).</math> Since <math>D</math> is the midpoint of <math>\overline{AB}</math>, we have that <math>D=(1:1:0)</math>. Similarly, we have <math>E=(1:0:1).</math> Hence, the line through <math>D</math> and <math>E</math> is given by the equation 
+
+<cmath>
+0 = 
+\begin{vmatrix}
+x & y & z\\
+1 & 1 & 0\\
+1 & 0 & 1
+\end{vmatrix}
+</cmath>
+
+Additionally, since all points on <math>\overline{AG}</math> are characterized by <math>(t:1:5)</math>, we may plug in for <math>x,y,z</math> to get <math>t=6</math>. Thus, we have <math>F=(6:1:5).</math> Now, we homogenize the coordinates for <math>F D, B, G</math> to get <math>F=(\frac{1}{2}, \frac{5}{12}, \frac{1}{12})</math>, <math>D=(\frac{1}{2}, \frac{1}{2}, 0)</math>, <math>B=(0,1,0)</math>, <math>G=(0, \frac{1}{6}, \frac{5}{6})</math>
+
+Splitting <math>[FBGD]</math> into <math>[ DBG ] + [ FDG],</math> we may now evaluate the two determinants:
+
+<cmath>
+\begin{vmatrix}
+\frac{1}{2} & \frac{1}{2} & 0\\
+0 & 1 & 0\\
+0 & \frac{1}{6} & \frac{5}{6}
+\end{vmatrix}
+</cmath>
+<cmath>
+\begin{vmatrix}
+\frac{1}{2} & \frac{1}{12} & \frac{5}{12}\\
+\frac{1}{2} & \frac{1}{2} & 0\\
+0 & \frac{5}{6} & \frac{1}{6}
+\end{vmatrix}.
+</cmath>
+
+After simplification, we get <math>\frac{5}{12}</math> and <math>\frac{5}{24}</math>, respectively. Summing, we get <math>\frac{15}{24}.</math> Hence, <math>[FBGD]=\frac{15}{24} \cdot 120 = \fbox{\textbf{(D) }75}.</math>
+<math>\sim</math>Math0323
+
+--- Solution 7 ---
+[[File:201810A_24.png]]
+
+We want to find ratios. Start off letting [AEF]=1. Then we know [AEF]=[CEF]=1 since AE=CE and they share the same height. Then, also because AE is half of AC, we see that [AEF]=1/4 [ACG] so [ACG]=4. 
+
+But we also know [EFGC]=3/4 [ACG], so [EFGC]=3 and then [CFG]=2. If [CFG]=2, then note that [FGB] must be 2*5=10.
+
+Now, we see that [AFD]=5[AED] because EF=1/5 FD (from angle bisector theorem) and they share the same height. Then, because AD=DB, we have [FDB]=[FAD]=5. 
+
+Adding these up, we see that the ratio of [BGFD] to [ABC] is 15/24=5/8. 5/8*120 yields our answer of 75.
+
+--- Solution 8 ---
+Draw a nice diagram. Lets find some some areas. We will start by finding <math>[AED]</math>. The side length ratio of <math>\triangle{AED}</math> to <math>\triangle{ACB}</math> is <math>\dfrac{1}{2}</math>, so the area ratio is <math>\dfrac{1}{4}</math>, so <math>[AED] = \dfrac{1}{4} \cdot 120 = 30</math>. Lets look for information we have used yet. We still havent used the fact that <math>AG</math> is an angle bisector. This hints at us using the angle bisector theorem. Letting <math>EF = y</math>, we have <math>FD = 5y</math>, and letting <math>CG = x</math>, <math>GB = 5x</math>. Now, we have<cmath>\dfrac{[AEF]}{[AED]} = \dfrac{1}{6} \Longrightarrow [AEF] = \dfrac{1}{6} \cdot 30 = 5, [AFD] = \dfrac{5}{6} \cdot 30 = 25</cmath>. Doing the same thing with triangles <math>ACG</math> and <math>AGB</math>, we find that <math>[AGB] = 100</math>, and so <math>[FDGB] = 100-25 = \boxed{75}</math>
+
+-jb2015007
+
+
+=== Problem 25 ===
+For a positive integer
+
+Choices: {'A': '12', 'B': '14', 'C': '16', 'D': '18', 'E': '20</math>'}
+Answer: D
+
+--- Solution 1 ---
+By geometric series, we have
+<cmath>\begin{alignat*}{8}
+A_n&=a\bigl(\phantom{ }\underbrace{111\cdots1}_{n\text{ digits}}\phantom{ }\bigr)&&=a\left(1+10+10^2+\cdots+10^{n-1}\right)&&=a\cdot\frac{10^n-1}{9}, \\
+B_n&=b\bigl(\phantom{ }\underbrace{111\cdots1}_{n\text{ digits}}\phantom{ }\bigr)&&=b\left(1+10+10^2+\cdots+10^{n-1}\right)&&=b\cdot\frac{10^n-1}{9}, \\
+C_n&=c\bigl(\phantom{ }\underbrace{111\cdots1}_{2n\text{ digits}}\phantom{ }\bigr)&&=c\left(1+10+10^2+\cdots+10^{2n-1}\right)&&=c\cdot\frac{10^{2n}-1}{9}.
+\end{alignat*}</cmath>
+By substitution, we rewrite the given equation <math>C_n - B_n = A_n^2</math> as
+<cmath>c\cdot\frac{10^{2n}-1}{9} - b\cdot\frac{10^n-1}{9} = a^2\cdot\left(\frac{10^n-1}{9}\right)^2.</cmath>
+Since <math>n > 0,</math> it follows that <math>10^n > 1.</math> We divide both sides by <math>\frac{10^n-1}{9}</math> and then rearrange:
+<cmath>\begin{align*}
+c\left(10^n+1\right) - b &= a^2\cdot\frac{10^n-1}{9} \\
+9c\left(10^n+1\right) - 9b &= a^2\left(10^n-1\right) \\
+\left(9c-a^2\right)10^n &= 9b-9c-a^2. &&(\bigstar)
+\end{align*}</cmath>
+Let <math>y=10^n.</math> Note that <math>(\bigstar)</math> is a linear equation with <math>y,</math> and <math>y</math> is a one-to-one function of <math>n.</math> Since <math>(\bigstar)</math> has at least two solutions of <math>n,</math> it has at least two solutions of <math>y.</math> We conclude that <math>(\bigstar)</math> must be an identity, so we get the following system of equations:
+<cmath>\begin{align*}
+9c-a^2&=0, \\
+9b-9c-a^2&=0.
+\end{align*}</cmath>
+The first equation implies that <math>c=\frac{a^2}{9}.</math> Substituting this into the second equation gives <math>b=\frac{2a^2}{9}.</math> 
+
+To maximize <math>a + b + c = a + \frac{a^2}{3},</math> we need to maximize <math>a.</math> Clearly, <math>a</math> must be divisible by <math>3.</math> The possibilities for <math>(a,b,c)</math> are <math>(9,18,9),(6,8,4),</math> or <math>(3,2,1),</math> but <math>(9,18,9)</math> is invalid. Therefore, the greatest possible value of <math>a + b + c</math> is <math>6+8+4=\boxed{\textbf{(D) } 18}.</math>
+
+--- Solution 2 ---
+Immediately start trying <math>n = 1</math> and <math>n = 2</math>. These give the system of equations <math>11c - b = a^2</math> and <math>1111c - 11b = (11a)^2</math> (which simplifies to <math>101c - b = 11a^2</math>). These imply that <math>a^2 = 9c</math>, so the possible <math>(a, c)</math> pairs are <math>(9, 9)</math>, <math>(6, 4)</math>, and <math>(3, 1)</math>. The first puts <math>b</math> out of range but the second makes <math>b = 8</math>. We now know the answer is at least <math>6 + 8 + 4 = 18</math>.
+
+We now only need to know whether <math>a + b + c = 20</math> might work for any larger <math>n</math>. We will always get equations like <math>100001c - b = 11111a^2</math> where the <math>c</math> coefficient is very close to being nine times the <math>a</math> coefficient. Since the <math>b</math> term will be quite insignificant, we know that once again <math>a^2</math> must equal <math>9c</math>, and thus <math>a = 9, c = 9</math> is our only hope to reach <math>20</math>. Substituting and dividing through by <math>9</math>, we will have something like <math>100001 - \frac{b}{9} = 99999</math>. No matter what <math>n</math> really was, <math>b</math> is out of range (and certainly isn't <math>2</math> as we would have needed).
+
+The answer then is <math>\boxed{\textbf{(D) } 18}</math>.
+
+--- Solution 3 ---
+The given equation can be written as
+<cmath>c \cdot (\phantom{ } \overbrace{1111 \ldots 1111}^{2n\text{ digits}}\phantom{ }) - b \cdot (\phantom{ } \overbrace{11 \ldots 11}^{n\text{ digits}} \phantom{ }) = a^2 \cdot (\phantom{ } \overbrace{11 \ldots 11}^{n\text{ digits}} \phantom{ })^2.</cmath>
+Divide by <math>\overbrace{11 \ldots 11}^{n\text{ digits}}</math> on both sides:
+<cmath>c \cdot (\phantom{ } \overbrace{1000 \ldots 0001}^{n+1\text{ digits}}\phantom{ }) - b = a^2 \cdot (\phantom{ } \overbrace{11 \ldots 11}^{n\text{ digits}} \phantom{ }).</cmath>
+Next, split the first term to make it easier to deal with:
+<cmath>\begin{align*}
+2c + c \cdot (\phantom{ }\overbrace{99 \ldots 99}^{n\text{ digits}}\phantom{ }) - b &= a^2 \cdot (\phantom{ } \overbrace{11 \ldots 11}^{n\text{ digits}} \phantom{ }) \\
+2c - b &= (a^2 - 9c) \cdot (\phantom{ }\overbrace{11 \ldots 11}^{n\text{ digits}}\phantom{ }).
+\end{align*}</cmath>
+Because <math>2c - b</math> and <math>a^2 - 9c</math> are constants and because there must be at least two distinct values of <math>n</math> that satisfy, <math>2c - b = a^2 - 9c = 0.</math> Thus, we have
+<cmath>\begin{align*}
+2c&=b, \\
+a^2&=9c.
+\end{align*}</cmath>
+Knowing that <math>a,b,</math> and <math>c</math> are single digit positive integers and that <math>9c</math> must be a perfect square, the values of <math>(a,b,c)</math> that satisfy both equations are <math>(3,2,1)</math> and <math>(6,8,4).</math> Finally, <math>6 + 8 + 4 = \boxed{\textbf{(D) } 18}.</math>
+
+--- Solution 4 ---
+By [[PaperMath’s sum]], the answer is at least <imath>6+8+4=\boxed{\textbf{(D) } 18}.</imath>
+
+

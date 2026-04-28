@@ -1,0 +1,4278 @@
+{
+  "buffers": [
+    {
+      "kind": "power",
+      "name": "theta=0.34",
+      "parameter": 0.34
+    },
+    {
+      "kind": "power",
+      "name": "theta=0.36",
+      "parameter": 0.36
+    },
+    {
+      "kind": "power",
+      "name": "theta=0.38",
+      "parameter": 0.38
+    },
+    {
+      "kind": "power",
+      "name": "theta=0.4",
+      "parameter": 0.4
+    }
+  ],
+  "cap": 1000000,
+  "include_incomplete_slabs": false,
+  "results": [
+    {
+      "buffer": {
+        "kind": "power",
+        "name": "theta=0.34",
+        "parameter": 0.34
+      },
+      "buffered_pairs_before_core_filter": 2905993,
+      "cap": 1000000,
+      "earliest_to_top_path": {
+        "certificate": [
+          [
+            261571,
+            261589
+          ],
+          [
+            261589,
+            261607
+          ],
+          [
+            261607,
+            261617
+          ],
+          [
+            261617,
+            261623
+          ],
+          [
+            261623,
+            261659
+          ],
+          [
+            261659,
+            261683
+          ],
+          [
+            261683,
+            261689
+          ],
+          [
+            261689,
+            261691
+          ],
+          [
+            261691,
+            261719
+          ],
+          [
+            261719,
+            261727
+          ],
+          [
+            261727,
+            261731
+          ],
+          [
+            261731,
+            261797
+          ],
+          [
+            261797,
+            261803
+          ],
+          [
+            261803,
+            261829
+          ],
+          [
+            261829,
+            261853
+          ],
+          [
+            261853,
+            261869
+          ],
+          [
+            261869,
+            261871
+          ],
+          [
+            261871,
+            261883
+          ],
+          [
+            261883,
+            261889
+          ],
+          [
+            261889,
+            261893
+          ],
+          [
+            261893,
+            261907
+          ],
+          [
+            261907,
+            261929
+          ],
+          [
+            261929,
+            261941
+          ],
+          [
+            261941,
+            261967
+          ],
+          [
+            261967,
+            262001
+          ],
+          [
+            262001,
+            262013
+          ],
+          [
+            262013,
+            262033
+          ],
+          [
+            262033,
+            262057
+          ],
+          [
+            262057,
+            262063
+          ],
+          [
+            262063,
+            262081
+          ],
+          [
+            262081,
+            262091
+          ],
+          [
+            262091,
+            262099
+          ],
+          [
+            262099,
+            262159
+          ],
+          [
+            262159,
+            262169
+          ],
+          [
+            262169,
+            262183
+          ],
+          [
+            262183,
+            262211
+          ],
+          [
+            262211,
+            262243
+          ],
+          [
+            262243,
+            262267
+          ],
+          [
+            262267,
+            262279
+          ],
+          [
+            262279,
+            262309
+          ],
+          [
+            262309,
+            262319
+          ],
+          [
+            262319,
+            262357
+          ],
+          [
+            262357,
+            262393
+          ],
+          [
+            262393,
+            262397
+          ],
+          [
+            262397,
+            262417
+          ],
+          [
+            262417,
+            262481
+          ],
+          [
+            262481,
+            262487
+          ]
+        ],
+        "certificate_truncated": false,
+        "start_slab_index": 17,
+        "start_slab_label": "[131072,262144)",
+        "transitions": 46
+      },
+      "global_best_path": {
+        "certificate": [
+          [
+            439619,
+            439633
+          ],
+          [
+            439633,
+            439657
+          ],
+          [
+            439657,
+            439711
+          ],
+          [
+            439711,
+            439757
+          ],
+          [
+            439757,
+            439801
+          ],
+          [
+            439801,
+            439837
+          ],
+          [
+            439837,
+            439877
+          ],
+          [
+            439877,
+            439897
+          ],
+          [
+            439897,
+            439913
+          ],
+          [
+            439913,
+            439927
+          ],
+          [
+            439927,
+            439931
+          ],
+          [
+            439931,
+            439937
+          ],
+          [
+            439937,
+            439939
+          ],
+          [
+            439939,
+            439979
+          ],
+          [
+            439979,
+            439997
+          ],
+          [
+            439997,
+            440003
+          ],
+          [
+            440003,
+            440029
+          ],
+          [
+            440029,
+            440051
+          ],
+          [
+            440051,
+            440057
+          ],
+          [
+            440057,
+            440071
+          ],
+          [
+            440071,
+            440119
+          ],
+          [
+            440119,
+            440137
+          ],
+          [
+            440137,
+            440161
+          ],
+          [
+            440161,
+            440201
+          ],
+          [
+            440201,
+            440213
+          ],
+          [
+            440213,
+            440233
+          ],
+          [
+            440233,
+            440273
+          ],
+          [
+            440273,
+            440291
+          ],
+          [
+            440291,
+            440309
+          ],
+          [
+            440309,
+            440327
+          ],
+          [
+            440327,
+            440353
+          ],
+          [
+            440353,
+            440357
+          ],
+          [
+            440357,
+            440369
+          ],
+          [
+            440369,
+            440387
+          ],
+          [
+            440387,
+            440459
+          ],
+          [
+            440459,
+            440467
+          ],
+          [
+            440467,
+            440491
+          ],
+          [
+            440491,
+            440513
+          ],
+          [
+            440513,
+            440533
+          ],
+          [
+            440533,
+            440563
+          ],
+          [
+            440563,
+            440593
+          ],
+          [
+            440593,
+            440599
+          ],
+          [
+            440599,
+            440617
+          ],
+          [
+            440617,
+            440689
+          ],
+          [
+            440689,
+            440729
+          ],
+          [
+            440729,
+            440747
+          ],
+          [
+            440747,
+            440767
+          ],
+          [
+            440767,
+            440777
+          ],
+          [
+            440777,
+            440779
+          ],
+          [
+            440779,
+            440833
+          ],
+          [
+            440833,
+            440837
+          ],
+          [
+            440837,
+            440897
+          ],
+          [
+            440897,
+            440917
+          ],
+          [
+            440917,
+            440977
+          ],
+          [
+            440977,
+            441017
+          ],
+          [
+            441017,
+            441019
+          ],
+          [
+            441019,
+            441083
+          ],
+          [
+            441083,
+            441097
+          ],
+          [
+            441097,
+            441131
+          ],
+          [
+            441131,
+            441197
+          ],
+          [
+            441197,
+            441211
+          ],
+          [
+            441211,
+            441227
+          ],
+          [
+            441227,
+            441239
+          ],
+          [
+            441239,
+            441241
+          ],
+          [
+            441241,
+            441271
+          ],
+          [
+            441271,
+            441277
+          ],
+          [
+            441277,
+            441289
+          ],
+          [
+            441289,
+            441317
+          ],
+          [
+            441317,
+            441323
+          ],
+          [
+            441323,
+            441367
+          ],
+          [
+            441367,
+            441383
+          ],
+          [
+            441383,
+            441391
+          ],
+          [
+            441391,
+            441401
+          ],
+          [
+            441401,
+            441433
+          ],
+          [
+            441433,
+            441451
+          ],
+          [
+            441451,
+            441487
+          ],
+          [
+            441487,
+            441491
+          ],
+          [
+            441491,
+            441509
+          ],
+          [
+            441509,
+            441589
+          ],
+          [
+            441589,
+            441593
+          ],
+          [
+            441593,
+            441599
+          ],
+          [
+            441599,
+            441601
+          ],
+          [
+            441601,
+            441629
+          ],
+          [
+            441629,
+            441671
+          ],
+          [
+            441671,
+            441709
+          ],
+          [
+            441709,
+            441767
+          ],
+          [
+            441767,
+            441773
+          ],
+          [
+            441773,
+            441803
+          ],
+          [
+            441803,
+            441821
+          ],
+          [
+            441821,
+            441863
+          ],
+          [
+            441863,
+            441871
+          ],
+          [
+            441871,
+            441893
+          ],
+          [
+            441893,
+            441901
+          ],
+          [
+            441901,
+            441919
+          ],
+          [
+            441919,
+            441929
+          ],
+          [
+            441929,
+            441977
+          ],
+          [
+            441977,
+            441979
+          ],
+          [
+            441979,
+            442049
+          ],
+          [
+            442049,
+            442081
+          ],
+          [
+            442081,
+            442093
+          ],
+          [
+            442093,
+            442159
+          ],
+          [
+            442159,
+            442199
+          ],
+          [
+            442199,
+            442213
+          ],
+          [
+            442213,
+            442219
+          ],
+          [
+            442219,
+            442231
+          ],
+          [
+            442231,
+            442249
+          ],
+          [
+            442249,
+            442297
+          ],
+          [
+            442297,
+            442303
+          ],
+          [
+            442303,
+            442331
+          ],
+          [
+            442331,
+            442361
+          ],
+          [
+            442361,
+            442369
+          ],
+          [
+            442369,
+            442373
+          ],
+          [
+            442373,
+            442381
+          ],
+          [
+            442381,
+            442417
+          ],
+          [
+            442417,
+            442423
+          ],
+          [
+            442423,
+            442471
+          ],
+          [
+            442471,
+            442523
+          ],
+          [
+            442523,
+            442549
+          ],
+          [
+            442549,
+            442553
+          ],
+          [
+            442553,
+            442583
+          ],
+          [
+            442583,
+            442613
+          ],
+          [
+            442613,
+            442657
+          ],
+          [
+            442657,
+            442661
+          ],
+          [
+            442661,
+            442667
+          ],
+          [
+            442667,
+            442679
+          ],
+          [
+            442679,
+            442723
+          ],
+          [
+            442723,
+            442751
+          ],
+          [
+            442751,
+            442811
+          ],
+          [
+            442811,
+            442847
+          ],
+          [
+            442847,
+            442873
+          ],
+          [
+            442873,
+            442877
+          ],
+          [
+            442877,
+            442889
+          ],
+          [
+            442889,
+            442907
+          ],
+          [
+            442907,
+            442931
+          ],
+          [
+            442931,
+            442933
+          ],
+          [
+            442933,
+            442951
+          ],
+          [
+            442951,
+            442993
+          ],
+          [
+            442993,
+            442999
+          ]
+        ],
+        "certificate_truncated": false,
+        "max_reached_slab_index": 18,
+        "max_reached_slab_label": "[262144,524288)",
+        "transitions": 137
+      },
+      "include_incomplete_slabs": false,
+      "right_core_pairs_before_slab_filter": 142906,
+      "right_core_pairs_in_flow_graph": 63547,
+      "slabs": {
+        "[1024,2048)": {
+          "complete_slab": true,
+          "core_outdegree_max": 1,
+          "core_outdegree_mean": 0.19230769230769232,
+          "core_states": 26,
+          "core_zero_outdegree_fraction": 0.8076923076923077,
+          "longest_core_path_transitions": 1,
+          "max_reached_slab_index": 10,
+          "max_reached_slab_label": "[1024,2048)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 10,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[128,256)": {
+          "complete_slab": true,
+          "core_outdegree_max": 0,
+          "core_outdegree_mean": 0.0,
+          "core_states": 1,
+          "core_zero_outdegree_fraction": 1.0,
+          "longest_core_path_transitions": 0,
+          "max_reached_slab_index": 7,
+          "max_reached_slab_label": "[128,256)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 7,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[131072,262144)": {
+          "complete_slab": true,
+          "core_outdegree_max": 9,
+          "core_outdegree_mean": 2.196165849308961,
+          "core_states": 15701,
+          "core_zero_outdegree_fraction": 0.16814215655053819,
+          "longest_core_path_transitions": 96,
+          "max_reached_slab_index": 18,
+          "max_reached_slab_label": "[262144,524288)",
+          "reach_next_slab_count": 96,
+          "reach_next_slab_fraction": 0.006114260238201388,
+          "slab_index": 17,
+          "survive_to_top_slab_count": 96,
+          "survive_to_top_slab_fraction": 0.006114260238201388
+        },
+        "[16384,32768)": {
+          "complete_slab": true,
+          "core_outdegree_max": 5,
+          "core_outdegree_mean": 1.0407801418439717,
+          "core_states": 1128,
+          "core_zero_outdegree_fraction": 0.3679078014184397,
+          "longest_core_path_transitions": 17,
+          "max_reached_slab_index": 15,
+          "max_reached_slab_label": "[32768,65536)",
+          "reach_next_slab_count": 5,
+          "reach_next_slab_fraction": 0.004432624113475178,
+          "slab_index": 14,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[2048,4096)": {
+          "complete_slab": true,
+          "core_outdegree_max": 2,
+          "core_outdegree_mean": 0.4,
+          "core_states": 70,
+          "core_zero_outdegree_fraction": 0.6428571428571429,
+          "longest_core_path_transitions": 3,
+          "max_reached_slab_index": 11,
+          "max_reached_slab_label": "[2048,4096)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 11,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[256,512)": {
+          "complete_slab": true,
+          "core_outdegree_max": 0,
+          "core_outdegree_mean": 0.0,
+          "core_states": 1,
+          "core_zero_outdegree_fraction": 1.0,
+          "longest_core_path_transitions": 0,
+          "max_reached_slab_index": 8,
+          "max_reached_slab_label": "[256,512)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 8,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[262144,524288)": {
+          "complete_slab": true,
+          "core_outdegree_max": 10,
+          "core_outdegree_mean": 2.734251487246353,
+          "core_states": 36813,
+          "core_zero_outdegree_fraction": 0.12156031836579469,
+          "longest_core_path_transitions": 137,
+          "max_reached_slab_index": 18,
+          "max_reached_slab_label": "[262144,524288)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 18,
+          "survive_to_top_slab_count": 36813,
+          "survive_to_top_slab_fraction": 1.0
+        },
+        "[32768,65536)": {
+          "complete_slab": true,
+          "core_outdegree_max": 6,
+          "core_outdegree_mean": 1.3655371304974766,
+          "core_states": 2774,
+          "core_zero_outdegree_fraction": 0.2764960346070656,
+          "longest_core_path_transitions": 31,
+          "max_reached_slab_index": 15,
+          "max_reached_slab_label": "[32768,65536)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 15,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[4096,8192)": {
+          "complete_slab": true,
+          "core_outdegree_max": 3,
+          "core_outdegree_mean": 0.6559139784946236,
+          "core_states": 186,
+          "core_zero_outdegree_fraction": 0.510752688172043,
+          "longest_core_path_transitions": 6,
+          "max_reached_slab_index": 12,
+          "max_reached_slab_label": "[4096,8192)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 12,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[512,1024)": {
+          "complete_slab": true,
+          "core_outdegree_max": 1,
+          "core_outdegree_mean": 0.14285714285714285,
+          "core_states": 14,
+          "core_zero_outdegree_fraction": 0.8571428571428571,
+          "longest_core_path_transitions": 1,
+          "max_reached_slab_index": 9,
+          "max_reached_slab_label": "[512,1024)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 9,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[65536,131072)": {
+          "complete_slab": true,
+          "core_outdegree_max": 7,
+          "core_outdegree_mean": 1.6873340621583632,
+          "core_states": 6403,
+          "core_zero_outdegree_fraction": 0.2074027799468999,
+          "longest_core_path_transitions": 41,
+          "max_reached_slab_index": 16,
+          "max_reached_slab_label": "[65536,131072)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 16,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[8192,16384)": {
+          "complete_slab": true,
+          "core_outdegree_max": 4,
+          "core_outdegree_mean": 0.7674418604651163,
+          "core_states": 430,
+          "core_zero_outdegree_fraction": 0.44883720930232557,
+          "longest_core_path_transitions": 7,
+          "max_reached_slab_index": 13,
+          "max_reached_slab_label": "[8192,16384)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 13,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        }
+      },
+      "source_cap": 999747,
+      "successor_cap": 1000111,
+      "top_slab_index": 18,
+      "top_slab_label": "[262144,524288)"
+    },
+    {
+      "buffer": {
+        "kind": "power",
+        "name": "theta=0.36",
+        "parameter": 0.36
+      },
+      "buffered_pairs_before_core_filter": 3189081,
+      "cap": 1000000,
+      "earliest_to_top_path": {
+        "certificate": [
+          [
+            261589,
+            261607
+          ],
+          [
+            261607,
+            261617
+          ],
+          [
+            261617,
+            261623
+          ],
+          [
+            261623,
+            261659
+          ],
+          [
+            261659,
+            261683
+          ],
+          [
+            261683,
+            261689
+          ],
+          [
+            261689,
+            261719
+          ],
+          [
+            261719,
+            261731
+          ],
+          [
+            261731,
+            261797
+          ],
+          [
+            261797,
+            261853
+          ],
+          [
+            261853,
+            261869
+          ],
+          [
+            261869,
+            261871
+          ],
+          [
+            261871,
+            261883
+          ],
+          [
+            261883,
+            261889
+          ],
+          [
+            261889,
+            261907
+          ],
+          [
+            261907,
+            261929
+          ],
+          [
+            261929,
+            261941
+          ],
+          [
+            261941,
+            261967
+          ],
+          [
+            261967,
+            262001
+          ],
+          [
+            262001,
+            262013
+          ],
+          [
+            262013,
+            262033
+          ],
+          [
+            262033,
+            262057
+          ],
+          [
+            262057,
+            262063
+          ],
+          [
+            262063,
+            262081
+          ],
+          [
+            262081,
+            262091
+          ],
+          [
+            262091,
+            262099
+          ],
+          [
+            262099,
+            262159
+          ],
+          [
+            262159,
+            262169
+          ],
+          [
+            262169,
+            262183
+          ],
+          [
+            262183,
+            262211
+          ],
+          [
+            262211,
+            262243
+          ],
+          [
+            262243,
+            262267
+          ],
+          [
+            262267,
+            262279
+          ],
+          [
+            262279,
+            262309
+          ],
+          [
+            262309,
+            262319
+          ],
+          [
+            262319,
+            262357
+          ],
+          [
+            262357,
+            262393
+          ],
+          [
+            262393,
+            262397
+          ],
+          [
+            262397,
+            262417
+          ],
+          [
+            262417,
+            262481
+          ]
+        ],
+        "certificate_truncated": false,
+        "start_slab_index": 17,
+        "start_slab_label": "[131072,262144)",
+        "transitions": 39
+      },
+      "global_best_path": {
+        "certificate": [
+          [
+            287359,
+            287377
+          ],
+          [
+            287377,
+            287407
+          ],
+          [
+            287407,
+            287423
+          ],
+          [
+            287423,
+            287447
+          ],
+          [
+            287447,
+            287459
+          ],
+          [
+            287459,
+            287461
+          ],
+          [
+            287461,
+            287467
+          ],
+          [
+            287467,
+            287471
+          ],
+          [
+            287471,
+            287509
+          ],
+          [
+            287509,
+            287513
+          ],
+          [
+            287513,
+            287519
+          ],
+          [
+            287519,
+            287531
+          ],
+          [
+            287531,
+            287543
+          ],
+          [
+            287543,
+            287561
+          ],
+          [
+            287561,
+            287563
+          ],
+          [
+            287563,
+            287591
+          ],
+          [
+            287591,
+            287633
+          ],
+          [
+            287633,
+            287647
+          ],
+          [
+            287647,
+            287653
+          ],
+          [
+            287653,
+            287659
+          ],
+          [
+            287659,
+            287663
+          ],
+          [
+            287663,
+            287699
+          ],
+          [
+            287699,
+            287719
+          ],
+          [
+            287719,
+            287741
+          ],
+          [
+            287741,
+            287803
+          ],
+          [
+            287803,
+            287809
+          ],
+          [
+            287809,
+            287879
+          ],
+          [
+            287879,
+            287893
+          ],
+          [
+            287893,
+            287909
+          ],
+          [
+            287909,
+            287923
+          ],
+          [
+            287923,
+            287951
+          ],
+          [
+            287951,
+            287953
+          ],
+          [
+            287953,
+            287957
+          ],
+          [
+            287957,
+            288011
+          ],
+          [
+            288011,
+            288017
+          ],
+          [
+            288017,
+            288019
+          ],
+          [
+            288019,
+            288073
+          ],
+          [
+            288073,
+            288139
+          ],
+          [
+            288139,
+            288149
+          ],
+          [
+            288149,
+            288217
+          ],
+          [
+            288217,
+            288221
+          ],
+          [
+            288221,
+            288311
+          ],
+          [
+            288311,
+            288319
+          ],
+          [
+            288319,
+            288329
+          ],
+          [
+            288329,
+            288367
+          ],
+          [
+            288367,
+            288377
+          ],
+          [
+            288377,
+            288391
+          ],
+          [
+            288391,
+            288419
+          ],
+          [
+            288419,
+            288437
+          ],
+          [
+            288437,
+            288503
+          ],
+          [
+            288503,
+            288511
+          ],
+          [
+            288511,
+            288593
+          ],
+          [
+            288593,
+            288601
+          ],
+          [
+            288601,
+            288611
+          ],
+          [
+            288611,
+            288619
+          ],
+          [
+            288619,
+            288623
+          ],
+          [
+            288623,
+            288707
+          ],
+          [
+            288707,
+            288727
+          ],
+          [
+            288727,
+            288737
+          ],
+          [
+            288737,
+            288749
+          ],
+          [
+            288749,
+            288787
+          ],
+          [
+            288787,
+            288791
+          ],
+          [
+            288791,
+            288809
+          ],
+          [
+            288809,
+            288829
+          ],
+          [
+            288829,
+            288863
+          ],
+          [
+            288863,
+            288887
+          ],
+          [
+            288887,
+            288901
+          ],
+          [
+            288901,
+            288919
+          ],
+          [
+            288919,
+            288941
+          ],
+          [
+            288941,
+            288943
+          ],
+          [
+            288943,
+            289027
+          ],
+          [
+            289027,
+            289057
+          ],
+          [
+            289057,
+            289073
+          ],
+          [
+            289073,
+            289117
+          ],
+          [
+            289117,
+            289147
+          ],
+          [
+            289147,
+            289207
+          ],
+          [
+            289207,
+            289231
+          ],
+          [
+            289231,
+            289259
+          ],
+          [
+            289259,
+            289279
+          ],
+          [
+            289279,
+            289301
+          ],
+          [
+            289301,
+            289307
+          ],
+          [
+            289307,
+            289321
+          ],
+          [
+            289321,
+            289403
+          ],
+          [
+            289403,
+            289411
+          ],
+          [
+            289411,
+            289441
+          ],
+          [
+            289441,
+            289481
+          ],
+          [
+            289481,
+            289483
+          ],
+          [
+            289483,
+            289529
+          ],
+          [
+            289529,
+            289621
+          ],
+          [
+            289621,
+            289651
+          ],
+          [
+            289651,
+            289687
+          ],
+          [
+            289687,
+            289699
+          ],
+          [
+            289699,
+            289703
+          ],
+          [
+            289703,
+            289711
+          ],
+          [
+            289711,
+            289781
+          ],
+          [
+            289781,
+            289787
+          ],
+          [
+            289787,
+            289801
+          ],
+          [
+            289801,
+            289813
+          ],
+          [
+            289813,
+            289879
+          ],
+          [
+            289879,
+            289903
+          ],
+          [
+            289903,
+            289907
+          ],
+          [
+            289907,
+            289931
+          ],
+          [
+            289931,
+            289979
+          ],
+          [
+            289979,
+            289981
+          ],
+          [
+            289981,
+            290063
+          ],
+          [
+            290063,
+            290077
+          ],
+          [
+            290077,
+            290089
+          ],
+          [
+            290089,
+            290093
+          ],
+          [
+            290093,
+            290123
+          ],
+          [
+            290123,
+            290153
+          ],
+          [
+            290153,
+            290159
+          ],
+          [
+            290159,
+            290179
+          ],
+          [
+            290179,
+            290197
+          ],
+          [
+            290197,
+            290231
+          ],
+          [
+            290231,
+            290267
+          ],
+          [
+            290267,
+            290273
+          ],
+          [
+            290273,
+            290287
+          ],
+          [
+            290287,
+            290333
+          ],
+          [
+            290333,
+            290341
+          ],
+          [
+            290341,
+            290357
+          ],
+          [
+            290357,
+            290363
+          ],
+          [
+            290363,
+            290371
+          ],
+          [
+            290371,
+            290401
+          ],
+          [
+            290401,
+            290431
+          ],
+          [
+            290431,
+            290503
+          ],
+          [
+            290503,
+            290519
+          ],
+          [
+            290519,
+            290569
+          ],
+          [
+            290569,
+            290573
+          ],
+          [
+            290573,
+            290629
+          ],
+          [
+            290629,
+            290639
+          ],
+          [
+            290639,
+            290699
+          ],
+          [
+            290699,
+            290729
+          ],
+          [
+            290729,
+            290747
+          ],
+          [
+            290747,
+            290753
+          ],
+          [
+            290753,
+            290777
+          ],
+          [
+            290777,
+            290831
+          ],
+          [
+            290831,
+            290863
+          ],
+          [
+            290863,
+            290867
+          ],
+          [
+            290867,
+            290891
+          ],
+          [
+            290891,
+            290893
+          ],
+          [
+            290893,
+            290911
+          ],
+          [
+            290911,
+            291001
+          ],
+          [
+            291001,
+            291017
+          ],
+          [
+            291017,
+            291097
+          ]
+        ],
+        "certificate_truncated": false,
+        "max_reached_slab_index": 18,
+        "max_reached_slab_label": "[262144,524288)",
+        "transitions": 143
+      },
+      "include_incomplete_slabs": false,
+      "right_core_pairs_before_slab_filter": 136962,
+      "right_core_pairs_in_flow_graph": 59768,
+      "slabs": {
+        "[1024,2048)": {
+          "complete_slab": true,
+          "core_outdegree_max": 1,
+          "core_outdegree_mean": 0.10526315789473684,
+          "core_states": 19,
+          "core_zero_outdegree_fraction": 0.8947368421052632,
+          "longest_core_path_transitions": 1,
+          "max_reached_slab_index": 10,
+          "max_reached_slab_label": "[1024,2048)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 10,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[131072,262144)": {
+          "complete_slab": true,
+          "core_outdegree_max": 10,
+          "core_outdegree_mean": 2.38447851081303,
+          "core_states": 14612,
+          "core_zero_outdegree_fraction": 0.15542020257322747,
+          "longest_core_path_transitions": 112,
+          "max_reached_slab_index": 18,
+          "max_reached_slab_label": "[262144,524288)",
+          "reach_next_slab_count": 86,
+          "reach_next_slab_fraction": 0.005885573501231864,
+          "slab_index": 17,
+          "survive_to_top_slab_count": 86,
+          "survive_to_top_slab_fraction": 0.005885573501231864
+        },
+        "[16384,32768)": {
+          "complete_slab": true,
+          "core_outdegree_max": 5,
+          "core_outdegree_mean": 1.0453648915187377,
+          "core_states": 1014,
+          "core_zero_outdegree_fraction": 0.3826429980276134,
+          "longest_core_path_transitions": 14,
+          "max_reached_slab_index": 15,
+          "max_reached_slab_label": "[32768,65536)",
+          "reach_next_slab_count": 9,
+          "reach_next_slab_fraction": 0.008875739644970414,
+          "slab_index": 14,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[2048,4096)": {
+          "complete_slab": true,
+          "core_outdegree_max": 2,
+          "core_outdegree_mean": 0.41818181818181815,
+          "core_states": 55,
+          "core_zero_outdegree_fraction": 0.6545454545454545,
+          "longest_core_path_transitions": 3,
+          "max_reached_slab_index": 11,
+          "max_reached_slab_label": "[2048,4096)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 11,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[256,512)": {
+          "complete_slab": true,
+          "core_outdegree_max": 0,
+          "core_outdegree_mean": 0.0,
+          "core_states": 1,
+          "core_zero_outdegree_fraction": 1.0,
+          "longest_core_path_transitions": 0,
+          "max_reached_slab_index": 8,
+          "max_reached_slab_label": "[256,512)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 8,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[262144,524288)": {
+          "complete_slab": true,
+          "core_outdegree_max": 11,
+          "core_outdegree_mean": 2.982057279780922,
+          "core_states": 35056,
+          "core_zero_outdegree_fraction": 0.11841054313099042,
+          "longest_core_path_transitions": 143,
+          "max_reached_slab_index": 18,
+          "max_reached_slab_label": "[262144,524288)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 18,
+          "survive_to_top_slab_count": 35056,
+          "survive_to_top_slab_fraction": 1.0
+        },
+        "[32768,65536)": {
+          "complete_slab": true,
+          "core_outdegree_max": 7,
+          "core_outdegree_mean": 1.4260450160771705,
+          "core_states": 2488,
+          "core_zero_outdegree_fraction": 0.2652733118971061,
+          "longest_core_path_transitions": 25,
+          "max_reached_slab_index": 15,
+          "max_reached_slab_label": "[32768,65536)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 15,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[4096,8192)": {
+          "complete_slab": true,
+          "core_outdegree_max": 3,
+          "core_outdegree_mean": 0.6163522012578616,
+          "core_states": 159,
+          "core_zero_outdegree_fraction": 0.5723270440251572,
+          "longest_core_path_transitions": 4,
+          "max_reached_slab_index": 12,
+          "max_reached_slab_label": "[4096,8192)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 12,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[512,1024)": {
+          "complete_slab": true,
+          "core_outdegree_max": 1,
+          "core_outdegree_mean": 0.2,
+          "core_states": 10,
+          "core_zero_outdegree_fraction": 0.8,
+          "longest_core_path_transitions": 1,
+          "max_reached_slab_index": 9,
+          "max_reached_slab_label": "[512,1024)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 9,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[65536,131072)": {
+          "complete_slab": true,
+          "core_outdegree_max": 7,
+          "core_outdegree_mean": 1.764528554680958,
+          "core_states": 5971,
+          "core_zero_outdegree_fraction": 0.22575782950929493,
+          "longest_core_path_transitions": 52,
+          "max_reached_slab_index": 17,
+          "max_reached_slab_label": "[131072,262144)",
+          "reach_next_slab_count": 27,
+          "reach_next_slab_fraction": 0.004521855635571931,
+          "slab_index": 16,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[8192,16384)": {
+          "complete_slab": true,
+          "core_outdegree_max": 4,
+          "core_outdegree_mean": 0.783289817232376,
+          "core_states": 383,
+          "core_zero_outdegree_fraction": 0.46475195822454307,
+          "longest_core_path_transitions": 8,
+          "max_reached_slab_index": 13,
+          "max_reached_slab_label": "[8192,16384)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 13,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        }
+      },
+      "source_cap": 999747,
+      "successor_cap": 1000146,
+      "top_slab_index": 18,
+      "top_slab_label": "[262144,524288)"
+    },
+    {
+      "buffer": {
+        "kind": "power",
+        "name": "theta=0.38",
+        "parameter": 0.38
+      },
+      "buffered_pairs_before_core_filter": 3379751,
+      "cap": 1000000,
+      "earliest_to_top_path": {
+        "certificate": [
+          [
+            261589,
+            261607
+          ],
+          [
+            261607,
+            261617
+          ],
+          [
+            261617,
+            261623
+          ],
+          [
+            261623,
+            261659
+          ],
+          [
+            261659,
+            261683
+          ],
+          [
+            261683,
+            261689
+          ],
+          [
+            261689,
+            261719
+          ],
+          [
+            261719,
+            261731
+          ],
+          [
+            261731,
+            261797
+          ],
+          [
+            261797,
+            261853
+          ],
+          [
+            261853,
+            261869
+          ],
+          [
+            261869,
+            261871
+          ],
+          [
+            261871,
+            261883
+          ],
+          [
+            261883,
+            261889
+          ],
+          [
+            261889,
+            261907
+          ],
+          [
+            261907,
+            261941
+          ],
+          [
+            261941,
+            261967
+          ],
+          [
+            261967,
+            262001
+          ],
+          [
+            262001,
+            262013
+          ],
+          [
+            262013,
+            262033
+          ],
+          [
+            262033,
+            262057
+          ],
+          [
+            262057,
+            262063
+          ],
+          [
+            262063,
+            262081
+          ],
+          [
+            262081,
+            262091
+          ],
+          [
+            262091,
+            262099
+          ],
+          [
+            262099,
+            262159
+          ],
+          [
+            262159,
+            262169
+          ],
+          [
+            262169,
+            262183
+          ],
+          [
+            262183,
+            262211
+          ],
+          [
+            262211,
+            262243
+          ],
+          [
+            262243,
+            262267
+          ],
+          [
+            262267,
+            262279
+          ],
+          [
+            262279,
+            262309
+          ],
+          [
+            262309,
+            262319
+          ],
+          [
+            262319,
+            262357
+          ],
+          [
+            262357,
+            262393
+          ],
+          [
+            262393,
+            262397
+          ],
+          [
+            262397,
+            262417
+          ],
+          [
+            262417,
+            262481
+          ]
+        ],
+        "certificate_truncated": false,
+        "start_slab_index": 17,
+        "start_slab_label": "[131072,262144)",
+        "transitions": 38
+      },
+      "global_best_path": {
+        "certificate": [
+          [
+            399569,
+            399593
+          ],
+          [
+            399593,
+            399697
+          ],
+          [
+            399697,
+            399701
+          ],
+          [
+            399701,
+            399797
+          ],
+          [
+            399797,
+            399799
+          ],
+          [
+            399799,
+            399803
+          ],
+          [
+            399803,
+            399827
+          ],
+          [
+            399827,
+            399863
+          ],
+          [
+            399863,
+            399929
+          ],
+          [
+            399929,
+            400003
+          ],
+          [
+            400003,
+            400013
+          ],
+          [
+            400013,
+            400019
+          ],
+          [
+            400019,
+            400021
+          ],
+          [
+            400021,
+            400063
+          ],
+          [
+            400063,
+            400091
+          ],
+          [
+            400091,
+            400189
+          ],
+          [
+            400189,
+            400219
+          ],
+          [
+            400219,
+            400271
+          ],
+          [
+            400271,
+            400289
+          ],
+          [
+            400289,
+            400327
+          ],
+          [
+            400327,
+            400397
+          ],
+          [
+            400397,
+            400399
+          ],
+          [
+            400399,
+            400483
+          ],
+          [
+            400483,
+            400493
+          ],
+          [
+            400493,
+            400531
+          ],
+          [
+            400531,
+            400541
+          ],
+          [
+            400541,
+            400549
+          ],
+          [
+            400549,
+            400553
+          ],
+          [
+            400553,
+            400573
+          ],
+          [
+            400573,
+            400583
+          ],
+          [
+            400583,
+            400633
+          ],
+          [
+            400633,
+            400649
+          ],
+          [
+            400649,
+            400661
+          ],
+          [
+            400661,
+            400663
+          ],
+          [
+            400663,
+            400781
+          ],
+          [
+            400781,
+            400783
+          ],
+          [
+            400783,
+            400789
+          ],
+          [
+            400789,
+            400801
+          ],
+          [
+            400801,
+            400817
+          ],
+          [
+            400817,
+            400819
+          ],
+          [
+            400819,
+            400847
+          ],
+          [
+            400847,
+            400879
+          ],
+          [
+            400879,
+            400891
+          ],
+          [
+            400891,
+            400909
+          ],
+          [
+            400909,
+            400921
+          ],
+          [
+            400921,
+            400951
+          ],
+          [
+            400951,
+            400987
+          ],
+          [
+            400987,
+            400993
+          ],
+          [
+            400993,
+            401003
+          ],
+          [
+            401003,
+            401059
+          ],
+          [
+            401059,
+            401111
+          ],
+          [
+            401111,
+            401131
+          ],
+          [
+            401131,
+            401153
+          ],
+          [
+            401153,
+            401207
+          ],
+          [
+            401207,
+            401213
+          ],
+          [
+            401213,
+            401227
+          ],
+          [
+            401227,
+            401249
+          ],
+          [
+            401249,
+            401351
+          ],
+          [
+            401351,
+            401383
+          ],
+          [
+            401383,
+            401437
+          ],
+          [
+            401437,
+            401449
+          ],
+          [
+            401449,
+            401459
+          ],
+          [
+            401459,
+            401461
+          ],
+          [
+            401461,
+            401497
+          ],
+          [
+            401497,
+            401501
+          ],
+          [
+            401501,
+            401503
+          ],
+          [
+            401503,
+            401549
+          ],
+          [
+            401549,
+            401579
+          ],
+          [
+            401579,
+            401617
+          ],
+          [
+            401617,
+            401623
+          ],
+          [
+            401623,
+            401633
+          ],
+          [
+            401633,
+            401683
+          ],
+          [
+            401683,
+            401699
+          ],
+          [
+            401699,
+            401747
+          ],
+          [
+            401747,
+            401767
+          ],
+          [
+            401767,
+            401801
+          ],
+          [
+            401801,
+            401837
+          ],
+          [
+            401837,
+            401851
+          ],
+          [
+            401851,
+            401881
+          ],
+          [
+            401881,
+            401893
+          ],
+          [
+            401893,
+            401927
+          ],
+          [
+            401927,
+            401963
+          ],
+          [
+            401963,
+            402001
+          ],
+          [
+            402001,
+            402019
+          ],
+          [
+            402019,
+            402041
+          ],
+          [
+            402041,
+            402047
+          ],
+          [
+            402047,
+            402113
+          ],
+          [
+            402113,
+            402119
+          ],
+          [
+            402119,
+            402151
+          ],
+          [
+            402151,
+            402161
+          ],
+          [
+            402161,
+            402187
+          ],
+          [
+            402187,
+            402229
+          ],
+          [
+            402229,
+            402257
+          ],
+          [
+            402257,
+            402289
+          ],
+          [
+            402289,
+            402377
+          ],
+          [
+            402377,
+            402397
+          ],
+          [
+            402397,
+            402481
+          ],
+          [
+            402481,
+            402533
+          ],
+          [
+            402533,
+            402599
+          ],
+          [
+            402599,
+            402617
+          ],
+          [
+            402617,
+            402637
+          ],
+          [
+            402637,
+            402653
+          ],
+          [
+            402653,
+            402673
+          ],
+          [
+            402673,
+            402709
+          ],
+          [
+            402709,
+            402719
+          ],
+          [
+            402719,
+            402733
+          ],
+          [
+            402733,
+            402749
+          ],
+          [
+            402749,
+            402791
+          ],
+          [
+            402791,
+            402811
+          ],
+          [
+            402811,
+            402827
+          ],
+          [
+            402827,
+            402877
+          ],
+          [
+            402877,
+            402901
+          ],
+          [
+            402901,
+            402977
+          ],
+          [
+            402977,
+            403021
+          ],
+          [
+            403021,
+            403099
+          ],
+          [
+            403099,
+            403111
+          ],
+          [
+            403111,
+            403127
+          ],
+          [
+            403127,
+            403157
+          ],
+          [
+            403157,
+            403177
+          ],
+          [
+            403177,
+            403201
+          ],
+          [
+            403201,
+            403231
+          ],
+          [
+            403231,
+            403343
+          ],
+          [
+            403343,
+            403357
+          ],
+          [
+            403357,
+            403367
+          ],
+          [
+            403367,
+            403373
+          ],
+          [
+            403373,
+            403379
+          ],
+          [
+            403379,
+            403421
+          ],
+          [
+            403421,
+            403441
+          ],
+          [
+            403441,
+            403457
+          ],
+          [
+            403457,
+            403517
+          ],
+          [
+            403517,
+            403519
+          ],
+          [
+            403519,
+            403531
+          ],
+          [
+            403531,
+            403561
+          ],
+          [
+            403561,
+            403573
+          ],
+          [
+            403573,
+            403583
+          ],
+          [
+            403583,
+            403609
+          ],
+          [
+            403609,
+            403639
+          ],
+          [
+            403639,
+            403643
+          ],
+          [
+            403643,
+            403691
+          ],
+          [
+            403691,
+            403723
+          ],
+          [
+            403723,
+            403747
+          ],
+          [
+            403747,
+            403751
+          ],
+          [
+            403751,
+            403771
+          ],
+          [
+            403771,
+            403789
+          ],
+          [
+            403789,
+            403841
+          ],
+          [
+            403841,
+            403847
+          ],
+          [
+            403847,
+            403853
+          ],
+          [
+            403853,
+            403859
+          ],
+          [
+            403859,
+            403967
+          ],
+          [
+            403967,
+            404083
+          ],
+          [
+            404083,
+            404093
+          ],
+          [
+            404093,
+            404143
+          ],
+          [
+            404143,
+            404171
+          ],
+          [
+            404171,
+            404207
+          ],
+          [
+            404207,
+            404227
+          ],
+          [
+            404227,
+            404233
+          ],
+          [
+            404233,
+            404279
+          ],
+          [
+            404279,
+            404297
+          ],
+          [
+            404297,
+            404359
+          ],
+          [
+            404359,
+            404407
+          ],
+          [
+            404407,
+            404441
+          ],
+          [
+            404441,
+            404471
+          ],
+          [
+            404471,
+            404473
+          ],
+          [
+            404473,
+            404477
+          ],
+          [
+            404477,
+            404543
+          ],
+          [
+            404543,
+            404603
+          ],
+          [
+            404603,
+            404609
+          ],
+          [
+            404609,
+            404611
+          ],
+          [
+            404611,
+            404627
+          ],
+          [
+            404627,
+            404633
+          ],
+          [
+            404633,
+            404689
+          ],
+          [
+            404689,
+            404737
+          ],
+          [
+            404737,
+            404741
+          ],
+          [
+            404741,
+            404797
+          ],
+          [
+            404797,
+            404801
+          ],
+          [
+            404801,
+            404809
+          ],
+          [
+            404809,
+            404813
+          ],
+          [
+            404813,
+            404839
+          ],
+          [
+            404839,
+            404863
+          ],
+          [
+            404863,
+            404897
+          ],
+          [
+            404897,
+            404933
+          ],
+          [
+            404933,
+            404939
+          ],
+          [
+            404939,
+            404993
+          ],
+          [
+            404993,
+            405019
+          ],
+          [
+            405019,
+            405107
+          ],
+          [
+            405107,
+            405151
+          ],
+          [
+            405151,
+            405173
+          ],
+          [
+            405173,
+            405193
+          ],
+          [
+            405193,
+            405233
+          ],
+          [
+            405233,
+            405311
+          ],
+          [
+            405311,
+            405319
+          ],
+          [
+            405319,
+            405337
+          ],
+          [
+            405337,
+            405359
+          ],
+          [
+            405359,
+            405443
+          ],
+          [
+            405443,
+            405451
+          ],
+          [
+            405451,
+            405523
+          ],
+          [
+            405523,
+            405539
+          ],
+          [
+            405539,
+            405547
+          ],
+          [
+            405547,
+            405571
+          ],
+          [
+            405571,
+            405583
+          ],
+          [
+            405583,
+            405617
+          ],
+          [
+            405617,
+            405649
+          ],
+          [
+            405649,
+            405653
+          ],
+          [
+            405653,
+            405673
+          ],
+          [
+            405673,
+            405721
+          ],
+          [
+            405721,
+            405733
+          ],
+          [
+            405733,
+            405761
+          ],
+          [
+            405761,
+            405793
+          ],
+          [
+            405793,
+            405803
+          ],
+          [
+            405803,
+            405809
+          ],
+          [
+            405809,
+            405887
+          ],
+          [
+            405887,
+            405961
+          ],
+          [
+            405961,
+            406031
+          ],
+          [
+            406031,
+            406039
+          ],
+          [
+            406039,
+            406051
+          ],
+          [
+            406051,
+            406057
+          ],
+          [
+            406057,
+            406061
+          ],
+          [
+            406061,
+            406103
+          ],
+          [
+            406103,
+            406141
+          ],
+          [
+            406141,
+            406213
+          ],
+          [
+            406213,
+            406229
+          ],
+          [
+            406229,
+            406291
+          ],
+          [
+            406291,
+            406303
+          ],
+          [
+            406303,
+            406337
+          ],
+          [
+            406337,
+            406363
+          ],
+          [
+            406363,
+            406369
+          ],
+          [
+            406369,
+            406411
+          ],
+          [
+            406411,
+            406421
+          ],
+          [
+            406421,
+            406459
+          ],
+          [
+            406459,
+            406477
+          ],
+          [
+            406477,
+            406529
+          ],
+          [
+            406529,
+            406603
+          ],
+          [
+            406603,
+            406607
+          ],
+          [
+            406607,
+            406711
+          ],
+          [
+            406711,
+            406799
+          ],
+          [
+            406799,
+            406831
+          ],
+          [
+            406831,
+            406849
+          ],
+          [
+            406849,
+            406867
+          ],
+          [
+            406867,
+            406871
+          ],
+          [
+            406871,
+            406877
+          ],
+          [
+            406877,
+            406919
+          ],
+          [
+            406919,
+            406927
+          ],
+          [
+            406927,
+            406933
+          ],
+          [
+            406933,
+            406943
+          ],
+          [
+            406943,
+            406979
+          ],
+          [
+            406979,
+            407003
+          ],
+          [
+            407003,
+            407009
+          ],
+          [
+            407009,
+            407021
+          ],
+          [
+            407021,
+            407039
+          ],
+          [
+            407039,
+            407051
+          ],
+          [
+            407051,
+            407063
+          ],
+          [
+            407063,
+            407101
+          ],
+          [
+            407101,
+            407107
+          ],
+          [
+            407107,
+            407117
+          ],
+          [
+            407117,
+            407129
+          ],
+          [
+            407129,
+            407213
+          ],
+          [
+            407213,
+            407237
+          ],
+          [
+            407237,
+            407243
+          ]
+        ],
+        "certificate_truncated": false,
+        "max_reached_slab_index": 18,
+        "max_reached_slab_label": "[262144,524288)",
+        "transitions": 257
+      },
+      "include_incomplete_slabs": false,
+      "right_core_pairs_before_slab_filter": 124766,
+      "right_core_pairs_in_flow_graph": 53776,
+      "slabs": {
+        "[1024,2048)": {
+          "complete_slab": true,
+          "core_outdegree_max": 1,
+          "core_outdegree_mean": 0.18181818181818182,
+          "core_states": 11,
+          "core_zero_outdegree_fraction": 0.8181818181818182,
+          "longest_core_path_transitions": 1,
+          "max_reached_slab_index": 10,
+          "max_reached_slab_label": "[1024,2048)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 10,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[131072,262144)": {
+          "complete_slab": true,
+          "core_outdegree_max": 11,
+          "core_outdegree_mean": 2.4759932504985427,
+          "core_states": 13038,
+          "core_zero_outdegree_fraction": 0.15753949992330113,
+          "longest_core_path_transitions": 81,
+          "max_reached_slab_index": 18,
+          "max_reached_slab_label": "[262144,524288)",
+          "reach_next_slab_count": 85,
+          "reach_next_slab_fraction": 0.006519404816689676,
+          "slab_index": 17,
+          "survive_to_top_slab_count": 85,
+          "survive_to_top_slab_fraction": 0.006519404816689676
+        },
+        "[16384,32768)": {
+          "complete_slab": true,
+          "core_outdegree_max": 5,
+          "core_outdegree_mean": 1.0134310134310134,
+          "core_states": 819,
+          "core_zero_outdegree_fraction": 0.3797313797313797,
+          "longest_core_path_transitions": 15,
+          "max_reached_slab_index": 15,
+          "max_reached_slab_label": "[32768,65536)",
+          "reach_next_slab_count": 8,
+          "reach_next_slab_fraction": 0.009768009768009768,
+          "slab_index": 14,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[2048,4096)": {
+          "complete_slab": true,
+          "core_outdegree_max": 2,
+          "core_outdegree_mean": 0.4090909090909091,
+          "core_states": 44,
+          "core_zero_outdegree_fraction": 0.6363636363636364,
+          "longest_core_path_transitions": 3,
+          "max_reached_slab_index": 11,
+          "max_reached_slab_label": "[2048,4096)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 11,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[262144,524288)": {
+          "complete_slab": true,
+          "core_outdegree_max": 11,
+          "core_outdegree_mean": 3.135016772269847,
+          "core_states": 32196,
+          "core_zero_outdegree_fraction": 0.12588520313082371,
+          "longest_core_path_transitions": 257,
+          "max_reached_slab_index": 18,
+          "max_reached_slab_label": "[262144,524288)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 18,
+          "survive_to_top_slab_count": 32196,
+          "survive_to_top_slab_fraction": 1.0
+        },
+        "[32768,65536)": {
+          "complete_slab": true,
+          "core_outdegree_max": 7,
+          "core_outdegree_mean": 1.362200956937799,
+          "core_states": 2090,
+          "core_zero_outdegree_fraction": 0.3095693779904306,
+          "longest_core_path_transitions": 17,
+          "max_reached_slab_index": 15,
+          "max_reached_slab_label": "[32768,65536)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 15,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[4096,8192)": {
+          "complete_slab": true,
+          "core_outdegree_max": 4,
+          "core_outdegree_mean": 0.5957446808510638,
+          "core_states": 141,
+          "core_zero_outdegree_fraction": 0.5815602836879432,
+          "longest_core_path_transitions": 4,
+          "max_reached_slab_index": 12,
+          "max_reached_slab_label": "[4096,8192)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 12,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[512,1024)": {
+          "complete_slab": true,
+          "core_outdegree_max": 1,
+          "core_outdegree_mean": 0.2,
+          "core_states": 5,
+          "core_zero_outdegree_fraction": 0.8,
+          "longest_core_path_transitions": 1,
+          "max_reached_slab_index": 9,
+          "max_reached_slab_label": "[512,1024)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 9,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[65536,131072)": {
+          "complete_slab": true,
+          "core_outdegree_max": 7,
+          "core_outdegree_mean": 1.7772335423197492,
+          "core_states": 5104,
+          "core_zero_outdegree_fraction": 0.22864420062695925,
+          "longest_core_path_transitions": 40,
+          "max_reached_slab_index": 17,
+          "max_reached_slab_label": "[131072,262144)",
+          "reach_next_slab_count": 19,
+          "reach_next_slab_fraction": 0.0037225705329153604,
+          "slab_index": 16,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[8192,16384)": {
+          "complete_slab": true,
+          "core_outdegree_max": 4,
+          "core_outdegree_mean": 0.7896341463414634,
+          "core_states": 328,
+          "core_zero_outdegree_fraction": 0.4695121951219512,
+          "longest_core_path_transitions": 8,
+          "max_reached_slab_index": 13,
+          "max_reached_slab_label": "[8192,16384)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 13,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        }
+      },
+      "source_cap": 999747,
+      "successor_cap": 1000192,
+      "top_slab_index": 18,
+      "top_slab_label": "[262144,524288)"
+    },
+    {
+      "buffer": {
+        "kind": "power",
+        "name": "theta=0.4",
+        "parameter": 0.4
+      },
+      "buffered_pairs_before_core_filter": 3416846,
+      "cap": 1000000,
+      "earliest_to_top_path": {
+        "certificate": [
+          [
+            261473,
+            261589
+          ],
+          [
+            261589,
+            261617
+          ],
+          [
+            261617,
+            261623
+          ],
+          [
+            261623,
+            261659
+          ],
+          [
+            261659,
+            261731
+          ],
+          [
+            261731,
+            261797
+          ],
+          [
+            261797,
+            261853
+          ],
+          [
+            261853,
+            261871
+          ],
+          [
+            261871,
+            261883
+          ],
+          [
+            261883,
+            261889
+          ],
+          [
+            261889,
+            261967
+          ],
+          [
+            261967,
+            262013
+          ],
+          [
+            262013,
+            262057
+          ],
+          [
+            262057,
+            262063
+          ],
+          [
+            262063,
+            262099
+          ],
+          [
+            262099,
+            262159
+          ],
+          [
+            262159,
+            262169
+          ],
+          [
+            262169,
+            262183
+          ],
+          [
+            262183,
+            262211
+          ],
+          [
+            262211,
+            262243
+          ],
+          [
+            262243,
+            262267
+          ],
+          [
+            262267,
+            262279
+          ],
+          [
+            262279,
+            262309
+          ],
+          [
+            262309,
+            262319
+          ],
+          [
+            262319,
+            262397
+          ],
+          [
+            262397,
+            262417
+          ],
+          [
+            262417,
+            262481
+          ]
+        ],
+        "certificate_truncated": false,
+        "start_slab_index": 17,
+        "start_slab_label": "[131072,262144)",
+        "transitions": 26
+      },
+      "global_best_path": {
+        "certificate": [
+          [
+            457967,
+            458141
+          ],
+          [
+            458141,
+            458153
+          ],
+          [
+            458153,
+            458177
+          ],
+          [
+            458177,
+            458231
+          ],
+          [
+            458231,
+            458233
+          ],
+          [
+            458233,
+            458267
+          ],
+          [
+            458267,
+            458329
+          ],
+          [
+            458329,
+            458351
+          ],
+          [
+            458351,
+            458383
+          ],
+          [
+            458383,
+            458387
+          ],
+          [
+            458387,
+            458389
+          ],
+          [
+            458389,
+            458411
+          ],
+          [
+            458411,
+            458417
+          ],
+          [
+            458417,
+            458429
+          ],
+          [
+            458429,
+            458431
+          ],
+          [
+            458431,
+            458443
+          ],
+          [
+            458443,
+            458581
+          ],
+          [
+            458581,
+            458657
+          ],
+          [
+            458657,
+            458671
+          ],
+          [
+            458671,
+            458687
+          ],
+          [
+            458687,
+            458699
+          ],
+          [
+            458699,
+            458723
+          ],
+          [
+            458723,
+            458737
+          ],
+          [
+            458737,
+            458743
+          ],
+          [
+            458743,
+            458803
+          ],
+          [
+            458803,
+            458833
+          ],
+          [
+            458833,
+            458933
+          ],
+          [
+            458933,
+            458989
+          ],
+          [
+            458989,
+            459001
+          ],
+          [
+            459001,
+            459061
+          ],
+          [
+            459061,
+            459131
+          ],
+          [
+            459131,
+            459161
+          ],
+          [
+            459161,
+            459163
+          ],
+          [
+            459163,
+            459253
+          ],
+          [
+            459253,
+            459259
+          ],
+          [
+            459259,
+            459307
+          ],
+          [
+            459307,
+            459311
+          ],
+          [
+            459311,
+            459409
+          ],
+          [
+            459409,
+            459413
+          ],
+          [
+            459413,
+            459461
+          ],
+          [
+            459461,
+            459491
+          ],
+          [
+            459491,
+            459499
+          ],
+          [
+            459499,
+            459581
+          ],
+          [
+            459581,
+            459587
+          ],
+          [
+            459587,
+            459617
+          ],
+          [
+            459617,
+            459643
+          ],
+          [
+            459643,
+            459659
+          ],
+          [
+            459659,
+            459709
+          ],
+          [
+            459709,
+            459721
+          ],
+          [
+            459721,
+            459727
+          ],
+          [
+            459727,
+            459869
+          ],
+          [
+            459869,
+            459887
+          ],
+          [
+            459887,
+            459917
+          ],
+          [
+            459917,
+            459959
+          ],
+          [
+            459959,
+            459967
+          ],
+          [
+            459967,
+            459983
+          ],
+          [
+            459983,
+            459997
+          ],
+          [
+            459997,
+            460043
+          ],
+          [
+            460043,
+            460049
+          ],
+          [
+            460049,
+            460067
+          ],
+          [
+            460067,
+            460129
+          ],
+          [
+            460129,
+            460153
+          ],
+          [
+            460153,
+            460193
+          ],
+          [
+            460193,
+            460277
+          ],
+          [
+            460277,
+            460279
+          ],
+          [
+            460279,
+            460303
+          ],
+          [
+            460303,
+            460321
+          ],
+          [
+            460321,
+            460331
+          ],
+          [
+            460331,
+            460363
+          ],
+          [
+            460363,
+            460423
+          ],
+          [
+            460423,
+            460429
+          ],
+          [
+            460429,
+            460441
+          ],
+          [
+            460441,
+            460469
+          ],
+          [
+            460469,
+            460511
+          ],
+          [
+            460511,
+            460583
+          ],
+          [
+            460583,
+            460591
+          ],
+          [
+            460591,
+            460597
+          ],
+          [
+            460597,
+            460601
+          ],
+          [
+            460601,
+            460631
+          ],
+          [
+            460631,
+            460639
+          ],
+          [
+            460639,
+            460651
+          ],
+          [
+            460651,
+            460679
+          ],
+          [
+            460679,
+            460739
+          ],
+          [
+            460739,
+            460763
+          ],
+          [
+            460763,
+            460879
+          ],
+          [
+            460879,
+            461029
+          ],
+          [
+            461029,
+            461033
+          ],
+          [
+            461033,
+            461039
+          ],
+          [
+            461039,
+            461107
+          ],
+          [
+            461107,
+            461113
+          ],
+          [
+            461113,
+            461177
+          ],
+          [
+            461177,
+            461189
+          ],
+          [
+            461189,
+            461213
+          ],
+          [
+            461213,
+            461243
+          ],
+          [
+            461243,
+            461371
+          ],
+          [
+            461371,
+            461387
+          ],
+          [
+            461387,
+            461389
+          ],
+          [
+            461389,
+            461401
+          ],
+          [
+            461401,
+            461459
+          ],
+          [
+            461459,
+            461473
+          ],
+          [
+            461473,
+            461509
+          ],
+          [
+            461509,
+            461551
+          ],
+          [
+            461551,
+            461611
+          ],
+          [
+            461611,
+            461663
+          ],
+          [
+            461663,
+            461711
+          ],
+          [
+            461711,
+            461743
+          ],
+          [
+            461743,
+            461753
+          ],
+          [
+            461753,
+            461759
+          ],
+          [
+            461759,
+            461761
+          ],
+          [
+            461761,
+            461809
+          ],
+          [
+            461809,
+            461837
+          ],
+          [
+            461837,
+            461893
+          ],
+          [
+            461893,
+            461927
+          ],
+          [
+            461927,
+            461939
+          ],
+          [
+            461939,
+            461959
+          ],
+          [
+            461959,
+            461969
+          ],
+          [
+            461969,
+            461987
+          ],
+          [
+            461987,
+            462031
+          ],
+          [
+            462031,
+            462053
+          ],
+          [
+            462053,
+            462127
+          ],
+          [
+            462127,
+            462157
+          ],
+          [
+            462157,
+            462169
+          ],
+          [
+            462169,
+            462223
+          ],
+          [
+            462223,
+            462257
+          ],
+          [
+            462257,
+            462313
+          ],
+          [
+            462313,
+            462317
+          ],
+          [
+            462317,
+            462353
+          ],
+          [
+            462353,
+            462391
+          ],
+          [
+            462391,
+            462457
+          ],
+          [
+            462457,
+            462503
+          ],
+          [
+            462503,
+            462523
+          ],
+          [
+            462523,
+            462617
+          ],
+          [
+            462617,
+            462647
+          ],
+          [
+            462647,
+            462701
+          ],
+          [
+            462701,
+            462751
+          ],
+          [
+            462751,
+            462793
+          ],
+          [
+            462793,
+            462797
+          ],
+          [
+            462797,
+            462853
+          ],
+          [
+            462853,
+            462857
+          ],
+          [
+            462857,
+            462877
+          ],
+          [
+            462877,
+            462919
+          ],
+          [
+            462919,
+            462941
+          ],
+          [
+            462941,
+            462949
+          ],
+          [
+            462949,
+            462971
+          ],
+          [
+            462971,
+            462977
+          ],
+          [
+            462977,
+            463027
+          ],
+          [
+            463027,
+            463069
+          ],
+          [
+            463069,
+            463079
+          ],
+          [
+            463079,
+            463081
+          ],
+          [
+            463081,
+            463123
+          ],
+          [
+            463123,
+            463139
+          ],
+          [
+            463139,
+            463193
+          ],
+          [
+            463193,
+            463271
+          ],
+          [
+            463271,
+            463349
+          ],
+          [
+            463349,
+            463361
+          ],
+          [
+            463361,
+            463367
+          ],
+          [
+            463367,
+            463469
+          ],
+          [
+            463469,
+            463487
+          ],
+          [
+            463487,
+            463517
+          ],
+          [
+            463517,
+            463553
+          ],
+          [
+            463553,
+            463571
+          ],
+          [
+            463571,
+            463597
+          ],
+          [
+            463597,
+            463637
+          ],
+          [
+            463637,
+            463699
+          ],
+          [
+            463699,
+            463817
+          ],
+          [
+            463817,
+            463819
+          ],
+          [
+            463819,
+            463877
+          ],
+          [
+            463877,
+            463901
+          ],
+          [
+            463901,
+            464041
+          ],
+          [
+            464041,
+            464063
+          ],
+          [
+            464063,
+            464077
+          ],
+          [
+            464077,
+            464111
+          ],
+          [
+            464111,
+            464179
+          ],
+          [
+            464179,
+            464183
+          ]
+        ],
+        "certificate_truncated": false,
+        "max_reached_slab_index": 18,
+        "max_reached_slab_label": "[262144,524288)",
+        "transitions": 173
+      },
+      "include_incomplete_slabs": false,
+      "right_core_pairs_before_slab_filter": 104673,
+      "right_core_pairs_in_flow_graph": 44473,
+      "slabs": {
+        "[1024,2048)": {
+          "complete_slab": true,
+          "core_outdegree_max": 0,
+          "core_outdegree_mean": 0.0,
+          "core_states": 8,
+          "core_zero_outdegree_fraction": 1.0,
+          "longest_core_path_transitions": 0,
+          "max_reached_slab_index": 10,
+          "max_reached_slab_label": "[1024,2048)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 10,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[131072,262144)": {
+          "complete_slab": true,
+          "core_outdegree_max": 11,
+          "core_outdegree_mean": 2.4336730010098226,
+          "core_states": 10893,
+          "core_zero_outdegree_fraction": 0.17139447351510145,
+          "longest_core_path_transitions": 59,
+          "max_reached_slab_index": 18,
+          "max_reached_slab_label": "[262144,524288)",
+          "reach_next_slab_count": 37,
+          "reach_next_slab_fraction": 0.0033966767648948865,
+          "slab_index": 17,
+          "survive_to_top_slab_count": 37,
+          "survive_to_top_slab_fraction": 0.0033966767648948865
+        },
+        "[16384,32768)": {
+          "complete_slab": true,
+          "core_outdegree_max": 4,
+          "core_outdegree_mean": 0.909375,
+          "core_states": 640,
+          "core_zero_outdegree_fraction": 0.4296875,
+          "longest_core_path_transitions": 16,
+          "max_reached_slab_index": 15,
+          "max_reached_slab_label": "[32768,65536)",
+          "reach_next_slab_count": 1,
+          "reach_next_slab_fraction": 0.0015625,
+          "slab_index": 14,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[2048,4096)": {
+          "complete_slab": true,
+          "core_outdegree_max": 1,
+          "core_outdegree_mean": 0.1724137931034483,
+          "core_states": 29,
+          "core_zero_outdegree_fraction": 0.8275862068965517,
+          "longest_core_path_transitions": 2,
+          "max_reached_slab_index": 11,
+          "max_reached_slab_label": "[2048,4096)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 11,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[262144,524288)": {
+          "complete_slab": true,
+          "core_outdegree_max": 12,
+          "core_outdegree_mean": 3.132011605415861,
+          "core_states": 26884,
+          "core_zero_outdegree_fraction": 0.13922779348311262,
+          "longest_core_path_transitions": 173,
+          "max_reached_slab_index": 18,
+          "max_reached_slab_label": "[262144,524288)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 18,
+          "survive_to_top_slab_count": 26884,
+          "survive_to_top_slab_fraction": 1.0
+        },
+        "[32768,65536)": {
+          "complete_slab": true,
+          "core_outdegree_max": 6,
+          "core_outdegree_mean": 1.2701185277604492,
+          "core_states": 1603,
+          "core_zero_outdegree_fraction": 0.3456019962570181,
+          "longest_core_path_transitions": 23,
+          "max_reached_slab_index": 15,
+          "max_reached_slab_label": "[32768,65536)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 15,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[4096,8192)": {
+          "complete_slab": true,
+          "core_outdegree_max": 3,
+          "core_outdegree_mean": 0.47,
+          "core_states": 100,
+          "core_zero_outdegree_fraction": 0.63,
+          "longest_core_path_transitions": 3,
+          "max_reached_slab_index": 12,
+          "max_reached_slab_label": "[4096,8192)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 12,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[512,1024)": {
+          "complete_slab": true,
+          "core_outdegree_max": 0,
+          "core_outdegree_mean": 0.0,
+          "core_states": 3,
+          "core_zero_outdegree_fraction": 1.0,
+          "longest_core_path_transitions": 0,
+          "max_reached_slab_index": 9,
+          "max_reached_slab_label": "[512,1024)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 9,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[65536,131072)": {
+          "complete_slab": true,
+          "core_outdegree_max": 7,
+          "core_outdegree_mean": 1.671165644171779,
+          "core_states": 4075,
+          "core_zero_outdegree_fraction": 0.258159509202454,
+          "longest_core_path_transitions": 28,
+          "max_reached_slab_index": 17,
+          "max_reached_slab_label": "[131072,262144)",
+          "reach_next_slab_count": 27,
+          "reach_next_slab_fraction": 0.006625766871165644,
+          "slab_index": 16,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[8192,16384)": {
+          "complete_slab": true,
+          "core_outdegree_max": 5,
+          "core_outdegree_mean": 0.6890756302521008,
+          "core_states": 238,
+          "core_zero_outdegree_fraction": 0.542016806722689,
+          "longest_core_path_transitions": 8,
+          "max_reached_slab_index": 13,
+          "max_reached_slab_label": "[8192,16384)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 13,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        }
+      },
+      "source_cap": 999747,
+      "successor_cap": 1000253,
+      "top_slab_index": 18,
+      "top_slab_label": "[262144,524288)"
+    }
+  ],
+  "source_cap": 999747
+}

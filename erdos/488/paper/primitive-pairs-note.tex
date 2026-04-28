@@ -1,0 +1,211 @@
+\section{Primitive Pairs}
+
+This section records what is currently proved for primitive pairs, and what has
+been verified computationally.
+
+\begin{theorem}[Adjacent primitive pairs]\label{thm:adjacent-pairs}
+Let
+\[
+A=\{b-1,b\}, \qquad b\ge 4.
+\]
+Then for all integers $m>n\ge b$,
+\[
+\frac{G(m)}{2G(n)}\le \left(\frac{2b-3}{2b-2}\right)^2<1.
+\]
+Moreover the maximum is attained at
+\[
+n=2b-3,\qquad m=(b-1)^2.
+\]
+\end{theorem}
+
+\begin{proof}
+Write $c=b-1$, so $A=\{c,c+1\}$ with $c\ge 3$, and let
+\[
+\ell=c(c+1).
+\]
+Since $\gcd(c,c+1)=1$, for every $x\ge 0$ we have
+\[
+F(x)=\floor{\frac{x}{c}}+\floor{\frac{x}{c+1}}-\floor{\frac{x}{\ell}}.
+\]
+The density is
+\[
+\delta_A=\frac{1}{c}+\frac{1}{c+1}-\frac{1}{\ell}=\frac{2}{c+1},
+\]
+and
+\[
+F(x+\ell)=F(x)+2c.
+\]
+Hence
+\[
+G(x+\ell)=\frac{F(x)+2c}{x+\ell}
+=\frac{x}{x+\ell}G(x)+\frac{\ell}{x+\ell}\cdot \frac{2}{c+1}.
+\]
+So $G(x+\ell)$ is a convex combination of $G(x)$ and $\delta_A=2/(c+1)$.
+Therefore, once the extrema of $G$ on $[b,\ell]$ are known, no later translate
+can create a larger maximum or a smaller minimum: values above $\delta_A$ can
+only decrease under translation by $\ell$, and values below $\delta_A$ can only
+increase.
+
+It remains to analyze $G$ on the first period $[b,\ell]$.
+
+For $1\le j\le c$, set
+\[
+I_j=[jc,\; j(c+1)-1],
+\]
+and for $1\le j\le c-1$, set
+\[
+J_j=[j(c+1),\; (j+1)c-1].
+\]
+Because
+\[
+j(c+1)<(j+1)c \qquad (1\le j\le c-1),
+\]
+the hit sequence below $\ell$ interlaces as
+\[
+c,\ c+1,\ 2c,\ 2(c+1),\ \ldots,\ c^2,\ c(c+1),
+\]
+so on these intervals:
+\[
+F(x)=2j-1 \quad \text{for } x\in I_j,
+\qquad
+F(x)=2j \quad \text{for } x\in J_j.
+\]
+Therefore
+\[
+G(x)=\frac{2j-1}{x}\quad (x\in I_j),\qquad
+G(x)=\frac{2j}{x}\quad (x\in J_j).
+\]
+
+To find the minimum on $[b,\ell]$, take right endpoints. On $J_j$ this gives
+\[
+\beta_j:=\frac{2j}{(j+1)c-1},
+\]
+and
+\[
+\beta_{j+1}-\beta_j
+=\frac{2(c-1)}{((j+2)c-1)((j+1)c-1)}>0.
+\]
+So $(\beta_j)$ is increasing, and its minimum is
+\[
+\beta_1=\frac{2}{2c-1},
+\]
+attained at $x=2c-1$.
+
+On $I_j$ the right endpoint values are
+\[
+\alpha_j:=\frac{2j-1}{j(c+1)-1},
+\]
+and
+\[
+\alpha_{j+1}-\alpha_j
+=\frac{c-1}{((j+1)(c+1)-1)(j(c+1)-1)}>0.
+\]
+So $(\alpha_j)$ is increasing as well. Since
+\[
+\alpha_2=\frac{3}{2c+1}>\frac{2}{2c-1}=\beta_1
+\qquad (c\ge 3),
+\]
+the global minimum on $[b,\ell]$ is
+\[
+\min_{x\in [b,\ell]} G(x)=G(2c-1)=\frac{2}{2c-1}.
+\]
+
+To find the maximum on $[b,\ell]$, take left endpoints. On $J_j$ the left
+endpoint value is
+\[
+\frac{2j}{j(c+1)}=\frac{2}{c+1},
+\]
+independent of $j$.
+On $I_j$ the left endpoint value is
+\[
+\gamma_j:=\frac{2j-1}{jc},
+\]
+and
+\[
+\gamma_{j+1}-\gamma_j=\frac{1}{cj(j+1)}>0.
+\]
+So $(\gamma_j)$ is increasing, hence its maximum occurs at $j=c$:
+\[
+\gamma_c=\frac{2c-1}{c^2}=G(c^2).
+\]
+Since
+\[
+\frac{2c-1}{c^2}-\frac{2}{c+1}
+=\frac{c-1}{c^2(c+1)}>0,
+\]
+the global maximum on $[b,\ell]$ is
+\[
+\max_{x\in [b,\ell]} G(x)=G(c^2)=\frac{2c-1}{c^2}.
+\]
+
+By the convex-combination identity above, these are also the global minimum and
+maximum of $G(x)$ for all $x\ge b$. Therefore, for every $m>n\ge b$,
+\[
+\frac{G(m)}{2G(n)}
+\le
+\frac{\max_{x\ge b} G(x)}{2\min_{x\ge b} G(x)}
+=
+\frac{(2c-1)/c^2}{2\cdot 2/(2c-1)}
+=\frac{(2c-1)^2}{4c^2}.
+\]
+Equality is attained at
+\[
+n=2c-1=2b-3,\qquad m=c^2=(b-1)^2,
+\]
+so
+\[
+\sup_{m>n\ge b}\frac{G(m)}{2G(n)}
+=\left(\frac{2c-1}{2c}\right)^2
+=\left(\frac{2b-3}{2b-2}\right)^2<1.
+\]
+\end{proof}
+
+\begin{remark}
+The exceptional smallest adjacent pair $A=\{2,3\}$ does not fit the formula in
+Theorem~\ref{thm:adjacent-pairs}. A direct check gives
+\[
+\sup_{m>n\ge 3}\frac{G(m)}{2G(n)}=\frac{49}{80}=0.6125,
+\]
+attained at $(n,m)=(7,10)$.
+\end{remark}
+
+\begin{proposition}[Primitive pairs up to $500$]\label{prop:pairs500}
+For every primitive pair $A=\{a,b\}$ with $a<b\le 500$ and $a\nmid b$, an exact
+finite-horizon scan up to $m\le 10000b$ gives
+\[
+\sup_{10000b\ge m>n\ge b}\frac{G(m)}{2G(n)}<1.
+\]
+More precisely:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item for every $b\in\{3,\dots,500\}$, the worst scanned pair with maximum
+value $b$ is the adjacent pair $\{b-1,b\}$;
+\item for every $b\in\{4,\dots,500\}$, the worst scanned ratio equals
+\[
+\left(\frac{2b-3}{2b-2}\right)^2
+\]
+with maximizing pair
+\[
+n=2b-3,\qquad m=(b-1)^2;
+\]
+\item the overall worst scanned pair is $\{499,500\}$, with ratio
+\[
+\left(\frac{997}{998}\right)^2
+=0.997996995996\ldots\,.
+\]
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+This was checked by exact computation on all primitive pairs $\{a,b\}$ with
+$b\le 500$, $a<b$, $a\nmid b$, using the hit-position formula for the exact
+finite-horizon maximum. The scan covered $122{,}060$ primitive pairs, found no
+ratio $\ge 1$, and found no pair beating the adjacent pair $\{b-1,b\}$ for the
+same $b$.
+\end{proof}
+
+\begin{remark}
+Theorem~\ref{thm:adjacent-pairs} proves EP-488 for the full adjacent family
+$\{b-1,b\}$. What remains open for a complete theorem on all primitive pairs is
+the extremal step: to prove analytically that for fixed $b$, no primitive pair
+$\{a,b\}$ is worse than $\{b-1,b\}$.
+\end{remark}

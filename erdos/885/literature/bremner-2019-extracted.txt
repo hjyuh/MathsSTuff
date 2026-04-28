@@ -1,0 +1,666 @@
+pages 10
+
+===== PAGE 1 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+International Journal of Number Theory
+(2019)
+c⃝ World Scientiﬁc Publishing Company
+DOI: 10.1142/S1793042119500581
+On a problem of Erd¨os related to common factor diﬀerences
+Andrew Bremner
+School of Mathematical and Statistical Sciences
+Arizona State University, Tempe, AZ 85287-1804, USA
+bremner@asu.edu
+Received 2 July 2018
+Accepted 26 November 2018
+Published 14 January 2019
+Let n be a positive integer. The factor-diﬀerence set D(n)o f n is the set of absolute
+values d of the diﬀerences between the factors of any factorization of n as a product
+of two integers. Erd˝os and Rosenfeld [The factor–diﬀerence set of integers, Acta Arith.
+79(4) (1997) 353–359] ask whether for every positive integern there exist integers N1 <
+··· <N n such that | Tn
+i=1 D(Ni)|≥ n, and prove this is true whenn = 2. Urroz [A note
+on a conjecture of Erd˝os and Rosenfeld, J. Number Theory 78(1) (1999) 140–143] shows
+t h er e s u l tt r u ef o rn = 3. The ideas of this paper can be extended, and here, we show
+the result true for n = 4 by proving there are inﬁnitely many sets of four integers with
+four common factor diﬀerences.
+Keywords:E r d ¨os problem; common factor diﬀerence; elliptic curve.
+Mathematics Subject Classiﬁcation 2010: 11D41, 11G05, 11B75
+1. Introduction
+Erd¨os observed that the maximum number ofodd integral distances determined by
+3n points in the plane is 3n2, and asked whether the bound could be obtained (the
+answer is yes, by a result of Piepmeyer [3]). In investigating the problem, Erd˝os and
+Rosenfeld [2] supposed 2n points Ki(±(2ki +1 )/2, 0) on the x-axis, for integers ki,
+and hoped to ﬁnd n points Pj(0,p j)o nt h ey-axis, pj ∈ Z, such that all distances
+di,j between Ki and Pj were odd integers. This requires
+4p2
+j =( 2di,j − (2ki + 1))(2di,j +( 2ki +1 ) ),
+and each 4 p2
+j, j =1 ,...,n ,c o n t a i n s4ki +2 , i =1 ,...,n , as diﬀerence between
+factors. If we deﬁne the factor-diﬀerence set D(n)b y
+D(n)= {d : d = |a − b|,a b = n},
+then the above construction leads to asking whether for every positive integer n
+there exist integers N1 < ··· <N n such that | ⋂n
+i=1 D(Ni)|≥ n.T h e yp r o v e
+this result holds when n = 2. (In fact, they show that for all positive integers k,
+1
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 2 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+2 A. Bremner
+there exist integers Ni, i =1 ,...,k with | ⋂k
+i=1 D(Ni)|≥ 2.) Urroz [4] (see also
+Bremner [1], the review of this paper in Mathematical Reviews by the current
+author) shows a similar result true for n = 3. The ideas of this paper can be
+extended, and here, we show the result true forn = 4 by proving there are inﬁnitely
+many sets of four integers with four common factor diﬀerences.
+For the case n = 4, suppose that N
+i, i =1 ,..., 4, are four integers possessing
+four common factor-diﬀerences 2x0,2 y0,2 z0,2 t0. Then we obtain a system of 12
+quadratic equations:
+(Ni =)x2
+i − x2
+0 = y2
+i − y2
+0 = z2
+i − z2
+0 = t2
+i − t2
+0,i =1 ,..., 4. (1.1)
+A solution of this system is said to be non-degenerate if the Ni are distinct and
+non-zero. For example, such a solution is given by the four integers
+(N1,N 2,N 3,N 4) = (26128575, 291722431, 561117375, 713526975), (1.2)
+with common factor diﬀerences
+(x0,y 0,z 0,t 0)=( 6 3, 8055, 16695, 37695). (1.3)
+Here, the xi,y i,z i,t i for i =1 ,..., 4, can be computed from (1.1), and equal
+(x1,y 1,z 1,t 1) = (5112, 9540, 17460, 38040),
+(x2,y 2,z 2,t 2) = (17080, 18884, 23884, 41384),
+(x3,y 3,z 3,t 3) = (23688, 25020, 28980, 44520),
+(x4,y 4,z 4,t 4) = (26712, 27900, 31500, 46200).
+(Note: We shall always order numerical solutions so that 0 <x 0 <y 0 <z 0 <t 0.)
+The solution (1.2) trivially gives rise to an inﬁnity of solutions simply by multiplying
+by d2 for any integer d; but our interest is in constructing inﬁnitely many solutions
+with distinct ratios N1 : N2 : N3 : N4. Over many weeks we computed 211 distinct
+solutions in integers to the system (1.1), the ﬁrst few of which, ordered by the sum
+N1 + N2 + N3 + N4, are listed in Appendix A. The above solution at (1.2), (1.3),
+is the one found with minimal x0. It seems highly likely that there should exist a
+parametric solution to the system (1.1), but despite extensive eﬀorts we have (as
+yet) been unable to ﬁnd such. However, it is shown in this paper that there are
+inﬁnitely many distinct integer solutions to (1.1), with consequence that there are
+inﬁnitely many quadruples of integers, each sharing four common factor-diﬀerences.
+2. The Construction
+The system (1.1) is equivalent to
+x
+2
+0 − y2
+0 = x2
+i − y2
+i ,x 2
+0
+− z2
+0 = x2
+i − z2
+i ,x 2
+0
+− t2
+0 = x2
+i − t2
+i ,i =1 ,..., 4.
+(2.1)
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 3 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+On a problem of Erd¨os related to common factor diﬀerences 3
+First, consider the equations
+x2
+0 − y2
+0 = x2
+1 − y2
+1 = x2
+2 − y2
+2; x2
+0 − z2
+0 = x2
+1 − z2
+1 = x2
+2 − z2
+2 .
+We may set
+x0 + y0 = b, x 1 + y1 = c, x 2 + y2 = d,
+x0 − y0 = mcd, x 1 − y1 = mbd, x 2 − y2 = mbc,
+x0 + z0 = pq, x 1 + z1 = pr, x 2 + z2 = ps,
+x0 − z0 = lrs, x 1 − z1 = lqs, x 2 − z2 = lqr;
+so that
+2(x0,x 1,x 2)=( b + mcd, c + mbd, d + mbc)
+=( pq + lrs, pr + lqs, ps + lqr),
+2(y0,y 1,y 2)=( b − mcd, c − mbd, d − mbc),
+2(z0,z 1,z 2)=( pq − lrs, pr − lqs, ps − lqr).
+The compatibility conditions
+b + mcd = pq + lrs, c + mbd = pr + lqs, d + mbc = ps + lqr
+may be solved for l, m, p to give
+(l, m, p)= 1
+∆ (b(c2 − d2)q + c(d2 − b2)r + d(b2 − c2)s, bq(s2 − r2)+ cr(q2 − s2)
++ ds(r2 − q2), −(dqr(b2 − c2)+ brs(c2 − d2)+ csq(d2 − b2))),
+where
+∆= bc(q2 − r2)s + cd(r2 − s2)q + db(s2 − q2)r,
+from which we get the following formulae forx0,y 0,z 0; x1,y 1,z 1; x2,y 2,z 2,i nt e r m s
+of the parameters b, c, d, q, r, s.
+2∆ x0 = −(d2 − b2)c(q2 − r2)s +( b2 − c2)d(s2 − q2)r,
+2∆ y0 =( b2 + d2)c(q2 − r2)s +2 bcd(r2 − s2)q +( b2 + c2)d(s2 − q2)r,
+2∆ z0 = −(d2 − b2)c(q2 + r2)s − (b2 − c2)d(s2 + q2)r − 2(c2 − d2)bqrs;
+2∆ x1 =( c2 − d2)b(q2 − r2)s − (b2 − c2)d(r2 − s2)q,
+2∆ y1 =( c2 + d2)b(q2 − r2)s +( b2 + c2)d(r2 − s2)q +2 bcdr(s2 − q2),
+2∆ z1 = −(c2 − d2)b(q2 + r2)s − (b2 − c2)d(r2 + s2)q − 2cqrs(d2 − b2);
+2∆ x2 =( d2 − b2)c(r2 − s2)q − (c2 − d2)b(s2 − q2)r,
+2∆ y2 =2 bcd(q2 − r2)s +( b2 + d2)c(r2 − s2)q +( c2 + d2)b(s2 − q2)r,
+2∆ z2 = −(c2 − d2)b(s2 + q2)r − (d2 − b2)c(r2 + s2)q − 2(b2 − c2)dqrs).
+(2.2)
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 4 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+4 A. Bremner
+Set (A, B)=( x2
+0 − z2
+0 ,x 2
+0
+− y2
+0), and consider the elliptic curve
+E1 : V 2 = U(U − A)(U − B).
+This curve contains the points P0(x2
+0,x 0y0z0), P1(x2
+1,x 1y1z1), and P2(x2
+2,x 2y2z2).
+Moreover, since x2
+i , x2
+i − A, x2
+i − B, i =0 , 1, 2, are all squares, it follows that the
+points Pi all lie in 2E1(Q). We let x2
+3 be the U-coordinate of any point in 2 E1(Q)
+other than P0, P1, P2, and then necessarily x2
+3 − A and x2
+3 − B will be squares, and
+y3, z3 are determined as rationals. Similarly, for x2
+4.T a k e ,f o re x a m p l e ,
+x2
+3 = U(P1 + P2)=
+( x1y2z2 − x2y1z1
+x2
+1 − x2
+2
+)2
+,
+and
+x2
+4 = U(P0 + P1)=
+( x0y1z1 − x1y0z0
+x2
+0 − x2
+1
+)2
+.
+Then
+(x3,y 3,z 3)=
+( x1y2z2 − x2y1z1
+x2
+1 − x2
+2
+, y1x2z2 − y2x1z1
+y2
+1 − y2
+2
+z1y2x2 − z2y1x1
+z2
+1 − z2
+2
+)
+;
+(x4,y 4,z 4)=
+( x0y1z1 − x1y0z0
+x2
+0 − x2
+1
+, y0x1z1 − y1x0z0
+y2
+0 − y2
+1
+z0y1x1 − z1y0x0
+z2
+0 − z2
+1
+)
+.
+We now have (N1,N 2,N 3,N 4)=( x2
+1 − x2
+0,x 2
+2
+− x2
+0,x 2
+3
+− x2
+0,x 2
+4
+− x2
+0) given by rational
+functions of b, c, d, q, r, s. It remains to ﬁnd t0,...,t 4 with
+t2
+0 + N1 = t2
+1,t 2
+0
++ N2 = t2
+2,t 2
+0
++ N3 = t2
+3,t 2
+0
++ N4 = t2
+4. (2.3)
+The elliptic curve
+E2 : Y 2 = X(X + N1)(X + N2)
+contains the points Qx(x2
+0,x 0x1x2), Qy(y2
+0 ,y 0y1y2), and Qz(z2
+0 ,z 0z1z2), which all
+lie in 2 E2(Q). We can take t2
+0 to be the X-coordinate of any point Qt in 2E2(Q)
+other than Qx,Q y,Q z,a n dt h e n
+t2
+0 + N1 = t2
+1,t 2
+0
++ N2 = t2
+2.
+We choose
+t2
+0 = X(Qx − Qz)=
+( x1x2z0 + x0z1z2
+x2
+0 − z2
+0
+)2
+.
+Then
+(t0,t 1,t 2)=
+( x1x2z0 + x0z1z2
+x2
+0 − z2
+0
+, x2x0z1 + x1z2z0
+x2
+1 − z2
+1
+, x0x1z2 + x2z0z1
+x2
+2 − z2
+2
+)
+. (2.4)
+Of the conditions at (2.3), it remains to satisfy
+t2
+0 + N3 = t2
+3,t 2
+0
++ N4 = t2
+4.
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 5 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+On a problem of Erd¨os related to common factor diﬀerences 5
+It seems that an appropriate strategy now would be to consider the curve
+Y 2 = X(X + N3)(X + N4),
+and argue as in the preceding to obtain t′
+0 with t′2
+0 + N3 = □ and t′2
+0 + N4 = □.
+Then we obtain a single condition for a solution to our problem by equatingt2
+0 = t′2
+0 .
+But this approach seems to lead to intractable polynomials; and thus we resort to
+a diﬀerent curve. Consider
+E
+3 : Y 2 = X(X − N3)(X − (N3 − N2)) = X(X − (x2
+3 − x2
+0))(X − (x2
+3 − x2
+2)),
+with points
+Rx(x2
+3,x 0x2x3),R y(y2
+3 ,y 0y2y3),R z(z2
+3 ,z 0z2z3).
+Take t2
+3 to be the X-coordinate of a point in 2 E3(Q), with t3 ̸= x3,y 3,z 3.F o r
+example (based on perusing tables of solutions),
+t2
+3 = X(Rx + Ry)=
+( x3y0y2 − x0x2y3
+x2
+3 − y2
+3
+)2
+.
+The condition t2
+3 − N3 = t2
+0 now takes the form
+f31f32f33f34 =0 , (2.5)
+where f3i are irreducible polynomials in b, c, d, q, r, s, homogeneous of respective
+degrees 8, 8, 10, 10.
+Similarly, on the curve
+E4 : Y 2 = X(X − N4)(X − (N4 − N2)) = X(X − (x2
+4 − x2
+0))(X − (x2
+4 − x2
+2)),
+with points
+Sx(x2
+4,x 0x2x4),S y(y2
+4 ,y 0y2y4),S z(z2
+4 ,z 0z2z4),
+take
+t2
+4 = X(Sy − Sz)=
+( y0y2z4 + y4z0z2
+y2
+4 − z2
+4
+)2
+.
+The condition t2
+4 − N4 = t2
+0 becomes
+f41f42f43f44 =0 , (2.6)
+where f4i are irreducible polynomials inb, c, d, q, r, sof respective degrees 8, 8, 12, 12.
+We can satisfy Eqs. (2.5), (2.6) by demanding f3i =0 , f4j =0f o rs o m e1≤ i,
+j ≤ 4. By trial, it turns out that ( i, j)=( 4 , 1) is a good choice. Consider the
+equations
+f34 =0 ,f 41 =0 ,
+namely
+b2c4q3r − b2c3dq3r − b2c2d2q3r + b2cd3q3r − 2b3c3q2r2 − bc5q2r2 + b3c2dq2r2
++2 bc4dq2r2 +2 b3cd2q2r2 + bc3d2q2r2 − b3d3q2r2 − 2bc2d3q2r2 + b4c2qr3
++2 b2c4qr3 − 3b2c3dqr3 − 3b2c2d2qr3 +2 b2cd3qr3 + c3d3qr3 − b3c3r4
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 6 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+6 A. Bremner
++ b3c2dr4 + bc3d2r4 − bc2d3r4 − b2c4q3s + b2c3dq3s + b2c2d2q3s − b2cd3q3s
++3 b3c3q2rs − 2b3c2dq2rs − bc4dq2rs − b3cd2q2rs − 2bc3d2q2rs +3 bc2d3q2rs
+− 2b4c2qr2s − b2c4qr2s − b4cdqr2 s +4 b2c3dqr2s +4 b2c2d2qr2s − c4d2qr2s
+− b2cd3qr2s − 2c3d3qr2s + b3c3r3s + b3c2dr3s − 2bc4dr3s − 2b3cd2r3s
++ bc3d2r3s + bc2d3r3s − 2b3c2dq2s2 +2 bc4dq2s2 +2 b3cd2q2s2 − 2bc3d2q2s2
++ b4c2qrs2 − b2c4qrs2 +2 b4cdqrs2 − 2b2c3dqrs2 − 2b2c2d2qrs2 +2 c4d2qrs2
+− b2cd3qrs2 + c3d3qrs2 − b3c3r2s2 + bc5r2s2 + b3d3r2s2 − bc2d3r2s2
+− b4cdqs3 + b2c3dqs3 + b2c2d2qs3 − c4d2qs3 + b3c2drs3 − bc4drs3
+− b3cd2rs3 + bc3d2rs3 =0 ,
+b2c2dq2r − bc3dq2r − b2d3q2r + bcd3q2r − 2b3cdqr2 +2 b2c2dqr2 +2 bcd3qr2
+− 2c2d3qr2 + b3cdr3 − b2c2dr3 − bcd3r3 + c2d3r3 − b2c3q2s + b2cd2q2s
++ bc2d2q2s − bd4q2s +2 b3c2qrs +2 b3d2qrs − 4b2cd2qrs − 4bc2d2qrs
++2 c3d2qrs +2 cd4qrs − 2b3c2r2s + b2c3r2s − b3d2r2s +2 b2cd2r2s
++2 bc2d2r2s − c3d2r2s + bd4r2s − 2cd4r2s − 2b3cdqs2 +2 bc3dqs2 +2 b2d3qs2
+− 2c2d3qs2 +3 b3cdrs2 − 2b2c2drs2 − bc3drs2 − b2d3rs2 − 2bcd3rs2
++3 c2d3rs2 − b3d2s3 + b2cd2s3 + bc2d2s3 − c3d2s3 =0 .
+The second equation is quadratic in q, so it is necessary that the discriminant in q
+be square:
+(b2 − d2)(dr − cs)(cr − ds)((bc + d2)r − (b + c)ds)((b − c)dr − (bc − d2)s)= u2,
+say. This represents the equation of an elliptic quartic C in r, s over Q(b, c, d), and
+a cubic model is
+Y 2 = X(X + b2(b2 − d2))(X − d2(b2 − d2)),
+with mappings
+(X, Y )=
+( − b(b2 − d2)d((b − c)dr − (bc − d2)s)
+(bc + d2)r − (b + c)ds , − b(b4 − d4)du
+((bc + d2)r − (b + c)ds)2
+)
+,
+and inverse
+(r, s, u)=( d(b(b2 − d2)(bc − d2)+( b + c)X),b (b − c)(b − d)d2(b + d)+( bc + d2)X,
+− b(b4 − d4)(c2 − d2)2dY ).
+There is a point of inﬁnite order Q(X, Y )=( b2d2,b 3d3). Now
+Q +( − b2(b2 − d2), 0) =
+( − d4(b2 − d2)
+b2 , − d3(b4 − d4)
+b3
+)
+,
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 7 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+On a problem of Erd¨os related to common factor diﬀerences 7
+and this latter point pulls back to the point on C with (r, s)=( d(b3 − cd2), (b3c −
+d4)). The equation f41 =0n o wg i v e sq = b(b − d)d(c + d). Substitute
+(q, r, s)=( b(b − d)d(c + d),d(b3 − cd2),b 3c − d4) (2.7)
+into f34 = 0. Discarding trivial factors (factors that result in degenerate solutions
+to our problem), there results
+b6 − b5c − 2b4c2 − b5d − 3b4cd + b3c2d + b2c3d − b4d2 − b3cd2 +3 b2c2d2
++ bc3d2 +2 b2cd3 + bc2d3 − c3d3 =0 ,
+and this latter equation deﬁnes a curve of genus 1. A cubic model is
+E : Y 2 = X3 + X2 − 120X + 400,
+with mappings
+(X, Y )=( 4 d(b5 − 3b4c +4 b2c3 − b4d − b3cd +6 b2c2d − b3d2 + b2cd2 +4 bc2d2
+− c3d2 +2 bcd3 − c2d3)/(c2d3(c + d)),
+− 4(8b5c − 8b4c2 − 16b3c3 +3 b5d − 11b4cd − 26b3c2d +4 b2c3d − 3b4d2
+− 17b3cd2 − 4b2c2d2 +1 2bc3d2 − 3b3d3 − 3b2cd3 +1 8bc2d3 − 2c3d3
++6 bcd4 +2 c2d4)/(c2d3(c + d)));
+and
+b : c : d =2 ( 8 0− 40X + X2)(40 − 10X +2 Y + XY ):
+(80 + 32X − 5X2 − 12Y + XY )(40 − 10X +2 Y + XY ):
+8(−4+ X)(5 + X)(80 − 40X + X2). (2.8)
+The torsion group on E is of order 2, generated by T0 =( 4, 0), and the rational
+rank of E is one, with generator Q =( 0, 20). It is not diﬃcult to verify now that we
+have a recipe for constructing inﬁnitely many solutions to our original problem. The
+multiples of Q on E give rise via (2.8) to values ofb, c, d, then via (2.7) to values of
+q, r, s, which in turn deliver (xi,y i,z i,t i), i =0 ,..., 4. It is straightforward to check
+that points on E corresponding to degenerate solutions of the system (2.1) arise
+solely from x = −12, −5, 0, 4, 8, 20, corresponding to multiples ofQ at most 3. Thus
+nQ for n ≥ 4 corresponds to a non-degenerate solution of our problem. We suppose
+now that mQ =( Xm,Y m)a n d nQ =( Xn,Y n), where m>n ≥ 4, return the
+same solution (x0,y 0,z 0,t 0) (up to scaling). Equations (2.8), (2.7), and (2.2), (2.4),
+give ( x0,y 0,z 0,t 0) as functions of Xm,Y m and of Xn,Y n.I tf o l l o w st h a t ,u pt o
+sign, x0(Xm,Y m): y0(Xm,Y m) equals the ratio of two of x0(Xn,Y n), y0(Xn,Y n),
+z0(Xn,Y n), t0(Xn,Y n). Suppose, for example,
+x0(Xm,Y m): y0(Xm,Y m)= x0(Xn,Y n): y0(Xn,Y n). (2.9)
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 8 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+8 A. Bremner
+Then
+x0(Xm,Y m)y0(Xn,Y n)= x0(Xn,Y n)y0(Xm,Y m),
+Y 2
+m = X3
+m + X2
+m − 120Xm + 400,
+Y 2
+n = X3
+n + X2
+n − 120Xn + 400. (2.10)
+The system (2.10) deﬁnes a singular curve. EliminatingYm,Y n results in an equation
+of the form
+(Xm − Xn)g(Xm)g(Xn)h(Xm,X n)=0 ,
+for polynomials g, h. By assumption, Xm ̸= Xn. The rational roots of g(X)=0
+occur at X = −12, −5, 0, 4, 8, 20, which are inadmissible values. Finally, the irre-
+ducible polynomial h deﬁnes a curve of genus 16 (as computed by Maple), so has
+only ﬁnitely many rational points.
+For each choice of sign and for all choices of ratio on the right-hand side of (2.9),
+the genus of the corresponding irreducible curve, as computed by Maple, takes values
+only in the set {16, 26, 36, 41, 56, 71}, and is thus always greater than 1. Hence this
+irreducible curve has only ﬁnitely many rational points.
+It follows that
+x
+0(Xn,Y n): y0(Xn,Y n): z0(Xn,Y n): t0(Xn,Y n)
+as n →∞ takes on inﬁnitely many distinct values, as required.
+3. Examples
+Using the above construction, we ﬁnd that the point 3Q + T0 returns
+(x0,y 0,z 0,t 0) = (41580, 225764, 455400, 693000),
+(x1,y 1,z 1,t 1) = (169323, 279125, 484077, 712173),
+(x2,y 2,z 2,t 2) = (309420, 380764, 549000, 757800),
+(x3,y 3,z 3,t 3) = (676500, 711964, 814440, 967560),
+(x4,y 4,z 4,t 4) = (854700, 883036, 967560, 1099560),
+(N1,N 2,N 3,N 4) = (26941381929, 94011840000, 455923353600, 728783193600);
+and the point 4Q returns
+(x0,y 0,z 0,t 0) = (720720, 7807800, 13993200, 24310440),
+(x1,y 1,z 1,t 1) = (2049905, 8040175, 14124175, 24386065),
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 9 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+On a problem of Erd¨os related to common factor diﬀerences 9
+(x2,y 2,z 2,t 2) = (9724176, 12449976, 17024976, 26173224),
+(x3,y 3,z 3,t 3) = (17129970, 18811650, 22107150, 29730690),
+(x4,y 4,z 4,t 4) = (38591280, 39366600, 41043600, 45604440),
+(N1,N 2,N 3,N 4) = (3682673190625, 94040161560576,
+292916434882500, 1488767454720000).
+4. Concluding Remarks
+Extension of the factor-diﬀerence prob lem to the case of ﬁve or more diﬀerences
+seems a very diﬃcult problem. For the case of ﬁve diﬀerences, we must solve the
+system of 20 quadratic equations
+(N
+i =)x2
+i − x2
+0 = y2
+i − y2
+0 = z2
+i − z2
+0 = t2
+i − t2
+0 = w2
+i − w2
+0 ,i =1 ,..., 5. (4.1)
+The values
+(x0,y 0,z 0,t 0,w 0) = (400365, 1707240, 2583000,4911144, 470278200/13),
+(x1,y 1,z 1,t 1,w 1) = (974925, 1924800, 2731680,4990944, 470420160/13),
+(x2,y 2,z 2,t 2,w 2) = (1548365, 2269760,2984800, 5133856,470680000/13),
+(x3,y 3,z 3,t 3,w 3) = (3717675, 4071300,4509180, 6146556,2460
+√
+36927467641/13),
+(x4,y 4,z 4,t 4,w 4) = (4264533, 4576092,4969692, 6491940,3444
+√
+18902740081/13),
+(x5,y 5,z 5,t 5,w 5) = (15763475, 15850600,15968680,16505944,512960840/13),
+(N1,N 2,N 3,N 4,N 5)
+= (790186622400, 2237142040000, 13660815272400,
+18025949574864, 248326851942400)
+satisfy the system (4.1), but unfortunately w3, w4 are not rational; thus only 18 of
+the 20 equations are satisﬁed.
+Acknowledgments
+I am very grateful to Ajai Choudhry for his many remarks that were the stimulus
+for the writing of this paper. In addition, it gives me great pleasure to acknowledge
+here the warm hospitality provided by the Harish-Chandra Research Institute, Alla-
+habad, where this paper was completed.
+Appendix A
+Table A.1 lists the ﬁrst 30 solutions to the system (2.1) that we found by direct
+computation, ordered by N
+1 + N2 + N3 + N4. We list only ( x0,y 0,z 0,t 0)a n d
+(N1,N 2,N 3,N 4), with the xi,y ,zi,t i for i =1 , 2, 3, 4 computable from (2.1).
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+
+
+===== PAGE 10 =====
+2nd Reading
+January 10, 2019 20:39 WSPC/S1793-0421 203-IJNT 1950058
+10 A. Bremner
+Table A.1. Solutions to (2.1) ordered by N1 + N2 + N3 + N4.
+(x0,y 0,z 0,t 0)
+ (N1,N 2,N 3,N 4)
+(216, 1116, 1656, 4724)
+ (274833, 1225728, 3368448, 30159360)
+(872, 4328, 5003, 11672)
+ (2062016, 14170112, 24040016, 78094016)
+(1251, 4149, 8501, 26595)
+ (5595975, 8643024, 14595399, 200643399)
+(504, 2556, 3144, 10116)
+ (5348673, 23016960, 64903168, 207884313)
+(420, 2595, 3684, 4380)
+ (7441200, 20254000, 53406000, 262652544),
+(1512, 2580, 9720, 13380)
+ (30067200, 64054881, 146236825, 269568000)
+(1024, 6865, 11360, 21440)
+ (12084800, 25206800, 322088000, 897512000)
+(63, 8055, 16695, 37695)
+ (26128575, 291722431, 561117375, 713526975)
+(1188, 6588, 11188, 38412)
+ (22208256, 53719281, 456120756, 1890838656)
+(1320, 3828, 8520, 18920)
+ (6690816, 58397625, 182131200, 2383603200)
+(4840, 12440, 38765, 63592)
+ (14766800, 660920000, 1081472000, 1242510800)
+(525, 9485, 10515, 86765)
+ (6074775, 56154519, 562837275, 2551994775)
+(312, 3237, 17112, 78312)
+ (32621056, 73519056, 703213056, 2438287056)
+(4760, 13860, 22792, 118440)
+ (56908800, 481614336, 1089898425, 2060352000)
+(4472, 6292, 9136, 29744)
+ (21063680, 73258865, 128061440, 3912796160)
+(2955, 22920, 35160, 92616)
+ (49714000, 280098000, 707526144, 3658176000)
+(2520, 9765, 10680, 39240)
+ (71442000, 357696000, 835810000, 4295960064)
+(630, 10890, 32970, 256410)
+ (64631196, 1135630125, 1625305500, 5397737884)
+(6416, 23184, 70056, 121464)
+ (112446180, 389521953, 2462035968, 5727541248)
+(5145, 17241, 44345, 154455)
+ (97405875, 969751944, 1548825075, 8252709075)
+(2688, 19712, 29337, 68838)
+ (151534656, 522510912, 3738214656, 7048774656)
+(6405, 21987, 44163, 56763)
+ (56669431, 589789431, 2630211831, 9997212456)
+(9636, 13233, 18788, 64284)
+ (63497520, 258485040, 1292773680, 12704186880)
+(7880, 21560, 37345, 43960)
+ (132675536, 1074944000, 4126584000, 10737272000)
+(13860, 28105, 34020, 58212)
+ (616734000, 794865456, 4494672000, 11811294000)
+(3465, 8316, 33660, 47740)
+ (272354544, 671554800, 2553922800, 15261246000)
+(10592, 15533, 18208, 54208)
+ (55771136, 504835136, 1615043136, 16824229136)
+(6720, 37968, 64680, 139920)
+ (206222625, 677376000, 2019635200, 16670745700)
+(4700, 11925, 36900, 91620)
+ (624696624, 1645815600, 4629150000, 15904350000)
+(15120, 56700, 91448, 134120)
+ (220359321, 671385600, 7094466225, 15647385600)
+References
+[1] A. Bremner, Review of Jim´ enez Urroz [4], Mathematical Reviews MR1706905
+(2000e:11019).
+[2] P. Erd˝os and M. Rosenfeld, The factor–diﬀerence set of integers, Acta Arith. 79(4)
+(1997) 353–359.
+[3] L. Piepmeyer, The maximum number of odd integral distances between points in the
+plane, Discrete Comput. Geom. 16 (1996) 113–115.
+[4] J. J. Urroz, A note on a conjecture of Erd˝os and Rosenfeld, J. Number Theory 78(1)
+(1999) 140–143.
+Int. J. Number Theory Downloaded from www.worldscientific.com
+by LUND UNIVERSITY on 03/03/19. Re-use and distribution is strictly not permitted, except for Open Access articles.
+

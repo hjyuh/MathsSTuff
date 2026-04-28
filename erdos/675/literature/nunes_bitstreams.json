@@ -1,0 +1,13 @@
+{
+  "_links" : {
+    "self" : {
+      "href" : "https://infoscience.epfl.ch/server/api/core/bitstreams/search/byItemId?uuid=e8c2789e-872a-4038-b943-c727e2713bac&name=ORIGINAL&filterMetadata=dc.type&filterMetadataValue=*thumbnail"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 0,
+    "totalPages" : 0,
+    "number" : 0
+  }
+}

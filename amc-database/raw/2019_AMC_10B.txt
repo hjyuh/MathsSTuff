@@ -1,0 +1,1284 @@
+=== Problem 1 ===
+Alicia had two containers. The first was
+
+Choices: {'A': '\\frac{5}{8}', 'B': '\\frac{4}{5}', 'C': '\\frac{7}{8}', 'D': '\\frac{9}{10}', 'E': '\\frac{11}{12}'}
+Answer: D
+
+--- Solution 1 ---
+Let the first jar's volume be <math>A</math> and the second's be <math>B</math>. It is given that <math>\frac{5}{6}A=\frac{3}{4}B</math>. We find that <math>\frac{A}{B}=\frac{\left(\frac{3}{4}\right)}{\left(\frac{5}{6}\right)}=\boxed{\textbf{(D) }\frac{9}{10}}.</math> 
+
+We already know that this is the ratio of the smaller to the larger volume because it is less than <math>1.</math>
+
+--- Solution 2 ---
+An alternate solution is to substitute an arbitrary maximum volume for the first container - let's say <math>72</math>, so there was a volume of <math>60</math> in the first container, and then the second container also has a volume of <math>60</math>, so you get <math>60 \cdot \frac{4}{3} = 80</math>. Thus the answer is <math>\frac{72}{80} = \boxed{\textbf{(D) }\frac{9}{10}}</math>.
+
+
+=== Problem 2 ===
+Consider the statement, "If
+
+Choices: {'A': '11', 'B': '15', 'C': '19', 'D': '21', 'E': '27</math>'}
+Answer: E
+
+--- Solution 1 ---
+Since a counterexample must be a value of <math>n</math> which is not prime, <math>n</math> must be composite, so we eliminate <math>\text{A}</math> and <math>\text{C}</math>. Now we subtract <math>2</math> from the remaining answer choices, and we see that the only time <math>n-2</math> is '''not''' prime is when <math>n = \boxed{\textbf{(E) }27}</math>.
+
+
+minor edit (the inclusion of not) by AlcBoy1729
+
+
+=== Problem 3 ===
+In a high school with
+
+Choices: {'A': '66', 'B': '154', 'C': '186', 'D': '220', 'E': '266</math>'}
+Answer: B
+
+--- Solution 1 ---
+<math>60\%</math> of seniors do not play a musical instrument. If we denote <math>x</math> as the number of seniors, then <cmath>\frac{3}{5}x + \frac{3}{10}\cdot(500-x) = \frac{468}{1000}\cdot500</cmath>
+
+<cmath>\frac{3}{5}x + 150 - \frac{3}{10}x = 234</cmath>
+<cmath>\frac{3}{10}x = 84</cmath>
+<cmath>x = 84\cdot\frac{10}{3} = 280</cmath>
+
+Thus there are <math>500-x = 220</math> non-seniors. Since <math>70\%</math> of the non-seniors play a musical instrument, <math>220 \cdot \frac{7}{10} = \boxed{\textbf{(B) } 154}</math>.
+
+--- Solution 2 ---
+Let <math>x</math> be the number of seniors, and <math>y</math> be the number of non-seniors. Then <cmath>\frac{3}{5}x + \frac{3}{10}y = \frac{468}{1000}\cdot500 = 234</cmath>
+
+Multiplying both sides by <math>10</math> gives us
+<cmath>6x + 3y = 2340</cmath>
+
+Also, <math>x + y = 500</math> because there are 500 students in total.
+
+Solving these system of equations give us <math>x = 280</math>,   <math>y = 220</math>.
+
+Since <math>70\%</math> of the non-seniors play a musical instrument, the answer is simply <math>70\%</math> of <math>220</math>, which gives us <math>\boxed{\textbf{(B) } 154}</math>.
+
+--- Solution 3 ---
+We can clearly deduce that <math>70\%</math> of the non-seniors do play an instrument, but, since the total percentage of instrument players is <math>46.8\%</math>, the non-senior population is quite low. By intuition, we can therefore see that the answer is around <math>\text{B}</math> or <math>\text{C}</math>. Testing both of these gives us the answer <math>\boxed{\textbf{(B) } 154}</math>.
+
+--- Solution 4 ---
+We know that <math>40\%</math> of the seniors play a musical instrument, and <math>30\%</math> of the non-seniors do not. In addition, we know that the number of people who do not play a musical instrument is
+<cmath>46.8\% \cdot 500 = 46.8 \cdot 5 = \frac{468}{2} = 234</cmath>
+We can also conclude that <math>60\%</math> of the seniors do not play an instrument, <math>70\%</math> of the non seniors do play an instrument, and <math>500-234 = 266</math> people do play an instrument.
+
+We can now set up the following equations, where <math>s</math> is the number of seniors and <math>n</math> is the number of non-seniors:
+<cmath>0.3n + 0.6s = 234</cmath>
+<cmath>0.7n + 0.4s = 266</cmath>
+By elimination, we get <math>1.5n</math> to be equal to <math>330</math>. This means that <math>n = \frac{330}{1.5} = 220</math>.
+The answer is <math>70</math> percent of <math>220</math>. This is equal to 
+<cmath>0.7*220 = 7*22 = 154</cmath>
+Therefore, the answer is <math>\boxed{\textbf{(B) } 154}</math>.
+
+
+=== Problem 4 ===
+All lines with equation
+
+Choices: {'A': '(-1,2)', 'B': '(0,1)', 'C': '(1,-2)', 'D': '(1,0)', 'E': '(1,2)</math>'}
+Answer: A
+
+--- Solution 1 ---
+If all lines satisfy the condition, then we can just plug in values for <math>a</math>, <math>b</math>, and <math>c</math> that form an arithmetic progression. Let's use <math>a=1</math>, <math>b=2</math>, <math>c=3</math>, and <math>a=1</math>, <math>b=3</math>, <math>c=5</math>. Then the two lines we get are: <cmath>x+2y=3</cmath> <cmath>x+3y=5</cmath>
+Use elimination to deduce <cmath>y = 2</cmath> and plug this into one of the previous line equations. We get <cmath>x+4 = 3 \Rightarrow x=-1</cmath> Thus the common point is <math>\boxed{\textbf{(A) } (-1,2)}</math>.
+
+--- Solution 2 ---
+We know that <math>a</math>, <math>b</math>, and <math>c</math> form an arithmetic progression, so if the common difference is <math>d</math>, we can say <math>a,b,c = a, a+d, a+2d.</math> Now we have <math>ax+ (a+d)y = a+2d</math>, and expanding gives <math>ax + ay + dy = a + 2d.</math> Factoring gives <math>a(x+y-1)+d(y-2) = 0</math>. Since this must always be true (regardless of the values of <math>a</math> and <math>d</math>), we must have <math>x+y-1 = 0</math> and <math>y-2 = 0</math>, so <math>x,y = -1, 2,</math> and the common point is <math>\boxed{\textbf{(A) } (-1,2)}</math>.
+
+--- Solution 3 ---
+We use process of elimination. <math>\textbf{B}</math> doesn't necessarily work because <math>b = c</math> isn't always true.  <math>\textbf{C, D, E}</math> also doesn't necessarily work because the x-value is <math>1</math>, but the y-value is an integer. So by process of elimination, <math>\boxed{\textbf{(A) } (-1, 2)}</math> is our answer.
+
+--- Solution 4 ---
+We know that in <math>ax + by = c</math>, <math>a</math>, <math>b</math>, and <math>c</math> are in an arithmetic progression. We can simplify any arithmetic progression to be <math>0</math>, <math>1</math>, <math>2</math>, and <math>-1</math>, <math>0</math>, <math>1</math>.
+
+For example, the progression <math>2</math>, <math>4</math>, <math>6</math> can be rewritten as <math>0</math>, <math>2</math>, <math>4</math> by going back by one value. We can then divide all 3 numbers by 2 which gives us <math>0</math>, <math>1</math>, <math>2</math>.
+
+Now, we substitute <math>a</math>, <math>b</math>, and <math>c</math> with <math>0</math>, <math>1</math>, <math>2</math>, and <math>-1</math>, <math>0</math>, <math>1</math> respectively. This gives us
+
+<math>y = 2</math> and <math>-x = 1</math> which can be written as <math>x = -1</math>. The only point of intersection is <math>(-1,2)</math>. So, our answer is
+
+<math>\boxed{\textbf{(A) } (-1, 2)}</math>.
+
+--- Solution 5 ---
+Since the problem doesn't specify any further conditions other than an arithmetic sequence (i.e., that the numbers have to be increasing, or positive or something like that) we choose the sequences <math>(0, 1, 2)</math> and <math>(1, 0, -1)</math> which correspond to the equations <math>0x+y=2</math> and <math>1x+0y=-1</math>. These just simplify to <math>x=-1</math> and <math>y=2</math>, so the coordinate is <math>(-1, 2)</math>.
+
+
+=== Problem 5 ===
+Triangle
+
+Choices: {'A': '</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let's analyze all of the options separately. 
+
+<math>\textbf{(A)}</math>: Clearly <math>\textbf{(A)}</math> is true, because a point in the first quadrant will have non-negative <math>x</math>- and <math>y</math>-coordinates, and so its reflection, with the coordinates swapped, will also have non-negative <math>x</math>- and <math>y</math>-coordinates.
+
+<math>\textbf{(B)}</math>: The triangles have the same area, since <math>\triangle ABC</math> and <math>\triangle A'B'C'</math> are the same triangle (congruent). More formally, we can say that area is ''invariant'' under reflection.
+
+<math>\textbf{(C)}</math>: If point <math>A</math> has coordinates <math>(p,q)</math>, then <math>A'</math> will have coordinates <math>(q,p)</math>. The gradient is thus <math>\frac{p-q}{q-p} = -1</math>, so this is true. (We know <math>p \neq q</math> since the question states that none of the points <math>A</math>, <math>B</math>, or <math>C</math> lies on the line <math>y=x</math>, so there is no risk of division by zero).
+
+<math>\textbf{(D)}</math>: Repeating the argument for <math>\textbf{(C)}</math>, we see that both lines have slope <math>-1</math>, so this is also true.
+
+<math>\textbf{(E)}</math>: This is the only one left, presumably the answer. To prove: if point <math>A</math> has coordinates <math>(p,q)</math> and point <math>B</math> has coordinates <math>(r,s)</math>, then <math>A'</math> and <math>B'</math> will, respectively, have coordinates <math>(q,p)</math> and <math>(s,r)</math>. The product of the gradients of <math>AB</math> and <math>A'B'</math> is <math>\frac{s-q}{r-p} \cdot \frac{r-p}{s-q} = 1 \neq -1</math>, so in fact these lines are '''never''' perpendicular to each other (using the "negative reciprocal" condition for perpendicularity).
+
+Thus the answer is <math>\boxed{\textbf{(E)}}</math>.
+
+==Counterexamples==
+If <math>(x_1,y_1) = (2,3)</math> and <math>(x_2,y_2) = (7,1)</math>, then the slope of <math>AB</math>, <math>m_{AB}</math>, is <math>\frac{1 - 3}{7 - 2} = -\frac{2}{5}</math>, while the slope of <math>A'B'</math>, <math>m_{A'B'}</math>, is <math>\frac{7 - 2}{1 - 3} = -\frac{5}{2}</math>. <math>m_{A'B'}</math> is the '''reciprocal''' of <math>m_{AB}</math>, but it is not the negative reciprocal of <math>m_{AB}</math>. To generalize, let <math>(x_1,y_1)</math> denote the coordinates of point <math>A</math>, let <math>(x_2, y_2)</math> denote the coordinates of point <math>B</math>, let <math>m_{AB}</math> denote the slope of segment <math>\overline{AB}</math>, and let <math>m_{A'B'}</math> denote the slope of segment <math>\overline{A'B'}</math>. Then, the coordinates of <math>A'</math> are <math>(y_1, x_1)</math>, and of <math>B'</math> are <math>(y_2, x_2)</math>. Then, <math>m_{AB} = \frac{y_2 - y_1}{x_2 - x_1}</math>, and <math>m_{A'B'} = \frac{x_2 - x_1}{y_2 - y_1} = \frac{1}{m_{AB}}</math>, so slopes arent negative reciprocals of each other.
+
+
+=== Problem 6 ===
+There is a real
+
+Choices: {'A': '3', 'B': '8', 'C': '10', 'D': '11', 'E': '12</math>'}
+Answer: C
+
+--- Solution 1 ---
+<cmath>\begin{split}& (n+1)n! + (n+2)(n+1)n! = 440 \cdot n! \\
+\Rightarrow \ &n![n+1 + (n+2)(n+1)] = 440 \cdot n! \\
+\Rightarrow \ &n + 1 + n^2 + 3n + 2 = 440 \\
+\Rightarrow \ &n^2 + 4n - 437 = 0\end{split}</cmath>
+
+Solving by the quadratic formula, <imath>n = \frac{-4\pm \sqrt{16+437\cdot4}}{2} = \frac{-4\pm 42}{2} = \frac{38}{2} = 19</imath> (since clearly <imath>n \geq 0</imath>). The answer is therefore <imath>1 + 9 = \boxed{\textbf{(C) }10}</imath>.
+
+--- Solution 2 ---
+Dividing both sides by <imath>n!</imath> gives
+<cmath>(n+1)+(n+2)(n+1)=440 \Rightarrow n^2+4n-437=0 \Rightarrow (n-19)(n+23)=0.</cmath>
+Since <imath>n</imath> is non-negative, <imath>n=19</imath>. The answer is <imath>1 + 9 = \boxed{\textbf{(C) }10}</imath>.
+
+--- Solution 3 ---
+Dividing both sides by <imath>n!</imath> as before gives <imath>(n+1)+(n+1)(n+2)=440</imath>. Now factor out <imath>(n+1)</imath>, giving <imath>(n+1)(n+3)=440</imath>. By considering the prime factorization of <imath>440</imath>, a bit of experimentation gives us <imath>n+1=20</imath> and <imath>n+3=22</imath>, so <imath>n=19</imath>, so the answer is <imath>1 + 9 = \boxed{\textbf{(C) }10}</imath>.
+
+--- Solution 4 ---
+Since <imath>(n+1)! + (n+2)! = (n+1)n! + (n+2)(n+1)n! = 440 \cdot n!</imath>, the result can be factored into <imath>(n+1)(n+3)n!=440 \cdot n!</imath> and divided by <imath>n!</imath> on both sides to get <imath>(n+1)(n+3)=440</imath>. From there, it is easier to complete the square with the quadratic <imath>(n+1)(n+3) = n^2 + 4n + 3</imath>, so <imath>n^2+4n+4=441 \Rightarrow (n+2)^2=441</imath>. Solving for <imath>n</imath> results in <imath>n=19,-23</imath>, and since <imath>n>0</imath>, <imath>n=19</imath> and the answer is <imath>1 + 9 = \boxed{\textbf{(C) }10}</imath>.
+
+--- Solution 5 ---
+Rewrite <imath>(n+1)! + (n+2)! = 440 \cdot n!</imath> as <imath>(n+1)n! + (n+2)(n+1)n! = 440 \cdot n!.</imath> Factoring out the <imath>n!</imath> we get <imath>n!(n + 1 + (n+1)(n+2)) = 440 \cdot n!.</imath> Expand this to get <imath>n!(n^2 + 4n + 3) = 440 \cdot n!.</imath> Factor this and divide by <imath>n!</imath> to get <imath>(n + 1)(n + 3) = 440.</imath> If we take the prime factorization of <imath>440</imath> we see that it is <imath>2^3 * 5 * 11.</imath> Intuitively, we can find that <imath>n + 1 = 20</imath> and <imath>n + 3 = 22.</imath> Therefore, <imath>n = 19.</imath> Since the problem asks for the sum of the didgits of <imath>n</imath>, we finally calculate <imath>1 + 9 = 10</imath> and get answer choice <imath>\boxed{\textbf{(C) }10}</imath>.
+
+--- Solution 6 ---
+Factor out <imath>n!</imath> from the left side of the equation:
+<cmath> (n+1)! + (n+2)! = (n+1)n! + (n+2)(n+1)n! </cmath>
+<cmath> = (n+1)n! \left[ 1 + (n+2) \right] </cmath>
+<cmath> = (n+1)(n+3) \cdot n! </cmath>
+
+Setting this equal to the given expression <imath>440 \cdot n!</imath>:
+<cmath> (n+3)(n+1) \cdot n! = 440 \cdot n! </cmath>
+
+Dividing both sides by <imath>n!</imath>:
+<cmath> (n+3)(n+1) = 440 </cmath>
+
+To solve for <imath>n</imath>, let <imath>a = n+2</imath>. Then <imath>(n+3) = a+1</imath> and <imath>(n+1) = a-1</imath>:
+<cmath> (a+1)(a-1) = 440 </cmath>
+<cmath> a^2 - 1 = 440 </cmath>
+<cmath> a^2 = 441 </cmath>
+<cmath> a = 21 </cmath>
+
+Substituting back for <imath>n</imath>:
+<cmath> n+2 = 21 \implies n = 19 </cmath>
+
+The sum of the digits of <imath>n</imath> is <imath>1 + 9 = \boxed{10}</imath>.
+
+
+=== Problem 7 ===
+Each piece of candy in a store costs a whole number of cents. Casper has exactly enough money to buy either
+
+Choices: {'A': '18', 'B': '21', 'C': '24', 'D': '25', 'E': '28</math>'}
+Answer: B
+
+--- Solution 1 ---
+If he has enough money to buy <math>12</math> pieces of red candy, <math>14</math> pieces of green candy, and <math>15</math> pieces of blue candy, then the smallest amount of money he could have is <math>\text{lcm}{(12,14,15)} = 420</math> cents. Since a piece of purple candy costs <math>20</math> cents, the smallest possible value of <math>n</math> is <math>\frac{420}{20} = \boxed{\textbf{(B) }  21}</math>.
+
+--- Solution 2 ---
+We simply need to find a value of <math>20n</math> that is divisible by <math>12</math>, <math>14</math>, and <math>15</math>. Observe that <math>20 \cdot 18</math> is divisible by <math>12</math> and <math>15</math>, but not <math>14</math>. <math>20 \cdot 21</math> is divisible by <math>12</math>, <math>14</math>, and <math>15</math>, meaning that we have exact change (in this case, <math>420</math> cents) to buy each type of candy, so the minimum value of <math>n</math> is <math>\boxed{\textbf{(B) }  21}</math>.
+
+--- Solution 3 ---
+We can notice that the number of purple candy times <math>20</math> has to be divisible by <math>7</math>, because of the <math>14</math> green candies, and <math>3</math>, because of the <math>12</math> red candies. <math>7\cdot3=21</math>, so the answer has to be <math>\boxed{\textbf{(B) }  21}</math>.
+
+
+=== Problem 8 ===
+The figure below shows a square and four equilateral triangles, with each triangle having a side lying on a side of the square, such that each triangle has side length
+
+Choices: {'A': '4', 'B': '12 - 4\\sqrt{3}', 'C': '3\\sqrt{3}', 'D': '4\\sqrt{3}', 'E': '16 - 4\\sqrt{3}</math>'}
+Answer: B
+
+--- Solution 1 ---
+We notice that the square can be split into <math>4</math> congruent smaller squares, with the altitude of the equilateral triangle being the side of this smaller square. Note that area of shaded part in a quarter square is the total area of quarter square minus a white triangle (which has already been split in half).
+
+When we split an equilateral triangle in half, we get two <math>30^{\circ}-60^{\circ}-90^{\circ}</math> triangles. Therefore, the altitude, which is also the side length of one of the smaller squares, is <math>\sqrt{3}</math>. We can then compute the area of the two triangles as <math>2 \cdot \frac{1 \cdot \sqrt{3}}{2} = \sqrt{3}</math>.
+
+The area of the each small squares is the square of the side length, i.e. <math>\left(\sqrt{3}\right)^2 = 3</math>. Therefore, the area of the shaded region in each of the four squares is <math>3 - \sqrt{3}</math>.
+
+Since there are <math>4</math> of these squares, we multiply this by <math>4</math> to get <math>4\left(3 - \sqrt{3}\right) = \boxed{\textbf{(B) } 12 - 4\sqrt{3}}</math> as our answer.
+
+--- Solution 2 ---
+We can see that the side length of the square is <math>2\sqrt{3}</math> by considering the altitude of the equilateral triangle as in Solution 1. Using the Pythagorean Theorem, the diagonal of the square is thus <math>\sqrt{12+12}=\sqrt{24}=2\sqrt{6}</math>. Because of this, the height of one of the four shaded kites is <math>\sqrt{6}</math>. Now, we just need to find the length of that kite. By the Pythagorean Theorem again, this length is <math>\frac{2\sqrt{3} - 2}{2} \times \sqrt{2} = \sqrt{3} - 1 = \sqrt{6} - \sqrt{2}</math>. Now using <math>\text{area} = \frac{1}{2} \cdot \text{length} \cdot \text{width}</math>, the area of one of the four kites is <math>2 \sqrt{6} \times \left(\sqrt{6}-\sqrt{2}\right) = 12 - 2\sqrt{12} = \boxed{\textbf{(B) } 12 - 4\sqrt{3}}</math>.
+
+--- Solution 3 ---
+Based on the previous solutions, we know that the side length of the square is <math>2\sqrt{3}</math>. That means that the area of the square is <math>2\sqrt{3} \times 2\sqrt{3} = 12</math>
+
+We also know that the area of one of the triangles is <math>\sqrt{3} \times 2 \div 2 = \sqrt{3}</math>. That means that all four triangles have a total area of <math>\sqrt{3} \times 4 = 4\sqrt{3}</math>
+
+So the answer is <math>12 - 4\sqrt{3} = \boxed{\textbf{(B) } 12 - 4\sqrt{3}}</math>.
+
+--- Solution 4 ---
+From the previous solutions, we know that the side length of the square is <math>2\sqrt{3}</math>, which means that the area of the square is <math>(2\sqrt{3})^2 = 12</math>. Since the side lengths of the equilateral triangles are integers and not expressions containing an integer and a radical, we know that the combined areas of the triangles will be in the form <math>x\sqrt{3}</math>. Therefore, the only solution that would work is <math>\boxed{\textbf{(B) }12 - 4\sqrt{3}}</math> because it is the only solution with a <math>12</math> subtracted by a multiple of the square root of <math>3</math>.
+
+-RuiyangWu
+
+--- Solution 5 ---
+Draw the two diagonals of the square. Notice that this splits the shaded region into 8 triangles of equal area.
+The triangles are equilateral and have length <math>2</math>, so their height is <math>\sqrt{3}</math>. Adding the two heights of the triangles together, we get the square's side length of <math>2\sqrt{3}</math>. Then we know that the length of the base of the shaded triangles is <math>\frac{2\sqrt{3}-2}{2}=\sqrt{3}-1</math> and the height of the shaded triangle is the height of the equilateral triangle, <math>\sqrt{3}</math>, so the area is <math>8\cdot\left(\frac{\left(\sqrt{3}-1\right)\sqrt{3}}{2}\right)=4\left(\sqrt{3}-1\right)\sqrt{3}=12-4\sqrt{3}</math> or <math>\boxed{\textbf{(B) }12 - 4\sqrt{3}}</math>.
+
+
+=== Problem 9 ===
+The function
+
+Choices: {'A': '</math>'}
+Answer: A
+
+--- Solution 1 ---
+There are four cases we need to consider here.
+
+'''Case 1''': <math>x</math> is a positive integer. Without loss of generality, assume <math>x=1</math>. Then <math>f(1) = 1 - 1 = 0</math>.
+
+'''Case 2''': <math>x</math> is a positive fraction. Without loss of generality, assume <math>x=\frac{1}{2}</math>. Then <math>f\left(\frac{1}{2}\right) = 0 - 0 = 0</math>.
+
+'''Case 3''': <math>x</math> is a negative integer. Without loss of generality, assume <math>x=-1</math>. Then <math>f(-1) = 1 - 1 = 0</math>.
+
+'''Case 4''': <math>x</math> is a negative fraction. Without loss of generality, assume <math>x=-\frac{1}{2}</math>. Then <math>f\left(-\frac{1}{2}\right) = 0 - 1 = -1</math>.
+
+Thus the range of the function <math>f</math> is <math>\boxed{\textbf{(A) } \{-1, 0\}}</math>.
+
+--- Solution 2 ---
+It is easily verified that when <math>x</math> is an integer, <math>f(x)</math> is zero. We therefore need only to consider the case when <math>x</math> is not an integer.
+
+When <math>x</math> is positive, <math>\lfloor x\rfloor \geq 0</math>, so 
+<cmath>\begin{split}f(x)&=\lfloor|x|\rfloor-|\lfloor x\rfloor| \\
+&=\lfloor x\rfloor-\lfloor x\rfloor \\
+&=0\end{split}</cmath>
+
+When <math>x</math> is negative, let <math>x=-a-b</math> be composed of integer part <math>a</math> and fractional part <math>b</math> (both <math>\geq 0</math>):
+<cmath>\begin{split}f(x)&=\lfloor|-a-b|\rfloor-|\lfloor -a-b\rfloor| \\
+&=\lfloor a+b\rfloor-|-a-1| \\
+&=a-(a+1)=-1\end{split}</cmath>
+
+Thus, the range of x is <math>\boxed{\textbf{(A) } \{-1, 0\}}</math>.
+
+''Note'': One could solve the case of <math>x</math> as a negative non-integer in this way:
+<cmath>\begin{split}f(x)&=\lfloor|x|\rfloor-|\lfloor x\rfloor| \\
+&=\lfloor -x\rfloor-|-\lfloor -x\rfloor-1| \\
+&=\lfloor -x\rfloor-(\lfloor -x\rfloor+1) = -1\end{split}</cmath>
+
+--- Solution 3 ---
+Let {<math>x</math>} denote the fractional part of <math>x</math>; for example, {<math>2.7</math>}<math>= 0.7</math>, and {<math>-1.3</math>}<math>= 0.3</math>. 
+Then for <math> x \geq 0</math>, <math> x = \lfloor x \rfloor +</math> {<math>x</math>} and for <math> x < 0</math>, <math> x = \lfloor x \rfloor + 1 - </math>{<math>x</math>}.
+
+Now we can rewrite <math>\lfloor |x| \rfloor - |\lfloor x \rfloor|</math>, breaking the expression up based on whether <math> x \geq 0 </math> or <math> x < 0</math>.
+
+For <math>x \geq 0</math>, the above expression is equal to <math> \lfloor |\lfloor x \rfloor + </math>{<math>x</math>}<math>| \rfloor - | \lfloor \lfloor x \rfloor + </math> {<math>x</math>}<math> \rfloor | \implies \lfloor \lfloor x \rfloor + </math>{<math>x</math>}<math> \rfloor - | \lfloor x \rfloor | </math>
+
+<math> \implies \lfloor x \rfloor - \lfloor x \rfloor = \mathbf{0} </math>.
+
+For <math> x < 0</math>, the expression is equal to <math> \lfloor |\lfloor x \rfloor + 1 - </math>{<math>x</math>}<math>| \rfloor - | \lfloor \lfloor x \rfloor + 1 - </math> {<math>x</math>}<math> \rfloor |</math>
+
+<math> \implies \lfloor - \lfloor x \rfloor - 1 + </math>{<math>x</math>}<math> \rfloor - | \lfloor x \rfloor | \implies - \lfloor x \rfloor  - 1 - (- \lfloor x \rfloor) = \mathbf{-1}</math>.
+
+Therefore the only two possible values for <math>f(x)</math>, and thus the range of the function, is <math>\boxed{\textbf{(A) } \{-1, 0\}}</math>.
+
+--- Solution 4 ---
+We have 2 cases: either <math>x</math> is positive or <math>x</math> is negative.
+
+
+'''Case 1 - x is positive:'''
+
+Let <math>x = n + f</math>, where <math>n</math> is a positive integer and <math>f</math> is a positive real number between 0 and 1. We have
+<cmath>\lfloor |x| \rfloor = \lfloor |n+f| \rfloor = \lfloor n+f \rfloor = n</cmath> and
+<cmath>|\lfloor x \rfloor| = |\lfloor n+f \rfloor| = |n| = n.</cmath> 
+<math>n-n=0</math>, so the possible value of <math>f(x)</math> if <math>x</math> is positive is <math>0</math>. 
+
+
+'''Case 2 - x is negative: '''
+
+Let <math>x = -n - f</math>, where <math>n</math> is a positive integer and <math>f</math> is a positive real number between 0 and 1. We have
+<cmath>\lfloor |x| \rfloor = \lfloor |-n-f| \rfloor = \lfloor n+f \rfloor = n</cmath> and
+<cmath>|\lfloor x \rfloor| = |\lfloor -n-f \rfloor| =|-n|\:or\: |-n-1|= n \:or\: n+1.</cmath> 
+
+<math>n-n=0</math> and <math>n-(n+1) = -1</math>, so the possible values of <math>f(x)</math> if <math>x</math> is negative are <math>0</math> and <math>-1.</math> 
+
+
+Hence, the possible values of <math>f(x)</math> are <math>0</math> and <math>-1</math>, so the answer is <math>\boxed{\textbf{(A) } \{-1, 0\}}</math>.
+
+
+=== Problem 10 ===
+In a given plane, points
+
+Choices: {'A': '0', 'B': '2', 'C': '4', 'D': '8', 'E': '\\text{infinitely many}</math>'}
+Answer: A
+
+--- Solution 1 ---
+Notice that whatever point we pick for <math>C</math>, <math>AB</math> will be the base of the triangle. Without loss of generality, let points <math>A</math> and <math>B</math> be <math>(0,0)</math> and <math>(10,0)</math>, since for any other combination of points, we can just rotate the plane to make them <math>(0,0)</math> and <math>(10,0)</math> under a new coordinate system. When we pick point <math>C</math>, we have to make sure that its <math>y</math>-coordinate is <math>\pm20</math>, because that's the only way the area of the triangle can be <math>100</math>. 
+
+Now when the perimeter is minimized, by symmetry, we put <math>C</math> in the middle, at <math>(5, 20)</math>. We can easily see that <math>AC</math> and <math>BC</math> will both be <math>\sqrt{20^2+5^2} = \sqrt{425}</math>. The perimeter of this minimal triangle is <math>2\sqrt{425} + 10</math>, which is larger than <math>50</math>. Since the minimum perimeter is greater than <math>50</math>, there is no triangle that satisfies the condition, giving us <math>\boxed{\textbf{(A) }0}</math>.
+
+--- Solution 2 ---
+Without loss of generality, let <math>AB</math> be a horizontal segment of length <math>10</math>. Now realize that <math>C</math> has to lie on one of the lines parallel to <math>AB</math> and vertically <math>20</math> units away from it. But <math>10+20+20</math> is already 50, and this doesn't form a triangle. Otherwise, without loss of generality, <math>AC<20</math>. Dropping altitude <math>CD</math>, we have a right triangle <math>ACD</math> with hypotenuse <math>AC<20</math> and leg <math>CD=20</math>, which is clearly impossible, again giving the answer as <math>\boxed{\textbf{(A) }0}</math>.
+
+--- Solution 3 ---
+We have:
+
+1. Area = <math>100</math>
+
+2. Perimeter = <math>50</math>
+
+3. Semiperimeter <math>s = 50 \div 2 = 25</math>
+
+We let:
+
+1. <math>z = \overline{AB} = 10</math>
+
+2. <math>x = \overline{AC}</math>
+
+3. <math>y = 50-10-x = 40-x</math>.
+
+
+Heron's formula states that for real numbers <math>x</math>, <math>y</math>, <math>z</math>, and semiperimeter <math>s</math>, the area is <math>\sqrt{(s)(s-x)(s-y)(s-z)}</math>.
+
+Plugging numbers in, we have <math>100 = \sqrt{(25)(25-10)(25-x)(25-(40-x))} = \sqrt{(375)(25-x)(x-15)}</math>.
+
+
+Square both sides, divide by <math>375</math> and expand the polynomial to get <math>40x - x^2 - 375 = \frac{80}{3}</math>.
+
+
+<math>x^2 - 40x + \left(375 + \frac{80}{3}\right) = 0</math> and the discriminant is <math>\left((-40)^2 - 4 \times 1 \times 401 \frac{2}{3}\right) < 0</math>. Thus, there are no real solutions.
+
+--- Solution 4 ---
+First, let's assume that A and B are <imath>(-5,0)</imath> and <imath>(5,0)</imath> respectively. The graph of "the perimeter is <imath>50</imath>" means that <imath>\overline{AC}+\overline{BC}=50-10=40</imath>. So this is the graph of an ellipse (memorize that!). Now let the endpoints of the major axis be <imath>(-x,0)</imath> and <imath>(x,0)</imath>. Then <imath>(x-5)+(x+5)=40</imath> and <imath>x=20</imath>. So the <imath>2</imath> endpoints of the major axis are <imath>(-20,0)</imath> and <imath>(20,0)</imath>. We can also figure out the endpoints of the minor axis must have a y-coordinate less than <imath>20</imath>. It is actually <imath>\sqrt{395}</imath>. 
+
+Now, we consider "the area is <imath>100</imath>". Since the base has length <imath>10</imath>, then the height must have length <imath>20</imath>. So the graph of "the area is 100" is <imath>2</imath> lines, one at <imath>y=20</imath> and the other at <imath>y=-20</imath>. However, this graph does NOT intersect the ellipse, as <imath>\sqrt{395} < 20</imath>. So, there are no intersections and thus no solutions, so the answer is <imath>\boxed{\textbf{(A) }0}</imath>.
+
+--- Solution 5 ---
+Since <imath>AB</imath> has a length of <imath>10</imath>, the height must be <imath>10</imath> as well for the area to be <imath>50</imath>, so we can drop an altitude from <imath>C</imath> that has length <imath>10</imath>, and call the foot of the altitude on <imath>AB</imath> as <imath>D</imath>. Let <imath>AD</imath> have length <imath>x</imath>, so <imath>BD</imath> must have length <imath>10-x</imath>. From the Pythagorean Theorem, <imath>AC</imath> has length <imath>\sqrt{x^2+100}</imath> and <imath>BC</imath> has length <imath>\sqrt{(10-x)^2+100}</imath>. For the perimeter to be <imath>50</imath>, <imath>10+\sqrt{x^2+100}+\sqrt{(10-x)^2+100}=50</imath>, so <imath>40-\sqrt{x^2+100}=\sqrt{(10-x)^2+100}</imath>. Squaring both sides and simplifying, <imath>1600-80\sqrt{x^2+100}=-20x+100</imath>. We can rearrange this and divide all sides by <imath>10</imath> to get <imath>150+2x=8\sqrt{x^2+100}</imath>. Squaring both sides yet again, rearranging, and simplifying some more, we get the quadratic <imath>3x^2-30x-805=0</imath>. So, from the quadratic formula, <imath>x = \frac{30+\sqrt{900+4\cdot3\cdot805}}{6}</imath> or <imath>x = \frac{30-\sqrt{900+4\cdot3\cdot805}}{6}</imath>. Immediately we can rule out the negative solution (it's negative because the square root of the discriminant is greater than <imath>30</imath>, and we'll use this later too), as <imath>x</imath> must be a positive number since it is a length. However, for the positive solution, we see that the discriminant is greater than <imath>900</imath>, so the square root is greater than <imath>30</imath>, so the entire expression when divided by <imath>6</imath> for <imath>x</imath> is greater than <imath>10</imath>, but this is not possible because <imath>x</imath> should be less than <imath>10</imath>. Therefore, the number of possibilities is <imath>\boxed{\textbf{(A) }0}</imath>.
+
+
+=== Problem 11 ===
+Two jars each contain the same number of marbles, and every marble is either blue or green. In Jar
+
+Choices: {'A': '5', 'B': '10', 'C': '25', 'D': '45', 'E': '50</math>'}
+Answer: A
+
+--- Solution 1 ---
+Our ratios are <math>9:1</math> in \( J_1 \) and <math>8:1</math> in \( J_2 \).
+
+We start with the equation representing the total number of marbles in both jars, where \( x \) is the common multiplier:
+
+<cmath> 9x + x + 8x + x = 19x </cmath>
+
+
+Given that the total number of green marbles is 95:
+
+<cmath> 19x = 95 </cmath>
+
+Solving for \( x \):
+
+<cmath> x = \frac{95}{19} = 5 </cmath>
+
+The difference between blue marbles in \( J_1 \) and \( J_2 \) is simply 
+
+<math>9x-8x=9(5)-8(5)=45-40= </math><math>\boxed{\textbf{(A) } 5}</math>.
+
+--- Solution 2 ---
+Call the number of marbles in each jar <math>x</math> (because the problem specifies that they each contain the same number). Thus, <math>\frac{x}{10}</math> is the number of green marbles in Jar <math>1</math>, and <math>\frac{x}{9}</math> is the number of green marbles in Jar <math>2</math>. Since <math>\frac{x}{9}+\frac{x}{10}=\frac{19x}{90}</math>, we have <math>\frac{19x}{90}=95</math>, so there are <math>x=450</math> marbles in each jar. 
+
+Because <math>\frac{9x}{10}</math> is the number of blue marbles in Jar <math>1</math>, and <math>\frac{8x}{9}</math> is the number of blue marbles in Jar <math>2</math>, there are <math>\frac{9x}{10}-\frac{8x}{9}=\frac{x}{90} = 5</math> more marbles in Jar <math>1</math> than Jar <math>2</math>. This means the answer is <math>\boxed{\textbf{(A) } 5}</math>.
+
+--- Solution 3 ---
+Let <math>b_1</math>, <math>g_1</math>, <math>b_2</math>, <math>g_2</math>, represent the amount of blue marbles in jar 1, the amount of green marbles in jar 1, the 
+the amount of blue marbles in jar 2, and the amount of green marbles in jar 2, respectively. We now have the equations, 
+<math>\frac{b_1}{g_1} = \frac{9}{1}</math>, 
+<math>\frac{b_2}{g_2} = \frac{8}{1}</math>, 
+<math>g_1 + g_2 =95</math>, and 
+<math>b_1 + g_1 = b_2 + g_2</math>.
+Since <math>b_1 = 9g_1</math> and <math>b_2 = 8g_2</math>, we substitute that in to obtain <math>10g_1 = 9g_2</math>. 
+Coupled with our third equation, we find that <math>g_1 = 45</math>, and that <math>g_2 = 50</math>. We now use this information to find <math>b_1 = 405</math>
+and <math>b_2 = 400</math>. 
+
+Therefore, <math>b_1 - b_2 = 5</math> so our answer is <math>\boxed{\textbf{(A) } 5}</math>.
+
+--- Solution 4 ---
+Writing out to ratios, we have <math>9:1</math> in jar <math>1</math> and <math>8:1</math> in jar <math>2</math>. Since the jar must have to same amount of marbles, let's make a variable <math>a</math> and <math>b</math> for each of the ratios to be multiplied by. Now we would have <math>9a + a = 8b + b \rightarrow 10a = 9b</math>. We can take the most obvious values of <math>a</math> and <math>b</math> and then scale it from there. We should be able to see that <math>a</math> and <math>b</math> could be <math>9</math> and <math>10</math> respectively. Now remember that there are <math>95</math> green marbles or <math>x(a + b) = 95</math> for some integer <math>x</math> to scale it. Substituting and dividing, we find <math>x = 5</math>. Thus to find the difference of the blue marbles we must do 
+<cmath>\begin{align*}
+x(9a - 8b) &= \\
+5(81 - 80) &= \\
+5(1) &= \boxed{\textbf{(A) }5} \\
+\end{align*}</cmath>
+
+
+=== Problem 12 ===
+What is the greatest possible sum of the digits in the base-seven representation of a positive integer less than
+
+Choices: {'A': '11', 'B': '14', 'C': '22', 'D': '23', 'E': '27</math>'}
+Answer: C
+
+--- Solution 1 ---
+Observe that <math>2019_{10} = 5613_7</math>. To maximize the sum of the digits, we want as many <math>6</math>s as possible (since <math>6</math> is the highest value in base <math>7</math>), and this will occur with either of the numbers <math>4666_7</math> or <math>5566_7</math>. Thus, the answer is <math>4+6+6+6 = 5+5+6+6 = \boxed{\textbf{(C) }22}</math>.
+
+--- Solution 2 ---
+Note that all base <math>7</math> numbers with <math>5</math> or more digits are in fact greater than <math>2019</math>. Since the first answer that is possible using a <math>4</math> digit number is <math>23</math>, we start with the smallest base <math>7</math> number that whose digits sum to <math>23</math>, namely <math>5666_7</math>. But this is greater than <math>2019_{10}</math>, so we continue by trying <math>4666_7</math>, which is less than 2019. So the answer is <math>\boxed{\textbf{(C) }22}</math>.
+
+LaTeX code fix by EthanYL
+
+--- Solution 3 ---
+Again note that you want to maximize the number of <math>6</math>s to get the maximum sum.  Note that <math>666_7=342_{10}</math>, so you have room to add a thousands digit base <math>7</math>.  Fix the <math>666</math> in place and try different thousands digits, to get <math>4666_7</math> as the number with the maximum sum of digits.  The answer is <math>\boxed{\textbf{(C)} 22}</math>.
+
+
+=== Problem 13 ===
+What is the sum of all real numbers
+
+Choices: {'A': '-5', 'B': '0', 'C': '5', 'D': '\\frac{15}{4}', 'E': '\\frac{35}{4}</math>'}
+Answer: A
+
+--- Solution 1 ---
+The mean is <math>\frac{4+6+8+17+x}{5}=\frac{35+x}{5}</math>.
+
+There are three possibilities for the median: it is either <math>6</math>, <math>8</math>, or <math>x</math>.
+
+Let's start with <math>6</math>.
+
+<math>\frac{35+x}{5}=6</math> has solution <math>x=-5</math>, and the sequence is <math>-5, 4, 6, 8, 17</math>, which does have median <math>6</math>, so this is a valid solution.
+
+Now let the median be <math>8</math>.
+
+<math>\frac{35+x}{5}=8</math> gives <math>x=5</math>, so the sequence is <math>4, 5, 6, 8, 17</math>, which has median <math>6</math>, so this is not valid.
+
+Finally we let the median be <math>x</math>.
+
+<math>\frac{35+x}{5}=x \implies 35+x=5x \implies x=\frac{35}{4}=8.75</math>, and the sequence is <math>4, 6, 8, 8.75, 17</math>, which has median <math>8</math>. This case is therefore again not valid.
+
+Hence the only possible value of <math>x</math> is <math>\boxed{\textbf{(A) }-5}.</math>
+
+
+=== Problem 14 ===
+The base-ten representation for
+
+Choices: {'A': '3', 'B': '8', 'C': '12', 'D': '14', 'E': '17 </math>'}
+Answer: C
+
+--- Solution 1 ---
+We can figure out <math>H = 0</math> by noticing that <math>19!</math> will end with <math>3</math> zeroes, as there are three factors of <math>5</math> in its prime factorization, so there would be 3 powers of 10 meaning it will end in 3 zeros. Next, we use the fact that <math>19!</math> is a multiple of both <math>11</math> and <math>9</math>. Their divisibility rules (see Solution 2) tell us that <math>T + M \equiv 3 \;(\bmod\; 9)</math> and that <math>T - M \equiv 7 \;(\bmod\; 11)</math>. By guess and checking, we see that <math>T = 4, M = 8</math> is a valid solution. Therefore the answer is <math>4 + 8 + 0 = \boxed{\textbf{(C) }12}</math>.
+
+--- Solution 2 ---
+We know that <math>H = 0 </math>, because <math>19!</math> ends in three zeroes (see Solution 1). Furthermore, we know that <math>9</math> and <math>11</math> are both factors of <math>19!</math>. We can simply use the divisibility rules for <math>9</math> and <math>11</math> for this problem to find <math>T</math> and <math>M</math>. For <math>19!</math> to be divisible by <math>9</math>, the sum of digits must simply be divisible by <math>9</math>. Summing the digits, we get that <math>T + M + 33</math> must be divisible by <math>9</math>. This leaves either <math>\text{A}</math> or <math>\text{C}</math> as our answer choice. Now we test for divisibility by <math>11</math>. For a number to be divisible by <math>11</math>, the alternating sum must be divisible by <math>11</math> (for example, with the number <math>2728</math>, <math>2-7+2-8 = -11</math>, so <math>2728</math> is divisible by <math>11</math>). Applying the alternating sum test to this problem, we see that <math>T - M - 7</math> must be divisible by 11. By inspection, we can see that this holds if <math>T=4</math> and <math>M=8</math>. The sum is <math>8 + 4 + 0 = \boxed{\textbf{(C) }12}</math>.
+
+--- Solution 3 ---
+Multiplying it out, we get <math>19! = 121,645,100,408,832,000</math>. Evidently, <math>T = 4</math>, <math>M = 8</math>, and <math>H = 0</math>. The sum is <math>8 + 4 + 0 = \boxed{\textbf{(C) }12}</math>.
+
+NEVER do this in a real contest unless you decide to devote most of your time to this problem.
+
+--- Solution 4 ---
+7, 11, 13 are < 19 and 1001 = 7 * 11 * 13. Check the alternating sum of block 3: H00 - 832 + 40M - 100 + 6T5 - 121 and it is divisible by 1001. HTM + 5 - 53 = 0 (mod 1001) => HTM = 48. 
+
+The answer is <math>4 + 8 + 0 = \boxed{\textbf{(C) }12}</math>.
+
+
+=== Problem 15 ===
+Right triangles
+
+Choices: {'A': '\\frac{28}{3}', 'B': '10', 'C': '\\frac{32}{3}', 'D': '\\frac{34}{3}', 'E': '12</math>'}
+Answer: A
+
+--- Solution 1 ---
+First of all, let the two sides which are congruent be <math>x</math> and <math>y</math>, where <math>y > x</math>. The only way that the conditions of the problem can be satisfied is if <math>x</math> is the shorter leg of <math>T_{2}</math> and the longer leg of <math>T_{1}</math>, and <math>y</math> is the longer leg of <math>T_{2}</math> and the hypotenuse of <math>T_{1}</math>.
+
+Notice that this means the value we are looking for is the square of <math>\sqrt{x^{2}+y^{2}} \cdot \sqrt{y^{2}-x^{2}} = \sqrt{y^{4}-x^{4}}</math>, which is just <math>y^{4}-x^{4}</math>.
+
+The area conditions give us two equations: <math>\frac{xy}{2} = 2</math> and <math>\frac{x\sqrt{y^{2}-x^{2}}}{2} = 1</math>.
+
+This means that <math>y = \frac{4}{x}</math> and that <math>\frac{4}{x^{2}} = y^{2} - x^{2}</math>.
+
+Taking the second equation, we get <math>x^{2}y^{2} - x^{4} = 4</math>, so since <math>xy = 4</math>, <math>x^{4} = 12</math>.
+
+Since <math>y = \frac{4}{x}</math>, we get <math>y^{4} = \frac{256}{12} = \frac{64}{3}</math>.
+
+The value we are looking for is just <math>y^{4}-x^{4} = \frac{64-36}{3} = \frac{28}{3}</math> so the answer is <math>\boxed{\textbf{(A) }\frac{28}{3}}</math>.
+
+--- Solution 2 ---
+Like in Solution 1, we have <math>\frac{xy}{2} = 2</math> and <math>\frac{x\sqrt{y^{2}-x^{2}}}{2} = 1</math>.
+
+Squaring both equations yields <math>x^2y^2=16</math> and <math>x^2(y^2-x^2)=4</math>.
+
+Let <math>a = x^2</math> and <math>b = y^2</math>. Then <math>b = \frac{16}{a}</math>, and <math>a\left(\frac{16}{a}-a\right)=4 \implies 16 - a^2 = 4 \implies a = 2\sqrt3</math>, so <math>b = \frac{16}{2\sqrt3} = \frac{8\sqrt3}{3}</math>.
+
+We are looking for the value of <math>y^4 - x^4 = b^2 - a^2</math>, so the answer is <math>\frac{64}{3} - 12 = \boxed{\textbf{(A) }\frac{28}{3}}</math>.
+
+--- Solution 3 ---
+Firstly, let the right triangles be <math>\triangle ABC</math> and <math>\triangle EDF</math>, with <math>\triangle ABC</math> being the smaller triangle. As in Solution 1, let <math>\overline{AB} = \overline{EF} = x</math> and <math>\overline{BC} = \overline{DF} = y</math>. Additionally, let <math>\overline{AC} = z</math> and <math>\overline{DE} = w</math>.
+
+We are given that <math>[ABC] = 1</math> and <math>[EDF] = 2</math>, so using <math>\text{area} = \frac{bh}{2}</math>, we have <math>\frac{xy}{2} = 1</math> and <math>\frac{xw}{2} = 2</math>. Dividing the two equations, we get <math>\frac{xy}{xw}</math> = <math>\frac{y}{w} = 2</math>, so <math>y = 2w</math>.
+
+Thus <math>\triangle EDF</math> is a <math>30^{\circ}-60^{\circ}-90^{\circ}</math> right triangle, meaning that <math>x = w\sqrt{3}</math>. Now by the Pythagorean Theorem in <math>\triangle ABC</math>, <math>\left(w\sqrt{3}\right)^2 + \left(2w\right)^2 = z^2 \Rightarrow 3w^2 + 4w^2 = z^2 \Rightarrow 7w^2 = z^2 \Rightarrow w\sqrt{7} = z</math>.
+
+The problem requires the square of the product of the third side lengths of each triangle, which is <math>(wz)^2</math>. By substitution, we see that <math>wz</math> = <math>\left(w\right)\left(w\sqrt{7}\right) = w^2\sqrt{7}</math>. We also know <math>\frac{xw}{2} = 1 \Rightarrow\frac{(w)\left(w\sqrt{3}\right)}{2} =1 \Rightarrow (w)\left(w\sqrt{3}\right) = 2 \Rightarrow w^2\sqrt{3} = 2 \Rightarrow w^2 = \frac{2\sqrt{3}}{3}</math>. 
+
+Since we want <math>\left(w^2\sqrt{7}\right)^2</math>, multiplying both sides by <math>\sqrt{7}</math> gets us <math>w^2\sqrt{7} = \frac{2\sqrt{21}}{3}</math>. Now squaring gives <math>\left(\frac{2\sqrt{21}}{3}\right)^2 = \frac{4*21}{9} = \boxed{\textbf{(A) }\frac{28}{3}}</math>.
+
+[Note: there is a mismatch of variables near the beginning that someone can fix: xw/2 is the area of the small triangle, which is actually the 30-60-90.]
+
+
+=== Problem 16 ===
+In
+
+Choices: {'A': '2:3', 'B': '2:\\sqrt{5}', 'C': '1:1', 'D': '3:\\sqrt{5}', 'E': '3:2</math>'}
+Answer: A
+
+--- Solution 1 ---
+Without loss of generality, let <math>AC = CD = 4</math> and <math>DE = EB = 3</math>. Let <math>\angle A = \alpha</math> and <math>\angle B = \beta = 90^{\circ} - \alpha</math>. As <math>\triangle ACD</math> and <math>\triangle DEB</math> are isosceles, <math>\angle ADC = \alpha</math> and <math>\angle BDE = \beta</math>. Then <math>\angle CDE = 180^{\circ} - \alpha - \beta = 90^{\circ}</math>, so <math>\triangle CDE</math> is a <math>3-4-5</math> triangle with <math>CE = 5</math>.
+
+Then <math>CB = 5+3 = 8</math>, and <math>\triangle ABC</math> is a <math>1-2-\sqrt{5}</math> triangle.
+
+In isosceles triangles <math>\triangle ACD</math> and <math>\triangle DEB</math>, drop altitudes from <math>C</math> and <math>E</math> onto <math>AB</math>; denote the feet of these altitudes by <math>P_C</math> and <math>P_E</math> respectively. Then <math>\triangle ACP_C \sim \triangle ABC</math> by AAA similarity, so we get that <math>AP_C = P_CD = \frac{4}{\sqrt{5}}</math>, and <math>AD = 2 \times \frac{4}{\sqrt{5}}</math>. Similarly, we get <math>BD = 2 \times \frac{6}{\sqrt{5}}</math>, and <math>AD:DB = \boxed{\textbf{(A) } 2:3}</math>.
+
+--- Solution 2 ---
+Let <math>AC=CD=4x</math>, and <math>DE=EB=3x</math>. (For this solution, <math>A</math> is above <math>C</math>, and <math>B</math> is to the right of <math>C</math>). Also let <math>\angle A = t^{\circ}</math>, so <math>\angle ACD = \left(180-2t\right)^{\circ}</math>, which implies <math>\angle DCB = \left(2t - 90\right)^{\circ}</math>. Similarly, <math>\angle B = \left(90-t\right)^{\circ}</math>, which implies <math>\angle BED = 2t^{\circ}</math>. This further implies that <math>\angle DEC = \left(180 - 2t\right)^{\circ}</math>. 
+
+Now we see that <math>\angle CDE = 180^{\circ} - \angle ECD - \angle DEC = 180^{\circ} - 2t^{\circ} + 90^{\circ} - 180^{\circ} + 2t^{\circ} = 90^{\circ}</math>. Thus <math>\triangle CDE</math> is a right triangle, with side lengths of <math>3x</math>, <math>4x</math>, and <math>5x</math> (by the Pythagorean Theorem, or simply the Pythagorean triple <math>3-4-5</math>). Therefore <math>AC=4x</math> (by definition), <math>BC=5x+3x = 8x</math>, and <math>AB=4\sqrt{5}x</math>. Hence <math>\cos{\left(2t^{\circ}\right)} = 2 \cos^{2}{t^{\circ}} - 1</math> (by the double angle formula), giving <math>2\left(\frac{1}{\sqrt{5}}\right)^2 - 1 = -\frac{3}{5}</math>.
+
+By the Law of Cosines in <math>\triangle BED</math>, if <math>BD = d</math>, we have <cmath>\begin{split}&d^2 = (3x)^2+(3x)^2-2\cdot\frac{-3}{5}(3x)(3x) \\ \Rightarrow \ &d^2 = 18x^2 + \frac{54x^2}{5} = \frac{144x^2}{5} \\ \Rightarrow \ &d = \frac{12x}{\sqrt{5}}\end{split}</cmath> Now <math>AD = AB - BD = 4x\sqrt{5} - \frac{12x}{\sqrt{5}} = \frac{8x}{\sqrt{5}}</math>. Thus the answer is <math>\frac{\left(\frac{8x}{\sqrt{5}}\right)}{\left(\frac{12x}{\sqrt{5}}\right)} = \frac{8}{12} = \boxed{\textbf{(A) }2:3}</math>.
+
+--- Solution 3 ---
+WLOG, let <math>AC=CD=4</math>, and <math>DE=EB=3</math>. <math>\angle CDE = 180^{\circ} - \angle ADC - \angle BDE = 180^{\circ} - \angle DAC - \angle DBE = 90^{\circ}</math>. Because of this, <math>\triangle DEC</math> is a 3-4-5 right triangle. Draw the altitude <math>DF</math> of <math>\triangle DEC</math>. <math>DF</math> is <math>\frac{12}{5}</math> by the base-height triangle area formula. <math>\triangle ABC</math> is similar to <math>\triangle DBF</math> (AA).  So <math>\frac{DF}{AC} = \frac{BD}{AB} = \frac35</math>. <math>DB</math> is <math>\frac35</math> of <math>AB</math>. Therefore, <math>AD:DB</math> is <math>\boxed{\textbf{(A) } 2:3}</math>.
+
+--- Solution 4 ---
+WLOG, <math>AC = CD = 4</math> and <math>DE = EB = 3</math>. Notice that in <math>\triangle ACB</math>, we have <math>m\angle BAC + m\angle ABC = 90^{\circ}</math>. Since <math>AC = CD</math> and <math>DE = EB</math>, we find that <math>m\angle DAC = m\angle ADC</math> and <math>m\angle DBE = m\angle BDE</math>, so <math>m\angle ADC + m\angle BDE = 90^{\circ}</math> and <math>\angle EDC</math> is right. Therefore, <math>CE = 5</math> by 3-4-5 triangle, <math>CB = 8</math> and <math>AB = 4\sqrt{5}</math>. Define point F such that <math>CF</math> is an altitude; we know the area of the whole triangle is <math>16</math> and we know the hypotenuse is <math>4\sqrt{5}</math>, so <math>CF = \frac{16}{4\sqrt{5}}\cdot2=\frac{8}{\sqrt{5}}</math>. By the geometric mean theorem, <math>x\left(4\sqrt{5}-x\right)=4\sqrt{5}x-x^{2}=\left(\frac{8}{\sqrt{5}}\right)^{2}=\frac{64}{5}</math>. Solving the quadratic we get <math>x=\frac{10\sqrt{5}\pm6\sqrt{5}}{5}</math>, so <math>x=\frac{4\sqrt{5}}{5} or \frac{16\sqrt{5}}{5}</math>. For now, assume <math>x=\frac{4\sqrt{5}}{5}</math>. Then <math>FB=4\sqrt{5}-\frac{4\sqrt{5}}{5}=\frac{16\sqrt{5}}{5}</math>. <math>CF</math> splits <math>AD</math> into two parts (quick congruence by Leg-Angle) so <math>FD = AF = \frac{4\sqrt{5}}{5}</math> and <math>DB = FB - FD = \frac{16\sqrt{5}}{5}-\frac{4\sqrt{5}}{5}=\frac{12\sqrt{5}}{5}</math>. <math>AD = 2\cdot\frac{4\sqrt{5}}{5}=\frac{8\sqrt{5}}{5}</math>. Now we know <math>AD</math> and <math>DB</math>, we can find <math>\frac{AD}{DB}=\frac{\frac{8\sqrt{5}}{5}}{\frac{12\sqrt{5}}{5}}=\frac{8\sqrt{5}}{5}\cdot\frac{5}{12\sqrt{5}}=\frac{8}{12}=\frac{2}{3}</math> or <math>\boxed{\textbf{(A) } 2:3}</math>.
+
+--- Solution 5 ---
+Let <math>\angle B=\theta_1</math>, then <math>\angle A=90-\theta_1</math>. Since <math>AC=AD</math>, <math>\angle ADC=90-\theta_1</math>. Similarly, <math>\angle BDE=\theta_1</math>. Then, <math>\angle EDC=180-\theta_1-(90-\theta_1)=90</math>. Therefore <math>\bigtriangleup CDE</math> is right. Let <math>AC=CD=4</math> and <math>DE=EB=3</math>, then <math>EC=5</math>. Let <math>\angle DEC=\angle ACD=\theta_2</math>. We know that <math>\cos \theta_2=\frac{3}{5}</math> so we can apply the Law of Cosines on <math>\bigtriangleup ACD</math> to find <math>AD=\sqrt{32-32\cdot{\frac{3}{5}}}=\sqrt{\frac{2}{5}\cdot{32}} \Longrightarrow \frac{8}{\sqrt{5}}</math>. Doing Pythagorean for <math>BA</math>, we get <math>4\sqrt{5}</math>. Then, <math>BD=4\sqrt{5}-\frac{8}{\sqrt{5}} \Longrightarrow \frac{12}{\sqrt{5}}</math> so the requested ratio is <math>8:12=\boxed{\textbf{(A) } 2:3}</math>.
+
+
+=== Problem 17 ===
+A red ball and a green ball are randomly and independently tossed into bins numbered with positive integers so that for each ball, the probability that it is tossed into bin
+
+Choices: {'A': '\\frac{1}{4}', 'B': '\\frac{2}{7}', 'C': '\\frac{1}{3}', 'D': '\\frac{3}{8}', 'E': '\\frac{3}{7}</math>'}
+Answer: C
+
+--- Solution 1 ---
+We see that the total probability will eventually sum to 1 from the infinite geometric series sum formula. Now, if the green ball goes into the \( k=1 \) bin with a \( 1/2 \) chance, then the red ball has a \( \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \dots = 1/2 \) chance to go to a higher bin. The combined probability is \( 1/2 \cdot 1/2 = 1/4 \). If the green ball goes into the \( k=2 \) bin with \( 1/4 \) chance, then the red ball has a \( 1/8 + 1/16 + \dots = 1/4 \) chance to go to a higher level bin. This probability is \( 1/4 \cdot 1/4 = 1/16 \). So our common ratio is \( 1/4 \), and we use the geometric series sum formula to get \( \frac{1/4}{1 - 1/4} = \) <math>\boxed{\textbf{(C) } \frac{1}{3}}</math>.
+
+--- Solution 2 ---
+By symmetry, the probability of the red ball landing in a higher-numbered bin is the same as the probability of the green ball landing in a higher-numbered bin. Clearly, the probability of both landing in the same bin is <math>\sum_{k=1}^{\infty}{2^{-k} \cdot 2^{-k}} = \sum_{k=1}^{\infty}2^{-2k} = \frac{1}{3}</math> (by the geometric series sum formula). Therefore, since the other two probabilities have to be the same, they have to be <math>\frac{1-\frac{1}{3}}{2} = \boxed{\textbf{(C) } \frac{1}{3}}</math>.
+
+
+Note: the formula is <math>\frac{a_{1}}{1-r}</math> where <math>a_{1}</math> is the first term and <math>r</math> is the common ratio.
+Derivation of the geometric series sum formula:
+Let <math>S = S=a_{1}+a_{1}r+a_{1}r^{2}+a_{1}r^{3}+...</math> and so on to infinity.
+Then <math>rS=a_{1}r+a_{1}r^{2}+a_{1}r^{3}+...</math> and so on to infinity. Notice that the terms in the second expression are the same as all the terms in the first EXCEPT for <math>a_{1}</math>.
+Subtract <math>S-rS=a_{1}</math>, factor <math>S\left(1-r\right)=a_{1}</math>, and finally <math>S=\frac{a_{1}}{1-r}</math>.
+
+Note: The formula only works if <math>r<1</math>; otherwise, the series will diverge to infinity or negative infinity.
+
+--- Solution 3 ---
+Suppose the green ball goes in bin <math>i</math>, for some <math>i \ge 1</math>. The probability of this occurring is <math>\frac{1}{2^i}</math>. Given that this occurs, the probability that the red ball goes in a higher-numbered bin is <math>\frac{1}{2^{i+1}} + \frac{1}{2^{i+2}} + \ldots = \frac{1}{2^i}</math> (by the geometric series sum formula). Thus the probability that the green ball goes in bin <math>i</math>, and the red ball goes in a bin greater than <math>i</math>, is <math>\left(\frac{1}{2^i}\right)^2 = \frac{1}{4^i}</math>. Summing from <math>i=1</math> to infinity, we get
+
+<cmath>\sum_{i=1}^{\infty} \frac{1}{4^i} = \boxed{\textbf{(C) } \frac{1}{3}}</cmath>
+where we again used the geometric series sum formula. (Alternatively, if this sum equals <math>n</math>, then by writing out the terms and multiplying both sides by <math>4</math>, we see <math>4n = n+1</math>, which gives <math>n = \frac{1}{3}</math>.)
+
+--- Solution 4 ---
+For red ball in bin <math>k</math>, <math>\Pr(\text{Green Below Red})=\sum\limits_{i=1}^{k-1}2^{-i}</math> (GBR) and <math>\Pr(\text{Red in Bin k}=2^{-k}</math> (RB). 
+<cmath>\Pr(\text{GBR}|\text{RB})=\sum\limits_{k=1}^{\infty}2^{-k}\sum\limits_{i=1}^{k-1}2^{-i}=\sum\limits_{k=1}^{\infty}2^{-k}\cdot\frac{1}{2}(\frac{1-(1/2)^{k-1}}{1-1/2})</cmath>
+<cmath>\sum\limits_{k=1}^{\infty}\frac{1}{2^{-k}}-2\sum\limits_{k=1}^\infty\frac{1}{(2^2)^{-k}}\implies 1-2/3=\boxed{(\textbf{C}) \frac{1}{3}}</cmath>
+
+--- Solution 5 ---
+The probability that the two balls will go into adjacent bins is <math>\frac{1}{2\times4} + \frac{1}{4\times8} + \frac{1}{8 \times 16} + ... = \frac{1}{8} + \frac{1}{32} + \frac{1}{128} + \cdots = \frac{1}{6}</math> by the geometric series sum formula. Similarly, the probability that the two balls will go into bins that have a distance of <math>2</math> from each other is <math>\frac{1}{2 \times 8} + \frac{1}{4 \times 16} + \frac{1}{8 \times 32} + \cdots = \frac{1}{16} + \frac{1}{64} + \frac{1}{256} + \cdots = \frac{1}{12}</math> (again recognizing a geometric series). We can see that each time we add a bin between the two balls, the probability halves. Thus, our answer is <math>\frac{1}{6} + \frac{1}{12} + \frac{1}{24} + \cdots</math>, which, by the geometric series sum formula, is <math>\boxed{\textbf{(C) } \frac{1}{3}}</math>.
+-fidgetboss_4000
+
+--- Solution 6 ---
+Define a win as a ball appearing in higher numbered box.
+
+Start from the first box. 
+
+There are <math>4</math> possible results in the box: Red, Green, Red and Green, or none, with an equal probability of <math>\frac{1}{4}</math> for each. If none of the balls is in the first box, the game restarts at the second box with the same kind of probability distribution, so if <math>p</math> is the probability that Red wins, we can write <math>p = \frac{1}{4} + \frac{1}{4}p</math>: there is a <math>\frac{1}{4}</math> probability that "Red" wins immediately, a <math>0</math> probability in the cases "Green" or "Red and Green", and in the "None" case (which occurs with <math>\frac{1}{4}</math> probability), we then start again, giving the same probability <math>p</math>. Hence, solving the equation, we get <math>p = \boxed{\textbf{(C) } \frac{1}{3}}</math>.
+
+--- Solution 7 ---
+Write out the infinite geometric series as <math>\frac{1}{2}</math>, <math>\frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \cdots</math>. To find the probablilty that red goes in a higher-numbered bin than green, we can simply remove all odd-index terms (i.e term <math>1</math>, term <math>3</math>, etc.), and then sum the remaining terms - this is in fact precisely equivalent to the method of Solution 2. Writing this out as another infinite geometric sequence, we are left with <math>\frac{1}{4}, \frac{1}{16}, \frac{1}{64}, \cdots</math>. Summing, we get <cmath>\sum_{i=1}^{\infty} \frac{1}{4^i} = \boxed{\textbf{(C) } \frac{1}{3}}</cmath>
+
+--- Solution 8 ---
+Fixing the green ball to fall into bin <math>1</math> gives a probability of <math>\frac{1}{2}\left(\frac{1}{2^2}+\frac{1}{2^3} +...\right)</math> for the red ball to fall into a higher bin. Fixing the green ball to fall into bin <math>2</math> gives a probability of <math>\frac{1}{2^2}\left(\frac{1}{2^3}+\frac{1}{2^4} +...\right)</math>. Factoring out the denominator of the first fraction in each probability gives <math>\frac{1}{2^3}\left(1+\frac{1}{2}+\frac{1}{2^2}+...\right)+\frac{1}{2^5}\left(1+\frac{1}{2}+\frac{1}{2^2}+...\right)+...</math> so factoring out <math>\left(1+\frac{1}{2}+\frac{1}{2^2}+\frac{1}{2^3}+...\right)</math> results in the probability simplifying to <math>\left(\frac{1}{2^3}+\frac{1}{2^5}+\frac{1}{2^7}+...\right)\left(1+\frac{1}{2}+\frac{1}{2^2}+\frac{1}{2^3}+...\right)</math> and using the formula <math>\frac{a}{1-r}</math> to find both series, we obtain <math>\left(\frac{\frac{1}{2^3}}{1-\frac{1}{4}}\right)\left(\frac{1}{1-\frac{1}{2}}\right)</math> which simplifies to <math>\boxed{\textbf{(C) } \frac{1}{3}}</math> -- OGBooger
+
+--- Solution 9 ---
+We can think of this problem as "what is the probability that the green ball's bin is less than the red ball's bin". We do not consider the case where the red ball goes into bin <math>1</math> because the green ball has no where to go then. The chance that the green one is below the red one if the red one goes to bin <math>2</math> is <math>\frac{1}{4}</math> chance that the red ball even goes in bin <math>2</math> and <math>\frac{1}{2}</math> chance that the green ball goes into any bin less than <math>2</math>. Similarly, if the red goes into bin <math>3</math>, there is a <math>\frac{1}{8} \cdot \left(\frac{1}{4} + \frac{1}{2}\right)</math> chance, or <math>\frac{3}{32}</math>, continuing like this, we get this sequence:
+
+<math>\frac{1}{8}, \frac{3}{32}, \frac{7}{128}, ...</math>
+
+Let <math>S</math> equal the sum of our series:
+
+<math>S = \frac{1}{8} + \frac{3}{32} + \frac{7}{128} + ...</math>. That means we can write another equation:
+<math>\frac{S}{4} = \frac{1}{32} + \frac{3}{128} + ...</math>
+
+Subtracting <math>\frac{S}{4}</math> from <math>S</math>, yields:
+
+<math>S - \frac{S}{4} = \frac{1}{8} + \frac{2}{32} + \frac{4}{128} + ...</math>
+
+We see that the above series is a infinite geometric sequence with common ratio <math>\frac{1}{2}</math>. Therefore, the sum of that infinite series is <math>\frac{\frac{1}{8}}{\frac{1}{2}}</math>, which equals <math>\frac{1}{4}</math>. Our equation is now <math>S - \frac{S}{4} = \frac{1}{4}</math>. Solving for <math>S</math> shows that <math>S = \frac{1}{3}</math>.
+
+Our answer is <math>\boxed{\textbf{(C) }\frac{1}{3}}</math>
+
+--- Solution 10 ---
+Denote <math>G,R</math> the bin numbers of the green and red balls, respectively. The common probability distribution of <math>G,B</math> can be constructed by keep splitting the remaining unassigned probability into two halves: one goes to the smallest number that has not been assigned, and the other goes to the rest. In other words, <math>\Pr(G=k) = \Pr (G>k), \forall k \in \mathbb{N}</math>. Then,
+
+<cmath>
+\Pr(G>R)=\sum_{k=1}^\infty \Pr(G>k) \Pr(R=k) = \sum_{k=1}^\infty \Pr(G=k) \Pr(R=k) = \Pr (G=R)
+</cmath>
+
+Similarly <math>\Pr(G<R)=\Pr(G=R)</math>. Therefore all three probabilities equal <math>\boxed{\textbf{(C) }\frac{1}{3}}</math>.
+
+--- Solution 11 ---
+The probability of the red ball falling ahead of the green ball is the same as the probability of the green ball falling ahead of the red ball. Therefore, if we calculate the probability of the red ball and the green ball falling inside the same box, we get the answer by subtracting that probability from 1. <math>P(same) = \left(\frac{1}{2}\right)^2 + \left(\frac{1}{4}\right)^2 + \left(\frac{1}{8}\right)^2 + \cdots = \frac{1}{4} + \frac{1}{16} + \frac{1}{64} = \frac{1}{3}</math>. Therefore, our answer is <math>\frac{1-\frac{1}{3}}{2} = \boxed{\frac{1}{3}}</math>
+
+-NL008
+
+--- Solution 12 ---
+The probability of the bins is <math>\frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \ldots</math>. Assuming the green ball falls in bin <math>1</math>, which occurs with probability <math>\frac{1}{2}</math>, the probability of the red ball falling in a bin higher is also <math>\frac{1}{2}</math>, as it needs to fall anywhere but the first box, which happens with probability <math>1 - \frac{1}{2}</math>. Assuming that instead the green ball falls in the second bin, which occurs with probability <math>\frac{1}{4}</math>, we can see that the probability of the red ball being higher is also <math>\frac{1}{4}</math>, as it needs to fall anywhere but the first two, which happens with probability <math>1 - \frac{1}{2} - \frac{1}{4}</math>. This pattern continues, meaning the probability of red being in a box higher than green is <math>\frac{1}{2} \cdot \frac{1}{2} + \frac{1}{4} \cdot \frac{1}{4} + \frac{1}{8} \cdot \frac{1}{8} + \ldots = \frac{1}{4} + \frac{1}{16} + \frac{1}{64} + \ldots = x</math>. Factoring out <math>\frac{1}{4}</math>, we get <math>\frac{1}{4}\left(1 + \frac{1}{4} + \frac{1}{16} + \frac{1}{64} + \ldots\right) = x</math>. By replacing the sum inside with <math>x</math> as they are equivalent, we get <math>\frac{1}{4}\left(1+x\right) = x</math>, which gets us <math>x = \boxed{\frac{1}{3}}</math>
+
+
+You can also use the infinite geometric sequence formula for the <math>\frac{1}{2}\cdot\frac{1}{2}+\frac{1}{4}\cdot\frac{1}{4}+\ldots</math> to get <math>\frac{1}{2}\cdot\frac{1}{2}+\frac{1}{4}\cdot\frac{1}{4}+\ldots</math> <math>=</math> <math>\frac{\frac{1}{4}}{1-\frac{1}{4}}</math> <math>=</math> <math>\frac{\frac{1}{4}}{\frac{3}{4}}</math> <math>=</math> <math>\boxed{\frac{1}{3}}</math>
+
+
+=== Problem 18 ===
+Henry decides one morning to do a workout, and he walks
+
+Choices: {'A': '\\frac{2}{3}', 'B': '1', 'C': '1\\frac{1}{5}', 'D': '1\\frac{1}{4}', 'E': '1\\frac{1}{2}</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let the two points that Henry walks in between be <math>P</math> and <math>Q</math>, with <math>P</math> being closer to home. As given in the problem statement, the distances of the points <math>P</math> and <math>Q</math> from his home are <math>A</math> and <math>B</math> respectively. By symmetry, the distance of point <math>Q</math> from the gym is the same as the distance from home to point <math>P</math>. 
+
+Thus, <math>A = 2 - B</math>. 
+
+In addition, when he walks from point <math>Q</math> to home, he walks <math>\frac{3}{4}</math> of the distance, ending at point <math>P</math>. Therefore, we know that <math>B - A = \frac{3}{4}B</math>. 
+
+By substituting, we get <math>B - (2-B) = \frac{3}{4}\cdot B</math> and we solve to get <math>B=\dfrac{8}{5}</math>, so <math>A=2-\dfrac{8}{5}=\dfrac{2}{5}</math>. 
+
+<math>|A-B|=\left|\dfrac{2}{5}-\dfrac{8}{5} \right|=\frac{6}{5}=\boxed{\textbf{(C) } 1 \frac{1}{5}}</math>.
+
+--- Solution 2 ---
+We assume that Henry is walking back and forth exactly between points <math>P</math> and <math>Q</math>, with <math>P</math> closer to Henry's home than <math>Q</math>. Denote Henry's home as a point <math>H</math> and the gym as a point <math>G</math>. Then <math>HP:PQ = 1:3</math> and <math>PQ:QG = 3:1</math>, so <math>HP:PQ:QG = 1:3:1</math>. Therefore, <math>|A-B| = PQ = \frac{3}{1+3+1} \cdot 2 = \frac{6}{5} = \boxed{\textbf{(C) } 1 \frac{1}{5}}</math>.
+
+--- Solution 3 ---
+Notice how the middle point is \( 2/1 = 1 \). So we write \( 1 = 100/100 \). We choose the points \( 101/100 \) and \( 99/100 \). The average of these points itself is \( 100/100 \). So we need to find a number close to \(100/100\), but not \(100/100\) exactly. The only number that satisfies this is <math>\boxed{\textbf{(C) } 1 \frac{1}{5}}</math>, as it gives \( \frac{120}{100} \).
+
+--- Solution 4 ---
+Since Henry is very close to walking back and forth between two points, let us denote <math>A</math> closer to his house, and <math>B</math> closer to the gym. Then, let us denote the distance from <math>A</math> to <math>B</math> as <math>x</math>. If Henry was at <math>B</math> and walked <math>\frac{3}{4}</math> of the way, he would end up at <math>A</math>, vice versa. Thus we can say that the distance from <math>A</math> to the gym is <math>\frac{1}{4}</math> the distance from <math>B</math> to his house. That means it is <math>\frac{1}{3}x</math>. This also applies to the other side. Furthermore, we can say <math>\frac{1}{3}x</math> + <math>x</math> + <math>\frac{1}{3}x</math> = <math>2</math>. We solve for <math>x</math> and get <math>x=\frac{6}{5}</math>. Therefore, the answer is <math>\boxed{\textbf{(C) } 1\frac{1}{5}}</math>.
+
+--- Solution 5 ---
+Let <math>A</math> have a distance of <math>x</math> from the home. Then, the distance to the gym is <math>2-x</math>. This means point <math>B</math> and point <math>A</math> are <math>\frac{3}{4} \cdot (2-x)</math> away from one another. It also means that Point <math>B</math> is located at <math>\frac{3}{4} (2-x) + x.</math> So, the distance between the home and point <math>B</math> is also <math>\frac{3}{4} (2-x) + x.</math>
+
+It follows that point <math>A</math> must be at a distance of <math>\frac{3}{4} \left( \frac{3}{4} (2-x) + x \right)</math> from point <math>B</math>. However, we also said that this distance has length <math>\frac{3}{4} (2-x)</math>. So, we can set those equal, which gives the equation: <cmath>\frac{3}{4} \left( \frac{3}{4} (2-x) + x \right) = \frac{3}{4} (2-x).</cmath>
+
+Solving, we get <math>x = \frac{2}{5}</math>. This means <math>A</math> is at point <math>\frac{2}{5}</math> and <math>B</math> is at point <math>\frac{3}{4} \cdot \frac{8}{5} + \frac{2}{5} = \frac{8}{5}.</math>
+
+So, <math>|A - B| = \frac{6}{5}=\boxed{\textbf{(C) } 1\frac{1}{5}}.</math>
+
+--- Solution 6 ---
+Let A be the point closer to Henry’s home, and B be the point closer to the gym. Define <math>(a_n)</math> to be the position of Henry after <math>2n</math> walks. Similarly, define <math>(b_n)</math> to be the position of Henry after <math>2n - 1</math> walks. Thus, <math>a_1 = \frac{1}{4} \cdot (\frac{3}{4} \cdot 2) = \frac{3}{8}</math> and <math>b_1 = \frac{3}{4} \cdot 2 = \frac{3}{2}</math>. We can also deduce that <cmath>a_n = \frac{1}{4} ( \frac{3}{4} (2 - a_{n-1}) + a_{n-1} ) = \frac{1}{16} a_{n-1} + \frac{3}{8}</cmath> (<math>2 - a_{n-1}</math> is Henry's distance to the gym, so we take <math>\frac{3}{4}</math> of that and add it to our original position. Then, we take <math>\frac{1}{4}</math> of that to obtain Henry's distance from home). Similarly, we can deduce that <cmath>b_n = \frac{3}{4} (2 - \frac{1}{4} b_{n-1}) + \frac{1}{4} b_{n-1} = \frac{1}{16} b_{n-1} + \frac{3}{2}</cmath> Now, we follow the standard procedure to convert this arithmetico geometric recursion into a closed form. Let <math>a_n - k = \frac{1}{16} (a_{n-1} -k)</math> for some constant <math>k</math>. Then, <math>a_n = \frac{1}{16} a_{n-1} + \frac{15}{16} k</math>. So, <math>\frac{1}{16} a_{n-1} + \frac{15}{16} k = \frac{1}{16} a_{n-1} + \frac{3}{8} \Rightarrow k = \frac{3}{8} \cdot \frac{16}{15} = \frac{2}{5}</math>. This means that <cmath>a_n - \frac{2}{5} = \frac{1}{16} (a_{n-1} - \frac{2}{5}) \Rightarrow a_n - \frac{2}{5} = (\frac{1}{16})^{n-1} (a_1 - \frac{2}{5}) = (\frac{1}{16})^{n-1} (\frac{3}{8} - \frac{2}{5}) = (\frac{1}{16})^{n-1} \cdot -\frac{1}{40} \Rightarrow a_n = \frac{2}{5} - \frac{1}{16^{n-1} \cdot 40}</cmath> Now, calculating <cmath>\lim_{n \to \infty} a_n = \lim_{n \to \infty} \frac{2}{5} - \frac{1}{16^{n-1} \cdot 40} = \frac{2}{5} - \lim_{n \to \infty} \frac{1}{16^{n-1} \cdot 40} = \frac{2}{5} - 0 = \frac{2}{5} </cmath> Thus, <math>A = \frac{2}{5}</math>. Taking a similar process for <math>B</math>, we derive that <math>b_n = \frac{8}{5} - \frac{1}{16^{n-1} \cdot 10}</math>, so <math>B = \lim_{n \to \infty} \frac{8}{5} - \frac{1}{16^{n-1} \cdot 10} = \frac{8}{5}</math>. Finally, <math>|A-B| = |\frac{2}{5} - \frac{8}{5}| = \boxed{\frac{6}{5}}</math>.
+
+--- Solution 7 ---
+From symmetry, we see that <imath>A+B=2</imath> after a sufficient amount of steps. Also, if Henry walks back and forth from <imath>A</imath> to <imath>B</imath> after a certain amount of time, then we also see that <imath>A=1/4B</imath>. Then, we obtain the following:
+
+<imath>2-B=1/4B</imath> —> <imath>2=5/4B</imath> —> <imath>B=8/5</imath>
+
+<imath>A=1/4(8/5)=2/5</imath>, <imath>|A-B|=|2/5-8/5|=|-6/5|= \boxed{(C)6/5}</imath>
+ - WB0s0n
+
+
+=== Problem 19 ===
+Let
+
+Choices: {'A': '98', 'B': '100', 'C': '117', 'D': '119', 'E': '121</math>'}
+Answer: C
+
+--- Solution 1 ---
+The prime factorization of <math>100,000</math> is <math>2^5 \cdot 5^5</math>. Thus, we choose two numbers <math>2^a5^b</math> and <math>2^c5^d</math> where <math>0 \le a,b,c,d \le 5</math> and <math>(a,b) \neq (c,d)</math>, whose product is <math>2^{a+c}5^{b+d}</math>, where <math>0 \le a+c \le 10</math> and <math>0 \le b+d \le 10</math>.
+
+Notice that this is similar to choosing a divisor of <math>100,000^2 = 2^{10}5^{10}</math>, which has <math>(10+1)(10+1) = 121</math> divisors. However, some of the divisors of <math>2^{10}5^{10}</math> cannot be written as a product of two distinct divisors of <math>2^5 \cdot 5^5</math>, namely: <math>1 = 2^05^0</math>, <math>2^{10}5^{10}</math>, <math>2^{10}</math>, and <math>5^{10}</math>. The last two cannot be written because the maximum factor of <math>100,000</math> containing only <math>2</math>s or <math>5</math>s (and not both) is only <math>2^5</math> or <math>5^5</math>. Since the factors chosen must be distinct, the last two numbers cannot be written because they would require <math>2^5 \cdot 2^5</math> or <math>5^5 \cdot 5^5</math>. The first two would require <math>1 \cdot 1</math> and <math>2^{5}5^{5} \cdot 2^{5}5^{5}</math>, respectively. This gives <math>121-4 = 117</math> candidate numbers. It is not too hard to show that every number of the form <math>2^p5^q</math>, where <math>0 \le p, q \le 10</math>, and <math>p,q</math> are not both <math>0</math> or <math>10</math>, can be written as a product of two distinct elements in <math>S</math>. Hence the answer is <math>\boxed{\textbf{(C) } 117}</math>.
+
+--- Solution 2 ---
+Set \( S \) has the number of factors in 100,000. 
+
+The prime factorization of 100,000 is \( 2^5 \times 5^5 \). We biject the question from "How many unique integers..." to, "How many possible units digits can occur", as the 36 factors will just branch from the units digits. (They also form a 1-1 correspondence).
+
+How? Well, you can imagine just the single factors of 10, that being, \( 2 \times 5 \). Then, We see that our factors are 1, 2, 5, or 10. Therefore, the product of two elements that may occur are 1x2, 2x5, 2x10, 5x1, 5x2, 5x10, 1, and 10 itself. These are 8 elements. The unique units digits of this are either 0 or 1. Then, we have the number of factors, that being, \( (1+1)(1+1) = 4 \). 4 multiplied by the two units digits reveals 8 as well. Notice that 100,000 | 10, and therefore there exists a 1-1 correspondence. If we wanted to count the distinct elements only, just subtract 1 and 10, or \( 2^0 \times 5^0 \) and \( 2 \times 5 \)! That easy!
+
+Continuing on, through inspection, the main multiples that may be formed are simply going to end in 0, \( 2^0 = 1 \), or \( 5^n \mod 10 \equiv 5 \).
+
+Then, we have a total of \( 36 \times 3 = 108 \) cases that may occur (number of factors times possible units digits given only the prime factorization).
+
+We now consider either one side is \( 2^n \times 5^0 \) or the other is \( 5^n \times 2^0 \) for \( 1 \le n \in \mathbb{Z} \le 5 \). Of course, the fact of \( 5^n \times 2^0 \) is always 5, so we only need to consider \( 2^n \times 5^0 \). This gives us either 2, 4, 8, or 6 as our units digits. However, one can quickly notice that 8 is already possible through 4 and 2 and because 6 represents 16, 16 is just \( 2 \times 8 \). Therefore, we only have 2 and 4 remaining. We distribute this to either the units digits 0, 1, and 5, giving us \( 3^2 = 9 \) total possibilities.
+
+We add 108 and 9 to get \( 108 + 9 =\) <imath>\boxed{\textbf{(C) } 117}</imath>.
+
+This problem was much harder than anticipated.
+
+
+=== Problem 20 ===
+As shown in the figure, line segment
+
+Choices: {'A': '13', 'B': '14', 'C': '15', 'D': '16', 'E': '17</math>'}
+Answer: E
+
+--- Solution 1 ---
+This solution is essentially the same, but is much more clear and easier to understand, than Solution 2. I will TeX this at a later time, but if anyone wants to help in the mean time, please do -- thanks!!
+
+[[File:10b20.png]]
+
+--- Solution 2 ---
+Divide the circle into four parts: the top semicircle by connecting E, F, and G(<math>A</math>); the bottom sector (<math>B</math>), whose arc angle is <math>120^{\circ}</math> because the large circle's radius is <math>2</math> and the short length (the radius of the smaller semicircles) is <math>1</math>, giving a <math>30^{\circ}-60^{\circ}-90^{\circ}</math> triangle; the triangle formed by the radii of <math>A</math> and the chord (<math>C</math>); and the four parts which are the corners of a circle inscribed in a square (<math>D</math>). Then the area is <math>A + B - C + D</math> (in <math>B-C</math>, we find the area of the bottom shaded region, and in <math>D</math> we find the area of the shaded region above the semicircles but below the diameter).
+
+The area of <math>A</math> is <math>\frac{1}{2} \pi \cdot 2^2 = 2\pi</math>.
+
+The area of <math>B</math> is <math>\frac{120^{\circ}}{360^{\circ}} \pi \cdot 2^2 = \frac{4\pi}{3}</math>.
+
+For the area of <math>C</math>, the radius of <math>2</math>, and the distance of <math>1</math> (the smaller semicircles' radius) to <math>BC</math>, creates two <math>30^{\circ}-60^{\circ}-90^{\circ}</math> triangles, so <math>C</math>'s area is <math>2 \cdot \frac{1}{2} \cdot 1 \cdot \sqrt{3} = \sqrt{3}</math>.
+
+The area of <math>D</math> is <math>4 \cdot 1-\frac{1}{4}\pi \cdot 2^2=4-\pi</math>.
+
+Hence, finding <math>A+B-C+D</math>, the desired area is <math>\frac{7\pi}{3}-\sqrt{3}+4</math>, so the answer is <math>7+3+3+4=\boxed{\textbf{(E) } 17}</math>.
+
+----------
+
+Note from 
+Note: Wow that is harsh
+
+Note from 
+Note: Can someone make this solution more easy to follow? It’s been a long time.
+
+--- Solution 3 ---
+THIS IS AN ADVANCED (not rlly, just rlly unreliable) TECHNIQUE! If you are new to competition math, this is highly not recommended.
+
+We want to find the first, not simplified solution that can be written into the form <cmath>\frac{a}{b}\cdot\pi-\sqrt{c}+d,</cmath> but we don't need to get there.
+
+We will use a very handy technique called [https://artofproblemsolving.com/wiki/index.php/Fakesolving?srsltid=AfmBOooIYJBasY2JG2w6ib8tmkZzk_s4gHj3D43Dmllv1jje2xbw7KzG Fakesolving].
+
+We start with seeing that the diameter of the full circle is greater than 2 but less than and almost 4, so, we multiply with something greater than 1.5 and, through [https://artofproblemsolving.com/wiki/index.php/Fakesolving?srsltid=AfmBOooIYJBasY2JG2w6ib8tmkZzk_s4gHj3D43Dmllv1jje2xbw7KzG Fakesolving] we say that the diameter is \( 2\sqrt{3} \) which means the radius is \( \sqrt{3} \). This means the area of the full circle is \( 3\pi \).
+
+Next, we start [https://artofproblemsolving.com/wiki/index.php/Fakesolving?srsltid=AfmBOooIYJBasY2JG2w6ib8tmkZzk_s4gHj3D43Dmllv1jje2xbw7KzG Fakesolving] the assumption that the regions outside the full circle but inside the smaller semicircles are \( \frac{\sqrt{3}}{3} \cdot \frac{1}{2} \cdot 2 = \frac{2\sqrt{3}}{6} \) each. This means that the smaller half circle that lies inside of the full circle has an area of \( \frac{1}{2} \pi \). The inside regions of the smaller 3 half circles that lie inside of the full circle have a combined area of \( \frac{2\sqrt{3}}{6} \). 
+
+The area is then \( 3\pi - (\frac{2\sqrt{3}}{6} + \frac{1}{2} \pi) \). Therefore we can say that this could be simplified into the form
+<cmath>
+\frac{a}{b} \cdot \pi - \sqrt{c} + d,
+</cmath>
+We just add our entire result, to get \( 3 + 2 + 3 + 6 + 1 + 2 = \) \(\boxed{\textbf{(E) } 17}\).
+
+--- Solution 4 ---
+First we have to solve the area of the non-shaded area(the semicircles) that are in Circle <math>F</math>.The middle semicircle has area <math>\frac12\pi</math> and the other two have about half of their are inside the circle = <math>\frac14\pi\ + \frac14\pi\ + \frac12\pi\ = \pi</math>. Then we subtract the part of the quartercircle that isn't in Circle <math>F</math>. This is an area equal to that of a triangle minus an minor segment. The height of the triangle is the radius of the semicircles, which is <math>1</math>. The length is the radius of Circle <math>F</math> minus the length from the center of the middle semicircle up to until it is on the edge of the circle. Using the Pythagorean Theorem we can figure out that the length is: <cmath>\sqrt{2^2 - 1^2} = \sqrt{3}.</cmath> This means that the length of the triangle is <math>2 - \sqrt{3}</math> and so the area of the triangle is <math>\frac{2 - \sqrt{3}}{2}</math>. For the area of the segment, it's the area of the sector minus the area of the triangle. The triangle's length is the radius of <math>F</math>: <math>2</math>, while its height is the radius of the semicircles: <math>1</math>, so the area is 1. The  angle is <math>30^{\circ}</math> as the hypotenuse is the radius of <math>F</math> and the opposite side is the radius of the semicircles, which means the area is <math>\frac{1}{12}</math> of the whole area, which is <math>4\pi</math> so the area of the sector is <math>\frac{\pi}{3}</math> and the area of the segment is <math>\frac{\pi}{3} - 1</math> and so the area of the part of the quartercircles that stick out of Circle <math>F</math> is: <cmath>(\frac{2 - \sqrt{3}}{2})-(\frac{\pi}{3} - 1) = \frac{2 - \sqrt{3}}{2} + 1 - \frac{\pi}{3} = \frac{4 - \sqrt{3}}{2} - \frac{\pi}{3}.</cmath>
+
+Since there are two, one for each side, we have to multiply it by 2, so we have <math>{4 - \sqrt{3}} - \frac{2\pi}{3}</math>, which we subtract from <math>\pi</math> which gets us <math>\frac{5\pi}{3} - 4 + \sqrt{3}</math> which we subtract from <math>4\pi</math> <math>=</math> <math>\frac{12\pi}{3}</math>, which is <math>\frac{7\pi}{3} + 4 - \sqrt{3}</math> so we get <math>7+3+4+3=\boxed{\textbf{(E) } 17}</math>.
+
+
+=== Problem 21 ===
+Debra flips a fair coin repeatedly, keeping track of how many heads and how many tails she has seen in total, until she gets either two heads in a row or two tails in a row, at which point she stops flipping. What is the probability that she gets two heads in a row but she sees a second tail before she sees a second head?
+
+Choices: {'A': '\\frac{1}{36}', 'B': '\\frac{1}{24}', 'C': '\\frac{1}{18}', 'D': '\\frac{1}{12}', 'E': '\\frac{1}{6}</math>'}
+Answer: B
+
+--- Solution 1 ---
+We first want to find out which sequences of coin flips satisfy the given condition. For Debra to see the second tail before the second head, her first flip can't be heads, as that would mean she would either end with double tails before seeing the second head, or would see two heads before she sees two tails. Therefore, her first flip must be tails. The shortest sequence of flips by which she can get two heads in a row and see the second tail before she sees the second head is <math>THTHH</math>, which has a probability of <math>\frac{1}{2^5} = \frac{1}{32}</math>. Furthermore, she can prolong her coin flipping by adding an extra <math>TH</math>, which itself has a probability of <math>\frac{1}{2^2} = \frac{1}{4}</math>. Since she can do this indefinitely, this gives an infinite geometric series with a first term of <math>\frac{1}{32}</math> and a common ratio of <math>\frac{1}{4}</math>, which means the answer (by the infinite geometric series sum formula) is <math>\frac{\frac{1}{32}}{1-\frac{1}{4}} = \boxed{\textbf{(B) }\frac{1}{24}}</math>.
+
+===Alternative finish===
+You have <math>THT</math>...(insert any # of pairs of HT)...HH. You could have <math>0</math> pairs, <math>1</math> pair, <math>2</math> pairs, etc. of HT. Thus the probability is <math>(\frac{1}{2})^0+(\frac{1}{2})^2+(\frac{1}{2})^4+...=\frac{1}{(1-(\frac{1}{2})^2)}=4/3</math>. number of ways to get <math>THT...HH</math> in that order is <math>\frac{1}{8} * \frac{1}{4}</math>. Thus your probability is <math>\frac{1}{8} * \frac{4}{3} * \frac{1}{4} = \frac{1}{24}</math> as desired
+
+--- Solution 2 ---
+Note that the sequence must start in <math>THT</math>, which happens with <math>\frac{1}{8}</math> probability. Now, let <math>P</math> be the probability that Debra will get two heads in a row after flipping <math>THT</math>. Either Debra flips two heads in a row immediately (probability <math>\frac{1}{4}</math>), or flips a head and then a tail and reverts back to the "original position" (probability <math>\frac{1}{4}P</math>). Therefore, <math>P=\frac{1}{4}+\frac{1}{4}P</math>, so <math>P=\frac{1}{3}</math>, so our final answer is <math>\frac{1}{8}\times\frac{1}{3}=\boxed{\textbf{(B) }\frac{1}{24}}</math>.
+
+--- Solution 3 ---
+Since the sequence must start with <math>THT</math> and end with <math>HH</math> and only have <math>HT</math> in between, we use the infinite geometric series formula to get <math>\frac{1}{2^5}</math> which is the smallest option, <math>THTHH</math>,<math>+\frac{1}{2^7}</math>, the next best option, and so on and so forth until we have an infinite geometric series increasing at a rate of <math>X\frac{1}{2^2}</math> so it is equivalent to <math>\frac{\frac{1}{2^5}}{1-\frac{1}{2^2}}=\frac{1}{2^6}\cdot\frac{2^2}{3}=\frac{1}{3\cdot2^3}=\frac{1}{8\cdot3}=\boxed{\textbf{(B) }\frac{1}{24}}</math>
+
+
+=== Problem 22 ===
+Raashan, Sylvia, and Ted play the following game. Each starts with
+
+Choices: {'A': '\\frac{1}{7}', 'B': '\\frac{1}{4}', 'C': '\\frac{1}{3}', 'D': '\\frac{1}{2}', 'E': '\\frac{2}{3}</math>'}
+Answer: B
+
+--- Solution 1 ---
+On the first turn, each player starts off with <math>\$1</math>. Each turn after that, there are only two possibilities: either everyone stays at <math>\$1</math>, which we will write as <math>(1-1-1)</math>, or the distribution of money becomes <math>\$2-\$1-\$0</math> in some order, which we write as <math>(2-1-0)</math>. (<math>(3-0-0)</math> cannot be achieved since either(1)the person cannot give money to himself or (2)there are a maximum of 2 dollars being distributed and the person has nothing to start with). We will consider these two states separately.
+
+In the <math>(1-1-1)</math> state, each person has two choices for whom to give their dollar to, meaning there are <math>2^3=8</math> possible ways that the money can be rearranged. Note that there are only two ways that we can reach <math>(1-1-1)</math> again: 
+
+1. Raashan gives his money to Sylvia, who gives her money to Ted, who gives his money to Raashan.
+
+2. Raashan gives his money to Ted, who gives his money to Sylvia, who gives her money to Raashan.
+
+Thus, the probability of staying in the <math>(1-1-1)</math> state is <math>\frac{1}{4}</math>, while the probability of going to the <math>(2-1-0)</math> state is <math>\frac{3}{4}</math> (we can check that the 6 other possibilities lead to <math>(2-1-0)</math>).
+
+
+In the <math>(2-1-0)</math> state, we will label the person with <math>\$2</math> as person A, the person with <math>\$1</math> as person B, and the person with <math>\$0</math> as person C. Person A has two options for whom to give money to, and person B has 2 options for whom to give money to, meaning there are total <math>2\cdot 2 = 4</math> ways the money can be redistributed. The only way that the distribution can return to <math>(1-1-1)</math> is if A gives <math>\$1</math> to B, and B gives <math>\$1</math> to C. We check the other possibilities to find that they all lead back to <math>(2-1-0)</math>. Thus, the probability of going to the <math>(1-1-1)</math> state is <math>\frac{1}{4}</math>, while the probability of staying in the <math>(2-1-0)</math> state is <math>\frac{3}{4}</math>.
+
+No matter which state we are in, the probability of going to the <math>(1-1-1)</math> state is always <math>\frac{1}{4}</math>. This means that, after the bell rings 2018 times, regardless of what state the money distribution is in, there is a <math>\frac{1}{4}</math> probability of going to the <math>(1-1-1)</math> state after the 2019th bell ring. Thus, our answer is simply <math>\boxed{\textbf{(B) } \frac{1}{4}}</math>.
+
+--- Solution 2 ---
+After the first ring, either nothing changes, or someone has <math>\$2</math>. No one can have <math>\$3</math>, since in that hypothetical round, that person would have to give away <math>\$1</math>. Thus, the outcome is either <math>1-1-1</math> or six symmetrical cases where one person gets <math>\$2</math> (e.g. a <math>1-2-0</math> or <math>2-1-0</math> split). 
+
+
+'''Case 1: Probability of returning to 1-1-1 from 1-1-1'''
+
+There are two ways for the three people to exchange dollars to get to the same <math>1-1-1</math> result. To see this, seat R, S, and T in a circle. Each person gives their dollar to either the person at left, or at right, to result in again 1 dollar for each person. There are 8 overall possibilities (since each person has 2 choices when giving away his or her dollar, therefore <math>2^3</math> total possibilities). So, there is <math>1/4</math> chance of returning to <math>1-1-1</math>. 
+
+
+'''Case 2: Probability of returning to 1-1-1 from 2-1-0'''
+
+Without loss of generality, take the <math>2-1-0</math> case. Only 2 people can give money, so there are now <math>2^2=4</math> possible outcomes after the bell rings. It either decomposes back into <math>1-1-1</math>, <math>2-1-0</math> (remained unchanged), <math>2-0-1</math>, <math>1-0-2</math>. Thus, there is a <math>1/4</math> chance of returning to <math>1-1-1</math>. Notice that this works for any of the 6 cases, as each is symmetrical to the others.
+
+
+'''Answer'''
+
+Since the starting state has a <math>1/4</math> chance of remaining unchanged, and each of the different 6 symmetric states all also have a <math>1/4</math> chance of reverting back to <math>1-1-1</math>, the chance of it being <math>1-1-1</math> after any state is always <math>\boxed{\textbf{(B) } \frac{1}{4}}</math>.
+
+--- Solution 3 ---
+The two possible scenarios are they all have <math>1</math> dollar, or one person has <math>2</math> dollars, another has <math>1</math>, and the last has none. We will consider the second scenario all to be the same no matter who has the <math>2</math> dollars, <math>1</math> dollar or <math>0</math> dollars from symmetry.
+	
+Let's consider all possible scenarios when the bell rings if they currently all have 1 dollar.
+<cmath>SRR -> 2, 1, 0</cmath>
+<cmath>SRS -> 2, 1, 0</cmath>
+<cmath>STR -> 1, 1, 1</cmath>
+<cmath>STS -> 2, 1, 0</cmath>
+<cmath>TRR -> 2, 1, 0</cmath>
+<cmath>TRS -> 1, 1, 1</cmath>
+<cmath>TTR -> 2, 1, 0</cmath>
+<cmath>TTS -> 2, 1, 0</cmath>	
+We see that <math>\frac{2}{8}</math> or <math>\frac{1}{4}</math> of the cases lead to them continuing to all of them having <math>1</math> dollar.	
+Now, let's consider all the possible scenarios when the bell rings if they currently have <math>2, 1, 0</math> dollars. Without loss of generality, let's say that R and S have <math>2</math> and <math>1</math> dollar respectively. (We can switch the names, our answer won't change).	
+<cmath>SR -> 2, 1, 0</cmath>
+<cmath>ST -> 1, 1, 1</cmath>
+<cmath>TR -> 2, 1, 0</cmath>
+<cmath>TT -> 2, 1, 0</cmath>
+We see that <math>\frac{1}{4}</math> of the cases lead to them changing to all have <math>1</math> dollar.
+
+So, no matter what was the scenario when the bell had been rung <math>2018</math> times, when the bell is rung the <math>2019</math>th time, there is always a <math>\frac{1}{4}</math> chance that it will turn into (or stay as) <math>(1, 1, 1)</math> :-)
+
+--- Solution 4 ---
+Let the state <math>(1-1-1)</math> be <math>A</math>, and state <math>(2-1-0)</math> without considering the order be <math>B</math>. Similar to the previous <math>3</math> solutions, after a bell ring, the probability of state <math>A</math> staying in state <math>A</math> is <math>\frac{1}{4}</math>, that of state <math>A</math> transiting to state <math>B</math> is <math>\frac{3}{4}</math>, that of state <math>B</math> staying in state <math>B</math> is <math>\frac{3}{4}</math>, that of state <math>B</math> transiting to state <math>A</math> is <math>\frac{1}{4}</math>. Using a [[Markov Chains|Markov Chain]], the state transition diagram is shown below.
+
+[[File:MarkovChain.png|center|300px]]
+
+<cmath>\begin{align}
+P_A &= P_A \cdot \frac{1}{4} + P_B \cdot \frac{1}{4} \\
+P_B &= P_A \cdot \frac{3}{4} + P_B \cdot \frac{3}{4} \\
+&P_A + P_B = 1
+\end{align}</cmath>
+
+<math>(1)</math> and <math>(2)</math> are equivalent, from <math>(1)</math> or <math>(2)</math>, we get <math>P_B = 3P_A</math>. Solving the system of equations, we get <math>P_A = \boxed{\textbf{(B) } \frac{1}{4}}</math>
+
+'''Note:''' the number of bell rings doesn't matter, <math>2019</math> is redundant. 
+
+~[[User:Isabelchen|isabelchen]]
+
+'''Note 2:''' You can see that the number of bell rings doesn't matter through working state-by-state. 
+
+After 1 ring, the probability of state <math>(1-1-1)</math> is <math>1/4</math> and the probability of state <math>(2-1-0)</math> is <math>3/4.</math> 
+
+Another iteration and you have the probability of state <math>(1-1-1)</math> to be 
+<cmath>\frac14 \cdot (1-1-1)_1 + \frac14 \cdot (2-1-0)_1 = 1/4 \cdot 1/4 + 3/4 \cdot 1/4 = \frac14</cmath>
+and the probability of state <math>(2-1-0)</math> to be 
+<cmath>3/4 \cdot 3/4 + 3/4 \cdot 1/4 = \frac34.</cmath>
+
+--- Solution 5 ---
+This works if one is short on time. Looking at how simple answer choices are, it seems like the number of bell rings is extra information (the other solutions show that this is true). So, we assume that the probability will be the same no matter how many times the bell rings, and we calculate it for <math>1</math> bell ring. Each person can give their dollar to <math>2</math> other people, so there are <math>2^3=8</math> ways to switch up the money. Out of these <math>8</math> ways, <math>2! = 2</math> of them leave everyone with a dollar again, so our probability is <math>\tfrac{2}{8} = \boxed{\textbf{(B) } \frac{1}{4}}</math>.
+
+
+=== Problem 23 ===
+Points
+
+Choices: {'A': '\\frac{83\\pi}{8}', 'B': '\\frac{21\\pi}{2}', 'C': '\\frac{85\\pi}{8}', 'D': '\\frac{43\\pi}{4}', 'E': '\\frac{87\\pi}{8}</math>'}
+Answer: C
+
+--- Solution 1 ---
+First, observe that the two tangent lines are of identical length. Therefore, supposing that the point of intersection is <math>(x, 0)</math>, the Pythagorean Theorem gives <math>\sqrt{(x-6)^2 + 13^2} = \sqrt{(x-12)^2 + 11^2}</math>. This simplifies to <math>x = 5</math>.
+
+Further, notice (due to the right angles formed by a radius and its tangent line) that the quadrilateral (a kite) <math>AOBX</math> is cyclic. 
+
+Therefore, we can apply [[Ptolemy's Theorem]] to give:
+
+<math>2\sqrt{170}r = d \sqrt{40}</math>, where <math>r</math> is the radius of the circle and <math>d</math> is the distance between the circle's center and <math>(5, 0)</math>. Therefore, <math>d = \sqrt{17}r</math>. 
+
+Using the Pythagorean Theorem on the right triangle <math>OAX</math> (or <math>OBX</math>), we find that <math>170 + r^2 = 17r^2</math>, so <math>r^2 = \frac{85}{8}</math>, and thus the area of the circle is <math>\boxed{\textbf{(C) }\frac{85}{8}\pi}</math>.
+
+--- Solution 2 ---
+We firstly obtain <math>x=5</math> as in Solution 1. Label the point <math>(5,0)</math> as <math>C</math>. The midpoint <math>M</math> of segment <math>AB</math> is <math>(9, 12)</math>. Notice that the center of the circle must lie on the line passing through the points <math>C</math> and <math>M</math>. Thus, the center of the circle lies on the line <math>y=3x-15</math>. 
+
+Line <math>AC</math> is <math>y=13x-65</math>. Therefore, the slope of the line perpendicular to <math>AC</math> is <math>-\frac{1}{13}</math>, so its equation is <math>y=-\frac{x}{13}+\frac{175}{13}</math>. 
+
+But notice that this line must pass through <math>A(6, 13)</math> and <math>(x, 3x-15)</math>. Hence <math>3x-15=-\frac{x}{13}+\frac{175}{13} \Rightarrow x=\frac{37}{4}</math>. So the center of the circle is <math>\left(\frac{37}{4}, \frac{51}{4}\right)</math>. 
+
+Finally, the distance between the center, <math>\left(\frac{37}{4}, \frac{51}{4}\right)</math>, and point <math>A</math> is <math>\frac{\sqrt{170}}{4}</math>. Thus the area of the circle is <math>\boxed{\textbf{(C) }\frac{85}{8}\pi}</math>.
+
+--- Solution 3 ---
+The midpoint of <math>AB</math> is <math>D(9,12)</math>. Let the tangent lines at <math>A</math> and <math>B</math> intersect at <math>C(a,0)</math> on the <math>x</math>-axis. Then <math>CD</math> is the perpendicular bisector of <math>AB</math>. Let the center of the circle be <math>O</math>. Then <math>\triangle AOC</math> is similar to <math>\triangle DAC</math>, so <math>\frac{OA}{AC} = \frac{AD}{DC}</math>.
+The slope of <math>AB</math> is <math>\frac{13-11}{6-12}=\frac{-1}{3}</math>, so the slope of <math>CD</math> is <math>3</math>. Hence, the equation of <math>CD</math> is <math>y-12=3(x-9) \Rightarrow y=3x-15</math>. Letting <math>y=0</math>, we have <math>x=5</math>, so <math>C = (5,0)</math>.
+
+Now, we compute <math>AC=\sqrt{(6-5)^2+(13-0)^2}=\sqrt{170}</math>,
+<math>AD=\sqrt{(6-9)^2+(13-12)^2}=\sqrt{10}</math>, and
+<math>DC=\sqrt{(9-5)^2+(12-0)^2}=\sqrt{160}</math>.
+
+Therefore <math>OA = \frac{AC\cdot AD}{DC}=\sqrt{\frac{85}{8}}</math>,
+and consequently, the area of the circle is <math>\pi\cdot OA^2 = \boxed{\textbf{(C) }\frac{85}{8}\pi}</math>.
+
+--- Solution 4 ---
+Let <math>(x,0)</math> be the intersection on the x-axis. By Power of a Point Theorem, <math>(x-6)^2+13^2=(x-12)^2+11^2\implies x=5</math>. Then the equations  for the tangent lines passing <math>A</math> and <math>B</math>, respectively, are <math>13(x-6)+13=y</math> and <math>\frac{11}{7}(x-12)+11=y</math>. Then the lines normal (perpendicular) to them are <math>-\frac{1}{13}(x-6)+13=y</math> and <math>-\frac{7}{11}(x-12)+11=y</math>. Solving for <math>x</math>, we have
+
+
+
+<cmath>-\frac{7}{11}(x-12)+11=-\frac{1}{13}(x-6)+13</cmath>
+<cmath>\frac{13\cdot7x-11x}{13\cdot11}=\frac{84\cdot13-6\cdot11-2\cdot11\cdot13}{11\cdot13}</cmath>
+<cmath>13\cdot7x-11x=84\cdot13-6\cdot11-2\cdot11\cdot13</cmath>
+
+After condensing, <math>x=\frac{37}{4}</math>. Then, the center of <math>\omega</math> is <math>\left(\frac{37}{4}, \frac{51}{4}\right)</math>. Apply distance formula. WLOG, assume you use <math>A</math>. Then, the area of <math>\omega</math> is <cmath>\left(\sqrt{\frac{1^2}{4^2}+\frac{13^2}{4^2}}\right)^2\pi=\frac{170\pi}{16} \implies \boxed{\textbf{(C) }\frac{85}{8}\pi}.</cmath>
+
+--- Solution 5 ---
+After getting <math>x=5</math>, let <math>C=(5,0)</math>. Get the slopes of the lines <math>AC</math> and <math>BC</math>, namely <math>\frac{13}{6-5}=13</math>, <math>\frac{11}{12-5}=\frac{11}{7}</math>. Then, use tangent angle subtraction to get <math>\tan{2x}=\frac{13-\frac{11}{7}}{1+13*\frac{11}{7}}=\frac{80}{150}=\frac{8}{15}</math>. Then, apply tangent double angle to get <math>\tan{2x}=\frac{8}{15}=\frac{2\tan{x}}{1-\tan^2{x}}</math>. Solving, we obtain <math>\tan{x}=\frac{1}{4}</math>. Then, note that <math>\tan{x}=r/{BC}</math>, so <math>r=\frac{1}{4}*\sqrt{170}</math>. Finishing off, we obtain <math>A=\pi*r^2=\pi*170/16=\boxed{\textbf{(C) }\frac{85}{8}\pi}</math>.
+
+
+=== Problem 24 ===
+Define a sequence recursively by
+
+Choices: {'A': '[9,26]', 'B': '[27,80]', 'C': '[81,242]', 'D': '[243,728]', 'E': '[729,\\infty)</math>'}
+Answer: C
+
+--- Solution 1 ---
+We first prove that <math>x_n > 4</math> for all <math>n \ge 0</math>, by induction. Observe that
+<cmath>
+x_{n+1} - 4 = \frac{x_n^2 + 5x_n + 4 - 4(x_n+6)}{x_n+6} = \frac{(x_n - 4)(x_n+5)}{x_n+6}.
+</cmath>
+so (since <math>x_n</math> is clearly positive for all <math>n</math>, from the initial definition), <math>x_{n+1} > 4</math> if and only if <math>x_{n} > 4</math>.
+
+We similarly prove that <math>x_n</math> is decreasing:
+<cmath>
+x_{n+1} - x_n = \frac{x_n^2 + 5x_n + 4 - x_n(x_n+6)}{x_n+6} = \frac{4-x_n}{x_n+6} < 0.
+</cmath>
+
+Now we need to estimate the value of <math>x_{n+1}-4</math>, which we can do using the rearranged equation:
+<cmath>
+x_{n+1} - 4 = (x_n-4)\cdot\frac{x_n + 5}{x_n+6}. 
+</cmath>
+Since <math>x_n</math> is decreasing, <math>\frac{x_n + 5}{x_n+6}</math> is also decreasing, so we have
+<cmath>
+\frac{9}{10} < \frac{x_n + 5}{x_n+6} \le \frac{10}{11}
+</cmath>
+and
+<cmath>
+\frac{9}{10}(x_n-4) < x_{n+1} - 4 \le \frac{10}{11}(x_n-4).
+</cmath>
+
+This becomes
+<cmath>
+\left(\frac{9}{10}\right)^n = \left(\frac{9}{10}\right)^n \left(x_0-4\right) < x_{n} - 4 \le \left(\frac{10}{11}\right)^n \left(x_0-4\right) = \left(\frac{10}{11}\right)^n.
+</cmath>
+The problem thus reduces to finding the least value of <math>n</math> such that
+<cmath>
+\left(\frac{9}{10}\right)^n < x_{n} - 4 \le \frac{1}{2^{20}} \text{  and  } 
+\left(\frac{10}{11}\right)^{n-1} > x_{n-1} - 4 > \frac{1}{2^{20}}.
+</cmath>
+
+Taking logarithms, we get
+<math>n \ln \frac{9}{10} < -20 \ln 2</math> and <math>(n-1)\ln \frac{10}{11} > -20 \ln 2</math>, i.e.
+
+<cmath>
+n > \frac{20\ln 2}{\ln\frac{10}{9}} \text{  and  }  n-1 < \frac{20\ln 2}{\ln\frac{11}{10}}
+.</cmath>
+
+As approximations, we can use <math>\ln\frac{10}{9} \approx \frac{1}{9}</math>, <math>\ln\frac{11}{10} \approx \frac{1}{10}</math>, and <math>\ln 2\approx 0.7</math>. These approximations allow us to estimate
+<cmath>
+            126 < n < 141,
+</cmath>
+which gives <math>\boxed{\textbf{(C) } [81,242]}</math>.
+
+--- Solution 2 ---
+The condition where <math>x_m\leq 4+\frac{1}{2^{20}}</math> gives the motivation to make a substitution to change the equilibrium from <math>4</math> to <math>0</math>. We can substitute <math>x_n = y_n + 4</math> to achieve that. Now, we need to find the smallest value of <math>m</math> such that <math>y_m\leq \frac{1}{2^{20}}</math> given that <math>y_0 = 1</math>. 
+
+
+
+Factoring the recursion <math>x_{n+1} = \frac{x_n^2 + 5x_n+4}{x_n + 6}</math>, we get: 
+
+<math>x_{n+1}=\dfrac{(x_n + 4)(x_n + 1)}{x_n + 6} \Rightarrow y_{n+1}+4=\dfrac{(y_n+8)(y_n+5)}{y_n+10}</math>
+
+<math>y_{n+1}+4=\dfrac{y_n^2+13y_n+40}{y_n+10} = \dfrac{y_n^2+9y_n +(4y_n+40)}{y_n+10}</math>
+
+<math>y_{n+1}+4=\dfrac{y_n^2+9y_n}{y_n+10} + 4</math>
+
+<math>y_{n+1}=\dfrac{y_n^2+9y_n}{y_n+10}</math>.
+
+
+
+Using wishful thinking, we can simplify the recursion as follows:
+
+<math>y_{n+1} = \frac{y_n^2 + 9y_n + y_n - y_n}{y_n + 10}</math>
+
+<math>y_{n+1} = \frac{y_n(y_n + 10) - y_n}{y_n + 10}</math>
+
+<math>y_{n+1} = y_n - \frac{y_n}{y_n + 10}</math>
+
+<math>y_{n+1} = y_n\left(1 - \frac{1}{y_n + 10}\right)</math>.
+
+
+The recursion looks like a geometric sequence with the ratio changing slightly after each term. Notice from the recursion that the <math>y_n</math> sequence is strictly decreasing, so all the terms after <math>y_0</math> will be less than 1. Also, notice that all the terms in sequence will be positive. Both of these can be proven by induction.
+
+
+With both of those observations in mind, <math>\frac{9}{10} < 1 - \frac{1}{y_n + 10} \leq \frac{10}{11}</math>. Combining this with the fact that the recursion resembles a geometric sequence, we conclude that <math>\left(\frac{9}{10}\right)^n < y_n \leq \left(\frac{10}{11}\right)^n.</math>
+
+<math>\frac{9}{10}</math> is approximately equal to <math>\frac{10}{11}</math> and the ranges that the answer choices give us are generous, so we should use either <math>\frac{9}{10}</math> or <math>\frac{10}{11}</math> to find a rough estimate for <math>m</math>.
+
+
+Since <math>\dfrac{1}{2}=0.5</math>, that means <math>\frac{1}{\sqrt{2}}=2^{-\frac{1}{2}} \approx 0.7</math>. Additionally, <math>\left(\frac{9}{10}\right)^3=0.729</math>
+
+
+Therefore, we can estimate that <math>2^{-\frac{1}{2}} < y_3</math>.
+
+Raising both sides to the 40th power, we get <math>2^{-20} < (y_3)^{40}</math>
+
+But <math>y_3 = (y_0)^3</math>, so <math>2^{-20} < (y_0)^{120}</math> and therefore, <math>2^{-20} < y_{120}</math>.
+
+This tells us that <math>m</math> is somewhere around 120, so our answer is <math>\boxed{\textbf{(C) } [81,242]}</math>.
+
+--- Solution 3 ---
+Since the choices are rather wide ranges, we can use approximation to make it easier. Notice that
+<cmath>x_{n+1} - x_n = \frac{4-x_n}{x_n+6}</cmath>
+And <math>x_0 =5</math>, we know that <math>x_n</math> is a declining sequence, and as it get close to 4 its decline will slow, never falling below 4. So we'll use 4 to approximate <math>x_n</math> in the denominator so that we have a solvable difference equation:
+<cmath> x_{n+1} - x_n = \frac{4-x_n}{10}</cmath>
+<cmath>x_{n+1} = \frac{9}{10}x_n + \frac{2}{5}</cmath>
+Solve it with <math>x_0 = 5</math>, we have
+<cmath>x_n = 4 + (\frac{9}{10})^n</cmath>
+Now we wish to find <math>n</math> so that
+<cmath> (\frac{9}{10})^n \approx \frac{1}{2^{20}}</cmath>
+<cmath> n \approx \frac{\log{2^{20}}}{\log{10}-\log9} \approx \frac{20*0.3}{0.05} = 120</cmath>
+Since 120 is safely within the range of [81,242], we have the answer.
+<math>\boxed{\textbf{(C) } [81,242]}</math>.
+
+-Mathdummy
+
+--- Solution 4 ---
+We start by simplifying the recursion: <math>x_{n+1} = x_n + \frac{4-x_n}{x_n+6}</math>.
+While <math>x_n > 4</math>, <math>x_n</math> is a decreasing sequence. Let <math>x_n = 4 + f_n</math>. Then <cmath>x_{n} - x_{n+1} = \frac{x_n-4}{x_n+6} = \frac{f_n}{10 + f_n} \approx \frac{f_n}{10}.</cmath>
+Now notice that we want to find <math>m</math>, such that <math>x_m \leq 4 + \frac{1}{2^{20}}</math>, and <math>x_0 = 4 + \frac{1}{2^0}</math>. 
+We are going to find an approximate number of steps to go from <math>4 + \frac{1}{2^i}</math> to <math>4 + \frac{1}{2^{i+1}}</math>. 
+If <math>x_j = 4 + \frac{1}{2^i}</math>, then <math>f_j = \frac{1}{2^i}</math> and if <math>x_k = 4 + \frac{1}{2^{i+1}}</math>, then <math>f_k = \frac{1}{2^{i+1}}</math>. Then <cmath>x_j - x_k = \frac{1}{2^{i+1}} \approx \frac{f_j}{10} + \frac{f_{j+1}}{10} + ... + \frac{f_{k-1}}{10}.</cmath>
+Furthermore, <cmath>\frac{1}{2^i} = f_j > f_{j+1} > f_{j+2} > ... > f_{k-1} > f_k = \frac{1}{2^{i+1}}.</cmath> Therefore, <cmath>(k-j) \cdot \frac{\frac{1}{2^i}}{10} > \frac{f_j}{10} + \frac{f_{j+1}}{10} + ... + \frac{f_{k-1}}{10} > (k-j) \cdot \frac{\frac{1}{2^{i+1}}}{10},</cmath> so <math>5 < k-j < 10</math>. Therefore, to go from <math>f_0 = \frac{1}{2^0}</math> to <math>f_m = \frac{1}{2^{20}}</math>, we will need to do this 20 times, which means <math>100 < m - 0 < 200</math>, which is within the range of [81,242], so we have the answer.
+<math>\boxed{\textbf{(C) } [81,242]}</math>.
+
+-alligator112
+
+--- Solution 5 ---
+This solution uses approximation to estimate ranges.
+
+As in Solution 1, we first show that all <math>x_n>4</math> by induction.
+
+Next, we let <math>a_n=x_n-4</math>, so then all <math>a_n>0</math>. Replacing this in the formula results in <math>a_{n+1}+4=\frac{(a_n+4)^2+5(a_n+4)+4}{(a_n+4)+6}=\frac{a_n^2+13a_n+40}{a_n+10}</math>, so then
+
+<cmath>a_{n+1}=\frac{a_n^2+9a_n}{a_n+10}</cmath>
+
+
+The problem statement asks us to find some <math>m</math> such that <math>a_m\le\frac{1}{2^{20}}</math>.
+
+Then we let <math>b_n=\frac{1}{a_n}</math>. Note that <math>a_n>0</math>, so <math>b_n</math> is never undefined. Replacing this in the formula results in <math>\frac{1}{b_{n+1}}=\frac{\left(\frac{1}{b_n}\right)^2+9\cdot\frac{1}{b_n}}{\frac{1}{b_n}+10}=\frac{9b_n+1}{10b_n^2+b_n}</math>, so <math>b_{n+1}=\frac{10b_n^2+b_n}{9b_n+1}=\frac{10}{9}b_n-\frac{1}{81}+\frac{1}{729b_n+81}</math>. Now we must find the least <math>m</math> such that <math>b_m\ge2^{20}</math>. Notice that only the <math>\frac{10}{9}n</math> portion of the equation plays a significant role in determining the value of the entire value at higher values of <math>b_n</math>, so we may simply let <math>b_{n+1}\approx\frac{10}{9}b_n</math>. 
+
+Since <math>b_0=\frac{1}{a_n}=\frac{1}{x_0-4}=\frac{1}{5-4}=1</math>, we know that <math>b_n\approx\left(\frac{10}{9}\right)^n=\left(\frac{100}{81}\right)^{\frac{n}{2}}\approx\left(\frac{100}{80}\right)^{\frac{n}{2}}=\left(\frac{5}{4}\right)^{\frac{n}{2}}=\left(\frac{125}{64}\right)^{\frac{n}{6}}\approx\left(\frac{128}{64}\right)^{\frac{n}{6}}=2^{\frac{n}{6}}</math>.
+
+Then we have <math>\frac{m}{6}\ge20</math>, so we can estimate that the smallest value <math>m</math> satisfying the condition is <math>m=120</math>. Since this solution is well inside one of the answer choices’ bounds, we can assume this is a good enough estimate, so the answer is <math>\boxed{\textbf{(C) } [81,242]}</math>.
+
+
+==Remark==
+The actual value of <math>m</math> is <math>m=133</math>. The 120 from above is incorrect.
+
+
+=== Problem 25 ===
+How many sequences of
+
+Choices: {'A': '55', 'B': '60', 'C': '65', 'D': '70', 'E': '75</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <math>f(n)</math> be the number of valid sequences of length <math>n</math> (satisfying the conditions given in the problem). 
+
+We know our valid sequence must end in a <math>0</math>. Then, since we cannot have two consecutive <math>0</math>s, it must end in a <math>10</math>. Now, we only have two cases: it ends with <math>010</math>, or it ends with <math>110</math> which is equivalent to <math>0110</math>. Thus, our sequence must be of the forms <math>0\ldots010</math> or <math>0\ldots0110</math>. In the first case, the first <math>n-2</math> digits are equivalent to a valid sequence of length <math>n-2</math>. In the second, the first <math>n-3</math> digits are equivalent to a valid sequence of length <math>n-3</math>. Therefore, it must be the case that <math>f(n) = f(n-3) + f(n-2)</math>, with <math>n \ge 3</math> (because otherwise, the sequence would contain only 0s and this is not allowed due to the given conditions). 
+
+It is easy to find <math>f(3) = 1</math> since the only possible valid sequence is <math>010</math>. <math>f(4)=1</math> since the only possible valid sequence is <math>0110</math>. <math>f(5)=1</math> since the only possible valid sequence is <math>01010</math>. 
+
+The recursive sequence is then as follows:
+
+<cmath>f(3)=1</cmath>
+<cmath>f(4)=1</cmath>
+<cmath>f(5) = 1</cmath>
+<cmath>f(6) = 1 + 1 = 2</cmath> 
+<cmath>f(7) = 1 + 1 = 2</cmath>
+<cmath>f(8) = 1 + 2 = 3</cmath> 
+<cmath>f(9) = 2 + 2 = 4</cmath>
+<cmath>f(10) = 2 + 3 = 5</cmath>
+<cmath>f(11) = 3 + 4 = 7</cmath> 
+<cmath>f(12) = 4 + 5 = 9</cmath> 
+<cmath>f(13) = 5 + 7 = 12</cmath>
+<cmath>f(14) = 7 + 9 = 16</cmath> 
+<cmath>f(15) = 9 + 12 = 21</cmath>
+<cmath>f(16) = 12 + 16 = 28</cmath>
+<cmath>f(17) = 16 + 21 = 37</cmath> 
+<cmath>f(18) = 21 + 28 = 49</cmath>
+<cmath>f(19) = 28 + 37 = 65</cmath>
+
+So, our answer is <math>\boxed{\text{\bf{(C)}  } 65}</math>.
+
+
+'''Contributors:'''
+
+--- Solution 2 ---
+After any particular <math>0</math>, the next <math>0</math> in the sequence must appear exactly <math>2</math> or <math>3</math> positions down the line. In this case, we start at position <math>1</math> and end at position <math>19</math>, i.e. we move a total of <math>18</math> positions down the line. Therefore, we must add a series of <math>2</math>s and <math>3</math>s to get <math>18</math>. There are a number of ways to do this:
+
+'''Case 1''': nine <math>2</math>s - there is only <math>1</math> way to arrange them.
+
+'''Case 2''': two <math>3</math>s and six <math>2</math>s - there are <math>{8\choose2} = 28</math> ways to arrange them.
+
+'''Case 3''': four <math>3</math>s and three <math>2</math>s - there are <math>{7\choose4} = 35</math> ways to arrange them.
+
+'''Case 4''': six <math>3</math>s - there is only <math>1</math> way to arrange them.
+
+Summing the four cases gives <math>1+28+35+1=\boxed{\textbf{(C) }65}</math>.
+
+--- Solution 3 ---
+We can simplify the original problem into a problem where there are <math>2^{17}</math> binary characters with zeros at the beginning and the end. Then, we know that we cannot have a block of 2 zeroes and a block of 3 ones. Thus, our only options are a block of <math>0</math>s, <math>1</math>s, and <math>11</math>s. Now, we use casework: 
+
+'''Case 1''': Alternating 1s and 0s. There is simply 1 way to do this: <math>0101010101010101010</math>. 
+Now, we note that there cannot be only one block of <math>11</math> in the entire sequence, as there must be zeroes at both ends and if we only include 1 block, of <math>11</math>s this cannot be satisfied. This is true for all odd numbers of <math>11</math> blocks. 
+
+'''Case 2''': There are 2 <math>11</math> blocks. Using the zeroes in the sequence as dividers, we have a sample as <math>0110110101010101010</math>. We know there are 8 places for <math>11</math>s, which will be filled by <math>1</math>s if the <math>11</math>s don't fill them. This is <math>{8\choose2} = 28</math> ways. 
+
+'''Case 3''': Four <math>11</math> blocks arranged. Using the same logic as Case 2, we have <math>{7\choose4} = 35</math> ways to arrange four <math>11</math> blocks. 
+
+'''Case 4''': No single <math>1</math> blocks, only <math>11</math> blocks. There is simply one case for this, which is <math>0110110110110110110</math>. 
+
+Adding these four cases, we have <math>1+28+35+1=\boxed{\textbf{(C) }65}</math> as our final answer.
+
+--- Solution 4 ---
+Any valid sequence must start with a <math>0</math>. We can then think of constructing a sequence as adding groups of terms to this <math>0</math>, each ending in <math>0</math>. (This is always possible because every valid string ends in <math>0</math>.) For example, we can represent the string <math>01011010110110</math> as: <math>0-10-110-10-110-110</math>.
+To not have any consecutive 0s, we must have at least one <math>1</math> before the next <math>0</math>. However, we cannot have three or more <math>1</math>s before the next <math>0</math> because we cannot have three consecutive <math>1</math>s. Consequently, we can only have one or two <math>1</math>s. 
+
+So we can have the groups: <math>10</math> and <math>110</math>.
+
+After the initial <math>0</math>, we have <math>18</math> digits left to fill in the string. Let the number of <math>10</math> blocks be <math>x</math>, and <math>110</math> be <math>y</math>. Then <math>x</math> and <math>y</math> must satisfy <math>2x+3y=18</math>. We recognize this as a Diophantine equation. Taking <math>\pmod{2}</math> yields <math>y=0 \pmod{2}</math>. Since <math>x</math> and <math>y</math> must both be nonnegative, we get the solutions <math>(9, 0)</math>, <math>(6, 2)</math>, <math>(3, 4)</math>, and <math>(0, 6)</math>. We now handle each of these cases separately.
+
+<math>(9, 0)</math>: Only one arrangement, namely all <math>10</math>s.
+
+<math>(6, 2)</math>: We have 6 groups of <math>11</math>, and <math>2</math> groups of <math>110</math>. This has <math>\binom{6+2}{2}=28</math> cases.
+
+<math>(3, 4)</math>: This means we have 3 groups of <math>10</math>, and 4 groups of <math>110</math>. This has <math>\binom{3+4}{3}=35</math> cases.
+
+<math>(0, 6)</math>: Only one arrangement, namely all <math>110</math>.
+
+Adding these, we have <math>1+28+35+1=65 \longrightarrow \boxed{(C) 65}</math>.
+
+--- Solution 5 ---
+Suppose the number of <math>0</math>s is <math>n</math>. We can construct the sequence in two steps:
+
+Step 1: put <math>n-1</math> of <math>1</math>s between the <math>0</math>s;
+
+Step 2: put the rest <math>19-n-(n-1)=20-2n</math> of <math>1</math>s in the <math>n-1</math> spots where there is a <math>1</math>. There are <math>\binom{n-1}{20-2n}</math> ways of doing this.
+
+Therefore the answer is
+<cmath>
+\sum_n \binom{n-1}{20-2n} = \binom{6}{6} + \binom{7}{4} + \binom{8}{2} + \binom{9}{0} = \boxed{\textbf{(C) }65}.
+</cmath>
+
+--- Solution 6 ---
+For a valid sequence of length <math>n</math>, the sequence must be in the form of <math>01xx...xx10</math>. By removing the <math>01</math> at the start of the sequence and the <math>10</math> at the end of the sequence, there are <math>n-4</math> bits left. The <math>n-4</math> bits left can be in the form of:
+ <math>0yy...yy0</math>, the whole <math>(n-4)</math> bits are valid sequence, which is <math>f(n-4)</math>
+ <math>0yy...y01</math>, the <math>(n-5)</math> bits before the last <math>1</math> are valid sequence, which is <math>f(n-5)</math>
+ <math>10y...yy0</math>, the <math>(n-5)</math> bits after the first <math>1</math> are valid sequence, which is <math>f(n-5)</math>
+ <math>10y...y01</math>, the <math>(n-6)</math> bits between the first and last <math>1</math> are valid sequence, which is <math>f(n-6)</math>
+
+So, <math>f(n) = f(n-4) + 2f(n-5) + f(n-6)</math>
+
+We will calculate <math>f(19)</math> by [https://en.wikipedia.org/wiki/Dynamic_programming Dynamic Programming].
+
+<math>f(3) = 1</math>
+
+<math>f(4) = 1</math>
+
+<math>f(5) = 1</math>
+
+<math>f(6) = 2</math>
+
+<math>f(7) = 2</math>
+
+<math>f(8) = 3</math>
+
+<math>f(9) = f(5) + 2 \cdot f(4) + f(3) = 1 + 2 \cdot 1 + 1 = 4</math>
+
+<math>f(10) = f(6) + 2 \cdot f(5) + f(4) = 2 + 2 \cdot 1 + 1 = 5</math>
+
+<math>f(11) = f(7) + 2 \cdot f(6) + f(5) = 2 + 2 \cdot 1 + 1 = 7</math>
+
+<math>f(12) = f(8) + 2 \cdot f(7) + f(6) = 3 + 2 \cdot 2 + 2 = 9</math>
+
+<math>f(13) = f(9) + 2 \cdot f(8) + f(7) = 4 + 2 \cdot 3 + 2 = 12</math>
+
+<math>f(14) = f(10) + 2 \cdot f(9) + f(8) = 5 + 2 \cdot 4 + 3 = 16</math>
+
+<math>f(15) = f(11) + 2 \cdot f(10) + f(9) = 7 + 2 \cdot 5 + 4 = 21</math>
+
+<math>f(16) = f(12) + 2 \cdot f(11) + f(10) = 9 + 2 \cdot 7 + 5 = 28</math>
+
+<math>f(17) = f(13) + 2 \cdot f(12) + f(11) = 12 + 2 \cdot 9 + 7 = 37</math>
+
+<math>f(18) = f(14) + 2 \cdot f(13) + f(12) = 16 + 2 \cdot 12 + 9 = 49</math>
+
+<math>f(19) = f(15) + 2 \cdot f(14) + f(13) = 21 + 2 \cdot 16 + 12 = \boxed{\text{\bf{(C)}  } 65}</math>
+
+We can further prove <math>f(n) = f(n-4) + 2f(n-5) + f(n-6)</math> is equivalent to <math>f(n) = f(n-2) + f(n-3)</math>
+
+Let <math>k(n) = f(n-2) + f(n-3)</math>
+
+<math>k(n-2) = f(n-4) + f(n-5)</math>
+
+<math>k(n-3) = f(n-5) + f(n-6)</math>
+
+<math>k(n-2)+ k(n-3) = f(n-4) + 2f(n-5) + f(n-6) = f(n)</math>
+
+<math>f(n) = k(n-2)+ k(n-3)</math>
+
+<math>f(n-2) = k(n-4)+ k(n-5)</math>
+
+<math>f(n-3) = k(n-5)+ k(n-6)</math>
+
+<math>k(n) = f(n-2) + f(n-3) = k(n-4)+ k(n-5) + k(n-5)+ k(n-6) = k(n-4) + 2k(n-5) + k(n-6)</math>
+
+So <math>k(n)</math> is the same as <math>f(n)</math>.
+
+--- Solution 7 ---
+Using the tree diagram, you quickly notice that your answer must be very close to a power of <math>2</math> due to the splitting of the tree branches in a tree diagram. <math>2^6</math> is <math>64</math>, which is very close to <math>65</math>, thus giving our answer of <math>\boxed{\textbf{(C) }65}</math>.
+
+--- Solution 8 ---
+You can split the sequence into <math>0</math> and <math>6</math> strings of three numbers, which can only be <math>010</math>,<math>011</math>,<math>110</math>,<math>101</math>, labelled as A,B,C,D respectively. For example, <math>0101....010</math> is labelled <math>0DADADA</math>. This can also be stated as 0, <math>D_{1}, A_{2}, D_{3},</math> etc. The problem is equivalent to find the number of such sequences. For each string, A can be followed by C and D, B can be followed by A and B, C can be followed by C and D, D can be followed by A,B, and D.  If we define <math>n(A_{i})</math> as number of possible sequences that ends with string A at the <math>i</math>th spot (thus be <math>3i+1</math> numbers long), we may find relationship between these numbers by noting that, for the <math>i+1</math> th string, with <math>i \geq 1</math>
+ <math>n(A_{i+1}) = n(B_{i+1}) = n(B_{i}) + n(D_{i}), n(C_{i+1}) = n(A_{i}) + n(C_{i})</math> 
+ <math>n(D_{i+1}) =  n(A_{i}) + n(C_{i}) + n(D_{i})</math>. 
+Since the first number of the sequence must be zero, we must start with <math>n(A_1) = n(B_1) = 0, n(C_1) = n(D_1) = 1</math>. Using the above steps to evolve the situation from i = 1 to i = 6, we get <math>n(A_{6}) = 37, n(B_{6}) = 37, n(C_{6}) = 28, n(D_{6}) = 49</math>.
+Since the sequence ends with 0, we only need to sum <math>n(A_{6})</math> and <math>n(C_{6})</math>, which yields <math>37+28=65</math>.  <math>\boxed{\textbf{(C) }65}</math>
+
+Solution by 
+minor edit by
+
+--- Solution 9 ---
+We define a sequences of <math>01</math> (<math>a</math>) or <math>011</math> (<math>b</math>). Observe that we can put the the <math>a</math>'s and <math>b</math>'s in any way and we meet all the different requirements. Note that this can be found through just playing around with the problem's mechanics. Now we can see a big problem. With sequences of <math>a</math> and <math>b</math>, the main sequence always end with a <math>1</math>. '
+
+Now a simple fix is just to add zero to the end of the sequence, shortening it effectively to 18 undecided digits. Now we have multiple cases.
+
+\begin{align*}
+18 &= 9a + 0b &\rightarrow \dfrac{(9+0)!}{9!} \\
+&= 6a + 2b &\rightarrow \dfrac{(6+2)!}{6!}\\
+&= 3a + 4b &\rightarrow \dfrac{(3 + 4)!}{4!}\\
+&= 0a + 6b &\rightarrow \dfrac{(0+6)!}{6!}\\
+\end{align*}
+
+
+(Here's how I was able to see this, I put a zero, than I have to put a one, and then I can put a one or a zero. Then I saw that after every zero, a certain pattern repeats.)
+
+- Created by wiselion :)
+
+--- Solution 10 ---
+Lets use recursion to solve this problem. First, lets try out making this problem smaller by replace <math>19</math> with <math>1,2,</math> and <math>3</math>. Let <math>a_n</math> be the number of ways to create strings of <math>0</math>'s and <math>1</math>'s that follow the restrictions. So, <math>a_1=1</math> because the only possibility is just <math>0</math>. We also have <math>a_2=0</math> since it must start with <math>0</math> and end with <math>0</math> but there can not be two consecutive <math>0</math>'s. Lastly, <math>a_3=1</math> (just <math>010</math>). Now, we can find the recurrence equation. Lets start with a string of length <math>n</math>. We know it must go something like <cmath>0 \_\_\_\ldots\_\_\_ 0</cmath>. We can start filling in some of this. It could go like <cmath>0 1 0 \_\ldots\_\_\_ 0</cmath> or <cmath>0 1 1 \_\ldots\_\_\_ 0</cmath>. Now, lets examine these closely. In the first case, this is basically just <math>a_{n-2}</math> because the length of the string is now only <math>n-2</math>. Similarly with the second case, it is just <math>a_{n-3}</math>. So, we can write the equation <math>a_n=a_{n-2}+a_{n-3}</math>. Now, we simply continuously plug in small values of <math>n</math>, and keep increasing them to get to <math>19</math>. So, we keep continuously plugging in values of <math>n</math> to get new values of <math>n</math> to give us an answer of <math>a_{19}=\boxed{\text{\bf{(C)}  } 65}</math>.
+
+-jb2015007
+
+

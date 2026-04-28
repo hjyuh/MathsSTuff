@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T01-26-28-prove-0ce7-F23_upper_v3",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\ntheorem F23_upper (T : \u2115) :\n    3 * ((T : \u2124) - ((T / 2 : \u2115) : \u2124) - ((T / 3 : \u2115) : \u2124) + ((T / 6 : \u2115) : \u2124)) \u2264 (T : \u2124) + 2 := by\n  sorry",
+  "started_at": "2026-04-16T01:26:28Z",
+  "finished_at": "2026-04-16T01:46:04Z",
+  "duration_s": 1175.64,
+  "result_text": "No errors \u2014 the proof compiles cleanly.\n\n## Phase 3: Checkpoint\n\n**Cycle complete. Filled 1/1 sorries this cycle.**\n\nThe proof is simple: `omega` handles the integer arithmetic with natural number floor divisions directly.\n\n```\nCommit this? [yes / yes-all / no / never]\n```\n\nDiff:\n```diff\n theorem F23_upper (T : \u2115) :\n     3 * ((T : \u2124) - ((T / 2 : \u2115) : \u2124) - ((T / 3 : \u2115) : \u2124) + ((T / 6 : \u2115) : \u2124)) \u2264 (T : \u2124) + 2 := by\n-  sorry\n+  omega\n```\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T01-26-28-prove-0ce7-F23_upper_v3.log",
+  "worker_pid": 3169,
+  "last_heartbeat_at": 1776303961.8125563,
+  "_started_monotonic": 1776302788.5191069
+}

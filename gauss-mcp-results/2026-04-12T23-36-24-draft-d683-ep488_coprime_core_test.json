@@ -1,0 +1,19 @@
+{
+  "job_id": "2026-04-12T23-36-24-draft-d683-ep488_coprime_core_test",
+  "status": "done",
+  "session_id": "",
+  "command": "/draft",
+  "input": "Prove that for all natural numbers N \u2265 6 and M > N, we have N * (M / 2 + M / 3 - M / 6) \u2264 2 * M * (N / 2 + N / 3 - N / 6), where all divisions are natural number (floor) division. This is the coprime core inequality for EP-488.",
+  "started_at": "2026-04-12T23:36:24Z",
+  "finished_at": "2026-04-12T23:39:59Z",
+  "duration_s": 214.48,
+  "result_text": "The skeleton elaborates cleanly (only the expected `sorry` warning). Here's the drafted declaration:\n\n---\n\n## Claim\n\nFor all natural numbers N \u2265 6 and M > N, the \"coprime core inequality\" holds:\n\nN \u00b7 (\u230aM/2\u230b + \u230aM/3\u230b \u2212 \u230aM/6\u230b) \u2264 2 \u00b7 M \u00b7 (\u230aN/2\u230b + \u230aN/3\u230b \u2212 \u230aN/6\u230b)\n\nwhere all divisions are natural number floor division and subtraction is truncating.\n\n**Intuition.** The expression `k / 2 + k / 3 - k / 6` counts (via inclusion-exclusion) the integers in `{1, \u2026, k}` divisible by 2 or 3. By Euler's totient reasoning, this is roughly `(2/3)k`. The inequality says the LHS scales as `N \u00b7 (2/3)M` while the RHS scales as `2M \u00b7 (2/3)N`, and the factor-of-2 slack absorbs the floor-division rounding errors when N \u2265 6.\n\n## Skeleton\n\n```lean\nimport Init\n\ntheorem coprime_core_ineq (N M : Nat) (hN : 6 \u2264 N) (hM : N < M) :\n    N * (M / 2 + M / 3 - M / 6) \u2264 2 * M * (N / 2 + N / 3 - N / 6) := by\n  sorry\n```\n\n**Elaboration check:** Pass (sorry-only warning).\n\n**Notes:**\n- Lean 4 v4.28.0, no Mathlib dependency \u2014 uses `Nat` from `Init` directly.\n- `Nat` division (`/`) is floor division and `Nat` subtraction (`-`) is truncating, both matching the claim.\n- The bound `6 \u2264 N` is needed: for small N the floor-division rounding can violate the inequality.\n\n---\n\n**Depth-check menu:**\n1. Show proof state at `sorry`\n2. Alternative formalization (e.g., using `Int` division, or splitting into mod-residue cases)\n3. Proceed to `/lean4:prove` or `/lean4:autoprove` to fill the sorry\n\nWhat would you like to do next?\n",
+  "lean_code_blocks": [
+    "import Init\n\ntheorem coprime_core_ineq (N M : Nat) (hN : 6 \u2264 N) (hM : N < M) :\n    N * (M / 2 + M / 3 - M / 6) \u2264 2 * M * (N / 2 + N / 3 - N / 6) := by\n  sorry"
+  ],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-12T23-36-24-draft-d683-ep488_coprime_core_test.log",
+  "worker_pid": 561,
+  "last_heartbeat_at": 1776037194.6105099,
+  "_started_monotonic": 1776036984.8679578
+}

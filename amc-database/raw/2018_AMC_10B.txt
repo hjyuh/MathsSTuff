@@ -1,0 +1,1844 @@
+=== Problem 1 ===
+Kate bakes a
+
+Choices: {'A': '90', 'B': '100', 'C': '180', 'D': '200', 'E': '360\n</math>'}
+Answer: A
+
+--- Solution 1 ---
+The area of the pan is <math>20\cdot18=360</math>. Since the area of each piece is <math>2\cdot2=4</math>, there are <math>\frac{360}{4} = \boxed{\textbf{(A) } 90}</math> pieces.
+
+--- Solution 2 ---
+By dividing each of the dimensions by <math>2</math>, we get a <math>10\times9</math> grid that makes <math>\boxed{\textbf{(A) } 90}</math> pieces.
+
+
+=== Problem 2 ===
+Sam drove
+
+Choices: {'A': '64', 'B': '65', 'C': '66', 'D': '67', 'E': '68\n</math>'}
+Answer: D
+
+--- Solution 1 ---
+Suppose that Sam's average speed during the last <math>30</math> minutes was <math>x</math> mph.
+
+Recall that a half hour is equal to <math>30</math> minutes. Therefore, Sam drove <math>60\cdot0.5=30</math> miles during the first half hour, <math>65\cdot0.5=32.5</math> miles during the second half hour, and <math>x\cdot0.5</math> miles during the last half hour. We have <cmath>\begin{align*}
+30+32.5+x\cdot0.5&=96 \\
+x\cdot0.5&=33.5 \\
+x&=\boxed{\textbf{(D) } 67}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Suppose that Sam's average speed during the last <math>30</math> minutes was <math>x</math> mph.
+
+Note that Sam's average speed during the entire trip was <math>\frac{96}{3/2}=64</math> mph. Since Sam drove at <math>60</math> mph, <math>65</math> mph, and <math>x</math> mph for the same duration (<math>30</math> minutes each), his average speed during the entire trip was the average of <math>60</math> mph, <math>65</math> mph, and <math>x</math> mph. We have
+<cmath>\begin{align*}
+\frac{60+65+x}{3}&=64 \\
+60+65+x&=192 \\
+x&=\boxed{\textbf{(D) } 67}.
+\end{align*}</cmath>
+
+
+=== Problem 3 ===
+In the expression
+
+Choices: {'A': '2', 'B': '3', 'C': '4', 'D': '6', 'E': '24 </math>'}
+Answer: B
+
+--- Solution 1 ---
+We have four available numbers <math>(1, 2, 3, 4)</math>. Because different permutations do not matter because they are all addition and multiplication, if we put <math>1</math> on the first space, it is obvious there are <math>\boxed{\textbf{(B) }3}</math> possible outcomes <math>(2, 3, 4)</math>.
+
+--- Solution 2 ---
+There are exactly <math>4!</math> ways to arrange the numbers and <math>2!2!2!</math> overcounts per way due to commutativity. Therefore, the answer is <math>\frac{4!}{2!2!2!}=\boxed{\textbf{(B) }3}</math>
+
+
+=== Problem 4 ===
+A three-dimensional rectangular box with dimensions
+
+Choices: {'A': '18', 'B': '22', 'C': '24', 'D': '30', 'E': '36 </math>'}
+Answer: 
+
+--- Solution 1 ---
+Let <math>X</math> be the length of the shortest dimension and <math>Z</math> be the length of the longest dimension. Thus, <math>XY = 24</math>, <math>YZ = 72</math>, and <math>XZ = 48</math>.
+Divide the first two equations to get <math>\frac{Z}{X} = 3</math>. Then, multiply by the last equation to get <math>Z^2 = 144</math>, giving <math>Z = 12</math>. Following, <math>X = 4</math> and <math>Y = 6</math>.
+
+The final answer is <math>4 + 6 + 12 = 22</math>. <math>\boxed{B}</math>
+
+--- Solution 2 ---
+Simply guess and check to find that the dimensions are <math>4</math> by <math>6</math> by <math>12</math>. Therefore, the answer is <math>4 + 6 + 12 = 22</math>. <math>\boxed{B}</math>
+
+--- Solution 3 ---
+If you find the GCD of <math>24</math>, <math>48</math>, and <math>72</math> you get your first number, <math>12</math>. After this, do <math>48 \div 12</math> and <math>72 \div 12</math> to get <math>4</math> and <math>6</math>, the other 2 numbers. When you add up your <math>3</math> numbers, you get <math>22</math> which is <math>\boxed{B}</math>.
+
+--- Solution 4 ---
+Since the surface areas of the faces are the product of two of the dimensions. Therefore, <math>XY=24</math>, <math>XZ=48</math>, and <math>YZ=72</math>. You can multiply <math>XY \times XZ \times YZ</math>, which simplifies to <math>{XYZ}^2=24 \times 48 \times 72</math> which means that the volume<math>XYZ</math> equals<math>\sqrt{24*48*72}=\sqrt{24^2*12^2}=24*12=288</math>. The individual dimensions, <math>X</math>, <math>Y</math>, and <math>Z</math> can be found by doing <math>\frac{XYZ}{XY}</math>, <math>\frac{XYZ}{YZ}</math>, and <math>\frac{XYZ}{XZ}</math>, which yields <math>Z=12</math>, <math>Y=6</math>, and <math>X=4</math>. Adding this up, we have that <math>X+Y+Z=22</math> which is <math>\boxed{B}</math>
+- Solution by smartninja2000
+
+
+=== Problem 5 ===
+How many subsets of
+
+Choices: {'A': '128', 'B': '192', 'C': '224', 'D': '240', 'E': '256 </math>'}
+Answer: D
+
+--- Solution 1 ---
+Well, there are 4 composite numbers, and you can list them in a 1 number format, a 2 number, 3 number, and a 4 number format. Now, we can use combinations.
+
+<math>\binom{4}{1} + \binom{4}{2} + \binom{4}{3} + \binom{4}{4} = 15</math>. Using the answer choices, the only multiple of 15 is <math>\boxed{\textbf{(D) }240}</math>
+
+By: K6511
+
+--- Solution 2 ---
+Subsets of <math>\{2,3,4,5,6,7,8,9\}</math> include a single digit up to all eight numbers. Therefore, we must add the combinations of all possible subsets and subtract from each of the subsets formed by the composite numbers.
+
+Hence:
+
+<math>\binom{8}{1} - \binom{4}{1} + \binom{8}{2} - \binom{4}{2} + \binom{8}{3} - \binom{4}{3} + \binom{8}{4} - 1 + \binom{8}{5} + \binom{8}{6} + \binom{8}{7} + 1 = \boxed{\textbf{(D) }240}</math>
+
+By: pradyrajasai
+
+--- Solution 3 ---
+Total subsets is <math>(2^8) = 256</math> 
+Using complementary counting and finding the sets with composite numbers:
+only 4,6,8 and 9 are composite. Each one can be either in the set or out:
+<math>2^4</math> = 16
+<math>256-16=240</math>
+<math>\boxed{\textbf{(D) }240}</math>
+
+-goldenn
+
+--- Solution 4 ---
+We multiply the number of possibilities of the set having prime numbers and the set having composites.
+
+The possibilities of primes are <math>2^4-1=15</math> (As there is one solution not containing any primes)
+
+The possibilities of the set containing composites are <math>2^4=16</math> (There can be a set with no composites)
+
+Multiplying this we get <math>15 \cdot 16 = \boxed{\textbf{(D) }240}</math>. 
+
+-middletonkids
+
+
+=== Problem 6 ===
+A box contains
+
+Choices: {'A': '\\frac{1}{15}', 'B': '\\frac{1}{10}', 'C': '\\frac{1}{6}', 'D': '\\frac{1}{5}', 'E': '\\frac{1}{4} </math>'}
+Answer: 
+
+--- Solution 1 ---
+Notice that the only four ways such that <math>3</math> draws are required are <math>1,2</math>; <math>1,3</math>; <math>2,1</math>; and <math>3,1</math>. Notice that each of those cases has a <math>\frac{1}{5} \cdot \frac{1}{4}</math> chance, so the answer is <math>\frac{1}{5} \cdot \frac{1}{4} \cdot 4 = \frac{1}{5}</math>, or <math>\boxed{D}</math>.
+
+Jonathan Xu (pi_is_delicious_69420)
+
+== Solution 1.1 ==
+
+Since our favorable outcomes are <math>1,2</math>; <math>1,3</math>; <math>2,1</math>; and <math>3,1</math>, we have 4 favorable outcomes. We have 20 total outcomes. Probability will be  <math>\frac{1}{5}</math>. Hence the answer is <math>\boxed{D}</math>.
+
+--- Solution 2 ---
+We only have to analyze the first two draws as that gives us insight into if a third draw is necessary. Also, note that it is necessary to draw a <math>1</math> to have 3 draws, otherwise <math>5</math> will be attainable in two or fewer draws. So the probability of getting a <math>1</math> is <math>\frac{1}{5}</math>. It is necessary to pull either a <math>2</math> or <math>3</math> on the next draw and the probability of that is <math>\frac{1}{2}</math>. But, the order of the draws can be switched so we get:
+
+<math>\frac{1}{5} \cdot \frac{1}{2} \cdot 2 = \frac{1}{5}</math>, or <math>\boxed {D}</math>
+
+--- Solution 3 ---
+We know that the first <math>2</math> draws must be <math>\le{3}</math> leaving us with with the only option being that <math>1</math> and <math>2</math> are chosen in either order. This means there is a probability of <math>\frac{1}{\binom52} \cdot 2 = \frac{1}{5}</math>, or <math>\boxed {D}</math>
+
+
+=== Problem 7 ===
+In the figure below,
+
+Choices: {'A': '16', 'B': '17', 'C': '18', 'D': '19', 'E': '36 </math>'}
+Answer: D
+
+--- Solution 1 ---
+Use the answer choices and calculate them. The one that works is <math>\bold{\boxed{\text{(D)19}}}</math>.
+
+--- Solution 2 ---
+Let the number of semicircles be <math>n</math> and let the radius of each semicircle be <math>r</math>. To find the total area of all of the small semicircles, we have <math>n \cdot \frac{\pi \cdot r^2}{2}</math>. 
+
+Next, we have to find the area of the larger semicircle. The radius of the large semicircle can be deduced to be <math>n \cdot r</math>. So, the area of the larger semicircle is <math>\frac{\pi \cdot n^2 \cdot r^2}{2}</math>. 
+
+Now that we have found the area of both A and B, we can find the ratio. <math>\frac{A}{B}=\frac{1}{18}</math>, so part-to-whole ratio is <math>1:19</math>. When we divide the area of the small semicircles combined by the area of the larger semicircles, we get <math>\frac{1}{n}</math>. This is equal to <math>\frac{1}{19}</math>. By setting them equal, we find that <math>n = 19</math>. This is our answer, which corresponds to choice <math>\bold{\boxed{\text{(D)19}}}</math>.
+
+Solution by: Archimedes15
+
+
+Note: using WLOG you could have just set <math>r</math> as <math>1</math> in the beginning.
+
+--- Solution 3 ---
+Each small semicircle is <math>\frac{1}{N^2}</math> of the large semicircle. Since <math>N</math> small semicircles make <math>\frac{1}{19}</math> of the large one, <math>\frac{N}{N^2} = \frac1{19}</math>. Solving this, we get <math>\boxed{19}</math>. 
+
+... Don't think this one works
+
+
+=== Problem 8 ===
+Sara makes a staircase out of toothpicks as shown:
+
+<asy>
+size(150);
+defaultpen(linewidth(0.8));
+path h = ellipse((0.5,0),0.45,0.015), v = ellipse((0,0.5),0.015,0.45);
+for(int i=0;i<=2;i=i+1)
+{
+for(int j=0;j<=3-i;j=j+1)
+{
+filldraw(shift((i,j))*h,black);
+filldraw(shift((j,i))*v,black);
+}
+}
+</asy>
+
+This is a
+
+Choices: {'A': '10', 'B': '11', 'C': '12', 'D': '24', 'E': '30 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Notice that the sequence of numbers of toothpicks from the 1st step to the 3rd step is <math>4, 10, 18</math>
+
+We find that the first difference between 4 and 10 is 6 and 10 and 18 is 8.
+
+So, the second difference is constant, 2 (the difference between 6 and 8)
+
+Because the second differences are constant, the sequence comes from a quadratic polynomial in the form <math>ax^2+bx+c</math>
+
+Creating a system of equations, we find that (by plugging in values to <math>ax^2+bx+c</math>):
+
+<math>a + b + c = 4</math>
+<math>4a + 2b + c = 10</math>
+<math>9a + 3b + c = 18</math>
+
+So, (a,b,c) is (1,3,0) and we get the quadratic <math>x^2 + 3x</math>
+
+Set <math>x^2 + 3x = 180</math> and factor
+
+<math>(x-12)(x+15)</math>
+
+So x = 12, and from this we see that the solution is <math>\boxed {(C) 12}</math>
+
+ By: UnknownAnsh
+
+--- Solution 2 ---
+A staircase with <math>n</math> steps contains <math>4 + 6 + 8 + ... + 2n + 2</math> toothpicks. This can be rewritten as <math>(n+1)(n+2) -2</math>. 
+
+So, <math>(n+1)(n+2) - 2 = 180</math>
+
+So, <math>(n+1)(n+2) = 182.</math> 
+
+Inspection could tell us that <math>13 \cdot 14 = 182</math>, so the answer is <math>13 - 1 = \boxed {(C) 12}</math>
+
+--- Solution 3 ---
+Layer <math>1</math>: <math>4</math> steps
+
+Layer <math>1,2</math>: <math>10</math> steps
+
+Layer <math>1,2,3</math>: <math>18</math> steps
+
+Layer <math>1,2,3,4</math>: <math>28</math> steps
+
+From inspection, we can see that with each increase in layer the difference in toothpicks between the current layer and the previous increases by <math>2</math>. Using this pattern:
+
+<math> 4, 10, 18, 28, 40, 54, 70, 88, 108, 130, 154, 180 </math>
+
+From this we see that the solution is <math>\boxed {(C) 12}</math>
+
+By: Soccer_JAMS
+
+--- Solution 4 ---
+Notice that we have the points \( (1,4) \), \( (2,10) \), \( (3,18) \). Then, we calculate the first difference to get 6 and 8 respectively, and calculate the second difference to get 2. This is a quadratic expression in the form \( ax^2 + bx + c \).
+
+Because we have a table of elements, \( 2a = \) the second difference, so \( 2a = 2 \Rightarrow a = 1 \). The quadratic is now \( y = x^2 + bx + c \). We plug in two points to get \( 4 = b + c \) and \( 10 = 4 + 2b + c \Rightarrow 6 = 2b + c \). Solving through elimination gives us \( b = 2 \), and \( c = 2 \).
+
+We now have \( y = x^2 + 2x + 2 \). We put \( y = 180 \), and see that \( 180 = x^2 + 2x + 2 \), and \( 0 = x^2 + 2x - 178 \). We use the quadratic formula to get \( -2 \pm \sqrt{716}/2 \). \( \sqrt{716} \) is greater than \( 26^2 \) but less that \( 27^2 \), so we say \( \sqrt{716} = 26 \). We then get 12 or -14.
+
+We cannot have a negative number of steps, so our answer is <math>\boxed {(C) 12}</math>.
+
+--- Solution 5 ---
+We can find a function that gives us the number of toothpicks for every layer. Using finite difference, we know that the degree must be <math>2</math> and the leading coefficient is <math>1</math>. The function is <math>f(n)=n^2+3n</math> where <math>n</math> is the layer and <math>f(n)</math> is the number of toothpicks.
+
+
+We have to solve for <math>n</math> when <math>n^2+3n=180\Rightarrow n^2+3n-180=0</math>. Factor to get <math>(n-12)(n+15)</math>. The roots are <math>12</math> and <math>-15</math>. Clearly <math>-15</math> is impossible so the answer is <math>\boxed {(C) 12}</math>.
+
+--- Solution 6 ---
+Notice that the number of toothpicks can be found by adding all the horizontal and all the vertical toothpicks. We can see that for the case of 3 steps, there are <math>2(3+3+2+1)=18</math> toothpicks. Thus, the equation is <math>2S + 2(1+2+3...+S)=180</math> with <math>S</math> being the number of steps. Solving, we get <math>S = 12</math>, or <math>\boxed {(C) 12}</math>.
+-liu4505
+
+=== Solution 6 General Formula ===
+There are <math>\frac{n(n+1)}{2}</math> squares. Each has <math>4</math> toothpick sides. To remove overlap, note that there are <math>4n</math> perimeter toothpicks. <math>\frac{\frac{n(n+1)}{2}\cdot 4-4n}{2}</math> is the number of overlapped toothpicks
+Add <math>4n</math> to get the perimeter (non-overlapping). Formula is <math>\text{number of toothpicks} = n^2+3n</math> Then you can "guess" or factor (also guessing) to get the answer <math>\boxed{\text{(C) }12}</math>.
+
+=== Not a solution! Just an observation. ===
+If you are trying to look for a pattern, you can see that the first column is made of 4 toothpicks. The second one is made from 2 squares: 3 toothpicks for the first square and 4 for the second. The third one is made up of 3 squares: 3 toothpicks for the first and second one, and 4 for the third one. The pattern continues like that. So for the first one, you have 0 "3 toothpick squares" and 1 "4 toothpick squares". The second is 1 to 1. The third is 2:1. And the amount of three toothpick squares increase by one every column.
+
+The list is as follow for the number of toothpicks used...
+<math>4</math>,<math>4+3</math>,<math>4+6</math>,<math>4+9</math>, and so on.
+4, 7, 10, 13, 16, 19, ...
+
+- Flutterfly
+
+
+=== Problem 9 ===
+The faces of each of
+
+Choices: {'A': '13', 'B': '26', 'C': '32', 'D': '39', 'E': '42 </math>'}
+Answer: D
+
+--- Solution 1 ---
+The number 10 can be achieved by \( 4+6 \), \( 5+5 \), \( 6+4 \), in which there must exist at least 5 number ones. 
+
+Thus, we can write an answer in the form \( 1 + 1 + 1 + 1 + 1 + x + y \), where \( x + y \) must sum to 5. We notice that \( x + y = 5 \) can be either \( 1 + 4 \), \( 2 + 3 \), \( 3 + 2 \), or \( 4 + 1 \). So \( x + y = 4\) cases.
+
+The question now is which of the following answer choices can be written as a 5 term consecutive sum with the last two numbers \( x\) and \(y\) having exactly 4 cases.
+
+We first take E. 42. We see that we can have 5 consecutive number 6's to get 30. We then have a remaining 12, which can be represented as 6 + 6 only, not giving us our wanted 4 cases. 
+
+We try D. 39. We see we can write this as 5 consecutive number 6's. This gives us a remainder of 9, which can be written as 6+3, 4+5, 5+4, or 3+6, giving us 4 cases, exactly like the cases we got for 10.
+
+Our answer is therefore <math>\boxed{\textbf{(D)} \text{ 39}}</math>.
+
+
+===Solution 1.1===
+
+If you wish to check your answer.
+
+32 = a consecutive number 5's or 6's, gives a remainder of 7 and 2 respectively.
+
+The consecutive number of 6's obviously doesn't work.
+
+The consecutive number of 5's gives the remainder 7, which is \( 1+6 \), \( 2 + 5 \), \( 3+4 \), \( 4+3 \), \( 5+2 \), \( 6+1 \), which is 6 cases and not 4.
+
+26 is either consecutive 5's or 4's. 
+
+This gives a remainder of 1 or 6. 1 obviously doesn't work. 6 is \( 1+5 \), \( 2+4 \), \( 3+3 \), \( 4+2 \), or \( 5+1 \), which is 5 cases, not 4.
+
+13 is consecutive 2's or 1's, giving a remainder of 3 and 7 respectively. 
+
+We see that 3 doesn't work, and we already know that 7 doesn't work either.
+
+--- Solution 2 ---
+It can be seen that the probability of rolling the smallest number possible is the same as the probability of rolling the largest number possible, the probability of rolling the second smallest number possible is the same as the probability of rolling the second largest number possible, and so on. This is because the number of ways to add a certain number of ones to an assortment of <math>7</math> ones is the same as the number of ways to take away a certain number of ones from an assortment of <math>7</math> <math>6</math>s.
+
+So, we can match up the values to find the sum with the same probability as <math>10</math>. We can start by noticing that <math>7</math> is the smallest possible roll and <math>42</math> is the largest possible roll. The pairs with the same probability are as follows:
+
+<math>(7, 42), (8, 41), (9, 40), (10, 39), (11, 38)...</math>
+
+However, we need to find the number that matches up with <math>10</math>. So, we can stop at <math>(10, 39)</math> and deduce that the sum with equal probability as <math>10</math> is <math>39</math>. So, the correct answer is <math>\boxed{\textbf{(D)} \text{39}}</math>, and we are done.
+
+Written By: Archimedes15
+
+
+
+Add-on by ike.chen: to see how the number of ways to roll <math>10</math> and <math>39</math> are the same, consider this argument:
+
+Each of the <math>7</math> dice needs to have a nonnegative value; it follows that the number of ways to roll <math>10</math> is <math>\binom {10-1}{7-1}=84</math> by stars and bars. <math>10-7=3</math>, so there's no chance that any dice has a value <math>>6</math>.
+
+Now imagine <math>7</math> piles with <math>6</math> blocks each. The number of ways to take <math>3</math> blocks away (making the sum <math>7\cdot 6-3=39</math>) is also <math>\binom {3+7-1}{7-1}=84</math>.
+
+correction to the add-on: the die need a positive value. We first give every die 1 so we have <math>10-7=3</math> "balls" left to put into the 7 more bins/die. a dice can have a value of 0 for the # of added balls. Thus, from stars and bars it follows that there are <math>\binom{7+3-1}{7-1}=84</math> ways
+
+--- Solution 3 ---
+Let's call the unknown value <math>x</math>. By symmetry, we realize that the difference between 10 and the minimum value of the rolls is equal to the difference between the maximum and <math>x</math>. So, 
+
+<math>10 - 7 = 42- x </math>
+
+<math> x = 39 </math> and our answer is  <math>\boxed{\textbf{(D)} \text{ 39}}</math>
+By: Soccer_JAMS
+
+--- Solution 4 ---
+For the sums to have equal probability, the average sum of both sets of <math>7</math> dies has to be <math>(6+1)\cdot 7 = 49</math>. Since having <math>10</math> is similar to not having <math>10</math>, you just subtract 10 from the expected total sum. <math>49 - 10 = 39</math> so the answer is <math>\boxed{\textbf{(D)} \text{ 39}}</math>
+
+By: epicmonster
+
+Revised solution by Williamgolly (includes bijections):
+Notice that we first must have at least a 1 on each die.  Now, we form the following bijection: biject each value on the original die, say <math>x</math> to a value <math>7-x</math> on the new die. Notice how now we need to 'take away' 3 from seven dies that all show 6.  Therefore, the answer is 39.
+
+--- Solution 5 ---
+The expected value of the sums of the die rolls is <math>3.5\cdot7=24.5</math>, and since the probabilities should be distributed symmetrically on both sides of <math>24.5</math>, the answer is <math>24.5+(24.5-10)=39</math>, which is <math>\boxed{\textbf{(D)} \text{ 39}}</math>.
+
+By: dajeff
+
+--- Solution 6 ---
+Another faster and easier way of doing this, without using almost any math at all, is realizing that the possible sums are <math>{7,8,9,10,...,39,40,41,42}</math>. By symmetry, (and doing a few similar problems in the past), you can realize that the probability of obtaining <math>7</math> is the same as the probability of obtaining <math>42</math>, <math>P(8)=P(41)</math> and on and on and on. This means that <math>P(10)=P(39)</math>, and thus the correct answer is <math>\boxed{\textbf{(D)} \text{ 39}}</math>.
+
+By: fhdsaukfaioifk
+
+
+=== Problem 10 ===
+In the rectangular parallelepiped shown,
+
+Choices: {'A': '1', 'B': '\\frac{4}{3}', 'C': '\\frac{3}{2}', 'D': '\\frac{5}{3}', 'E': '2 </math>'}
+Answer: E
+
+--- Solution 1 ---
+Consider the cross-sectional plane and label its area <math>b</math>. Note that the volume of the triangular prism that encloses the pyramid is <math>\frac{bh}{2}=3</math>, and we want the rectangular pyramid that shares the base and height with the triangular prism. The volume of the pyramid is <math>\frac{bh}{3}</math>, so the answer is <math>\boxed{(E) 2}</math>.(AOPS12142015)
+
+--- Solution 2 ---
+We can start by finding the total volume of the parallelepiped. It is <math>2 \cdot 3 \cdot 1 = 6</math>, because a rectangular parallelepiped is a rectangular prism.
+
+Next, we can consider the wedge-shaped section made when the plane <math>BCHE</math> cuts the figure. We can find the volume of the triangular pyramid with base <math>EFB</math> and apex <math>M</math>. The area of <math>EFB</math> is <math>\frac{1}{2} \cdot 2 \cdot 3 = 3</math>. Since <math>\overline{BC}</math> is given to be <math>1</math>, we have that <math>\overline{FM}</math> is <math>\frac{1}{2}</math>. Using the formula for the volume of a triangular pyramid, we have <math>V = \frac{1}{3} \cdot \frac{1}{2} \cdot 3 = \frac{1}{2}</math>. Also, since the triangular pyramid with base <math>HGC</math> and apex <math>M</math> has the exact same dimensions, it has volume <math>\frac{1}{2}</math> as well.
+
+The original wedge we considered in the last step has volume <math>3</math>, because it is half of the volume of the parallelepiped. We can subtract out the parts we found to have <math>3 - \frac{1}{2} \cdot 2 = 2</math>. Thus, the volume of the figure we are trying to find is <math>2</math>. This means that the correct answer choice is <math>\boxed{E}</math>.
+
+Written by: Archimedes15
+
+NOTE: For those who think that it isn't a rectangular prism, please read the problem. It says "rectangular parallelepiped." If a parallelepiped is such that all of the faces are rectangles, it is a rectangular prism.
+
+--- Solution 3 ---
+Notice that the volume of the rectangular prism is \( lwh = 3 \cdot 1 \cdot 2 = 6 \)
+
+We first see that the triangular prism EHCBA is just half the volume of the rectangular prism which is just \( 6/2 = 3 \).
+
+We next notice that to get the pyramid with apex \( M \), we need to subtract another pyramid \( GHMC \) that is right behind the pyramid we wish to find. We notice the gap between the answer choices, and realize we can assume a formula for pyramid \( GHMC \).
+
+So we say that the formula is \( V = \frac{1}{3} Bh \), \( B \) is the base area and \( h \) is the height.
+
+The length \( MG \) is just \( 1/2 \), and to find \( B \) we do \( \frac{1}{2} \cdot \frac{1}{2} \cdot 2 = \frac{1}{2} \). The volume of pyramid \( GHMC \) is \( V = \frac{1}{3} \cdot \frac{1}{2} \cdot 3 = \frac{1}{2} \).
+
+We subtract the total volume 6 by the combined volume \( 3 + \frac{1}{2} = \frac{7}{2} \) to get \( \frac{12}{2} - \frac{7}{2} = \frac{5}{2} \). \( \frac{5}{2} \) is just 2.5, and the closest answer choice is <math>\boxed{\textbf{E } 2}</math>.
+
+--- Solution 4 ---
+If you look carefully, you will see that on the either side of the pyramid in question, there are two congruent tetrahedra. The volume of one is <math>\frac{1}{3}Bh</math>, with its base being half of one of the rectangular prism's faces and its height being half of one of the edges, so its volume is <math>\frac{1}{3} (3 \times 2/2 \times \frac{1}{2})=\frac{1}{2}</math>. We can obtain the answer by subtracting twice this value from the diagonal half prism, or
+<math>(\frac{1}{2} \times 3 \times 2 \times 1) - (2 \times \frac{1}{2})= </math> <math>\boxed{2}</math>
+
+--- Solution 5 ---
+You can calculate the volume of the rectangular pyramid by using the formula, <math>\frac{Ah}{3}</math>. <math>A</math> is the area of the base, <math>BCHE</math>, and is equal to <math>BC * BE</math>. The height, <math>h</math>, is equal to the height of triangle <math>FBE</math> drawn from <math>F</math> to <math>BE</math>.
+
+<math>BE=\sqrt{BF^2 + EF^2}=\sqrt{13}</math> Area of <math>BCHE = BC * BE = \sqrt{13}</math>
+
+<math>h = 2 *</math> Area of <math>FBE / BE</math> (since Area <math>= \frac{1}{2}bh</math>).
+
+Area of <math>FBE = \frac{1}{2} * FB * FE = 3</math>
+
+<math>h = 2 * 3 / \sqrt{13} = \frac{6}{\sqrt{13}}</math>
+
+Volume of pyramid <math>=\frac{1}{3} * \sqrt{13} * \frac{6}{\sqrt{13}} = 2</math>
+
+Answer is <math>\boxed{\textbf{E } 2}</math>
+
+--- Solution 6 ---
+We can start by identifying the information we need. We need to find the area of rectangle <math>EHCB</math> and the height of rectangular prism <math>EHCBM</math>.
+
+In order to find the area of <math>EHCB,</math> we can use the Pythagorean Theorem. We find that <math>EB = \sqrt{13}</math>, so the area of rectangle <math>EHCB = \sqrt{13}</math>. We shall refer to this as <math>x</math>.
+
+In order to find the height of rectangular prism <math>EHCBM</math>, we can examine triangle <math>EFB</math>. We can use the Geometric Mean Theorem to find that when an altitude is dropped from point <math>F,</math>  <math>\overline{EB}</math> is split into segments of length <math>\dfrac{4 \cdot \sqrt{13}}{13}</math> and <math>\dfrac{9 \cdot \sqrt{13}}{13}</math>. Taking the geometric mean of these numbers, we find that the altitude has length <math>\dfrac{6 \cdot \sqrt{13}}{13}</math>. This is also the height of the rectangular prism, which we shall refer to as <math>y</math>.
+
+Plugging <math>x</math> and <math>y</math> into the formula <math>V = \dfrac{b \cdot h}{3},</math> we find that the volume is <math>\boxed{2}</math>. The answer is <math>\boxed{E}</math>.
+
+--- Solution 7 ---
+We start by setting the formula for the volume of a rectangular pyramid: <math>\frac{1}{3}Bh</math>. By the Pythagorean Theorem, we know that <math>BE = \sqrt{BF^2 + EF^2} = \sqrt{13}</math>. Therefore, the area of the base is <math>1 \times \sqrt{13} = \sqrt{13}</math>. Next, we would like to know the height of the pyramid. We can observe that the altitude from point <math>F</math> in <math>\triangle EFB</math> is parallel to the height of the pyramid and therefore congruent because those two altitudes are on the same plane of base <math>EBCH</math>. From this, we only need to find the altitude from point <math>F</math> in <math>\triangle EFB</math> and plug it into our formula for the volume of a rectangular pyramid. This is easy because we already know the area of <math>\triangle EFB</math> and the base from point <math>F</math>, so all we need to do is divide: <math>\frac{2 \times 3}{\sqrt{13}} = \frac{6}{\sqrt{13}} = \frac{6\sqrt{13}}{13}</math>. Now all we need to do is plug in all our known values into the volume formula: <math>\frac{1}{3}Bh = \frac{\sqrt{13} \times \frac{6\sqrt{13}}{13}}{3} = \boxed{(E) 2}</math>
+
+--- Solution 8 ---
+[[File:AMC 10B 10 2018.jpg|600px]]
+
+Using the Pythagorean Theorem, we can easily find that <math>EB = \sqrt{2^2 + 3^2} = \sqrt{13}</math>. Quickly computing, we find the area of the base, <math>BCHE = \sqrt{13} \cdot 1 = \sqrt{13}</math>. Now we can make the following adjustments to our 3d shape as shown in the diagram. All we need now is to solve for the height, or <math>XM</math>. We can set up to following equation due to our knowledge of altitudes(of the hypotenuse)in right triangles. We can set up the following equations:
+<cmath>\begin{align*}
+b(a+b) &= (MH_1)^2 \\
+a(a+b) &= (MH_2)^2 \\
+b\sqrt{13} &= 3^2 \\
+a\sqrt{13} &= 2^2 \\
+b &= \dfrac{9}{\sqrt{13}} \\
+a &= \dfrac{4}{\sqrt{13}} \\
+(MX)^2 &= ab \\
+(MX)^2 &= \dfrac{9 \cdot 4}{13} \\
+MX &= \dfrac {3 \cdot 2}{\sqrt{13}} \\
+\end{align*}</cmath>
+Thus <math>\triangle V_{BCHEM} = \dfrac{\text{(height)}\cdot \text{(base)}}{3} = \dfrac{MX \cdot BCHE}{3} = \dfrac {\sqrt{13} \cdot \dfrac{3 \cdot 2}{\sqrt{13}}}{3}</math> <math>= \boxed{\textbf{(E) } 2}</math>
+
+--- Solution 9 ---
+First of all, we can quickly calculate the base area <math>EBCH</math> to be <math>\sqrt{13}</math>, since <math>BC = 1</math> (given) and <math>EB = \sqrt{2^2+3^2} = \sqrt{13}</math> (Pythagorean Theorem).
+ 
+Now all we need is to find the height of <math>EBCHM</math>, which we can denote as <math>h</math>. We know that the length of the altitude from <math>M</math>, <math>F</math>, and <math>G</math> to base <math>EBCH</math> is <math>h</math>, and that's the length that will be easiest to use to find the height. To make this problem simpler, you can turn this 3D model into a 2D one (look at face <math>EABF</math>).
+
+Looking at face <math>EABF</math>, <math>h</math> would be equal to the length of the altitude from <math>F</math> to <math>EB</math>. To find this, we can find the coordinates of <math>F</math> and the point where the altitude from <math>F</math> touches <math>EB</math>, which we will call point <math>X</math>. Immediately, we know that the coordinates of <math>F</math> are <math>(3,2)</math>, given the values on the rectangle, and we can find the coordinates of point <math>X</math> by first noticing that the equation of <math>EB</math> is <math>y = \dfrac{-2x}{3}+2</math>. Because of perpendicular slopes being the inverse reciprocal of the original slope, the equation for FX is <math> y = \dfrac{3x}{2}-\dfrac{5}{2}</math>. From this, <math>y = \dfrac{3x}{2}+b</math>, and <math>2=\dfrac{3(3)}{2}+b</math>, so <math>b = \dfrac{-5}{2}</math>. Now the intersection of these two equations can be found to be <math>(\dfrac{27}{13},\dfrac{8}{13})</math>. We can use the distance formula to find the distance between the two points. <math>\sqrt{(3-\dfrac{27}{13})^2 + (2-\dfrac{8}{13})^2} = \sqrt{(\dfrac{12}{13})^2+(\dfrac{8}{13})^2} = \dfrac{\sqrt{468}}{13}</math>. 
+
+Now that we know the height length and base area of the pyramid <math>EBCHM</math>, we can use the volume formula for it: <math>\dfrac{\text{(base area)} \cdot \text{(height length)}}{3} = \dfrac{\dfrac{\sqrt{468}}{13} \cdot \sqrt{13}}{3}</math> <math>= \boxed{\textbf{(E) } 2}</math>
+
+--- Solution 10 ---
+In the rectangular parallelepiped, we are given
+<cmath>AB = 3,\quad BC = 1,\quad CG = 2.</cmath>
+The base of the pyramid is the quadrilateral <math>BCHE</math>.
+
+Since opposite edges are perpendicular, <math>BCHE</math> is a rectangle with
+<cmath>BC = 1 \quad \text{and} \quad BE = \sqrt{AB^2 + AE^2} = \sqrt{3^2 + 2^2} = \sqrt{13}.</cmath>
+So the area is
+<cmath>[BCHE] = BC \cdot BE = 1 \cdot \sqrt{13} = \sqrt{13}.</cmath>
+
+Project the solid into the 2D plane containing <math>B, E,</math> and <math>M</math>. Use the coordinates
+<cmath>B = (3,0),\quad E = (0,2),\quad M = (3,2).</cmath>
+The slope of <math>\overline{BE}</math> is
+<cmath>\frac{2-0}{0-3} = -\frac{2}{3},</cmath>
+so its equation is
+<cmath>y = -\frac{2}{3}x + 2.</cmath>
+Rewriting in standard form:
+<cmath>2x + 3y - 6 = 0.</cmath>
+
+Using the point-to-line distance formula, the perpendicular distance from <math>M = (3,2)</math> to this line is
+<cmath>
+\frac{|2(3) + 3(2) - 6|}{\sqrt{2^2 + 3^2}}
+= \frac{6}{\sqrt{13}}.
+</cmath>
+This is the height of the pyramid.
+
+The volume of a pyramid is
+<cmath>V = \frac{1}{3} \cdot (\text{base area}) \cdot (\text{height}).</cmath>
+Thus,
+<cmath>
+V = \frac{1}{3} \cdot \sqrt{13} \cdot \frac{6}{\sqrt{13}}
+= \frac{6}{3}
+= 2.
+</cmath>
+
+
+=== Problem 11 ===
+Which of the following expressions is never a prime number when
+
+Choices: {'A': 'p^2+16', 'B': 'p^2+24', 'C': 'p^2+26', 'D': 'p^2+46', 'E': 'p^2+96 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Each expression is in the form <math>p^2 + n</math>.
+
+All prime numbers are of the form <math>6k \pm 1</math>, AKA they are congruent to <math>\pm1 \pmod{6}</math>. We can utilize this nicely to check for what we are looking for. If the expression is a prime, then
+
+
+<math>p^2 + n \equiv \pm1 \pmod{6}</math>
+
+<math>\Rightarrow (\pm1)^2 + n \equiv \pm1 \pmod{6}</math>
+
+<math>\Rightarrow 1 + n \equiv \pm1 \pmod{6}</math>
+
+<math>\Rightarrow n \equiv (\pm1) - 1 \pmod{6}</math>
+
+<math>\Rightarrow n \equiv (1</math> <math>or</math> <math>-1) - 1 \pmod{6}</math>
+
+<math>\Rightarrow n \equiv 0</math> <math>or</math> <math>-2 \pmod{6}</math>
+
+
+Now, just check for <math>n</math> in each option using this condition to check whether its prime or not.
+
+<cmath>(A)\ n = 16; prime</cmath>
+<cmath>(B)\ n = 24; prime</cmath>
+<cmath>(C)\ n = 26; not\ prime</cmath>
+<cmath>(D)\ n = 46; prime</cmath>
+<cmath>(E)\ n = 96; prime</cmath>
+
+Therefore, the answer is <math>\boxed{\textbf{(C) } p^2 + 26} </math>.
+
+--- Solution 2 ---
+Because squares of a non-multiple of 3 is always <math>1 \pmod{3}</math>, the only expression always a multiple of <math>3</math> is <math>\boxed{\textbf{(C) } p^2+26} </math>. This is excluding when <math>p\equiv 0 \pmod{3}</math>, which only occurs when <math>p=3</math>, then <math>p^2+26=35</math> which is still composite.
+
+--- Solution 3 ---
+\( p^2 + 16 \) is prime for \( p = 5 \), so we know that \( A \) doesn't work.
+
+Because \( p^2 + 96 = p^2 + (16) \cdot 6 \), we see that eventually there exists a number \( p \) that makes the sum prime, therefore \( E \) also doesn't work.
+
+Option \( B \) is \( p^2 + 24 \), but because the number itself has no carryover, we can assume \( p = 5 \) again to get the number \( 41 \), which is prime.
+
+Option \( D \) is \( p^2 + 46 \), ending in \( 6 \), so we try \( p = 5 \) again to get \( 71 \). This is also prime.
+
+We can either deduce through elimination that \( p^2 + 26 \) is always composite for any prime \( p \), but we can prove it by showing \( p = 5 \) doesn't work, \( p = 7 \) doesn't work, and \( p = 11 \) doesn't work, and through [https://artofproblemsolving.com/wiki/index.php/Induction?srsltid=AfmBOooY-SKw1NAbaPWjFKkyfSoHj6RXiwWuqty6FtGzCI5GAw7eyCTA Engineer's Induction], \( p^2 + 26 \) always remains composite.
+
+Therefore the answer is <math>\boxed{\textbf{(C) } p^2 + 26} </math>.
+
+--- Solution 4 ---
+Since the question asks which of the following will never be a prime number when <math>p</math> is a prime number, a way to find the answer is by trying to find a value for <math>p</math> such that the statement above won't be true.
+
+A) <math>p^2+16</math> isn't true when <math>p=5</math> because <math>25+16=41</math>, which is prime
+
+B) <math>p^2+24</math> isn't true when <math>p=7</math> because <math>49+24=73</math>, which is prime
+
+C) <math>p^2+26</math>
+
+D) <math>p^2+46</math> isn't true when <math>p=5</math> because <math>25+46=71</math>, which is prime
+
+E) <math>p^2+96</math> isn't true when <math>p=19</math> because <math>361+96=457</math>, which is prime
+
+Therefore, <math>\framebox{C}</math> is the correct answer.
+
+-DAWAE
+
+
+
+Minor edit by Lucky1256. P=___ was the wrong number.
+
+More minor edits by beanlol.
+
+More minor edits by mathmonkey12.
+
+
+=== Problem 12 ===
+Line segment
+
+Choices: {'A': '25', 'B': '38', 'C': '50', 'D': '63', 'E': '75 </math>'}
+Answer: C
+
+--- Solution 1 ---
+By the Inscribed Angle Theorem, <math>\triangle ABC</math> is a right triangle with <math>\angle C=90^{\circ}.</math> So, its circumcenter is the midpoint of <math>\overline{AB},</math> and its median from <math>C</math> is half as long as <math>\overline{AB}.</math> For each <math>\triangle ABC,</math> let <math>O</math> and <math>G</math> be its circumcenter and centroid, respectively. It follows that <math>OA=OB=OC=12.</math> In any triangle, since the centroid divides each median into parts in the ratio <math>2:1,</math> with the centroid being twice as close to the midpoint of a side as it is to the opposite vertex, we have <math>OG=\frac13 OC=4.</math>
+
+As shown below, <math>\triangle ABC_1</math> and <math>\triangle ABC_2</math> are two shapes of <math>\triangle ABC</math> with centroids <math>G_1</math> and <math>G_2,</math> respectively:
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+pair O, A, B, C1, C2, G1, G2, M1, M2;
+O = (0,0);
+A = (-12,0);
+B = (12,0);
+C1 = (36/5,48/5);
+C2 = (-96/17,-180/17);
+G1 = O + 1/3 * C1;
+G2 = O + 1/3 * C2;
+M1 = (4,0);
+M2 = (-4,0);
+
+draw(Circle(O,12));
+draw(Circle(O,4),red);
+
+dot("$O$", O, (3/5,-4/5), linewidth(4.5));
+dot("$A$", A, W, linewidth(4.5));
+dot("$B$", B, E, linewidth(4.5));
+dot("$C_1$", C1, dir(C1), linewidth(4.5));
+dot("$C_2$", C2, dir(C2), linewidth(4.5));
+dot("$G_1$", G1, 1.5*E, linewidth(4.5));
+dot("$G_2$", G2, 1.5*W, linewidth(4.5));
+draw(A--B^^A--C1--B^^A--C2--B);
+draw(O--C1^^O--C2);
+dot(M1,red+linewidth(0.8),UnFill);
+dot(M2,red+linewidth(0.8),UnFill);
+</asy>
+Therefore, point <math>G</math> traces out a circle (missing two points) with the center <math>O</math> and the radius <math>\overline{OG},</math> as indicated in red. To the nearest positive integer, the area of the region bounded by the red curve is <math>\pi\cdot OG^2=16\pi\approx\boxed{\textbf{(C) } 50}.</math>
+
+--- Solution 2 ---
+We assign coordinates. Let <math>A = (-12,0)</math>, <math>B = (12,0)</math>, and <math>C = (x,y)</math> lie on the circle <math>x^2 +y^2 = 12^2</math>. Then, the centroid of <math>\triangle ABC</math> is <math>G = \left(\frac{-12 + 12 + x}{3}, \frac{0 + 0 + y}{3}\right) = \left(\frac x3,\frac y3\right)</math>. Thus, <math>G</math> traces out a circle with a radius <math>\frac13</math> of the radius of the circle that point <math>C</math> travels on. Thus, <math>G</math> traces out a circle of radius <math>\frac{12}{3} = 4</math>, which has area <math>16\pi\approx \boxed{\textbf{(C) } 50}</math>.
+
+--- Solution 3 ---
+First we can draw a few conclusions from the given information. Firstly we can see clearly that the distance from the centroid to the center of the circle will remain the same no matter <math>C</math> is on the circle. Also we can see that because the two legs of every triangles will always originate on the diameter, using inscribed angle rules, we know that <math>\angle C = \frac{180^\circ}{2} = 90^\circ</math>. Now we know that all triangles <math>ABC</math> will be a right triangle. We also know that the closed curve will simply be a circle with radius equal to the centroid of each triangle. We can now pick any arbitrary triangle, calculate its centroid, and the plug it in to the area formula. Using a <math>45^\circ</math>-<math>45^\circ</math>-<math>90^\circ</math> triangle in conjunction with the properties of a centroid, we can quickly see that the length of the centroid is <math>4</math> now we can plug it in to the area formula where we get <math>16\pi\approx\boxed{\textbf{(C) } 50}</math>.
+
+
+=== Problem 13 ===
+How many of the first
+
+Choices: {'A': '253', 'B': '504', 'C': '505', 'D': '506', 'E': '1009 </math>'}
+Answer: C
+
+--- Solution 1 ---
+The number <math>10^n+1</math> is divisible by 101 if and only if <math>10^n\equiv -1\pmod{101}</math>. We note that <math>(10,10^2,10^3,10^4)\equiv (10,-1,-10,1)\pmod{101}</math>, so the powers of 10 are 4-periodic mod 101.
+
+It follows that <math>10^n\equiv -1\pmod{101}</math> if and only if <math>n\equiv 2\pmod 4</math>.
+
+In the given list, <math>10^2+1,10^3+1,10^4+1,\dots,10^{2019}+1</math>, the desired exponents are <math>2,6,10,\dots,2018</math>, and there are <math>\dfrac{2020}{4}=\boxed{\textbf{(C) } 505}</math> numbers in that list.
+<br>
+
+--- Solution 2 ---
+Note that <math>10^{2k}+1</math> for some odd <math>k</math> will satisfy <math>10^{2k}+1 \equiv -1\pmod {101}</math>. Each <math>2k \in \{2,6,10,\dots,2018\}</math>, so the answer is <math>\boxed{\textbf{(C) } 505}</math>
+
+--- Solution 3 ---
+If we divide each number by <math>101</math>, we see a pattern occuring in every 4 numbers. <math>101, 1000001, 10000000001, \dots</math>. We divide <math>2018</math> by <math>4</math> to get <math>504</math> with <math>2</math> left over. Looking at our pattern of four numbers from above, the first number is divisible by <math>101</math>. This means that the first of the <math>2</math> left over will be divisible by <math>101</math>, so our answer is <math>\boxed{\textbf{(C) } 505}</math>.
+
+--- Solution 4 ---
+Note that <math>909</math> is divisible by <math>101</math>, and thus <math>9999</math> is too. We know that <math>101</math> is divisible and <math>1001</math> isn't so let us start from <math>10001</math>. We subtract <math>9999</math> to get 2. Likewise from <math>100001</math> we subtract, but we instead subtract <math>9999</math> times <math>10</math> or <math>99990</math> to get <math>11</math>. We do it again and multiply the 9's by <math>10</math> to get <math>101</math>. Following the same knowledge, we can use mod <math>101</math> to finish the problem. The sequence will just be subtracting 1, multiplying by 10, then adding 1. Thus the sequence is <math>{0,-9,-99 ( 2),11, 0, ...}</math>. Thus it repeats every four. Consider the sequence after the 1st term and we have 2017 numbers. Divide <math>2017</math> by four to get <math>504</math> remainder <math>1</math>. Thus the answer is <math>504</math> plus the 1st term or <math>\boxed{\textbf{(C) } 505}</math>.
+
+--- Solution 5 ---
+Note that <math>101=x^2+1</math> and <math>100...0001=x^n+1</math>, where <math>x=10</math>. We have that <math>\frac{x^n+1}{x^2+1}</math> must have a remainder of <math>0</math>. By the remainder theorem, the roots of <math>x^2+1</math> must also be roots of <math>x^n+1</math>. Plugging in <math>i,-i</math> to <math>x^n+1</math> yields that <math>n\equiv2\mod{4}</math>. Because the sequence starts with <math>10^2+1</math>, the answer is <math>\lceil 2018/4 \rceil=\boxed{\textbf{(C) } 505}</math>
+
+--- Solution 6 ---
+The <math>n</math>th term of the sequence is <math>10^n+1</math> for <math>n\ge 2</math> (since <math>10^2+1=101</math>, <math>10^3+1=1001</math>, etc.). We seek those <math>n</math> for which <cmath>101 \mid (10^n+1).</cmath>Let <math>x = 10</math>. Note that <math>101=10^2+1</math>, so this is equivalent to the polynomial divisibility
+
+<cmath>x^2+1 \mid x^n+1</cmath>
+
+Over <math>\mathbb{C}</math>, <math>x^2+1</math> has roots <math>i,-i</math>. Thus <math>x^2+1 \mid x^n+1</math> if both <math>i,-i</math> are roots of <math>x^n+1</math>, since,
+<math>i^n=-1 \quad \text{and} \quad (-i)^n=-1.</math>
+Because <math>i^4=1</math>, we have <math>i^n=-1</math> exactly when <math>n\equiv 2 \pmod{4}</math>. For such <math>n</math>, <math>(-i)^n=(-1)^n i^n=i^n=-1</math> as well, so the condition holds precisely when
+<math>n \equiv 2 \pmod{4}.</math>
+
+Among the first <math>2018</math> terms of the sequence (which correspond to <math>n=2,3,\dots,2019</math>), the values of <math>n</math> congruent to <math>2 \pmod{4}</math> are
+<math>2,6,10,\dots,2018</math>.
+This is an arithmetic progression with common difference <math>4</math>; the count is
+
+<math>\frac{2018-2}{4}+1=\frac{2016}{4}+1=504+1=505</math>.
+Therefore, exactly <math>\boxed{505}</math> of the first <math>2018</math> numbers are divisible by <math>101</math>, which corresponds to choice <math>\boxed{\textbf{(C)}}</math>.
+
+
+=== Problem 14 ===
+A list of
+
+Choices: {'A': '202', 'B': '223', 'C': '224', 'D': '225', 'E': '234 </math>'}
+Answer: D
+
+--- Solution 1 ---
+To minimize the number of distinct values, we want to maximize the number of times a number appears. So, we could have <math>223</math> numbers appear <math>9</math> times, <math>1</math> number appear once, and the mode appear <math>10</math> times, giving us a total of <math>223 + 1 + 1 = \boxed{\textbf{(D)}\ 225}.</math>
+
+--- Solution 2 ---
+As in Solution 1, we want to maximize the number of time each number appears to do so. We can set up an equation <math>10 + 9( x - 1 )\geq2018,</math> where <math>x</math> is the number of values. Notice how we can then rearrange the equation into <math>1 + 9 ( 1 )+9 ( x - 1 )\geq2018,</math> which becomes <math>9 x\geq2017,</math> or <math>x\geq224\frac19.</math> We cannot have a fraction of a value so we must round up to <math>\boxed{\textbf{(D)}\ 225}.</math>
+
+--- Solution 3 ---
+There is a unique number \( n \) with a mode of 10. This means we have 2008 terms left. We see that \( \lfloor 2008/9 \rfloor = 223 \), with remainder 1. Our answer is simply \( 223 + 1 + 1 =\) <math>\boxed{\textbf{(D)}\ 225}.</math>
+
+
+=== Problem 15 ===
+A closed box with a square base is to be wrapped with a square sheet of wrapping paper. The box is centered on the wrapping paper with the vertices of the base lying on the midlines of the square sheet of paper, as shown in the figure on the left. The four corners of the wrapping paper are to be folded up over the sides and brought together to meet at the center of the top of the box, point
+
+Choices: {'A': '2(w+h)^2', 'B': '\\frac{(w+h)^2}2', 'C': '2w^2+4wh', 'D': '2w^2', 'E': 'w^2h </math>'}
+Answer: A
+
+--- Solution 1 ---
+Consider one-quarter of the image (the wrapping paper is divided up into <math>4</math> congruent squares). The length of each dotted line is <math>h</math>. The area of the rectangle that is <math>w</math> by <math>h</math> is <math>wh</math>. The combined figure of the two triangles with base <math>h</math> is a square with <math>h</math> as its diagonal. Using the Pythagorean Theorem, each side of this square is <math>\frac{h}{\sqrt2}</math>. Thus, the area is the side length squared which is <math>\frac{h^2}{2}</math>. Similarly, the combined figure of the two triangles with base <math>w</math> is a square with area <math>\frac{w^2}{2}</math>. Adding all of these together, we get <math>\frac{w^2}{2} + \frac{h^2}{2} + wh</math>. Since we have four of these areas in the entire wrapping paper, we multiply this by <math>4</math>, getting <math>4\left(\frac{w^2}{2} + \frac{h^2}{2} + wh\right) = 2\left(w^2 + h^2 + 2wh\right) = \boxed{\textbf{(A) } 2(w+h)^2}</math>.
+
+The diagram for this solution is shown below:
+<asy>
+/* Edited by MRENTHUSIASM */
+size(180pt);
+defaultpen(fontsize(10pt));
+fill(((0,3)--(-3,3)--(-3,0)--(0,0)--cycle),lightgrey);
+dot((-3,3));
+label("$A$",(-3,3),NW);
+draw((-3,0)--(-3,3)--(0,3),linewidth(.5));
+draw((0,2)--(-1,3)--(-3,1)--(-2,0),dashed+linewidth(.5));
+draw((0,2)--(-2,0),linewidth(.5));
+draw((0,3)--(0,0),linetype("2.5 2.5")+linewidth(.5));
+draw((0,0)--(-3,0),linetype("2.5 2.5")+linewidth(.5));
+label("$w$",(-1,1),NW);
+label("$w$",(-2,2),SE);
+label("$h$",(-2.5,0.5),NE);
+label("$h$",(-0.5,2.5),SW);
+label("$\frac{w}{\sqrt{2}}$",(-2,3),N);
+label("$\frac{h}{\sqrt{2}}$",(-0.5,3),N);
+label("$\frac{h}{\sqrt{2}}$",(0,2.5),E);
+label("$\frac{w}{\sqrt{2}}$",(0,1),E);
+label("$\frac{w}{\sqrt{2}}$",(-1,0),S);
+label("$\frac{h}{\sqrt{2}}$",(-2.5,0),S);
+label("$\frac{h}{\sqrt{2}}$",(-3,0.5),W);
+label("$\frac{w}{\sqrt{2}}$",(-3,2),W);
+label("$wh$",(-1.5,1.5),red);
+label("$\frac{w^2}{4}$",centroid((-3,3),(-1,3),(-3,1)),red);
+label("$\frac{w^2}{4}$",centroid((0,0),(-2,0),(0,2)),red);
+label("$\frac{h^2}{4}$",centroid((-3,0),(-2,0),(-3,1)),red);
+label("$\frac{h^2}{4}$",centroid((0,3),(-1,3),(0,2)),red);
+</asy>
+
+--- Solution 2 ---
+The sheet of paper is made out of <math>4</math> squares, as shown in the diagram in Solution 1. Each square has a side length of <math>\frac{w}{\sqrt{2}} + \frac{h}{\sqrt{2}}</math>, which we get from the Pythagorean Theorem (a <math>45^\circ\text{-}45^\circ\text{-}90^\circ</math> triangle's legs is the hypotenuse divided by <math>\sqrt2</math>). Thus, to find the area of the entire paper, we square our side length and multiply by <math>4</math>. So, the answer is <math>4\cdot\left(\frac{w}{\sqrt{2}} + \frac{h}{\sqrt{2}}\right)^2 = \boxed{\textbf{(A) } 2(w+h)^2}</math>.
+
+--- Solution 3 ---
+The sheet of paper is made out of the surface area of the box plus the sum of the four yellow triangles, as shown below. 
+
+<asy>
+/* Edited by MRENTHUSIASM */
+size(180pt);
+defaultpen(fontsize(10pt));
+fill(((3,3)--(-3,3)--(-3,-3)--(3,-3)--cycle),lightgrey);
+fill((2,0)--(3,1)--(3,-1)--cycle,yellow);
+fill((-2,0)--(-3,1)--(-3,-1)--cycle,yellow);
+fill((0,2)--(1,3)--(-1,3)--cycle,yellow);
+fill((0,-2)--(1,-3)--(-1,-3)--cycle,yellow);
+draw(((3,3)--(-3,3)--(-3,-3)--(3,-3)--cycle),linewidth(.5));
+dot((-3,3));
+label("$A$",(-3,3),NW);
+draw((1,3)--(-3,-1),dashed+linewidth(.5));
+draw((-1,3)--(3,-1),dashed+linewidth(.5));
+draw((-1,-3)--(3,1),dashed+linewidth(.5));
+draw((1,-3)--(-3,1),dashed+linewidth(.5));
+draw((0,2)--(2,0)--(0,-2)--(-2,0)--cycle,linewidth(.5));
+draw((0,3)--(0,-3),linetype("2.5 2.5")+linewidth(.5));
+draw((3,0)--(-3,0),linetype("2.5 2.5")+linewidth(.5));
+label("$w$",(-1,-1),SW);
+label("$w$",(1,-1),SE);
+label("$w$",(1,1),NE);
+label("$w$",(-1,1),NW);
+label("$h$",(2.5,0.5),NW);
+label("$h$",(2.5,-0.5),SW);
+label("$h$",(-2.5,0.5),NE);
+label("$h$",(-2.5,-0.5),SE);
+label("$h$",(0.5,2.5),SE);
+label("$h$",(-0.5,2.5),SW);
+label("$h$",(0.5,-2.5),NE);
+label("$h$",(-0.5,-2.5),NW);
+</asy>
+
+The surface area is <math>2w^2 + 2wh + 2wh</math> which equals <math>2w^2 + 4wh</math>.The four triangles each have a height and a base of <math>h</math>, so they each have an area of <math>\frac{h^2}{2}</math>. There are four of them, so multiplied by four is <math>2h^2</math>. Together, paper's area is <math>2w^2 + 4wh + 2h^2</math>. This can be factored and written as <math>\boxed{\textbf{(A) } 2(w+h)^2} \qquad</math>.
+
+
+=== Problem 16 ===
+Let
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4 </math>'}
+Answer: E
+
+--- Solution 1 ---
+Verify that <math>a^3 \equiv a \pmod{6}</math> manually for all <math>a\in \mathbb{Z}/6\mathbb{Z}</math>. We check: <math>0^3 \equiv 0 \pmod{6}</math>, <math>1^3 \equiv 1 \pmod{6}</math>, <math>2^3 \equiv 8 \equiv 2 \pmod{6}</math>, <math>3^3 \equiv 27 \equiv 3 \pmod{6}</math>, <math>4^3 \equiv 64 \equiv 4 \pmod{6}</math>, and <math>5^3 \equiv 125 \equiv 5 \pmod{6}</math>. We conclude that <math>a^3 \equiv a \pmod{6}</math>.
+
+Therefore, <cmath>a_1^3+a_2^3+\cdots+a_{2018}^3 \equiv a_1+a_2+\cdots+a_{2018}\pmod{6}.</cmath>
+
+Thus the answer is congruent to <math>2018^{2018} = 1009^{2018} \cdot 2^{2018} \equiv \boxed{ \text{(E)}4} \pmod{6}</math> because <math>2^n \pmod{6}</math> alternates with <math>2</math> and <math>4</math> when <math>n</math> increases, and by [[Euler's Totient Theorem]] <math>1009^{2018} = (1009^2)^{1009} \equiv 1^{1009} \equiv 1 \pmod{6}</math>.
+
+--- Solution 2 ---
+Note that <math>\left(a_1+a_2+\cdots+a_{2018}\right)^3=a_1^3+a_2^3+\cdots+a_{2018}^3+3a_1^2\left(a_1+a_2\\
++\cdots+a_{2018}-a_1\right)+3a_2^2\left(a_1+a_2+\cdots+a_{2018}-a_2\right)+\cdots+3a_{2018}^2\left(a_1+a_2+\cdots+a_{2018}-a_{2018}\right)+6\sum_{i\neq j\neq k}^{2018} a_ia_ja_k</math>
+
+Note that <math>
+a_1^3+a_2^3+\cdots+a_{2018}^3+3a_1^2\left(a_1+a_2+\cdots+a_{2018}-a_1\right)+3a_2^2\left(a_1+a_2+\cdots+a_{2018}-a_2\right)+\cdots+3a_{2018}^2\left(a_1+a_2+\cdots+a_{2018}-a_{2018}\right)+6\sum_{i\neq j\neq k}^{2018} a_ia_ja_k\equiv a_1^3+a_2^3+\cdots+a_{2018}^3+3a_1^2({2018}^{2018}-a_1)+3a_2^2({2018}^{2018}-a_2)+\cdots+3a_{2018}^2({2018}^{2018}-a_{2018})
+\equiv -2(a_1^3+a_2^3+\cdots+a_{2018}^3)\pmod 6
+</math>
+Therefore, <math>-2(a_1^3+a_2^3+\cdots+a_{2018}^3)\equiv \left(2018^{2018}\right)^3\equiv\left( 2^{2018}\right)^3\equiv 4^3\equiv 4\pmod{6}</math>.
+
+Thus, <math>a_1^3+a_2^3+\cdots+a_{2018}^3\equiv 1\pmod 3</math>. However, since cubing preserves parity, and the sum of the individual terms is even, the sum of the cubes is also even, and our answer is <math>\boxed{\text{(E) }4}</math>
+
+--- Solution 3 ---
+First, we can assume that the problem will have a consistent answer for all possible values of <math>a_1</math>. For the purpose of this solution, we will assume that <math>a_1 = 1</math>.
+
+We first note that <math>1^3+2^3+...+n^3 = (1+2+...+n)^2</math>. So what we are trying to find is what <math>\left(2018^{2018}\right)^2=\left(2018^{4036}\right)</math> mod <math>6</math>. We start by noting that <math>2018</math> is congruent to <math>2 \pmod{6}</math>. So we are trying to find <math>\left(2^{4036}\right) \pmod{6}</math>. Instead of trying to do this with some number theory skills, we could just look for a pattern. We start with small powers of <math>2</math> and see that <math>2^1</math> is <math>2</math> mod <math>6</math>, <math>2^2</math> is <math>4</math> mod <math>6</math>, <math>2^3</math> is <math>2</math> mod <math>6</math>, <math>2^4</math> is <math>4</math> mod <math>6</math>, and so on... So we see that since <math>\left(2^{4036}\right)</math> has an even power, it must be congruent to <math>4 \pmod{6}</math>, thus giving our answer <math>\boxed{\text{(E) }4}</math>. You can prove this pattern using mods. But I thought this was easier.
+
+-TheMagician
+
+--- Solution 4 ---
+First, we can assume that the problem will have a consistent answer for all possible values of <math>a_1</math>. For the purpose of this solution, assume <math>a_1, a_2, ... a_{2017}</math> are multiples of 6 and find <math>2018^{2018} \pmod{6}</math> (which happens to be <math>4</math>). Then <math>{a_1}^3 + ... + {a_{2018}}^3</math> is congruent to <math>64 \pmod{6}</math> or just <math>\boxed{\textbf{(E)}  4}</math>. 
+
+-Patrick4President
+
+
+WARNING: Technique does not always work; you have been warned
+
+--- Solution 5 ---
+Due to the large amounts of variables in the problem, and the fact that the test is only 75 minutes, you can assume that the answer is probably just <math>2018^{2018} \pmod{6} </math>, which is <math>\boxed{\textbf{(E)}  4}</math>.
+
+
+==Algebraic Insight into Given Property==
+Mods is a good way to prove <math>a^3 \equiv a \pmod6</math>: residues are simply <math>3, \pm 2, \pm 1, 0</math>. Only <math>2</math> and <math>3</math> are necessary to check.
+Another way is to observe that <math>a^3-a</math> factors into <math>(a-1)a(a+1)</math>. Any <math>k</math> consecutive numbers must be a multiple of <math>k</math>, so <math>a^3-a</math> is both divisible by <math>2</math> and <math>3</math>. This provides an algebraic method for proving <math>a^3 \equiv a \pmod6</math> for all <math>a</math>.
+
+--- Solution 6 ---
+We are not given any other requirements than the two given in the problem, so we can assume that <math>a_1 + a_{2018} = a_2 + a_{2017} + \cdots + a_{1004} + a_{1005} = \frac{2018^{2018}}{2018} \cdot 2</math>. Since the (theoretical) <math>a_{1004.5}</math> averages out to be <math>2018^{2017}</math> (lets call this constant <math>N</math>), we can let <math>(a_1, a_{2018}) = (N - x_1, N+x_1)</math>, <math>(a_2, a_{2017}) = (N - x_2, N+x_2)</math>, ... ,<math>(a_{1004}, a_{1005}) = (N - x_{1004}, N+x_{1004})</math> for the sequence of decreasing positive integers <math>x_1, x_2, \cdots, x_{1004}</math>. Notice that for any such pair (say <math>(a_{n}, a_{2019-n}</math>), we have <math>(a_n)^3 + (a_{2019-n})^3 = (N - x_n)^3 + (N+x_n)^3 = 2N^3 + 6N\cdot x_n \equiv 2N^3 \pmod{6}</math>. Thus, <math>a_1^3 + a_2^3 + \cdots + a_{2018}^3 \equiv 1004\cdot 2N^3 \equiv 2018(2018^{2017})^3 \equiv 2018^{6052} \equiv 2^{6052} \pmod{6}</math>. Since <math>2^x \pmod{6}</math> repeats in the pattern <math>2, 4, 2, 4, \cdots</math>, our final answer is <math>\boxed{\textbf{(E)}  4}</math>
+
+
+=== Problem 17 ===
+In rectangle
+
+Choices: {'A': '1', 'B': '7', 'C': '21', 'D': '92', 'E': '106 </math>'}
+Answer: B
+
+--- Solution 1 ---
+Let <math>AP=BQ=x</math>. Then <math>AB=8-2x</math>.
+
+Now notice that since <math>CD=8-2x</math> we have <math>QC=DR=x-1</math>.
+
+Thus by the Pythagorean Theorem we have <math>x^2+(x-1)^2=(8-2x)^2</math> which becomes <math>2x^2-30x+63=0\implies x=\dfrac{15-3\sqrt{11}}{2}</math>
+
+Our answer is <math>8-(15-3\sqrt{11})=3\sqrt{11}-7\implies \boxed{\text{(B)}
+
+--- Solution 2 ---
+Denote the length of the equilateral octagon as <math>x</math>. The length of <math>\overline{BQ}</math> can be expressed as <math>\frac{8-x}{2}</math>. By the Pythagorean Theorem, we find that:
+<cmath>\left(\frac{8-x}{2}\right)^2+\overline{CQ}^2=x^2\implies \overline{CQ}=\sqrt{x^2-\left(\frac{8-x}{2}\right)^2}</cmath> 
+Since <math>\overline{CQ}=\overline{DR}</math>, we can say that <math>x+2\sqrt{x^2-\left(\frac{8-x}{2}\right)^2}=6\implies x=-7\pm3\sqrt{11}</math>. We can discard the negative solution, so <math>k+m+n=-7+3+11=\boxed{\textbf{(B) }7}</math>
+
+--- Solution 3 ---
+Let the octagon's side length be <math>x</math>. Then <math>PH = \frac{6 - x}{2}</math> and <math>PA = \frac{8 - x}{2}</math>. By the Pythagorean theorem, <math>PH^2 + PA^2 = HA^2</math>, so <math>\left(\frac{6 - x}{2} \right)^2 + \left(\frac{8 - x}{2} \right)^2 = x^2</math>. By expanding the left side and  combining the like terms, we get <math>\frac{x^2}{2} - 7x + 25 = x^2 \implies -\frac{x^2}{2} - 7x + 25 = 0</math>. Solving this using the quadratic formula, <math>\frac{-b \pm \sqrt{b^2-4ac}}{2a}</math>, we use <math>a = -\frac{1}{2}</math>, <math>b = -7</math>, and <math>c = 25</math>, to get one positive solution, <math>x=-7+3\sqrt{11}</math>, so <math>k+m+n=-7+3+11=\boxed{\textbf{(B) }7}</math>
+
+--- Solution 4 ---
+Let <math>AB</math>, or the side of the octagon, be <math>x</math>. Then, <math>BQ = \left(\frac{8-x}{2}\right)</math> and <math>CQ = \left(\frac{6-x}{2}\right)</math>. By the [[Pythagorean Theorem]], <math>BQ^2+CQ^2=x^2</math>, or <math>\left(\frac{8-x}{2}\right)^2+\left(\frac{6-x}{2}\right)^2 = x^2</math>. Multiplying this out, we have <math>x^2 = \frac{64-16x+x^2+36-12x+x^2}{4}</math>. Simplifying, <math>-2x^2-28x+100=0</math>. Dividing both sides by <math>-2</math> gives <math>x^2+14x-50=0</math>. Therefore, using the [[quadratic formula]], we have <math>x=-7 \pm 3\sqrt{11}</math>. Since lengths are always positive, then <math>x=-7+3\sqrt{11} \Rightarrow k+m+n=-7+3+11=\boxed{\textbf{(B)}\ 7}</math>
+
+
+=== Problem 18 ===
+Three young brother-sister pairs from different families need to take a trip in a van. These six children will occupy the second and third rows in the van, each of which has three seats. To avoid disruptions, siblings may not sit right next to each other in the same row, and no child may sit directly in front of his or her sibling. How many seating arrangements are possible for this trip?
+
+Choices: {'A': '60', 'B': '72', 'C': '92', 'D': '96', 'E': '120 </math>'}
+Answer: D
+
+--- Solution 1 ---
+We can begin to put this into cases. Let's call the pairs <math>a</math>, <math>b</math> and <math>c</math>, and assume that a member of pair <math>a</math> is sitting in the leftmost seat of the second row. We can have the following cases then.
+
+Case <math>1</math>: 
+Second Row: a b c
+Third Row: b c a
+
+Case <math>2</math>:
+Second Row: a c b
+Third Row: c b a
+
+Case <math>3</math>: 
+Second Row: a b c
+Third Row: c a b
+
+Case <math>4</math>: 
+Second Row: a c b
+Third Row: b a c
+
+For each of the four cases, we can flip the siblings, as they are distinct. So, each of the cases has <math>2 \cdot 2 \cdot 2 = 8</math> possibilities. Since there are four cases, when pair <math>a</math> has someone in the leftmost seat of the second row, there are <math>32</math> ways to rearrange it. However, someone from either pair <math>a</math>, <math>b</math>, or <math>c</math> could be sitting in the leftmost seat of the second row. So, we have to multiply it by <math>3</math> to get our answer of <math>32 \cdot 3 = 96</math>. So, the correct answer is <math>\boxed{\textbf{(D)} \text{ 96}}</math>.
+
+Written By: Archimedes15
+
+--- Solution 2 ---
+Lets call the siblings <math>A_1</math>, <math>A_2</math>, <math>B_1</math>, <math>B_2</math>, <math>C_1</math>, and <math>C_2</math>. We can split our problem into two cases:
+
+There is a child of each family in each row (There is an A, B, C in each row ) or There are two children of the same family in a row.
+
+Starting off with the first case, we see that there are <math>3!=6</math> ways to arrange the A,B,C. Then, we have to choose which sibling sits. There are <math>2</math> choices for each set of siblings meaning we have <math>2^3=8</math> ways to arrange that. So, there are <math>48</math> ways to arrange the siblings in the first row. The second row is a bit easier. We see that there are <math>2</math> ways to place the A sibling and each placement yields only <math>1</math> possibility. So, our first case has <math>48\cdot2=96</math> possibilities.
+
+In our second case, there are <math>3</math> ways to choose which set of siblings will be in the same row and <math>4</math> ways to choose the person in between. So, there <math>3*4 = 12</math> ways to arrange the first row. In the second row, however, we see that it is impossible to make everything work out. So, there are <math>0</math> possibilities for this case.
+
+Thus, there are <math>96+0 = \boxed{D) 96}</math> possibilities for this trip.
+
+-Conantwiz2023
+
+--- Solution 3 ---
+Call the siblings <math>A_1</math>, <math>A_2</math>, <math>B_1</math>, <math>B_2</math>, <math>C_1</math>, and <math>C_2</math>.
+
+There are 6 choices for the child in the first seat, and it doesn't matter which one takes it, so suppose [[Without loss of generality]] that <math>A_1</math> takes it (<math>\circ</math> denotes an empty seat):
+
+<cmath>A_1 \circ \circ </cmath>
+<cmath>\circ \ \circ \ \circ </cmath>
+
+Then there are 4 choices for the second seat (<math>B_1</math>, <math>B_2</math>, <math>C_1</math>, or <math>C_2</math>). Like before, it doesn't matter who takes the seat, so WLOG suppose it is <math>B_1</math>:
+
+<cmath>A_1 B_1 \circ \\ </cmath>
+<cmath>\circ \ \circ \ \circ</cmath>
+
+The last seat in the first row cannot be <math>A_2</math> because it would be impossible to create a second row that satisfies the conditions. Therefore, it must be <math>C_1</math> or <math>C_2</math>. Let's say WLOG that it is <math>C_1</math>. There are two ways to create a second row:
+
+<cmath>A_1 B_1 C_1 \\ </cmath>
+<cmath>B_2 C_2 A_2</cmath>
+
+and
+
+<cmath>A_1 B_1 C_1 \\ </cmath>
+<cmath>C_2 A_2 B_2</cmath>
+
+Therefore, there are <math>6 \cdot 4 \cdot 2 \cdot 2= \boxed{\textbf{(D)} \text{ 96}}</math> possible seating arrangements.
+
+Written by: HoloGuard1728
+
+--- Solution 4 ---
+WLOG, define the three pairs of siblings to be: <math>A</math>, <math>B</math>, and <math>C</math>. Now, notice that you can only form a correct grouping either like this:
+
+<cmath>A B C</cmath>
+
+<cmath>B C A</cmath>
+
+or this:
+
+<cmath>C B A</cmath>
+
+<cmath>A C B</cmath>
+
+However, we need to consider the different orders. There are <math>3!</math> ways to order each pair (eg. the same letters) and <math>2^3</math> ways to order the people each of the three pairs. Now, we can just multiply everything together, yielding:
+
+<cmath>2\cdot3!\cdot2^3</cmath>
+
+Which is <math>\boxed{\textbf{(D) } 96}</math>
+
+-Ericshi1685
+
+--- Solution 5 ---
+Let the families be <math>A</math>, <math>B</math>, <math>C</math>. In any given possible arrangement, there are <math>3! = 6</math> ways to arrange the families and <math>2 \cdot 2 \cdot 2 = 8</math> ways to arrange the siblings. This means the answer has to be divisble by <math>6 \cdot 8 = 48</math>. The only answer choice that satisfies this is <math>\boxed{\textbf{(D) } 96}</math>
+
+--- Solution 6 ---
+If a pair of siblings are in the same row, the other <math>2</math> pairs of siblings cannot fit in the remaining <math>4</math> seats to meet the requirements. Therefore, the siblings must be in different rows.
+
+Let the first pair of siblings be <math>a_1</math>, <math>a_2</math>, the second pair of siblings be <math>b_1</math>, <math>b_2</math>, and the third pair of siblings be <math>c_1</math>, <math>c_2</math>. For each row there must be <math>1</math> child from each family. WLOG, let <math>a_1</math>, <math>b_1</math>, <math>c_1</math> be in the first row. There are <math>3!</math> arrangements. <math>a_2</math>, <math>b_2</math>, <math>c_2</math> are in the second row, and they cannot be in the same column as their sibling. Now the problem becomes a <math>3</math> element [https://en.wikipedia.org/wiki/Derangement Derangement] problem.
+
+An <math>n</math> element derangement problem is to find the number of permutations of <math>n</math> elements where each element has a specified location, and no element is in it's specified location. For example, there are <math>3</math> elements <math>1</math>, <math>2</math>, <math>3</math>. <math>1</math> cannot be in the first location, <math>2</math> cannot be in the second location, and <math>3</math> cannot be in the third location. The derangements are: <math>(2,3,1)</math>, <math>(3,1,2)</math>. <math>D_3=2</math>.
+
+Each pair of siblings can swap their position. There are <math>2^3</math> swaps. The total arrangements are: <math>3! \cdot D_3 \cdot 2^3=6 \cdot 2 \cdot 8 =\boxed{\textbf{(D) } 96}</math>
+
+
+==Remarks==
+A key insight to solve this problem is to realize that one of the brother-sister pairs needs to be a "opposites" (ex. top left and bottom right or top right and bottom left). Using this, you can easily solve the question.
+
+
+=== Problem 19 ===
+Joey and Chloe and their daughter Zoe all have the same birthday. Joey is
+
+Choices: {'A': '7', 'B': '8', 'C': '9', 'D': '10', 'E': '11 </math>'}
+Answer: E
+
+--- Solution 1 ---
+Suppose that Chloe is <math>c</math> years old today, so Joey is <math>c+1</math> years old today. After <math>n</math> years, Chloe and Zoe will be <math>n+c</math> and <math>n+1</math> years old, respectively. We are given that <cmath>\frac{n+c}{n+1}=1+\frac{c-1}{n+1}</cmath> is an integer for <math>9</math> nonnegative integers <math>n.</math> It follows that <math>c-1</math> has <math>9</math> positive divisors. The prime factorization of <math>c-1</math> is either <math>p^8</math> or <math>p^2q^2.</math> Since <math>c-1<100,</math> the only possibility is <math>c-1=2^2\cdot3^2=36,</math> from which <math>c=37.</math> We conclude that Joey is <math>c+1=38</math> years old today.
+
+Suppose that Joey's age is a multiple of Zoe's age after <math>k</math> years, in which Joey and Zoe will be <math>k+38</math> and <math>k+1</math> years old, respectively. We are given that <cmath>\frac{k+38}{k+1}=1+\frac{37}{k+1}</cmath> is an integer for some positive integer <math>k.</math> It follows that <math>37</math> is divisible by <math>k+1,</math> so the only possibility is <math>k=36.</math> We conclude that Joey will be <math>k+38=74</math> years old then, from which the answer is <math>7+4=\boxed{\textbf{(E) }11}.</math>
+
+--- Solution 2 ---
+Let Joey's age be <math>j</math>, Chloe's age be <math>c</math>, and we know that Zoe's age is <math>1</math>. 
+
+We know that there must be <math>9</math> values <math>k\in\mathbb{Z}</math> such that <math>c+k=a(1+k)</math> where <math>a</math> is an integer.
+
+Therefore, <math>c-1+(1+k)=a(1+k)</math> and <math>c-1=(1+k)(a-1)</math>. Therefore, we know that, as there are <math>9</math> solutions for <math>k</math>, there must be <math>9</math> solutions for <math>c-1</math>. We know that this must be a perfect square. Testing perfect squares, we see that <math>c-1=36</math>, so <math>c=37</math>. Therefore, <math>j=38</math>. Now, since <math>j-1=37</math>, by similar logic, <math>37=(1+k)(a-1)</math>, so <math>k=36</math> and Joey will be <math>38+36=74</math> and the sum of the digits is <math>\boxed{\textbf{(E) }11}</math>.
+
+--- Solution 3 ---
+Chloe has exactly \( 9n \) birthdays that are integral multiples of Zoe. 
+
+We check \( n=1 \). This indicates that Chloe has an integral birthday of 9, meaning that Joey has an integral birthday of 10. This means that the next coinciding birthday is the 12th integral birthday for Joey, but as the pattern continues there will be \( > 9 \) exact integral birthdays, so \( n=1 \) does not work.
+
+We check \( n=2 \). We also see that Joey would have an integral birthday of 19, but 20 is not possible here as well, as it would result in \( > 9 \) integral birthdays.
+
+We check \( n=3 \). We see that the 30th integral birthday for Joey is when Zoe is 3, and this is also not possible as Joey and Zoe will intertwine at 36th, and then never intertwine again. 
+
+So we try \( n = 4 \). We see that at 38, we instantly get another integral birthday, where Joey is at the 38th integral birthday and Zoe is on the 2nd. We see this again at \( (J, Z) (40, 4) \), and again at \( (42, 6) \), then \( (45, 9) \), and we see it gets more and more uncommon. We can conclude that there will exist \( = 9 \) exact integral multiples, and therefore our answer is \( 3 + 8 = \) <math>\boxed{\textbf{(E) }11}</math>.
+
+--- Solution 4 ---
+Here's a different way of stating Solution 2:
+
+If a number is a multiple of both Chloe's age and Zoe's age, then it is a multiple of their difference. Since the difference between their ages does not change, then that means the difference between their ages has <math>9</math> factors. Therefore, the difference between Chloe and Zoe's age is <math>36</math>, so Chloe is <math>37</math>, and Joey is <math>38</math>. The common factor that will divide both of their ages is <math>37</math>, so Joey will be <math>74</math>. The answer is <math>7 + 4 =  \boxed{\textbf{(E) }11}</math>.
+
+--- Solution 5 ---
+Similar approach to above, just explained less concisely and more in terms of the problem (less algebraic).
+
+Let <imath>C+n</imath> denote Chloe's age, <imath>J+n</imath> denote Joey's age, and <imath>Z+n</imath> denote Zoe's age, where <imath>n</imath> is the number of years from now. We are told that <imath>C+n</imath> is a multiple of <imath>Z+n</imath> exactly nine times. Because <imath>Z+n</imath> is <imath>1</imath> at <imath>n=0</imath> and will increase until greater than <imath>C-Z</imath>, it will hit every natural number less than <imath>C-Z</imath>, including every factor of <imath>C-Z</imath>. For <imath>C+n</imath> to be an integral multiple of <imath>Z+n</imath>, the difference <imath>C-Z</imath> must also be a multiple of <imath>Z</imath>, which happens if <imath>Z</imath> is a factor of <imath>C-Z</imath>. Therefore, <imath>C-Z</imath> has nine factors. The smallest number that has nine positive factors is <imath>2^23^2=36</imath> . (We want it to be small so that Joey will not have reached three digits of age before his age is a multiple of Zoe's.) We also know <imath>Z=1</imath> and <imath>J=C+1</imath>. Thus,
+<cmath>\begin{align*}
+C-Z&=36, \\
+J-Z&=37.
+\end{align*}</cmath>
+By our above logic, the next time <imath>J-Z</imath> is a multiple of <imath>Z+n</imath> will occur when <imath>Z+n</imath> is a factor of <imath>J-Z</imath>. Because <imath>37</imath> is prime, the next time this happens is at <imath>Z+n=37</imath>, when <imath>J+n=74</imath>. The answer is <imath>7+4=\boxed{\textbf{(E) }11}</imath>.
+
+--- Solution 6 ---
+Let Joeys current age be <imath>J</imath>, Chloe's current age be <imath>C</imath>, Zoe's current age be <imath>Z</imath>, and <imath>C-Z=C-1=K</imath>. This gives <imath>C=1+K</imath> and <imath>J=2+K</imath>. 
+After <imath>t</imath> years, Zoe will be <imath>Z+t=t+1</imath> years old and Chloe will be <imath>C+t</imath> years old. 
+<imath>Z+t=t+1|C+t</imath>. Chloe's age is an integral multiple of Zoe's age when <imath>Z+t|C+t</imath>. By the linear combination property of divisibility, <imath>t+1|c+t-(t+1)=C-1=K</imath>.
+
+<imath>K</imath> must have exactly <imath>9</imath> positive integer factors, since there are precisely <imath>9</imath> values of <imath>t</imath> for which Zoe's age is a factor of Chloe's age. The smallest number with this property is <imath>2^2 * 3^2=36</imath>. 
+
+We assume this is the value of <imath>K</imath>, as the next smallest value of <imath>K</imath> (which is <imath>K=100</imath>) yields the unlikely case that Chloe is currently <imath>101</imath> years old. 
+
+Assuming <imath>K=36</imath>, we have <imath>C=1+36=37</imath> and <imath>J=2+36=38</imath>. Joey's age is a multiple of Zoe's age when <imath>Z+t|J+t</imath>. Plugging in the values of <imath>Z</imath> and <imath>J</imath>, we get <imath>t+1|t+38</imath>. By the linear combination property of divisibility, <imath>t+1|t+38-(t+1)=37</imath>. The smallest value of <imath>t</imath> is <imath>36</imath>, so Joey will be <imath>38+36=74</imath> years old. The sum of the digits is <imath>7+4=\boxed{\textbf{(E) } 11}</imath>.
+
+
+=== Problem 20 ===
+A function
+
+Choices: {'A': '2016', 'B': '2017', 'C': '2018', 'D': '2019', 'E': '2020</math>'}
+Answer: B
+
+--- Solution 1 ---
+For all integers <math>n \geq 7,</math> note that
+<cmath>\begin{align*}
+f(n)&=f(n-1)-f(n-2)+n \\
+&=[f(n-2)-f(n-3)+n-1]-f(n-2)+n \\
+&=-f(n-3)+2n-1 \\
+&=-[f(n-4)-f(n-5)+n-3]+2n-1 \\
+&=-f(n-4)+f(n-5)+n+2 \\
+&=-[f(n-5)-f(n-6)+n-4]+f(n-5)+n+2 \\
+&=f(n-6)+6.
+\end{align*}</cmath>
+It follows that
+<cmath>\begin{align*}
+f(2018)&=f(2012)+6 \\
+&=f(2006)+12 \\
+&=f(2000)+18 \\
+& \ \vdots \\
+&=f(2018-6\cdot336)+6\cdot336 \\
+&=f(2)+2016 \\
+&=\boxed{\textbf{(B) } 2017}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+For all integers <math>n\geq3,</math> we rearrange the given equation: <cmath>f(n)-f(n-1)+f(n-2)=n. \hspace{28.25mm}(1)</cmath>
+For all integers <math>n\geq4,</math> it follows that <cmath>f(n-1)-f(n-2)+f(n-3)=n-1. \hspace{15mm}(2)</cmath>
+For all integers <math>n\geq4,</math> we add <math>(1)</math> and <math>(2):</math> <cmath>f(n)+f(n-3)=2n-1. \hspace{38.625mm}(3)</cmath>
+For all integers <math>n\geq7,</math> it follows that <cmath>f(n-3)+f(n-6)=2n-7. \hspace{32mm}(4)</cmath>
+For all integers <math>n\geq7,</math> we subtract <math>(4)</math> from <math>(3):</math> <cmath>f(n)-f(n-6)=6. \hspace{47.5mm}(5)</cmath>
+From <math>(5),</math> we have the following system of <math>\frac{2018-8}{6}+1=336</math> equations:
+<cmath>\begin{align*}
+f(2018)-f(2012)&=6, \\
+f(2012)-f(2006)&=6, \\
+f(2006)-f(2000)&=6, \\
+& \ \vdots \\
+f(8)-f(2)&=6.
+\end{align*}</cmath>
+We add these equations up to get <cmath>f(2018)-f(2)=6\cdot336=2016,</cmath> from which <math>f(2018)=f(2)+2016=\boxed{\textbf{(B) } 2017}.</math>
+
+--- Solution 3 ---
+Preamble: In this solution, we define the sequence <math>A</math> to satisfy <math>a_n = f(n),</math> where <math>a_n</math> represents the <math>n</math>th term of the sequence <math>A.</math> This solution will show a few different perspectives. Even though it may not be as quick as some of the solutions above, I feel like it is an interesting concept, and may be more motivated. 
+
+To begin, we consider the sequence <math>B</math> formed when we take the difference of consecutive terms between <math>A.</math> Define <math>b_n = a_{n+1} - a_n.</math> Notice that for <math>n \ge 4,</math> we have <center><math>\begin{cases}\begin{aligned} a_{n+1} &= a_{n} - a_{n-1} + (n+1) \\ a_{n} &= a_{n-1} - a_{n-2} + n \end{aligned}.\end{cases}</math></center> Notice that subtracting the second equation from the first, we see that <math>b_{n} = b_{n-1} - b_{n-2} + 1.</math> 
+
+If you didn’t notice that <math>B</math> repeated directly in the solution above, you could also, possibly more naturally, take the finite differences of the sequence <math>b_n</math> so that you could define <math>c_n = b_{n+1} - b_n.</math> Using a similar method as above through reindexing and then subtracting, you could find that <math>c_n = c_{n-1} - c_{n-2}.</math> The sum of any six consecutive terms of a sequence which satisfies such a recursion is <math>0,</math> in which you have that <math>b_{n} = b_{n+6}.</math> In the case in which finite differences didn’t reduce to such a special recursion, you could still find the first few terms of <math>C</math> to see if there are any patterns, now that you have a much simpler sequence. Doing so in this case, it can also be seen by seeing that the sequence <math>C</math> looks like <cmath>\underbrace{2, 1, -1, -2, -1, 1,}_{\text{cycle period}} 2, 1, -1, -2, -1, 1, \ldots</cmath> in which the same result follows. 
+
+Using the fact that <math>B</math> repeats every six terms, this motivates us to look at the sequence <math>B</math> more carefully. Doing so, we see that <math>B</math> looks like <cmath>\underbrace{2, 3, 2, 0, -1, 0,}_{\text{cycle period}} 2, 3, 2, 0, -1, 0, \ldots</cmath> (If you tried pattern finding on sequence <math>B</math> directly, you could also arrive at this result, although I figured defining a second sequence based on finite differences was more motivated.)
+
+Now, there are two ways to finish. 
+
+Finish Method #1: Notice that any six consecutive terms of <math>B</math> sum to <math>6,</math> after which we see that <math>a_n = a_{n-6} + 6.</math> Therefore, <math>a_{2018} = a_{2012} + 6 = \cdots = a_{2} + 2016 = \boxed{\textbf{(B) } 2017}.</math>
+
+Finish Method #2: Notice that <math>a_{2018} = a_{2017} - a_{2016} + 2018 = B_{2016} + 2018 = -1 + 2018 = \boxed{\textbf{(B) } 2017}.</math>
+
+--- Solution 4 ---
+Start out by listing some terms of the sequence. 
+<cmath>\begin{align*}
+f(1)&=1 \\
+f(2)&=1 \\
+f(3)&=3 \\
+f(4)&=6 \\
+f(5)&=8 \\
+f(6)&=8 \\ 
+f(7)&=7 \\
+f(8)&=7 \\
+f(9)&=9 \\
+f(10)&=12 \\
+f(11)&=14 \\
+f(12)&=14 \\
+f(13)&=13 \\
+f(14)&=13 \\
+f(15)&=15 \\
+& \ \vdots
+\end{align*}</cmath>
+Notice that <math>f(n)=n</math> whenever <math>n</math> is an odd multiple of <math>3</math>, and the pattern of numbers that follow will always be <math>+3</math>, <math>+2</math>, <math>+0</math>, <math>-1</math>, <math>+0</math>, <math>+2</math>.
+The largest odd multiple of <math>3</math> smaller than <math>2018</math> is <math>2013</math>, so we have
+<cmath>\begin{align*}
+f(2013)&=2013 \\
+f(2014)&=2016 \\
+f(2015)&=2018 \\
+f(2016)&=2018 \\
+f(2017)&=2017 \\
+f(2018)&=\boxed{\textbf{(B) } 2017}.
+\end{align*}</cmath>
+
+--- Solution 5 ---
+Writing out the first few values, we get
+<cmath>1,1,3,6,8,8,7,7,9,12,14,14,13,13,15,18,20,20,19,19,\ldots.</cmath> We see that every number <math>x</math> where <math>x \equiv 1\pmod 6</math> has <math>f(x)=x,f(x+1)=f(x)=x,</math> and <math>f(x-1)=f(x-2)=x+1.</math> The greatest number that's <math>1\pmod{6}</math> and less than <math>2018</math> is <math>2017,</math> so we have <math>f(2017)=f(2018)=\boxed{\textbf{(B) } 2017}.</math>
+
+--- Solution 6 ---
+<cmath>\begin{align*}
+f(n)&=f(n-1)-f(n-2)+n \\
+f(n-1)&=f(n-2)-f(n-3)+n-1
+\end{align*}</cmath>
+Subtracting those two and rearranging gives 
+<cmath>\begin{align*}
+f(n)-2f(n-1)+2f(n-2)-f(n-3)&=1 \\
+f(n-1)-2f(n-2)+2f(n-3)-f(n-4)&=1
+\end{align*}</cmath>
+Subtracting those two gives <math>f(n)-3f(n-1)+4f(n-2)-3f(n-3)+f(n-4)=0.</math>
+
+The characteristic polynomial is <math>x^4-3x^3+4x^2-3x+1=0.</math>
+
+<math>x=1</math> is a root, so using synthetic division results in <math>(x-1)(x^3-2x^2+2x-1)=0.</math>
+
+<math>x=1</math> is a root, so using synthetic division results in <math>(x-1)^2(x^2-x+1)=0.</math>
+
+<math>x^2-x+1=0</math> has roots <math>x=\frac{1}{2}\pm\frac{i\sqrt{3}}{2}.</math>
+
+And <cmath>f(n)=(An+D)\cdot1^n+B\cdot\left(\frac{1}{2}-\frac{i\sqrt{3}}{2}\right)^n+C\cdot\left(\frac{1}{2}+\frac{i\sqrt{3}}{2}\right)^n.</cmath>
+Plugging in <math>n=1</math>, <math>n=2</math>, <math>n=3</math>, and <math>n=4</math> results in a system of <math>4</math> linear equations<math>\newline</math>
+Solving them gives <math>A=1, \ B=\frac{1}{2}-\frac{i\sqrt{3}}{2}, \ C=\frac{1}{2}+\frac{i\sqrt{3}}{2}, \ D=1.</math> Note that you can guess <math>A=1</math> by answer choices.
+
+So plugging in <math>n=2018</math> results in 
+<cmath>\begin{align*}
+2018+1+\left(\frac{1}{2}-\frac{i\sqrt{3}}{2}\right)^{2019}+\left(\frac{1}{2}+\frac{i\sqrt{3}}{2}\right)^{2019}&=2019+(\cos(-60^{\circ})+i\sin(-60^{\circ}))^{2019})+(\cos(60^{\circ})+i\sin(60^{\circ}))^{2019}) \\
+&=2019+(\cos(-60^{\circ}\cdot2019)+i\sin(-60^{\circ}\cdot2019))+(\cos(60^{\circ}\cdot2019)+i\sin(60^{\circ}\cdot2019)) \\
+&=\boxed{\textbf{(B) } 2017}.
+\end{align*}</cmath>
+
+--- Solution 7 ---
+We utilize patterns to solve this equation:
+<cmath>\begin{align*}
+f(3)&=3, \\
+f(4)&=6, \\
+f(5)&=8, \\
+f(6)&=8, \\
+f(7)&=7, \\
+f(8)&=8.
+\end{align*}</cmath>
+We realize that the pattern repeats itself. For every six terms, there will be four terms that we repeat, and two terms that we don't repeat. We will exclude the first two for now, because they don't follow this pattern. 
+
+First, we need to know whether or not <math>2016</math> is part of the skip or repeat. We notice that <math>f(6),f(12), \ldots,f(6n)</math> all satisfy <math>6+6(n-1)=n,</math> and we know that <math>2016</math> satisfies this, leaving <math>n=336.</math> Therefore, we know that <math>2016</math> is part of the repeat section. But what number does it repeat? 
+
+We know that the repeat period is <math>2,</math> and it follows that pattern of <math>1,1,8,8,7,7.</math> Again, since <math>f(6) = f(5)</math> and so on  for the repeat section, <math>f(2016)=f(2015),</math> so we don't need to worry about which one, since it repeats with period <math>2.</math> We see that the repeat pattern of <math>f(6),f(12),\ldots,f(6n)</math> follows <math>8,14,20,</math> it is an arithmetic sequence with common difference <math>6.</math> Therefore, <math>2016</math> is the <math>335</math>th term of this, but including <math>1,</math> it is <math>336\cdot6+1=\boxed{\textbf{(B) } 2017}.</math>
+
+--- Solution 8 ---
+We list out the first <imath>13</imath> terms and their differences: 
+
+[[File:2018_10b_S8.png|500px|center| ]]
+
+We see the differences are clearly repeating every <imath>6</imath> terms here; we see that <imath>2018\equiv2\pmod6</imath>. We see that the values for <imath>2</imath> and <imath>8</imath> are both one less, so we conclude our answer is <imath>2018-1=\boxed{\textbf{(B)}
+
+
+=== Problem 21 ===
+Mary chose an even
+
+Choices: {'A': '324', 'B': '330', 'C': '340', 'D': '361', 'E': '646 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <math>d</math> be the next divisor written to the right of <math>323.</math>
+
+If <math>\gcd(323,d)=1,</math> then <cmath>n\geq323d>323^2>100^2=10000,</cmath> which contradicts the precondition that <math>n</math> is a <math>4</math>-digit number.
+
+It follows that <math>\gcd(323,d)>1.</math> Since <math>323=17\cdot19,</math> the smallest possible value of <math>d</math> is <math>17\cdot20=\boxed{\textbf{(C) } 340},</math> from which <cmath>n=\operatorname{lcm}(323,d)=17\cdot19\cdot20=6460.</cmath>
+
+--- Solution 2 ---
+Let <math>d</math> be the next divisor written to the right of <math>323.</math>
+
+Since <math>n</math> is even and <math>323=17\cdot19,</math> we have <math>n=2\cdot17\cdot19\cdot k=646k</math> for some positive integer <math>k.</math> Moreover, since <math>1000\leq n\leq9998,</math> we get <math>2\leq k\leq15.</math> As <math>d>323,</math> it is clear that <math>d</math> must be divisible by <math>17</math> or <math>19</math> or both.
+
+Therefore, the smallest possible value of <math>d</math> is <math>17\cdot20=\boxed{\textbf{(C) } 340},</math> from which <cmath>n=\operatorname{lcm}(323,d)=17\cdot19\cdot20=6460.</cmath>
+
+--- Solution 3 ---
+The prime factorization of <math>323</math> is <math>17 \cdot 19</math>. Our answer must be a multiple of either <math>17</math> or <math>19</math> or both. Since <math>17 < 19</math>, the next smallest divisor that is divisble by <math>17</math> would be <math>323 + 17 = \boxed{\textbf{(C) } 340}</math>
+
+--- Solution 4 ---
+Since prime factorizing <math>323</math> gives you <math>17 \cdot 19</math>, the desired answer needs to be a multiple of <math>17</math> or <math>19</math>, this is because if it is not a multiple of <math>17</math> or <math>19</math>, <math>n</math> will be more than a <math>4</math> digit number. For example, if the answer were to instead be <math>324</math>, <math>n</math> would have to be a multiple of <math>2^2\cdot3^4\cdot17\cdot19</math> for both <math>323</math> and <math>324</math> to be a valid factor, meaning <math>n</math> would have to be at least <math>104652</math>, which is too big. Looking at the answer choices, <math>\textbf{(A)}</math> and <math>\textbf{(B)}</math> are both not a multiple of neither <math>17</math> nor <math>19</math>, <math>\textbf{(C)}</math> is divisible by <math>17</math>. <math>\textbf{(D)}</math> is divisible by <math>19</math>, and <math>\textbf{(E)}</math> is divisible by both <math>17</math> and <math>19</math>. Since <math>\boxed{\textbf{(C) } 340}</math> is the smallest number divisible by either <math>17</math> or <math>19</math> it is the answer. Checking, we can see that <math>n</math> would be <math>6460</math>, a <math>4</math>-digit number. Note that <math>n</math> is also divisible by <math>2</math>, one of the listed divisors of <math>n</math>. (If <math>n</math> was not divisible by <math>2</math>, we would need to look for a different divisor.)
+
+-Edited by Mathandski
+
+--- Solution 5 ---
+Note that <math>323</math> multiplied by any of the answer choices results in a <math>5</math> or <math>6</math>-digit <math>n</math>. So, we need a choice that shares a factor(s) with <math>323</math>, such that the factors we'll need to add to the prime factorization of <math>n</math> (in result to adding the chosen divisor) won't cause our number to multiply to more than <math>4</math> digits. 
+The prime factorization of <math>323</math> is <math>17\cdot19</math>, and since we know <math>n</math> is even, our answer needs to be 
+
+* even 
+
+* has a factor of <math>17</math> or <math>19</math>
+
+We see <math>340</math> achieves this and is the smallest to do so (<math>646</math> being the other). So, we get <math>\boxed{\textbf{(C) } 340}</math>.
+
+--- Solution 6 ---
+This is not the fastest solution, but if i saw this question on an Olympiad/AIME, where there are no answer choices, and my work counted, this is what i would do (for the purpose of this question, a=323, b=answer, c=the four digit number);
+
+<math>\newline</math>
+Note that for any <math>a,b,c \in \mathbb{Z}^+</math>, if <math>a|c</math> and <math>b|c</math> then lcm<math>(a,b)|c</math> (this is because if something divides a or b, it must divide c, and thus the max of all of the prime factors, ie: lcm, divides c) since <math>a=323,b > a</math>, if <math>gcd(a,b)=1</math> then <math>lcm(a,b)=ab</math> and thus <math>ab|c \implies c>a^2 \implies c>100^2 \implies</math> c is not a four digit number.
+<math>\newline</math> thus, <math>gcd(a,b)\neq1</math>. This implies that either <math>17|b</math>, or <math>19|b</math>, or both.
+
+<math>\newline</math> Case 1: <math>17|b</math>, <math>19\not|b</math>. We let <math>b=17b'</math>, and by Euclid's Lemma, <math>19\not|b'</math>. Then, <math>lcm(323,b)|c \implies 17(lcm(19,b'))|c</math>. Since we already established that, <math>19\not|b</math> (and since 19 is prime, if it does not divide a number it is coprime to that number), <math>17*19*b'|c \implies 323b'|c</math>. Since <math>b=17b'>19*17</math>, <math>b' \geq 20</math>. A quick check shows <math>b'=20, b=340</math> suffices.
+<math>\newline</math> Now, let us show that there are no such numbers less than 340.
+<math>\newline</math> Presume there exists such a number, <math>n \in \mathbb{Z}^+</math> is in the range <math>(323,340)</math>. By hypothesis, there is a <math>d>1</math> such that <math>d|323</math>, <math>d|n</math>. By properties of divisibility <math>d|n-323</math>. the maximum possible value of <math>n-323</math> is <math>17^-</math> (basically an arbitrary amount smaller than 17). But, since <math>d>1</math> and <math>d|323, d \in \{17,19,323\}</math>. Of which, the minimum value is d=17. but, <math>17>17^-</math> so there is no such d, and no such n.
+<math>\newline</math> Thus, our answer is just <math>\boxed{\textbf{(C) } 340}</math>.
+<math>\newline</math>
+
+
+=== Problem 22 ===
+Real numbers
+
+Choices: {'A': '0.21', 'B': '0.25', 'C': '0.29', 'D': '0.50', 'E': '0.79 </math>'}
+Answer: C
+
+--- Solution 1 ---
+The Pythagorean Inequality tells us that in an obtuse triangle, <math>a^{2} + b^{2} < c^{2}</math>. The triangle inequality tells us that <math>a + b > c</math>. So, we have two inequalities:
+<cmath>x^2 + y^2 < 1</cmath>
+<cmath>x + y > 1</cmath>
+The first equation is <math>\frac14</math> of a circle with radius <math>1</math>, and the second equation is a line from <math>(0, 1)</math> to <math>(1, 0)</math>.
+So, the area is <math>\frac{\pi}{4} - \frac12</math> which is approximately <math>\boxed{\textbf{(C)}
+
+--- Solution 2 ---
+Note that the obtuse angle in the triangle has to be opposite the side that is always length <imath>1</imath>. This is because the largest angle is always opposite the largest side, and if two sides of the triangle were <imath>1</imath>, the last side would have to be greater than <imath>1</imath> to make an obtuse triangle. Using this observation, we can set up a law of cosines where the angle is opposite <imath>1</imath>:
+
+<cmath>1^2=x^2+y^2-2xy\cos(\theta)</cmath>
+
+where <imath>x</imath> and <imath>y</imath> are the sides that go from <imath>[0,1]</imath> and <imath>\theta</imath> is the angle opposite the side of length <imath>1</imath>.
+
+By isolating <imath>\cos(\theta)</imath>, we get:
+
+<cmath>\frac{1-x^2-y^2}{-2xy} = \cos(\theta)</cmath>
+
+For <imath>\theta</imath> to be obtuse, <imath>\cos(\theta)</imath> must be negative. Therefore, <imath>\frac{1-x^2-y^2}{-2xy}</imath> is negative. Since <imath>x</imath> and <imath>y</imath> must be positive, <imath>-2xy</imath> must be negative, so we must make <imath>1-x^2-y^2</imath> positive. From here, we can set up the inequality
+<cmath>x^2+y^2<1</cmath>
+Additionally, to satisfy the definition of a triangle, we need:
+<cmath>x+y>1</cmath>
+The solution should be the overlap between the two equations in the first quadrant.
+
+By observing that <imath>x^2+y^2<1</imath> is the equation for a circle, the amount that is in the first quadrant is <imath>\frac{\pi}{4}</imath>. The line can also be seen as a chord that goes from <imath>(0, 1)</imath> to <imath>(1, 0)</imath>. By cutting off the triangle of area <imath>\frac{1}{2}</imath> that is not part of the overlap, we get <imath>\frac{\pi}{4} - \frac{1}{2} \approx \boxed{\textbf{(C)} 
+..why would you do this? for what purpose? its much more complicated and this is the AMC 10! -Orion 2010
+
+
+=== Problem 23 ===
+How many ordered pairs
+
+Choices: {'A': '\\text{ 0}', 'B': '\\text{ 2}', 'C': '\\text{ 4}', 'D': '\\text{ 6}', 'E': '\\text{ 8}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Let <imath>x = \text{lcm}(a, b)</imath>, and <imath>y = \text{gcd}(a, b)</imath>. Therefore, <imath>a\cdot b = \text{lcm}(a, b)\cdot \text{gcd}(a, b) = x\cdot y</imath>. Thus, the equation becomes
+
+<cmath>x\cdot y + 63 = 20x + 12y</cmath>
+<cmath>x\cdot y - 20x - 12y + 63 = 0</cmath>
+
+Using [[Simon's Favorite Factoring Trick]], we rewrite this equation as
+
+<cmath>(x - 12)(y - 20) - 240 + 63 = 0</cmath>
+<cmath>(x - 12)(y - 20) = 177</cmath>
+
+Since <imath>177 = 3\cdot 59</imath> and <imath>x >= y</imath>, we have <imath>x  - 12 = 59</imath> and <imath>y - 20 = 3</imath>, or <imath>x - 12 = 177</imath> and <imath>y - 20 = 1</imath>. This gives us the solutions <imath>(71, 23)</imath> and <imath>(189, 21)</imath>. Since the <imath>\text{GCD}</imath> must be a divisor of the <imath>\text{LCM}</imath>, the first pair does not work. Assume <imath>a>b</imath>. We must have <imath>a = 21 \cdot 9</imath> and <imath>b = 21</imath>, and we could then have <imath>a<b</imath>, so there are <imath>\boxed{\textbf{(B)} 
+(awesomeag)
+
+Edited by IronicNinja, Firebolt360, and mprincess0229
+
+
+=== Problem 24 ===
+Let
+
+Choices: {'A': '\\ \\frac {3}{8}\\sqrt{3}', 'B': '\\ \\frac {7}{16}\\sqrt{3}', 'C': '\\ \\frac {15}{32}\\sqrt{3}', 'D': '\\ \\frac {1}{2}\\sqrt{3}', 'E': '\\ \\frac {9}{16}\\sqrt{3} </math>'}
+Answer: C
+
+--- Solution 1 ---
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+draw(polygon(6));
+pair A, B, C, D, E, F, X, Y, Z, M, N, O, P, Q, R;
+A = dir(120);
+B = dir(60);
+C = dir(0);
+D = dir(300);
+E = dir(240);
+F = dir(180);
+X = midpoint(A--B);
+Y = midpoint(C--D);
+Z = midpoint(E--F);
+M = intersectionpoint(A--E,X--Z);
+N = intersectionpoint(A--C,X--Y);
+O = intersectionpoint(C--E,Y--Z);
+P = intersectionpoint(A--C,X--Z);
+Q = intersectionpoint(C--E,X--Y);
+R = intersectionpoint(A--E,Y--Z);
+fill(M--P--N--Q--O--R--cycle,mediumgray);
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$E$",E,1.5*dir(E),linewidth(4));
+dot("$F$",F,1.5*dir(F),linewidth(4));
+dot("$X$",X,1.5*dir(X),linewidth(4));
+dot("$Y$",Y,1.5*dir(Y),linewidth(4));
+dot("$Z$",Z,1.5*dir(Z),linewidth(4));
+dot("$M$",M,1.5*dir(165),linewidth(4));
+dot("$N$",N,1.5*dir(45),linewidth(4));
+dot("$O$",O,1.5*dir(-75),linewidth(4));
+dot("$P$",P,1.5*dir(105),linewidth(4));
+dot("$Q$",Q,1.5*dir(-15),linewidth(4));
+dot("$R$",R,1.5*dir(-135),linewidth(4));
+draw(A--C--E--cycle^^X--Y--Z--cycle);
+draw(M--N--O--cycle,dashed);
+</asy>
+
+The desired area (hexagon <math>MPNQOR</math>) consists of an equilateral triangle (<math>\triangle MNO</math>) and three right triangles (<math>\triangle MPN,\triangle NQO,</math> and <math>\triangle ORM</math>).
+
+Notice that <math>\overline {AD}</math> (not shown) and <math>\overline {BC}</math> are parallel. <math>\overline {XY}</math> divides transversals <math>\overline {AB}</math> and <math>\overline {CD}</math> into a <math>1:1</math> ratio (This can be shown by similar triangles.). Thus, it must also divide transversal <math>\overline {AC}</math> and transversal <math>\overline {CO}</math> into a <math>1:1</math> ratio. By symmetry, the same applies for <math>\overline {CE}</math> and <math>\overline {EA}</math> as well as <math>\overline {EM}</math> and <math>\overline {AN}.</math>
+
+In <math>\triangle ACE,</math> we see that <math>\frac{[MNO]}{[ACE]} = \frac{1}{4}</math> and <math>\frac{[MPN]}{[ACE]} = \frac{1}{8}.</math> Our desired area becomes <cmath>\left(\frac{1}{4}+3 \cdot \frac{1}{8}\right) \cdot \frac{(\sqrt{3})^2 \cdot \sqrt{3}}{4} = \boxed{\textbf{(C)}\ \frac {15}{32}\sqrt{3}}.</cmath>
+
+--- Solution 2 ---
+Instead of directly finding the desired hexagonal area, <math>\triangle XYZ</math> can be found. It consists of three triangles and the desired hexagon. Given triangle rotational symmetry, the three triangles are congruent. See that <math>\triangle XYZ</math> and <math>\triangle ACE</math> are equilateral, so <math>m\angle PXN=60,</math> so <math>m\angle AXP = \frac{180-60}{2}=60.</math> As <math>\overline {AC}</math> is a transversal running through <math>\overline {FC}</math> (use your imagination) and <math>\overline {AB},</math> we have <math>m\angle BAC=m\angle FCA = \frac{m\angle ACE}{2}=30.</math> 
+
+Then, <math>\triangle APX</math> is a <math>30</math>-<math>60</math>-<math>90</math> triangle. By HL congruence, <math>\triangle APX \cong \triangle NPX.</math> Note that <math>AX=\frac{1}{2}.</math> Then, the area of <math>\triangle PXN</math> is <math>\frac{\sqrt{3}}{32}.</math> There are three such triangles for a total area of <math>\triangle XYZ</math> is <math>\frac{3\sqrt{3}}{32}.</math> Find the side of <math>\triangle XYZ</math> to be <math>\frac{3}{2},</math> so the area is <math>\frac{9\sqrt{3}}{16}.</math> 
+
+The answer is <cmath>\frac{9\sqrt{3}}{16}-\frac{3\sqrt{3}}{32}=\boxed{\textbf{(C)}\ \frac {15}{32}\sqrt{3}}.</cmath>
+
+--- Solution 3 ---
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+draw(polygon(6));
+pair A, B, C, D, E, F, X, Y, Z, M, N, O, P, Q, R;
+A = dir(120);
+B = dir(60);
+C = dir(0);
+D = dir(300);
+E = dir(240);
+F = dir(180);
+X = midpoint(A--B);
+Y = midpoint(C--D);
+Z = midpoint(E--F);
+M = intersectionpoint(A--E,X--Z);
+N = intersectionpoint(A--C,X--Y);
+O = intersectionpoint(C--E,Y--Z);
+P = intersectionpoint(A--C,X--Z);
+Q = intersectionpoint(C--E,X--Y);
+R = intersectionpoint(A--E,Y--Z);
+fill(M--P--N--Q--O--R--cycle,mediumgray);
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$E$",E,1.5*dir(E),linewidth(4));
+dot("$F$",F,1.5*dir(F),linewidth(4));
+dot("$X$",X,1.5*dir(X),linewidth(4));
+dot("$Y$",Y,1.5*dir(Y),linewidth(4));
+dot("$Z$",Z,1.5*dir(Z),linewidth(4));
+dot("$M$",M,1.5*dir(165),linewidth(4));
+dot("$N$",N,1.5*dir(45),linewidth(4));
+dot("$O$",O,1.5*dir(-75),linewidth(4));
+dot("$P$",P,1.5*dir(105),linewidth(4));
+dot("$Q$",Q,1.5*dir(-15),linewidth(4));
+dot("$R$",R,1.5*dir(-135),linewidth(4));
+draw(A--C--E--cycle^^X--Y--Z--cycle);
+draw(M--N--O--cycle,dashed);
+</asy>
+
+Now, if we look at the figure, we can see that the complement of the hexagon we are trying to find is composed of <math>3</math> isosceles trapezoids (namely <math>AXZF,CYXB,</math> and <math>EZYD</math>) and <math>3</math> right triangles (namely <math>\triangle XPN,\triangle YQO,</math> and <math>\triangle ZRM</math>).
+
+Finding the trapezoid's area, we know that one base of each trapezoid is just the side length of the hexagon, which is <math>1,</math> and the other base is <math>\frac{3}{2}</math> (it is halfway in between the side and the longest diagonal, which has length <math>2</math>) with a height of <math>\frac{\sqrt{3}}{4}</math> (by using the Pythagorean Theorem and the fact that it is an isosceles trapezoid) to give each trapezoid having an area of <math>\frac{5\sqrt{3}}{16}</math> for a total area of <math>\frac{15\sqrt{3}}{16}.</math> (Alternatively, we could have calculated the area of hexagon <math>ABCDEF</math> and subtracted the area of <math>\triangle XYZ,</math> which, as we showed before, had a side length of <math>\frac{3}{2}</math>).
+
+Now, we need to find the area of each of the small triangles, which, if we look at the triangle that has a vertex on <math>X,</math> is similar to the triangle with a base of <math>YC = \frac12.</math> Using similar triangles, we calculate the base to be <math>\frac{1}{4}</math> and the height to be <math>\frac{\sqrt{3}}{4}</math> giving us an area of  <math>\frac{\sqrt{3}}{32}</math> per triangle, and a total area of <math>\frac{3\sqrt{3}}{32}.</math> Adding the two areas together, we get <math>\frac{15\sqrt{3}}{16} + \frac{3\sqrt{3}}{32} = \frac{33\sqrt{3}}{32}.</math> Finding the total area, we get <math>6 \cdot 1^2 \cdot \frac{\sqrt{3}}{4}=\frac{3\sqrt{3}}{2}.</math> Taking the complement, we get <math>\frac{3\sqrt{3}}{2} - \frac{33\sqrt{3}}{32} = \boxed{\textbf{(C)}\ \frac {15}{32}\sqrt{3}}.</math>
+
+--- Solution 4 ---
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+draw(polygon(6));
+pair A, B, C, D, E, F, X, Y, Z, M, N, O, P, Q, R;
+A = dir(120);
+B = dir(60);
+C = dir(0);
+D = dir(300);
+E = dir(240);
+F = dir(180);
+X = midpoint(A--B);
+Y = midpoint(C--D);
+Z = midpoint(E--F);
+M = intersectionpoint(A--E,X--Z);
+N = intersectionpoint(A--C,X--Y);
+O = intersectionpoint(C--E,Y--Z);
+P = intersectionpoint(A--C,X--Z);
+Q = intersectionpoint(C--E,X--Y);
+R = intersectionpoint(A--E,Y--Z);
+fill(M--P--N--Q--O--R--cycle,mediumgray);
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$E$",E,1.5*dir(E),linewidth(4));
+dot("$F$",F,1.5*dir(F),linewidth(4));
+dot("$X$",X,1.5*dir(X),linewidth(4));
+dot("$Y$",Y,1.5*dir(Y),linewidth(4));
+dot("$Z$",Z,1.5*dir(Z),linewidth(4));
+dot("$M$",M,1.5*dir(165),linewidth(4));
+dot("$N$",N,1.5*dir(45),linewidth(4));
+dot("$O$",O,1.5*dir(-75),linewidth(4));
+dot("$P$",P,1.5*dir(105),linewidth(4));
+dot("$Q$",Q,1.5*dir(-15),linewidth(4));
+dot("$R$",R,1.5*dir(-135),linewidth(4));
+draw(A--C--E--cycle^^X--Y--Z--cycle);
+</asy>
+
+We could also subtract <math>\triangle APM,\triangle CQN,</math> and <math>\triangle ERO</math> from <math>\triangle ACE.</math>
+
+Since <math>\angle BAF = 120^{\circ}</math> and <math>\angle BAC = \angle FAE = 30^{\circ},</math> we have <math>\angle CAE = \angle BAF-\angle BAC-\angle FAE=60^{\circ}.</math>
+
+Since <math>AX=BX</math> and <math>FZ=EZ,</math> we have <math>AF \parallel XZ,</math> from which <math>\angle AMX= \angle FAM = 30^{\circ}.</math>
+
+We can show that <math>\triangle APM</math> is <math>30</math>-<math>60</math>-<math>90</math> using a similar method, <math>\triangle CQN</math> and <math>\triangle ERO</math> are also <math>30</math>-<math>60</math>-<math>90.</math>
+
+Since <math>AC=CE=AE=\sqrt{3},</math> we have <math>[ACE]=AC^2 \cdot \frac{\sqrt{3}}{4}=3 \cdot \frac{\sqrt{3}}{4} = \frac{3 \sqrt{3}}{4}.</math>
+
+Since <math>AX= \frac{1}{2}</math> and <math>AP = AX \cdot \frac{\sqrt{3}}{2}= \frac{1}{2} \cdot \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{4},</math> we have <math>PM = AP \cdot \sqrt{3} = \frac{\sqrt{3}}{4} \cdot \sqrt{3} = \frac{3}{4}.</math>
+
+Note that <cmath>[APM]=[CQN]=[ERO]=\frac{1}{2} \cdot AP \cdot PM = \frac{1}{2} \cdot \frac{\sqrt{3}}{4} \cdot \frac{3}{4} = \frac{3 \sqrt{3}}{32}.</cmath>
+Therefore, we get
+<cmath>[PNQORM]=[ACE]-[APM]-[CQN]-[ERO]=\frac{3 \sqrt{3}}{4} - 3 \cdot \frac{3 \sqrt{3}}{32} = \frac{24 \sqrt{3}}{32} - \frac{9 \sqrt{3}}{32} = \boxed{\textbf{(C)}\ \frac {15}{32}\sqrt{3}}.</cmath>
+
+--- Solution 5 ---
+We partition hexagon <math>ABCDEF</math> into <math>48</math> congruent <math>30^\circ\text{-}60^\circ\text{-}90^\circ</math> triangles, as shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+pair A, B, C, D, E, F, X, Y, Z, M, N, O, P, Q, R;
+A = dir(120);
+B = dir(60);
+C = dir(0);
+D = dir(300);
+E = dir(240);
+F = dir(180);
+X = midpoint(A--B);
+Y = midpoint(C--D);
+Z = midpoint(E--F);
+M = intersectionpoint(A--E,X--Z);
+N = intersectionpoint(A--C,X--Y);
+O = intersectionpoint(C--E,Y--Z);
+P = intersectionpoint(A--C,X--Z);
+Q = intersectionpoint(C--E,X--Y);
+R = intersectionpoint(A--E,Y--Z);
+fill(M--P--N--Q--O--R--cycle,mediumgray);
+draw(A--D^^B--E^^C--F^^X--Y--Z--cycle^^midpoint(A--F)--midpoint(B--C)--midpoint(D--E)--cycle,red);
+draw(A--C--E--cycle^^M--N--O--cycle^^M--midpoint(F--Z)^^M--F+1/4*(A-F)^^N--midpoint(X--B)^^N--B+1/4*(C-B)^^O--midpoint(Y--D)^^O--D+1/4*(E-D),blue);
+draw(polygon(6));
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$E$",E,1.5*dir(E),linewidth(4));
+dot("$F$",F,1.5*dir(F),linewidth(4));
+dot("$X$",X,1.5*dir(X),linewidth(4));
+dot("$Y$",Y,1.5*dir(Y),linewidth(4));
+dot("$Z$",Z,1.5*dir(Z),linewidth(4));
+dot(M^^N^^O^^P^^Q^^R,linewidth(4));
+</asy>
+Let the brackets denote areas. Note that the desired region contains <math>15</math> of the <math>48</math> small triangles, so the answer is <cmath>\frac{15}{48}[ABCDEF]=\frac{15}{48}\cdot\frac{3\sqrt3}{2}=\boxed{\textbf{(C)}\ \frac {15}{32}\sqrt{3}}.</cmath>
+
+--- Solution 6 ---
+Dividing <math>\triangle MNO</math> into two right triangles congruent to <math>\triangle PMN,</math> we see that <math>[MPNQOR]=\dfrac{5}{8}[ACE].</math> Because <math>[ACE] = \dfrac{1}{2}[ABCDEF],</math> we have <math>[MPNQOR]=\dfrac{5}{16}[ABCDEF].</math> From here, you should be able to tell that the answer will have a factor of <math>5,</math> and <math>\boxed{\textbf{(C)}\ \frac {15}{32}\sqrt{3}}</math> is the only answer that has a factor of <math>5.</math> However, if you want to actually calculate the area, you would calculate <math>[ABCDEF]</math> to be <math>6 \cdot \dfrac{\sqrt{3}}{2 \cdot 2} = \dfrac{3\sqrt{3}}{2},</math> so <math>[MPNQOR] = \dfrac{5}{16} \cdot \dfrac{3\sqrt{3}}{2} = \frac {15}{32}\sqrt{3}.</math>
+
+--- Solution 7 ---
+Notice, the area of the convex hexagon formed through the intersection of the <math>2</math> triangles can be found by finding the area of the triangle formed by the midpoints of the sides and subtracting the smaller triangles that are formed by the region inside this triangle but outside the other triangle. First, let's find the area of the triangle formed by the midpoint of the sides. Notice, this is an equilateral triangle, thus all we need is to find the length of its side. 
+To do this, we look at the isosceles trapezoid outside this triangle but inside the outer hexagon. Since the interior angle of a regular hexagon is <math>120^\circ</math> and the trapezoid is isosceles, we know that the angle opposite is <math>60^\circ,</math> and thus the side length of this triangle is <math>1+2\left(\frac{1}{2}\cos 60^\circ\right)=1+\frac{1}{2}=\frac{3}{2}.</math> So the area of this triangle is <math>\frac{\sqrt{3}}{4}s^2=\frac{9\sqrt{3}}{16}.</math>
+
+Now let's find the area of the smaller triangles. Notice, <math>\triangle ACE</math> cuts off smaller isosceles triangles from the outer hexagon. The base of these isosceles triangles is perpendicular to the base of the isosceles trapezoid mentioned before, thus we can use trigonometric ratios to find the base and height of these smaller triangles, which are all congruent due to the rotational symmetry of a regular hexagon. The area is then <math>\frac{1}{2}\left(\frac{1}{2}\cos 60^\circ\right)\left(\frac{1}{2}\sin 60^\circ\right)=\frac{\sqrt{3}}{32}</math> and the sum of the areas is <math>3\cdot \frac{\sqrt{3}}{32}=\frac{3\sqrt{3}}{32}.</math>
+
+Therefore, the area of the convex hexagon is <math>\frac{9\sqrt{3}}{16}-\frac{3\sqrt{3}}{32}=\frac{18\sqrt{3}}{32}-\frac{3\sqrt{3}}{32}=\boxed{\textbf{(C)}\ \frac {15}{32}\sqrt{3}}.</math>
+
+--- Solution 8 ---
+If we try to coordinate bash this problem, it's going to look very ugly with a lot of radicals. However, we can alter and skew the diagram in such a way that all ratios of lengths and areas stay the same while making it a lot easier to work with. Then, we can find the ratio of the area of the wanted region to the area of <math>ABCDEF</math> then apply it to the old diagram.
+<asy>
+unitsize(1cm);
+draw((0,0)--(4,0)--(6,3.464)--(2,3.464)--(0,0));
+draw((2,0)--(1,1.732));
+draw((5,1.732)--(4,3.464));
+draw((1.5, 0.866)--(3, 3.464)--(4.5, 0.866)--cycle);
+draw((2,0)--(2,3.464)--(5,1.732)--cycle);
+</asy>
+
+<asy>
+unitsize(1cm);
+fill((1,4)--(1,3.5)--(2,3)--cycle,red);
+fill((1,1)--(1.5,1)--(1,2)--cycle,red);
+fill((3,1)--(3.5,1.5)--(4,1)--cycle,red);
+draw((1,0)--(1,4),gray(.7));
+draw((2,0)--(2,4),gray(.7));
+draw((3,0)--(3,4),gray(.7));
+draw((0,1)--(4,1),gray(.7));
+draw((0,2)--(4,2),gray(.7));
+draw((0,3)--(4,3),gray(.7));
+draw((0,0)--(4,0)--(4,4)--(0,4)--(0,0));
+draw((2,0)--(0,2));
+draw((4,2)--(2,4));
+draw((1,1)--(1,4)--(4,1)--cycle);
+draw((0,4)--(2,0)--(4,2)--cycle);
+</asy>
+
+The isosceles right triangle with a leg length of <math>3</math> in the new diagram is <math>\triangle XYZ</math> in the old diagram. We see that if we want to take the area of the new hexagon, we must subtract <math>\frac{3}{4}</math> from the area of <math>\triangle XYZ</math> (the red triangles), giving us <math>\frac{15}{4}.</math> However, we need to take the ratio of this area to the area of <math>ABCDEF,</math> which is <math>\frac{\frac{15}{4}}{12}=\frac{5}{16}.</math> Now we know that our answer is <math>\frac{5}{16} \cdot \frac{3\sqrt{3}}{2}=\boxed{\textbf{(C)}\ \frac {15}{32}\sqrt{3}}.</math>
+
+--- Solution 9 ---
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+draw(polygon(6));
+pair A, B, C, D, E, F, X, Y, Z, M, N, O, P, Q, R, G;
+A = dir(120);
+B = dir(60);
+C = dir(0);
+D = dir(300);
+E = dir(240);
+F = dir(180);
+X = midpoint(A--B);
+Y = midpoint(C--D);
+Z = midpoint(E--F);
+
+G = midpoint(A--D);
+
+M = intersectionpoint(A--E,X--Z);
+N = intersectionpoint(A--C,X--Y);
+O = intersectionpoint(C--E,Y--Z);
+P = intersectionpoint(A--C,X--Z);
+Q = intersectionpoint(C--E,X--Y);
+R = intersectionpoint(A--E,Y--Z);
+fill(M--P--N--Q--O--R--cycle,mediumgray);
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$E$",E,1.5*dir(E),linewidth(4));
+dot("$F$",F,1.5*dir(F),linewidth(4));
+dot("$X$",X,1.5*dir(X),linewidth(4));
+dot("$Y$",Y,1.5*dir(Y),linewidth(4));
+dot("$Z$",Z,1.5*dir(Z),linewidth(4));
+
+dot(O^^Q^^R,linewidth(4));
+dot("$N$",N,1.5*dir(N),linewidth(4));
+dot("$M$",M,1.5*dir(M),linewidth(4));
+dot("$P$",P,1.5*dir(P),linewidth(4));
+
+dot("$G$",G,1.5*dir(G),linewidth(4));
+
+draw(A--C--E--cycle^^X--Y--Z--cycle);
+
+draw(A--G^^C--G);
+draw(N--B);
+draw(N--E--A--cycle^^M--P, red);
+
+</asy>
+(
+===Lemma 1: <math>MP</math> is midsegment of <math>\triangle ANE</math>.===
+As <math>ZX</math> is a midsegment of trapezoid <math>FEBA</math>, we know that <math>FA||ZX||EB</math>. Furthermore, by subdividing trapezoid <math>FEBA</math>, <math>ZM,MP,PX</math> are midsegments of <math>\triangle EFA, \triangle ANE, \triangle, ANB</math> respectively.
+
+===Lemma 2: <math>[ACE] = \frac12[ABCDEF]</math>===
+Due to radial symmetry about the center, <math>G</math>, we only have to prove <math>[AGC] = [CBA]</math>. As <math>\triangle AGB</math> and <math>\triangle CBG</math> are equilateral triangles, <math>AC</math> therefore divides rhombus <math>ABCG</math> into 2 congruent halves. <math>\triangle AGC</math> and <math>\triangle CBA</math> thus each contain two such congruent triangles, which means that their areas are equal.
+
+===Lemma 3: <math>[AMP] = \frac1{16}[ABCDEF]</math>===
+From Lemma 1, <math>\triangle AMP \simeq \triangle AEN</math> with a scale factor of <math>\frac12</math>, which means <math>[AMP] = \frac14[AEN]</math>. Furthermore, due to symmetry of <math>\triangle AEN</math> and <math>\triangle CEN</math> about <math>EN</math>, <math>[AEN] = \frac12[ACE]</math>. Therefore, <math>[AMP] =  \frac18[ACE]</math>, or (using lemma 2) <math>\frac1{16}[ABCDEF]</math>.
+
+===Lemma 4: <math>[ABCDEF] = \frac{3\sqrt3}2</math>===
+Because the hexagon is regular, <math>[ABCDEF] = 6[ABG] = \frac{6\sqrt3}4 = \frac{3\sqrt3}2</math>. (For more info on where <math>\frac{\sqrt3}4</math> came from, use the search term "area of equilateral triangle")
+
+===Final step:===
+To find the area of the shaded part, we seek <math>[ACE] - 3[AMP]</math>. Using lemmas 2 and 3, the expression resolves to <math>\frac12[ABCDEF] - 3\frac1{16}[ABCDEF] = \frac5{16} \cdot \frac{3\sqrt3}2 = \boxed{\textbf{(C)}\ \frac{15}{32}\sqrt{3}}</math>.
+
+
+=== Problem 25 ===
+Let
+
+Choices: {'A': '197', 'B': '198', 'C': '199', 'D': '200', 'E': '201</math>'}
+Answer: C
+
+--- Solution 1 ---
+This rewrites itself to <math>x^2=10,000\{x\}</math> where <math>\lfloor x \rfloor + \{x\} = x</math>.
+
+Graphing <math>y=10,000\{x\}</math> and <math>y=x^2</math> we see that the former is a set of line segments with slope <math>10,000</math> from <math>0</math> to <math>1</math> with a hole at <math>x=1</math>, then <math>1</math> to <math>2</math> with a hole at <math>x=2</math> etc.
+Here is a graph of <math>y=x^2</math> and <math>y=16\{x\}</math> for visualization.
+
+<asy>
+import graph;
+size(400);
+xaxis("$x$",Ticks(Label(fontsize(8pt)),new real[]{-5,-4,-3, -2, -1,0,1 2,3, 4,5}));
+yaxis("$y$",Ticks(Label(fontsize(8pt)),new real[]{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18}));
+real y(real x) {return x^2;}
+draw(circle((-4,16), 0.1));
+draw(circle((-3,16), 0.1));
+draw(circle((-2,16), 0.1));
+draw(circle((-1,16), 0.1));
+draw(circle((0,16), 0.1));
+draw(circle((1,16), 0.1));
+draw(circle((2,16), 0.1));
+draw(circle((3,16), 0.1));
+draw(circle((4,16), 0.1));
+draw((-5,0)--(-4,16), black);
+draw((-4,0)--(-3,16), black);
+draw((-3,0)--(-2,16), black);
+draw((-2,0)--(-1,16), black);
+draw((-1,0)--(-0,16), black);
+draw((0,0)--(1,16), black);
+draw((1,0)--(2,16), black);
+draw((2,0)--(3,16), black);
+draw((3,0)--(4,16), black);
+draw(graph(y,-4.2,4.2),green);
+</asy>
+
+Now notice that when <math>x=\pm 100</math> the graph has a hole at <math>(\pm 100,10,000)</math> which the equation <math>y=x^2</math> passes through and then continues upwards. Thus our set of possible solutions is bounded by <math>(-100,100)</math>. We can see that <math>y=x^2</math> intersects each of the lines once and there are <math>99-(-99)+1=199</math> lines for an answer of <math>\boxed{\text{(C)}
+
+--- Solution 2 ---
+Same as the first solution, <math>x^2=10,000\{x\} </math>.
+
+
+We can write <math>x</math> as <math>\lfloor x \rfloor+\{x\}</math>. Expanding everything, we get a quadratic in <math>\{x\}</math> in terms of <math>\lfloor x \rfloor</math>:
+<cmath> \{x\}^2+ (2\lfloor x \rfloor -10,000)\{x\} + \lfloor x \rfloor ^2 = 0</cmath>
+
+
+We use the quadratic formula to solve for <math>\{x\}</math> :
+<cmath> \{x\} = \frac {-2\lfloor x \rfloor + 10,000 \pm \sqrt{ ( 2\lfloor x \rfloor - 10,000 )^2 - 4\lfloor x \rfloor^2  }}{2} = \frac {-2\lfloor x \rfloor + 10,000 \pm \sqrt{ 4\lfloor x \rfloor^2 -40,000 \lfloor x \rfloor + 10,000^2- 4\lfloor x \rfloor^2  }}{2} </cmath>
+
+
+Since <math> 0 \leq \{x\} < 1 </math>, we get an inequality which we can then solve. After simplifying a lot, we get that <math>\lfloor x \rfloor^2 + 2\lfloor x \rfloor - 9999 < 0</math>.
+
+
+Solving over the integers, <math>-101 < \lfloor x \rfloor < 99 </math>, and since <math>\lfloor x \rfloor</math> is an integer, there are <math>\boxed{\text{(C)}
+
+--- Solution 3 ---
+Let <math>x = a+k</math> where <math>a</math> is the integer part of <math>x</math> and <math>k</math> is the fractional part of <math>x</math>.
+We can then rewrite the problem below:
+
+<math>(a+k)^2 + 10000a = 10000(a+k)</math>
+
+From here, we get
+
+<math>(a+k)^2 + 10000a = 10000a + 10000k</math>
+
+Solving for <math>a+k = x</math>
+
+<math>(a+k)^2 = 10000k</math>
+
+<math>x = a+k = \pm100\sqrt{k}</math>
+
+Because <math>0 \leq k < 1</math>, we know that <math>a+k</math> cannot be less than or equal to <math>-100</math> nor greater than or equal to <math>100</math>. Therefore:
+
+<math>-99 \leq x \leq 99</math>
+
+There are <math>199</math> elements in this range, so the answer is <math>\boxed{\textbf{(C)} \text{ 199}}</math>.
+
+
+Note (not by author): this solution seems to be invalid at first, because one can not determine whether <math>x</math> is an integer or not. However, it actually works because although <math>x</math> itself might not be an integer, it is very close to one, so there are 199 potential <math>x</math>.
+
+
+Another Note (not by author of previous note): we can actually determine that <math>x</math>=0 is the only possible integer value of <math>x</math> is we set <math>x</math>=<math>\lfloor x \rfloor</math> we end up with <math>x</math>=0   
+Yet Another Note EXCEPT THIS ONE'S VERY IMPORTANT, AS IT DISPROVES THE PROOF (also not by the author of any previous notes or of the original solution): this solution claims that <math>-99 \leq x \leq 99</math>, which is not entirely true. When <math>x = 5000-1000\sqrt{26}</math>, the equation originally stated in the question holds true. <math>5000-1000\sqrt{26}</math> is roughly <math>-99.0195</math> (rounded to the nearest ten thousandth), which is not in the <math>-99 \leq x \leq 99</math> interval. It is probably by mere coincidence that this solution gives the correct answer, as the solution is not rigorous. Additionally, <math>x</math> is not necessarily integer, so it is not claimable that there are 199 elements in the range of <math>-99 \leq x \leq 99</math>.
+
+
+One More Note (not by any of the previous authors): The original guy who wrote the solution just wrote the wrong range lol this is a valid solution (at least I'm pretty sure). Given <math>(a+k)^2 = 10000k</math>, dividing each side by 10000 gives <math>\frac{(a+k)^2}{10000} = k</math>. Our original definition of <math>k</math> states that <math>0 \leq k < 1</math>, so <math>0 \leq \frac{(a+k)^2}{10000} < 1</math>. This is equivalent to the range <math>-100 \leq x < 100</math> NOT <math>-99 \leq x < 99</math>. If you observe the functions behavior, you realize that between every interval of length <math>1</math> there is one solution, except for the intervals that include <math>0</math>, where only <math>0</math> is a solution. There are therefore <math>99+99+1</math> solutions in that range which gives the answer. Also <math>x</math> literally doesn't have to be an integer the original constraint was that <math>x</math> is a real number.
+
+--- Solution 4 ---
+Notice the given equation is equivalent to <math>(\lfloor x \rfloor+\{x\})^2=10,000\{x\} </math>
+
+Now we know that <math>\{x\} < 1</math> so plugging in <math>1</math> for <math>\{x\}</math> we can find the upper and lower bounds for the values.
+
+<math>(\lfloor x \rfloor +1)^2 = 10,000(1)</math>
+
+<math>(\lfloor x \rfloor +1) = \pm 100</math>
+
+<math>\lfloor x \rfloor = 99, -101</math>
+
+And just like <math>\textbf{Solution 2}</math>, we see that <math>-101 < \lfloor x \rfloor < 99 </math>, and since <math>\lfloor x \rfloor</math> is an integer, there are <math>\boxed{\text{(C)}
+* <math>\textbf{Note}</math> (not by author of any other notes beforehand): this solution is probably the best and most efficient of all. It solves the problems stated in the fakesolves./
+
+--- Solution 5 ---
+Firstly, if <math>x</math> is an integer, then <math>10,000\lfloor x \rfloor=10,000x</math>, so <math>x</math> must be <math>0</math>.
+
+If <math>0<x<1</math>, then we know the following:
+
+<math>0<x^2<1</math>
+
+<math>10,000\lfloor x \rfloor =0</math>
+
+<math>0<10,000x<10,000</math>
+
+Therefore, <math>0<x^2+10,000\lfloor x \rfloor <1</math>, which overlaps with <math>0<10,000x<10,000</math>. This means that there is at least one real solution between <math>0</math> and <math>1</math>. Since <math>x^2+10,000\lfloor x \rfloor </math> increases quadratically and <math>10,000x</math> increases linearly, there is only one solution for this case. 
+
+Similarly, if <math>1<x<2</math>, then we know the following:
+
+<math>1<x^2<4</math>
+
+<math>10,000\lfloor x \rfloor =10,000</math>
+
+<math><10,000<10,000x<20,000</math>
+
+By following similar logic, we can find that there is one solution between <math>1</math> ad <math>2</math>. 
+
+We can also follow the same process to find that there are negative solutions for <math>x</math> as well.
+
+There are not an infinite amount of solutions, so at one point there will be no solutions when <math>n<x<n+1</math> for some integer <math>n</math>. For there to be no solutions in a given range means that the range of <math>10,000\lfloor x \rfloor + x^2</math> does not intersect the range of <math>10,000x</math>. <math>x^2</math> will always be positive, and <math>10,000\lfloor x \rfloor</math> is less than <math>10,000</math> less than <math>10,000x</math>, so when <math>x^2 >= 10,000</math>, the equation will have no solutions. This means that there are <math>99</math> positive solutions, <math>99</math> negative solutions, and <math>0</math> for a total of <math>\boxed{\text{(C)}
+
+--- Solution 6 ---
+General solution to this type of equation <math>f(x, \lfloor x \rfloor) = 0</math>:
+
+ 1. solve <math>f(x, \lfloor x \rfloor) = 0</math> for <math>x</math> to get <math>x = g(\lfloor x \rfloor )</math>
+ 2. apply <math>\lfloor x \rfloor \le x < \lfloor x \rfloor+1</math>, solve <math>\lfloor x \rfloor \le g(\lfloor x \rfloor) < \lfloor x \rfloor+1</math> to get the domain of <math>\lfloor x \rfloor</math>
+ 3. get <math> \lfloor x \rfloor</math> from the domain of <math> \lfloor x \rfloor</math> because <math> \lfloor x \rfloor</math> is integer, then get <math>x</math> from <math> \lfloor x \rfloor</math> by <math>x = g( \lfloor x \rfloor) </math>
+ Note: function <math>\lfloor x \rfloor</math> maps <math>x</math> to its floor. By solving <math>f(x, \lfloor x \rfloor) = 0</math>, we get function <math>x = g( \lfloor x \rfloor) </math>, mapping <math>x</math>'s floor to <math>x</math>
+
+<math>x^2 - 10000x + 10000 \lfloor x \rfloor =0</math>
+
+<math>x=5000 \pm 100 \sqrt{2500- \lfloor x \rfloor}</math>, <math>\lfloor x \rfloor \le 2500</math>
+
+<math>\lfloor x \rfloor \le x < \lfloor x \rfloor + 1</math>
+
+If <math>x= 5000 + 100 \sqrt{2500 - \lfloor x \rfloor}</math>, <math>x \ge 5000</math>, it contradicts <math>x < \lfloor x \rfloor + 1 \le 2501</math>
+
+So <math>x= 5000 - 100 \sqrt{2500 - \lfloor x \rfloor}</math>
+
+Let <math>k = \lfloor x \rfloor</math> , <math>x= 5000 - 100 \sqrt{2500 - k}</math>
+
+<math>k \le 5000 - 100 \sqrt{2500 - k} < k + 1</math>
+
+<math>0 \le 5000 - k - 100 \sqrt{2500 - k} < 1</math>
+
+<math>0 \le 2500 - k - 100 \sqrt{2500 - k} + 2500 < 1</math>
+
+<math>0 \le (\sqrt{2500 - k} - 50)^2 < 1</math>
+
+<math>-1 < \sqrt{2500 - k} - 50 < 1</math>
+
+<math>49 < \sqrt{2500 - k} < 51</math>
+
+<math>-101 < k < 99</math>
+
+So the number of <math>k</math>'s values is <math>99-(-101)-1=199</math>. Because <math>x=5000-100\sqrt{2500-k}</math>, for each value of <math>k</math>, there is a value for <math>x</math>. The answer is <math>\boxed{\textbf{(C)} 199}</math>
+
+--- Solution 7 ---
+Subtracting <math>10000\lfloor x\rfloor</math> from both sides gives <math>x^2=10000(x-\lfloor x\rfloor)=10000\{x\}</math>. Dividing both sides by <math>10000</math> gives <math>\left(\frac{x}{100}\right)^2=\{x\}<1</math>.  <math>\left(\frac{x}{100}\right)^2<1</math> when <math>-100<x<100</math> so the answer is <math>\boxed{199}</math>.
+
+--- Solution 8 ---
+The question wants to know how many values of <math>x</math> satisfy the equation <math>x^2 + 10,000\lfloor x \rfloor = 10,000x</math>. This equation can be simplified as follows
+
+<cmath>x^2 + 10,000\lfloor x \rfloor = 10,000x</cmath>
+
+<cmath>x^2 = 10,000(x-\lfloor x \rfloor)</cmath>
+
+Notice that <math>x-\lfloor x \rfloor</math> must be greater than or equal to zero, but less than one. Because of that, the right-hand side of the equation must be less than <math>10000</math>. Therefore, <math>-100<x<100</math>.
+
+<math>x</math> can be expressed as <math>a+b</math>, where <math>a</math> is an integer and <math>b</math> is a real number such that <math>0 \leq b < 1</math>. Notice that in order to satisfy the conditions set down for <math>x</math>, <math>-100 \leq a \leq 99</math>.
+
+Substituting <math>a</math> and <math>b</math> into <math>x^2 = 10000(x-\lfloor x \rfloor)</math>, we get
+
+<cmath>(a+b)^2 = 10,000b</cmath>
+
+<cmath>a^2+2ab+b^2 = 10,000b</cmath>
+
+Let's try to turn this into a quadratic equation where we're trying to solve for <math>b</math>. Simplifying, we find
+
+<cmath>b^2+(2a-10,000)b+a^2 = 0</cmath>
+
+Now the value of <math>b</math> depends on the value of <math>a</math>. Our task is to figure out how many values of <math>a</math> will give me valid values of <math>b</math> (a.k.a the values of <math>a</math> that give me <math>b</math> such that <math>0 \leq b < 1</math>), as that will be our answer. We must also keep in mind that <math>-100 \leq a \leq 99</math>.
+
+Using the quadratic formula, we can find
+
+<cmath>\frac{(-2a+10,000) \pm \sqrt{(2a-10,000)^2-4a^2}}{2}</cmath>
+
+The equation above represents the values of <math>b</math> in terms of <math>a</math>. Since it represents <math>b</math>, we want values of <math>a</math> such that the equation is between zero and one, zero inclusive. We can then conceive the inequality below.
+
+<cmath>0 \leq \frac{(-2a+10,000) \pm \sqrt{(2a-10,000)^2-4a^2}}{2} < 1</cmath>
+
+Wow, that looks like a mess! How are we supposed to easily use such a complicated expression? Maybe it would help to simplify it further. First, let's notice a few things.
+
+*I want the numerator to be between 0 and 2, 0 inclusive. Of the <math>\pm</math> in the quadratic formula, only the "<math>-</math>" (minus) will work. Why? Because <math>-2a+10000</math> will always be positive (if I plug in the largest possible value of <math>a</math>, <math>99</math>, it will give <math>9802</math>), and if I want <math>b</math> to be real, which I do, then <math>\sqrt{(2a-10,000)^2-4a^2}</math> should also be positive. <math>-2a+10000</math> will already be much bigger than 2, and adding more on will only make it bigger. It will never be less than 2. It will never work.
+
+*I can simplify the numbers under the square root using Difference of Squares. I can turn <math>\sqrt{(2a-10,000)^2-4a^2}</math> into <math>\sqrt{(2a-10,000)^2-(2a)^2}</math>. Applying Difference of Squares, it will eventually simplify out to be <math>200\sqrt{2500-a}</math>.
+
+Cool! Now we've simplified the square root and figured out that it must be a minus sign, not a plus sign. Our new inequality looks like this:
+
+<cmath>0 \leq \frac{(-2a+10,000) - 200\sqrt{2500-a}}{2} < 1</cmath>
+
+Simplifying the unsimplified fraction further, we can get this:
+
+<cmath>0 \leq -a + 5,000 - 100\sqrt{2500-a} < 1</cmath>
+
+Yay! A simpler equation. As long as the value <math>a</math> fits this inequality, the restrictions set on <math>b</math> are satisfied. But wait. What about the restrictions on <math>a</math>?
+
+'''By testing out <math>-100</math> and <math>99</math> (and finding that <math>-100</math> gives a value very close to <math>1</math>, and that <math>99</math> gives exactly <math>1</math>), we can conclude that any value of <math>-100 \leq </math>a<math> \leq 99</math> will satisfy the inequality above as long as it does not make <math>-a + 5,000 - 100\sqrt{2500-a}</math> equal to <math>1</math>. By testing <math>-100</math> and <math>99</math>, you will also find that <math>a = 99</math> will not satisfy the inequality.''' <u><-- old, non-rigorous way. You can ignore it, but if you want to see a bogus way to prove it, feel free to read it.</u>
+
+I can solve <math>0 \leq -a + 5000 - 100\sqrt{2500-a} < 1</math> for <math>a</math> this way:
+
+<math>0 \leq -a + 5000 - 100\sqrt{2500-a} < 1</math>
+
+<math>-5000 \leq -a - 100\sqrt{2500-a} < -4999</math>
+
+<math>5000 \geq a + 100\sqrt{2500-a} < 4999</math>
+
+<math>5000-a \geq 100\sqrt{2500-a} < 4999-a</math>
+
+<math>25000000-10000a+a^2 \geq 25000000-10000a > 4999^2-9998a+a^2</math>
+
+<math>a^2 \geq 0 > -9999+2a+a^2</math>
+
+<math>0 \geq -a^2 > -9999+2a</math>
+
+<math>0 \leq a^2 < 9999-2a</math>
+
+<math>2a \leq a(a+2) < 9999</math>
+
+Following the left part of the inequality,
+
+<math>2a \leq a^2 + 2a</math>
+
+<math>0 \leq a^2</math>
+
+<math>a</math> can be anything <math>(-\infty, \infty)</math>.
+
+Following the right part of the inequality,
+
+<math>a(a+2) < 9999</math>
+
+<math>a < 99</math> and <math>a > -101</math>
+
+<math>a</math> can be anything <math>(-101, 99)</math>.
+
+Combining both restrictions and given previously that <math>-100 \leq a \leq 99</math>, we can conclude that the inequality describing all possible values of <math>a</math> is <math>-100 \leq a < 99</math>.
+
+Remember how these values of <math>a</math> give valid values of <math>b</math> that satisfy the desired inequality <math>0 \leq b < 1</math> and how adding up <math>a</math> and <math>b</math> gives <math>x</math>. In summary, remember that the number of values of <math>a</math> is equivalent to the number of values of <math>x</math>.
+
+<math>a</math> must be integer, so the number of values of <math>a</math> that satisfy <math>-100 \leq a < 99</math> is <math>\boxed{199}</math>.
+
+The answer is <math>\boxed{\textbf{(C)} 199}</math>.
+
+
+Note From Author of Solution: you may have noticed that I missed a slight bit by not proving that the thing under the square root in the quadratic formula I made was positive. Don't worry, it wasn't a mistake. It's actually pretty easy to prove. I'll leave it to you to figure out how to do it!
+
+--- Solution 9 ---
+Note that the problem rearranges itself to <math>x^2=10,000\{x\}</math> where <math>\lfloor x \rfloor + \{x\} = x</math>.
+
+
+To get a general scope of solutions, by noting that <math>0 \leq \{x\} < 1</math>, we have that <math>0 \leq x^2 < 10,000</math>. Therefore, <math>-100 < x < 100</math>.
+
+
+From here, it is easy to observe that there is one solution per each integer value of <math>-99 \leq \lfloor x \rfloor \leq 99</math>. This can be reasoned by bounding <math>\{x\}</math> for each <math>\lfloor x \rfloor</math> (intuitively, this is because <math>\lfloor x \rfloor</math> determines the fractional part: for each <math>\lfloor x \rfloor</math>, you will be forced to choose the value of <math>\{x\}</math> that will satisfy the equation).
+
+
+Ultimately, the answer is <math>99+99+1 = \boxed{\textbf{(C)} 199}</math>.
+
+

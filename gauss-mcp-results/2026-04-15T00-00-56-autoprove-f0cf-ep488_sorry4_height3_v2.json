@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-15T00-00-56-autoprove-f0cf-ep488_sorry4_height3_v2",
+  "status": "error",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "-- SORRY 4: No bad block at height 3\n-- At height 3, block is (2q, 3q]. Each r > q/2 has exactly one multiple (3r) in this block.\n-- So SlotMass = BlockCov, making 2*BlockCov < SlotMass impossible.\n\ndef TopWindow (C : Finset \u2115) (q : \u2115) : Prop :=\n  \u2200 r \u2208 C, q / 2 < r \u2227 r < q\n\ndef Block (q j : \u2115) : Finset \u2115 :=\n  Finset.Icc ((j - 1) * q + 1) (j * q)\n\nnoncomputable def Slot (q j r : \u2115) : Finset \u2115 :=\n  (Block q j).filter fun t => \u00ac(q \u2223 t) \u2227 r \u2223 t\n\nnoncomputable def BlockCov (C : Finset \u2115) (q j : \u2115) : \u2115 :=\n  ((Block q j).filter fun t => \u00ac(q \u2223 t) \u2227 \u2203 r \u2208 C, r \u2223 t).card\n\nnoncomputable def SlotMass (C : Finset \u2115) (q j : \u2115) : \u2115 :=\n  \u2211 r \u2208 C, (Slot q j r).card\n\ndef BadBlock (C : Finset \u2115) (q j : \u2115) : Prop :=\n  2 * BlockCov C q j < SlotMass C q j\n\ntheorem no_bad_block_height_three (C : Finset \u2115) (q : \u2115)\n    (hTop : TopWindow C q) (hq : 0 < q) :\n    \u00ac BadBlock C q 3 := by\n  sorry",
+  "started_at": "2026-04-15T00:00:56Z",
+  "finished_at": "2026-04-15T00:06:42Z",
+  "duration_s": 345.94,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "You're out of extra usage \u00b7 resets 8pm (America/Chicago)"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-15T00-00-56-autoprove-f0cf-ep488_sorry4_height3_v2.log",
+  "worker_pid": 352,
+  "last_heartbeat_at": 1776211600.31858,
+  "_started_monotonic": 1776211256.4046361
+}

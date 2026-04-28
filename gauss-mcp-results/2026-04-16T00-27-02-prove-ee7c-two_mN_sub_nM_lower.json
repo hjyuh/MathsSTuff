@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T00-27-02-prove-ee7c-two_mN_sub_nM_lower",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- For m > n and g > 0, 2m(n/g) \u2212 n(m/g) \u2265 m((n/g)\u22121) + (m/g).\n    This is used in the {2,3} case of the supermodularity proof. -/\ntheorem two_mN_sub_nM_lower (m n g : \u2115)\n    (hg : 0 < g) (hmn : n < m) :\n    (m : \u2124) * (((n / g : \u2115) : \u2124) - 1) + ((m / g : \u2115) : \u2124) \u2264\n    2 * (m : \u2124) * ((n / g : \u2115) : \u2124) - (n : \u2124) * ((m / g : \u2115) : \u2124) := by\n  sorry",
+  "started_at": "2026-04-16T00:27:02Z",
+  "finished_at": "2026-04-16T00:27:02Z",
+  "duration_s": 0.23,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "resolver_failure",
+    "message": "AutoformalizePreflightError: No active Gauss project found. Use `/project init`, `/project convert`, or `/project use <path>` first. Run `/project init`, `/project convert`, or `/project use <path>` first.",
+    "log_tail": ""
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-27-02-prove-ee7c-two_mN_sub_nM_lower.log",
+  "worker_pid": 1250,
+  "last_heartbeat_at": 1776299222.1821558,
+  "_started_monotonic": 1776299222.013161
+}

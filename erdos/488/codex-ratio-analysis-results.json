@@ -1,0 +1,1666 @@
+{
+  "task1": {
+    "pairwise_coprime_plus_one": [
+      {
+        "A": [
+          2,
+          3,
+          5,
+          31
+        ],
+        "ratio": 0.530060882801,
+        "min_x": 199,
+        "max_x": 36,
+        "min_G": 0.733668341709,
+        "max_G": 0.777777777778,
+        "method": "direct",
+        "k": 4,
+        "Q": 30
+      },
+      {
+        "A": [
+          2,
+          3,
+          5,
+          7,
+          211
+        ],
+        "ratio": 0.507561327561,
+        "min_x": 409,
+        "max_x": 220,
+        "min_G": 0.770171149144,
+        "max_G": 0.781818181818,
+        "method": "direct",
+        "k": 5,
+        "Q": 210
+      },
+      {
+        "A": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          2311
+        ],
+        "ratio": 0.501084859511,
+        "min_x": 2423,
+        "max_x": 2656,
+        "min_G": 0.791580685101,
+        "max_G": 0.793298192771,
+        "method": "direct",
+        "k": 6,
+        "Q": 2310
+      },
+      {
+        "A": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          30031
+        ],
+        "ratio": 0.500127611408,
+        "min_x": 30143,
+        "max_x": 30838,
+        "min_G": 0.808114653485,
+        "max_G": 0.808320902782,
+        "method": "direct",
+        "k": 7,
+        "Q": 30030
+      },
+      {
+        "A": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          510511
+        ],
+        "ratio": 0.500011856797,
+        "min_x": 525409,
+        "max_x": 511932,
+        "min_G": 0.819466358589,
+        "max_G": 0.819485791082,
+        "method": "direct",
+        "k": 8,
+        "Q": 510510
+      },
+      {
+        "A": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          9699691
+        ],
+        "ratio": 0.500001021428,
+        "min_x": 9723829,
+        "max_x": 9965226,
+        "min_G": 0.82897519074,
+        "max_G": 0.828976884217,
+        "method": "segmented",
+        "k": 9,
+        "Q": 9699690
+      },
+      {
+        "A": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          223092871
+        ],
+        "ratio": 0.500000069198,
+        "min_x": 225566071,
+        "max_x": 223648078,
+        "min_G": 0.83641175361,
+        "max_G": 0.836411869366,
+        "method": "segmented",
+        "k": 10,
+        "Q": 223092870
+      }
+    ],
+    "scaled_primes": [
+      {
+        "A": [
+          4,
+          6,
+          10,
+          14,
+          22,
+          26
+        ],
+        "ratio": 0.604580965909,
+        "min_x": 227,
+        "max_x": 32,
+        "min_G": 0.387665198238,
+        "max_G": 0.46875,
+        "method": "direct",
+        "t": 2,
+        "P": 13,
+        "k": 6
+      },
+      {
+        "A": [
+          4,
+          6,
+          10,
+          14,
+          22,
+          26,
+          34,
+          38,
+          46
+        ],
+        "ratio": 0.60135400314,
+        "min_x": 227,
+        "max_x": 56,
+        "min_G": 0.400881057269,
+        "max_G": 0.482142857143,
+        "method": "direct",
+        "t": 2,
+        "P": 23,
+        "k": 9
+      },
+      {
+        "A": [
+          4,
+          6,
+          10,
+          14,
+          22,
+          26,
+          34,
+          38,
+          46,
+          58,
+          62
+        ],
+        "ratio": 0.594964212679,
+        "min_x": 399,
+        "max_x": 72,
+        "min_G": 0.408521303258,
+        "max_G": 0.486111111111,
+        "method": "direct",
+        "t": 2,
+        "P": 31,
+        "k": 11
+      },
+      {
+        "A": [
+          4,
+          6,
+          10,
+          14,
+          22,
+          26,
+          34,
+          38,
+          46,
+          58,
+          62,
+          74,
+          82,
+          86
+        ],
+        "ratio": 0.590078630897,
+        "min_x": 567,
+        "max_x": 92,
+        "min_G": 0.414462081129,
+        "max_G": 0.489130434783,
+        "method": "direct",
+        "t": 2,
+        "P": 43,
+        "k": 14
+      },
+      {
+        "A": [
+          6,
+          9,
+          15,
+          21,
+          33,
+          39
+        ],
+        "ratio": 0.605811403509,
+        "min_x": 221,
+        "max_x": 48,
+        "min_G": 0.257918552036,
+        "max_G": 0.3125,
+        "method": "direct",
+        "t": 3,
+        "P": 13,
+        "k": 6
+      },
+      {
+        "A": [
+          6,
+          9,
+          15,
+          21,
+          33,
+          39,
+          51,
+          57,
+          69
+        ],
+        "ratio": 0.602237048666,
+        "min_x": 341,
+        "max_x": 84,
+        "min_G": 0.266862170088,
+        "max_G": 0.321428571429,
+        "method": "direct",
+        "t": 3,
+        "P": 23,
+        "k": 9
+      },
+      {
+        "A": [
+          6,
+          9,
+          15,
+          21,
+          33,
+          39,
+          51,
+          57,
+          69,
+          87,
+          93
+        ],
+        "ratio": 0.595461258805,
+        "min_x": 599,
+        "max_x": 108,
+        "min_G": 0.272120200334,
+        "max_G": 0.324074074074,
+        "method": "direct",
+        "t": 3,
+        "P": 31,
+        "k": 11
+      },
+      {
+        "A": [
+          6,
+          9,
+          15,
+          21,
+          33,
+          39,
+          51,
+          57,
+          69,
+          87,
+          93,
+          111,
+          123,
+          129
+        ],
+        "ratio": 0.590425531915,
+        "min_x": 851,
+        "max_x": 138,
+        "min_G": 0.276145710928,
+        "max_G": 0.326086956522,
+        "method": "direct",
+        "t": 3,
+        "P": 43,
+        "k": 14
+      },
+      {
+        "A": [
+          8,
+          12,
+          20,
+          28,
+          44,
+          52
+        ],
+        "ratio": 0.606496710526,
+        "min_x": 295,
+        "max_x": 64,
+        "min_G": 0.193220338983,
+        "max_G": 0.234375,
+        "method": "direct",
+        "t": 4,
+        "P": 13,
+        "k": 6
+      },
+      {
+        "A": [
+          8,
+          12,
+          20,
+          28,
+          44,
+          52,
+          68,
+          76,
+          92
+        ],
+        "ratio": 0.602678571429,
+        "min_x": 455,
+        "max_x": 112,
+        "min_G": 0.2,
+        "max_G": 0.241071428571,
+        "method": "direct",
+        "t": 4,
+        "P": 23,
+        "k": 9
+      },
+      {
+        "A": [
+          8,
+          12,
+          20,
+          28,
+          44,
+          52,
+          68,
+          76,
+          92,
+          116,
+          124
+        ],
+        "ratio": 0.595709781868,
+        "min_x": 799,
+        "max_x": 144,
+        "min_G": 0.204005006258,
+        "max_G": 0.243055555556,
+        "method": "direct",
+        "t": 4,
+        "P": 31,
+        "k": 11
+      },
+      {
+        "A": [
+          8,
+          12,
+          20,
+          28,
+          44,
+          52,
+          68,
+          76,
+          92,
+          116,
+          124,
+          148,
+          164,
+          172
+        ],
+        "ratio": 0.590598982424,
+        "min_x": 1135,
+        "max_x": 184,
+        "min_G": 0.20704845815,
+        "max_G": 0.244565217391,
+        "method": "direct",
+        "t": 4,
+        "P": 43,
+        "k": 14
+      }
+    ],
+    "coatom": [
+      {
+        "A": [
+          30,
+          42,
+          70,
+          105
+        ],
+        "ratio": 0.625952380952,
+        "min_x": 239,
+        "max_x": 150,
+        "min_G": 0.058577405858,
+        "max_G": 0.073333333333,
+        "method": "direct",
+        "r": 4,
+        "N": 210
+      },
+      {
+        "A": [
+          210,
+          330,
+          462,
+          770,
+          1155
+        ],
+        "ratio": 0.596916666667,
+        "min_x": 2639,
+        "max_x": 1680,
+        "min_G": 0.009473285335,
+        "max_G": 0.01130952381,
+        "method": "direct",
+        "r": 5,
+        "N": 2310
+      },
+      {
+        "A": [
+          2310,
+          2730,
+          4290,
+          6006,
+          10010,
+          15015
+        ],
+        "ratio": 0.578930499325,
+        "min_x": 34319,
+        "max_x": 21840,
+        "min_G": 0.00110725837,
+        "max_G": 0.001282051282,
+        "method": "direct",
+        "r": 6,
+        "N": 30030
+      },
+      {
+        "A": [
+          30030,
+          39270,
+          46410,
+          72930,
+          102102,
+          170170,
+          255255
+        ],
+        "ratio": 0.561223527873,
+        "min_x": 583439,
+        "max_x": 371280,
+        "min_G": 9.5982613e-05,
+        "max_G": 0.000107735402,
+        "method": "direct",
+        "r": 7,
+        "N": 510510
+      },
+      {
+        "A": [
+          510510,
+          570570,
+          746130,
+          881790,
+          1385670,
+          1939938,
+          3233230,
+          4849845
+        ],
+        "ratio": 0.552631529095,
+        "min_x": 11085359,
+        "max_x": 8314020,
+        "min_G": 6.85589e-06,
+        "max_G": 7.577562e-06,
+        "method": "segmented",
+        "r": 8,
+        "N": 9699690
+      }
+    ],
+    "consecutive_a100": [
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "ratio": 0.966019417476,
+        "min_x": 199,
+        "max_x": 103,
+        "min_G": 0.020100502513,
+        "max_G": 0.038834951456,
+        "method": "direct",
+        "a": 100,
+        "k": 4,
+        "formula_ratio": 0.966019417476,
+        "formula_matches": true
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ],
+        "ratio": 0.956730769231,
+        "min_x": 199,
+        "max_x": 104,
+        "min_G": 0.025125628141,
+        "max_G": 0.048076923077,
+        "method": "direct",
+        "a": 100,
+        "k": 5,
+        "formula_ratio": 0.956730769231,
+        "formula_matches": true
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105
+        ],
+        "ratio": 0.947619047619,
+        "min_x": 199,
+        "max_x": 105,
+        "min_G": 0.030150753769,
+        "max_G": 0.057142857143,
+        "method": "direct",
+        "a": 100,
+        "k": 6,
+        "formula_ratio": 0.947619047619,
+        "formula_matches": true
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "ratio": 0.938679245283,
+        "min_x": 199,
+        "max_x": 106,
+        "min_G": 0.035175879397,
+        "max_G": 0.066037735849,
+        "method": "direct",
+        "a": 100,
+        "k": 7,
+        "formula_ratio": 0.938679245283,
+        "formula_matches": true
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "ratio": 0.929906542056,
+        "min_x": 199,
+        "max_x": 107,
+        "min_G": 0.040201005025,
+        "max_G": 0.07476635514,
+        "method": "direct",
+        "a": 100,
+        "k": 8,
+        "formula_ratio": 0.929906542056,
+        "formula_matches": true
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108
+        ],
+        "ratio": 0.921296296296,
+        "min_x": 199,
+        "max_x": 108,
+        "min_G": 0.045226130653,
+        "max_G": 0.083333333333,
+        "method": "direct",
+        "a": 100,
+        "k": 9,
+        "formula_ratio": 0.921296296296,
+        "formula_matches": true
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109
+        ],
+        "ratio": 0.912844036697,
+        "min_x": 199,
+        "max_x": 109,
+        "min_G": 0.050251256281,
+        "max_G": 0.091743119266,
+        "method": "direct",
+        "a": 100,
+        "k": 10,
+        "formula_ratio": 0.912844036697,
+        "formula_matches": true
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "ratio": 0.895177993528,
+        "min_x": 199,
+        "max_x": 1030,
+        "min_G": 0.075376884422,
+        "max_G": 0.134951456311,
+        "method": "direct",
+        "a": 100,
+        "k": 15,
+        "formula_ratio": 0.872807017544,
+        "formula_matches": false
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "ratio": 0.864005602241,
+        "min_x": 199,
+        "max_x": 1071,
+        "min_G": 0.100502512563,
+        "max_G": 0.173669467787,
+        "method": "direct",
+        "a": 100,
+        "k": 20,
+        "formula_ratio": 0.836134453782,
+        "formula_matches": false
+      }
+    ]
+  },
+  "task2": {
+    "pairwise_coprime_plus_one": {
+      "ratio_vs_k": "decreasing",
+      "min_x_minus_M": [
+        168,
+        198,
+        112,
+        112,
+        14898,
+        24138,
+        2473200
+      ],
+      "max_x_minus_M": [
+        5,
+        9,
+        345,
+        807,
+        1421,
+        265535,
+        555207
+      ],
+      "closed_form": "no exact closed form detected; numerically the ratio drops rapidly toward 1/2 as k grows"
+    },
+    "scaled_primes": {
+      "ratio_vs_P_at_fixed_t": {
+        "2": "decreasing",
+        "3": "decreasing",
+        "4": "decreasing"
+      },
+      "min_x_pattern": {
+        "2": [
+          227,
+          227,
+          399,
+          567
+        ],
+        "3": [
+          221,
+          341,
+          599,
+          851
+        ],
+        "4": [
+          295,
+          455,
+          799,
+          1135
+        ]
+      },
+      "max_x_pattern": {
+        "2": [
+          32,
+          56,
+          72,
+          92
+        ],
+        "3": [
+          48,
+          84,
+          108,
+          138
+        ],
+        "4": [
+          64,
+          112,
+          144,
+          184
+        ]
+      },
+      "closed_form": "scaling identity F_{tB}(x)=F_B(floor(x/t)) is exact, but no closed form for the resulting window ratio emerged"
+    },
+    "coatom": {
+      "ratio_vs_r": "decreasing",
+      "min_x_minus_M": [
+        134,
+        1484,
+        19304,
+        328184,
+        6235514
+      ],
+      "max_x_minus_M": [
+        45,
+        525,
+        6825,
+        116025,
+        3464175
+      ],
+      "closed_form": "no exact closed form detected; the ratio falls quickly with r"
+    },
+    "consecutive_a100": {
+      "ratio_vs_k": "decreasing",
+      "min_x_pattern": [
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199,
+        199
+      ],
+      "max_x_pattern": [
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        1030,
+        1071
+      ],
+      "closed_form": "for a=100 the clean formula ratio = (2a-1)/(2(a+k-1)) matches exactly through k=10, then breaks at k=15 and k=20"
+    },
+    "task3_consecutive_summary": {
+      "formula_matches_k_le_5_for_all_requested_a": true,
+      "k6_note": "k=6 still matches for a = 100, 200, 500, but fails at a = 50",
+      "limit_for_fixed_k": "whenever the consecutive-tuple formula holds, the limit is 1 for fixed k",
+      "limit_depends_on_k": "the observed limiting value is 1 in the small-k regime; only the leading 1/a correction depends on k"
+    }
+  },
+  "task3": {
+    "definition_note": "All reported ratios use the prompt's explicit window definition max_{x in [M,10M]} G(x)/(2 min_{x in [M,10M]} G(x)). For k=2 this differs from the global adjacent-pair formula quoted in the prompt.",
+    "rows": [
+      {
+        "A": [
+          50,
+          51
+        ],
+        "ratio": 0.970588235294,
+        "min_x": 99,
+        "max_x": 51,
+        "min_G": 0.020202020202,
+        "max_G": 0.039215686275,
+        "method": "direct",
+        "a": 50,
+        "k": 2,
+        "formula_ratio": 0.970588235294,
+        "formula_matches": true,
+        "pair_global_formula": 0.9801
+      },
+      {
+        "A": [
+          50,
+          51,
+          52
+        ],
+        "ratio": 0.951923076923,
+        "min_x": 99,
+        "max_x": 52,
+        "min_G": 0.030303030303,
+        "max_G": 0.057692307692,
+        "method": "direct",
+        "a": 50,
+        "k": 3,
+        "formula_ratio": 0.951923076923,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          50,
+          51,
+          52,
+          53
+        ],
+        "ratio": 0.933962264151,
+        "min_x": 99,
+        "max_x": 53,
+        "min_G": 0.040404040404,
+        "max_G": 0.075471698113,
+        "method": "direct",
+        "a": 50,
+        "k": 4,
+        "formula_ratio": 0.933962264151,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          50,
+          51,
+          52,
+          53,
+          54
+        ],
+        "ratio": 0.916666666667,
+        "min_x": 99,
+        "max_x": 54,
+        "min_G": 0.050505050505,
+        "max_G": 0.092592592593,
+        "method": "direct",
+        "a": 50,
+        "k": 5,
+        "formula_ratio": 0.916666666667,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "ratio": 0.9075,
+        "min_x": 99,
+        "max_x": 500,
+        "min_G": 0.060606060606,
+        "max_G": 0.11,
+        "method": "direct",
+        "a": 50,
+        "k": 6,
+        "formula_ratio": 0.9,
+        "formula_matches": false,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          100,
+          101
+        ],
+        "ratio": 0.985148514851,
+        "min_x": 199,
+        "max_x": 101,
+        "min_G": 0.010050251256,
+        "max_G": 0.019801980198,
+        "method": "direct",
+        "a": 100,
+        "k": 2,
+        "formula_ratio": 0.985148514851,
+        "formula_matches": true,
+        "pair_global_formula": 0.990025
+      },
+      {
+        "A": [
+          100,
+          101,
+          102
+        ],
+        "ratio": 0.975490196078,
+        "min_x": 199,
+        "max_x": 102,
+        "min_G": 0.015075376884,
+        "max_G": 0.029411764706,
+        "method": "direct",
+        "a": 100,
+        "k": 3,
+        "formula_ratio": 0.975490196078,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103
+        ],
+        "ratio": 0.966019417476,
+        "min_x": 199,
+        "max_x": 103,
+        "min_G": 0.020100502513,
+        "max_G": 0.038834951456,
+        "method": "direct",
+        "a": 100,
+        "k": 4,
+        "formula_ratio": 0.966019417476,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ],
+        "ratio": 0.956730769231,
+        "min_x": 199,
+        "max_x": 104,
+        "min_G": 0.025125628141,
+        "max_G": 0.048076923077,
+        "method": "direct",
+        "a": 100,
+        "k": 5,
+        "formula_ratio": 0.956730769231,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105
+        ],
+        "ratio": 0.947619047619,
+        "min_x": 199,
+        "max_x": 105,
+        "min_G": 0.030150753769,
+        "max_G": 0.057142857143,
+        "method": "direct",
+        "a": 100,
+        "k": 6,
+        "formula_ratio": 0.947619047619,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          200,
+          201
+        ],
+        "ratio": 0.992537313433,
+        "min_x": 399,
+        "max_x": 201,
+        "min_G": 0.005012531328,
+        "max_G": 0.009950248756,
+        "method": "direct",
+        "a": 200,
+        "k": 2,
+        "formula_ratio": 0.992537313433,
+        "formula_matches": true,
+        "pair_global_formula": 0.99500625
+      },
+      {
+        "A": [
+          200,
+          201,
+          202
+        ],
+        "ratio": 0.987623762376,
+        "min_x": 399,
+        "max_x": 202,
+        "min_G": 0.007518796992,
+        "max_G": 0.014851485149,
+        "method": "direct",
+        "a": 200,
+        "k": 3,
+        "formula_ratio": 0.987623762376,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          200,
+          201,
+          202,
+          203
+        ],
+        "ratio": 0.98275862069,
+        "min_x": 399,
+        "max_x": 203,
+        "min_G": 0.010025062657,
+        "max_G": 0.019704433498,
+        "method": "direct",
+        "a": 200,
+        "k": 4,
+        "formula_ratio": 0.98275862069,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          200,
+          201,
+          202,
+          203,
+          204
+        ],
+        "ratio": 0.977941176471,
+        "min_x": 399,
+        "max_x": 204,
+        "min_G": 0.012531328321,
+        "max_G": 0.024509803922,
+        "method": "direct",
+        "a": 200,
+        "k": 5,
+        "formula_ratio": 0.977941176471,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          200,
+          201,
+          202,
+          203,
+          204,
+          205
+        ],
+        "ratio": 0.973170731707,
+        "min_x": 399,
+        "max_x": 205,
+        "min_G": 0.015037593985,
+        "max_G": 0.029268292683,
+        "method": "direct",
+        "a": 200,
+        "k": 6,
+        "formula_ratio": 0.973170731707,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          500,
+          501
+        ],
+        "ratio": 0.997005988024,
+        "min_x": 999,
+        "max_x": 501,
+        "min_G": 0.002002002002,
+        "max_G": 0.003992015968,
+        "method": "direct",
+        "a": 500,
+        "k": 2,
+        "formula_ratio": 0.997005988024,
+        "formula_matches": true,
+        "pair_global_formula": 0.998001
+      },
+      {
+        "A": [
+          500,
+          501,
+          502
+        ],
+        "ratio": 0.995019920319,
+        "min_x": 999,
+        "max_x": 502,
+        "min_G": 0.003003003003,
+        "max_G": 0.005976095618,
+        "method": "direct",
+        "a": 500,
+        "k": 3,
+        "formula_ratio": 0.995019920319,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          500,
+          501,
+          502,
+          503
+        ],
+        "ratio": 0.993041749503,
+        "min_x": 999,
+        "max_x": 503,
+        "min_G": 0.004004004004,
+        "max_G": 0.007952286282,
+        "method": "direct",
+        "a": 500,
+        "k": 4,
+        "formula_ratio": 0.993041749503,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          500,
+          501,
+          502,
+          503,
+          504
+        ],
+        "ratio": 0.991071428571,
+        "min_x": 999,
+        "max_x": 504,
+        "min_G": 0.005005005005,
+        "max_G": 0.009920634921,
+        "method": "direct",
+        "a": 500,
+        "k": 5,
+        "formula_ratio": 0.991071428571,
+        "formula_matches": true,
+        "pair_global_formula": null
+      },
+      {
+        "A": [
+          500,
+          501,
+          502,
+          503,
+          504,
+          505
+        ],
+        "ratio": 0.989108910891,
+        "min_x": 999,
+        "max_x": 505,
+        "min_G": 0.006006006006,
+        "max_G": 0.011881188119,
+        "method": "direct",
+        "a": 500,
+        "k": 6,
+        "formula_ratio": 0.989108910891,
+        "formula_matches": true,
+        "pair_global_formula": null
+      }
+    ]
+  },
+  "task4": {
+    "searched_set_count": 128921,
+    "perturbation_search": {
+      "rounds": [
+        {
+          "round": 1,
+          "evaluated_new_sets": 1480,
+          "best_ratio_before": 0.997,
+          "best_ratio_after": 0.997
+        },
+        {
+          "round": 2,
+          "evaluated_new_sets": 0,
+          "best_ratio_before": 0.997,
+          "best_ratio_after": 0.997
+        },
+        {
+          "round": 3,
+          "evaluated_new_sets": 0,
+          "best_ratio_before": 0.997,
+          "best_ratio_after": 0.997
+        },
+        {
+          "round": 4,
+          "evaluated_new_sets": 0,
+          "best_ratio_before": 0.997,
+          "best_ratio_after": 0.997
+        }
+      ]
+    },
+    "literal_top10": [
+      {
+        "A": [
+          500
+        ],
+        "ratio": 0.999,
+        "min_x": 999,
+        "max_x": 500,
+        "min_G": 0.001001001001,
+        "max_G": 0.002,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          499
+        ],
+        "ratio": 0.998997995992,
+        "min_x": 997,
+        "max_x": 499,
+        "min_G": 0.001003009027,
+        "max_G": 0.002004008016,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          498
+        ],
+        "ratio": 0.998995983936,
+        "min_x": 995,
+        "max_x": 498,
+        "min_G": 0.001005025126,
+        "max_G": 0.002008032129,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          497
+        ],
+        "ratio": 0.998993963783,
+        "min_x": 993,
+        "max_x": 497,
+        "min_G": 0.001007049345,
+        "max_G": 0.002012072435,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          496
+        ],
+        "ratio": 0.998991935484,
+        "min_x": 991,
+        "max_x": 496,
+        "min_G": 0.001009081736,
+        "max_G": 0.002016129032,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          495
+        ],
+        "ratio": 0.99898989899,
+        "min_x": 989,
+        "max_x": 495,
+        "min_G": 0.001011122346,
+        "max_G": 0.00202020202,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          494
+        ],
+        "ratio": 0.998987854251,
+        "min_x": 987,
+        "max_x": 494,
+        "min_G": 0.001013171226,
+        "max_G": 0.002024291498,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          493
+        ],
+        "ratio": 0.998985801217,
+        "min_x": 985,
+        "max_x": 493,
+        "min_G": 0.001015228426,
+        "max_G": 0.002028397566,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          492
+        ],
+        "ratio": 0.998983739837,
+        "min_x": 983,
+        "max_x": 492,
+        "min_G": 0.001017293998,
+        "max_G": 0.002032520325,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      },
+      {
+        "A": [
+          491
+        ],
+        "ratio": 0.998981670061,
+        "min_x": 981,
+        "max_x": 491,
+        "min_G": 0.001019367992,
+        "max_G": 0.002036659878,
+        "method": "direct",
+        "sources": [
+          "singleton"
+        ]
+      }
+    ],
+    "nontrivial_top10": [
+      {
+        "A": [
+          499,
+          500
+        ],
+        "ratio": 0.997,
+        "min_x": 997,
+        "max_x": 500,
+        "min_G": 0.002006018054,
+        "max_G": 0.004,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          498,
+          499
+        ],
+        "ratio": 0.996993987976,
+        "min_x": 995,
+        "max_x": 499,
+        "min_G": 0.002010050251,
+        "max_G": 0.004008016032,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          497,
+          498
+        ],
+        "ratio": 0.996987951807,
+        "min_x": 993,
+        "max_x": 498,
+        "min_G": 0.002014098691,
+        "max_G": 0.004016064257,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          496,
+          497
+        ],
+        "ratio": 0.996981891348,
+        "min_x": 991,
+        "max_x": 497,
+        "min_G": 0.002018163471,
+        "max_G": 0.004024144869,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          495,
+          496
+        ],
+        "ratio": 0.996975806452,
+        "min_x": 989,
+        "max_x": 496,
+        "min_G": 0.002022244692,
+        "max_G": 0.004032258065,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          494,
+          495
+        ],
+        "ratio": 0.99696969697,
+        "min_x": 987,
+        "max_x": 495,
+        "min_G": 0.002026342452,
+        "max_G": 0.00404040404,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          493,
+          494
+        ],
+        "ratio": 0.996963562753,
+        "min_x": 985,
+        "max_x": 494,
+        "min_G": 0.002030456853,
+        "max_G": 0.004048582996,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          492,
+          493
+        ],
+        "ratio": 0.996957403651,
+        "min_x": 983,
+        "max_x": 493,
+        "min_G": 0.002034587996,
+        "max_G": 0.004056795132,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          491,
+          492
+        ],
+        "ratio": 0.996951219512,
+        "min_x": 981,
+        "max_x": 492,
+        "min_G": 0.002038735984,
+        "max_G": 0.00406504065,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      },
+      {
+        "A": [
+          490,
+          491
+        ],
+        "ratio": 0.996945010183,
+        "min_x": 979,
+        "max_x": 491,
+        "min_G": 0.002042900919,
+        "max_G": 0.004073319756,
+        "method": "direct",
+        "sources": [
+          "consecutive",
+          "pair-exhaustive"
+        ]
+      }
+    ],
+    "best_literal": {
+      "A": [
+        500
+      ],
+      "ratio": 0.999,
+      "min_x": 999,
+      "max_x": 500,
+      "min_G": 0.001001001001,
+      "max_G": 0.002,
+      "method": "direct",
+      "sources": [
+        "singleton"
+      ]
+    },
+    "best_nontrivial": {
+      "A": [
+        499,
+        500
+      ],
+      "ratio": 0.997,
+      "min_x": 997,
+      "max_x": 500,
+      "min_G": 0.002006018054,
+      "max_G": 0.004,
+      "method": "direct",
+      "sources": [
+        "consecutive",
+        "pair-exhaustive"
+      ]
+    },
+    "any_ratio_ge_1_literal": false,
+    "any_ratio_ge_1_nontrivial": false
+  },
+  "task5": {
+    "literal_winner": {
+      "A": [
+        500
+      ],
+      "gap_to_1": 0.001,
+      "pattern": "singleton",
+      "asymptotic_family": {
+        "formula": "ratio({a}) = (2a-1)/(2a)",
+        "rows": [
+          {
+            "a": 500,
+            "ratio": 0.999
+          },
+          {
+            "a": 1000,
+            "ratio": 0.9995
+          },
+          {
+            "a": 2000,
+            "ratio": 0.99975
+          },
+          {
+            "a": 5000,
+            "ratio": 0.9999
+          }
+        ],
+        "limit": 1.0
+      },
+      "parameter_a": 500
+    },
+    "nontrivial_winner": {
+      "A": [
+        499,
+        500
+      ],
+      "gap_to_1": 0.003,
+      "pattern": "adjacent pair",
+      "asymptotic_family": {
+        "formula": "ratio({a,a+1}) = (2a-1)/(2(a+1)) on the prompt's [M,10M] window",
+        "rows": [
+          {
+            "a": 100,
+            "ratio": 0.985148514851
+          },
+          {
+            "a": 200,
+            "ratio": 0.992537313433
+          },
+          {
+            "a": 500,
+            "ratio": 0.997005988024
+          },
+          {
+            "a": 1000,
+            "ratio": 0.998501498501
+          },
+          {
+            "a": 2000,
+            "ratio": 0.999250374813
+          },
+          {
+            "a": 5000,
+            "ratio": 0.999700059988
+          }
+        ],
+        "limit": 1.0
+      },
+      "parameter_a": 499
+    }
+  }
+}

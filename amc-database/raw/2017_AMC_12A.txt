@@ -1,0 +1,1240 @@
+=== Problem 1 ===
+Pablo buys popsicles for his friends. The store sells single popsicles for \$1 each, 3-popsicle boxes for \$2, and 5-popsicle boxes for \$3. What is the greatest number of popsicles that Pablo can buy with \$8?
+
+Choices: {'A': '\\ 8', 'B': '\\ 11', 'C': '\\ 12', 'D': '\\ 13', 'E': '\\ 15</math>'}
+Answer: 
+
+--- Solution 1 ---
+We can take two 5-popsicle boxes and one 3-popsicle box with <math>\$8</math>. Note that it is optimal since one popsicle is at the rate of <math>\$1</math> per popsicle, three popsicles at <math>\$\frac{2}{3}</math> per popsicle and finally, five popsicles at <math>\$\frac{3}{5}</math> per popsicle, hence we want as many <math>\$3</math> sets as possible. It is clear that the above is the optimal method. <math>\boxed{\textbf{D}}</math>.
+
+
+=== Problem 2 ===
+The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ 4', 'D': '\\ 8', 'E': '\\ 12</math>'}
+Answer: 
+
+--- Solution 1 ---
+Let <math>x, y</math> be our two numbers. Then <math>x+y = 4xy</math>. Thus, 
+
+<math> \frac{1}{x} + \frac{1}{y} = \frac{x+y}{xy} = 4</math>. 
+
+<math>\boxed{ \textbf{C}}</math>.
+
+--- Solution 2 ---
+We can let <math>x=y.</math> Then, we have that <math>2x=4x^2</math> making <math>x=\tfrac{1}{2}.</math> The answer is <math>\dfrac{2}{x}=4=\boxed{ \textbf{C}}.</math> ~ [[User:Solasky|Solasky]] ([[User talk:Solasky|talk]])
+
+
+=== Problem 3 ===
+Ms. Carroll promised that anyone who got all the multiple choice questions right on the upcoming exam would receive an A on the exam. Which one of these statements necessarily follows logically?
+
+Choices: {'A': '\\ \\text{ If Lewis did not receive an A, then he got all of the multiple choice questions wrong.} \\\\', 'B': '\\ \\text{ If Lewis did not receive an A, then he got at least one of the multiple choice questions wrong.} \\\\', 'C': '\\ \\text{ If Lewis got at least one of the multiple choice questions wrong, then he did not receive an A.} \\\\', 'D': '\\ \\text{ If Lewis received an A, then he got all of the multiple choice questions right.} \\\\', 'E': '\\ \\text{ If Lewis received an A, then he got at least one of the multiple choice questions right.} </math>'}
+Answer: B
+
+--- Solution 1 ---
+Taking the contrapositive of the statement "if he got all of them right, he got an A" yields "if he didn't get an A, he didn't get all of them right", yielding the answer <math>\boxed{\textbf{(B)}}</math>.
+
+
+=== Problem 4 ===
+Jerry and Silvia wanted to go from the southwest corner of a square field to the northeast corner. Jerry walked due east and then due north to reach the goal, but Silvia headed northeast and reached the goal walking in a straight line. Which of the following is closest to how much shorter Silvia's trip was, compared to Jerry's trip?
+
+Choices: {'A': '\\ 30\\%', 'B': '\\ 40\\%', 'C': '\\ 50\\%', 'D': '\\ 60\\%', 'E': '\\ 70\\%</math>'}
+Answer: 
+
+--- Solution 1 ---
+Let <math>j</math> represent how far Jerry walked, and <math>s</math> represent how far Sylvia walked. Since the field is a square, and Jerry walked two sides of it, while Silvia walked the diagonal, we can simply define the side of the square field to be one, and find the distances they walked. Since Jerry walked two sides, 
+<math>j = 2</math>
+Since Silvia walked the diagonal, she walked the hypotenuse of a <math>45</math>, <math>45</math>, <math>90</math> triangle with leg length <math>1</math>. Thus,
+<math>s = \sqrt{2} = 1.414...</math>
+We can then take 
+<math>\frac{j-s}{j} \approx \frac{2 - 1.4}{2} = 0.3 = 30\%</math>
+<math>\boxed{ \textbf{A}}</math>.
+
+
+=== Problem 5 ===
+At a gathering of
+
+Choices: {'A': '\\ 240', 'B': '\\ 245', 'C': '\\ 290', 'D': '\\ 480', 'E': '\\ 490</math>'}
+Answer: B
+
+--- Solution 1 ---
+All of the handshakes will involve at least one person from the <math>10</math> who knows no one.  Label these ten people <math>A</math>, <math>B</math>, <math>C</math>, <math>D</math>, <math>E</math>, <math>F</math>, <math>G</math>, <math>H</math>, <math>I</math>, <math>J</math>.
+
+Person <math>A</math> from the group of <math>10</math> will initiate a handshake with everyone else (<math>29</math> people).  Person <math>B</math> initiates <math>28</math> handshakes plus the one already counted from person <math>A</math>.  Person <math>C</math> initiates <math>27</math> new handshakes plus the two we already counted.  This continues until person <math>J</math> initiates <math>20</math> handshakes plus the nine we already counted from <math>A</math> ... <math>I</math>.
+
+<math>29+28+27+26+25+24+23+22+21+20 = \boxed{(B)=\ 245}</math>
+
+--- Solution 2 ---
+Let the group of people who all know each other be <math>A</math>, and let the group of people who know no one be <math>B</math>. Handshakes occur between each pair <math>(a,b)</math> such that <math>a\in A</math> and <math>b\in B</math>, and between each pair of members in <math>B</math>. Thus, the answer is
+
+<math>|A||B|+{|B|\choose 2} = 20\cdot 10+{10\choose 2} = 200+45 = \boxed{(B)=\ 245}</math>
+
+--- Solution 3 ---
+The number of handshakes will be equivalent to the difference between the number of total interactions and the number of hugs, which are  <math>{30\choose 2}</math> and <math>{20\choose 2}</math>, respectively. Thus, the total amount of handshakes  is <math>{30\choose 2} - {20\choose 2} = 435 - 190= \boxed{(B)=\ 245}  </math>
+
+--- Solution 4 ---
+Each of the <math>10</math> people who do not know anybody will shake hands with all <math>20</math> of the people who do know each other. This means there will be at least <math>20 * 10 = 200</math> handshakes. In addition, those <math>10</math> people will also shake hands with each other, giving us another <math>9+8+7+6+5+4+3+2+1 = 45</math> handshakes. Therefore, there is a total of <math>200+45 = \boxed{(B) = 245}</math> handshakes.
+
+--- Solution 5 ---
+Every one of the <math>20</math> people who know each other will shake hands with each of the <math>10</math> people who know no one, so there are <math>20\cdot 10 = 200</math> handshakes here. Each of the <math>10</math> people will also shake hands with each other, so there will be <math>{10 \choose 2}</math> <math>=45</math> handshakes for this case. In total, there are <math>200+45 = \boxed{\textbf{(B)}\ 245}</math> handshakes. 
+
+-Benedict T (countmath1)
+
+
+=== Problem 6 ===
+Joy has
+
+Choices: {'A': '\\ 16', 'B': '\\ 17', 'C': '\\ 18', 'D': '\\ 19', 'E': '\\ 20</math>'}
+Answer: B
+
+--- Solution 1 ---
+The quadrilateral cannot be a straight line. Thus, the fourth side must be longer than <math>15 - (3 + 7) = 5</math> and shorter than <math>15 + 3 + 7 = 25</math>. This means Joy can use the <math>19</math> possible integer rod lengths that fall into <math>[6, 24]</math>. However, she has already used the rods of length <math>7</math> cm and <math>15</math> cm so the answer is <math>19 - 2 = 17</math> <math>\boxed{\textbf{(B)}}</math>
+
+
+=== Problem 7 ===
+Define a function on the positive integers recursively by
+
+Choices: {'A': '\\ 2017', 'B': '\\ 2018', 'C': '\\ 4034', 'D': '\\ 4035', 'E': '\\ 4036</math>'}
+Answer: B
+
+--- Solution 1 ---
+This is a recursive function, which means the function refers back to itself to calculate subsequent terms. To solve this, we must identify the base case, <math>f(1)=2</math>. We also know that when <math>n</math> is odd, <math>f(n)=f(n-2)+2</math>. Thus we know that <math>f(2017)=f(2015)+2</math>. Thus we know that n will always be odd in the recursion of <math>f(2017)</math>, and we add <math>2</math> each recursive cycle, which there are <math>1008</math> of. Thus the answer is <math>1008*2+2=2018</math>, which is answer
+<math>\boxed{\textbf{(B)}}</math>.
+Note that when you write out a few numbers, you find that <math>f(n)=n+1</math> for any <math>n</math>, so <math>f(2017)=2018</math>
+
+
+=== Problem 8 ===
+The region consisting of all points in three-dimensional space within
+
+Choices: {'A': '\\ 6', 'B': '\\ 12', 'C': '\\ 18', 'D': '\\ 20', 'E': '\\ 24</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let the length <math>AB</math> be <math>L</math>. Then, we see that the region is just the union of the cylinder with central axis <math>\overline{AB}</math> and radius <math>3</math> and the two hemispheres connected to each face of the cylinder (also with radius <math>3</math>). Thus the volume is
+
+<math>9\pi L + \frac{4}{3}\pi(3)^3 = 9\pi L + 36\pi ( = 216\pi)</math>
+
+<math>9\pi L = 180\pi</math>
+
+<math>L = \boxed{(D)=\ 20}</math>
+
+
+=== Problem 9 ===
+Let
+
+Choices: {'A': '\\ \\text{a single point}', 'B': '\\ \\text{two intersecting lines} \\\\', 'C': '\\ \\text{three lines whose pairwise intersections are three distinct points} \\\\', 'D': '\\ \\text{a triangle}', 'E': '\\ \\text{three rays with a common point} </math>'}
+Answer: 
+
+--- Solution 1 ---
+If the two equal values are <math>3</math> and <math>x+2</math>, then <math>x=1</math>. Also, <math>y-4\leqslant 3</math> because <math>3</math> is the common value. Solving for <math>y</math>, we get <math>y\leqslant 7</math>. Therefore the portion of the line <math>x=1</math> where <math>y\leqslant 7</math> is part of <math>S</math>. This is a ray with an endpoint of <math>(1, 7)</math>. 
+
+Similar to the process above, we assume that the two equal values are <math>3</math> and <math>y-4</math>. Solving the equation <math>3=y-4</math> then <math>y=7</math>. Also, <math>x+2\leqslant 3</math> because <math>3</math> is the common value. Solving for <math>x</math>, we get <math>x\leqslant 1</math>. Therefore the portion of the line <math>y=7</math> where <math>x\leqslant 1</math> is also part of <math>S</math>. This is another ray with the same endpoint as the above ray: <math>(1, 7)</math>. (Note that the only answer choice which has rays in it is answer choice <math>E</math>.)
+
+If <math>x+2</math> and <math>y-4</math> are the two equal values, then <math>x+2=y-4</math>. Solving the equation for <math>y</math>, we get <math>y=x+6</math>. Also <math>3\leqslant y-4</math> because <math>y-4</math> is one way to express the common value (using <math>x-2</math> as the common value works as well). Solving for <math>y</math>, we get <math>y\geqslant 7</math>. Therefore the portion of the line <math>y=x+6</math> where <math>y\geqslant 7</math> is part of <math>S</math> like the other two rays. The lowest possible value that can be achieved is also <math>(1, 7)</math>.
+
+Since <math>S</math> is made up of three rays with common endpoint <math>(1, 7)</math>, the answer is <math>\boxed{E}</math>.
+
+Solution by TheMathematicsTiger7
+
+
+=== Problem 10 ===
+Chloé chooses a real number uniformly at random from the interval
+
+Choices: {'A': '\\ \\dfrac{1}{2}', 'B': '\\ \\dfrac{2}{3}', 'C': '\\ \\dfrac{3}{4}', 'D': '\\ \\dfrac{5}{6}', 'E': '\\ \\dfrac{7}{8} </math>'}
+Answer: 
+
+--- Solution 1 ---
+Suppose Laurent's number is in the interval <math> [ 0, 2017 ] </math>. Then, by symmetry, the probability of Laurent's number being greater is <math>\dfrac{1}{2}</math>. Next, suppose Laurent's number is in the interval <math> [ 2017, 4034 ] </math>. Then Laurent's number will be greater with a probability of <math>1</math>. Since each case is equally likely, the probability of Laurent's number being greater is <math>\dfrac{1 + \frac{1}{2}}{2} = \dfrac{3}{4}</math>, so the answer is <math> \boxed{C}</math>.
+
+--- Solution 2 ---
+Let <math>x</math> be the number chosen randomly by Chloe. Because it is given that the number Chloe chooses is in the interval <math> [ 0, 2017 ] </math>, <math> 0 \leq x \leq 2017</math>.  Next, let <math>y</math>  be the number chosen randomly by Laurent. Because it is given that the number Laurent chooses is in the interval <math> [ 0, 4034 ] </math>, <math> 0 \leq y \leq 4034</math>. Since we are looking for when Laurent's number is greater than Chloe's we write the equation <math>y > x</math>. When these three inequalities are graphed the area captured by <math> 0 \leq x \leq 2017</math> and <math> 0 \leq y \leq 4034</math> represents all the possibilities, forming a rectangle <math>2017</math> in width and <math>4034</math> in height. Thus making its area <math>4034 * 2017</math>. The area captured by <math> 0 \leq x \leq 2017</math>, <math> 0 \leq y \leq 4034</math>, and <math>y > x</math> represents the possibilities of Laurent winning, forming a trapezoid with a height <math>2017</math> in length and bases <math>4034</math> and <math>2017</math> length, thus making an area <math>2017 *\frac{4034+2017}{2}</math>.   The simplified quotient of these two areas is the probability Laurent's number is larger than Chloe's, which is <math> \boxed {C=\frac{3}{4}}</math>.
+
+
+=== Problem 11 ===
+Claire adds the degree measures of the interior angles of a convex polygon and arrives at a sum of
+
+Choices: {'A': '\\ 37', 'B': '\\ 63', 'C': '\\ 117', 'D': '\\ 143', 'E': '\\ 163</math>'}
+Answer: D
+
+--- Solution 1 ---
+We know that the sum of the interior angles of the polygon is a multiple of <math>180</math>. Note that <math>\left\lceil\frac{2017}{180}\right\rceil = 12</math> and <math>180\cdot 12 = 2160</math>, so the angle Claire forgot is <math>\equiv 2160-2017=143\mod 180</math>. Since the polygon is convex, the angle is <math>\leq 180</math>, so the answer is <math>\boxed{(D)\ =\ 143}</math>.
+
+--- Solution 2 ---
+Because the sum of the interior angles is a multiple of <math>180</math>, we know that the sum of the angles in a polygon is <math>0 \mod 9</math>. <math>2017</math> is congruent to <math>1 \mod 9</math>, so the answer has to be <math>-1 \mod 9</math>. The only answer that is congruent to <math>-1 \mod 9</math> is <math>143</math>.
+-harsha12345
+
+
+=== Problem 12 ===
+There are
+
+Choices: {'A': '\\ 2', 'B': '\\ 3', 'C': '\\ 4', 'D': '\\ 5', 'E': '\\ 6</math>'}
+Answer: B
+
+--- Solution 1 ---
+We know that Horse <math>k</math> will be at the starting point after <math>n</math> minutes if <math>k|n</math>. Thus, we are looking for the smallest <math>n</math> such that at least <math>5</math> of the numbers <math>\{1,2,\cdots,10\}</math> divide <math>n</math>. Thus, <math>n</math> has at least <math>5</math> positive integer divisors.
+
+We quickly see that <math>12</math> is the smallest number with at least <math>5</math> positive integer divisors and that <math>1,2,3,4,6</math> are each numbers of horses. Thus, our answer is <math>1+2=\boxed{\textbf{(B) } 3}</math>.
+
+--- Solution 2 ---
+In order for at least <math>5</math> horses to finish simultaneously, the current time needs to have at least <math>5</math> divisors. Thus the number must have a form of either <math>p^4</math> or <math>p^2*q</math>, which have <math>5</math> and <math>6</math> factors respectively. The smallest number of the first form is <math>16</math>, and the smallest number of the second form is <math>12.</math>  Thus, our answer is <math>1+2=\boxed{\textbf{(B) } 3}</math>.
+
+
+=== Problem 13 ===
+Driving at a constant speed, Sharon usually takes
+
+Choices: {'A': '\\ 132', 'B': '\\ 135', 'C': '\\ 138', 'D': '\\ 141', 'E': '\\ 144</math>'}
+Answer: 
+
+--- Solution 1 ---
+Let total distance be <math>x</math>. Her speed in miles per minute is <math>\tfrac{x}{180}</math>. Then, the distance that she drove before hitting the snowstorm is <math>\tfrac{x}{3}</math>. Her speed in snowstorm is reduced <math>20</math> miles per hour, or <math>\tfrac{1}{3}</math> miles per minute. Knowing it took her <math>276</math> minutes in total, we create equation: 
+<cmath>\text{Time before Storm}\, + \, \text{Time after Storm} = \text{Total Time} \Longrightarrow</cmath>
+<cmath>\frac{\text{Distance before Storm}}{\text{Speed before Storm}} + \frac{\text{Distance in Storm}}{\text{Speed in Storm}} = \text{Total Time} \Longrightarrow \frac{\tfrac{x}{3}}{\tfrac{x}{180}} + \frac{\tfrac{2x}{3}}{\tfrac{x}{180} - \tfrac{1}{3}} = 276</cmath>
+
+Solving equation, we get <math>x=135</math> <math>\Longrightarrow \boxed{B}</math>.
+
+
+=== Problem 14 ===
+Alice refuses to sit next to either Bob or Carla. Derek refuses to sit next to Eric. How many ways are there for the five of them to sit in a row of
+
+Choices: {'A': '\\ 12', 'B': '\\ 16', 'C': '\\ 28', 'D': '\\ 32', 'E': '\\ 40</math>'}
+Answer: C
+
+--- Solution 1 ---
+Alice may sit in the center chair, in an end chair, or in a next-to-end chair. Suppose she sits in the center chair. The 2nd and 4th chairs (next to her) must be occupied by Derek and Eric, in either order, leaving the end chairs for Bob and Carla in either order; this yields <math>2! * 2! = 4</math> ways to seat the group.
+
+Next, suppose Alice sits in one of the end chairs. Then the chair beside her will be occupied by either Derek or Eric. The center chair must be occupied by Bob or Carla, leaving the last two people to fill the last two chairs in either order. <math>2</math> ways to seat Alice times <math>2</math> ways to fill the next chair times <math>2</math> ways to fill the center chair times <math>2</math> ways to fill the last two chairs yields <math>2 * 2 * 2 * 2 = 16</math> ways to fill the chairs.
+
+Finally, suppose Alice sits in the second or fourth chair. Then the chairs next to her must be occupied by Derek and Eric in either order, and the other two chairs must be occupied by Bob and Carla in either order. This yields <math>2 * 2 * 2 = 8</math> ways to fill the chairs. 
+
+In total, there are <math>4 + 8 + 16</math> ways to fill the chairs, so the answer is <math>\boxed{\bold{(C)}\ 28}</math>.
+
+
+=== Problem 15 ===
+Let
+
+Choices: {'A': '\\ (0,1)', 'B': '\\ (1, 2)', 'C': '\\ (2, 3)', 'D': '\\ (3, 4)', 'E': '\\ (4,5)</math>'}
+Answer: D
+
+--- Solution 1 ---
+We must first get an idea of what <math>f(x)</math> looks like:
+
+Between <math>0</math> and <math>1</math>, <math>f(x)</math> starts at <math>2</math> and increases; clearly there is no zero here.
+
+Between <math>1</math> and <math>\frac{\pi}{2}</math>, <math>f(x)</math> starts at a positive number and increases to <math>\infty</math>; there is no zero here either.
+
+Between <math>\frac{\pi}{2}</math> and 3, <math>f(x)</math> starts at <math>-\infty</math> and increases to some negative number; there is no zero here either.
+
+Between <math>3</math> and <math>\pi</math>, <math>f(x)</math> starts at some negative number and increases to -2; there is no zero here either.
+
+Between <math>\pi</math> and <math>\pi+\frac{\pi}{4} < 4</math>, <math>f(x)</math> starts at -2 and increases to <math>-\frac{\sqrt2}{2} + 2\left(-\frac{\sqrt2}{2}\right) + 3\left(1\right)=3\left(1-\frac{\sqrt2}{2}\right)>0</math>. There is a zero here by the Intermediate Value Theorem. Therefore, the answer is <math>\boxed{\textbf{(D)}}</math>.
+
+--- Solution 2 ---
+If you quickly take a moment to sketch the graphs of the three functions, you will see that between <math>0</math> and <math>\frac{\pi}{2}</math> everything is positive, while the positive number created by the sin does not outweigh the negative by the cos and tan function. Upon further examination, it is clear that the positive the tan function creates will balance the other two functions, and thus the first solution is a little bit after <math>\pi</math>, which is around <math>3.14</math>. Hence the answer is <math>\boxed{\textbf{(D)}}</math>.
+
+Solution by roadchicken
+<asy>
+Label f; 
+f.p=fontsize(6); 
+xaxis(-5,5,Ticks(f, 1.0)); 
+yaxis(-8,8,Ticks(f, 2.0));
+real f(real x)
+{
+return sin(x);
+}
+draw(graph(f, -5,5));
+real g(real x)
+{
+return 2*cos(x);
+}
+draw(graph(g, -5,5));
+real h(real x)
+{
+return 3*tan(x);
+}
+draw(graph(h, -1.2,1.2));
+draw(graph(h, 1.94, 4.34));
+draw(graph(h, -4.34, -1.94));
+</asy>
+
+--- Solution 3 ---
+Denote <math>D_{f}</math> as the domain of <math>f(x).</math> Obviously <math>D_{f}=\left \{x|x\neq \frac{(2k+1)\pi}{2}  \right \} .</math>
+
+<math>f^{'}(x)=\cos x-2\sin x+3\sec^{2}x=\sqrt{5}\cos(x+\phi)+3\sec^{2}x > 0 </math> for all <math>x</math> in sub-intervals of <math> D_{f}.</math>
+
+When <math>x\in (0,\frac{\pi}{2}), f(0)=2,  \lim_{x \to \frac{\pi}{2}^{-} }f(x)=+\infty  .</math> Hence <math>f(x)>0</math> in this interval.
+
+When <math>x\in (\frac{\pi}{2},\pi),\lim_{x \to \frac{\pi}{2}^{+} }f(x)=-\infty, f(\pi)=-2.</math> Hence <math>f(x)<0</math> in this interval.
+
+When <math>x\in (\pi,\frac{3\pi}{2}),f(\pi)=-2<0.</math> 
+
+Notice that <math>\frac{5\pi}{4}<\frac{3.15*5}{4}<4<\frac{3\pi}{2}, f(\frac{5\pi}{4})=3-\frac{3\sqrt{2}}{2}>0 .</math> Hence there must be a root located in the interval <math>(3,4).</math> Choose <math>\boxed{\textbf{(D)}}</math>.
+
+
+=== Problem 16 ===
+In the figure below, semicircles with centers at
+
+Choices: {'A': '\\ \\frac{3}{4}', 'B': '\\ \\frac{6}{7}', 'C': '\\ \\frac{\\sqrt{3}}{2}', 'D': '\\ \\frac{5}{8}\\sqrt{2}', 'E': '\\ \\frac{11}{12} </math>'}
+Answer: B
+
+--- Solution 1 ---
+Connect the centers of the tangent circles! (call the center of the large circle <math>C</math>)
+
+<asy>
+size(5cm);
+draw(arc((0,0),3,0,180));
+draw(arc((2,0),1,0,180));
+draw(arc((-1,0),2,0,180));
+draw((-3,0)--(3,0));
+pair P = (9/7,12/7);
+pair A = (-1,0);
+pair C = (0,0);
+pair B = (2,0);
+draw(circle(P,6/7));
+dot((-1,0)); dot((2,0)); dot((0,0)); dot(P);
+draw((-1,0)--P);
+draw((2,0)--P);
+draw((0,0)--(9/5,12/5));
+label("$A$",A,SW);
+label("$C$",C,S);
+label("$B$",B,SE);
+label("$P$",P,N);
+</asy>
+
+Notice that we don't even need the circles anymore; thus, draw triangle <math>\Delta ABP</math> with cevian <math>PC</math>:
+
+<asy>
+size(5cm);
+draw((-1,0)--(2,0));
+pair P = (9/7,12/7);
+pair A = (-1,0);
+pair C = (0,0);
+pair B = (2,0);
+dot((-1,0)); dot((2,0)); dot((0,0)); dot(P);
+draw((-1,0)--P);
+draw((2,0)--P);
+draw((0,0)--P);
+label("$A$",A,SW);
+label("$C$",C,S);
+label("$B$",B,SE);
+label("$P$",P,N);
+</asy>
+
+and use [[Stewart's Theorem]]:
+
+<cmath>AB \cdot AC \cdot BC + AB \cdot {CP}^2 = AC \cdot {BP}^2 + BC \cdot {AP}^2</cmath>
+
+From what we learned from the tangent circles, we have <math>AB = 3</math>, <math>AC = 1</math>, <math>BC = 2</math>, <math>AP = 2 + r</math>, <math>BP = 1 + r</math>, and <math>CP = 3 - r</math>, where <math>r</math> is the radius of the circle centered at <math>P</math> that we seek.
+
+Thus:
+
+<cmath>3 \cdot 1 \cdot 2 + 3 {\left(3-r\right)}^2 = 1 {\left(1+r\right)}^2 + 2 {\left(2+r\right)}^2</cmath>
+<cmath>6 + 3\left(9 - 6r + r^2\right) = \left(1 + 2r + r^2\right) + 2\left(4 + 4r + r^2\right)</cmath>
+<cmath>33 - 18r + 3r^2 = 9 + 10r + 3r^2</cmath>
+<cmath>28r = 24</cmath>
+<cmath>r = \boxed{\frac{6}{7}} \to \boxed{\textbf{(B)}}</cmath>
+
+--- Solution 2 ---
+<asy>
+size(5cm);
+draw(arc((0,0),3,0,180));
+draw(arc((2,0),1,0,180));
+draw(arc((-1,0),2,0,180));
+draw((-3,0)--(3,0));
+pair P = (9/7,12/7);
+draw(circle(P,6/7));
+dot((-1,0)); dot((2,0)); dot((0,0)); dot(P);
+draw((-1,0)--P);
+draw((2,0)--P);
+draw((0,0)--(9/5,12/5));
+</asy>
+
+Like the solution above, connecting the centers of the circles results in triangle <math>\Delta ABP</math> with cevian <math>PC</math>. The two triangles <math>\Delta APC</math> and <math>\Delta ABP</math> share angle <math>A</math>, which means we can use [[Law of Cosines]] to set up a system of 2 equations that solve for <math>r</math> respectively:
+
+<math>(2 + r)^2 + 1^2 - 2(2 + r)(1)\cos A = (3 - r)^2</math> (notice that the diameter of the largest semicircle is 6, so its radius is 3 and <math>PC</math> is 3 - r)
+
+<math>(2 + r)^2 + 3^2 - 2(2 + r)(3)\cos A = (r+1)^2</math>
+
+We can eliminate the extra variable of angle <math>A</math> by multiplying the first equation by 3 and subtracting the second from it. Then, expand to find <math>r</math>:
+
+<math>2(r^2 + 4r + 4) - 6 = 2r^2 - 20r + 26</math>
+
+<math>8r + 2 = -20r + 26</math>
+
+<math>28r = 24</math>, so <math>r</math> = <math>6/7</math> <math>\boxed{(B)}</math>
+
+--- Solution 3 ---
+<asy>
+size(7.5cm);
+draw(arc((0,0),3,0,180));
+draw(arc((2,0),1,0,180));
+draw(arc((-1,0),2,0,180));
+draw((-3,0)--(3,0));
+pair P = (9/7,12/7);
+pair A = (-1,0);
+pair C = (0,0);
+pair B = (2,0);
+draw(circle(P,6/7));
+dot((-1,0)); dot((2,0)); dot((0,0)); dot(P);
+draw((-1,0)--P);
+draw((-2.45,12/7)--P);
+draw((2.45,12/7)--P);
+draw((2,0)--P);
+draw((0,0)--(9/5,12/5));
+label("$A$",A,SW);
+label("$C$",C,S);
+label("$B$",B,SE);
+label("$P$",P,N);
+</asy>
+
+Let <math>C</math> be the center of the largest semicircle and <math>r</math> be the radius of <math>\circ P</math>. We know that <math>AC = 1</math>,  <math>CB = 2</math>,  <math>AP = r + 2</math>,  <math>BP = r + 1</math>, and  <math>CP = 3 - r</math>. Notice that <math>\Delta ACP</math> and <math>\Delta CBP</math> are bounded by the same two parallel lines, so these triangles have the same heights. Because the bases of these two triangles (that have the same heights) differ by a factor of 2, the area of <math>\Delta CBP</math> must be twice that of <math>\Delta ACP</math>, since the area of a triangle is <math>\frac{1}{2}  \text{Base} \cdot \text{Height}</math>.
+
+Again, we don't need to look at the circle and the semicircles anymore; just focus on the triangles.
+
+<asy>
+size(7.5cm);
+pair A = (-1,0);
+pair C = (0,0);
+pair B = (2,0);
+draw((-1,0)--(2,0));
+pair P = (9/7,12/7);
+dot((-1,0)); dot((2,0)); dot((0,0)); dot(P);
+draw((-1,0)--P);
+draw((2,0)--P);
+draw((0,0)--P);
+label("$A$",A,SW);
+label("$C$",C,S);
+label("$B$",B,SE);
+label("$P$",P,N);
+</asy>
+
+Let <math>A_1</math> equal to the area of <math>\Delta ACP</math> and <math>A_2</math> equal to the area of <math>\Delta CBP</math>.
+[[Heron's Formula]] states that the area of an triangle with sides <math>a</math> <math>b</math> and <math>c</math> is
+<cmath>\sqrt{s(s-a)(s-b)(s-c)}</cmath>
+where <math>s</math>, or the semiperimeter, is <math>\frac{a+b+c}{2}</math>
+
+The semiperimeter <math>s_1</math> of <math>\Delta ACP</math> is <cmath>\frac{[(r + 2) + (3 - r) + 1]}{2} = \frac{6}{2} = 3</cmath>
+Use Heron's Formula to obtain
+<cmath>A_1 = \sqrt{3(2)(3-2-r)(3-3+r)} = \sqrt{6r(1-r)} = \sqrt{6r-6r^2}</cmath>
+
+Using Heron's Formula again, find the area of <math>\Delta CBP</math> with sides <math>r+1</math>, <math>2</math>, and <math>3-r</math>.
+
+<cmath>s_2 = \frac{(r + 1) + 2 + (3 - r)}{2} = 3</cmath>
+<cmath>A_2 = \sqrt{3(3-2)(3-1-r)(3-3+r)} = \sqrt{3(2r-r^2)} = \sqrt{6r-3r^2}</cmath>
+
+
+Now,
+<cmath>2 \cdot A_1 = A_2</cmath>
+<cmath>2\sqrt{6r-6r^2} = \sqrt{6r-3r^2}</cmath>
+<cmath>4(6r-6r^2) = 6r-3r^2</cmath>
+<cmath>24r-24r^2 = 6r-3r^2</cmath>
+<cmath>18r = 21r^2</cmath>
+<cmath>r = \frac{18}{21} = \boxed{\frac{6}{7}} \to \boxed{\textbf{(B)}}</cmath>
+
+--- Solution 4 ---
+Let <math>C</math>, the center of the large semicircle, to be at <math>(0, 0)</math>, and <math>P</math> to be at <math>(h, k)</math>.
+
+<asy>
+size(5cm);
+draw(arc((0,0),3,0,180));
+draw(arc((2,0),1,0,180));
+draw(arc((-1,0),2,0,180));
+draw((-3,0)--(3,0));
+pair P = (9/7,12/7);
+pair A = (-1,0);
+pair C = (0,0);
+pair B = (2,0);
+draw(circle(P,6/7));
+dot((-1,0)); dot((2,0)); dot((0,0)); dot(P);
+draw((-1,0)--P);
+draw((2,0)--P);
+draw((0,0)--(9/5,12/5));
+label("$A$",A,SW);
+label("$C$",C,S);
+label("$B$",B,SE);
+label("$P$",P,N);
+</asy>
+
+Therefore <math>A</math> is at <math>(-1, 0)</math> and <math>B</math> is at <math>(2, 0)</math>.
+
+Let the radius of circle <math>P</math> be <math>r</math>.
+
+Using Distance Formula, we get the following system of three equations:
+
+<cmath>h^2+k^2=(3-r)^2, (h+1)^2+k^2=(r+2)^2, (h-2)^2+k^2=(r+1)^2</cmath>
+
+By simplifying, we get 
+
+<cmath>h^2+k^2=r^2-6r+9, h^2+2r+1+k^2=r^2+4r+4, h^2-4r+4+k^2=r^2+2r+1</cmath>
+
+By subtracting the first equation from the second and third equations, we get
+
+<cmath>8r=-4h+12, 10r=2h+6</cmath>
+
+which simplifies to
+
+<cmath>2r=3-h, 5r=h+3</cmath>
+
+When we add these two equations, we get
+
+<cmath>7r=6</cmath>
+
+So <cmath>r = \boxed{\frac{6}{7}} \to \boxed{\textbf{(B)}}</cmath> <math>w^5</math>
+
+--- Solution 5 ---
+Let <math>\Omega</math> be a circle with radius of <math>6</math> and centered at the left corner of the semi-circle (O) with radius <math>3</math>. Extend the three semicircles to full circles. Label the resulting four circles as shown in the diagram:
+
+<asy>
+size(5cm);
+path circle1 = Circle((3, 0), 3);
+path circle2 = Circle((2, 0), 2);
+path circle3 = Circle((5, 0), 1);
+pair P = (2,0)+(2+6/7)*dir(36.86989);
+path circle4 = Circle(P, 6/7);
+draw(circle1);
+draw(circle2);
+draw(circle3);
+draw(circle4);
+draw((0, 0)--(6, 0));
+dot((2,0)); dot((5,0)); dot(P); dot((3, 0)); dot(origin);
+path inversion = arc((0,0), 6, -30, 30);
+draw(inversion, dashed);
+label("$\Omega$", (6, 0) * dir(30), NE);
+label("$C_1$", (3, 0), N);
+label("$C_2$", (2, 0), N);
+label("$C_3$", (5, 0), N);
+label("$C_4$", P, N);
+label("$O$", origin, W);
+</asy>
+
+<math>C_1</math> has radius <math>3</math>, <math>C_2</math> has radius <math>2</math>, and <math>C_3</math> has radius <math>1</math>. We want to find the radius of <math>C_4</math>.
+
+We now invert the four circles. <math>C_1</math> inverts to a line. Given that one point is on <math>\Omega</math>, and all points on <math>\Omega</math> invert to themselves, we know that the resulting line must intersect that intersection point. <math>C_2</math> also inverts to a line. <math>C_2</math> has radius <math>4</math>, and since <math>\Omega</math> has radius of <math>6</math>, the resulting line must be <math>\frac{36}{4} = 9</math> units away from <math>O</math>. <math>C_3</math> inverts to a circle. By observing the diagram, we note that <math>C_3'</math>'s center must be on <math>\overline{OC_3}</math> and be between the two inverted lines, because <math>C_3</math> is tangent to <math>C_1</math> and <math>C_2</math> (Remeber that tangency still holds in inverted diagrams). Therefore, we must have a circle with radius <math>\frac{3}{2}</math> that is <math>\frac{15}{2}</math> units from <math>O</math>. 
+
+<asy>
+size(10cm);
+path circle1 = Circle((3, 0), 3);
+path circle2 = Circle((2, 0), 2);
+path circle3 = Circle((5, 0), 1);
+pair P = (2,0)+(2+6/7)*dir(36.86989);
+path circle4 = Circle(P, 6/7);
+draw(circle1);
+draw(circle2);
+draw(circle3);
+draw(circle4);
+draw((0, 0)--(9, 0));
+dot((2,0)); dot((5,0)); dot(P); dot((3, 0)); dot(origin);
+path inversion = arc((0,0), 6, -30, 30);
+draw(inversion, dashed);
+label("$\Omega$", (6, 0) * dir(30), NW);
+label("$C_1$", (3, 0), N);
+label("$C_2$", (2, 0), N);
+label("$C_3$", (5, 0), N);
+label("$C_4$", P, N);
+label("$O$", origin, W);
+draw((6, 3)--(6, -3));
+draw((9, 3)--(9, -3));
+draw(Circle((15/2, 0), 3/2));
+label("$C_1'$", (6, 3), N);
+label("$C_2'$", (9, 3), N);
+label("$C_3'$", (15/2, 0), N);
+dot((15/2, 0));
+</asy>
+
+Now, we invert <math>C_4</math>. Note that <math>C_4</math> is tangent to the three other original circles. So, in the inversion, <math>C_4'</math> must be tangent to the two lines ''and'' <math>C_3'</math>. It is then quickly seen that <math>C_3'</math> and <math>C_4'</math> have the same radius: <math>\frac{3}{2}</math>.
+
+Now, we can determine the radius of <math>C_4</math> using the formula <math>r = \frac{k^2 \cdot r'}{\overline{OC_2}^2 - r'^2}</math>. <math>k^2 = 36</math>, and <math>r' = \frac{3}{2}</math>. <math>\overline{OC}</math> is just the distance from the center of the inverted circle to the center of inversion. The center of <math>C_4'</math> is <math>3</math> units above the center of <math>C_3'</math>. Since <math>\overline{OC_3'} = \frac{15}{2}</math>, we use Pythagoras to learn that <math>\overline{OC_4'}^2 = \left(\frac{15}{2}\right)^2 + 9</math>. We do not take the square root because our relationship formula takes <math>\overline{OC_4'}^2</math>. 
+
+Therefore, we have: <cmath>r = \frac{36 \cdot \frac{3}{2}}{\left(\frac{15}{2}\right)^2 - \left(\frac{3}{2}\right)^2 + 9} = \frac{54}{9 \cdot 6 + 9} = \frac{6}{7} = \boxed{B}.</cmath>
+
+Here is the diagram with <math>C_4'</math>.
+
+<asy>
+size(10cm);
+path circle1 = Circle((3, 0), 3);
+path circle2 = Circle((2, 0), 2);
+path circle3 = Circle((5, 0), 1);
+pair P = (2,0)+(2+6/7)*dir(36.86989);
+path circle4 = Circle(P, 6/7);
+draw(circle1);
+draw(circle2);
+draw(circle3);
+draw(circle4);
+draw((0, 0)--(9, 0));
+dot((2,0)); dot((5,0)); dot(P); dot((3, 0)); dot(origin);
+path inversion = arc((0,0), 6, -45, 45);
+draw(inversion, dashed);
+label("$\Omega$", (6, 0) * dir(45), NW);
+label("$C_1$", (3, 0), N);
+label("$C_2$", (2, 0), N);
+label("$C_3$", (5, 0), N);
+label("$C_4$", P, N);
+label("$O$", origin, W);
+draw((6, 4.5)--(6, -3));
+draw((9, 4.5)--(9, -3));
+draw(Circle((15/2, 0), 3/2));
+label("$C_1'$", (6, -3), SW);
+label("$C_2'$", (9, -3), SE);
+label("$C_3'$", (15/2, 0), NE);
+dot((15/2, 0));
+draw(Circle((15/2, 3), 3/2));
+dot((15/2, 3));
+label("$C_4'$", (15/2, 3), N);
+draw((15/2, 0)--(15/2, 3));
+draw(rightanglemark(origin, (15/2, 0), (15/2, 3)));
+</asy>
+
+--- Solution 6 ---
+Draw the other half of the largest circle and proceed with [[Descartes' Circle Formula]].
+
+The curvatures of circles <math>A,B,C</math>, and <math>P</math> are <math>\frac{1}{2}, 1, -\frac{1}{3},</math> and <math>\frac{1}{r}</math>, respectively.
+
+
+=== Problem 17 ===
+There are
+
+Choices: {'A': '\\ 0', 'B': '\\ 4', 'C': '\\ 6', 'D': '\\ 12', 'E': '\\ 24</math>'}
+Answer: D
+
+--- Solution 1 ---
+Note that these <math>z</math> such that <math>z^{24}=1</math> are <math>e^{\frac{ni\pi}{12}}</math> for integer <math>0\leq n<24</math>. So
+
+<math>z^6=e^{\frac{ni\pi}{2}}</math>
+
+This is real if <math>\frac{n}{2}\in \mathbb{Z} \Leftrightarrow (n</math> is even<math>)</math>. Thus, the answer is the number of even <math>0\leq n<24</math> which is <math>\boxed{(D)=\ 12}</math>.
+
+--- Solution 2 ---
+<math>z = \sqrt[24]{1} = 1^{\frac{1}{24}}</math>
+
+By [[Euler's identity]], <math>1 = e^{0 \times i} = \cos (0+2k\pi) + i \sin(0+2k\pi)</math>, where <math>k</math> is an integer.
+
+Using [[De Moivre's Theorem]], we have <math>z = 1^{\frac{1}{24}} = {\cos (\frac{k\pi}{12}) + i \sin (\frac{k\pi}{12})}</math>, where <math>0 \leq k<24</math> that produce <math>24</math> unique results.
+
+Using De Moivre's Theorem again, we have <math>z^6 = {\cos (\frac{k\pi}{2}) + i \sin (\frac{k\pi}{2})}</math>
+
+For <math>z^6</math> to be real, <math>\sin(\frac{k\pi}{2})</math> has to equal <math>0</math> to negate the imaginary component. This occurs whenever <math>\frac{k\pi}{2}</math> is an integer multiple of <math>\pi</math>, requiring that <math>k</math> is even. There are exactly <math>\boxed{12}</math> even values of <math>k</math> on the interval <math>0 \leq k<24</math>, so the answer is <math>\boxed{(D)}</math>.
+
+--- Solution 3 ---
+From the start, recall from the Fundamental Theorem of Algebra that <math>z^{24} = 1</math> must have <math>24</math> solutions (and these must be distinct since the equation factors into <math>0 = (z-1)(z^{23} + z^{22} + z^{21}... + z + 1)</math>), or notice that the question is simply referring to the 24th roots of unity, of which we know there must be <math>24</math>. Notice that <math>1 = z^{24} = (z^6)^4</math>, so for any solution <math>z</math>, <math>z^6</math> will be one of the 4th roots of unity (<math>1</math>, <math>i</math>, <math>-1</math>, or <math>-i</math>). Then <math>6</math> solutions <math>z</math> will satisfy <math>z^6 = 1</math>, <math>6</math> will satisfy <math>z^6 = -1</math> (and this is further justified by knowledge of the 6th roots of unity), so there must be <math>\boxed{(D) \: 12}</math> such <math>z</math>.
+
+--- Solution 4 ---
+Let <math>a\in\mathbb{R}</math> and <math>a = z^6.</math> We have
+<cmath>a^4 = 1 \implies a = 1,-1.</cmath>
+<math>z^6 = \pm 1</math> has 6 solutions for <math>1</math> and <math>-1</math> respectively, so <math>6+6=\boxed{(D)\ 12}.</math> <cmath> </cmath>
+-svyn
+
+--- Solution 5 ---
+Because <math>z^{24} = 1</math>, we can plot these points on the Argand plane as a regular 24-gon, as shown: 
+[[Image:2017AMC12aP17.png]]
+These are a graphical representation of all 24 values of z, as stated in the problem. Now, we want <math>z^6</math> to be real. The only 2 cases where this happens are if <math>z^6 = 1</math> or <math>z^6 = -1</math>. Squaring both sides for the latter equation, we get <math>z^{12}=1</math>, which, if one were to square root it, would give us a system of both <math>z^6 = 1</math> and <math>z^6 = -1</math>, just as we desire. We can plot the points for <math>z^{12}=1</math> on an Argand plane again, giving us: 
+[[Image:2017AMC12aP17-p2.png]]
+We note that all of these points are also on the first Argand plane, and counting the points nets us <math>\boxed{(D)\ 12}</math> total values for <math>z</math>. <cmath> </cmath>
+-yingkai_0_ <cmath> </cmath>
+Credit to Michael Andrejkovics for providing the GeoGebra widget used to make these diagrams!
+
+
+=== Problem 18 ===
+Let
+
+Choices: {'A': '\\ 1', 'B': '\\ 3', 'C': '\\ 12', 'D': '\\ 1239', 'E': '\\ 1265</math>'}
+Answer: D
+
+--- Solution 1 ---
+Note that <math>n\equiv S(n)\bmod 9</math>, so <math>S(n+1)-S(n)\equiv n+1-n = 1\bmod 9</math>. So, since <math>S(n)=1274\equiv 5\bmod 9</math>, we have that <math>S(n+1)\equiv 6\bmod 9</math>. The only one of the answer choices <math>\equiv 6\bmod 9</math> is <math>\boxed{(D)=\ 1239}</math>.
+
+--- Solution 2 ---
+One possible value of <math>S(n)</math> would be <math>1275</math>, but this is not any of the choices. Therefore, we know that <math>n</math> ends in <math>9</math>, and after adding <math>1</math>, the last digit <math>9</math> carries over, turning the last digit into <math>0</math>. If the next digit is also a <math>9</math>, this process repeats until we get to a non-<math>9</math> digit. By the end, the sum of digits would decrease by <math>9</math> multiplied by the number of carry-overs but increase by <math>1</math> as a result of the final carrying over. Therefore, the result must be <math>9x-1</math> less than original value of <math>S(n)</math>, <math>1274</math>, where <math>x</math> is a positive integer. The only choice that satisfies this condition is <math>\boxed{1239}</math>, since <math>(1274-1239+1) \bmod 9 = 0</math>. The answer is <math>\boxed{D}</math>.
+
+--- Solution 3 ---
+Another way to solve this is to realize that if you continuously add the digits of the number <math>1274 (1 + 2 + 7 + 4 = 14, 1 + 4 = 5)</math>, we get <math>5</math>. Adding one to that, we get <math>6</math>. So, if we assess each option to see which one attains <math>6</math>, we would discover that <math>1239</math> satisfies the requirement, because <math>1 + 2 + 3 + 9 = 15</math>. <math>1 + 5 = 6</math>. The answer is <math>\boxed{D}</math>.
+
+--- Solution 4 ---
+Note that a lot of numbers can have a sum of <math>1274</math>, but what we use wishful thinking and want is some simple number <math>n</math> where it is easy to compute the sum of the digits of <math>n+1</math>. This number would consists of basically all digits <math>9</math>, since when you add <math>1</math> a lot of stuff will cancel out and end up at <math>0</math>(ex: <math>399+1=400</math>). We see that the maximum number of <math>9</math>s that can be in <math>1274</math> is <math>141</math> and we are left with a remainder of <math>5</math>, so <math>n</math> is in the form <math>99...9599...9</math>. If we add <math>1</math> to this number we will get <math>99...9600...0</math> so this the sum of the digits of <math>n+1</math> is congruent to <math>6 \mod 9</math>. The only answer choice that is equivalent to <math>6 \mod 9</math> is <math>1239</math>, so our answer is <math>\boxed{D}</math> -srisainandan6
+
+==Remark==
+
+Notice that <math>S(n+1)=S(n)+1-9k</math>, where <math>k</math> is the # of carry overs that happen
+
+
+=== Problem 19 ===
+A square with side length
+
+Choices: {'A': '\\ \\frac{12}{13}', 'B': '\\ \\frac{35}{37}', 'C': '\\ 1', 'D': '\\ \\frac{37}{35}', 'E': '\\ \\frac{13}{12}</math>'}
+Answer: 
+
+--- Solution 1 ---
+Analyze the first right triangle.
+
+<asy>
+pair A,B,C;
+pair D, e, F;
+A = (0,0);
+B = (4,0);
+C = (0,3);
+
+D = (0, 12/7);
+e = (12/7 , 12/7);
+F = (12/7, 0);
+
+draw(A--B--C--cycle);
+draw(D--e--F);
+
+label("$x$", D/2, W);
+label("$A$", A, SW);
+label("$B$", B, SE);
+label("$C$", C, N);
+label("$D$", D, W);
+label("$E$", e, NE);
+label("$F$", F, S);
+</asy>
+
+Note that <math>\triangle ABC</math> and <math>\triangle FBE</math> are similar, so <math>\frac{BF}{FE} = \frac{AB}{AC}</math>. This can be written as <math>\frac{4-x}{x}=\frac{4}{3}</math>. Solving, <math>x = \frac{12}{7}</math>.
+
+Now we analyze the second triangle.
+
+
+<asy>
+pair A,B,C;
+pair q, R, S, T;
+A = (0,0);
+B = (4,0);
+C = (0,3);
+
+q = (1.297, 0);
+R = (2.27 , 1.297);
+S = (0.973, 2.27);
+T  = (0, 0.973);
+
+draw(A--B--C--cycle);
+draw(q--R--S--T--cycle);
+
+label("$y$", (q+R)/2, NW);
+label("$A'$", A, SW);
+label("$B'$", B, SE);
+label("$C'$", C, N);
+label("$Q$", (q-(0,0.3)));
+label("$R$", R, NE);
+label("$S$", S, NE);
+label("$T$", T, W);
+</asy>
+
+Similarly, <math>\triangle A'B'C'</math> and <math>\triangle RB'Q</math> are similar, so <math>RB' = \frac{4}{3}y</math>, and <math>C'S = \frac{3}{4}y</math>. Thus, <math>C'B' = C'S + SR + RB' = \frac{4}{3}y + y + \frac{3}{4}y = 5</math>. Solving for <math>y</math>, we get <math>y = \frac{60}{37}</math>. Thus, <math>\frac{x}{y} = \frac{37}{35} \implies \boxed{\textbf{D}}</math>.
+
+
+=== Problem 20 ===
+How many ordered pairs
+
+Choices: {'A': '\\ 198', 'B': '\\ 199', 'C': '\\ 398', 'D': '\\ 399', 'E': '\\ 597</math>'}
+Answer: E
+
+--- Solution 1 ---
+By the properties of logarithms, we can rearrange the equation to read <math>x^{2017}=2017x</math> with <math>x=\log_b a</math>. If <math>x\neq 0</math>, we may divide by it and get <math>x^{2016}=2017</math>, which implies <math>x=\pm \root{2016}\of{2017}</math>. Hence, we have <math>3</math> possible values <math>x</math>, namely 
+<cmath>
+x=0,\qquad x=2017^{\frac1{2016}},\, \text{and}\quad  x=-2017^{\frac1{2016}}.
+</cmath>
+
+Since <math>\log_b a=x</math> is equivalent to <math>a=b^x</math>, each possible value <math>x</math> yields exactly <math>199</math> solutions <math>(b,a)</math>, as we can assign <math>a=b^x</math> to each <math>b=2,3,\dots,200</math>. In total, we have <math>3\cdot 199=\boxed{\textbf{(E) } 597}</math> solutions.
+
+
+=== Problem 21 ===
+A set
+
+Choices: {'A': '\\ 4', 'B': '\\ 5', 'C': '\\ 7', 'D': '\\ 9', 'E': '\\ 11</math>'}
+Answer: D
+
+--- Solution 1 ---
+At first, <math>S=\{0,10\}</math>.
+
+<cmath>\begin{tabular}{r c l c l}
+\(10x+10\) & has root & \(x=-1\) & so now & \(S=\{-1,0,10\}\) \\
+\(-x^{10}-x^9-x^8-x^7-x^6-x^5-x^4-x^3-x^2-x+10\) & has root & \(x=1\) & so now & \(S=\{-1,0,1,10\}\) \\
+\(x+10\) & has root & \(x=-10\) & so now & \(S=\{-10,-1,0,1,10\}\) \\
+\(x^3+x-10\) & has root & \(x=2\) & so now & \(S=\{-10,-1,0,1,2,10\}\) \\
+\(x+2\) & has root & \(x=-2\) & so now & \(S=\{-10,-2,-1,0,1,2,10\}\) \\
+\(2x-10\) & has root & \(x=5\) & so now & \(S=\{-10,-2,-1,0,1,2,5,10\}\) \\
+\(x+5\) & has root & \(x=-5\) & so now & \(S=\{-10,-5,-2,-1,0,1,2,5,10\}\)
+\end{tabular}</cmath>
+
+At this point, no more elements can be added to <math>S</math>. To see this, let
+
+<cmath>\begin{align*}
+a_{n}x^n + a_{n-1}x^{n-1} + ... + a_{2}x^2 + a_{1}x + a_0 &= 0 \\
+x(a_{n}x^{n-1} + a_{n-1}x^{n-2} + ... + a_{2}x + a_{1}) + a_0 &= 0 \\
+x(a_{n}x^{n-1} + a_{n-1}x^{n-2} + ... + a_{2}x + a_{1}) &= -a_0
+\end{align*}</cmath>
+
+with each <math>a_i</math> in <math>S</math>. <math>x</math> is a factor of <math>a_0</math>, and <math>a_0</math> is in <math>S</math>, so <math>x</math> has to be a factor of some element in <math>S</math>. There are no such integers left, so there can be no additional elements. <math>\{-10,-5,-2,-1,0,1,2,5,10\}</math> has <math>9</math> elements <math>\to \boxed{\textbf{(D)}}</math>
+
+
+=== Problem 22 ===
+A square is drawn in the Cartesian coordinate plane with vertices at
+
+Choices: {'A': '\\ 4', 'B': '\\ 5', 'C': '\\ 7', 'D': '\\ 15', 'E': '\\ 39</math>'}
+Answer: E
+
+--- Solution 1 ---
+We let <math>c, e,</math> and <math>m</math> be the probability of reaching a corner before an edge when starting at an "inside corner" (e.g. <math>(1, 1)</math>), an "inside edge" (e.g. <math>(1, 0)</math>), and the middle respectively.
+
+Starting in the middle, there is a <math>\frac{4}{8}</math> chance of moving to an inside edge and a <math>\frac{4}{8}</math> chance of moving to an inside corner, so
+
+<cmath>m = \frac{1}{2}e + \frac{1}{2}c.</cmath>
+
+Starting at an inside edge, there is a <math>\frac{2}{8}</math> chance of moving to another inside edge, a <math>\frac{2}{8}</math> chance of moving to an inside corner, a <math>\frac{1}{8}</math> chance of moving into the middle, and a <math>\frac{3}{8}</math> chance of reaching an outside edge and stopping. Therefore,
+
+<cmath>e = \frac{1}{4}e + \frac{1}{4}c + \frac{1}{8}m + \frac{3}{8}\cdot 0 = \frac{1}{4}e + \frac{1}{4}c + \frac{1}{8}m.</cmath>
+
+Starting at an inside corner, there is a <math>\frac{2}{8}</math> chance of moving to an inside edge, a <math>\frac{1}{8}</math> chance of moving into the middle, a <math>\frac{4}{8}</math> chance of moving to an outside edge and stopping, and finally a <math>\frac{1}{8}</math> chance of reaching that elusive outside corner. This gives
+
+<cmath>c = \frac{1}{4}e + \frac{1}{8}m + \frac{1}{2}0 + \frac{1}{8}\cdot 1 = \frac{1}{4}e + \frac{1}{8}m + \frac{1}{8}.</cmath>
+
+Solving this system of equations gives
+
+<cmath>m = \frac{4}{35},</cmath>
+<cmath>e = \frac{1}{14},</cmath>
+<cmath>c = \frac{11}{70}.</cmath>
+
+Since the particle starts at <math>(0, 0),</math> it is <math>m</math> we are looking for, so the final answer is
+
+<cmath>4 + 35 = \boxed{\textbf{(E) }39}.</cmath>
+
+==Remark (Markov Chain)==
+
+{{main|Markov Chains}}
+
+[[File:2017AMC12AP22.png|center|450px]]
+
+This problem can be modeled as an [https://en.wikipedia.org/wiki/Absorbing_Markov_chain Absorbing Markov Chain].
+
+[https://artofproblemsolving.com/wiki/index.php/2014_AMC_12B_Problems/Problem_22 2014 AMC12B Problem 22] is a similar problem that can also be solved by using an Absorbing Markov Chain.
+
+
+=== Problem 23 ===
+For certain real numbers
+
+Choices: {'A': '\\ -9009', 'B': '\\ -8008', 'C': '\\ -7007', 'D': '\\ -6006', 'E': '\\ -5005</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <math>r_1,r_2,</math> and <math>r_3</math> be the roots of <math>g(x)</math>. Let <math>r_4</math> be the additional root of <math>f(x)</math>. Then from Vieta's formulas on the quadratic term of <math>g(x)</math> and the cubic term of <math>f(x)</math>, we obtain the following:
+
+<cmath>\begin{align*}
+r_1+r_2+r_3&=-a \\ 
+r_1+r_2+r_3+r_4&=-1
+\end{align*}</cmath>
+
+Thus <math>r_4=a-1</math>.
+
+Now applying Vieta's formulas on the constant term of <math>g(x)</math>, the linear term of <math>g(x)</math>, and the linear term of <math>f(x)</math>, we obtain:
+
+<cmath>\begin{align*}
+r_1r_2r_3  & = -10\\
+r_1r_2+r_2r_3+r_3r_1 &= 1\\ 
+r_1r_2r_3+r_2r_3r_4+r_3r_4r_1+r_4r_1r_2  & = -100\\
+\end{align*}</cmath>
+
+Substituting for <math>r_1r_2r_3</math> in the bottom equation and factoring the remainder of the expression, we obtain:
+
+<cmath>-10+(r_1r_2+r_2r_3+r_3r_1)r_4=-10+r_4=-100</cmath>
+
+It follows that <math>r_4=-90</math>. But <math>r_4=a-1</math> so <math>a=-89</math>
+
+Now we can factor <math>f(x)</math> in terms of <math>g(x)</math> as
+
+<cmath>f(x)=(x-r_4)g(x)=(x+90)g(x)</cmath>
+
+Then <math>f(1)=91g(1)</math> and
+
+<cmath>g(1)=1^3-89\cdot 1^2+1+10=-77</cmath>
+
+Hence <math>f(1)=91\cdot(-77)=\boxed{\textbf{(C)}\,-7007}</math>.
+
+--- Solution 2 ---
+Since all of the roots of <math>g(x)</math> are distinct and are roots of <math>f(x)</math>, and the degree of <math>f</math> is one more than the degree of <math>g</math>, we have that 
+
+<cmath>f(x) = C(x-k)g(x)</cmath>
+
+for some number <math>k</math>. By comparing <math>x^4</math> coefficients, we see that <math>C=1</math>. Thus,
+
+<cmath>x^4+x^3+bx^2+100x+c=(x-k)(x^3+ax^2+x+10)</cmath>
+
+Expanding and equating coefficients we get that
+
+<cmath>a-k=1,1-ak=b,10-k=100,-10k=c</cmath>
+
+The third equation yields <math>k=-90</math>, and the first equation yields <math>a=-89</math>. So we have that
+
+<math>f(1)=(1+90)g(1)=91(1-89+1+10)=(91)(-77)=\boxed{\textbf{(C)}\,-7007}</math>
+
+--- Solution 3 ---
+Let the roots of <math>g(x)</math> be <math>p,q,r</math> and the roots of <math>f(x)</math> be <math>p,q,r,s</math>. Then by Vietas, <cmath>-100=pqr+pqs+prs+qrs = -10+ s(pq+pr+rs) = -10 + s,</cmath>so <math>s = -90</math>. Again by Vietas, <math>p+q+r+s = -a + s = -1 \implies a = -89</math>. Finally, <math>f(1) = (1-(-90))g(1) = \textbf{(C)}\,-7007</math>.
+
+--- Solution 4 ---
+<math>f(x)</math> must have four roots, three of which are roots of <math>g(x)</math>. Using the fact that every polynomial has a unique factorization into its roots, and since the leading coefficient of <math>f(x)</math> and <math>g(x)</math> are the same, we know that
+
+<cmath>f(x)=g(x)(x-r)</cmath>
+
+where <math>r\in\mathbb{C}</math> is the fourth root of <math>f(x)</math>. Substituting <math>g(x)</math> and expanding, we find that
+
+<cmath>\begin{align*}f(x)&=(x^3+ax^2+x+10)(x-r)\\
+&=x^4+(a-r)x^3+(1-ar)x^2+(10-r)x-10r.\end{align*}</cmath>
+
+Comparing coefficients with <math>f(x)</math>, we see that
+
+<cmath>\begin{align*}
+a-r&=1\\
+1-ar&=b\\
+10-r&=100\\
+-10r&=c.\\
+\end{align*}</cmath>
+
+(Solution 1.1 picks up here.)
+
+Let's solve for <math>a,b,c,</math> and <math>r</math>. Since <math>10-r=100</math>, <math>r=-90</math>, so <math>c=(-10)(-90)=900</math>. Since <math>a-r=1</math>, <math>a=-89</math>, and <math>b=1-ar=-8009</math>. Thus, we know that
+
+<cmath>f(x)=x^4+x^3-8009x^2+100x+900.</cmath>
+
+Taking <math>f(1)</math>, we find that
+
+<cmath>\begin{align*}
+f(1)&=1^4+1^3-8009(1)^2+100(1)+900\\
+&=1+1-8009+100+900\\
+&=\boxed{\bold{(C)}\, -7007}.\\
+\end{align*}</cmath>
+
+--- Solution 5 ---
+A faster ending to Solution 1 is as follows.
+We shall solve for only <math>a</math> and <math>r</math>. Since <math>10-r=100</math>, <math>r=-90</math>, and since <math>a-r=1</math>, <math>a=-89</math>. Then,
+<cmath>\begin{align*}
+f(1)&=(1-r)(1^3+a\cdot1^2+1+10)\\
+&=(91)(-77)\\
+&=\boxed{\bold{(C)}\, -7007}.\\
+\end{align*}</cmath>
+
+--- Solution 6 ---
+Let the term <math>q(x)</math> be the linear term that we are solving for in the equation <math>f(x)=g(x)\cdot q(x)</math>. Now, we know that <math>q(x)=mx-r</math> must have <math>m=1</math>, because only <math>x \cdot x^3=x^4</math>. In addition, we know that, by distributing, <math>10x-rx=100x</math>. Therefore, <math>r=-90</math>, and all the other variables are quickly solved for.
+
+--- Solution 7 ---
+We notice that the constant term of <math>f(x)=c</math> and the constant term in <math>g(x)=10</math>. Because <math>f(x)</math> can be factored as <math>g(x) \cdot (x- r)</math> (where <math>r</math> is the unshared root of <math>f(x)</math>, we see that using the constant term, <math>-10 \cdot r = c</math> and therefore <math>r = -\frac{c}{10}</math>.
+Now we once again write <math>f(x)</math> out in factored form: 
+
+<cmath>f(x) = g(x)\cdot (x-r) = (x^3+ax^2+x+10)\left(x+\frac{c}{10}\right)</cmath>.
+
+We can expand the expression on the right-hand side to get:
+
+<cmath>f(x) = x^4+\left(a+\frac{c}{10}\right)x^3+\left(1+\frac{ac}{10}\right)x^2+\left(10+\frac{c}{10}\right)x+c</cmath>
+
+Now we have <math>f(x) = x^4+\left(a+\frac{c}{10}\right)x^3+\left(1+\frac{ac}{10}\right)x^2+\left(10+\frac{c}{10}
+\right)x+c=x^4+x^3+bx^2+100x+c</math>.
+
+Simply looking at the coefficients for each corresponding term (knowing that they must be equal), we have the equations:
+<cmath>10+\frac{c}{10}=100 \Rightarrow c=900</cmath>
+<cmath>a+\frac{c}{10} = 1, c=900 \Rightarrow a + 90 =1 \Rightarrow a= -89</cmath>
+
+and finally,
+
+<cmath>1+\frac{ac}{10} = b = 1+\frac{-89 \cdot 900}{10} = b = -8009</cmath>.
+
+We know that <math>f(1)</math> is the sum of its coefficients, hence <math>1+1+b+100+c</math>. We substitute the values we obtained for <math>b</math> and <math>c</math> into this expression to get <math>f(1) = 1 + 1 + (-8009) + 100 + 900 = \boxed{\textbf{(C)}\,-7007}</math>.
+
+--- Solution 8 ---
+Let <math>r_1,r_2,</math> and <math>r_3</math> be the roots of <math>g(x)</math>. Let <math>r_4</math> be the additional root of <math>f(x)</math>. Then from Vieta's formulas on the quadratic term of <math>g(x)</math> and the cubic term of <math>f(x)</math>, we obtain the following:
+
+<cmath>\begin{align*}
+r_1+r_2+r_3&=-a \\ 
+r_1+r_2+r_3+r_4&=-1
+\end{align*}</cmath>
+
+Thus <math>r_4=a-1</math>.
+
+Now applying Vieta's formulas on the constant term of <math>g(x)</math>, the linear term of <math>g(x)</math>, and the linear term of <math>f(x)</math>, we obtain:
+
+<cmath>\begin{align*}
+r_1r_2r_3  & = -10\\
+r_1r_2+r_2r_3+r_3r_1 &= 1\\ 
+r_1r_2r_3+r_2r_3r_4+r_3r_4r_1+r_4r_1r_2  & = -100\\
+\end{align*}</cmath>
+
+Substituting for <math>r_1r_2r_3</math> in the bottom equation and factoring the remainder of the expression, we obtain:
+
+<cmath>-10+(r_1r_2+r_2r_3+r_3r_1)r_4=-10+r_4=-100</cmath>
+
+It follows that <math>r_4=-90</math>. But <math>r_4=a-1</math> so <math>a=-89</math>
+
+Now we can factor <math>f(x)</math> in terms of <math>g(x)</math> as
+
+<cmath>f(x)=(x-r_4)g(x)=(x+90)g(x)</cmath>
+
+Then <math>f(1)=91g(1)</math> and
+
+<cmath>g(1)=1^3-89\cdot 1^2+1+10=-77</cmath>
+
+Hence <math>f(1)=91\cdot(-77)=\boxed{\textbf{(C)}\,-7007}</math>.
+
+--- Solution 9 ---
+Let the roots of <math>g(x)</math> be <math>r_1</math>, <math>r_2</math>, and <math>r_3</math>. Let the roots of <math>f(x)</math> be <math>r_1</math>, <math>r_2</math>, <math>r_3</math>, and <math>r_4</math>. From Vieta's, we have:
+<cmath>\begin{align*}
+r_1+r_2+r_3=-a \\
+r_1+r_2+r_3+r_4=-1 \\
+r_4=a-1
+\end{align*}</cmath>
+The fourth root is <math>a-1</math>. Since <math>r_1</math>, <math>r_2</math>, and <math>r_3</math> are common roots, we have:
+<cmath>\begin{align*}
+f(x)=g(x)(x-(a-1)) \\
+f(1)=g(1)(1-(a-1)) \\
+f(1)=(a+12)(2-a) \\
+f(1)=-(a+12)(a-2) \\
+\end{align*}</cmath>
+Let <math>a-2=k</math>:
+<cmath>\begin{align*}
+f(1)=-k(k+14)
+\end{align*}</cmath>
+Note that <math>-7007=-1001\cdot(7)=-(7\cdot(11)\cdot(13))\cdot(7)=-91\cdot(77)</math>
+This gives us a pretty good guess of <math>\boxed{\textbf{(C)}\, -7007}</math>.
+
+--- Solution 10 ---
+First off, let's get rid of the <math>x^4</math> term by finding <math>h(x)=f(x)-xg(x)</math>. This polynomial consists of the difference of two polynomials with <math>3</math> common factors, so it must also have these factors. The polynomial is <math>h(x)=(1-a)x^3 + (b-1)x^2 + 90x + c</math>, and must be equal to <math>(1-a)g(x)</math>. Equating the coefficients, we get <math>3</math> equations. We will tackle the situation one equation at a time, starting the <math>x</math> terms. Looking at the coefficients, we get <math>\dfrac{90}{1-a} = 1</math>. 
+<cmath>\therefore 90=1-a.</cmath> 
+The solution to the previous is obviously <math>a=-89</math>. We can now find <math>b</math> and <math>c</math>. <math>\dfrac{b-1}{1-a} = a</math>, 
+<cmath>\therefore b-1=a(1-a)=-89\cdot90=-8010</cmath> 
+and <math>b=-8009</math>. Finally <math>\dfrac{c}{1-a} = 10</math>, 
+<cmath>\therefore c=10(1-a)=10\cdot90=900</cmath> 
+Solving the original problem, <math>f(1)=1 + 1 + b + 100 + c = 102+b+c=102+900-8009=\boxed{\textbf{©}\, -7007}</math>.
+
+--- Solution 11 ---
+Simple polynomial division is a feasible method. Even though we have variables, we can equate terms at the end of the division so that we can cancel terms. Doing the division of <math>\frac{f(x)}{g(x)}</math> eventually brings us the final step <math>(1-a)x^3 + (b-1)x^2 + 90x + c</math> minus <math>(1-a)x^3 - (a-a^2)x^2 + (1-a)x + 10(1-a)</math> after we multiply <math>f(x)</math> by <math>(1-a)</math>. Now we equate coefficients of same-degree <math>x</math> terms. This gives us <math> 10(1-a) = c, b-1 = a - a^2, 1-a = 90 \Rightarrow a = -89, c = 900, b = -8009</math>. We are interested in finding <math>f(1)</math>, which equals <math>1^4 + 1^3 -8009\cdot1^2 + 100\cdot1 + 900 = \boxed{\textbf{(C)}\,-7007}</math>.
+
+
+=== Problem 24 ===
+Quadrilateral
+
+Choices: {'A': '17', 'B': '\\frac{59 - 5\\sqrt{2}}{3}', 'C': '\\frac{91 - 12\\sqrt{3}}{4}', 'D': '\\frac{67 - 10\\sqrt{2}}{3}', 'E': '18</math>'}
+Answer: A
+
+--- Solution 1 ---
+Using the given ratios, note that <math>\frac{XY}{BD} = 1 - \frac{1}{4} - \frac{11}{36} = \frac{4}{9}.</math>
+
+By AA Similarity, <math>\triangle AXD \sim \triangle EXY</math> with a ratio of <math>\frac{DX}{XY} = \frac{9}{16}</math> and <math>\triangle ACX \sim \triangle EFX</math> with a ratio of <math>\frac{AX}{XE} = \frac{DX}{XY} = \frac{9}{16}</math>, so <math>\frac{XF}{CX} = \frac{16}{9}</math>.
+
+Now we find the length of <math>BD</math>. Because the quadrilateral is cyclic, we can simply use the Law of Cosines. <cmath>BD^2=3^2+8^2-48\cos\angle BAD=2^2+6^2-24\cos (180-\angle BAD)=2^2+6^2+24\cos\angle BAD</cmath><cmath>\rightarrow \cos\angle BAD = \frac{11}{24}</cmath><cmath>\rightarrow BD=\sqrt{51}</cmath>
+By Power of a Point, <math>CX\cdot XG = DX\cdot XB = \frac{\sqrt{51}}{4} \frac{3\sqrt{51}}{4}</math>. Thus <math>XF\cdot XG = \frac{XF}{CX} CX\cdot XG = \frac{51}{3} = \boxed{\textbf{(A)}\ 17}.</math>
+
+-solution by FRaelya
+
+--- Solution 2 ---
+We shall make use of the pairs of similar triangles present in the problem, Ptolemy's Theorem, and Power of a Point. 
+Let <math>Z</math> be the intersection of <math>AC</math> and <math>BD</math>. First, from <math>ABCD</math> being a cyclic quadrilateral, we have that <math>\triangle BCZ \sim \triangle AZD</math>, <math>\triangle BZA \sim \triangle CDZ</math>. Therefore, <math>\frac{2}{BZ} = \frac{8}{AZ}</math>, <math>\frac{6}{CZ} = \frac{3}{BZ}</math>, and <math>\frac{2}{CZ} = \frac{8}{DZ}</math>, so we have <math>BZ = \frac{1}{2}CZ</math>, <math>AZ = 2CZ</math>, and <math>DZ = 4CZ</math>. By Ptolemy's Theorem, <cmath>(AB)(CD) + (BC)(DA) = (AC)(BD) = (AZ + ZC)(BZ + ZD)</cmath> <cmath>\rightarrow 3 \cdot 6 + 2 \cdot 8 = 34 = \left(2CZ + ZC\right)\left(\frac{1}{2}CZ + 4CZ\right) = \frac{27}{2}CZ^2.</cmath> Thus, <math>CZ^2 = \frac{68}{27}</math>. Then, by Power of a Point, <math>GX \cdot XC = BX \cdot XD = \frac{3}{4} \cdot \frac{1}{4}BD^2 = \frac{3}{16} \cdot \left(\frac{9}{2}CZ\right)^2 = \frac{9 \cdot 17}{16}</math>. So, <math>XG = \frac{9 \cdot 17}{16XC}</math>.
+Next, observe that <math>\triangle ACX \sim \triangle EFX</math>, so <math>\frac{XE}{XF} = \frac{AX}{XC}</math>. Also, <math>\triangle{AXD} \sim \triangle{EXY}</math>, so <math>\frac{8}{AX} = \frac{EY}{XE}</math>. We can compute <math>EY = \frac{128}{9}</math> after noticing that <math>XY = BD - BY - DX = BD - \frac{11}{36}BD - \frac{1}{4}BD = \frac{4}{9}BD</math> and that <math>\frac{8}{DX} = \frac{32}{BD} = \frac{EY}{XY} = \frac{EY}{\frac{4}{9}BD}</math>. So, <math>\frac{8}{AX} = \frac{128}{9XE}</math>. Then, <math>\frac{XE}{AX} = \frac{XF}{XC} = \frac{16}{9} \rightarrow XF = \frac{16}{9}XC</math>. 
+
+Multiplying our equations for <math>XF</math> and <math>XG</math> yields that <math>XF \cdot XG = \frac{9 \cdot 17}{16XC} \cdot \frac{16}{9}XC = \boxed{\textbf{(A)}\ 17}.</math>
+
+--- Solution 3 ---
+Denote <math>P</math> to be the intersection between line <math>AE</math> and circle <math>O</math>. Note that <math>\angle GFE = \angle ACG = \angle APG = 180 - \angle GPE</math>, making <math>\angle GFE + \angle GDE = 180</math>. Thus, <math>PEFG</math> is a cyclic quadrilateral. Using [[Power of a Point]] on <math>X</math> gives <math>XP \cdot XE = XG \cdot XF</math>.
+
+Since <math>\triangle ADX \sim \triangle EYX</math> and <math>\triangle ACX \sim \triangle EFX</math>, <math>AX/XE = XD/YX = 9/16</math>. Using Power of a Point on <math>X</math> again, <math>(AX)(PX) = (BX)(DX)</math>. Plugging in <math>AX=9/16 XE</math> gives:
+<cmath>\dfrac{9}{16}(XE)(PX) = (BX)(DX) = \dfrac{9}{16}(FX)(GX)</cmath>
+By [[Law of Cosines]], we can find <math>BD = \sqrt{51}</math>, as in Solution 1. Now, <math>BX = 3/4 (\sqrt{51})</math> and <math>DX = 1/4 (\sqrt{51})</math>, making <math>\dfrac{9}{16}(FX)(GX) = \left( \dfrac{\sqrt{51}}{4}\right)\left( \dfrac{3\sqrt{51}}{4}\right) = \dfrac{3(51)}{16}</math>. This gives us <math>FX \cdot GX = \boxed{\textbf{(A)}\ 17}</math> as a result.
+
+-Solution by sml1809
+
+--- Solution 4 ---
+<math>\because</math> <math>AC 	\parallel EF</math>, <math>\quad \therefore</math> <math>\triangle ACX \sim \triangle EFX</math>, <math>\quad \frac{XF}{XC} = \frac{XE}{XA}</math>
+
+By Power of a Point, <math>XG \cdot XC = XD \cdot XB</math>
+
+By multiplying the <math>2</math> equations we get <math>XF \cdot XG = \frac{XE}{XA} \cdot XD \cdot XB</math>
+
+<math>\because</math> <math>YE 	\parallel AD</math>, <math>\quad \therefore</math> <math>\triangle EYX \sim \triangle ADX</math>, <math>\quad \frac{XD}{XY} = \frac{XA}{XE}, \quad XD \cdot XE = XA \cdot XY, \quad XD = \frac{XA \cdot XY}{XE}</math>
+
+By substitution, <math>XF \cdot XG = \frac{XE}{XA} \cdot \frac{XA \cdot XY}{XE} \cdot XB = XY \cdot XB = \frac{4}{9} BD \cdot \frac{3}{4} BD = \frac{BD^2}{3}</math>
+
+Let <math>a = AB</math>, <math>b = BC</math>, <math>c = CD</math>, <math>d = AD</math>, <math>p = AC</math>, and <math>q = BD</math>
+
+By Ptolemy's theorem, <math>p \cdot q = a \cdot c + b \cdot d</math>
+
+<cmath>[ABD] = \frac12 \cdot ad \cdot \sin A, \quad [BCD] = \frac12 \cdot bc \cdot \sin C = \frac12 \cdot bc \cdot \sin A</cmath>
+
+<cmath>[ABC] = \frac12 \cdot ab \cdot \sin B, \quad [ACD] = \frac12 \cdot cd \cdot \sin D = \frac12 \cdot cd \cdot \sin B</cmath>
+
+<cmath>[ABCD] = [ABD] + [BCD] = \frac12 \cdot ad \cdot \sin A + \frac12 \cdot bc \cdot \sin A = \frac12 (ad + bc) \sin A</cmath>
+
+<cmath>[ABCD] = [ABC] + [ACD] = \frac12 \cdot ab \cdot \sin B + \frac12 \cdot cd \cdot \sin B = \frac12 (ab + cd) \sin B</cmath>
+
+<cmath>\frac{ab + cd}{ad + bc} = \frac{ \sin A }{ \sin B} = \frac{ \frac{q}{2R} }{ \frac{p}{2R} } = \frac{q}{p}, \quad p = \frac{q(ad + bc)}{ab + cd}</cmath>
+
+<cmath>\frac{q(ad + bc)}{ab + cd} \cdot q = ac + bd</cmath>
+
+<cmath>BD^2 = q^2 = \frac{ (ac + bd)(ab + cd) }{ad + bc} = \frac{(3 \cdot 6 + 2 \cdot 8)(3 \cdot 2 + 6 \cdot 8)}{3 \cdot 8 + 2 \cdot 6} = 51</cmath>
+
+<cmath>XF \cdot XG = \frac{51}{3} = \boxed{\textbf{(A) } 17}</cmath>
+
+
+=== Problem 25 ===
+The vertices
+
+Choices: {'A': '\\dfrac{5\\cdot11}{3^{10}}', 'B': '\\dfrac{5^2\\cdot11}{2\\cdot3^{10}}', 'C': '\\dfrac{5\\cdot11}{3^{9}}', 'D': '\\dfrac{5\\cdot7\\cdot11}{2\\cdot3^{10}}', 'E': '\\dfrac{2^2\\cdot5\\cdot11}{3^{10}}</math>'}
+Answer: E
+
+--- Solution 1 ---
+It is possible to solve this problem using elementary counting methods. This solution proceeds by a cleaner generating function.
+
+We note that <math>\pm \sqrt{2}i</math> both lie on the imaginary axis and each of the <math>\frac{1}{\sqrt{8}}(\pm 1\pm i)</math> have length <math>\frac{1}{2}</math> and angle of odd multiples of <math>\pi/4</math>, i.e. <math>\pi/4,3\pi/4,5\pi/4,7\pi/4</math>. When we draw these 6 complex numbers out on the complex plane, we get a crystal-looking thing. Note that the total number of ways to choose 12 complex numbers is <math>6^{12}</math>. Now we count the number of good combinations.
+
+We first consider the lengths. When we multiply 12 complex numbers together, their magnitudes multiply. Suppose we have <math>n</math> of the numbers <math>\pm \sqrt{2}i</math>; then we must have <math>\left(\sqrt{2}\right)^n\cdot\left(\frac{1}{2}\right)^{12-n}=1 \Longrightarrow n=8</math>. Having <math>n=8</math> will take care of the length of the product; now we need to deal with the angle.
+
+We require <math>\sum\theta\equiv\pi \mod 2\pi</math>. Letting <math>z</math> be <math>e^{i\pi/4}</math>, we see that the angles we have available are <math>\{z^1,z^2,z^3,z^5,z^6,z^7\}</math>, where we must choose exactly 8 angles from the set <math>\{z^2,z^6\}</math> and exactly 4 from the set <math>\{z^1,z^3,z^5,z^7\}</math>. If we found a good combination where we had <math>a_i</math> of each angle <math>z^i</math>, then the amount this would contribute to our count would be <math>\binom{12}{4,8}\cdot\binom{8}{a_2,a_6}\cdot\binom{4}{a_1,a_3,a_5,a_7}</math>. We want to add these all up. We proceed by generating functions.
+
+Consider <cmath>(t_2x^2+t_6x^6)^8(t_1x^1+t_3x^3+t_5x^5+t_7x^7)^4.</cmath> The expansion will be of the form <math>\sum_i\left(\sum_{\sum a=i} \binom{8}{a_2,a_6}\binom{4}{a_1,a_3,a_5,a_7}{t_1}^{a_1}{t_2}^{a_2}{t_3}^{a_3}{t_5}^{a_5}{t_6}^{a_6}{t_7}^{a_7}x^i \right)</math>. Note that if we reduced the powers of <math>x</math> mod <math>8</math> and fished out the coefficient of <math>x^4</math> and plugged in <math>t_i=1\ \forall\,i</math> (and then multiplied by <math>\binom{12}{4,8}</math>) then we would be done. Since plugging in <math>t_i=1</math> doesn't affect the <math>x</math>'s, we do that right away. The expression then becomes <cmath>x^{20}(1+x^4)^8(1+x^2+x^4+x^6)^4=x^{20}(1+x^4)^{12}(1+x^2)^4=x^4(1+x^4)^{12}(1+x^2)^4,</cmath> where the last equality is true because we are taking the powers of <math>x</math> mod <math>8</math>. Let <math>[x^n]f(x)</math> denote the coefficient of <math>x^n</math> in <math>f(x)</math>. Note <math>[x^4] x^4(1+x^4)^{12}(1+x^2)^4=[x^0](1+x^4)^{12}(1+x^2)^4</math>. We use the roots of unity filter, which states <cmath>\text{terms of }f(x)\text{ that have exponent congruent to }k\text{ mod }n=\frac{1}{n}\sum_{m=1}^n \frac{f(z^mx)}{z^{mk}},</cmath> where <math>z=e^{i\pi/n}</math>. In our case <math>k=0</math>, so we only need to find the average of the <math>f(z^mx)</math>'s.
+<cmath>
+\begin{align*}
+z^0 &\Longrightarrow (1+x^4)^{12}(1+x^2)^4,\\
+z^1 &\Longrightarrow (1-x^4)^{12}(1+ix^2)^4,\\
+z^2 &\Longrightarrow (1+x^4)^{12}(1-x^2)^4,\\
+z^3 &\Longrightarrow (1-x^4)^{12}(1-ix^2)^4,\\
+z^4 &\Longrightarrow (1+x^4)^{12}(1+x^2)^4,\\
+z^5 &\Longrightarrow (1-x^4)^{12}(1+ix^2)^4,\\
+z^6 &\Longrightarrow (1+x^4)^{12}(1-x^2)^4,\\
+z^7 &\Longrightarrow (1-x^4)^{12}(1-ix^2)^4.
+\end{align*}
+</cmath>
+We plug in <math>x=1</math> and take the average to find the sum of all coefficients of <math>x^{\text{multiple of 8}}</math>. Plugging in <math>x=1</math> makes all of the above zero except for <math>z^0</math> and <math>z^4</math>. Averaging, we get <math>2^{14}</math>. Now the answer is simply <cmath>\frac{\binom{12}{4,8}}{6^{12}}\cdot 2^{14}=\boxed{\textbf{(E)}
+
+--- Solution 2 ---
+By changing <math>z_1</math> to <math>-z_1</math>, we can give a bijection between cases where <math>P=-1</math> and cases where <math>P=1</math>, so we'll just find the probability that <math>P=\pm 1</math> and divide by <math>2</math> in the end. Multiplying the hexagon's vertices by <math>i</math> doesn't change <math>P</math>, and switching any <math>z_j</math> with <math>-z_j</math> doesn't change the property <math>P=\pm 1</math>, so the probability that <math>P=\pm1</math> remains the same if we only select our <math>z_j</math>'s at random from
+<cmath>
+\left\{a= \sqrt 2,\quad b=\frac1{\sqrt{8}}(1+i),\quad c=\frac1{\sqrt{8}}(1-i)\right\}.
+</cmath>
+Since <math>|a|=\sqrt2</math> and <math>|b|=|c|=\frac12</math>, we must choose <math>a</math> exactly <math>8</math> times to make <math>|P|=1</math>. To ensure <math>P</math> is real, we must either choose <math>b</math> <math>4</math> times, <math>c</math> <math>4</math> times, or both <math>b</math> and <math>c</math> <math>2</math> times. This gives us a total of 
+<cmath>
+2\binom{12}{4}+\binom{12}{2}\binom{10}{2}=(12\cdot 11\cdot 10\cdot 9)\left(\frac1{12}+\frac14\right)=(2^3\cdot 3^3\cdot 5\cdot 11)\frac13
+</cmath>
+good sequences <math>z_1,\dots,z_{12}</math>, and hence the final result is
+<cmath>
+\frac12\cdot \frac{2^3\cdot 3^2\cdot 5\cdot 11}{3^{12}}=\boxed{\textbf{(E)} 
+</cmath>
+
+--- Solution 3 ---
+We use generating functions and a roots of unity filter.
+Notice that all values in <math>V</math> are eighth roots of unity multiplied by a constant.  Let <math>x</math> be a primitive eighth root of unity (<math>e^{\frac{i\pi}{4}}</math>).  The numbers in <math>V</math> are then <math>\left \{ \frac{x}{2},x^2\sqrt2,\frac{x^3}{2},\frac{x^5}{2},x^6\sqrt2,\frac{x^7}{2} \right\}</math>.  To have <math>P=-1</math>, we must have that <math>|P|=1</math>, so eight of the <math>(z_i)</math> must belong to 
+<cmath>\left \{ x^2\sqrt2,x^6\sqrt2 \right\}
+</cmath>
+and the other four must belong to 
+<cmath>
+\left \{ \frac{x}{2},\frac{x^3}{2},\frac{x^5}{2},\frac{x^7}{2} \right\}
+</cmath>
+So, we write the generating function 
+<cmath>
+\left (x^2 +x^6 \right )^8 \left (x+x^3+x^5+x^7 \right )^4
+</cmath>
+to describe the product.  Note that this assumes that the <math>(z_i)</math> that belong to <math>\left \{ x^2\sqrt2,x^6\sqrt2 \right\}</math> come first, so we will need to multiply by <math>\binom{12}{4}</math> at the end.  We now apply a roots of unity filter to find the sum of the coefficients of the exponents that are <math>4\pmod{8}</math>, or equivalently the coefficients of the powers that are multiples of <math>8</math> of the following function:
+<cmath>
+P(x)=\left (x^2 +x^6 \right )^8 \left (x+x^3+x^5+x^7 \right )^4x^4
+</cmath>
+Let <math>\zeta=e^{\frac{i\pi}{4}}</math>.  We are looking for <math>\frac{P(1)+P(\zeta)+P(\zeta^2)+P(\zeta^3)+P(\zeta^4)+P(\zeta^5)+P(\zeta^6)+P(\zeta^7)}{8}</math>.  <math>P(1)=P(-1)=2^{16}</math>, and all of the rest are equal to <math>0</math>.  So, we get an answer of <math>\frac{2^{16}+2^{16}}{8\cdot 6^{12}}=\frac{2^{14}}{6^{12}}=\frac{2^2}{3^{12}}</math>.  But wait!  We need to multiply by <math>\binom{12}{4} =\frac{12\cdot11\cdot10\cdot9}{4\cdot3\cdot2\cdot1}</math><math>=5\cdot9\cdot11</math>.  So, the answer is <math>\boxed{\text{\textbf{(E) }} \frac{2^2\cdot5\cdot11}{3^{10}} }</math>
+
+==Remark==
+
+Here is a really good post about the Roots of Unity Filter: https://artofproblemsolving.com/community/c1340h1003741_roots_of_unity_filter
+
+--- Solution 4 ---
+We can write the points in polar form <math>(r, \theta)</math> as
+<cmath>V = \left\{ \left(\sqrt{2}, \frac{\pi}{2}\right), \left(\sqrt{2}, \frac{3\pi}{2}\right), \left(\frac{1}{2}, \frac{\pi}{4}\right), \left(\frac{1}{2}, \frac{3\pi}{4}\right), \left(\frac{1}{2}, \frac{5\pi}{4}\right), \left(\frac{1}{2}, \frac{7\pi}{4}\right)\right\}.</cmath>Note that when multiplying complex numbers, the <math>r</math>'s multiply and the <math>\theta</math>'s add, and since <math>-1 = (1, \pi),</math> we need <math>8</math> complex numbers with <math>r = \sqrt{2} = 2^{0.5}</math> and <math>4</math> with <math>r = \frac{1}{2} = 2^{-1}.</math> By binomial distribution, the probability of this occurring is <math>\dbinom{12}{4} \left(\frac{1}{3}\right)^8 \left(\frac{2}{3}\right)^4.</math> For the <math>\theta</math> part, note that <math>\frac{4\theta}{\pi}</math> must be congruent to <math>4 \mod 8, </math> and by using simple symmetry, the probability of the aforementioned occurring is <math>\frac{1}{4}. </math> This is since <math>2a + 6b</math> is even for all <math>a + b =8, </math> and the number of ordered quadruples <math>(a_1, a_2, a_3, a_4)</math> such that <math>a_i \in \{1, 3, 5, 7\}</math> for all <math>1 \leq i \leq 4</math> and <math>a_1 + a_2 + a_3 + a_4 \equiv 2k \mod 8</math> is the same for all <math>1 \leq k \leq 4,</math> again by using symmetry. Thus, our probability is <cmath>\left(\frac{1}{4}\right) \left(\frac{1}{3}\right)^8 \left(\frac{2}{3}\right)^4 \dbinom{12}{4} = \frac{2^2}{3^{12}} \dbinom{12}{4} = \boxed{\textbf{(E)} 
+-fidgetboss_4000
+
+--- Solution 5 ---
+The absolute value of the first two complex numbers is <math>\sqrt{2}</math> while the absolute value of the latter four is <math>\frac12</math>. For the absolute value of the product to be <math>1</math>, we need <math>8</math> elements with absolute value <math>\sqrt{2}</math> and <math>4</math> elements with absolute value of <math>\frac12</math>.
+
+We pick <math>8</math> elements from <math>A = \left\{   \sqrt{2}i,-\sqrt{2}i\right\}</math> and <math>4</math> elements from <math>B = \left\{\frac{1}{\sqrt{8}}(1+i),\frac{1}{\sqrt{8}}(-1+i),\frac{1}{\sqrt{8}}(1-i),\frac{1}{\sqrt{8}}(-1-i) \right\}</math>. We also need to choose which <math>8</math> of <math>z_j</math> will be chosen from <math>A</math> which gives us <math>{12 \choose 8} \cdot 2^8 \cdot 4^4</math> cases. However, suppose we have chosen <math>11</math> elements and we need to choose one more element from <math>B</math>. The product of these <math>11</math> elements can have any of these values: <math>\left\{ 2\mathrm{cis}(\frac{\pi}{4}), 2\mathrm{cis}(\frac{3\pi}{4}), 2\mathrm{cis}(\frac{5\pi}{4}), 2\mathrm{cis}(\frac{7\pi}{4}), \right\}</math>. For either of these values, there is just one value of <math>z_{12} \in B</math> such that <math>P = -1</math> so we must divide by <math>4</math> which gives <math>{12 \choose 8} \cdot 2^8 \cdot 4^3</math> cases. 
+
+Because there are <math>6^{12}</math> ways to pick any <math>12</math> elements, our probability is simply <math>\frac{{12 \choose 8} \cdot 2^8 \cdot 4^3}{6^{12}} = \frac{2^2}{3^{12}} {12 \choose 8} = \boxed{\text{\textbf{(E) }} \frac{2^2\cdot5\cdot11}{3^{10}} }</math>
+
+--- Solution 6 ---
+Let <math>a = \sqrt{2}i</math>, <math>b = \frac{1}{\sqrt{8}}(1+i)</math>, <math>c = \frac{1}{\sqrt{8}}(-1+i)</math>. <math>\bar{a} = -\sqrt{2}i</math>, <math>\bar{b} = \frac{1}{\sqrt{8}}(1-i)</math>, <math>\bar{c} = \frac{1}{\sqrt{8}}(-1-i)</math>
+
+The magnitude of <math>\left\{ a, \bar{a} \right\}</math> is <math>\sqrt{2}</math>, while the magnitude of <math>\left\{ b, \bar{b}, c, \bar{c} \right\}</math> is <math>\frac12</math>. For the product's magnitude to be <math>1</math>, we need <math>8</math> elements from <math>\left\{ a, \bar{a} \right\}</math>, and <math>4</math> elements from <math>\left\{ b, \bar{b}, c, \bar{c} \right\}</math>.
+
+The product of <math>8</math> elements from <math>\left\{ a, \bar{a} \right\}</math> will be either <math>16</math> or <math>-16</math>. The product of <math>4</math> elements from <math>\left\{ b, \bar{b}, c, \bar{c} \right\}</math> will be either <math>\frac{1}{16}</math> or <math>-\frac{1}{16}</math>.
+
+<cmath>\text{Combinations of } \left\{ a, \bar{a} \right\} \text{ multiplied to 16 is} \left\{ a^8, \bar{a}^8, a^2\bar{a}^6, a^6\bar{a}^2, a^4\bar{a}^4 \right\}</cmath>
+
+<cmath>\text{Combinations of } \left\{ a, \bar{a} \right\} \text{ multiplied to -16 is} \left\{ a\bar{a}^7, a^7\bar{a}, a^5\bar{a}^3, a^3\bar{a}^5 \right\}</cmath>
+
+<cmath>\text{Combinations of } \left\{ b, \bar{b}, c, \bar{c} \right\} \text{ multiplied to } \frac{1}{16} \text{ is} \left\{ b^2\bar{b}^2, c^2\bar{c}^2, b^2c^2, \bar{b}^2\bar{c}^2, b\bar{b}c\bar{c}, b^3\bar{c}, b\bar{c}^3, \bar{b}^3c, \bar{b}c^3 \right\}</cmath>
+
+<cmath>\text{Combinations of } \left\{ b, \bar{b}, c, \bar{c} \right\} \text{ multiplied to } -\frac{1}{16} \text{ is} \left\{ b^2\bar{b}c, b\bar{b}^2\bar{c}, bc^2\bar{c}, \bar{b}c\bar{c}^2, b^4, c^4, \bar{b}^4, \bar{c}^4, b^2\bar{c}^2, \bar{b}^2c^2 \right\}</cmath>
+
+Notice that the denominator of the desired probability is <math>6^{12}</math>, therefore, the numerator of the desired probability will be the sum of the permutations of all combinations that multiply to <math>-1</math>.
+
+Multiplying combinations of <math>\left\{ a, \bar{a} \right\}</math> multiplied to <math>16</math> with combinations of <math>\left\{ b, \bar{b}, c, \bar{c} \right\}</math> multiplied to <math>-\frac{1}{16}</math> gives the desired product <math>-1</math>. Similarly, multiplying combinations of <math>\left\{ a, \bar{a} \right\}</math> multiplied to <math>-16</math> with combinations of <math>\left\{ b, \bar{b}, c, \bar{c} \right\}</math> multiplied to <math>\frac{1}{16}</math> also gives the desired product <math>-1</math>.
+
+Cases with combinations of <math>\left\{ a, \bar{a} \right\}</math> multiplied to <math>16</math> and combinations of <math>\left\{ b, \bar{b}, c, \bar{c} \right\}</math> multiplied to <math>-\frac{1}{16}</math>:
+ Case 1:
+ <math>\left\{ a^8, \bar{a}^8 \right\} \cdot \left\{ b^2\bar{b}c, b\bar{b}^2\bar{c}, bc^2\bar{c}, \bar{b}c\bar{c}^2 \right\}</math>
+ <math>\frac{12!}{8!2!} \cdot 2 \cdot 4 = \frac{12!}{8!} \cdot 4</math>
+
+ Case 2:
+ <math>\left\{ a^8, \bar{a}^8 \right\} \cdot \left\{ b^4, c^4, \bar{b}^4, \bar{c}^4 \right\}</math>
+ <math>\frac{12!}{8!4!} \cdot 2 \cdot 4 = \frac{12!}{8!} \cdot \frac13</math> 
+
+ Case 3:
+ <math>\left\{ a^8, \bar{a}^8 \right\} \cdot \left\{ b^2\bar{c}^2, \bar{b}^2c^2 \right\}</math>
+ <math>\frac{12!}{8!2!2!} \cdot 2 \cdot 2 = \frac{12!}{8!}</math> 
+
+ Case 4:
+ <math>\left\{ a^2\bar{a}^6, a^6\bar{a}^2 \right\} \cdot \left\{ b^2\bar{b}c, b\bar{b}^2\bar{c}, bc^2\bar{c}, \bar{b}c\bar{c}^2 \right\}</math>
+ <math>\frac{12!}{6!2!2!} \cdot 2 \cdot 4 = \frac{12!}{6!} \cdot 2</math>
+
+ Case 5:
+ <math>\left\{ a^2\bar{a}^6, a^6\bar{a}^2 \right\} \cdot \left\{ b^4, c^4, \bar{b}^4, \bar{c}^4 \right\}</math>
+ <math>\frac{12!}{6!2!4!} \cdot 2 \cdot 4 = \frac{12!}{6!} \cdot \frac16</math> 
+
+ Case 6:
+ <math>\left\{ a^2\bar{a}^6, a^6\bar{a}^2 \right\} \cdot \left\{ b^2\bar{c}^2, \bar{b}^2c^2 \right\}</math>
+ <math>\frac{12!}{6!2!2!2!} \cdot 2 \cdot 2 = \frac{12!}{6!} \cdot \frac12</math> 
+
+ Case 7:
+ <math>\left\{ a^4\bar{a}^4 \right\} \cdot \left\{ b^2\bar{b}c, b\bar{b}^2\bar{c}, bc^2\bar{c}, \bar{b}c\bar{c}^2 \right\}</math>
+ <math>\frac{12!}{4!4!2!} \cdot 4 = \frac{12!}{4!} \cdot \frac{1}{12}</math>
+
+ Case 8:
+ <math>\left\{ a^4\bar{a}^4 \right\} \cdot \left\{ b^4, c^4, \bar{b}^4, \bar{c}^4 \right\}</math>
+ <math>\frac{12!}{4!4!4!} \cdot 4 = \frac{12!}{4!} \cdot \frac{1}{144}</math> 
+
+ Case 9:
+ <math>\left\{ a^4\bar{a}^4 \right\} \cdot \left\{ b^2\bar{c}^2, \bar{b}^2c^2 \right\}</math>
+ <math>\frac{12!}{4!4!2!2!} \cdot 2 = \frac{12!}{4!} \cdot \frac{1}{48}</math> 
+
+Cases with combinations of <math>\left\{ a, \bar{a} \right\}</math> multiplied to <math>-16</math> and combinations of <math>\left\{ b, \bar{b}, c, \bar{c} \right\}</math> multiplied to <math>\frac{1}{16}</math>:
+ Case 10:
+ <math>\left\{ a\bar{a}^7, a^7\bar{a} \right\} \cdot \left\{ b^2\bar{b}^2, c^2\bar{c}^2, b^2c^2, \bar{b}^2\bar{c}^2 \right\}</math>
+ <math>\frac{12!}{7!2!2!} \cdot 2 \cdot 4 = \frac{12!}{7!} \cdot 2</math>
+
+ Case 11:
+ <math>\left\{ a\bar{a}^7, a^7\bar{a} \right\} \cdot \left\{ b\bar{b}c\bar{c} \right\}</math>
+ <math>\frac{12!}{7!} \cdot 2</math> 
+
+ Case 12:
+ <math>\left\{ a\bar{a}^7, a^7\bar{a} \right\} \cdot \left\{ b^3\bar{c}, b\bar{c}^3, \bar{b}^3c, \bar{b}c^3 \right\}</math>
+ <math>\frac{12!}{7!3!} \cdot 2 \cdot 4 = \frac{12!}{7!} \cdot \frac{4}{3}</math> 
+
+ Case 13:
+ <math>\left\{ a^5\bar{a}^3, a^3\bar{a}^5 \right\} \cdot \left\{ b^2\bar{b}^2, c^2\bar{c}^2, b^2c^2, \bar{b}^2\bar{c}^2 \right\}</math>
+ <math>\frac{12!}{5!3!2!2!} \cdot 2 \cdot 4 = \frac{12!}{6!} \cdot 2</math>
+
+ Case 14:
+ <math>\left\{ a^5\bar{a}^3, a^3\bar{a}^5 \right\} \cdot \left\{ b\bar{b}c\bar{c} \right\}</math>
+ <math>\frac{12!}{5!3!} \cdot 2 = \frac{12!}{6!} \cdot 2</math> 
+
+ Case 15:
+ <math>\left\{ a^5\bar{a}^3, a^3\bar{a}^5 \right\} \cdot \left\{ b^3\bar{c}, b\bar{c}^3, \bar{b}^3c, \bar{b}c^3 \right\}</math>
+ <math>\frac{12!}{5!3!3!} \cdot 2 \cdot 4 = \frac{12!}{6!} \cdot \frac{4}{3}</math> 
+
+Sum of the permutations of all combinations that multiply to <math>-1</math>:
+<cmath>\begin{align*}
+&\frac{12!}{8!} \cdot 4 + \frac{12!}{8!} \cdot \frac13 + \frac{12!}{8!} + \frac{12!}{6!} \cdot 2 + \frac{12!}{6!} \cdot \frac16 + \frac{12!}{6!} \cdot \frac12 + \frac{12!}{4!} \cdot \frac{1}{12} + \frac{12!}{4!} \cdot \frac{1}{144} + \frac{12!}{4!} \cdot \frac{1}{48} + \frac{12!}{7!} \cdot 2 + \frac{12!}{7!} \cdot 2 + \frac{12!}{7!} \cdot \frac{4}{3}\\
+&+ \frac{12!}{6!} \cdot 2 + \frac{12!}{6!} \cdot 2 + \frac{12!}{6!} \cdot \frac{4}{3} \\
+ &= \frac{12!}{7!} \left( \frac{1}{2} + \frac{1}{24} + \frac{1}{8} + 14 + \frac{7}{6} + \frac{7}{2} + \frac{35}{2} + \frac{35}{24} + \frac{35}{8} + 2 + 2 + \frac{4}{3} + 14 + 14 + \frac{28}{3} \right)\\
+&= \frac{12!}{7!} \cdot \frac{256}{3}
+\end{align*}</cmath>
+
+<cmath>\frac{ \frac{12!}{7!} \cdot \frac{256}{3} }{ 6^{12} } = \boxed{\textbf{(E)}
+
+

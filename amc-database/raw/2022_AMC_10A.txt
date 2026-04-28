@@ -1,0 +1,2039 @@
+=== Problem 1 ===
+What is the value of <cmath>3+\frac{1}{3+\frac{1}{3+\frac13}}?</cmath>
+
+Choices: {'A': '\\ \\frac{31}{10}', 'B': '\\ \\frac{49}{15}', 'C': '\\ \\frac{33}{10}', 'D': '\\ \\frac{109}{33}', 'E': '\\ \\frac{15}{4}</math>'}
+Answer: D
+
+--- Solution 1 ---
+We have 
+<cmath>\begin{align*}
+3+\frac{1}{3+\frac{1}{3+\frac13}} &= 3+\frac{1}{3+\frac{1}{\left(\frac{10}{3}\right)}} \\
+&= 3+\frac{1}{3+\frac{3}{10}} \\
+&= 3+\frac{1}{\left(\frac{33}{10}\right)} \\
+&= 3+\frac{10}{33} \\
+&= \boxed{\textbf{(D)}\ \frac{109}{33}}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Continued fractions with integer parts <math>q_i</math> and numerators all <math>1</math> can be calculated as 
+<cmath>\begin{align*}
+\dfrac{[q_0,q_1,q_2,\ldots,q_n]}{[q_1,q_2,\ldots,q_n]}
+\end{align*}</cmath>
+where
+<cmath>\begin{align*}
+[]&=1 \\
+[q_0,q_1,q_2,\ldots,q_n]&=q_0[q_1,q_2,\ldots,q_n]+[q_2,\ldots,q_n]\\
+\end{align*}</cmath>
+
+<cmath>\begin{align*}
+[3]&=3(1) = 3\\
+[3,3]&=3(3)+1=10\\
+[3,3,3]&=3(10)+3=33\\
+[3,3,3,3]&=3(33)+10=109\\
+\dfrac{[q_0,q_1,q_2,\ldots,q_n]}{[q_1,q_2,\ldots,q_n]}&=\dfrac{[3,3,3,3]}{[3,3,3]}\\
+&=\boxed{\textbf{(D)}\ \frac{109}{33}}
+\end{align*}</cmath>
+
+--- Solution 3 ---
+Finite continued fractions of form <math>n+\frac{1}{n+\frac{1}{n+\cdots}}=\frac{x}{y}</math> have linear combinations of <math>x, y</math> that solve Pell's Equation. Specifically, the denominator <math>y</math> and numerator <math>x</math> are solutions to the Diophantine equation <math>(n^2+4)\left(\frac{y}{2}\right)^2-\left(x-\frac{ny}{2}\right)^2=\pm{1}</math>. So for this problem in particular, the denominator <math>y</math> and numerator <math>x</math> are solutions to the Diophantine equation <math>13\left(\frac{y}{2}\right)^2-\left(x-\frac{3y}{2}\right)^2=\pm{1}</math>. That leaves two answers. Since the number of <math>1</math>'s in the continued fraction is odd, we further narrow it down to <math>13\left(\frac{y}{2}\right)^2-\left(x-\frac{3y}{2}\right)^2=-1</math>, which only leaves us with <math>1</math> answer and that is <math>(x,y)=(109,33)</math> which means <math>\boxed{\textbf{(D)}\ \frac{109}{33}}</math>. 
+
+
+(Note: Integer solutions increase exponentially, so our next solution will have a numerator greater than <math>3^2(109)</math>. Therefore, when you don't see numerators greater than <math>3^2(109)</math> in the answer choices, this method should be fine.)
+
+
+=== Problem 2 ===
+Mike cycled
+
+Choices: {'A': '5', 'B': '7', 'C': '9', 'D': '11', 'E': '13</math>'}
+Answer: B
+
+--- Solution 1 ---
+Mike's speed is <math>\frac{15}{57}=\frac{5}{19}</math> laps per minute.
+
+In the first <math>27</math> minutes, he completed approximately <math>\frac{5}{19}\cdot27\approx\frac{1}{4}\cdot28=\boxed{\textbf{(B) } 7}</math> laps.
+
+--- Solution 2 ---
+Mike runs <math>1</math> lap in <math>\frac{57}{15}=\frac{19}{5}</math> minutes. So, in <math>27</math> minutes, Mike ran about <math>\frac{27}{\frac{19}{5}} \approx \boxed{\textbf{(B) }7}</math> laps.
+
+--- Solution 3 ---
+Mike's rate is <cmath>\frac{15}{57}=\frac{x}{27},</cmath> where <math>x</math> is the number of laps he can complete in <math>27</math> minutes. 
+If you cross multiply, <math>57x = 405</math>. 
+
+So, <math>x = \frac{405}{57} \approx \boxed{\textbf{(B) }7}</math>.
+
+--- Solution 4 ---
+Note that <math>27</math> minutes is a little bit less than half of <math>57</math> minutes. Mike will therefore run a little bit less than <math>15/2=7.5</math> laps, which is about <math>\boxed{\textbf{(B) }7}</math>.
+
+--- Solution 5 ---
+Note that <math>57</math> minutes is almost equal to <math>1</math> hour. Running <math>15</math> laps in <math>1</math> hour is running approximately <math>1</math> lap every <math>4</math> minutes. This means that in <math>27</math> minutes, Mike will run approximately <math>\frac{27}{4}</math> laps. This is very close to <math>\frac{28}{4} = \boxed{\textbf{(B) }7}</math>.
+
+
+=== Problem 3 ===
+The sum of three numbers is
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '5</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let <math>x</math> be the third number. It follows that the first number is <math>6x,</math> and the second number is <math>x+40.</math>
+
+We have <cmath>6x+(x+40)+x=8x+40=96,</cmath> from which <math>x=7.</math>
+
+Therefore, the first number is <math>42,</math> and the second number is <math>47.</math> Their absolute value of the difference is <math>|42-47|=\boxed{\textbf{(E) } 5}.</math>
+
+--- Solution 2 ---
+Solve this using a system of equations. Let <math>x,y,</math> and <math>z</math> be the three numbers, respectively. We get three equations:
+<cmath>\begin{align*}
+x+y+z&=96, \\
+x&=6z, \\
+z&=y-40.
+\end{align*}</cmath>
+Rewriting the third equation gives us <math>y=z+40,</math> so we can substitute <math>x</math> as <math>6z</math> and <math>y</math> as <math>z+40.</math>
+
+Therefore, we get
+<cmath>\begin{align*}
+6z+(z+40)+z&=96 \\
+8z+40&=96 \\
+8z&=56 \\
+z&=7.
+\end{align*}</cmath>
+Substituting 7 in for <math>z</math> gives us <math>x=6z=6(7)=42</math> and <math>y=z+40=7+40=47.</math>
+
+So, the answer is <math>|x-y|=|42-47|=\boxed{\textbf{(E) } 5}.</math>
+
+--- Solution 3 ---
+In accordance with Solution 2, <cmath>y = z+40, x = 6z \implies |x-y| = |6z - z - 40| = 5|z - 8| \implies \boxed{\textbf{(E) } 5}.</cmath>
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+
+=== Problem 4 ===
+In some countries, automobile fuel efficiency is measured in liters per
+
+Choices: {'A': '\\frac{x}{100lm}', 'B': '\\frac{xlm}{100}', 'C': '\\frac{lm}{100x}', 'D': '\\frac{100}{xlm}', 'E': '\\frac{100lm}{x}</math>'}
+Answer: E
+
+--- Solution 1 ---
+The formula for fuel efficiency is <cmath>\frac{\text{Distance}}{\text{Gas Consumption}}.</cmath>
+Note that <math>1</math> mile equals <math>\frac 1m</math> kilometers. We have <cmath>\frac{x\text{ miles}}{1\text{ gallon}} = \frac{\frac{x}{m}\text{ kilometers}}{l\text{ liters}} = \frac{1\text{ kilometer}}{\frac{lm}{x}\text{ liters}} = \frac{100\text{ kilometers}}{\frac{100lm}{x}\text{ liters}}.</cmath>
+Therefore, the answer is <math>\boxed{\textbf{(E) } \frac{100lm}{x}}.</math>
+
+--- Solution 2 ---
+Since it can be a bit odd to think of "liters per <math>100</math> km", this statement's numerical value is equivalent to <math>100</math> km per <math>1</math> liter:
+
+<math>1</math> km  requires <math>l</math> liters, so the numerator is simply <math>l</math>. Since <math>l</math> liters is <math>1</math> gallon, and <math>x</math> miles is <math>1</math> gallon, we have <math>1\text{ liter} = \frac{x}{l}</math>.
+
+Therefore, the requested expression is <cmath>100\cdot\frac{m}{(\frac{x}{l})} = \boxed{\textbf{(E) } \frac{100lm}{x}}.</cmath>
+-Benedict T (countmath1)
+
+--- Solution 3 ---
+A car that gets a gallon for <math>x</math> miles has a fuel efficiency of <math>\frac{1 \text{ gallon}}{x\text{ miles}}.</math> We want to convert these units to liters and kilometers. Since one gallon is <math>l</math> liters, that can be rewritten as <math>\frac{l \text{ liters}}{x\text{ miles}}</math>.
+
+Now to convert the miles into kilometers. <math>1</math> km is <math>m</math> miles, so <math>1</math> mile is <math>\frac{1}{m}</math> km. Plug that in to get <math>\frac{l \text{ liter}}{x * \frac{1}{m} \text{ km}}.</math> Simplifying, we get <math>\frac{lm \text{ liters}}{x \text{ km}}</math>.
+
+But the problem asked for the fuel efficiency of liters per <math>100</math> km, not just <math>1</math> km. So instead of <math>m</math>, we put in <math>100 m</math>, getting 
+<math>\boxed{\textbf{(E) } \frac{100lm}{x}}</math> as the answer.
+
+
+=== Problem 5 ===
+Square
+
+Choices: {'A': '\\frac{\\sqrt{2}}{3}', 'B': '\\frac{1}{2}', 'C': '2 - \\sqrt{2}', 'D': '1 - \\frac{\\sqrt{2}}{4}', 'E': '\\frac{2}{3}</math>'}
+Answer: C
+
+--- Solution 1 ---
+Note that <imath>BP=BQ=DR=DS=1-s.</imath> It follows that <imath>\triangle BPQ</imath> and <imath>\triangle DRS</imath> are congruent isosceles right triangles.
+
+In <imath>\triangle BPQ,</imath> we have <imath>PQ=BP\sqrt2,</imath> or 
+<cmath>\begin{align*}
+s &= (1-s)\sqrt2 \\
+s &= \sqrt2 - s\sqrt2 \\
+\left(\sqrt2+1\right)s &= \sqrt2 \\
+s &= \frac{\sqrt2}{\sqrt2 + 1}.
+\end{align*}</cmath>
+Therefore, the answer is <cmath>s = \frac{\sqrt2}{\sqrt2 + 1}\cdot\frac{\sqrt2 - 1}{\sqrt2 - 1} = \boxed{\textbf{(C) } 2 - \sqrt{2}}.</cmath>
+
+--- Solution 2 ---
+Since it is an equilateral convex hexagon, all sides are the same, so we will call the side length <imath>x</imath>. Notice that <imath>(1-x)^2+(1-x)^2 = x^2</imath>. We can solve this equation which gives us our answer. 
+<cmath>\begin{align*}
+1+x^2-2x+1+x^2-2x &= x^2 \\
+2x^2-4x+2 &= x^2 \\
+x^2-4x+2 &= 0 \\
+\end{align*}</cmath>
+
+We then use the quadratic formula which gives us:
+
+<cmath>\begin{align*}
+x &= \frac{4\:\pm\sqrt{4^2-4\cdot 1\cdot 2}}{2\cdot 1} \\
+&= \frac{4\:\pm\sqrt{8}}{2} \\
+&= \frac{4\:\pm2\sqrt{2}}{2} \\
+\end{align*}</cmath>
+
+Then we simplify it by dividing and crossing out 2 which gives us <imath>2\pm{\sqrt2}</imath> and that gives us <imath>\boxed{\textbf{(C) }2-{\sqrt2}}</imath>.
+
+~[[OrenSH|orenbad]]
+
+--- Solution 3 ---
+We can find areas in terms of <imath>s.</imath> From the diagram, draw in segments <imath>SP</imath> and <imath>RQ.</imath> We then have two non-shaded triangles, two shaded triangles, and a rectangle.
+
+The non-shaded triangles have leg lengths of <imath>1-s,</imath> so they each have area <imath>\frac{(1-s)^2}{2}.</imath> Therefore, the total area of the two triangles is <imath>(1-s)^2.</imath> 
+
+The shaded triangles have side lengths <imath>s,</imath> so they each have area <imath>\frac{s^2}{2}.</imath> Then, we get that their combined area is <imath>s^2.</imath>
+
+Looking at the rectangle, we find that <imath>SP=RQ=s\sqrt2,</imath> from 45-45-90 triangles <imath>APS</imath> and <imath>CRQ.</imath> Multiplying this with the other side length <imath>s,</imath> we see that the rectangle has area <imath>s^2\sqrt2.</imath>
+
+These three expressions of area sum up to the big square, which has area 1. So, we add them up and solve:
+
+<cmath>\begin{align*}
+(1-s)^2+s^2+s^2\sqrt2=&
+s^2-2s+1+s^2+s^2\sqrt2=&
+2s^2+s^2\sqrt2-2s=&
+s((2+\sqrt2)s-2)=&
+\end{align*}</cmath>
+
+<imath>s</imath> cannot be 0, since it represents a positive side length. This means that <imath>s</imath> satisfies <imath>(2+\sqrt2)s-2=0.</imath> Solving, we see that 
+
+<cmath>s=\frac{2}{2+\sqrt2}=\frac{2}{2+\sqrt2}\cdot\frac{2-\sqrt2}{2-\sqrt2}=\frac{4-2\sqrt2}{2}=\boxed{\textbf{(C) }2-{\sqrt2}}.</cmath>
+
+--- Solution 4 ---
+A corner of the square gives a right triangle (e.g. <imath>\triangle DRS</imath>) with legs <imath>1-s</imath> and hypotenuse <imath>s</imath>. It follows that
+ 
+<cmath>\begin{align*}
+2(1-s)^2&=s^2 \\
+s^2-4s+2&=0 \\
+\end{align*}</cmath>
+
+Completing the square gives
+
+<cmath>\begin{align*}
+s^2-4s+4&=2 \\
+(s-2)^2&=2 \\
+s&=\pm \sqrt{2}+2 \\
+\end{align*}</cmath>
+
+The only answer choice that appears in our solution is <imath>-\sqrt{2}+2</imath>, or <imath>\boxed{\textbf{(C) }2-{\sqrt2}}</imath>.
+
+--- Solution 5 ---
+<imath>AS=s</imath> and <imath>SD=\frac{\sqrt{2}}{2}s</imath> based on [[Special right triangles|45-45-90 Triangles]](refer to Solution 1 why) so <imath>s=\frac{1}{1+\frac{\sqrt{2}}{2}}</imath>. Simplify and get <imath>\boxed{\textbf{(C) }2-{\sqrt2}}</imath>.
+
+
+=== Problem 6 ===
+Which expression is equal to <cmath>\left|a-2-\sqrt{(a-1)^2}\right|</cmath> for
+
+Choices: {'A': '3-2a', 'B': '1-a', 'C': '1', 'D': 'a+1', 'E': '3</math>'}
+Answer: A
+
+--- Solution 1 ---
+We have 
+<cmath>\begin{align*}
+\left|a-2-\sqrt{(a-1)^2}\right| &= \left|a-2-|a-1|\right| \\
+&=\left|a-2-(1-a)\right| \\
+&=\left|2a-3\right| \\
+&=\boxed{\textbf{(A) } 3-2a}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Assume that <math>a=-1.</math> Then, the given expression simplifies to <math>5</math>:
+<cmath>\begin{align*}
+\left|a-2-\sqrt{(a-1)^2}\right| &= \left|-1-2-\sqrt{(-1-1)^2}\right| \\
+&= \left|-1-2-\sqrt{4}\right| \\
+&= \left|-1-2-2\right| \\
+&= 5.
+\end{align*}</cmath>
+Then, we test each of the answer choices to see which one is equal to <math>5</math>:
+
+<math>\textbf{(A) } 3-2a = 3-2\cdot(-1) = 3+2 = 5.</math> 
+
+<math>\textbf{(B) } 1-a = 1-(-1) = 2 \neq 5.</math>
+
+<math>\textbf{(C) } 1 \neq 5.</math>
+
+<math>\textbf{(D) } a+1 = -1+1 = 0 \neq 5.</math>
+
+<math>\textbf{(E) } 3 \neq 5.</math>
+
+The only answer choice equal to <math>5</math> for <math>a=-1</math> is <math>\boxed{\textbf{(A) } 3-2a}.</math>
+
+-MathWizard09
+
+--- Solution 3 ---
+The given function is continuous, so assume that <math>a=0.</math> Then, the given expression simplifies to <math>3.</math>
+
+We test each of the answer choices and get <math>\textbf{(A) } 3-2a</math> or <math>\textbf{(E) } 3.</math>
+
+We test <math>x = - 1000</math> and get  <math>\left|-1000-2- \text{positive} \right| \ne 3 \implies \boxed{\textbf{(A) } 3-2a}.</math>
+
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+--- Solution 4 ---
+We know that ,
+
+\(\begin{aligned} & |x|=x, \text { if } x>0 \\ & =-x, \text { if } x<0 \\ & \text { Now, }\left|a-2-\sqrt{(a-1)^2}\right|=\left|a-2-\sqrt{(1-a)^2}\right|, \text { as }  a<0 \\ & =|a-2-(1-a)| \\ & =|2 a-3| \\ & =-(2 a-3) \text { as } a<0 \\ & =3-2 a\end{aligned}\) 
+
+So, the correct choice is option <math>\boxed{\textbf{(A) } 3-2a}.</math>
+
+--- Solution 5 ---
+Because the degree of the expression is <math>1</math>, and all the solutions are of degree <math>1</math> or <math>0</math>, we can assume the function is linear for <math>a<0</math> and try values to find what the function is.
+
+We can first say from Solution 1 that: 
+<cmath>\left|a-2-\sqrt{(a-1)^2}\right| = \left|a-2-|a-1|\right|</cmath>
+Then, we can try values:
+\begin{array}{cccc}
+a & \text{Plug in values} & = & \text{Result} \\
+\hline
+-1 & \left|-1-2-\left|-1-1\right|\right| & = & \left|-3-2\right| = 5 \\
+-2 & \left|-2-2-\left|-2-1\right|\right| & = & \left|-4-3\right| = 7 \\
+-3 & \left|-3-2-\left|-3-1\right|\right| & = & \left|-5-4\right| = 9 \\
+\end{array}
+We can see that this is a linear function. We can find that the slope is <math>m = \frac{7-5}{-2-(-1)} = \frac{2}{-1} = -2.</math> 
+Using the first pair:
+\begin{aligned}
+y & = mx+b \\
+5 & = -2(-1)+b \\
+5 & = 2+b \\
+3 & = b \\
+y & = -2x+3 \\
+\end{aligned}
+
+We take that <math>y</math> equals the expression, and <math>x</math> is <math>a</math>. This gives <math>-2a+3</math>, or <math>3-2a</math>.
+Testing to make sure the answer is correct (like that in Solution 2) is a good practice to have and shows that the correct choice must be <math>\boxed{\textbf{(A) } 3-2a}.</math>
+
+
+=== Problem 7 ===
+The least common multiple of a positive integer
+
+Choices: {'A': '3', 'B': '6', 'C': '8', 'D': '9', 'E': '12</math>'}
+Answer: B
+
+--- Solution 1 ---
+Note that
+<cmath>\begin{align*}
+18 &= 2\cdot3^2, \\
+180 &= 2^2\cdot3^2\cdot5, \\
+45 &= 3^2\cdot5 \\
+15 &= 3\cdot5.
+\end{align*}</cmath>
+Let <math>n = 2^a\cdot3^b\cdot5^c.</math> It follows that:
+<ol style="margin-left: 1.5em;">
+  <li>From the least common multiple condition, we have <cmath>\operatorname{lcm}(n,18) = \operatorname{lcm}(2^a\cdot3^b\cdot5^c,2\cdot3^2) = 2^{\max(a,1)}\cdot3^{\max(b,2)}\cdot5^{\max(c,0)} = 2^2\cdot3^2\cdot5,</cmath> from which <math>a=2, b\in\{0,1,2\},</math> and <math>c=1.</math></li><p>
+  <li>From the greatest common divisor condition, we have <cmath>\gcd(n,45) = \gcd(2^2\cdot3^b\cdot5,3^2\cdot5) = 2^{\min(2,0)}\cdot3^{\min(b,2)}\cdot5^{\min(1,1)} = 3\cdot5,</cmath> from which <math>b=1.</math></li><p>
+</ol>
+Together, we conclude that <math>n=2^2\cdot3\cdot5=60.</math> The sum of its digits is <math>6+0=\boxed{\textbf{(B) } 6}.</math>
+
+--- Solution 2 ---
+The options for <math>\text{lcm}(x, 18)=180</math> are <math>20</math>, <math>60</math>, and <math>180</math>. The options for <math>\text{gcd}(y, 45)=15</math> are <math>15</math>, <math>30</math>, <math>60</math>, <math>75</math>, etc. We see that <math>60</math> appears in both lists; therefore, <math>6+0=\boxed{\textbf{(B) } 6}</math>.
+
+
+== Remark ==
+
+If you ignore or mess up the LCM, and get  <math>n=15</math>, you'll still get the correct answer.
+
+
+=== Problem 8 ===
+A data set consists of
+
+Choices: {'A': '10', 'B': '26', 'C': '32', 'D': '36', 'E': '40</math>'}
+Answer: D
+
+--- Solution 1 ---
+First, note that <math>1+7+5+2+5=20</math>. There are <math>3</math> possible cases:
+
+'''Case 1: the mean is <math>5</math>.'''
+
+<math>X = 5 \cdot 6 - 20 = 10</math>.
+
+'''Case 2: the mean is <math>7</math>.'''
+
+<math>X = 7 \cdot 6 - 20 = 22</math>.
+
+'''Case 3: the mean is <math>X</math>.'''
+
+<math>X= \frac{20+X}{6} \Rightarrow X=4</math>.
+
+Therefore, the answer is <math>10+22+4=\boxed{\textbf{(D) }36}</math>.
+
+
+=== Problem 9 ===
+A rectangle is partitioned into
+
+Choices: {'A': '120', 'B': '270', 'C': '360', 'D': '540', 'E': '720</math>'}
+Answer: D
+
+--- Solution 1 ---
+The top left rectangle can be <imath>5</imath> possible colors. Then the bottom left region can only be <imath>4</imath> possible colors, and the bottom middle can only be <imath>3</imath> colors since it is next to the top left and bottom left. Similarly, we have <imath>3</imath> choices for the top right and <imath>3</imath> choices for the bottom right, which gives us a total of <imath>5\cdot4\cdot3\cdot3\cdot3=\boxed{\textbf{(D) }540}</imath>.
+
+--- Solution 2 ---
+Case 1: All the rectangles are different colors. It would be <imath>5! = 120</imath> choices. 
+
+Case 2: Two rectangles that are the same color. Grouping these two rectangles as one gives us <imath>5\cdot4\cdot3\cdot2 = 120</imath>. But, you need to multiply this number by three because the same-colored rectangles can be chosen at the top left and bottom right, the top right and bottom left, or the bottom right and bottom left, which gives us a grand total of <imath>360</imath>.
+
+Case 3: We have two sets of rectangles chosen from these choices (top right & bottom left, top left & bottom right) that have the same color. However, the choice of the bottom left and bottom right does not work for this case, as the second pair would be chosen from two touching rectangles. Again, grouping the same-colored rectangles gives us <imath>5\cdot4\cdot3 = 60</imath>. 
+
+Therefore, we have <imath>120 + 360 + 60 = \boxed{\textbf{(D) }540}</imath>.
+
+--- Solution 3 ---
+Let us first choose the color of the bottom-middle rectangle, as it is touching all the other rectangles and has to be a different color than all of them. This rectangle has <imath>5</imath> possibilities. To make things easier for us, let's assume we chose the color red. Now, lets choose the color of the top-left rectangle. This has <imath>4</imath> options: orange, yellow, blue, or green (it can't be the same color as the middle rectangle, which we assumed was red). Lets assume this is orange. Now, we know that the bottom-left rectangle only has <imath>3</imath> choices: yellow, blue, or green. Lets assume this is colored yellow. Now, lets do casework on the color of the bottom right-rectangle. It either can be the same color as the top-left (orange), or different.
+CASE 1: (Its the same color)
+We then know that the bottom-right rectangle is also colored orange. We now know that the top-left rectangle only has <imath>3</imath> choices: yellow, blue, or green (it can't be orange or red). The sum of the possibilities of this case is <imath>5\cdot4\cdot3\cdot3</imath>.
+
+CASE 2: (Its a different color)
+We then know that the bottom-right rectangle has <imath>3</imath> options (yellow, blue, or green, since it can't be red, and it can't be orange since we already covered that in the case 1). Lets assume it is colored yellow. We know have <imath>3</imath> choices for the top-right rectangle (blue or green). The sum of the possibilities of this case is <imath>5\cdot4\cdot3\cdot3\cdot2</imath>
+
+We can then sum up the possibilities of our two cases, which is <imath>5\cdot4\cdot3\cdot3+5\cdot4\cdot3\cdot3\cdot2 = 5\cdot4\cdot3(3+3\cdot2) = 60\cdot9 = \boxed{\textbf{(D) }540}</imath>
+
+
+=== Problem 10 ===
+Daniel finds a rectangular index card and measures its diagonal to be
+
+Choices: {'A': '14', 'B': '10\\sqrt{2}', 'C': '16', 'D': '12\\sqrt{2}', 'E': '18</math>'}
+Answer: E
+
+--- Solution 1 ---
+<asy>
+/* Edited by MRENTHUSIASM */
+size(250);
+real x, y;
+x = 6;
+y = 3;
+draw((0,0)--(x,0));
+draw((0,0)--(0,y));
+draw((0,y)--(x,y));
+draw((x,0)--(x,y));
+draw((0.5,0)--(0.5,0.5)--(0,0.5));
+draw((x-0.5,y)--(x-0.5,y-0.5)--(x,y-0.5));
+draw((0.5,0.5)--(x-0.5,y-0.5),dashed,Arrows());
+draw((x,0)--(0,y),dashed,Arrows());
+label("$1$",(x-0.5,y-0.25),W);
+label("$1$",(x-0.25,y-0.5),S);
+label("$8$",midpoint((0.5,y-0.5)--(x/2,y/2)),(0,2.5));
+label("$4\sqrt{2}$",midpoint((0.5,0.5)--(x/2,y/2)),S);
+label("$A$",(0,0),SW);
+label("$E$",(0,0.5),W);
+label("$F$",(0.5,0),S);
+label("$I$",(0.5,0.5),N);
+label("$D$",(x,y),NE);
+label("$G$",(x-0.5,y),N);
+label("$H$",(x,y-0.5),E);
+label("$J$",(x-0.5,y-0.5),S);
+Label L1 = Label("$w$", align=(0,0), position=MidPoint, filltype=Fill(3,0,white));
+Label L2 = Label("$\ell$", align=(0,0), position=MidPoint, filltype=Fill(0,3,white));
+draw((0,-1)--(x,-1), L=L1, arrow=Arrows(),bar=Bars(15));
+draw((x+1,0)--(x+1,y), L=L2, arrow=Arrows(),bar=Bars(15));
+</asy>
+Label the bottom left corner of the larger rectangle (without the square cut out) as <imath>A</imath> and the top right as <imath>D</imath>. <imath>w</imath> is the width of the rectangle and <imath>\ell</imath> is the length. Now we have vertices <imath>E, F, G, H</imath> as vertices of the irregular octagon created by cutting out the squares. Let <imath>I, J</imath> be the two closest vertices formed by the squares.
+The distance between the two closest vertices of the squares is thus <imath>IJ=\left(4\sqrt{2}\right).</imath>
+Substituting, we get: 
+
+<cmath>(IJ)^2 = (w-2)^2 + (\ell-2)^2 = \left(4\sqrt{2}\right)^2 = 32 \implies w^2+\ell^2-4w-4\ell = 24.</cmath>
+Using the fact that the diagonal of the rectangle is <imath>8,</imath> we get: 
+<cmath>w^2+\ell^2 = 64.</cmath>
+Subtracting the first equation from the second equation, we get: <cmath>4w+4\ell=40 \implies w+\ell = 10.</cmath>
+Squaring yields: <cmath>w^2 + 2w\ell + \ell^2 = 100.</cmath>
+Subtracting the second equation from this, we get: <imath>2w\ell = 36,</imath> and thus the area of the original rectangle is <imath>w\ell = \boxed{\textbf{(E) } 18}.</imath>
+
+
+Edits and Diagram by 
+Minor edit by yanes04
+
+--- Solution 2 ---
+https://youtu.be/SRV4e74qsM8
+
+Let x be the width of the original rectangle and y be the height. Through observation and logic, we can then conclude that <cmath>(x-2)^2 + (y-2)^2 = 32.</cmath> After expanding and simplifying the expressions, you end up with <imath>x+y=10.</imath> If you then solve for x in terms of y, you end up with <imath>x=10-y.</imath> Since 8 is the diagonal of the original rectangle, we can write that <cmath>(10-y)^2+y^2=64.</cmath> Use the quadratic formula to solve for y, and then solve for x. Using either root, yields a product of the difference of squares, <imath>25-7=18.</imath> Therefore, <imath>\boxed{\textbf{(E) } 18}</imath> is our solution!
+
+
+Note: I just changed it into Latex as it looked a little bit unclear.
+
+
+Note: This is incredibly similar to Solution 1. In fact, the only difference is the method of Algebra used to calculate the final answer, which in my opinion doesn’t really constitute a whole new solution.
+
+
+=== Problem 11 ===
+Ted mistakenly wrote
+
+Choices: {'A': '5', 'B': '6', 'C': '7', 'D': '8', 'E': '9</math>'}
+Answer: C
+
+--- Solution 1 ---
+We are given that <cmath>2^m\cdot\sqrt{\frac{1}{4096}} = 2\cdot\sqrt[m]{\frac{1}{4096}}.</cmath>
+Converting everything into powers of <math>2</math> and equating exponents, we have
+<cmath>\begin{align*}
+2^m\cdot(2^{-12})^{\frac12} &= 2\cdot (2^{-12})^{\frac1m} \\
+2^{m-6} &= 2^{1-\frac{12}{m}} \\
+m-6 &= 1-\frac{12}{m}.
+\end{align*}</cmath>
+We multiply both sides by <math>m,</math> then rearrange as <cmath>m^2-7m+12=0.</cmath>
+By Vieta's Formulas, the sum of such values of <math>m</math> is <math>\boxed{\textbf{(C) } 7}.</math>
+
+Note that <math>m=3</math> or <math>m=4</math> from the quadratic equation above.
+
+--- Solution 2 ---
+We can rewrite the equation using fractional exponents and take logarithms of both sides: <cmath>\log_2{(2^{m}\cdot4096^{-1/2}}) = \log_2{(2\cdot4096^{-1/m})}.</cmath> 
+We can then use the additive properties of logarithms to split them up: <cmath>\log_2{(2^{m})} + \log_2{(4096^{-1/2})} = \log_2{2} + \log_2{(4096^{-1/m})}.</cmath> 
+Using the power rule, the fact that <math>4096 = 2^{12},</math> and bringing the exponents down, we get
+<cmath>\begin{align*}
+m - 6 &= 1 - \frac{12}{m} \\
+m + \frac{12}{m} &= 7 \\
+m^{2} + 12 &= 7m \\
+m^{2} - 7m + 12 &= 0 \\
+(m-3)(m-4) &= 0,
+\end{align*}</cmath>
+from which <math>m = 3</math> or <math>m = 4</math>. Therefore, the answer is <math>3+4 = \boxed{\textbf{(C) } 7}.</math>
+
+- youtube.com/indianmathguy
+
+--- Solution 3 ---
+Since third roots are conventionally positive integers, assume <math>m</math> is an integer, so <math>m</math> can only be <math>1</math>, <math>2</math>, <math>3</math>, <math>4</math>, <math>6</math>, and <math>12</math>. <math>\sqrt{\frac{1}{4096}}=\frac{1}{64}</math>. Testing out <math>m</math>, we see that only <math>3</math> and <math>4</math> work. Hence, <math>3+4=\boxed{\textbf{(C) }7}</math>.
+
+
+=== Problem 12 ===
+On Halloween,
+
+Choices: {'A': '7', 'B': '12', 'C': '21', 'D': '27', 'E': '31</math>'}
+Answer: A
+
+--- Solution 1 ---
+Note that:
+
+* Truth-tellers would answer yes-no-no to the three questions in this order.
+
+* Liars would answer yes-yes-no to the three questions in this order.
+
+* Alternaters who responded truth-lie-truth would answer no-no-no to the three questions in this order.
+
+* Alternaters who responded lie-truth-lie would answer yes-yes-yes to the three questions in this order.
+
+Suppose that there are <math>T</math> truth-tellers, <math>L</math> liars, and <math>A</math> alternaters who responded lie-truth-lie.
+
+The conditions of the first two questions imply that
+<cmath>\begin{align*}
+T+L+A&=22, \\
+L+A&=15.
+\end{align*}</cmath>
+Subtracting the second equation from the first, we have <math>T=22-15=\boxed{\textbf{(A) } 7}.</math>
+
+<u><b>Remark</b></u>
+
+The condition of the third question is extraneous. However, we know that <math>A=9</math> and <math>L=6,</math> so there are <math>9</math> alternaters who responded lie-truth-lie, <math>6</math> liars, and <math>9</math> alternaters who responded truth-lie-truth from this condition.
+
+~sigma ~[[OrenSH|orenbad]]
+
+--- Solution 2 ---
+Consider when the principal asks "Are you a liar?": The truth tellers truthfully say no, and the liars lie and say no. This leaves only alternaters who lie on this question to answer yes. Thus, all <math>9</math> children that answered yes are alternaters that falsely answer Questions 1 and 3, and truthfully answer Question 2. The rest of the alternaters, however many there are, have the opposite behavior.
+
+Consider the second question, "Are you an alternater?": The truth tellers again answer no, the liars falsely answer yes, and alternaters that truthfully answer also say yes. From the previous part, we know that <math>9</math> alternaters truthfully answer here. Because only liars and <math>9</math> alternaters answer yes, we can deduce that there are <math>15-9=6</math> liars.
+
+Consider the first question, "Are you a truth teller?": Truth tellers say yes, liars also say yes, and alternaters that lie on this question also say yes. From the first part, we know that <math>9</math> alternaters lie here. From the previous part, we know that there are <math>6</math> liars. Because only the number of truth tellers is unknown here, we can deduce that there are <math>22-9-6=7</math> truth tellers.
+
+The final question is how many pieces of candy did the principal give to truth tellers. Because truth tellers answer yes on only the first question, we know that all <math>7</math> of them said yes once, resulting in <math>\boxed{\textbf{(A) } 7}</math> pieces of candy.
+
+
+==Remark (Fake Solve)==
+This problem is broken in an interesting way that helps the test-taker. Since the true answers alternate for alternaters, you can still get the correct answer if you misinterpret the problem as "alternaters alternate their yes/no answers, but not their truth values". Suppose that <math>A</math> alternaters answer yes-no-yes, and <math>A'</math> alternaters answer no-yes-no. You still get <math>A=A'=9</math>. 
+
+In addition, you can even get the correct answer with the misinterpretation "alternaters have two types: alternaters of the same type give the same arbitrary answers to the three questions, and alternaters of different types give the opposite arbitrary answers to the three questions".
+
+It's also notable that the misinterpretation makes the problem harder, so that the solution actually relies on all the information. This suggests that the question-writer may have been mistaken but got lucky.
+
+~oinava, based on demonstration of misinterpretation fakesolve by ~[[OrenSH|orenbad]]
+
+
+=== Problem 13 ===
+Let
+
+Choices: {'A': '8', 'B': '9', 'C': '10', 'D': '11', 'E': '12</math>'}
+Answer: C
+
+--- Solution 1 ---
+Suppose that <math>\overline{BD}</math> intersects <math>\overline{AP}</math> and <math>\overline{AC}</math> at <math>X</math> and <math>Y,</math> respectively. By Angle-Side-Angle, we conclude that <math>\triangle ABX\cong\triangle AYX.</math>
+
+Let <math>AB=AY=2x.</math> By the Angle Bisector Theorem, we have <math>AC=3x,</math> or <math>YC=x.</math> 
+
+By alternate interior angles, we get <math>\angle YAD=\angle YCB</math> and <math>\angle YDA=\angle YBC.</math> Note that <math>\triangle ADY \sim \triangle CBY</math> by the Angle-Angle Similarity, with the ratio of similitude <math>\frac{AY}{CY}=2.</math> It follows that <math>AD=2CB=2(BP+PC)=\boxed{\textbf{(C) } 10}.</math>
+
+--- Solution 2 ---
+[[File:Amc10a2022q13.png | 800px | center]]
+
+We can draw lines from \( C \) to a new point \( E \), and extend the line \( BC \) to a point \( F \) such that the lines \( FD \), \( CE \) and \( AB \) are parallel.
+
+Notice how we have two parallelograms, but more specifically, these parallelograms are just made up of \( 2 \times \triangle ABC \). We see that the parallelograms \( ABCE \) and \( ECFD \) are congruent, and therefore \( BC \cong AE \cong CF \cong ED \). \( BC = 5 \), so \( AE = 5 \), and because \( AE \cong ED \), we have \( ED = 5 \).
+
+Finally, we have \( AE + ED = AD \), so \( AD = 5 + 5 =\) <math>\boxed{\textbf{(C) } 10}.</math>
+
+And just like that! No angle bisectors needed! 😁
+
+--- Solution 3 ---
+Let the intersection of <math>AC</math> and <math>BD</math> be <math>M</math>, and the intersection of <math>AP</math> and <math>BD</math> be <math>N</math>. Draw a line from <math>M</math> to <math>BC</math>, and label the point of intersection <math>O</math>. 
+
+By adding this extra line, we now have many pairs of similar triangles. We have <math>\triangle BPN \sim \triangle BOM</math>, with a ratio of <math>2</math>, so <math>BO = 4</math> and <math>OC = 1</math>. We also have <math>\triangle COM \sim \triangle CAP</math> with ratio <math>3</math>. Additionally, <math>\triangle BPN \sim \triangle ADN</math> (with an unknown ratio). It is also true that <math>\triangle BAN \cong \triangle MAN</math>. 
+
+Suppose the area of <math>\triangle COM</math> is <math>x</math>. Then, <math>[\triangle CAP] = 9x</math>. Because <math>\triangle CAP</math> and <math>\triangle BAP</math> share the same height and have a base ratio of <math>3:2</math>, <math>[\triangle BAP] = 6x</math>. Because <math>\triangle BOM</math> and <math>\triangle COM</math> share the same height and have a base ratio of <math>4:1</math>, <math>[\triangle BOM] = 4x</math>, <math>[\triangle BPN] = x</math>, and thus <math>[OMNP] = 4x - x = 3x</math>. Thus, <math>[\triangle MAN] = [\triangle BAN] = 5x</math>. 
+
+Finally, we have <math>\frac{[\triangle BAN]}{[\triangle BPN]} = \frac{5x}{x} = 5</math>, and because these triangles share the same height <math>\frac{AN}{PN} = 5</math>. Notice that these side lengths are corresponding side lengths of the similar triangles <math>BPN</math> and <math>ADN</math>. This means that <math>AD = 5\cdot BP = \boxed{\textbf{(C) } 10}</math>.
+
+--- Solution 4 ---
+Let point <math>B</math> be the origin, with <math>C</math> being on the positive <math>x</math>-axis and <math>A</math> being in the first quadrant.
+
+By the Angle Bisector Theorem, <math>AB:AC = 2:3</math>. Thus, assume that <math>AB = 4</math>, and <math>AC = 6</math>.
+
+Let the perpendicular from <math>A</math> to <math>BC</math> be <math>AM</math>. 
+
+Using Heron's formula, <cmath>[ABC] = \sqrt{\frac{15}{2}\left(\frac{15}{2}-4\right)\left(\frac{15}{2}-5\right)\left(\frac{15}{2}-6\right)} = \frac{15}{4}\sqrt{7}.</cmath>
+
+Hence, <cmath>AM = \frac{\frac{15}{4}\sqrt{7}}{\frac{5}{2}} = \frac{3}{2}\sqrt{7}.</cmath>
+
+Next, we have <cmath>BM^2 + AM^2 = AB^2</cmath>
+<cmath>\therefore BM = \sqrt{16 - \frac{63}{4}} = \sqrt{\frac{1}{4}} = \frac{1}{2} \textrm{ and } PM = \frac{3}{2}.</cmath>
+
+The slope of line <math>AP</math> is thus <cmath>\frac{-\frac{3}{2}\sqrt{7}}{\frac{3}{2}} = -\sqrt{7}.</cmath>
+
+Therefore, since the slopes of perpendicular lines have a product of <math>-1</math>, the slope of line <math>BD</math> is <math>\frac{1}{\sqrt{7}}</math>. This means that we can solve for the coordinates of <math>D</math>:
+
+<cmath>y = \frac{3}{2}\sqrt{7}</cmath>
+<cmath>y = \frac{1}{\sqrt{7}}x</cmath>
+<cmath>\frac{1}{\sqrt{7}}x = \frac{3}{2}\sqrt{7}</cmath>
+<cmath>x = \frac{7 \cdot 3}{2} = \frac{21}{2}</cmath>
+<cmath>D = \left(\frac{21}{2}, \frac{3}{2}\sqrt{7}\right).</cmath>
+
+We also know that the coordinates of <math>A</math> are <math>\left(\frac{1}{2}, \frac{3}{2}\sqrt{7}\right)</math>, because <math>BM = \frac{1}{2}</math> and <math>AM = \frac{3}{2}\sqrt{7}</math>.
+
+Since the <math>y</math>-coordinates of <math>A</math> and <math>D</math> are the same, and their <math>x</math>-coordinates differ by <math>10</math>, the distance between them is <math>10</math>. Our answer is <math>\boxed{\textbf{(C) }10}.</math>
+
+--- Solution 5 ---
+<asy>
+size(300);
+pair A, B, C, P, XX, D;
+B = (0,0);
+P = (2,0);
+C = (5,0);
+A=(0,4.47214);
+D = A + (10,0);
+draw(A--B--C--cycle, linewidth(1));
+dot("$A$", A, N);
+dot("$B$", B, SW);
+dot("$C$", C, E);
+dot("$P$", P, S);
+dot("$D$", D, E);
+markscalefactor = 0.1;
+draw(anglemark(B,A,P));
+markscalefactor = 0.12;
+draw(anglemark(P,A,C));
+draw(P--A--D--B, linewidth(1));
+XX = intersectionpoints(A--P,B--D)[0];
+dot("$X$", XX, dir(150));
+markscalefactor = 0.03;
+draw(rightanglemark(A,B,C));
+draw(rightanglemark(D,XX,P));
+</asy>
+Since there is only one possible value of <math>AD</math>, we assume <math>\angle{B}=90^{\circ}</math>. By the angle bisector theorem, <math>\frac{AB}{AC}=\frac{2}{3}</math>, so <math>AB=2\sqrt{5}</math> and <math>AC=3\sqrt{5}</math>. Now observe that <math>\angle{BAD}=90^{\circ}</math>. Let the intersection of <math>BD</math> and <math>AP</math> be <math>X</math>. Then <math>\angle{ABD}=90^{\circ}-\angle{BAX}=\angle{APB}</math>. Consequently, <cmath>\bigtriangleup DAB \sim \bigtriangleup ABP</cmath> and therefore <math>\frac{DA}{AB} = \frac{AB}{BP}</math>, so <math>AD=\boxed{\textbf{(C) }10}</math>, and we're done!
+
+~[[User:Bxiao31415|Bxiao31415]]
+
+
+=== Problem 14 ===
+How many ways are there to split the integers
+
+Choices: {'A': '108', 'B': '120', 'C': '126', 'D': '132', 'E': '144</math>'}
+Answer: E
+
+--- Solution 1 ---
+Clearly, the integers from <math>8</math> through <math>14</math> must be in different pairs, so are the integers from <math>1</math> through <math>7.</math> Note that <math>7</math> must pair with <math>14.</math>
+
+We pair the numbers <math>1,2,3,4,5,6</math> with the numbers <math>8,9,10,11,12,13</math> systematically:
+
+* <math>6</math> can pair with either <math>12</math> or <math>13.</math>
+
+* <math>5</math> can pair with any of the three remaining numbers from <math>10,11,12,13.</math>
+
+* <math>1,2,3,4</math> can pair with the other four remaining numbers from <math>8,9,10,11,12,13</math> without restrictions.
+
+Together, the answer is <math>2\cdot3\cdot4!=\boxed{\textbf{(E) } 144}.</math>
+
+--- Solution 2 ---
+As said in Solution 1, clearly, the integers from <math>8</math> through <math>14</math> must be in different pairs.
+
+We know that <math>8</math> or <math>9</math> can pair with any integer from <math>1</math> to <math>4</math>, <math>10</math> or <math>11</math> can pair with any integer from <math>1</math> to <math>5</math>, and <math>12</math> or <math>13</math> can pair with any integer from <math>1</math> to <math>6</math>. Thus, <math>8</math> will have <math>4</math> choices to pair with, <math>9</math> will then have <math>3</math> choices to pair with (<math>9</math> cannot pair with the same number as the one <math>8</math> pairs with). <math>10</math> cannot pair with the numbers <math>8</math> and <math>9</math> has paired with but can also now pair with <math>5</math>, so there are <math>3</math> choices. <math>11</math> cannot pair with <math>8</math>'s, <math>9</math>'s, or <math>10</math>'s paired numbers, so there will be <math>2</math> choices for <math>11</math>. <math>12</math> can pair with an integer from <math>1</math> to <math>5</math> that hasn't been paired with already, or it can pair with <math>6</math>. <math>13</math> will only have one choice left, and <math>7</math> must pair with <math>14</math>.
+
+So, the answer is <math>4\cdot3\cdot3\cdot2\cdot2\cdot1\cdot1=\boxed{\textbf{(E) } 144}.</math>
+
+--- Solution 3 ---
+The integers <imath>x \in \{8, \ldots , 14 \}</imath> must each be the larger elements of a distinct pair.
+
+Assign partners in decreasing order for <imath>x \in \{7, \dots, 1\}</imath>:
+
+Note that <imath>7</imath> must pair with <imath>14</imath>: <imath>\mathbf{1} \textbf{ choice}</imath>.
+
+For <imath>5 \leq x \leq 7</imath>, the choices are <imath>\{2x, \dots, 14\} - \{ \text{previous choices}\}</imath>. As <imath>x</imath> decreases by 1, The minuend increases by 2 elements, and the subtrahend increases by 1 element, so the difference increases by 1, yielding <imath>\mathbf{3!} \textbf{ combined choices}</imath>.
+
+After assigning a partner to <imath>5</imath>, there are no invalid pairings for yet-unpaired numbers, so there are <imath>\mathbf{4!} \textbf{ ways}</imath> to choose partners for <imath>\{1,2,3,4\}</imath>.
+
+The answer is <imath>3! \cdot 4! = \boxed{\textbf{(E) } 144}</imath>.
+
+In general, for <imath>1,\ldots,2n</imath>, the same logic yields answer: <imath>\left\lfloor\dfrac{n}{2}\right\rfloor! \cdot \left\lceil\dfrac{n}{2}\right\rceil!</imath>
+
+
+=== Problem 15 ===
+Quadrilateral
+
+Choices: {'A': '260', 'B': '855', 'C': '1235', 'D': '1565', 'E': '1997</math>'}
+Answer: D
+
+--- Solution 1 ---
+Opposite angles of every cyclic quadrilateral are supplementary, so <cmath>\angle B + \angle D = 180^{\circ}.</cmath>
+We claim that <math>AC=25.</math> We can prove it by contradiction:
+
+* If <math>AC<25,</math> then <math>\angle B</math> and <math>\angle D</math> are both acute angles. This arrives at a contradiction.
+
+* If <math>AC>25,</math> then <math>\angle B</math> and <math>\angle D</math> are both obtuse angles. This arrives at a contradiction.
+
+By the Inscribed Angle Theorem, we conclude that <math>\overline{AC}</math> is the diameter of the circle. So, the radius of the circle is <math>r=\frac{AC}{2}=\frac{25}{2}.</math>
+
+The area of the requested region is <cmath>\pi r^2 - \frac12\cdot AB\cdot BC - \frac12\cdot AD\cdot DC = \frac{625\pi}{4}-\frac{168}{2}-\frac{300}{2}=\frac{625\pi-936}{4}.</cmath>
+Therefore, the answer is <math>a+b+c=\boxed{\textbf{(D) } 1565}.</math>
+
+--- Solution 2 ---
+When we look at the side lengths of the quadrilateral we see <math>7</math> and <math>24,</math> which screams out <math>25</math> because of Pythagorean triplets. As a result, we can draw a line through points <math>A</math> and <math>C</math> to make a diameter of <math>25.</math> See Solution 1 for a rigorous proof.
+
+This can also be shown using the Law of Cosines: Since <math>7^2+24^2-2\cdot7\cdot24\cdot\cos B=15^2+20^2-2\cdot15\cdot20\cdot\cos D</math> and <math>\cos B + \cos D = 0,</math> it follows that <math>\cos B = \cos D = 0.</math>
+
+Since the diameter is <math>25,</math> we can see the area of the circle is just <math>\frac{625\pi}{4}</math> from the formula of the area of the circle with just a diameter. 
+  
+Then we can use Brahmagupta Formula <math>\sqrt{(s - a)(s - b)(s - c)(s - d)}</math> where <math>a,b,c,d</math> are side lengths, and <math>s</math> is semi-perimeter to find the area of the quadrilateral. 
+
+You can find the answer to this quickly by noting that <math>\sqrt{(33-7)(33-24)(33-20)(33-15)} = \sqrt{(26)(9)(13)(18)} = \sqrt{2^2 \cdot 3^4 \cdot 13^2} = 2 \cdot 9 \cdot 13 = 234</math>. So now the area of the region we are trying to find is <math>\frac{625\pi}{4} - 234 = \frac{625\pi-936}{4}.</math>
+
+Therefore, the answer is <math>a+b+c=\boxed{\textbf{(D) } 1565}.</math>
+
+--- Solution 3 ---
+We can guess that this quadrilateral is actually made of two right triangles: <math>\triangle CDA</math> has a <math>3 \text{-} 4 \text{-} 5</math> ratio in the side lengths, and <math>\triangle ABC</math> is a <math>7 \text{-} 24 \text{-} 25</math> triangle. 
+(See Solution 1 for a proof.)
+
+Next, we can choose one of these triangles and use the circumradius formula to find the radius. Let's choose the <math>15-20-25</math> triangle. The area of the triangle is equal to the product of the side lengths divided by <math>4</math> times the circumradius. Therefore, <math>150 = \frac{15\cdot20\cdot25}{4r}</math>. Solving this simple algebraic equation gives us <math>r = \frac{25}{2}</math>. 
+
+Plugging in the values, we have <math>\frac{25}{2}^2\cdot\pi - \left(\frac{15\cdot20}{2}+\frac{7\cdot24}{2}\right) = \frac{625\cdot\pi}{4} - 234</math>. Rewriting this gives us <math>\frac{625\pi-936}{4}</math>.
+
+Therefore, adding these values gets us <math>\boxed{\textbf{(D) } 1565}.</math>
+
+~[[OrenSH|orenbad]]
+
+--- Solution 4 ---
+To start, we can apply a couple formulas to find the circumradius and the area of the cyclic quadrilateral, and then just subtract the area of the quadrilateral from the area of the circle, and that is our final answer. This formula is really tedious with many calculations so don't do this in a contest. To find the circumradius we have: <cmath>\text{Circumradius} = \frac{1}{4} \sqrt{\frac{(ab + cd)(ac + bd)(ad + bc)}{(s-a)(s-b)(s-c)(s-d)}}</cmath>
+If we let <math>a = 7, b = 24, c = 20, \text{and}, d = 15</math>, that means that the semi-perimeter is just <cmath>\dfrac{7+24+20+15}{2} = 33</cmath>. Note that <math>s</math> stands for the semi-perimeter. The calculations will take very long so Im just going to skip to the answer of <math>\dfrac{25}{2}</math> as our circumradius. This means that the area of the circle is <math>\dfrac{625}{4}\pi</math>. Now applying Brahmagupta's formula to find the area of a cyclic quadrilateral which is just: <cmath>\sqrt{(s-a)(s-b)(s-c)(s-d)}</cmath>. Again we will use the same representations as these letters from before, so <math>a = 7, b = 24, c = 20, \text{and}, d = 15</math>. Plugging in the numbers we have that the area is <math>234</math>. To express our answer in the form that was asked at the top we have: <cmath>\dfrac{625\pi-936}{4}</cmath>, so our final answer is <cmath>625+936+4 = \boxed{\textbf{(D) } 1565}.</cmath>
+
+-jb2015007
+
+
+=== Problem 16 ===
+The roots of the polynomial
+
+Choices: {'A': '\\frac{24}{5}', 'B': '\\frac{42}{5}', 'C': '\\frac{81}{5}', 'D': '30', 'E': '48</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>a</math>, <math>b</math>, <math>c</math> be the three roots of the polynomial. The lengthened prism's volume is <cmath>V = (a+2)(b+2)(c+2) = abc+2ac+2ab+2bc+4a+4b+4c+8 = abc + 2(ab+ac+bc) + 4(a+b+c) + 8.</cmath>
+By Vieta's formulas, we know that a cubic polynomial <math>Ax^3+Bx^2+Cx+D</math> with roots <math>a</math>, <math>b</math>, <math>c</math> satisfies:
+<cmath>\begin{alignat*}{8}
+a+b+c &= -\frac{B}{A} &&= \frac{39}{10}, \\
+ab+ac+bc &= \hspace{2mm}\frac{C}{A} &&= \frac{29}{10}, \\
+abc &= -\frac{D}{A} &&= \frac{6}{10}.
+\end{alignat*}</cmath>
+We can substitute these into the expression, obtaining <cmath>V = \frac{6}{10} + 2\left(\frac{29}{10}\right) + 4\left(\frac{39}{10}\right) + 8 = \boxed{\textbf{(D) } 30}.</cmath>
+
+- phuang1024
+
+--- Solution 2 ---
+From the answer choices, we can assume the roots are rational numbers, and therefore this polynomial should be easily factorable.
+The coefficients of <math>x</math> must multiply to <math>10</math>, so these coefficients must be <math>5,2,1</math> or <math>10,1,</math> in some order. We can try one at a time, and therefore write the factored form as follows: <cmath>(5x-p)(2x-q)(x-r).</cmath>
+Note that <math>p, q, r</math> have to multiply to <math>6</math>, so they must be either <math>3,2,1</math> or <math>6,1,1</math> in some order. Again, we can try one at a time in different positions and see if they multiply correctly.
+We try <math>(5x-2)(2x-1)(x-3)</math> and multiply the <math>x-</math>terms, and sure enough they add up to <math>29</math>. You can try to add up the <math>x^2</math> terms and they add up to <math>-39</math>. Therefore the roots are <math>\frac{2}{5}</math>, <math>\frac{1}{2}</math> and <math>3</math>. Now if you add <math>2</math> to each root, you get the volume is <math>\frac{12}{5} \cdot \frac{5}{2} \cdot 5 = 6 \cdot 5 = 30 = \boxed{\textbf{(D) } 30}</math>.
+
+--- Solution 3 ---
+We can find the roots of the cubic using the Rational Root Theorem, which tells us that the rational roots of the cubic must be in the form <math>\frac{p}{q}</math>, where <math>p</math> is a factor of the constant <math>(-6)</math> and <math>q</math> is a factor of the leading coefficient <math>(10)</math>. Therefore, <math>p</math> is <math>\pm (1, 2, 3, 6)</math> and q is <math>\pm (1, 2, 5, 10).</math>
+
+Doing Synthetic Division, we find that <math>3</math> is a root of the cubic:
+<cmath>\begin{array}{c|rrrr}&10&-39&29&-6\\3&&30&-27&6\\\hline\\&10&-9&2&0\\\end{array}.</cmath>
+
+Then, we have a quadratic <math>10x^2-9x+2.</math> Using the Quadratic Formula, we can find the other two roots:
+<cmath>x=\frac{9 \pm \sqrt{(-9)^2-4(10)(2)}}{2 \cdot 10},</cmath>
+which simplifies to <math>x=\frac{1}{2}, \frac{2}{5}.</math>
+
+To find the new volume, we add <math>2</math> to each of the roots we found:
+<cmath>(3+2)\cdot\left(\frac{1}{2}+2\right)\cdot\left(\frac{2}{5}+2\right).</cmath>
+Simplifying, we find that the new volume is <math>\boxed{\textbf{(D) } 30}.</math>
+
+-MathWizard09
+
+--- Solution 4 ---
+Let <math>P(x) = 10x^3 - 39x^2 + 29x - 6</math>, and let <math>a, b, c</math> be the roots of <math>P(x)</math>. The roots of <math>P(x-2)</math> are then <math>a + 2, b + 2, c + 2,</math> so the product of the roots of <math>P(x-2)</math> is the area of the desired rectangular prism.
+
+<math>P(x-2)</math> has leading coefficient <math>10</math> and constant term <math>P(0-2) = P(-2) = 10(-2)^3 - 39(-2)^2 + 29(-2) - 6 = -300</math>. 
+
+Thus, by Vieta's Formulas, the product of the roots of <math>P(x-2)</math> is <math>\frac{-(-300)}{10} = \boxed{\textbf{(D) } 30}</math>.
+
+-Orange_Quail_9
+
+--- Solution 5 ---
+Let <math>P(x) = 10x^3 - 39x^2 + 29x - 6</math>. This can be factored m as <math>P(x) = 10(x-a)(x-b)(x-c)</math>, where <math>a</math>, <math>b</math>, and <math>c</math> are the roots of <math>P(x)</math>. We want <math>V = (a+2)(b+2)(c+2)</math>.
+
+"Luckily" <math>P(-2) = 10(-2-a)(-2-b)(-2-c) = -10V</math>.  <math>P(-2) = -300</math>, giving <math>V = \boxed{\textbf{(D) } 30}</math>.  
+
+-Oxymoronic15
+
+(It's not just lucky. If <math>P(x)</math> has roots <math>x \in \{r_i\}</math>, <math>Q(x) = P(x-2)</math> has roots <math>y \in \{r_i+2\}</math>. By Vieta, the product <math>V</math> of the roots is the negation of the constant term divided by the leading coefficient <math>10</math> , which is <math>-Q(0) / 10 </math>, which is <math>-P(0-2) / 10</math>. -oinava )
+
+--- Solution 6 ---
+By Vieta's, we can see that <math>ABC = \frac{6}{10}</math>.
+Using this, we can see that if each side <math>ABC</math> is the same length, the length is between <math>0.8</math>  (<math>0.512</math>) and <math>0.9</math> (<math>0.729</math>). Adding <math>2</math> to these numbers would give us three numbers that are close to <math>3</math>. Rounding up, we will just assume they are all three. 
+If we multiply all of them, it gives us <math>27</math>.
+The closest answer choice is <math>\boxed{\textbf{(D) } 30},</math> as all of the other choices are far from this number (the second closest answer choice being <math>11</math> away).
+
+~[[OrenSH|orenbad]]
+
+
+<math>(2+0.6^{1/3})^3 \approx 23</math> is a lower bound for the answer (if the roots are more spread out then adding to a smaller root stretches the product more than adding 2 to a larger root shrinks the product), but a different <math>P(x)</math> with the same product of roots could have roots that lead to a much larger answer (but not exactly 48, it turns out). Going by this bound alone, only answers A, B, and C can be eliminated, leaving a guess between D and E. 
+
+-oinava
+
+--- Solution 7 ---
+If we let the roots of the cubic polynomial be <imath>p,q,r</imath>, then we can write what we want in terms of <imath>p, q, r</imath>. So, we have <cmath>(p+2)(q+2)(r+2) = pqr + 2pq + 2qr + 4q + 2pr + 4p + 4r + 8 = pqr + 2(pq + qr + pr) + 4(q + p + r) + 8.</cmath> Now, we can just use Vieta's to finish up from here! We have <imath>pqr = -(-\dfrac{6}{10}) = \dfrac{3}{5}</imath>. Now, we can find the sum of the pairwise roots which is just <imath>pq + qr + pr = \dfrac{29}{10}</imath> and then multiply by <imath>2</imath> which gives <imath>\dfrac{29}{5}</imath>. Looking good so far! Now, we need to find the sum of the roots which is just <imath>p + q + r = \dfrac{39}{10}</imath> and then multiply by <imath>4</imath> which gives <imath>\dfrac{78}{5}</imath>. Almost there! Now, we just add <imath>8</imath> to that sum, and then sum it all up to get <imath>\boxed{\textbf{(D) } 30}</imath>
+
+-jb2015007
+
+Note: This is the same as Solution 1.
+
+
+=== Problem 17 ===
+How many three-digit positive integers
+
+Choices: {'A': '9', 'B': '10', 'C': '11', 'D': '13', 'E': '14</math>'}
+Answer: D
+
+--- Solution 1 ---
+We rewrite the given equation, then rearrange:
+<cmath>\begin{align*}
+\frac{100a+10b+c}{999} &= \frac13\left(\frac a9 + \frac b9 + \frac c9\right) \\
+100a+10b+c &= 37a + 37b + 37c \\
+63a &= 27b+36c \\
+7a &= 3b+4c.
+\end{align*}</cmath>
+Now, this problem is equivalent to counting the ordered triples <math>(a,b,c)</math> that satisfies the equation.
+
+Clearly, the <math>9</math> ordered triples <math>(a,b,c)=(1,1,1),(2,2,2),\ldots,(9,9,9)</math> are solutions to this equation.
+
+The expression <math>3b+4c</math> has the same value when:
+
+* <math>b</math> increases by <math>4</math> as <math>c</math> decreases by <math>3.</math>
+
+* <math>b</math> decreases by <math>4</math> as <math>c</math> increases by <math>3.</math>
+
+We find <math>4</math> more solutions from the <math>9</math> solutions above: <math>(a,b,c)=(4,8,1),(5,1,8),(5,9,2),(6,2,9).</math> Note that all solutions are symmetric about <math>(a,b,c)=(5,5,5).</math>
+
+Together, we have <math>9+4=\boxed{\textbf{(D) } 13}</math> ordered triples <math>(a,b,c).</math>
+
+
+==Remark==
+One way to solve the Diophantine Equation, <math>7a=3b+4c</math> is by taking <math>\pmod{7}</math>, from which the equation becomes <math>0\equiv 3b-3c\pmod{7} \Longrightarrow b\equiv c\pmod{7}</math> so either <math>b=c</math> or WLOG <math>b<c, b+7=c</math>.
+
+
+=== Problem 18 ===
+Let
+
+Choices: {'A': '359', 'B': '360', 'C': '719', 'D': '720', 'E': '721 </math>'}
+Answer: A
+
+--- Solution 1 ---
+Let <math>P=(r,\theta)</math> be a point in polar coordinates, where <math>\theta</math> is in degrees.
+
+Rotating <math>P</math> by <math>k^{\circ}</math> counterclockwise around the origin gives the transformation <math>(r,\theta)\rightarrow(r,\theta+k^{\circ}).</math> Reflecting <math>P</math> across the <math>y</math>-axis gives the transformation <math>(r,\theta)\rightarrow(r,180^{\circ}-\theta).</math> Note that 
+<cmath>\begin{align*}
+T_k(P)&=(r,180^{\circ}-\theta-k^{\circ}), \\
+T_{k+1}(T_k(P)) &= (r,\theta -1^{\circ}).
+\end{align*}</cmath>
+We start with <math>(1,0^{\circ})</math> in polar coordinates. For the sequence of transformations <math>T_1, T_2, T_3, \cdots, T_k,</math> it follows that
+
+* After <math>T_1,</math> we have <math>(1,179^{\circ}).</math>
+
+* After <math>T_2,</math> we have <math>(1,-1^{\circ}).</math>
+
+* After <math>T_3,</math> we have <math>(1,178^{\circ}).</math>
+
+* After <math>T_4,</math> we have <math>(1,-2^{\circ}).</math>
+
+* After <math>T_5,</math> we have <math>(1,177^{\circ}).</math>
+
+* After <math>T_6,</math> we have <math>(1,-3^{\circ}).</math>
+
+* ...
+
+* After <math>T_{2k-1},</math> we have <math>(1,180^{\circ}-k^{\circ}).</math>
+
+* After <math>T_{2k},</math> we have <math>(1,-k^{\circ}).</math>
+
+The least such positive integer <math>k</math> is <math>180.</math> Therefore, the least such positive integer <math>n</math> is <math>2k-1=\boxed{\textbf{(A) } 359}.</math>
+
+--- Solution 2 ---
+Note that since we're reflecting across the <math>y</math>-axis, if the point ever makes it to <math>(-1,0)</math> then it will flip back to the original point. Note that after <math>T_1</math> the point will be <math>1</math> degree clockwise from the negative <math>x</math>-axis. Applying <math>T_2</math> will rotate it to be <math>1</math> degree counterclockwise from the negative <math>x</math>-axis, and then flip it so that it is <math>1</math> degree clockwise from the positive <math>x</math>-axis. Therefore, after every <math>2</math> transformations, the point rotates <math>1</math> degree clockwise. To rotate it so that it will rotate <math>179</math> degrees clockwise will require <math>179 \cdot 2 = 358</math> transformations. Then finally on the last transformation, it will rotate on to <math>(-1,0)</math> and then flip back to its original position. Therefore, the answer is <math>358+1 = 359 = \boxed{\textbf{(A) } 359}</math>.
+
+--- Solution 3 ---
+So, you don't know polar coordinates (Solution 1) nor came up with Solution 2's logic, then, here we go!
+
+The easy solution is to notice that, without reflections and taking \( k=1 \), there are 360 turns that need to be made.
+
+Now take \( k=2 \). We see that there are 180 rotations, so the number of rotations is just \( 360/k \).
+
+Now include the reflections over the \( y \) axis.
+
+Say that each time we reflect a point over the \( y \) axis, we draw a line.
+
+Each time we reflect over the \( y\) axis, we see more and more lines that generate. For \( k=1 \), there are quite obviously 360 of these lines.
+
+However, one can see that this works for every single case, because when we reflect it over the \( y\) axis and make a \( k^\circ \) rotation, we fill up all the missed gaps until we reach the end of a sequence - I prove this on section 1.1.
+
+But wait! We overcounted by one line! Notice how I said there were 360 lines, but the line \(x=1\) intersects \( y=0\) is already given to you, and that is when \(T_k = 0\), which is the point \( (1, 0) \)! So our final answer is \( 360-1 = \) <math>\boxed{\textbf{(A) } 359}.</math>
+
+
+===Proof===
+
+A way you can prove such an assumption is by taking ideas like addition. We know that eventually there exists a number \( N \) such that \( l \times N = m \), where \( m \) has a units digit of \( l \). Utilizing the same approach, we can find that this actually works.
+
+--- Solution 4 ---
+In degrees:
+
+Starting with <math>n=0</math>, the sequence goes <math>{0}\rightarrow {179}\rightarrow {359}\rightarrow {178}\rightarrow {358}\rightarrow {177}\rightarrow {357}\rightarrow\cdots.</math>
+
+We see that it takes <math>2</math> steps to downgrade the point by <math>1^{\circ}</math>. Since the <math>1</math>st point in the sequence is <math>{179}</math>, the answer is <math>1+2(179)=\boxed{\textbf{(A) } 359}.</math>
+
+--- Solution 5 ---
+We can consider the rotations and reflections separately. For the rotations, each rotation turns it by the next natural number. Thus the total number of degrees turned would be a triangle number. We test the smallest number, <math>359</math> first, and we get that it turns <math>\frac{(1+359)359}{2} = 180n</math>, where <math>n</math> is an integer. Thus, the point would be rotated to <math>(-1,0)</math>. We may be tempted to dismiss this option but we haven't considered the reflections. Each reflection acts as a <math>180^{\circ}</math> rotation, so every two reflections cancel. However, <math>359</math> is odd so we have to reflect <math>(-1,0)</math>, taking us to <math>(1,0)</math>, which is what we want. Thus we get <math>\boxed{\textbf{(A) } 359}</math>.
+
+--- Solution 6 ---
+Rotations and reflections in 2D are very nice to describe using complex numbers in polar form. Reflections and rotations also don't affect the length (modulus or absolute value) of a complex number. This motivates us to set <math>z = \exp (i\theta)</math>, starting with <math>z=1+0i=\exp(i0)</math>.
+Then, we can describe rotations and reflections about the <math>y</math>-axis using these formulas:
+<cmath>
+\text{Rotation}(\exp(i\theta), k): \exp(i\theta) \mapsto \exp(i(\theta + k))
+</cmath>
+<cmath>
+\text{Reflection}(\exp(i\theta)): \exp(i\theta) \mapsto \exp i (180^\circ - \theta) = -\exp(i(-\theta)) 
+</cmath>
+
+If we apply two successive iterations, we see a simplification:
+
+<cmath>
+T_k(\exp(i\theta)) = -\exp(-i(\theta+k))
+</cmath>
+
+\begin{aligned}
+T_{k+1}(T_k(\exp(i\theta))) &= T_{k+1}(-\exp(i(-\theta-k))
+\\
+&= --\exp(-i(-\theta-k+(k+1))
+\\
+&= \exp i(\theta-1)
+\end{aligned}
+
+We also can calculate <math>T_1(\exp i0) = \exp 179^\circ</math>. Thus, the point <math>(1,0)</math> gets sent back to when all double iterations after <math>1</math> cancel <math>179^\circ</math>. <math>179-\left(\frac{n-1}{2}\right)=0</math> so <math>n = 1 + 2 \cdot 179 = \boxed{\textbf{(A) }359}</math>.
+
+--- Solution 7 ---
+Similar to the above solution, one can use rotation matrices to compute it.
+
+(i.e. <math>\begin{bmatrix} cos(\theta) & -sin(\theta) \\ sin(\theta) & cos(\theta) \end{bmatrix}</math>)
+
+For the reflection, use the reflection matrix (i.e. <math>\begin{bmatrix} -1 & 0 \\ 0 & 1 \end{bmatrix}</math>)
+
+Then proceed like Solution 5.
+
+
+=== Problem 19 ===
+Define
+
+Choices: {'A': '1', 'B': '3', 'C': '5', 'D': '7', 'E': '9</math>'}
+Answer: C
+
+--- Solution 1 ---
+Notice that <math>L_{17}</math> contains the highest power of every prime below <math>17</math> since higher primes cannot divide <math>L_{17}</math>. Thus, <math>L_{17}=16\cdot 9 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17</math>.
+
+When writing the sum under a common fraction, we multiply the denominators by <math>L_{17}</math> divided by each denominator. However, since <math>L_{17}</math> is a multiple of <math>17</math>, all terms will be a multiple of <math>17</math> until we divide out <math>17</math>, and the only term that will do this is <math>\frac{1}{17}</math>. Thus, the remainder of all other terms when divided by <math>17</math> will be <math>0</math>, so the problem is essentially asking us what the remainder of <math>\frac{L_{17}}{17} = L_{16}</math> divided by <math>17</math> is. This is equivalent to finding the remainder of <math>16 \cdot 9 \cdot 5 \cdot 7 \cdot 11 \cdot 13</math> divided by <math>17</math>.
+
+We use modular arithmetic to simplify our answer:
+
+This is congruent to <math>-1 \cdot 9 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \pmod{17}</math>.
+
+Evaluating, we get: 
+<cmath>\begin{align*}
+(-1) \cdot 9 \cdot 35 \cdot 11 \cdot 13 &\equiv (-1) \cdot 9 \cdot 1 \cdot 11 \cdot 13 \pmod{17} \\
+&\equiv 9 \cdot 11 \cdot (-13) \pmod{17} \\
+&\equiv 9 \cdot 11 \cdot 4\pmod{17} \\
+&\equiv 2 \cdot 11 \pmod{17} \\
+&\equiv 5\pmod{17}
+\end{align*}</cmath>
+Therefore the remainder is <math>\boxed{\textbf{(C) } 5}</math>.
+
+--- Solution 2 ---
+As in solution 1, we express the LHS as a sum under one common denominator. We note that <cmath>\frac{1}{1} + \frac{1}{2} + \dots + \frac{1}{17} = \frac{\frac{17!}{1}}{17!} + \frac{\frac{17!}{2}}{17!} + \frac{\frac{17!}{3}}{17!} + \dots + \frac{\frac{17!}{17}}{17!}</cmath>
+
+Now, we have <math>h = L_{17}\left(\frac{\frac{17!}{1} + \frac{17!}{2} + \frac{17!}{3} + \dots + \frac{17!}{17}}{17!}\right)</math>. We'd like to find <math>h \pmod{17},</math> so we can evaluate our expression <math>\pmod{17}.</math> Since <math>\frac{\frac{17!}{1}}{17!}, \frac{\frac{17!}{2}}{17!}, \dots, \frac{\frac{17!}{16}}{17!}</math> don't have a factor of <math>17</math> in their denominators, and since <math>L_{17}</math> is a multiple of <math>17,</math> multiplying each of those terms and adding them will get a multiple of <math>17.</math> <math>\pmod{17}</math>, that result is <math>0.</math> Thus, we only need to consider <math>L_{17}\cdot \frac{\frac{17!}{17}}{17!} = \frac{L_{17}}{17} \pmod{17}.</math> Proceed with solution <math>1</math> to get <math>\boxed{\textbf{(C) }5}</math>.
+
+--- Solution 3 ---
+Using Wolstenholmes' Theorem, we can rewrite <math>1 + \frac{1}{2} \dots + \frac{1}{16}</math> as <math>\frac{17^2 n}{(17 - 1)!} = \frac{17^2 n}{16!}</math> (for some <math>n \in \mathbb{Z}</math>). Adding the <math>\frac{1}{17}</math> to <math>\frac{17^2 n}{16!}</math>, we get <math>\frac{17^3 n + 16!}{17!}</math>. 
+
+Now we have <math>\frac{17^3 n + 16!}{17!} = \frac{h}{L_{17}}</math> and we want <math>h \pmod{17}</math>. We find that <math>\frac{L_{17}(17^3 n + 16!)}{17!} = \frac{L_{16}(17^3 n + 16!)}{16!} = h</math>. Taking <math>\pmod{17}</math> and multiplying, we get <math>L_{16}(17^3 n + 16!) \equiv 16! \cdot h \pmod{17}</math>.
+
+Applying Wilson's Theorem on <math>16!</math> and reducing, we simplify the congruence to <math>L_{16}(0 - 1) \equiv -L_{16} \equiv -h \pmod{17}</math>. Now we proceed with Solution 1 and find that <math>L_{16} \equiv 5 \pmod{17}</math>, so our answer is <math>\boxed{\textbf{(C) }5}</math>.
+
+
+=== Problem 20 ===
+A four-term sequence is formed by adding each term of a four-term arithmetic sequence of positive integers to the corresponding term of a four-term geometric sequence of positive integers. The first three terms of the resulting four-term sequence are
+
+Choices: {'A': '190', 'B': '194', 'C': '198', 'D': '202', 'E': '206</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let the arithmetic sequence be <math>a,a+d,a+2d,a+3d</math> and the geometric sequence be <math>b,br,br^2,br^3.</math>
+
+We are given that
+<cmath>\begin{align*}
+a+b&=57, \\
+a+d+br&=60, \\
+a+2d+br^2&=91,
+\end{align*}</cmath>
+and we wish to find <math>a+3d+br^3.</math>
+
+Subtracting the first equation from the second and the second equation from the third, we get
+<cmath>\begin{align*}
+d+b(r-1)&=3, \\
+d+br(r-1)&=31.
+\end{align*}</cmath>
+Subtract these results, we get <cmath>b(r-1)^2=28.</cmath>
+Note that either <math>(r-1)^2=1</math> or <math>(r-1)^2=4.</math> We proceed with casework:
+
+* If <math>(r-1)^2=1,</math> then <math>r=2,b=28,a=29,</math> and <math>d=-25.</math> The arithmetic sequence is <math>29,4,-21,-46,</math> arriving at a contradiction.
+
+* If <math>(r-1)^2=4,</math> then <math>r=3,b=7,a=50,</math> and <math>d=-11.</math> The arithmetic sequence is <math>50,39,28,17,</math> and the geometric sequence is <math>7,21,63,189.</math> This case is valid.
+
+Therefore, The answer is <math>a+3d+br^3=17+189=\boxed{\textbf{(E) } 206}.</math>
+
+--- Solution 2 ---
+Start similarly to Solution 1 and deduce the three equations
+<cmath>\begin{align*}
+a+b&=57, \\
+a+d+br&=60, \\
+a+2d+br^2&=91.
+\end{align*}</cmath>
+Then, add the last two equations and take away the first equation to get <math>a+3d+br^2+br-b=94</math>. We can solve for this in terms of what we want: <math>a+3d=-br^2-br+b+94</math>.
+
+We're looking for <math>a+3d+br^3</math>. We can substitute our value of <math>a+3d</math> in here to get <cmath>br^3-br^2-br+b+94=b(r+1)(r-1)(r-1)+94.</cmath>
+Since our sequence only has positive integers we can now check by the answer choices. For each answer choice, we can subtract <math>94</math> and factor it to see if it has a perfect square factor and at least one other factor and those should differ by <math>2</math>.
+<cmath>\begin{alignat*}{8}
+\textbf{(A)} \ 190-94&=96&&=2^5\cdot3, \\
+\textbf{(B)} \ 194-94&=100&&=2^2\cdot5^2, \\
+\textbf{(C)} \ 198-94&=104&&=2^3\cdot13, \\
+\textbf{(D)} \ 202-94&=108&&=2^2\cdot3^3, \\
+\textbf{(E)} \ 206-94&=112&&=2^4\cdot7.
+\end{alignat*}</cmath>
+From this, the only possible answer choices are <math>\textbf{(A)}</math> and <math>\textbf{(E)}</math>, where <math>r=3</math>. To solve for <math>b</math>, we look back to the given equations above.
+
+We are looking for <math>a+3d+27b</math>. If <math>\textbf{(A)}</math> were the answer, then we know that <math>a</math> would have to be divisible by <math>3</math> and <math>b</math> would equal <math>6</math>. Looking at our second equation, if this were the case, then <math>d</math> would also have to be divisible by <math>3</math>. However, this contradicts the third equation, as all variables are divisible by <math>3</math>, but their sum isn't. So, <math>\boxed{\textbf{(E) } 206}</math> is our answer.
+
+
+=== Problem 21 ===
+A bowl is formed by attaching four regular hexagons of side
+
+Choices: {'A': '6', 'B': '7', 'C': '5+2\\sqrt{2}', 'D': '8', 'E': '9</math>'}
+Answer: B
+
+--- Solution 1 ---
+We extend line segments <math>\ell,m,</math> and <math>n</math> to their point of concurrency, as shown below:
+<asy>
+/* Made by AoPS; edited by MRENTHUSIASM */
+import three;
+size(225);
+currentprojection=
+  orthographic(camera=(-5.52541796301147,-2.61548797564715,1.6545450372312),
+               up=(0.00247902062334861,0.000877141782387748,0.00966536329192992),
+               target=(0,0,0),
+               zoom=0.570588560870951);
+currentpen = black+1.5bp;
+triple A = O;
+triple M = (X+Y)/2;
+triple B = (-1/2,-1/2,1/sqrt(2));
+triple C = (-1,0,sqrt(2));
+triple D = (0,-1,sqrt(2));
+transform3 rho = rotate(90,M,M+Z);
+
+//arrays of vertices for the lower level (the square), the middle level,
+//and the interleaves vertices of the upper level (the octagon)
+triple[] lVs = {A};
+triple[] mVs = {B};
+triple[] uVsl = {C};
+triple[] uVsr = {D};
+
+for(int i = 0; i < 3; ++i){
+  lVs.push(rho*lVs[i]);
+  mVs.push(rho*mVs[i]);
+  uVsl.push(rho*uVsl[i]);
+  uVsr.push(rho*uVsr[i]);
+}
+
+lVs.cyclic = true;
+uVsl.cyclic = true;
+
+draw(surface(uVsl[0]--uVsr[0]--uVsl[1]--uVsr[1]--uVsl[2]--uVsr[2]--uVsl[3]--uVsr[3]--cycle),yellow);
+
+for(int i : new int[] {0,1,2,3}){
+  draw(uVsl[i]--uVsr[i]);
+  draw(uVsr[i]--uVsl[i+1]);
+}
+draw(lVs[0]--lVs[1]^^lVs[0]--lVs[3]);
+for(int i : new int[] {0,1,3}){
+  draw(lVs[0]--lVs[i]);
+  draw(lVs[i]--mVs[i]);
+  draw(mVs[i]--uVsl[i]);
+}
+for(int i : new int[] {0,3}){
+  draw(mVs[i]--uVsr[i]);
+}
+
+for(int i : new int[] {1,3}) draw(lVs[2]--lVs[i],dashed);
+draw(lVs[2]--mVs[2],dashed);
+draw(mVs[2]--uVsl[2]^^mVs[2]--uVsr[2],dashed);
+draw(mVs[1]--uVsr[1],dashed);
+
+draw(uVsl[1]--uVsr[0],red+2bp);
+draw(uVsr[3]--uVsl[4],red+2bp);
+draw(lVs[0]--mVs[0],red+2bp);
+
+draw(uVsr[0]--uVsr[0]+uVsr[0]-uVsl[1],red+dashed+2bp);
+draw(uVsl[4]--uVsl[4]+uVsl[4]-uVsr[3],red+dashed+2bp);
+draw(mVs[0]--mVs[0]+mVs[0]-lVs[0],red+dashed+2bp);
+
+label("$\ell$",midpoint(lVs[0]--mVs[0]),(1,2,0),red);
+label("$m$",midpoint(uVsr[3]--uVsl[4]),(1,0,-2),red);
+label("$n$",midpoint(uVsl[1]--uVsr[0]),(-1,0,-2),red);
+</asy>
+We claim that lines <math>\ell,m,</math> and <math>n</math> are concurrent: In the lateral faces of the bowl, we know that lines <math>\ell</math> and <math>m</math> must intersect, and lines <math>\ell</math> and <math>n</math> must intersect. In addition, line <math>\ell</math> intersects the top plane of the bowl at exactly one point. Since lines <math>m</math> and <math>n</math> are both in the top plane of the bowl, we conclude that lines <math>\ell,m,</math> and <math>n</math> are concurrent.
+
+In the lateral faces of the bowl, the dashed red line segments create equilateral triangles. So, the dashed red line segments all have length <math>1.</math> In the top plane of the bowl, we know that <math>\overleftrightarrow{m}\perp\overleftrightarrow{n}.</math> So, the dashed red line segments create an isosceles triangle with leg-length <math>1.</math>
+
+Note that octagon has four pairs of parallel sides, and the successive side-lengths are <math>1,\sqrt2,1,\sqrt2,1,\sqrt2,1,\sqrt2,</math> as shown below:
+<asy>
+/* Made by AoPS; edited by MRENTHUSIASM */
+size(225);
+real r = 1/3;
+draw((0,r)--(0,0)--(r,0)^^(1-r,0)--(1,0)--(1,r)^^(1,1-r)--(1,1)--(1-r,1)^^(r,1)--(0,1)--(0,1-r),red+2bp+dashed);
+fill((r,0)--(1-r,0)--(1,r)--(1,1-r)--(1-r,1)--(r,1)--(0,1-r)--(0,r)--cycle,yellow);
+draw((r,0)--(1-r,0)--(1,r)--(1,1-r)--(1-r,1)--(r,1)--(0,1-r)--(0,r)--cycle,black+2bp);
+label("$1$",(0.5,0),S);
+label("$1$",(1,0.5),E);
+label("$1$",(0.5,1),N);
+label("$1$",(0,0.5),W);
+label("$\sqrt2$",(1-r/2,r/2),NW);
+label("$\sqrt2$",(1-r/2,1-r/2),SW);
+label("$\sqrt2$",(r/2,1-r/2),SE);
+label("$\sqrt2$",(r/2,r/2),NE);
+label("$1$",(1-r/2,0),S);
+label("$1$",(1,r/2),E);
+label("$1$",(1,1-r/2),E);
+label("$1$",(1-r/2,1),N);
+label("$1$",(r/2,1),N);
+label("$1$",(0,1-r/2),W);
+label("$1$",(0,r/2),W);
+label("$1$",(r/2,0),S);
+</asy>
+The area of the octagon is <cmath>3^2-4\cdot\left(\frac12\cdot1^2\right)=\boxed{\textbf{(B) }7}.</cmath>
+
+
+==Solution 1.1== 
+You could also think of this problem as folding the four triangles connecting the hexagon faces to cover parts of of the octagon:
+<asy>
+size(180);
+import graph;
+
+pair A = (0, 0);
+pair B = A + dir(0)*1;
+pair C = B + dir(-45)*sqrt(2);
+pair D = C + dir(-90)*1;
+pair E = D + dir(-135)*sqrt(2);
+pair F = E + dir(180)*1;
+pair G = F + dir(135)*sqrt(2);
+pair H = G + dir(90)*1;
+pair I1 = intersectionpoint(B--E, C--H);
+pair I2 = intersectionpoint(B--E, D--G);
+pair I3 = intersectionpoint(D--G, A--F);
+pair I4 = intersectionpoint(A--F, C--H);
+fill(B--C--I1--cycle, rgb(1,0.8,0.8));
+fill(D--E--I2--cycle, rgb(1,0.8,0.8));
+fill(F--G--I3--cycle, rgb(1,0.8,0.8));
+fill(A--H--I4--cycle, rgb(1,0.8,0.8));
+draw(A--B--C--D--E--F--G--H--cycle, linewidth(1));
+draw(A--F, dashed+red);
+draw(B--E, dashed+blue);
+draw(C--H, dashed+green);
+draw(D--G, dashed+purple);
+label("$A$", A, NW);
+label("$B$", B, NE);
+label("$C$", C, SE);
+label("$D$", D, S);
+label("$E$", E, SW);
+label("$F$", F, W);
+label("$G$", G, NW);
+label("$H$", H, N);
+label("$1$", midpoint(A--B), N);
+label("$\sqrt{2}$", midpoint(B--C), dir(-22));
+label("$1$", midpoint(C--D), E);
+label("$\sqrt{2}$", midpoint(D--E), dir(-135));
+label("$1$", midpoint(E--F), S);
+label("$\sqrt{2}$", midpoint(F--G), dir(135));
+label("$1$", midpoint(G--H), W);
+label("$\sqrt{2}$", midpoint(H--A), dir(45));
+</asy>
+So the octagon is made up of five unit squares and four <math>45-45-90</math> triangles with legs of length <math>1.</math> So the area is <math>\boxed{7}.</math>
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 2 ---
+(This is an alternate way of analyzing the red  extension line segments drawn in Solution 1.)
+
+The perimeter of the square bottom of the bowl is <math>4</math>.
+Halfway up the bowl, the boundary is still a square, with perimeter <math>4</math> times the hexagon circumradius, aka <math>4 \times 2 = 8</math> times the hexagon (also square) side length (1), an increase of <math>4</math>.
+
+Extending the bottom half of the bowl to twice its height (full height of the bowl) would increase the perimeter by the same amount again, forming a square with perimeter <math>4 + (8-4)\times 2= 12</math>. Thus the top octagon is cut out of a square of side length  <math>12\div4=3</math> and thus area <math>9</math>. 
+
+The difference  between the above-constructed square and the octagon is four right triangles, and (by rotational and reflection symmetry), each is isosceles with equal-length perpendicular bases of length <math>(3-1)/2 = 1</math>, and thus having area <math>\frac12</math>. Therefore the area of the octagon is <math>9-(4\times 1/2) = \boxed{\textbf{(B) }7}</math>.
+
+-oinava
+
+--- Solution 3 ---
+Note that the octagon is equiangular by symmetry, but it is not equilateral. <math>4</math> of its sides are shared with the hexagon's sides, so each of those sides have side length <math>1</math>. However, the other <math>4</math> sides are touching the triangles, so we wish to find the length of these sides. 
+
+Notice that when two adjacent hexagons meet at a side, their planes make the same dihedral angle at the bottom-most point of intersection and at the top-most point of intersection by symmetry. Therefore, the triangle that is wedged between the two hexagons has the same angle as the square at the bottom wedged between the hexagons. Thus, the triangle is a <math>45-45-90</math> isosceles triangle.
+This conclusion can also be reached by cutting the bottom square across a diagonal and noticing that each resulting triangle is congruent to each triangle wedged between the hexagons by symmetry. 
+Furthermore, notice that if you take a copy of this bowl and invert it and place it on top of this bowl, you will get a polyhedron with faces of hexagons and squares, a truncated octahedron, and therefore this triangle has a <math>90^\circ</math>-angle:
+
+[[File:Screenshot 20221112 010724.png|400px|center]]
+
+Now that we have come to this conclusion, by simple Pythagorean theorem, we have that the other <math>4</math> sides of the octagon are <math>\sqrt{2}</math>. 
+
+We can draw a square around the octagon so that the area of the octagon is the area of the square minus each corner triangle. The hypotenuse of these corner triangles are <math>1</math> and they are <math>45-45-90</math> triangles because the octagon is equiangular, so each has dimensions <math>\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2},1</math>. 
+The side length of the square is <math>\sqrt{2}</math> for the larger sides of the octagon, and adding <math>2</math> of <math>\frac{\sqrt{2}}{2}</math> for each width of the triangle. Therefore, the area of the square is:
+<cmath>\left(\sqrt{2} + 2 \cdot \frac{\sqrt{2}}{2}\right)^2 \implies \left(2\sqrt{2}\right)^2 = 8</cmath>
+The area of each triangle is <math>\frac{1}{2} \cdot \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{2}}{2} = \frac{1}{4}</math> and there are <math>4</math> of them, so we subtract <math>1</math> from the area of the square. The area of the octagon is thus <math>\boxed{\textbf{(B) }7}</math>.
+
+--- Solution 4 ---
+[[File:2022 AMC 10A 21.png|300px|right]]
+[[File:2022 AMC 10A 21b.png|300px|right]]
+Denote a square <math>ABCD, AB = 1,\pi</math> is the plane <math>ABC,</math> regular hexagons <math>ABFKSE, BCHMLF, CDGPNH, ADGQRE,</math>  triangles <math>FKL, ESR, GPQ, HMN.</math>
+
+The main diagonal of each regular hexagon <math>EF = 2 \implies EFGH</math> is square with side <math>2</math> parallel to <math>\pi.</math>
+
+The area of this square <math>[EFGH] = 4 \implies [EFGH] - [ABCD] = 3.</math>
+
+The difference <math>3</math> is the area of the projection of <math>4</math> half of hexagons on the plane <math>\pi.</math>
+
+So the area of the projections of another <math>4</math> half of hexagons is <math>3.</math>
+
+It is evident (may be not only for me) that projections of the coincide sides of hexagons  are along diagonals of <math>ABCD</math> (for example <math>A, E, C,</math> and <math>H</math> are collinear.)
+
+So the projections on <math>\pi</math> of the coincide sides of hexagons and triangles are perpendicular to this lines <math>(SE \perp AE).</math>
+
+Therefore in plane <math>\pi</math> projections of points <math>S, E,</math> and <math>R</math> are collinear and plane of <math>\triangle ESR</math> is perpendicular to <math>\pi.</math>
+
+We get <math>1 +3 +3 = \boxed{\textbf{(B) }7}.</math>
+
+PS. Denote <math>A = \left (0.5,0.5, 0 \right), E = \left (1,1, h \right ), E'</math> is the midpoint of <math>RS.</math>
+<cmath>|AE| = 1 \implies h = \frac {1}{\sqrt{2}}.</cmath>
+<cmath>R = \left( 0.5, 1.5, 2h \right), S = \left (1.5, 0.5, 2h \right) \implies E' = \left( 1, 1, 2h \right) \implies EE' \perp ABC.</cmath>
+
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+--- Solution 5 ---
+Through observation, we can reasonably assume that each of the triangles on this shape is a right triangle. Since each side length of the hexagons is <math>1</math>, the hypotenuse of the triangles would be <math>\sqrt2</math>. Now we know the side lengths of the octagon whose area we are solving for. The octagon can be broken into nine pieces. We have four triangles whose side lengths are 1, and their hypotenuse is a side whose length is <math>\sqrt2</math>. Next, we have <math>5</math> <math>1</math> by <math>1</math> squares. The triangles each have an area of <math>\frac{1}{2}</math>, and the squares each have an area of <math>1</math>. 
+
+Then, we add these up, so we get <math>\boxed{\textbf{(B) }7}.</math>
+
+~[[OrenSH|orenbad]]
+
+Note: I believe Solution 7 has the proof for this.
+
+--- Solution 6 ---
+Let one of the bottom points of the solid be the origin, <math>(0, 0, 0).</math> Then, we can define one of the points where the vertices of the hexagons meet closest to our origin as <math>(x, y, x).</math> Then, note that either the <math>x</math> coordinate or <math>z</math> coordinate must be <math>0</math> in the two vertices closest to the origin in the octagon. We can then let two adjacent points on the octagon near <math>(x, y, x)</math> be <math>(2x, 2y, 0)</math> and <math>(0, 2y, 2x).</math> Since these two points must be a distance of <math>\sqrt{3}</math> from our origin (the height of a regular hexagon), and <math>(x, y, x)</math> must be a distance of <math>1</math> from our origin, we get
+<cmath>2x^2+y^2=1, 4x^2+4y^2=3,</cmath>
+<cmath>2x^2+y^2=1, x^2+y^2=\frac 34,</cmath>
+<cmath>x^2=\frac 14, y^2=\frac 12,</cmath>
+<cmath>x=\frac 12, y=\frac{\sqrt 2}{2}.</cmath>
+Then, the distance between <math>(2x, 2y, 0)</math> and <math>(0, 2y, 2x)</math> is <math>2\sqrt2 x=\sqrt 2,</math> so the octagon has sides <math>1, \sqrt2, 1, \sqrt2, 1, \sqrt2, 1, \sqrt2,</math> and the solution follows.
+
+-piemax
+
+--- Solution 7 ---
+<asy>
+import three;
+size(225);
+currentprojection=
+  orthographic(camera=(-5.52541796301147,-2.61548797564715,1.6545450372312),
+               up=(0.00247902062334861,0.000877141782387748,0.00966536329192992),
+               target=(0,0,0),
+               zoom=0.570588560870951);
+currentpen = black+1.5bp;
+triple A = O;
+triple M = (X+Y)/2;
+triple B = (-1/2,-1/2,1/sqrt(2));
+triple C = (-1,0,sqrt(2));
+triple D = (0,-1,sqrt(2));
+transform3 rho = rotate(90,M,M+Z);
+
+//arrays of vertices for the lower level (the square), the middle level,
+//and the interleaves vertices of the upper level (the octagon)
+triple[] lVs = {A};
+triple[] mVs = {B};
+triple[] uVsl = {C};
+triple[] uVsr = {D};
+
+for(int i = 0; i < 3; ++i){
+  lVs.push(rho*lVs[i]);
+  mVs.push(rho*mVs[i]);
+  uVsl.push(rho*uVsl[i]);
+  uVsr.push(rho*uVsr[i]);
+}
+
+lVs.cyclic = true;
+uVsl.cyclic = true;
+
+for(int i : new int[] {0,1,2,3}){
+  draw(uVsl[i]--uVsr[i]);
+  draw(uVsr[i]--uVsl[i+1]);
+}
+draw(lVs[0]--lVs[1]^^lVs[0]--lVs[3]);
+for(int i : new int[] {0,1,3}){
+  draw(lVs[0]--lVs[i]);
+  draw(lVs[i]--mVs[i]);
+  draw(mVs[i]--uVsl[i]);
+}
+for(int i : new int[] {0,3}){
+  draw(mVs[i]--uVsr[i]);
+}
+
+for(int i : new int[] {1,3}) draw(lVs[2]--lVs[i],dashed);
+draw(lVs[2]--mVs[2],dashed);
+draw(mVs[2]--uVsl[2]^^mVs[2]--uVsr[2],dashed);
+draw(mVs[1]--uVsr[1],dashed);
+
+//Comment two lines below to remove red edges
+draw(lVs[1]--lVs[3],red+2bp+dashed);
+draw(uVsl[2]--uVsr[2],red+2bp);
+draw(uVsl[2]--lVs[1],red+2bp+dashed);
+draw(uVsr[2]--lVs[3],red+2bp+dashed);
+label("$A$", lVs[3], SW);
+label("$B$", lVs[1], SE);
+label("$C$", uVsl[2], NE);
+label("$D$", uVsr[2], NW);
+label("$P$", lVs[2], NE);
+label("$Q$", mVs[2], N);
+</asy>
+
+Notice that <math>AD \parallel PQ</math>, <math>BC \parallel PQ</math>, so <math>AD \parallel BC</math>. Obviously, <math>AD = BC</math>, so <math>ABCD</math> is a parallelogram, we get <cmath>CD = AB = \sqrt{1^2+1^2} = \sqrt{2}.</cmath>
+
+Note that octagon has four pairs of parallel sides, and the successive side-lengths are <math>1,\sqrt2,1,\sqrt2,1,\sqrt2,1,\sqrt2,</math> as shown below:
+<asy>
+size(225);
+real r = 1/3;
+draw((r,0)--(1-r,0)--(1,r)--(1,1-r)--(1-r,1)--(r,1)--(0,1-r)--(0,r)--cycle,black+2bp);
+draw((r,0)--(r,1)^^(1-r,0)--(1-r,1)^^(0,r)--(1,r)^^(0,1-r)--(1,1-r), dashed);
+label("$1$",(0.5,0),S);
+label("$1$",(1,0.5),E);
+label("$1$",(0.5,1),N);
+label("$1$",(0,0.5),W);
+label("$\sqrt2$",(1-r/2,r/2),SE);
+label("$\sqrt2$",(1-r/2,1-r/2),NE);
+label("$\sqrt2$",(r/2,1-r/2),NW);
+label("$\sqrt2$",(r/2,r/2),SW);
+label("$1$",(r/2,1/2));
+label("$1$",(1-r/2,1/2));
+label("$1$",(1/2,1/2));
+label("$1$",(1/2,r/2));
+label("$1$",(1/2,1-r/2));
+real rr=r*2/3;
+label("$\frac{1}{2}$",(rr,rr));
+label("$\frac{1}{2}$",(1-rr,1-rr));
+label("$\frac{1}{2}$",(rr,1-rr));
+label("$\frac{1}{2}$",(1-rr,rr));
+label("$C$",(r,1),N);
+label("$D$",(0,1-r),W);
+</asy>
+The area of the octagon is <math>\boxed{\textbf{(B) }7}.</math>
+
+
+== Animated Video Solution ==
+https://youtu.be/yk4euPCYhd0
+
+
+=== Problem 22 ===
+Suppose that
+
+Choices: {'A': '4082', 'B': '4095', 'C': '4096', 'D': '8178', 'E': '8191</math>'}
+Answer: D
+
+--- Solution 1 ---
+For <math>1\leq k\leq 12,</math> suppose that cards <math>1, 2, \ldots, k</math> are picked up on the first pass. It follows that cards <math>k+1,k+2,\ldots,13</math> are picked up on the second pass.
+
+<b>Once we pick the spots for the cards on the first pass, there is only one way to arrange all <math>\boldsymbol{13}</math> cards.</b> 
+
+For each value of <math>k,</math> there are <math>\binom{13}{k}-1</math> ways to pick the <math>k</math> spots for the cards on the first pass: We exclude the arrangement
+<asy>
+size(11cm);
+draw((0,0)--(2,0)--(2,3)--(0,3)--cycle);
+label("1", (1,1.5));
+draw((3,0)--(5,0)--(5,3)--(3,3)--cycle);
+label("2", (4,1.5));
+draw((6,0)--(8,0)--(8,3)--(6,3)--cycle);
+label("3", (7,1.5));
+draw((9,0)--(11,0)--(11,3)--(9,3)--cycle);
+label("4", (10,1.5));
+draw((12,0)--(14,0)--(14,3)--(12,3)--cycle);
+label("5", (13,1.5));
+draw((15,0)--(17,0)--(17,3)--(15,3)--cycle);
+label("6", (16,1.5));
+draw((18,0)--(20,0)--(20,3)--(18,3)--cycle);
+label("7", (19,1.5));
+draw((21,0)--(23,0)--(23,3)--(21,3)--cycle);
+label("8", (22,1.5));
+draw((24,0)--(26,0)--(26,3)--(24,3)--cycle);
+label("9", (25,1.5));
+draw((27,0)--(29,0)--(29,3)--(27,3)--cycle);
+label("10", (28,1.5));
+draw((30,0)--(32,0)--(32,3)--(30,3)--cycle);
+label("11", (31,1.5));
+draw((33,0)--(35,0)--(35,3)--(33,3)--cycle);
+label("12", (34,1.5));
+draw((36,0)--(38,0)--(38,3)--(36,3)--cycle);
+label("13", (37,1.5));
+</asy>
+in which the cards are arranged such that the first pass consists of all <math>13</math> cards.
+
+Therefore, the answer is <cmath>\sum_{k=1}^{12}\left[\binom{13}{k}-1\right] = \left[\sum_{k=1}^{12}\binom{13}{k}\right]-12 = \left[\sum_{k=0}^{13}\binom{13}{k}\right]-14 = 2^{13} - 14 = \boxed{\textbf{(D) } 8178}.</cmath>
+
+--- Solution 2 ---
+Since the <math>13</math> cards are picked up in two passes, the first pass must pick up the first <math>n</math> cards and the second pass must pick up the remaining cards <math>m</math> through <math>13</math>. 
+Also note that if <math>m</math>, which is the card that is numbered one more than <math>n</math>, is placed before <math>n</math>, then <math>m</math> will not be picked up on the first pass since cards are picked up in order. Therefore we desire <math>m</math> to be placed before <math>n</math> to create a second pass, and that after the first pass, the numbers <math>m</math> through <math>13</math> are lined up in order from least to greatest.
+
+To construct this, <math>n</math> cannot go in the <math>n</math>th position because all cards <math>1</math> to <math>n-1</math> will have to precede it and there will be no room for <math>m</math>. Therefore <math>n</math> must be in slots <math>n+1</math> to <math>13</math>.
+Let's do casework on which slot <math>n</math> goes into to get a general idea for how the problem works.
+
+'''Case 1:''' With <math>n</math> in spot <math>n+1</math>, there are <math>n</math> available slots before <math>n</math>, and there are <math>n-1</math> cards preceding <math>n</math>. Therefore the number of ways to reserve these slots for the <math>n-1</math> cards is <math>\binom{n}{n-1}</math>. Then there is only <math>1</math> way to order these cards (since we want them in increasing order). Then card <math>m</math> goes into whatever slot is remaining, and the <math>13-m</math> cards are ordered in increasing order after slot <math>n+1</math>, giving only <math>1</math> way. Therefore in this case there are <math>\binom{n}{n-1}</math> possibilities.
+
+'''Case 2:''' With <math>n</math> in spot <math>n+2</math>, there are <math>n+1</math> available slots before <math>n</math>, and there are <math>n-1</math> cards preceding <math>n</math>. Therefore the number of ways to reserve slots for these cards are <math>\binom{n+1}{n-1}</math>. Then there is one way to order these cards. Then cards <math>m</math> and <math>m+1</math> must go in the remaining two slots, and there is only one way to order them since they must be in increasing order. Finally, cards <math>m+2</math> to <math>13</math> will be ordered in increasing order after slot <math>n+1</math>, which yields <math>1</math> way. Therefore, this case has <math>\binom{n+1}{n-1}</math> possibilities.
+
+I think we can see a general pattern now. With <math>n</math> in slot <math>x</math>, there are <math>x-1</math> slots to distribute to the previous <math>n-1</math> cards, which can be done in <math>\binom{x-1}{n-1}</math> ways. Then the remaining cards fill in in just <math>1</math> way. Since the cases of <math>n</math> start in slot <math>n+1</math> and end in slot <math>13</math>, this sum amounts to:
+<cmath>\binom{n}{n-1}+\binom{n+1}{n-1}+\binom{n+2}{n-1} + \cdots + \binom{12}{n-1}</cmath> for any <math>n</math>.
+
+Hmmm ... where have we seen this before?
+
+We use wishful thinking to add a term of <math>\binom{n-1}{n-1}</math>:
+<cmath>\binom{n-1}{n-1}+\binom{n}{n-1}+\binom{n+1}{n-1}+\binom{n+2}{n-1} + \cdots + \binom{12}{n-1}</cmath>
+
+This is just the hockey stick identity! Applying it, this expression is equal to <math>\binom{13}{n}</math>. However, we added an extra term, so subtracting it off, the total number of ways to order the <math>13</math> cards for any <math>n</math> is <cmath>\binom{13}{n}-1</cmath>
+
+Finally, to calculate the total for all <math>n</math>, we sum from <math>n=0</math> to <math>13</math>. This yields us:
+
+<cmath>\sum_{n=0}^{13} \binom{13}{n}-1 \implies \sum_{n=0}^{13} \binom{13}{n} - \sum_{n=0}^{13} 1</cmath>
+<cmath>\implies 2^{13} - 14 = 8192 - 14 = 8178 = \boxed{\textbf{(D) } 8178}.</cmath>
+
+--- Solution 3 ---
+To solve this problem, we can use recursion on <math>n</math>. Let <math>A_n</math> be the number of arrangements for <math>n</math> numbers. Now, let's look at how these arrangements are related to <math>A_{n-1}</math> by case work on the first number <math>a_1</math>.
+
+If <math>a_1 = 1</math>, the remaining <math>n-1</math> numbers from <math>2</math> to <math>n</math> are arranged in the same way just like number 1 to <math>n-1</math> in the case of <math>n-1</math> numbers. So there are <math>A_{n-1}</math> arrangements.
+
+If <math>a_1 = 2</math>, then we need to choose 1 position from position 2 to <math>n-1</math> to put 1, and all remaining numbers must be arranged in increasing order, so there are <math>\binom{n-1}{1}</math> such arrangements.
+
+If <math>a_1 = k</math>, then we need to choose <math>k-1</math> positions from position 2 to <math>n-1</math> to put <math>1, 2,\cdots k-1</math>, and all remaining numbers must be arranged in increasing order, so there are <math>\binom{n-1}{k-1}</math> such arrangements.
+
+So we can write 
+<cmath>
+A_n = A_{n-1} + \binom{n-1}{1} + \binom{n-1}{2} + \cdots + \binom{n-1}{n-1}
+</cmath>
+which can be simplified to
+<cmath>
+A_n = A_{n-1} + 2^{n-1} - 1
+</cmath> 
+We can solve this recursive sequence by summing up <math>n-1</math> lines of the recursive formula
+<cmath>A_n - A_{n-1} = 2^{n-1} - 1</cmath>
+<cmath>A_{n-1} - A_{n-2} = 2^{n-2} - 1</cmath>
+<cmath>\cdots</cmath>
+<cmath>A_2 - A_{1} = 2^{1} - 1</cmath>
+to get
+<cmath>
+A_n - A_1 = \sum_{k=1}^{n-1} (2^k - 1) = 2^n - 2 - (n-1) = 2^n - n - 1
+</cmath>
+since <math>A_1=0</math>, we have
+<cmath>
+A_n = 2^n - n - 1
+</cmath>
+and <math>A_{13} = 2^{13} - 14 = \boxed{\textbf{(D) } 8178}</math>.
+
+
+-- Dan Li
+
+--- Solution 4 ---
+When we have <math>3</math> cards arranged in a row, after listing out all possible arrangements, we see that we have <math>4</math> arrangements: <math>(1, 3, 2), (2, 1, 3), (2, 3, 1),</math> and <math>(3, 1, 2)</math>. When we have <math>4</math> cards, we find <math>11</math> possible arrangements: <math>(1, 2, 4, 3), (1, 3, 2, 4), (1, 3, 4, 2), (1, 4, 2, 3), (2, 1, 3, 4), (2, 3, 1, 4), (2, 3, 4, 1), (3, 1, 2, 4), (3, 1, 4, 2), (3, 4, 1, 2),</math> and <math>(4, 1, 2, 3).</math> Hence, we recognize the pattern that for <math>n</math> cards, we have <math>2^n - n - 1</math> valid arrangements, so our answer is <math>2^{13} - 13 - 1 = \boxed{\textbf{(D) } 8178}.</math> Note that this also works for <math>2</math> cards being arranged in a row. <math>(2,1)</math> Here, only one works, and following the formula, it checks out.
+
+--- Solution 5 ---
+Notice that for each card "position", we can choose for it to be picked up on the first or second pass, for a total of <math>2^{13}</math> options. However, if all of the cards selected to be picked up first are before all of the cards to be picked up second, then this means that the list is in consecutive ascending order (and thus all cards will be picked up on the first pass instead). This can happen in 14 ways, so our answer is <math>2^{13}-14=\boxed{\textbf{(D) } 8178}</math>.
+
+--- Solution 6 ---
+To satisfy the condition the question provided, we can arrange the numbers between 1 and 13 into 3 groups. Though writing out the groups is not necessary, below is a basic 'format'. 
+(# of elements in 1st group, # of elements in the 2nd group, # of elements in the 3rd group)
+(1,1,11)
+=(1,2,10)
+=(1,3,9)
+=(1,4,8)
+=(1,5,7)
+=(1,6,6)
+=(2,2,9)
+=(2,3,8)
+=(2,4,7)
+=(2,3,8)
+=(2,4,7)
+=(2,5,6)
+=(3,3,7)
+=(3,4,6)
+=(3,5,5)
+
+Then to arrange these groups we need to multiply the final value by 3!. Hence, we know that the answer should be a multiple of 3!, which is 6. Since D is the only answer choice that is a multiple of 6, the answer is <imath>\boxed{D}</imath>.
+
+
+=== Problem 23 ===
+Isosceles trapezoid
+
+Choices: {'A': '\\frac{1}{4}', 'B': '\\frac{1}{3}', 'C': '\\frac{1}{2}', 'D': '\\frac{2}{3}', 'E': '\\frac{3}{4}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Consider the reflection <imath>P^{\prime}</imath> of <imath>P</imath> over the perpendicular bisector of <imath>\overline{BC}</imath>, creating two new isosceles trapezoids <imath>DAPP^{\prime}</imath> and <imath>CBPP^{\prime}</imath>. Under this reflection, <imath>P^{\prime}A=PD=4</imath>, <imath>P^{\prime}D=PA=1</imath>, <imath>P^{\prime}C=PB=2</imath>, and <imath>P^{\prime}B=PC=3</imath>. 
+
+Since <imath>DAPP'</imath> and <imath>CBPP'</imath> are isosceles trapezoids, they are cyclic. Using [[Ptolemy's theorem|Ptolemy's theorem]] on <imath>DAPP'</imath>, we get that <imath>(PP')(AD) + (PA)(P'D) = (AP')(PD)</imath>, so 
+<cmath>PP' \cdot AD + 1 \cdot 1 = 4 \cdot 4.</cmath> Then, using Ptolemy's theorem again on <imath>CBPP'</imath>, we get that <imath>(BC)(PP') + (BP)(CP') = (BP')(CP)</imath>, so 
+<cmath>PP' \cdot BC + 2 \cdot 2 = 3 \cdot 3.</cmath> Thus, <imath>PP^{\prime}\cdot AD=15</imath> and <imath>PP^{\prime}\cdot BC=5</imath>; dividing these two equations and taking the reciprocal yields <imath>\frac{BC}{AD}=\boxed{\textbf{(B) }\frac{1}{3}}</imath>.
+<asy>
+size(300);
+pair A = (0,0);
+pair B = (1, 2);
+pair C = (2,2);
+pair D = (3,0);
+label("$A$", A, SW);
+label("$B$", B, NW);
+label("$C$", C, NE);
+label("$D$", D, SE);
+draw(A--B--C--D--cycle, blue);
+pair P = (0.8, 0.6);
+dot("$P$", P, NW);
+draw(P--A, magenta);
+draw(P--B, magenta);
+draw(P--C);
+draw(P--D);
+label("$1$", P--A, NW);
+label("$2$", P--B, E);
+label("$3$", P--C, NW);
+label("$4$", P--D, S);
+pair P1 = (2.2, 0.6);
+dot("$P'$", P1, NE);
+draw(P1--D, magenta);
+draw(P1--C, magenta);
+draw(P1--A);
+draw(P1--B);
+label("$1$", P1--D, NE);
+label("$2$", P1--C, E);
+label("$3$", P1--B, NE);
+label("$4$", P1--A, SE);
+draw(P--P1, dashed+magenta);
+</asy>
+(diagram by cinnamon_e)
+
+--- Solution 2 ---
+<asy>
+size(7.5cm);
+draw((0,0)--(4.2,0));
+draw((0,0)--(1.4,2)--(2.8,2)--(4.2,0));
+draw((1.4,2)--(2.1,3)--(2.8,2));
+draw((0,0)--(1,0.5)--(1.4,2)--(1,0.5)--(2.8,2)--(1,0.5)--(4.2,0));
+label("$A$",(0,0),SW);
+label("$B$",(1.4,2),NW);
+label("$C$",(2.8,2),NE);
+label("$D$",(4.2,0),SE);
+label("$P$",(1,0.5),NW);
+label("$Q$",(2.1,3),N);
+draw((2.1,3)--(1,0.5));
+</asy>
+
+Extend <imath>AB</imath> and <imath>CD</imath> to a point <imath>Q</imath> as shown, and let <imath>PQ = s</imath>. Then let <imath>BQ=CQ = a</imath> and <imath>AB=DC = b</imath>. Notice that <imath>\frac{BC}{AD} = \frac{QC}{QD} = \frac{a}{a+b}</imath> by similar triangles.
+
+By [[Stewart's theorem|Stewart's theorem]] on <imath>APQ</imath> and <imath>DPQ</imath>, we have <cmath>\begin{align*} ab(a+b) + 9(a+b) &= 16a + s^2b \\ ab(a+b) + 4(a+b) &= a + s^2b \\ \end{align*}</cmath>
+
+Subtracting, <imath>5(a+b) = 15a</imath>, and so <imath>\frac{BC}{AD} = \frac{a}{a+b} = \frac{5}{15} = \boxed{\textbf{(B) }\frac{1}{3}}</imath>.
+
+--- Solution 3 ---
+Since we're given distances and nothing else, we can represent each point as a coordinate and use the distance formula to set up a series of systems and equations.
+Let the height of the trapezoid be <imath>h</imath>, and let the coordinates of <imath>A</imath> and <imath>D</imath> be at <imath>(-a,0)</imath> and <imath>(a,0)</imath>, respectively. Then let <imath>B</imath> and <imath>C</imath> be at <imath>(-b,h)</imath> and <imath>(b,h)</imath>, respectively. This follows the rules that this is an isosceles trapezoid since the origin is centered on the middle of <imath>AD</imath>. Finally, let <imath>P</imath> be located at point <imath>(c,d)</imath>.
+
+The distance from <imath>P</imath> to <imath>A</imath> is <imath>1</imath>, so by the distance formula: <cmath>\sqrt{(c+a)^2+(d-0)^2} = 1 \implies (c+a)^2+d^2 = 1</cmath>
+The distance from <imath>P</imath> to <imath>D</imath> is <imath>4</imath>, so <cmath>\sqrt{(c-a)^2+(d-0)^2} = 4 \implies (c-a)^2+d^2 = 16</cmath>
+
+Looking at these two equations alone, notice that the second term is the same for both equations, so we can subtract the equations. This yields <cmath>-4ac = 15</cmath>
+
+Next, the distance from <imath>P</imath> to <imath>B</imath> is <imath>2</imath>, so <cmath>\sqrt{(c+b)^2+(d-h)^2} = 2 \implies (c+b)^2+(d-h)^2 = 4</cmath>
+The distance from <imath>P</imath> to <imath>C</imath> is <imath>3</imath>, so <cmath>\sqrt{(c-b)^2+(d-h)^2} = 3 \implies (c-b)^2+(d-h)^2 = 9</cmath>
+
+Again, we can subtract these equations, yielding <cmath>-4bc = 5</cmath>
+
+We can now divide the equations to eliminate <imath>c</imath>, yielding <cmath>\frac{b}{a} = \frac{5}{15} = \frac{1}{3}</cmath>
+
+We wanted to find <imath>\frac{BC}{AD}</imath>. But since <imath>b</imath> is half of <imath>BC</imath> and <imath>a</imath> is half of <imath>AD</imath>, this ratio is equal to the ratio we want.
+
+Therefore <imath>\frac{BC}{AD} = \boxed{\textbf{(B) }\frac{1}{3}}</imath>.
+
+--- Solution 4 ---
+Let the point <imath>P</imath> be at the origin, and draw four concentric circles around <imath>P</imath> each with radius <imath>1</imath>, <imath>2</imath>, <imath>3</imath>, and <imath>4</imath>, respectively. The vertices of the trapezoid would be then on each of the four concentric circles. WLOG, let <imath>BC</imath> and <imath>AD</imath> be parallel to the <imath>x</imath>-axis. Assigning coordinates to each point, we have: <cmath>A=(x_1,y_1)</cmath> <cmath>B=(x_2,y_2)</cmath> <cmath>C=(x_3,y_2)</cmath> <cmath>D=(x_4,y_1)</cmath> which satisfy the following: 
+<cmath>x_1^2 + y_1^2 = 1 \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (1)</cmath>
+<cmath>x_2^2 + y_2^2 = 4 \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (2)</cmath>
+<cmath>x_3^2 + y_2^2 = 9 \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (3)</cmath>
+<cmath>x_4^2 + y_1^2 = 16 \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (4)</cmath>
+In addition, because the trapezoid is isosceles (<imath>AB=CD</imath>), the midpoints of the two bases would then have the same <imath>x</imath>-coordinate, giving us 
+<cmath> x_1 + x_4 = x_2 + x_3 \;\;\;\;\;\;\;\;\;\;\;\;\; (5)</cmath>
+Subtracting Equation <imath>2</imath> from Equation <imath>3</imath>, and Equation <imath>1</imath> from Equation <imath>4</imath>, we have
+<cmath>x_3^2 - x_2^2 = 5 \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (6)</cmath>
+<cmath>x_4^2 - x_1^2 = 15 \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (7)</cmath>
+Dividing Equation <imath>6</imath> by Equation <imath>7</imath>, we have
+<cmath>\frac{x_3^2-x_2^2}{x_4^2-x_1^2}=\frac{1}{3}</cmath>
+<cmath>\frac{(x_3-x_2)(x_3+x_2)}{(x_4-x_1)(x_4+x_1)}=\frac{1}{3}.</cmath>
+Cancelling <imath>(x_3+x_2)</imath> and <imath>(x_4+x_1)</imath> with Equation <imath>5</imath>, we get
+<cmath>\frac{(x_3-x_2)}{(x_4-x_1)}=\frac{1}{3}.</cmath>
+In other words,
+<cmath>\frac{BC}{AD}=\frac{1}{3}=\boxed{\textbf{(B) }\frac{1}{3}}.</cmath>
+
+--- Solution 5 ---
+As <imath>ABCD</imath> is an isosceles trapezoid, it is cyclic. We will use polar coordinates with origin <imath>O</imath> as in the following figure.
+
+[[File:2022AMC12AP20.png|center|500px]]
+
+The <imath>x</imath>-coordinate of <imath>C</imath> is <imath>r \cos \beta</imath>, <imath>BC = 2r \cos \beta</imath>. The <imath>x</imath>-coordinate of <imath>D</imath> is <imath>r \cos \alpha</imath>, <imath>AD = 2r \cos \alpha</imath>, <imath>\frac{BC}{AD} = \frac{ \cos \beta }{ \cos \alpha }</imath>
+
+By the law of cosines, 
+
+<cmath>OD^2 + OP^2 - 2 \cdot OD \cdot OP \cdot \cos (\theta - \alpha) = PD^2</cmath>
+<cmath>OC^2 + OP^2 - 2 \cdot OC \cdot OP \cdot \cos (\theta - \beta) = PC^2</cmath>
+<cmath>OB^2 + OP^2 - 2 \cdot OB \cdot OP \cdot \cos (\theta - \pi + \beta) = PB^2</cmath>
+<cmath>OA^2 + OP^2 - 2 \cdot OA \cdot OP \cdot \cos (\theta - \pi + \alpha) = PA^2</cmath>
+
+<cmath>\begin{align*}
+r^2 + d^2 - 2rd \cos (\theta - \alpha) = 16 \quad \quad (1) \\
+r^2 + d^2 - 2rd \cos (\theta - \beta) = 9 \quad \quad (2) \\
+r^2 + d^2 - 2rd \cos (\theta - \pi + \beta) = 4 \quad \quad (3) \\
+r^2 + d^2 - 2rd \cos (\theta - \pi + \alpha) = 1 \quad \quad (4) 
+\end{align*}</cmath>
+
+<cmath>\begin{align*}
+(3) - (2), \quad 2rd \cos (\theta - \beta) - 2rd \cos (\theta - \pi + \beta) = 4-9, \quad 2rd(\cos (\theta - \beta) + \cos (\theta + \beta)) = -5 \quad \quad (5) \\
+(4) - (1), \quad 2rd \cos (\theta - \alpha) - 2rd \cos (\theta - \pi + \alpha) = 1-16, \quad 2rd(\cos (\theta - \alpha) + \cos (\theta + \alpha)) = -15  \quad \quad (6)
+\end{align*}</cmath>
+
+<cmath>(5)/(6), \quad \frac{ 2rd(\cos (\theta - \beta) + \cos (\theta + \beta)) }{ 2rd(\cos (\theta - \alpha) + \cos (\theta + \alpha)) } = \frac{-5}{ -15 }, \quad \frac{ \cos (\theta - \beta) + \cos (\theta + \beta) }{ \cos (\theta - \alpha) + \cos (\theta + \alpha) } = \frac13</cmath>
+
+By the sum to product identity
+
+<cmath> \frac{ \cos (\theta - \beta) + \cos (\theta + \beta) }{ \cos (\theta - \alpha) + \cos (\theta + \alpha) } = \frac{  2 \cos ( \frac{\theta - \beta + \theta + \beta}{2}) \cos ( \frac{\theta - \beta - \theta - \beta}{2}) }{ 2 \cos ( \frac{\theta - \alpha + \theta + \alpha}{2}) \cos ( \frac{\theta - \alpha - \theta - \alpha}{2}) } = \frac{\cos \theta \cos \beta}{\cos \theta \cos \alpha} = \frac{\cos \beta}{\cos \alpha} = \boxed{\textbf{(B) }\frac{1}{3}}</cmath>
+
+--- Solution 6 ---
+[[File:AMC_12A_2022_Q20-Cheese_Diagram.png|500px|right]]
+Notice that the question never says what the height of the trapezoid is; the only property we know about it is that <imath>AC=BD</imath>. Therefore, we can assume that the height of the trapezoid is <imath>0</imath> and all <imath>5</imath> points, including <imath>P</imath>, lie on the same line with <imath>PA=AB=BC=CD=1</imath>. Notice that this satisfies the problem requirements because <imath>PA=1, PB=2, PC=3,PD=4</imath>, and <imath>AC=BD=2</imath>.
+Now all we have to find is <imath>\frac{BC}{AD} = \boxed{\textbf{(B) }\frac{1}{3}}</imath>.
+
+--- Solution 7 ---
+[[File:2022 AMC 12A 24.png|360px|right]]
+Consider the reflection <imath>P^{\prime}</imath> of <imath>P</imath> over the perpendicular bisector of <imath>\overline{BC}</imath>. 
+<cmath>PB = P^{\prime}C = a, PC = P^{\prime}B = b.</cmath>
+Let <imath>PE \perp BC, P^{\prime}E^{\prime} \perp BC.</imath>
+<cmath>BE = CE^{\prime}, PP^{\prime} = EE^{\prime} \implies </cmath>
+<cmath>b^2 - a^2 = PC^2 - PB^2 = CE^2 - BE^2</cmath>
+<cmath>=(CE - BE)(CE + BE) = EE^{\prime} \cdot BC = PP^{\prime} \cdot BC.</cmath>
+Similarly,
+<cmath>d^2 - c^2 = PP^{\prime} \cdot AD \implies \frac {BC}{AD} = \frac {b^2 - a^2}{d^2 - c^2}= \boxed{\textbf{(B) }\frac{1}{3}}.</cmath>
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+--- Solution 8 ---
+Let the feet of the altitude from <imath>P</imath> to <imath>BC</imath> be <imath>E</imath>, and the feet of the altitude from <imath>P</imath> to <imath>AD</imath> be <imath>F</imath>. Let <imath>CE=y</imath>, <imath>BE=x</imath>. Observe that <imath>DF=y+d</imath>, <imath>AF=x+d</imath> where <imath>AD=BC+2d</imath> due to the properties of iscoceles trapezoids. 
+
+Then <imath>y^2-x^2=CE^2-BE^2=CP^2-BP^2=5</imath> by the Pythagorean Theorem. Hence, <imath>5+2d(y-x)=y^2-x^2+2d(y-x)=(y+d)^2-(x+d)^2=4^2-1^2=15 \implies d(y-x)=5</imath>. But <imath>y^2-x^2=5</imath>, so <imath>d(y-x)=y^2-x^2 \implies d=y+x</imath>. But <imath>AD=BC+2d=x+y+2d=3(x+y)</imath>, so <imath>\frac{BC}{AD}=\frac{1}{3}</imath>.
+
+-mathMagicOPS
+
+--- Solution 9 ---
+Using some naming conventions from Solution 8, let <imath>PE=h_2</imath>, <imath>PF=h_1</imath>, <imath>AB=CD=x</imath>, <imath>BC=n</imath>, and <imath>AD=n+2d</imath>. We are seeking to find <imath>\frac{BC}{AD} = \frac{n}{n+2d}</imath>.
+
+Using Pythagorean Theorem on all four triangles with <imath>PA,PB,PC,PD</imath> as their hypotenuses, we get that <imath>BE=\sqrt{4-h_2^2}</imath>, <imath>EC=\sqrt{9-h_2^2}</imath>, <imath>AF=\sqrt{1-h_1^2}</imath>, and <imath>FD=\sqrt{16-h_1^2}</imath>. <imath>\frac{n}{n+2d} = \frac{\sqrt{9-h_2^2}+\sqrt{4-h_2^2}}{\sqrt{16-h_1^2}+\sqrt{1-h_1^2}}</imath>
+
+Using <imath>AF</imath> and <imath>BE</imath> to find <imath>d</imath> we get <imath>d = \sqrt{1-h_1^2}-\sqrt{4-h_2^2}</imath>. Similarly, using <imath>EC</imath> and <imath>FD</imath> we get <imath>d = \sqrt{16-h_1^2}-\sqrt{9-h_2^2}</imath>. Isolating variables gives us <imath>\sqrt{16-h_1^2}-\sqrt{1-h_1^2}=\sqrt{9-h_2^2}-\sqrt{4-h_2^2}</imath>.
+
+Notice that in the fraction we want, both the numerator and denominator's conjugates are equal because of our equation. By multiplying that fraction by <imath>\frac{\sqrt{9-h_2^2}-\sqrt{4-h_2^2}}{\sqrt{16-h_1^2}-\sqrt{1-h_1^2}}</imath>, all <imath>h_1</imath> and <imath>h_2</imath> cancel, leaving us with <imath>\frac{1}{3}</imath>.
+
+
+=== Problem 24 ===
+How many strings of length
+
+Choices: {'A': '500', 'B': '625', 'C': '1089', 'D': '1199', 'E': '1296</math>'}
+Answer: E
+
+--- Solution 1 ---
+For some <imath>n</imath>, let there be <imath>n+1</imath> parking spaces counterclockwise in a circle. Consider a string of <imath>n</imath> integers <imath>c_1c_2 \ldots c_n</imath> each between <imath>0</imath> and <imath>n</imath>, and let <imath>n</imath> cars come into this circle so that the <imath>i</imath>th car tries to park at spot <imath>c_i</imath>, but if it is already taken then it instead keeps going counterclockwise and takes the next available spot. After this process, exactly one spot will remain empty.
+
+Then the strings of <imath>n</imath> numbers between <imath>0</imath> and <imath>n-1</imath> that contain at least <imath>k</imath> integers <imath><k</imath> for <imath>1 \leq k \leq n</imath> are exactly the set of strings that leave spot <imath>n</imath> empty. Also note for any string <imath>c_1c_2 \ldots c_n</imath>, we can add <imath>1</imath> to each <imath>c_i</imath> (mod <imath>n+1</imath>) to shift the empty spot counterclockwise, meaning for each string there exists exactly one <imath>j</imath> with <imath>0 \leq j \leq n</imath> so that <imath>(c_1+j)(c_2+j) \ldots (c_n+j)</imath> leaves spot <imath>n</imath> empty. This gives there are <imath>\frac{(n+1)^{n}}{n+1} = (n+1)^{n-1}</imath> such strings. 
+
+Plugging in <imath>n = 5</imath> gives <imath>\boxed{\textbf{(E) }1296}</imath> such strings.
+
+--- Solution 2 ---
+Consider some string that satisfies the problem statement, with <imath>a</imath> 0's, <imath>b</imath> 1's, <imath>c</imath> 2's, <imath>d</imath> 3's, and <imath>e</imath> 4's, so <imath>a+b+c+d+e=5</imath>. There are exactly <imath>\dfrac{5!}{a!b!c!d!e!}</imath> ways to order the given string. This number will be divisible by 5 unless one of <imath>a, b, c, d, e</imath> is <imath>5</imath>, which implies that the rest are <imath>0</imath>. This corresponds to the string having <imath>5</imath> of one digit. But the only possible string that has <imath>1</imath> distinct digit is <imath>00000</imath>. Thus, the number of strings must be <imath>1 \pmod{5}</imath>. The only answer choice that satisfies this is <imath>\boxed{\textbf{(E) }1296}</imath>.
+
+--- Solution 3 ---
+Note that a valid string must have at least one <imath>0.</imath>
+
+We perform casework on the number of different digits such strings can have. For each string, we list the digits in ascending order, then consider permutations:
+<ol style="margin-left: 1.5em;">
+  <li>The string has <imath>1</imath> different digit.</li><p>
+The only possibility is <imath>00000.</imath> <p>
+<b>There is <imath>\boldsymbol{1}</imath> string in this case.</b>
+  <li>The string has <imath>2</imath> different digits.</li><p>
+We have the following table:
+<cmath>\begin{array}{c||c|c|c|c||c}
+& & & & & \\ [-2.5ex]
+\textbf{Digits} & \boldsymbol{01} & \boldsymbol{02} & \boldsymbol{03} & \boldsymbol{04} & \textbf{Row's Count} \\ [0.5ex]
+\hline
+& & & & & \\ [-1.5ex]
+& 00001 & 00002 & 00003 & 00004 & \hspace{2mm}4\cdot\frac{5!}{4!1!}=20 \\ [2ex] 
+& 00011 & 00022 & 00033 & & \hspace{2mm}3\cdot\frac{5!}{3!2!}=30 \\ [2ex] 
+& 00111 & 00222 & & & \hspace{2mm}2\cdot\frac{5!}{2!3!}=20 \\ [2ex] 
+& 01111 & & & & 1\cdot\frac{5!}{1!4!}=5 \\ [0.75ex]
+\end{array}</cmath>
+<b>There are <imath>\boldsymbol{20+30+20+5=75}</imath> strings in this case.</b>
+  <li>The string has <imath>3</imath> different digits.</li><p>
+We have the following table:
+<cmath>\begin{array}{c||c|c|c|c|c|c||c}
+& & & & & & &  \\ [-2.5ex]
+\textbf{Digits} & \boldsymbol{012} & \boldsymbol{013} & \boldsymbol{014} & \boldsymbol{023} & \boldsymbol{024} & \boldsymbol{034} & \textbf{Row's Count} \\ [0.5ex]
+\hline
+& & & & & & & \\ [-1.5ex]
+& 00012 & 00013 & 00014 & 00023 & 00024 & 00034 & \hspace{2mm}6\cdot\frac{5!}{3!1!1!}=120 \\ [2ex] 
+& 00112 & 00113 & 00114 & 00223 & 00224 & & \hspace{2mm}5\cdot\frac{5!}{2!2!1!}=150 \\ [2ex] 
+& 00122 & 00133 & & 00233 & & & 3\cdot\frac{5!}{2!1!2!}=90 \\ [2ex] 
+& 01112 & 01113 & 01114 & & & & 3\cdot\frac{5!}{1!3!1!}=60 \\ [2ex]
+& 01122 & 01133 & & & & & 2\cdot\frac{5!}{1!2!2!}=60 \\ [2ex]
+& 01222 & & & & & & 1\cdot\frac{5!}{1!1!3!}=20 \\ [0.75ex]
+\end{array}</cmath>
+<b>There are <imath>\boldsymbol{120+150+90+60+60+20=500}</imath> strings in this case.</b>
+  <li>The string has <imath>4</imath> different digits.</li><p>
+We have the following table:
+<cmath>\begin{array}{c||c|c|c|c}
+& & & & \\ [-2.5ex]
+\textbf{Digits} & \boldsymbol{0123} & \boldsymbol{0124} & \boldsymbol{0134} & \boldsymbol{0234} \\ [0.5ex]
+\hline
+& & & & \\ [-1.5ex]
+& 00123 & 00124 & 00134 & 00234 \\ [2ex] 
+& 01123 & 01124 & 01134 & \\ [2ex] 
+& 01223 & 01224 & & \\ [2ex] 
+& 01233 & & & \\ [0.75ex]
+\end{array}</cmath>
+<b>There are <imath>\boldsymbol{10\cdot\frac{5!}{2!1!1!1!}=600}</imath> strings in this case.</b>
+  <li>The string has <imath>5</imath> different digits.</li><p>
+<b>There are <imath>\boldsymbol{5!=120}</imath> strings in this case.</b>
+</ol>
+Together, the answer is <imath>1+75+500+600+120=\boxed{\textbf{(E) }1296}.</imath>
+
+--- Solution 4 ---
+Denote by <imath>N \left( p, q \right)</imath> the number of <imath>p</imath>-digit strings formed by using numbers <imath>0, 1, \cdots, q</imath>, where for each <imath>j \in \{1,2, \cdots , q\}</imath>, at least <imath>j</imath> of the digits are less than <imath>j</imath>.
+
+We have the following recursive equation:
+<cmath>
+N \left( p, q \right)
+= \sum_{i = 0}^{p - q} \binom{p}{i} N \left( p - i, q - 1 \right) , \ \forall \ p \geq q \mbox{ and } q \geq 1
+</cmath>
+and the boundary condition <imath>N \left( p, 0 \right) = 1</imath> for any <imath>p \geq 0</imath>.
+
+By solving this recursive equation, for <imath>q = 1</imath> and <imath>p \geq q</imath>, we get
+<cmath>
+\begin{align*}
+N \left( p , 1 \right)
+& = \sum_{i = 0}^{p - 1} \binom{p}{i} N \left( p - i, 0 \right) \\
+& = \sum_{i = 0}^{p - 1} \binom{p}{i} \\
+& = \sum_{i = 0}^p \binom{p}{i} - \binom{p}{p} \\
+& = 2^p - 1 .
+\end{align*}
+</cmath>
+
+For <imath>q = 2</imath> and <imath>p \geq q</imath>, we get
+<cmath>
+\begin{align*}
+N \left( p , 2 \right)
+& = \sum_{i = 0}^{p - 2} \binom{p}{i} N \left( p - i, 1 \right) \\
+& = \sum_{i = 0}^{p - 2} \binom{p}{i} \left( 2^{p - i} - 1 \right) \\
+& = \sum_{i = 0}^p \binom{p}{i} \left( 2^{p - i} - 1 \right)
+- \sum_{i = p - 1}^p \binom{p}{i} \left( 2^{p - i} - 1 \right) \\
+& = \sum_{i = 0}^p \left( \binom{p}{i} 1^i 2^{p - i} - \binom{p}{i} 1^i 1^{p - i} \right)
+- p \\
+& = \left( 1 + 2 \right)^p - \left( 1 + 1 \right)^p - p \\
+& = 3^p - 2^p - p .
+\end{align*}
+</cmath>
+
+For <imath>q = 3</imath> and <imath>p \geq q</imath>, we get
+<cmath>
+\begin{align*}
+N \left( p , 3 \right)
+& = \sum_{i = 0}^{p - 3} \binom{p}{i} N \left( p - i, 2 \right) \\
+& = \sum_{i = 0}^{p - 3} \binom{p}{i} \left( 3^{p - i} - 2^{p - i} - \left( p - i \right) \right) \\
+& = \sum_{i = 0}^p \binom{p}{i} \left( 3^{p - i} - 2^{p - i} - \left( p - i \right) \right)
+- \sum_{i = p - 2}^p \binom{p}{i} \left( 3^{p - i} - 2^{p - i} - \left( p - i \right) \right) \\
+& = \sum_{i = 0}^p \left( \binom{p}{i} 1^i 3^{p - i} - \binom{p}{i} 1^i 2^{p - i}
+- \binom{p}{i} \left( p - i \right) \right)
+- \frac{3}{2} p \left( p - 1 \right) \\
+& = \left( 1 + 3 \right)^p - \left( 1 + 2 \right)^p
+- \frac{d \left( 1 + x \right)^p}{dx} \bigg|_{x = 1}
+- \frac{3}{2} p \left( p - 1 \right) \\
+& = 4^p - 3^p - 2^{p-1} p - \frac{3}{2} p \left( p - 1 \right) .
+\end{align*}
+</cmath>
+
+For <imath>q = 4</imath> and <imath>p = 5</imath>, we get
+<cmath>
+\begin{align*}
+N \left( 5 , 4 \right)
+& = \sum_{i = 0}^1 \binom{5}{i} N \left( 5 - i , 3 \right) \\
+& = N \left( 5 , 3 \right) + 5 N \left( 4 , 3 \right) \\
+& = \boxed{\textbf{(E) }1296}  .
+\end{align*}
+</cmath>
+
+--- Solution 5 ---
+The number of strings is <imath>(n+1)^{(n-1)}</imath> as shown by Solution 1 (Parking Function), which is always equivalent to 1 (mod n). Thus you can choose <imath>\boxed{\textbf{(E) }1296}</imath>.
+
+However, you **CANNOT** prove that fact from this *incorrect* argument:
+
+Let the set of all valid sequences be <imath>S</imath>. 
+Notice that for any sequence <imath>\{a_1,a_2,a_3,a_4,a_5\}</imath> in <imath>S</imath>, the 5 cyclic permutations
+<cmath>
+\begin{align*}
+\{a_1,a_2,a_3,a_4,a_5\}\\
+\{a_2,a_3,a_4,a_5,a_1\}\\
+\{a_3,a_4,a_5,a_1,a_2\}\\
+\{a_4,a_5,a_1,a_2,a_3\}\\
+\{a_5,a_1,a_2,a_3,a_4\}
+\end{align*}
+</cmath>
+must also belong in <imath>S</imath>. However, one must consider the edge case all 5 elements are the same (only <imath>\{0,0,0,0,0\}</imath>), in which case all sequences listed are equivalent.
+
+Alas, one must also consider cases like 10101 that only have 3 distinct cyclic permutations, so we cannot get a useful constraint from this view, unless *all* the cases are categorized and counted. 
+
+Thus it is NOT implied that <imath>\lvert S \rvert \equiv 1  \pmod 5</imath>, so it is not justified to choose <imath>\boxed{\textbf{(E) }1296}</imath> by inspection of answer options.
+
+If you solve <imath>S(n)</imath> for smaller <imath>n</imath> by bashing, you can find <imath>|S(1)| =1</imath>, <imath>|S(2)| = 3</imath>, <imath>|S(3)| =16</imath>, <imath>|S(4)| =125</imath>, 
+which leads to an Engineer's Induction guess that <imath>|S(n)| \equiv 1 \pmod n</imath>, or the exact formula <imath>(n+1)^{(n-1)}</imath>
+
+
+Note: 
+I'm pretty sure this solution works. Firstly, 10101 does have 5 distinct cyclic permutations, namely 10101, 11010, 01101, 10110, and 01011. Secondly, any sequence of 5 elements must have either 1 or a multiple of 5 distinct cyclic permutations. If a sequence of 5 elements has only 1 cyclic permutation, that must be the case with <imath>(0, 0, 0, 0, 0)</imath>, as noted (since 0 is necessary in our sequence when <imath>j = 1</imath>). If the sequence is cyclic every <imath>k</imath> "rotations/shifts," then it is ONLY going to be at the starting sequence when you shift it <imath>0, k, 2k, \dots</imath> times. Since shifting any sequence 5 times takes it back to itself, we must have <imath>k \mid 5 \implies k = 5</imath> (since we already considered <imath>k = 1</imath> with <imath>(0, 0, 0, 0, 0)</imath>), so the cycle must be <imath>5</imath>. So really, this solution does work, is not by coincidence, and is a very nice (albeit cheap) solution.
+
+TL;DR: The sentence "Alas, one must also consider cases like 10101 that only have 3 distinct cyclic permutations" is incorrect, for these cases do not actually exist. It's trivial to check 10101 has 5 cyclic permutations.
+
+--- Solution 6 ---
+Solution 4 tried to observe the answer modulo <imath>5</imath> to easily solve the problem, but apparently had faulty logic. This solution is still completely viable though:
+
+Notice that for any valid set <imath>\{a_1, a_2, a_3, a_4, a_5\}</imath>, if there is at least one element in the set that is unique (i.e. there is at least one digit in the set that is found nowhere else in the set), then the number of distinct permutations of the set is clearly divisible by <imath>5</imath> (alternatively there is no factor of 5 in the denominator of the multinomial coefficient unless an element is repeated 5 times). Therefore to evaluate the answer modulo <imath>5</imath>, we only need to look at sets where each element has a multiplicity of at least <imath>2</imath> (i.e. appears twice or more in the set). 
+
+These sets are of the form <imath>\{a,a,b,b,b\}</imath> and <imath>\{a,a,a,a,a\}</imath>. The first set can be permuted in <imath>\binom{5}{2,3}=10 \equiv 0\pmod{5}</imath>, and the second set can be permuted one way, and the only set of the form <imath>\{a,a,a,a,a\}</imath> is <imath>\{0,0,0,0,0\}</imath>. Therefore the answer is congruent to <imath>1\pmod{5}</imath> and you CAN choose <imath>\boxed{\textbf{(E) }1296}</imath>.
+
+--- Solution 7 ---
+We list out all possibilities for the string, sorted in increasing order. Note that 1 cannot appear before the 2nd position, 2 cannot appear before the 3rd position, and so on. We also make a list of the number of possible permutations of each sorted string.
+
+00000 - 1
+
+00001 - 5
+
+00002 - 5
+
+00003 - 5
+
+00004 - 5
+
+00011 - 10
+
+00012 - 20
+
+00013 - 20
+
+00014 - 20
+
+00022 - 10
+
+00023 - 20
+
+00024 - 20
+
+00033 - 10
+
+00034 - 20
+
+00111 - 10
+
+00112 - 30
+
+00113 - 30
+
+00114 - 30
+
+00122 - 30
+
+00123 - 60
+
+00124 - 60
+
+00133 - 30
+
+00134 - 60
+
+00222 - 10
+
+00223 - 30
+
+00224 - 30
+
+00233 - 30
+
+00234 - 60
+
+01111 - 5
+
+01112 - 20
+
+01113 - 20
+
+01114 - 20
+
+01122 - 30
+
+01123 - 60
+
+01124 - 60
+
+01133 - 30
+
+01134 - 60
+
+01222 - 20
+
+01223 - 60
+
+01224 - 60
+
+01233 - 60
+
+01234 - 120
+
+
+Finally, adding all of these up, we obtain <imath>1\cdot 1+5\cdot 5+5\cdot 10+10\cdot 20+10\cdot 30 + 10\cdot 60 + 1\cdot 120 = \boxed{\textbf{(E) }1296}</imath>. (Or alternatively, we could notice as in solution 5 that the only possible string with only 1 permutation is 00000, and thus the answer must be congruent to 1 modulo 5)
+
+The key to organizing all of these cases is to increase the digits one by one, starting from the right and iterating through all the possible cases.
+
+--- Solution 8 ---
+Let us call the condition where you require at least <imath>j</imath> digits less than <imath>j</imath> Rule <imath>j</imath>.
+For a sequence to break Rule <imath>1</imath>, it must contain no <imath>0</imath>s. There are <imath>4^5=1024</imath> ways to do this.
+For a sequence to break Rule <imath>2</imath> but not Rule <imath>1</imath>, it must contain exactly 1 <imath>0</imath>. However, this one <imath>0</imath> contributes toward completing the rule, meaning all other digits must be greater than <imath>2</imath>. After placing the one <imath>0</imath> in any of <imath>5</imath> slots, there are <imath>4</imath> slots left with <imath>3</imath> options each, giving a total of <imath>5 \cdot 3^4 = 405</imath> ways.
+For a sequence to break Rule <imath>3</imath> but neither Rule <imath>2</imath> or <imath>1</imath>, it must have two digits less than <imath>2</imath> (either <imath>(0, 0)</imath> or <imath>(0, 1)</imath>) and all other digits must be <imath>3</imath> or <imath>4</imath>. There are a total of <imath>30</imath> ways to arrange the first two digits and <imath>2^3</imath> ways to arrange the latter three, leaving <imath>240</imath> ways to do this.
+Finally, for a sequence to only break rule <imath>4</imath>, it must have three digits less than <imath>3</imath>. They could be <imath>(0, 1, 2)</imath> (60 arr.), <imath>(0, 1, 1); (0, 0, 1); (0, 0, 2)</imath> (<imath>30</imath> arr. each), or <imath>(0, 0, 0)</imath> (<imath>10</imath> arr.) This gives <imath>160</imath> possible arrangements overall.
+
+There are in total <imath>5^5=3125</imath> possible arrangements, so by adding all of the invalid states together and subtracting from <imath>3125</imath>, we get our answer, which is <imath>\boxed{\textbf{(E) }1296}</imath>
+
+
+Great idea!
+
+--- Solution 9 ---
+We will use recursion to solve this problem. Let us break up the problem's condition into criteria, with criterion \( k \) being the requirement that at least \( k \) of the digits are less than \( k \). Define \( A_n \) as the number of strings of length \( n \) formed from the digits \( 0, 1, 2, \dots, n-1 \) such that at least \( j \) of the digits are less than \( j \) for all integers \( j \); \( 1 \le j \le n-1 \).
+
+Note that the final criterion any string counted as apart of \( A_{n-1} \) is required to meet is criterion \( n-2 \). However, all strings that \( A_{n-1} \) counts will also meet criterion \( n-1 \). This is due to the maximum value of such strings' \( n-1 \) digits being \( n-2 \). Initially, we have \( A_1 = 1 \). We check cases and find \( A_2 = 3 \). To generate recursion, consider the compliment of the problem's condition. Without the condition, we are counting strings of length \( n \) with \( n \) choices for each digit. There are of course \( n^n \) such strings. To count the number of strings that do not meet at least one criterion, we denote a string as \( k \)-bad if the first criterion the string violates is criterion \( k \). For example, the string <imath>33040</imath> is <imath>3</imath>-bad because it meets criteria 1 and 2, but violates criterion 3. Similarly, the string <imath>13223</imath> is <imath>1</imath>-bad because it does contain 1 digit less than 1. We can count the number of strings that are \( k \)-bad by first choosing and assigning \( k-1 \) of the string's \( n \) spots to a string counted as apart of \( A_{k-1} \). This can be done in \( \binom{n}{k-1} \cdot A_{k-1} \) ways. This \( (k-1) \) digit string will meet all criteria up to criterion \( k-1 \). To ensure criterion \( k \) is not met, we fill up the remaining \( n-(k-1) \) spots with a digit from \( k \) to \( n-1 \), inclusive. This can be done in \( (n-k)^{n+1-k} \) ways. We sum over all integers \( k \), \( 1 \le k \le n-1 \) to count all strings that do not meet at least one criterion.
+
+<cmath>
+\sum_{k=1}^{n-1} \binom{n}{k-1} A_{k-1} (n-k)^{n+1-k}
+</cmath>
+This is the same as
+<cmath>
+\sum_{k=2}^{n} \binom{n}{k-2} A_{k-2} (n-k+1)^{n+2-k}=\sum_{k=2}^{n} \binom{n}{n+2-k} A_{k-2} (n-k+1)^{n+2-k}
+</cmath>
+We substitute \( n+2-k \) for \( k \) as the expression takes on the same set of values. We have
+<cmath>
+\sum_{k=2}^{n} \binom{n}{n+2-(n+2-k)} A_{(n+2-k)-2} (n-(n+2-k)+1)^{n+2-(n+2-k)} = \sum_{k=2}^{n} \binom{n}{k} A_{n-k} (k-1)^k
+</cmath>
+Therefore,
+<cmath>
+A_n = n^n - \sum_{k=2}^{n} \binom{n}{k} A_{n-k} (k-1)^k
+</cmath>
+Setting \( A_0 = 1 \) and \( A_1 = 1 \), we use the recursion to derive \( A_2 = 3 \), \( A_3 = 16 \), \( A_4 = 125 \), \( A_5 = 1296 \). In our problem, we were counting 5 digits strings. Thus, the answer is <imath>\boxed{\textbf{(E) }1296}</imath>
+
+
+=== Problem 25 ===
+Let
+
+Choices: {'A': '336', 'B': '337', 'C': '338', 'D': '339', 'E': '340</math>'}
+Answer: B
+
+--- Solution 1 ---
+Let <math>r</math> be the number of lattice points on the side length of square <math>R</math>, <math>s</math> be the number of lattice points on the side length of square <math>S</math>, and <math>t</math> be the number of lattice points on the side length of square <math>T</math>. Note that the actual lengths of the side lengths are the number of lattice points minus <math>1</math>, so we can work in terms of <math>r, s, t</math> and subtract <math>3</math> to get the actual answer at the end. Furthermore, note that the number of lattice points inside a rectangular region is equal to the number of lattice points in its width times the number of lattice points along its length.
+
+Using this fact, the number of lattice points in <math>R</math> is <math>r^2</math>, the number of lattice points in <math>S</math> is <math>s^2</math>, and the number of lattice points in <math>T</math> is <math>t^2</math>.
+
+Now, by the first condition, we have <cmath>r^2=\frac{9}{4}\cdot s^2 \implies r = \frac{3}{2}s     \quad \quad \quad \quad \quad (1)</cmath>
+
+The second condition, the number of lattice points contained in <math>T</math> is a fourth of the number of lattice points contained in <math>R \cup S</math>. The number of lattice points in <math>R \cup S</math> is equal to the sum of the lattice points in their individually bounded regions, but the lattice points along the y-axis for the full length of square <math>S</math> is shared by both of them, so we need to subtract that out.
+
+In all, this condition yields us <math>t^2 = \frac{1}{4}\cdot(r^2 + s^2 - s )\implies t^2 = \frac{1}{4}\cdot\left(\frac{9}{4}\cdot s^2 + s^2 - s \right)</math>
+<math>
+\implies t^2=\frac{1}{4}\cdot\frac{13s^2-4s}{4} \implies 16t^2= s(13s-4)</math>
+
+Note from <math>(1)</math> that <math>s</math> is a multiple of <math>2</math>. We can write <math>s=2j</math> and substitute:
+<math>16t^2=2j(26j-4) \implies 4t^2=j(13j-2)</math>.
+Note that <math>j</math> must be divisible by two for the product to be divisible by 4. Thus we make another substitution, <math>j=2k</math>:
+<cmath>4t^2=2k(26k-2) \implies  t^2 = k(13k-1) \quad \quad \quad \quad \quad (2)</cmath>
+
+Finally we look at the last condition; that the fraction of the lattice points inside <math>S</math> that are inside <math>S \cap T</math> is <math>27</math> times the fraction of lattice points inside <math>r</math> that are inside <math>R \cap T</math>.
+
+Let <math>x</math> be the number of lattice points along the bottom of the rectangle formed by <math>S \cap T</math>, and <math>y</math> be the number of lattice points along the bottom of the the rectangle formed by <math>R \cap T</math>.
+
+Therefore, the number of lattice points in <math>S\cap T </math> is <math>xt</math> and the number of lattice points in <math>R \cap T</math> is <math>yt</math>.
+
+Thus by this condition, <math>\frac{xt}{s^2} = 27 \cdot \frac{yt}{r^2} \implies \frac{x}{s^2} = 27 \cdot \frac{y}{\frac{9}{4}\cdot s^2} \implies x= 12y</math>
+
+Finally, notice that <math>t=x+y-1=12y+y-1</math> (subtracting overlap), and so we have <cmath>t=13y-1 \quad \quad \quad \quad \quad (3)</cmath>
+
+Now notice that by <math>(3)</math> , <math>t\equiv -1 \pmod{13}\implies t^2 \equiv 1 \pmod{13}</math>.
+
+However, by <math>(2)</math> , <math>t^2 \equiv k \cdot -1 \pmod{13}</math>. Therefore, <math>-k \equiv 1 \pmod{13} \implies k \equiv -1 \pmod{13}</math>
+
+Also, by <math>(2)</math> , we know <math>k</math> must be a perfect square since <math>k</math> is relatively prime to <math>13k-1</math> (Euclids algorithm) and the two must multiply to a perfect square. Hence we know two conditions on <math>k</math>, and we can now guess and check to find the smallest that satisfies both.
+
+We check <math>k=12</math> first since its one less than a multiple of <math>13</math>, but this does not work. Next, we have <math>k=25</math> which works because <math>25</math> is a perfect square. Thus we have found the smallest <math>k</math>, and therefore the smallest <math>r, s, t</math>.
+
+Now we just work backwards: <math>j= 2k = 50</math> and <math>s=2j=100</math>. Then <math>r=\frac{3}{2}\cdot 100 = 150</math>. Finally, from <math>(2)</math> , <math>t^2=25(13\cdot25-1) \implies t^2 = 25 \cdot 324 \implies t=5\cdot 18=90</math>.
+
+Finally, the sum of each square’s side lengths is <math>r+s+t-3=340-3=337=\boxed{\textbf{(B) }337}</math>.
+
+--- Solution 2 ---
+Notice that each answer choice has a different residue mod <math>13</math>. Therefore, we can just find the residue of <math>r+s+t-3</math> mod <math>13</math> and find the unique answer choice that fits, without actually finding <math>r, s, t</math>.
+
+From Solution 1, we have <math>16t^2 = s(13s-4)</math> from the second condition. From the third condition, <math>t\equiv -1 \pmod{13} \implies t^2 \equiv 1 \pmod{13}</math>.
+Substituting, we get <math>16 \cdot 1 \equiv s \cdot -4 \pmod{13}</math>. Therefore, <math>s \equiv -4 \pmod{13}</math>.
+From the first condition, we have <math>r=\frac{3}{2} \cdot s</math>, so <math>r \equiv -6 \pmod{13}</math>.
+
+Therefore <math>r+s+t \equiv -6-4-1 \equiv -11 \equiv 2 \pmod {13}</math>. 
+
+We want to find <math>r+s+t-3</math>, so our answer will have a remainder of <math>-1</math> when divided by <math>13</math>. 
+
+We divide <math>340</math> by <math>13</math> and find that the remainder is <math>2</math>. Therefore the answer that will give us a remainder of <math>-1</math> will be <math>340-3=337=\boxed{\textbf{(B) }337}</math>.
+
+--- Solution 3 ---
+<p><strong>Solution:</strong> Let <math>r</math>, <math>s</math>, <math>t</math> be the edge length of square <math>R</math>, <math>S</math>, and <math>T</math> respectively. Then we have <cmath>(r+1)^2=\dfrac{9}{4}(s+1)^2\ \ \ \ \ (t+1)^2=\dfrac{1}{4}((s+1)^2+(r+1)^2-(s+1))</cmath> Therefore <cmath>r=\dfrac{3s+1}{2}\ \ \ \ \ t=\dfrac{1}{4}\sqrt{(s+1)(13s+9)}-1</cmath> Therefore <cmath>r+s+t=\dfrac{3s+1}{2}+s+\dfrac{1}{4}\sqrt{(s+1)(13s+9)}-1</cmath> <cmath>\approx\dfrac{5}{2}s+\dfrac{\sqrt{13}}{4}s-\dfrac{1}{2}\approx 3.4\cdot s</cmath></p>
+
+<p>Given that average of the answer choices is around <math>340</math>, therefore <math>s\approx 100</math>. Since <math>t</math> is an integer, therefore <math>(s+1)(13s+9)</math> must be a perfect square divisible by 16. Plugging in <math>s=99</math>, <math>t=89</math> and <math>r=149</math>. Therefore <math>r+s+t=99+89+149=337</math>. So the answer is <math>\boxed{(\text{B})\ 337}</math>.</p>
+
+-fasterthanlight
+
+

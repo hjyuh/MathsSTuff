@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "summary": {
+    "best_rowsets": [],
+    "delta_max": 1200,
+    "delta_universe_count": 5,
+    "pair_cache_count": 5,
+    "pair_record_count": 3,
+    "rowset_count": 0,
+    "triple_count": 1,
+    "witness_count": 0,
+    "x_bound": 100000
+  }
+}

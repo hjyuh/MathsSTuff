@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-14T21-57-23-autoprove-a78d-ep488_no_bad_height3",
+  "status": "running",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "-- No bad block at height 3 for top-window components\n-- This should follow from finite case analysis on the slot structure\n\ndef TopWindow (C : Finset \u2115) (q : \u2115) : Prop :=\n  \u2200 r \u2208 C, q / 2 < r \u2227 r < q\n\ndef Block (q j : \u2115) : Finset \u2115 :=\n  Finset.Icc ((j - 1) * q + 1) (j * q)\n\nnoncomputable def Slot (q j r : \u2115) : Finset \u2115 :=\n  (Block q j).filter fun t => \u00ac(q \u2223 t) \u2227 r \u2223 t\n\nnoncomputable def BlockCov (C : Finset \u2115) (q j : \u2115) : \u2115 :=\n  ((Block q j).filter fun t => \u00ac(q \u2223 t) \u2227 \u2203 r \u2208 C, r \u2223 t).card\n\nnoncomputable def SlotMass (C : Finset \u2115) (q j : \u2115) : \u2115 :=\n  \u2211 r \u2208 C, (Slot q j r).card\n\ndef BadBlock (C : Finset \u2115) (q j : \u2115) : Prop :=\n  2 * BlockCov C q j < SlotMass C q j\n\n-- At height 3, block is (2q, 3q]. Each r > q/2 has multiples 2r and (maybe) 3r in this block.\n-- Since r > q/2, we have 2r > q and 3r > 3q/2. Also 2r < 2q and 3r < 3q.\n-- So 2r \u2208 (q, 2q) \u2282 block 2, and 3r \u2208 (3q/2, 3q) which IS in block 3.\n-- Each r contributes at most slot {3r} (if q \u2224 3r) to block 3.\n-- So SlotMass \u2264 |C| and BlockCov = |union of {3r : r \u2208 C, q \u2224 3r}|.\n-- For BadBlock we need 2*BlockCov < SlotMass \u2264 |C|.\n-- But BlockCov \u2265 1 if any slot is nonempty, giving 2 \u2264 2*BlockCov.\n-- And if SlotMass \u2264 |C| then we need 2*BlockCov < |C|.\n\n-- Actually wait: at height 3, each r has multiples 3r in (2q, 3q].\n-- Since r > q/2, 3r > 3q/2 > 2q \u2713. And r < q, so 3r < 3q \u2713.\n-- So each r contributes EXACTLY one multiple (3r) to block 3 (if q \u2224 3r).\n-- SlotMass = #{r \u2208 C : q \u2224 3r}.\n-- BlockCov = #{distinct values 3r : r \u2208 C, q \u2224 3r}.\n-- But 3r\u2081 = 3r\u2082 iff r\u2081 = r\u2082, so BlockCov = SlotMass.\n-- Then 2*BlockCov < SlotMass becomes 2*SlotMass < SlotMass, i.e. SlotMass < 0. Contradiction!\n\n-- Hmm, but Slot also includes 2r if 2r \u2208 (2q, 3q]. Since r > q/2, 2r > q.\n-- For 2r to be in block 3, need 2r > 2q, i.e. r > q. But r < q. So 2r < 2q.\n-- Therefore 2r is NOT in block 3. Only 3r is.\n\n-- So the proof should be: at height 3, SlotMass = BlockCov, so BadBlock is impossible.\n\ntheorem no_bad_block_height_three (C : Finset \u2115) (q : \u2115)\n    (hTop : TopWindow C q) (hq : 0 < q) :\n    \u00ac BadBlock C q 3 := by\n  sorry",
+  "started_at": "2026-04-14T21:57:23Z",
+  "finished_at": null,
+  "duration_s": null,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-14T21-57-23-autoprove-a78d-ep488_no_bad_height3.log",
+  "worker_pid": 14719,
+  "last_heartbeat_at": 1776209010.4644198,
+  "_started_monotonic": 1776203843.52821
+}

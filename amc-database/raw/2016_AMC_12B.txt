@@ -1,0 +1,960 @@
+=== Problem 1 ===
+What is the value of
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ \\frac{5}{2}', 'D': '\\ 10', 'E': '\\ 20</math>'}
+Answer: D
+
+--- Solution 1 ---
+By: Dragonfly
+
+We find that <math>a^{-1}</math> is the same as <math>2</math>, since a number to the power of <math>-1</math> is just the reciprocal of that number. We then get the equation to be
+
+<cmath>\frac{2\times2+\frac{2}{2}}{\frac{1}{2}}</cmath>
+
+We can then simplify the equation to get <math>\boxed{\textbf{(D)}\ 10}</math>
+
+
+=== Problem 2 ===
+The harmonic mean of two numbers can be calculated as twice their product divided by their sum. The harmonic mean of
+
+Choices: {'A': '\\ 2', 'B': '\\ 45', 'C': '\\ 504', 'D': '\\ 1008', 'E': '\\ 2015 </math>'}
+Answer: A
+
+--- Solution 1 ---
+Since the harmonic mean is <math>2</math> times their product divided by their sum, we get the equation
+
+<math>\frac{2\times1\times2016}{1+2016}</math>
+
+which is then
+
+<math>\frac{4032}{2017}</math>
+
+which is finally closest to <math>\boxed{\textbf{(A)}\ 2}</math>.
+-dragonfly
+--------------------------------------
+You can also think of <math>\frac{2\times1\times2016}{1+2016}</math> as <math>2\times\frac{2016}{2017}</math> which it should be obvious that our number is most closest to 2 (<math>\lceil\frac{2016}{2017}\rceil=1</math>), our answer here is <math>\boxed{(A)}</math>
+
+
+=== Problem 3 ===
+Let
+
+Choices: {'A': '\\ -2016', 'B': '\\ 0', 'C': '\\ 2016', 'D': '\\ 4032', 'E': '\\ 6048</math>'}
+Answer: D
+
+--- Solution 1 ---
+By: dragonfly
+
+First of all, lets plug in all of the <math>x</math>'s into the equation.
+
+<math>\bigg|</math> <math>||-2016|-(-2016)|-|-2016|</math> <math>\bigg|</math> <math>-(-2016)</math>
+
+Then we simplify to get
+
+<math>\bigg|</math> <math>|2016+2016|-2016</math> <math>\bigg|</math> <math>+2016</math>
+
+which simplifies into
+
+<math>\bigg|</math> <math>2016</math> <math>\bigg|</math> <math>+2016</math>
+
+and finally we get <math>\boxed{\textbf{(D)}\ 4032}</math>
+
+--- Solution 2 ---
+Consider <math>x</math> is negative.
+
+We replace all instances of <math>x</math> with <math>|x|</math>:
+
+<math>\bigg|</math> <math>||x|+|x||-|x|</math> <math>\bigg|</math> <math>+|x|</math>
+
+<math>=</math> <math>\bigg|</math> <math>|2x|-|x|</math> <math>\bigg|</math> <math>+|x|</math>
+
+<math>=</math> <math>|x|</math> <math>+|x|</math>
+
+<math>=|2x|</math>
+
+<math>=4032 \implies \boxed{\textbf{(D)}}</math>
+
+omerselim1
+
+
+=== Problem 4 ===
+The ratio of the measures of two acute angles is
+
+Choices: {'A': '\\ 75', 'B': '\\ 90', 'C': '\\ 135', 'D': '\\ 150', 'E': '\\ 270</math>'}
+Answer: C
+
+--- Solution 1 ---
+By: dragonfly
+
+We set up equations to find each angle. The larger angle will be represented as <math>x</math> and the smaller angle will be represented as <math>y</math>, in degrees. This implies that 
+
+<math>4x=5y</math>
+
+and
+
+<math>2\times(90-x)=90-y</math>
+
+since the larger the original angle, the smaller the complement.
+
+We then find that <math>x=75</math> and <math>y=60</math>, and their sum is <math>\boxed{\textbf{(C)}\ 135}</math>
+
+--- Solution 2 ---
+We can visualize the problem like so:
+<asy>
+path b = brace((0,10),(90,10),5);
+draw(b);
+label("$90^\circ$",b,N);
+
+draw("$5x$",(0,0)--(75,0),N);
+draw((75,2.5)--(75,-2.5));
+draw("$1y$",(75,0)--(90,0),N);
+
+draw("$4x$",(0,-10)--(60,-10),S);
+draw((60,-7.5)--(60,-12.5));
+draw("$2y$",(60,-10)--(90,-10),S);
+
+draw((0,5)--(0,-15));
+draw((90,5)--(90,-15));
+</asy>
+<cmath>5x+1y = 90^\circ = 4x+2y</cmath>
+Moving like terms to the same side gets <math>x = y</math>, and substituting this back gets <math>6x = 90^\circ \implies x = \frac{90^\circ}{6} = 15^\circ</math>, so the sum of the degree measures is <math>5x + 4x = 9x = 9(15) = \boxed{\textbf{(C)}\ 135}</math>. ~[[User:emerald_block|emerald_block]]
+
+
+=== Problem 5 ===
+The War of
+
+Choices: {'A': '\\ \\text{Friday}', 'B': '\\ \\text{Saturday}', 'C': '\\ \\text{Sunday}', 'D': '\\ \\text{Monday}', 'E': '\\ \\text{Tuesday} </math>'}
+Answer: B
+
+--- Solution 1 ---
+By: dragonfly
+
+To find what day of the week it is in <math>919</math> days, we have to divide <math>919</math> by <math>7</math> to see the remainder, and then add the remainder to the current day. We get that <math>\frac{919}{7}</math> has a remainder of 2, so we increase the current day by <math>2</math> to get <math>\boxed{\textbf{(B)}\ \text{Saturday}}</math>.
+
+Note that the dates themselves (and thus leap years) can be ignored, as we only need the number of days that passed to figure out the day of the week.
+
+--- Solution 2 ---
+<math>1812</math> is a leap year (divisible by <math>4</math>, but not divisible by <math>100</math> unless divisible by <math>400</math>), but June is after February so there are no leap days that need to be accounted for.
+
+Since <math>365 \equiv 1 \pmod{7}</math>, the same day after <math>1</math> year is <math>1</math> weekday ahead. Since <math>30 \equiv 2 \pmod{7}</math> and <math>31 \equiv 3 \pmod{7}</math>, the same day after <math>30</math>/<math>31</math> days is <math>2</math>/<math>3</math> weekdays ahead.
+
+* <math>2</math> years (<math>2</math> weekdays) passed, reaching June <math>18</math>, <math>1812</math>.
+* June <math>18</math>-<math>30</math> and July <math>1</math>-<math>17</math> (<math>30</math> days or <math>2</math> weekdays) passed, reaching July <math>18</math>.
+* July <math>18</math>-<math>31</math> and August <math>1</math>-<math>17</math> (<math>31</math> days or <math>3</math> weekdays) passed, reaching August <math>18</math>.
+* August-September (<math>3</math> weekdays) passed.
+* September-October (<math>2</math> weekdays) passed.
+* October-November (<math>3</math> weekdays) passed.
+* November-December (<math>2</math> weekdays) passed, reaching December <math>18</math>.
+* <math>6</math> days passed, reaching December <math>24</math>.
+
+This gives a total of <math>2+2+3+3+2+3+2+6 \equiv 2 \pmod{7}</math> weekdays passing, which gets from Thursday to <math>\boxed{\textbf{(B)}\ \text{Saturday}}</math>. ~[[User:emerald_block|emerald_block]]
+
+--- Solution 3 ---
+Since [https://en.wikipedia.org/wiki/Doomsday_rule doomsday] of <math>2000</math> is <math>2</math> (Tuesday) and <math>2000</math> is a multiple of <math>400</math>, counting down by <math>100</math>-year intervals gets that doomsday of <math>1800</math> is <math>2+1+2 \equiv 5</math>. Counting up by <math>4</math>-year intervals, doomsday of <math>1812</math> is <math>5-3\cdot2 \equiv 6</math>. Doomsday of <math>1814</math> is then <math>6+2\cdot1 \equiv 1</math>, so December 12 is weekday <math>1</math>. December 24 is then weekday <math>1+12 \equiv 6 = \boxed{\textbf{(B)}\ \text{Saturday}}</math>. ~[[User:emerald_block|emerald_block]]
+
+
+=== Problem 6 ===
+All three vertices of
+
+Choices: {'A': '\\ 4', 'B': '\\ 6', 'C': '\\ 8', 'D': '\\ 10', 'E': '\\ 16</math>'}
+Answer: C
+
+--- Solution 1 ---
+By: Albert471
+
+Plotting points <math>B</math> and <math>C</math> on the graph shows that they are at <math>\left( -x,x^2\right)</math> and <math>\left( x,x^2\right)</math>, which is isosceles. By setting up the triangle area formula you get: <math>64=\frac{1}{2}*2x*x^2  =   64=x^3</math> Making x=4, and the length of <math>BC</math> is <math>2x</math>, so the answer is <math>\boxed{\textbf{(C)}\ 8}</math>.
+
+
+=== Problem 7 ===
+Josh writes the numbers
+
+Choices: {'A': '\\ 13', 'B': '\\ 32', 'C': '\\ 56', 'D': '\\ 64', 'E': '\\ 96</math>'}
+Answer: D
+
+--- Solution 1 ---
+Following the pattern, you are crossing out...
+
+Time 1: Every non-multiple of <math>2</math>
+
+Time 2: Every non-multiple of <math>4</math>
+
+Time 3: Every non-multiple of <math>8</math>
+
+Following this pattern, you are left with every multiple of <math>64</math> which is only <math>\boxed{\textbf{(D)}64}</math>.
+
+--- Solution 2 ---
+<math>\boxed{\textbf{(A)}13}</math> is odd so it is automatically crossed out in the first selection.
+
+<math>\boxed{\textbf{(B)}32}</math> and  <math>\boxed{\textbf{(E)}96}</math> behave similarly so they would both get knocked out in the same round.
+
+<math>\boxed{\textbf{(C)}56}</math> and  <math>\boxed{\textbf{(D)}64}</math> are left, and since it is (slightly) more likely for the number to be larger, we can guess  <math>\boxed{\textbf{(D)}64}</math> if we're really running out of time.
+
+
+=== Problem 8 ===
+A thin piece of wood of uniform density in the shape of an equilateral triangle with side length
+
+Choices: {'A': '\\ 14.0', 'B': '\\ 16.0', 'C': '\\ 20.0', 'D': '\\ 33.3', 'E': '\\ 55.6</math>'}
+Answer: D
+
+--- Solution 1 ---
+By: dragonfly
+
+We can solve this problem by using similar triangles, since two equilateral triangles are always similar. We can then use
+
+<math>\left(\frac{3}{5}\right)^2=\frac{12}{x}</math>.
+
+We can then solve the equation to get <math>x=\frac{100}{3}</math> which is closest to <math>\boxed{\textbf{(D)}\ 33.3}</math>
+
+
+
+Sidenote - If we didn't know that <math>\left(\frac{a}{b}\right)^2</math> for an equilateral triangle, using the area formula, <math>\frac{1}{4}\sqrt{3}a^2</math>, in proportion <math>\frac{1/4(\sqrt{3}a^2)}{1/4(\sqrt{3}b^2)}</math>, just cancel and simplify to get <math>\frac{a^2}{b^2}</math>.
+
+--- Solution 2 ---
+Another approach to this problem, very similar to the previous one but perhaps explained more thoroughly, is to use proportions. First, since the thickness and density are the same, we can set up a proportion based on the principle that <math>d=\frac{m}{V}</math>, thus <math>dV=m</math>. 
+
+However, since density and thickness are the same and <math>A</math> is proportional to <math>s^2</math> (recognizing that the area of an equilateral triangle is <math>\frac{(s)^2\sqrt{3}}{4}</math>), we can say that <math>m</math> is proportional to <math>s^2</math>. 
+
+Then, by increasing s by a factor of <math>\frac{5}{3}</math>, <math>s^2</math> is increased by a factor of <math>\frac{25}{9}</math>, thus <math>m=12*\frac{25}{9}</math> or <math>\boxed{\textbf{(D)}\ 33.3}</math>.
+
+
+=== Problem 9 ===
+Carl decided to fence in his rectangular garden. He bought
+
+Choices: {'A': '\\ 256', 'B': '\\ 336', 'C': '\\ 384', 'D': '\\ 448', 'E': '\\ 512</math>'}
+Answer: B
+
+--- Solution 1 ---
+To start, use algebra to determine the number of posts on each side. You have (the long sides count for <math>2</math> because there are twice as many) <math>6x = 20 + 4</math> (each corner is double counted so you must add <math>4</math>) Making the shorter end have <math>4</math>, and the longer end have <math>8</math>.  <math>((8-1) \cdot 4) \cdot ((4-1) \cdot 4) = 28 \cdot 12 = 336</math>. Therefore, the answer is <math>\boxed{\textbf{(B)}\ 336}</math>
+
+--- Solution 2 ---
+To start, allocate 4 posts from the total 20 to be the corners. Now 16 posts are left. Pairing each long and short side together, you have 8 posts for a segment of long and short (For rectangle ABCD, AB = CD, AC = BD, we are taking what is originally AB + BC + CD + DA = 16, and making it AB + AC = 8). From 8, you need two numbers that add up too 8, that when you add 2 to both of them are at a 1:2 ratio. Brute force says these numbers are 6 and 2. 6 + 2 = 12, and (6+2) = 2(2+2). Then it is trivial to calculate area, as the long side has 8 posts, short side has 4, the total length of the long side is 28, and the short side 12. 28 x 12 = 336.
+
+
+=== Problem 10 ===
+A quadrilateral has vertices
+
+Choices: {'A': '\\ 4', 'B': '\\ 5', 'C': '\\ 6', 'D': '\\ 12', 'E': '\\ 13</math>'}
+Answer: A
+
+--- Solution 1 ---
+Note that the slope of <math>PQ</math> is <math>\frac{a-b}{b-a}=-1</math> and the slope of <math>PS</math> is <math>\frac{b+a}{a+b}=1</math>.  Hence, <math>PQ\perp PS</math> and we can similarly prove that the other angles are right angles.  This means that <math>PQRS</math> is a rectangle. By distance formula we have <math>(a-b)^2+(b-a)^2*2*(a+b)^2 = 256</math>. Simplifying we get <math>(a-b)(a+b) = 8</math>. Thus <math>a+b</math> and <math>a-b</math> have to be a factor of 8. The only way for them to be factors of <math>8</math> and remain integers is if <math>a+b = 4</math> and <math>a-b = 2</math>. So the answer is <math>\boxed{\textbf{(A)}\ 4}</math>
+
+Solution by I_Dont_Do_Math
+
+--- Solution 2 ---
+Solution by e_power_pi_times_i
+
+
+By the Shoelace Theorem, the area of the quadrilateral is <math>2a^2 - 2b^2</math>, so <math>a^2 - b^2 = 8</math>. Since <math>a</math> and <math>b</math> are integers, <math>a = 3</math> and <math>b = 1</math>, so <math>a + b = \boxed{\textbf{(A)}\ 4}</math>.
+
+
+=== Problem 11 ===
+How many squares whose sides are parallel to the axes and whose vertices have coordinates that are integers lie entirely within the region bounded by the line
+
+Choices: {'A': '\\ 30', 'B': '\\ 41', 'C': '\\ 45', 'D': '\\ 50', 'E': '\\ 57</math>'}
+Answer: D
+
+--- Solution 1 ---
+Solution by e_power_pi_times_i
+Revised by Kinglogic and RJ5303707
+
+<asy>
+Label l; 
+l.p=fontsize(8); 
+xaxis(-1,8,Ticks(l, 1.0)); 
+yaxis(-1,16,Ticks(l, 1.0));
+real f(real x) 
+{ 
+return x * pi;
+} 
+D(graph(f,-1/pi,5.1));
+D((5.1,-1)--(5.1,16));
+D((-1,-0.1)--(8,-0.1));
+for(int x = 0; x < 5.1; ++x) {
+	for(int y = 0; y < 16; ++y) {
+    	if(x * pi > y) {
+        	D((x,y));
+        }
+    }
+}
+</asy>
+(red shows lattice points within the triangle)
+
+If we draw a picture showing the triangle, we see that it would be easier to count the squares vertically and not horizontally. The upper bound is <math>16</math> squares <math>(y=5.1*\pi)</math>, and the limit for the <math>x</math>-value is <math>5</math> squares. First we count the <math>1*1</math> squares. In the rightmost column, there are <math>12</math> squares with length <math>1</math> because <math>y=4*\pi</math> generates squares from <math>(4,0)</math> to <math>(4,4\pi)</math>, and continuing on we have <math>9</math>, <math>6</math>, and <math>3</math> for <math>x</math>-values for <math>1</math>, <math>2</math>, and <math>3</math> in the equation <math>y=\pi x</math>. So there are <math>12+9+6+3 = 30</math> squares with length <math>1</math> in the figure. 
+
+For <math>2*2</math> squares, each square takes up <math>2</math> units left and <math>2</math> units up. Squares can also overlap. For <math>2*2</math> squares, the rightmost column stretches from <math>(3,0)</math> to <math>(3,3\pi)</math>, so there are <math>8</math> squares with length <math>2</math> in a <math>2</math> by <math>9</math> box. Repeating the process, the next column stretches from <math>(2,0)</math> to <math>(2,2\pi)</math>, so there are <math>5</math> squares. Continuing and adding up in the end, there are <math>8+5+2=15</math> squares with length <math>2</math> in the figure. 
+
+Squares with length <math>3</math> in the rightmost column start at <math>(2,0)</math> and end at <math>(2,2\pi)</math>, so there are <math>4</math> such squares in the right column. As the left row starts at <math>(1,0)</math> and ends at <math>(1,\pi)</math> there are <math>4+1=5</math> squares with length <math>3</math>. As squares with length <math>4</math> would not fit in the triangle, the answer is <math>30+15+5</math> which is <math>\boxed{\textbf{(D)}\ 50}</math>.
+
+
+=== Problem 12 ===
+All the numbers
+
+Choices: {'A': '\\ 5', 'B': '\\ 6', 'C': '\\ 7', 'D': '\\ 8', 'E': '\\ 9</math>'}
+Answer: C
+
+--- Solution 1 ---
+Solution by Mlux:
+Draw a <imath>3\times3</imath> matrix. Notice that no adjacent numbers could be in the corners since two consecutive numbers must share an edge. Now find 4 nonconsecutive numbers that add up to <imath>18</imath>. Trying <imath>1+3+5+9 = 18</imath> works. Place each odd number in the corner in a clockwise order. Then fill in the spaces. There has to be a <imath>2</imath> in between the <imath>1</imath> and <imath>3</imath>. There is a <imath>4</imath> between <imath>3</imath> and <imath>5</imath>.  The final grid should similar to this.
+
+<imath>\newline
+1, 2,  3\newline
+8,  7, 4\newline
+9,  6,  5</imath>
+
+<imath>\boxed{\textbf{(C)}7}</imath> is in the middle.
+
+--- Solution 2 ---
+If we color the square like a chessboard, since the numbers alternate between even and odd, and there are five odd numbers and four even numbers, the odd numbers must be in the corners/center, while the even numbers must be on the edges.  Since the odd numbers add up to 25, and the numbers in the corners add up to 18, the number in the center must be <imath>25 - 18 = \boxed{\textbf{(C)}7}</imath>.
+
+--- Solution 3 ---
+Note that if a number other than <imath>1</imath> or <imath>9</imath> is in a corner, the two numbers adjacent to it must be the numbers before and after it. Thus, if <imath>1</imath> is in an edge spot that isn't a corner, it will be adjacent to two corners, which isn't possible, because <imath>1</imath> is not consecutive to two other numbers between <imath>1</imath> and <imath>9</imath>. Similarly, <imath>9</imath> can't go to an edge spot that isn't a corner. Therefore, two of the corner squares are <imath>1</imath> and <imath>9</imath>.
+
+Filling in the table one by one, we can start with this WLOG:
+
+<imath>\newline
+1, 2, \_ \newline
+\_,  \_, \_ \newline
+\_,  \_, \_ </imath>
+
+Since <imath>3</imath> is not one of the answer choices, it cannot be in the center, so it must go in the corner adjacent to <imath>2</imath>. That means the last corner is <imath>18 - 1 - 3 - 9 = 5</imath>. Thus, we can keep filling in the table to get:
+
+<imath>\newline
+1, 2,  3\newline
+8,  7, 4\newline
+9,  6,  5</imath>
+
+And our answer is <imath>\boxed{\textbf{(C)}7}</imath>.
+
+~~[[User:StrikingTsunamiYT|StrikingTsunami]]
+
+
+=== Problem 13 ===
+Alice and Bob live
+
+Choices: {'A': '\\ 3.5', 'B': '\\ 4', 'C': '\\ 4.5', 'D': '\\ 5', 'E': '\\ 5.5</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let's set the altitude = z, distance from Alice to airplane's ground position (point right below airplane)=y and distance from Bob to airplane's ground position=x
+
+From Alice's point of view, <math>\tan(\theta)=\frac{z}{y}</math>. <math>\tan{30}=\frac{\sin{30}}{\cos{30}}=\frac{1}{\sqrt{3}}</math>. So, <math>y=z*\sqrt{3}</math>
+
+From Bob's point of view, <math>\tan(\theta)=\frac{z}{x}</math>. <math>\tan{60}=\frac{\sin{60}}{\cos{60}}=\sqrt{3}</math>. So, <math>x = \frac{z}{\sqrt{3}}</math>
+
+We know that <Math>x^2</Math> + <Math>y^2</Math> = <Math>10^2</Math>
+
+Solving the equation (by plugging in x and y), we get z=<math>\sqrt{30}</math> = about 5.5.  
+
+So, answer is <Math>E) 5.5</Math>
+
+solution by sudeepnarala
+
+--- Solution 2 ---
+We have two 30-60-90 triangles <math>ABC</math> and <math>DBC</math> that are perpendicular and share leg <math>BC</math> (the altitude of the plane <math>p</math>). <math>AD=10</math> The shared leg is the shortest leg of one triangle and the longest leg of the other. <math>A</math> and <math>B</math> are Bob and Alice respectively.
+
+
+Find <math>AC</math> and <math>DC</math> in terms of <math>p</math>. Use Pythagorean Theorem on triangle <math>ADC</math> to produce <math>p=\sqrt{30}\implies\boxed{\textbf{E)}\ 5.5}</math>
+
+ '''EXAMPLE''': Let angle <math>A</math> be 30 degrees and angle <math>B</math> be 60 degrees. <math>AC=p\sqrt{3}</math>, and <math>DC=\frac{p}{\sqrt{3}}</math> by special triangle rules. By Pythagorean Theorem, <math>AC^2+DC^2=AB^2</math>, so <math>(p\sqrt{3})^2+(\frac{p}{\sqrt{3}})^2=10^2</math>. <math>p=\sqrt{30}</math>
+
+(Solution by BJHHar)
+
+--- Solution 3 ---
+Non-trig solution by e_power_pi_times_i
+
+
+Set the distance from Alice's and Bob's position to the point directly below the airplane to be <math>x</math> and <math>y</math>, respectively. From the Pythagorean Theorem, <math>x^2 + y^2 = 100</math>. As both are <math>30-60-90</math> triangles, the altitude of the airplane can be expressed as <math>\dfrac{x\sqrt{3}}{3}</math> or <math>y\sqrt{3}</math>. Solving the equation <math>\dfrac{x\sqrt{3}}{3} = y\sqrt{3}</math>, we get <math>x = 3y</math>. Plugging this into the equation <math>x^2 + y^2 = 100</math>, we get <math>10y^2 = 100</math>, or <math>y = \sqrt{10}</math> (<math>y</math> cannot be negative), so the altitude is <math>\sqrt{3*10} = \sqrt{30}</math>, which is closest to <math>\boxed{\textbf{E)}\ 5.5}</math>
+
+--- Solution 4 ---
+Let Alice be at point <math>A</math>, Bob be at point <math>B</math>. Let the plane be at point <math>P</math> and <math>X</math> be the projection of <math>P</math> onto the ground (the plane with contains <math>A</math> and <math>B</math>). Let the height of the plane, or <math>PX</math>, be <math>h</math>. So, because of the <math>30-60-90</math> triangles,
+<cmath>AX = \dfrac{h}{\sqrt{3}}, BX = h\sqrt{3}</cmath>
+By [[Pythagorean Theorem]] on <math>\triangle ABX</math>,
+<cmath>\dfrac{h^2}{3} + 3h^2 = 100 \implies \dfrac{10h^2}{3} = 100 \implies h = \sqrt{30},</cmath>
+which is clossest to <math>\boxed{\textbf{(E)}\ 5.5}.</math>
+
+
+==Solution 5: Diagram ==
+<asy>
+import graph; usepackage("amsmath"); size(7.2cm);
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */
+pen dotstyle = black; /* point style */
+real xmin = -4.3, xmax = 10.1, ymin = -4.44, ymax = 6.3; /* image dimensions */
+pen qqwuqq = rgb(0.,0.39215686274509803,0.);
+
+draw((-0.12,5.52)--(-1.34,-0.82)--(4.78,-0.88)--cycle);
+draw(arc((-1.34,-0.82),0.6,41.93351449887411,79.10776933246521)--(-1.34,-0.82)--cycle, qqwuqq);
+draw(arc((4.78,-0.88),0.6,127.43857157233303,167.225815720283)--(4.78,-0.88)--cycle, qqwuqq);
+/* draw figures */
+draw((-0.12,5.52)--(-1.34,-0.82));
+draw((-1.34,-0.82)--(4.78,-0.88));
+draw((4.78,-0.88)--(-0.12,5.52));
+draw((-0.12,5.52)--(-0.16,0.24));
+draw((-0.16,0.24)--(4.78,-0.88));
+draw((-1.34,-0.82)--(-0.16,0.24));
+label("$60^{\circ}$",(3.82,-0.06),SE*labelscalefactor);
+label("$30^\circ$",(-1.12,0.3),SE*labelscalefactor);
+draw((-0.15694767653526337,0.6429066973452366)--(0.22,0.58));
+draw((0.22,0.58)--(0.21801530426333052,0.1542961253492044));
+draw((-0.15694767653526337,0.6429066973452365)--(-0.44,0.4));
+draw((-0.44,0.4)--(-0.42432750397456265,0.0025532591414946237));
+draw((-0.42432750397456265,0.0025532591414946237)--(-0.16,0.24));
+draw((-0.16,0.24)--(-0.42432750397456265,0.0025532591414946237));
+draw((-0.42432750397456265,0.0025532591414946237)--(-0.02,-0.12));
+draw((-0.02,-0.12)--(0.21801530426333054,0.15429612534920437));
+/* dots and labels */
+dot((-0.12,5.52),dotstyle);
+label("$\text{Plane}$", (-0.52,5.74), NE * labelscalefactor);
+dot((-1.34,-0.82),dotstyle);
+label("$\text{Alice}$", (-1.8,-1.2), NE * labelscalefactor);
+dot((4.78,-0.88),dotstyle);
+label("$\text{Bob}$", (4.86,-0.68), NE * labelscalefactor);
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle);
+/* end of picture */
+label("$10$", (-1.8,-1.2)--(4.86,-0.68), S);
+</asy>
+
+
+=== Problem 14 ===
+The sum of an infinite geometric series is a positive number
+
+Choices: {'A': '\\ \\frac{1+\\sqrt{5}}{2}', 'B': '\\ 2', 'C': '\\ \\sqrt{5}', 'D': '\\ 3', 'E': '\\ 4</math>'}
+Answer: E
+
+--- Solution 1 ---
+The second term in a geometric series is <math>a_2 = a \cdot r</math>, where <math>r</math> is the common ratio for the series and <math>a</math> is the first term of the series. So we know that <math>a\cdot r = 1</math> and we wish to find the minimum value of the infinite sum of  the series. We know that: <math>S_\infty = \frac{a}{1-r}</math> and substituting in <math>a=\frac{1}{r}</math>, we get that <math>S_\infty = \frac{\frac{1}{r}}{1-r} = \frac{1}{r(1-r)} = \frac{1}{r}+\frac{1}{1-r}</math>. From here, you can either use calculus or AM-GM.
+
+<math>\textbf{Calculus}</math>
+
+Let <math>f(x) = \frac{1}{x-x^2} = (x-x^2)^{-1}</math>, then <math>f'(x) = -(x-x^2)^{-2}\cdot (1-2x)</math>. Since <math>f(0)</math> and <math>f(1)</math> are undefined <math>x \neq 0,1</math>. This means that we only need to find where the derivative equals <math>0</math>, meaning <math>1-2x = 0 \Rightarrow x =\frac{1}{2}</math>. So <math> r = \frac{1}{2}</math>, meaning that <math>S_\infty = \frac{1}{\frac{1}{2} - (\frac{1}{2})^2} = \frac{1}{\frac{1}{2}-\frac{1}{4}} = \frac{1}{\frac{1}{4}} = 4</math>
+
+<math>\textbf{AM-GM}</math>
+
+For 2 positive real numbers <math>a</math> and <math>b</math>, <math>\frac{a+b}{2} \geq \sqrt{ab}</math>. Let <math>a = \frac{1}{r}</math> and <math>b = \frac{1}{1-r}</math>. Then: <math>\frac{\frac{1}{r}+\frac{1}{1-r}}{2} \geq \sqrt{\frac{1}{r}\cdot\frac{1}{1-r}}=\sqrt{\frac{1}{r}+\frac{1}{1-r}}</math>. This implies that <math>\frac{S_\infty}{2} \geq \sqrt{S_\infty}</math>. or <math>S_\infty^2 \geq 4 \cdot S_\infty</math>. Rearranging : <math>(S_\infty-2)^2 \geq 4 \Rightarrow S_\infty - 2 \geq 2 \Rightarrow S_\infty \geq 4</math>. Thus, the smallest value is <math>S_\infty = 4</math>.
+
+--- Solution 2 ---
+The sum of the geometric sequence is <math>\frac{a}{1 - r}</math> where <math>a</math> is the first term and <math>r</math> is the common ratio. We know the second term, <math>ar,</math> is equal to <math>1.</math> Thus <math>ar = 1 \Rightarrow a = \frac{1}{r}.</math> This means,
+<cmath>S = \frac{a}{1 - r} = \frac{1/r}{1 - r} = \frac{1}{r(1 - r)}.</cmath>
+In order to minimize <math>S,</math> we maximize the denominator. By AM-GM, 
+<cmath>\frac{(r) + (1 - r)}{2} \ge \sqrt{r(1-r)} \Rightarrow \frac{1}{4} \ge r(1-r).</cmath>
+Equality occurs at <math>r = 1-r \Rightarrow r = \frac{1}{2}.</math> This gives the minimum value of <math>S</math> as <math>\frac{\frac{1}{1/2}}{1 - \frac{1}{2}} = \boxed{(E)
+
+--- Solution 3 ---
+A geometric sequence always looks like
+
+<cmath>a,ar,ar^2,ar^3,\dots</cmath>
+
+and they say that the second term <math>ar=1</math>. You should know that the sum of an infinite geometric series (denoted by <math>S</math> here) is <math>\frac{a}{1-r}</math>. We now have a system of equations which allows us to find <math>S</math> in one variable.
+
+<cmath>
+\begin{align*}
+ar&=1 \\
+S&=\frac{a}{1-r}
+\end{align*}
+</cmath>
+
+<math>\textbf{Solving in terms of \textit{a} then graphing}</math>
+
+<cmath>S=\frac{a^2}{a-1}</cmath>
+
+We seek the smallest positive value of <math>S</math>. We proceed by graphing in the <math>aS</math> plane (if you want to be rigorous, only stop graphing when you know all the rest you didn't graph is just the approaching of asymptotes and infinities) and find the answer is <math>\boxed{\textbf{(E)}\ 4}.</math>
+
+<math>\textbf{Solving in terms of \textit{r} then graphing}</math>
+
+<cmath>S=\frac{1}{-r^2+r}</cmath>
+
+We seek the smallest positive value of <math>S</math>. We proceed by graphing in the <math>rS</math> plane (if you want to be rigorous, only stop graphing when you know all the rest you didn't graph is just the approaching of asymptotes and infinities) and find the answer is <math>\boxed{\textbf{(E)}\ 4}.</math>
+
+<math>\textbf{Solving in terms of \textit{a} then doing some calculus}</math>
+
+<cmath>S=\frac{a^2}{a-1}</cmath>
+
+We seek the smallest positive value of <math>S</math>. <math>\frac{(a-2)a}{(a-1)^2}=S'</math> and <math>\frac{(a-2)a}{(a-1)^2}=0</math> at <math>a=0</math> and <math>a=2</math>. <math>\frac{2}{(a-1)^3}=S''</math> and <math>\frac{2}{(0-1)^3}</math> is negative (implying a relative maximum occurs at <math>a=0</math>) and <math>\frac{2}{(2-1)^3}</math> is positive (implying a relative minimum occurs at <math>a=2</math>).  At <math>a=2</math>, <math>S=4</math>. Since this a competition math problem with an answer, we know this relative minimum must also be the absolute minimum among the "positive parts" of <math>S</math> and that our answer is indeed <math>\boxed{\textbf{(E)}\ 4}.</math> However, to be sure of this outside of this cop-out, one can analyze the end behavior of <math>S</math>, how <math>S</math> behaves at its asymptotes, and the locations of its maxima and minima relative to the asymptotes to be sure that 4 is the absolute minimum among the "positive parts" of <math>S</math>.
+
+<math>\textbf{Solving in terms of \textit{r} then being clever}</math>
+
+<cmath>S=\frac{1}{-r^2+r}</cmath>
+
+We seek the smallest positive value of <math>S</math>. We could use calculus like we did in the solution immediately above this one, but that's a lot of work and we don't have a ton of time. To minimize the positive value of this fraction, we must maximize the denominator. The denominator is a quadratic that opens down, so its maximum occurs at its vertex. The vertex of this quadratic occurs at <math>x=\frac{1}{2}</math> and <math>\frac{1}{-(\frac{1}{2})^2+\frac{1}{2}}=\boxed{\textbf{(E)}\ 4}</math>.
+
+--- Solution 4 ---
+<cmath>\textbf{Completing the Square and Quadratics}</cmath>
+Let <math>r</math> be the common ratio. If the second term is <math>1</math>, the first must be <math>\frac{1}{r}</math>. By the infinite geometric series formula, the sum must be <cmath>S=\frac{\frac{1}{r}}{1-r}</cmath> This equals <math>\frac{1}{r(1-r)}</math>. To find the minimum value of S, we must find the maximum value of the denominator, <math>r(1-r)</math>, which is <math>\frac{1}{4}</math>, completing the square. Thus, the minimum value of <math>S</math> is <math>\boxed{\textbf{(E)}\ 4}</math>.
+
+--- Solution 5 ---
+Our sequence is <math>a_1,1,...</math>. Since we know this is a converging series, our ratio is in <math>(0,1)</math>. Because the 2nd term in the sequence is a 1, the ratio must be <math>\frac{1}{a_1}</math>, so we can write <math>S</math> as <math>\frac{a_1}{1-\frac{1}{a_1}}</math>. With some manipulation we get <math>S=\frac{1}{a_1-1}</math>. Since S has to be a "positive number," we come to think <math>a_1</math> is <math>2</math> (makes S positive & we know a sequence/series of a ratio <math>1/2</math> is definitely convergent). So our sequence is <math>2,1,1/2,1,4,...</math>, <math>2+1+1=\boxed{\textbf{(E)}\ 4}</math>.
+-thedodecagon
+
+--- Solution 6 ---
+As in the previous solutions, <math>S=\frac{1}{r-r^2} \implies Sr^2-Sr+1=0 \implies \text{discriminant}=S^2-4S \ge 0</math> since we know that such an <math>r</math> exists. We then have <math>S \ge 4</math> for positive <math>S,</math> and this is achievable when <math>r=.5,</math> so the answer is <math>4.</math>
+
+
+=== Problem 15 ===
+All the numbers
+
+Choices: {'A': '\\ 312', 'B': '\\ 343', 'C': '\\ 625', 'D': '\\ 729', 'E': '\\ 1680</math>'}
+Answer: D
+
+--- Solution 1 ---
+First assign each face the letters <math>a,b,c,d,e,f</math>. The sum of the product of the faces is <math>abc+acd+ade+aeb+fbc+fcd+fde+feb</math>. We can factor this into <math>(a+f)(b+d)(c+e)</math> which is the product of the sum of each pair of opposite faces. In order to maximize <math>(a+f)(b+c)(d+e)</math> we use the numbers <math>(7+2)(6+3)(5+4) = 9^3 </math> or <math>\boxed{\textbf{(D)}\ 729 }</math>.
+
+--- Solution 2 ---
+We'll proceed from the factoring process above.
+By the AM-GM inequality,
+
+<cmath>\frac{a_1+a_2+a_3}{3}\geq\sqrt[3]{a_1a_2a_3}</cmath>
+
+Cubing both sides,
+
+<cmath>\left(\frac{a_1+a_2+a_3}{3}\right)^3\geq{a_1a_2a_3}</cmath>
+
+Let <math>a_1=(a+f)</math>, <math>a_2=(b+c)</math>, and <math>a_3=(d+e)</math>. Let's substitute in these values.
+
+<cmath>\left(\frac{a+b+c+d+e+f}{3}\right)^3\geq{(a+f)(b+c)(d+e)}</cmath>
+
+<math>a+b+c+d+e+f</math> is fixed at 27.
+
+<cmath>\left(\frac{27}{3}\right)^3\geq{(a+f)(b+c)(d+e)}</cmath>
+
+<cmath>\boxed{\textbf{(D)}\ 729 }\geq{(a+f)(b+c)(d+e)}</cmath>
+
+--- Solution 3 ---
+First, we see that we want to try and maximize each vertex. Since the multiplication of each vertex is the product of three values, we want to maximize those three values. Doing so, we see that we want them to be as close as possible, giving <math>4.5^3</math> (the average of all the values). This gives us the maximum for each vertex, multiplied by the 8 vertices, yields our answer <math>\boxed{\textbf{(D)}\ 729 }</math> Also note that if you cannot evaluate <math>4.5^3</math> quickly, a rough approximation of <math>5*4.5*4*8</math> will yield 720, very close to our answer. -rayprati
+
+
+Note about note above: <math>4.5=\frac{9}{2}.</math> So, we want to evaluate <math>(\frac{9}{2})^3 \cdot 8 = \frac{729}{8} \cdot 8 = 729.</math> So, it’s quite easy to evaluate
+
+--- Solution 4 ---
+It is obvious to put <math>5</math>, <math>6</math>, and <math>7</math> on the faces that share the same vertex. As <math>4</math> is the next biggest number, the face with <math>4</math> has to be next to the faces with <math>6</math> and <math>7</math>. As <math>4</math> is the next biggest number, the face with <math>3</math> has to be next to the faces with <math>5</math> and <math>7</math>. making the face with <math>2</math> next to the faces with <math>6</math> and <math>5</math>.
+
+Therefore the answer is <math>7 \cdot 5 \cdot 6 + 7 \cdot 4 \cdot 6 + 7 \cdot 3 \cdot 5 + 7 \cdot  3 \cdot 4 + 2 \cdot 5 \cdot 6 + 2 \cdot 4 \cdot 6 + 2 \cdot 3 \cdot 5 + 2 \cdot  3 \cdot 4 = \boxed{\textbf{(D)}\ 729 }</math>
+
+Note: 1680 is impossible to achieve as it requires <math>210 = 7 \cdot 6 \cdot 5</math> for each vertex.
+
+
+=== Problem 16 ===
+In how many ways can
+
+Choices: {'A': '\\ 1', 'B': '\\ 3', 'C': '\\ 5', 'D': '\\ 6', 'E': '\\ 7</math>'}
+Answer: E
+
+--- Solution 1 ---
+We proceed with this problem by considering two cases, when: 1) There are an odd number of consecutive numbers, 2) There are an even number of consecutive numbers.
+
+For the first case, we can cleverly choose the convenient form of our sequence to be
+<cmath>a-n,\cdots, a-1, a, a+1, \cdots, a+n</cmath>
+
+because then our sum will just be <math>(2n+1)a</math>. We now have 
+<cmath>(2n+1)a = 345</cmath>
+and <math>a</math> will have a solution when <math>\frac{345}{2n+1}</math> is an integer, namely when <math>2n+1</math> is a divisor of 345. We check that 
+<cmath>2n+1 = 3, 5, 15, 23</cmath>
+work, and no more, because <math>2n+1=1</math> does not satisfy the requirements of two or more consecutive integers, and when <math>2n+1</math> equals the next biggest factor, <math>69</math>, there must be negative integers in the sequence. Our solutions are <math>\{114,115, 116\}, \{67, \cdots, 71\}, \{16, \cdots, 30\}, \{4, \cdots, 26\}</math>.
+
+For the even cases, we choose our sequence to be of the form:
+<cmath>a-(n-1), \cdots, a, a+1, \cdots, a+n</cmath>
+so the sum is <math>\frac{(2n)(2a+1)}{2} = n(2a+1)</math>. In this case, we find our solutions to be <math>\{172, 173\}, \{55,\cdots, 60\}, \{30,\cdots, 39\}</math>.
+
+We have found all 7 solutions and our answer is <math>\boxed{\textbf{(E)} \, 7}</math>.
+
+Note: We cannot have more than 25 terms since the sum of the first 26 numbers = <math>\frac{26 \cdot 27}{2} = 351 > 345</math>.
+
+--- Solution 2 ---
+The sum from <math>a</math> to <math>b</math> where <math>a</math> and <math>b</math> are integers and <math>a>b </math> is 
+
+<math>S=\dfrac{(a-b+1)(a+b)}{2}</math> 
+
+<math>345=\dfrac{(a-b+1)(a+b)}{2}</math> 
+
+<math>2\cdot 3\cdot 5\cdot 23=(a-b+1)(a+b)</math>
+
+Let <math>c=a-b+1</math> and <math>d=a+b</math> 
+
+<math>2\cdot 3\cdot 5\cdot 23=c\cdot d</math>
+
+If we factor <math>690</math> into all of its factor groups <math>(\text{exg}
+The number of possible values for <math>c</math> is half the number of factors of <math>690</math> which is <math>\frac{1}{2}\cdot2\cdot2\cdot2\cdot2=8</math> 
+
+However, we have one extraneous case of <math>(1,690)</math> because here, <math>a=b</math> and we have the sum of one consecutive number which is not allowed by the question.
+
+Thus the answer is <math>8-1=7</math>
+
+<math>\boxed{\textbf{(E)} \,7}</math>.
+
+--- Solution 3 ---
+The consecutive sums can be written as <math>345=kn+\sum_{i=1}^{k-1}{i}</math> where <math>k</math> is the number of terms in a sequence, and <math>n</math> is the first term. Then, <math>\{k,n\}\in \mathbb{N}</math> and <math>k\geq2</math>. Evaluating the sum and rearranging yields <math>n=\frac{345}{k}-\frac{k-1}{2}</math>. 
+
+
+The prime factorization of <math>345</math> is <math>1\cdot3\cdot5\cdot23</math>. Then, <math>3\cdot5</math>, <math>3\cdot23</math>, and <math>5\cdot23</math> are also divisors.  As odd divisors of <math>345</math>, note that they all produce integer solutions to <math>n</math> as <math>k</math>. Only <math>k!=1</math> is not valid, as <math>k\geq2</math>. Similarly, quickly notice that <math>k=2</math> is a solution. Multiplying an odd divisor by <math>2</math> always yields an integer solution (see below). As such, the even integer solutions are <math>k=2, 2\cdot3, 2\cdot5, 2\cdot15 ... 2\cdot345</math>.
+
+
+Note that the function is decreasing for increasing values of <math>k</math> and that <math>\frac{345}{k}-\frac{k-1}{2}=4</math> for <math>k=23</math>. Thus, when <math>n</math> is negative, <math>k</math> is only slightly more than <math>k=23</math>. Recall <math>\{k,n\}\in \mathbb{N}</math>. Since the next highest solution, <math>k=2\cdot23=46</math> is twice <math>k=23</math>, <math>k\leq23</math>. Thus, the remaining solutions are when <math>k=2,6,10,3,5,15,23</math> <math>\implies \boxed{\textbf{(E)} \,7}</math>.
+
+
+
+:''This is proven by the fact that an odd number (<math>345</math> in this case) divided by an divisor always yields an odd number. Dividing this by <math>2</math> produces a number in the form <math>z+\frac{k-1}{2}</math>, where z is an integer. Since an even number multiplied by an odd number also yields an even number, <math>\frac{k-1}{2}</math> similarly is in the form <math>z+\frac{k-1}{2}</math>, producing an integer.''
+
+(Solution by BJHHar)
+
+--- Solution 4 ---
+We're dealing with an increasing arithmetic progression of common difference 1. Let <math>x</math> be the number of terms in a summation. Let <math>y</math> be the first term in a summation. The sum of an arithmetic progression is the average of the first term and the last term multiplied by the number of terms. The problem tells us that the sum must be 345.
+
+<cmath>
+\begin{align*}
+x \cdot \frac{y+y+[(x-1)1]}{2}&=345 \\
+2xy+x^2-x&=690
+\end{align*}
+</cmath>
+
+In order to satisfy the constraints of the problem, x and y must be positive integers. Maybe we can make this into a Diophantine thing! In fact, if we just factor out that <math>x</math>... voilà!
+
+<cmath>(x)(x+2y-1)=690</cmath>
+
+There are 16 possible factor pairs to try (for brevity, I will not enumerate them here). Notice that the expression in the right parenthesis is <math>2y-1</math> more than the expression in the parenthesis on the left. <math>y</math> is at least 1. Thus, the expression in the right parenthesis will always be greater than the expression on the left. This eliminates 8 factor pairs. The problem also says the "increasing sequence" has to have "two or more" terms, so <math>x \geqslant 2</math>. This eliminates the factor pair <math>1 \cdot 690</math>. With brief testing, we find that the the other 7 factor pairs produce 7 viable ordered pairs. This means we have found <math>\boxed{\textbf{(E)}\ 7}</math> ways to write 345 in the silly way outlined by the problem.
+
+--- Solution 5 ---
+By the sum of an arithmetic sequence... this ultimately comes to
+<math>n+n+1+n+2....+n+p=345=(2n+p)(p+1)=690=23\cdot3\cdot5\cdot2</math>.
+
+Quick testing (would take you roughly a minute)
+
+
+We see that the first 7 values of <math>p</math> that work are
+
+<math>p=1,2,4,5,9,14,22</math>.
+
+
+We see that each one of them works.
+Hence, the answer is <math>\boxed{7}</math>.
+
+--- Solution 6 ---
+The sum of all integers from <math>x</math> to <math>y</math> inclusive is equal to 
+
+<cmath>\frac{y(y+1)}{2}-\left(\frac{x(x+1)}{2}\right)+x.</cmath>
+
+In words, <math>x</math> added to sum of the first <math>x</math> positive inegers subtracted from the sum of the first positive <math>y</math> integers. 
+
+
+Setting this equal to <math>345</math> and multiplying by <math>2</math> to clear fractions, we can see that
+<cmath>y(y+1)-x(x+1)+2x</cmath>
+<cmath>=y^2-x^2+y+x</cmath>
+<cmath>=(y+x)(y-x+1)=690.</cmath>
+Now we know that, <math>y+x</math> and <math>y-x+1</math> multiply together to <math>690</math>, and they're both integers. Now, we can set <math>y+x</math> and <math>y-x+1</math> equal to factors of <math>690</math>. Clearly, <math>x>\frac{1}{2},</math> so <math>y+x</math> will take the larger of the two factors. 
+
+We can factorize <math>690</math> as <math>1\cdot2\cdot3\cdot5\cdot23</math>.
+
+We also know that when solving for <math>y</math>, we can add the two systems in <math>y+x</math> and <math>y-x+1</math> to get a new equation in terms of <math>2y+1.</math> In order for <math>y</math> to be an integer, the sum of the two factors must be odd.
+
+
+We also know that there is only one factor of <math>2</math>, so either <math>y+x</math> or <math>y-x+1</math> will be even. The number of odd factors multiplied together can either be <math>1, 2</math> or <math>3</math> (0 doesn't work, since <math>(690, 1)</math> doesn't). There are a total of <math>3</math> odd numbers present in our new prime factorization, now excluding <math>1</math>. 
+
+
+Therefore, the number of combinations that yield integral values for both <math>x</math> and <math>y</math> are 
+<cmath>{3\choose1}+{3\choose2}+{3\choose3}= \boxed{\textbf{E)} 7}</cmath>.
+
+
+-Benedict T (countmath1)
+
+
+=== Problem 17 ===
+In
+
+Choices: {'A': '\\ 1', 'B': '\\ \\frac{5}{8}\\sqrt{3}', 'C': '\\ \\frac{4}{5}\\sqrt{2}', 'D': '\\ \\frac{8}{15}\\sqrt{5}', 'E': '\\ \\frac{6}{5}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Get the area of the triangle by [https://artofproblemsolving.com/wiki/index.php/Heron%27s_Formula Heron's Formula]: 
+<cmath>\sqrt{s(s-a)(s-b)(s-c)} = \sqrt{(12)(3)(4)(5)} = 12\sqrt{5}</cmath>
+Use the area to find the height <math>AH</math> with known base <math>BC</math>:
+<cmath>Area = 12\sqrt{5} = \frac{1}{2}bh = \frac{1}{2}(8)(AH)</cmath>
+<cmath>AH = 3\sqrt{5}</cmath>
+<cmath>BH = \sqrt{AB^2 - AH^2} = \sqrt{7^2 - (3\sqrt{5})^2} = 2</cmath>
+<cmath>CH = BC - BH = 8 - 2 = 6</cmath>
+Apply the [https://artofproblemsolving.com/wiki/index.php/Angle_Bisector_Theorem Angle Bisector Theorem] on <math>	\triangle ACH</math> and <math>\triangle ABH</math>, we get <math>AP:PH = 9:6</math> and <math>AQ:QH = 7:2</math>, respectively.
+To find <math>AP</math>, <math>PH</math>, <math>AQ</math>, and <math>QH</math>, apply variables, such that <math>AP:PH = 9:6</math> is <math>\frac{3\sqrt{5} - x}{x} = \frac{9}{6}</math> and <math>AQ:QH = 7:2</math> is <math>\frac{3\sqrt{5} - y}{y} = \frac{7}{2}</math>. Solving them out, you will get <math>AP = \frac{9\sqrt{5}}{5}</math>, <math>PH = \frac{6\sqrt{5}}{5}</math>, <math>AQ = \frac{7\sqrt{5}}{3}</math>, and <math>QH = \frac{2\sqrt{5}}{3}</math>. Then, since <math>AP + PQ = AQ</math> according to the Segment Addition Postulate, and thus manipulating, you get <math>PQ = AQ - AP = \frac{7\sqrt{5}}{3} - \frac{9\sqrt{5}}{5}</math> = <cmath>\boxed{\textbf{(D)}\frac{8}{15}\sqrt{5}}</cmath>
+
+--- Solution 2 ---
+Let the intersection of <math>BD</math> and <math>CE</math> be the point <math>I</math>. Then let the foot of the altitude from <math>I</math> to <math>BC</math> be <math>I'</math>. Note that <math>II'</math> is an inradius and that <math>II' \cdot s = [ABC]</math>, where <math>s</math> is the semiperimeter of the triangle.
+
+Using Heron's Formula, we see that <math>II' \cdot 12 =  \sqrt{12 \cdot 3 \cdot 4 \cdot 5} = 12\sqrt{5}</math>, so <math>II' = \sqrt{5}</math>.
+
+Then since <math>II'</math> and <math>AH</math> are parallel, <math>\triangle CI'I \sim \triangle CHP</math> and <math>\triangle BHQ \sim \triangle BI'I</math>.
+
+Thus, <math>\frac{II'}{PQ + QH} = \frac{CI'}{CH}</math> and <math>\frac{II'}{QH} = \frac{BI'}{BH}</math>, so 
+<math>PQ = \frac{II' \cdot CH}{CI'} - \frac{II' \cdot BH}{BI'}</math>.
+
+By the Dual Principle, <math>CI' = 5</math> and <math>BI' = 3</math>. With the same method as Solution 1, <math>CH = 6</math> and <math>BH = 2</math>.
+Then <math>PQ  = \frac{8}{15} II' = </math> <cmath>\boxed{\textbf{(D)}\frac{8}{15}\sqrt{5}}</cmath>
+
+--- Solution 3 ---
+<math>PQ</math> lies on altitude <math>AH</math>, which we find to have a length of <math>3\sqrt{5}</math> by Heron's Formula and dividing twice the area by <math>BC</math>. From H we can construct a segment <math>HX</math> with <math>X</math> on <math>CE</math> such that <math>HX</math> is parallel to <math>EB</math>. A similar construction gives <math>Y</math> on <math>BD</math> such that <math>HY</math> is parallel to <math>DC</math>. We can hence generate a system of ratios that will allow us to find <math>PQ/AH</math>. Note that such a system will generate a rational number for the ratio <math>PQ/AH</math>. Thus, we choose the only answer that has a <math>\sqrt{5}</math> term in it, giving us <math>\boxed{\textbf{(D)}} </math>.
+
+--- Solution 4 ---
+Let <math>h=AH</math> and <math>BH=x</math>.  Then, <math>CH=8-x</math>.  By the Pythagorean Theorem on right triangles <math>ABH</math> and <math>ACH</math>, we have <cmath>h^2+x^2=49</cmath> <cmath>x^2+(8-x)^2=81.</cmath>  Subtracting the prior from the latter yields <math>-16x+64=32\implies x=2</math>.  So, <math>BH=2</math>, <math>CH=6</math>, and <math>AH=3\sqrt{5}</math>.  Continue with Solution 1.
+
+
+=== Problem 18 ===
+What is the area of the region enclosed by the graph of the equation
+
+Choices: {'A': '\\ \\pi+\\sqrt{2}', 'B': '\\ \\pi+2', 'C': '\\ \\pi+2\\sqrt{2}', 'D': '\\ 2\\pi+\\sqrt{2}', 'E': '\\ 2\\pi+2\\sqrt{2}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Consider the case when <math>x \geq 0</math>, <math> y \geq 0</math>. 
+<cmath>x^2+y^2=x+y</cmath> 
+<cmath>(x - \frac{1}{2})^2+(y - \frac{1}{2})^2=\frac{1}{2}</cmath>
+Notice the circle intersects the axes at points <math>(0, 1)</math> and <math>(1, 0)</math>. Find the area of this circle in the first quadrant. The area is made of a semi-circle with radius of <math>\frac{\sqrt{2}}{2}</math> and a triangle:
+<cmath>A = \frac{\pi}{4} +\frac{1}{2}</cmath>
+
+<asy>draw((0,-1.5)--(0,1.5),EndArrow);draw((-1.5,0)--(1.5,0),EndArrow);draw((0,1)--(1,0)--(0,-1)--(-1,0)--cycle,dotted);draw(arc((1/2,1/2),sqrt(2)/2,135, 315),dotted);for(int i=0;i<4;++i){draw(rotate(i*90,(0,0))*arc((1/2,1/2),sqrt(2)/2,-45,135)); dot(rotate(i*90,(0,0))*(1/2,1/2));}</asy>
+
+Because of symmetry, the area is the same in all four quadrants. The answer is <math>\boxed{\textbf{(B)}\ \pi + 2}</math>
+
+
+=== Problem 19 ===
+Tom, Dick, and Harry are playing a game. Starting at the same time, each of them flips a fair coin repeatedly until he gets his first head, at which point he stops. What is the probability that all three flip their coins the same number of times?
+
+Choices: {'A': '\\ \\frac{1}{8}', 'B': '\\ \\frac{1}{7}', 'C': '\\ \\frac{1}{6}', 'D': '\\ \\frac{1}{4}', 'E': '\\ \\frac{1}{3}</math>'}
+Answer: B
+
+--- Solution 1 ---
+By: dragonfly
+
+We can solve this problem by listing it as an infinite geometric equation. We get that to have the same amount of tosses, they have a <math>\frac{1}{8}</math> chance of getting all heads. Then the next probability is all of them getting tails and then on the second try, they all get heads. The probability of that happening is <math>\left(\frac{1}{8}\right)^2</math>.We then get the geometric equation
+
+<math>x=\frac{1}{8}+\left(\frac{1}{8}\right)^2+\left(\frac{1}{8}\right)^3...</math>
+
+And then we find that <math>x</math> equals to <math>\boxed{\textbf{(B)}\ \frac{1}{7}}</math> because of the formula of the sum for an infinite series, <math>\frac{\frac{1}{8}}{1-\frac{1}{8}} = \frac{1}{8}*\frac{8}{7} = \frac{1}{7}</math>.
+
+--- Solution 2 ---
+Call it a "win" if the boys all flip their coins the same number of times, and the probability that they win is <math>P</math>. The probability that they win on their first flip is <math>\frac{1}{8}</math>. If they don't win on their first flip, that means they all flipped tails (which also happens with probability <math>\frac{1}{8}</math> ) and that their chances of winning have returned to what they were at the beginning. This covers all possible sequences of winning flips. So we have
+
+<math>P = \frac{1}{8} + \frac{1}{8}P</math>
+
+Solving for <math>P</math> gives <math>\boxed{\textbf{(B)}\ \frac{1}{7}}</math>.
+
+
+=== Problem 20 ===
+A set of teams held a round-robin tournament in which every team played every other team exactly once. Every team won
+
+Choices: {'A': '\\ 385', 'B': '\\ 665', 'C': '\\ 945', 'D': '\\ 1140', 'E': '\\ 1330</math>'}
+Answer: A
+
+--- Solution 1 ---
+We use complementary counting. First, because each team played <math>20</math> other teams, there are <math>21</math> teams total. All sets that do not have <math>A</math> beat <math>B</math>, <math>B</math> beat <math>C</math>, and <math>C</math> beat <math>A</math> have one team that beats both the other teams. Thus we must count the number of sets of three teams such that one team beats the two other teams and subtract that number from the total number of ways to choose three teams.
+
+There are <math>21</math> ways to choose the team that beat the two other teams, and <math>\binom{10}{2} = 45</math> ways to choose two teams that the first team both beat. This is <math>21 * 45 = 945</math> sets. There are <math>\binom{21}{3} = 1330</math> sets of three teams total. Subtracting, we obtain <math>1330 - 945 = \boxed{385}</math>, thus <math>(\text{A})</math>  is our answer.
+
+--- Solution 2 ---
+As above, note that there are 21 teams, and call them A, B, C, ... T, U. WLOG, assume that A beat teams B-L and lost to teams M-U. We will count the number of sets satisfying the “cycle-win” condition—e.g. here, A beats a team in X which beats a team in Y which beats A. The first and third part of the condition are already met by our wlog, so we just need to count of number of ways the second condition is true (a team in X beats a team in Y). These are the number of cycle-wins that include A, then multiply by 21 (for each team) and divide by 3 (since every set will be counted by each of the 3 teams that are a part of that set). 
+
+To do this, let X<math>=\{B, ..., L\}</math> and Y<math>=\{M, ..., U\}</math>. Since a total of <math>10*10=100</math> losses total were suffered by teams in Y and <math>\binom{10}{2}=45^{*}</math> losses were suffered by teams in Y from teams in Y, we have <math>100-45=55</math> losses suffered by teams in Y from teams in X. Hence, for each of these <math>55</math> losses, there is exactly one set of three teams that includes A that satisfies the problem conditions. Thus, the answer is <math>\frac{55\cdot 21}{3}=\boxed{385}</math>.
+
+
+<math>
+
+--- Solution 3 ---
+Note that there are <math>21</math> teams total and <math>\binom{21}{3}=1330</math> ways to pick <math>{A,B,C}.</math> The possible arrangements are one team beats the other two or they each win/lose equally (we want the second case). Approximately <math>\frac{1}{4}</math> of all the arrangements satisfy the second case, and <math>\frac{1330}{4}=332.5,</math> which is by far the closest to <math>\boxed{(A)}.</math>
+
+
+=== Problem 21 ===
+Let
+
+Choices: {'A': '\\ \\frac{1}{6}', 'B': '\\ \\frac{1}{4}', 'C': '\\ \\frac{1}{3}', 'D': '\\ \\frac{1}{2}', 'E': '\\ 1</math>'}
+Answer: B
+
+--- Solution 1 ---
+[[File:201612B-P21.png|405px]] 
+
+We start with <math>DQ_i = 1/2</math> for <math>i = 1.</math> <math>\triangle BP_iA \sim \triangle DP_iQ_i</math> and <math>\triangle DP_iQ_{i+1} \sim \triangle DBC</math> so we have <cmath>\frac{DQ_i}{AB} = \frac{DP_i}{P_iB} = \frac{1}{2} \implies \frac{DP_i}{BD} = \frac{DQ_{i+1}}{DC} = \frac{DQ_{i+1}}{1} = \frac{1}{3} \implies DQ_{i+1} = DQ_{2} = \frac{1}{3}.</cmath> Repeating this same process for subsequent <math>i</math>s yields <math>DQ_3 = \frac{1}{4}, DQ_4 = \frac{1}{5}, DQ_5 = \frac{1}{6} \dots</math> We can generalize this by saying <math>DQ_i = \frac{1}{i + 1}.</math> Then <math>[ADQ_i] = \frac{1}{2(i + 1)}.</math> Let <math>y = [AP_iD]</math> and let <math>x = [DP_iQ_i].</math> <math>\triangle BP_iA</math> and <math>\triangle DP_iQ_i</math> are similar with side length ratio <math>(i + 1):1</math>, so <math>[BP_iA] = (i + 1)^2x.</math> Now, we can express the area of <math>\triangle ADB</math> (which is <math>1/2</math> since it's just half the square) as <math>y + (i + 1)^2x,</math> and we can express the area of <math>ADQ_i</math> as <math>x + y.</math> We have a system of equations:
+
+<cmath>[ADQ_i] = x + y = \frac{1}{2(i + 1)}</cmath>
+<cmath>[ADB] = (i + 1)^2x + y = \frac{1}{2}.</cmath>
+
+Solving, we get <math>x = \frac{1}{2(i+1)(i+2)}.</math> So now the problem becomes <math>\sum_{i=1}^{\infty} \frac{1}{2(i+1)(i+2)}</math>. We can rewrite this as
+<cmath>\frac{1}{2} \sum_{i=1}^{\infty} \left( \frac{1}{i+1} - \frac{1}{i+2} \right) = \frac{1}{2} \left( \left( \frac{1}{2} - \frac{1}{3} \right) + \left( \frac{1}{3} - \frac{1}{4} \right) + \left( \frac{1}{4} - \frac{1}{5} \right) + \dots \right)</cmath>
+
+All terms cancel except for the <math>\frac{1}{2}</math> on the inside and <math>\frac{1}{2}</math> on the outside, so the answer is <math>\boxed{\frac{1}{4}}.</math>
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 2 ---
+(By Qwertazertl)
+
+We are tasked with finding the sum of the areas of every <math>\triangle DQ_i^{}P_i^{}</math> where <math>i</math> is a positive integer. We can start by finding the area of the first triangle, <math>\triangle DQ_1^{}P_1^{}</math>. This is equal to <math>\frac{1}{2}</math> &sdot; <math>DQ_1^{}</math> &sdot; <math>P_1^{}Q_2^{}</math>. Notice that since triangle <math>\triangle DQ_1^{}P_1^{}</math> is similar to triangle <math>\triangle ABP_1^{}</math> in a 1 : 2 ratio, <math>P_1^{}Q_2^{}</math> must equal <math>\frac{1}{3}</math> (since we are dealing with a unit square whose side lengths are 1). <math>DQ_1^{}</math> is of course equal to <math>\frac{1}{2}</math> as it is the mid-point of CD. Thus, the area of the first triangle is <math>[DQ_1P_1]=\frac{1}{2}</math> &sdot; <math>\frac{1}{2}</math> &sdot; <math>\frac{1}{3}</math>. 
+
+The second triangle has a base <math>DQ_2^{}</math> equal to that of <math>P_1^{}Q_2^{}</math> (see that <math>\triangle DQ_2^{}P_1^{}</math> ~ <math>\triangle DCB</math>) and using the same similar triangle logic as with the first triangle, we find the area to be <math>[DQ_2P_2]=\frac{1}{2}</math> &sdot; <math>\frac{1}{3}</math> &sdot; <math>\frac{1}{4}</math>. If we continue and test the next few triangles, we will find that the sum of all <math>\triangle DQ_i^{}P_i^{}</math> is equal to 
+<cmath>\frac{1}{2} \sum\limits_{n=2}^\infty \frac{1}{n(n+1)}</cmath> 
+or 
+<cmath>\frac{1}{2} \sum\limits_{n=2}^\infty \left(\frac{1}{n} - \frac{1}{n+1}\right)</cmath>
+
+This is known as a telescoping series because we can see that every term after the first <math>\frac{1}{n}</math> is going to cancel out. Thus, the summation is equal to <math>\frac{1}{2}</math> and after multiplying by the half out in front, we find that the answer is <math>\boxed{\textbf{(B) }\frac{1}{4}}</math>.
+
+--- Solution 3 ---
+(By mastermind.hk16)
+
+Note that <math>AD \|\ P_iQ_{i+1}\  \forall i \in \mathbb{N}</math>. So <math>\triangle ADQ_i \sim \triangle P_{i}Q_{i+1}Q_{i} \ \forall i \in \mathbb{N}</math>
+
+Hence <math>\frac{Q_iQ_{i+1}}{DQ_{i}}=\frac{P_{i}Q_{i+1}}{AD} \ \ \Longrightarrow DQ_i \cdot P_iQ_{i+1}=Q_iQ_{i+1}</math>
+
+We compute <math>\frac{1}{2} \sum_{i=1}^{\infty}DQ_i \cdot P_iQ_{i+1}= \frac{1}{2} \sum_{i=1}^{\infty}Q_iQ_{i+1}=\frac{1}{2} \cdot DQ_1 =\frac{1}{4}</math> 
+because <math>Q_i \rightarrow D</math> as <math>i \rightarrow \infty</math>.
+
+--- Solution 4 ---
+(By user0003)
+
+We plot the figure on a coordinate plane with <math>D=(0,0)</math> and <math>A</math> in the positive y-direction from the origin. If <math>Q_i=(k, 0)</math> for some <math>k \neq 0</math>, then the line <math>AQ_i</math> can be represented as <math>y=-\frac{x}{k}+1</math>. The intersection of this and <math>BD</math>, which is the line <math>y=x</math>, is
+
+<cmath>P_i = \left(\frac{k}{k+1}, \frac{k}{k+1}\right)</cmath>.
+
+As <math>Q_{i+1}</math> is the projection of <math>P_i</math> onto the x-axis, it lies at <math>\left(\frac{k}{k+1}, 0\right)</math>. We have thus established that moving from <math>Q_i</math> to <math>Q_{i+1}</math> is equivalent to the transformation <math>x \rightarrow \frac{x}{x+1}</math> on the x-coordinate. The closed form of of the x-coordinate of <math>Q_i</math> can be deduced to be <math>\frac{1}{1+i}</math>, which can be determined empirically and proven via induction on the initial case <math>Q_1 = \left(\frac{1}{2}, 0\right)</math>. Now
+
+<cmath>[\Delta DQ_iP_i] = \frac{1}{2}(DQ_i)(Q_{i+1}P_i) = \frac{1}{2}(DQ_i)(DQ_{i+1}),</cmath>
+
+suggesting that <math>[\Delta DQ_iP_i]</math> is equivalent to <math>\frac{1}{2(i+1)(i+2)}</math>. The sum of this from <math>i=1</math> to <math>\infty</math> is a classic telescoping sequence as in Solution 1 and is equal to <math>\boxed{\textbf{(B) }\frac{1}{4}}</math>.
+
+=== Solution 5 Diagram and Detailed Steps===
+
+[[Image:2016_AMC_12B_Problem_21.png|thumb|center|800px| ]]
+
+
+Midpoint <math>Q_1</math> of <math>\overline{CD}</math>: <math>Q_1 = \left(\frac{1}{2}, 0\right)</math>
+
+Equation of <math>\overline{AQ_1}</math>:  Slope <math>m = \frac{0 - 1}{\frac{1}{2} - 0} = -2</math>  Equation: <math>y = -2x + 1</math>
+
+Line <math>\overline{BD}</math>:   - Equation: <math>y = x</math>
+
+Intersection <math>P_1</math> of <math>\overline{AQ_1}</math> and <math>\overline{BD}</math>:
+   - Solve:<math>-2x + 1 = x \implies 1 = 3x \implies x = \frac{1}{3}</math> Therefore, <math>P_1 = \left(\frac{1}{3}, \frac{1}{3}\right)</math>
+
+Now, using the pattern for subsequent points <math>P_k</math> and <math>Q_k</math>:
+
+General <math>Q_k</math> - For <math>k \geq 1</math>, <math>Q_k = \left(\frac{1}{k+1}, 0\right)</math>
+
+Equation of <math>\overline{AQ_k}</math>  Slope <math>m = -(k+1)</math>  Equation: <math>y = -(k+1)x + 1</math>
+
+Intersection <math>P_k</math> of <math>\overline{AQ_k}</math> and <math>\overline{BD}</math>:
+   - Line <math>\overline{BD}</math>: <math>y = x</math> Solve:<math>    -(k+1)x + 1 = x \implies 1 = (k+2)x \implies x = \frac{1}{k+2} </math>
+   - Therefore, <math>P_k = \left(\frac{1}{k+2}, \frac{1}{k+2}\right)</math>
+
+<math>Q_{k+1}</math> is the foot of the perpendicular from <math>P_k</math> to <math>\overline{CD}</math>, so <math> Q_{k+1} = \left(\frac{1}{k+2}, 0\right)</math>
+
+Area of <math>\triangle DQ_kP_k</math>  = <math>\frac{1}{2} \times  DQ_k \times  \text{Height}\ (y\ of\ P_{k+2})= \frac{1}{2} \times \frac{1}{k+1} \times \frac{1}{k+2}   = \frac{1}{2} ( \frac{1}{k+1} - \frac{1}{k+2} ) </math>
+
+This recursive process confirms the telescoping series:
+
+<cmath>
+\sum_{k=1}^{\infty} \frac{1}{2(k+1)(k+2)} = \frac{1}{2} \left( \left( \frac{1}{2} - \frac{1}{3} \right) + \left( \frac{1}{3} - \frac{1}{4} \right) + \left( \frac{1}{4} - \frac{1}{5} \right) + \cdots \right)
+</cmath>
+
+Most terms cancel, and we are left with: <math>\frac{1}{2} \cdot \frac{1}{2} =  \boxed{\textbf{(B) }\frac{1}{4}}</math>.
+
+
+=== Problem 22 ===
+For a certain positive integer
+
+Choices: {'A': '\\ [1,200]', 'B': '\\ [201,400]', 'C': '\\ [401,600]', 'D': '\\ [601,800]', 'E': '\\ [801,999]</math>'}
+Answer: B
+
+--- Solution 1 ---
+Solution by e_power_pi_times_i
+
+If <math>\frac{1}{n} = 0.\overline{abcdef}</math>, <math>n</math> must be a factor of <math>999999</math>. Also, by the same procedure, <math>n+6</math> must be a factor of <math>9999</math>. Checking through all the factors of <math>999999</math> and <math>9999</math> that are less than <math>1000</math>, we see that <math>n = 297</math> is a solution, so the answer is <math>\boxed{\textbf{(B)}}</math>.
+
+Note: <math>n = 27</math> and <math>n = 3</math> are both solutions, which invalidates this method. However, we need to examine all factors of <math>999999</math> that are not factors of <math>99999</math>, <math>999</math>, or <math>99</math>, or <math>9</math>. Additionally, we need <math>n+6</math> to be a factor of <math>9999</math> but not <math>999</math>, <math>99</math>, or <math>9</math>. Indeed, <math>297</math> satisfies these requirements.
+
+We can see that <math>n=27</math> and <math>n=3</math> are not solutions by checking it in the requirements of the problem: <math>\frac{1}{3}=0.3333\dots</math>, period 1, and <math>\frac{1}{27}=0.037037\dots</math>, period 3. Thus, <math>n=297</math> is the only answer.
+
+For anyone who wants more information about repeating decimals, visit: https://en.wikipedia.org/wiki/Repeating_decimal
+
+--- Solution 2 ---
+Notice that the repeating fraction <math>0.\overline{abcdef}</math> can be represented as <math>\frac{abcdef}{999999},</math> and thereby, <math>n|999999.</math> Also, notice that <math>0.\overline{wxyz} = \frac{wxyz}{9999},</math> so <math>(n+6)|9999.</math> However, we have to make some restrictions here. For instance, if <math>n|99999,</math> then <math>\frac{1}{n}</math> could be expressed as <math>\frac{a’b’c’d’e’}{99999} = .\overline{a’b’c’d’e’}</math> which cannot happen. Therefore, from this, we see that the smallest <math>m</math> such that <math>n|\underbrace{999\cdots999}_{m \text{ nines}}</math> is <math>m = 6.</math> Also, the smallest number <math>m</math> such that <math>(n+6)|\underbrace{999\cdots999}_{m \text{ nines}}</math> is <math>m = 4</math> by similar reasoning. 
+
+Proceeding, we can factorize <math>9999 = 99 \times 101,</math> after which we see that <math>n+6</math> must contain a prime factor of <math>101</math> as it cannot divide <math>99</math> but must divide <math>9999.</math> However, <math>101</math> is prime, so <math>101|(n+6)</math>! Looking at the answer choices, all of the intervals are less than <math>1000,</math> so we know that (the minimum value of) <math>n+6</math> is thereby either <math>101, 101 \times 3,</math> or <math>101 \times 9.</math> Testing, we see that <math>n+6 = 303</math> gives <math>n = 297 = 3^3 \times 11,</math> which in fact is a divisor of <math>999 \times 1001</math> while not being a divisor of <math>999.</math> Therefore, the answer is <math>\boxed{\text{(B)}}.</math>
+
+
+=== Problem 23 ===
+What is the volume of the region in three-dimensional space defined by the inequalities
+
+Choices: {'A': '\\ \\frac{1}{6}', 'B': '\\ \\frac{1}{4}', 'C': '\\ \\frac{1}{3}', 'D': '\\ \\frac{1}{2}', 'E': '\\ 1</math>'}
+Answer: 
+
+--- Solution 1 ---
+The first inequality refers to the interior of a regular octahedron with top and bottom vertices <math>(0,0,1),\ (0,0,-1)</math>. Its volume is <math>8\cdot\tfrac16=\tfrac43</math>. The second inequality describes an identical shape, shifted <math>+1</math> upwards along the <math>Z</math> axis. The intersection will be a similar octahedron, linearly scaled down by half. Thus the volume of the intersection is one-eighth of the volume of the first octahedron, giving an answer of <math>\textbf{(A) }\tfrac16</math>.
+
+--- Solution 2 ---
+Let <math>z\rightarrow z-1/2</math>, then we can transform the two inequalities to <math>|x|+|y|+|z-1/2|\le1</math> and <math>|x|+|y|+|z+1/2|\le1</math>. Then it's clear that <math>-1/2\le z \le 1/2</math>, consider <math>0 \le z \le 1/2</math>, <math>|x|+|y|\le 1/2-z</math>, then since the area of <math>|x|+|y|\le k</math> is <math>2k^2</math>, the volume is <math>\int_{0}^{1/2}2k^2 \,dk=\frac{1}{12}</math>. By symmetry, the case when <math>\frac{-1}{2}\le z\le0</math> is the same. Thus the answer is <math>\frac{1}{6}</math>.
+
+--- Solution 3 ---
+Do this problem first on the first quadrant. Graph this by using test points and you will see that you will have two tetrahedrons - each of them intersects at the middle, and thus its <math>1/4</math>th of the area of the tetrahedrons (since they are the same area). The area of a tetrahedron is bh/3, which gives us <math>1/6</math>, and then divide that by <math>4</math> to get the bounded area of <math>1/24</math> in the shaded region. Scale this up to the other quadrants now (since they are the same due to the abs value) and you get <math>\textbf{(A) }\tfrac16</math>.
+
+Sol by IronicNinja
+
+
+=== Problem 24 ===
+There are exactly
+
+Choices: {'A': '\\ 13,860', 'B': '\\ 20,790', 'C': '\\ 21,560', 'D': '\\ 27,720', 'E': '\\ 41,580</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <imath>A=\frac{a}{77},\ B=\frac{b}{77}</imath>, etc., so that <imath>\gcd(A,B,C,D)=1</imath>. Then for each prime power <imath>p^k</imath> in the prime factorization of <imath>N=\frac{n}{77}</imath>, at least one of the prime factorizations of <imath>(A,B,C,D)</imath> has <imath>p^k</imath>, at least one has <imath>p^0</imath>, and all must have <imath>p^m</imath> with <imath>0\le m\le k</imath>.
+
+Let <imath>f(k)</imath> be the number of ordered quadruplets of integers <imath>(m_1,m_2,m_3,m_4)</imath> such that <imath>0\le m_i\le k</imath> for all <imath>i</imath>, the largest is <imath>k</imath>, and the smallest is <imath>0</imath>. Then for the prime factorization <imath>N=2^{k_2}3^{k_3}5^{k_5}\ldots</imath> we must have <imath>77000=f(k_2)f(k_3)f(k_5)\ldots</imath> So let's take a look at the function <imath>f(k)</imath> by counting the quadruplets we just mentioned.
+
+There are <imath>14</imath> quadruplets which consist only of <imath>0</imath> and <imath>k</imath>. Then there are <imath>36(k-1)</imath> quadruplets which include three different values, and <imath>12(k-1)(k-2)</imath> with four. Thus <imath>f(k)=14+12(k-1)(3+k-2)=14+12(k^2-1)</imath> and the first few values from <imath>k=1</imath> onwards are <cmath>14,50,110,194,302,434,590,770,\ldots</cmath> Straight away we notice that <imath>14\cdot 50\cdot 110=77000</imath>, so the prime factorization of <imath>N</imath> can use the exponents <imath>1,2,3</imath>. To make it as small as possible, assign the larger exponents to smaller primes. The result is <imath>N=2^33^25^1=360</imath>, so <imath>n=360\cdot 77=27720</imath> which is answer <imath>\boxed{\textbf{(D)}27,720}</imath>.
+
+Also, to get the above formula of <imath>f(k)=12 k^2+2</imath>, we can also use the complementary counting by doing <imath>(k+1)^4-k^4-k^4+(k-1)^4</imath>, while the first term <imath>(k+1)^4</imath> is for the four integers to independently have <imath>k+1</imath> choices each, with the second term indicating to subtract all the possibilities for the four integers to have values between <imath>0</imath> and <imath>k-1</imath>, and similarly the third term indicating to subtract all the possibilities for the four integers to have values between <imath>1</imath> and <imath>k</imath>, in the end the fourth term meaning the make up for the values between <imath>1</imath> and <imath>k-1</imath>.
+
+
+=== Problem 25 ===
+The sequence
+
+Choices: {'A': '\\ 17', 'B': '\\ 18', 'C': '\\ 19', 'D': '\\ 20', 'E': '\\ 21</math>'}
+Answer: A
+
+--- Solution 1 ---
+Let <math>b_i=19\text{log}_2a_i</math>. Then <math>b_0=0, b_1=1,</math> and <math>b_n=b_{n-1}+2b_{n-2}</math> for all <math>n\geq 2</math>. The characteristic polynomial of this linear recurrence is <math>x^2-x-2=0</math>, which has roots <math>2</math> and <math>-1</math>. 
+
+Therefore, <math>b_n=k_12^{n}+k_2(-1)^n</math> for constants to be determined <math>k_1, k_2</math>.  Using the fact that <math>b_0=0, b_1=1,</math> we can solve a pair of linear equations for <math>k_1, k_2</math>:
+
+<math>k_1+k_2=0</math>
+<math>2k_1-k_2=1</math>.
+
+Thus <math>k_1=\frac{1}{3}</math>, <math>k_2=-\frac{1}{3}</math>, and <math>b_n=\frac{2^n-(-1)^n}{3}</math>.
+
+Now, <math>a_1a_2\cdots a_k=2^{\frac{(b_1+b_2+\cdots+b_k)}{19}}</math>, so we are looking for the least value of <math>k</math> so that
+
+<math>b_1+b_2+\cdots+b_k \equiv 0 \pmod{19}</math>. 
+
+Note that we can multiply all <math>b_i</math> by three for convenience, as the <math>b_i</math> are always integers, and it does not affect divisibility by <math>19</math>.
+
+Now, for all even <math>k</math> the sum (adjusted by a factor of three) is <math>2^1+2^2+\cdots+2^k=2^{k+1}-2</math>. The smallest <math>k</math> for which this is a multiple of <math>19</math> is <math>k=18</math> by Fermat's Little Theorem, as it is seen with further testing that <math>2</math> is a primitive root <math>\pmod{19}</math>.  
+
+Now, assume <math>k</math> is odd. Then the sum (again adjusted by a factor of three) is <math>2^1+2^2+\cdots+2^k+1=2^{k+1}-1</math>. The smallest <math>k</math> for which this is a multiple of <math>19</math> is <math>k=17</math>, by the same reasons. Thus, the minimal value of <math>k</math> is <math>\boxed{\textbf{(A) } 17}</math>.
+
+--- Solution 2 ---
+Since the product <math>a_1a_2\cdots a_k</math> is an integer, it must be a power of <math>2</math>, so the sum of the base-<math>2</math> logarithms must be an integer. Multiply all of these logarithms by <math>19</math> (to make them integers), so the sum must be a multiple of <math>19</math>.
+
+The logarithms are <math>b_n = 19\log_2 a_n</math>. Using the recursion <math>b_0 = 0, b_1 = 1, b_n = b_{n-1}+2b_{n-2}</math> (modulo <math>19</math> to save calculation time), we get the sequence
+<cmath>0,1,1,3,5,11,2,5,9,0,-1,-1,-3,-5,-11,-2,-5,-9,0,\dots</cmath>
+Listing the numbers out is expedited if you notice <math>b_{n+1}=2b_n+(-1)^n</math>.
+
+The cycle repeats every <math>9+9=18</math> terms. Notice that since <math>b_n+b_{n+9} \equiv 0 \pmod{19}</math>, the first <math>18</math> terms sum up to a multiple of <math>19</math>. Since <math>b_{18}=0</math>, we only need at most the first <math>\boxed{\textbf{(A)}\ 17}</math> terms to sum up to a multiple of <math>19</math>, and this is the lowest answer choice.
+
+<b>Note 1:</b> To rigorously prove this is the smallest value, you will have to keep a running sum of the terms and check that it is never a multiple of <math>19</math> before the <math>17</math>th term.
+
+<b>Note 2:</b> In response to note 1, it can be proven that <math>b_{n+2} = 2S + 1</math>, where <math>S = \sum^{n}_{i=1} b_i</math>. Since <math>S</math> is a multiple of <math>19</math>, it suffices to find the minimal <math>n \geq 1</math> such that <math>b_{n+2} \equiv 1 \pmod {19} </math>. In this case, <math>n = 17</math> happens to be minimal such <math>n</math>, so the answer would be <math>17</math>.
+
+The relation <math>b_{n+2} = 2S + 1</math> can be proven by rearranging the relation <math>b_{i+2} = b_{i+1} + 2b_i</math> to <math>b_{i+2} - b_{i+1} = 2b_i</math> for all integers <math>0 \leq i \leq n</math>, then adding those <math>n+1</math> equations together. The LHS telescopes into <math>b_{n+2} - 1</math>, and the RHS becomes <math>2S</math>. Therefore, if you don't find a cleaner solution involving the relation <math>b_n+b_{n+9} \equiv 0 \pmod{19}</math>, you can always solve the problem just by considering the value of <math>b_{n+2}</math> rather than keeping a running sum.
+
+--- Solution 3 ---
+Like in [[#Solution 2|Solution 2]], calculate the first few terms of the sequence, but also keep a running sum <math>c_n</math> of the logarithms (not modulo <math>19</math> here):
+<cmath>0,1,2,5,10,21,42,\dots</cmath>
+Notice that <math>c_n=2c_{n-1}+1</math> for odd <math>n</math> and <math>c_n=2c_{n-1}</math> for even <math>n</math>. Since <math>2</math> is relatively prime to <math>19</math>, we can ignore even <math>n</math> and calculate odd <math>n</math> using <math>c_1 = 1, c_{n} = 4c_{n-2}+1</math> (modulo <math>19</math>):
+<cmath>,1,,5,,2,,9,,-1,,-3,,8,,-5,,0,\dots</cmath>
+<math>c_n</math> is first a multiple of <math>19</math> at <math>n = \boxed{\textbf{(A)}\ 17}</math>. ~[[User:emerald_block|emerald_block]]
+
+--- Solution 4 ---
+Consider the product <math>a_1a_2\cdots a_k</math> (will finish tommorow)
+
+

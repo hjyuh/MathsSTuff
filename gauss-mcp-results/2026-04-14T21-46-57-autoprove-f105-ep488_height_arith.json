@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-14T21-46-57-autoprove-f105-ep488_height_arith",
+  "status": "done",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "-- Pure arithmetic: 3*q \u2264 n implies 3 \u2264 n/q\ndef Height (q n : \u2115) : \u2115 := n / q\n\ntheorem height_ge_three_of_three_mul_le (q n : \u2115) (hq : 0 < q) (h : 3 * q \u2264 n) :\n    3 \u2264 Height q n := by\n  sorry",
+  "started_at": "2026-04-14T21:46:57Z",
+  "finished_at": "2026-04-14T21:49:36Z",
+  "duration_s": 159.11,
+  "result_text": "## Autoprove Summary\n\n**Reason stopped:** completion\n\n| Metric | Value |\n|--------|-------|\n| Sorries before | 1 |\n| Sorries after | 0 |\n| Cycles run | 1 |\n| Stuck cycles | 0 |\n| Deep invocations | 0 |\n| Time elapsed | ~1m |\n\n**Proof:** `unfold Height; exact (Nat.le_div_iff_mul_le hq).mpr h`\n\nThe theorem follows directly from `Nat.le_div_iff_mul_le`, which states `k \u2264 n / q \u2194 k * q \u2264 n` (for `0 < q`). Since the hypothesis `h : 3 * q \u2264 n` is exactly the RHS, the `.mpr` direction closes the goal immediately.\n\n**Handoff:** All sorries filled. Committed as `a89c871`.\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-14T21-46-57-autoprove-f105-ep488_height_arith.log",
+  "worker_pid": 11683,
+  "last_heartbeat_at": 1776203373.912794,
+  "_started_monotonic": 1776203217.5096426
+}

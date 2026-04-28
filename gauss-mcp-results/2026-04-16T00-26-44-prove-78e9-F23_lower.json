@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T00-26-44-prove-78e9-F23_lower",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- F_{2,3}(T) = T \u2212 \u230aT/2\u230b \u2212 \u230aT/3\u230b + \u230aT/6\u230b satisfies T \u2212 1 \u2264 3\u00b7F(T). \n    Proof: case split on T mod 6. -/\ntheorem F23_lower (T : \u2115) :\n    (T : \u2124) - 1 \u2264 3 * ((T : \u2124) - ((T / 2 : \u2115) : \u2124) - ((T / 3 : \u2115) : \u2124) + ((T / 6 : \u2115) : \u2124)) := by\n  sorry",
+  "started_at": "2026-04-16T00:26:44Z",
+  "finished_at": "2026-04-16T00:26:46Z",
+  "duration_s": 1.54,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "resolver_failure",
+    "message": "AutoformalizePreflightError: No active Gauss project found. Use `/project init`, `/project convert`, or `/project use <path>` first. Run `/project init`, `/project convert`, or `/project use <path>` first.",
+    "log_tail": ""
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-26-44-prove-78e9-F23_lower.log",
+  "worker_pid": 1245,
+  "last_heartbeat_at": 1776299205.9794598,
+  "_started_monotonic": 1776299204.6345031
+}

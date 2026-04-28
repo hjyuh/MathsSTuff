@@ -1,0 +1,2507 @@
+{
+  "seed": "8Q+T",
+  "deltas": [
+    8829803323876454815638721310471893133318400,
+    84326437200635048120478850682624569955385600,
+    206599586649801792750563153486180780482292640,
+    243243878770766351831305384925562658074282720
+  ],
+  "N_values": [
+    663536870155857953380982826715187699496637665839298705949369481203733640714657054720000,
+    1897433280635888037556260390167974220352547555671639147104232694543386697392257433600000,
+    7152415856911108799839894248862043576579124191543417990544015216033322283317218072787441,
+    18626167614956109205109514604464875380719988009070205418932617578010243115023321579520000
+  ],
+  "results": [
+    {
+      "p": 7,
+      "x_candidate_count": 3,
+      "m_candidate_count": 2,
+      "border_pair_count": 6,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 2,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 3,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 2,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 3,
+          "X2": 2,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 3,
+          "X2": 2,
+          "M": 2,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 4,
+          "X2": 2,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 7,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 11,
+      "x_candidate_count": 1,
+      "m_candidate_count": 6,
+      "border_pair_count": 6,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 0,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 3,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 1,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 3,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 4,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 5,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 13,
+      "x_candidate_count": 6,
+      "m_candidate_count": 2,
+      "border_pair_count": 12,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 12,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 4,
+          "X2": 3,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 4,
+          "X2": 3,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 6,
+          "X2": 10,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 17,
+      "x_candidate_count": 17,
+      "m_candidate_count": 5,
+      "border_pair_count": 53,
+      "nontrivial_pair_count": 24,
+      "smooth_pair_count": 32,
+      "nontrivial_smooth_pair_count": 24,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 2,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 1,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 2,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 9,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 16,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 1,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 16,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 9,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 9,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 16,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 19,
+      "x_candidate_count": 5,
+      "m_candidate_count": 10,
+      "border_pair_count": 30,
+      "nontrivial_pair_count": 8,
+      "smooth_pair_count": 16,
+      "nontrivial_smooth_pair_count": 8,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 3,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 1,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 4,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 5,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 6,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 7,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 6,
+          "X2": 17,
+          "M": 7,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 6,
+          "X2": 17,
+          "M": 9,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 9,
+          "X2": 5,
+          "M": 1,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 9,
+          "X2": 5,
+          "M": 4,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 10,
+          "X2": 5,
+          "M": 1,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 23,
+      "x_candidate_count": 11,
+      "m_candidate_count": 12,
+      "border_pair_count": 72,
+      "nontrivial_pair_count": 40,
+      "smooth_pair_count": 50,
+      "nontrivial_smooth_pair_count": 40,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 2,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 1,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 2,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 3,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 4,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 1,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 2,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 3,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 8,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 2,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 29,
+      "x_candidate_count": 29,
+      "m_candidate_count": 8,
+      "border_pair_count": 134,
+      "nontrivial_pair_count": 84,
+      "smooth_pair_count": 98,
+      "nontrivial_smooth_pair_count": 84,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 2,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 1,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 6,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 13,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 6,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 23,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 1,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 16,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 20,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 31,
+      "x_candidate_count": 5,
+      "m_candidate_count": 3,
+      "border_pair_count": 15,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 14,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 8,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 18,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 20,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 7,
+          "X2": 18,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 7,
+          "X2": 18,
+          "M": 18,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 37,
+      "x_candidate_count": 37,
+      "m_candidate_count": 10,
+      "border_pair_count": 208,
+      "nontrivial_pair_count": 144,
+      "smooth_pair_count": 162,
+      "nontrivial_smooth_pair_count": 144,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 2,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 3,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 12,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 21,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 5,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 3,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 26,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 33,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 36,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 3,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 41,
+      "x_candidate_count": 6,
+      "m_candidate_count": 6,
+      "border_pair_count": 36,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 30,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 5,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 17,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 25,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 8,
+          "smooth": false
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 29,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 43,
+      "x_candidate_count": 8,
+      "m_candidate_count": 5,
+      "border_pair_count": 40,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 40,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 10,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 22,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 33,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 35,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 47,
+      "x_candidate_count": 10,
+      "m_candidate_count": 4,
+      "border_pair_count": 40,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 40,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 23,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 26,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 53,
+      "x_candidate_count": 27,
+      "m_candidate_count": 27,
+      "border_pair_count": 391,
+      "nontrivial_pair_count": 312,
+      "smooth_pair_count": 338,
+      "nontrivial_smooth_pair_count": 312,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 2,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 1,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 4,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 6,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 6,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 9,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 10,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 15,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 16,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 59,
+      "x_candidate_count": 29,
+      "m_candidate_count": 15,
+      "border_pair_count": 249,
+      "nontrivial_pair_count": 152,
+      "smooth_pair_count": 206,
+      "nontrivial_smooth_pair_count": 152,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 3,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 3,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 4,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 5,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 9,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 6,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 3,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 4,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 5,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 12,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 19,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 61,
+      "x_candidate_count": 31,
+      "m_candidate_count": 16,
+      "border_pair_count": 280,
+      "nontrivial_pair_count": 176,
+      "smooth_pair_count": 234,
+      "nontrivial_smooth_pair_count": 176,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 3,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 1,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 4,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 9,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 12,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 6,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 12,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 13,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 14,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 47,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 60,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 67,
+      "x_candidate_count": 8,
+      "m_candidate_count": 5,
+      "border_pair_count": 40,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 38,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 35,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 61,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 63,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 64,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 71,
+      "x_candidate_count": 8,
+      "m_candidate_count": 8,
+      "border_pair_count": 58,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 58,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 26,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 36,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 37,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 73,
+      "x_candidate_count": 21,
+      "m_candidate_count": 6,
+      "border_pair_count": 102,
+      "nontrivial_pair_count": 14,
+      "smooth_pair_count": 90,
+      "nontrivial_smooth_pair_count": 12,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 8,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 49,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 8,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 65,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 8,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 70,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 8,
+          "smooth": false
+        },
+        {
+          "X": 4,
+          "X2": 16,
+          "M": 0,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 9,
+          "X2": 8,
+          "M": 42,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 18,
+          "X2": 32,
+          "M": 42,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 18,
+          "X2": 32,
+          "M": 43,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 24,
+          "X2": 65,
+          "M": 43,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 27,
+          "X2": 72,
+          "M": 42,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 79,
+      "x_candidate_count": 10,
+      "m_candidate_count": 11,
+      "border_pair_count": 94,
+      "nontrivial_pair_count": 8,
+      "smooth_pair_count": 94,
+      "nontrivial_smooth_pair_count": 8,
+      "samples": [
+        {
+          "X": 18,
+          "X2": 8,
+          "M": 0,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 18,
+          "X2": 8,
+          "M": 5,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 18,
+          "X2": 8,
+          "M": 10,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 18,
+          "X2": 8,
+          "M": 36,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 18,
+          "X2": 8,
+          "M": 38,
+          "new_col_mod_p": true,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 18,
+          "X2": 8,
+          "M": 38,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 18,
+          "X2": 8,
+          "M": 42,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 35,
+          "X2": 40,
+          "M": 27,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 35,
+          "X2": 40,
+          "M": 39,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 44,
+          "X2": 40,
+          "M": 27,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 83,
+      "x_candidate_count": 10,
+      "m_candidate_count": 6,
+      "border_pair_count": 60,
+      "nontrivial_pair_count": 2,
+      "smooth_pair_count": 60,
+      "nontrivial_smooth_pair_count": 2,
+      "samples": [
+        {
+          "X": 33,
+          "X2": 10,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 33,
+          "X2": 10,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 33,
+          "X2": 10,
+          "M": 18,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 33,
+          "X2": 10,
+          "M": 54,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 33,
+          "X2": 10,
+          "M": 67,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 38,
+          "X2": 33,
+          "M": 67,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 45,
+          "X2": 33,
+          "M": 67,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 89,
+      "x_candidate_count": 12,
+      "m_candidate_count": 8,
+      "border_pair_count": 86,
+      "nontrivial_pair_count": 6,
+      "smooth_pair_count": 86,
+      "nontrivial_smooth_pair_count": 6,
+      "samples": [
+        {
+          "X": 8,
+          "X2": 64,
+          "M": 0,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 8,
+          "X2": 64,
+          "M": 20,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 8,
+          "X2": 64,
+          "M": 33,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 8,
+          "X2": 64,
+          "M": 47,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 8,
+          "X2": 64,
+          "M": 64,
+          "new_col_mod_p": true,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 8,
+          "X2": 64,
+          "M": 64,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 17,
+          "X2": 22,
+          "M": 22,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 17,
+          "X2": 22,
+          "M": 58,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 72,
+          "X2": 22,
+          "M": 22,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 72,
+          "X2": 22,
+          "M": 58,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 97,
+      "x_candidate_count": 14,
+      "m_candidate_count": 7,
+      "border_pair_count": 86,
+      "nontrivial_pair_count": 6,
+      "smooth_pair_count": 86,
+      "nontrivial_smooth_pair_count": 6,
+      "samples": [
+        {
+          "X": 13,
+          "X2": 72,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 13,
+          "X2": 72,
+          "M": 17,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 13,
+          "X2": 72,
+          "M": 19,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 13,
+          "X2": 72,
+          "M": 26,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 13,
+          "X2": 72,
+          "M": 33,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 38,
+          "X2": 86,
+          "M": 19,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 40,
+          "X2": 48,
+          "M": 41,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 41,
+          "X2": 32,
+          "M": 41,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 56,
+          "X2": 32,
+          "M": 41,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 57,
+          "X2": 48,
+          "M": 41,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 101,
+      "x_candidate_count": 14,
+      "m_candidate_count": 11,
+      "border_pair_count": 122,
+      "nontrivial_pair_count": 24,
+      "smooth_pair_count": 122,
+      "nontrivial_smooth_pair_count": 24,
+      "samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 0,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 12,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 15,
+          "new_col_mod_p": true,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 16,
+          "new_col_mod_p": true,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 22,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 15,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 16,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 35,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 86,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 97,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 103,
+      "x_candidate_count": 12,
+      "m_candidate_count": 6,
+      "border_pair_count": 68,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 68,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 10,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 19,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 45,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 57,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 107,
+      "x_candidate_count": 8,
+      "m_candidate_count": 7,
+      "border_pair_count": 56,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 56,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 18,
+          "X2": 3,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 18,
+          "X2": 3,
+          "M": 13,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 18,
+          "X2": 3,
+          "M": 16,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 18,
+          "X2": 3,
+          "M": 39,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 18,
+          "X2": 3,
+          "M": 41,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 109,
+      "x_candidate_count": 29,
+      "m_candidate_count": 28,
+      "border_pair_count": 468,
+      "nontrivial_pair_count": 306,
+      "smooth_pair_count": 412,
+      "nontrivial_smooth_pair_count": 306,
+      "samples": [
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 4,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 3,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 4,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 9,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        },
+        {
+          "X": 0,
+          "X2": 0,
+          "M": 15,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 7,
+          "smooth": false
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 3,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 4,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 15,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 26,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 34,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 113,
+      "x_candidate_count": 10,
+      "m_candidate_count": 15,
+      "border_pair_count": 122,
+      "nontrivial_pair_count": 12,
+      "smooth_pair_count": 122,
+      "nontrivial_smooth_pair_count": 12,
+      "samples": [
+        {
+          "X": 9,
+          "X2": 81,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 9,
+          "X2": 81,
+          "M": 2,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 9,
+          "X2": 81,
+          "M": 4,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 9,
+          "X2": 81,
+          "M": 17,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 9,
+          "X2": 81,
+          "M": 21,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 19,
+          "X2": 22,
+          "M": 39,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 19,
+          "X2": 22,
+          "M": 89,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 19,
+          "X2": 22,
+          "M": 109,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 54,
+          "X2": 91,
+          "M": 21,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 54,
+          "X2": 91,
+          "M": 94,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 127,
+      "x_candidate_count": 12,
+      "m_candidate_count": 10,
+      "border_pair_count": 104,
+      "nontrivial_pair_count": 4,
+      "smooth_pair_count": 104,
+      "nontrivial_smooth_pair_count": 4,
+      "samples": [
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 17,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 38,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 40,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 59,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 28,
+          "X2": 22,
+          "M": 59,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 39,
+          "X2": 124,
+          "M": 64,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 88,
+          "X2": 124,
+          "M": 64,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 99,
+          "X2": 22,
+          "M": 59,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 131,
+      "x_candidate_count": 24,
+      "m_candidate_count": 10,
+      "border_pair_count": 186,
+      "nontrivial_pair_count": 42,
+      "smooth_pair_count": 186,
+      "nontrivial_smooth_pair_count": 42,
+      "samples": [
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 0,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 37,
+          "new_col_mod_p": true,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 51,
+          "new_col_mod_p": true,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 80,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 96,
+          "new_col_mod_p": true,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 37,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 51,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 2,
+          "X2": 4,
+          "M": 127,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 37,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 5,
+          "X2": 25,
+          "M": 50,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 137,
+      "x_candidate_count": 10,
+      "m_candidate_count": 11,
+      "border_pair_count": 104,
+      "nontrivial_pair_count": 6,
+      "smooth_pair_count": 104,
+      "nontrivial_smooth_pair_count": 6,
+      "samples": [
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 7,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 14,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 17,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 1,
+          "X2": 1,
+          "M": 48,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 9,
+          "X2": 81,
+          "M": 117,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 9,
+          "X2": 81,
+          "M": 119,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 9,
+          "X2": 81,
+          "M": 128,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 128,
+          "X2": 81,
+          "M": 117,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 128,
+          "X2": 81,
+          "M": 119,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 139,
+      "x_candidate_count": 8,
+      "m_candidate_count": 10,
+      "border_pair_count": 80,
+      "nontrivial_pair_count": 0,
+      "smooth_pair_count": 80,
+      "nontrivial_smooth_pair_count": 0,
+      "samples": [
+        {
+          "X": 6,
+          "X2": 36,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 6,
+          "X2": 36,
+          "M": 9,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 6,
+          "X2": 36,
+          "M": 29,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 6,
+          "X2": 36,
+          "M": 35,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 6,
+          "X2": 36,
+          "M": 41,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": []
+    },
+    {
+      "p": 149,
+      "x_candidate_count": 12,
+      "m_candidate_count": 9,
+      "border_pair_count": 100,
+      "nontrivial_pair_count": 8,
+      "smooth_pair_count": 100,
+      "nontrivial_smooth_pair_count": 8,
+      "samples": [
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 20,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 36,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 52,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 3,
+          "X2": 9,
+          "M": 55,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 34,
+          "X2": 113,
+          "M": 140,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 34,
+          "X2": 113,
+          "M": 146,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 51,
+          "X2": 68,
+          "M": 123,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 51,
+          "X2": 68,
+          "M": 135,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 98,
+          "X2": 68,
+          "M": 123,
+          "jacobian_rank": 9
+        }
+      ]
+    },
+    {
+      "p": 151,
+      "x_candidate_count": 10,
+      "m_candidate_count": 10,
+      "border_pair_count": 92,
+      "nontrivial_pair_count": 2,
+      "smooth_pair_count": 92,
+      "nontrivial_smooth_pair_count": 2,
+      "samples": [
+        {
+          "X": 17,
+          "X2": 138,
+          "M": 0,
+          "new_col_mod_p": false,
+          "new_row_mod_p": false,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 17,
+          "X2": 138,
+          "M": 13,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 17,
+          "X2": 138,
+          "M": 15,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 17,
+          "X2": 138,
+          "M": 45,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        },
+        {
+          "X": 17,
+          "X2": 138,
+          "M": 50,
+          "new_col_mod_p": false,
+          "new_row_mod_p": true,
+          "jacobian_rank": 9,
+          "smooth": true
+        }
+      ],
+      "nontrivial_smooth_samples": [
+        {
+          "X": 53,
+          "X2": 91,
+          "M": 45,
+          "jacobian_rank": 9
+        },
+        {
+          "X": 98,
+          "X2": 91,
+          "M": 45,
+          "jacobian_rank": 9
+        }
+      ]
+    }
+  ]
+}

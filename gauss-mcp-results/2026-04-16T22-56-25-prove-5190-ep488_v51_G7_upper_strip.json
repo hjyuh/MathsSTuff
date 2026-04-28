@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T22-56-25-prove-5190-ep488_v51_G7_upper_strip",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v51 / G7: Upper-strip reduction (5.2)\n-- Claim: If 2n < 5q, then no vertex in the top window (q/2, q] can have\n-- left-degree 3 in B_n under the constraint that degree-3 forces heights\n-- {3a, 4a, 5a} \u2264 n. In particular, 5a > 5q/2 > n, contradiction.\n--\n-- Simplified target: show that if a > q/2 and 2n < 5q, then 5a > n.\n\nimport Mathlib.Tactic\n\n/-- If a > q/2 and 2n < 5q, then 5a > n. -/\ntheorem upper_strip_no_deg3\n    {q n a : \u2115}\n    (hq : 0 < q)\n    (ha : q / 2 < a)\n    (hn_strip : 2 * n < 5 * q) :\n    n < 5 * a := by\n  sorry\n",
+  "started_at": "2026-04-16T22:56:25Z",
+  "finished_at": "2026-04-16T23:17:07Z",
+  "duration_s": 1242.34,
+  "result_text": "## Cycle 1 \u2014 Results\n\n**`upper_strip_no_deg3`** \u2014 filled with `omega`. The proof is a single tactic: natural-number linear arithmetic directly closes the goal from `q / 2 < a` and `2 * n < 5 * q`.\n\nI also see a new sorry appeared: **`deg3_coexist_ratio`** (line 277). Should I proceed to fill that one as well? It looks like another Nat linear arithmetic statement \u2014 `omega` is likely to close it too.\n\n**Cycle complete. Filled 1/1 sorries this cycle.**\n\n- **[continue]** \u2014 attempt `deg3_coexist_ratio` next\n- **[stop]** \u2014 save progress and exit\n- **[adjust]** \u2014 change flags for next cycle\n\nCommit `upper_strip_no_deg3`?\n- **[yes]** \u2014 commit this fill\n- **[yes-all]** \u2014 auto-commit for rest of session\n- **[no]** \u2014 skip this commit\n- **[never]** \u2014 skip all commits\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-56-25-prove-5190-ep488_v51_G7_upper_strip.log",
+  "worker_pid": 3967,
+  "last_heartbeat_at": 1776381423.17266,
+  "_started_monotonic": 1776380185.0244455
+}

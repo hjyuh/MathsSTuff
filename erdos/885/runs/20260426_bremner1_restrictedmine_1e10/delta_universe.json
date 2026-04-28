@@ -1,0 +1,61 @@
+{
+  "delta_max": 200000,
+  "max_deltas": 5000,
+  "mode": "seed-pairs",
+  "seed_rows": [
+    126,
+    16110,
+    33390,
+    75390
+  ],
+  "seed_width": 4,
+  "selected_delta_count": 9,
+  "selected_deltas": [
+    {
+      "delta": 126,
+      "seed_column_support": 4,
+      "source": "seed-row"
+    },
+    {
+      "delta": 9090,
+      "seed_column_support": 2,
+      "source": "seed-pair"
+    },
+    {
+      "delta": 12162,
+      "seed_column_support": 2,
+      "source": "seed-pair"
+    },
+    {
+      "delta": 16110,
+      "seed_column_support": 4,
+      "source": "seed-row"
+    },
+    {
+      "delta": 21630,
+      "seed_column_support": 2,
+      "source": "seed-pair"
+    },
+    {
+      "delta": 33390,
+      "seed_column_support": 4,
+      "source": "seed-row"
+    },
+    {
+      "delta": 52290,
+      "seed_column_support": 2,
+      "source": "seed-pair"
+    },
+    {
+      "delta": 75390,
+      "seed_column_support": 4,
+      "source": "seed-row"
+    },
+    {
+      "delta": 87678,
+      "seed_column_support": 2,
+      "source": "seed-pair"
+    }
+  ],
+  "truncated_extra_count": 0
+}

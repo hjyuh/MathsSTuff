@@ -1,0 +1,135 @@
+======================================================================
+EP-488 v53 COMPUTATIONAL CENSUS REPORT
+======================================================================
+
+SUMMARY:
+----------------------------------------------------------------------
+Search bound: q = 10 to 500
+n range: [ceil(5q/2), 3q) for each q
+Total connected components analyzed: 106829
+Components with |C| >= 3: 106829
+
+A2' TARGET (D_C(n) >= sum(c_n(a)-1)  <=>  epsilon <= 1):
+  Verified for: 106667 / 106829 components
+  Obstructions (epsilon > 1): 162
+  All obstructions have epsilon = 2 (none higher)
+
+A4 TARGET (host margin >= c_m(L_cyc)/m at event points):
+  Verified for: 100/100 sampled unicyclic components
+  Worst margin: +0.090792 (positive, so inequality holds)
+
+Stripped pseudoforest property:
+  Failures: 145 / 106829
+  All failures have c_stripped = 2
+
+Pair-only bicyclic leafless components: 0 (none found)
+Theta graph candidates: 0 (none found)
+
+Max epsilon found: 2
+  Witness: q=427, n=1280
+  C=[216, 225, 240, 243, 250, 256, 270, 288, 300, 320, 324, 360, 375, 384, 400, 405]
+  c=4, tau=2, epsilon=2
+
+SEARCH BOUNDS AND METHODS:
+----------------------------------------------------------------------
+For each q in [10, 500]:
+  n_start = ceil(5q/2), n_end = 3q
+  For q <= 100: all n in [n_start, n_end) checked
+  For q > 100: sampled n values (approx 20 per q)
+
+For each (q, n):
+  1. Build n-LCM graph on (q/2, q]
+     Edge (a,b) iff lcm(a,b) <= n and q ∤ lcm(a,b)
+  2. Find connected components with |C| >= 3
+  3. Compute: c, tau, epsilon, x1, x3, D_C(n), sum(c_n(a)-1)
+  4. Check A2' target: D_C(n) >= sum(c_n(a)-1)
+  5. Compute stripped graph C° and check pseudoforest property
+  6. For unicyclic components: check A4 at event points
+
+REGRESSION RESULTS:
+----------------------------------------------------------------------
+v52 run-count counterexample: VERIFIED
+  q=47, n=135, x=180, C={24,30,36,40,45}
+  H_T#(180)=20, D_C(180)=19, epsilon_T=1
+  Document claims match exactly.
+
+One-edge simplification counterexample: FRAMEWORK-SPECIFIC
+  Cannot verify with v53 definitions (uses killed Framework 3)
+
+Kill #108 (u_T target lemma): FRAMEWORK-SPECIFIC
+  Uses Framework 2 definition of u_T
+
+Kill #111 (Hunter density bridge): FRAMEWORK-SPECIFIC
+  Uses Framework 3 definition of D
+
+A2' CENSUS RESULTS:
+----------------------------------------------------------------------
+Distinct (c, tau, epsilon) triples: 8
+
+Distribution:
+  (c=0, tau=0, epsilon=0): 94267 occurrences
+  (c=1, tau=1, epsilon=0): 9452 occurrences
+  (c=1, tau=0, epsilon=1): 1207 occurrences
+  (c=2, tau=1, epsilon=1): 989 occurrences
+  (c=2, tau=2, epsilon=0): 451 occurrences
+  (c=3, tau=2, epsilon=1): 301 occurrences
+  (c=3, tau=1, epsilon=2): 153 occurrences
+  (c=4, tau=2, epsilon=2): 9 occurrences
+
+Obstruction analysis (epsilon > 1):
+  Total obstructions: 162
+  Type (c=3, tau=1, epsilon=2): 153
+  Type (c=4, tau=2, epsilon=2): 9
+
+Density of epsilon > 1 components:
+  ALL epsilon > 1 components have density < 0.1
+  Maximum density among epsilon > 1: ~0.037
+  All high-density (>.2) components have epsilon = 0
+
+Stripped pseudoforest failures:
+  Total: 145
+  All have c_stripped = 2
+  These correspond to epsilon > 1 cases where triple-stripping
+  does not reduce to pseudoforest
+
+A4 EVENT-POINT RESULTS:
+----------------------------------------------------------------------
+Unicyclic components checked: 100
+Verified: 100/100
+Worst margin: +0.090792
+  q=64, n=183, U=[36, 40, 45, 48, 54, 60]
+  H_n=17, L_cyc=180, worst_m=200
+
+All checked margins are POSITIVE, confirming A4 inequality holds
+at all sampled event points for all sampled unicyclic hosts.
+
+COUNTEREXAMPLES OR OBSTRUCTIONS:
+----------------------------------------------------------------------
+NO counterexamples to v53 framework found in search range.
+
+Obstructions to A2' (epsilon > 1) exist but:
+  1. All have very low density (< 0.1)
+  2. None can be extremizers (max density ~0.037 << 0.5 threshold)
+  3. All occur at large q (> 400)
+  4. The finite-window extremizer theorem (v52) suggests these
+     are not actual maximizers of D_C(m)/m
+
+Key finding: The A2' target D_C(n) >= sum(c_n(a)-1) fails
+for 162 components, but ALL of these have epsilon = 2 and
+density < 0.1. The v53 framework predicts these are NOT
+extremizers, and the computational evidence supports this.
+
+FILES / CODE:
+----------------------------------------------------------------------
+Source code: See attached Python script
+All computations performed with exact integer arithmetic
+(no floating point in core combinatorial counts)
+
+NEXT COMPUTATION:
+----------------------------------------------------------------------
+1. Expand search to q > 500 (compute-bound)
+2. Full A4 check on ALL unicyclic components (not just sample)
+3. Verify event-point reduction (U2) computationally
+4. Search for pair-only bicyclic leafless at larger q
+5. Check if epsilon > 1 components ever achieve density > 0.5
+   (the theta threshold from v53 document)

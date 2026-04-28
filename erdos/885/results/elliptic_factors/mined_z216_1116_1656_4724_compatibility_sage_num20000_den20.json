@@ -1,0 +1,1312 @@
+{
+  "N_values": [
+    274833,
+    1225728,
+    3368448,
+    30159360
+  ],
+  "compatibility_curves": [
+    {
+      "I": [
+        2,
+        3,
+        4
+      ],
+      "d_point_count": 8,
+      "d_point_samples": [
+        {
+          "W": "-4753",
+          "Z_abs": "178129496384"
+        },
+        {
+          "W": "-1737",
+          "Z_abs": "28245348864"
+        },
+        {
+          "W": "-1233",
+          "Z_abs": "18922780224"
+        },
+        {
+          "W": "-567",
+          "Z_abs": "11456653824"
+        },
+        {
+          "W": "567",
+          "Z_abs": "11456653824"
+        },
+        {
+          "W": "1233",
+          "Z_abs": "18922780224"
+        },
+        {
+          "W": "1737",
+          "Z_abs": "28245348864"
+        },
+        {
+          "W": "4753",
+          "Z_abs": "178129496384"
+        }
+      ],
+      "f": "W^6 + 33929037*W^4 + 123809971332195*W^2 + 87911403788140368975",
+      "genus": 2,
+      "jacobian_rank_bounds_via_split": [
+        7,
+        9
+      ],
+      "lift_point_count": 8,
+      "lift_points": [
+        {
+          "W": "-4753",
+          "Z_abs": "178129496384",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        },
+        {
+          "W": "-1737",
+          "Z_abs": "28245348864",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "-1233",
+          "Z_abs": "18922780224",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "-567",
+          "Z_abs": "11456653824",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "567",
+          "Z_abs": "11456653824",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "1233",
+          "Z_abs": "18922780224",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "1737",
+          "Z_abs": "28245348864",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "4753",
+          "Z_abs": "178129496384",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        }
+      ],
+      "m": 1,
+      "old_W_values": [
+        "-4753",
+        "-1737",
+        "-1233",
+        "-567",
+        "567",
+        "1233",
+        "1737",
+        "4753"
+      ],
+      "quartic_rank_bounds": [
+        3,
+        5
+      ],
+      "search_den_bound": 20,
+      "search_num_bound": 20000,
+      "square_t_point_count": 8,
+      "square_t_points": [
+        {
+          "W": "-4753",
+          "Z_abs": "178129496384",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        },
+        {
+          "W": "-1737",
+          "Z_abs": "28245348864",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "-1233",
+          "Z_abs": "18922780224",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "-567",
+          "Z_abs": "11456653824",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "567",
+          "Z_abs": "11456653824",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "1233",
+          "Z_abs": "18922780224",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "1737",
+          "Z_abs": "28245348864",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "4753",
+          "Z_abs": "178129496384",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        }
+      ],
+      "triple_factor": "234",
+      "triple_rank_bounds": [
+        4,
+        4
+      ]
+    },
+    {
+      "I": [
+        1,
+        3,
+        4
+      ],
+      "d_point_count": 8,
+      "d_point_samples": [
+        {
+          "W": "-4852",
+          "Z_abs": "174494949776"
+        },
+        {
+          "W": "-1992",
+          "Z_abs": "24629603904"
+        },
+        {
+          "W": "-1572",
+          "Z_abs": "14842104336"
+        },
+        {
+          "W": "-1128",
+          "Z_abs": "5758796736"
+        },
+        {
+          "W": "1128",
+          "Z_abs": "5758796736"
+        },
+        {
+          "W": "1572",
+          "Z_abs": "14842104336"
+        },
+        {
+          "W": "1992",
+          "Z_abs": "24629603904"
+        },
+        {
+          "W": "4852",
+          "Z_abs": "174494949776"
+        }
+      ],
+      "f": "W^6 + 30125457*W^4 + 32446324224000*W^2 - 58952325382491340800",
+      "genus": 2,
+      "jacobian_rank_bounds_via_split": [
+        6,
+        10
+      ],
+      "lift_point_count": 8,
+      "lift_points": [
+        {
+          "W": "-4852",
+          "Z_abs": "174494949776",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        },
+        {
+          "W": "-1992",
+          "Z_abs": "24629603904",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "-1572",
+          "Z_abs": "14842104336",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "-1128",
+          "Z_abs": "5758796736",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "1128",
+          "Z_abs": "5758796736",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "1572",
+          "Z_abs": "14842104336",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "1992",
+          "Z_abs": "24629603904",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "4852",
+          "Z_abs": "174494949776",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        }
+      ],
+      "m": 2,
+      "old_W_values": [
+        "-4852",
+        "-1992",
+        "-1572",
+        "-1128",
+        "1128",
+        "1572",
+        "1992",
+        "4852"
+      ],
+      "quartic_rank_bounds": [
+        3,
+        5
+      ],
+      "search_den_bound": 20,
+      "search_num_bound": 20000,
+      "square_t_point_count": 8,
+      "square_t_points": [
+        {
+          "W": "-4852",
+          "Z_abs": "174494949776",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        },
+        {
+          "W": "-1992",
+          "Z_abs": "24629603904",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "-1572",
+          "Z_abs": "14842104336",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "-1128",
+          "Z_abs": "5758796736",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "1128",
+          "Z_abs": "5758796736",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "1572",
+          "Z_abs": "14842104336",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "1992",
+          "Z_abs": "24629603904",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "4852",
+          "Z_abs": "174494949776",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        }
+      ],
+      "triple_factor": "134",
+      "triple_rank_bounds": [
+        3,
+        5
+      ]
+    },
+    {
+      "I": [
+        1,
+        2,
+        4
+      ],
+      "d_point_count": 8,
+      "d_point_samples": [
+        {
+          "W": "-5068",
+          "Z_abs": "167057911664"
+        },
+        {
+          "W": "-2472",
+          "Z_abs": "19847156544"
+        },
+        {
+          "W": "-2148",
+          "Z_abs": "10862098704"
+        },
+        {
+          "W": "-1848",
+          "Z_abs": "3515109696"
+        },
+        {
+          "W": "1848",
+          "Z_abs": "3515109696"
+        },
+        {
+          "W": "2148",
+          "Z_abs": "10862098704"
+        },
+        {
+          "W": "2472",
+          "Z_abs": "19847156544"
+        },
+        {
+          "W": "5068",
+          "Z_abs": "167057911664"
+        }
+      ],
+      "f": "W^6 + 21554577*W^4 - 133657439454720*W^2 + 177590277552380313600",
+      "genus": 2,
+      "jacobian_rank_bounds_via_split": [
+        7,
+        9
+      ],
+      "lift_point_count": 8,
+      "lift_points": [
+        {
+          "W": "-5068",
+          "Z_abs": "167057911664",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        },
+        {
+          "W": "-2472",
+          "Z_abs": "19847156544",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "-2148",
+          "Z_abs": "10862098704",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "-1848",
+          "Z_abs": "3515109696",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "1848",
+          "Z_abs": "3515109696",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "2148",
+          "Z_abs": "10862098704",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "2472",
+          "Z_abs": "19847156544",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "5068",
+          "Z_abs": "167057911664",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        }
+      ],
+      "m": 3,
+      "old_W_values": [
+        "-5068",
+        "-2472",
+        "-2148",
+        "-1848",
+        "1848",
+        "2148",
+        "2472",
+        "5068"
+      ],
+      "quartic_rank_bounds": [
+        3,
+        5
+      ],
+      "search_den_bound": 20,
+      "search_num_bound": 20000,
+      "square_t_point_count": 8,
+      "square_t_points": [
+        {
+          "W": "-5068",
+          "Z_abs": "167057911664",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        },
+        {
+          "W": "-2472",
+          "Z_abs": "19847156544",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "-2148",
+          "Z_abs": "10862098704",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "-1848",
+          "Z_abs": "3515109696",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "1848",
+          "Z_abs": "3515109696",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "2148",
+          "Z_abs": "10862098704",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "2472",
+          "Z_abs": "19847156544",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "5068",
+          "Z_abs": "167057911664",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        }
+      ],
+      "triple_factor": "124",
+      "triple_rank_bounds": [
+        4,
+        4
+      ]
+    },
+    {
+      "I": [
+        1,
+        2,
+        3
+      ],
+      "d_point_count": 8,
+      "d_point_samples": [
+        {
+          "W": "-7244",
+          "Z_abs": "116875965808"
+        },
+        {
+          "W": "-5736",
+          "Z_abs": "8553377088"
+        },
+        {
+          "W": "-5604",
+          "Z_abs": "4163416848"
+        },
+        {
+          "W": "-5496",
+          "Z_abs": "1181936448"
+        },
+        {
+          "W": "5496",
+          "Z_abs": "1181936448"
+        },
+        {
+          "W": "5604",
+          "Z_abs": "4163416848"
+        },
+        {
+          "W": "5736",
+          "Z_abs": "8553377088"
+        },
+        {
+          "W": "7244",
+          "Z_abs": "116875965808"
+        }
+      ],
+      "f": "W^6 - 85609071*W^4 + 2440460028483072*W^2 - 23165241797947115962368",
+      "genus": 2,
+      "jacobian_rank_bounds_via_split": [
+        7,
+        9
+      ],
+      "lift_point_count": 8,
+      "lift_points": [
+        {
+          "W": "-7244",
+          "Z_abs": "116875965808",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        },
+        {
+          "W": "-5736",
+          "Z_abs": "8553377088",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "-5604",
+          "Z_abs": "4163416848",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "-5496",
+          "Z_abs": "1181936448",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "5496",
+          "Z_abs": "1181936448",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "5604",
+          "Z_abs": "4163416848",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "5736",
+          "Z_abs": "8553377088",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "7244",
+          "Z_abs": "116875965808",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        }
+      ],
+      "m": 4,
+      "old_W_values": [
+        "-7244",
+        "-5736",
+        "-5604",
+        "-5496",
+        "5496",
+        "5604",
+        "5736",
+        "7244"
+      ],
+      "quartic_rank_bounds": [
+        3,
+        5
+      ],
+      "search_den_bound": 20,
+      "search_num_bound": 20000,
+      "square_t_point_count": 8,
+      "square_t_points": [
+        {
+          "W": "-7244",
+          "Z_abs": "116875965808",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        },
+        {
+          "W": "-5736",
+          "Z_abs": "8553377088",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "-5604",
+          "Z_abs": "4163416848",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "-5496",
+          "Z_abs": "1181936448",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "5496",
+          "Z_abs": "1181936448",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "567",
+            "1128",
+            "1848",
+            "5496"
+          ],
+          "t": "46656",
+          "t_square": true
+        },
+        {
+          "W": "5604",
+          "Z_abs": "4163416848",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1233",
+            "1572",
+            "2148",
+            "5604"
+          ],
+          "t": "1245456",
+          "t_square": true
+        },
+        {
+          "W": "5736",
+          "Z_abs": "8553377088",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1737",
+            "1992",
+            "2472",
+            "5736"
+          ],
+          "t": "2742336",
+          "t_square": true
+        },
+        {
+          "W": "7244",
+          "Z_abs": "116875965808",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "4753",
+            "4852",
+            "5068",
+            "7244"
+          ],
+          "t": "22316176",
+          "t_square": true
+        }
+      ],
+      "triple_factor": "123",
+      "triple_rank_bounds": [
+        4,
+        4
+      ]
+    }
+  ],
+  "deltas": [
+    432,
+    2232,
+    3312,
+    9448
+  ],
+  "old_t": [
+    46656,
+    1245456,
+    2742336,
+    22316176
+  ],
+  "quartic_minimal_model": "Elliptic Curve defined by y^2 = x^3 - 4946459539314656100*x + 2827859132736000342203240000 over Rational Field",
+  "quartic_rank_bounds": [
+    3,
+    5
+  ],
+  "quartic_rank_error": null,
+  "triple_factors": {
+    "123": {
+      "indices": [
+        1,
+        2,
+        3
+      ],
+      "minimal_model": "Elliptic Curve defined by y^2 + x*y + y = x^3 + x^2 - 1937487663*x + 20036278673781 over Rational Field",
+      "pivot": 1,
+      "rank_bounds": [
+        4,
+        4
+      ],
+      "rank_error": null
+    },
+    "124": {
+      "indices": [
+        1,
+        2,
+        4
+      ],
+      "minimal_model": "Elliptic Curve defined by y^2 + x*y + y = x^3 + x^2 - 222626570991*x + 40288328328355509 over Rational Field",
+      "pivot": 1,
+      "rank_bounds": [
+        4,
+        4
+      ],
+      "rank_error": null
+    },
+    "134": {
+      "indices": [
+        1,
+        3,
+        4
+      ],
+      "minimal_model": "Elliptic Curve defined by y^2 + x*y + y = x^3 + x^2 - 208385850511*x + 35159893358154389 over Rational Field",
+      "pivot": 1,
+      "rank_bounds": [
+        3,
+        5
+      ],
+      "rank_error": null
+    },
+    "234": {
+      "indices": [
+        2,
+        3,
+        4
+      ],
+      "minimal_model": "Elliptic Curve defined by y^2 = x^3 - 48963108*x + 129255917632 over Rational Field",
+      "pivot": 2,
+      "rank_bounds": [
+        4,
+        4
+      ],
+      "rank_error": null
+    }
+  },
+  "yold": [
+    [
+      567,
+      1128,
+      1848,
+      5496
+    ],
+    [
+      1233,
+      1572,
+      2148,
+      5604
+    ],
+    [
+      1737,
+      1992,
+      2472,
+      5736
+    ],
+    [
+      4753,
+      4852,
+      5068,
+      7244
+    ]
+  ]
+}

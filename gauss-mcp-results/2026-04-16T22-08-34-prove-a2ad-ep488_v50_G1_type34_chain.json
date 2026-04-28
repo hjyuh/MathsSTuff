@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T22-08-34-prove-a2ad-ep488_v50_G1_type34_chain",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v50 / G1: Tiny {3:4} backbone\n-- Claim: In the top window (q/2, q], any strict chain of four vertices\n-- linked by {3:4} edges (i.e. ratio 4/3) cannot exist.\n-- This is the key step showing every connected {3:4} component has \u2264 3 vertices.\n--\n-- Proof idea: along a strict increasing {3:4} chain a_0 < a_1 < a_2 < a_3,\n-- we must have a_{i+1} = (4/3) * a_i, so a_3/a_0 = (4/3)^3 = 64/27 > 2.\n-- But a_0 > q/2 and a_3 \u2264 q imply a_3/a_0 < 2. Contradiction.\n--\n-- Nat-safe formulation: we use the predicate type34 a b := (4*a = 3*b \u2228 3*a = 4*b).\n-- A strict chain means a_0 < a_1 < a_2 < a_3 with each consecutive pair of type34,\n-- forcing the \"upward\" direction 3*a_{i+1} = 4*a_i at each step... wait, actually\n-- if a_i < a_{i+1} and type34, then 3*a_{i+1} = 4*a_i, so a_{i+1} = 4*a_i/3.\n-- So 27*a_3 = 64*a_0 (from iterating).\n\nimport Mathlib.Tactic\n\ndef type34 (a b : \u2115) : Prop := 4 * a = 3 * b \u2228 3 * a = 4 * b\n\n/-- In the top window, any strict chain of {3:4}-ratio edges has length \u2264 2. -/\ntheorem type34_chain_len_le_two\n    {q a0 a1 a2 a3 : \u2115}\n    (hq : 0 < q)\n    (ha0_lb : q / 2 < a0)\n    (ha3_ub : a3 \u2264 q)\n    (h01 : type34 a0 a1) (h12 : type34 a1 a2) (h23 : type34 a2 a3)\n    (hinc : a0 < a1 \u2227 a1 < a2 \u2227 a2 < a3) :\n    False := by\n  sorry\n",
+  "started_at": "2026-04-16T22:08:34Z",
+  "finished_at": "2026-04-16T22:24:34Z",
+  "duration_s": 960.38,
+  "result_text": "## Cycle Complete\n\n**Filled: 1/1 sorry** \u2014 `type34_chain_len_le_two` is proved.\n\n**Proof summary:**\n1. Destructure the conjunction `hinc` to get the three strict inequalities.\n2. Unfold `type34` and resolve each disjunction: the \"downward\" case `3*a = 4*b` contradicts `a < b` (omega kills it instantly).\n3. This yields three \"upward\" equations: `4*a0 = 3*a1`, `4*a1 = 3*a2`, `4*a2 = 3*a3`.\n4. omega chains these with `q/2 < a0` and `a3 \u2264 q` to derive the contradiction (internally: `64*a0 = 27*a3`, but `64*a0 > 32*q` while `27*a3 \u2264 27*q`).\n\nNo `nlinarith` or extra imports needed \u2014 omega handles the entire linear+division arithmetic.\n\n---\n\nCommit this? **[yes / yes-all / no / never]**\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-08-34-prove-a2ad-ep488_v50_G1_type34_chain.log",
+  "worker_pid": 578,
+  "last_heartbeat_at": 1776378269.8299444,
+  "_started_monotonic": 1776377314.3011038
+}

@@ -1,0 +1,664 @@
+arXiv:1307.7641v4  [math.NT]  7 Sep 2016
+NORM FORMS FOR ARBITRARY NUMBER FIELDS
+AS PRODUCTS OF LINEAR POLYNOMIALS
+T.D. BROWNING AND L. MATTHIESEN
+Abstract. Given a number ﬁeld K/Q and a polynomial P ∈ Q[t], all of whose roots are
+in Q, let X be the variety deﬁned by the equation NK(x) = P (t). Combining additive
+combinatorics with descent we show that the Brauer–Manin obstru ction is the only ob-
+struction to the Hasse principle and weak approximation on any smoo th and projective
+model of X.
+R´
+esum´
+e. ´Etant donn´ e un corps de nombresK/Q et un polynˆ omeP ∈ Q[t], dont toutes les
+racines sont dans Q, soit X la vari´ et´ e d´ eﬁnie par l’´ equationNK(x) = P (t). En combinant
+la combinatoire additive avec la descente, nous montrons que l’obstr uction Brauer–Manin
+est le seul obstacle au principe de Hasse et ` a l’approximation faible su r un mod` ele projectif
+et lisse de X.
+Contents
+1. Introduction 2
+2. Algebraic number theory 5
+3. Technical tools 11
+4. Norm forms modulo pm 14
+5. Counting points on systems of norm form equations 18
+6. W -trick and non-correlation with nilsequences 27
+7. Majorants for positive multiplicative functions 32
+8. Construction of the majorant 40
+9. The majorant is pseudorandom 52
+10. Conclusion of the proof 62
+References 65
+Date: November 8, 2018.
+Key words and phrases. additive combinatorics, Brauer–Manin obstruction, descent, Has se principle,
+norm forms, weak approximation.
+2010 Mathematics Subject Classiﬁcation. 14G05 (11B30, 11D57, 11N37, 14D10).
+1
+
+---PAGE---
+
+2 T.D. BROWNING AND L. MATTHIESEN
+1. Introduction
+LetK/ Q be a ﬁnite extension of number ﬁelds of degree n ⩾ 2 and ﬁx a basis {ω 1,...,ω n}
+for K as a vector space over Q. We will denote by
+NK(x1,...,x n) = NK/ Q(x1ω 1 + · · ·+xnωn)
+the corresponding norm form, where NK/ Q denotes the ﬁeld norm. The objective of this
+paper is to study the Hasse principle and weak approximation for the class of varieties
+X ⊂ An+1 satisfying the Diophantine equation
+P (t) = NK(x1,...,x n), (1.1)
+where P (t) is a product of linear polynomials all deﬁned over Q. If r denotes the number
+of distinct roots of P , then P takes the form
+P (t) = c− 1
+r∏
+i=1
+(t − ei)mi, (1.2)
+for c ∈ Q∗, m1,...,m r ∈ Z>0 and pairwise distinct e1,...,e r ∈ Q.
+We letXc be a smooth and projective model of X. Such a model Xc need not satisfy the
+Hasse principle and weak approximation, as has been observed by Co ray (see [5, Eq. (8.2)]).
+Speciﬁcally, whenP (t) = t(t − 1) and K is the cubic extension Q(θ), obtained by adjoining
+a root θ of x3 − 7x2 + 14x − 7 = 0, then the set Xc(Q) is not dense in Xc(Q7). It has,
+however, been conjectured by Colliot-Th´ el` ene (see [4]) that all counter-examples to the
+Hasse principle and weak approximation for Xc are accounted for by the Brauer–Manin
+obstruction.
+This conjecture covers the more general case where X arises from an equation of the
+form (1.1), but the ground ﬁeld may be an arbitrary number ﬁeld k instead of Q and the
+polynomial need not factorise completely over k. In this more general setting the problem
+of establishing Colliot-Th´ el` ene’s conjecture has been addressed under various assumptions
+on the extension K/k and upon the polynomial P (t). Thus the conjecture is now known to
+be true for Chˆ atelet surfaces ([K :k] = 2 and deg( P (t)) ⩽ 4) by work of Colliot-Th´ el` ene,
+Sansuc and Swinnerton-Dyer [10, 11], a family of singular cubic hyper surfaces ([K :k] = 3
+and deg(P (t)) ⩽ 3) by work of Colliot-Th´ el` ene and Salberger [5], the case where K/k is
+arbitrary and P (t) is split over k with at most two distinct roots (see [9, 23, 31, 34]) and
+the case where K/ Q is arbitrary and P (t) is an irreducible quadratic polynomial over Q
+(see [1, 13]). Finally, if one assumes Schinzel’s hypothesis, then it is tr ue for K/k cyclic
+and P (t) arbitrary, by work of Colliot-Th´ el` ene, Skorobogatov and Swinnerton-Dyer [12].
+Suppose now that k = Q and P is given by (1.2). Until recently, Colliot-Th´ el` ene’s
+conjecture was only known to hold unconditionally when r ⩽ 2. When r ⩽ 1, the variety
+X is a principal homogeneous space for the algebraic torus R1
+K/ Q, and so the conjecture
+follows from work of Colliot-Th´ el` ene and Sansuc [6]. When r = 2, Heath-Brown and
+Skorobogatov [23] prove it under the additional assumption that g cd(n,m 1,m 2) = 1, while
+Colliot-Th´ el` ene, Harari and Skorobogatov [9, Thm. 3.1] establish it in general. Our primary
+result establishes the conjecture for any r ⩾ 1.
+
+---PAGE---
+
+NORM FORMS AND LINEAR POLYNOMIALS 3
+Theorem 1.1. The Brauer–Manin obstruction is the only obstruction to the Hasse prin-
+ciple and weak approximation on Xc.
+By combining Theorem 1.1 with the Brauer group calculation in [9, Cor. 2.7] we obtain
+the following corollary.
+Corollary 1.2. Suppose that gcd(m1,...,m r) = 1 and K does not contain a proper cyclic
+extension of Q. Then Xc(Q) ̸= ∅ and Xc satisﬁes weak approximation.
+In [23], for the ﬁrst time, Heath-Brown and Skorobogatov combine d the descent theory
+of Colliot-Th´ el` ene and Sansuc [7] with the Hardy–Littlewood circle method, in order to
+study the Hasse principle and weak approximation. In joint work with Skorobogatov [2],
+we introduced additive combinatorics into this subject and showed h ow it may usefully be
+combined with descent. This approach allowed us to study the variet y X when K/ Q is
+quadratic. The case n = 2 of Theorem 1.1 is a special case of [2, Thm 1.1]. Subsequently,
+Harpaz, Skorobogatov and Wittenberg [22] succeeded in showing h ow the ﬁnite complexity
+case of the generalised Hardy–Littlewood conjecture for primes, as established by Green
+and Tao [18] and Green–Tao–Ziegler [21], can be used in place of Schinz el’s hypothesis to
+study rational points on varieties using ﬁbration arguments. Their work [22, Cor. 4.1] leads
+to a version of Theorem 1.1 in which the extension K/ Q is assumed to be cyclic, a fact
+that was previously only available under Schinzel’s hypothesis, as a sp ecial case of work by
+Colliot-Th´ el` ene and Swinnerton-Dyer [8] on pencils of Severi–Brauer varieties. Building on
+work of Wei [35], they also handle (see [22, Thm. 4.6]) the case in which K is a non-cyclic
+extension of Q of prime degree such that the Galois group of the normal closure of K over
+Q has a non-trivial abelian quotient. We emphasise that the results of the present paper
+are unconditional and make no assumptions on the degree of the ﬁe ld extension, nor upon
+the type of the extension, other than that the ground ﬁeld is Q.
+Our approach is based upon the strategy of [2]. We use descent th eory to reduce The-
+orem 1.1 to establishing the Hasse principle and weak approximation fo r some auxiliary
+varieties, which can be analysed using additive combinatorics. To intr oduce these varieties,
+let
+f1,...,f r ∈ Q[u1,...,u s]
+be a system of pairwise non-proportional homogeneous linear polyn omials, with s ⩾ 2. For
+each 1 ⩽ i ⩽ r, let Ki denote a number ﬁeld of degree ni = [Ki : Q] ⩾ 2. Central to our
+investigation will be the smooth variety V ⊂ An1+···+nr+s
+Q , deﬁned by
+0 ̸= NKi(xi) = fi(u1,...,u s), (1 ⩽i ⩽r), (1.3)
+where xi = (xi, 1,...,x i,n i). For this variety we establish the following theorem, whose
+proof forms the bulk of this paper.
+Theorem 1.3. The variety V deﬁned by (1.3) satisﬁes the Hasse principle and weak
+approximation.
+In fact (see Theorem 5.2) we shall produce an asymptotic formula f or the number of
+suitably constrained integral points on V of bounded height. When V only involves qua-
+dratic extensions, Theorem 1.3 recovers [2, Thm. 1.2]. The latter re sult was established
+
+---PAGE---
+
+4 T.D. BROWNING AND L. MATTHIESEN
+using work of the second author [27, 28]. We will build on this work in ord er to obtain the
+general case of Theorem 1.3. When K1,...,K r are all assumed to be cyclic extensions of
+Q, a shorter proof of Theorem 1.3 can be found in [22, Thm. 1.3].
+1.1. Overview. We indicate how Theorem 1.3 implies Theorem 1.1 at the end of this
+introduction. The remainder of this paper is organised as follows. Th e overall goal is to
+prove Theorem 1.3 by asymptotically counting points of bounded heig ht in V (Z), tak-
+ing into account the additional constraints that are imposed by the weak approximation
+conditions. The associated counting function is introduced in Sectio n 5. The asymptotic
+formula obtained in Theorem 5.2 for this counting function may prove to be of indepen-
+dent interest. Theorem 5.2 is proved using Green and Tao’s nilpotent Hardy–Littlewood
+method (see [18]) in combination with the Green–Tao–Ziegler inverse t heorem [21].
+While containing mostly classical material, Section 2 ﬁxes the notation for the rest of
+the paper and describes a certain fundamental domain that is spec iﬁc to our counting
+problems. Section 3 contains a variety of technical results require d at later stages in
+the paper and may be consulted as needed. Section 4 studies the nu mber of solutions
+to a congruence NK(x) ≡ A (modpm). These results are used in Section 5 in order to
+analyse the non-archimedean local densities that appear in the sta tement of Theorem 5.2.
+Section 6 establishes those estimates for the Green–Tao method t hat correspond to the
+minor arc estimates in the classical Hardy–Littlewood method. Thes e are the estimates
+needed in order to apply the Green–Tao–Ziegler inverse theorem [2 1]. Section 7 generalises
+the construction of the divisor function majorant from [26] to a fa irly wide class of positive
+multiplicative functions. Section 8 combines this majorant for a spec iﬁc function with a
+sieve majorant (as appears in Green and Tao’s work [18] on primes) t o form a majorant for
+our main counting function. Section 9 shows that this majorant is ps eudorandom, which
+ﬁnally allows us in Section 10 to employ the Green–Tao method in combina tion with the
+inverse result [21] to prove Theorem 5.2.
+1.2. Descent. We close our introduction with the deduction of Theorem 1.1 from The o-
+rem 1.3. We use the construction of “vertical” torsors due to Schin dler and Skorobogatov
+[31]. These are introduced in [31], in order to study varieties given by e quations of a form
+similar to (1.3) via the circle method. Let π :X → A1 be the morphism which maps ( t; x)
+tot. Let U0 ⊂ A1 be the open subset on which ∏r
+i=1(t − ei) ̸= 0 and let U =π − 1(U0). Let
+T =R1
+K/ Q be the torus given by the aﬃne equation NK(x) = 1. In [31, §2], a partial com-
+pactiﬁcationY ofX is constructed and vertical torsors T → Y are shown to exist. These
+are torsors T → Y whose type is the injective map of Gal(
+Q/ Q)-modules ˆTr → Pic(Y ).
+It follows from [31, Lemma 2.2] that the restriction TU of T toU ⊂ Y isE × V , where E
+is a principal homogeneous space for T and V ⊂ Anr+1 is deﬁned by
+t − ei =λi NK(xi) ̸= 0, (1 ⩽i ⩽r),
+for λ 1,...,λ r ∈ Q∗. Finally, it follows from [31, Thm. 2.1] that Theorem 1.1 holds when
+V is shown to satisfy the Hasse principle and weak approximation for an yλ 1,...,λ r ∈ Q∗.
+
+---PAGE---
+
+NORM FORMS AND LINEAR POLYNOMIALS 5
+But V is isomorphic to the variety cut out by the system of equations
+e1 − ei =λi NK(xi) − λ 1 NK(x1), (2 ⩽i ⩽r).
+By an obvious change of variables it suﬃces to establish the Hasse pr inciple and weak
+approximation for the variety in Anr+r deﬁned by the system of equations
+0 ̸= (e1 − ei) NK(y) = λi NK(xi) − λ 1 NK(x1), (2 ⩽i ⩽r).
+But this variety is isomorphic to the variety
+v = NK(y) ̸= 0,
+u − eiv =λi NK(xi) ̸= 0, (1 ⩽i ⩽r),
+which is a special case of the varieties V considered in Theorem 1.3. This concludes our
+deduction of Theorem 1.1 from Theorem 1.3.
+Notation. In addition to the usual asymptotic notations, we write U ≍ V to mean that
+U ≪ V andU ≫ V , and we write V =Uo(1) to express that V =Oδ(Uδ) for every δ >0. If
+U is a ﬁnite set, then we deﬁne Eu∈ U = |U |− 1 ∑
+u∈ U . We will write 1u∈ P, or equivalently
+1P(u), to denote the characteristic function of an element u satisfying property P.
+Acknowledgements. While working on this paper the ﬁrst author was supported by
+ERC grant 306457 and the second author was supported by EPSRC grant EP/E053262/1
+and by ERC grant 208091. Some of this work was carried out during the programme
+“Arithmetic and geometry” in 2013 at the Hausdorﬀ Institute in Bonn. We are grateful
+to J.-L. Colliot-Th´ el` ene and A. Skorobogatov for their interest in this work. We would
+also like to thank U. Derenthal for useful comments on Section 5 an d A. Skorobogatov for
+pointing out a simpliﬁcation in the descent argument above. Special t hanks are due to the
+anonymous referee for numerous useful comments and for giving us a much simpler proof
+of Lemma 4.2 and Lemma 8.4.
+2. Algebraic number theory
+The purpose of this section is threefold. First, in Section 2.1, we rec all mostly standard
+material from algebraic number theory (as found in [24] and [25]), in o rder to ﬁx the
+notation for the rest of the paper. Next, in Section 2.2, we will turn to our speciﬁc situation.
+We will ultimately require a counting function that assigns to each inte germ its number of
+representations by the norm form NK/ Q(x1ω 1 + · · ·+xnωn). Writing x = (x1,...,x n) and
+ω = (ω 1,...,ω n), this problem will be turned into a ﬁnite counting problem by identifyin g
+representations m = NK/ Q(x. ω ) and m = NK/ Q(y. ω ) if x. ω and y. ω are associated by a
+unit in the ring of integers oK of K. Such a unit is necessarily of norm +1. With this
+in mind, we will need to describe a fundamental domain for the action b y (the free part
+of) the group of norm +1 units, and its properties relevant to us. I n particular, in order
+to apply a lattice point counting result from the geometry of number s we will need to
+show that the regions we work with have a suﬃciently nice boundary. Finally, Section 2.3
+collects together some analytic information about the Dedekind zet a function.
+
+---PAGE---
+
+6 T.D. BROWNING AND L. MATTHIESEN
+2.1. Three ways to view a number ﬁeld. LetK be a number ﬁeld of degree n over Q.
+We let DK denote its discriminant, let o = oK be the ring of integers and let UK be the
+unit group. Given any α ∈ K we will denote its norm by N K/ Q(α ). For any integral ideal
+a ⊂ o we write N a = #o/ a for its ideal norm.
+Let r1 (resp. 2r2) be the number of distinct real (resp. complex) embeddings of K.
+Hence n = r1 + 2r2. The r1 distinct real embeddings are denoted by σ1,...,σ r1, while
+σr1+1,...,σ r1+2r2 denote a complete set of 2 r2 distinct complex embeddings, with σr1+i
+conjugate to σr1+r2+i for 1 ⩽i ⩽r2.
+The map ϕ : α ↦→ (σ1(α ),...,σ r1+r2(α )) canonically embeds K into the n-dimensional
+commutative R-algebra V =K ⊗ Q R ∼= Rr1 × Cr2. We will typically write v(l), for super-
+scripts 1 ⩽l ⩽r1 +r2, for the projection of any v ∈ V onto the lth component, which is
+uniquely determined by ϕ . Thus any v ∈ V can be written v = (v(1),...,v (r1+r2)). We iden-
+tify K with its image ϕ (K) in V . Under this identiﬁcation our ﬁxed Q-basis {ω 1,...,ω n}
+for K gives rise to an R-basis {ϕ (ω 1),...,ϕ (ωn)} for V and we may consider V to be the
+set {x1ω 1 + · · ·+xnωn :xi ∈ R}. This allows us to associate to v ∈ V the corresponding
+vector x ∈ Rn and vice versa. For v ∈ V we deﬁne
+Nm(v) = v(1)...v (r1)|v(r1+1)|2... |v(r1+r2)|2,
+which in accordance with our convention, we shall also denote as Nm( x). This gives us a
+formal extension of the norm form NK : Qn → Q to Rn. Indeed, if v = ϕ (α ) for some
+α =x1ω 1 + · · ·+xnωn ∈ K, then
+Nm(ϕ (α )) = NK/ Q(α ) = Nm( x) = NK(x).
+A third way of viewing K is through logarithmic coordinates (see [25, §5] for details).
+WritingV ∗ = (K ⊗ Q R)∗ ∼= (R∗)r1 × (C∗)r2, we deﬁne the homomorphism L :V ∗ → Rr1+r2
+to be
+v ↦→ (log |v(1)|,..., log |v(r1)|, 2 log |v(r1+1)|,..., 2 log |v(r1+r2)|).
+Composing L with the embedding ϕ from above, we obtain the diagram
+K ∗ V ∗
+Rr1+r2
+ϕ
+ψ L
+where ψ =L ◦ϕ . For any α ∈ K ∗, the coordinate sum of ψ (α ) is given by
+ψ (α ). 1 = log |NK/ Q(α )|,
+where 1 = (1,..., 1) ∈ Rr1+r2. In particular ψ (UK) is contained in the hyperplane
+H = {v ∈ Rr1+r2 : v. 1 = 0} ⊂ Rr1+r2. (2.1)
+If ur1+r2 = (1,..., 1, 2,..., 2) ∈ Rr1+r2, then ur1+r2 ̸∈ H. For any v ∈ V ∗ we may write
+L(v) = uH +ξr1+r2ur1+r2
+
+---PAGE---
+
+NORM FORMS AND LINEAR POLYNOMIALS 7
+for some uH ∈ H and ξr1+r2 ∈ R. This decomposition allows us to understand easily the
+norm of an element v, since
+log |Nm(v)|=L(v). 1 =ξr1+r2ur1+r2. 1 =nξr1+r2. (2.2)
+It follows that |Nm(v)|⩽ 1 if and only if ξr1+r2 ⩽ 0. Finally, note that ker( ψ ) = µK, where
+µK <U K denotes the subgroup of roots of unity. Thus the map L separates the free part
+of the group of unity from its torsion part.
+2.2. Units of norm +1. We are now ready to discuss the subgroup of UK relevant to us
+and its action on V . Recall that NK/ Q(η) = ± 1 for any η ∈ UK. We shall work with the
+subgroup U (+)
+K of η ∈ UK such that NK/ Q(η) = 1. Since U (+)
+K is the kernel of the group
+homomorphismNK/ Q :UK → {± 1}, we deduce that either UK =U (+)
+K orUK/U (+)
+K
+∼= Z/ 2Z.
+In particular, UK and U (+)
+K share the same rank r =r1 +r2 − 1.
+Let µ (+)
+K be the norm +1 subgroup of µK. Then we have decompositions
+UK =µK × YK, U (+)
+K =µ (+)
+K × Y (+)
+K ,
+whereYK ∼=Y (+)
+K
+∼= Zr. The relation between these decompositions can be described more
+precisely. This is only interesting in the case where U (+)
+K is a proper subgroup of UK, which
+we assume for now. If K has a root of unity of norm − 1 then one can ensure that each
+generator of YK has norm 1, since each generator may be replaced by the product o f itself
+and a root of unity. This allows for decompositions where YK = Y (+)
+K . If K has no root
+of unity of norm − 1, then µK = µ (+)
+K , and one can ensure that exactly one generator of
+YK has norm − 1. To see this, suppose η1...,η r is a system of fundamental units such
+that NK/ Q(η1) = − 1. We keep η1, but replace any other generator ηi of norm − 1 by the
+product η1ηi. The resulting system of units η1,η ′
+2...,η ′
+r, say, still generates YK and has
+the required property. Furthermore, η2
+1,η ′
+2...,η ′
+r forms a system of generators for Y (+)
+K .
+Our main interest in Y (+)
+K lies in the action it induces on V and the associated coordinate
+space Rn. In general, the action of UK onV by multiplication induces a natural action on
+the coordinate space Rn as follows. For any pair ( η, x) ∈ UK × Rn we let η. x = y ∈ Rn
+denote the coordinate vector of η(x1ω 1 + · · ·+xnωn) = y1ω 1 + · · ·+ynωn.
+We require a fundamental domain F+ ⊂ V ∗ for the action of ϕ (Y (+)
+K ) on V ∗ that is
+explicit enough to allow lattice point counting arguments to be applied. In the case where
+Y (+)
+K is replaced by YK, the construction of such a domain is classical (see [25, §§5,6]),
+and it is not diﬃcult to adapt the construction so as to apply to our sit uation. This
+construction builds on the observation that the action of UK is easier to understand in the
+logarithmic space. This is useful since the restriction of L to ϕ (Y (+)
+K ) is an isomorphism,
+which allows us to describe a fundamental domain for the action of ϕ (Y (+)
+K ) on V ∗ in terms
+of a fundamental domain for the action of ψ (Y (+)
+K ) on Rr1+r2.
+Let δ1,...,δ r be generators for Y (+)
+K and let ui = ψ (δi) for 1 ⩽ i < r1 +r2. Then
+ψ (U (+)
+K ) = ψ (Y (+)
+K ) is a lattice of rank r contained in the hyperplane H that was deﬁned
+in (2.1). We denote this lattice by Λ + and note that it is generated by u1,..., ur1+r2− 1.
+
+---PAGE---
+
+8 T.D. BROWNING AND L. MATTHIESEN
+Let F+ ⊂ H be a fundamental parallelotope for Λ +, and recall that the vector ur1+r2 =
+(1,..., 1, 2,..., 2) ∈ Rr1+r2 does not belong to H. Thus F+⊕ Rur1+r2 describes a fundamen-
+tal domain for the action of ψ (Y (+)
+K ) on ψ (K ∗) = Rr1+r2. Since Y (+)
+K maps isomorphically
+onto Λ +, an application of [25, Lemma 1 in §6] implies the following result.
+Lemma 2.1. The set F+ = {v ∈ V ∗ :L(v) ∈ F+ ⊕ Rur1+r2} is a fundamental domain for
+the action of ϕ (Y (+)
+K ) on V ∗.
+We now turn to the desirable properties of the domain F+, that ultimately facilitate
+lattice point counting. Recall that a region S ⊂ Rn is said to be a cone when x ∈ S if
+and only if λx ∈ S, for any λ ∈ R>0. Moreover, if S ⊂ Rn is bounded, its boundary is
+called (n − 1)-Lipschitz parametrisable (see [25, p.166]) if it is contained in the union of
+the images of ﬁnitely many Lipschitz functions f : [0, 1]n− 1 → Rn. It is easy to see that
+F+ is a cone. We are interested in the set
+F+(1) = {v ∈ F+ : |Nm(v)|⩽ 1}
+= {v ∈ V ∗ :L(v) ∈ F+ ⊕ R⩽0ur1+r2},
+where the second equality follows from (2.2). The proof contained in [25, pp.168–172]
+applies mutatis mutandis to our situation and establishes the following result.
+Lemma 2.2. The domain F+(1) has an (n − 1)-Lipschitz parametrisable boundary.
+We will mainly be working in the coordinate space Rn. The map
+v : Rn \ {0} → (R∗)r1 × (C∗)r2
+that takes x to v(x) = x1ω 1 + · · ·+xnωn = (v(1),...,v (r1+r2)) is a linear isomorphism and
+preserves Lipschitz parametrisability. In particular, if
+D+ = {x ∈ Rn :v(x) ∈ F+} (2.3)
+denotes the preimage of the fundamental domain in Rn, and if
+D+(1) = {x ∈ D+ : |NK(x)|⩽ 1},
+then Lemma 2.2 implies that D+(1) has an ( n − 1)-Lipschitz parametrisable boundary.
+We slightly reﬁne the sets under consideration. The sign of NK is invariant under the
+action of Y (+)
+K . Thus, for ǫ ∈ {±} and T >0 we deﬁne the sets
+Dǫ
++ = {x ∈ D+ : 0 <ǫ NK(x)}
+and
+Dǫ
++(T ) = {x ∈ D+ : 0 <ǫ NK(x) ⩽T }. (2.4)
+Since F+ is a cone, the same is true for D+ and Dǫ
++. We deduce that Dǫ
++(1) has an (n − 1)-
+Lipschitz parametrisable boundary from the same property for D+(1). Furthermore, we
+have Dǫ
++(T ) = T 1/n Dǫ
++(1).
+Note that the same facts hold true in the classical setting for
+Dǫ(T ) = {x ∈ D : 0 <ǫ NK(x) ⩽T }, (2.5)
+where D = {x ∈ Rn :v(x) ∈ F} and F ⊂ V ∗ is the fundamental domain for ϕ (YK).
+
+---PAGE---
+
+NORM FORMS AND LINEAR POLYNOMIALS 9
+2.3. Dirichlet coeﬃcients of ζK. The construction of the majorant in Section 8 relies on
+a careful analysis of the sequence of Dirichlet coeﬃcients of the De dekind zeta function of a
+number ﬁeld K. Here we recall the essential properties of ζK and its Dirichlet coeﬃcients,
+as found in Landau [24] or Marcus [25], and deduce some preliminary fa cts required in
+Section 8.
+The Dedekind zeta function is deﬁned to be
+ζK(s) =
+∑
+(0)̸=a⊂ o
+1
+(N a)s =
+∞∑
+m=1
+rK(m)
+ms , (2.6)
+for s ∈ C with ℜ (s)> 1, with
+rK(m) = # {a ⊂ o : N a =m}.
+The Dedekind zeta function admits a meromorphic continuation to all of C with a simple
+pole at s = 1 and Residue s=1ζK(s) = hκ, where h is the class number,
+κ = 2r1(2π)r2RK
+|µK|
+√
+|DK|
+, (2.7)
+and RK is the regulator. It follows from [25, Thms. 39 and 40] that
+∑
+m⩽x
+rK(m) = hκx +O(x1− 1/n ), (2.8)
+so that the average order of rK is constant.
+The function rK is multiplicative. To describe its behaviour at prime powers, let p be
+any rational prime and recall that the principal ideal ( p) factorises into a product of prime
+ideals in o. That is,
+(p) = pe1
+1 ... per
+r , (2.9)
+whereei =epi(p),r =r(p) ∈ Z>0 and each pi ⊂ o is a prime ideal satisfying N pi =pfi, for
+some fi =fpi(p) ∈ Z>0. As in [25, §3], we have ∑r
+i=1eifi =n. Thus
+rK(pm) = # {pm1
+1 ... pmr
+r ⊂ o :f1m1 + · · ·+frmr =m},
+for any m ∈ Z>0. It follows from this that
+rK(pm) ⩽ (m + 1)n. (2.10)
+At rational primes we obtain
+rK(p) = # {i ∈ { 1,...,r } :fi = 1} = #{p |(p) : fp(p) = 1 }. (2.11)
+In view of (2.11), we partition the set of rational primes into three s ets
+P0 = {p |DK},
+P1 = {p ∤DK : ∃ p |(p) such that fp(p) = 1 },
+P2 = {p ∤DK :fp(p) ⩾ 2 ∀p |(p)}.
+(2.12)
+The contributions to rK from P0 ∪ P1 and from P2 will be dealt with separately.
+
+---PAGE---
+
+10 T.D. BROWNING AND L. MATTHIESEN
+We end this section with some technical results concerning the rest ricted Euler product
+F (s) =
+∏
+p∈ P2
+(
+1 − 1
+ps
+)− 1
+, (2.13)
+for s ∈ C with ℜ (s)> 1. The following result describes the analytic structure of F (s).
+Lemma 2.3. There exists δ ∈ Q satisfying 1/n ⩽δ ⩽ 1 such that P1 has Dirichlet density
+δ. Furthermore, there is a function G(s), which is holomorphic and non-zero in the closed
+half-plane ℜ (s) ⩾ 1, such that F (s) = ζ(s)1−δG(s).
+Proof. The ﬁrst part follows from the ˇCebotarev density theorem (cf. [30, Cor 13.6]), with
+δ = 1/n if and only if K/ Q is a Galois extension. This implies that there exists a function
+G1(s), which is holomorphic and non-zero in the closed half-plane ℜ (s) ⩾ 1, such that
+∏
+p∈ P1
+(
+1 − 1
+ps
+)− 1
+=ζ(s)δG1(s). (2.14)
+On the other hand,
+∏
+p∈ P1
+(
+1 − 1
+ps
+)− 1
+=ζ(s)
+∏
+p∈ P0∪ P2
+(
+1 − 1
+ps
+)
+=ζ(s)F (s)− 1G2(s),
+whereG2(s) is entire and non-zero. Combining these expressions we conclude t he proof of
+the lemma by taking G(s) = G1(s)− 1G2(s). □
+Corollary 2.4. We have
+∏
+p∈ P2
+p⩽T
+(
+1 − 1
+p
+)− 1
+≍ (logT )1−δ.
+Proof. By means of the Tauberian theorem [29, Thm. 5.11], applied to the Dir ichlet series
+F (s), we deduce from Lemma 2.3 that
+(logT )1−δ ≍
+∑
+m⩽T
+1⟨P2⟩(m)
+m ⩽
+∏
+p∈ P2
+p⩽T
+(
+1 − 1
+p
+)− 1
+.
+This gives the correct lower bound. To establish the upper bound, w e deduce from (2.14)
+that
+(logT )δ ≍
+∑
+m⩽T
+1⟨P1⟩(m)
+m ⩽
+∏
+p∈ P1
+p⩽T
+(
+1 − 1
+p
+)− 1
+.
+But then
+(logT )δ
+∏
+p∈ P2
+p⩽T
+(
+1 − 1
+p
+)− 1
+≪
+∏
+p∈ P1∪ P2
+p⩽T
+(
+1 − 1
+p
+)− 1
+≪ logT,
+as required. □
+
+---PAGE---
+
+NORM FORMS AND LINEAR POLYNOMIALS 11
+3. Technical tools
+3.1. Geometry of numbers. We will need to be able to estimate the number of lattice
+points in shifts of suﬃciently well-behaved expanding regions. Let n ∈ Z>0 and let B be
+any bounded subset of Rn. Write T B = {T x : x ∈ B} for the dilation by T > 0. The
+following result is classical.
+Lemma 3.1. Assume that B is bounded and that for any ε ∈ (0, 1) the ε-neighbourhood
+of the boundary ∂B has volume O(ε). Let a ∈ Rn and let T ⩾ 1. Then
+# (Zn ∩ (T B + a)) = vol( B)Tn +O(Tn− 1).
+Proof. Observe that the ε-neighbourhood of ∂T B arises as dilation by T of the εT − 1-
+neighbourhood of ∂B and has volume O(εTn− 1). The lemma follows (cf. [18, App. A])
+since
+# (Zn ∩ (T B + a)) = vol (( Zn ∩ (T B + a)) + [0, 1)n),
+and the set in the latter volume agrees with T B + a outside an O(1)-neighbourhood of
+∂T B + a. □
+It is not hard to see that any non-empty bounded set in Rn whose boundary is ( n − 1)-
+Lipschitz parametrisable satisﬁes the hypotheses of Lemma 3.1. Th is follows, for example,
+from the proof of Lemma 2 in [25, §6]. Similarly, bounded convex sets in Rn satisfy the
+hypotheses of the lemma (see [18, Cor. A.2], for example).
+Given a ﬁnite set of ﬁxed regions B1,..., Bm to which Lemma 3.1 applies, the hypotheses
+of the lemma are also met by any set which arises through unions and in tersections of these
+sets. In particular it applies to intersections of bounded convex se ts with bounded sets
+having (n − 1)-Lipschitz parametrisable boundary.
+3.2. Complex analysis. Throughout this section we will write σ for the real part of
+a complex number s ∈ C. In the course of Sections 8 and 9 we will encounter several
+truncated Euler products of the following form. For a given consta nt C >0, given x ⩾ 1
+and a given multiplicative arithmetic function h : Z>0 → C, deﬁne the Euler product
+EC,x (s;h) =
+∏
+C<p<x
+(
+1 +
+∑
+k⩾1
+h(pk)
+psk
+)
+,
+for σ > 1. Since the product is truncated, one expects that EC,x (1 + s0;h) is well ap-
+proximated by its value at s = 1, provided that |s0| is suﬃciently small and one has some
+control on h. The following result makes this statement precise.
+Lemma 3.2. Let c > 0 be a constant. Let H ⩾ 1 and suppose h : Z>0 → C is a
+multiplicative function satisfying |h(pk)| ⩽ Hk at all prime powers pk. Then the Euler
+productE(s) = E3eH,x (s;h) satisﬁes
+E(1 +s0) = E(1) +O(|s0|(logx)O(1)).
+
+---PAGE---
+
+12 T.D. BROWNING AND L. MATTHIESEN
+uniformly in x, for s0 ∈ C with |s0|⩽x−c. Furthermore, we have
+|E(1)| ≍
+⏐
+⏐
+⏐
+⏐
+⏐
+∏
+3eH<p<x
+(
+1 + h(p)
+p
+)⏐
+⏐
+⏐
+⏐
+⏐. (3.1)
+The implied constants in these estimates are allowed to depe nd on c and H.
+Forh satisfying |h(p)|⩽H on the primes, we may combine (3.1) with Mertens’s theorem
+to deduce that
+(logx)−H ≪ | E(1)| ≪ (logx)H.
+This shows that the main term dominates the error term in our asymp totic formula for
+E(1 +s0), when |s0|⩽x−c.
+Proof of Lemma 3.2. We allow our implied constants to depend on c and H. Let E(s) =
+E3eH,x (s;h) and let s ∈ C be such that |s|< (logx)− 1. Then
+⏐
+⏐
+⏐
+⏐
+⏐
+∑
+k⩾1
+h(pk)
+p(1+s)k
+⏐
+⏐
+⏐
+⏐
+⏐ ⩽ H
+p1+σ − H.
+This is at most 1 / 2 for 3eH <p<x , since
+p1+σ ⩾p1− (logx)− 1
+⩾pe− 1 ⩾ 3H.
+This shows that E(1 +s) is non-zero for s satisfying |s|< (logx)− 1 and, furthermore, that
+E is holomorphic on a domain containing this disc. The Taylor expansion ab out 1 is given
+by
+E(1 +s) =
+∑
+j⩾0
+sjE(j)(1)
+j! .
+Cauchy’s inequality yields
+|E(j)(1)|
+j! ⩽ (logx)j max
+|s|=(logx)− 1
+|E(1 +s)|.
+But the right hand side is bounded by
+⩽ (logx)j ∏
+3eH<p<x
+(
+1 +
+∑
+k⩾1
+|h(pk)|
+p(1− 1/ logx)k
+)
+⩽ (logx)j
+∏
+3eH<p<x
+(
+1 + H
+p1− 1
+log x − H
+)
+⩽ (logx)j ∏
+3eH<p<x
+(
+1 + 3eH
+2p
+)
+≪ (logx)j+O(1).

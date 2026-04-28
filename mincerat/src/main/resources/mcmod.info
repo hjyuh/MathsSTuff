@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "smpessentials",
+    "name": "SMP Essentials",
+    "description": "Quality-of-life utilities for your SMP: Fullbright, Coords HUD, Mob ESP, Freelook, Death Waypoints, and more.",
+    "version": "1.0.0",
+    "mcversion": "1.8.9",
+    "url": "",
+    "authorList": ["Mahmoud"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

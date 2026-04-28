@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T22-34-40-prove-7727-ep488_v50_G4_deg3_nonadjacent",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v50 / G4: Degree-3 vertices are nonadjacent\n-- Claim: If both a and b have degree 3 in B_n, they are not adjacent in the\n-- n-LCM graph.\n--\n-- Proof idea: Any neighbor of a degree-3 vertex a is in {3a/2, 4a/3, 5a/3, 5a/4},\n-- all strictly greater than 3q/5 (need to verify each). But every degree-3\n-- vertex is strictly less than 3q/5. So a degree-3 vertex cannot be a neighbor\n-- of another degree-3 vertex.\n--\n-- Simplified target: show that if a < 3q/5 and b is a potential neighbor of a\n-- (meaning b is one of 3a/2, 4a/3, 5a/3, 5a/4 as integers), then b \u2265 3q/5.\n-- Hence b cannot itself be a degree-3 vertex.\n\nimport Mathlib.Tactic\n\n/-- If a > q/2, then 3a/2 \u2265 3q/4 > 3q/5. -/\ntheorem neighbor_3a_2_exceeds_3q_5\n    {q a : \u2115}\n    (hq : 0 < q)\n    (ha : q / 2 < a)\n    (hdiv : 2 \u2223 a) :\n    5 * (3 * a / 2) \u2265 3 * q := by\n  sorry\n\n/-- If a > q/2, then 4a/3 > 2q/3 > 3q/5. -/\ntheorem neighbor_4a_3_exceeds_3q_5\n    {q a : \u2115}\n    (hq : 0 < q)\n    (ha : q / 2 < a)\n    (hdiv : 3 \u2223 a) :\n    5 * (4 * a / 3) \u2265 3 * q := by\n  sorry\n",
+  "started_at": "2026-04-16T22:34:40Z",
+  "finished_at": "2026-04-16T22:34:57Z",
+  "duration_s": 16.92,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca8FK68FhBRxfNLeMXwRJ\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-34-40-prove-7727-ep488_v50_G4_deg3_nonadjacent.log",
+  "worker_pid": 2675,
+  "last_heartbeat_at": 1776378896.1669376,
+  "_started_monotonic": 1776378880.935733
+}

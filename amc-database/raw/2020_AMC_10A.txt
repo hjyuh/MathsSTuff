@@ -1,0 +1,2095 @@
+=== Problem 1 ===
+What value of
+
+Choices: {'A': '\\ {-}\\frac{2}{3}', 'B': '\\ \\frac{7}{36}', 'C': '\\ \\frac{7}{12}', 'D': '\\ \\frac{2}{3}', 'E': '\\ \\frac{5}{6}</math>'}
+Answer: E
+
+--- Solution 1 ---
+Adding <imath>\frac{3}{4}</imath> to both sides, <imath>x= \frac{5}{12} - \frac{1}{3} + \frac{3}{4} = \frac{5}{12} - \frac{4}{12} + \frac{9}{12}=\boxed{\textbf{(E) }\frac{5}{6}}</imath>.
+
+--- Solution 2 ---
+Multiplying <imath>12</imath> on both sides gets us <imath>12x-9=1 \Rightarrow 12x=10</imath>, therefore <imath>x=\boxed{\textbf{(E)}
+
+
+=== Problem 2 ===
+The numbers
+
+Choices: {'A': '0', 'B': '15', 'C': '30', 'D': '45', 'E': '60</math>'}
+Answer: C
+
+--- Solution 1 ---
+The arithmetic mean of the numbers <math>3, 5, 7, a,</math> and <math>b</math> is equal to <math>\frac{3+5+7+a+b}{5}=\frac{15+a+b}{5}=15</math>. Solving for <math>a+b</math>, we get <math>a+b=60</math>. Dividing by <math>2</math> to find the average of the two numbers <math>a</math> and <math>b</math> gives <math>\frac{60}{2}=\boxed{\textbf{(C) }30}</math>.
+
+--- Solution 2 ---
+We know the average is 15. 3, 5, and 7 are, respectively, 12, 10, and 8 below the average. So far then we are -12 - 10 - 8 or 30 below the average. We have to make this up with a and b so on average each is 30/2 = 15 above the average. The average is 15 so each is on average 15+15 = 30, or answer C.
+
+Incidentally we can immediately rule out answers A and B as being too small - with these we'd never catch up to get our average of 15. An alternative solution is that to get an average of 15 we need a sum of 15*5 = 75. We have 3, 5, and 7 which adds up to 15, so a and b must make up the remaining 75-15 = 60. 60/2 = 30 so the average of a and b is 30.
+
+
+=== Problem 3 ===
+Assuming
+
+Choices: {'A': '{-}1', 'B': '1', 'C': '\\frac{abc}{60}', 'D': '\\frac{1}{abc} - \\frac{1}{60}', 'E': '\\frac{1}{60} - \\frac{1}{abc}</math>'}
+Answer: A
+
+--- Solution 1 ---
+If <math>x\neq y,</math> then <math>\frac{x-y}{y-x}=-1.</math> We use this fact to simplify the original expression:
+<cmath>\frac{\color{red}\overset{-1}{\cancel{a-3}}}{\color{blue}\underset{1}{\cancel{5-c}}} \cdot \frac{\color{green}\overset{-1}{\cancel{b-4}}}{\color{red}\underset{1}{\cancel{3-a}}} \cdot \frac{\color{blue}\overset{-1}{\cancel{c-5}}}{\color{green}\underset{1}{\cancel{4-b}}}=(-1)(-1)(-1)=\boxed{\textbf{(A) } {-}1}.</cmath>
+
+--- Solution 2 ---
+At <math>(a,b,c)=(4,5,6),</math> the answer choices become
+
+<math>\textbf{(A) } {-}1 \qquad \textbf{(B) } 1 \qquad \textbf{(C) } 2 \qquad \textbf{(D) } {-}\frac{1}{120} \qquad \textbf{(E) } \frac{1}{120}</math>
+
+and the original expression becomes <cmath>\frac{-1}{1}\cdot\frac{-1}{1}\cdot\frac{-1}{1}=\boxed{\textbf{(A) } {-}1}.</cmath>
+
+--- Solution 3 ---
+We can simply set <math>x = a - 3, y = b - 4,</math> and <math>z = 5 - c</math>. Now, the problem simplifies to <cmath>\frac{x}{z}\cdot\frac{-y}{x}\cdot\frac{z}{y}=\frac{-xyz}{xyz}=\boxed{\textbf{(A) } {-}1}.</cmath>
+
+Explanation: After substituting <math>x</math>, <math>y</math>, and <math>z</math>, the opposites (for example <math>5 - c</math> and <math>c - 5</math>) can just be written as the negative of each. With the same example, this can be shown by: <math>c - 5 = -(5 - c)</math>.
+
+
+=== Problem 4 ===
+A driver travels for
+
+Choices: {'A': '20', 'B': '22', 'C': '24', 'D': '25', 'E': '26</math>'}
+Answer: E
+
+--- Solution 1 ---
+Since the driver travels <math>60</math> miles per hour and each hour she uses <math>2</math> gallons of gasoline, she spends <math>\$4</math> per hour on gas. If she gets <math>\$0.50</math> per mile, then she gets <math>\$30</math> per hour of driving. Subtracting the gas cost, her net rate of money earned per hour is <math>\boxed{\textbf{(E)}\ 26}</math>.
+
+--- Solution 2 ---
+The driver is driving for <math>2</math> hours at <math>60</math> miles per hour, she drives <math>120</math> miles. Therefore, she uses <math>\frac{120}{30}=4</math> gallons of gasoline. So, total she has <math>\$0.50\cdot120-\$2.00\cdot4=\$60-\$8=\$52</math>. So, her rate is <math>\frac{52}{2}=\boxed{\textbf{(E)}\ 26}</math>.
+
+
+=== Problem 5 ===
+What is the sum of all real numbers
+
+Choices: {'A': '12', 'B': '15', 'C': '18', 'D': '21', 'E': '25</math>'}
+Answer: C
+
+--- Solution 1 ---
+Split the equation into two cases, where the value inside the absolute value is positive and nonpositive.
+
+Case 1:
+
+The equation yields <math>x^2-12x+34=2</math>, which is equal to <math>(x-4)(x-8)=0</math>. Therefore, the two values for the positive case is <math>4</math> and <math>8</math>.
+
+Case 2:
+
+Similarly, taking the nonpositive case for the value inside the absolute value notation yields <math>x^2-12x+34=-2</math>. Factoring and simplifying gives <math>(x-6)^2=0</math>, so the only value for this case is <math>6</math>.
+
+Summing all the values results in <math>4+8+6=\boxed{\textbf{(C) }18}</math>.
+
+--- Solution 2 ---
+We have the equations <math>x^2-12x+32=0</math> and <math>x^2-12x+36=0</math>.
+
+Notice that the second is a perfect square with a double root at <math>x=6</math>, and the first has two distinct real roots. By Vieta's, the sum of the roots of the first equation is <math>-(-12)</math> or <math>12</math>. <math>12+6=\boxed{\textbf{(C) }18}</math>.
+
+--- Solution 3 ---
+Completing the square gives
+<cmath>\begin{align*}
+\left|(x-6)^2-2\right|&=2 \\
+(x-6)^2-2&=\pm2. \hspace{15mm}(\bigstar)
+\end{align*}</cmath>
+Note that the graph of <math>y=(x-6)^2-2</math> is an upward parabola with the vertex <math>(6,-2)</math> and the axis of symmetry <math>x=6;</math> the graphs of <math>y=\pm2</math> are horizontal lines.
+
+We apply casework to <math>(\bigstar):</math>
+<ol style="margin-left: 1.5em;">
+  <li><math>(x-6)^2-2=2</math></li><p>
+The line <math>y=2</math> intersects the parabola <math>y=(x-6)^2-2</math> at two points that are symmetric about the line <math>x=6.</math><p>
+In this case, the average of the solutions is <math>6,</math> so the sum of the solutions is <math>12.</math>
+  <li><math>(x-6)^2-2=-2</math></li><p>
+The line <math>y=-2</math> intersects the parabola <math>y=(x-6)^2-2</math> at one point: the vertex of the parabola.<p> 
+In this case, the only solution is <math>x=6.</math>
+</ol>
+Finally, the sum of all solutions is <math>12+6=\boxed{\textbf{(C) } 18}.</math>
+
+
+=== Problem 6 ===
+How many
+
+Choices: {'A': '80', 'B': '100', 'C': '125', 'D': '200', 'E': '500</math>'}
+Answer: B
+
+--- Solution 1 ---
+The units digit, for all numbers divisible by 5, must be either <math>0</math> or <math>5</math>. However, since all digits are even, the units digit must be <math>0</math>. The middle two digits can be 0, 2, 4, 6, or 8, but the thousands digit can only be 2, 4, 6, or 8 since it cannot be zero. There is one choice for the units digit, 5 choices for each of the middle 2 digits, and 4 choices for the thousands digit, we have a total of <math>4\cdot5\cdot5\cdot1 = \boxed{\textbf{(B) } 100} \qquad</math> numbers.
+
+
+=== Problem 7 ===
+The
+
+Choices: {'A': '2', 'B': '5', 'C': '10', 'D': '25', 'E': '50</math>'}
+Answer: C
+
+--- Solution 1 ---
+Without loss of generality, consider the five rows in the square. Each row must have the same sum of numbers, meaning that the sum of all the numbers in the square divided by <math>5</math> is the total value per row. The sum of the <math>25</math> integers is <math>-10+-9+...+14=11+12+13+14=50</math>, and the common sum is <math>\frac{50}{5}=\boxed{\text{(C) }10}</math>.
+
+--- Solution 2 ---
+Take the sum of the middle 5 values of the set (they will turn out to be the mean of each row). We get <math>0 + 1 + 2 + 3 + 4 = \boxed{\textbf{(C) } 10}</math> as our answer.
+
+--- Solution 3 ---
+Taking the average of the first and last terms, <math>-10</math> and <math>14</math>, we have that the mean of the set is <math>2</math>. There are 5 values in each row, column or diagonal, so the value of the common sum is <math>5\cdot2</math>, or <math>\boxed{\textbf{(C) } 10}</math>.
+
+--- Solution 4 ---
+Let us consider the horizontal rows.  Since there are five of them, each with constant sum <math>x</math>, we can add up the 25 numbers in 5 rows for a sum of <math>5x</math>.  Since the sum of the 25 numbers used is <math>-10-9-8-\cdots{}+12+13+14+15=11+12+13+14+15=50</math>, <math>5x=50</math> and <math>x=\boxed{\textbf{(C) }10}</math>.
+
+--- Solution 5 ---
+The mean of the set of numbers is <math>(14-10) \div 2 = 2</math>. The numbers around it must be equal (i.e. if the mean of <math>1</math>, <math>2</math>, <math>3</math>, <math>4</math>, and <math>5</math> is <math>3</math>, then <math>2+4=1+5</math>.)
+One row of the square would be 
+<cmath>\square  \square  2  \square  \square </cmath>
+
+Adding the numbers would be 
+
+<cmath> 0, 1, 2, 3, 4</cmath>
+
+with a sum of <math>\boxed {\textbf {(C) }10}</math>.
+
+<!-- Very bad and trivial solution :( -->
+
+--- Solution 6 ---
+If the sum of each row, column, and diagonal is x, then we have a total of 12x for the sum. The sum of the rows and columns is the sum of all the numbers doubled, which is <math>50\cdot2=100</math>. Therefore <math>100+2x=12x</math>, <math>100=10x</math>, and <math>x=\boxed{10}</math>.
+
+--- Solution 7 ---
+A cool thing to find is that with magic squares, the smallest and largest number are either in the same row, column and diagonal to balance the equation out. To continue doing this, the other numbers in that same line form an arithmetic sequence. With our A term generally being 1, and our last term being n^2. The d = n+1, by working out the a+(n-1)d formula. For a 5x5, d = 6. To apply this we start with A being -10, and our last term being 14. We increase by increments by 6 to get the 5 numbers in our line is -10, -4, 2, 8, 14. This adds up to <math>\boxed {\textbf {(C) }10}</math>.
+
+(Note the goal of this solution was just to point out something I found that I thought was cool, I don't advise using it in actual competitions)
+
+-CubiksRube
+
+
+=== Problem 8 ===
+What is the value of
+
+<cmath>1+2+3-4+5+6+7-8+\cdots+197+198+199-200?</cmath>
+
+Choices: {'A': '9,800', 'B': '9,900', 'C': '10,000', 'D': '10,100', 'E': '10,200</math>'}
+Answer: B
+
+--- Solution 1 ---
+Looking at the numbers, you see that every set of <math>4</math> has <math>3</math> positive numbers and 1 negative number. Calculating the sum of the first couple sets gives us <math>2+10+18...+394</math>. Clearly, this pattern is an arithmetic sequence. By using the formula we get <math>\frac{2+394}{2}\cdot 50=\boxed{\textbf{(B) }9900}</math>.
+
+-ViratKohli2018
+
+--- Solution 2 ---
+Split the even numbers and the odd numbers apart. If we group every 2 even numbers together and add them, we get a total of <math>50\cdot (-2)=-100</math>. Summing the odd numbers is equivalent to summing the first 100 odd numbers, which is equal to <math>100^2=10000</math>. Adding these two, we obtain the answer of <math>\boxed{\textbf{(B) }9900}</math>.
+
+--- Solution 3 ---
+We can break this entire sum down into <math>4</math> integer bits, in which the sum is <math>2x</math>, where <math>x</math> is the first integer in this bit. We can find that the first sum of every sequence is <math>4x-3</math>, which we plug in for the <math>50</math> bits in the entire sequence is <math>1+2+3+\cdots+50=1275</math>, so then we can plug it into the first term of every sequence equation we got above <math>4(1275)-3(50)=4950</math>, and so the sum of every bit is <math>2x</math>, and we only found the value of <math>x</math>, the sum of the sequence is <math>4950\cdot2=\boxed{\textbf{(B) } 9900}</math>.-middletonkids
+
+--- Solution 4 ---
+Another solution involves adding everything and subtracting out what is not needed.  The first step involves solving <math>1+2+3+4+5+6+7+8+\cdots+197+198+199+200</math>.  To do this, we can simply multiply <math>200</math> and <math>201</math> and divide by <math>2</math> to get us <math>20100</math>.  The next step involves subtracting out the numbers with minus signs.  We actually have to do this twice, because we need to take out the numbers we weren’t supposed to add and then subtract them from the problem.  Then, we can see that from <math>4</math> to <math>200</math>, incrementing by <math>4</math>, there are <math>50</math> numbers that we have to subtract.  To do this we can do <math>50</math> times <math>51</math> divided by <math>2</math>, and then we can multiply by <math>4</math>, because we are counting by fours, not ones.  Our answer will be <math>5100</math>, but remember, we have to do this twice.  Once we do that, we will get <math>10200</math>.  Finally, we just have to do <math>20100-10200</math>, and our answer is <math>\boxed{\textbf{(B) }9900}</math>.
+
+— <math>\text{Phineas}1500</math>
+
+--- Solution 5 ---
+In this solution, we group every 4 terms. Our groups should be: <math>1 + 2 + 3 - 4 = 2</math>, <math>5 + 6 + 7 - 8 = 10</math>, <math>9 + 10 + 11 - 12 = 18</math>, ... <math>197 + 198 + 199 - 200 = 394</math>. We add them together to get this expression: <math>2 + 10 + 18 + ... + 394</math>. This can be rewritten as <math>8 * (0 + 1 + 2 + ... + 49) + 100</math>. We add this to get <math>\boxed{\textbf{(B) }9900}</math>.
+
+--- Solution 6 ---
+We can split up this long sum into groups of four integers. Finding the first few sums, we have that  <math>1 + 2 + 3 - 4 = 2</math>, <math>5 + 6 + 7 - 8 = 10</math>, and <math>9 + 10 + 11 - 12 = 18</math>. Notice that this is an increasing arithmetic sequence, with a common difference of <math>8</math>. We can find the sum of the arithmetic sequence by finding the average of the first and last terms, and then multiplying by the number of terms in the sequence. The first term is  <math>1 + 2 + 3 - 4</math>, or <math>2</math>, the last term is <math>197 + 198 + 199 - 200</math>, or <math>394</math>, and there are <math>200\div 4</math> or <math>50</math> terms. So, we have that the sum of the sequence is <math>\frac{(394+2)\cdot 50}{2}</math>, or <math>\boxed{\textbf{(B) }9900}</math>.
+
+--- Solution 7 ---
+Note that the original expression is equal to
+<cmath> (1+2+3+\dots+199+200)-2(4(1+2+3+\dots+49+50)). </cmath>
+Since the sum of the first <math> n </math> positive integers is <math> \frac{n(n+1)}{2} </math>, this is equal to
+<cmath> \frac{200(201)}{2}-2\left(4\left(\frac{50(51)}{2}\right)\right), </cmath>
+which can be simplified as
+<cmath> 20100-4(50)(51)=20100-10200. </cmath>
+Doing the subtraction yields <math> \boxed{\textbf{(B) }9900} </math>. -BorealBear
+
+--- Solution 8 ---
+We can split the sum into 4 groups so that the terms in these groups have the same common difference of 4
+<math>(1+5+9+...+197)+(2+6+10+...+198)+(3+7+11+...+199)-(4+8+12+...+200)</math>.
+Then, we can use the sum formula. It's equal to
+<math>\frac{50\cdot(1+197)}{2} + \frac{50\cdot(2+198)}{2} + \frac{50\cdot(3+199)}{2} - \frac{50\cdot(4+200)}{2}</math>.
+This can also be expressed as
+<math>(25\cdot198) + (25\cdot200) + (25\cdot202) - (25\cdot204)</math>.
+And it is equal to <math>25\cdot(198+200+202-204) = 25\cdot396 = 9900</math>.
+Therefore, the answer is <math> \boxed{\textbf{(B) }9900} </math>.
+
+--- Solution 9 ---
+We can split the answer into trios of sums and a difference:
+(1+2+3) + (5+6+7) + (9+10+11) ... + (197+198+199) - (4+8+12+ ... + 200).
+We note that each of our trios are consecutive integers so replace them by their average - e.g., 5+6+7 = 3*6.
+
+We have 3 (2+6+10+ ... +198) - 4 (1+2+3+ ... + 50) = 3A - 4B.
+How we can use a "rainbow" method for A to add 2+198 = 6+194 = .... How many terms do we have?
+2, 6, 10, ..., 198 has the same number of terms as the sequence
+0, 4, 8, ..., 198-2 = 196, which has the same number of terms as the sequence
+0, 1, 2, ..., 196/4 = 49
+So there are 50 terms, which means 50/2 = 25 pairs of 200. A is 25*200
+B is just 50*51/2 = 25*51
+
+So we have 3(25*200) - 4(25*51) = 100(150-51) = 9900
+
+--- Solution 10 ---
+We can treat the negative numbers separately than the rest of the sequence.
+
+The negative numbers are as follows: <math>-4, -8, -12,... -200</math>
+
+Summing all of the negative numbers up <math>[-51*(25*4)]</math> (first dividing the negative sequence by 4, using Gauss to add all of the numbers up, then re-multiplying by 4), we get <math>-5100</math>.
+
+Now, we can add up the original sequence as if there were no negative numbers (so converting all negatives into positives), to which we get <math>20100</math> by having <math>201*100</math>.
+
+We then subtract <math>5100</math> from <math>20100</math> twice (the first time to make all of the negative numbers <math>0</math> in the sequence, second time to obtain the answer).
+
+And we obtain <math> \boxed{\textbf{(B) }9900} </math>.
+
+
+=== Problem 9 ===
+A single bench section at a school event can hold either
+
+Choices: {'A': '9', 'B': '18', 'C': '27', 'D': '36', 'E': '77</math>'}
+Answer: B
+
+--- Solution 1 ---
+The least common multiple of <math>7</math> and <math>11</math> is <math>77</math>. Therefore, there must be <math>77</math> adults and <math>77</math> children. The total number of benches is <math>\frac{77}{7}+\frac{77}{11}=11+7=\boxed{\textbf{(B) }18}</math>.
+
+--- Solution 2 ---
+Let <math>x</math> denote how many adults there are. Since the number of adults is equal to the number of children we can write <math>N</math> as <math>\frac{x}{7}+\frac{x}{11}=N</math>. Simplifying we get <math>\frac{18x}{77} = N</math>
+Since both <math>n</math> and <math>x</math> have to be positive integers, <math>x</math> has to equal <math>77</math>. Therefore, <math>N=\boxed{\textbf{(B) }18}</math> is our final answer.
+
+--- Solution 3 ---
+We have 1 Bench = 7 Adults = 11 Children, or
+<math>A = \frac{11}{7}C</math>.
+
+The minimum number of benches is <math>N = x(A + C)</math>.
+
+This gives <math>\frac{77}{18}N = x</math>, so that the minimum value for x is the integer 18, or (B).
+
+--- Solution 4 ---
+The ratio of adults and children is 7:11 and the total amount of benches is the amount of adult and children combined which gives 7 + 11 = <math>\boxed{\textbf{(B) }18}</math>. We see that this is the smallest integer value.
+
+
+=== Problem 10 ===
+Seven cubes, whose volumes are
+
+Choices: {'A': '\\ 644', 'B': '\\ 658', 'C': '\\ 664', 'D': '\\ 720', 'E': '\\ 749</math>'}
+Answer: B
+
+--- Solution 1 ---
+The volume of each cube follows the pattern of <math>n^3</math>, for <math>n</math> is between <math>1</math> and <math>7</math>.
+
+We see that the total surface area can be comprised of three parts: the sides of the cubes, the tops of the cubes, and the bottom of the <math>7\times 7\times 7</math> cube (which is just <math>7 \times 7 = 49</math>). The sides areas can be measured as the sum <math>4\sum_{n=1}^{7} n^2</math>, giving us <math>560</math>. Structurally, if we examine the tower from the top, we see that it really just forms a <math>7\times 7</math> square of area <math>49</math>. Therefore, we can say that the total surface area is <math>560 + 49 + 49 = \boxed{\textbf{(B) }658}</math>.
+Alternatively, for the area of the tops, we could have found the sum <math>\sum_{n=2}^{7}((n)^{2}-(n-1)^{2})</math>, giving us <math>49</math> as well.
+
+
+Note: The area on top and bottom are 49 because the largest area is 49, and the other cubes are "inscribed" in it.
+
+--- Solution 2 ---
+It can quickly be seen that the side lengths of the cubes are the integers from 1 to 7 inclusive.
+
+First, we will calculate the total surface area of the cubes, ignoring overlap. This value is <math>6 ( 1^2 + 2^2 + \cdots + 7^2 ) = 6\sum_{n=1}^{7} n^2 = 6 \left( \frac{7(7 + 1)(2 \cdot 7 + 1)}{6} \right) = 7 \cdot 8 \cdot 15 = 840</math>. Then, we need to subtract out the overlapped parts of the cubes. Between each consecutive pair of cubes, one of the smaller cube's faces is completely covered, along with an equal area of one of the larger cube's faces. The total area of the overlapped parts of the cubes is thus equal to <math>2\sum_{n=1}^{6} n^2 = 182</math>. Subtracting the overlapped surface area from the total surface area, we get <math>840 - 182 = \boxed{\textbf{(B) }658}</math>. ~[[User:emerald_block|emerald_block]]
+
+--- Solution 3 ---
+It can be seen that the side lengths of the cubes using cube roots are all integers from <math>1</math> to <math>7</math>, inclusive.
+
+Only the cubes with side length <math>1</math> and <math>7</math> have <math>5</math> faces in the surface area and the rest have <math>4</math>. Also, since the cubes are stacked, we have to find the difference between each <math>n^2</math> and <math>(n-1)^2</math> side length as <math>n</math> ranges from <math>7</math> to <math>2</math>. 
+
+We then come up with this: <math>5(49)+13+4(36)+11+4(25)+9+4(16)+7+4(9)+5+4(4)+3+5(1)</math>. 
+
+We then add all of this and get <math>\boxed{\textbf{(B) }658}</math>.
+
+--- Solution 4 ---
+Notice that the surface area of the top cube is <math>6s^2</math> and the others are <math>4s^2</math>. Then we can directly compute. The edge length for the first cube is <math>7</math> and has a surface area of <math>294</math>. The surface area of the next cube is <math>144</math>. The surface area of the next cube <math>100</math>. The surface area of the next cube is <math>64</math>. The surface area of the next cube is <math>36</math>. The surface area of the next cube is <math>16</math>. The surface area of the next cube is <math>4</math>. We then sum up <math>294+144+100+64+36+16+4</math> to get <math>\boxed{\textbf{(B) }658}</math>.
+
+--- Solution 5 ---
+First of all, compute the area of the sides, excluding the top and bottoms, of the cubes. The side lengths (cube root the volumes) are 1, 2, 3, 4, 5, 6, 7. 
+Each cube's area of the sides can be calculated with <math>4(</math>area of one side<math>)</math>=<math>4(l^2)</math> so in total that is <math>4(1+4+16+...+49)</math>
+so 
+<math>4(140)=560</math>
+the area of all the sides of the cubes is <math>560</math>. 
+Then, calculate the bottom face of the largest cube, <math>7*7=49</math>. 
+Now, notice that if you stack the cubes up on top of each other, and look directly down on them, the tops of the cubes showing add up to the area of the bottom cube, the 7x7. Therefore, the sum of the area of the tops of the cubes is <math>7*7=49</math>. 
+
+Now add them all up: <math>49+49+560=658.</math> Therefore, the answer is <math>\boxed{\textbf{(B) }658}</math>.
+
+--- Solution 6 ---
+Firstly, calculate the total surface area for all the cubes. Knowing that the area of each square of each cube are <math>2^2,3^2,4^2,5^2,6^2,7^2,</math> we have <math>6(1+4+9+16+25+36+49)=6(140)=840.</math> When you stack these cubes, the top square of each are subtracted by the square area of the cube above it. Meanwhile, the bottom square of each (except the 7x7x7 cube) won't be counted because of the stacking. So, we have to subtract <math>2(1+4+9+16+25+36)=2(91)=182</math> from <math>840</math>, getting <math>\boxed{\textbf{(B) }658}.</math>
+
+--- Solution 7 ---
+The surface area of the bottom cube is the bottom face, the 4 side faces, and the top face minus the bottom face of the next cube. Therefore, the surface area of the bottom cube is 6 faces minus the bottom face of the next cube. That will be <math>6 \cdot 49-36</math>. For the next cube, we take the 4 side faces and the top face, and subtract the bottom face of the next cube. Therefore, the surface area of the next cube will be 5 of its faces minus the bottom face of the next cube. That will be <math>5 \cdot 36-25</math>. We can do the next cube the same way. It will end up  as <math>5 \cdot 25-16</math>. From here we start noticing a pattern. The next will be <math>5 \cdot 16-9</math>, and then <math>5 \cdot 9-4</math>, next <math>5 \cdot 4-1</math>, and to include the top cube, we have to add <math>5 \cdot 1</math>, which is basically <math>5 \cdot 1-0</math>. Now, putting it all together, we get <math>6 \cdot 49-36+5 \cdot 36-25+5 \cdot 25-16+5 \cdot 16-9+5 \cdot 9-4+5 \cdot 4-1+5 \cdot 1-0=6 \cdot 49+5(36+25+16+9+4+1)-(36+25+16+9+4+1)=6 \cdot 49+4(36+25+16+9+4+1)=294+4(91)=294+364=\boxed{\textbf{(B) }658}</math>.
+
+
+=== Problem 11 ===
+What is the median of the following list of
+
+Choices: {'A': '\\ 1974.5', 'B': '\\ 1975.5', 'C': '\\ 1976.5', 'D': '\\ 1977.5', 'E': '\\ 1978.5 </math>'}
+Answer: C
+
+--- Solution 1 ---
+We can see that <math>44^2=1936</math> which is less than 2020. Therefore, there are <math>2020-44=1976</math> of the <math>4040</math> numbers greater than <math>2020</math>. Also, there are <math>2020+44=2064</math> numbers that are less than or equal to <math>2020</math>. 
+
+Since there are <math>44</math> duplicates/extras, it will shift up our median's placement down <math>44</math>. Had the list of numbers been <math>1,2,3, \dots, 4040</math>, the median of the whole set would be <math>\dfrac{1+4040}{2}=2020.5</math>. 
+
+Thus, our answer is <math>2020.5-44=\boxed{\textbf{(C)}\ 1976.5}</math>.
+
+--- Solution 2 ---
+As we are trying to find the median of a <math>4040</math>-term set, we must find the average of the <math>2020</math>th and <math>2021</math>st terms.
+
+Since <math>45^2 = 2025</math> is slightly greater than <math>2020</math>, we know that the <math>44</math> perfect squares <math>1^2</math> through <math>44^2</math> are less than <math>2020</math>, and the rest are greater. Thus, from the number <math>1</math> to the number <math>2020</math>, there are <math>2020 + 44 = 2064</math> terms. Since <math>44^2</math> is <math>44 + 45 = 89</math> less than <math>45^2 = 2025</math> and <math>84</math> less than <math>2020</math>, we will only need to consider the perfect square terms going down from the <math>2064</math>th term, <math>2020</math>, after going down <math>84</math> terms. Since the <math>2020</math>th and <math>2021</math>st terms are only <math>44</math> and <math>43</math> terms away from the <math>2064</math>th term, we can simply subtract <math>44</math> from <math>2020</math> and <math>43</math> from <math>2020</math> to get the two terms, which are <math>1976</math> and <math>1977</math>. Averaging the two, we get <math>\boxed{\textbf{(C)}\ 1976.5}.</math> 
+
+~[[User:emerald_block|emerald_block]]
+
+--- Solution 3 ---
+We want to know the <math>2020</math>th term and the <math>2021</math>st term to get the median.
+
+We know that <math>44^2=1936</math>. So, numbers <math>1^2, 2^2, \ldots,44^2</math> are in between <math>1</math> and <math>1936</math>.
+
+So, the sum of <math>44</math> and <math>1936</math> will result in <math>1980</math>, which means that <math>1936</math> is the <math>1980</math>th number.
+
+Also, notice that <math>45^2=2025</math>, which is larger than <math>2021</math>.
+
+Then the <math>2020</math>th term will be <math>1936+40 = 1976</math>, and similarly the <math>2021</math>th term will be <math>1977</math>.
+
+Solving for the median of the two numbers, we get <math>\boxed{\textbf{(C)}\ 1976.5}</math>
+
+--- Solution 4 ---
+We note that <math>44^2 = 1936</math>, which is the largest square less than <math>2020</math>, which means that there are <math>44</math> additional terms before <math>2020</math>. This makes <math>2020</math> the <math>2064</math>th term. To find the median, we need the <math>2020</math>th and <math>2021</math>st term. We note that every term before <math>2020</math> is one less than the previous term (That is, we subtract <math>1</math> to get the previous term.). If <math>2020</math> is the <math>2064</math>th term, than <math>2020 - 44</math> is the <math>(2064 - 44)</math>th term. So, the <math>2020</math>th term is <math>1976</math>, and the <math>2021</math>st term is <math>1977</math>, and the average of these two terms is the median, or <math>\boxed{\textbf{(C)}\ 1976.5}</math>.
+
+--- Solution 5 ---
+To find the median, we sort the <math>4040</math> numbers in decreasing order, then average the <math>2020</math>th and the <math>2021</math>st numbers of the sorted list.
+
+Since <math>45^2=2025</math> and <math>44^2=1936,</math> the first <math>2021</math> numbers of the sorted list are <cmath>\underbrace{2020^2,2019^2,2018^2,\ldots,46^2,45^2}_{1976\mathrm{ \ numbers}}\phantom{ },\phantom{ }\underbrace{2020,2019,2018,\ldots,1977,1976}_{45\mathrm{ \ numbers}}\phantom{ },</cmath> from which the answer is <math>\frac{1977+1976}{2}=\boxed{\textbf{(C)}\ 1976.5}.</math>
+
+
+=== Problem 12 ===
+Triangle
+
+Choices: {'A': '48', 'B': '72', 'C': '96', 'D': '144', 'E': '192</math>'}
+Answer: C
+
+--- Solution 1 ---
+Since quadrilateral <math>UVCM</math> has perpendicular diagonals, its area can be found as half of the product of the length of the diagonals. Also note that <math>\triangle AUV</math> has <math>\frac 14</math> the area of triangle <math>AMC</math> by similarity, so <math>[UVCM]=\frac 34\cdot [AMC].</math> Thus,
+<cmath>\frac 12 \cdot 12\cdot 12=\frac 34 \cdot [AMC]</cmath>
+<cmath>72=\frac 34\cdot [AMC]</cmath>
+<cmath>[AMC]=96\rightarrow \boxed{\textbf{(C)}}.</cmath>
+
+Note: We know that since <math>AU</math> is the median <math>AU</math> divided by <math>AM</math> is <math>1/2</math>. Since triangle <math>AUV</math> is similar to triangle <math>AMC</math>, and by a factor of <math>1/2</math>, then every sidelength of <math>AMC</math> must also be scaled by a factor of <math>1/2</math> to get <math>AUV</math>. The base and height are all scaled by <math>1/2</math>, so then the ratio is <math>1/2 \cdot 1/2</math>.
+
+--- Solution 2 ---
+<asy>
+draw((-4,0)--(4,0)--(0,12)--cycle);
+draw((-2,6)--(4,0));
+draw((2,6)--(-4,0));
+draw((-2,6)--(2,6));
+label("M", (-4,0), W);
+label("C", (4,0), E);
+label("A", (0, 12), N);
+label("V", (2, 6), NE);
+label("U", (-2, 6), NW);
+label("P", (0, 3.6), S);
+</asy>
+
+We know that <math>\triangle AUV \sim \triangle AMC</math>, and since the ratios of its sides are <math>\frac{1}{2}</math>, the ratio of of their areas is <math>\left(\frac{1}{2}\right)^2=\frac{1}{4}</math>. 
+
+If <math>\triangle AUV</math> is <math>\frac{1}{4}</math> the area of <math>\triangle AMC</math>, then trapezoid <math>MUVC</math> is <math>\frac{3}{4}</math> the area of <math>\triangle AMC</math>. 
+
+Let's call the intersection of <math>\overline{UC}</math> and <math>\overline{MV}</math> <math>P</math>. Let <math>\overline{UP}=x</math>. Then <math>\overline{PC}=12-x</math>. Since <math>\overline{UC} 
+\perp \overline{MV}</math>, <math>\overline{UP}</math> and <math>\overline{CP}</math> are heights of triangles <math>\triangle MUV</math> and <math>\triangle MCV</math>, respectively. Both of these triangles have base <math>12</math>. 
+
+Area of <math>\triangle MUV = \frac{x\cdot12}{2}=6x</math>
+
+Area of <math>\triangle MCV = \frac{(12-x)\cdot12}{2}=72-6x</math>
+
+Adding these two gives us the area of trapezoid <math>MUVC</math>, which is <math>6x+(72-6x)=72</math>.
+
+This is <math>\frac{3}{4}</math> of the triangle, so the area of the triangle is <math>\frac{4}{3}\cdot{72}=\boxed{\textbf{(C) } 96}</math>
+
+--- Solution 3 ---
+Draw median <math>\overline{AB}</math>.
+<asy>
+draw((-4,0)--(4,0)--(0,12)--cycle);
+draw((-2,6)--(4,0));
+draw((2,6)--(-4,0));
+draw((0,12)--(0,0));
+label("M", (-4,0), W);
+label("C", (4,0), E);
+label("A", (0, 12), N);
+label("V", (2, 6), NE);
+label("U", (-2, 6), NW);
+label("P", (0.5, 4), E);
+label("B", (0, 0), S);
+</asy>
+
+Since we know that all medians of a triangle intersect at the centroid, we know that <math>\overline{AB}</math> passes through point <math>P</math>. We also know that medians of a triangle divide each other into segments of ratio <math>2:1</math>. Knowing this, we can see that <math>\overline{PC}:\overline{UP}=2:1</math>, and since the two segments sum to <math>12</math>, <math>\overline{PC}</math> and <math>\overline{UP}</math> are <math>8</math> and <math>4</math>, respectively.
+
+Finally knowing that the medians divide the triangle into <math>6</math> sections of equal area, finding the area of <math>\triangle PUM</math> is enough. <math>\overline{PC} = \overline{MP} = 8</math>.
+
+The area of <math>\triangle PUM = \frac{4\cdot8}{2}=16</math>. Multiplying this by <math>6</math> gives us <math>6\cdot16=\boxed{\textbf{(C) }96}</math>
+
+--- Solution 4 ---
+<asy>
+draw((-4,0)--(4,0)--(0,12)--cycle);
+draw((-2,6)--(4,0));
+draw((2,6)--(-4,0));
+draw((-2,6)--(2,6));
+label("M", (-4,0), W);
+label("C", (4,0), E);
+label("A", (0, 12), N);
+label("V", (2, 6), NE);
+label("U", (-2, 6), NW);
+label("P", (0, 3.6), S);
+</asy>
+We know that <math>AU = UM</math>, <math>AV = VC</math>, so <math>UV = \frac{1}{2} MC</math>.
+
+As <math>\angle UPM = \angle VPC = 90</math>, we can see that <math>\triangle UPM \cong \triangle VPC</math> and <math>\triangle UVP \sim \triangle MPC</math> with a side ratio of <math>1 : 2</math>.
+
+So <math>UP = VP = 4</math>, <math>MP = PC = 8</math>.
+
+With that, we can see that <math>[\triangle UPM] = 16</math>, and the area of trapezoid <math>MUVC</math> is 72.
+
+As said in solution 1, <math>[\triangle AMC] = 72  /  \frac{3}{4} = \boxed{\textbf{(C) } 96}</math>.
+
+-QuadraticFunctions, solution 1 by ???
+
+--- Solution 5 ---
+<asy>
+draw((-4,0)--(4,0)--(0,12)--cycle);
+draw((-2,6)--(4,0));
+draw((2,6)--(-4,0));
+draw((0,12)--(0,0));
+label("M", (-4,0), W);
+label("C", (4,0), E);
+label("A", (0, 12), N);
+label("V", (2, 6), NE);
+label("U", (-2, 6), NW);
+label("P", (0.5, 4), E);
+label("B", (0, 0), S);
+
+</asy>
+
+Let <math>AB</math> be the height. Since medians divide each other into a <math>2:1</math> ratio, and the medians have length 12, we have <math>PC=MP=8</math> and <math>UP=VP=4</math>. From right triangle <math>\triangle{MUP}</math>, <cmath>MU^2=MP^2+UP^2=8^2+4^2=80,</cmath> so <math>MU=\sqrt{80}=4\sqrt{5}</math>. Since <math>CU</math> is a median, <math>AM=8\sqrt{5}</math>. From right triangle <math>\triangle{MPC}</math>, <cmath>MC^2=MP^2+PC^2=8^2+8^2=128,</cmath> which implies <math>MC=\sqrt{128}=8\sqrt{2}</math>. By symmetry <math>MB=\dfrac{8\sqrt{2}}{2}=4\sqrt{2}</math>. 
+
+Applying the Pythagorean Theorem to right triangle <math>\triangle{MAB}</math> gives <math>AB^2=AM^2-MB^2=8\sqrt{5}^2-4\sqrt{2}^2=288</math>, so <math>AB=\sqrt{288}=12\sqrt{2}</math>. Then the area of <math>\triangle{AMC}</math> is <cmath>\dfrac{AB \cdot MC}{2}=\dfrac{8\sqrt{2} \cdot 12\sqrt{2}}{2}=\dfrac{96 \cdot 2}{2}=\boxed{\textbf{(C) }96}</cmath>
+
+--- Solution 6 ---
+By similarity, the area of <math>AUV</math> is equal to <math>\frac{1}{4}</math>.
+
+The area of <math>UVCM</math> is equal to 72.
+
+Assuming the total area of the triangle is S, the equation will be : <math>\frac{3}{4}</math>S = 72.
+
+S = <math>\boxed{\textbf{(C) }96}</math>
+
+--- Solution 7 ---
+Given a triangle with perpendicular medians with lengths <math>x</math> and <math>y</math>, the area will be <math>\frac{2xy}{3}=\boxed{\textbf{(C) }96}</math>.
+
+--- Solution 8 ---
+Connect the line segment <math>UV</math> and it's easy to see quadrilateral <math>UVMC</math> has an area of the product of its diagonals divided by <math>2</math> which is <math>72</math>. Now, solving for triangle <math>AUV</math> could be an option, but the drawing shows the area of <math>AUV</math> will be less than the quadrilateral meaning the the area of <math>AMC</math> is less than <math>72*2</math> but greater than <math>72</math>, leaving only one possible answer choice, <math>\boxed{\textbf{(C) } 96}</math>.
+
+-Rohan S.
+
+--- Solution 9 ---
+<asy>
+draw((-4,0)--(4,0)--(0,12)--cycle);
+draw((-2,6)--(4,0));
+draw((2,6)--(-4,0));
+draw((0,12)--(0,0));
+label("M", (-4,0), W);
+label("C", (4,0), E);
+label("A", (0, 12), N);
+label("V", (2, 6), NE);
+label("U", (-2, 6), NW);
+label("P", (0.5, 4), E);
+label("B", (0, 0), S);
+</asy>
+
+Connect <math>AP</math>, and let <math>B</math> be the point where <math>AP</math> intersects <math>MC</math>. <math>MB=CB</math> because all medians of a triangle intersect at one point, which in this case is <math>P</math>. <math>MP:PV=2:1</math> because the point at which all medians intersect divides the medians into segments of ratio <math>2:1</math>, so <math>MP=8</math> and similarly <math>CP=8</math>. We apply the Pythagorean Theorem to triangle <math>MPC</math> and get <math>MC=\sqrt{128}=8\sqrt{2}</math>. The area of triangle <math>MPC</math> is <math>\dfrac{MP\cdot CP}{2}=32</math>, and that must equal to <math>\dfrac{MC\cdot BP}{2}</math>, so <math>BP=\dfrac{8}{\sqrt{2}}=4\cdot\sqrt{2}</math>. <math>BP=\dfrac{1}{3}BA</math>, so <math>BA=12\sqrt{2}</math>. The area of triangle <math>AMC</math> is equal to <math>\dfrac{MC\cdot BA}{2}=\dfrac{8 \cdot \sqrt{2} \cdot 12 \cdot \sqrt{2}}{2}=\boxed{\textbf{(C)}\ 96}</math>.
+
+-SmileKat32
+
+--- Solution 10 ---
+<math>[\square MUVC] = 72</math>. Let intersection of line <math>AP</math> and base <math>MC</math> be <math>B</math> <cmath> [AUV]=[MUB]=[UVB]=[BVC] \implies \left[\frac{\triangle AMC}{4}\right] = \left[\frac{\square MUVC}{3}\right] \implies [AMC] = \boxed{\textbf{(C)}\ 96}</cmath>
+
+--- Solution 11 ---
+<asy>
+draw((-4,0)--(4,0)--(0,12)--cycle);
+draw((-2,6)--(4,0));
+draw((2,6)--(-4,0));
+draw((-2,6)--(2,6));
+label("M", (-4,0), W);
+label("C", (4,0), E);
+label("A", (0, 12), N);
+label("V", (2, 6), NE);
+label("U", (-2, 6), NW);
+label("P", (0, 3.6), S);
+</asy>
+
+Since <math>\overline{MV}</math> and <math>\overline{CU}</math> intersect at a right angle, this means <math>MUVC</math> is a kite. Hence, the area of this kite is <math>\frac{12 \cdot 12}{2} = 72</math>.
+
+Also, notice that <math>\triangle AUV \sim \triangle AMC</math> by AAA Similarity. Since the ratios of its sides is <math>\frac{1}{2}</math>, the ratios of the area is <math>\left(\frac{1}{2}\right)^2=\frac{1}{4}</math>. Therefore,
+
+<cmath>[AMC] = [MUVC] + \frac{1}{4} \cdot [AMC]</cmath>
+
+Simplifying gives us <math>\frac{3}{4} \cdot [AMC] = 72</math>, so <math>[AMC] = 72 \cdot \frac{4}{3} = \boxed{\textbf{(C)}\ 96}</math>
+
+--- Solution 12 ---
+Horizontally translate line <math>\overline{UC}</math> until point <math>U</math> is at point <math>V</math>, with <math>C</math> subsequently at <math>C'</math>, and then connect up <math>C'</math> and <math>C</math> to create <math>\triangle MVC'</math>, which is a right triangle.
+
+<asy>
+draw((-4,0)--(4,0)--(0,12)--cycle);
+draw((-2,6)--(4,0));
+draw((2,6)--(-4,0));
+draw((-2,6)--(2,6));
+draw((2,6)--(8,0));
+draw((4,0)--(8,0));
+label("M", (-4,0), W);
+label("C", (4,0), S);
+label("A", (0, 12), N);
+label("V", (2, 6), NE);
+label("U", (-2, 6), NW);
+label("P", (0, 3.6), S);
+label("C'", (8,0), E);
+</asy>
+
+Notice that <math>\triangle MVC'</math> = <math>12 \cdot 12 \cdot \frac{1}{2} = 72</math>, and <math>\triangle MVC'</math> = <math>\triangle MVC + \triangle MUV</math> (since the latter has the same base and height as the sub-triangle <math>\triangle CVC'</math> inside <math>\triangle MVC'</math>).
+
+From this, we can deduce that <math>\textbf{(B)}</math> cannot be true, since an incomplete part of <math>\triangle AMC</math> is equal to it. We can also deduce that <math>\textbf{(D)}</math> also cannot be true, since the unknown triangle <math>\triangle AUV = \triangle MUV</math>, and <math>\triangle MUV = \triangle CVC' < \triangle MVC'</math>. Therefore, the answer must be between <math>72</math> and <math>144</math>, leaving <math>\boxed{\textbf{(C)}\ 96}</math> as the only possible correct answer.
+
+
+=== Problem 13 ===
+A frog sitting at the point
+
+Choices: {'A': '\\ \\frac12', 'B': '\\ \\frac 58', 'C': '\\ \\frac 23', 'D': '\\ \\frac34', 'E': '\\ \\frac 78</math>'}
+Answer: B
+
+--- Solution 1 ---
+Drawing out the square, it's easy to see that if the frog goes to the left, it will immediately hit a vertical end of the square. Therefore, the probability of this happening is <math>\frac{1}{4} \cdot 1 = \frac{1}{4}</math>. If the frog goes to the right, it will be in the center of the square at <math>(2,2)</math>, and by symmetry (since the frog is equidistant from all sides of the square), the chance it will hit a vertical side of a square is <math>\frac{1}{2}</math>. The probability of this happening is <math>\frac{1}{4} \cdot \frac{1}{2} = \frac{1}{8}</math>.
+
+
+If the frog goes either up or down, it will hit a line of symmetry along the corner it is closest to and furthest to, and again, is equidistant relating to the two closer sides and also equidistant relating the two further sides. The probability for it to hit a vertical wall is <math>\frac{1}{2}</math>. Because there's a <math>\frac{1}{2}</math> chance of the frog going up or down, the total probability for this case is <math>\frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}</math> and summing up all the cases, <math>\frac{1}{4} + \frac{1}{8} + \frac{1}{4} = \frac{5}{8}       \implies \boxed{\textbf{(B) } \frac{5}{8}}</math>.
+
+--- Solution 2 ---
+Let's say we have our five by five grid and we work this out by casework. A is where the frog is, while B and C are possible locations for his second jump, while O is everything else. If we land on a C, we have reached the vertical side. However, if we land on a B, the probability of landing on a C is 1/4, while B is 3/4. Since C means that we have "succeeded", while B means that we have a half chance, we compute <math>1 \cdot C + \frac{1}{2} \cdot B</math>. 
+
+
+<cmath>1 \cdot \frac{1}{4} + \frac{1}{2} \cdot \frac{3}{4}</cmath>
+<cmath>\frac{1}{4} + \frac{3}{8}</cmath>
+We get <math>\frac{5}{8}</math>, or <math>B</math>
+<cmath>\text{O}\ \ \ \text{O}\ \ \ \text{O}\ \ \ \text{O}\ \ \ \text{O}</cmath>                                                                                                                                                             
+<cmath>\text{O}\ \ \ \text{B}\ \ \ \text{O}\ \ \ \text{O}\ \ \ \text{O}</cmath>
+<cmath>\text{C}\ \ \ \text{A}\ \ \ \text{B}\ \ \ \text{O}\ \ \ \text{O}</cmath>
+<cmath>\text{O}\ \ \ \text{B}\ \ \ \text{O}\ \ \ \text{O}\ \ \ \text{O}</cmath>
+<cmath>\text{O}\ \ \ \text{O}\ \ \ \text{O}\ \ \ \text{O}\ \ \ \text{O}</cmath>
+-yeskay
+
+--- Solution 3 ---
+If the frog is on one of the 2 diagonals, the chance of landing on vertical or horizontal each becomes <math>\frac{1}{2}</math>. Since it starts on <math>(1,2)</math>, there is a <math>\frac{3}{4}</math> chance (up, down, or right) it will reach a diagonal on the first jump and <math>\frac{1}{4}</math> chance (left) it will reach the vertical side. The probablity of landing on a vertical is <math>\frac{1}{4}+\frac{3}{4} \cdot \frac{1}{2}=\boxed{\textbf{(B)} \frac{5}{8}}</math>.
+- Lingjun
+
+--- Solution 4 ---
+Let <math>P_{(x,y)}</math> denote the probability of the frog's sequence of jumps ends with it hitting a vertical edge when it is at <math>(x,y)</math>. Note that <math>P_{(1,2)}=P_{(3,2)}</math> by reflective symmetry over the line <math>x=2</math>. Similarly, <math>P_{(1,1)}=P_{(1,3)}=P_{(3,1)}=P_{(3,3)}</math>, and <math>P_{(2,1)}=P_{(2,3)}</math>. 
+Now we create equations for the probabilities at each of these points/states by considering the probability of going either up, down, left, or right from that point: 
+<cmath>P_{(1,2)}=\frac{1}{4}+\frac{1}{2}P_{(1,1)}+\frac{1}{4}P_{(2,2)}</cmath>
+<cmath>P_{(2,2)}=\frac{1}{2}P_{(1,2)}+\frac{1}{2}P_{(2,1)}</cmath>
+<cmath>P_{(1,1)}=\frac{1}{4}+\frac{1}{4}P_{(1,2)}+\frac{1}{4}P_{(2,1)}</cmath>
+<cmath>P_{(2,1)}=\frac{1}{2}P_{(1,1)}+\frac{1}{4}P_{(2,2)}</cmath>
+We have a system of <math>4</math> equations in <math>4</math> variables, so we can solve for each of these probabilities. Plugging the second equation into the fourth equation gives 
+<cmath>P_{(2,1)}=\frac{1}{2}P_{(1,1)}+\frac{1}{4}\left(\frac{1}{2}P_{(1,2)}+\frac{1}{2}P_{(2,1)}\right)</cmath>
+<cmath>P_{(2,1)}=\frac{8}{7}\left(\frac{1}{2}P_{(1,1)}+\frac{1}{8}P_{(1,2)}\right)=\frac{4}{7}P_{(1,1)}+\frac{1}{7}P_{(1,2)}</cmath>
+Plugging in the third equation into this gives 
+<cmath>P_{(2,1)}=\frac{4}{7}\left(\frac{1}{4}+\frac{1}{4}P_{(1,2)}+\frac{1}{4}P_{(2,1)}\right)+\frac{1}{7}P_{(1,2)}</cmath>
+<cmath>P_{(2,1)}=\frac{7}{6}\left(\frac{1}{7}+\frac{2}{7}P_{(1,2)}\right)=\frac{1}{6}+\frac{1}{3}P_{(1,2)}\text{    (*)}</cmath>
+Next, plugging in the second and third equation into the first equation yields 
+<cmath>P_{(1,2)}=\frac{1}{4}+\frac{1}{2}\left(\frac{1}{4}+\frac{1}{4}P_{(1,2)}+\frac{1}{4}P_{(2,1)}\right)+\frac{1}{4}\left(\frac{1}{2}P_{(1,2)}+\frac{1}{2}P_{(2,1)}\right)</cmath>
+<cmath>P_{(1,2)}=\frac{3}{8}+\frac{1}{4}P_{(1,2)}+\frac{1}{4}P_{(2,1)}</cmath>
+Now plugging in (*) into this, we get 
+<cmath>P_{(1,2)}=\frac{3}{8}+\frac{1}{4}P_{(1,2)}+\frac{1}{4}\left(\frac{1}{6}+\frac{1}{3}P_{(1,2)}\right)</cmath>
+<cmath>P_{(1,2)}=\frac{3}{2}\cdot\frac{5}{12}=\boxed{\textbf{(B) }\frac{5}{8}}</cmath>
+-mathisawesome2169
+
+Note: We can also think of each state <math>P_{(x,y)} </math> as the probability the frog will reach a vertical side given that it is <math>x</math> away from a vertical side and <math>y</math> away from a horizontal side. This is just another way to think about the reflective symmetry. 
+-GardenRock10
+
+--- Solution 5 ---
+this is basically another version of solution 4; shoutout to mathisawesome2169 :D
+
+First, we note the different places the frog can go at certain locations in the square:
+
+If the frog is at a border vertical point (<math>(1,2),(3,2)</math>), it moves with probability <math>\frac{1}{4}</math> to a vertical side of the square, probability <math>\frac{1}{4}</math> to the center of the square, and probability <math>\frac{1}{2}</math> to a corner square.
+
+If the frog is at a border horizontal point (<math>(2,1),(2,3)</math>), it moves with probability <math>\frac{1}{4}</math> to a horizontal side of the square, probability <math>\frac{1}{4}</math> to the center of the square, and probability <math>\frac{1}{2}</math> to a corner square.
+
+If the frog is at a center square (<math>(2,2)</math>), it moves with probability <math>\frac{1}{2}</math> to a border horizontal point and probability <math>\frac{1}{2}</math> to a border vertical point.
+
+If the frog is at a corner (<math>(1,1),(1,3),(3,3),(3,1)</math>), it moves with probability <math>\frac{1}{4}</math> to a vertical side of the square, probability <math>\frac{1}{4}</math> to a horizontal side, probability <math>\frac{1}{4}</math> to a border horizontal point, and probability <math>\frac{1}{4}</math> to a border vertical point.
+
+Now, let <math>x</math> denote the probability of the frog reaching a vertical side when it is at a border vertical point. Similarly, let <math>y</math> denote the probability of the frog reaching a vertical side when it is at a border horizontal point.
+Now, the probability of the frog reaching a vertical side of the square at any location inside the square can be expressed in terms of <math>x</math> and <math>y</math>.
+
+First, the two easier ones: <math>P_{center}=\frac{1}{2}x+\frac{1}{2}y</math>, and <math>P_{corner}=\frac{1}{4}+\frac{1}{4}x+\frac{1}{4}y</math>.
+Now, we can write <math>x</math> and <math>y</math> in terms of <math>x</math> and <math>y</math>, allowing us to solve a system of two variables:
+<cmath>x=\frac{1}{4}+\frac{1}{4}P_{center}+\frac{1}{2}P_{corner}=\frac{1}{4}+\frac{1}{4}\left(\frac{1}{2}x+\frac{1}{2}y\right)+\frac{1}{2}\left(\frac{1}{4}+\frac{1}{4}x+\frac{1}{4}y\right)</cmath>
+and <cmath>y=\frac{1}{4}P_{center}+\frac{1}{2}P_{corner}=\frac{1}{4}\left(\frac{1}{2}x+\frac{1}{2}y\right)+\frac{1}{2}\left(\frac{1}{4}+\frac{1}{4}x+\frac{1}{4}y\right).</cmath>
+From these two equations, it is apparent that <math>y=x-\frac{1}{4}</math>. We can then substitute this value for <math>y</math> back into any of the two equations above to get <cmath>x=\frac{1}{4}+\frac{1}{4}\left(\frac{1}{2}x+\frac{1}{2}\left(x-\frac{1}{4}\right)\right)+\frac{1}{2}\left(\frac{1}{4}+\frac{1}{4}x+\frac{1}{4}\left(x-\frac{1}{4}\right)\right).</cmath> Although this certainly looks intimidating, we can expand the parentheses and multiply both sides by 16 to eliminate the fractions, which upon simplification yields the equation <cmath>16x=5+8x,</cmath> giving us the desired probability <math>x=\frac{5}{8}</math>. The answer is then <math>\boxed{\textbf{(B) }\frac{5}{8}}</math>.
+
+- curiousmind888 & TGSN
+
+
+=== Problem 14 ===
+Real numbers
+
+Choices: {'A': '\\ 360', 'B': '\\ 400', 'C': '\\ 420', 'D': '\\ 440', 'E': '\\ 480</math>'}
+Answer: D
+
+--- Solution 1 ---
+<cmath>x + \frac{x^3}{y^2} + \frac{y^3}{x^2} + y=x+\frac{x^3}{y^2}+y+\frac{y^3}{x^2}=\frac{x^3}{x^2}+\frac{y^3}{x^2}+\frac{y^3}{y^2}+\frac{x^3}{y^2}</cmath>
+
+Continuing to combine <cmath>\frac{x^3+y^3}{x^2}+\frac{x^3+y^3}{y^2}=\frac{(x^2+y^2)(x^3+y^3)}{x^2y^2}=\frac{(x^2+y^2)(x+y)(x^2-xy+y^2)}{x^2y^2}</cmath>
+From the givens, it can be concluded that <math>x^2y^2=4</math>. Also, <cmath>(x+y)^2=x^2+2xy+y^2=16</cmath> This means that <math>x^2+y^2=20</math>. Substituting this information into <math>\frac{(x^2+y^2)(x+y)(x^2-xy+y^2)}{x^2y^2}</math>, we have <math>\frac{(20)(4)(22)}{4}=20\cdot 22=\boxed{\textbf{(D)}\ 440}</math>.
+
+--- Solution 2 ---
+As above, we need to calculate <math>\frac{(x^2+y^2)(x^3+y^3)}{x^2y^2}</math>. Note that <math>x,y,</math> are the roots of <math>x^2-4x-2</math> and so <math>x^3=4x^2+2x</math> and <math>y^3=4y^2+2y</math>. Thus <math>x^3+y^3=4(x^2+y^2)+2(x+y)=4(20)+2(4)=88</math> where <math>x^2+y^2=20</math> and <math>x^2y^2=4</math> as in the previous solution. Thus the answer is <math>\frac{(20)(88)}{4}=\boxed{\textbf{(D)}\ 440}</math>. Note(<math>x^2+y^2=(x+y)^2-2xy=20</math>, and <math>x^2y^2 = (xy)^2 = 4</math>)
+
+--- Solution 3 ---
+Note that <math>( x^3 + y^3 ) ( \frac{1}{y^2} + \frac{1}{x^2} ) = x + \frac{x^3}{y^2} + \frac{y^3}{x^2} + y.</math> Now, we only need to find the values of <math>x^3 + y^3</math> and <math>\frac{1}{y^2} + \frac{1}{x^2}.</math> <br>
+<br>
+Recall that <math>x^3 + y^3 = (x + y) (x^2 - xy + y^2),</math> and that <math>x^2 - xy + y^2 = (x + y)^2 - 3xy.</math> We are able to solve the second equation, and doing so gets us <math>4^2 - 3(-2) = 22.</math> Plugging this into the first equation, we get <math>x^3 + y^3 = 4(22) = 88.</math> <br>
+<br>
+In order to find the value of <math>\frac{1}{y^2} + \frac{1}{x^2},</math> we find a common denominator so that we can add them together. This gets us <math>\frac{x^2}{x^2 y^2} + \frac{y^2}{x^2 y^2} = \frac{x^2 + y^2}{(xy)^2}.</math> Recalling that <math>x^2 + y^2 = (x+y)^2 - 2xy</math> and solving this equation, we get <math>4^2 - 2(-2) = 20.</math> Plugging this into the first equation, we get <math>\frac{1}{y^2} + \frac{1}{x^2} = \frac{20}{(-2)^2} = 5.</math> <br>
+<br>
+Solving the original equation, we get <math>x + \frac{x^3}{y^2} + \frac{y^3}{x^2} + y = (88)(5) = \boxed{\textbf{(D)}\ 440}.</math> ~[[User:emerald_block|emerald_block]]
+
+==Solution 3.5 (Binomial Theorem and Sum of Cubes, not that messy)== 
+
+The expression can be rewritten as: 
+
+<cmath>x + y + \frac{x^3}{y^2} + \frac{y^3}{x^2} = \frac{x^5 + y^5}{(xy)^2} + (x + y)</cmath> 
+
+Plug in what we know: 
+
+<cmath>\frac{x^5 + y^5}{4} + 4</cmath> 
+
+Use Binomial Theorem to expand and simplify the numerator of the fraction: 
+
+<cmath>x^5 + y^5 = (x + y)^5 - 5(x^4y + xy^4 + 2x^3y^2 + 2x^2y^3)</cmath>
+<cmath>= (x + y)^5 -5xy((x + y)^3 - xy(x + y))</cmath> 
+<cmath>= 4^5 + 10(4^3 + 8).</cmath> 
+
+Plug this back into the expression to finally get: 
+
+<cmath>\frac{4^5 + 10(4^3 + 8)}{4} + 4 = 4^4 + 10(4^2 + 2) + 4 = 256 + 180 + 4 = \boxed{440}.</cmath> 
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 4 ---
+This is basically bashing using Vieta's formulas to find <math> x </math> and <math> y </math> (which I highly do not recommend, I only wrote this solution for fun).
+
+We use Vieta's to find a quadratic relating <math> x </math> and <math> y </math>. We set <math> x </math> and <math> y </math> to be the roots of the quadratic <math> Q ( n ) = n^2 - 4n - 2 </math> (because <math> x + y = 4 </math>, and <math> xy = -2 </math>). We can solve the quadratic to get the roots <math> 2 + \sqrt{6} </math> and <math> 2 - \sqrt{6} </math>. <math> x </math> and <math> y </math> are "interchangeable" (WLOG, without loss of generality, we could have <math>x</math> equal one and <math>y</math> equal the other), meaning that it doesn't matter which solution <math> x </math> or <math> y </math> is, because it'll return the same result when plugged in. So we plug in <math> 2 + \sqrt{6} </math> for <math> x </math> and <math> 2 - \sqrt{6} </math> and get <math> \boxed{\textbf{(D)}\ 440} </math> as our answer.
+
+--- Solution 5 ---
+This usually wouldn't work for most problems like this, but we're lucky that we can quickly expand and factor this expression in this question.
+
+We first change the original expression to <math>4 + \frac{x^5 + y^5}{x^2 y^2}</math>, because <math>x + y = 4</math>. This is equal to <math>4 + \frac{(x + y)(x^4 - x^3 y + x^2 y^2 - x y^3 + y^4)}{4} = x^4 + y^4 - x^3 y - x y^3 + 8</math>. We can factor and reduce <math>x^4 + y^4</math> to <math>(x^2 + y^2)^2 - 2 x^2 y^2 = ((x + y)^2 - 2xy)^2 - 8 = 400 - 8 = 392</math>. Now our expression is just <math>400 - (x^3 y + x y^3)</math>. We factor <math>x^3 y + x y^3</math> to get <math>(xy)(x^2 + y^2) = -40</math>. So the answer would be <math>400 - (-40)
+ = \boxed{\textbf{(D)} 440} </math>.
+
+--- Solution 6 ---
+We first simplify the expression to <cmath>x + y + \frac{x^5 + y^5}{x^2y^2}.</cmath>
+Then, we can solve for <math>x</math> and <math>y</math> given the system of equations in the problem.
+Since <math>xy = -2,</math> we can substitute <math>\frac{-2}{x}</math> for <math>y</math>. 
+Thus, this becomes the equation <cmath>x - \frac{2}{x} = 4.</cmath>
+Multiplying both sides by <math>x</math>, we obtain <math>x^2 - 2 = 4x,</math> or 
+<cmath>x^2 - 4x - 2 = 0.</cmath>
+By the quadratic formula we obtain <math>x = 2 \pm \sqrt{6}</math>. 
+We also easily find that given <math>x = 2 \pm \sqrt{6}</math>, <math>y</math> equals the conjugate of <math>x</math>. 
+Thus, plugging our values in for <math>x</math> and <math>y</math>, our expression equals
+<cmath>4 + \frac{(2 - \sqrt{6})^5 + (2 + \sqrt{6})^5}{(2 - \sqrt{6})^2(2 + \sqrt{6})^2}</cmath>
+By the binomial theorem, we observe that every second terms of the expansions <math>x^5</math> and <math>y^5</math> will cancel out (since a positive plus a negative of the same absolute value equals zero). We also observe that the other terms not canceling out are doubled when summing the expansions of <math>x^5 + y^5</math>.
+Thus, our expression equals
+<cmath>4 + \frac{2(2^5 + \tbinom{5}{2}2^3 \times 6 + \tbinom{5}{4}2 \times 36)}{(2 - \sqrt{6})^2(2 + \sqrt{6})^2}.</cmath>
+which equals
+<cmath>4 + \frac{2(872)}{4}</cmath>
+which equals <math>\boxed{\textbf{(D)} 440}</math>.
+
+--- Solution 7 ---
+As before, simplify the expression to <cmath>x + y + \frac{x^5 + y^5}{x^2y^2}.</cmath>
+Since <math>x + y = 4</math> and <math>x^2y^2 = 4</math>, we substitute that in to obtain <cmath> 4 + \frac{x^5 + y^5}{4}.</cmath>
+Now, we must solve for <math>x^5 + y^5</math>. Start by squaring <math>x + y</math>, to obtain <cmath>x^2 + 2xy + y^2 = 16</cmath>
+Simplifying, <math>x^2 + y^2 = 20</math>. Squaring once more, we obtain <cmath>x^4 + y^4 + 2x^2y^2 = 400</cmath>
+Once again simplifying, <math>x^4 + y^4 = 392</math>. Now, to obtain the fifth powers of <math>x</math> and <math>y</math>, we multiply both sides by <math>x + y</math>.
+We now have 
+<cmath>x^5 + x^4y + xy^4 + y^5 = 1568</cmath>,                                                                                     or 
+<cmath>x^5 + y^5 + xy(x^3 + y^3) = 1568</cmath>
+We now solve for <math>x^3 + y^3</math>. <math>(x + y)^3=x^3 + y^3 + 3xy(x + y) = 64</math>, so <math>x^3 + y^3 = 88</math>. 
+Plugging this back into<math>x^5 + x^4y + xy^4 + y^5 = 1568</math>, we find that <math>x^5 + y^5 = 1744</math>, so we have <cmath> 4 + \frac{1744}{4}.</cmath>. This equals 440, so our answer is <math>\boxed{\textbf{(D)} 440}</math>.
+
+--- Solution 8 ---
+We can use Newton Sums to solve this problem.
+We start by noticing that we can rewrite the equation as <math>\frac{x^3}{y^2} + \frac{y^3}{x^2} + x + y.</math>
+Then, we know that <math>x + y = 4,</math> so we have <math>\frac{x^3}{y^2} + \frac{y^3}{x^2} + 4.</math>
+We can use the equation <math>x \cdot y = -2</math> to write <math>x = \frac{-2}{y}</math> and <math>y = \frac{-2}{x}.</math>
+Next, we can plug in these values of <math>x</math> and <math>y</math> to get <math>\frac{x^3}{y^2} + \frac{y^3}{x^2} = \frac{x^5}{4} + \frac{y^5}{4},</math> which is the same as <cmath>\frac{x^3}{y^2} + \frac{y^3}{x^2} = \frac{x^5 + y^5}{4}.</cmath>
+Then, we use Newton sums where <math>S_n</math> is the elementary symmetric sum of the sequence and <math>P_n</math> is the power sum (<math>x^n + y^n</math>). Using this, we can make the following Newton sums:
+<cmath>P_1 = S_1</cmath>
+<cmath>P_2 = P_1 S_1 - 2S_2</cmath>
+<cmath>P_3 = P_2 S_1 - P_1 S_2</cmath>
+<cmath>P_4 = P_3 S_1 - P_2 S_2</cmath>
+<cmath>P_5 = P_4 S_1 - P_3 S_2.</cmath>
+We also know that <math>S_1</math> is 4 because <math>x + y</math> is four, and we know that <math>S_2</math> is <math>-2</math> because <math>x \cdot y</math> is <math>-2</math> as well.
+Then, we can plug in values! We have
+<cmath>P_1 = S_1 = 4</cmath>
+<cmath>P_2 = P_1 S_1 - 2S_2 = 16 - (-4) = 20</cmath>
+<cmath>P_3 = P_2 S_1 - P_1 S_2 = 80 - (-8) = 88</cmath>
+<cmath>P_4 = P_3 S_1 - P_2 S_2 = 88 \cdot 4 - (-40) = 392</cmath>
+<cmath>P_5 = P_4 S_1 - P_3 S_2 = 392 \cdot 4 - (-2) \cdot 88 = 1744.</cmath>
+We earlier noted that <math>\frac{x^3}{y^2} + \frac{y^3}{x^2} = \frac{x^5 + y^5}{4},</math> so we have that this equals <math>\frac{1744}{4},</math> or <math>436.</math> Then, plugging this back into the original equation, this is <math>436 + 4</math> or <math>440,</math> so our answer is <math>\boxed{\textbf{(D)}\ 440}.</math>
+
+--- Solution 9 ---
+As in the first solution, we get the expression to be <math>\frac{x^3+y^3}{x^2} + \frac{x^3+y^3}{y^2}.</math>
+
+Then, since the numerators are the same, we can put the two fractions as a common denominator and multiply the numerator by <math>x^2y^2.</math> This gets us <math>\frac{(x^2 + y^2)(x^3 + y^3)}{x^2y^2}.</math>
+
+Now, since we know <math>x+y=4</math> and <math>xy=-2,</math> instead of solving for <math>x</math> and <math>y,</math> we will try to manipulate the above expression them into a manner that we can substitute the sum and product that we know. Also, another form of <math>x^3+y^3</math> is <math>(x+y)(x^2-xy+y^2).</math>
+
+Thus, we can convert the current expression to <math>\frac{(x^2 + y^2)(x+y)(x^2-xy+y^2)}{x^2y^2}.</math>
+
+Doing some algebraic multiplications, we get <math>\frac{((x+y)^2 - 2xy)(x+y)((x+y)^2 - 3xy)}{(xy)^2}.</math>
+
+Since we know <math>x+y=4</math> and <math>xy=-2,</math> we have <math>\frac{(16-(-4))(4)(16-(-6))}{4} = \frac{20 \cdot 4 \cdot 22}{4} = 20 \cdot 22 = 440.</math>
+
+Therefore the answer is <math>\boxed{\textbf{(D)} 440}.</math>
+
+--- Solution 10 ---
+We give all of the terms in this expression a common denominator. <math>x + \frac{x^3}{y^2} + \frac{y^3}{x^2} + y = \frac{x^3y^2 + x^5 + y^5 + x^2y^3}{x^2y^2}</math>. We can find <math>x^2y^2 = (xy)^2 = (-2)^2 = 4</math> and we can find <math>x^3y^2 + x^2y^3 = x^2y^2(x + y) = 16</math>. Our expression <math>\frac{xy^2 + x^5 + y^5 + x^2y}{x^2y^2}</math> is now <math>\frac{16 + x^5 + y^5}{4}</math>. Now all we need to find is <math>x^5 + y^5</math>. Using the binomial theorem, <math>(x + y)^5 = x^5 + 5x^4y + 10x^3y^2 + 10x^2y^3 + 5xy^4 + y^5 = 4^5 = 1024</math>. The extra terms that we don't need is <math>5x^4y + 10x^3y^2 + 10x^2y^3 + 5xy^4 = 5xy(x^3 + y^3) + 10x^2y^2(x + y) = -10(x^3 + y^3) + 160</math>. What's <math>x^3 + y^3</math>? We use the same method. Using the binomial theorem, <math>(x + y)^3 = x^3 + 3x^2y + 3xy^2 + y^3 = x^3 + y^3 + 3xy(x + y) = x^3 + y^3 - 24 = 4^3 = 64</math>. Now we know that <math>x^3 + y^3 = 64 + 24 = 88</math>, and plugging that into <math>-10(x^3 + y^3) + 160</math> gives <math>-10(88) + 160 = -880 + 160 = -720</math>. Now we see that those extra terms have a sum of <math>-720</math>. Thus <math>(x + y)^5 = x^5 + y^5 - 720 = 1024</math> so <math>x^5 + y^5 = 1024 + 720 = 1744</math>. Remember our goal: we want to find <math>\frac{-8 + x^5 + y^5}{4}</math>. Using <math>x^5 + y^5 = 1744</math>, <math>\frac{16 + x^5 + y^5}{4} = \frac{16 + 1744}{4} = \frac{1760}{4} = \boxed{\textbf{(D)}\ 440}</math>.
+
+--- Solution 11 ---
+Since we know <math>x+y=4</math>, we can simplify to <math>4 + \frac{x^3}{y^2} + \frac{y^3}{x^2}</math>. Then, when you add the fractions, you get <math>\frac{x^5 + y^5}{x^2y^2} = \frac{x^5 + y^5}{4}</math>. To find <math>x^5 + y^5</math>, we expand <math>(x+y)^5 = 4^5</math> and then simplify. <math>x^5+y^5+5x^4y+5xy^4+10x^3y^2+10x^2y^3 = 1024</math>. We can use the fact that <math>xy = -2</math> to simplify to <math>x^5 + y^5-10x^3 - 10y^3 + 40x + 40y = 1024</math>. We can factor to get <math>x^5 + y^5 -10(x^3 + y^3) +40(x+y)</math>. To find <math>x^3 + y^3</math>, we simplify <math>(x+y)^3 = 4^3</math>. <math>x^3+y^3+3x^2y+3y^2x = 64</math>. We can use the same process as we did before and get <math>x^3 + y^3 -6(x+y) = 64</math>(using the fact that <math>xy = -2</math>). Therefore, <math>x^3 + y^3 = 88</math>. Now, plugging it back in to our other expansion, we get <math>x^5 + y^5 + 160 - 880 = 1024</math>. <math>x^5 +y^5 = 1744</math>. Now to get the final answer, all we need to do is to plug it back into the original equation and get <math>\frac{1744}{4} + 4 = \boxed{\textbf{(D)}\ 440}</math>.
+
+--- Solution 12 ---
+We have \( x+y = 4 \) and \( xy = -2 \). We solve for \( x \) to get either \( 2 + \sqrt{6} \) or \( 2 - \sqrt{6} \), and WLOG, we say \( x = 2+\sqrt{6} \) and \( y = 2 - \sqrt{6} \). \( \sqrt{6} \) is about 2.44, We then substitute \( \sqrt{6} = 2.44 \) for \( x \) and \( y \), yielding \( x = 4.44 \) and \( y = -0.44 \). We now have \( x+ \frac{x^3}{y^2} + \frac{y^3}{x^2} + y \). \( x+y = 4 \), so we now have \( 4 + \frac{x^3}{y^2} + \frac{y^3}{x^2} \). Substituting the respective values of \( x \) and \( y \) yields 4 + 456 + a negative number, and we get \(460 - n\), where \(n\) is a positive number. We look at our answer choices and see that \(460-n\) lies between <math>\boxed{\textbf{(D)}\ 440}</math> and <math>\boxed{\textbf{(E)}\ 480}</math>, but because we have a negative number, <math>\boxed{\textbf{(E)}\ 480}</math> is not possible. So our answer is <math>\boxed{\textbf{(D)}\ 440}</math>, and we're done.
+
+(Note from Pinotation: Not the most ideal solution, but it works).
+
+
+=== Problem 15 ===
+A positive integer divisor of
+
+Choices: {'A': '\\ 3', 'B': '\\ 5', 'C': '\\ 12', 'D': '\\ 18', 'E': '\\ 23</math>'}
+Answer: E
+
+--- Solution 1 ---
+The prime factorization of <math>12!</math> is <math>2^{10} \cdot 3^5 \cdot 5^2 \cdot 7 \cdot 11</math>. 
+This yields a total of <math>11 \cdot 6 \cdot 3 \cdot 2 \cdot 2</math> divisors of <math>12!.</math>
+In order to produce a perfect square divisor, there must be an even exponent for each number in the prime factorization. Note that the divisor can't have any factors of <math>7</math> and <math>11</math> in the prime factorization because there is only one of each in <math>12!.</math> Thus, there are <math>6 \cdot 3 \cdot 2</math> perfect squares. (For <math>2</math>, you can have <math>0</math>, <math>2</math>, <math>4</math>, <math>6</math>, <math>8</math>, or <math>10</math> <math>2</math>s, etc.)
+The probability that the divisor chosen is a perfect square is <cmath>\frac{6\cdot 3\cdot 2}{11\cdot 6\cdot 3\cdot 2\cdot 2}=\frac{1}{22} \implies \frac{m}{n}=\frac{1}{22} \implies m\ +\ n = 1\ +\ 22 = \boxed{\textbf{(E) } 23 }</cmath>
+
+
+=== Problem 16 ===
+A point is chosen at random within the square in the coordinate plane whose vertices are
+
+Choices: {'A': '0.3', 'B': '0.4', 'C': '0.5', 'D': '0.6', 'E': '0.7</math>'}
+Answer: B
+
+--- Solution 1 ---
+We consider an individual one-by-one block.
+
+If we draw a quarter of a circle from each corner (where the lattice points are located), each with radius <math>d</math>, the area covered by the circles should be <math>0.5</math>. Because of this, and the fact that there are four circles, we write
+
+<cmath>4 \cdot \frac{1}{4} \cdot \pi d^2 = \frac{1}{2}</cmath>
+
+Solving for <math>d</math>, we obtain <math>d = \frac{1}{\sqrt{2\pi}}</math>, where with <math>\pi \approx 3</math>, we get <math>d \approx \frac{1}{\sqrt{6}} \approx \dfrac{1}{2.5} = \dfrac{10}{25} = \dfrac{2}{5}</math>, and from here, we see that <math>d \approx 0.4 \implies \boxed{\textbf{(B) } 0.4}.</math> 
+
+
+
+<math>\textbf{Note:}</math> To be more rigorous, note that <math>d<0.5</math> since if <math>d\geq0.5</math> then clearly the probability is greater than <math>\frac{1}{2}</math>. This would make sure the above solution works, as if <math>d\geq0.5</math> there is overlap with the quartercircles. <math>\textbf{- Emathmaster}</math>
+
+--- Solution 2 ---
+As in the previous solution, we obtain the equation <math>4 \cdot \frac{1}{4} \cdot \pi d^2 = \frac{1}{2}</math>, which simplifies to <math>\pi d^2 = \frac{1}{2} = 0.5</math>. Since <math>\pi</math> is slightly more than <math>3</math>, <math>d^2</math> is slightly less than <math>\frac{0.5}{3} = 0.1\bar{6}</math>. We notice that <math>0.1\bar{6}</math> is slightly more than <math>0.4^2 = 0.16</math>, so <math>d</math> is roughly <math>\boxed{\textbf{(B) } 0.4}.</math> ~[[User:emerald_block|emerald_block]]
+
+--- Solution 3 ---
+As above, we find that we need to estimate <math>d = \frac{1}{\sqrt{2\pi}}</math>. 
+
+Note that we can approximate <math>2\pi \approx 6.28318 \approx 6.25</math> and so <math>\frac{1}{\sqrt{2\pi}}</math> <math>\approx \frac{1}{\sqrt{6.25}}=\frac{1}{2.5}=0.4</math>.
+
+And so our answer is <math>\boxed{\textbf{(B) } 0.4}</math>.
+
+--- Solution 4 ---
+We only need to figure out the probability for a unit square, as it will scale up to the <math>2020\times 2020</math> square. Since we want to find the probability that a point inside a unit square that is <math>d</math> units away from a lattice point (a corner of the square) is <math>\frac{1}{2}</math>, we can find which answer will come the closest to covering <math>\frac{1}{2}</math> of the area. 
+
+Since the closest is <math>0.4</math> which turns out to be <math>(0.4)^2\times \pi = 0.16 \times \pi</math> which is about <math>0.502</math>, we find that the answer rounded to the nearest tenth is <math>0.4</math> or <math>\boxed{\textbf{(B)}}</math>.
+
+--- Solution 5 ---
+As per the above diagram, realize that <math>\pi d^2 = \frac{1}{2}</math>, so <math>d = \frac{1}{(\sqrt{2})(\sqrt{\pi})}</math>.
+
+<math>\sqrt{2} \approx 1.4 = \frac{7}{5}</math>.
+
+<math>\sqrt{\pi}</math> is between <math>1.7</math> and <math>1.8</math> <math>((1.7)^2 = 2.89</math> and <math>(1.8)^2 = 3.24)</math>, so we can say <math>\sqrt{\pi} \approx 1.75 = \frac{7}{4}</math>.
+
+So <math>d \approx \frac{1}{(\frac{7}{5})(\frac{7}{4})} = \frac{1}{\frac{49}{20}} = \frac{20}{49}</math>. This is slightly above <math>\boxed{\textbf{(B) } 0.4}</math>, since <math>\frac{20}{49} \approx \frac{2}{5}</math>.
+
+-Solution by Joeya
+
+--- Solution 6 ---
+As above, we have the equation <math>\pi d^2 = \frac{1}{2}</math>, and we want to find the most accurate value of <math>d</math>. We resort to the answer choices and can plug those values of <math>d</math> in and see which value of <math>d</math> will lead to the most accurate value of <math>\pi</math>.
+
+Starting off in the middle, we try option C with <math>d=0.5</math>. Plugging this in, we get <math>\pi \left(\frac{1}{2}\right)^2 = \frac{1}{2},</math> and after simplifying we get <math>\pi = \frac{1}{2} \cdot 4 = 2.</math> 
+That's not very good. We know <math>\pi \approx 3.14.</math> 
+
+Let's see if we can do better. Trying option A with <math>d = 0.3,</math> we get <math>\pi = \frac{1}{2} \cdot \frac{100}{9} = \frac{50}{9} = 5 \frac{5}{9}.</math> 
+
+Hm, let's try option B with <math>d = 0.4.</math> We get <math>\pi = \frac{1}{2} \cdot \frac{25}{4} = \frac{25}{8} = 3 \frac{1}{8}</math>. This is very close to <math>\pi</math> and is the best estimate for <math>\pi</math> of the 5 options. 
+
+Therefore, the answer is <math>\boxed{\textbf{(B) } 0.4}.</math> 
+
+== Solution 7 (Sol. 1, but rigorous (and excessive)) ==
+
+PLEASE NOTE: Solution 1 IS rigorous. Say there are <math>k</math> unit squares (it doesn't matter how many). There is a <math>\frac{1}k</math> probability the point is in some unit square. There is a <math>\pi d^2</math> probability the point is in the shaded region. So, there is a <math>\frac{1}k \pi d^2 \cdot k = \pi d^2</math> probability the point is in any shaded region (since there are <math>k</math> unit squares). 
+
+Let <math>n</math> be the side length of a square. When <math>n=1</math>, the shaded areas represent half of the total area: 
+<asy>
+size(10cm);
+draw((0,0)--(1,0)--(1,1)--(0,1)--cycle);
+filldraw((arc((0,0), 0.3989, 0, 90))--(0,0)--cycle, gray);
+draw(arc((1,0), 0.3989, 90, 180));
+filldraw((arc((1,0), 0.3989, 90, 180))--(1,0)--cycle, gray);
+draw(arc((1,1), 0.3989, 180, 270));
+filldraw((arc((1,1), 0.3989, 180, 270))--(1,1)--cycle, gray);
+draw(arc((0,1), 0.3989, 270, 360));
+filldraw(arc((0,1), 0.3989, 270, 360)--(0,1)--cycle, gray);
+</asy>
+
+When <math>n=2</math>: 
+<asy>
+size(10cm);
+filldraw((arc((0,0), 0.1994, 0, 90))--(0,0)--cycle, gray);
+draw(arc((1,0), 0.1994, 90, 180));
+filldraw((arc((1,0), 0.1994, 90, 180))--(1,0)--cycle, gray);
+draw(arc((1,1), 0.1994, 180, 270));
+filldraw((arc((1,1), 0.1994, 180, 270))--(1,1)--cycle, gray);
+draw(arc((0,1), 0.1994, 270, 360));
+filldraw(arc((0,1), 0.1994, 270, 360)--(0,1)--cycle, gray);
+draw(arc((0.5,0.5), 0.1994,0,360));
+filldraw(arc((0.5,0.5), 0.1994,0,360)--(0.5,0.5)--cycle, gray);
+draw(arc((0.5,0), 0.1994,0,180));
+filldraw(arc((0.5,0), 0.1994,0,180)--(0.5,0)--cycle, gray);
+draw(arc((0,0.5), 0.1994,-90,90));
+filldraw(arc((0,0.5), 0.1994,-90,90)--(0,0.5)--cycle, gray);
+filldraw(arc((1,0.5), 0.1994,90,270)--(1,0.5)--cycle, gray);
+filldraw(arc((0.5,1), 0.1994,0,-180)--(0.5,1)--cycle, gray);
+
+draw((0,0)--(0.5,0)--(0.5,1)--(0,1)--(0,0)--(1,0)--(1,1)--(0,1)--(0,0.5)--(1,0.5));
+</asy>
+
+For <math>n=3</math>: 
+
+<asy>size(10cm);
+
+filldraw(arc((0,0),0.1330,0,90)--(0,0)--cycle, gray);
+filldraw(arc((0,1),0.1330,-90,0)--(0,1)--cycle, gray);
+filldraw(arc((1,0),0.1330,90,180)--(1,0)--cycle, gray);
+filldraw(arc((1,1),0.1330,-180,-90)--(1,1)--cycle, gray);
+
+filldraw(arc((0.333,0.333),0.133,0,360)--(0.333,0.333)--cycle, gray);
+filldraw(arc((0.667,0.333),0.133,0,360)--(0.667,0.333)--cycle, gray);
+filldraw(arc((0.333,0.667),0.133,0,360)--(0.333,0.667)--cycle, gray);
+filldraw(arc((0.667,0.667),0.133,0,360)--(0.667,0.667)--cycle, gray);
+
+filldraw(arc((0.333,0),0.133,0,180)--(0.333,0)--cycle, gray);
+filldraw(arc((0.667,0),0.133,0,180)--(0.667,0)--cycle, gray);
+filldraw(arc((0.333,1),0.133,-180,0)--(0.333,1)--cycle, gray);
+filldraw(arc((0.666,1),0.133,-180,0)--(0.666,1)--cycle, gray);
+filldraw(arc((0,0.333),0.133,-90,90)--(0,0.333)--cycle, gray);
+filldraw(arc((0,0.667),0.133,-90,90)--(0,0.667)--cycle, gray);
+filldraw(arc((1,0.333),0.133,90,270)--(1,0.333)--cycle, gray);
+filldraw(arc((1,0.667),0.133,90,270)--(1,0.667)--cycle, gray);
+
+draw((0,0)--(0,1)--(0.333,1)--(0.333,0)--(0.667,0)--(0.667,1)--(1,1)--(1,0)--(0,0)--(0,0.333)--(1,0.333)--(1,0.667)--(0,0.667));
+draw((0.333,1)--(0.667,1));</asy>
+
+We can calculate the total number of shaded circles given some <math>n</math>. There are <math>(n-1)^2</math> full circles on the inside, <math>4(n-1)</math> semicircles on the sides, and <math>4</math> quarter circles for the corners. 
+
+Full circles are, of course, worth one circle. Semicircles are worth half a circle each, and quarter circles are worth <math>\dfrac14</math> of a circle. Thus, weighing our sum gives <math>(n-1)^2+\dfrac{4(n-1)}2+\dfrac44=n^2-2n+1+2(n-1)+1=n^2-2n+2n+2-2=n^2.</math> Thus, there is <math>n^2\cdot\pi r^2</math> worth of the shaded area for any <math>n</math>, and since the area of each circle is <math>\pi r^2</math> if <math>r</math> is the radius of each. 
+
+We want the ratio of this shaded area to the entire to be <math>\dfrac12</math>. The area of the entire square is <math>n^2</math>, so dividing, we see that <math>\dfrac{n^2\cdot\pi r^2}{n^2}=\pi r^2=\dfrac12</math>. 
+
+The rest is the same as solution <math>1</math>.
+
+
+=== Problem 17 ===
+Define<cmath>P(x) =(x-1^2)(x-2^2)\cdots(x-100^2).</cmath>How many integers
+
+Choices: {'A': '4900', 'B': '4950', 'C': '5000', 'D': '5050', 'E': '5100</math>'}
+Answer: E
+
+--- Solution 1 ---
+We perform casework on <math>P(n)\leq0:</math>
+<ol style="margin-left: 1.5em;">
+  <li><math>P(n)=0</math></li><p>
+In this case, there are <math>100</math> such integers <math>n:</math> <cmath>1^2,2^2,3^2,\ldots,100^2.</cmath>
+  <li><math>P(n)<0</math></li><p>
+There are <math>100</math> factors in <math>P(x),</math> and we need an odd number of them to be negative. We construct the table below:
+<cmath>\begin{array}{c|c|c}
+& & \\ [-2.5ex]
+\textbf{Interval of }\boldsymbol{x} & \boldsymbol{\#}\textbf{ of Negative Factors} & \textbf{Valid?} \\ [0.5ex]
+\hline
+& & \\ [-2ex]
+\left(-\infty,1^2\right) & 100 & \\ [0.5ex]
+\left(1^2,2^2\right) & 99 & \checkmark \\ [0.5ex]
+\left(2^2,3^2\right) & 98 & \\ [0.5ex]
+\left(3^2,4^2\right) & 97 & \checkmark \\ [0.5ex]
+\left(4^2,5^2\right) & 96 & \\ [0.5ex]
+\left(5^2,6^2\right) & 95 & \checkmark \\ [0.5ex]
+\left(6^2,7^2\right) & 94 & \\
+\vdots & \vdots & \vdots \\ [0.75ex]
+\left(99^2,100^2\right) & 1 & \checkmark \\ [0.5ex]
+\left(100^2,\infty\right) & 0 &  \\ [0.5ex]
+\end{array}</cmath>
+Note that there are <math>50</math> valid intervals of <math>x.</math> We count the integers in these intervals: 
+<cmath>\begin{align*}
+\left(2^2-1^2-1\right)+\left(4^2-3^2-1\right)+\left(6^2-5^2-1\right)+\cdots+\left(100^2-99^2-1\right)&=\underbrace{\left(2^2-1^2\right)}_{(2+1)(2-1)}+\underbrace{\left(4^2-3^2\right)}_{(4+3)(4-3)}+\underbrace{\left(6^2-5^2\right)}_{(6+5)(6-5)}+\cdots+\underbrace{\left(100^2-99^2\right)}_{(100+99)(100-99)}-50 \\
+&=\underbrace{(2+1)+(4+3)+(6+5)+\cdots+(100+99)}_{1+2+3+4+5+6+\cdots+99+100}-50 \\
+&=\frac{101(100)}{2}-50 \\
+&=5000.
+\end{align*}</cmath>
+In this case, there are <math>5000</math> such integers <math>n.</math>
+</ol>
+Together, the answer is <math>100+5000=\boxed{\textbf{(E) } 5100}.</math>
+
+--- Solution 2 ---
+Notice that <math>P(x)</math> is nonpositive when <math>x</math> is between <math>100^2</math> and <math>99^2, 98^2</math> and <math>97^2, \cdots</math> , <math>2^2</math> and <math>1^2</math> (inclusive), because there are an odd number of negatives, which means that the number of values equals <cmath>((100+99)(100-99) + 1) + ((98+97)(98-97)+1) + \cdots + ((2+1)(2-1)+1).</cmath>
+This reduces to <cmath>200 + 196 + 192 + \cdots + 4 = 4(1+2+\cdots + 50) = 4 \cdot\frac{50 \cdot 51}{2} = \boxed{\textbf{(E) } 5100}.</cmath>
+
+--- Solution 3 ---
+We know that <math>P(x)</math> is a <math>100</math>-degree function with a positive leading coefficient. That is, <math>P(x)=x^{100}+ax^{99}+bx^{98}+...+\text{(constant)}</math>.
+
+Since the degree of <math>P(x)</math> is even, its end behaviors match. And since the leading coefficient is positive, we know that both ends approach <math>\infty</math> as <math>x</math> goes in either direction, from which <cmath>\lim_{x\to-\infty} P(x)=\lim_{x\to\infty} P(x)=\infty.</cmath> So the first time <math>P(x)</math> is going to be negative is when it intersects the <math>x</math>-axis at an <math>x</math>-intercept and it's going to dip below. This happens at <math>1^2</math>, which is the smallest intercept.
+
+However, when it hits the next intercept, it's going to go back up again into positive territory, we know this happens at <math>2^2</math>. And when it hits <math>3^2</math>, it's going to dip back into negative territory. Clearly, this is going to continue to snake around the intercepts until <math>100^2</math>.
+
+To get the amount of integers below and/or on the <math>x</math>-axis, we simply need to count the integers. For example, the amount of integers in between the <math>[1^2,2^2]</math> interval we got earlier, we subtract and add one. <math>(2^2-1^2+1)=4</math> integers, so there are four integers in this interval that produce a negative result. 
+
+Doing this with all of the other intervals, we have <cmath>(2^2-1^2+1)+(4^2-3^2+1)+\cdots+(100^2-99^2+1)=\boxed{\textbf{(E) } 5100}</cmath> from Solution 2's result.
+
+--- Solution 4 ---
+We know <math>P(x) \leq 0</math> when an odd number of its factors are positive and negative. For example, to make the first factor positive, <math>x \in [1^2, 2^2]</math>. then there will be a even number of positive factors. We would do <math>2^2 - 1^2 + 1 (\text{inclusive})</math> to find all integers that work. In short we can generalize too:
+<cmath>\begin{align*}
+x^2 - (x-1)^2 + 1 &= 2x \\
+x^2 - (x^2 - 2x + 1) + 1 &= 2x \\
+x^2 - x^2 + 2x - 1 + 1 &= 2x. \\
+\end{align*}</cmath>
+But remember this only works when <math>x \in \{2, 4, 6, 8 \cdots 98, 100\}</math> because only then will there be a odd amount of positive and negative factors. So we can set <math>x = 2k</math>, for <math>k \in \{1, 2, 3, 4, \cdots 49, 50\}</math> Now we only have to solve:
+<cmath>\sum_{k=1}^{50}2(2k) = 2\sum_{k = 1}^{50}2k = 4\sum_{k = 1}^{50}k = 4 \cdot \dfrac{(50)(51)}{2} = 2 \cdot (50)(51) = \boxed{\textbf{(E) } 5100}.</cmath>
+
+--- Solution 5 ---
+When looking at the question, it should immediately jump out that we need an odd number of terms to be negative. this means that we need to find the number of n such that <imath>(2k+1)^2 \leq n \leq (2k+2)^2</imath> for some <imath>0 \leq k \leq 49</imath> such that  <imath>k\in \mathbb{Z}/\mathbb{Z}^-</imath>
+<imath>\newline</imath>
+The number of integers <imath>n</imath> s.t. <imath>n\in [a,b]</imath> is <imath>b-a+1</imath> We want <imath>n\in [(2k+1)^2,(2k+2)^2]</imath> 
+<imath>\newline</imath>
+Thus, it is obvious we want to find <cmath>\sum_{k=0}^{49}{((2k+2)^2-(2k+1)^2+1)}</cmath>. 
+<imath>\newline</imath>
+If we do some investigation on the term inside the summation, we find that:
+<cmath>(2k+2)^2-(2k+1)^2+1 = (4k^2+8k+4)-(4k^2+4k+1)+1 = 4k+4</cmath>
+thus:  <cmath>\sum_{k=0}^{49}{((2k+2)^2-(2k+1)^2+1)} = \sum_{k=0}^{49}{4(k+1)} = 4\sum_{k=0}^{49}{(k+1)} = 4\sum_{k=1}^{50}{k}</cmath>
+The reason the last step works is that adding 1 inside the summation effectively shifts the bounds up by 1, as it turns k=0 into k=1, and so on.
+<cmath>4\sum_{k=1}^{50}{k} = 4\frac{(50)(51)}{2} = 2(50)(51) = 100(51) = \boxed{\textbf{(E) } 5100}</cmath>
+
+
+<imath>\newline</imath>
+Feel free to make changes/LaTeX optimizations
+
+--- Solution 6 ---
+Since <imath>P(x)</imath> starts off at infinity before <imath>x=1^2</imath> and goes back to infinity after <imath>x=100^2</imath>, we can draw a sign chart, and notice that every interval that starts where <imath>x</imath> is the square of an odd number and ends where <imath>x</imath> is the square of an even number, <imath>P(x)</imath> is nonpositive. We notice a pattern - from <imath>x=1</imath> to <imath>x=4</imath>, there are <imath>4</imath> integers. From <imath>x=9</imath> to <imath>x=16</imath>, there are <imath>8</imath> integers. So, the number of integers in each interval where <imath>P(x)</imath> is negative is part of an arithmetic sequence that starts at <imath>4</imath> and has common difference <imath>4</imath>. Since there are <imath>50</imath> such intervals (since every other interval has <imath>P(x)</imath> be nonpositive), the final number is <imath>200</imath>. So, the sum of this arithmetic series is <imath>\frac{4+200}{2} \cdot 50 = \boxed{\textbf{(E) } 5100}</imath>.
+
+
+== Solution Visual Aid ==
+Visualization that makes it easier to see solutions:
+
+<asy>
+size(600);
+
+// Draw the main number line (x-axis)
+draw((-5, 0) -- (5, 0), Arrow);  // Line from -10 to 10 with an arrow at the end
+draw((5, 0) -- (-5, 0), Arrow);  // Line from -10 to 10 with an arrow at the end
+
+// Add ticks and labels at each integer point from -10 to 10
+for (int i = -4; i <= 4; ++i) {
+    if (i != 0)
+    draw((i, -0.1) -- (i, 0.1));  // Tick mark
+    // label(string(i), (i, -0.5), S);  // Label each tick below the line
+}
+
+ label("$1^2$", (-4, -0.5), S);  // Label each tick below the line
+ label("$2^2$", (-3, -0.5), S);  // Label each tick below the line
+ label("$3^2$", (-2, -0.5), S);  // Label each tick below the line
+ label("$4^2$", (-1, -0.5), S);  // Label each tick below the line
+ label("\dots", (0, -0.5), S);  // Label each tick below the line
+ label("$97^2$", (1, -0.5), S);  // Label each tick below the line
+ label("$98^2$", (2, -0.5), S);  // Label each tick below the line
+ label("$99^2$", (3, -0.5), S);  // Label each tick below the line
+ label("$100^2$", (4, -0.5), S);  // Label each tick below the line
+
+label("$0$", (-4, 0.1), N);  // Label each tick below the line
+ label("$0$", (-3, 0.1), N);  // Label each tick below the line
+ label("$0$", (-2, 0.1), N);  // Label each tick below the line
+ label("$0$", (-1, 0.1), N);  // Label each tick below the line
+ label("$0$", (1, 0.1), N);  // Label each tick below the line
+ label("$0$", (2, 0.1), N);  // Label each tick below the line
+ label("$0$", (3, 0.1), N);  // Label each tick below the line
+ label("$0$", (4, 0.1), N);  // Label each tick below the line
+
+ label("$+$", (-4.5, 0), N);  // Label each tick below the line
+ label("$-$", (-3.5, 0), N);  // Label each tick below the line
+ label("$+$", (-2.5, 0), N);  // Label each tick below the line
+ label("$-$", (-1.5, 0), N);  // Label each tick below the line
+
+ label("$+$", (4.5, 0), N);  // Label each tick below the line
+ label("$-$", (3.5, 0), N);  // Label each tick below the line
+ label("$+$", (2.5, 0), N);  // Label each tick below the line
+ label("$-$", (1.5, 0), N);  // Label each tick below the line
+</asy>
+
+
+=== Problem 18 ===
+Let
+
+Choices: {'A': '48', 'B': '64', 'C': '96', 'D': '128', 'E': '192</math>'}
+Answer: C
+
+--- Solution 1 ---
+In order for <math>a\cdot d-b\cdot c</math> to be odd, consider parity. We must have (even)-(odd) or (odd)-(even). There are <math>2(2 + 4) = 12</math> ways to pick numbers to obtain an even product. There are <math>2 \cdot 2 = 4</math> ways to obtain an odd product. Therefore, the total amount of ways to make <math>a\cdot d-b\cdot c</math> odd is <math>2 \cdot (12 \cdot 4) = \boxed{\bold{(C)}\ 96}</math>.
+
+--- Solution 2 ---
+Consider parity. We need exactly one term to be odd, one term to be even. Because of symmetry, we can set <math>ad</math> to be odd and <math>bc</math> to be even, then multiply by <math>2.</math> If <math>ad</math> is odd, both <math>a</math> and <math>d</math> must be odd, therefore there are <math>2\cdot2=4</math> possibilities for <math>ad.</math> Consider <math>bc.</math> Let us say that <math>b</math> is even. Then there are <math>2\cdot4=8</math> possibilities for <math>bc.</math> However, <math>b</math> can be odd, in which case we have <math>2\cdot2=4</math> more possibilities for <math>bc.</math> Thus there are <math>12</math> ways for us to choose <math>bc</math> and <math>4</math> ways for us to choose <math>ad.</math> Therefore, also considering symmetry, we have <math>2 \cdot 4 \cdot 12= \boxed{ \text{(C) } 96}</math> total values of <math>ad-bc.</math>
+
+--- Solution 3 ---
+There are 4 ways to choose any number independently and 2 ways to choose any odd number independently.
+To get an even products, we count: <math>\text{P(any number)} \cdot \text{P(any number)}-\text{P(odd)}\cdot\text{P(odd)}</math>, which is <math>4 \cdot 4 - 2 \cdot 2=12</math>.
+The number of ways to get an odd product can be counted like so: <math>\text{P(odd)}\cdot\text{P(odd)}</math>, which is <math>2 \cdot 2</math>, or <math>4</math>.
+So, for one product to be odd the other to be even: <math>2 \cdot 4 \cdot 12= \boxed{ \text{(C) } 96}</math> (order matters).
+
+--- Solution 4 ---
+We use complementary counting: If the difference is even, then we can subtract those cases. There are a total of <math>4^4=256</math> cases.
+
+For an even difference, we have (even)-(even) or (odd-odd). 
+
+From Solution 3:
+
+"There are 4 ways to choose any number independently and 2 ways to choose any odd number independently.
+even products:(number)*(number)-(odd)*(odd): <math>4 \cdot 4 - 2 \cdot 2=12</math>.
+odd products: (odd)*(odd): <math>2 \cdot 2 =4</math>."
+
+With this, we easily calculate <math>256-12^2-4^2=\textbf{(C)96}</math>.
+
+--- Solution 5 ---
+As in solution 1, we must have (even)-(odd) or (odd)-(even). We see that there are two cases, if <math>ad</math> is even and <math>bc</math> is odd and if <math>ad</math> is odd and <math>bc</math> is even. Because of symmetry, we can multiply by two for when <math>ad</math> is odd and <math>bc</math> is even. Let <math>e</math> denote an even number and let <math>o</math> denote an odd number. 
+
+If <math>ad</math> is even and <math>bc</math> is odd, there are three cases:
+
+
+<cmath>(e,o,o,e)</cmath>
+<cmath>(e,o,o,o)</cmath>
+<cmath>(o,o,o,e)</cmath>
+
+
+For each of these cases, there are <math>2^4</math> ways to choose from the set <math>(0,1,2,3)</math> as there are 2 even's and 2 odd's; because there are three cases, we multiply this by 3. Also, because of there are 2 cases (<math>ad</math> is even and <math>bc</math> is odd and if <math>ad</math> is odd and <math>bc</math> is even), we multiply this by 2. This gives us:
+
+<math>2^4 \cdot 3 \cdot 2= \textbf{(C)96}</math>
+
+--- Solution 6 ---
+For parity reasons, if <math>ad - bc</math> is to be odd, we must have <math>ad</math> odd and <math>bc</math> even or <math>ad</math> even and <math>bc</math> odd. By symmetry, these cases are identical, so we consider the first one and multiply by two at the end. For <math>ad</math> to be odd, we must have both <math>a</math> and <math>d</math> odd, and there are <math>2 \cdot 2</math> ways to do so. To count the cases where <math>bc</math> is odd, we use PIE. there are <math>2 \cdot 4 = 8</math> ways for <math>b</math> to be odd and <math>4 \cdot 2 = 8</math> ways for <math>c</math> to be odd, and there are <math>2 \cdot 2 = 4</math> ways for both to be odd. Thus, there are <math>8 + 8 - 4 = 12</math> ways for <math>bc</math> to be even. Multiplying out, there are <math>2 \cdot 4 \cdot 12</math> ways to have <math>ad - bc</math> odd for a total of <math>\boxed{\textbf{(C)}
+
+
+=== Problem 19 ===
+As shown in the figure below, a regular dodecahedron (the polyhedron consisting of
+
+Choices: {'A': '125', 'B': '250', 'C': '405', 'D': '640', 'E': '810</math>'}
+Answer: E
+
+--- Solution 1 ---
+Since we start at the top face and end at the bottom face without moving from the lower ring to the upper ring or revisiting a face, our journey must consist of the top face, a series of faces in the upper ring, a series of faces in the lower ring, and the bottom face, in that order.
+
+We have <math>5</math> choices for which face we visit first on the top ring. From there, we have <math>9</math> choices for how far around the top ring we go before moving down: <math>1,2,3,</math> or <math>4</math> faces around clockwise, <math>1,2,3,</math> or <math>4</math> faces around counterclockwise, or immediately going down to the lower ring without visiting any other faces in the upper ring.
+
+We then have <math>2</math> choices for which lower ring face to visit first (since every upper-ring face is adjacent to exactly <math>2</math> lower-ring faces) and then once again <math>9</math> choices for how to travel around the lower ring. We then proceed to the bottom face, completing the trip.
+
+Multiplying together all the numbers of choices we have, we get <math>5 \cdot 9 \cdot 2 \cdot 9 = \boxed{\textbf{(E) } 810}</math>.
+
+--- Solution 2 ---
+From the top, we can go down in five different ways to the five faces underneath the first face. From here we can go down or go to the adjacent faces. From the face you went down from the top face, you can either go clockwise or counterclockwise <math>1</math>, <math>2</math>, <math>3</math>,or <math>4</math> times, or you can go straight down. Then from there, you go down into the lower row, which you have two choices, left or right down. From here we have <math>5 \cdot 9 \cdot 2</math> ways multiplied by the ways you can move from the bottom ring to the bottom face, but we don't need to know that since from here we can see that <math>\boxed{(E)}</math> is the only answer choice divisible by <math>90</math>, so our answer is <math>\boxed{(E)}</math>.
+
+--- Solution 3 ---
+There are five ways to get to the top ring. Casework:
+
+Case 1: directly go to bottom ring
+For each of the 5 initial top ring faces, we have two ways of directly going to the bottom ring, as each face on the top is adjacent to two faces on the bottom. There are <math>5 \cdot 2 = 10</math> paths here.
+
+Case 2: traversing sideways
+After entering the top ring, we can also choose to travel sideways along the top ring before going to the bottom ring. For each of the 5 initial top ring faces, we can choose 2 directions to go (clockwise or counterclockwise). Once we choose a direction, we can go 1, 2, 3, or 4 faces in that direction. Notice we cannot travel 5 faces because then we would land on the original top ring face, but the problem specifies that we can only travel each face once. Once again, top ring faces are each adjacent to two bottom ring faces, so after traversing sideways we can choose 2 paths to exit. There are <math>5 \cdot 2 \cdot 4 \cdot 2 = 80</math> paths here.
+
+Adding the two cases together, there are 90 ways to get to the bottom ring from the top.
+
+Next, from the bottom ring to the bottom we do casework again:
+
+Case 1: directly go to the bottom
+For each of the 90 ways we can get to faces on the bottom ring, there is only 1 way to get to the bottom. So there are 90 ways here.
+
+Case 2: traversing sideways
+For each of the 90 ways we can get to faces on the bottom ring, there are once again 2 ways to choose the direction and 4 ways to choose the amount of faces traveled. However, after traveling the faces there is only 1 way to go to the bottom face. There are <math>90 \cdot 2 \cdot 4 \cdot 1 = 720</math> paths here.
+
+Adding together the cases, there are 810 paths, or answer choice E.
+
+--- Solution 4 ---
+Like Solution 3, we can use casework, but in a different way. We can split the caseworks into the amount of moves we spend on each row (top and bottom, where both rows have 5 faces).
+
+Case 1: 1 move on the top row;
+There are 5 ways to make 1 move on the top row from the starting point (just moving on each of the five faces). Now we want to look at how many ways we can move towards the bottom. Notice how we have two faces on the bottom row that are adjacent to each of the top faces. If we spend one move on the bottom, there are 2 ways. If we spend two moves on the bottom, there are 4 ways (since order matters, we can flip the direction of these moves). If we spend three moves on the bottom, there are also 4 ways (similar reasoning). If we spend four moves on the bottom, there are 4 ways. And if we spend five moves on the bottom, there are again, 4 ways. In total there are <math>2 + 4 + 4 + 4 + 4 = 18</math> ways to move from the bottom after the top moves are chosen. And since there are 5 ways to make 1 move on the top row, there are <math>5 \cdot 18 = 90</math> ways.
+
+Case 2: 2 moves on the top row;
+From just counting, we can see that there are five ways to move once on the top, and after that, two options for the second move (either left or right), so there are <math>5 \cdot 2 = 10</math> ways. And from using what we obtained in Case 1, there are <math>10 \cdot 18 = 180</math> ways for this case.
+
+Case 3: three moves on the top row;
+There are, again, 10 ways to do this. And so, there are <math>10 \cdot 18 = 180</math> ways for this case to happen.
+
+Now, we can see that there will be 10 ways for the remaining cases of the first move for the top row (because 5 ways to choose the first, and then you can go either left or right, so <math>5 \cdot 2 = 10</math>).
+So for Case 4 and Case 5, there will both also be <math>10 \cdot 18 = 180</math> ways.
+
+Finally, adding all these cases up, we obtain <math>90 + 180 + 180 + 180 + 180 = 810</math>, or <math>\boxed{(E)}</math>
+
+
+=== Problem 20 ===
+Quadrilateral
+
+Choices: {'A': '330', 'B': '340', 'C': '350', 'D': '360', 'E': '370</math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+size(15cm,0);
+import olympiad;
+draw((0,0)--(0,2)--(6,4)--(4,0)--cycle);
+label("A", (0,2), NW);
+label("B", (0,0), SW);
+label("C", (4,0), SE);
+label("D", (6,4), NE);
+label("E", (1.714,1.143), N);
+label("F", (1,1.5), N);
+draw((0,2)--(4,0), dashed);
+draw((0,0)--(6,4), dashed);
+draw((0,0)--(1,1.5), dashed);
+label("20", (0,2)--(4,0), SW);
+label("30", (4,0)--(6,4), SE);
+label("$x$", (1,1.5)--(1.714,1.143), NE);
+label("5$-$$x$", (1,1.5)--(0,2), NE);
+draw(rightanglemark((0,2),(0,0),(4,0)));
+draw(rightanglemark((0,2),(4,0),(6,4)));
+draw(rightanglemark((0,0),(1,1.5),(0,2)));
+</asy>
+
+It's crucial to draw a good diagram for this one. Since <math>AC=20</math> and <math>CD=30</math>, we get <math>[ACD]=300</math>. Now we need to find <math>[ABC]</math> to get the area of the whole quadrilateral. Drop an altitude from <math>B</math> to <math>AC</math> and call the point of intersection <math>F</math>. Let <math>FE=x</math>. Since <math>AE=5</math>, then <math>AF=5-x</math>. 
+
+By dropping this altitude, we can also see two similar triangles, <math>\triangle BFE \sim \triangle DCE</math>. Since <math>EC</math> is <math>20-5=15</math>, and <math>DC=30</math>, we get that <math>BF=2x</math>. 
+
+Now, if we redraw another diagram just of <math>ABC</math>, we get that <math>(2x)^2=(5-x)(15+x)</math> because of the altitude geometric mean theorem which states that in any right triangle, the altitude squared is equal to the product of the two lengths that it divides the base into. 
+
+Expanding, simplifying, and dividing by the GCF, we get <math>x^2+2x-15=0</math>. This factors to <math>(x+5)(x-3)</math>, which has roots of <math>x=-5, 3</math>. Since lengths cannot be negative, <math>x=3</math>. Since <math>x=3</math>, that means the altitude <math>BF=2\cdot3=6</math>, or <math>[ABC]=60</math>. Thus <math>[ABCD]=[ACD]+[ABC]=300+60=\boxed {\textbf{(D) }360}</math>
+
+--- Solution 2 ---
+<asy>
+size(10cm,0);
+draw((10,30)--(10,0)--(-8,-6)--(-10,0)--(10,30));
+draw((-20,0)--(20,0));
+draw((0,-15)--(0,35));
+draw((10,30)--(-8,-6));
+draw(circle((0,0),10));
+label("E",(-4.05,-.25),S);
+label("D",(10,30),NE);
+label("C",(10,0),NE);
+label("B",(-8,-6),SW);
+label("A",(-10,0),NW);
+label("5",(-10,0)--(-5,0), NE);
+label("15",(-5,0)--(10,0), N);
+label("30",(10,0)--(10,30), E);
+dot((-5,0));
+dot((-10,0));
+dot((-8,-6));
+dot((10,0));
+dot((10,30));
+</asy>
+Let the points be <math>A(-10,0)</math>, <math>\:B(x,y)</math>, <math>\:C(10,0)</math>, <math>\:D(10,30)</math>,and <math>\:E(-5,0)</math>, respectively. Since <math>B</math> lies on line <math>DE</math>, we know that <math>y=2x+10</math>. Furthermore, since <math>\angle{ABC}=90^\circ</math>, <math>B</math> lies on the circle with diameter <math>AC</math>, so <math>x^2+y^2=100</math>. Solving for <math>x</math> and <math>y</math> with these equations, we get the solutions <math>(0,10)</math> and <math>(-8,-6)</math>. We immediately discard the <math>(0,10)</math> solution as <math>y</math> should be negative. Thus, we conclude that <math>[ABCD]=[ACD]+[ABC]=\frac{20\cdot30}{2}+\frac{20\cdot6}{2}=\boxed{\textbf{(D)}\:360}</math>.
+
+--- Solution 3 ---
+[[File:2020-AMC-10A--20-Diagram.png|410px]] 
+
+
+Draw the circumcircle of <math>\triangle ABC.</math> Let <math>BE = x</math>, and let <math>F</math> be the point where the circumcircle of <math>\triangle ABC</math> meets <math>BD.</math> By the Pythagorean Theorem, <math>ED = \sqrt{1125},</math> so <math>\frac{75}{x} + DF = \sqrt{1125} \implies DF = \sqrt{1125} - \frac{75}{x}.</math> (<math>EF = \frac{75}{x}</math> by the Intersecting Chords Theorem.) From Power of A Point we have <math>CD^2 = 30^2 = FD \cdot BD = FD^2 + FD \cdot BF =</math> <math>(\sqrt{1125} - \frac{75}{x})^2 + (\sqrt{1125} - \frac{75}{x})(x + \frac{75}{x}) = </math> <math>(\sqrt{1125} - \frac{75}{x})(\sqrt{1125} + x).</math> Solving we get <math>x = 3\sqrt{5}.</math> <math>\sin\angle CED = \frac{30}{15\sqrt{5}}.</math> The area of a quadrilateral is half the product of its diagonals times the sine of the angle between them, so the answer is <math>18\sqrt{5} \cdot 20 \cdot \frac{30}{15\sqrt{5}} \cdot \frac{1}{2} = 180 \cdot 2 = \boxed{360}.</math> 
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 4 ---
+Let <math>\angle C = \angle{ACB}</math> and <math>\angle{B} = \angle{CBE}.</math> Using Law of Sines on <math>\triangle{BCE}</math> we get <cmath>\dfrac{BE}{\sin{C}} = \dfrac{CE}{\sin{B}} = \dfrac{15}{\sin{B}}</cmath> and LoS on <math>\triangle{ABE}</math> yields <cmath>\dfrac{BE}{\sin{(90 - C)}} = \dfrac{5}{\sin{(90 - B)}} = \dfrac{BE}{\cos{C}} = \dfrac{5}{\cos{B}}.</cmath> Divide the two to get <math>\tan{B} = 3 \tan{C}.</math> Now, <cmath>\tan{\angle{CED}} = 2 = \tan{\angle{B} + \angle{C}} = \dfrac{4 \tan{C}}{1 - 3\tan^2{C}}</cmath> and solve the quadratic, taking the positive solution (C is acute) to get <math>\tan{C} = \frac{1}{3}.</math> So if <math>AB = a,</math> then <math>BC = 3a</math> and <math>[ABC] = \frac{3a^2}{2}.</math> By Pythagorean Theorem, <math>10a^2 = 400 \iff \frac{3a^2}{2} = 60</math> and the answer is <math>300 + 60 \iff \boxed{\textbf{(D)}}.</math>
+
+(This solution is incomplete, can someone complete it please)
+Edit by kc5170
+
+We could use the famous m-n rule in trigonometry in <math>\triangle ABC</math> with Point <math>E</math> 
+[Unable to write it here.Could anybody write the expression]
+. We will find that <math>\overrightarrow{BD}</math> is an angle bisector of <math>\triangle ABC</math> (because we will get <math>\tan(x) = 1</math>).     
+Therefore by converse of angle bisector theorem <math>AB:BC = 1:3</math>. By using Pythagorean theorem, we have values of <math>AB</math> and <math>AC</math>. 
+Computing <math>AB \cdot AC = 120</math>. Adding the areas of <math>ABC</math> and <math>ACD</math>, hence the answer is <math>\boxed{\textbf{(D)}\:360}</math>.
+
+--- Solution 5 ---
+<asy>
+import olympiad;
+pair A = (0, 189), B = (0,0), C = (570,0), D = (798, 798);
+dot("$A$", A, W); dot("$B$", B, S); dot("$C$", C, E); dot("$D$", D, N);dot("$E$",(140, 140), N);
+draw(A--B--C--D--A);
+draw(A--C, dotted); draw(B--D, dotted);
+</asy>
+
+Denote <math>EB</math> as <math>x</math>. By the Law of Cosines:
+<cmath>AB^2 = 25 + x^2 - 10x\cos(\angle DEC)</cmath>
+<cmath>BC^2 = 225 + x^2 + 30x\cos(\angle DEC)</cmath>
+
+Adding these up yields:
+<cmath>400 = 250 + 2x^2 + 20x\cos(\angle DEC) \Longrightarrow x^2 + \frac{10x}{\sqrt{5}} - 75 = 0</cmath>
+By the quadratic formula, <math>x = 3\sqrt5</math>.
+
+Observe:
+<cmath>[AEB] + [BEC] = \frac{1}{2}(x)(5)\sin(\angle DEC) + \frac{1}{2}(x)(15)\sin(180-\angle DEC) = (3)(20) = 60</cmath>.
+
+Thus the desired area is <math>\frac{1}{2}(30)(20) + 60 = \boxed{\textbf{(D) } 360}</math>
+
+--- Solution 6 ---
+Let <math>C = (0, 0)</math> and <math>D = (0, 30)</math>. Then <math>E = (-15, 0), A = (-20, 0),</math> and <math>B</math> lies on the line <math>y=2x+30.</math> So the coordinates of <math>B</math> are <cmath>(x, 2x+30).</cmath>
+
+We can make this a vector problem.
+<math>\overrightarrow{\mathbf{B}} = \begin{pmatrix}
+x \\
+2x+30
+\end{pmatrix}.</math> We notice that point <math>B</math> forms a right angle, meaning vectors <math>\overrightarrow{\mathbf{BC}}</math> and <math>\overrightarrow{\mathbf{BA}}</math> are orthogonal, and their dot-product is <math>0</math>.
+
+We determine <math>\overrightarrow{\mathbf{BC}}</math> and <math>\overrightarrow{\mathbf{BA}}</math> to be <math>\begin{pmatrix}
+-x \\
+-2x-30
+\end{pmatrix}</math> and <math>\begin{pmatrix}
+-20-x \\
+-2x-30
+\end{pmatrix}</math> , respectively. (To get this, we use the fact that <math>\overrightarrow{\mathbf{BC}} = \overrightarrow{\mathbf{C}}-\overrightarrow{\mathbf{B}}</math> and similarly, <math>\overrightarrow{\mathbf{BA}} = \overrightarrow{\mathbf{A}} - \overrightarrow{\mathbf{B}}.</math> )
+
+Equating the cross-product to <math>0</math> gets us the quadratic <math>-x(-20-x)+(-2x-30)(-2x-30)=0.</math> The solutions are <math>x=-18, -10.</math> Since <math>B</math> clearly has a more negative x-coordinate than <math>E</math>, we take <math>x=-18</math>. So <math>B = (-18, -6).</math>
+
+From here, there are multiple ways to get the area of <math>\Delta{ABC}</math> to be <math>60</math>, and since the area of <math>\Delta{ACD}</math> is <math>300</math>, we get our final answer to be <cmath>60 + 300 = \boxed{\text{(D) } 360}.</cmath>
+
+-PureSwag
+
+--- Solution 7 ---
+<asy>
+import olympiad;
+pair A = (0, 189), B = (0,0), C = (570,0), D = (798, 798),F=(285,94.5),G=(361.2,361.2);
+dot("$A$", A, W); dot("$B$", B, S); dot("$C$", C, E); dot("$D$", D, N);dot("$E$",(140, 140), N);dot("$F$",F,N);dot("$G$",G,N);
+draw(A--B--C--D--A);
+draw(A--C, dotted); draw(B--D, dotted); draw(F--G, dotted);
+</asy>
+
+Let <math>F</math> be the midpoint of <math>AC</math>, and draw <math>FG // CD</math> where <math>G</math> is on <math>BD</math>. We have <math>EF=5,FC=10</math>.
+
+<math>\Delta EFG \sim \Delta ECD \implies FG=10=FA=FC</math>. Therefore <math>ABCG</math> is a cyclic quadrilateral.
+
+Notice that <math>\angle EFG=90^\circ, EG=\sqrt{5^2+10^2}=5\sqrt{5} \implies BE=\frac{AE\cdot EC}{EG}=\frac{5\cdot 15}{5\sqrt{5}}=3\sqrt{5}</math> via Power of a Point.
+
+The altitude from <math>B</math> to <math>AC</math> is then equal to <math>GF\cdot \frac{BE}{GE}=10\cdot \frac{3\sqrt 5}{5 \sqrt 5}=6</math>. 
+
+Finally, the total area of <math>ABCD</math> is equal to <math>\frac 12 \cdot 20 \left(30+6 \right) =\boxed{\text{(D) } 360}.</math>
+
+--- Solution 8 ---
+<asy>
+size(15cm,0);
+import olympiad;
+draw((0,0)--(0,2)--(6,4)--(4,0)--cycle);
+label("A", (0,2), NW);
+label("B", (0,0), SW);
+label("C", (4,0), SE);
+label("D", (6,4), NE);
+label("E", (1.714,1.143), N);
+label("F", (1.714,0), SE);
+draw((0,2)--(4,0), dashed);
+draw((0,0)--(6,4), dashed);
+draw((1.714,1.143)--(1.714,0), dashed);
+label("20", (0,2)--(4,0), SW);
+label("30", (4,0)--(6,4), SE);
+label("$x$", (-0.3,2)--(-0.3,0), N);
+label("$y$", (0,-0.3)--(4,-0.3), E);
+draw(rightanglemark((1.714,2),(1.714,0),(5.714,0)));
+draw(rightanglemark((0,2),(0,0),(4,0)));
+draw(rightanglemark((0,2),(4,0),(6,4)));
+</asy>
+
+Let <math>AB = x</math>, <math>BC = y</math>
+
+Looking at the diagram we have <math>x^2 + y^2 = 20^2</math>,
+<math>DE = \sqrt{30^2+15^2} = 15\sqrt{5}</math>, <math>[ACD] = \frac{1}{2} \cdot 20 \cdot 30 = 300</math>
+
+Because <math>\triangle CEF \sim \triangle CAB</math>, <math>EF = AB \cdot \frac{CE}{CA} = x \cdot \frac{15}{20} = \frac{3x}{4}</math>
+
+<math>BF = BC - CF = BC - BC \cdot \frac{CE}{CA} = \frac{1}{4} \cdot BC = \frac{y}{4}</math>
+
+<math>BE = \sqrt{ \left( \frac{3x}{4} \right) ^2 + \left( \frac{y}{4} \right) ^2 } = \frac{ \sqrt{9x^2 + y^2} }{4}</math> , substituting <math>x^2 + y^2 = 400</math>,  we get <math>BE = \frac{ \sqrt{8x^2 + 400} }{4} = \frac{ \sqrt{2x^2 + 100} }{2}</math> 
+
+<math>[ABC] = \frac{1}{2} \cdot x \cdot y</math>
+
+Because <math>\triangle ABC</math> and <math>\triangle ACD</math> share the same base, <math>\frac{[ABC]}{[ACD]} = \frac{BE}{DE}</math>
+
+<math>[ABC] = [ACD] \cdot \frac{BE}{DE} = 300 \cdot \frac{ \frac{ \sqrt{2x^2 + 100} } {2} }{ 15 \sqrt{5} }</math>
+
+<math>\frac{1}{2} \cdot x \cdot y = 20 \cdot \frac{ \frac{ \sqrt{2x^2 + 100} } {2} }{ \sqrt{5} }</math>
+
+<math>xy = 4 \sqrt{10x^2 + 500}</math>
+
+By <math>x^2 + y^2 = 400</math>, <math>y = \sqrt{400 - x^2}</math>. So, <math>x \cdot  \sqrt{400 - x^2} = 4 \sqrt{10x^2 + 500}</math>
+
+<math>x^2 (400 - x^2) = 16 (10x^2 + 500)</math>
+
+Let <math>x^2 = a</math>, <math>a (400 - a) = 16 (10a + 500)</math>, <math>400a - a^2 = 160a + 8000</math>, <math>a^2 - 240a + 8000 = 0</math>, <math>(a-200)(a-40) = 0</math>
+
+Because <math>x < 20</math>, <math>a</math> can only equal 40. <math>a = 40</math>, <math>x = 2 \sqrt{10}</math>, <math>y = 6 \sqrt{10}</math>
+
+<math>[ABC] = \frac{1}{2} \cdot 2 \sqrt{10} \cdot 6 \sqrt{10} = 60</math>
+
+<math>[ABCD] = [ABC] + [ACD] = 60 + 300 = \boxed{\text{(D) } 360}</math>
+
+--- Solution 9 ---
+Drop perpendiculars <math>\overline{AF}</math> and <math>\overline{CG}</math> to <math>\overline{BD}.</math> Notice that since <math>\angle AEF=\angle CEG</math> (since they are vertical angles) and <math>\angle AFE=\angle CGE=90^\circ,</math> triangles <math>AEF</math> and <math>CEG</math> are similar. Therefore, we have
+
+<cmath>x/EF=CE/AE=15/5=3,</cmath>
+
+where <math>EG=x.</math> Therefore, <math>EF=x/3.</math>
+
+Additionally, angle chasing shows that triangles <math>CEG</math> and <math>DCG</math> are also similar. This gives <math>CG/x=DC/CE=30/15=2,</math> so <math>CG=2x.</math> Thus, applying the Pythagorean Theorem to triangle <math>CEG</math> gives
+
+<cmath>x^2+(2x)^2=15^2,</cmath>
+
+so <math>EG=x=3\sqrt 5.</math> Our pairs of similar triangles then allow us to fill in the following lengths (in this order):
+
+<cmath>EF=x/3=\sqrt 5, CG=2x=6\sqrt 5, AF=CG/3=2\sqrt 5, DG=2\cdot CG=12\sqrt 5.</cmath>
+
+Now, let <math>BF=y.</math> Angle chasing shows that triangle <math>ABF</math> and <math>BCG</math> are similar, so <math>BG/AF=CG/BF.</math> Plugging in known lengths gives
+
+<cmath>\dfrac{y+4\sqrt 5}{2\sqrt 5}=\dfrac{6\sqrt 5}{y}.</cmath>
+
+This gives <math>y=2\sqrt 5.</math> Now we know all the lengths that make up <math>BD,</math> which allows us to find 
+
+<cmath>BD=2\sqrt 5+\sqrt 5+3\sqrt 5+12\sqrt 5=18\sqrt 5.</cmath>
+
+Therefore,
+
+<cmath>\begin{align*}
+[ABCD] &= [ABD]+[CBD] \\
+&= (BD)(AF)/2+(BD)(CG)/2 \\
+&= (18\sqrt 5)(2\sqrt 5)/2+(18\sqrt 5)(6\sqrt 5)/2 \\
+&= \boxed{\text{(D) } 360}.
+\end{align*}</cmath>
+
+--vaporwave
+
+--- Solution 10 ---
+<asy>
+size(15cm,0);
+import olympiad;
+draw((0,0)--(0,2)--(6,4)--(4,0)--cycle);
+label("A", (0,2), NW);
+label("B", (0,0), SW);
+label("C", (4,0), SE);
+label("D", (6,4), NE);
+label("E", (1.714,1.143), N);
+label("F", (1.714,0), SE);
+draw((0,2)--(4,0), dashed);
+draw((0,0)--(6,4), dashed);
+draw((4,0)--(6,0), dashed);
+draw((6,0)--(6,4), dashed);
+draw((1.714,1.143)--(1.714,0), dashed);
+label("20", (0,2)--(4,0), SW);
+label("30", (4,0)--(6,4), SE);
+label("$x$", (-0.3,2)--(-0.3,0), N);
+label("$y$", (0,-0.3)--(4,-0.3), E);
+
+label( "$X$", (6,0), SE);
+label("5", (0,2)--(1.714,1.143), NE);
+label("15",(1.714,1.143)--(4,0),NE);
+label("5$C$", (0,0)--(1.714,0),S);
+label("15$C$", (1.714,0)--(4,0),S);
+label("30$S$", (4,0)--(6,0),S);
+label("30$C$", (6,0)--(6,4),E);
+draw(anglemark((1.714,1.143),(4,0),(1.714,0)));
+draw(anglemark((4,0),(6,4),(6,0)));
+draw(rightanglemark((1.714,2),(1.714,0),(5.714,0)));
+draw(rightanglemark((0,2),(0,0),(4,0)));
+draw(rightanglemark((0,2),(4,0),(6,4)));
+</asy>
+
+set  <cmath>\angle ACB = \theta , C= \cos(\theta), S = \sin(\theta) </cmath>
+
+<cmath>\dfrac{E_y}{E_x} = \dfrac{30C}  { 20C+30S}  =  \dfrac{15S} {20C-15C} </cmath>
+
+<cmath>2SC = \dfrac35</cmath>
+
+<cmath>\begin{align*}
+[ABCD] &= [ABD]+[CBD] \\
+&= \dfrac12\cdot 20C\cdot 30C  + \dfrac12 \cdot 20S (20C+30S) \\
+&= 100\cdot   2SC + 300 \\
+&= \boxed{\text{(D) } 360}.
+\end{align*}</cmath>
+
+
+=== Problem 21 ===
+There exists a unique strictly increasing sequence of nonnegative integers
+
+Choices: {'A': '117', 'B': '136', 'C': '137', 'D': '273', 'E': '306</math>'}
+Answer: C
+
+--- Solution 1 ---
+First, substitute <math>2^{17}</math> with <math>x</math>. 
+Then, the given equation becomes <math>\frac{x^{17}+1}{x+1}=x^{16}-x^{15}+x^{14}...-x^1+x^0</math> by sum of powers factorization.
+Now consider only <math>x^{16}-x^{15}</math>. This equals <math>x^{15}(x-1)=x^{15} \cdot (2^{17}-1)</math>.
+Note that <math>2^{17}-1</math> equals <math>2^{16}+2^{15}+...+1</math>, by difference of powers factorization (or by considering the expansion of <math>2^{17}=2^{16}+2^{15}+...+2^{2}+2 + 2</math>).
+Thus, we can see that <math>x^{16}-x^{15}</math> forms the sum of 17 different powers of 2. 
+Applying the same method to each of <math>x^{14}-x^{13}</math>, <math>x^{12}-x^{11}</math>, ... , <math>x^{2}-x^{1}</math>, we can see that each of the pairs forms the sum of 17 different powers of 2. This gives us <math>17 \cdot 8=136</math>.
+But we must count also the <math>x^0</math> term. 
+Thus, Our answer is <math>136+1=\boxed{\textbf{(C) } 137}</math>.
+
+--- Solution 2 ---
+Multiply both sides by <math>2^{17}+1</math> to get <cmath>2^{289}+1=2^{a_1} + 2^{a_2} + … + 2^{a_k} + 2^{a_1+17} + 2^{a_2+17} + … + 2^{a_k+17}.</cmath>
+
+Notice that <math>a_1 = 0</math>, since there is a <math>1</math> on the LHS. However, now we have an extra term of <math>2^{18}</math> on the right from <math>2^{a_1+17}</math>. To cancel it, we let <math>a_2 = 18</math>. The two <math>2^{18}</math>'s now combine into a term of <math>2^{19}</math>, so we let <math>a_3 = 19</math>. And so on, until we get to <math>a_{18} = 34</math>. Now everything we don't want telescopes into <math>2^{35}</math>. We already have that term since we let <math>a_2 = 18 \implies a_2+17 = 35</math>. Everything from now on will automatically telescope to <math>2^{52}</math>. So we let <math>a_{19}</math> be <math>52</math>.
+
+As you can see, we will have to add <math>17</math> <math>a_n</math>'s at a time, then "wait" for the sum to automatically telescope for the next <math>17</math> numbers, etc, until we get to <math>2^{289}</math>. We only need to add <math>a_n</math>'s between odd multiples of <math>17</math> and even multiples. The largest even multiple of <math>17</math> below <math>289</math> is <math>17\cdot16</math>, so we will have to add a total of <math>17\cdot 8</math> <math>a_n</math>'s. However, we must not forget we let <math>a_1=0</math> at the beginning, so our answer is <math>17\cdot8+1 = \boxed{\textbf{(C) } 137}</math>.
+
+--- Solution 3 ---
+In order to shorten expressions, <math>\#</math> will represent <math>16</math> consecutive <math>0</math>s when expressing numbers. <br>
+<br>
+Think of the problem in binary. We have <br>
+<math>\frac{1\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#1_2}{1\#1_2}</math> <br>
+Note that <br>
+<math>(2^{17} + 1) (2^0 + 2^{34} + 2^{68} + \cdots + 2^{272}) = 2^0(2^{17} + 1) + 2^{34}(2^{17} + 1) + 2^{68}(2^{17} + 1) + \cdots 2^{272}(2^{17} + 1)</math> <br>
+<math>= 1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1_2</math> <br>
+and <br>
+<math>(2^{17} + 1) (2^{17} + 2^{51} + 2^{85} + \cdots + 2^{255}) = 2^{17}(2^{17} + 1) + 2^{51}(2^{17} + 1) + 2^{85}(2^{17} + 1) + \cdots 2^{255}(2^{17} + 1)</math> <br>
+<math>= 1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#0_2</math> <br>
+<br>
+Since <br>
+<math>\phantom{=\ } 1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1_2</math> <br>
+<math>-\ \phantom{1\#} 1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#1\#0_2</math> <br>
+<math>= 1\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#0\#1_2</math> <br>
+this means that<br>
+<math>(2^{17} + 1) (2^0 + 2^{34} + 2^{68} + \cdots + 2^{272}) - (2^{17} + 1) (2^{17} + 2^{51} + 2^{85} + \cdots + 2^{255}) = 2^{289} + 1</math><br>
+so <br>
+<math>\frac{2^{289}+1}{2^{17}+1} = (2^0 + 2^{34} + 2^{68} + \cdots + 2^{272}) - (2^{17} + 2^{51} + 2^{85} + \cdots + 2^{255})</math> <br>
+<math>= 2^0 + (2^{34} - 2^{17}) + (2^{68} - 2^{51}) + \cdots + (2^{272} - 2^{255})</math> <br>
+<br>
+Expressing each of the pairs of the form <math>2^{n + 17} - 2^n</math> in binary, we have <br>
+<math>\phantom{=\ } 1000000000000000000 \cdots 0_2</math> <br>
+<math>-\ \phantom{10000000000000000} 10 \cdots 0_2</math> <br>
+<math>= \phantom{1} 111111111111111110 \cdots 0_2</math> <br>
+or <br>
+<math>2^{n + 17} - 2^n = 2^{n + 16} + 2^{n + 15} + 2^{n + 14} + \cdots + 2^{n}</math> <br>
+This means that each pair has <math>17</math> terms of the form <math>2^n</math>. <br>
+<br>
+Since there are <math>8</math> of these pairs, there are a total of <math>8 \cdot 17 = 136</math> terms. Accounting for the <math>2^0</math> term, which was not in the pair, we have a total of <math>136 + 1 = \boxed{\textbf{(C) } 137}</math> terms. ~[[User:emerald_block|emerald_block]]
+
+--- Solution 4 ---
+We can first look at smaller similar cases in binary. We can treat the initial problem as <math>\frac{2^{n^2} + 1}{2^n + 1}</math> where <math>n=17</math>. We can first look at the case <math>n=3</math> or <math>\frac{2^9 + 1}{2^3 + 1}</math>, which is equivalent to <math>\frac{1000000001_2}{1001_2}</math>. If we do long division we find that this equals <math>111001_2</math>. Then we can also look at the case <math>n=5</math> or <math>\frac{2^{25}+1}{2^5+1}</math>. Doing long division on this in binary gives us a quotient that is a repeating pattern of 5 zeros and 5 ones. This pattern does hold, as <math>111\text{... n ones ...}1_2 * 10\text{... n-1 zeroes ...}01_2 = (10_2)^{2n} - 1</math>. Then at the end, there is a remainder of <math>10\text{... n-1 zeroes ...}01_2</math>, which is the same as the denominator of the original fraction. Thus, for the original problem, there are <math>\frac{17-1}{2}</math> repeats of 17 zeroes and 17 ones, giving <math>8 * 17 + 1 = \boxed{\textbf{(C) }137}</math>.
+
+--- Solution 5 ---
+The two answers that are close to each other are <math>136</math> and <math>137</math>. Since it seems more likely to forget a case than to overcount something in this context, the right answer is most likely <math>\boxed{\textbf{(C) }137}</math>.
+
+
+=== Problem 22 ===
+For how many positive integers
+
+Choices: {'A': '22', 'B': '23', 'C': '24', 'D': '25', 'E': '26</math>'}
+Answer: A
+
+--- Solution 1 ---
+If <math>n</math> is a factor of <math>999</math> (and <math>n \neq 1</math>), then let <math>999 = an</math> for some positive integer <math>a.</math> Then we get <math>\lfloor 998/n \rfloor = a - 1</math>, <math>\lfloor 999/n \rfloor =a</math>, <math>\lfloor 1000/n \rfloor = a</math>. The sum is <math>3a - 1,</math> which isn't a multiple of 3. If <math>n</math> is a factor of <math>1000</math> (and <math>n \neq 1</math>), then let <math>1000 = an.</math> Then we get <math>\lfloor 998/n \rfloor = a - 1</math>, <math>\lfloor 999/n \rfloor = a - 1</math>, and <math>\lfloor 1000/n \rfloor = a.</math> The sum is <math>3a - 2,</math> which also isn't a multiple of 3. 
+ 
+We find that the only way for the problem's condition to hold true is if <math>n</math> is a factor of <math>999</math> or <math>1000</math> and <math>n \neq 1</math>.
+
+* <math>1000 = 5^3 \cdot 2^3 \implies (3+1)(3+1) = 16</math> factors. 
+
+* <math>999 = 3^3 \cdot 37 \implies (3+1)(1+1) = 8</math> factors. 
+
+We counted <math>1</math> twice. So the answer is <math>16 + 8 - 2 = \boxed{22}.</math> 
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 2 ---
+Clearly, <math>n=1</math> fails. Except for the special case of <math>n=1</math>,
+<cmath>\left\lfloor \frac{1000}{n} \right\rfloor - \left\lfloor \frac{998}{n} \right\rfloor</cmath>
+equals either <math>0</math> or <math>1</math>. If it equals <math>0</math>, this implies that <math>\left\lfloor \frac{998}{n} \right\rfloor = \left\lfloor \frac{999}{n} \right\rfloor = \left\lfloor \frac{1000}{n} \right\rfloor</math>, so their sum is clearly a multiple of <math>3</math>, so this will always fail. If it equals <math>1</math>, the sum of the three floor terms is <math>3 \left\lfloor \frac{999}{n} \right\rfloor \pm 1</math>, so it is never a multiple of <math>3</math>. Thus, we are looking for all <math>n \neq 1</math> such that
+<cmath>\left\lfloor \frac{1000}{n} \right\rfloor - \left\lfloor \frac{998}{n} \right\rfloor = 1.</cmath>
+This implies that either
+<cmath>\left\lfloor \frac{998}{n} \right\rfloor + 1 = \left\lfloor \frac{999}{n} \right\rfloor,</cmath>
+or
+<cmath>\left\lfloor \frac{999}{n} \right\rfloor + 1 = \left\lfloor \frac{1000}{n} \right\rfloor.</cmath>
+
+Let's analyze the first equation of these two. This equation is equivalent to the statement that there is a positive integer <math>a</math> such that
+<cmath>\frac{998}{n} < a \leq \frac{999}{n} \implies 998 < an \leq 999 \implies an = 999 \implies a = \frac{999}{n} \implies n | 999.*</cmath>
+Analogously, the second equation implies that
+<cmath>n | 1000.</cmath>
+So our only <math>n</math> that satisfy this condition are <math>n \neq 1</math> that divide <math>999</math> or <math>1000</math>. Using the method to find the number of divisors of a number, we see that <math>999</math> has <math>8</math> divisors and <math>1000</math> has <math>16</math> divisors. Their only common factor is <math>1</math>, so there are <math>8+16-1 = 23</math> positive integers that divide either <math>999</math> or <math>1000</math>. Since the integer <math>1</math> is a special case and does not count, we must subtract this from our <math>23</math>, so our final answer is <math>23-1 = \boxed{\textbf{(A) } 22}.</math>
+
+ *While this observation may seem strange, it is actually "trivial by intuition" to go straight from <math>\left\lfloor \frac{998}{n} \right\rfloor + 1 = \left\lfloor \frac{999}{n} \right\rfloor</math> to <math>n | 999</math>. In fact, "trivial by intuition" is basically a good summary of the solution to this entire problem.
+
+--- Solution 3 ---
+Counting down <math>n</math> from <math>1000</math>, <math>999</math>, <math>998</math>... we notice that <math>\left\lfloor \dfrac{998}{n} \right\rfloor+\left\lfloor \dfrac{999}{n} \right\rfloor+\left\lfloor \dfrac{1000}{n}\right \rfloor</math> is only not divisible by <math>3</math> when n is a divisor of ''only'' <math>1000</math> or <math>999 (1000, 999, 500, 333</math>...). Notice how the factors of <math>998: 1, 2, 499</math>, and <math>998</math>, do not work. 
+
+The prime factorization of <math>999</math> is <math>3^3\cdot37</math>, so <math>4\cdot2=8</math> factors in total.
+
+The prime factorization of <math>1000</math> is <math>2^3\cdot5^3</math>, so <math>4\cdot4=16</math> factors in total.
+
+However, <math>1</math> obviously does not work, so we have to subtract <math>2</math> (<math>1</math> is counted twice) from the total. <math>8 + 16 - 2</math> = <math>\boxed{\textbf{(A)}22}</math>.
+
+--- Solution 4 ---
+First, we notice the following lemma:
+
+<math>\textbf{Lemma}</math>: For <math>N, n \in \mathbb{N}</math>, <math> \left\lfloor \frac{N}{n} \right\rfloor = \left\lfloor \frac{N-1}{n} \right\rfloor + 1 </math> if <math>n \mid N</math>; and <math>\left\lfloor \frac{N}{n} \right\rfloor = \left\lfloor \frac{N-1}{n} \right\rfloor</math>  if <math>n \nmid N.</math>
+
+<math>\textbf{Proof}</math>: Let <math>A = kn + r</math>, with <math>0 \leq r < n</math>. If <math>n \mid N</math>, then <math>r = 0</math>. Hence <math>\left\lfloor \frac{N}{n} \right\rfloor = k</math>, <math>\left\lfloor \frac{N-1}{n} \right\rfloor = \left\lfloor \frac{(k-1)n+n-1}{n} \right\rfloor = k-1 + \left\lfloor \frac{n-1}{n} \right\rfloor = k-1</math>, and <math>\left\lfloor \frac{N}{n} \right\rfloor = \left\lfloor \frac{N-1}{n} \right\rfloor + 1.</math>
+
+If <math>n \nmid N</math>, then <math>1 \leq r < n</math>. Hence <math>\left\lfloor \frac{N}{n} \right\rfloor = k</math>, <math>\left\lfloor \frac{N-1}{n} \right\rfloor = k + \left\lfloor \frac{r-1}{n} \right\rfloor = k</math>, and <math>\left\lfloor \frac{N}{n} \right\rfloor = \left\lfloor \frac{N-1}{n} \right\rfloor.</math>
+
+From the lemma and the given equation, we have four possible cases:
+<cmath>\left\lfloor \frac{998}{n} \right\rfloor + 1 = \left\lfloor \frac{999}{n} \right\rfloor = \left\lfloor \frac{1000}{n} \right\rfloor - 1 \qquad (1)</cmath>
+<cmath>\left\lfloor \frac{998}{n} \right\rfloor + 1 = \left\lfloor \frac{999}{n} \right\rfloor + 1 = \left\lfloor \frac{1000}{n} \right\rfloor \qquad (2)</cmath>
+<cmath>\left\lfloor \frac{998}{n} \right\rfloor + 1 = \left\lfloor \frac{999}{n} \right\rfloor = \left\lfloor \frac{1000}{n} \right\rfloor \qquad (3)</cmath>
+<cmath>\left\lfloor \frac{998}{n} \right\rfloor = \left\lfloor \frac{999}{n} \right\rfloor = \left\lfloor \frac{1000}{n} \right\rfloor \qquad (4)</cmath>
+
+Note that cases (2) and (3) are the cases in which the term, <math>\left\lfloor \frac{998}{n} \right\rfloor + \left\lfloor \frac{999}{n} \right\rfloor + \left\lfloor \frac{1000}{n} \right\rfloor,</math> is not divisible by <math>3</math>. So we only need to count the number of <math>n</math>'s for which cases (2) and (3) stand.
+
+Case (2): By the lemma, we have <math>n \mid 1000</math> and <math>n \nmid 999.</math> Hence <math>n</math> can be any factor of <math>1000</math> except for <math>n = 1</math>. Since <math>1000 = 2^3 * 5^3,</math> there are <math>(3+1)(3+1) - 1 = 15</math> possible values of <math>n</math> for this case.
+
+Case (3): By the lemma, we have <math>n \mid 999</math> and <math>n \nmid 998.</math> Hence <math>n</math> can be any factor of <math>999</math> except for <math>n = 1</math>. Since <math>999 = 3^3 * 37^1,</math> there are <math>(3+1)(1+1) - 1 = 7</math> possible values of <math>n</math> for this case.
+
+So in total, we have total of <math>15+7=\boxed{\textbf{(A)}22}</math> possible <math>n</math>'s.
+
+--- Solution 5 ---
+Note that <math>\left\lfloor \frac{998}{n} \right\rfloor + \left\lfloor \frac{999}{n} \right\rfloor + \left\lfloor \frac{1000}{n} \right\rfloor</math> is a multiple of <math>3</math> if <math>\left\lfloor \frac{998}{n} \right\rfloor + \left\lfloor \frac{999}{n} \right\rfloor + \left\lfloor \frac{1000}{n} \right\rfloor</math> lies between two consecutive multiples of <math>n</math>. 
+
+
+<math>\textbf{Explanation:}</math>
+
+
+Let's assume that the above expression does indeed lie betweent two consecutive multiples of <math>n</math>. This implies that <math>n</math> does not divide either <math>998, 999</math> or <math>1000</math>, meaning that when divided by <math>n</math>, none of the quotients are whole. In turn, this also means that they will all have the same whole number part. 
+
+
+If <math>\frac{998}{n}, \frac{999}{n},</math> and <math>\frac{1000}{n}</math> were to have a different whole number part, then <math>n</math> would have to lie within <math>998</math> and <math>1000</math>. If this is confusing, think of why <math>\frac{6}{5}, \frac{7}{5}</math> and <math>\frac{8}{5}</math> have the same whole number part (<math>1</math> in this case). Here, <math>n=5</math>. What happens to the whole number part when <math>n=7</math>? 
+
+
+Since <math>\frac{998}{n}, \frac{999}{n},</math> and <math>\frac{1000}{n}</math> have identical whole number parts, their floors are identical, since the floor of a number is equal to its whole number part, discarding its fractional component. 
+
+
+Let <math>k</math> be the number we get when we floor <math>\frac{998}{n}, \frac{999}{n},</math> or <math>\frac{1000}{n}</math> if the three of those numbers lie between two consecutive multiples of <math>n</math>. Adding them up, we get <math>3k</math> (due to their floors being the same), which is a mulutiple of <math>3</math>. So no matter what, we cannot have <math>\frac{998}{n}, \frac{999}{n},</math> and <math>\frac{1000}{n}</math> lie between two consecutive multiples of <math>n</math>. 
+
+
+What does this mean? It means that there must be some multiple of <math>n</math> within this expression (with some restrictions, as we'll see), in order to prevent the violation of the main restriction. We can proceed with casework now.
+
+
+<math>\textbf{Case 1}</math>
+
+
+Let's assume that the multiple of <math>n</math> is located at <math>\frac{998}{n}</math>. Luckily, the only prime factors of <math>998</math> are <math>2</math> and <math>499</math>. 
+
+
+We can observe that <math>499</math> doesn't work, since <math>\frac{998}{499}</math> and <math>\frac{1000}{499}</math> will both round down to <math>2</math> when divided by it. However, <math>2</math> does work, since it divides both <math>998</math> and <math>1000</math>. The floor of <math>\frac{999}{2}</math> is <math>499</math>, , meaning that when we evaluate the given expression for <math>n=2</math>, we will get <math>2\cdot{499}+500</math> which isn't a multiple of <math>3</math>. 
+
+
+This case works because we have a multiple of <math>n</math> at the end of the expression, as well as the beginning, so the whole number parts of <math>998, 999</math> and <math>1000</math> when divided by <math>n</math> are not all the same, due to <math>n</math> dividing two of these numbers. 
+
+The restriction of <math>n</math> dividing more than one number within the expression is only valid when we're testing the first number in the given expression (otherwise, the other floors wouldn't round down to the same value as the first). 
+
+Case <math>1</math> is complete, and we've found that only <math>2</math> works. 
+
+
+<math>\textbf{Case 2}</math>
+
+Now, let's assume that the multiple of <math>n</math> is located at <math>\frac{999}{n}</math>. In this case, if <math>n</math> divides <math>999</math>, it doesn't divide <math>998</math> (since two multiples of a number greater than <math>1</math> are never consecutive), nor does it divide <math>1000</math>, for the same reason. 
+
+
+The prime factorization of <math>999</math> is <math>3^3\cdot37</math>, and thus has <math>(3+1)(1+1)=8</math> divisors. 
+
+
+When testing a few values of <math>n</math> initially, we observed that <math>n=1</math> causes the expression to be divisible by <math>3</math>. Subtracting <math>1</math>, we see that there are <math>7</math> values of <math>n</math> that work for this case.
+
+
+<math>\textbf{Case 3}</math>
+
+Finally, let's assume that the multiple of <math>n</math> is located at <math>\frac{1000}{n}.</math>
+
+
+Our goal is to have the other multiple of <math>n</math> below whatever <math>\frac{998}{n}</math> is, so we won't have identical floors throughout the expression. 
+
+
+Once again, any factor of <math>1000</math>, except for <math>2</math> is relatively prime to both <math>998</math> and <math>999</math>, so when we floor those two numbers, we get an integer that isn't <math>500</math>. 
+
+
+<math>1000</math> factors as <math>2^3\cdot{5^3}</math>, meaning that it has <math>(3+1)(3+1)=16</math> divisors. <math>1</math> and <math>2</math> either don't work or have already been counted, so there are <math>14</math> valid values of <math>n</math> for this case. 
+
+
+<math>\textbf{Ending}</math> 
+
+
+Adding these three cases, we get <math>1+7+14= \boxed{\textbf{A) }22} </math> values of <math>n</math>.
+
+-Benedict T (countmath1)
+
+--- Solution 6 ---
+Let <math>\lfloor \frac{998}{n} \rfloor + \lfloor \frac{999}{n} \rfloor + \lfloor \frac{1000}{n} \rfloor</math> be (1).
+Claim : If <math>n</math> is a factor of at least one of 998, 999, 1000, then (1) is NOT divisible by 3. 
+Proof of the claim : 
+
+If you don't understand this, let's test out some possible values. Evaluating the expression using <math>n = 1, 2, 3, 4, 5</math> show that the expression isn't divisible by 3. And when <math>n = 6</math>, we have 
+<cmath>\lfloor \frac{998}{6} \rfloor = \lfloor \frac{999}{6} \rfloor = \lfloor \frac{1000}{6} \rfloor = 166</cmath>
+This justifies that the expression is divisible by 3. 
+
+Therefore, let <math>S</math> be the set of numbers (not incl. 1) for which this is divisible by 3, which is <math>S = \{2, 3, 4, 5, 8, 9, 10, 20, 27, 37, 40, 50, 100, 111, 200, 333, 400, 499, 500, 999, 1000\}</math>. Adding 1 to this gives <math>21 + 1 = 22</math> values. <math>\boxed{\textbf{(A) }22} </math> 
+Q. E. D.
+
+
+=== Problem 23 ===
+Let
+
+Choices: {'A': '12', 'B': '15', 'C': '17', 'D': '20', 'E': '25</math>'}
+Answer: A
+
+--- Solution 1 ---
+Label each rotation \( A, B, C, D \), and \( E \) respectively.
+
+One can notice that any rotation on any figure is formed by the transformation on its vertices. Therefore, instead of thinking about the entire triangle, just think of the point \( (x, y) \).
+
+We proceed with casework on the \( 180^\circ \) rotation (B)
+
+Case A: We don't consider \( B \) (\( 180^\circ \) degrees)
+
+We have \( A, C, D \), and \( E \).
+Notice that we cannot have two reflections with one another as that will finish the sequence in two moves, not three.
+
+We also may not have two rotations, as it will cause the sequence to end in two moves as well.
+
+So we have one rotation and one reflection, but now we have a dilemma. We must choose either another rotation or another reflection.
+
+However, we deduced this is impossible, as it will not take the coordinate back to its original position. Therefore, there are 0 cases that work here.
+
+Case B: We consider the \( 180^\circ \) degree
+
+We first look at reflections. If we have two reflections of one kind D or E, we see that the sequence will finish in 2 rounds. Therefore. we must have one reflection D, one reflection E, and one \( 180^\circ \) rotation. This means we have a transformation set \( \{B, D, E\} \). The elements of this set can be swapped in \( 3! = 6 \) ways.
+
+We now look at rotations. If we have two rotations of A, that is essentially \( 90^\circ + 90^\circ = 180^\circ \) of rotation, and therefore mixed in with a \( 180^\circ \) rotation guarantees the same coordinate \( (x, y) \). So, we have a transformation set \( \{A, A, B\} \), which can be arranged in \( \frac{3!}{2!} = 3 \) ways. What about \( C \)? We can just see that \( C \) is just a rotation \( 90^\circ \) clockwise, so if we apply 2 of these, we again get \( 90^\circ + 90^\circ = 180^\circ \) of rotation, giving us enough room for transformation B. Then, our set is \( \{C, C, B\} \), which can be again arranged in \( \frac{3!}{2!} = 3 \) ways.
+
+Do any other cases exist? Well, if we have two rotations, then it is impossible, as the rotations negate one another into a \( 360^\circ \) rotation in two moves.
+More importantly, we also see that if we have a mix between a rotation and a reflection, we can see that one will swap the places of \( x \) and \( y \) \( (x, y) \rightarrow (-y, x) \) for instance, and the only other way to change that is another rotation that is not \( B \), which we already deemed was impossible
+We already concluded in case A that we cannot have \( A, C, \) and then either \( D \) or \( E \), therefore, we can only have \( B \), but either through inspection or seeing that \( B \) negates the values of \( x \) and \( y \) while a rotation of A and C brings them back to normal, therefore, this can also not work.
+
+Thus the total number of cases is \( 3+3 = 6 \)
+
+We have examined all the cases, and therefore our answer is \( 6+6 = \) <math>\boxed{\textbf{(A)}  12}</math>
+
+--- Solution 2 ---
+<asy>
+size(10cm);
+Label f; 
+f.p=fontsize(6); 
+xaxis(-6,6,Ticks(f, 2.0)); 
+yaxis(-6,6,Ticks(f, 2.0));
+
+filldraw(origin--(4,0)--(0,3)--cycle, gray, black+linewidth(1));
+</asy>
+
+First, any combination of motions we can make must reflect <math>T</math> an even number of times. This is because every time we reflect <math>T</math>, it changes orientation. Once <math>T</math> has been flipped once, no combination of rotations will put it back in place because it is the mirror image; however, flipping it again changes it back to the original orientation. Since we are only allowed <math>3</math> transformations and an even number of them must be reflections, we either reflect <math>T</math> <math>0</math> times or <math>2</math> times.
+
+
+
+Case 1: <math>0</math> reflections on <math>T</math>.
+
+
+
+In this case, we must use <math>3</math> rotations to return <math>T</math> to its original position. Notice that our set of rotations, <math>\{90^\circ,180^\circ,270^\circ\}</math>, contains every multiple of <math>90^\circ</math> except for <math>0^\circ</math>. We can start with any two rotations <math>a,b</math> in <math>\{90^\circ,180^\circ,270^\circ\}</math> and there must be exactly one <math>c \equiv -a - b \pmod{360^\circ}</math> such that we can use the three rotations <math>(a,b,c)</math> which ensures that <math>a + b + c \equiv 0^\circ \pmod{360^\circ}</math>. That way, the composition of rotations <math>a,b,c</math> yields a full rotation. For example, if <math>a = b = 90^\circ</math>, then <math>c \equiv -90^\circ - 90^\circ = -180^\circ \pmod{360^\circ}</math>, so <math>c = 180^\circ</math> and the rotations <math>(90^\circ,90^\circ,180^\circ)</math> yields a full rotation.
+
+The only case in which this fails is when <math>c</math> would have to equal <math>0^\circ</math>. This happens when <math>(a,b)</math> is already a full rotation, namely, <math>(a,b) = (90^\circ,270^\circ),(180^\circ,180^\circ),</math> or <math>(270^\circ,90^\circ)</math>. However, we can simply subtract these three cases from the total. Selecting <math>(a,b)</math> from <math>\{90^\circ,180^\circ,270^\circ\}</math> yields <math>3 \cdot 3 = 9</math> choices, and with <math>3</math> that fail, we are left with <math>6</math> combinations for case <math>1</math>.
+
+
+
+Case 2: <math>2</math> reflections on <math>T</math>.
+
+
+
+In this case, we first eliminate the possibility of having two of the same reflection. Since two reflections across the x-axis maps <math>T</math> back to itself, inserting a rotation before, between, or after these two reflections would change <math>T</math>'s final location, meaning that any combination involving two reflections across the x-axis would not map <math>T</math> back to itself. The same applies to two reflections across the y-axis.
+
+Therefore, we must use one reflection about the x-axis, one reflection about the y-axis, and one rotation. Since a reflection about the x-axis changes the sign of the y component, a reflection about the y-axis changes the sign of the x component, and a <math>180^\circ</math> rotation changes both signs, these three transformation composed (in any order) will suffice. It is therefore only a question of arranging the three, giving us <math>3! = 6</math> combinations for case 2.
+
+Combining both cases we get <math>6+6=\boxed{\textbf{(A)}  12}</math>.
+
+--- Solution 3 ---
+As in the previous solution, note that we must have either <math>0</math> or <math>2</math> reflections because of orientation since reflection changes orientation that is impossible to fix by rotation. We also know we can't have the same reflection twice, since that would give a net of no change and would require an identity rotation.
+
+Suppose there are no reflections. Denote <math>90^{\circ}</math> as <math>1</math>, <math>180^{\circ}</math> as <math>2</math>, and <math>270^{\circ}</math> as <math>3</math>, just for simplification purposes. We want a combination of <math>3</math> of these that will sum to either <math>4</math> or <math>8</math> (<math>0</math> and <math>12</math> are impossible since the minimum is <math>3</math> and the max is <math>9</math>). <math>4</math> can be achieved with any permutation of <math>(1-1-2)</math> and <math>8</math> can be achieved with any permutation of <math>(2-3-3)</math>. This case can be done in <math>3+3=6</math> ways.
+
+Suppose there are two reflections. As noted already, they must be different, and as a result will take the triangle to the opposite side of the origin if we don't do any rotation. We have <math>1</math> rotation left that we can do though, and the only one that will return to the original position is <math>2</math>, which is <math>180^{\circ}</math> AKA reflection across origin. Therefore, since all <math>3</math> transformations are distinct. The three transformations can be applied anywhere since they are commutative (think quadrants). This gives <math>6</math> ways.
+
+<math>6+6=\boxed{\textbf{(A)}  12}</math>.
+
+--- Solution 4 ---
+Define <math>s</math> as a reflection, and <math>r</math> as a <math>90^{\circ}</math> counterclockwise rotation. Thus, <math>r^4=s^2=e</math>, and the five transformations can be represented as <math>{r, r^2, r^3, r^2s, s}</math>, and <math>rs=sr^{-1}</math>.
+
+Now either <math>s</math> doesn't appear at all or appears twice. For the former case, it's easy to see that only <math>r, r, r^2</math> and <math>r^2, r^3, r^3</math> will work. Both can be permuted in <math>3</math> ways, giving <math>6</math> ways in total.
+
+For the latter case, note that <math>s</math> can't appear twice, neither does <math>r^2s</math>, else we need to get <math>e</math> from <math>{r, r^2, r^3}</math>, which is not possible. So <math>r^2s</math> and <math>s</math> must appear once each. The last transformation must be <math>r^2</math>. A quick check shows that <math>{r^2, r^2s, s}</math> is permutable, since <math>r^2s=sr^{-2}=sr^2</math> (since <math>r^4=e</math>). This gives <math>6</math> ways.
+
+Thus the answer is <math>\boxed{\textbf{(A)} 12}</math>.
+
+
+=== Problem 24 ===
+Let
+
+Choices: {'A': '12', 'B': '15', 'C': '18', 'D': '21', 'E': '24</math>'}
+Answer: C
+
+--- Solution 1 ---
+We know that <math>\gcd(n+57,63)=21</math> and <math>\gcd(n-57, 120)= 60</math> by the Euclidean Algorithm. Hence, let <math>n+57=21\alpha</math> and <math>n-57=60 \gamma</math>, where <math>\gcd(\alpha,3)=1</math> and <math>\gcd(\gamma,2)=1</math>. Subtracting the two equations, <math>38=7\alpha-20\gamma</math>. Letting <math>\gamma = 2s+1</math>, we get <math>58=7\alpha-40s</math>. Taking modulo <math>40</math>, we have <math>\alpha \equiv{14} \pmod{40}</math>. We are given that <math>n=21\alpha -57 >1000</math>, so <math>\alpha \geq 51</math>. Notice that if <math>\alpha =54</math> then the condition <math>\gcd(\alpha,3)=1</math> is violated. The next possible value of  <math>\alpha = 94</math> satisfies the given condition, giving us <math>n=1917</math>.
+
+Alternatively, we could have said <math>\alpha = 40k+14 \equiv{0} \pmod{3}</math> for <math>k \equiv{1} \pmod{3}</math> only, so <math>k \equiv{0,2} \pmod{3}</math>, giving us our answer. Since the problem asks for the sum of the digits of <math>n</math>, our answer is <math>1+9+1+7=\boxed{\textbf{(C) } 18}</math>.
+
+
+==Supplement== 
+When looking at <math>38=7\alpha-20\gamma</math>,  instead of attempting to take <math> \alpha </math> modulo <math>40 </math>, it may be more intuitively obvious to take <math>\alpha</math> modulo <math> 20</math>:
+
+As <math> 7</math> and <math> 20 </math> are coprime, <math> 7 </math> has an inverse modulo <math>20 </math>. Recall that <math> 7 \cdot 3 \equiv 1 \pmod{20} </math>, so <math> 7^{-1} \equiv 3 \pmod{20} </math>. Thus, <math> \alpha \equiv 54 \equiv 14 \pmod{20}</math>. Furthermore, consider that <math> 21 \alpha -57 > 1000 </math>, so <math> \alpha \geq 51 </math>. <math> \alpha = 54 </math> fails, as <math> gcd( \alpha, 3) = 1 </math> from <math> \gcd(63, n + 57 ) = 21</math>. <math> 74 </math> fails as well; this causes <math> \gamma </math> to be even from <math> 114 = 21\alpha - 60\gamma </math>. <math> 94 </math> is the first number not violating any restrictions, leaving <math> 94 \cdot 21-57 = 1917 </math>, which has digital sum <math> 1 + 9 + 1 + 7 = 18 </math>, so we choose <math> \boxed{ (C) } </math>. 
+
+In the end, though, it is just the same steps in a different order.
+
+--- Solution 2 ---
+The conditions of the problem reduce to the following: <math>n+120 = 21k</math> and <math>n+63 = 60\ell</math>, where <math>\gcd(k,3) = 1</math> and <math>\gcd(\ell,2) = 1</math>. From these equations, we see that <math>21k - 60\ell = 57</math>. Solving this Diophantine equation gives us that <math>k = 20a + 17</math> and <math>\ell = 7a + 5</math>. Since, <math>n>1000</math>, we can do some bounding and get that <math>k > 53</math> and <math>\ell > 17</math>. Now we start bashing by plugging in numbers that satisfy these conditions: <math>a=4</math> is the first number that works so we get <math>\ell = 33</math>, <math>k = 97</math>. Therefore, we have <math>n=21(97)-120=60(33)-63=1917</math>, and our answer is <math>1+9+1+7=\boxed{\textbf{(C) } 18}</math>.
+
+--- Solution 3 ---
+We first find that <math>n\equiv6\pmod{21}</math> and <math>n\equiv57\pmod{60}</math>, then we get <math>n=21x+6</math> and <math>n=60y+57</math> by definitions, where <math>x</math> and <math>y</math> are integers. It follows that <math>y</math> must be odd, since the GCD will be <math>120</math> instead of <math>60</math> if <math>y</math> is even. Also, the unit digit of <math>n</math> must be <math>7</math>, since the unit digit of <math>60y</math> is always <math>0</math> and the unit digit of <math>57</math> is <math>7</math>. Therefore, we find that <math>x</math> must end in <math>1</math> to satisfy <math>n</math> having a unit digit of <math>7</math>. Also, we find that <math>x</math> must not be a multiple of <math>3</math> or else the GCD will be <math>63</math>. Therefore, we test values for <math>x</math> and find that <math>x=91</math> satisfies all these conditions. Therefore, <math>n=1917</math> and <math>1+9+1+7 = \boxed{\textbf{(C) } 18}</math>.
+
+--- Solution 4 ---
+After applying the [[Euclidean Algorithm]] we get <math>\gcd(n - 6, 63) = 21</math> and <math>\gcd(n - 57, 120) = 60.</math> So we have <math>n - 6 = 21a</math> and <math>n - 57 = 60b</math>, where <math>a</math> is not a multiple of <math>3</math> and <math>b</math> is not a multiple of <math>2.</math> Setting these equations equal to each other, we get <math>21a = 60b + 51 \implies 20b = 7a - 17.</math> We note that <math>a</math> must be <math>\geq 48</math> (since <math>n</math> has to be greater than <math>1000</math>) and the last digit of <math>a</math> must be <math>1</math> so that <math>7a - 17</math> is a multiple of <math>10</math> and has a possibility of also being a multiple of 20.
+
+{| class="wikitable"
+|-
+! a values
+! b values
+|-
+| 51 (can't be a multiple of 3)
+| 17
+|-
+| 61 
+| 41/2 (not an integer)
+|-
+| 71
+| 24 (can't be even)
+|-
+| 81 (can't be a multiple of 3)
+| 55/2 (not an integer)
+|-
+| 91 '''this works!'''
+| 31 '''this works!'''
+|-
+|}
+
+Since <math>a = 91</math>, <math>n = 91 \cdot 21 + 6 = 1917</math> (or since <math>b = 31,</math> <math>n = 31 \cdot 60 + 57 = 1917).</math> The answer is <math>1 + 9 + 1 + 7 = \boxed{18}.</math>
+
+~[[User:grogg007|grogg007]], [https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]
+
+--- Solution 5 ---
+We are given that <math>\gcd(63, n+120) =21</math> and <math>\gcd(n+63, 120)=60.</math> By applying the Euclidean algorithm in reverse, we have <cmath>\gcd(63, n+120) = \gcd(63, n+120 + 63) = \gcd(63, n+183) = 21</cmath> and <cmath>\gcd(n+63, 120) = \gcd(n+63 + 120, 120) = \gcd(n+183, 120) = 60.</cmath>
+
+We now know that <math>n+183</math> must be divisible by <math>21</math> and <math>60,</math> so it is divisible by <math>\text{lcm}(21, 60) = 420.</math> Therefore, <math>n+183 = 420k</math> for some integer <math>k.</math> We know that <math>3 \nmid k,</math> or else the first condition won't hold (<math>\gcd</math> will be <math>63</math>) and <math>2 \nmid k,</math> or else the second condition won't hold (<math>\gcd</math> will be <math>120</math>). Since <math>k = 1</math> gives us too small of an answer, then <math>k=5,</math> from which <math>n = 1917.</math> So, the answer is <math>1+9+1+7 = \boxed{\textbf{(C) } 18}.</math>
+
+--- Solution 6 ---
+<math>\gcd(n+63,120)=60</math> tells us <math>n+63\equiv60\pmod {120}</math>. The smallest <math>n+63</math> that satisfies the previous condition and <math>n>1000</math> is <math>1140</math>, so we start from there. If <math>n+63=1140</math>, then <math>n+120=1197</math>. Because <math>\gcd(n+120,63)=21</math>, <math>n+120\equiv21\pmod {63}</math> or <math>n+120\equiv42\pmod {63}</math>. We see that <math>1197\equiv0\pmod {63}</math>, which does not fulfill the requirement for <math>n+120</math>, so we continue by keep on adding <math>120</math> to <math>1197</math>, in order to also fulfill the requirement for <math>n+63</math>. Soon, we see that <math>n+120\pmod {63}</math> decreases by <math>6</math> every time we add <math>120</math>, so we can quickly see that <math>n=1917</math> because at that point <math>n+120\equiv21\pmod {63}</math>. We add up all digits of <math>1917</math> to get <math>\boxed{\textbf{(C) } 18}</math>.
+
+--- Solution 7 ---
+We are able to set up the following system of congruences: 
+<cmath>\begin{align*}
+n &\equiv 6 \pmod {21}, \\
+n &\equiv 57 \pmod {60}.
+\end{align*}</cmath> 
+Therefore, by definition, we are able to set-up the following system of equations: 
+<cmath>\begin{align*}
+n &= 21a + 6, \\
+n &= 60b + 57.
+\end{align*}</cmath> 
+Thus, we have <math>21a + 6 = 60b + 57,</math> from which <cmath>7a + 2 = 20b + 19.</cmath>
+We know <math>7a \equiv 0 \pmod {7},</math> and since <math>7a = 20b + 17,</math> therefore <math>20b + 17 \equiv 0 \pmod{7}.</math> Simplifying this congruence further, we have <cmath>b\equiv 3 \pmod{7}.</cmath>
+Thus, by definition, <math>b = 7x + 3.</math> Substituting this back into our original equation, we get <cmath>n = 60(7x + 3) + 57 = 420x + 237.</cmath>
+By definition, we are able to set up the following congruence:
+<cmath>n \equiv 237 \pmod{420}.</cmath>
+Thus, <math>n = 1917</math>, so our answer is simply <math>1+9+1+7=\boxed{\textbf{(C) } 18}</math>.
+
+<u><b>Remark</b></u>
+
+Since <math>n \equiv -120 \pmod{21},</math> we conclude that <math>n \equiv 6 \pmod{21}.</math>
+
+Since <math>n \equiv -63 \pmod{60},</math> we conclude that <math>n \equiv 57 \pmod{60}.</math>
+
+Remember that  <math>b \equiv 3 \pmod{7}.</math>
+
+Lastly, the reason why <math>n \neq 1077</math> is <math>n + 120</math> would be divisible by <math>63</math>, which is not possible due to the certain condition.
+
+--- Solution 8 ---
+First, we find <math>n</math>. We know that it is greater than <math>1000</math>, so we first input <math>n = 1000</math>. From the first equation, <math>\gcd(63, n + 120) = 21</math>, we know that if <math>n</math> is correct, after we add <math>120</math> to it, it should be divisible by <math>21</math>, but not <math>63</math>: 
+<cmath>\frac{n + 120}{21} = \frac{1120}{21} = 53\text{ R }7.</cmath>
+This does not work. To get to the nearest number divisible by <math>21</math>, we have to add <math>14</math> to cancel out the remainder. (Note that we don't subtract <math>7</math> to get to <math>53</math>; <math>n</math> is already at its lowest possible value!)
+Adding <math>14</math> to <math>1000</math> gives us <math>n = 1014</math>. (Note: <math>n</math> is currently divisible by 63, but that's fine since we'll be changing it in the next step.)
+
+Now using the second equation, <math>\gcd(n + 63, 120) = 60</math>, we know that if <math>n</math> is correct, then <math>n+63</math> is divisible by <math>60</math> but not <math>120</math>:
+<cmath>\frac{n + 63}{60} = \frac{1077}{60} = 17\text{ R }57.</cmath>
+Again, this does not work. This requires some guessing and checking. We can add <math>21</math> over and over again until <math>n</math> is valid. This changes <math>n</math> while also maintaining that <math>\frac{n + 120}{21}</math> has no remainders. 
+After adding <math>21</math> once, we get <math>18 r 18</math>. By pure luck, adding <math>21</math> two more times gives us <math>19</math> with no remainders. 
+We now have <math>1077 + 21 + 21 + 21 = 1140</math>. However, this number is divisible by <math>120</math>. To get the next possible number, we add the LCM of <math>21</math> and <math>60</math> (once again, to maintain divisibility), which is <math>420</math>. Unfortunately, <math>1140 + 420 = 1560</math> is still divisible by <math>120</math>. Adding <math>420</math> again gives us <math>1980</math>, which is valid. However, remember that this is equal to <math>n + 63</math>, so subtracting <math>63</math> from <math>1980</math> gives us <math>1917</math>, which is <math>n</math>. 
+
+The sum of its digits are <math>1 + 9 + 1 + 7 = \boxed{\textbf{(C) } 18}</math>.
+
+--- Solution 9 ---
+By the Euclidean Algorithm, we have
+<cmath>\begin{alignat*}{8}
+\gcd(63,n+120)&=\hspace{1mm}&&\gcd(63,\phantom{ }\underbrace{n+120-63k_1}_{(n+120) \ \mathrm{mod} \ 63}\phantom{ })&&=21, \\ 
+\gcd(n+63,120)&=&&\gcd(\phantom{ }\underbrace{n+63-120k_2}_{(n+63) \ \mathrm{mod} \ 120}\phantom{ },120)&&=60. 
+\end{alignat*}</cmath>
+Clearly, <math>n+120-63k_1</math> must be either <math>21</math> or <math>42,</math> and <math>n+63-120k_2</math> must be <math>60.</math>
+
+More generally, let <math>t\in\{1,2\},</math> so we get
+<cmath>\begin{align*}
+n+120-63k_1&=21t, &\hspace{55.5mm}(1) \\
+n+63-120k_2&=60. &\hspace{55.5mm}(2)
+\end{align*}</cmath>
+Subtracting <math>(2)</math> from <math>(1)</math> and then simplifying give
+<cmath>\begin{align*}
+57-63k_1+120k_2&=21t-60 \\
+117-63k_1+120k_2&=21t \\
+39-21k_1+40k_2&=7t. \hspace{54mm}(\bigstar)
+\end{align*}</cmath>
+Taking <math>(\bigstar)</math> modulo <math>7</math> produces
+<cmath>\begin{align*}
+4+5k_2&\equiv0\pmod{7} \\
+k_2&\equiv2\pmod{7}.
+\end{align*}</cmath>
+Recall that <math>n>1000.</math> From <math>(2),</math> it follows that <cmath>1063-120k_2<n+63-120k_2=60,</cmath> from which <math>k_2>8.</math> Therefore, the possible values for <math>k_2</math> are <math>9,16,23,\ldots.</math>
+
+We need to check whether positive integers <math>k_1</math> and <math>t</math> (where <math>t\in\{1,2\}</math>) exist in <math>(1):</math>
+<ul style="margin-left: 1.5em, list-style-type: square;">
+  <li>If <math>k_2=9,</math> then substituting into <math>(2)</math> gives <math>n=1077.</math> Next, substituting into <math>(1)</math> produces <math>1197-63k_1=21t,</math> or <math>57-3k_1=t.</math> <p>
+There are no solutions <math>(k_1,t).</math></li><p>
+  <li>If <math>k_2=16,</math> then substituting into <math>(2)</math> gives <math>n=1917.</math> Next, substituting into <math>(1)</math> produces <math>2037-63k_1=21t,</math> or <math>97-3k_1=t.</math> <p>
+The solution is <math>(k_1,t)=(32,1).</math></li><p>
+</ul>
+Finally, the least such positive integer <math>n</math> is <math>1917.</math> The sum of its digits is <math>1+9+1+7=\boxed{\textbf{(C) } 18}.</math>
+
+--- Solution 10 ---
+Because we are finding value of <math>n</math> for <math>n > 1000</math>, let <math>n = 1000 + k</math>.
+
+Using the Euclidean Algorithm, 
+<cmath>\begin{align*}
+\gcd(63, n+120) &= \gcd(63, 1000 + k + 120) \\
+&= \gcd(63, k + 1120 - 63 \cdot 18) \\
+&= \gcd(63, k-14) \\
+&= 21, \\
+\gcd(n+63, 120) &= \gcd(k + 1000 + 63, 120) \\
+&= \gcd(k + 1000 + 63 - 120 \cdot 9, 120) \\
+&= \gcd(k-17, 120) \\
+&= 60.
+\end{align*}</cmath>
+So, we have
+<cmath>\begin{align*}
+k &\equiv 14 \pmod{21}, \\
+k &\equiv 17 \pmod{60}.
+\end{align*}</cmath>
+Let <math>k = 21p + 14 = 60q + 17</math>, <math>7p= 20q + 1</math> (by the Division Algorithm), <math>7p = 21q - (q - 1)</math>, <math>q - 1</math> is a multiple of <math>7</math>.
+
+Let <math>q-1 = 7r</math>, <math>q = 7r+1</math>, <math>k = 60(7r+1) + 17 = 420r + 77</math>.
+
+<math>n = 1000 + k = 420r + 1077</math>, <math>n = 1077, 1497, 1917</math>.
+
+By substituting <math>1077</math>, <math>1497</math>, <math>1917</math> into <math>\gcd(63, n+120) =21</math> and <math>\gcd(n+63, 120)=60</math>, <math>1077</math> and  <math>1497</math> aren't valid answers, only <math>1917</math> is. Therefore, the answer is <math>1+9+1+7=\boxed{\textbf{(C) } 18}</math>.
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen] (Solution)
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Plainoldnumbertheory Plainoldnumbertheory] (Minor Edits)
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Plainoldnumbertheory Puck_0] (Formatting)
+
+--- Solution 11 ---
+We have
+<cmath>\begin{align*}
+\gcd(63, n+120) &= 21 \Longrightarrow n + 120 \equiv 0 \pmod{21}, \text{ where } 9 \nmid n + 120, \\
+\gcd(n+63, 120) &= 60 \Longrightarrow n + 63 \equiv 0 \pmod{60}, \text{ where } 8 \nmid n + 63.
+\end{align*}</cmath>
+So, we conclude that <math>n \equiv 6 \pmod{21}</math> and <math>n \equiv 57 \pmod{60}</math>, respectively.
+
+Because the <math>2</math> moduli <math>21</math> and <math>60</math> are not relatively prime, namely <math>\gcd{(21, 60)} = 3</math>, <math>21 = 3 \cdot 7</math>, and <math>60 = 3 \cdot 20</math>, we convert the system of <math>2</math> linear congruences with non-coprime moduli into a system of <math>3</math> linear congruences with coprime moduli:
+<cmath>\begin{align*}
+n &\equiv 0 \pmod{3}, \\
+n &\equiv 6 \pmod{7}, \\
+n &\equiv 17 \pmod{20}.
+\end{align*}</cmath>
+By [https://artofproblemsolving.com/wiki/index.php/Chinese_Remainder_Theorem Chinese Remainder Theorem], the general solution of system of <math>3</math> linear congruences is <cmath>n = 420k + 1077.</cmath>
+We construct the following table:
+<cmath>\begin{array}{c|c|c|c}
+n & 1077 & 1497 & 1917\\
+\hline
+n + 120 & 1197 & 1617 & 2037\\
+\hline
+n + 63 & 1140 & 1560 & 1980\\
+\end{array}</cmath>
+Only <math>n = 1917</math> satisfies <math>9 \nmid n + 120</math> and <math>8 \nmid n + 63</math>. Therefore, the answer is <math>1+9+1+7=\boxed{\textbf{(C) } 18}</math>.
+
+--- Solution 12 ---
+We know that <math>n</math> ends with the number <math>7</math>, since <math>n+63</math> is divisible by <math>60</math>, and any number divisible by <math>10</math> (a factor of <math>60</math>) must end with a <math>0</math>. As a result, <math>n+120</math> must also end in <math>7</math>. Because <math>n+63</math> must be divisible by <math>20</math>, as well (using the same gcd), the tens value of <math>n</math> must be odd. Also, <math>n+120</math> cannot be divisible by <math>9</math>, otherwise, its gcd with <math>63</math> will be <math>63</math>, instead of <math>21</math>.
+
+Now, we can start bashing, using the <math>\gcd(63, n+120) =21</math>. We are given that <math>n</math> must be greater than <math>1000</math>, so we can try <math>n+120</math> that is greater than <math>1120</math>.
+
+We try <math>21 \cdot 67</math>, but it has an even tens digit. We then can try the next highest, using <math>77</math>, but the <math>\gcd(n+63, 120) =120</math>, instead of <math>60</math>.
+
+Since <math>87</math> is divisible by <math>3</math>, so when multiplied by <math>21</math>, it will be divisible by <math>9</math>, we do not have to test it.
+
+The next biggest is <math>97</math>, which works and gives us <math>n=1917</math>, which, when the digits are added up, equals <math>\boxed{\textbf{(C) } 18}</math>.
+
+--- Solution 13 ---
+By the Euclidean Algorithm, we have <math>\gcd(63, n - 6) = 21</math> and <math>\gcd(120, n - 57) = 60</math>. We know that <math>63 = 21 \cdot 3</math>, meaning <math>n - 6 = 21x</math> where <math>x</math> is not divisible by <math>3</math>. Similarly, <math>120 = 60 \cdot 2</math>, meaning <math>n - 57 = 60y</math> where <math>y</math> is odd.
+
+Setting the two expressions for <math>n</math> equal:
+<cmath>21x + 6 = 60y + 57,</cmath>
+so
+<cmath>21x = 60y + 51.</cmath>
+We can see that <math>x</math> must have a units digit of <math>1</math>, since <math>21x - 51</math> must be divisible by <math>10</math> in order to be divisible by <math>60</math>.
+
+Because <math>n > 1000</math>, we try <math>x = 61</math>, <math>x = 71</math>, and finally <math>x = 91</math>, which works. Thus <math>21 \cdot 91 = n - 6</math>, so <math>n = 1917</math>. The sum of the digits of <math>n</math> is <math>1 + 9 + 1 + 7 = \boxed{18}</math>.
+
+
+=== Problem 25 ===
+Jason rolls three fair standard six-sided dice. Then he looks at the rolls and chooses a subset of the dice (possibly empty, possibly all three dice) to reroll. After rerolling, he wins if and only if the sum of the numbers face up on the three dice is exactly
+
+Choices: {'A': '\\frac{7}{36}', 'B': '\\frac{5}{24}', 'C': '\\frac{2}{9}', 'D': '\\frac{17}{72}', 'E': '\\frac{1}{4}</math>'}
+Answer: A
+
+--- Solution 1 ---
+Consider the probability that rolling two dice gives a sum of <math>s</math>, where <math>s \leq 7</math>. There are <math>s - 1</math> pairs that satisfy this, namely <math>(1, s - 1), (2, s - 2), \ldots, (s - 1, 1)</math>, out of <math>6^2 = 36</math> possible pairs. The probability is <math>\frac{s - 1}{36}</math>.
+
+Therefore, if one die has a value of <math>a</math> and Jason rerolls the other two dice, then the probability of winning is <math>\frac{7 - a - 1}{36} = \frac{6 - a}{36}</math>.
+
+In order to maximize the probability of winning, <math>a</math> must be minimized. This means that if Jason rerolls two dice, he must choose the two dice with the maximum values.
+
+Thus, we can let <math>a \leq b \leq c</math> be the values of the three dice. Consider the case when <math>a + b < 7</math>. If <math>a + b + c = 7</math>, then we do not need to reroll any dice. Otherwise,
+if we reroll one die, we can reroll any one dice in the hope that we get the value that makes the sum of the three dice <math>7</math>. This happens with probability <math>\frac16</math>. If we reroll two dice, we will roll the two maximum dice, and the probability of winning is <math>\frac{6 - a}{36}</math>, as stated above. However, <math>\frac16 > \frac{6 - a}{36}</math>, so rolling one die is always better than rolling two dice if <math>a + b < 7</math>.
+
+Now consider the case where <math>a + b \geq 7</math>. Rerolling one die will not help us win since the sum of the three dice will always be greater than <math>7</math>. If we reroll two dice, the probability of winning is, once again, <math>\frac{6 - a}{36}</math>. To find the probability of winning if we reroll all three dice, we can let each dice have <math>1</math> dot and find the number of ways to distribute the remaining <math>4</math> dots. By stars and bars, there are <math>{6\choose2} = 15</math> ways to do this, making the probability of winning <math>\frac{15}{6^3} = \frac5{72}</math>.
+
+In order for rolling two dice to be more favorable than rolling three dice, <math>\frac{6 - a}{36} > \frac5{72} \rightarrow a \leq 3</math>.
+
+Thus, rerolling two dice is optimal if and only if <math>a \leq 3</math> and <math>a + b \geq 7</math>. The possible triplets <math>(a, b, c)</math> that satisfy these conditions, and the number of ways they can be permuted, are
+
+<math>(3, 4, 4) \rightarrow 3</math> ways.
+
+<math>(3, 4, 5) \rightarrow 6</math> ways.
+
+<math>(3, 4, 6) \rightarrow 6</math> ways.
+
+<math>(3, 5, 5) \rightarrow 3</math> ways.
+
+<math>(3, 5, 6) \rightarrow 6</math> ways.
+
+<math>(3, 6, 6) \rightarrow 3</math> ways.
+
+<math>(2, 5, 5) \rightarrow 3</math> ways.
+
+<math>(2, 5, 6) \rightarrow 6</math> ways.
+
+<math>(2, 6, 6) \rightarrow 3</math> ways.
+
+<math>(1, 6, 6) \rightarrow 3</math> ways.
+
+There are <math>3 + 6 + 6 + 3 + 6 + 3 + 3 + 6 + 3 + 3 = 42</math> ways in which rerolling two dice is optimal, out of <math>6^3 = 216</math> possibilities, Therefore, the probability that Jason will reroll two dice is <math>\frac{42}{216} = \boxed{\textbf{(A) } \frac{7}{36}}</math>.
+
+--- Solution 2 ---
+We conclude all of the following after the initial roll:
+<ol style="margin-left: 1.5em;">
+  <li>Jason rerolls exactly zero dice if and only if the sum of the three dice is <math>7,</math> in which the probability of winning is always <math>1.</math></li><p>
+  <li>If Jason rerolls exactly one die, then the sum of the two other dice must be <math>2,3,4,5,</math> or <math>6.</math> The probability of winning is always <math>\frac16,</math> as exactly <math>1</math> of the <math>6</math> possible outcomes of the die rerolled results in a win. </li><p>
+  <li>If Jason rerolls exactly two dice, then the outcome of the remaining die must be <math>1,2,3,4,</math> or <math>5.</math> Applying casework to the remaining die produces the following table:
+<cmath>\begin{array}{c||c|c}
+& & \\ [-2.5ex]
+\textbf{Remaining Die} & \textbf{Sum Needed for the Two Dice Rerolled} & \textbf{Probability of Winning} \\ [0.5ex]
+\hline
+& & \\ [-2ex]
+1 & 6 & 5/36 \\
+2 & 5 & 4/36 \\
+3 & 4 & 3/36 \\
+4 & 3 & 2/36 \\
+5 & 2 & 1/36
+\end{array}</cmath>
+The probability of winning is at most <math>\frac{5}{36}.</math></li><p>
+  <li>If Jason (re)rolls all three dice, then the probability of winning is always <math>\frac{\binom62}{6^3}=\frac{15}{216}=\frac{5}{72}.</math></li><p>
+For the denominator, rolling three dice gives a total of <math>6^3=216</math> possible outcomes. <p>
+For the numerator, this is the same as counting the ordered triples of positive integers <math>(a,b,c)</math> for which <math>a+b+c=7.</math> Suppose that <math>7</math> balls are lined up in a row. There are <math>6</math> gaps between the balls, and placing dividers in <math>2</math> of the gaps separates the balls into <math>3</math> piles. From left to right, the numbers of balls in the piles correspond to <math>a,b,</math> and <math>c,</math> respectively. There are <math>\binom62=15</math> ways to place the dividers. Note that the dividers' positions and the ordered triples have one-to-one correspondence, and <math>1\leq a,b,c\leq6</math> holds for all such ordered triples. </li><p>
+</ol>
+The optimal strategy is that:
+<ul style="list-style-type:square;">
+  <li>If Jason needs to reroll at least zero dice to win, then he rerolls exactly zero dice.</li><p>
+  <li>If Jason needs to reroll at least one die to win, then he rerolls exactly one die.</li><p>
+  <li>If Jason needs to reroll at least two dice to win, then he rerolls exactly two dice if and only if the probability of winning is greater than <math>\frac{5}{72},</math> the probability of winning for rerolling all three dice. <p> The first three cases in the table above satisfy this requirement. We will analyze these cases by considering the initial outcomes of the two dice rerolled. Note that any of the three dice can be the remaining die, so we need a factor of <math>3</math> for all counts in the third column:
+<cmath>\begin{array}{c||c|c} 
+& & \\ [-2.5ex] 
+\textbf{Remaining Die} & \textbf{Initial Outcomes of the Two Dice Rerolled} & \textbf{\# of Ways} \\ [0.5ex] 
+\hline 
+& & \\ [-2ex] 
+1 & \text{Both are in }\{6\}\text{, not necessarily distinct.} & 3\cdot1^2=3 \\ 
+2 & \text{Both are in }\{5,6\}\text{, not necessarily distinct.} & \hspace{2mm}3\cdot2^2=12 \\ 
+3 & \text{Both are in }\{4,5,6\}\text{, not necessarily distinct.} & \hspace{2mm}3\cdot3^2=27
+\end{array}</cmath>
+</li>
+</ul>
+Finally, the requested probability is <cmath>\frac{3+12+27}{6^3}=\frac{42}{216}=\boxed{\textbf{(A) } \frac{7}{36}}.</cmath>
+
+--- Solution 3 ---
+We count the numerator.
+Jason will pick up no dice if he already has a <math>7</math> as a sum. We need to assume he does not have a <math>7</math> to begin with.
+If Jason decides to pick up all the dice to re-roll, by the stars and bars rule ways to distribute, <math>{n+k-1 \choose k-1}</math>, there will be <math>2</math> bars and <math>4</math> stars (<math>3</math> of them need to be guaranteed because a roll is at least <math>1</math>) for a probability of <math>\frac{15}{216}=\frac{2.5}{36}</math>.
+If Jason picks up <math>2</math> dice and leaves a die showing <math>k</math>, he will need the other two to sum to <math>7-k</math>. This happens with probability <cmath>\frac{6-k}{36}</cmath> for integers <math>1 \leq k \leq 6</math>.
+If the roll is not <math>7</math>, Jason will pick up exactly one die to re-roll if there can remain two other dice with sum less than <math>7</math>, since this will give him a <math>\frac{1}{6}</math> chance which is a larger probability than all the cases unless he has a <math>7</math> to begin with.
+We have <cmath>\frac{1}{6} > \underline{\frac{5,4,3}{36}} > \frac{2.5}{36} > \frac{2,1,0}{36}.</cmath>
+We count the underlined part's frequency for the numerator without upsetting the probability greater than it.
+Let <math>a</math> be the roll we keep. We know <math>a\leq3</math> since <math>a=4</math> would cause Jason to pick up all the dice.
+When <math>a=1</math>, there are <math>3</math> choices for whether it is rolled <math>1</math>st, <math>2</math>nd, or <math>3</math>rd, and in this case the other two rolls have to be at least <math>6</math> (or he would have only picked up <math>1</math>). This give <math>3 \cdot 1^{2} =3</math> ways.
+Similarly, <math>a=2</math> gives <math>3 \cdot 2^{2} =12</math> because the <math>2</math> can be rolled in <math>3</math> places and the other two rolls are at least <math>5</math>.
+<math>a=3</math> gives <math>3 \cdot 3^{2} =27</math>. 
+Summing together gives the numerator of <math>42</math>.
+The denominator is <math>6^3=216</math>, so we have <math>\frac{42}{216}=\boxed{\textbf{(A) } \frac{7}{36}}</math>.
+
+--- Solution 4 ---
+We can quickly write out all possible rolls that result in a total of <math>7</math>, to get that there is a <math>\frac{5}{72}</math> chance that rolling three dice will result in a total of <math>7</math>.
+
+<b>Claim 1</b>: If all of Jason's initial outcomes are <math>4</math>, <math>5</math> or <math>6</math>, Jason is best off rerolling everything.
+
+<b>Proof of if part</b>: If Jason rerolls two dice, he would like for the sum of the two outcomes to be <math>7-\text{(The initial outcome of the untouched dice)}</math>. Since in this case, every dice's initial outcome is <math>4</math>, <math>5</math> or <math>6</math>, this value is <math>1</math>, <math>2</math> or <math>3</math>. By basic dice probability, the probability that they add to one is <math>0</math>; the probability that they add to two is <math>\frac{1}{36}</math>; the probability that they add to three is <math>\frac{1}{18}</math>. Each of these probabilities is less than <math>\frac{5}{72}</math>, (the probability of winning by rerolling everything) so Jason should not reroll one dice in this scenario. Rolling one die is also nonsense in this situation, since the other two dice will already add up to something greater than <math>7</math>.
+
+<b>Proof of only-if part</b>: If Jason rolls a <math>1</math>, <math>2</math> or <math>3</math>, even just once, then, the probability that rerolling the other two dice will result in win is <math>\frac{5}{36}</math>, <math>\frac{1}{9}</math> and <math>\frac{1}{12}</math>, by basic die probability. Each of these is greater than <math>\frac{5}{72}</math>, so if Jason rolls a <math>1</math>, <math>2</math> or <math>3</math>, he should not reroll everything.
+
+<b>Claim 2</b>: If the sum of any two of the initial dice is less than <math>7</math>, Jason is best off rerolling one or zero die.
+
+<b>Proof of if part</b>: If the sum of any two of the initial dice is less than <math>7</math>, when the other die is rolled, there is always a fixed <math>\frac{1}{6}</math> chance that this results in a win for Jason (or, he his initial roll already won, so he doesn't have to roll anything). Rerolling that one die is better than rerolling all three dice, since, as we have seen there is a <math>\frac{5}{72}</math> chance that Jason wins from that. Rerolling that one die is also better than rerolling two dice: by basic die probability, if Jason wishes for the sum of two rerolled dice to equal one value, the maximum probability this happens is <math>\frac{1}{6}</math>, and this is when he wishes for the sum to be <math>7</math>; however, since he wishes for the sum of all three dice to be <math>7</math>, this will never happen, so the probability that rerolling two dice results in a win is always less than <math>\frac{1}{6}</math>.
+
+<b>Proof of only-if part</b>: If the sum of each pair of the three dice is at least <math>7</math>, it would make no sense to reroll one die, since the final sum of all three dice will always be greater than <math>7</math>. Also, if the sum of each pair of the three dice is at least <math>7</math>, the total initial sum must also be greater than <math>7</math>, so Jason should not reroll zero dice.
+
+From having shown these two claims, we know that Jason should reroll two dice if at least one of them is a <math>1</math>, <math>2</math> or <math>3</math>, and if the sum of any two of the initial dice is at least <math>7</math>. We can write out all the possibilities of initial rolls, account for their permutations, and add everything together to see that there are <math>42</math> total outcomes, where Jason should reroll two dice. Therefore, our final answer is <math>\frac{42}{216} = \boxed{\textbf{(A) } \frac{7}{36}}</math>.
+
+--- Solution 5 ---
+If the sum of the dice is <imath>7</imath>, we reroll no dice.
+If the sum of any two dice is <imath>\leq 6</imath>, we reroll <imath>1</imath> die because rolling <imath>1</imath> die will give Jason a <imath>\frac{1}{6}</imath> chance of winning. 
+Thus, we consider the scenario where the sum of any two dice is <imath>7</imath> or greater. 
+
+
+If the smallest die is <imath>1</imath>, the other two dice must be <imath>6</imath>, which has <imath>3</imath> possible permutations.
+
+If the smallest die is 2, the other two dice can be 5 or 6. There are 3 ways to choose the position of the smallest die, 2 ways each to choose the value of the other dice, so there are <imath>2 \cdot 2 \cdot 3 = 12</imath> possible permutations.
+
+If the smallest die is 3, the other two dice can be 4, 5, or 6. Similarly, there are 3 ways to choose the position of the smallest die, and 3 ways each to choose the value of the other dice, so there are <imath>3 \cdot 3 \cdot 3 = 27</imath> possible permutations.
+
+If all die are 4 or above, then we reroll 3 dice. When we reroll all 3 dice, the winning rolls are 1,1,5; 1,2,4; 1,3,3; 2,2,3 in some arrangement, for a total of 15 permutations. Thus, the probability of winning after rerolling 3 dice is <imath>\frac{15}{6^3} = \frac{5}{72}</imath>. If we reroll only 2 dice with the smallest die being <imath>4</imath>, we would need to roll 1,2 or 2,1 to win, which gives a <imath>\frac{2}{36} = \frac{4}{72}</imath> chance of winning, so this is worse.
+
+If the smallest die is 5 or 6, rerolling 2 dice gives us even worse odds.
+
+
+Therefore, the cases where 1, 2, or 3 are the smallest die covers all cases where 2 rerolls is optimal. There are <imath>3+12+27 = 42</imath> permutations out of 216 total permutations, giving us a probability of <imath>\frac{42}{216} = \boxed{\frac{7}{36}}</imath>.
+
+

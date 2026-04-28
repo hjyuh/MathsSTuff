@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T22-56-51-prove-b020-ep488_v51_G10_descent_alphabet",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v51 / G10: Descent alphabet (U5, 5.4-\u03b1)\n-- Claim: Smaller two-step descendants of pair-supported degree-3 vertex a\n-- are exactly 8a/9 or 9a/10.\n--\n-- Simplified target: given the 7 possible distance-2 ratios r\u00b7a where\n-- r \u2208 {9/10, 8/9, 10/9, 9/8, 16/15, 15/8, 16/9}, the ones with r < 1 are\n-- exactly 9/10 and 8/9. This is pure numerical comparison.\n\nimport Mathlib.Tactic\n\n/-- Of the 7 candidate ratios {9/10, 8/9, 10/9, 9/8, 16/15, 15/8, 16/9},\n    exactly two are strictly less than 1: 9/10 and 8/9. Stated via\n    cross-multiplication to stay in Nat/integer land. -/\ntheorem descent_alphabet_is_8_9_or_9_10\n    (a b : \u2115) (ha : 0 < a)\n    (hratio :\n      (10 * b = 9 * a) \u2228           -- b = 9a/10\n      (9 * b = 8 * a) \u2228            -- b = 8a/9\n      (9 * b = 10 * a) \u2228           -- b = 10a/9\n      (8 * b = 9 * a) \u2228            -- b = 9a/8\n      (15 * b = 16 * a) \u2228          -- b = 16a/15\n      (8 * b = 15 * a) \u2228           -- b = 15a/8\n      (9 * b = 16 * a))            -- b = 16a/9\n    (hlt : b < a) :\n    (10 * b = 9 * a) \u2228 (9 * b = 8 * a) := by\n  sorry\n",
+  "started_at": "2026-04-16T22:56:51Z",
+  "finished_at": "2026-04-17T00:04:57Z",
+  "duration_s": 4086.09,
+  "result_text": "## Cycle Complete \u2014 1/1 sorries filled\n\n**Proof strategy:** Case-split the 7-way disjunction `hratio`. The first two branches (`10*b = 9*a` and `9*b = 8*a`) match the conclusion directly. The remaining 5 branches each imply `b > a` (since the coefficient ratio exceeds 1), and `omega` derives the contradiction with `hlt : b < a`.\n\n**Verification:** `lean_run_code` \u2014 success, zero diagnostics.\n\n**File:** `EP488_DescentAlphabet.lean` (new, untracked)\n\n```\nFilled: 1/1 sorries\nRemaining: 0\nCommits: 0 (pending)\n```\n\nCommit this? **[yes / yes-all / no / never]**\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-56-51-prove-b020-ep488_v51_G10_descent_alphabet.log",
+  "worker_pid": 4321,
+  "last_heartbeat_at": 1776384292.1041303,
+  "_started_monotonic": 1776380211.7837155
+}

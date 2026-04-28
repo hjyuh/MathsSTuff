@@ -110,6 +110,29 @@ On Windows, if Docker is installed while terminals are already open, restart the
 - `RBI_AUDIO_ENABLED`: enable or disable workspace audio streaming
 - `RBI_AUDIO_PCM`: enable higher-fidelity PCM audio streaming (uses more bandwidth than the default compressed mode)
 
+### DNS filtering lab
+
+- `RBI_DNS_LAB_ENABLED`: show per-session DNS lab controls in the portal (`true/false`)
+- `RBI_WORKER_DNS_MODE`: default resolver mode for new containers
+  - `system`: Docker/default resolver path; Chromium secure DNS is disabled for repeatable DNS tests
+  - `cloudflare-malware`: Docker DNS points to Cloudflare `1.1.1.2` / `1.0.0.2`
+  - `cloudflare-family`: Docker DNS points to Cloudflare `1.1.1.3` / `1.0.0.3`
+  - `custom-dns`: Docker DNS points to `RBI_WORKER_DNS_SERVERS`
+  - `browser-doh`: Chromium uses `RBI_CHROME_DOH_TEMPLATE` with secure DNS mode
+- `RBI_WORKER_DNS_SERVERS`: comma-separated IPv4/IPv6 resolver IPs, used by `custom-dns` and optionally as bootstrap DNS for `browser-doh`
+- `RBI_CHROME_DOH_TEMPLATE`: Chromium DoH HTTPS template, such as `https://cloudflare-dns.com/dns-query` or a Cloudflare Gateway DoH endpoint
+
+To run a controlled bypass/resolver test on routers you administer:
+
+1. Set `RBI_DNS_LAB_ENABLED=true` in `.env`, then restart the app.
+2. Connect the laptop to your test Wi-Fi/router with the DNS block policy.
+3. Run the RBI app on your home/main device with Docker available.
+4. Open the app from the laptop, choose a DNS Lab resolver mode, and start a fresh session.
+5. Visit the same blocked test domain inside the remote Chromium session for each mode.
+6. Compare `system`, filtered Cloudflare/Gateway DNS, `custom-dns`, and `browser-doh` results.
+
+DNS-only router policies are expected to fail open if the browser/container can use an unfiltered resolver or public DoH. IP firewall, proxy, endpoint, or TLS-inspecting policies may still block traffic.
+
 ### Janitor
 
 - `RBI_ENABLE_JANITOR`: enable orphan reaper

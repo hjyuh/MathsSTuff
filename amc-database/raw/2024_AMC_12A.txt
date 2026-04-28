@@ -1,0 +1,2327 @@
+=== Problem 1 ===
+What is the value of
+
+Choices: {'A': '~2', 'B': '~20', 'C': '~200', 'D': '~202', 'E': '~2020</math>'}
+Answer: A
+
+--- Solution 1 ---
+The likely fastest method will be direct computation. <math>9901\cdot101</math> evaluates to <math>1000001</math> and <math>99\cdot10101</math> evaluates to <math>999999</math>. The difference is <math>\boxed{\textbf{(A) }2}.</math>
+
+Solution by [[User:Juwushu|juwushu]].
+
+--- Solution 2 ---
+We have
+<cmath>\begin{align*}
+9901\cdot101-99\cdot10101 &= (10000-99)\cdot101-99\cdot(10000+101) \\
+&= 10000\cdot101-99\cdot101-99\cdot10000-99\cdot101 \\
+&= (10000\cdot101-99\cdot10000)-2\cdot(99\cdot101) \\
+&= 2\cdot10000-2\cdot9999 \\
+&= \boxed{\textbf{(A) }2}.
+\end{align*}</cmath>
+
+--- Solution 3 ---
+Note that <math>9901\cdot101=9901\cdot100+9901=990100+9901=1000001</math> and  <math>99\cdot10101=100\cdot10101-10101=1010100-10101=999999</math>, therefore the answer is <math>1000001-999999=\boxed{\textbf{(A) }2}</math>.
+
+--- Solution 4 ---
+Evaluating the given expression <math>\pmod{10}</math> yields <math>1-9\equiv 2 \pmod{10}</math>, so the answer is either <math>\textbf{(A)}</math> or <math>\textbf{(D)}</math>. Evaluating <math>\pmod{101}</math> yields <math>0-99\equiv 2\pmod{101}</math>. Because answer <math>\textbf{(D)}</math> is <math>202=2\cdot 101</math>, that cannot be the answer, so we choose choice <math>\boxed{\textbf{(A) }2}</math>.
+
+--- Solution 5 ---
+We simply look at the units digit of the problem we have (or take mod <imath>10</imath>)
+<cmath>9901\cdot101-99\cdot10101 \equiv 1\cdot1 - 9\cdot1 = 2 \mod{10}.</cmath>
+Since the only answers with <imath>2</imath> in the units digit are <imath>\textbf{(A)}</imath> and <imath>\textbf{(D)}</imath>, we can then continue if you are desperate to use guess and check or an actually valid method to find the answer is <imath>\boxed{\textbf{(A) }2}</imath>.
+
+~[[User:Mathkiddus|mathkiddus]]
+
+--- Solution 6 ---
+Observe that <math>9901=9900+1=99\cdot100+1</math> and <math>10101=10100+1=101\cdot100+1</math>
+<cmath>\begin{align*}
+\Rightarrow9901\cdot101-99\cdot10101 & = ((9900\cdot101)+(1\cdot101))-((99\cdot10100)+(99\cdot1)) \\
+&=(99\cdot100\cdot101)+101-(99\cdot100\cdot101)-99 \\
+&=101-99 \\
+&=\boxed{\textbf{(A) }2}.
+\end{align*}</cmath>
+
+--- Solution 7 ---
+Let <math>x=100</math>. Then, we have
+\begin{align*}
+101\cdot 9901=(x+1)\cdot (x^2-x+1)=x^3+1, \\
+99\cdot 10101=(x-1)\cdot (x^2+x+1)=x^3-1.
+\end{align*}
+Then, the answer can be rewritten as <math>(x^3+1)-(x^3-1)= \boxed{\textbf{(A) }2}.</math>
+
+--- Solution 8 ---
+It's not hard to observe and express <math>9901</math> into <math>99\cdot100+1</math>, and <math>10101</math> into <math>101\cdot100+1</math>.
+
+We then simplify the original expression into <math>(99\cdot100+1)\cdot101-99\cdot(101\cdot100+1)</math>, which could then be simplified into <math>99\cdot100\cdot101+101-99\cdot100\cdot101-99</math>, which we can get the answer of <math>101-99=\boxed{\textbf{(A) }2}</math>.
+
+
+==Solution 9 (Estimation) *🔥VERY FAST🔥*==
+Notice that the answer choices are significantly different in value. This allows us to estimate the answer. <math>9901</math> is about <math>10000</math>, and <math>101</math> is about <math>100</math>. <math>99</math> is about <math>100</math>, and <math>10101</math> is about <math>10000</math>. Computing, we get <math>10000 \cdot 100-100 \cdot 10000 = 0</math>. The closest answer to this estimation is <math>\boxed{\textbf{(A) }2}</math>.
+
+--- Solution 9 ---
+We can see that the units digit of the expression is <math>1 - 9 \Rightarrow 11 - 9 \Rightarrow 2</math>, elimination options B, C, and E. Next, notice that <math>(9901)(101)</math> is divisible by 101 while <math>(99)(10101)</math> is not divisible by 101 (to see this, notice that 101 is prime, and <math>10101 = 10100 + 1</math>, so is not divisible by 101). This means that the final answer is not divisible by 101, eliminating <math>\textbf{(D)}</math>, so the answer is <math>\boxed{\textbf{(A) }2}</math>.
+
+
+=== Problem 2 ===
+A model used to estimate the time it will take to hike to the top of the mountain on a trail is of the form
+
+Choices: {'A': '240', 'B': '246', 'C': '252', 'D': '258', 'E': '264</math>'}
+Answer: B
+
+--- Solution 1 ---
+Plug in the values into the equation to give you the following two equations:
+\begin{align*}
+69&=1.5a+800b, \\
+69&=1.2a+1100b.
+\end{align*}
+Solving for the values <math>a</math> and <math>b</math> gives you that <math>a=30</math> and <math>b=\frac{3}{100}</math>. These values can be plugged back in showing that these values are correct.
+Now, using the given length of the trail, <math>4.2</math>, and the given vertical increase, <math>4000</math> , we get a final answer of <math>\boxed{\textbf{(B) }246}.</math>
+
+Solution by [[User:Juwushu|juwushu]].
+
+Minor edits by ParticlePhysics and TigerSenju
+
+--- Solution 2 ---
+Alternatively, observe that using <math>a=10x</math> and <math>b=\frac{y}{100}</math> makes the numbers much closer to each other in terms of magnitude.
+
+Plugging in the new variables:
+\begin{align*}
+69&=15x+8y, \\
+69&=12x+11y.
+\end{align*}
+
+The solution becomes more obvious in this way, with <math>15+8=12+11=23</math>, and since <math>23\cdot 3=69</math>, we determine that <math>x=y=3</math>.
+
+The question asks us for <math>4.2a+4000b=42x+40y</math>. Since <math>x=y</math>, we have <math>(40+42)\cdot 3=\boxed{\textbf{(B) }246}</math>.
+
+
+=== Problem 3 ===
+The number
+
+Choices: {'A': '20', 'B': '21', 'C': '22', 'D': '23', 'E': '24</math>'}
+Answer: B
+
+--- Solution 1 ---
+Since we want the least number of two-digit numbers, we maximize the two-digit numbers by choosing as many <math>99</math>s as possible. Since <math>2024=99\cdot20+44\cdot1,</math> we choose twenty <math>99</math>s and one <math>44,</math> for a total of <math>\boxed{\textbf{(B) }21}</math> two-digit numbers.
+
+--- Solution 2 ---
+We claim the answer is <math>21</math>. This can be achieved by adding twenty <math>99</math>'s and a <math>44</math>. To prove that the answer cannot be less than or equal to <math>20</math>, we note that the maximum value of the sum of <math>20</math> or less two digit numbers is <math>20 \cdot 99 = 1980</math>, which is smaller than <math>2024</math>, so we are done. Thus, the answer is <math>\boxed{\textbf{(B) }21}</math>.
+
+--- Solution 3 ---
+<math>2024=100\cdot20+24</math>. Since <math>100=99+1</math>, <math>2024=(99+1)\cdot20+24=99\cdot20+1\cdot20+24=99\cdot20+44</math>. Therefore a total of <math>\boxed{\textbf{(B) }21}</math> two-digit numbers are needed.
+
+--- Solution 4 ---
+The maximum <math>2</math>-digit number is <math>99</math>, but try <math>100</math>. <math>2024 \div 100</math> is a little more than <math>20</math>, and the remainder is less than <math>100</math>, by intuition, so there's <math>20 +</math> the remainder <math>1 = \boxed{\textbf{(B) }21}</math>.
+
+
+=== Problem 4 ===
+What is the least value of
+
+Choices: {'A': '11', 'B': '21', 'C': '22', 'D': '23', 'E': '253 </math>'}
+Answer: D
+
+--- Solution 1 ---
+Note that <math>2024=2^3\cdot11\cdot23</math> in the prime factorization. Since <math>23!</math> is a multiple of <math>2^3, 11,</math> and <math>23,</math> we conclude that <math>23!</math> is a multiple of <math>2024.</math> Therefore, we have <math>n=\boxed{\textbf{(D) } 23}.</math>
+
+<u><b>Remark</b></u>
+
+Memorizing the prime factorization of the current year is useful for the AMC 8/10/12 Exams.
+
+
+<u><b>Remark</b></u>
+
+Note that <math>2024</math> is <math>2025 -1</math>, which is <math>45^2 -1 = (45+1)(45-1) = 46\cdot44</math>.
+
+
+=== Problem 5 ===
+A data set containing
+
+Choices: {'A': '4', 'B': '5', 'C': '6', 'D': '7', 'E': '8</math>'}
+Answer: D
+
+--- Solution 1 ---
+Because the set has <math>20</math> numbers and mean <math>45</math>, the sum of the terms in the set is <math>45\cdot 20=900</math>.
+
+Let there be <math>s</math> sixes in the set.
+
+Then, the mean of the set without the sixes is <math>\frac{900-6s}{20-s}</math>. Equating this expression to <math>66</math> and solving yields <math>s=7</math>, so we choose answer choice <math>\boxed{\textbf{(D) }7}</math>.
+
+--- Solution 2 ---
+Let <math>S</math> be the sum of the data set without the sixes and <math>x</math> be the number of sixes. We are given that <math>\dfrac{S+6x}{20}=45</math> and <math>\dfrac S{20-x}=66</math>; the former equation becomes <math>S+6x=900</math> and the latter <math>S=1320-66x</math>. Since we want <math>x</math>, we equate the two equations and see that <math>900-6x=1320-66x\implies60x=420\implies x=\boxed{\textbf{(D) }7}</math>.
+
+--- Solution 3 ---
+Suppose there are <math>x</math> sixes. Then the sum of all the numbers can be written as <math>(20-x)\cdot 45+6x</math>
+
+Then, the mean of this set is <math>\frac{(20-x)\cdot 66+6x}{20}=45</math>. Solving this, we get <math>x=\boxed{\textbf{(D) }7}</math>
+
+
+=== Problem 6 ===
+The product of three integers is
+
+Choices: {'A': '2', 'B': '3', 'C': '5', 'D': '6', 'E': '13</math>'}
+Answer: B
+
+--- Solution 1 ---
+We notice that the optimal solution involves two negative numbers and a positive number. Thus we may split <math>60</math> into three factors and choose negativity. We notice that <math>10\cdot6\cdot1=10\cdot(-6)\cdot(-1)=60</math>, and trying other combinations does not yield lesser results so the answer is <math>10-6-1=\boxed{\textbf{(B) }3}</math>.
+
+--- Solution 2 ---
+We have <math>abc = 60</math>. Let <math>a</math> be positive, and let <math>b</math> and <math>c</math> be negative. Then we need <math>a > |b + c|</math>. If <math>a = 6</math>, then <math>|b + c|</math> is at least <math>7</math>, so this doesn't work. If <math>a = 10</math>, then <math>(b,c) = (-6,-1)</math> works, giving <math>10 - 7 = \boxed{\textbf{(B) }3}</math>
+
+~[[User:pog|pog]],~[[User:Mathkiddus|mathkiddus]]
+
+--- Solution 3 ---
+We can see that the most optimal solution would be <math>1</math> positive integer and <math>2</math> negative ones (as seen in solution 1). Let the three integers be <math>x</math>, <math>y</math>, and <math>z</math>, and let <math>x</math> be positive and <math>y</math> and <math>z</math> be negative. If we want the optimal solution, we want the negative numbers to be as large as possible. so the answer should be <math>-60 \cdot -1 \cdot 1</math>, where <math>-60 - 1 + 1 = -60</math>... right?
+
+No! Our sum must be positive, so that would be invalid! We see that -<math>30, -20, -15</math>, and <math>-10</math> are too less to allow the sum to be positive. For example, <math>-15 = z. -15xy=60</math>, so <math>xy = -4</math>. For <math>xy</math> to be the most positive, we will have <math>4</math> and <math>-1</math>. Yet, <math>-15+4-1</math> is still negative. After <math>-10</math>, the next factor of <math>60</math> would be <math>-6</math>. if <math>z</math> = <math>-6</math>, <math>xy = -10</math>. This might be positive! Now, if we have <math>z = -6, y = -1</math>, and <math>x = 10, x + y + z = 3</math>. It cannot be smaller because <math>x = 5</math> and <math>y = -2</math> would result in <math>x + y + z</math> being negative. Therefore, our answer would be <math>\boxed{\textbf{(B) }3}</math>.
+
+
+Tiny minor edits made by SuperVince1
+
+
+=== Problem 7 ===
+In
+
+Choices: {'A': '1011', 'B': '1012', 'C': '2023', 'D': '2024', 'E': '2025 </math>'}
+Answer: D
+
+--- Solution 1 ---
+Let us find an expression for the <math>x</math>- and <math>y</math>-components of <math>\overrightarrow{BP_i}</math>. Note that <math>AP_1+P_1P_2+\dots+P_{2023}P_{2024}+P_{2024}C=AC=2</math>, so <math>AP_1=P_1P_2=\dots=P_{2023}P_{2024}=P_{2024}C=\dfrac2{2025}</math>. All of the vectors <math>\overrightarrow{AP_1},\overrightarrow{P_1P_2},</math> and so on up to <math>\overrightarrow{P_{2024}C}</math> are equal; moreover, they equal <math>\textbf v=\left\langle\dfrac1{\sqrt2}\cdot\dfrac2{2025},-\dfrac1{\sqrt2}\cdot\dfrac2{2025}\right\rangle=\left\langle\dfrac{\sqrt2}{2025},-\dfrac{\sqrt2}{2025}\right\rangle</math>. 
+
+We now note that <math>\overrightarrow{AP_i}=i\textbf v=\left\langle\dfrac{i\sqrt2}{2025},-\dfrac{i\sqrt2}{2025}\right\rangle</math> (<math>i</math> copies of <math>\textbf v</math> added together). Furthermore, note that <math>\overrightarrow{BP_i}=\overrightarrow{BA}+\overrightarrow{AP_i}=\left\langle0,\sqrt2\right\rangle+\left\langle\dfrac{i\sqrt2}{2025},-\dfrac{i\sqrt2}{2025}\right\rangle=\left\langle\dfrac{i\sqrt2}{2025},\sqrt2-\dfrac{i\sqrt2}{2025}\right\rangle.</math> 
+
+We want <math>\sum_{i=1}^{2024}\overrightarrow{BP_i}</math>'s length, which can be determined from the <math>x</math>- and <math>y</math>-components. Note that the two values should actually be the same - in this problem, everything is symmetric with respect to the line <math>x=y</math>, so the magnitudes of the <math>x</math>- and <math>y</math>-components should be identical. The <math>x</math>-component is easier to calculate. 
+
+<cmath>\sum_{i=1}^{2024}\left(\overrightarrow{BP_i}\right)_x=\sum_{i=1}^{2024}\dfrac{i\sqrt2}{2025}=\dfrac{\sqrt2}{2025}\sum_{i=1}^{2024}i=\dfrac{\sqrt2}{2025}\cdot\dfrac{2024\cdot2025}2=1012\sqrt2.</cmath>
+
+One can similarly evaulate the <math>y</math>-component and obtain an identical answer; thus, our desired length is <math>\sqrt{\left(1012\sqrt2\right)^2+\left(1012\sqrt2\right)^2}=\sqrt{4\cdot1012^2}=\boxed{\textbf{(D) }2024}</math>.
+
+--- Solution 2 ---
+Notice that the average vector sum is 1. Multiplying the 2024 by 1, our answer is <math>\boxed{D}</math>
+
+--- Solution 3 ---
+[[Image:2024_amc12A_p7.png|thumb|center|600px|]]
+
+Let point <math>B</math> reflect over <math>\overleftrightarrow{AC} \longrightarrow B'</math>
+
+We can see that for all <math>n</math>, 
+<cmath>\left|\overrightarrow{BP_n}+\overrightarrow{BP_{2025-n}}\right|=\left|\overrightarrow{BB'}\right|=2.</cmath>
+As a result, <cmath>\left|\overrightarrow{BP_1}+\overrightarrow{BP_2 }+ ...+\overrightarrow{BP_{2024}}\right|=2 \cdot 1012=\fbox{(D) 2024}</cmath>
+
+edited by [https://artofproblemsolving.com/wiki/index.php/User:Cyantist luckuso]
+
+--- Solution 4 ---
+Using the Pythagorean theorem, we can see that the length of the hypotenuse is <math>2</math>. There are 2024 equally-spaced points on <math>AC</math>, so there are 2025 line segments along that hypotenuse. <math>\frac{2}{2025}</math> is the length of each line segment. We get 
+<cmath>
+\frac{2}{2025}+\frac{4}{2025}+...+\frac{4048}{2025} = \frac{2}{2025} \cdot \frac{2024*2025}{2}=\boxed{\textbf{(D) } 2024}.
+
+</cmath>
+
+--- Solution 5 ---
+Let <math>B</math> be the origin, and set the <math>x</math> and <math>y</math> axes so that the <math>x</math> axis bisects <math>\angle ABC</math>, and the <math>y</math> axis is parallel to <math>\overline{AC}.</math> Notice that the endpoints of each vector all lie on <math>i=1</math>, so each vector is of the form <math>1i + xj</math>. Furthermore, observe that for each <math>v_k=1i + xj</math>, we have <math>v_{2024-k} = 1i - xj</math>, by properties of reflections about the <math>x</math>-axis: therefore <math>v_k + v_{2024-k} = 2i.</math> Since there are <math>1012</math> pairs, the resultant vector is <math>1012\cdot 2i</math>, the magnitude of which is <math>\boxed{\textbf{(D)\ 2024}}.</math>
+
+--Benedict T (countmath1)
+
+--- Solution 6 ---
+[[Image:2024_amc12A_p7_cn.PNG|thumb|center|600px|]]
+
+Let <math>B</math> be the origin, place <math>C</math> at <math>C= 1+i</math>
+
+<math>\overrightarrow{CP_{1}} = re^{i\theta}</math>
+
+<math>\overrightarrow{CP_{n}} = nre^{i\theta}</math>
+
+
+Now we'll find <math>re^{i\theta}</math>
+
+<math>\frac{|\overrightarrow{AC}|}{\text{Number\;of\;Equal\;Segments}}</math>
+
+= <math>\frac{2}{2025} e^{i\pi}</math> 
+
+= <math> - \frac{2}{2025}</math>
+
+
+<math>P_{1}</math> to <math>P_{2024}</math> can be written as such:
+
+<math>P_{1} = C + \overrightarrow{CP_{1}}</math>
+
+<math>P_{2} = C + \overrightarrow{CP_{2}}</math>
+
+...
+
+<math>P_{2024} = C + \overrightarrow{CP_{2024}}</math>
+
+
+We want to find the sum of the complex numbers:  
+
+<math>P_{1}  + P_{2}  + ... + P_{2024}</math>
+
+<math>= 2024c + re^{i\theta}(1+2+...+2024)</math> 
+
+<math>= 2024c + \frac{2024\cdot2025}{2} \cdot re^{i\theta}</math>
+
+
+Now we can plug in our value for <math>C</math> and <math>re^{i\theta}</math>
+
+
+<math>2024c + \frac{2024\cdot2025}{2} \cdot re^{i\theta}</math>
+
+<math>= 2024 (1+i) - 2024</math>
+
+<math>= 2024i</math>
+
+So the length is <math>\fbox{(D) 2024}</math>
+
+--- Solution 7 ---
+Notice that we can put points <math>P_i</math> with odd numbers i on <math>C</math> and those with even numbers i on <math>A</math>. So the sum of vectors <math>\overrightarrow{BP_1} + \overrightarrow{BP_2} + \overrightarrow{BP_3} + \dots + \overrightarrow{BP_{2024}}</math> is just <math>1012 \times (\overrightarrow{BC} + \overrightarrow{BA})</math> and the length of vector sum is <math>\fbox{(D) 2024}</math>
+
+
+=== Problem 8 ===
+How many angles
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4 </math>'}
+Answer: A
+
+--- Solution 1 ---
+Note that this is equivalent to <math>\sin(3\theta)\cos(2\theta)=1</math>, which is clearly only possible when <math>\sin(3\theta)=\cos(2\theta)=\pm1</math>. (If either one is between <math>1</math> and <math>-1</math>, the other one must be greater than <math>1</math> or less than <math>-1</math> to offset the product, which is impossible for sine and cosine.) They cannot be both <math>-1</math> since we cannot take logarithms of negative numbers, so they are both <math>+1</math>. Then <math>3\theta</math> is <math>\dfrac\pi2</math> more than a multiple of <math>2\pi</math> and <math>2\theta</math> is a multiple of <math>2\pi</math>, so <math>\theta</math> is <math>\dfrac\pi6</math> more than a multiple of <math>\dfrac23\pi</math> and also a multiple of <math>\pi</math>. However, a multiple of <math>\dfrac23\pi</math> will always have a denominator of <math>1</math> or <math>3</math>, and never <math>6</math>; it can thus never add with <math>\dfrac\pi6</math> to form an integral multiple of <math>\pi</math>. Thus, there are <math>\boxed{\textbf{(A) }0}</math> solutions. 
+
+
+==Solution 1.1 (less words)==
+<cmath>\log(\sin(3\theta))+\log(\cos(2\theta))=0</cmath>
+<cmath>\log(\sin(3\theta)\cos(2\theta))=0</cmath>
+<cmath>\sin(3\theta)\cos(2\theta)=1</cmath>
+<cmath>\text{Since } -1\le \sin(x),\cos(x)\le 1 \Rightarrow \sin(3\theta)=\cos(2\theta)= \pm1</cmath>
+BUT note that <math>\log(-1)</math> is not real
+<cmath>\Rightarrow \sin(3\theta)=\cos(2\theta)= 1</cmath>
+<cmath>3\theta=\frac{\pi}{2}+2\pi n; \space 2\theta=2\pi m \space   (m,n \in \mathbb{Z})</cmath>
+<cmath>\theta=\frac{\pi}{6}+\frac{2\pi n}{3}; \space \theta=\pi m</cmath>
+<cmath>\Rightarrow \theta\text { has no solution}</cmath>
+Giving us <math> \fbox{(A) 0}</math>.
+
+--- Solution 2 ---
+Let <math>f(\theta)=\log(\sin(3\theta))</math> and let <math>g(\theta)=\log(\cos(2\theta))</math>.
+
+Note that <math>-1\leq\sin(3\theta),\cos(2\theta)\leq1</math>. Because the logarithm of a nonpositive number is not real, the functions <math>f</math> and <math>g</math> only exist when <math>\sin(3\theta)</math> and <math>\cos(2\theta)</math> are positive, respectively. Furthermore, because the logarithm of any positive real number less than <math>1</math> is negative, the only case where the function <math>f+g</math> could equal <math>0</math> is if <math>f(\theta)=g(\theta)=0</math>, which only occurs when their respective sine and cosine expressions are both equal to <math>1</math>.
+
+Thus, we have these two equations, where <math>m</math> and <math>n</math> are any integers:
+\begin{align*}
+\sin(3\theta)=1 \Rightarrow 3\theta = \frac\pi2+2\pi m &\Rightarrow \theta = \frac\pi6+\frac{2\pi}3 m = \frac{4m+1}6\pi\\
+\cos(2\theta)=1 \Rightarrow 2\theta = 2\pi n &\Rightarrow \theta = \pi n
+\end{align*}
+
+Because <math>m</math> is an integer, <math>4m+1</math> is odd, and so <math>\frac{4m+1}6</math> is never an integer. Therefore, by the first equation, <math>\theta</math> can never be an integer multiple of pi. Thus, because the second equation requires that <math>\theta</math> be an integer multiple of pi, these two equations cannot both be satisfied, and so there are no solutions to the given equation.
+
+Thus, we choose answer choice <math>\boxed{\textbf{(A) }0}</math>.
+
+--- Solution 3 ---
+<cmath>\log(\sin(3\theta))+\log(\cos(2\theta))=0</cmath>
+<cmath>\log(\sin(3\theta))=-\log(\cos(2\theta))=\log(\sec(2\theta))</cmath>
+<cmath>\therefore\text{let } y=\sin(3\theta)=\sec(2\theta), y > 0</cmath>
+Sketching the graphs <math>y=\sin(3x)</math> and <math>y=\sec(2x)</math> for <math>y>0</math>, we see there are no intersections.
+
+Thus there are <math>\boxed{\textbf{(A) }0}</math> angles that work.
+
+
+=== Problem 9 ===
+Let
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '6', 'E': '8 </math>'}
+Answer: E
+
+--- Solution 1 ---
+Let <imath>M+1213=P^2</imath> and <imath>M+3773=Q^2</imath> for some positive integers <imath>P</imath> and <imath>Q.</imath> We subtract the first equation from the second, then apply the difference of squares: <cmath>(Q+P)(Q-P)=2560.</cmath> Note that <imath>Q+P</imath> and <imath>Q-P</imath> have the same parity, and <imath>Q+P>Q-P.</imath> 
+
+We wish to maximize both <imath>P</imath> and <imath>Q,</imath> so we maximize <imath>Q+P</imath> and minimize <imath>Q-P.</imath> It follows that
+<cmath>\begin{align*}
+Q+P&=1280, \\
+Q-P&=2,
+\end{align*}</cmath>
+from which <imath>(P,Q)=(639,641).</imath>
+
+Finally, we get <imath>M=P^2-1213=Q^2-3773\equiv1-3\equiv8\pmod{10},</imath> so the units digit of <imath>M</imath> is <imath>\boxed{\textbf{(E) }8}.</imath>
+
+--- Solution 2 ---
+Ideally, we would like for the two squares to be as close as possible. The best case is that they are consecutive squares (no square numbers in between them); however, since <math>M+1213</math> and <math>M+3773</math> (and thus their square roots) have the same parity, they cannot be consecutive squares (which are always opposite parities). The best we can do is that <math>M+1213</math> and <math>M+3773</math> have one square in between them. 
+
+Let the square between <math>M+1213</math> and <math>M+3773</math> be <math>x^2</math>. So, we have <math>M+1213 = (x-1)^2</math> and <math>M+3773 = (x+1)^2</math>. Subtracting the two, we have <math>(M+3773)-(M+1213) = (x+1)^2 - (x-1)^2</math>, which yields <math>2560 = 4x</math>, which leads to <math>x = 640</math>. Therefore, the two squares are <math>639^2</math> and <math>641^2</math>, which both have units digit <math>1</math>. Since both <math>1213</math> and <math>3773</math> have units digit <math>3</math>, <math>M</math> will have units digit <math>\boxed{\textbf{(E) }8}</math>.
+
+--- Solution 3 ---
+Let <math>M+1213=N^2</math> <math>\Rightarrow M+3773=(N+a)^2</math>
+
+It is obvious that <math>a\neq1</math> by parity
+
+Thus, the minimum value of <math>a</math> is 2
+Which gives us,
+<cmath>(N+a)^2-N^2=M+3773-(M+1213)</cmath>
+<cmath>4N+4=2560</cmath>
+<cmath>N=639</cmath>
+Plugging this back in,
+<cmath>M=N^2-1213 \space \mod \space 10</cmath>
+<cmath>M=8 \space \mod \space 10</cmath>
+Hence the answer <math>\boxed{\textbf{(E) }8}</math>.
+
+
+- trevian1(minor edit)
+
+--- Solution 4 ---
+Let <imath>M+1213=n^2</imath> and <imath>M+3773=(n+1)^2</imath> for some positive integer <imath>n</imath>. We do this because, in order to maximize <imath>M</imath>, the perfect squares need to be as close to each other as possible. We find that this configuration doesn't work, as when we subtract the equations, we have <imath>2n+1=2560</imath>; impossible. Then we try <imath>M+3773=(n+2)^2</imath>. Now we would have <imath>4n+4=2560</imath> which indeed works! <imath>n=639</imath>. 
+
+Finally, we get <imath>M=n^2-1213</imath> so the units digit of <imath>M</imath> is <imath>11-3=\boxed{\textbf{(E) }8}.</imath>
+
+--- Solution 5 ---
+Squares can only end in 0,1,4,5, and 9. To have x+3 (since 1213 and 3773 end in 3) end in one of those numbers and be maximized, it would be 8, because 8+1=11. The answer is <imath>\boxed{\textbf{(E) }8}.</imath>
+
+
+=== Problem 10 ===
+Let
+
+Choices: {'A': '\\frac{\\alpha}{3}', 'B': '\\alpha - \\frac{\\pi}{8}', 'C': '\\frac{\\pi}{2} - 2\\alpha', 'D': '\\frac{\\alpha}{2}', 'E': '\\pi - 4\\alpha</math>'}
+Answer: C
+
+--- Solution 1 ---
+We are given that <cmath>\tan\alpha=\frac{3}{4} \text{ and } \tan\beta=\frac{7}{24}.</cmath>
+We have
+<cmath>\begin{align*}
+\tan(\alpha+\beta) &= \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta} \\
+&= \frac{\frac{3}{4}+\frac{7}{24}}{1-\frac{3}{4} \cdot \frac{7}{24}} \\
+&= \frac{4}{3}.
+\end{align*}</cmath>
+It follows that
+<cmath>\begin{align*}
+\alpha+\beta&=\tan^{-1}\left(\frac{4}{3}\right) \\
+&=\frac{\pi}{2}-\tan^{-1}\left(\frac{3}{4}\right) \\
+&=\frac{\pi}{2}-\alpha.
+\end{align*}</cmath>
+Therefore, the answer is 
+<cmath>\beta=\boxed{\textbf{(C) }\frac{\pi}{2}-2\alpha}.</cmath>
+
+==Solution 2: Scaling and combining triangles==
+
+We can scale the <imath>3</imath>-<imath>4</imath>-<imath>5</imath> triangle up by a factor of <imath>6</imath> to make its side lengths <imath>18,24,</imath> and <imath>30,</imath> then glue its side of length <imath>24</imath> to the corresponding side in the <imath>7</imath>-<imath>24</imath>-<imath>25</imath> triangle:
+
+<asy>
+pair A = (0,0);
+pair B = (18,0);
+pair C = (25,0);
+pair D = (18,24);
+
+draw(A--C--D--cycle);
+draw(B--D);
+
+draw(rightanglemark(C,B,D,50));
+
+label("A", A, SW);
+label("B", B, S);
+label("C", C, SE);
+label("D", D, N);
+
+label("18", A--B, S);
+label("7", B--C, S);
+label("25", C--D, NE);
+label("30", D--A, NW);
+label("24", B--D, W);
+
+label("$\alpha$", D, 6*dir(250));
+label("$\beta$", D, 9*dir(278));
+label("$\frac{\pi}{2} - \alpha$", A, 4*dir(25));
+</asy>
+
+Angles <imath>\angle DAB</imath> and <imath>\angle BDA</imath> are complementary in <imath>\triangle ABD,</imath> so <imath>\angle DAB = \frac{\pi}{2} - \alpha.</imath> We also have <imath>AC = 18 + 7 = 25 = CD,</imath> so <imath>\triangle ACD</imath> is isosceles. That means that its base angles <imath>\angle CDA</imath> and <imath>\angle CAD</imath> are congruent, so <imath>\alpha + \beta = \frac{\pi}{2} - \alpha,</imath> and hence <imath>\beta = \boxed{\textbf{(C) }\frac{\pi}{2}-2\alpha}.</imath>
+
+
+==Solution 3: Trial and Error == 
+Another approach to solving this problem is trial and error, comparing the sine of the answer choices with <math>\sin\beta = \frac{7}{25}</math>. Starting with the easiest sine to compute from the answer choices (option choice D). We get:
+<cmath>\sin{\left(\frac{\alpha}{2}\right)} = \sqrt{\frac{1 - \cos{\alpha}}{2}}</cmath>
+<cmath>= \sqrt{\frac{1 - \frac{4}{5}}{2}}</cmath>
+<cmath>= \sqrt{\frac{1}{10}}</cmath>
+<cmath>\neq \frac{7}{25}</cmath>
+
+The next easiest sine to compute is option choice C.
+<cmath>\sin{\left(\frac{\pi}{2} - 2\alpha\right)} = \sin{\left(\frac{\pi}{2}\right)}\cos{\left(2\alpha\right)}</cmath>
+<cmath>=\cos{2\alpha}</cmath>
+<cmath>=\cos^2{\alpha} - \sin^2{\alpha}</cmath>
+<cmath>=\frac{16}{25} - \frac{9}{25}</cmath>
+<cmath>=\frac{7}{25}</cmath>
+
+Since <math>\sin\left(\frac{\pi}{2} - 2\alpha\right)</math> is equal to <math>\sin\beta</math>, option choice C is the correct answer. 
+==Solution 4: ==
+
+<math>\sin(B) = \frac{24}{25} = 2 \cdot \frac{12}{25} = 2 \cdot \frac{3}{5} \cdot \frac{4}{5}  = 2 \cdot \sin(A) \cdot \cos(A) = \sin(2A)  = \cos(90^{\circ} - 2A)</math> 
+
+Therefore <cmath>\beta=\boxed{(C) \frac{\pi}{2} -2\alpha}</cmath>
+
+
+Added Note: It should be <math>\cos(B) = \frac{24}{25} = 2 \cdot \frac{12}{25} = 2 \cdot \frac{3}{5} \cdot \frac{4}{5}  = 2 \cdot \sin(A) \cdot \cos(A) = \sin(2A)  = \cos(90^{\circ} - 2A)</math>. <math>\sin(B)</math> is actually <math>\frac{7}{25}</math>!
+
+[[User:Hello 2d world|Hello 2d world]] ([[User talk:Hello 2d world|talk]]) 08:45, 22 August 2025 (EDT)
+
+==Solution 5: Ptolemy (no trig)==
+Let AB have length 15, BC have length 20, AC length 25, AD length 7 and CD length 24. Let x be the measure of segment BD. Thus the measure of angle ACB is <math>\alpha</math> and the measure of angle ACD is <math>\beta</math>. ABCD is a cyclic quadrilateral because angle ABC and angle ADC are right angles. Using Ptolemy's theorem on this quadrilateral yields 25x = 15*24 + 7*20 = 500, or x = 20. This means triangle CBD is isoceles. The perpendicular bisector of CD passes through the center (O) of the circle on which ABCD lies and also passes through B. Let the intersection of the perpendicular bisector of CD and CD be point P. The measure of angle OBC is the same as the measure of the angle OCB which is <math>\alpha</math>, so the measure of angle BOC is <math>{\pi} - {2}{\alpha}</math>, so the measure of angle COP is <math>{2}{\alpha}</math>. Triangle COP is a right triangle with angle OCP being the same as angle ACD (<math>\beta</math>), angle COP being <math>{2}{\alpha}</math>, and angle CPO being <math>\frac{\pi}{2}</math>. 
+So: 
+<cmath>\beta + {2}\alpha + \frac{\pi}{2} = \pi</cmath> 
+<cmath>\beta=\boxed{(C) \frac{\pi}{2} -2\alpha}</cmath>
+
+--- Solution 2 ---
+given in the question,sin(a)is 3/5 and sin (b) is 7/25,estimate the angle by using the arcsin function. arcsin 3/5 is around 0.643 rad and arcsin 7/25 is around 0.283. Note that pi/2 is closest to 1.57 rad, try one by one and option c suggests that 1.57=2(0.643)+0.283. My first amc 12 edit
+
+--- Solution 3 ---
+<math>\sin(\alpha)\cos(\beta) + \sin(\beta)\cos(\alpha) = \sin(\alpha+\beta) = \frac{4}{5}</math>. Noticing <math>\frac{4}{5} = \cos(\alpha) = \sin\left(\frac{\pi}{2}-\alpha\right)</math> gives us <math>\alpha + \beta = \frac{\pi}{2} - \alpha</math> so <math>\boxed{\textbf{(C) }\dfrac{\pi}{2} - 2\alpha}</math>
+
+--- Solution 4 ---
+<cmath>\angle A+ \angle B+ \angle A = \frac{\pi}{2}</cmath> 
+Therefore <cmath>\beta=\boxed{(C) \frac{\pi}{2} -2\alpha}</cmath>
+
+[[Image:2024_amc12A_p10.PNG|thumb|center|400px|]]
+
+--- Solution 5 ---
+Define <math>Z_{A} = 4 + 3i = 5e^{iA} </math>
+
+and <math>Z_{B} = 24 + 7i = 25e^{iB} </math>
+
+Looking at the answer choices, we start by testing out an easier choice, such as C.
+
+<math> (4+3i)^2</math> 
+
+<math>= 16 + 9 \cdot i^2 + 2\cdot12 \cdot i</math>
+
+<math>= 16 - 9 + 24i </math>
+
+<math>= 7 + 24i </math>
+
+Finally:
+<math> 25^2 \cdot e^{i(2A+B)} </math>
+
+<math>= 25e^{i2A} \cdot 25e^{iB} </math>
+
+<math>={(5e^{iA})}^2 \cdot 25e^{iB}</math>
+
+<math>= (7+24i)(24+7i)</math>
+
+<math>=25^2i</math>
+
+<math>=25^2 e^{i\frac{\pi}{2}}</math>
+
+This proves that <math>\angle 2A+ \angle B = \frac{\pi}{2}</math>. (Given that <math>\angle A < \frac{\pi}{2}</math> and <math>\angle B < \frac{\pi}{2}</math>)
+
+Therefore <cmath>\beta=\boxed{(C) \frac{\pi}{2} -2\alpha}</cmath>
+
+--- Solution 6 ---
+<cmath>\cos(\alpha) = \frac{4}{5} \quad \text{and} \quad \sin(\alpha) = \frac{3}{5}</cmath>
+
+Use a double angle identity to calculate <math>\cos(2\alpha)</math>:
+
+<cmath>\cos(2\alpha) = \cos^2(\alpha) - \sin^2(\alpha) = \left(\frac{4}{5}\right)^2 - \left(\frac{3}{5}\right)^2 = \frac{16}{25} - \frac{9}{25} = \frac{7}{25}</cmath>
+
+We know that:
+
+<cmath>\sin(\beta) = \frac{7}{25}</cmath>
+
+Equate both to each other:
+
+<cmath>\cos(2\alpha) = \sin(\beta)</cmath>
+
+Apply the co-function identity, <math>\cos(2\alpha) = \sin\left(\frac{\pi}{2} - 2\alpha\right)</math>:
+
+<cmath>\sin\left(\frac{\pi}{2} - 2\alpha\right) = \sin(\beta)</cmath>
+
+Hence,
+
+<cmath>\beta=\boxed{(\mathbf{C}) \frac{\pi}{2} - 2\alpha}</cmath>
+
+--- Solution 7 ---
+<cmath>\frac{3}{5} \approx \alpha-\frac{\alpha^{3}}{6}</cmath>
+<cmath>-5\alpha^3+30\alpha-18 \approx 0</cmath>
+<cmath>\alpha \approx 0.64464</cmath>
+<cmath>\frac{7}{25} \approx \beta-\frac{\beta^{3}}{6}</cmath>
+<cmath>-25\beta^3+150\beta-42 \approx 0</cmath>
+<cmath>\beta \approx 0.28381</cmath>
+<cmath>\frac{\pi}{2} - 2 \cdot 0.64464 \approx 0.28151632679 \approx \beta</cmath>
+<cmath>\beta=\boxed{(\mathbf{C}) \frac{\pi}{2} - 2\alpha}</cmath>
+
+--- Solution 8 ---
+<cmath>\frac{4}{5} \approx 1-\frac{\alpha^2}{2}</cmath>
+<cmath>5\alpha^2 \approx 2</cmath>
+<cmath>\alpha \approx \sqrt{\frac{2}{5}} \approx 0.63246</cmath>
+<cmath>\frac{24}{25} \approx 1-\frac{\beta^2}{2}</cmath>
+<cmath>25\beta^2 \approx 2</cmath>
+<cmath>\beta \approx \sqrt{\frac{2}{25}} \approx 0.28284</cmath>
+<cmath>\frac{\pi}{2} - 2 \cdot 0.63246 \approx 0.30587632679  \approx \beta</cmath>
+<cmath>\beta=\boxed{(\mathbf{C}) \frac{\pi}{2} - 2\alpha}</cmath>
+
+
+=== Problem 11 ===
+There are exactly
+
+Choices: {'A': '16', 'B': '17', 'C': '18', 'D': '20', 'E': '21</math>'}
+Answer: D
+
+--- Solution 1 ---
+<math>2024_b = 2b^3+2b+4\equiv 0\pmod{16}\implies b^3+b+2\equiv 0\pmod 8</math>. If <math>b</math> is even, then <math>b+2\equiv 0\pmod 8\implies b\equiv 6\pmod 8</math>. If <math>b</math> is odd, then <math>b^2\equiv 1\pmod 8\implies b^3+b+2\equiv 2b+2\pmod 8</math> so <math>2b+2\equiv 0\pmod 8\implies b+1\equiv 0\pmod 4\implies b\equiv 3,7\pmod 8</math>. Now <math>8\mid 2024</math> so <math>\frac38\cdot 2024=759</math> but one of the answers we got from that, <math>3</math>, is too small, so <math>759 - 1 = 758\implies\boxed{\textbf{(D) }20}</math>.
+
+~OronSH ~[[User:Mathkiddus|mathkiddus]]
+
+--- Solution 2 ---
+\begin{align*}
+2024_b\equiv0\pmod{16} \\
+2b^3+2b+4\equiv0\pmod{16} \\
+b^3+b+2\equiv0\pmod8 \\
+\end{align*}
+
+Clearly, <math>b</math> is either even or odd. If <math>b</math> is even, let <math>b=2a</math>. 
+
+\begin{align*}
+(2a)^3+2a+2\equiv0\pmod8 \\
+8a^3+2a+2\equiv0\pmod8 \\
+0+2a+2\equiv0\pmod8 \\
+a+1\equiv0\pmod4 \\
+a\equiv3\pmod4 \\
+\end{align*}
+
+Thus, one solution is <math>b=2(4x+3)=8x+6</math> for some integer <math>x</math>, or <math>b\equiv6\pmod8</math>. 
+
+What if <math>b</math> is odd? Then let <math>b=2a+1</math>: 
+
+\begin{align*}
+(2a+1)^3+2a+1+2\equiv0\pmod8 \\
+8a^3+12a^2+6a+1+2a+1+2\equiv0\pmod8 \\
+8a^3+12a^2+8a+4\equiv0\pmod8 \\
+4a^2+4\equiv0\pmod8 \\
+a^2\equiv1\pmod2 \\
+\end{align*}
+
+This simply states that <math>a</math> is odd. Thus, the other solution is <math>b=2(2x+1)+1=4x+3</math> for some integer <math>x</math>, or <math>b\equiv3\pmod4</math>. 
+
+We now simply must count the number of integers between <math>5</math> and <math>2024</math>, inclusive, that are <math>6</math> mod <math>8</math> or <math>3</math> mod <math>4</math>. Note that the former case comprises even numbers only while the latter is only odd; thus, there is no overlap and we can safely count the number of each and add them. 
+
+In the former case, we have the numbers <math>6,14,22,30,\dots,2022</math>; this list is equivalent to <math>8,16,24,32,\dots,2024\cong1,2,3,4,\dots,253</math>, which comprises <math>253</math> numbers. In the latter case, we have the numbers <math>7,11,15,19,\dots,2023\cong4,8,12,16,\dots,2020\cong1,2,3,4,\dots,505</math>, which comprises <math>505</math> numbers. There are <math>758</math> numbers in total, so our answer is <math>7+5+8=\boxed{\textbf{(D) 20}}</math>.
+
+--- Solution 3 ---
+Note that <imath>2024_b=2b^3+2b+4</imath> is to be divisible by <imath>16</imath>, which means that <imath>b^3+b+2</imath> is divisible by <imath>8</imath>.
+
+If <imath>b=0</imath>, then <imath>b^3+b+2 \equiv (0)^3 + (0) + 2 \equiv 2</imath> is not divisible by <imath>8</imath>.
+
+If <imath>b=1</imath>, then <imath>b^3+b+2 \equiv (1)^3 + (1) + 2  \equiv 4</imath> is not divisible by <imath>8</imath>.
+
+If <imath>b=2</imath>, then <imath>b^3+b+2 \equiv (2)^3 + (2) + 2  \equiv 4</imath> is not divisible by <imath>8</imath>.
+
+If <imath>b=3</imath>, then <imath>b^3+b+2 \equiv (3)^3 + (3) + 2  \equiv (8+1)\cdot3 + (3) + 2 \equiv 0 </imath> is divisible by <imath>8</imath>.
+
+If <imath>b=4</imath>, then <imath>b^3+b+2 \equiv (4)^3 + (4) + 2 \equiv 0 + 4 + 2 \equiv 6 </imath> is not divisible by <imath>8</imath>.
+
+If <imath>b=5</imath>, then <imath>b^3+b+2 \equiv (-3)^3 + (-3) + 2 \equiv  (8+1)\cdot 3 + (-3) + 2 \equiv 2 </imath> is not divisible by <imath>8</imath>.
+
+If <imath>b=6</imath>, then <imath>b^3+b+2 \equiv (-2)^3 + (-2) + 2 \equiv -8 + (-2) + 2 \equiv 0 </imath> is divisible by <imath>8</imath>.
+
+If <imath>b=7</imath>, then <imath>b^3+b+2 \equiv (-1)^3 + (-1) + 2 \equiv -1 + (-1) + 2 \equiv 0 </imath> is divisible by <imath>8</imath>.
+
+Therefore, for every <imath>8</imath> values of <imath>b</imath>, <imath>3</imath> of them will make <imath>b^3+b+2</imath> divisible by <imath>8</imath>. Therefore, since <imath>2024</imath> is divisible by <imath>8</imath>, <imath>\dfrac{3}{8}\cdot2024=759</imath> values of <imath>b</imath>, but this includes <imath>b=3</imath>, which does not satisfy the given inequality. Therefore, the answer is <cmath>759-1=758\rightarrow7+5+8=\boxed{\text{(D) }20}</cmath> 
+More detail by
+
+--- Solution 4 ---
+<math>2024_b=2\ast\ b^3+2\ast\ b+4\ \\
+{2024}_{\left(b+8\right)}=2\ast\left(b+8\right)^3+2\ast\left(b+8\right)+4</math>
+<math>{2024}_{\left(b+8\right)}-{2024}_b=2*\left(8\right)*\left(b^2+8b+64\right)+2*8\ =16*\left(b^2+8b+64\right)+16</math>
+
+\begin{align*}
+2024_{(b+8)}-2024_b\equiv0\ (mod\ 16)\\
+2024_{(b+8)}\ \ \equiv2024_b\ \ (mod\ 16)\\
+2024_0\equiv4\ (mod\ 16)\\
+2024_1\equiv8\ (mod\ 16)\\
+2024_2\equiv6\ (mod\ 16)\\
+2024_3\equiv0(mod\ 16)\\
+2024_4\equiv12(mod\ 16)\\
+2024_5\equiv8(mod\ 16)\\
+2024_6\equiv0(mod\ 16)\\
+2024_7\equiv0(mod\ 16)\\
+\end{align*}
+
+We need
+<math>b\ \equiv3\ (mod\ 8)\ \ or\ b\ \equiv6\ (mod\ 8)\ \ or\ b\ \equiv7\ (mod\ 8) \\
+\lfloor(2024-3)/8\rfloor+\lfloor(2024-6)/8\rfloor+\lfloor(2024-7)/8\rfloor+3=759</math>
+take away one because <math>b=3</math> is out of range, so <math>758\Rightarrow7+8+5=\boxed{\text{(D) }20}</math>
+
+===Solution 4.1: Alternate Ending===
+
+One can arrange 2024 into different "blocks" consisting of 8 numbers each, particularly \( \{0,1,2,3,4,5,6,7\} \), \( \{8,9,10,11,12,13,14,15\} \) ...
+
+These just represent different \( \mod(8) \) class residues. So, you can just divide 2024 by 8 blocks giving us 253 total blocks with 0 extra semi-blocks.
+
+We see that \( 2024_3 \mod 8 \), \( 2024_6 \mod 8 \), and \( 2024_7 \mod 8 \) all appear exactly 253 times each, so we have \( 253 \times 3 = 759 \) different values of \( K \).
+
+However, we must not include \( 2024_3 \), as the bases \( b \) range from \( 5 \le b \le 2024 \), therefore we have \( 759-1=758 \) cases.
+
+Our answer is \( 7+5+8= \) <math>\boxed{\text{(D) }20}</math>.
+
+--- Solution 5 ---
+Start similar to other solutions.
+
+<cmath>b^3+b+2 \equiv 0\pmod 8</cmath>
+
+Except now we notice the following:
+
+\begin{align*}
+b^3+8+b+2 \equiv 8\pmod 8 \equiv 0\pmod 8\\
+(b+2)(b^2-2b+4) + b+2 \equiv 0\pmod 8\\
+(b+2)(b^2-2b+5) \equiv 0\pmod 8\\
+\end{align*}
+
+Notice that <imath>b+2</imath> and <imath>b^2-2b+5</imath> have opposite parity, and when multiplied, is divisible by <imath>8</imath>. 
+Thus, either <imath>b+2</imath> or <imath>b^2-2b+5</imath> is divisible by <imath>8</imath>.
+
+<imath>b+2</imath> is obvious, where <imath>b+2 | 8</imath> when <imath>b \equiv 6\pmod 8</imath>
+
+When testing for <imath>b^2-2b+5 | 8</imath>, we find <imath>b \equiv 3, 7\pmod 8</imath>
+
+Proceed similar to the other solutions, <imath>\lfloor\dfrac{3}{8} \cdot 2024\rfloor-1=759-1=758</imath>, where <imath>7+5+8=\boxed{\text{(D) }20}</imath>
+
+Also noting this is an example of a misplaced problem this would be far to easy for even P 18 of amc 10, deserved to be Q5-6
+
+
+=== Problem 12 ===
+The first three terms of a geometric sequence are the integers
+
+Choices: {'A': '9', 'B': '12', 'C': '16', 'D': '18', 'E': '21</math>'}
+Answer: E
+
+--- Solution 1 ---
+For a geometric sequence, we have <math>ab=720^2=2^8 3^4 5^2</math>, and we can test values for <math>b</math>. We find that <math>b=768</math> and <math>a=675</math> works, and we can test multiples of <math>5</math> in between the two values. Finding that none of the multiples of 5 divide <math>720^2</math> besides <math>720</math> itself, we know that the answer is <math>7+6+8=\boxed{\textbf{(E) } 21}</math>.
+
+(Note: To find the value of <math>b</math> without bashing, we can observe that <math>2^8=256</math>, and that multiplying it by <math>3</math> gives us <math>768</math>, which is really close to <math>720</math>. 
+Note: The reason why <math>ab=720^2</math> is because <math>b/720 = 720/a</math>. Rearranging this gives <math>ab = 720^2</math>
+
+
+Note: Another reason that <math>ab=720^2</math> is because the <math>\sqrt{ab}=720</math> (as the middle term in a geometric series is always the geometric mean [the geometric mean is the square root of the product of the first and last terms of the series]) and squaring on both sides results in <math>ab=720^2</math>.
+
+
+Note: Because it is a geometric sequence, it is clear that <math>a*k = 720</math> and <math>720*k = b</math>. Then, <math>a*k = 720 = b/k</math>. Multiply the first and third term together and it is equal to the middle term multiplied by itself.
+
+--- Solution 2 ---
+We have <math>720 = 2^4 \cdot 3^2 \cdot 5</math>. We want to find factors <math>x</math> and <math>y</math> where <math>y>x</math> such that <math>\frac{y}{x}</math> is minimized, as <math>720 \cdot \frac{y}{x}</math> will then be the least possible value of <math>b</math>. After experimenting, we see this is achieved when <math>y=16</math> and <math>x=15</math>, which means our value of <math>b</math> is <math>720 \cdot \frac{16}{15} = 768</math>, so therefore our sum is <math>7+6+8=\boxed{\textbf{(E) } 21}</math>.
+
+--- Solution 3 ---
+To minimize the value of <math>b</math>, where it has to be an integer, and it has to be greater than 720, we can express the common ratio as <math>\dfrac{n+1}{n}</math>, where the value has to be greater than <math>1</math>, and <math>n</math>, and <math>n+1</math> have to be factors of 720. Since the bigger the denominator gets, the smaller the value of the fraction, we essentially have to find the biggest value for <math>n</math>, where itself and <math>n+1</math> are factors of <math>720</math>. From here, we can check whether <math>n(n+1) = 720</math> yields an integer root, which it doesn't. So, then we check the next biggest factor of <math>720</math>, which is <math>360</math>. <math>n(n+1) = 360</math>, this doesn't have an integer root either. So, then we check the next biggest factor which is <math>240</math>, <math>n(n+1) = 240</math>, which we get <math>15</math> as a root. This means the common ration is <math>\dfrac{16}{15}</math>. We then multiply <math>\dfrac{16}{15}</math> times <math>720</math> and add up the digits getting <math>\boxed{\textbf{(E) } 21}</math>.
+
+--- Solution 4 ---
+Let the common ratio of the geometric sequence be <math>\frac{x}{y}</math>, with <math>x>y</math>. This means that <math>720(\frac{x}{y})</math> and <math>720(\frac{y}{x})</math> must both be integers, therefore <math>x</math> and <math>y</math> are both factors of <math>720</math>. We would achieve the smallest ratio <math>\frac{x}{y}</math> if <math>x</math> and <math>y</math> are consecutive, so by listing out the factors of <math>720</math>, we find that <math>1</math>, <math>2</math>, <math>3</math>, <math>4</math>, <math>5</math>, <math>6</math>, <math>8</math>, <math>9</math>, <math>10</math>, <math>15</math>, <math>16</math> are the only consecutive factors (any factors larger than these would result in the ratio simplifying, making it larger than just using consecutive integers). <math>15</math> and <math>16</math> are the largest, so we find the common ratio to be <math>\frac{16}{15}</math>, making <math>b=720(\frac{16}{15})</math> giving us <math>768</math>. The sum of its digits is <math>\boxed{\textbf{(E) } 21}</math>.
+
+--- Solution 5 ---
+We look for the smallest possible increasing ratio in the geometric sequence for <math>a</math>, <math>720</math>, and <math>b</math>.
+First, we find the prime factorization of <math>720</math>, which is really easy <math>720=2^4\cdot3^2\cdot5</math>. Then, we look for the closest possible fraction-ratio out of the primes, and after a quick look, it's easy to see it is <math>16</math> and <math>15</math>. Now that we found our ratio, we multiply <math>720</math> by <math>16/15</math> to get <math>768</math>, so the sum of the digits of the least possible value of <math>b</math> is <math>21</math>.
+
+
+NOTE: It's not 9/8 because we want it to be as close as possible to 1
+
+
+=== Problem 13 ===
+The graph of
+
+Choices: {'A': '\\left(-1,-\\frac{3}{2}\\right)', 'B': '(-1,0)', 'C': '\\left(-1,\\tfrac{1}{2}\\right)', 'D': '\\left(0,\\frac{1}{2}\\right)', 'E': '\\left(3,\\frac{1}{2}\\right)</math>'}
+Answer: D
+
+--- Solution 1 ---
+The line of symmetry is probably of the form <math>x=a</math> for some constant <math>a</math>. A vertical line of symmetry at <math>x=a</math> for a function <math>f</math> exists if and only if <math>f(a-b)=f(a+b)</math>; we substitute <math>a-b</math> and <math>a+b</math> into our given function and see that we must have 
+
+<cmath>e^{a-b+1}+e^{-(a-b)}-2=e^{a+b+1}+e^{-(a+b)}-2</cmath>
+
+for all real <math>b</math>. Simplifying: 
+
+\begin{align*}
+e^{a-b+1}+e^{-(a-b)}-2&=e^{a+b+1}+e^{-(a+b)}-2 \\
+e^{a-b+1}+e^{b-a}&=e^{a+b+1}+e^{-a-b} \\
+e^{a-b+1}-e^{-a-b}&=e^{a+b+1}-e^{b-a} \\
+e^{-b}\left(e^{a+1}-e^{-a}\right)&=e^b\left(e^{a+1}-e^{-a}\right). \\
+\end{align*}
+
+If <math>e^{a+1}-e^{-a}\neq0</math>, then <math>e^{-b}=e^b</math> for all real <math>b</math>; this is clearly impossible, so let <math>e^{a+1}-e^{-a}=0\implies a+1=-a\implies a=-\dfrac12</math>. Thus, our line of symmetry is <math>x=-\dfrac12</math>, and reflecting <math>\left(-1,\dfrac12\right)</math> over this line gives <math>\boxed{\textbf{(D) }\left(0,\dfrac12\right)}.</math>
+
+--- Solution 2 ---
+Consider the graphs of <math>y=e^{x+1}-1</math> and <math>y=e^{-x}-1</math>. A rough sketch will show that they intercept somewhere between -1 and 0 and the axis of symmetry is vertical. Thus, <math>\boxed{\textbf{(D) }\left(0,\dfrac12\right)}</math> is the only possible answer. 
+
+Note: You can more rigorously think about the solution by noting that since the derivative of the power that e is raised to in one equation is equal to the derivative of the power that e is raised to multiplied by <math>-1</math> and both equations are subtracted by 1, then the sum of both equations will be the same from one side of the interception to the other. Setting both equations equal to each other, it is trivial to see <math>x=-1/2</math>, giving us the axis of symmetry.  
+
+
+<asy>
+unitsize(2cm);
+
+real e = 2.71828;
+
+real f1(real x) {return e^(x+1)-1;}
+real f2(real x) {return e^(0-x)-1;}
+
+draw(graph(f1,-1.5,0.5));
+draw(graph(f2,-1.5,0.5));
+
+xaxis(-2,1,Ticks());
+yaxis(f2(0.5),f1(0.5),Ticks());
+
+draw((-0.5,f2(0.5))--(-0.5,f1(0.5)),red+dashed);
+/*graph by Technodoggo, 9 November 2024*/
+</asy>
+(graph by Technodoggo)
+
+--- Solution 3 ---
+Since y is a proper function of x, the axis of symmetry is vertical (and so answer choices A and B are impossible).
+Where a function crosses a vertical axis of symmetry, it must have either a vertical asymptote (clearly impossible for this given function, since linear functions and exponential function are total functions) or a local maximum or minimum (derivative 0).
+
+So the derivative is equal to 0:
+<math>\frac{d[e^{x+1}+e^{-x}-2]}{dx} = 0 = e^{x+1}-e^{-x}</math>
+
+To solve for <math>x</math>, make a substitution:
+<math>u = e^x</math>     
+<math>0 = e*u - \frac{1}{u}</math> -> 
+<math>0 = \frac{e*u^2 - 1}{u}</math> -> 
+<math>0 = e*u^2 - 1</math> -> 
+<math>e*u^2 = 1</math> -> 
+<math>(e^x)^2 = \frac{1}{e}</math> -> 
+<math>e^{2x} = e^{-1}</math> -> 
+<math>2x = -1</math> -> 
+<math>x = -\frac{1}{2}</math>  
+
+Reflect <math>\left(-1, \frac{1}{2}\right)</math> over <math>x = -\frac{1}{2}</math>, giving answer choice <math>\boxed{\textbf{(D) }\left(0,\dfrac12\right)}.</math>
+
+--- Solution 4 ---
+<cmath>f(0) = e-1 </cmath> 
+<cmath> f(1) = e^2 + e^{-1} - 2  </cmath>
+<cmath>f(-1) = 1+ e  -2 = e-1  </cmath> 
+<cmath>f(-2) =  e^{-1} + e^2 -2 </cmath>
+
+
+so f(0) = f(-1) , f(1) =f(-2) 
+then f(x) is symmetric about x=-1/2 
+point (-1, 1/2) reflects over axis x=-1/2 is point ( 0, 1/2)  answer choice D
+
+--- Solution 5 ---
+Notice that this is simply a transformation of <math>\cosh(x)</math>, specifically <math>2e^\frac{1}{2}\cosh(x + \frac{1}{2}) + 2</math>. We know that <math>\cosh(x)</math> has a parabolic shape with an axis of symmetry <math>x=0</math>. Since this is simple a transformation of <math>\frac{1}{2}</math> to the left of the origin, we have the axis of symmetry is <math>x = -\frac{1}{2}</math> giving us <math>\boxed{\textbf{(D) }\left(0,\dfrac12\right)}</math>
+
+--- Solution 6 ---
+[[Image:2024_amc12A_p13.PNG|thumb|center|600px| ]]
+
+--- Solution 7 ---
+<cmath> f(-x-1) = e^{-x-1+1} + e^{-(-x-1)} - 2  = e^{-x} + e^{x+1} - 2  = f(x) </cmath>
+
+So the axis is <math>\frac{x + (-x - 1)}{2} = -1/2</math>  
+ 
+Point <math>(-1, 1/2)</math> reflects over the axis <math>x=-1/2</math> to the point <math>\boxed{\textbf{(D) }\left(0,\dfrac12\right)}</math>
+
+--- Solution 8 ---
+Setting the axis of symmetry as <math>x=a</math> implies <math>f(2a-x) = f(x)</math>
+
+<cmath>\begin{align*}
+f(2a-x) &= f(x) \\
+e^{2a-x+1} + e^{-(2a-x)} - 2  &= e^{x+1} + e^{-x} - 2  
+\end{align*}</cmath>
+
+Analyzing the terms <math>e^{2a-x+1}</math> and <math>e^{-x}</math> tells us that <math>2a+1 = 0</math>
+
+This reveals that <math>a = -1/2</math>
+
+
+Finally, point <math>(-1, 1/2)</math> reflected over the axis <math>x=-1/2</math> is the point <math>\boxed{\textbf{(D) }\left(0,\dfrac12\right)}</math>
+
+--- Solution 9 ---
+First identify that the graphs are both forms of the parent function <math>e^x</math> and will not have a slant asymptote, so we can eliminate answer choices with a different y-value and the same x-value as this function can not have different y value for a same x value. 
+
+The answer choices that we can still consider are: <math>\qquad\textbf{(D) }\left(0,\frac{1}{2}\right)\qquad\textbf{(E) }\left(3,\frac{1}{2}\right)</math>
+
+Remember that the constant term does not matter for an axis of symmetry, as it simply shifts the function(s) up or down.
+
+Hence, we can use the answer choices and plug in valid values of <math>x</math> for <math>e^{x+1}=e^{-x}</math>.
+
+The answer for <math>x</math> is then <math>{-1/2}</math>, and the answer is <math>\boxed{\textbf{(D) }\left(0,\dfrac12\right)}</math>
+
+
+=== Problem 14 ===
+The numbers, in order, of each row and the numbers, in order, of each column of a
+
+Choices: {'A': '19', 'B': '24', 'C': '29', 'D': '34', 'E': '39</math>'}
+Answer: C
+
+--- Solution 1 ---
+Start from the <math>0</math>. Going up, let the common difference be <math>a</math>, and going left, let the common difference be <math>b</math>. Therefore, we have <cmath> \begin{bmatrix} . & ? &.&.&4a \\ .&.&.&48&3a\\ 12&.&.&.&2a\\ .&.&16&.&a\\ 4b&3b&2b&b&0\end{bmatrix}</cmath> Looking at the third column, we can see that the common difference going up is <math>16-2b</math>. We fill this in: <cmath> \begin{bmatrix} . & ? &64-6b&.&4a \\ .&.&48-4b&48&3a\\ 12&.&32-2b&.&2a\\ .&.&16&.&a\\ 4b&3b&2b&b&0\end{bmatrix}</cmath> Looking at the second row, <math>48</math> has two values beside it, so we can write <cmath>48=\dfrac{48-4b+3a}{2}\rightarrow96=48-4b+3a\rightarrow48=-4b+3a,</cmath> and we can do the same with the third row, which gives <cmath>32-2b=\dfrac{12+2a}{2}\rightarrow32-2b=6+a\rightarrow26=a+2b.</cmath> Now we have the system of equations <cmath>48=-4b+3a</cmath><cmath>26=a+2b,</cmath> and solving it gives <math>a=20,b=3</math>, therefore we can now fill in the grid with actual numbers. But before doing that, note that we're only looking for a value in the first row, and because we already have two known values in that row, we can find the common difference for that row and not focus on anything else. 
+
+Focusing only on the first row yields <cmath> \begin{bmatrix} . & ? &46&.&80\end{bmatrix}</cmath> This means that the common difference from right to left is <math>\dfrac{80-46}{2}=17</math>. Therefore, the desired value is <math>46-17=\boxed{\text{(C) }29}</math>
+
+--- Solution 2 ---
+Assume the number in position <math>(3, 3)</math> is <math>x</math>. 
+<cmath> \begin{bmatrix} .&?&.&.&. \\ .&.&.&48&.\\ 12&.&x&.&.\\ .&.&16&.&.\\ .&.&.&.&0\end{bmatrix}</cmath> 
+Then, the integer in position <math>(2, 3)</math> will be <math>2x-16</math>, since <math>2x-16</math> and <math>16</math> average out to x. (They form an arithmetic sequence).
+<cmath> \begin{bmatrix} .&?&.&.&. \\ .&.&2x-16&48&.\\ 12&.&x&.&.\\ .&.&16&.&.\\ .&.&.&.&0\end{bmatrix}</cmath>
+Similarly, the integer in position <math>(3, 2)</math> is <math>0.5x+6</math>, and the integer in position <math>(2, 2)</math> is <math>4x-80</math>. 
+<cmath> \begin{bmatrix} .&?&.&.&. \\ .&4x-80&2x-16&48&.\\ 12&0.5x+6&x&.&.\\ .&.&16&.&.\\ .&.&.&.&0\end{bmatrix}</cmath>
+This means the number <math>7.5x-166</math> is in position (1, 2).
+<cmath> \begin{bmatrix} .&7.5x-166&.&.&. \\ .&4x-80&2x-16&48&.\\ 12&0.5x+6&x&.&.\\ .&.&16&.&.\\ .&.&.&.&0\end{bmatrix}</cmath>
+
+The only answer choice that makes <math>x</math> an integer is <math>\boxed{\textbf{(C) }29}</math>
+
+--- Solution 3 ---
+Let's look at the bottom-left corner. There can be <math>3</math> possible cases for the bottom row. Either the numbers are negative, all <math>0</math>, or positive. 
+
+Let's assume all the numbers are negative. We know that the numbers in between the <math>?</math> will be large, so we want to minimize it, because the largest answer choice is only <math>39</math>.
+
+<cmath> \begin{bmatrix} .&?&.&.&. \\ .&.&.&48&.\\ 12&.&.&.&.\\ .&.&16&.&.\\ -4&-3&-2&-1&0\end{bmatrix}</cmath>
+
+To fill in the <math>1</math>st and <math>3</math>rd column, we simply find the common differences. We get:
+
+<cmath> \begin{bmatrix} 28&?&70&.&. \\ 20&.&52&48&.\\ 12&.&34&.&.\\ 4&.&16&.&.\\ -4&-3&-2&-1&0\end{bmatrix}</cmath>
+
+Finding the <math>?</math> , we notice that it is <math>49</math>, which is bigger than any of the other answer choices, so the bottom row can't be negative. (As the common difference for the bottom row gets larger, so does the common difference for the <math>1</math>st and <math>3</math>rd column, making the <math>?</math> bigger, and because the smallest answer is <math>39</math> while the minimum value for negative numbers is <math>49</math>, it can't be negative.)
+
+Now let's assume that all the numbers are 0. By just filling in the <math>1</math>st and <math>3</math>rd column, we find that it is:
+
+<cmath> \begin{bmatrix} 24 & ? &64&.&. \\ 18&.&48&48&.\\ 12&.&32&.&.\\ 6&.&16&.&.\\ 0&0&0&0&0\end{bmatrix}</cmath>
+
+which makes the <math>?=44</math>. <math>44</math> is not an answer choice, so the bottom row cannot be all <math>0</math>'s.
+
+Now, we know that the bottom row must be positive. Here's where the bashing begins. Lucky for us, the numbers must all be integers, cutting down on the number of cases we need to test. Starting with the bottom row having a common difference of <math>1</math>, we get
+
+<cmath> \begin{bmatrix} . & ? &.&.&. \\ 16&30&44&48&.\\ 12&21&30&39&48\\ 8&12&16&20&24\\ 4&3&2&1&0\end{bmatrix}</cmath>
+
+At this point we notice that the second row does not form an arithmetic progression, so we test out the next case, with the common difference being <math>2</math>. We get
+
+<cmath> \begin{bmatrix} . & ? &.&.&. \\ 14&27&40&48&.\\ 12&20&28&36&44\\ 10&13&16&19&22\\ 8&6&4&2&0\end{bmatrix}</cmath>
+
+At this point we notice that the second row does not form an arithmetic progression, so we test out the next case, with the common difference being <math>3</math>. We get
+
+<cmath> \begin{bmatrix} 12 & 29 &46&63&80 \\ 12&24&36&48&60\\ 12&19&26&33&40\\ 12&14&16&18&20\\ 12&9&6&3&0\end{bmatrix}</cmath>
+
+, giving us the answer <math>\boxed{\textbf{(C) }29}</math>
+
+--- Solution 4 ---
+Let the bottom row of the grid have arithmetic difference <math>d</math>. Then the matrix becomes <cmath> \begin{bmatrix} . & ? &.&.&4d \\ .&.&.&48&3d\\ 12&.&.&.&2d\\ .&.&16&.&d\\ .&.&.&.&0\end{bmatrix}</cmath>
+Using the middle column, we have the middle item equal to <math>32-2d</math>.
+<cmath> \begin{bmatrix} . & ? &.&.&4d \\ .&.&.&48&3d\\ 12&.&32-2d&.&2d\\ .&.&16&.&d\\ .&.&.&.&0\end{bmatrix}</cmath>
+Filling in the middle row (which has a common difference of <math>10-d</math>)
+<cmath> \begin{bmatrix} . & ? &.&.&. \\ .&.&.&48&.\\ 12&22-d&32-2d&42-3d&52-4d\\ .&.&16&.&.\\ 4d&3d&2d&d&0\end{bmatrix}</cmath>
+The arithmetic sequence in the 4th column (2nd from the right) then has a common difference of <math>-3d-6</math>, so we
+<cmath> \begin{bmatrix} . & ? &.&.&. \\ .&.&.&48&.\\ 12&22-d&32-2d&42-3d&52-4d\\ .&.&16&36-6d&.\\ 4d&3d&2d&30-9d&0\end{bmatrix} = \begin{bmatrix} . & ? &.&.&. \\ .&.&.&48&.\\ 12&22-d&32-2d&42-3d&52-4d\\ .&.&16&36-6d&.\\ 4d&3d&2d&d&0\end{bmatrix}</cmath>
+From the cell in the 4th column, 5th row we have <math>30-9d=d</math>, or <math>d=3</math>. Finally, using the 2nd column, <math>\text{?} + 3d = 2(22-d)</math>, or <math>\text{?}+9=38 \Rightarrow \text{?}=\boxed{\text{(C) }29}</math>
+
+--- Solution 5 ---
+We subtract <math>12</math> from each element of the array and denote <math>a_{i,j}</math> the number in position <math>(i,j), a_{3,1} = 0, a_{4,3} = 4,  a_{2,4} = 36,  a_{5,5} = - 12.</math>
+Denoting <math>a_{3,2} = x \implies</math> that in third row we get <math>(0, x, 2x, 3x, 4x).</math> 
+We use the property of an arithmetic progression and get
+<cmath>a_{4,4} = 2a_{3,4} - a_{2,4} = 6x - 36,</cmath> 
+<cmath>a_{4,5} = 2 a_{4,4}- a_{3,4} = 12x - 76,</cmath>
+<cmath>a_{5,5} = 2 a_{4,5}- a_{3,5} \implies  - 12 = 2(2x - 76) - 4x \implies x = 7 = a_{3,2},  a_{3,3}=14.</cmath>
+<cmath>\begin{bmatrix} .&.&.&.&. \\ .&.&.&36&.\\ 0&x&2x&3x&4x\\ .&.&4&6x-36&12x-76\\ .&.&.&.&-12\end{bmatrix}</cmath>
+<cmath>a_{2,3} = 2 a_{3,3}- a_{4,4} = 2 \cdot 14 - 4 = 24,</cmath>
+<cmath>a_{2,2} = 2 a_{2,3}- a_{2,4} = 2 \cdot 24 - 36 = 12,</cmath>
+<cmath>a_{1,2} = 2 a_{2,2}- a_{3,2} = 2 \cdot 12 - 7 = 17.</cmath>
+
+<cmath>\begin{bmatrix} .&17&.&&.& \\ .&12&24&36&.\\ 0&7&14&.&.\\ .&.&.&.&.\\ .&.&.&.&.\end{bmatrix}</cmath>
+We add <math>12</math> and get the number in position <math>(1,2)</math> as <math>17 + 12 = 29.</math>
+
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+
+=== Problem 15 ===
+The roots of
+
+Choices: {'A': '64', 'B': '75', 'C': '100', 'D': '125', 'E': '144</math>'}
+Answer: D
+
+--- Solution 1 ---
+You can factor <math>(p^2 + 4)(q^2 + 4)(r^2 + 4)</math> as <math>(p+2i)(p-2i)(q+2i)(q-2i)(r+2i)(r-2i)</math>.
+
+For any polynomial <math>f(x)</math>, you can create a new polynomial <math>f(x+a)</math>, which will have roots that instead have the value <math>a</math> subtracted.
+
+Substituting <math>x-2i</math> and <math>x+2i</math> into <math>x</math> for the first polynomial, gives you <math>10i-5</math> and <math>-10i-5</math> as <math>c</math> for both equations. Multiplying <math>10i-5</math> and <math>-10i-5</math> together gives you <math>\boxed{\textbf{(D) }125}</math>.
+
+-ev2028
+
+--- Solution 2 ---
+Let <math>f(x) = x^3 + 2x^2 - x + 3 = (x - p)(x - q)(x - r) = -(p - x)(q - x)(r - x)</math>. Then
+<cmath>(p^2 + 4)(q^2 + 4)(r^2 + 4)=(p+2i)(p-2i)(q+2i)(q-2i)(r+2i)(r-2i)=f(2i)f(-2i).</cmath>
+We find that <math>f(2i)=-8i-8-2i+3=-10i-5</math> and <math>f(-2i)=8i-8+2i+3=10i-5</math>, so <cmath>f(2i)f(-2i)=(-5-10i)(-5+10i)=(-5)^2-(10i)^2=25+100=\boxed{\textbf{(D) }125}.</cmath>
+
+--- Solution 3 ---
+First, denote that
+<cmath>p+q+r=-2,
+pq+pr+qr=-1,
+pqr=-3</cmath>
+Then we expand the expression
+<cmath>(p^2+4)(q^2+4)(r^2+4)</cmath>
+<cmath>=(pqr)^2+4((pq)^2+(pr)^2+(qr)^2)+4^2(p^2+q^2+r^2)+4^3</cmath>
+<cmath>=(-3)^2+4((pq+pr+qr)^2-2pqr(p+q+r))+4^2((p+q+r)^2-2(pq+pr+qr))+4^3</cmath>
+<cmath>=(-3)^2+4((-1)^2-2(-3)(-2))+4^2((-2)^2-2(-1))+4^3</cmath>
+<cmath>=\fbox{(D) 125}</cmath>
+
+--- Solution 4 ---
+Expand the expression: 
+
+<cmath>(p^2 + 4)(q^2 + 4)(r^2 + 4) = (p^2q^2r^2) + 4(q^2r^2 + p^2r^2 + p^2q^2) + 16(p^2 + q^2 + r^2) + 64.</cmath> 
+
+By Vieta's we have <math>pqr = -3.</math> Therefore, <math>p^2q^2r^2 = (-3)^2 = 9</math>. We use Newton's Sums to quickly compute <math>p^2 + q^2 + r^2:</math> 
+
+<cmath>S_2 + 2S_1 + 2(-1) = 0</cmath>
+
+By Vieta's again, <math>S_1 = p + q + r = -2</math> which means <math>S_2 = p^2 + q^2 + r^2 = 6.</math> 
+
+Now all we need is <math>q^2r^2 + p^2r^2 + p^2q^2.</math> Vieta's also tells us that <math>pq + qr + pr = -1,</math> so we can take this equation and square both sides: 
+
+<cmath>(pq + qr + pr)^2 = q^2r^2 + p^2r^2 + p^2q^2 + 2(qpr^2 + q^2rp + p^2rq) = 1.</cmath> 
+
+We know <math>pqr = -3</math> so we can substitute this in: 
+
+<cmath>(pq + qr + pr)^2 = q^2r^2 + p^2r^2 + p^2q^2 -6(r + p + q) = 1.</cmath> 
+
+We also know <math>p + q + r = -2</math>, which means <math>q^2r^2 + p^2r^2 + p^2q^2 = -11.</math> 
+
+
+So the answer is just <math>9 + 4(-11) + 16(6) + 64 = \boxed{125}.</math>
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 5 ---
+The motivation for this solution is the observation that <math>(p+c)(q+c)(r+c)</math> is easy to compute for any constant c, since <math>(p+c)(q+c)(r+c)=-f(-c)</math> (*), where <math>f</math> is the polynomial given in the problem. The idea is to transform the expression involving <math>p^2, q^2, r^2</math> into one involving <math>p, q, r</math>.
+
+Since <math>p</math> is a root of <math>f</math>, 
+<cmath>p^3+2p^2-p+3=0\implies p^3+2p^2=p^2(p+2)=p-3,</cmath>
+which gives us that <math>p^2=\frac{p-3}{p+2}</math>. Then
+<cmath>p^2+4=\frac{p-3}{p+2} + 4 = \frac{5p+5}{p+2}=5\cdot \frac{p+1}{p+2}.</cmath>
+Since <math>q</math> and <math>r</math> are also roots of <math>f</math>, the same analysis holds, so
+
+\begin{align*}
+(p^2 + 4)(q^2 + 4)(r^2 + 4)&= \left(5\cdot \frac{p+1}{p+2}\right)\left(5\cdot \frac{q+1}{q+2}\right)\left(5\cdot \frac{r+1}{r+2}\right)\\
+&= 125 \frac{(p+1)(q+1)(r+1)}{(p+2)(q+2)(r+2)}\\
+&= 125 \frac{-f(-1)}{-f(-2)} \\
+&= 125\cdot 1\\
+&=\boxed{\textbf{(D) }125}.
+\end{align*}
+
+(*) This is because 
+<cmath>(p+c)(r+c)(q+c)=(-1)^3(-c-p)(-c-r)(-c-q)=-f(-c),</cmath>
+since
+<cmath>f(x)=(x-p)(x-q)(x-r)</cmath>
+for all <math>x</math>.
+
+--- Solution 6 ---
+Expanding the expression
+<cmath>(p^2 + 4)(q^2 + 4)(r^2 + 4)</cmath>
+gives us
+<cmath>(pqr)^2+4p^2q^2+4p^2r^2+4q^2r^2+16p^2+16q^2+16r^2+64</cmath>
+
+Notice that everything other than <math>(pqr)^2</math> is a multiple of <math>4</math>. Solving for <math>(pqr)^2</math> using vieta's formulas, we get <math>9</math>. Since <math>9</math> is <math>1\pmod4</math>, the answer should be as well. The only answer that is <math>1\pmod4</math> is <math>\boxed{\textbf{(D) }125}</math>.
+
+--- Solution 7 ---
+Suppose <math>y = x^2 + 4</math>
+
+then <math>x =\pm \sqrt{y - 4}</math>. Substitute <math>x = \sqrt{y - 4}</math> into <math>x^3 + 2x^2 - x + 3 = 0</math> (It is same for <math>x = -\sqrt{y - 4}</math> because the squares in <math>(p^2 + 4)(q^2 + 4)(r^2 + 4)</math>)
+
+<math>(\sqrt{y - 4})^3 + 2(\sqrt{y - 4})^2 - \sqrt{y - 4} + 3 = 0 \implies (y - 5)^2(y - 4) = (-2y + 5)^2</math> whose constant is 125
+
+according to Vieta's theorem, <math>y_1y_2y_3 = 125</math>
+
+<math>y_1y_2y_3 = 125 \implies (x_1^2 + 4)(x_2^2 + 4)(x_3^2 + 4) = 125 \implies (p^2 + 4)(q^2 + 4)(r^2 + 4) = \boxed{\textbf{(D) }125}</math>.
+
+
+=== Problem 16 ===
+A set of
+
+Choices: {'A': '387', 'B': '388', 'C': '389', 'D': '390', 'E': '391 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Assume all of them are distinct even though some have the same color,
+
+Total possibility = <math>\mathrm{C}_{4}^{12}\mathrm{C}_{4}^{8}\mathrm{C}_{4}^{4}</math>
+(choosing 4 random token for each person)
+
+Next, assume that all the token are already in 3 different groups (Note: 3! Ways to do so since 3 people)
+
+We then distribute the 6 distinct black token into these 3 different groups (So 1,2,3 token for each group)
+
+There are a total of <math>3!  \cdot  \mathrm{C}_{3}^{6}\mathrm{C}_{2}^{3}\mathrm{C}_{1}^{1}</math> ways in doing so
+
+Thus the answer is <math>3! \cdot \frac{6!}{1!2!3!}/\frac{12!}{4!4!4!}=\frac{4}{385}</math>
+
+So the answer is <math>\boxed{\textbf{(C) }389}</math>
+
+--- Solution 2 ---
+We first assume there are designated red, white, and blue token players that will receive all of their respective one.
+
+Consider each non-black token: The probability of the red player getting the first red token is <math>\frac{4}{12}</math>, because each player has 4 empty token "slots" for a total of 12. It follows that the probability of the player receiving all 3 red tokens is <math>\left(\frac{4}{12}\right)\left(\frac{3}{11}\right)\left(\frac{2}{10}\right)</math>, the white token player is <math>\left(\frac{4}{9}\right)\left(\frac{3}{8}\right)</math>, and the blue token player is <math>\frac{4}{7}</math>.
+
+The combined probability is <math>\left(\frac{4}{12}\right)\left(\frac{3}{11}\right)\left(\frac{2}{10}\right)\left(\frac{4}{9}\right)\left(\frac{3}{8}\right)\left(\frac{4}{7}\right)=\frac{2}{1155}</math>.
+
+Finally, we multiply the probability by <math>3!=6</math> to remove our initial assumption to get <math>\frac{4}{385}</math>.
+
+The requested sum is <math>4+385=\boxed{\textbf{(C) }389}</math>.
+
+--- Solution 3 ---
+Process start, <i><b>first</b></i> player get tokens.  The probability that he gets 3 red tokens and 1 black token is <math>\frac{3 \cdot 2 \cdot 1 \cdot 6}{12 \cdot 11 \cdot 10 \cdot 9} = \frac {1}{330}.</math>
+
+There is  <math>\dbinom41 = 4</math> possible arrangements (RRRB,RRBR,RBRR,BRRR) and 3 possibilities who is the first, so the probability that <i><b>some</b></i> player gets 3 red tokens and 1 black token is <math>\frac {4 \cdot 3}{330} = \frac {2}{55}.</math> 
+ 
+After that <i><b>second</b></i> player get tokens. The probability that he gets 2 white tokens and 2 black tokens is <math>\frac{2 \cdot 1 \cdot 5 \cdot 4}{8 \cdot 7 \cdot 6 \cdot 5} = \frac {1}{42}.</math>
+
+There is <math>\dbinom42 = 6</math> possible arrangements (WWBB,WBWB, WBBW, BBWW, BWBW, BWWB) and 2 possibilities who is the second, so the probability that <i><b>some</b></i> player gets 2 white tokens and 2 black tokens is <math>\frac {6 \cdot 2}{42} = \frac {2}{7}.</math>
+
+The third player gets last tokens - 1 blue and 3 black tokens.
+ 
+The desired probability is <math>\frac {2 \cdot 2}{55 \cdot 7} = \frac {4}{385} \implies 4+385=\boxed{\textbf{(C) }389}</math>.
+
+To check the result suppose that first and some) player gets 1 blue and 3 black tokens. The probability is <math>\frac{1 \cdot 6 \cdot 5 \cdot 4}{12 \cdot 11 \cdot 10 \cdot 9} \cdot 4 \cdot 3 = \frac {4}{33}.</math> 
+
+The probability that second (and some) player gets 3 red tokens and 1 black token is <math>\frac{3 \cdot 2 \cdot 1 \cdot 3}{8 \cdot 7 \cdot 6 \cdot 5} \cdot 4 \cdot 2 = \frac {3}{35}.</math>
+
+The desired probability is <math>\frac {4 \cdot 3}{33 \cdot 35} = \frac {4}{385}.</math>
+
+
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+--- Solution 4 ---
+Arranging these 12 tokens in a row, there are total of <math>\frac{12!}{3!\,2!\,1!\,6!}</math> arrangements. 
+
+Player one takes the first to the fourth tokens, player two takes the fifth to the eighth, and player three takes the rest. There are 6 cases of desired arrangements:
+
+Case 1. Player one has three red tokens (and one black), player 2 has two white tokens and player 3 has 1 blue token. There are total of <math>\binom{4}{3}\binom{4}{2}\binom{4}{1}=4\cdot 6\cdot 4</math> arrangements in this case.
+
+Other cases (such as player 1 has two white tokens, player 2 has three red, and player has one blue token) are all similar.
+
+The number of desired arrangements for all cases is <math>6\cdot (4\cdot 6\cdot 4)</math>.
+
+The target probability is <math>\frac{6\cdot (4\cdot 6\cdot 4)}{12!/(3!\,2!\,1!\,6!)}=\frac{4}{385}.</math>
+
+-J.Z.
+
+--- Solution 5 ---
+We make no assumptions about which player receives which tokens.
+
+Let us first distribute the red tokens. It does not matter who the first token goes to, but the second one must go to the same player, in <math>1</math> of their <math>3</math> open spots, out of the total <math>11</math> remaining spots. Similarly, the third red token must go in one of the <math>2</math> open spots out of <math>10</math> remaining.
+
+Distributing the white tokens next, the first token can go in any of the <math>9</math> remaining spots except for the <math>1</math> spot of the red token player. The second white token must then go in the <math>3</math> open spots of this white token player out of <math>8</math> spots.
+
+Lastly, the blue token must go in <math>1</math> of the <math>4</math> open spots of the last player, out of a total of <math>7</math> spots. The remaining <math>6</math> black tokens can be distributed however.
+
+Thus, our probability is <math>\frac{3}{11} \cdot \frac{2}{10} \cdot \frac{8}{9} \cdot \frac{3}{8} \cdot \frac{4}{7} = \frac{4}{385}</math>, and so our answer is <math>4 + 385 = \boxed{\textbf{(C)}\ 389}</math>.
+
+
+=== Problem 17 ===
+Integers
+
+Choices: {'A': '212', 'B': '247', 'C': '258', 'D': '276', 'E': '284 </math>'}
+Answer: D
+
+--- Solution 1 ---
+Subtracting the first two equations yields <math>(a-c)(b-1)=13</math>. Notice that both factors are integers, so <math>b-1</math> could equal one of <math>13,1,-1,-13</math> and <math>b=14,2,0,-12</math>. We consider each case separately:
+
+For <math>b=0</math>, from the second equation, we see that <math>a=87</math>. Then <math>87c=60</math>, which is not possible as <math>c</math> is an integer, so this case is invalid.
+
+For <math>b=2</math>, we have <math>2c+a=87</math> and <math>ca=58</math>, which by experimentation on the factors of <math>58</math> has no solution, so this is also invalid.
+
+For <math>b=14</math>, we have <math>14c+a=87</math> and <math>ca=46</math>, which by experimentation on the factors of <math>46</math> has no solution, so this is also invalid.
+
+Thus, we must have <math>b=-12</math>, so <math>a=12c+87</math> and <math>ca=72</math>. Thus <math>c(12c+87)=72</math>, so <math>c(4c+29)=24</math>. We can simply trial and error this to find that <math>c=-8</math> so then <math>a=-9</math>. The answer is then <math>(-9)(-12)+(-12)(-8)+(-8)(-9)=108+96+72=\boxed{\textbf{(D) }276}</math>.
+
+By Antony Huang
+
+--- Solution 2 ---
+Adding up first two equations: <cmath>(a+c)(b+1)=187</cmath>
+<cmath>b+1=\pm 11,\pm 17</cmath>
+<cmath>b=-12,10,-18,16</cmath>
+
+Subtracting equation 1 from equation 2: <cmath>(a-c)(b-1)=13</cmath>
+<cmath>b-1=\pm 1,\pm 13</cmath>
+<cmath>b=0,2,-12,14</cmath>
+
+<cmath>\Rightarrow b=-12</cmath>
+
+Which implies that <math>a+c=-17</math> from <math>(a+c)(b+1)=187</math>
+
+Giving us that <math>a+b+c=-29</math>
+
+Therefore, <math>ab+bc+ac=100+87+60-(a+b+c)=\boxed{\text{(D) }276}</math>
+
+--- Solution 3 ---
+The idea is that you could guess values for <math>c</math>, since then <math>a</math> and <math>b</math> are factors of <math>100 - c</math>. The important thing to realize is that <math>a</math>, <math>b</math>, and <math>c</math> are all negative. Then, this can be solved in a few minutes, giving the solution <math>(-9, -12, -8)</math>, which gives the answer <math>\boxed{\textbf{(D)} 276}</math>
+
+--- Solution 4 ---
+<cmath>\begin{align}
+ab + c &= 100 \\
+bc + a &= 87 \\
+ca + b &= 60
+\end{align}</cmath>
+
+<cmath>(1) + (2) \implies  ab + c +bc + a = (a+c)(b+1)=187\implies b+1=\pm 11,\pm 17</cmath>
+
+<cmath>(1) - (2) \implies ab + c - bc - a = (a-c)(b-1)=13\implies b-1=\pm 1,\pm 13</cmath>
+
+Note that <math>(b+1)-(b-1)=2</math>, and the only possible pair of results that yields this is <math>b-1=-13</math> and <math>b+1=-11</math>, so <math>a+c=-17</math>. 
+
+Therefore, 
+
+<cmath>ab+ba+ac=ab + c +bc + a + ca + b -(a+b+c) = (1)+(2)+(3) - (a+b+c) = 100+87+60-(a+b+c)=\boxed{\textbf{(D) }276}.</cmath>
+~[https://artofproblemsolving.com/wiki/index.php/User:Cyantist luckuso], yuvag, Technodoggo (LaTeX credits to the latter two and editing to the latter)
+
+--- Solution 5 ---
+<cmath>\begin{align}
+ab + c &= 100 \\
+bc + a &= 87 \\
+ca + b &= 60
+\end{align}</cmath>
+
+\begin{align*}
+(1) - (2) \implies ab + c -bc - a &=(a-c)(b-1)=13 \\
+(2) - (3) \implies bc + a -ca - b &=(b-a)(c-1)=27 \\
+(3) - (1) \implies ca + b -ab - c &=(c-b)(a-1)=-40
+\end{align*}
+
+There are <math>3</math> ordered pairs of <math>(a,b,c)</math>: <math>(5,14,4)</math>, <math>(-3,-12,-3)</math>, <math>(-9,-12,-8)</math>. 
+
+However, only the last ordered pair meets all three equations.
+
+Therefore, <math>ab+ba+ac= -9\cdot-12+-12\cdot-8+-8\cdot-9 = \boxed{\textbf{(D) }276}.</math>
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Cyantist luckuso], megaboy6679 (formatting), Technodoggo (LaTeX optimization/clarity adjustments)
+
+--- Solution 6 ---
+Before we start, keep in mind that the problem is asking for the sum \(ab+bc+ac\). This is nothing but \(100+87+60-a-b-c\), or \(247-(a+b+c\)). 
+
+To solve the problem, we systematically test the options using elimination:
+
+Let's first check options A and B, since they only happen when a,b, and c sum to 35 or 0.
+We begin by testing three positive values, but none satisfy the equation when there is a plus sign. For example, \( (12, 8, 4) \) satisfies \( ab + c = 100 \), but does not satisfy \( bc + a = 87\), or \( ac + b = 60\). If \(a+b+c=0\), then not all of the numbers can be positive or negative, so this would not work.
+From this observation, we conclude that the answer cannot be \( \textbf{A} \) or \( \textbf{B} \).
+
+Now let's test the next option, option C.
+Option \( \textbf{C} \) states \( ab + bc + ca = 258 \). If true, then:
+
+\(a + b + c = -11\)
+
+This sum is too large. Furthermore, if all three numbers are negative, the solution still fails. For example, testing \( (-4, -5, -2) \) confirms the equation is not satisfied, as we get results that are too small. Thus, we eliminate option \( \textbf{C} \).
+
+Finally, let's test the last two options: D and E.
+For option \( \textbf{E} \), the sum \( a + b + c \) would be:
+
+\(247 - 284 = -37\)
+
+Testing values such as \( (-11, -12, -14) \), the resulting sums \( ab + c \), \( bc + a \), and \( ac + b \) are far too large to satisfy the equation.  
+Therefore, \( \textbf{E} \) is also eliminated.
+
+Once we have this answer, we still need to verify it by testing out numbers:
+Finally, we test option \( \textbf{D} \). Using \( ab + bc + ca = 276 \), we get that \(a+b+c = -29\). Also note that a, b, and c all have to be different, because the sums from the three equations are all different. We want to get the three closest values of a, b, and c such that they are all different, and the sum \(a+b+c = -29\). The values \( (-9, -12, -8) \) are the closest three numbers. When we try them, they satisfy all three equations.
+So, the correct answer is:
+<math>ab+ba+ac= -9\cdot-12+-12\cdot-8+-8\cdot-9 = \boxed{\textbf{(D) }276}.</math>
+
+
+=== Problem 18 ===
+On top of a rectangular card with sides of length
+
+Choices: {'A': '6', 'B': '8', 'C': '10', 'D': '12', 'E': '\\text{No new vertex will land on }B.</math>'}
+Answer: A
+
+--- Solution 1 ---
+Let the midpoint of <math>AC</math> be <math>P</math>.
+
+We see that no matter how many moves we do, <math>P</math> stays where it is.
+
+Now we can find the angle of rotation (<math>\angle APB</math>) per move with the following steps:
+
+<cmath>AP^2=(\frac{1}{2})^2+(1+\frac{\sqrt{3}}{2})^2=2+\sqrt{3}</cmath>
+<cmath>1^2=AP^2+AP^2-2(AP)(AP)\cos\angle APB</cmath>
+<cmath>1=2(2+\sqrt{3})(1-\cos\angle APB)</cmath>
+<cmath>\cos\angle APB=\frac{3+2\sqrt{3}}{4+2\sqrt{3}}</cmath>
+<cmath>\cos\angle APB=\frac{3+2\sqrt{3}}{4+2\sqrt{3}}\cdot\frac{4-2\sqrt{3}}{4-2\sqrt{3}}</cmath>
+<cmath>\cos\angle APB=\frac{2\sqrt{3}}{4}=\frac{\sqrt{3}}{2}</cmath>
+<cmath>\angle APB=30^\circ</cmath>
+Since Vertex <math>C</math> is the closest one and <cmath>\angle BPC=360-180-30=150</cmath>
+
+Vertex C will land on Vertex B when <math>\frac{150}{30}+1=\fbox{(A) 6}</math> cards are placed.
+
+(someone insert diagram maybe)
+
+--- Solution 2 ---
+[[Image:2024_amc12A_p18.png|thumb|center|600px|]]
+Let AC intersect BD at O, 
+
+We want to find <math>\angle AOB </math>
+
+Since  <math>\tan(75^\circ) = 2+ \sqrt{3} =\frac{AD}{AB} </math>,  <math>\angle CBD = \angle BCA = 15^\circ </math>
+<cmath> \angle AOB  = \angle CBD  + \angle BCA  =30^\circ  </cmath>
+So each time we rotate BD to AC for <math>30^\circ </math>,  and we need to rotate <math> 180^\circ / 30^\circ = 6 </math> times to overlap a point with B
+
+Therefore, the answer is <math>\fbox{\textbf{(A) } 6}</math> 
+
+Note: If you don't remember  <math>\tan(75^\circ)</math>
+
+<math> \tan(75^\circ) = \frac{\tan(45^\circ) + \tan(30^\circ)}{ 1 - \tan(45^\circ)\cdot \tan(30^\circ)} </math>
+
+<math> = \frac{1 + \frac{1}{\sqrt{3}}}{1 - 1 \cdot \frac{1}{\sqrt{3}}} </math>
+
+<math> = \frac{(\sqrt{3}+1)^2  }{ (\sqrt{3})^2-1} = 2+ \sqrt{3} </math>
+
+--- Solution 3 ---
+By the Pythagorean Theorem, <math>AC = \sqrt{(2 + \sqrt{3})^2 + 1} = \sqrt{8 + 4\sqrt{3}}</math>. So we have
+<cmath>\arcsin \angle BCA = \frac{1}{\sqrt{8 + 4\sqrt{3}}} = \frac{1}{\sqrt{(\sqrt{6} + \sqrt{2})^2}} = \frac{\sqrt{6} - \sqrt{2}}{4}.</cmath>
+
+We note that <cmath>\sin 15^\circ = \cos 75^\circ = \cos(30^\circ + 45^\circ) = \cos30^\circ \cos45^\circ - \sin45^\circ \sin30^\circ = \frac{\sqrt{6} - \sqrt{2}}{4}.</cmath>
+
+Therefore, <math>\angle BCA = 15^\circ.</math>
+
+Call the rotated rectangle given in the problem's diagram <math>AB'CD.</math> Since <math>\angle ACB' = \angle BCA = 15^\circ,</math> we have <math>\angle BCB' = 30^\circ.</math> So the angle formed between <math>B</math> and <math>B'</math> is <math>30^\circ \cdot 2 = 60^\circ</math>.
+
+In general, when the rectangle is rotated, the angle formed between the left vertex of the original rectangle and the right vertex of the new rectangle is <math>60^\circ.</math> So we can inscribe the rectangles in a circle with <math>2 \cdot 360/60 = 12</math> equally spaced points, and the rotated rectangles will have vertices on these points. 
+<asy>
+size(150);
+defaultpen(fontsize(10pt));
+
+pair O = (0,0);
+pair[] pts;
+for (int i = 0; i < 12; ++i) {
+  pts[i] = dir(30 * i);
+}
+
+fill(pts[9]--pts[10]--pts[3]--pts[4]--cycle, paleblue);
+fill(pts[8]--pts[9]--pts[2]--pts[3]--cycle, palegreen);
+fill(pts[7]--pts[8]--pts[1]--pts[2]--cycle, palered);
+
+draw(Circle(O,1));
+
+
+draw(O--pts[4], blue+1.5);
+draw(O--pts[2], blue+1.5);
+
+
+
+for (int i = 0; i < 12; ++i) {
+  dot(pts[i], black + 3);
+}
+
+dot(O, black + 3);
+
+
+label("$O$", O, SW);
+label("$B$", pts[4], dir(30 * 4));
+label("$A$", pts[3], dir(30 * 3));
+label("$B'$", pts[2], dir(30 * 2));
+label("$C$", pts[9], dir(30 * 9));
+label("$D$", pts[8], dir(30 * 8));
+
+
+
+real r = 0.2;
+draw(arc(O, r, 120, 60), red+1.5);
+
+label("$60^\circ$", O + r*dir(90) + (0,0.05), red);
+</asy>
+
+
+
+
+
+
+We get the equation <math>P = 2(R + 1),</math> where <math>R</math> is the number of rectangles used and <math>P</math> is the number of points used on the circle for those rectangles (for example, 1 rectangle uses <math>4</math> points, <math>2</math> rectangles use <math>6</math>, etc). The vertex will land on <math>B</math> after we have used all <math>12</math> points on the circle plus the additional <math>2</math> points we get from creating a new rotated rectangle, so <math>P = 12 + 2 = 14.</math> Then <math>R = \boxed{\textbf{(A) }6}</math>.
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 4 ---
+<math>\tan{15}=\frac{\sin{15}}{\cos{15}}=\frac{1}{2+\sqrt3}</math> and it eliminates all options except <math>6</math> and <math>12</math>. After one rotation it has turned <math>30^{\circ}</math>, so to satisfy the problem, divide <math>\frac{180}{30}</math> and get <math>\boxed{\textbf{A. }6}</math>.
+
+==Solution 4.5==
+Memorize that in a 15-75-90 right triangle, the ratios of the side lengths are <math>1</math>, <math>2+\sqrt3</math>, and <math>\sqrt2+\sqrt6</math>. So, we have that the diagonal of the rectangle forms a 15 degree angle. Drawing it out we see the answer is <math>\boxed{\textbf{(A) }6}</math>, and this makes sense because 15 times 6 is 90, thus rotating a vertex back to B.
+
+--- Solution 5 ---
+Look at the picture and draw the next one and continue draw down the line and then when you first hit B, count how many rectangles you’ve drawn (excluding the first which hasn’t been rotated), and you should get <math>\boxed{\textbf{(A) or 6}}</math> as the answer.
+
+--- Solution 6 ---
+[[File:Rotation of rectangle.png|250px|right]]
+Process is the rotation around the center of the card point <math>O</math> at the angle <math>\alpha = \angle AOB.</math>
+<cmath>AO = BO = R, BD^2 = 4R^2 = AB^2 + AD^2 = 4 \cdot (2+\sqrt{3}).</cmath>
+By applying the Law of Cosines, we get 
+<cmath>2R^2 (1-\cos \alpha) = AB^2 \implies \cos \alpha = \frac {\sqrt{3}}{2} \implies</cmath>
+<cmath>\alpha = 30^\circ \implies \boxed{\textbf{(A) or 6}}. </cmath>
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+--- Solution 7 ---
+[[File:2024AMC12Aq18Sol7.png|340px|right]]
+Let E and P be the intersection points, by symmetry axis of <math>AC</math> (since two rectangles are identical), we get:
+
+<math>CP = CE = PA</math>
+
+Now assume there exists a point <math>F</math> on <math>AD</math>, where <math>FD = \sqrt{3}</math>
+
+Thus:
+
+<math>AF = (2 + \sqrt{3}) - \sqrt{3} = 2</math>
+
+Connecting <math>CF</math>, we see that:
+
+<math>CF = 2</math>
+
+So F must collide with P, and triangle <math>PCD</math> is a <math>30^\circ</math>-<math>60^\circ</math>-<math>90^\circ</math> triangle, so:
+
+<math>\angle PCD = 60^\circ</math> and external angle would be <math>30^\circ</math> <cmath>\implies \boxed{\textbf{(A) or 6}}. </cmath>
+
+--- Solution 8 ---
+Let the vertex of the second rectangular card closest to <math>C</math> be <math>E</math> and the unnamed vertex of the first card be <math>F</math>. 
+
+First, notice how the second rectangular card is a reflection of the first rectangular card about <math>BC</math> rotated about <math>C</math>. This means that the diagonal <math>AC</math> from the second rectangular card would have been rotated an angle <math>2\angle BCA</math> clockwise. This also means that side <math>EC</math> would have also been rotated an angle <math>2\angle BCA</math> clockwise, so the angle external to <math>\angle FCE</math> would equal <math>2\angle BCA</math>. When this process is repeated, a regular polygon is formed with half the number of sides of the polygon being the answer.
+
+To find <math>2\angle BCA</math>, we can reflect triangle <math>ABC</math> about <math>BC</math> to form an isosceles triangle. Then
+
+<cmath>CA^2=1+(2+\sqrt{3})^2=8+4\sqrt{3}</cmath>
+
+By the law of cosine:
+
+<cmath>(2(1))^2=CA+CA-2(CA)(CA)(\cos (2\angle BCA))</cmath>
+<cmath>4=(2CA^2)(1-\cos (2\angle BCA))</cmath>
+<cmath>4=(2(8+4\sqrt{3})(1-\cos (2\angle BCA))</cmath>
+<cmath>\frac{1}{4+2\sqrt{3}}=1-\cos (2\angle BCA)</cmath>
+<cmath>\frac{3+2\sqrt{3}}{4+2\sqrt{3}}=\cos (2\angle BCA)</cmath>
+
+Simplifying: 
+
+<cmath>\frac{3+2\sqrt{3}}{4+2\sqrt{3}}*\frac{4-2\sqrt{3}}{4-2\sqrt{3}}=\cos (2\angle BCA)</cmath>
+<cmath>\frac{2\sqrt{3}}{4}=\cos (2\angle BCA)</cmath>
+<cmath>\cos (2\angle BCA)=\frac{\sqrt{3}}{2}</cmath>
+<cmath>2\angle BCA = 30^\circ</cmath>
+
+The resulting polygon from repeating the process would have <math>\frac{360}{30}=12</math> sides and <math>\frac{12}{2}=\fbox{(A) 6}</math> cards would have to have been placed.
+
+--- Solution 9 ---
+The answer choices imply an even number of successive diagonals, which motivates us to try the double angle formula <math>\tan</math>. Let <math>\alpha = \angle{BCA}</math>. Then <math>\tan{\alpha} = \frac{1}{2 + \sqrt{3}}</math> and
+<cmath>
+\tan{2\alpha} = \frac{2\cdot \tan{\alpha}}{1 - \tan^2{\alpha}} 
+              = \frac{2 \cdot \frac{1}{2 + \sqrt{3}}}{1 - (\frac{1}{2 + \sqrt{3}})^2} 
+              = -\sqrt{3}
+</cmath>
+We have <math>2\alpha = 120^{\circ} \Rightarrow \alpha = 60^{\circ}</math>, so our answer is <math>\frac{360^\circ}{60^\circ} = \boxed{\text{(A) }6}</math>.
+
+
+=== Problem 19 ===
+Cyclic quadrilateral
+
+Choices: {'A': '\\frac{31}7', 'B': '\\frac{33}7', 'C': '5', 'D': '\\frac{39}7', 'E': '\\frac{41}7 </math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+import geometry;
+
+size(200);
+
+pair A = (-1.66, 0.33);
+pair B = (-9.61277, 1.19799);
+pair C = (-7.83974, 3.61798);
+pair D = (-4.88713, 4.14911);
+
+draw(circumcircle(A, B, C));
+
+draw(A--C);
+draw(A--D);
+draw(C--D);
+draw(B--C);
+draw(A--B);
+
+label("$A$", A, E);
+label("$B$", B, W);
+label("$C$", C, NW);
+label("$D$", D, N);
+
+label("$7$", midpoint(A--C), SW);
+label("$5$", midpoint(A--D), NE);
+label("$3$", midpoint(C--D)+ dir(135)*0.3, N);
+label("$3$", midpoint(B--C)+dir(180)*0.3, NW);
+label("$8$", midpoint(A--B), S);
+
+markangle(Label("$60^\circ$", Relative(0.5)), A, B, C, radius=10);
+markangle(Label("$120^\circ$", Relative(0.5)), C, D, A, radius=10);
+</asy>
+
+First, <math>\angle CBA=60 ^\circ</math> by properties of cyclic quadrilaterals.
+
+Let <math>AC=u</math>. Apply the [[Law of Cosines]] on <math>\triangle ACD</math>:
+<cmath>u^2=3^2+5^2-2(3)(5)\cos120^\circ</cmath>
+<cmath>u=7</cmath>
+
+Let <math>AB=v</math>. Apply the Law of Cosines on <math>\triangle ABC</math>:
+<cmath>7^2=3^2+v^2-2(3)(v)\cos60^\circ</cmath>
+<cmath>v=\frac{3\pm13}{2}</cmath>
+<cmath>v=8</cmath>
+
+By [[Ptolemy’s Theorem]],
+<cmath>AB \cdot CD+AD \cdot BC=AC \cdot BD</cmath>
+<cmath>8 \cdot 3+5 \cdot 3=7BD</cmath>
+<cmath>BD=\frac{39}{7}</cmath>
+Since <math>\frac{39}{7}<7</math>,
+The answer is <math>\boxed{\textbf{(D) }\frac{39}{7}}</math>.
+
+--- Solution 2 ---
+Draw diagonals <math>AC</math> and <math>BD</math>. By Law of Cosines, 
+\begin{align*}
+AC^2&=3^2 + 5^2 - 2(3)(5)\cos \left(\frac{2\pi}{3} \right) \\
+&= 9+25 +15 \\
+&=49.
+\end{align*}
+Since <math>AC</math> is positive, taking the square root gives <math>AC=7.</math> Let <math>\angle BDC=\angle CBD=x</math>. Since <math>\triangle BCD</math> is isosceles, we have <math>\angle BCD=180-2x</math>. Notice we can eventually solve <math>BD</math> using the Extended Law of Sines: <cmath>\frac{BD}{\sin(180-2x)}=2r,</cmath> where <math>r</math> is the radius of the circumcircle <math>ABCD</math>. Since <math>\sin(180-2x)=\sin(2x)=2\sin(x)\cos(x)</math>, we simply our equation: <cmath>\frac{BD}{2\sin(x)\cos(x)}=2r.</cmath>
+Now we just have to find <math>\sin(x), \cos(x),</math> and <math>2r</math>. Since <math>ABCD</math> is cyclic, we have <math>\angle CBD = \angle CAD = x</math>. By Law of Cosines on <math>\triangle ADC</math>, we have  <cmath>3^2=7^2 + 5^2 - 70\cos(x).</cmath> Thus, <math>\cos(x)=\frac{13}{14}.</math> Similarly, by Law of Sines on <math>\triangle ACD</math>, we have <cmath>\frac{7}{\sin\left(\frac{2\pi}{3} \right)}=2r.</cmath> Hence, <math>2r=\frac{14\sqrt3}{3}</math>. Now, using Law of Sines on <math>\triangle BCD</math>, we have <math>\frac{3}{\sin(x)}=2r= \frac{14\sqrt3}{3},</math> so <math>\sin(x)=\frac{3\sqrt3}{14}.</math> Therefore, <cmath>\frac{BD}{2\left(\frac{3\sqrt3}{14}\right) \left(\frac{13}{14} \right)}=\frac{14\sqrt3}{3}.</cmath> Solving, <math>BD = \frac{39}{7},</math> so the answer is <math>\boxed{\textbf{(D) }\frac{39}{7}}</math>.
+
+--- Solution 3 ---
+Draw diagonals <math>AC</math> and <math>BD</math>. First, use Law of Cosines to get that
+\begin{align*}
+AC^2&=3^2 + 5^2 - 2(3)(5)\cos(120^{\circ}) \\
+&= 9+25+15 \\
+&=49.
+\end{align*}
+Thus, <math>AC=7</math>. Since <math>ABCD</math> is cyclic, <math>\angle CAD = \angle CBD</math>, so Law of Cosines once again with respect to <math>\angle CAD</math> on triangle <math>ACD</math> leads to 
+\begin{align*}
+9&=5^2+7^2-2(7)(5)\cos\theta \\
+&= 74-70\cos\theta. \\
+\end{align*}
+Solving yields <math>\cos\theta=\frac{13}{14}</math>. Finally, in <math>\triangle CBD</math>, we have <math>BD=6\cos\theta \implies \boxed{\textbf{(D) }\frac{39}{7}}</math>.
+
+--- Solution 4 ---
+Let <math>\angle BCA = x, \angle DCA = y</math>. If we know <math>\cos(x+y)</math> we can compute <math>BD</math>. Notice that <cmath>\cos(x+y)=\cos(x)\cos(y)-\sin(x)\sin(y)</cmath>. Now it remains to find all 4 terms in this equation. Applying Law of Cosines on triangle <math>ABC</math> to find <math>\cos(x)</math>, we find that <math>\cos(x)=-\frac{6}{42}=-\frac{1}{7}</math>. Similarly we find that <math>\cos(y)=\frac{11}{14}</math>. Now we compute <math>\sin(x)</math> and <math>\sin(y)</math>. Applying Law of Sines on triangle <math>ABC</math> we see that <math>\frac{\sin(x)}{8}=\frac{\sin(\frac{\pi}{3})}{7}</math>, or <math>\sin(x)=\frac{4\sqrt{3}}{7}</math>. Similarly <math>\sin(y)=\frac{5\sqrt{3}}{14}</math>. Now <math>\cos(x+y)=-\frac{71}{98}</math>. Let <math>BD=k</math>, we see that <math>k^2=3^2+3^2+2*3*3(\frac{71}{98})</math>. Solving for <math>k</math> yields <math>k=\frac{39}{7}</math>.
+
+--- Solution 5 ---
+First of all, we see that this is a cyclic quadrilateral problem. This makes us happy, as there are literally 2 things in a cyclic quadrilateral problem: Ptolemy's and the opposite angles sum to 180 degrees. These are useful theorems so we write them down beside our nicely drawn diagram. We now proceed to trig bash. LoC on triangle ABC yields:
+<math>AC^2 = 5^2 + 3^2 - 2(3)(5)(\cos 120^\circ)</math>
+<math>AC = 7</math>
+Now, our idea is to find side <math>AB</math> and then use Ptolemy's to find the other diagonal.
+LoS on <math>\triangle{ABC}</math> yields:
+
+<math>\frac{7}{\sin 60}</math> = <math>\frac{3}{\sin\angle{BAC}}</math> -> Note that <math>\angle{ABC} = 60^\circ</math>, due to opposite angles in a cyclic quadrilateral summing to <math>180^\circ</math>.
+<math>\sin\angle{BAC} = \frac{3\sqrt{3}}{14}</math>
+Now note that <math>\sin^2\theta + \cos^2\theta = 1</math>
+
+This allows us to find <math>\cos\angle{BAC} = \sqrt{1- (\frac{3\sqrt{3}}{14})^2} = \frac{13}{14}</math>
+
+Now, LoC again on <math>\triangle{ABC}</math> gives us <math>AB</math>:
+
+Let <math>AB = x</math>:
+<math>x^2 + 7^2 - 2(7)(x)(\cos\angle{BAC} = 3^2</math>
+<math>x^2 -13x +40 = 0</math>
+<math>x = 5</math> and <math>x = 8</math>
+
+Note that at this stage we can deduce that if we would have taken <math>\cos\angle{BAC} = -\frac{13}{14}</math>, then <math>AB</math> would have negative values.
+
+Applying Ptolemy's:
+
+<math>15 + 15 = 7(BD)</math> -> <math>BD = \frac{30}{7}</math>
+<math>24 + 15 = 7(BD)</math> -> <math>BD = \frac{39}{7}</math>
+
+However, <math>\frac{30}{7}</math> isn't in the options, so we conclude <math>\boxed{D}</math>.
+
+I'm norz
+
+
+=== Problem 20 ===
+Points
+
+Choices: {'A': '\\left[\\frac 38, \\frac 12\\right]', 'B': '\\left(\\frac 12, \\frac 23\\right]', 'C': '\\left(\\frac 23, \\frac 34\\right]', 'D': '\\left(\\frac 34, \\frac 78\\right]', 'E': '\\left(\\frac 78, 1\\right]</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>\overline{AP}=x</math> and <math>\overline{AQ}=y</math>. Applying the sine formula for a triangle's area, we see that 
+<cmath>[\Delta APQ]=\dfrac12\cdot x\cdot y\sin(\angle PAQ)=\dfrac{xy}2\sin(60^\circ)=\dfrac{\sqrt3}4xy.</cmath> 
+
+Without loss of generality, we let <math>AB=BC=CA=1</math>, and thus <math>[\Delta ABC]=\dfrac{\sqrt3}4</math>; we therefore require <math>\dfrac{\sqrt3}4xy\le\dfrac12\cdot\dfrac{\sqrt3}4\implies xy\le\dfrac12</math> for <math>0\le x,y\le1</math>. (Note: You can skip most of this by using triangle area ratios 
+A quick rough sketch of <math>y=\dfrac1{2x}</math> on the square given by <math>x,y\in[0,1]</math> reveals that the curve intersects the boundaries at <math>(0.5,1)</math> and <math>(1,0.5)</math>, and it is actually quite (very) obvious that the area bounded by the inequality <math>xy\le0.5</math> and the aforementioned unit square is more than <math>\dfrac34</math> but less than <math>\dfrac78</math> (cf. the diagram below). Thus, our answer is <math>\boxed{\textbf{(D) }\left(\dfrac34,\dfrac78\right]}</math>. 
+
+
+<asy>
+/*Asymptote visual by Technodoggo, 7 November 2024*/
+unitsize(8cm);
+
+draw((0,0)--(1,0)--(1,1)--(0,1)--cycle);
+label("$0$",(-0.05,-0.05));
+label("$1$",(1,-0.05),S);
+label("$1$",(-0.05,1),W);
+draw((-0.05,0)--(1,0)--(1,-0.05));
+draw((0,-0.05)--(0,1)--(-0.05,1));
+
+real f(real x) {return 1/(2*x);}
+
+path c = graph(f, 0.5,1)--(1,0)--(0,0)--(0,1)--cycle;
+
+filldraw(c,blue+white);
+
+draw((0.5,1)--(0.5,0.5)--(1,0.5),white+dashed+1.1);
+draw((0.5,1)--(1,0.5),red+dashed+1.1);
+</asy>
+
+--- Solution 2 ---
+WLOG let <math>AB=AC=1</math>
+<cmath> \frac{AP \cdot AQ \cdot \sin60}{2} < \frac{1 \cdot 1 \cdot \sin60}{4}</cmath>
+<cmath>AP \cdot AQ < \frac{1}{2}</cmath>
+Which we can express as <math>xy < \frac{1}{2}</math>.
+
+We follow by graphing the equation <math>xy < \frac 1 2</math> on <math>x, y \in [0, 1]</math>, and we follow the same way solution 1 does.
+
+We see that the probability is slightly less than <math>\frac{7}{8}</math> but definitely greater than <math>\frac{3}{4}</math>
+
+Thus answer choice <math>\boxed{\text{(D)} \left(\frac{3}{4},\frac{7}{8} \right]}</math>
+
+--- Solution 3 ---
+The actual probability can be found by using calculus, and taking the integral.
+
+<math>P=\int_{0.5}^{1}{\frac{1}{2x}}dx + 0.5= \frac{\ln2+1}{2}\approx 0.84657</math>.
+
+Thus, since <math>\frac 3 4 < 0.84655 < \frac 7 8</math>, we get <math>\boxed{\text{(D)} \left(\frac{3}{4},\frac{7}{8} \right]}</math>
+
+Note that if you do not know an approximation for <math>\ln2</math>, you can use the following power series formula: <cmath>\ln(1+x)=x-\frac{x^2}2+\frac{x^3}3-\frac{x^4}4+...</cmath> Using this formula to four terms gives the apprximation <math>\ln2 \approx \frac{19}{24}</math>, which is good enough to solve the problem.
+
+===Another note===
+If you're feeling up to it, you can assume that the curve is actually a <math>90^{\circ}</math> sector of a circle with radius <math>\frac{1}{2}.</math> Doing so yields 
+<cmath>P = 1 - \pi\frac{\left(\frac{1}{2}\right)^2}{4} \approx 0.8037,</cmath>
+which is clearly within the interval <math>D</math>. This is also an under-estimate, since the curve of <math>\frac{1}{2x}</math> is not as steep on the interval <math>x\in (0.5, 1).</math>
+
+
+=== Problem 21 ===
+Suppose that
+
+Choices: {'A': '338{,}550', 'B': '338{,}551', 'C': '338{,}552', 'D': '338{,}553', 'E': '338{,}554</math>'}
+Answer: B
+
+--- Solution 1 ---
+Multiply both sides of the recurrence to find that <math>n(a_n-1)=(n-1)(a_{n-1}+1)=(n-1)(a_{n-1}-1)+(n-1)(2)</math>.
+
+Let <math>b_n=n(a_n-1)</math>. Then the previous relation becomes
+<cmath>b_n=b_{n-1}+2(n-1)</cmath>
+
+We can rewrite this relation for values of <math>n</math> until <math>1</math> and use telescoping to derive an explicit formula:
+
+<cmath>b_n=b_{n-1}+2(n-1)</cmath>
+<cmath>b_{n-1}=b_{n-2}+2(n-2)</cmath>
+<cmath>b_{n-2}=b_{n-3}+2(n-3)</cmath>
+<cmath>\cdot</cmath>
+<cmath>\cdot</cmath>
+<cmath>\cdot</cmath>
+<cmath>b_2=b_1+2(1)</cmath>
+
+Summing the equations yields:
+
+<cmath>b_n+b_{n-1}+\cdots+b_2=b_{n-1}+b_{n-2}+\cdots+b_1+2((n-1)+(n-2)+\cdots+1)</cmath>
+<cmath>b_n-b_1=2\cdot\frac{n(n-1)}{2}</cmath>
+<cmath>b_n-1=n(n-1)</cmath>
+<cmath>b_n=n(n-1)+1</cmath>
+
+Now we can substitute <math>a_n</math> back into our equation:
+
+<cmath>n(a_n-1)=n(n-1)+1</cmath>
+<cmath>a_n-1=n-1+\frac{1}{n}</cmath>
+<cmath>a_n=n+\frac{1}{n}</cmath>
+<cmath>a_n^2=n^2+\frac{1}{n^2}+2</cmath>
+
+Thus the sum becomes
+
+<cmath>\sum^{100}_{n=1} a_n^2= \sum^{100}_{n=1} n^2+ \sum^{100}_{n=1} \frac{1}{n^2}+ \sum^{100}_{n=1} 2</cmath>
+
+We know that <math>\sum^{100}_{n=1} n^2=\frac{100\cdot101\cdot201}{6}=338350</math>, and we also know that <math>\sum^{100}_{n=1} 2=200</math>, so the requested sum is equivalent to <math>\sum^{100}_{n=1} \frac{1}{n^2}+338550</math>. All that remains is to calculate <math>\sum^{100}_{n=1} \frac{1}{n^2}</math>, and we know that this value lies between <math>1</math> and <math>2</math> (see the note below for a proof). Thus,
+
+<cmath>\sum^{100}_{n=1} a_n^2= \sum^{100}_{n=1} \frac{1}{n^2}+338550<2+338550=338552</cmath>
+<cmath>\sum^{100}_{n=1} a_n^2= \sum^{100}_{n=1} \frac{1}{n^2}+338550>1+338550=338551</cmath>
+
+so
+
+<cmath>\sum^{100}_{n=1} a_n^2\in(338551,338552)</cmath>
+
+and thus the answer is <math>\boxed{\textbf{(B) }338551}</math>.
+
+
+<b>Note:</b> <math>\sum^{100}_{n=1} \frac{1}{n^2}< \sum^{\infty}_{n=1} \frac{1}{n^2}=\frac{\pi^2}{6}<2</math>. It is obvious that the sum is greater than 1 (since it contains <math>\frac{1}{1^2}</math> as one of its terms).
+
+If you forget this and have to derive this on the exam, here is how:
+
+<cmath>\sum^{100}_{n=1} \frac{1}{n^2}<\sum^{\infty}_{n=1} \frac{1}{n^2}=\frac{1}{1^1}+\left(\frac{1}{2^2}+\frac{1}{3^2}\right)+\left(\frac{1}{4^2}+\frac{1}{5^2}+\frac{1}{6^2}+\frac{1}{7^2}\right)+\cdots</cmath>
+
+<cmath><1+\left(\frac{1}{2^2}+\frac{1}{2^2}\right)+\left(\frac{1}{4^2}+\frac{1}{4^2}+\frac{1}{4^2}+\frac{1}{4^2}\right)+\left(\frac{1}{8^2}+\frac{1}{8^2}+\frac{1}{8^2}+\frac{1}{8^2}+\frac{1}{8^2}+\frac{1}{8^2}+\frac{1}{8^2}+\frac{1}{8^2}\right)+\cdots</cmath>
+
+<cmath>=1+\frac{2}{2^2}+\frac{4}{4^2}+\frac{8}{8^2}+\cdots</cmath>
+
+<cmath>=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots=2</cmath>
+
+and it is clear that <math>\sum^{100}_{n=1} \frac{1}{n^2}<2</math>.
+
+--- Solution 2 ---
+According to the equation given,
+
+<cmath>\frac{a_n - 1}{n - 1} = \frac{a_{n - 1} + 1}{n}</cmath>
+
+<cmath>na_n - n = (n - 1)a_{n - 1} + n - 1</cmath>
+
+<cmath>na_n - (n - 1)a_{n - 1} = 2n - 1</cmath>
+
+Suppose <math>\{b_n\}</math>, <math>b_n = na_n</math>, then <math>b_n - b_{n - 1} = 2n - 1</math>, where <math>b_1 = 1 \cdot a_1 = 2</math>, then we obtain that
+
+<cmath>b_n = b_1 + (b_2 - b_1) + (b_3 - b_2) + \cdots + (b_n - b_{n - 1})</cmath>
+
+<cmath>b_n = 2 + 3 + 5 + \cdots + (2n - 1) = 1 + n^2</cmath>
+
+<cmath>a_n = \frac{1 + n^2}{n} = n + \frac{1}{n}</cmath>
+
+Hence,
+
+<cmath>
+\begin{align*}
+\sum_{n = 1}^{100} a_n^2 &= \sum_{n = 1}^{100} \left(n + \frac{1}{n}\right)^2\\
+&= \sum_{n = 1}^{100} (n^2 + 2 + \frac{1}{n^2})\\
+&= \sum_{n = 1}^{100} n^2 + \sum_{n = 1}^{100} 2 + \sum_{n = 1}^{100}\frac{1}{n^2}\\
+&= \frac{1}{6} \cdot 100 \cdot (100 + 1) \cdot (100 \cdot 2 + 1) + 100 \cdot 2 + \sum_{n = 1}^{100}\frac{1}{n^2}\\
+&= 338350 + 200 + \sum_{n = 1}^{100}\frac{1}{n^2}\\
+&= 338550 + \sum_{n = 1}^{100}\frac{1}{n^2}
+\end{align*}
+</cmath>
+
+Notice that, 
+<cmath>\sum_{n = 1}^{100}\frac{1}{n^2} = 1 + \sum_{n = 2}^{100}\frac{1}{n^2} > 1</cmath>
+<cmath>\sum_{n = 1}^{100}\frac{1}{n^2} < 1 + \sum_{n = 2}^{100}\frac{1}{n(n - 1)} = 1 + 1 - \frac{1}{100} < 2
+so
+
+<cmath>\sum^{100}_{n=1} a_n^2\in(338551,338552)</cmath>
+
+and thus the answer is <math>\boxed{\textbf{(B) }338551}</math>.
+
+--- Solution 3 ---
+We'll first try to isolate <math>a_n</math> in terms of <math>a_{n-1}</math>.
+
+<math>(a_n-1)(n-1+1)=(n-1)(a_{n-1}+1)</math>
+
+<math>a_n-1=\frac{(n-1)(a_{n-1}+1)}{n}</math>
+
+<math>a_n=\frac{n-1}{n}(a_{n-1}+1)+1</math>
+
+<math>a_n=\frac{n-1}{n}(a_{n-1})+\frac{n-1}{n}+1</math>
+
+<math>a_n=\frac{n-1}{n}(a_{n-1})+\frac{2n-1}{n}</math>
+
+Now, as with many, many of these large summation problems, if we just evaluate the first few values in the series, a pattern should emerge quickly. Here it works out well since our product on the LHS cancels out.
+
+<math>a_1=2</math>
+
+<math>a_2=\frac{1}{2}(2)+\frac{3}{2}=\frac{5}{2}</math>
+
+<math>a_3=\frac{2}{3}(\frac{5}{2})+\frac{5}{3}=\frac{10}{3}</math>
+
+<math>a_4=\frac{3}{4}(\frac{10}{3})+\frac{7}{4}=\frac{17}{4}</math>
+
+Here it becomes glaringly obvious that <math>a_n=\frac{n^2+1}{n}=n+\frac{1}{n}</math>. 
+
+So, <math>a_n^2=n^2+\frac{1}{n^2}+2</math>.
+
+We proceed with the same summation strategy as Solution 1 and get our answer of <math>\boxed{\textbf{(B) }338551}</math>.
+
+*Note: You only have find the answer's units digit from the answer choices; that's <math>0+1+0</math> for each sum, giving choice B.
+
+--- Solution 4 ---
+<cmath>n a_{n} - n = (n-1)  a_{n-1} + n-1 </cmath>
+<cmath>n \cdot a_{n}  - n^2 = (n-1)  a_{n-1} - n^2 +2n-1 </cmath>
+<cmath>n \cdot a_{n}  - n^2 = (n-1)  a_{n-1} - (n-1)^2  </cmath>
+Set <cmath> b_{n} = n a_{n} - n^2 </cmath>
+<cmath>n a_{n} - n^2  = b_{n} = b_{n-1}= ... = b_{1} =1 </cmath>
+<cmath>   a_{n} = \frac{1}{n} + n   </cmath>
+<cmath>   a_{n}^2 = \frac{1}{n^2} + n^2 +2  </cmath>
+
+<cmath> Sum = 1^2 + 2^2 + ... + 100^2 + 2* 100 + 1^2 + 1 / 2^2 + ... + 1/ 100^2 = 100 * 101 *201 / 6 + 200 + 1 + ... = 338551.xxx \boxed{\textbf{(B) }338551} </cmath>
+
+--- Solution 5 ---
+According to the equation given,
+
+<cmath>\frac{a_n - 1}{n - 1} = \frac{a_{n - 1} + 1}{n}</cmath>
+
+<cmath>na_n = (n - 1)a_{n - 1} + 2n - 1 = (n - 2)a_{n - 2} + (2n-3) + (2n - 1) = 1*a_{1} + 1 + 3 + ... + 2n - 1  = 1 + \frac{1+ (2n-1)*n}{2} = n^2+ 1 </cmath>
+
+<cmath>a_n =n + \frac{1}{n}</cmath>
+
+The rest continues similar to Solution 1 or 2
+
+
+=== Problem 22 ===
+The figure below shows a dotted grid
+
+Choices: {'A': '130', 'B': '144', 'C': '146', 'D': '162', 'E': '196</math>'}
+Answer: C
+
+--- Solution 1 ---
+Observations: 
+
+1. You can not have a vertical line in any place other than the first two columns and the last two columns. If we did, we would have at least one of the middle cells with toothpicks along more than one side, which would violate the conditions of the problem.
+
+2. There are two cases that look completely different. We can have a long horizontal box that spans all eight cells either on top of or below the middle cells, or we have to have a shape that looks like a rectangle, except with a few places "pushed" in. 
+
+Thus, using casework, we can split the task of finding those rectangles with squiggly edges into 3 cases.
+
+For case 1, we assume that the green lines shown below are given (always have toothpicks on them). In effect, we will use all eight columns.
+
+[[Image:Scrasdfasd.png|600px]]
+
+[[Image:Screenshot 2024-11-08 192200.png|600px]]
+
+The only toothpicks we can place that will connect to the red lines are to go horizontally inward:
+
+[[Image:Screenshot 2024-11-08 192516.png|600px]]
+
+Now, concentrate on the first row of squares. A toothpick can be placed on either the bottom or top and connected to a continuous squiggle by adding vertical toothpicks:
+
+[[Image:Screenshot 2024-11-08 193401.png|600px]]
+
+How many squiggles are possible?
+
+[[Image:Screenshot 2024-11-08 194804.png|600px]]
+
+We can summarize this by giving a high squiggle position a 1 and a low position a 0, thus we have a 6-digit binary sequence. Thus, we can have <math>2^6=64</math> ways to make this squiggle. (The binary is not absolutely necessary, but it works.)  
+
+Case 2: We can also pull in one of the sides, thus we can have a squiggle with 5 binary digits, which only uses the first or last 7 columns:
+
+[[Image:Screenshot 2024-11-08 195135.png|600px]]
+
+[[Image:Screenshot 2024-11-08 195553.png|600px]]
+
+Here, we only have 5 binary digits to work with, so there are <math>2^5=32</math> ways to make this squiggle for each individual subcase. There are two subcases, one with the first 7 columns, and the other with the last 7, so we have a total of <math>32\cdot 2 = 64</math> arrangements in this case.
+
+Case 3: We can use an even smaller section. Using only the middle 6 columns gives us a 4-wide squiggle:
+
+[[Image:Screenshot 2024-11-08 195945.png|600px]]
+
+Thus, there are <math>2^4=16</math> ways to make this squiggle. 
+
+These three cases together cover all loops of this form. If we try to bring the square bracket like shapes on each side any closer, there will be some middle cells that do not touch any toothpicks. Adding up all our cases for these types of shapes: <math>64+32+32+16=144</math>.
+
+However, there are two more ways to draw a qualifying shape:
+
+[[Image:Screenshot 2024-11-08 200416.png|600px]]
+
+We can draw a rectangle like that in the first row or third row. Thus, we have a total of 
+<math>144+2=\boxed{\textbf{(C) }146}</math> ways.
+
+
+A note to (potential) editors:
+This answer was not made to be concise or especially professional. It was made to explicitly explain this problem in a way so that it is easy to understand and follow.
+
+
+Notes:
+Remember these are the ONLY possible cases. It is impossible to cross through the rows of boxes of ones (in a snake like pattern) to connect the loop around the bottom since then the loop would intersect itself. 
+
+We are not undercounting by only counting the binary digits on the top. Consider the top squiggle. Each middle square must and can only come in contact with one toothpick, so if the top squiggle doesn't touch a specific middle cell, the bottom squiggle must to ensure that all squares touch one toothpick.
+
+--- Solution 2 ---
+Notice that for any case where the closed loop does not connect from the top side of the ones and bottom side of the ones, there are two of these cases. A cheese solution can be found from this; noting that B and C are the only two options close to each other, and, being two apart, with people likely to forget this case, <imath>\boxed{\textbf{(C) }146}</imath> is likely to be the correct answer.
+Cheese solution done by [[User:Juwushu|juwushu]].
+
+--- Solution 3 ---
+We have <math>2</math> cases where the loop does not go through the middle. 
+
+If the loop goes through the middle, we must have a full column on <math>(0,8),(0,7),(1,8),(1,7).</math> Then we have <math>6,5,5,4</math> empty middle squares. For each one we can have one on top or one on bottom, so <math>2^6+2^5+2^5+2^4=144.</math> Notice that for each case of fixed toothpicks, there is only one way to form the loop. Then we just add <math>2+144=\boxed{\textbf{(C) } 146.}</math>
+
+
+=== Problem 23 ===
+What is the value of 
+
+<cmath>\tan^2 \frac {\pi}{16} \cdot \tan^2 \frac {3\pi}{16}~ + ~ \tan^2 \frac {\pi}{16} \cdot \tan^2 \frac {5\pi}{16} ~+~\tan^2 \frac {3\pi}{16} \cdot \tan^2 \frac {7\pi}{16} ~+~ \tan^2 \frac {5\pi}{16} \cdot \tan^2 \frac {7\pi}{16}?</cmath>
+
+Choices: {'A': '28', 'B': '68', 'C': '70', 'D': '72', 'E': '84</math>'}
+Answer: B
+
+--- Solution 1 ---
+First, notice that
+
+<cmath>\tan^2 \frac {\pi}{16} \cdot \tan^2 \frac {3\pi}{16} + \tan^2 \frac {\pi}{16} \cdot \tan^2 \frac {5\pi}{16}+\tan^2 \frac {3\pi}{16} \cdot \tan^2 \frac {7\pi}{16}+\tan^2 \frac {5\pi}{16} \cdot \tan^2 \frac {7\pi}{16}</cmath>
+
+
+<cmath>=(\tan^2\frac{\pi}{16}+\tan^2 \frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2 \frac{5\pi}{16})</cmath>
+
+
+Here, we make use of the fact that
+
+<cmath>\tan^2 x+\tan^2 (\frac{\pi}{2}-x)</cmath>
+<cmath>=(\tan x+\tan (\frac{\pi}{2}-x))^2-2</cmath>
+<cmath>=\left(\frac{\sin x}{\cos x}+\frac{\sin (\frac{\pi}{2}-x)}{\cos (\frac{\pi}{2}-x)}\right)^2-2</cmath>
+<cmath>=\left(\frac{\sin x \cos (\frac{\pi}{2}-x)+\sin (\frac{\pi}{2}-x) \cos x}{\cos x \cos (\frac{\pi}{2}-x)}\right)^2-2</cmath>
+<cmath>=\left(\frac{\sin \frac{\pi}{2}}{\cos x \cos (\frac{\pi}{2}-x)}\right)^2-2</cmath>
+<cmath>=\left(\frac{1}{\cos x \sin x}\right)^2-2</cmath>
+<cmath>=\left(\frac{2}{\sin 2x}\right)^2-2</cmath>
+<cmath>=\frac{4}{\sin^2 2x}-2</cmath>
+
+Hence,
+
+<cmath>(\tan^2\frac{\pi}{16}+\tan^2 \frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2 \frac{5\pi}{16})</cmath>
+<cmath>=\left(\frac{4}{\sin^2 \frac{\pi}{8}}-2\right)\left(\frac{4}{\sin^2 \frac{3\pi}{8}}-2\right)</cmath>
+
+Note that 
+
+<cmath>\sin^2 \frac{\pi}{8}=\frac{1-\cos \frac{\pi}{4}}{2}=\frac{2-\sqrt{2}}{4}</cmath>
+ 
+
+<cmath>\sin^2 \frac{3\pi}{8}=\frac{1-\cos \frac{3\pi}{4}}{2}=\frac{2+\sqrt{2}}{4}</cmath>
+
+Hence,
+
+<cmath>\left(\frac{4}{\sin^2 \frac{\pi}{8}}-2\right)\left(\frac{4}{\sin^2 \frac{3\pi}{8}}-2\right)</cmath>
+
+<cmath>=\left(\frac{16}{2-\sqrt{2}}-2\right)\left(\frac{16}{2+\sqrt{2}}-2\right)</cmath>
+
+<cmath>=(14+8\sqrt{2})(14-8\sqrt{2})</cmath>
+
+<cmath>=68</cmath>
+
+Therefore, the answer is <math>\fbox{\textbf{(B) } 68}</math>.
+
+--- Solution 2 ---
+First, notice that
+
+<cmath>\tan^2 \frac {\pi}{16} \cdot \tan^2 \frac {3\pi}{16} + \tan^2 \frac {\pi}{16} \cdot \tan^2 \frac {5\pi}{16}+\tan^2 \frac {3\pi}{16} \cdot \tan^2 \frac {7\pi}{16}+\tan^2 \frac {5\pi}{16} \cdot \tan^2 \frac {7\pi}{16}</cmath>
+
+
+<cmath>=(\tan^2\frac{\pi}{16}+\tan^2 \frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2 \frac{5\pi}{16})</cmath>
+
+
+Here, we make use of the fact that
+
+<cmath>
+\begin{align*}
+\tan^2 x+\tan^2 (\frac{\pi}{2}-x) &= (\tan x - \tan (\frac{\pi}{2} - x))^2 + 2\\
+&= (\tan (\frac{\pi}{2} - 2x) \cdot (1 + \tan x \tan (\frac{\pi}{2} - x))^2 + 2
+&= (\tan (\frac{\pi}{2} - 2x) \cdot (1 + 1))^2 + 2\\
+&= 4\tan^2 (\frac{\pi}{2} - 2x) + 2
+\end{align*}
+</cmath>
+
+Hence,
+
+<cmath>
+\begin{align*}
+(\tan^2\frac{\pi}{16}+\tan^2 \frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2 \frac{5\pi}{16}) &= (4\tan^2 (\frac{\pi}{2} - \frac{\pi}{16} \cdot 2) + 2)(4\tan^2 (\frac{\pi}{2} - \frac{3\pi}{16} \cdot 2) + 2)\\
+&= (4\tan^2 \frac{3\pi}{8} + 2)(4\tan^2 \frac{\pi}{8} + 2)\\
+&= 16\tan^2 \frac{3\pi}{8} \cdot \tan^2 \frac{\pi}{8} + 8(\tan^2 \frac{3\pi}{8} + \tan^2 \frac{\pi}{8}) + 4\\
+&= 16 + 8(4\tan^2 (\frac{\pi}{2} - \frac{\pi}{8} \cdot 2) + 2) + 4\\
+&= 16 + 8(4\tan^2 \frac{\pi}{4} + 2) + 4\\
+&= 16 + 8(4 + 2) + 4\\
+&= 68
+\end{align*}
+</cmath>
+
+Therefore, the answer is <math>\fbox{\textbf{(B) } 68}</math>.
+
+--- Solution 3 ---
+Let <math>\theta = \frac{\pi}{16}</math>. Then,
+<cmath>
+y = e^{8i\theta} = e^{\frac{\pi}{2} i} = (\cos \theta + i\sin \theta)^8 = 0 + i.
+</cmath>
+Expanding by using a binomial expansion, 
+<cmath>
+\Re(y) = \cos^8 \theta - 28 \cos^6 \theta \sin^2 \theta + 70 \cos^4 \theta \sin^4 \theta - 28 \cos^2 \theta \sin^6 \theta +  \sin^8\theta =0.
+</cmath>
+Divide by <math>\cos^8 \theta</math> and notice we can set <math>\frac{\sin \theta}{\cos \theta} = x</math> where <math>x = \tan(\theta)</math>. Then, define <math>f(x)</math> so that
+<cmath>
+f(x) = 1 - 28 x^2 + 70 x^4 - 28 x^6 + x^8.
+</cmath>
+
+Notice that we can have <math>(\cos \theta_k + i \sin \theta_k)^8 = 0 \pm i</math> because we are only considering the real parts. We only have this when <math>k \equiv 1,3 \mod 4</math>, meaning <math>k \equiv 1 \mod 2</math>. This means that we have <math>k = 1,3,5,7,9,11,13,15</math> as unique roots (we get them from <math>k\theta \in [0,\pi]</math>) and by using the fact that <math>\tan(\pi - \theta) = -\tan \theta</math>, we get <cmath>x \in \left\{\tan \theta, -\tan \theta, \tan \left(3 \theta \right), -\tan \left(3 \theta \right), \tan \left(5 \theta \right), -\tan \left(5 \theta \right), \tan \left(7 \theta \right), -\tan \left(7 \theta \right) \right\} </cmath>
+Since we have a monic polynomial, by the Fundamental Theorem of Algebra,
+<cmath>f(x) = (x-\tan \theta)(x+\tan \theta) (x-\tan \left(3 \theta \right))(x+\tan \left(3 \theta \right)) (x-\tan \left(5 \theta \right))(x+\tan \left(5 \theta \right))(x-\tan\left(7 \theta \right))(x+\tan \left(7 \theta \right))</cmath>
+<cmath>f(x) =  (x^2 - \tan^2 \theta)(x^2 - \tan^2 (3\theta))(x^2 - \tan^2 (5\theta))(x^2 - \tan^2 (7\theta)) 
+</cmath>
+Looking at the <math>x^4</math> term in the expansion for <math>f(x)</math> and using vietas gives us
+<cmath>
+\tan^2 \theta  \tan^2 (3\theta) + \tan^2 \theta  \tan^2 (5\theta) + \tan^2 \theta  \tan^2 (7\theta) + \tan^2 (3\theta)  \tan^2 (5\theta) 
+</cmath>
+<cmath>
++ \tan^2 (3\theta)  \tan^2 (7\theta) + \tan^2 (5\theta)  \tan^2 (7\theta) = \frac{70}{1} = 70.
+</cmath>
+Since <math>\tan\left(\frac{\pi}{2} - \theta\right) = \cot \theta</math> and <math> \tan \theta  \cot \theta = 1</math> 
+<cmath>
+\tan^2 \theta  \tan^2 (7\theta) = \tan^2 (3\theta)  \tan^2 (5\theta) = 1.
+</cmath>
+Therefore
+<cmath>
+\tan^2 \theta  \tan^2 (3\theta) + \tan^2 \theta  \tan^2 (5\theta) + \tan^2 (3\theta)  \tan^2 (7\theta) + \tan^2 (5\theta)  \tan^2 (7\theta) + 2 = 70.
+</cmath>
+<cmath>
+\tan^2 \theta  \tan^2 (3\theta) + \tan^2 \theta  \tan^2 (5\theta) + \tan^2 (3\theta)  \tan^2 (7\theta) + \tan^2 (5\theta)  \tan^2 (7\theta) = \boxed{\textbf{(B) } 68}
+</cmath>
+
+--- Solution 4 ---
+Set x = <math>\pi/16</math>  , 7x = <math>\pi/2</math> - x , 
+set C7 = <math>cos^2(7x)</math> , C5 = <math>cos^2(5x)</math>, C3 = <math>cos^2(3x)</math>, C= <math>cos^2(x)</math> , S2 = <math>sin^2(2x)</math> , S6 = <math>sin^2(6x), etc.</math>
+
+First, notice that
+<cmath>\tan^2 x \cdot \tan^2 3x + \tan^2 3x \cdot \tan^2 5x+\tan^2 3x \cdot \tan^2 7x+\tan^2 5x \cdot \tan^2 7x</cmath>
+<cmath>=(\tan^2x+\tan^2 7x)(\tan^23x+\tan^2 5x)</cmath>
+<cmath>=(\frac{1}{C} - 1 +\frac{1}{C7}-1)(\frac{1}{C3} - 1 +\frac{1}{C5}-1)</cmath>
+<cmath>=(\frac{C+C7}{C \cdot C7} -2)( \frac{C3+C5}{C3 \cdot C5} -2)</cmath>
+<cmath>=(\frac{1}{C \cdot S} -2)( \frac{1}{C3 \cdot S3} -2)</cmath>
+<cmath>=(\frac{4}{S2} -2)( \frac{4}{S6} -2)</cmath>
+<cmath>=4(\frac{2-S2}{S2})( \frac{2-S6}{S6})</cmath>
+<cmath>=4(\frac{4-2 \cdot S2-S \cdot S6 }{S2 \cdot S6}+1)</cmath>
+<cmath>=4 + \frac{8}{S2 \cdot S6} </cmath>
+<cmath>=4 + \frac{32}{S4} </cmath>
+<cmath>=4 +  64 </cmath> 
+<cmath>= 68 </cmath>
+
+--- Solution 5 ---
+So from the question we have:
+<cmath>\tan^2 \frac {\pi}{16} \cdot \tan^2 \frac {3\pi}{16} + \tan^2 \frac {\pi}{16} \cdot \tan^2 \frac {5\pi}{16}+\tan^2 \frac {3\pi}{16} \cdot \tan^2 \frac {7\pi}{16}+\tan^2 \frac {5\pi}{16} \cdot \tan^2 \frac {7\pi}{16}</cmath>
+
+
+<cmath>=(\tan^2\frac{\pi}{16}+\tan^2 \frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2 \frac{5\pi}{16})</cmath>
+
+Using <imath>\tan^2\frac{\theta}{2}=\frac{1-\cos\theta}{1+\cos\theta}</imath>
+
+
+<cmath>=(\frac{1+\cos\frac{\pi}{8}}{1-\cos\frac{\pi}{8}}+\frac{1+\cos\frac{7\pi}{8}}{1-\cos\frac{7\pi}{8}})(\frac{1+\cos\frac{3\pi}{8}}{1-\cos\frac{3\pi}{8}}+\frac{1+\cos\frac{5\pi}{8}}{1-\cos\frac{5\pi}{8}})</cmath>
+
+Using <imath>\cos\theta=-\cos(\pi-\theta)</imath>
+
+<cmath>=(\frac{1+\cos\frac{\pi}{8}}{1-\cos\frac{\pi}{8}}+\frac{1-\cos\frac{\pi}{8}}{1+\cos\frac{\pi}{8}})(\frac{1+\cos\frac{3\pi}{8}}{1-\cos\frac{3\pi}{8}}+\frac{1-\cos\frac{3\pi}{8}}{1+\cos\frac{3\pi}{8}})</cmath>
+
+<cmath>=(\frac{(1+\cos\frac{\pi}{8})^2+(1-\cos\frac{\pi}{8})^2}{1-\cos^2\frac{\pi}{8}})(\frac{(1+\cos\frac{3\pi}{8})^2+(1-\cos\frac{3\pi}{8})^2}{1-\cos^2\frac{3\pi}{8}})</cmath>
+
+<cmath>=(\frac{2+2\cos^2\frac{\pi}{8}}{1-\cos^2\frac{\pi}{8}})(\frac{2+2\cos^2\frac{3\pi}{8}}{1-\cos^2\frac{3\pi}{8}})</cmath>
+
+Using <imath>\cos^2\frac{\theta}{2}=\frac{1+\cos\theta}{2}</imath>
+
+<cmath>=(\frac{2+1+\cos\frac{\pi}{4}}{1-\frac{1+\cos\frac{\pi}{4}}{2}})(\frac{2+1+\cos\frac{3\pi}{4}}{1-\frac{1+\cos\frac{3\pi}{4}}{2}})</cmath>
+
+<cmath>=(\frac{12+2\sqrt{2}}{2-\sqrt{2}})(\frac{12-2\sqrt{2}}{2+\sqrt{2}})</cmath>
+
+<cmath>=\frac{136}{2}=\boxed{\textbf{B) }68 }</cmath>
+
+--- Solution 6 ---
+The half angle formula for <math>\tan^2</math> is <math>\tan^2\frac{\theta}{2} = \frac{1 - \cos\theta}{1 + \cos\theta}</math> and the half angle formula for cosine is <math>\cos\frac{\theta}{2} = \sqrt{\frac{1 + \cos\theta}{2}}.</math> We can use this to find each tan:
+
+<cmath>\cos(\pi/8) = \sqrt{\frac{1 + \cos(\pi/4)}{2}} = \frac{\sqrt{2 + \sqrt{2}}}{2}</cmath> 
+
+<cmath>\tan^2(\pi/16) = \frac{1 - \cos(\pi/8)}{1 + \cos(\pi/8)} = \frac{2 - \sqrt{2 + \sqrt{2}}}{2 + \sqrt{2 + \sqrt{2}}}</cmath>
+
+<cmath>\cos(3\pi/8) = \sqrt{\frac{1 + \cos(3\pi/4)}{2}} = \frac{\sqrt{2 - \sqrt{2}}}{2}</cmath>
+<cmath>\tan^2(3\pi/16) = \frac{1 - \cos(3\pi/8)}{1 + \cos(3\pi/8)} = \frac{2 - \sqrt{2 - \sqrt{2}}}{2 + \sqrt{2 - \sqrt{2}}}</cmath>
+
+<cmath>\cos(5\pi/8) = - \sqrt{\frac{1 + \cos(5\pi/4)}{2}} = -\frac{\sqrt{2 - \sqrt{2}}}{2}</cmath>
+<cmath>\tan^2(5\pi/16) = \frac{1 - \cos(5\pi/8)}{1 + \cos(5\pi/8)} = \frac{2 + \sqrt{2 - \sqrt{2}}}{2 - \sqrt{2 - \sqrt{2}}}</cmath>
+
+<cmath>\cos(7\pi/8) = - \sqrt{\frac{1 + \cos(7\pi/4)}{2}} = -\frac{\sqrt{2 + \sqrt{2}}}{2}</cmath>
+<cmath>\tan^2(7\pi/16) = \frac{1 - \cos(7\pi/8)}{1 + \cos(7\pi/8)} = \frac{2 + \sqrt{2 + \sqrt{2}}}{2 - \sqrt{2 + \sqrt{2}}}</cmath>
+
+
+The problem's expression can be factored as <cmath>(\tan^2\frac{\pi}{16}+\tan^2 \frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2 \frac{5\pi}{16}).</cmath> So the answer is
+
+<cmath>(\frac{2 - \sqrt{2 + \sqrt{2}}}{2 + \sqrt{2 + \sqrt{2}}} + \frac{2 + \sqrt{2 + \sqrt{2}}}{2 - \sqrt{2 + \sqrt{2}}}) \cdot (\frac{2 - \sqrt{2 - \sqrt{2}}}{2 + \sqrt{2 - \sqrt{2}}} + \frac{2 + \sqrt{2 - \sqrt{2}}}{2 - \sqrt{2 - \sqrt{2}}}) = </cmath>
+
+<cmath>(\frac{12 + 2\sqrt{2}}{2 - \sqrt{2}}) \cdot (\frac{12 - 2\sqrt{2}}{2 + \sqrt{2}}) = </cmath> 
+
+<cmath>(14 + 8\sqrt{2}) \cdot (14 - 8\sqrt{2}) = </cmath>
+
+<cmath>196 - 128 = \boxed{68}.</cmath>
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 7 ---
+<cmath>\cot \alpha - \tan \alpha = 2 \cot 2 \alpha \implies \cot^2 \alpha + \tan^2 \alpha = 4 \cot^2 2 \alpha + 2.</cmath> 
+We use <math>\alpha = \frac {\pi}{16}</math> for <math>(\tan^2\frac{\pi}{16}+\tan^2 \frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2 \frac{5\pi}{16}).</math>
+
+<cmath>(\tan^2 \alpha + \cot^2 \alpha)(\tan^2 (\frac{\pi}{4} - \alpha) + \cot^2 (\frac{\pi}{4} - \alpha)) = (4 \cot^2 2 \alpha + 2)(4 \cot^2 (\frac{\pi}{2} - 2\alpha) +2) =</cmath>
+<cmath>= 4 \cdot(4+ 2\tan^2 2\alpha + 2\cot^2 2\alpha +1) = 20 + 8 \cdot (4 \cot^2 4 \alpha +2) = 68.\blacksquare</cmath>
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+--- Solution 8 ---
+As the above solutions noted, we can factor the expression into <math>(\tan^2\frac{\pi}{16}+\tan^2 \frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2 \frac{5\pi}{16})</math>.
+
+Before we directly solve this problem, let's analyze the roots of <math>\tan(4\tan^{-1}{x}) = 1</math>, or equivalently using tangent expansion formula, <math>\frac{1-6x^2+x^4}{4x-4x^3}=1</math>, which implies <math>x^4+4x^3-6x^2-4x+1=0</math>. Now note that the roots of this equation are precisely <math>\tan\frac{\pi}{16}, \tan\frac{5\pi}{16}, \tan\frac{9\pi}{16}, \tan\frac{13\pi}{16}</math>, so the second symmetric sum of these four numbers is <math>6</math> by Vieta's. Thus, we have <cmath>\tan\frac{\pi}{16}\tan\frac{5\pi}{16}+\tan\frac{\pi}{16}\tan\frac{9\pi}{16}+\tan\frac{\pi}{16}\tan\frac{13\pi}{16}+\tan\frac{5\pi}{16}\tan\frac{9\pi}{16}+\tan\frac{5\pi}{16}\tan\frac{13\pi}{16}+\tan\frac{9\pi}{16}\tan\frac{13\pi}{16}=6</cmath>
+Upon further inspection, <math>\tan\frac{\pi}{16}\tan\frac{9\pi}{16}+\tan\frac{5\pi}{16}\tan\frac{13\pi}{16}=-2</math> using the fact that <math>\tan(x)*\tan(x + \pi/2) = -1</math>. Hence, we have <cmath>\tan\frac{\pi}{16}\tan\frac{5\pi}{16}-1+\tan\frac{\pi}{16}\tan\frac{13\pi}{16}+\tan\frac{5\pi}{16}\tan\frac{9\pi}{16}-1+\tan\frac{9\pi}{16}\tan\frac{13\pi}{16}=6</cmath>
+<cmath>\tan\frac{\pi}{16}\tan\frac{5\pi}{16}+\tan\frac{\pi}{16}\tan\frac{13\pi}{16}+\tan\frac{5\pi}{16}\tan\frac{9\pi}{16}+\tan\frac{9\pi}{16}\tan\frac{13\pi}{16}=8</cmath>
+<cmath>(\tan\frac{\pi}{16}+\tan\frac{9\pi}{16})(\tan\frac{5\pi}{16}+\tan\frac{13\pi}{16})=8</cmath>
+
+Now, we return to the problem statement, where we see a similar squared sum. We use this motivation to square our equation above to obtain 
+
+<cmath>(\tan^2\frac{\pi}{16}+\tan^2\frac{9\pi}{16}-2)(\tan^2\frac{5\pi}{16}+\tan^2\frac{13\pi}{16}-2)=64</cmath>
+<cmath>(\tan^2\frac{\pi}{16}+\tan^2\frac{9\pi}{16})(\tan^2\frac{5\pi}{16}+\tan^2\frac{13\pi}{16})-2(\tan^2\frac{\pi}{16}+\tan^2\frac{5\pi}{16}+\tan^2\frac{9\pi}{16}+\tan^2\frac{13\pi}{16})+4=64</cmath>
+<cmath>(\tan^2\frac{\pi}{16}+\tan^2\frac{9\pi}{16})(\tan^2\frac{5\pi}{16}+\tan^2\frac{13\pi}{16})-2(\tan^2\frac{\pi}{16}+\tan^2\frac{5\pi}{16}+\tan^2\frac{9\pi}{16}+\tan^2\frac{13\pi}{16})=60</cmath>
+Then, use the fact that <math>\tan^2{x}=\tan^2{\pi/2-x}</math> to get
+<cmath>(\tan^2\frac{\pi}{16}+\tan^2\frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2\frac{5\pi}{16})-2(\tan^2\frac{\pi}{16}+\tan^2\frac{5\pi}{16}+\tan^2\frac{9\pi}{16}+\tan^2\frac{13\pi}{16})=60</cmath>
+Hold on; the first term is exactly what we are solving for! It thus suffices to find <math>\tan^2\frac{\pi}{16}+\tan^2\frac{5\pi}{16}+\tan^2\frac{9\pi}{16}+\tan^2\frac{13\pi}{16}</math>. Fortunately, this is just <math>{S_1}^2-2{S_2}</math> (Where <math>S_n</math> is the nth symmetric sum), with relation to roots of <math>x^4+4x^3-6x^2-4x+1=0</math>. By Vieta's, this is just <math>(-4)^2-2(6)=4</math>. 
+
+Finally, we plug this value into our equation to obtain 
+<cmath>(\tan^2\frac{\pi}{16}+\tan^2\frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2\frac{5\pi}{16})-2(4)=60</cmath>
+<cmath>(\tan^2\frac{\pi}{16}+\tan^2\frac{7\pi}{16})(\tan^2\frac{3\pi}{16}+\tan^2\frac{5\pi}{16})=\boxed{68}</cmath>
+
+==Alternate proof of the two tangent squares formula==
+
+We want to simplify <math>\tan^{2}(x)</math> + <math>\tan^{2}(\frac{\pi}{2} - x)</math>. We make use of the fact that <math>\tan(\frac{\pi}{2} - x)</math> = <math>\cot(x)</math>.Then, the expression becomes <math>\tan^{2}(x)</math> + <math>\cot^{2}(x)</math>. 
+Notice we can write:
+<math>(\tan x + \cot x)^{2}</math> as <math>\tan^{2}(x)</math> + <math>\cot^{2}(x)</math> + 2 as tangent and cotangent are reciprocals of each other. Then, the sum of the tangent and cotangent can be simplified to <math>\frac{\sec^{2}{x}}{\tan x}</math>. Using the fact that secant is the reciprocal of cosine and tangent is the ratio of sine and cosine, we can simplify that expression to <math>\frac{1}{\sin x \cos x}</math>. So, we have that: <math>\tan^{2}(x)</math> + <math>\cot^{2}(x)</math> = <math>\frac{1}{(\sin x \cos x)^2} - {2}</math> which can be simplfied to: <math>2\Bigr(\frac{2}{\sin^{2}(2x)} - 1\Bigr)</math> or <math>\frac{4}{\sin^{2}(2x)} - 2</math> as stated in earlier solutions.
+
+--- Solution 9 ---
+For this question, there are five options: \(28\), \(68\), \(70\), \(72\), and \(84\). Since \(28\) is too small and \(84\) is too large, these two options can be eliminated. At this point, only three options remain. While one could make a guess here, it is better to analyze these remaining options further. When we divide each of these three options by \(2\), we get \(34\), \(35\), and \(36\) respectively. Option C (\(70\)) should be eliminated because, after division by \(2\), it is the only odd number among the three results. Last but not least, Option D (\(72\)) appears excessively frequently in AMC answer choices. Therefore, it is reasonable to conjecture that the Mathematical Association of America (MAA) will avoid using this option again for AMC, leading to the elimination of D. As a result, the only remaining option is B (\(68\)).
+
+Curator note: Upon extensive investigation, we have been forced to conclude that the above solution is pure undistilled yap
+
+
+=== Problem 24 ===
+A
+
+Choices: {'A': '\\sqrt{3}', 'B': '3\\sqrt{15}', 'C': '15', 'D': '15\\sqrt{7}', 'E': '24\\sqrt{6}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Notice that any scalene <math>\textit{acute}</math> triangle can be the faces of a <math>\textit{disphenoid}</math>. (See proof in Solution 2.) 
+
+As a result, we simply have to find the smallest area a scalene acute triangle with integer side lengths can take on. This occurs with a <math>4,5,6</math> triangle (notice that if you decrease the value of any of the sides the resulting triangle will either be isosceles, degenerate, or non-acute). For this triangle, the semiperimeter is <math>\frac{15}{2}</math>, so by Heron’s Formula:
+
+\begin{align*}
+A&=\sqrt{\frac{15}{2}\cdot\frac{7}{2}\cdot\frac{5}{2}\cdot\frac{3}{2}}\\
+&=\sqrt{\frac{15^2\cdot7}{16}}\\
+&=\frac{15}{4}\sqrt{7}
+\end{align*}
+
+The surface area is simply four times the area of one of the triangles, or <math>\boxed{\textbf{(D) }15\sqrt{7}}</math>.
+
+--- Solution 2 ---
+Let the side lengths of one face of the disphenoid be <math>a, b, c</math>. By the definition of a disphenoid with scalene faces, opposite sides must be the same length. Then the disphenoid can be constructed in a rectangular box with dimensions <math>p, q, r</math> such that <math>a, b, c</math> are the <math>3</math> different diagonal lengths of the faces of the box and no two sides are parallel (someone feel free to insert a diagram). Then we have the system
+
+<cmath>p^2 + q^2 = a^2</cmath>
+<cmath>p^2 + r^2 = b^2</cmath>
+<cmath>q^2 + r^2 = c^2</cmath>
+
+for positive integers <math>a, b, c</math> and positive <math>p, q, r</math>.
+
+Solving for <math>p, q, r</math>, we have
+
+<cmath>p^2 = \frac{a^2 + b^2 - c^2}{2}</cmath>
+<cmath>q^2 = \frac{a^2 - b^2 + c^2}{2}</cmath>
+<cmath>r^2 = \frac{-a^2 + b^2 + c^2}{2}</cmath>
+
+
+(Notice that, by law of cosines (or by Pythagorean Inequality), these (parallelepiped box side lengths squared) <math>p^2, q^2, r^2</math> each have the same sign as the cosine of the angle at a vertex of a triangular face of the disphenoid. Since they are squares and so non-negative, every angle is non-obtuse. Further, since they are squares of positive side lengths, every angle is acute. So <math>a, b, c</math> are the side lengths of an <math>\textit{acute}</math> triangle.)
+
+WLOG, let <math>a < b < c</math>.
+For <math>a<4</math>, <math>a^2</math> is less than or equal to the gap between squares greater than <math>a^2</math>, so all such triangles are non-acute and fail. 
+
+The next smallest case works:  <math>4^2 + 5^2 > 6^2</math> so <math>a, b, c = 4, 5, 6</math>. 
+
+Using Heron's Formula, the minimum total surface area of the disphenoid is <math>\boxed{\textbf{(D) }15\sqrt{7}}</math>.
+
+Bonus: by Heron’s Formula, the area of an <math>x-1, x, x+1</math> triangle is <math>x \sqrt{3 (x-2)(x+2)}/4 = x \sqrt{3 (x^2-4)}/4</math>.
+
+
+
+
+(Acute triangle observations and bonus formula by oinava)
+
+--- Solution 3 ---
+Recall the formula for a disphenoid is <math>72V^2=(-a^2+b^2+c^2)(a^2-b^2+c^2)(a^2+b^2-c^2)</math>, where <math>V</math> is the volume and <math>a,b,c</math> are the sides of each face. Because <math>72V^2</math> is a positive number, <math>(-a^2+b^2+c^2)(a^2-b^2+c^2)(a^2+b^2-c^2)</math> must also be positive which is enough to rule out <math>2,3,4</math> and etc, leaving us with a <math>4-5-6</math> triangle for a surface area of <math>\boxed{\textbf{(D) }15\sqrt{7}}</math>
+
+-PaixiaoLover
+
+
+=== Problem 25 ===
+A graph is
+
+Choices: {'A': '1282', 'B': '1292', 'C': '1310', 'D': '1320', 'E': '1330</math>'}
+Answer: B
+
+--- Solution 1 ---
+Symmetric about the line <math>y=x</math> implies that the inverse function <math>y^{-1}=y</math>. Then we split the question into several cases to find the final answer.
+
+
+
+Case 1: <math>c=0</math>
+
+Then <math>y=\frac{a}{d}x+\frac{b}{d}</math> and <math>y^{-1}=\frac{d}{a}x-\frac{b}{a}</math>.
+Giving us <math>\frac{a}{d}=\frac{d}{a}</math> and <math>\frac{b}{d}=-\frac{b}{a}</math>
+
+Therefore, we obtain 2 subcases: <math>b\neq 0, a+d=0</math> and <math>b=0, a^2=d^2</math>
+
+
+
+Case 2: <math>c\neq 0</math>
+
+Then <math>y^{-1}=\frac{b-dx}{cx-a}=\frac{(cx-a)(-\frac{d}{c})+b-\frac{ad}{c}}{cx-a}=-\frac{d}{c}+\frac{b-\frac{ad}{c}}{cx-a}</math>
+
+And <math>y=\frac{(cx+d)(\frac{a}{c})+b-\frac{ad}{c}}{cx+d}=\frac{a}{c}+\frac{b-\frac{ad}{c}}{cx+d}</math>
+
+So <math>\frac{a}{c}=-\frac{d}{c}</math>, or <math>a=-d</math> (<math>c\neq 0</math>), and substitute that into <math>\frac{b-\frac{ad}{c}}{cx-a}=\frac{b-\frac{ad}{c}}{cx+d}</math> gives us:
+
+<math>bc-ad\neq 0</math> (Otherwise <math>y=\frac{a}{c}</math>, <math>y^{-1}=-\frac{d}{c}=\frac{a}{c}</math>, and is not symmetric about <math>y=x</math>)
+
+
+
+Therefore we get three cases:
+
+Case 1.1: <math>c= 0, b\neq 0, d\neq 0, a+d=0</math>
+
+We have 10 choice of <math>b</math>, 10 choice of <math>d</math> and each choice of <math>d</math> has one corresponding choice of <math>a</math>. In total <math>10\times 10=100</math> ways.
+
+
+
+Case 1.2: <math>c= 0, b = 0, d\neq 0, a^2=d^2</math>
+
+We have 10 choice for <math>d</math> (<math>d\neq 0</math>), each choice of <math>d</math> has 2 corresponding choice of <math>a</math>, thus <math>10\times 2=20</math> ways.
+
+
+
+Case 2: <math>c\neq 0, bc-ad\neq 0, a=-d</math>
+
+<math>a=0</math>: <math>10\times 10=100</math> ways.
+
+<math>a=\pm 1</math>: <math>(11\times 10-2)\times 2=216</math> ways.
+
+<math>a=\pm 2</math>: <math>(11\times 10-6)\times 2=208</math> ways.
+
+<math>a=\pm 3</math>: <math>(11\times 10-2)\times 2=216</math> ways.
+
+<math>a=\pm 4</math>: <math>(11\times 10-2)\times 2=216</math> ways.
+
+<math>a=\pm 5</math>: <math>(11\times 10-2)\times 2=216</math> ways.
+
+In total <math>100+208+216\times 4= 1172</math> ways.
+
+
+
+So the answer is <math>100+20+1172= \boxed{\textbf{(B) }1292}</math>
+
+--- Solution 2 ---
+First, observe that the only linear functions that are symmetric about <math>y = x</math> are <math>y = x</math> and <math>y = -x+k</math>, where <math>k</math> is some constant. 
+
+
+
+We perform a <math>45^\circ</math> counterclockwise rotation of the Cartesian plane. Let <math>(x, y)</math> be sent to <math>(u, v)</math>. Then <math>u</math> and <math>v</math> are the real and imaginary parts of <math>(x + yi)(\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i)</math> respectively, which gives
+
+<cmath>u = \frac{x - y}{\sqrt{2}}</cmath>
+<cmath>v = \frac{x + y}{\sqrt{2}}</cmath>
+
+so
+
+<cmath>x = \frac{v + u}{\sqrt{2}}</cmath>
+<cmath>y = \frac{v - u}{\sqrt{2}}</cmath>.
+
+The rotated function is symmetric about the y-axis, so the equation holds after replacing all instances of <math>u</math> with <math>-u</math> (this is just switching the values of <math>x</math> and <math>y</math> which is a reflection over <math>y = x</math>, but working in terms of <math>(u, v)</math> allows more cancellations in the following calculations).
+
+Writing <math>x</math> and <math>y</math> in terms of <math>u</math> and <math>v</math>, we have
+
+<cmath>\frac{v - u}{\sqrt{2}} = \frac{a(v + u) + b\sqrt{2}}{c(v + u) + d\sqrt{2}}</cmath>
+<cmath>\frac{v + u}{\sqrt{2}} = \frac{a(v - u) + b\sqrt{2}}{c(v - u) + d\sqrt{2}}</cmath>
+
+Multiplying both equations by <math>\sqrt{2}</math> and subtracting the second equation from the first equation gives <math>d = -a</math>. Since <math>a, b, c, d</math> are integers between <math>-5</math> and <math>5</math>, this gives <math>11^3 = 1331</math> combinations. We need to subtract the edge cases that don't work, namely all undefined functions and linear functions except <math>y = x</math> and <math>y = -x+k</math>. Consider the following cases:
+
+
+
+Case 1: <math>a, b, c, d</math> are all nonzero. Then the function is linear when <math>ax + b</math> is a multiple of <math>cx + d</math>, or <math>\frac{a}{b} = \frac{c}{-a}</math>. 
+
+If <math>a = \pm 1</math>, <math>(b,c) = (1, -1)</math> or <math>(-1, 1)</math>; there are <math>2*2 = 4</math> ways.
+
+If <math>a = \pm 2</math>, there are <math>12</math> ways.
+
+If <math>a = \pm 3</math>, there are <math>4</math> ways.
+
+If <math>a = \pm 4</math>, there are <math>4</math> ways.
+
+If <math>a = \pm 5</math>, there are <math>4</math> ways.
+
+In total, this case has <math>28</math> combinations.
+
+
+
+Case 2: <math>a = b = d = 0</math> or <math>a = c = d = 0</math>
+
+If <math>a = b = d = 0</math> then <math>c</math> can take on <math>11</math> values, and if <math>a = c = d = 0</math>, then <math>b</math> can take on <math>11</math> values, but <math>a = b = c = d = 0</math> is counted twice so this case has <math>11 + 11 - 1 = 21</math> combinations.
+
+
+
+Finally, we need to add the case where <math>y = x</math>, which occurs when <math>a = d</math> and <math>b = c = 0</math>. <math>a</math> can be any integer from <math>-5</math> to <math>5</math> except <math>0</math>, so this case has <math>10</math> combinations. Since <math>y = -x+k</math> occurs when <math>a = -d</math> and <math>c = 0</math>, this case has already been counted.
+
+
+
+Thus, the answer is <math>1331 - 28 - 21 + 10 = \boxed{\textbf{(B) }1292}</math>.
+
+--- Solution 3 ---
+There are two cases: when <math>c=0</math> and when <math>c\neq 0</math>.
+
+
+
+<math>\textbf{Case 1: }\mathbf{c=0.}</math> If <math>c=0</math>, then <math>y=\frac{ax+b}d=\frac adx+\frac bd</math>. This is the equation of a line, and the only lines symmetric about <math>y=x</math> are those perpendicular to <math>y=x</math> (i.e. those with slope <math>-1</math>) and <math>y=x</math> itself. To have a slope of <math>-1</math>, we need <math>a=-d\neq 0</math>, and <math>b</math> can be any of its <math>11</math> possibilities from <math>-5</math> to <math>5</math>. There are <math>11\cdot 10=110</math> possibilities here. For the function to be <math>y=x</math>, we need <math>a=d\neq 0</math> and <math>b=0</math>. There are <math>10</math> possibilities here. Thus, our total for Case 1 is <math>110+10=120</math> possiblities.
+
+
+
+<math>\textbf{Case 2: }\mathbf{c\neq 0.}</math> When <math>c\neq 0</math>, we will first consider the case in which the graph is a hyperbola. Clearly, for this hyperbola to be symmetric about <math>y=x</math>, the intersection of its horizontal and vertical asymptotes must be on <math>y=x</math>. The location of the horizontal asymptote is <math>y=\frac ac</math>, and the vertical asymptote occurs at <math>x=-\frac dc</math>. These asymptotes intersect on <math>y=x</math> when <math>\frac ac = -\frac dc</math>, or, more simply, when <math>a=-d</math>.
+
+If the asymptotes intersect on <math>y=x</math>, then the hyperbola must be symmetric about <math>y=x</math>. This is true because for any hyperbola with perpendicular asymptotes, we can rotate and translate the coordinate plane in a certain way such that that hyperbola has an equation of the form <math>x^2-y^2=a^2</math>. Then, the hyperbola's asymptotes would intersect at the origin, and it would be symmetric about the coordinate axes (because it makes a distinction neither between <math>x</math> and <math>-x</math> nor <math>y</math> and <math>-y</math>). The coordinate axes are the bisectors of the angles formed by the asymptotes, and the hyperbola is symmetric about them. Thus, because the angles formed by our hyperbola's asymptotes are bisected by <math>y=x</math>, our hyperbola must be symmetric about <math>y=x</math>.
+
+Thus, with the conditions that <math>a=-d</math> and <math>c\neq 0</math>, there are <math>11\cdot 11\cdot 10\cdot 1=1210</math> possibilites for <math>(a,b,c,d)</math>. However, not all of these ordered quadruples produce hyperbolas. If <math>b=a=d=0</math> or <math>\frac ac=\frac bd</math>, then the quadruples produce horizontal lines with a hole when the denominator equals <math>0</math>. As seen in Case 1, these lines, with slope <math>0</math>, cannot be symmetric about <math>y=x</math>.
+
+For the subcase where <math>b=a=d=0</math>, there are <math>10</math> possibilities for <math>c\neq 0</math>, which gives us <math>10</math> wrongly counted quadruples.
+
+For the subcase where <math>\frac ac=\frac bd</math>, we wrongly counted cases where <math>d=-a</math>. Here, <math>-a^2=bc</math> by cross-multiplication. The casework on the possible values of <math>a</math> below counts the number of triples <math>(a,b,c)</math> with <math>|a|,|b|,|c|\leq 5</math> which satisfy this condition.
+
+If <math>a=\pm 1</math>, <math>bc=-1</math>, which yields <math>2\cdot 2 \cdot 1=4</math> possibilities.
+
+If <math>a=\pm 2</math>, <math>bc=-4</math>, which yields <math>2\cdot 2\cdot 3=12</math> possibilities.
+
+If <math>a=\pm 3</math>, <math>bc=-9</math>, which yields <math>2\cdot 2\cdot 1=4</math> possbilities. (recall that <math>|b|,|c|\leq 5</math>)
+
+If <math>a=\pm 4</math>, <math>bc=-16</math>, which yields <math>2\cdot 2\cdot 1=4</math> possibilities.
+
+If <math>a=\pm 5</math>, <math>bc=-25</math>, which yields <math>2\cdot 2\cdot 1=4</math> possibilities.
+
+Adding the above values together for this subcase yields <math>4+12+4+4+4=28</math> wrongly counted quadruples.
+
+Subtracting the wrongly counted quadruples from our count for Case 2 yields <math>1210-10-28=1172</math>.
+
+Adding the possibilities for Case 1 and Case 2 yields our final answer of <math>120+1172=\boxed{\textbf{(B) }1292}</math> possible quadruples.
+
+--- Solution 4 ---
+Note that the condition is equivalent to having <math>f(f(x))=x</math>.
+
+So we have: <math>\frac{a(\frac{ax+b}{cx+d})+b}{c(\frac{ax+b}{cx+d})+d} = x \Rightarrow x^2(ac+cd)+x(d^2-a^2)-(ab+bd)=0</math> 
+
+Thus we require: 
+
+<math>ac+cd = 0 \rightarrow c=0</math> or <math>a = -d</math>  
+
+<math>d^2-a^2 = 0 \rightarrow a = d</math> or <math>a = -d</math> 
+
+<math>ab+bd = 0 \rightarrow b=0</math> or <math>a = -d</math> 
+
+Note that if <math>a = -d</math> then all 3 cases work and give <math>11^3=1331</math> solutions. 
+
+If instead <math>c=0</math> and <math>a \neq -d</math> then we require <math>a=d</math> and <math>b=0</math> which then give <math>10</math> solutions.
+
+Now, we must remove all extraneous cases. This is when <math>x(ac+cd)+bc+d^2 = 0</math> (note this includes the case where <math>c=d=0</math>).
+
+So this is equivalent to having both <math>ac+cd = 0</math> and <math>bc + d^2 = 0.</math>
+
+If <math>c = d = 0</math> we have <math>11</math> solutions.
+
+If <math>c = 0</math> and <math>d \neq 0</math> then we have <math>0</math> solutions.
+
+If <math>c \neq 0</math> and <math>d = 0</math> then we require <math>a=0</math> and <math>b=0</math> so we have <math>10</math> solutions.
+
+And if <math>c \neq 0</math> and <math>d \neq 0</math> we have <math>a = -d</math> and <math>d^2 = -bc</math>, see that if <math>\left|d\right|=1,3,4,5</math> we have <math>2</math> solutions and if <math>\left|d\right|=2</math> we have <math>6</math> solutions, so a total of <math>2(2+6+2+2+2) = 28</math> solutions.
+
+Thus, the final answer is <math>1331+10-11-10-28 =\boxed{\textbf{(B) }1292}</math>
+
+--- Solution 5 ---
+Proceed the same way as the other solutions keeping in mind that <math>{y = y^{-1}}</math>. Then, I got:
+<math>\frac{(b - dx)}{(cx - a)} = \frac{(ax + b)}{(cx + d)}</math>. Cross multiplying and matching coefficients, we get:
+<math>{-cd(x^{2})}</math> = <math>{ac(x^{2})}</math>; <math>{bd}</math> = <math>{-ab}</math>; and <math>{-x(d^{2})}</math> = <math>{-x(a^{2})}</math>. Then, I broke it up into 4 cases:
+
+Case 1: <math>{b \neq 0}</math>, <math>{c = 0}</math>, <math>{a = -d}</math>. 
+
+Case 2: <math>{b = 0}</math>, <math>{c = 0}</math>, <math>{a^{2} = d^{2}}</math>.
+
+Case 3: <math>{b \neq 0}</math>, <math>{c \neq 0}</math>, <math>{a = -d}</math>.
+
+Case 4: <math>{b = 0}</math>, <math>{c \neq 0}</math>, <math>{a = -d}</math>.
+
+I first accounted the total number of cases for everything to work WITHOUT any restrictions. So for Case 1, there would be 10 possibilities for <math>{b}</math> and 11 for the part where <math>{a = -d}</math>. So a total of 110 cases. Similarly, in the same fashion, Case 2 would yield 21 cases. Case 3 would yield 1100 cases and Case 4 would bring a total of 110 cases. So, our total possibilities right now is <math>{110 + 21 + 1100 + 110}</math> = <math>{1341}</math>. But wait! Notice a lot of these cases would bring the denominator of <math>{y}</math> to be 0 namely <math>{cx + d}</math> to be 0. We don't want this! So we have to subtract out all the cases that bring <math>{cx + d}</math> to be 0. Notice for Case 1, <math>{c = 0}</math> so if <math>{d = 0}</math>, we have a bad case. We shall keep track of all the "bad" cases. For Case 1, any quadruple that includes <math>{d = 0}</math> is "bad". So no restrictions upon <math>{b}</math> since <math>{a}</math> depends upon <math>{d}</math>. Therefore, we have 10 bad cases so far remember, <math>{b \neq 0}</math> for Case 1. 
+
+We now proceed to Case 2. Notice we only have 1 "bad" case namely <math>{a = 0}</math>. This is because <math>{a}</math> and <math>{d}</math> depend on each other again. 
+
+Now Case 3. This will have quite a bit of "bad" cases as <math>{c \neq 0}</math>. Firstly, clearly <math>{a = 0}</math> would again have some overcounting going on so we would have to subtract out 10 again as the value of <math>{b}</math> doesn't matter. Then, we start off with <math>{c = -5}</math>. Obviously, then <math>{d = 5}</math> would yield a bad case IF <math>{x = 1}</math>. Now we see what happens is <math>{x = 2}</math>. Then, the denominator would be <math>{2c + d}</math>. For this to be 0, <math>{2c = -d}</math>. So all even values of <math>{d}</math> would be considered "bad". Thus, we would have <math>{d = -2, -4, 2, 4}</math> to be "bad" cases which yields a subtotal of 4 cases. Now, the same thing would happen if <math>{x = 3}</math> except all multiples of 3 would be considered "bad". So <math>{d = -3, 3}</math> would be "bad" or a subtotal of 2 cases. Then, we see the pattern. Multiples of 4 could also be eliminated for <math>{x = 4}</math> which would yield <math>{d = -4, 4}</math> but these overcount the multiples of 2 so no need to worry about them. Lastly, multiples of 5 wouldn't work if <math>{x = 5}</math> so <math>{d = -5, 5}</math> is "bad" or 2 cases. Then, <math>{d = -1, 1}</math> could also be eliminated. Then, at last <math>{d = 0}</math> would also not work. Finally, a total of <math>{10 + 4 + 2 + 2 + 1}</math> cases would be "bad" which yields a subtotal of 19 cases. As you would see, Case 4 has the exact same restrictions on <math>{c}</math> but not <math>{b}</math>. So we can predict it would yield the same number of "bad" cases as Case 3. Finally, we could add up all of the "bad" cases we have:
+<math>{10 + 1 + 19 + 19}</math> = <math>{49}</math> "bad" cases. What we did here is also known as counting up all the "asymptotes". 
+
+Our answer should be <math>{1341 - 49 = 1292}</math> or <math>\boxed{\textbf{(B) } 1292}</math>.
+
+
+==Cases==
+
+Case 1: <math>d=-a\land c\neq0</math>, <math>10\times11\times11=1210</math> possibilities
+
+Excluded from Case 1:  <math>d=-a\land c\neq0\land d^{2}=-bc</math>, <math>10+4+12+4+4+4=38</math> possibilities
+
+Case 2: <math>d=-a\land c=0\land d\neq0</math>, <math>10\times11=110</math> possibilities
+
+Case 3: <math>d=a\land c=0\land d\neq0\land b=0</math>, <math>10=10</math> possibilities
+
+Answer: <math>1210-38+110+10=1292</math>
+
+

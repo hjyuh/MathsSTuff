@@ -1,0 +1,385 @@
+{
+  "argv": [
+    "--mine-json",
+    ".\\erdos\\885\\results\\square_translate_mine\\pair_extend_z11000_n50m_k35_full15000.json",
+    "--mine-json",
+    ".\\erdos\\885\\results\\square_translate_mine\\pair_extend_z11000_n50m_k54_full15000.json",
+    "--max-candidates",
+    "10",
+    "--shift-m-bound",
+    "10000000000",
+    "--shift-prime-bound",
+    "120",
+    "--shift-max-classes",
+    "300000",
+    "--column-height-bound",
+    "5000",
+    "--column-prime-bound",
+    "160",
+    "--column-max-classes",
+    "300000",
+    "--out",
+    ".\\erdos\\885\\results\\square_translate_mine\\extend_candidates_quick_top10.json"
+  ],
+  "candidate_count": 3,
+  "elapsed_seconds": 8.950164,
+  "finished_utc": "2026-04-26T17:38:47.909461+00:00",
+  "positive_records": [],
+  "records": [
+    {
+      "N_values": [
+        274833,
+        1225728,
+        3368448,
+        30159360
+      ],
+      "deltas": [
+        432,
+        2232,
+        3312,
+        9448
+      ],
+      "extra_shift": {
+        "classes": 64800,
+        "hit_count": 4,
+        "hits": [
+          {
+            "known_shift": true,
+            "m": 567,
+            "roots": [
+              567,
+              1233,
+              1737,
+              4753
+            ],
+            "shift": 274833
+          },
+          {
+            "known_shift": true,
+            "m": 1848,
+            "roots": [
+              1848,
+              2148,
+              2472,
+              5068
+            ],
+            "shift": 3368448
+          },
+          {
+            "known_shift": true,
+            "m": 5496,
+            "roots": [
+              5496,
+              5604,
+              5736,
+              7244
+            ],
+            "shift": 30159360
+          },
+          {
+            "known_shift": true,
+            "m": 1128,
+            "roots": [
+              1128,
+              1572,
+              1992,
+              4852
+            ],
+            "shift": 1225728
+          }
+        ],
+        "modulus": 111546435,
+        "new_hit_count": 0,
+        "new_hits": [],
+        "stopped_early": false,
+        "tested": 5809242
+      },
+      "fifth_column": {
+        "candidate_count": 2780,
+        "crt_class_count": 69120,
+        "crt_modulus": 469369901,
+        "height_bound": 5000,
+        "hit_count": 8,
+        "hits": [
+          {
+            "X": "-216/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "216/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "-4724/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "4724/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "-1656/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "1656/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "1116/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "-1116/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          }
+        ],
+        "new_hit_count": 0,
+        "new_hits": [],
+        "used_primes": [
+          7,
+          11,
+          13,
+          19,
+          23,
+          29,
+          37
+        ]
+      },
+      "index": 1,
+      "kind": "K4_4",
+      "source": "pair_extend_z11000_n50m_k54_full15000.json:best_subset:2",
+      "verification": {
+        "num_N": 4,
+        "num_z": 4,
+        "ok": true
+      },
+      "z_values": [
+        216,
+        1116,
+        1656,
+        4724
+      ]
+    },
+    {
+      "N_values": [
+        493920,
+        9774765,
+        19511685,
+        46687680
+      ],
+      "deltas": [
+        252,
+        1708,
+        5796,
+        20556
+      ],
+      "extra_shift": {
+        "classes": 155520,
+        "hit_count": 4,
+        "hits": [
+          {
+            "known_shift": true,
+            "m": 3129,
+            "roots": [
+              3129,
+              3241,
+              4263,
+              10743
+            ],
+            "shift": 9774765
+          },
+          {
+            "known_shift": true,
+            "m": 714,
+            "roots": [
+              714,
+              1106,
+              2982,
+              10302
+            ],
+            "shift": 493920
+          },
+          {
+            "known_shift": true,
+            "m": 6834,
+            "roots": [
+              6834,
+              6886,
+              7422,
+              12342
+            ],
+            "shift": 46687680
+          },
+          {
+            "known_shift": true,
+            "m": 4419,
+            "roots": [
+              4419,
+              4499,
+              5283,
+              11187
+            ],
+            "shift": 19511685
+          }
+        ],
+        "modulus": 3234846615,
+        "new_hit_count": 0,
+        "new_hits": [],
+        "stopped_early": false,
+        "tested": 480749
+      },
+      "fifth_column": {
+        "candidate_count": 5904,
+        "crt_class_count": 108864,
+        "crt_modulus": 349512163,
+        "height_bound": 5000,
+        "hit_count": 6,
+        "hits": [
+          {
+            "X": "-854/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "854/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "126/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "-126/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "2898/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          },
+          {
+            "X": "-2898/1",
+            "exact_fifth_column": true,
+            "old_column_abs": true
+          }
+        ],
+        "new_hit_count": 0,
+        "new_hits": [],
+        "used_primes": [
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          47
+        ]
+      },
+      "index": 2,
+      "kind": "K4_4",
+      "source": "pair_extend_z11000_n50m_k54_full15000.json:best_subset:1",
+      "verification": {
+        "num_N": 4,
+        "num_z": 4,
+        "ok": true
+      },
+      "z_values": [
+        126,
+        854,
+        2898,
+        10278
+      ]
+    },
+    {
+      "N_values": [
+        756000,
+        15971200,
+        45130176
+      ],
+      "deltas": [
+        660,
+        1740,
+        4890,
+        8310,
+        20964
+      ],
+      "extra_shift": {
+        "classes": 129600,
+        "hit_count": 3,
+        "hits": [
+          {
+            "known_shift": true,
+            "m": 930,
+            "roots": [
+              930,
+              1230,
+              2595,
+              4245,
+              10518
+            ],
+            "shift": 756000
+          },
+          {
+            "known_shift": true,
+            "m": 6726,
+            "roots": [
+              6726,
+              6774,
+              7149,
+              7899,
+              12450
+            ],
+            "shift": 45130176
+          },
+          {
+            "known_shift": true,
+            "m": 4010,
+            "roots": [
+              4010,
+              4090,
+              4685,
+              5765,
+              11218
+            ],
+            "shift": 15971200
+          }
+        ],
+        "modulus": 5898837945,
+        "new_hit_count": 0,
+        "new_hits": [],
+        "stopped_early": false,
+        "tested": 219695
+      },
+      "fifth_column": null,
+      "index": 3,
+      "kind": "K3_5",
+      "source": "pair_extend_z11000_n50m_k35_full15000.json:hit",
+      "verification": {
+        "num_N": 3,
+        "num_z": 5,
+        "ok": true
+      },
+      "z_values": [
+        330,
+        870,
+        2445,
+        4155,
+        10482
+      ]
+    }
+  ],
+  "script": "extend_mined_candidates.py",
+  "started_utc": "2026-04-26T17:38:38.959297+00:00"
+}

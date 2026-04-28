@@ -1,0 +1,927 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Pset}{\mathbb P}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathcal R}
+\newcommand{\B}{\mathcal B}
+\newcommand{\C}{\mathcal C}
+\newcommand{\Hcal}{\mathcal H}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\one}{\mathbf 1}
+
+\title{A proof of Erd\H{o}s Problem 689}
+\author{Working note}
+\date{April 26, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We prove that for all sufficiently large $n$ one can choose one residue class
+$a_p\pmod p$ for each prime $p\le n$ so that every integer $m\in[1,n]$ lies in
+at least two of the chosen classes.  The proof starts with the parity-first
+assignment $a_2\equiv1\pmod2$, leaves $3$ in the zero class, switches a fixed
+large set of small primes $S\subset\{7,11,13,\ldots\}$ to nonzero classes, and
+then uses robust cleanup primes $P>n/5$.  The cleanup is reduced to a
+finite-core prime-difference matching problem.  A half-residue transport kernel
+produces a fractional matching with fixed slack; the finite-complexity
+Green--Tao--Ziegler theorem for affine-linear forms in primes gives the
+required first and second weighted moments; and Kahn's fractional
+Frankl--R\"odl--Pippenger theorem rounds the fractional matching to an integral
+matching.  The exact form of Kahn's theorem used here is Theorem 1.5 of
+\cite{Kahn1996}.
+\end{abstract}
+
+\section{The parity-first residual problem}
+
+For a prime $p\le n$, write $a_p\pmod p$ for the residue class chosen for $p$.
+We begin with
+\[
+  a_2\equiv1\pmod2,
+\]
+leave all odd primes in the zero class, and later switch selected odd primes to
+nonzero classes.  The baseline coverage is
+\[
+  C_0(m)=\one_{m\text{ odd}}+\#\{p\text{ odd prime}:p\mid m\}.
+\]
+If $R$ is the set of switched odd primes, $b_p$ is the new residue for $p\in R$,
+\[
+  L_R(m)=\#\{p\in R:p\mid m\},\qquad
+  G_R(m)=\#\{p\in R:m\equiv b_p\pmod p\},
+\]
+then the exact requirement is
+\[
+  G_R(m)\ge \max(0,2-C_0(m)+L_R(m)).       \tag{1}
+\]
+Thus switching a prime creates debt only at multiples whose previous coverage
+used that prime's zero class.
+
+We keep $3$ at $0\pmod3$.  Choose a fixed finite set
+\[
+  S\subset\{7,11,13,\ldots\}
+\]
+and switch each $s\in S$ to a nonzero residue $b_s\pmod s$.  Put
+\[
+  H_S(x)=\#\{s\in S:x\equiv b_s\pmod s\}.
+\]
+After these fixed switches, the main residual tokens are even integers
+\[
+  x=2^k u q,
+  \qquad k\ge1,                                      \tag{2}
+\]
+where $u$ is odd and $S$-smooth, $q\notin S$ is an odd prime occurring to
+exponent one, and $H_S(x)=0$.  Prime-power exceptions, pure
+$\{2\}\cup S$-smooth terms, $m=1$, and other boundary cases contribute
+$o(n/\log n)$ residual tokens.
+
+Let $A_S(n)$ denote the main residual token set.
+
+\begin{lemma}[Residual asymptotic and exceptional tokens]\label{lem:residual}
+For fixed $S$,
+\[
+  |A_S(n)|=(1+o(1)){n\over\log n}.                  \tag{3}
+\]
+Moreover the number of residual tokens not included in $A_S(n)$ is
+\[
+  O_S\!\left(\sqrt n+(\log n)^{|S|+1}\right)
+  =o(n/\log n).
+\]
+Finally, if a finite coefficient core omits coefficient weight at most
+$\eps$ in the sense of the proof below, then the number of omitted main
+residual targets is $O_S(\eps n/\log n)+o(n/\log n)$.
+\end{lemma}
+
+\begin{proof}
+Let $\mathcal D_S$ be the odd $S$-smooth numbers.  For
+$d\in\mathcal D_S$ put
+\[
+  \Theta_S(d)=\prod_{\substack{s\in S\\s\nmid d}}{s-2\over s-1}.
+\]
+For fixed $d$ and $k\ge1$, the residuals $2^kdq\le n$ with $q\notin S$ prime
+are counted in a fixed union of reduced residue classes modulo $W$, hence
+fixed-modulus PNT gives
+\[
+  \#\{q:2^kdq\le n,\ H_S(2^kdq)=0\}
+  =
+  \Theta_S(d){n\over 2^kd\log n}
+  +o_{d,k}(n/\log n).                                \tag{3a}
+\]
+The coefficient sum is
+\[
+  \sum_{d\in\mathcal D_S}{\Theta_S(d)\over d}
+  =
+  \prod_{s\in S}\left({s-2\over s-1}+\sum_{e\ge1}{1\over s^e}\right)=1,
+  \qquad
+  \sum_{k\ge1}2^{-k}=1.                              \tag{3b}
+\]
+To justify summing the asymptotics, choose a finite set
+$\mathcal K\subset \mathcal D_S\times\mathbb N$ so that
+\[
+  \sum_{(d,k)\notin\mathcal K}{\Theta_S(d)\over 2^kd}<\eps.
+\]
+On the finite set $\mathcal K$, (3a) may be summed directly.  On the tail with
+$2^kd\le n^{1/2}$, Brun--Titchmarsh or the standard fixed-modulus upper bound
+$\pi(x;W,a)\ll_S x/\log x$ gives $O_S(\eps n/\log n)$.  On the tail with
+$2^kd>n^{1/2}$, the trivial bound by $\pi(n/(2^kd))\le n^{1/2}$ and the
+estimate
+\[
+  \#\{(d,k):d\in\mathcal D_S,\ 2^kd\le n\}
+  \ll_S(\log n)^{|S|+1}
+\]
+give $o(n/\log n)$.  Letting $\eps\to0$ proves (3).
+
+It remains to bound exceptional tokens.  Odd $S$-smooth integers and even
+$\{2\}\cup S$-smooth integers contribute
+$O_S((\log n)^{|S|+1})$ tokens.  Integers of the form
+$2^kdq^a\le n$ with $a\ge2$, $d\in\mathcal D_S$, and $q\notin S$ prime
+contribute at most
+\[
+  \sum_{d,k} \#\{q^a\le n/(2^kd):a\ge2\}
+  \ll_S
+  \sqrt n\sum_{d\in\mathcal D_S}{1\over\sqrt d}
+  \sum_{k\ge1}2^{-k/2}
+  \ll_S\sqrt n.
+\]
+This proves the exceptional-token bound.  The finite-core tail estimate is
+the same tail argument with $\mathcal K$ chosen to be the coefficient core.
+\end{proof}
+Define
+\[
+  A_1(n)=\{x\in A_S(n):v_2(x)=1\},\qquad
+  A_2(n)=\{x\in A_S(n):v_2(x)\ge2\}.
+\]
+Then
+\[
+  |A_1(n)|=\left(\frac12+o(1)\right)|A_S(n)|,
+  \qquad
+  |A_2(n)|=\left(\frac12+o(1)\right)|A_S(n)|.        \tag{4}
+\]
+
+\section{Robust cleanup primes}
+
+Let
+\[
+  W=\prod_{s\in S}s.
+\]
+For a unit class $\pi\pmod W$, call $\pi$ robust if
+\[
+  H_S(\pi)\ge1,\qquad H_S(2\pi)\ge2,
+  \qquad H_S(4\pi)\ge2.                              \tag{5}
+\]
+Let $\B\subset(\Z/W\Z)^\times$ be the robust set and set
+\[
+  \delta_S=\frac{|\B|}{\varphi(W)}.
+\]
+For $s\in S$, the three local classes
+\[
+  \pi\equiv b_s,
+  \qquad 2\pi\equiv b_s,
+  \qquad 4\pi\equiv b_s\pmod s
+\]
+are distinct because $s\ge7$.  Hence $\delta_S$ depends only on $S$, not on the
+particular nonzero residues $b_s$.
+
+\begin{lemma}[Robust density]
+There are fixed finite sets $S\subset\{7,11,13,\ldots\}$ for which $\delta_S$ is
+arbitrarily close to $1$.
+\end{lemma}
+
+\begin{proof}
+Let
+\[
+  A_S^{(0)}=\prod_{s\in S}\left(1-\frac1{s-1}\right),
+  \qquad
+  B_S=\sum_{s\in S}\frac1{s-2}.
+\]
+If $X_1,X_2,X_4$ count hits to $\pi,2\pi,4\pi$, then
+\[
+  \delta_S=\mathbb P(X_1\ge1,X_2\ge2,X_4\ge2).
+\]
+Now
+\[
+  \mathbb P(X_1=0)=A_S^{(0)},
+\]
+and
+\[
+  \mathbb P(X_2<2)=A_S^{(0)}(1+B_S),
+\]
+with the same estimate for $X_4$.  Thus
+\[
+  \delta_S\ge1-A_S^{(0)}(3+2B_S).                    \tag{6}
+\]
+Taking $S(y)=\{p:7\le p\le y,\ p\text{ prime}\}$, Mertens' theorem and the
+prime number theorem give $A_{S(y)}^{(0)}\asymp1/\log y$ and
+$B_{S(y)}=O(\log\log y)$, so the right side of (6) tends to $1$.
+\end{proof}
+
+Set
+\[
+  \beta_*={1\over2}\left(1-{3\over5}e^{-2}\right)=0.459399\ldots,
+\]
+\[
+  \delta_*={1\over \beta_*+3/5}=0.943931\ldots.
+\]
+Choose $S$ with $\delta_S>\delta_*$, and choose
+\[
+  \delta_S^{-1}-{3\over5}<\beta<\beta_*.             \tag{7}
+\]
+Let
+\[
+  \Delta=(\beta+3/5)\delta_S-1>0.                    \tag{8}
+\]
+This fixed positive margin absorbs coefficient tails and exceptional tokens.
+Define
+\[
+  \R_\beta(n)=\{P\in(n/5,\beta n]:P\text{ prime},\ P\bmod W\in\B\}
+\]
+and
+\[
+  \R(n)=\{P\in(n/5,n]:P\text{ prime},\ P\bmod W\in\B\}.
+\]
+Fixed-modulus PNT gives
+\[
+  |\R_\beta(n)|=\left((\beta-1/5)\delta_S+o(1)\right){n\over\log n},
+  \tag{9}
+\]
+\[
+  |\R(n)|=\left({4\over5}\delta_S+o(1)\right){n\over\log n}.            \tag{10}
+\]
+
+\begin{lemma}[Robust side debt]
+Switching any robust prime $P>n/5$ to any nonzero residue creates no unresolved
+side debt.
+\end{lemma}
+
+\begin{proof}
+The only multiples of $P$ not exceeding $n$ are $P,2P,3P,4P$.  The integer $P$
+is odd and has the parity hit plus at least one $S$-hit.  The integers $2P$ and
+$4P$ have at least two $S$-hits by (5).  The integer $3P$ has the parity hit and
+the unchanged zero class modulo $3$.  There is no multiple $5P\le n$.
+\end{proof}
+
+\section{The finite-core hypergraph and the half-residue kernel}
+
+Choose finite coefficient cores
+\[
+  \mathcal A_1\subset\{a:a\text{ odd and }S\text{-smooth}\},
+\]
+\[
+  \mathcal A_2\subset\{b:b=2^j u,\ j\ge1,
+       u\text{ odd and }S\text{-smooth}\}.
+\]
+Let $X_n\subset A_1(n)$ be the residual targets $x=2aq$ with
+$a\in\mathcal A_1$, and let $Y_n\subset A_2(n)$ be the residual targets
+$y=2bq'$ with $b\in\mathcal A_2$.  The cores will be chosen so that they capture
+fractions $\alpha_X,\alpha_Y$ of the full coefficient mass, uniformly in the
+half-residue classes below, and
+\[
+  \alpha_X,
+  \alpha_Y>G(\beta)+\eta                                    \tag{11}
+\]
+for some fixed $\eta>0$, where
+\[
+  G(\beta)=\int_{1/5}^{\beta}{dt\over1-2t}
+  ={1\over2}\log\left({3/5\over1-2\beta}\right)<1.            \tag{12}
+\]
+This is possible because $\beta<\beta_*$.
+In the explicit notation below this means
+\[
+  \alpha_X=\min_{A\in\C}2\Xi_A,\qquad
+  \alpha_Y=\min_{A\in\C}2H_A.
+\]
+The quantifiers are chosen in this order: first choose $S,\delta_S,\beta$ with
+strict margin in (7), then choose $\eta>0$ with $G(\beta)+\eta<1$, and finally
+choose the finite cores so that $\alpha_X,\alpha_Y>G(\beta)+\eta$ and the
+omitted coefficient-tail mass is smaller than the cleanup surplus.
+
+Let
+\[
+  c_s\equiv2^{-1}b_s\pmod s,
+\]
+and define
+\[
+  \C=\{A\pmod W:A\not\equiv c_s\pmod s\text{ for every }s\in S\}.
+\]
+For $x=2aq$ write $A\equiv aq\pmod W$, and for $y=2bq'$ write
+$B\equiv bq'\pmod W$.  Then residual membership is $A,B\in\C$.
+
+\begin{lemma}[Half-residue regularity]
+For every unit $\pi\pmod W$ and every $\sigma\in\{\pm1\}$,
+\[
+  \#\{A\in\C:A+\sigma\pi\in\C\}=M:=\prod_{s\in S}(s-2).       \tag{13}
+\]
+Moreover, the full infinite $S$-smooth coefficient distribution is uniform on
+$\C$ on both the $X$- and $Y$-sides, and finite cores can approximate this
+uniformly.
+\end{lemma}
+
+\begin{proof}
+For (13), modulo each $s\in S$ the conditions are
+$A\ne c_s$ and $A\ne c_s-\sigma\pi$.  Since $\pi$ is a unit, these are two
+distinct forbidden classes, leaving $s-2$ choices.
+
+For the coefficient distribution, fix $s\in S$.  If the $s$-adic exponent of the
+coefficient is $0$, then for every nonzero half-residue $A\pmod s$ there is one
+reduced class of the prime variable, giving local mass $1/(s-1)$.  If the
+exponent is at least $1$, then $A\equiv0\pmod s$ and the coefficient weight is
+$\sum_{e\ge1}s^{-e}=1/(s-1)$, with the prime variable unrestricted among
+reduced classes.  Thus every allowed local half-residue has the same mass.
+Multiplying over $s\in S$ gives uniformity on $\C$.  Truncating exponents to
+$e\le E$ changes only the $A\equiv0\pmod s$ local mass by $O(s^{-E})$, so since
+$S$ is fixed, large finite cores approximate the uniform distribution uniformly.
+The extra $2$-power in the $Y$-coefficients contributes a common factor
+$\sum_{1\le j\le J}2^{-j}$ and does not affect half-residue uniformity.
+\end{proof}
+
+Define the 3-partite 3-uniform hypergraph
+\[
+  H_n\subset X_n\times Y_n\times Z_n,
+  \qquad Z_n=\R_\beta(n),
+\]
+by putting an edge $(x,y,P)$ when
+\[
+  |y-x|=2P.                                                 \tag{14}
+\]
+The parity split is essential: $X_n$ consists of targets $v_2=1$, while $Y_n$
+consists of targets $v_2\ge2$, so $(y-x)/2$ is odd.
+
+The aggregate continuum transport is as follows.  A label is $(t,\pi)$ with
+$t\in(1/5,\beta]$ and $\pi\in\B$.  Choose $\sigma=\pm1$ with probability $1/2$,
+choose uniformly an $A\in\C$ with $A+\sigma\pi\in\C$, and choose
+$u\in(0,1-2t)$ uniformly.  If $\sigma=+1$, send mass to
+\[
+  X=(u,A),\qquad Y=(u+2t,A+\pi),
+\]
+and if $\sigma=-1$, send mass to
+\[
+  X=(u+2t,A),\qquad Y=(u,A-\pi).
+\]
+This gives exact label load $1$.  The side load at a half-residue class is at
+most
+\[
+  \int_{1/5}^{\beta}{dt\over1-2t}=G(\beta).
+\]
+For finite cores this is multiplied by $\alpha_X^{-1}$ or $\alpha_Y^{-1}$, hence
+by (11) the limiting side loads are at most $1-2\gamma$ for some fixed
+$\gamma>0$.
+
+The aggregate transport lifts to typed kernels.  A type is
+\[
+  \tau=(a,b,\sigma,r,r',\pi),
+\]
+where $a\in\mathcal A_1$, $b\in\mathcal A_2$,
+\[
+  q\equiv r\pmod W,
+  \qquad q'\equiv r'\pmod W,
+\]
+\[
+  \pi\equiv\sigma(br'-ar)\pmod W,
+  \qquad \pi\in\B.
+\]
+The support polygon is
+\[
+  D_\tau=\left\{(Q,Q'):
+  0<Q\le{1\over2a},\ 0<Q'\le{1\over2b},\;
+  {1\over5}<\sigma(bQ'-aQ)\le\beta\right\}.              \tag{15}
+\]
+Every residue-compatible type is admissible.  Indeed, modulo $2$ the parity
+split gives $P=\sigma(bq'-aq)$ odd; modulo every $s\in S$, the prescribed
+classes have $q,q'$ and $\pi$ units; and outside $2W$ the three forms
+$q,q',\sigma(bq'-aq)$ are three distinct lines, so their zero sets cannot cover
+all residue pairs.  Let $\lambda_\tau>0$ be the fixed edge-total constant in the
+Green--Tao--Ziegler asymptotic.  The typed kernel $g_\tau$ is the lifted
+aggregate density divided by $\lambda_\tau$.  It is bounded because the
+coefficient core is finite, $\beta<1/2$, and every $\lambda_\tau$ is fixed and
+positive.  The condition $\gcd(a,b)=1$ is automatic:
+if some $s\in S$ divided both $a$ and $b$, then $A\equiv B\equiv0\pmod s$, but
+admissibility gives $B-A\equiv\sigma\pi\not\equiv0\pmod s$.
+
+We record the typed lift explicitly.  For a half-residue $A\in\C$ set
+\[
+  \Xi_A=\sum_{\substack{a\in\mathcal A_1,\ r\\ ar\equiv A\ (W)}}{1\over2a},
+  \qquad
+  H_A=\sum_{\substack{b\in\mathcal A_2,\ r'\\ br'\equiv A\ (W)}}{1\over2b}.
+\]
+The finite cores are chosen so that
+\[
+  {1-\eps\over2}\le \Xi_A,H_A\le {1\over2}\qquad(A\in\C),       \tag{15a}
+\]
+with $\eps>0$ small enough that $1-\eps>G(\beta)+\eta/2$.  Equivalently,
+$\alpha_X,\alpha_Y\ge1-\eps$, so this is the uniform version of (11).  Define conditional
+weights
+\[
+  \rho_X^A(a,r)={1/(2a)\over\Xi_A},\qquad
+  \rho_Y^B(b,r')={1/(2b)\over H_B}.
+\]
+For $t\in(1/5,\beta]$ and $A+\sigma\pi\in\C$, let
+\[
+  K_\sigma(t,\pi;u,A)={1\over2M(1-2t)}
+  \quad(0<u<1-2t),
+\]
+and let it be zero otherwise.  If $(Q,Q')\in D_\tau$, put
+\[
+  t=\sigma(bQ'-aQ),\qquad
+  u_\tau(Q,Q')=
+  \begin{cases}
+    2aQ,&\sigma=+1,\\
+    2bQ',&\sigma=-1.
+  \end{cases}
+\]
+The change of variables $(Q,Q')\mapsto(u_\tau,t)$ has Jacobian $2ab$.
+With the GTZ normalization below, the base edge measure of type $\tau$ is
+$\lambda_\tau\,dQ\,dQ'$.  The typed kernel is therefore
+\[
+  g_\tau(Q,Q')
+  =
+  {2ab\over\lambda_\tau}\,
+  K_\sigma(t,\pi;u_\tau(Q,Q'),A)\,
+  \rho_X^A(a,r)\rho_Y^B(b,r').                         \tag{15b}
+\]
+This formula gives the load identities.  For labels, the coarea factor is
+$b^{-1}dQ$, and after summing the conditional distributions over all typed
+fibres above a fixed half-residue pair $(A,A+\sigma\pi)$ one obtains
+\[
+  L_Z^{\rm lim}(\pi,t)
+  =
+  \sum_{\sigma=\pm1}
+  \sum_{\substack{A\in\C\\A+\sigma\pi\in\C}}
+  \int_0^{1-2t}K_\sigma(t,\pi;u,A)\,du=1.              \tag{15c}
+\]
+For the $X$-side, writing $z=2aQ$, the same change of variables gives
+\[
+  L_X^{\rm lim}(a,r,Q)
+  =
+  {1\over\Xi_A}
+  \left[
+    {N_+(A)\over2M}J_\beta\!\left({1-z\over2}\right)
+    +
+    {N_-(A)\over2M}J_\beta\!\left({z\over2}\right)
+  \right],                                             \tag{15d}
+\]
+where
+\[
+  N_\pm(A)=\#\{\pi\in\B:A\pm\pi\in\C\},\qquad
+  J_\beta(u)=\int_{1/5}^{\min(\beta,u)}{dt\over1-2t}
+\]
+with the integral interpreted as $0$ if $u\le1/5$.  Since $N_\pm(A)\le M$ and
+(15a) holds,
+\[
+  L_X^{\rm lim}
+  \le {1\over1-\eps}
+  \left[
+    J_\beta\!\left({1-z\over2}\right)
+    +J_\beta\!\left({z\over2}\right)
+  \right]
+  \le {G(\beta)\over1-\eps}\le1-2\gamma.
+\]
+The middle inequality uses $\beta>2/5$, which follows from (7) and
+$\delta_S\le1$: if $u+v=1/2$, then
+$J_\beta(u)+J_\beta(v)\le G(\beta)$.
+The $Y$-side is identical with $\Xi_A$ replaced by $H_B$.  This proves the
+finite-core typed-kernel lift and the side slack used below.
+
+\section{GTZ weighted moments}
+
+For an edge $e=(x,y,P)$ of type $\tau$, write
+\[
+  x=2aq,
+  \qquad y=2bq',
+  \qquad P=\sigma(bq'-aq),
+\]
+and assign
+\[
+  w_e={\log^2 n\over n}g_\tau(q/n,q'/n).                    \tag{16}
+\]
+The following proposition is the only analytic input.
+
+\begin{proposition}[Weighted GTZ moment proposition]\label{prop:gtz}
+The loads
+\[
+  L_Z(P)=\sum_{e\ni P}w_e,
+  \qquad
+  L_X(x)=\sum_{e\ni x}w_e,
+  \qquad
+  L_Y(y)=\sum_{e\ni y}w_e
+\]
+satisfy
+\[
+  \sum_{P\in Z_n}(L_Z(P)-1)^2=o(|Z_n|),                    \tag{17}
+\]
+\[
+  \sum_{x\in X_n}(L_X(x)-L_X^{\rm lim}(x))^2=o(|X_n|),      \tag{18}
+\]
+and
+\[
+  \sum_{y\in Y_n}(L_Y(y)-L_Y^{\rm lim}(y))^2=o(|Y_n|),      \tag{19}
+\]
+where $L_X^{\rm lim},L_Y^{\rm lim}\le1-2\gamma$.
+\end{proposition}
+
+\begin{proof}
+We use the finite-complexity Green--Tao theorem for affine-linear forms in
+primes, made unconditional by the Green--Tao nilsequence theorem and the
+Green--Tao--Ziegler inverse theorem
+\cite{GT2010,GT2012MN,GTZ2012}.  It is cleanest here to use the normalized
+auxiliary $W$-tricked form, because then the main terms are normalized residue
+cell averages and no singular-series cancellation has to be checked separately.
+
+Concretely, put $W_0=2W$.  For an auxiliary parameter $w$ let
+\[
+  W_{\rm aux}=W_0\prod_{\substack{\ell\le w\\ \ell\nmid W_0}}\ell .
+\]
+All congruence conditions modulo the fixed $W_0$ are kept as residue data, and
+one then sums over residue lifts modulo $W_{\rm aux}$ on which all displayed
+linear forms are units.  For each fixed $w$, the GTZ theorem gives the expected
+normalized average for every fixed finite-complexity system on every rational
+polytope.  After taking $n\to\infty$, one lets $w\to\infty$.  Equivalently, in
+raw prime-indicator notation this says that, for a fixed finite-complexity
+system $\Psi=(\psi_1,\ldots,\psi_t)$ on a fixed affine lattice and a bounded
+Riemann-integrable weight $F$,
+\[
+  \sum_{\mathbf m\in nK\cap\Lambda}
+  F(\mathbf m/n)\prod_{i=1}^t\one_{\psi_i(\mathbf m)\in\Pset}
+  =\left(\mathfrak S_{\Psi,\Lambda}\int_KF+o(1)\right)
+  {n^d\over(\log n)^t}.                                  \tag{20}
+\]
+The normalized formulation is what is used below; (20) is only a translation.
+In the auxiliary residue expansion one sums only over lifts on which every
+displayed form is a unit modulo $W_{\rm aux}$; the fixed typed cells modulo
+$W_0$ are the residue-compatible cells already shown admissible in the
+finite-core construction.
+
+The edge-total system for a type $\tau=(a,b,\sigma,r,r',\pi)$ consists of
+\[
+  q,
+  \qquad q',
+  \qquad P_\tau(q,q')=\sigma(bq'-aq).                    \tag{21}
+\]
+The coefficient vectors $(1,0),(0,1),(-\sigma a,\sigma b)$ are pairwise
+non-proportional.  Applying GTZ with weight $g_\tau(q/n,q'/n)$ on the support
+polygon gives the first moments.  Because the typed kernels were defined by
+dividing the aggregate edge intensity by the one-edge local density, these first
+moments are exactly the limiting load integrals in (15c)--(15d), up to
+$o(n/\log n)$.
+
+For the label second moment, two types
+\[
+  \tau_i=(a_i,b_i,\sigma_i,r_i,r_i',\pi)
+\]
+sharing the same label are parametrized on the fixed affine lattice
+\[
+  a_iq_i+\sigma_iP\equiv0\pmod {b_i}
+\]
+by variables $(P,q_1,q_2)$, together with the full typed residue constraints
+\[
+  P\equiv\pi\pmod W,\qquad
+  q_i\equiv r_i\pmod W,\qquad
+  {a_iq_i+\sigma_iP\over b_i}\equiv r_i'\pmod W.
+\]
+The last congruence is part of the affine lattice; it is not implied by the
+divisibility congruence when $b_i$ has factors in $W$.  The prime forms are
+\[
+  P,
+  \quad q_1,
+  \quad {a_1q_1+\sigma_1P\over b_1},
+  \quad q_2,
+  \quad {a_2q_2+\sigma_2P\over b_2}.                    \tag{22}
+\]
+Restricted to that lattice, these are integer-valued affine-linear forms.  The
+coefficient vectors in $(P,q_1,q_2)$ are
+\[
+  (1,0,0),\ (0,1,0),\ (\sigma_1/b_1,a_1/b_1,0),\
+  (0,0,1),\ (\sigma_2/b_2,0,a_2/b_2),
+\]
+and no two are rational multiples.
+
+For the $X$-side second moment, two edges sharing $x=2aq$ necessarily have the
+same $a$ and the same prime $q$; otherwise $a_1q_1=a_2q_2$ is impossible for
+large $n$, since $a_i$ are $S$-smooth while $q_i\notin S$ are primes.  The prime
+forms in variables $(q,q_1',q_2')$ are
+\[
+  q,
+  \quad q_1',
+  \quad q_2',
+  \quad \sigma_1(b_1q_1'-aq),
+  \quad \sigma_2(b_2q_2'-aq).                            \tag{23}
+\]
+The coefficient vectors are
+\[
+  (1,0,0),\ (0,1,0),\ (0,0,1),\
+  (-\sigma_1a,\sigma_1b_1,0),\
+  (-\sigma_2a,0,\sigma_2b_2),
+\]
+again pairwise non-proportional.  The $Y$-side moment is symmetric, with
+variables $(q',q_1,q_2)$ and forms
+\[
+  q',
+  \quad q_1,
+  \quad q_2,
+  \quad \sigma_1(bq'-a_1q_1),
+  \quad \sigma_2(bq'-a_2q_2).                            \tag{24}
+\]
+These also have pairwise non-proportional coefficient vectors after the same
+trivial check.
+
+The full affine lattices in (22)--(24) include all fixed congruences modulo
+$2W$ and the divisibility congruences needed to make the displayed rational
+forms integral.  They are locally admissible.  At primes dividing $2W$, the
+prescribed residue classes make every displayed prime form a unit.  At primes
+outside $2W$, none of the coefficients $a_i,b_i$ vanish, and for each fixed
+shared variable the remaining representation variables avoid at most two
+residue classes.  Hence there is always an allowed residue tuple.
+
+The only collisions excluded above are lower-dimensional repeated-edge
+diagonals.  Their total weighted contribution is bounded by
+\[
+  O\left({\log^4 n\over n^2}\cdot {n^2\over\log^3 n}\right)
+  =O(\log n)=o(n/\log n).                                \tag{25}
+\]
+Boundary layers are handled by first replacing every support polygon by a
+slightly shrunken finite union of rational polytopes, applying GTZ there, and
+then letting the shrinkage tend to zero.  Bounded piecewise-continuous kernels
+are treated by $L^1$ approximation by step functions on rational polytopes.
+Since the coefficient core and the type set are finite, all such errors remain
+$o(n/\log n)$ after summing over types and type-pairs.
+
+It remains to spell out why the second moments are the $L^2$ norms of the
+limiting loads.  In the normalized $W_{\rm aux}$-tricked formulation, the
+one-edge density assigned to a typed cell is precisely the density divided out
+in the definition of $g_\tau$.  Therefore the five-form count (22), after
+disintegration by $t=P/n$ and $\pi=P\bmod W$, has main term
+\[
+  {n\over\log n}
+  \sum_{\pi\in\B}\zeta_\pi
+  \int_{1/5}^{\beta}
+  L_{Z,\tau_1}^{\rm lim}(t,\pi)
+  L_{Z,\tau_2}^{\rm lim}(t,\pi)\,dt
+  +o(n/\log n),
+\]
+and summing over $\tau_1,\tau_2$ gives
+\[
+  \sum_{P\in Z_n}L_Z(P)^2
+  =
+  {n\over\log n}
+  \sum_{\pi\in\B}\zeta_\pi
+  \int_{1/5}^{\beta}(L_Z^{\rm lim}(t,\pi))^2\,dt
+  +o(|Z_n|).
+\]
+Since $L_Z^{\rm lim}=1$ and the prime number theorem in the fixed robust
+classes gives
+\[
+  |Z_n|=
+  {n\over\log n}\sum_{\pi\in\B}\zeta_\pi(\beta-1/5)+o(n/\log n),
+\]
+this proves the label second moment.  The corresponding first moment is obtained
+from (21), hence (17) follows.
+
+The $X$-side is identical in structure.  GTZ applied to (23) gives
+\[
+  \sum_{x\in X_n}L_X(x)^2
+  =
+  {n\over\log n}
+  \sum_{(a,r)}\xi_{a,r}
+  \int (L_X^{\rm lim}(z,a,r))^2\,dz
+  +o(|X_n|).
+\]
+The edge-total estimate (21), now with the bounded test function
+$L_X^{\rm lim}(2aQ,a,r)$ inserted, gives the mixed term
+\[
+  \sum_{x\in X_n}L_X(x)L_X^{\rm lim}(x)
+  =
+  {n\over\log n}
+  \sum_{(a,r)}\xi_{a,r}
+  \int (L_X^{\rm lim}(z,a,r))^2\,dz
+  +o(|X_n|),
+\]
+and the fixed-modulus prime number theorem gives the same expression for
+$\sum_x (L_X^{\rm lim}(x))^2$.  Expanding the square proves (18).  The proof of
+(19) from (24) is symmetric.
+
+If one insists on writing everything in the raw singular-series form (20), the
+same argument requires checking the finite list of conditional local-factor
+identities
+\[
+  \lambda^Z_{\tau_1,\tau_2}={\lambda_{\tau_1}\lambda_{\tau_2}\over \zeta_\pi},
+  \qquad
+  \lambda^X_{\tau_1,\tau_2}={\lambda_{\tau_1}\lambda_{\tau_2}\over \xi_{a,r}},
+  \qquad
+  \lambda^Y_{\tau_1,\tau_2}={\lambda_{\tau_1}\lambda_{\tau_2}\over \eta_{b,r'}}. \tag{26}
+\]
+These identities say only that, after conditioning on the shared label or side
+vertex residue cell, the two remaining representation variables are locally
+independent.  For primes $\ell\nmid2W$, this can be checked directly.  The
+one-edge system has
+\[
+  (\ell-1)(\ell-2)
+\]
+good pairs $(q,q')\pmod\ell$, giving local factor
+$\ell(\ell-2)/(\ell-1)^2$.  A label-pair system has, for each nonzero
+$P\pmod\ell$, two independent choices $q_i$ each avoiding $0$ and one further
+nonzero class, hence $(\ell-1)(\ell-2)^2$ good triples and local factor
+$[\ell(\ell-2)/(\ell-1)^2]^2$.  The $X$- and $Y$-pair systems are identical
+after conditioning on the shared side vertex.  The finitely many primes
+dividing $2W$ are fixed residue-cell checks built into the affine lattices.
+Thus (26) holds, and the normalized formulation above is simply a concise way
+to organize the same finite verification.
+\end{proof}
+
+\section{Fractional preprocessing and Kahn rounding}
+
+The following deterministic lemma converts Proposition~\ref{prop:gtz} into a
+large fractional matching.
+
+\begin{lemma}[Fractional preprocessing]\label{lem:preprocess}
+There are subweights $0\le t_e\le w_e$ such that
+\[
+  \sum_{e\ni v}t_e\le1\quad\text{for every vertex }v,
+  \qquad
+  \sum_e t_e=(1-o(1))|Z_n|,                              \tag{27}
+\]
+\[
+  \max_e t_e=o(1),
+  \qquad
+  a(t):=\max_{u\ne v}\sum_{e\supset\{u,v\}}t_e=o(1).      \tag{28}
+\]
+\end{lemma}
+
+\begin{proof}
+Normalize labels.  For $P\in Z_n$, set
+\[
+  c_P=\min(1,L_Z(P)^{-1})
+\]
+with $c_P=1$ if $L_Z(P)=0$, and put $w'_e=c_Pw_e$ for edges with label $P$.
+Then
+\[
+  \sum_e w'_e=\sum_{P\in Z_n}\min(L_Z(P),1)=|Z_n|-o(|Z_n|),              \tag{29}
+\]
+because $1-\min(u,1)\le |1-u|$ and Cauchy--Schwarz applies to (17).
+Moreover every normalized label load is at most $1$.
+
+Since $w'_e\le w_e$, side loads only decrease.  Let
+$B_X=\{x:L'_X(x)>1\}$.  Because $L_X^{\rm lim}\le1-2\gamma$, (18) implies not
+only $|B_X|=o(|X_n|)$ but also
+\[
+  \sum_{x\in B_X}L'_X(x)=o(|Z_n|).                       \tag{30}
+\]
+Indeed $B_X\subset\{x:L_X(x)>1\}$, and on this latter set
+$L_X(x)-L_X^{\rm lim}(x)>2\gamma$, so (18) gives
+$|B_X|=o(|X_n|)$.  Also, writing
+$\Delta_X(x)=L_X(x)-L_X^{\rm lim}(x)$ and using $L'_X\le L_X$,
+\[
+  \sum_{x\in B_X}L'_X(x)
+  \le |B_X|+\sum_{x\in B_X}|\Delta_X(x)|
+  \le |B_X|+|B_X|^{1/2}
+  \left(\sum_{x\in X_n}\Delta_X(x)^2\right)^{1/2}
+  =o(|Z_n|),
+\]
+since $|X_n|\asymp |Z_n|$.  The same argument gives
+\[
+  \sum_{y\in B_Y}L'_Y(y)=o(|Z_n|).                       \tag{31}
+\]
+Delete all edges incident to $B_X\cup B_Y$ and call the remaining weights
+$t_e$.  Then all vertex loads are at most $1$, and (29)--(31) give
+$\sum_e t_e=(1-o(1))|Z_n|$.  Also
+\[
+  t_e\le w_e\ll {\log^2 n\over n}=o(1).
+\]
+Finally the actual hypergraph has pair codegree at most $2$: a pair $(x,y)$
+determines $P=|x-y|/2$, and a pair $(x,P)$ or $(y,P)$ has at most the two
+opposite-side possibilities $x\pm2P$ or $y\pm2P$.  Hence
+\[
+  a(t)\le2\max_e t_e=o(1).
+\]
+\end{proof}
+
+We now use Kahn's theorem.  In the notation of \cite{Kahn1996}, for a hypergraph
+$\mathcal H$ and a fractional matching $t$, set
+\[
+  a(t)=\max_{x\ne y}\sum_{A\ni x,y}t(A).                  \tag{32}
+\]
+Kahn's Theorem 1.5 says: for fixed $k$ and $l$, if $\mathcal H$ is $k$-bounded,
+$t$ is a fractional matching, and $c_1,\ldots,c_l:\mathcal H\to\mathbb R_+$
+satisfy
+\[
+  \sum_{A\in\mathcal H}c_i(A)^2t(A)
+  =o\left(\left(\sum_{A\in\mathcal H}c_i(A)t(A)\right)^2\right),        \tag{33}
+\]
+then as $a(t)\to0$ there is a matching $M$ with
+\[
+  \sum_{A\in M}c_i(A)\sim\sum_{A\in\mathcal H}c_i(A)t(A)
+\]
+for every $i$.
+
+Apply this with $k=3$, $l=1$, and $c_1(e)\equiv1$.  Then
+\[
+  \sum_e c_1(e)^2t_e=\sum_e t_e=o\left((\sum_e t_e)^2\right)
+\]
+because $\sum_e t_e\asymp |Z_n|\to\infty$.  Thus there is a genuine matching
+$M_n$ with
+\[
+  |M_n|=(1-o(1))|Z_n|.                                   \tag{34}
+\]
+
+\section{Cleanup and completion}
+
+For each matched edge $(x,y,P)$ choose
+\[
+  a_P\equiv x\pmod P.
+\]
+Since $|x-y|=2P$, this also hits $y$.  The residue is nonzero: if $P>n/5$
+divided an even residual target $x\le n$, then $x=2P$ or $x=4P$, but these are
+not residual because robustness gives two $S$-hits.
+
+Let
+\[
+  N=|A_S(n)|=(1+o(1)){n\over\log n}.
+\]
+By (9) and (34),
+\[
+  |M_n|=\left((\beta-1/5)\delta_S+o(1)\right)N.           \tag{35}
+\]
+The full robust reservoir satisfies
+\[
+  |\R(n)|=\left({4\over5}\delta_S+o(1)\right)N.           \tag{36}
+\]
+After the pair stage, the number of unused robust primes is
+$|\R(n)|-|M_n|$.  The number of residual tokens still uncovered, including the
+coefficient tails and all exceptional tokens, is at most $N-2|M_n|+o(N)$.
+It is enough that
+\[
+  |\R(n)|-|M_n|\ge N-2|M_n|+o(N),
+\]
+or
+\[
+  |M_n|\ge N-|\R(n)|+o(N).                               \tag{37}
+\]
+This follows from the strict inequality
+\[
+  (\beta-1/5)\delta_S>1-{4\over5}\delta_S,
+\]
+which is exactly (7).
+
+Assign each remaining residual token injectively to an unused robust prime
+$P$ and choose
+\[
+  a_P\equiv x\pmod P.
+\]
+If one integer has two residual tokens, use two distinct unused robust primes.
+The residue is nonzero by the same $2P,4P$ argument; odd exceptional tokens
+cannot be $P$ or $3P$, because $P$ is already covered by parity plus an $S$-hit
+and $3P$ is covered by parity plus the zero class modulo $3$.  The robust
+side-debt lemma ensures that switching these primes creates no new unresolved
+debt.
+
+All residual tokens are defined after the fixed choices for $2$, $3$, and
+$S$.  The matching and singleton assignments discharge these tokens
+injectively.  The only new debts created by the cleanup primes are multiples of
+those cleanup primes, and every such multiple is handled by the robust side-debt
+lemma.  All other primes remain in their zero classes, $2$ remains in the odd
+class, $3$ remains in the zero class, and the primes in $S$ remain in their
+fixed nonzero classes.  The exact debt inequality (1) is satisfied for every
+$m\le n$, so every $m\in[1,n]$ lies in at least two chosen residue classes.
+
+\begin{theorem}
+For all sufficiently large $n$, there are residue classes $a_p\pmod p$ for all
+primes $p\le n$ such that every integer $m\in[1,n]$ satisfies
+\[
+  \#\{p\le n:m\equiv a_p\pmod p\}\ge2.
+\]
+\end{theorem}
+
+\begin{thebibliography}{9}
+
+\bibitem{GT2010}
+B. Green and T. Tao,
+\emph{Linear equations in primes},
+Annals of Mathematics \textbf{171} (2010), 1753--1850.
+
+\bibitem{GT2012MN}
+B. Green and T. Tao,
+\emph{The M\"obius function is strongly orthogonal to nilsequences},
+Annals of Mathematics \textbf{175} (2012), 541--566.
+
+\bibitem{GTZ2012}
+B. Green, T. Tao, and T. Ziegler,
+\emph{An inverse theorem for the Gowers $U^{s+1}[N]$-norm},
+Annals of Mathematics \textbf{176} (2012), 1231--1372.
+
+\bibitem{Kahn1996}
+J. Kahn,
+\emph{A linear programming perspective on the Frankl--R\"odl--Pippenger theorem},
+Random Structures \& Algorithms \textbf{8} (1996), 149--157.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-24T23-19-31-prove-9166-ep689_nat_residual_inequality",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib.Tactic\n\n-- A tiny finite bookkeeping lemma from Erdos Problem 689 residual-cover reduction.\n-- If small hits plus supplied residual hits reach omega + max(0,2-omega), then coverage is at least 2.\n\ntheorem residual_two_cover_nat (omega large : Nat)\n    (hlarge : large >= 2 - omega) : omega + large >= 2 := by\n  omega_cases : omega < 2\n  \u00b7 exact Nat.add_le_add_left hlarge omega |>.trans_eq ?_\n  \u00b7 have h : 2 <= omega := Nat.le_of_not_gt omega_cases\n    exact le_trans h (Nat.le_add_right omega large)\n",
+  "started_at": "2026-04-24T23:19:31Z",
+  "finished_at": "2026-04-24T23:19:32Z",
+  "duration_s": 0.88,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "resolver_failure",
+    "message": "AutoformalizePreflightError: Active working directory does not exist: /mnt/c/Users/z20ma/OneDrive/Documents/!math/gauss-mcp/C:\\Users\\z20ma\\OneDrive\\Documents\\!math\\gauss-test",
+    "log_tail": ""
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-24T23-19-31-prove-9166-ep689_nat_residual_inequality.log",
+  "worker_pid": 2559,
+  "last_heartbeat_at": 1777072772.3555362,
+  "_started_monotonic": 1777072771.7170389
+}

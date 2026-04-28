@@ -1,0 +1,2724 @@
+{
+  "ok": true,
+  "summary": {
+    "best_lifts": [
+      {
+        "column_count": 3,
+        "multiplier": 1,
+        "row_count": 4,
+        "rows": [
+          420,
+          3780,
+          61695,
+          154332
+        ],
+        "sample_columns": [
+          {
+            "n": 2778300,
+            "relations": [
+              {
+                "a": 1470,
+                "b": 1890,
+                "delta": 420
+              },
+              {
+                "a": 630,
+                "b": 4410,
+                "delta": 3780
+              },
+              {
+                "a": 45,
+                "b": 61740,
+                "delta": 61695
+              },
+              {
+                "a": 18,
+                "b": 154350,
+                "delta": 154332
+              }
+            ]
+          },
+          {
+            "n": 862552800,
+            "relations": [
+              {
+                "a": 29160,
+                "b": 29580,
+                "delta": 420
+              },
+              {
+                "a": 27540,
+                "b": 31320,
+                "delta": 3780
+              },
+              {
+                "a": 11745,
+                "b": 73440,
+                "delta": 61695
+              },
+              {
+                "a": 5400,
+                "b": 159732,
+                "delta": 154332
+              }
+            ]
+          },
+          {
+            "n": 5400442044,
+            "relations": [
+              {
+                "a": 73278,
+                "b": 73698,
+                "delta": 420
+              },
+              {
+                "a": 71622,
+                "b": 75402,
+                "delta": 3780
+              },
+              {
+                "a": 48852,
+                "b": 110547,
+                "delta": 61695
+              },
+              {
+                "a": 29394,
+                "b": 183726,
+                "delta": 154332
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 420,
+            "source_delta": 420,
+            "split_u": 1,
+            "split_v": 1
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 3780,
+            "source_delta": 3780,
+            "split_u": 1,
+            "split_v": 1
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 61695,
+            "source_delta": 61695,
+            "split_u": 1,
+            "split_v": 1
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 154332,
+            "source_delta": 154332,
+            "split_u": 1,
+            "split_v": 1
+          }
+        ],
+        "transformed_N_values": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 4,
+        "row_count": 4,
+        "rows": [
+          840,
+          7560,
+          123390,
+          308664
+        ],
+        "sample_columns": [
+          {
+            "n": 11113200,
+            "relations": [
+              {
+                "a": 2940,
+                "b": 3780,
+                "delta": 840
+              },
+              {
+                "a": 1260,
+                "b": 8820,
+                "delta": 7560
+              },
+              {
+                "a": 90,
+                "b": 123480,
+                "delta": 123390
+              },
+              {
+                "a": 36,
+                "b": 308700,
+                "delta": 308664
+              }
+            ]
+          },
+          {
+            "n": 3450211200,
+            "relations": [
+              {
+                "a": 58320,
+                "b": 59160,
+                "delta": 840
+              },
+              {
+                "a": 55080,
+                "b": 62640,
+                "delta": 7560
+              },
+              {
+                "a": 23490,
+                "b": 146880,
+                "delta": 123390
+              },
+              {
+                "a": 10800,
+                "b": 319464,
+                "delta": 308664
+              }
+            ]
+          },
+          {
+            "n": 21601768176,
+            "relations": [
+              {
+                "a": 146556,
+                "b": 147396,
+                "delta": 840
+              },
+              {
+                "a": 143244,
+                "b": 150804,
+                "delta": 7560
+              },
+              {
+                "a": 97704,
+                "b": 221094,
+                "delta": 123390
+              },
+              {
+                "a": 58788,
+                "b": 367452,
+                "delta": 308664
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 840,
+            "source_delta": 420,
+            "split_u": 2,
+            "split_v": 2
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 7560,
+            "source_delta": 3780,
+            "split_u": 2,
+            "split_v": 2
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 123390,
+            "source_delta": 61695,
+            "split_u": 2,
+            "split_v": 2
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 308664,
+            "source_delta": 154332,
+            "split_u": 2,
+            "split_v": 2
+          }
+        ],
+        "transformed_N_values": [
+          11113200,
+          3450211200,
+          21601768176
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 9,
+        "row_count": 4,
+        "rows": [
+          1260,
+          11340,
+          185085,
+          462996
+        ],
+        "sample_columns": [
+          {
+            "n": 25004700,
+            "relations": [
+              {
+                "a": 4410,
+                "b": 5670,
+                "delta": 1260
+              },
+              {
+                "a": 1890,
+                "b": 13230,
+                "delta": 11340
+              },
+              {
+                "a": 135,
+                "b": 185220,
+                "delta": 185085
+              },
+              {
+                "a": 54,
+                "b": 463050,
+                "delta": 462996
+              }
+            ]
+          },
+          {
+            "n": 7762975200,
+            "relations": [
+              {
+                "a": 87480,
+                "b": 88740,
+                "delta": 1260
+              },
+              {
+                "a": 82620,
+                "b": 93960,
+                "delta": 11340
+              },
+              {
+                "a": 35235,
+                "b": 220320,
+                "delta": 185085
+              },
+              {
+                "a": 16200,
+                "b": 479196,
+                "delta": 462996
+              }
+            ]
+          },
+          {
+            "n": 48603978396,
+            "relations": [
+              {
+                "a": 219834,
+                "b": 221094,
+                "delta": 1260
+              },
+              {
+                "a": 214866,
+                "b": 226206,
+                "delta": 11340
+              },
+              {
+                "a": 146556,
+                "b": 331641,
+                "delta": 185085
+              },
+              {
+                "a": 88182,
+                "b": 551178,
+                "delta": 462996
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 1260,
+            "source_delta": 420,
+            "split_u": 3,
+            "split_v": 3
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 11340,
+            "source_delta": 3780,
+            "split_u": 3,
+            "split_v": 3
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 185085,
+            "source_delta": 61695,
+            "split_u": 3,
+            "split_v": 3
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 462996,
+            "source_delta": 154332,
+            "split_u": 3,
+            "split_v": 3
+          }
+        ],
+        "transformed_N_values": [
+          25004700,
+          7762975200,
+          48603978396
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 16,
+        "row_count": 4,
+        "rows": [
+          1680,
+          15120,
+          246780,
+          617328
+        ],
+        "sample_columns": [
+          {
+            "n": 44452800,
+            "relations": [
+              {
+                "a": 5880,
+                "b": 7560,
+                "delta": 1680
+              },
+              {
+                "a": 2520,
+                "b": 17640,
+                "delta": 15120
+              },
+              {
+                "a": 180,
+                "b": 246960,
+                "delta": 246780
+              },
+              {
+                "a": 72,
+                "b": 617400,
+                "delta": 617328
+              }
+            ]
+          },
+          {
+            "n": 13800844800,
+            "relations": [
+              {
+                "a": 116640,
+                "b": 118320,
+                "delta": 1680
+              },
+              {
+                "a": 110160,
+                "b": 125280,
+                "delta": 15120
+              },
+              {
+                "a": 46980,
+                "b": 293760,
+                "delta": 246780
+              },
+              {
+                "a": 21600,
+                "b": 638928,
+                "delta": 617328
+              }
+            ]
+          },
+          {
+            "n": 86407072704,
+            "relations": [
+              {
+                "a": 293112,
+                "b": 294792,
+                "delta": 1680
+              },
+              {
+                "a": 286488,
+                "b": 301608,
+                "delta": 15120
+              },
+              {
+                "a": 195408,
+                "b": 442188,
+                "delta": 246780
+              },
+              {
+                "a": 117576,
+                "b": 734904,
+                "delta": 617328
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 1680,
+            "source_delta": 420,
+            "split_u": 4,
+            "split_v": 4
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 15120,
+            "source_delta": 3780,
+            "split_u": 4,
+            "split_v": 4
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 246780,
+            "source_delta": 61695,
+            "split_u": 4,
+            "split_v": 4
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 617328,
+            "source_delta": 154332,
+            "split_u": 4,
+            "split_v": 4
+          }
+        ],
+        "transformed_N_values": [
+          44452800,
+          13800844800,
+          86407072704
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 25,
+        "row_count": 4,
+        "rows": [
+          2100,
+          18900,
+          308475,
+          771660
+        ],
+        "sample_columns": [
+          {
+            "n": 69457500,
+            "relations": [
+              {
+                "a": 7350,
+                "b": 9450,
+                "delta": 2100
+              },
+              {
+                "a": 3150,
+                "b": 22050,
+                "delta": 18900
+              },
+              {
+                "a": 225,
+                "b": 308700,
+                "delta": 308475
+              },
+              {
+                "a": 90,
+                "b": 771750,
+                "delta": 771660
+              }
+            ]
+          },
+          {
+            "n": 21563820000,
+            "relations": [
+              {
+                "a": 145800,
+                "b": 147900,
+                "delta": 2100
+              },
+              {
+                "a": 137700,
+                "b": 156600,
+                "delta": 18900
+              },
+              {
+                "a": 58725,
+                "b": 367200,
+                "delta": 308475
+              },
+              {
+                "a": 27000,
+                "b": 798660,
+                "delta": 771660
+              }
+            ]
+          },
+          {
+            "n": 135011051100,
+            "relations": [
+              {
+                "a": 366390,
+                "b": 368490,
+                "delta": 2100
+              },
+              {
+                "a": 358110,
+                "b": 377010,
+                "delta": 18900
+              },
+              {
+                "a": 244260,
+                "b": 552735,
+                "delta": 308475
+              },
+              {
+                "a": 146970,
+                "b": 918630,
+                "delta": 771660
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 2100,
+            "source_delta": 420,
+            "split_u": 5,
+            "split_v": 5
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 18900,
+            "source_delta": 3780,
+            "split_u": 5,
+            "split_v": 5
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 308475,
+            "source_delta": 61695,
+            "split_u": 5,
+            "split_v": 5
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 771660,
+            "source_delta": 154332,
+            "split_u": 5,
+            "split_v": 5
+          }
+        ],
+        "transformed_N_values": [
+          69457500,
+          21563820000,
+          135011051100
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 36,
+        "row_count": 4,
+        "rows": [
+          2520,
+          22680,
+          370170,
+          925992
+        ],
+        "sample_columns": [
+          {
+            "n": 100018800,
+            "relations": [
+              {
+                "a": 8820,
+                "b": 11340,
+                "delta": 2520
+              },
+              {
+                "a": 3780,
+                "b": 26460,
+                "delta": 22680
+              },
+              {
+                "a": 270,
+                "b": 370440,
+                "delta": 370170
+              },
+              {
+                "a": 108,
+                "b": 926100,
+                "delta": 925992
+              }
+            ]
+          },
+          {
+            "n": 31051900800,
+            "relations": [
+              {
+                "a": 174960,
+                "b": 177480,
+                "delta": 2520
+              },
+              {
+                "a": 165240,
+                "b": 187920,
+                "delta": 22680
+              },
+              {
+                "a": 70470,
+                "b": 440640,
+                "delta": 370170
+              },
+              {
+                "a": 32400,
+                "b": 958392,
+                "delta": 925992
+              }
+            ]
+          },
+          {
+            "n": 194415913584,
+            "relations": [
+              {
+                "a": 439668,
+                "b": 442188,
+                "delta": 2520
+              },
+              {
+                "a": 429732,
+                "b": 452412,
+                "delta": 22680
+              },
+              {
+                "a": 293112,
+                "b": 663282,
+                "delta": 370170
+              },
+              {
+                "a": 176364,
+                "b": 1102356,
+                "delta": 925992
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 2520,
+            "source_delta": 420,
+            "split_u": 6,
+            "split_v": 6
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 22680,
+            "source_delta": 3780,
+            "split_u": 6,
+            "split_v": 6
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 370170,
+            "source_delta": 61695,
+            "split_u": 6,
+            "split_v": 6
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 925992,
+            "source_delta": 154332,
+            "split_u": 6,
+            "split_v": 6
+          }
+        ],
+        "transformed_N_values": [
+          100018800,
+          31051900800,
+          194415913584
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 49,
+        "row_count": 4,
+        "rows": [
+          2940,
+          26460,
+          431865,
+          1080324
+        ],
+        "sample_columns": [
+          {
+            "n": 136136700,
+            "relations": [
+              {
+                "a": 10290,
+                "b": 13230,
+                "delta": 2940
+              },
+              {
+                "a": 4410,
+                "b": 30870,
+                "delta": 26460
+              },
+              {
+                "a": 315,
+                "b": 432180,
+                "delta": 431865
+              },
+              {
+                "a": 126,
+                "b": 1080450,
+                "delta": 1080324
+              }
+            ]
+          },
+          {
+            "n": 42265087200,
+            "relations": [
+              {
+                "a": 204120,
+                "b": 207060,
+                "delta": 2940
+              },
+              {
+                "a": 192780,
+                "b": 219240,
+                "delta": 26460
+              },
+              {
+                "a": 82215,
+                "b": 514080,
+                "delta": 431865
+              },
+              {
+                "a": 37800,
+                "b": 1118124,
+                "delta": 1080324
+              }
+            ]
+          },
+          {
+            "n": 264621660156,
+            "relations": [
+              {
+                "a": 512946,
+                "b": 515886,
+                "delta": 2940
+              },
+              {
+                "a": 501354,
+                "b": 527814,
+                "delta": 26460
+              },
+              {
+                "a": 341964,
+                "b": 773829,
+                "delta": 431865
+              },
+              {
+                "a": 205758,
+                "b": 1286082,
+                "delta": 1080324
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 2940,
+            "source_delta": 420,
+            "split_u": 7,
+            "split_v": 7
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 26460,
+            "source_delta": 3780,
+            "split_u": 7,
+            "split_v": 7
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 431865,
+            "source_delta": 61695,
+            "split_u": 7,
+            "split_v": 7
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1080324,
+            "source_delta": 154332,
+            "split_u": 7,
+            "split_v": 7
+          }
+        ],
+        "transformed_N_values": [
+          136136700,
+          42265087200,
+          264621660156
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 64,
+        "row_count": 4,
+        "rows": [
+          3360,
+          30240,
+          493560,
+          1234656
+        ],
+        "sample_columns": [
+          {
+            "n": 177811200,
+            "relations": [
+              {
+                "a": 11760,
+                "b": 15120,
+                "delta": 3360
+              },
+              {
+                "a": 5040,
+                "b": 35280,
+                "delta": 30240
+              },
+              {
+                "a": 360,
+                "b": 493920,
+                "delta": 493560
+              },
+              {
+                "a": 144,
+                "b": 1234800,
+                "delta": 1234656
+              }
+            ]
+          },
+          {
+            "n": 55203379200,
+            "relations": [
+              {
+                "a": 233280,
+                "b": 236640,
+                "delta": 3360
+              },
+              {
+                "a": 220320,
+                "b": 250560,
+                "delta": 30240
+              },
+              {
+                "a": 93960,
+                "b": 587520,
+                "delta": 493560
+              },
+              {
+                "a": 43200,
+                "b": 1277856,
+                "delta": 1234656
+              }
+            ]
+          },
+          {
+            "n": 345628290816,
+            "relations": [
+              {
+                "a": 586224,
+                "b": 589584,
+                "delta": 3360
+              },
+              {
+                "a": 572976,
+                "b": 603216,
+                "delta": 30240
+              },
+              {
+                "a": 390816,
+                "b": 884376,
+                "delta": 493560
+              },
+              {
+                "a": 235152,
+                "b": 1469808,
+                "delta": 1234656
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 3360,
+            "source_delta": 420,
+            "split_u": 8,
+            "split_v": 8
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 30240,
+            "source_delta": 3780,
+            "split_u": 8,
+            "split_v": 8
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 493560,
+            "source_delta": 61695,
+            "split_u": 8,
+            "split_v": 8
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1234656,
+            "source_delta": 154332,
+            "split_u": 8,
+            "split_v": 8
+          }
+        ],
+        "transformed_N_values": [
+          177811200,
+          55203379200,
+          345628290816
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 81,
+        "row_count": 4,
+        "rows": [
+          3780,
+          34020,
+          555255,
+          1388988
+        ],
+        "sample_columns": [
+          {
+            "n": 225042300,
+            "relations": [
+              {
+                "a": 13230,
+                "b": 17010,
+                "delta": 3780
+              },
+              {
+                "a": 5670,
+                "b": 39690,
+                "delta": 34020
+              },
+              {
+                "a": 405,
+                "b": 555660,
+                "delta": 555255
+              },
+              {
+                "a": 162,
+                "b": 1389150,
+                "delta": 1388988
+              }
+            ]
+          },
+          {
+            "n": 69866776800,
+            "relations": [
+              {
+                "a": 262440,
+                "b": 266220,
+                "delta": 3780
+              },
+              {
+                "a": 247860,
+                "b": 281880,
+                "delta": 34020
+              },
+              {
+                "a": 105705,
+                "b": 660960,
+                "delta": 555255
+              },
+              {
+                "a": 48600,
+                "b": 1437588,
+                "delta": 1388988
+              }
+            ]
+          },
+          {
+            "n": 437435805564,
+            "relations": [
+              {
+                "a": 659502,
+                "b": 663282,
+                "delta": 3780
+              },
+              {
+                "a": 644598,
+                "b": 678618,
+                "delta": 34020
+              },
+              {
+                "a": 439668,
+                "b": 994923,
+                "delta": 555255
+              },
+              {
+                "a": 264546,
+                "b": 1653534,
+                "delta": 1388988
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 3780,
+            "source_delta": 420,
+            "split_u": 9,
+            "split_v": 9
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 34020,
+            "source_delta": 3780,
+            "split_u": 9,
+            "split_v": 9
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 555255,
+            "source_delta": 61695,
+            "split_u": 9,
+            "split_v": 9
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1388988,
+            "source_delta": 154332,
+            "split_u": 9,
+            "split_v": 9
+          }
+        ],
+        "transformed_N_values": [
+          225042300,
+          69866776800,
+          437435805564
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 100,
+        "row_count": 4,
+        "rows": [
+          4200,
+          37800,
+          616950,
+          1543320
+        ],
+        "sample_columns": [
+          {
+            "n": 277830000,
+            "relations": [
+              {
+                "a": 14700,
+                "b": 18900,
+                "delta": 4200
+              },
+              {
+                "a": 6300,
+                "b": 44100,
+                "delta": 37800
+              },
+              {
+                "a": 450,
+                "b": 617400,
+                "delta": 616950
+              },
+              {
+                "a": 180,
+                "b": 1543500,
+                "delta": 1543320
+              }
+            ]
+          },
+          {
+            "n": 86255280000,
+            "relations": [
+              {
+                "a": 291600,
+                "b": 295800,
+                "delta": 4200
+              },
+              {
+                "a": 275400,
+                "b": 313200,
+                "delta": 37800
+              },
+              {
+                "a": 117450,
+                "b": 734400,
+                "delta": 616950
+              },
+              {
+                "a": 54000,
+                "b": 1597320,
+                "delta": 1543320
+              }
+            ]
+          },
+          {
+            "n": 540044204400,
+            "relations": [
+              {
+                "a": 732780,
+                "b": 736980,
+                "delta": 4200
+              },
+              {
+                "a": 716220,
+                "b": 754020,
+                "delta": 37800
+              },
+              {
+                "a": 488520,
+                "b": 1105470,
+                "delta": 616950
+              },
+              {
+                "a": 293940,
+                "b": 1837260,
+                "delta": 1543320
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 4200,
+            "source_delta": 420,
+            "split_u": 10,
+            "split_v": 10
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 37800,
+            "source_delta": 3780,
+            "split_u": 10,
+            "split_v": 10
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 616950,
+            "source_delta": 61695,
+            "split_u": 10,
+            "split_v": 10
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1543320,
+            "source_delta": 154332,
+            "split_u": 10,
+            "split_v": 10
+          }
+        ],
+        "transformed_N_values": [
+          277830000,
+          86255280000,
+          540044204400
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 121,
+        "row_count": 4,
+        "rows": [
+          4620,
+          41580,
+          678645,
+          1697652
+        ],
+        "sample_columns": [
+          {
+            "n": 336174300,
+            "relations": [
+              {
+                "a": 16170,
+                "b": 20790,
+                "delta": 4620
+              },
+              {
+                "a": 6930,
+                "b": 48510,
+                "delta": 41580
+              },
+              {
+                "a": 495,
+                "b": 679140,
+                "delta": 678645
+              },
+              {
+                "a": 198,
+                "b": 1697850,
+                "delta": 1697652
+              }
+            ]
+          },
+          {
+            "n": 104368888800,
+            "relations": [
+              {
+                "a": 320760,
+                "b": 325380,
+                "delta": 4620
+              },
+              {
+                "a": 302940,
+                "b": 344520,
+                "delta": 41580
+              },
+              {
+                "a": 129195,
+                "b": 807840,
+                "delta": 678645
+              },
+              {
+                "a": 59400,
+                "b": 1757052,
+                "delta": 1697652
+              }
+            ]
+          },
+          {
+            "n": 653453487324,
+            "relations": [
+              {
+                "a": 806058,
+                "b": 810678,
+                "delta": 4620
+              },
+              {
+                "a": 787842,
+                "b": 829422,
+                "delta": 41580
+              },
+              {
+                "a": 537372,
+                "b": 1216017,
+                "delta": 678645
+              },
+              {
+                "a": 323334,
+                "b": 2020986,
+                "delta": 1697652
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 4620,
+            "source_delta": 420,
+            "split_u": 11,
+            "split_v": 11
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 41580,
+            "source_delta": 3780,
+            "split_u": 11,
+            "split_v": 11
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 678645,
+            "source_delta": 61695,
+            "split_u": 11,
+            "split_v": 11
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1697652,
+            "source_delta": 154332,
+            "split_u": 11,
+            "split_v": 11
+          }
+        ],
+        "transformed_N_values": [
+          336174300,
+          104368888800,
+          653453487324
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 144,
+        "row_count": 4,
+        "rows": [
+          5040,
+          45360,
+          740340,
+          1851984
+        ],
+        "sample_columns": [
+          {
+            "n": 400075200,
+            "relations": [
+              {
+                "a": 17640,
+                "b": 22680,
+                "delta": 5040
+              },
+              {
+                "a": 7560,
+                "b": 52920,
+                "delta": 45360
+              },
+              {
+                "a": 540,
+                "b": 740880,
+                "delta": 740340
+              },
+              {
+                "a": 216,
+                "b": 1852200,
+                "delta": 1851984
+              }
+            ]
+          },
+          {
+            "n": 124207603200,
+            "relations": [
+              {
+                "a": 349920,
+                "b": 354960,
+                "delta": 5040
+              },
+              {
+                "a": 330480,
+                "b": 375840,
+                "delta": 45360
+              },
+              {
+                "a": 140940,
+                "b": 881280,
+                "delta": 740340
+              },
+              {
+                "a": 64800,
+                "b": 1916784,
+                "delta": 1851984
+              }
+            ]
+          },
+          {
+            "n": 777663654336,
+            "relations": [
+              {
+                "a": 879336,
+                "b": 884376,
+                "delta": 5040
+              },
+              {
+                "a": 859464,
+                "b": 904824,
+                "delta": 45360
+              },
+              {
+                "a": 586224,
+                "b": 1326564,
+                "delta": 740340
+              },
+              {
+                "a": 352728,
+                "b": 2204712,
+                "delta": 1851984
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 5040,
+            "source_delta": 420,
+            "split_u": 12,
+            "split_v": 12
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 45360,
+            "source_delta": 3780,
+            "split_u": 12,
+            "split_v": 12
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 740340,
+            "source_delta": 61695,
+            "split_u": 12,
+            "split_v": 12
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1851984,
+            "source_delta": 154332,
+            "split_u": 12,
+            "split_v": 12
+          }
+        ],
+        "transformed_N_values": [
+          400075200,
+          124207603200,
+          777663654336
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 169,
+        "row_count": 4,
+        "rows": [
+          5460,
+          49140,
+          802035,
+          2006316
+        ],
+        "sample_columns": [
+          {
+            "n": 469532700,
+            "relations": [
+              {
+                "a": 19110,
+                "b": 24570,
+                "delta": 5460
+              },
+              {
+                "a": 8190,
+                "b": 57330,
+                "delta": 49140
+              },
+              {
+                "a": 585,
+                "b": 802620,
+                "delta": 802035
+              },
+              {
+                "a": 234,
+                "b": 2006550,
+                "delta": 2006316
+              }
+            ]
+          },
+          {
+            "n": 145771423200,
+            "relations": [
+              {
+                "a": 379080,
+                "b": 384540,
+                "delta": 5460
+              },
+              {
+                "a": 358020,
+                "b": 407160,
+                "delta": 49140
+              },
+              {
+                "a": 152685,
+                "b": 954720,
+                "delta": 802035
+              },
+              {
+                "a": 70200,
+                "b": 2076516,
+                "delta": 2006316
+              }
+            ]
+          },
+          {
+            "n": 912674705436,
+            "relations": [
+              {
+                "a": 952614,
+                "b": 958074,
+                "delta": 5460
+              },
+              {
+                "a": 931086,
+                "b": 980226,
+                "delta": 49140
+              },
+              {
+                "a": 635076,
+                "b": 1437111,
+                "delta": 802035
+              },
+              {
+                "a": 382122,
+                "b": 2388438,
+                "delta": 2006316
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 5460,
+            "source_delta": 420,
+            "split_u": 13,
+            "split_v": 13
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 49140,
+            "source_delta": 3780,
+            "split_u": 13,
+            "split_v": 13
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 802035,
+            "source_delta": 61695,
+            "split_u": 13,
+            "split_v": 13
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 2006316,
+            "source_delta": 154332,
+            "split_u": 13,
+            "split_v": 13
+          }
+        ],
+        "transformed_N_values": [
+          469532700,
+          145771423200,
+          912674705436
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 196,
+        "row_count": 4,
+        "rows": [
+          5880,
+          52920,
+          863730,
+          2160648
+        ],
+        "sample_columns": [
+          {
+            "n": 544546800,
+            "relations": [
+              {
+                "a": 20580,
+                "b": 26460,
+                "delta": 5880
+              },
+              {
+                "a": 8820,
+                "b": 61740,
+                "delta": 52920
+              },
+              {
+                "a": 630,
+                "b": 864360,
+                "delta": 863730
+              },
+              {
+                "a": 252,
+                "b": 2160900,
+                "delta": 2160648
+              }
+            ]
+          },
+          {
+            "n": 169060348800,
+            "relations": [
+              {
+                "a": 408240,
+                "b": 414120,
+                "delta": 5880
+              },
+              {
+                "a": 385560,
+                "b": 438480,
+                "delta": 52920
+              },
+              {
+                "a": 164430,
+                "b": 1028160,
+                "delta": 863730
+              },
+              {
+                "a": 75600,
+                "b": 2236248,
+                "delta": 2160648
+              }
+            ]
+          },
+          {
+            "n": 1058486640624,
+            "relations": [
+              {
+                "a": 1025892,
+                "b": 1031772,
+                "delta": 5880
+              },
+              {
+                "a": 1002708,
+                "b": 1055628,
+                "delta": 52920
+              },
+              {
+                "a": 683928,
+                "b": 1547658,
+                "delta": 863730
+              },
+              {
+                "a": 411516,
+                "b": 2572164,
+                "delta": 2160648
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 5880,
+            "source_delta": 420,
+            "split_u": 14,
+            "split_v": 14
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 52920,
+            "source_delta": 3780,
+            "split_u": 14,
+            "split_v": 14
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 863730,
+            "source_delta": 61695,
+            "split_u": 14,
+            "split_v": 14
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 2160648,
+            "source_delta": 154332,
+            "split_u": 14,
+            "split_v": 14
+          }
+        ],
+        "transformed_N_values": [
+          544546800,
+          169060348800,
+          1058486640624
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 225,
+        "row_count": 4,
+        "rows": [
+          6300,
+          56700,
+          925425,
+          2314980
+        ],
+        "sample_columns": [
+          {
+            "n": 625117500,
+            "relations": [
+              {
+                "a": 22050,
+                "b": 28350,
+                "delta": 6300
+              },
+              {
+                "a": 9450,
+                "b": 66150,
+                "delta": 56700
+              },
+              {
+                "a": 675,
+                "b": 926100,
+                "delta": 925425
+              },
+              {
+                "a": 270,
+                "b": 2315250,
+                "delta": 2314980
+              }
+            ]
+          },
+          {
+            "n": 194074380000,
+            "relations": [
+              {
+                "a": 437400,
+                "b": 443700,
+                "delta": 6300
+              },
+              {
+                "a": 413100,
+                "b": 469800,
+                "delta": 56700
+              },
+              {
+                "a": 176175,
+                "b": 1101600,
+                "delta": 925425
+              },
+              {
+                "a": 81000,
+                "b": 2395980,
+                "delta": 2314980
+              }
+            ]
+          },
+          {
+            "n": 1215099459900,
+            "relations": [
+              {
+                "a": 1099170,
+                "b": 1105470,
+                "delta": 6300
+              },
+              {
+                "a": 1074330,
+                "b": 1131030,
+                "delta": 56700
+              },
+              {
+                "a": 732780,
+                "b": 1658205,
+                "delta": 925425
+              },
+              {
+                "a": 440910,
+                "b": 2755890,
+                "delta": 2314980
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 6300,
+            "source_delta": 420,
+            "split_u": 15,
+            "split_v": 15
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 56700,
+            "source_delta": 3780,
+            "split_u": 15,
+            "split_v": 15
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 925425,
+            "source_delta": 61695,
+            "split_u": 15,
+            "split_v": 15
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 2314980,
+            "source_delta": 154332,
+            "split_u": 15,
+            "split_v": 15
+          }
+        ],
+        "transformed_N_values": [
+          625117500,
+          194074380000,
+          1215099459900
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 256,
+        "row_count": 4,
+        "rows": [
+          6720,
+          60480,
+          987120,
+          2469312
+        ],
+        "sample_columns": [
+          {
+            "n": 711244800,
+            "relations": [
+              {
+                "a": 23520,
+                "b": 30240,
+                "delta": 6720
+              },
+              {
+                "a": 10080,
+                "b": 70560,
+                "delta": 60480
+              },
+              {
+                "a": 720,
+                "b": 987840,
+                "delta": 987120
+              },
+              {
+                "a": 288,
+                "b": 2469600,
+                "delta": 2469312
+              }
+            ]
+          },
+          {
+            "n": 220813516800,
+            "relations": [
+              {
+                "a": 466560,
+                "b": 473280,
+                "delta": 6720
+              },
+              {
+                "a": 440640,
+                "b": 501120,
+                "delta": 60480
+              },
+              {
+                "a": 187920,
+                "b": 1175040,
+                "delta": 987120
+              },
+              {
+                "a": 86400,
+                "b": 2555712,
+                "delta": 2469312
+              }
+            ]
+          },
+          {
+            "n": 1382513163264,
+            "relations": [
+              {
+                "a": 1172448,
+                "b": 1179168,
+                "delta": 6720
+              },
+              {
+                "a": 1145952,
+                "b": 1206432,
+                "delta": 60480
+              },
+              {
+                "a": 781632,
+                "b": 1768752,
+                "delta": 987120
+              },
+              {
+                "a": 470304,
+                "b": 2939616,
+                "delta": 2469312
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 6720,
+            "source_delta": 420,
+            "split_u": 16,
+            "split_v": 16
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 60480,
+            "source_delta": 3780,
+            "split_u": 16,
+            "split_v": 16
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 987120,
+            "source_delta": 61695,
+            "split_u": 16,
+            "split_v": 16
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 2469312,
+            "source_delta": 154332,
+            "split_u": 16,
+            "split_v": 16
+          }
+        ],
+        "transformed_N_values": [
+          711244800,
+          220813516800,
+          1382513163264
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 289,
+        "row_count": 4,
+        "rows": [
+          7140,
+          64260,
+          1048815,
+          2623644
+        ],
+        "sample_columns": [
+          {
+            "n": 802928700,
+            "relations": [
+              {
+                "a": 24990,
+                "b": 32130,
+                "delta": 7140
+              },
+              {
+                "a": 10710,
+                "b": 74970,
+                "delta": 64260
+              },
+              {
+                "a": 765,
+                "b": 1049580,
+                "delta": 1048815
+              },
+              {
+                "a": 306,
+                "b": 2623950,
+                "delta": 2623644
+              }
+            ]
+          },
+          {
+            "n": 249277759200,
+            "relations": [
+              {
+                "a": 495720,
+                "b": 502860,
+                "delta": 7140
+              },
+              {
+                "a": 468180,
+                "b": 532440,
+                "delta": 64260
+              },
+              {
+                "a": 199665,
+                "b": 1248480,
+                "delta": 1048815
+              },
+              {
+                "a": 91800,
+                "b": 2715444,
+                "delta": 2623644
+              }
+            ]
+          },
+          {
+            "n": 1560727750716,
+            "relations": [
+              {
+                "a": 1245726,
+                "b": 1252866,
+                "delta": 7140
+              },
+              {
+                "a": 1217574,
+                "b": 1281834,
+                "delta": 64260
+              },
+              {
+                "a": 830484,
+                "b": 1879299,
+                "delta": 1048815
+              },
+              {
+                "a": 499698,
+                "b": 3123342,
+                "delta": 2623644
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 7140,
+            "source_delta": 420,
+            "split_u": 17,
+            "split_v": 17
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 64260,
+            "source_delta": 3780,
+            "split_u": 17,
+            "split_v": 17
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1048815,
+            "source_delta": 61695,
+            "split_u": 17,
+            "split_v": 17
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 2623644,
+            "source_delta": 154332,
+            "split_u": 17,
+            "split_v": 17
+          }
+        ],
+        "transformed_N_values": [
+          802928700,
+          249277759200,
+          1560727750716
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 324,
+        "row_count": 4,
+        "rows": [
+          7560,
+          68040,
+          1110510,
+          2777976
+        ],
+        "sample_columns": [
+          {
+            "n": 900169200,
+            "relations": [
+              {
+                "a": 26460,
+                "b": 34020,
+                "delta": 7560
+              },
+              {
+                "a": 11340,
+                "b": 79380,
+                "delta": 68040
+              },
+              {
+                "a": 810,
+                "b": 1111320,
+                "delta": 1110510
+              },
+              {
+                "a": 324,
+                "b": 2778300,
+                "delta": 2777976
+              }
+            ]
+          },
+          {
+            "n": 279467107200,
+            "relations": [
+              {
+                "a": 524880,
+                "b": 532440,
+                "delta": 7560
+              },
+              {
+                "a": 495720,
+                "b": 563760,
+                "delta": 68040
+              },
+              {
+                "a": 211410,
+                "b": 1321920,
+                "delta": 1110510
+              },
+              {
+                "a": 97200,
+                "b": 2875176,
+                "delta": 2777976
+              }
+            ]
+          },
+          {
+            "n": 1749743222256,
+            "relations": [
+              {
+                "a": 1319004,
+                "b": 1326564,
+                "delta": 7560
+              },
+              {
+                "a": 1289196,
+                "b": 1357236,
+                "delta": 68040
+              },
+              {
+                "a": 879336,
+                "b": 1989846,
+                "delta": 1110510
+              },
+              {
+                "a": 529092,
+                "b": 3307068,
+                "delta": 2777976
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 7560,
+            "source_delta": 420,
+            "split_u": 18,
+            "split_v": 18
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 68040,
+            "source_delta": 3780,
+            "split_u": 18,
+            "split_v": 18
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1110510,
+            "source_delta": 61695,
+            "split_u": 18,
+            "split_v": 18
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 2777976,
+            "source_delta": 154332,
+            "split_u": 18,
+            "split_v": 18
+          }
+        ],
+        "transformed_N_values": [
+          900169200,
+          279467107200,
+          1749743222256
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 361,
+        "row_count": 4,
+        "rows": [
+          7980,
+          71820,
+          1172205,
+          2932308
+        ],
+        "sample_columns": [
+          {
+            "n": 1002966300,
+            "relations": [
+              {
+                "a": 27930,
+                "b": 35910,
+                "delta": 7980
+              },
+              {
+                "a": 11970,
+                "b": 83790,
+                "delta": 71820
+              },
+              {
+                "a": 855,
+                "b": 1173060,
+                "delta": 1172205
+              },
+              {
+                "a": 342,
+                "b": 2932650,
+                "delta": 2932308
+              }
+            ]
+          },
+          {
+            "n": 311381560800,
+            "relations": [
+              {
+                "a": 554040,
+                "b": 562020,
+                "delta": 7980
+              },
+              {
+                "a": 523260,
+                "b": 595080,
+                "delta": 71820
+              },
+              {
+                "a": 223155,
+                "b": 1395360,
+                "delta": 1172205
+              },
+              {
+                "a": 102600,
+                "b": 3034908,
+                "delta": 2932308
+              }
+            ]
+          },
+          {
+            "n": 1949559577884,
+            "relations": [
+              {
+                "a": 1392282,
+                "b": 1400262,
+                "delta": 7980
+              },
+              {
+                "a": 1360818,
+                "b": 1432638,
+                "delta": 71820
+              },
+              {
+                "a": 928188,
+                "b": 2100393,
+                "delta": 1172205
+              },
+              {
+                "a": 558486,
+                "b": 3490794,
+                "delta": 2932308
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 7980,
+            "source_delta": 420,
+            "split_u": 19,
+            "split_v": 19
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 71820,
+            "source_delta": 3780,
+            "split_u": 19,
+            "split_v": 19
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1172205,
+            "source_delta": 61695,
+            "split_u": 19,
+            "split_v": 19
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 2932308,
+            "source_delta": 154332,
+            "split_u": 19,
+            "split_v": 19
+          }
+        ],
+        "transformed_N_values": [
+          1002966300,
+          311381560800,
+          1949559577884
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      },
+      {
+        "column_count": 3,
+        "multiplier": 400,
+        "row_count": 4,
+        "rows": [
+          8400,
+          75600,
+          1233900,
+          3086640
+        ],
+        "sample_columns": [
+          {
+            "n": 1111320000,
+            "relations": [
+              {
+                "a": 29400,
+                "b": 37800,
+                "delta": 8400
+              },
+              {
+                "a": 12600,
+                "b": 88200,
+                "delta": 75600
+              },
+              {
+                "a": 900,
+                "b": 1234800,
+                "delta": 1233900
+              },
+              {
+                "a": 360,
+                "b": 3087000,
+                "delta": 3086640
+              }
+            ]
+          },
+          {
+            "n": 345021120000,
+            "relations": [
+              {
+                "a": 583200,
+                "b": 591600,
+                "delta": 8400
+              },
+              {
+                "a": 550800,
+                "b": 626400,
+                "delta": 75600
+              },
+              {
+                "a": 234900,
+                "b": 1468800,
+                "delta": 1233900
+              },
+              {
+                "a": 108000,
+                "b": 3194640,
+                "delta": 3086640
+              }
+            ]
+          },
+          {
+            "n": 2160176817600,
+            "relations": [
+              {
+                "a": 1465560,
+                "b": 1473960,
+                "delta": 8400
+              },
+              {
+                "a": 1432440,
+                "b": 1508040,
+                "delta": 75600
+              },
+              {
+                "a": 977040,
+                "b": 2210940,
+                "delta": 1233900
+              },
+              {
+                "a": 587880,
+                "b": 3674520,
+                "delta": 3086640
+              }
+            ]
+          }
+        ],
+        "selected_seed_columns": [
+          2778300,
+          862552800,
+          5400442044
+        ],
+        "surviving_rows": [
+          {
+            "layout": "aligned",
+            "new_delta": 8400,
+            "source_delta": 420,
+            "split_u": 20,
+            "split_v": 20
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 75600,
+            "source_delta": 3780,
+            "split_u": 20,
+            "split_v": 20
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 1233900,
+            "source_delta": 61695,
+            "split_u": 20,
+            "split_v": 20
+          },
+          {
+            "layout": "aligned",
+            "new_delta": 3086640,
+            "source_delta": 154332,
+            "split_u": 20,
+            "split_v": 20
+          }
+        ],
+        "transformed_N_values": [
+          1111320000,
+          345021120000,
+          2160176817600
+        ],
+        "trivial_square_scale": true,
+        "type": "product_lift",
+        "verification": {
+          "num_N": 3,
+          "num_deltas": 4,
+          "ok": true
+        }
+      }
+    ],
+    "lift_count": 176,
+    "m_max": 2000,
+    "nontrivial_lift_count": 0,
+    "seed_column_count": 3,
+    "seed_rows": [
+      420,
+      3780,
+      61695,
+      154332
+    ],
+    "selected_column_sizes": [
+      2,
+      3
+    ],
+    "tested_column_subsets": 4,
+    "tested_multiplier_count": 2000,
+    "trivial_square_scale_count": 176
+  }
+}

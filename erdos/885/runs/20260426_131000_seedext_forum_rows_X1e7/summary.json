@@ -1,0 +1,15 @@
+{
+  "column_count": 3,
+  "delta_max": null,
+  "delta_mode": "complete",
+  "fixed_rows": [
+    36,
+    468,
+    692,
+    1028
+  ],
+  "top_extra_deltas": [],
+  "witness_count": 0,
+  "written_columns": 3,
+  "x_bound": 10000000
+}

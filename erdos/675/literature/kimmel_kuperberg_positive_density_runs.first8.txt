@@ -1,0 +1,525 @@
+arXiv:2406.04174v2  [math.NT]  26 Mar 2025
+POSITIVE DENSITY FOR CONSECUTIVE RUNS OF SUMS OF TWO
+SQUARES
+NOAM KIMMEL AND VIVIAN KUPERBERG
+Abstract. We study the distribution of consecutive sums of two squares in arit hmetic
+progressions. We show that for any odd squarefree modulus q, any two reduced congruence
+classes a1 and a2 mod q, and any r1, r2 ≥ 1, a positive density of sums of two squares begin a
+chain of r1 consecutive sums of two squares, all of which are a1 mod q, followed immediately
+by a chain of r2 consecutive sums of two squares, all of which are a2 mod q. This is an
+analog of the result of Maynard for the sequence of primes, showin g that for any reduced
+congruence class a mod q and for any r ≥ 1, a positive density of primes begin a sequence
+of r consecutive primes, all of which are a mod q.
+Contents
+1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2. Statement of sieve results and proof of the main theorem . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.1. GPY sieve setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . 4
+2.2. Conventions and notation . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . 7
+2.3. Statement of the main sieve theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2.4. Proof of Theorem 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . 10
+3. Proofs of sieve results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.1. Sieve notation and setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.2. Auxiliary lemmas for sieve weights . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.3. Auxiliary lemmas for sums of two squares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+3.4. Estimating S1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . 23
+3.5. Estimating S(m)
+2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . 24
+3.6. Estimating S(m1,m 2)
+3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . 26
+3.7. Estimating S(m)
+4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . 31
+3.8. Estimating S(m)
+5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . 32
+3.9. Estimating S(b)
+6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . 37
+4. Singular series estimates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . 41
+4.1. Averaging over B and ν0 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. 41
+4.2. Averaging over S(b)
+6 (ν1) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . 42
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+Index of Notation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+2020 Mathematics Subject Classiﬁcation. 11N69, 11N36.
+Key words and phrases. Sums of two squares, Sieve methods, Arithmetic progressions.
+N.K. was supported by the European Research Council (ERC) unde r the European Union’s Horizon
+2020 research and innovation program (Grant agreement No. 786 758). V.K. was supported by the NSF
+Mathematical Sciences Research Program through the grant DMS -2202128. The authors would like to
+thank the anonymous referee for helpful comments.
+1
+
+---PAGE---
+
+2 NOAM KIMMEL AND VIVIAN KUPERBERG
+1. Introduction
+The sequence of primes is known, by the prime number theorem in arit hmetic progressions,
+to be equidistributed among reduced congruence classes to any mo dulus q. To be precise,
+for any modulus q and for any reduced congruence class a mod q, let π(x; q, a ) denote the
+number of primes p ≤ x with p ≡ a mod q and let π(x) denote the number of primes p ≤ x.
+Then
+π(x; q, a ) = π(x)
+φ(q) (1 + o(1)).
+Much less is known about analogous questions for strings of consec utive primes. Let pn
+denote the sequence of primes in increasing order. For any M ≥ 1, for a ﬁxed modulus q
+and any M-tuple a = [a1, . . . , a M ] of reduced residue classes mod q, let π(x; q, a) denote the
+number of strings of consecutive primes matching the residue class es of a. That is, deﬁne
+π(x; q, a) := # {pn ≤ x : pn+i− 1 ≡ ai (mod q) ∀1 ≤ i ≤ M}.
+Any randomness-based model of the primes would suggest that M-tuples of consecutive
+primes equidistribute among the possibilities for a, as is the case when M = 1. That
+is, one would expect that π(x; q, a) ∼ π (x)
+φ (q)M as x → ∞ . Lemke Oliver and Soundarara-
+jan [12] provide a heuristic argument based on the Hardy–Littlewoo d k-tuples conjectures
+for estimating π(x; q, a) which agrees with this expectation (although it also predicts large
+second-order terms creating biases among the patterns).
+However, little is known about π(x; q, a) when M ≥ 2. In most cases, it is not even known
+that π(x; q, a) tends to inﬁnity as x → ∞ , i.e. it is not known that a occurs inﬁnitely often
+as a consecutive pattern in the sequence of primes mod q. If φ(q) = 2 and a1 ̸= a2 mod q
+are distinct reduced congruence classes, then π(x; q, [a1, a 2]) and π(x; q, [a2, a 1]) must each
+tend to inﬁnity as an immediate consequence of Dirichlet’s theorem fo r primes in arithmetic
+progressions; Knapowski and Tur´ an [11] observed that ifφ(q) = 2, all four patterns of length
+2 occur inﬁnitely often.
+As for arbitrary q, Shiu [19] used the Maier matrix method to prove that for any cons tant
+tuple a of any length, π(x; q, a) tends to inﬁnity as x → ∞ . That is, for any ﬁxed reduced
+residue class a mod q, there are inﬁnitely many arbitrarily long strings of consecutive prim es,
+all of which are congruent to a mod q. This result was rederived by Banks, Freiberg, and
+Turnage-Butterbaugh [2] using new developments in sieve theory. Maynard [14] showed
+further that a positive density of primes begin strings of M consecutive primes, all of which
+are congruent to a mod q; that is, that π(x; q, a) ≫ π(x) whenever a is a constant pattern.
+It is not currently known that π(x; q, a) tends to inﬁnity for any other case, leading to the
+question of what more can be proven for other arithmetic sequenc es. In previous work [10],
+the authors considered the sequence of integer sums of two squa res. Let E denote the set of
+sums of two squares and let En denote the increasing sequence of sums of two squares, so
+that
+E = {a2 + b2 : a, b ∈ Z} = {En : n ∈ N}.
+Let N(x) denote the number of sums of two squares less than x. A number n is in E if and
+only if every prime congruent to 3 mod 4 divides n to an even power; that is, if n factors
+as n = ∏
+p pep then ep is even whenever p ≡ 3 mod 4. For a modulus q = ∏
+p pep and a
+congruence class a mod q, write ( a, q ) = ∏
+p pfp, where fp ≤ ep for all p. There are inﬁnitely
+many n ∈ E congruent to a mod q if and only if the following two conditions hold:
+
+---PAGE---
+
+POSITIVE DENSITY FOR CONSECUTIVE RUNS OF SUMS OF TWO SQUARES 3
+• for any prime p ≡ 3 mod 4, fp is either even or fp = ep, and
+• if e2 − f2 ≥ 2, then a
+2f2 ̸≡ 3 mod 4.
+We will call a congruence class a mod q E-admissible if it satisﬁes these conditions, i.e. if
+there exists a solution to x2 + y2 ≡ a mod q. For a modulus q, an integer M ≥ 1, and an
+M-tuple a = [a1, . . . , a M ] of E-admissible residue classes mod q, let
+N(x; q, a) := # {En ≤ x : En+i− 1 ≡ ai mod q∀1 ≤ i ≤ M}.
+Just as in the prime case, one expects N(x; q, a) to tend to inﬁnity for any tuple of E-
+admissible residue classes, and in fact one expects N(x; q, a) ≫ N(x). In other words, one
+expects N(x; q, a) to represent a positive proportion of sums of two squares. When the
+modulus q ≡ 1 mod 4 is a prime, David, Devin, Nam, and Schlitt [3] develop heuristics f or
+second-order terms in the asymptotics of N(x; q, a) analagously to [12]. Their heuristics are
+based on the analog of the Hardy–Littlewood k-tuples conjecture in the setting of sums of
+two squares, which was developed in [4]. For a of length 1, these second-order terms are
+reminiscent of Chebyshev’s bias, and were considered by Gorodets ky in [7].
+The authors [10] proved that for any modulus q, for any 3-tuple of E-admissible residue
+classes [ a1, a 2, a 3],
+lim
+x→∞
+N(x; q, [a1, a 2, a 3]) → ∞ .
+They also showed that for any odd, squarefree modulus q, for any residues a1 and a2 with
+(ai, q ) = 1, for any tuple of the form [ a1, . . . , a 1, a 2, . . . , a 2], i.e. the concatenation of two
+constant tuples with values a1 and a2,
+(1) lim
+x→∞
+N(x; q, [a1, . . . , a 1, a 2, . . . , a 2]) → ∞ .
+Note that this result does not extend to all E-admissible residue classes a1 and a2.
+In this paper, we strengthen (1) by proving the following theorem.
+Theorem 1. Let q ≥ 1 be a squarefree odd modulus and let ˜a1 and ˜a2 be reduced residue
+classes modulo q. Let M ≥ 1, and let a = [ a1, . . . , a M ] be a tuple of residue classes such
+that for some 1 ≤ M1 ≤ M, ai = ˜a1 whenever i ≤ M1 and ai = ˜a2 whenever i > M 1. Then
+N(x; q, a) ≫ N(x).
+That is, any concatenation of two constant tuples appears with po sitive density among
+consecutive increasing sums of two squares modulo q.
+Remark. Again, this result does not extend to all E-admissible residue classes; ˜a1 and ˜a2
+must be relatively prime to q. For squarefree odd q, in fact, all residue classes modulo q are
+E-admissible. For ﬁxed squarefree odd q, and for ˜a1, ˜a2 modulo q such that if p|( ˜ai, q ) then
+p ≡ 1 mod 4, we expect our proof to apply with only minor adjustments in t he computations
+of the technical results. We also expect that Theorem 1 extends w ith essentially no new ideas
+to the case where q is not squarefree, if substantially more care is taken on the backgr ound
+lemmas on evaluating sums of two squares in Section 3.3. Finally, our pr oof may apply
+essentially as written to the case where ( ˜ai, q ) is divisible by primes that are 3 mod 4.
+However, these should appear with a smaller (yet still positive) dens ity (for example, there
+are more sums of two squares that are 1 mod 3 than that are 0 mod 3 ), and it may be that
+understanding the case when q is not squarefree is necessary for understanding this case.
+The proof of Theorem 1 follows along the same basic idea as Maynard’s result [14] that
+constant tuples appear with positive density among consecutive inc reasing primes. This
+
+---PAGE---
+
+4 NOAM KIMMEL AND VIVIAN KUPERBERG
+work in turn expands on the work of Maynard [13], in which he shows t hat for any m, for
+any large enough k, and for any P-admissible (that is, admissible in a precise sense with
+respect to the sequence of prime numbers) k-tuple of linear forms {L1(n), . . . , L k(n)}, there
+exist inﬁnitely many n such that at least m of the Li(n) are simultaneously prime. In [14],
+for a tuple {L1(n) = qn + a1, . . . , L k(n) = qn + ak} where each Li(n) is chosen such that
+Li(n) ≡ a mod q for all i, Maynard shows that for inﬁnitely many n, at least m of the Li(n)
+are simultaneously prime and the numbers in between the outputs of the Li(n) have small
+prime factors (and thus are not themselves prime). He then avera ges over many such tuples
+of Li(n) in order to obtain a lower bound of positive density.
+In the setting of sums of two squares, stronger sieving results ar e available than those
+that are available in the prime case. McGrath [15] showed that for an y m, for large enough
+k, for any k-tuple {h1, . . . , h k} which is P-admissible, and for any partition of {h1, . . . , h k}
+into m sub-tuples or “bins,” for inﬁnitely many n, there exists an hi in each bin such that
+n + hi ∈ E. Banks, Freiberg, and Maynard [1] use a similar, but weaker, result in the case
+of primes to show that a positive proportion of real numbers are limit points of the sequence
+of normalized prime gaps, work which was reﬁned in [17] and [16].
+In order to prove Theorem 1, we strengthen the sieve result of Mc Grath [15] in the same
+way that Maynard [14] had expanded his previous work [13]. Our pape r is organized as fol-
+lows. In Section 2, we will state our sieve theoretic results and use t hem to prove Theorem 1.
+In Section 3, we will prove the sieve theoretic results. Our notation and setup is explained in
+Section 2.1, with an additional explanation of more technical sieve no tation in Section 3.1.
+Finally, in Section 4, we evaluate certain averages of “singular series ” constants that appear
+in the proof of Theorem 1.
+2. Statement of sieve results and proof of the main theorem
+2.1. GPY sieve setup. Our argument will follow the Goldston–Pintz–Yıldırım method
+for detecting primes in P-admissible k-tuples, building oﬀ of work of Maynard [14], which
+uses a rather sophisticated version of this method, and of McGrat h [15], which develops a
+second-moment version of this method for sums of two squares.
+An P-admissible k-tuple of linear forms ( ℓ1(n), . . . , ℓ k(n)) is one such that, for every prime
+p, there exists some a mod p with ℓi(a) ̸= 0 mod p for all 1 ≤ i ≤ k. Using the GPY method,
+Maynard [13] showed that for all integers m ≥ 2, there exists large enough k such that for
+any P-admissible k-tuple of linear forms ( ℓ1(n), . . . , ℓ k(n)), there are many integers n ≥ 1
+for which at least m of the values ℓ1(n), . . . , ℓ k(n) are simultaneously prime.
+This statement follows from the construction of positive weights w(n) such that for all x,
+(2)
+∑
+x≤ n<2x
+( k∑
+i=1
+1P(ℓi(n)) − m + 1
+)
+w(n) > 0,
+where 1P denotes the indicator function of the set P of prime numbers. The inequality (2)
+implies that there exists a strictly positive summand, so that for som e n with x ≤ n < 2x,
+k∑
+i=1
+1P(ℓi(n)) > m − 1,
+and thus there are at least m primes among the values of ℓi(n).
+
+---PAGE---
+
+POSITIVE DENSITY FOR CONSECUTIVE RUNS OF SUMS OF TWO SQUARES 5
+We will require a version of this technique that is adapted in three diﬀe rent ways: ﬁrst, we
+will detect sums of two squares instead of primes; second, we will ne ed a “second moment”
+adaptation to detect slightly more delicate patterns among the seq uence of sums of two
+squares; and third, we will exclude certain values of n so that we will be able to average over
+many diﬀerent k-tuples.
+We begin by deﬁning a certain weighted indicator function of sums of t wo squares. For
+any function f (say, the indicator functions 1P or 1E), in practice, applying the “second
+moment” adaptation requires an understanding of two-point corr elations of the form
+∑
+x≤ n<2x
+f (ℓi(n))f (ℓj(n)).
+Estimates for two-point correlations of the standard indicator fu nction of sums of two squares
+are not known, so we will instead make use of Hooley’s ρ-function, which was ﬁrst introduced
+in [8] and also used in this context by McGrath [15].
+The ρ function is deﬁned by
+(3) ρ(n) = r2(n)t(n),
+where r2(n) is the representation function of n, given by
+r2(n) := # {(x, y ) ∈ Z2 : x2 + y2 = n}(4)
+= 4
+∑
+d|n
+d odd
+(− 1)
+d− 1
+2 .
+and
+(5) t(n) = tx,θ 1(n) :=
+∑
+a|n
+a≤ v
+p|a⇒ p≡ 1 mod 4
+µ(a)
+g2(a)
+(
+1 − log a
+log v
+)
+, (v = xθ1).
+Here θ1 is a ﬁxed small constant with θ1 < 1/ 18; for example, Hooley takes θ1 = 1 / 20.
+Moreover, g2 is the multiplicative function deﬁned on primes via
+(6) g2(p) =
+{
+2 − 1
+p if p ≡ 1 (mod 4)
+1
+p if p ≡ 3 (mod 4) .
+Using the indicator function ρ, McGrath [15] uses a second-moment bound to prove the
+existence of sums of two squares in diﬀerent “bins” of the same tup le. To state this precisely,
+ﬁx M, k ≥ 1, and let K denote the product K = M k. Let q ≥ 1 be a ﬁxed odd integer,
+and ﬁx a tuple H∗ of size K such that 4 |hi, ( hi, q ) = 1, and for ℓi(n) = qn + hi, the tuple
+of linear forms {ℓ1(n), . . . , ℓ K(n)} is P-admissible (indeed, McGrath’s result is phrased as
+requiring the tuple to be P-admissible, not E-admissible). Suppose further that we have a
+ﬁxed partition H = B1 ⊔ · · · ⊔BM where |Bi|= k for all i. McGrath showed that there exists
+a real number u ≥ 1 and a non-negative weight function w(n) such that for all suﬃciently
+large x,
+(7)
+∑
+x<n≤ 2x
+
+ u2 −
+M∑
+i=1
+(∑
+ℓ∈ Bi
+ρ(ℓ(n)) − u
+)2
+ w(n) > 0.
+
+---PAGE---
+
+6 NOAM KIMMEL AND VIVIAN KUPERBERG
+The positivity of the left-hand side of (7) implies that for all suﬃcient ly large x, there exists
+some n with x < n ≤ 2x such that
+M∑
+i=1
+(∑
+ℓ∈ Bi
+ρ(ℓ(n)) − u
+)2
+< u 2.
+If for any bin Bi, there is no ℓ ∈ Bi with ℓ(n) ∈ E, then ∑
+ℓ∈ Bi ρ(ℓ(n)) = 0, and thus
+u2 ≤
+(∑
+ℓ∈ Bi
+ρ(ℓ(n)) − u
+)2
+≤
+M∑
+i=1
+(∑
+ℓ∈ Bi
+ρ(ℓ(n)) − u
+)2
+< u 2,
+a contradiction. Thus in particular the inequality (7) implies that for a ll suﬃciently large
+x, there exists an n with x < n ≤ 2x and such that for every bin Bi, there exists an ℓ ∈ Bi
+with ℓ(n) = qn + h ∈ E.
+Our aim is to combine this second-moment version of the GPY sieve set up with the goal
+of excluding certain values of n for each tuple H∗ in order to be able to average over many
+diﬀerent tuples. In particular, we will choose weights w(n) such that for any n making
+a positive contribution to the left-hand side of (7), ℓi(n) does not have any ‘small’ prime
+factors p ≡ 3 mod 4 for any of the ℓi, and for any b ≤ η√
+log x which is not in H (i.e. b ̸= hi),
+the integer qn + b is divisible exactly once by some ‘small’ prime p ≡ 3 mod 4. These may
+seem like artiﬁcial constraints to place on the values n, but in fact n that do not satisfy
+these constraints are exceptionally rare; intuitively, although it ca nnot be proven explicitly,
+the weights w(n) place emphasis on those n where all ℓi(n) ∈ E (or close to it), and values
+qn + b that are outside of the tuple are unlikely to be sums of two squares. In [14], Maynard
+takes advantage of a similar device to average over diﬀerent subse ts H∗, which allows him
+to prove a lower bound of positive density on the tuples he is counting .
+Our precise setup is as follows. As in the setup of Theorem 1, we let q be a ﬁxed odd
+squarefree modulus, and we also ﬁx the parameters M and two congruence classes ˜a1 and
+˜a2 modulo q, as well as M1 with 1 ≤ M1 ≤ M. We will consider tuples of length K,
+where K = kM , split into bins of size k. We deﬁne integers a1, . . . , a K as follows. For i with
+1 ≤ i ≤ M1k, we let ai be the smallest positive integer with ai ≡ ˜a1 mod q and ai ≡ 1 mod 4,
+whereas for i with M1k + 1 ≤ i ≤ K, we let ai be the second-smallest positive integer with
+ai ≡ ˜a2 mod q and ai ≡ 1 mod 4 (that is, ai − 4q is the smallest such positive integer).
+The values of ai for M1k + 1 ≤ i ≤ K are shifted by q to ensure that ai1 < a i2 whenever
+1 ≤ i1 ≤ M1k < i 2 ≤ K. Note that there are only two distinct values for the ai, but for ease
+of notation we deﬁne K values ai, even though these values are repetitive.
+Then, for any tuple of integers b = ( b1, . . . , b K) with bi ≡ 3 mod 4 and 3 ≤ bi ≤ η
+q
+√ log x
+for all i, we will deﬁne the K-tuple L = L(b) = {ℓi(n)}K
+i=1 of linear forms given by
+(8) ℓi(n) := qn + ai + qbi.
+Here η is a positive constant to be set later. Note that the constraints on ai and bi modulo
+4 imply that whenever n ≡ 1 mod 4, we also have ℓi(n) ≡ 1 mod 4.
+We will ultimately average over many diﬀerent choices of b. Our average will be taken
+over b lying in a slightly restricted set of tuples B, where we deﬁne
+(9) B :=
+
+
+ b = (b1, . . . , b K)
+⏐
+⏐
+⏐
+⏐
+⏐
+⏐
+bi ≡ 3 mod 4 ,
+b1 = 3
+3 ≤ bi ≤ η
+2q
+√ log x ∀ 2 ≤ i ≤ M1k
+η
+2q
+√ log x < b i ≤ η
+q
+√ log x ∀ M1k < i ≤ K
+
+
+ .
+
+---PAGE---
+
+POSITIVE DENSITY FOR CONSECUTIVE RUNS OF SUMS OF TWO SQUARES 7
+The key consequence of this deﬁnition (along with the deﬁnition of th e ai’s) is that for any
+n, ℓi1(n) < ℓi2(n) whenever 1 ≤ i1 ≤ M1k and M1k + 1 ≤ i2 ≤ K.
+As described above, we will write L = B1 ⊔ · · · ⊔BM , where
+(10) Bi := {ℓ(i− 1)k+1(n), . . . , ℓ ik(n)}.
+The Bi, which we refer to as bins, partition the tuple L into M bins, each of size k.
+For certain real numbers ξ, η > 0 (to be ﬁxed later), a certain real number u, and a
+nonnegative weight function wn(L), we consider a sum of the shape
+(11)
+∑
+x<n≤ 2x
+[
+u2 −
+M∑
+i=1
+(∑
+ℓ∈ Bi
+ρ(ℓ(n)) − u
+)2
+−
+K∑
+j=1
+∑
+p<xξ
+p≡ 3 mod 4
+p|ℓj(n)
+u2
+−
+∑
+b≤ η√ log x
+ℓ(b)̸∈L
+1S(ξ)(ℓ(b)(n))u2
+]
+wn(L),
+where S(ξ) is the set of integers such that for all primes p < x ξ which satisfy p ≡ 3 mod 4
+either p ∤n or p2|n. We write ℓ(b)(n) := qn + b, so that the ﬁnal sum in (11) is a sum over
+b ≤ η√ log x such that ℓ(b) ̸∈ L . A choice of weights wn(L) such that (11) is positive implies
+that for some n with x < n ≤ 2x,
+u2 −
+M∑
+i=1
+(∑
+ℓ∈ Bi
+ρ(ℓ(n)) − u
+)2
+−
+K∑
+j=1
+∑
+p<xξ
+p≡ 3 mod 4
+p|ℓj(n)
+u2 −
+∑
+b≤ η√ log x
+ℓ(b)̸∈L
+1S(ξ)(ℓ(b)(n))u2 > 0,
+which in turn implies that:
+• for each i, there exists a linear form ℓ ∈ Bi with ρ(ℓ(n)) ̸= 0 and thus ℓ(n) ∈ E;
+• for each j, with 1 ≤ j ≤ K, ℓj(n) is not divisible by any prime p < x ξ with p ≡
+3 mod 4; and
+• for each b ≤ η√ log x with ℓ(b) not in L, we have ℓ(b)(n) ̸∈ S(ξ), so there exists some
+prime p < x ξ with p ≡ 3 mod 4 such that p∥ℓ(b)(n).
+In order to take advantage of this positivity argument, we will need to evaluate the sums
+over n appearing in (11). These evaluations are accomplished in Theorem 2, which we state
+in the next section before completing the proof of Theorem 1.
+2.2. Conventions and notation. Before stating our main sieve theorem and presenting the
+proof of Theorem 1, we ﬁrst ﬁx some notation and conventions tha t we will use throughout
+the paper. An index for key quantities appears after the referen ces.
+All asymptotic notation, such as O(·), o (·), ≪ , and ≫ , should be interpreted as referring
+to the limit x → ∞ . We will use Vinogradov f ≪ g to mean f = O(g), that is, |f | ≤ Cg
+for some absolute constant C. Any constants are absolute unless otherwise noted. For all
+sums or products over a variable p (or p′), the variable p will be assumed to lie in the prime
+numbers; all other sums and products will be assumed to be taken o ver variables lying in
+the natural numbers N≥ 1 unless otherwise speciﬁed.
+Recall that the squarefree odd modulus q is ﬁxed throughout. We denote q = q1q3, where
+q1 is a product of primes that are 1 mod 4 and q3 is a product of primes that are 3 mod 4.
+
+---PAGE---
+
+8 NOAM KIMMEL AND VIVIAN KUPERBERG
+Let θ2 > 0 be a ﬁxed positive real number such that 0 < θ1 + θ2 < 1/ 18, and let R = xθ2/ 2.
+Letting D0 = η√ log x for a constant η > 0 to be ﬁxed later, we deﬁne
+(12) W =
+∏
+p≤ D0
+p≡ 3 mod 4
+p∤q
+p.
+Note that q3W is the product of all primes p ≤ D0 which are 3 mod 4. This deﬁnition of W
+diﬀers from that of McGrath [15] because, while the value of D0 is much larger than that
+used by McGrath, it is not divisible by any primes p ≡ 1 mod 4.
+We denote by A the Landau–Ramanujan constant, given by
+(13) A = 1√
+2
+∏
+p≡ 3 mod 4
+(
+1 − 1
+p2
+)− 1
+2
+= π
+4
+∏
+p≡ 1 mod 4
+(
+1 − 1
+p2
+)1/ 2
+.
+We also make use of a normalization constant B, deﬁned as
+(14) B = A
+Γ(1/ 2)
+√
+L(1, χ 4)
+· φ(q3W )(log R)1/ 2
+q3W = 2A
+π
+φ(q3W )(log R)1/ 2
+q3W .
+Here χ 4 denotes the non-trivial Dirichlet character modulo 4. Finally, we will d enote by V
+the constant given by
+(15) V =
+∏
+p≡ 1 mod 4
+(
+1 + 1
+(2p − 1)2
+)
+≈ 1. 016.
+For K-tuples in NK, we will use the notation that a boldface letter such as d represents a tu-
+ple d = (d1, . . . , d K), whereas a non-boldface d represents the product of the entries ∏K
+i=1 di.
+Given tuples d and e, we will let [ d, e] denote the product of the least common multiples∏K
+i=1[di, e i], let ( d, e) denote the product of the greatest common divisors ∏K
+i=1(di, e i), and
+let d|e denote the K conditions that di|ei for 1 ≤ i ≤ K.
+2.3. Statement of the main sieve theorem. We are now ready to state our main sieving
+theorem, which we will use in the next section to deduce Theorem 1.
+Theorem 2. Fix b ∈ B and let L(b) be the ﬁxed K-tuple of linear forms {ℓi(n)}K
+i=1 given
+by (8). Let ν0 be a ﬁxed residue class modulo W such that for all ℓ ∈ L , (ℓ(ν0), W ) = 1 .
+Then there exists a choice of nonnegative weights wn(L) ≥ 0, as well as a constant LK(F ),
+such that
+(16) wn(L) ≪
+( log R
+log D0
+)K K∏
+i=1
+∏
+p|ℓi(n)
+p≡ 3 mod 4
+4
+and the following estimates hold:
+a) Let S1(ν0) be the sum deﬁned by
+S1(ν0) :=
+∑
+x<n≤ 2x
+n≡ 1 mod 4
+n≡ ν0 mod W
+wn(L).

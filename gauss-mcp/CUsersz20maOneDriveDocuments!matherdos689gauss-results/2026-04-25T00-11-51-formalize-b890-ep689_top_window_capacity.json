@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-25T00-11-51-formalize-b890-ep689_top_window_capacity",
+  "status": "error",
+  "session_id": "",
+  "command": "/formalize",
+  "input": "Formalize in Lean 4 with Mathlib a finite combinatorial lemma inspired by Erdos Problem 689 parity-first top layer. Let I, H, Rlarge, Rmedium be finite sets. Assume H and Rlarge are disjoint subsets of I. Assume every h in H needs one selected incidence into I and every r in Rlarge needs one selected incidence into I. Suppose each large element contributes capacity at most 1 into I, and each medium element contributes capacity at most c into I. Prove the necessary inequality |H| <= c * |Rmedium| when a valid assignment exists, because the |Rlarge| incidences consume all large capacity and cancel. You may state it abstractly with natural numbers: if |H| + |Rlarge| <= |Rlarge| + c*|Rmedium| then |H| <= c*|Rmedium|. Attempt a proof.",
+  "started_at": "2026-04-25T00:11:51Z",
+  "finished_at": "2026-04-25T00:11:52Z",
+  "duration_s": 1.19,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "resolver_failure",
+    "message": "AutoformalizePreflightError: Active working directory does not exist: /mnt/c/Users/z20ma/OneDrive/Documents/!math/gauss-mcp/C:\\Users\\z20ma\\OneDrive\\Documents\\!math\\gauss-test",
+    "log_tail": ""
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-25T00-11-51-formalize-b890-ep689_top_window_capacity.log",
+  "worker_pid": 2789,
+  "last_heartbeat_at": 1777075912.3631845,
+  "_started_monotonic": 1777075911.4762166
+}

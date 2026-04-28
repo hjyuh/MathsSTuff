@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T22-34-32-prove-d3ff-ep488_v50_G3_deg2_mate_forces_3u",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v50 / G3: Forced second collision of {2:3} mate (U3)\n-- Claim: If deg_B(a) = 3 and u = 3a/2 \u2208 C, then deg_B(u) \u2264 2.\n-- Moreover, if deg_B(u) = 2, the second height is forced to be 3u,\n-- with partner in {3u/4, 3u/5}.\n--\n-- Simplified target: under the hypotheses, the only k \u2208 {2,3,4,5} with\n-- k*u \u2264 n besides k=2 (which gives height 3a) is k=3.\n\nimport Mathlib.Tactic\n\n/-- Under the top window with 2q \u2264 n < 3q, if u \u2208 (q/2, q] and u = 3a/2 where\n    a > q/2, then for any k \u2208 {3, 4, 5}, k*u \u2264 n implies k = 3. -/\ntheorem deg2_mate_forces_height_3u\n    {q n a u : \u2115}\n    (hq : 0 < q)\n    (hn_lb : 2 * q \u2264 n) (hn_ub : n < 3 * q)\n    (ha_lb : q / 2 < a) (ha_ub : 5 * a < 3 * q)  -- a < 3q/5\n    (hu_def : 2 * u = 3 * a)\n    (hu_lb : q / 2 < u) (hu_ub : u \u2264 q)\n    (k : \u2115) (hk : k = 3 \u2228 k = 4 \u2228 k = 5)\n    (hkle : k * u \u2264 n) :\n    k = 3 := by\n  sorry\n",
+  "started_at": "2026-04-16T22:34:32Z",
+  "finished_at": "2026-04-16T22:34:49Z",
+  "duration_s": 17.54,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca8FJVLEZ3YHpqhC4H6LD\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-34-32-prove-d3ff-ep488_v50_G3_deg2_mate_forces_3u.log",
+  "worker_pid": 2558,
+  "last_heartbeat_at": 1776378887.4361265,
+  "_started_monotonic": 1776378872.2122304
+}

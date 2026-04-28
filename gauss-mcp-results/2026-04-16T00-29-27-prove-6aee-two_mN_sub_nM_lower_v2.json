@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T00-29-27-prove-6aee-two_mN_sub_nM_lower_v2",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- For m > n and g > 0: 2m(n/g) \u2212 n(m/g) \u2265 m((n/g)\u22121) + (m/g).\n    Used in the {2,3} exceptional case of the supermodularity proof.\n    Proof: write n = g\u00b7N + s, m = g\u00b7M + r. Then 2mN \u2212 nM = gMN + 2sN \u2212 rM \u2265 M(g(N\u22121)+1). -/\ntheorem two_mN_sub_nM_lower (m n g : \u2115)\n    (hg : 0 < g) (hmn : n < m) :\n    (m : \u2124) * (((n / g : \u2115) : \u2124) - 1) + ((m / g : \u2115) : \u2124) \u2264\n    2 * (m : \u2124) * ((n / g : \u2115) : \u2124) - (n : \u2124) * ((m / g : \u2115) : \u2124) := by\n  sorry",
+  "started_at": "2026-04-16T00:29:27Z",
+  "finished_at": "2026-04-16T00:29:45Z",
+  "duration_s": 18.25,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca6WFtXQFzvcgCNYZkvmM\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-29-27-prove-6aee-two_mN_sub_nM_lower_v2.log",
+  "worker_pid": 1514,
+  "last_heartbeat_at": 1776299382.5415452,
+  "_started_monotonic": 1776299367.3431766
+}

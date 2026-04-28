@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish Preterite & Imperfect Drill</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #0a0a1a;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Particle canvas background */
+#bg-canvas {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+}
+
+/* Confetti canvas */
+#confetti-canvas {
+  position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+}
+
+#app {
+  width: 100%; max-width: 700px; padding: 20px;
+  position: relative; z-index: 1;
+}
+
+/* Screen transitions */
+.screen-enter {
+  animation: screenIn 0.45s cubic-bezier(0.16,1,0.3,1) both;
+}
+@keyframes screenIn {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+h1 {
+  font-size: 2rem; margin-bottom: 8px; color: #fff;
+  animation: fadeInUp 0.5s ease-out;
+  text-shadow: 0 0 30px rgba(78,204,163,0.15);
+}
+h2 { font-size: 1.3rem; margin-bottom: 12px; color: #ccc; }
+.subtitle {
+  color: #666; margin-bottom: 28px; font-size: 0.95rem;
+  animation: fadeInUp 0.5s ease-out 0.08s both;
+}
+
+/* Start screen */
+.filter-section {
+  margin-bottom: 18px;
+  animation: fadeInUp 0.4s ease-out both;
+}
+.filter-section:nth-of-type(1) { animation-delay: 0.1s; }
+.filter-section:nth-of-type(2) { animation-delay: 0.18s; }
+.filter-section h3 { font-size: 1rem; margin-bottom: 8px; color: #888; }
+.checkbox-group { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.checkbox-group label {
+  display: flex; align-items: center; gap: 6px; cursor: pointer;
+  font-size: 0.95rem; color: #bbb; transition: color 0.15s;
+}
+.checkbox-group label:hover { color: #fff; }
+.checkbox-group input[type="checkbox"],
+.checkbox-group input[type="radio"] {
+  width: 18px; height: 18px; accent-color: #4ecca3;
+}
+.helper-text {
+  margin-top: 10px; color: #777; font-size: 0.88rem; line-height: 1.5;
+}
+.mode-buttons {
+  display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;
+  animation: fadeInUp 0.4s ease-out 0.28s both;
+}
+.btn {
+  padding: 12px 24px; border: none; border-radius: 10px; font-size: 1rem;
+  cursor: pointer; font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16,1,0.3,1);
+  position: relative; overflow: hidden;
+}
+.btn::after {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,0.12) 0%, transparent 60%);
+  opacity: 0; transition: opacity 0.2s;
+}
+.btn:hover::after { opacity: 1; }
+.btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.btn:active:not(:disabled) { transform: scale(0.95); }
+.btn-primary {
+  background: linear-gradient(135deg, #4ecca3, #38b2ac);
+  color: #0a0a1a;
+  box-shadow: 0 4px 20px rgba(78,204,163,0.25);
+}
+.btn-primary:hover:not(:disabled) {
+  box-shadow: 0 6px 30px rgba(78,204,163,0.4);
+  transform: translateY(-1px);
+}
+.btn-secondary { background: #1e1e3a; color: #e0e0e0; border: 1px solid #333; }
+.btn-secondary:hover:not(:disabled) { background: #2a2a4a; border-color: #4ecca3; }
+.btn-danger {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(231,76,60,0.25);
+}
+.btn-danger:hover:not(:disabled) { box-shadow: 0 6px 30px rgba(231,76,60,0.4); transform: translateY(-1px); }
+
+/* Quick Start Button */
+.btn-highlight {
+  background: linear-gradient(135deg, #f39c12, #d35400);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(243, 156, 18, 0.25);
+  width: 100%;
+  margin-bottom: 12px;
+}
+.btn-highlight:hover:not(:disabled) { box-shadow: 0 6px 30px rgba(243, 156, 18, 0.4); transform: translateY(-1px); }
+
+
+/* Game HUD */
+.hud {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px; font-size: 0.9rem; color: #666;
+  animation: fadeIn 0.3s ease-out;
+}
+.hud .score { color: #4ecca3; font-weight: 700; font-size: 1.1rem; }
+.hud .streak { color: #f39c12; font-weight: 600; }
+.hud .timer {
+  color: #e74c3c; font-weight: 600; font-size: 1.1rem;
+  transition: all 0.2s;
+}
+.progress-bar {
+  width: 100%; height: 4px; background: #1a1a2e; border-radius: 2px;
+  margin-bottom: 20px; overflow: hidden;
+}
+.progress-bar .fill {
+  height: 100%; background: linear-gradient(90deg, #4ecca3, #38b2ac);
+  border-radius: 2px;
+  transition: width 0.6s cubic-bezier(0.16,1,0.3,1);
+  box-shadow: 0 0 8px rgba(78,204,163,0.5);
+}
+
+/* Question card */
+.question-card {
+  background: linear-gradient(145deg, #12122a, #16213e);
+  border-radius: 16px; padding: 32px; margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid rgba(78,204,163,0.08);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+  animation: cardIn 0.4s cubic-bezier(0.16,1,0.3,1);
+  position: relative; overflow: hidden;
+}
+.question-card::before {
+  content: ''; position: absolute; top: -1px; left: 20%; right: 20%; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(78,204,163,0.4), transparent);
+}
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.question-card .verb {
+  color: #4ecca3; font-weight: 700; font-size: 1.6rem;
+  text-shadow: 0 0 20px rgba(78,204,163,0.3);
+}
+.question-card .tense { color: #f39c12; font-weight: 600; }
+.question-card .subject { color: #e0e0e0; font-weight: 600; }
+.question-card p { font-size: 1.15rem; line-height: 1.7; }
+
+/* MC options */
+.options {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px; margin-bottom: 16px;
+}
+@media (max-width: 500px) { .options { grid-template-columns: 1fr; } }
+.option-btn {
+  padding: 14px 16px; border: 1px solid #252545; border-radius: 12px;
+  background: linear-gradient(145deg, #12122a, #1a1a3a);
+  color: #e0e0e0; font-size: 1.1rem;
+  cursor: pointer; text-align: center;
+  transition: all 0.2s cubic-bezier(0.16,1,0.3,1);
+  animation: optionIn 0.3s cubic-bezier(0.16,1,0.3,1) both;
+  position: relative; overflow: hidden;
+}
+.option-btn:nth-child(1) { animation-delay: 0.04s; }
+.option-btn:nth-child(2) { animation-delay: 0.08s; }
+.option-btn:nth-child(3) { animation-delay: 0.12s; }
+.option-btn:nth-child(4) { animation-delay: 0.16s; }
+@keyframes optionIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.option-btn:hover:not(.locked) {
+  border-color: #4ecca3; background: #1a2744;
+  box-shadow: 0 0 20px rgba(78,204,163,0.1);
+  transform: translateY(-2px);
+}
+.option-btn:active:not(.locked) { transform: scale(0.97); }
+.option-btn.correct {
+  border-color: #4ecca3; background: linear-gradient(145deg, #0f2a1f, #1a3a2a);
+  color: #4ecca3;
+  box-shadow: 0 0 25px rgba(78,204,163,0.2);
+  animation: correctPop 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+@keyframes correctPop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+.option-btn.wrong {
+  border-color: #e74c3c; background: linear-gradient(145deg, #2a0f0f, #3a1a1a);
+  color: #e74c3c;
+  animation: wrongShake 0.45s ease-out;
+}
+@keyframes wrongShake {
+  0%,100% { transform: translateX(0); }
+  12%,36%,60%,84% { transform: translateX(-5px); }
+  24%,48%,72% { transform: translateX(5px); }
+}
+.option-btn.locked { cursor: default; }
+.option-btn.option-verb {
+  border-style: dashed;
+  color: #f39c12;
+}
+.question-meta {
+  text-align: center; color: #666; font-size: 0.88rem; margin-bottom: 12px;
+  animation: fadeIn 0.25s ease-out;
+}
+.hint-card {
+  background: linear-gradient(145deg, rgba(243,156,18,0.12), rgba(22,33,62,0.85));
+  border: 1px solid rgba(243,156,18,0.22);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  animation: fadeInUp 0.25s ease-out;
+}
+.hint-label {
+  color: #f39c12;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.hint-text {
+  color: #ddd;
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+/* FRQ */
+.frq-input {
+  width: 100%; padding: 14px; font-size: 1.2rem; border-radius: 12px;
+  border: 1px solid #252545; background: linear-gradient(145deg, #12122a, #1a1a3a);
+  color: #e0e0e0; text-align: center; margin-bottom: 12px;
+  transition: all 0.2s;
+  animation: fadeInUp 0.3s ease-out;
+}
+.frq-input:focus {
+  outline: none; border-color: #4ecca3;
+  box-shadow: 0 0 20px rgba(78,204,163,0.15);
+}
+.frq-feedback {
+  text-align: center; font-size: 1.1rem; padding: 14px; border-radius: 12px;
+  margin-bottom: 12px;
+}
+.frq-feedback.correct {
+  background: linear-gradient(145deg, #0f2a1f, #1a3a2a);
+  color: #4ecca3; border: 1px solid rgba(78,204,163,0.2);
+  animation: correctPop 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.frq-feedback.wrong {
+  background: linear-gradient(145deg, #2a0f0f, #3a1a1a);
+  color: #e74c3c; border: 1px solid rgba(231,76,60,0.2);
+  animation: wrongShake 0.45s ease-out;
+}
+.next-btn-wrap {
+  text-align: center; margin-top: 12px;
+  animation: fadeIn 0.3s ease-out 0.15s both;
+}
+
+/* Results */
+.results { text-align: center; }
+.results h2 { animation: fadeInUp 0.4s ease-out; }
+.results .big-score {
+  font-size: 3.5rem; font-weight: 700;
+  background: linear-gradient(135deg, #4ecca3, #38b2ac);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: scoreReveal 0.7s cubic-bezier(0.16,1,0.3,1);
+  text-shadow: none;
+}
+@keyframes scoreReveal {
+  from { opacity: 0; transform: scale(0.3) translateY(30px); filter: blur(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); filter: blur(0); }
+}
+.results .accuracy {
+  font-size: 1.2rem; color: #999; margin: 8px 0 20px;
+  animation: fadeInUp 0.4s ease-out 0.2s both;
+}
+.missed-list {
+  text-align: left; background: linear-gradient(145deg, #12122a, #16213e);
+  border-radius: 12px; padding: 16px; border: 1px solid #1e1e3a;
+  margin: 16px 0; max-height: 300px; overflow-y: auto;
+  animation: fadeInUp 0.4s ease-out 0.25s both;
+}
+.missed-item {
+  padding: 8px 0; border-bottom: 1px solid #1a1a2e; font-size: 0.95rem;
+  animation: slideInLeft 0.3s ease-out both;
+}
+.missed-item:nth-child(n+2) { animation-delay: calc(0.04s * var(--i, 0)); }
+.missed-item:last-child { border-bottom: none; }
+.missed-item .prompt-text { color: #888; }
+.missed-item .answer-text { color: #4ecca3; font-weight: 600; }
+.missed-item .user-text { color: #e74c3c; }
+.results-buttons {
+  display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 16px;
+  animation: fadeInUp 0.4s ease-out 0.35s both;
+}
+
+/* Weak verbs */
+.weak-verbs {
+  margin-top: 24px; text-align: left;
+  animation: fadeInUp 0.4s ease-out 0.35s both;
+}
+.weak-verbs h3 { color: #f39c12; margin-bottom: 10px; }
+.weak-verb-item {
+  display: flex; justify-content: space-between; padding: 6px 0; font-size: 0.9rem;
+  border-bottom: 1px solid #1a1a2e;
+}
+.weak-verb-item:last-child { border-bottom: none; }
+.weak-verb-item .pct { color: #e74c3c; font-weight: 600; }
+
+/* ====== ANIMATIONS ====== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Streak */
+.streak-pop { animation: streakBounce 0.35s cubic-bezier(0.16,1,0.3,1); }
+@keyframes streakBounce {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+/* Score float */
+.score-float {
+  position: fixed; pointer-events: none; z-index: 999;
+  font-size: 1.5rem; font-weight: 700; color: #4ecca3;
+  animation: floatUp 0.9s cubic-bezier(0.16,1,0.3,1) forwards;
+  text-shadow: 0 0 15px rgba(78,204,163,0.5);
+}
+.score-float.wrong-float {
+  color: #e74c3c;
+  text-shadow: 0 0 15px rgba(231,76,60,0.5);
+}
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-70px) scale(1.4); }
+}
+
+/* Timer urgent */
+.timer-urgent {
+  animation: timerPulse 0.3s ease-out;
+  color: #ff4444 !important; font-size: 1.3rem !important;
+}
+@keyframes timerPulse {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Correct flash overlay */
+.flash-overlay {
+  position: fixed; inset: 0; z-index: 500; pointer-events: none;
+  animation: flashFade 0.4s ease-out forwards;
+}
+.flash-overlay.correct { background: radial-gradient(circle at 50% 50%, rgba(78,204,163,0.12) 0%, transparent 70%); }
+.flash-overlay.wrong { background: radial-gradient(circle at 50% 50%, rgba(231,76,60,0.1) 0%, transparent 70%); }
+@keyframes flashFade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* ====== CHEAT SHEET ====== */
+.cheat-btn {
+  padding: 8px 16px; border: 1px solid #333; border-radius: 8px;
+  background: #141428; color: #888; font-size: 0.85rem;
+  cursor: pointer; transition: all 0.2s;
+}
+.cheat-btn:hover { background: #1e1e3a; color: #e0e0e0; border-color: #4ecca3; }
+.cheat-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  z-index: 2000; display: flex; justify-content: center; align-items: center;
+  animation: fadeIn 0.2s ease-out;
+}
+.cheat-modal {
+  background: linear-gradient(145deg, #0f0f24, #16213e);
+  border: 1px solid #252545; border-radius: 16px;
+  width: 95%; max-width: 850px; max-height: 85vh; overflow-y: auto;
+  padding: 24px; position: relative;
+  animation: modalIn 0.35s cubic-bezier(0.16,1,0.3,1);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.9) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.cheat-modal h2 { color: #fff; margin-bottom: 4px; font-size: 1.3rem; }
+.cheat-modal .close-btn {
+  position: absolute; top: 12px; right: 16px; background: none; border: none;
+  color: #666; font-size: 1.5rem; cursor: pointer; padding: 4px 8px;
+  transition: color 0.15s;
+}
+.cheat-modal .close-btn:hover { color: #fff; }
+.cheat-tabs { display: flex; gap: 8px; margin: 14px 0; flex-wrap: wrap; }
+.cheat-tab {
+  padding: 7px 16px; border-radius: 8px; border: 1px solid #333;
+  background: #141428; color: #888; cursor: pointer; font-size: 0.85rem;
+  transition: all 0.2s;
+}
+.cheat-tab:hover { border-color: #4ecca3; color: #ccc; }
+.cheat-tab.active {
+  background: linear-gradient(135deg, #4ecca3, #38b2ac);
+  color: #0a0a1a; border-color: transparent; font-weight: 600;
+}
+.cheat-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 8px; }
+.cheat-table th {
+  background: #0f0f24; color: #4ecca3; padding: 8px 6px; text-align: left;
+  position: sticky; top: 0; font-weight: 600; z-index: 1;
+}
+.cheat-table td { padding: 6px; border-bottom: 1px solid #1a1a2e; color: #bbb; }
+.cheat-table tr:hover td { background: rgba(78,204,163,0.03); }
+.cheat-table .verb-name { color: #f39c12; font-weight: 600; }
+.cheat-section-label {
+  color: #666; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
+  padding: 12px 6px 4px; border-bottom: 1px solid #252545; font-weight: 600;
+}
+</style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<canvas id="confetti-canvas"></canvas>
+<div id="app"></div>
+
+<script>
+// ============ PARTICLE BACKGROUND ============
+(function() {
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let w, h, particles = [], mouse = { x: -1000, y: -1000 };
+  const PARTICLE_COUNT = 60;
+  const CONNECTION_DIST = 120;
+
+  function resize() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+  document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+
+  class Particle {
+    constructor() { this.reset(); }
+    reset() {
+      this.x = Math.random() * w;
+      this.y = Math.random() * h;
+      this.vx = (Math.random() - 0.5) * 0.4;
+      this.vy = (Math.random() - 0.5) * 0.4;
+      this.r = Math.random() * 1.5 + 0.5;
+      this.alpha = Math.random() * 0.3 + 0.1;
+    }
+    update() {
+      this.x += this.vx;
+      this.y += this.vy;
+      if (this.x < 0 || this.x > w) this.vx *= -1;
+      if (this.y < 0 || this.y > h) this.vy *= -1;
+      // Subtle mouse repulsion
+      const dx = this.x - mouse.x, dy = this.y - mouse.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 150) {
+        const force = (150 - dist) / 150 * 0.02;
+        this.vx += dx / dist * force;
+        this.vy += dy / dist * force;
+      }
+      // Damping
+      this.vx *= 0.999;
+      this.vy *= 0.999;
+    }
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(78,204,163,${this.alpha})`;
+      ctx.fill();
+    }
+  }
+
+  for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+  function animate() {
+    ctx.clearRect(0, 0, w, h);
+    for (const p of particles) { p.update(); p.draw(); }
+    // Draw connections
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < CONNECTION_DIST) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = `rgba(78,204,163,${0.06 * (1 - dist/CONNECTION_DIST)})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
+})();
+
+// ============ CONFETTI ENGINE ============
+const confettiCanvas = document.getElementById('confetti-canvas');
+const confettiCtx = confettiCanvas.getContext('2d');
+let confettiPieces = [];
+let confettiRunning = false;
+
+function resizeConfetti() {
+  confettiCanvas.width = window.innerWidth;
+  confettiCanvas.height = window.innerHeight;
+}
+resizeConfetti();
+window.addEventListener('resize', resizeConfetti);
+
+function spawnConfetti(x, y, count) {
+  const colors = ['#4ecca3','#38b2ac','#f39c12','#e74c3c','#3498db','#9b59b6','#1abc9c','#e67e22'];
+  for (let i = 0; i < count; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = Math.random() * 6 + 3;
+    confettiPieces.push({
+      x, y,
+      vx: Math.cos(angle) * speed * (0.5 + Math.random()),
+      vy: Math.sin(angle) * speed * (0.5 + Math.random()) - 3,
+      w: Math.random() * 8 + 4,
+      h: Math.random() * 4 + 2,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rot: Math.random() * Math.PI * 2,
+      rotV: (Math.random() - 0.5) * 0.3,
+      life: 1,
+      decay: 0.012 + Math.random() * 0.008
+    });
+  }
+  if (!confettiRunning) { confettiRunning = true; animateConfetti(); }
+}
+
+function animateConfetti() {
+  confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+  for (let i = confettiPieces.length - 1; i >= 0; i--) {
+    const p = confettiPieces[i];
+    p.x += p.vx; p.y += p.vy;
+    p.vy += 0.15; // gravity
+    p.vx *= 0.99;
+    p.rot += p.rotV;
+    p.life -= p.decay;
+    if (p.life <= 0) { confettiPieces.splice(i, 1); continue; }
+    confettiCtx.save();
+    confettiCtx.translate(p.x, p.y);
+    confettiCtx.rotate(p.rot);
+    confettiCtx.globalAlpha = p.life;
+    confettiCtx.fillStyle = p.color;
+    confettiCtx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+    confettiCtx.restore();
+  }
+  if (confettiPieces.length > 0) requestAnimationFrame(animateConfetti);
+  else confettiRunning = false;
+}
+
+// Screen flash
+function showFlash(type) {
+  const el = document.createElement('div');
+  el.className = 'flash-overlay ' + type;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 400);
+}
+
+// ============ CONJUGATION ENGINE ============
+
+const PERSONS = ['yo','tú','él','nosotros','vosotros','ellos'];
+const PERSON_LABELS = {
+  yo: 'yo', tú: 'tú', él: 'él/ella/usted',
+  nosotros: 'nosotros', vosotros: 'vosotros', ellos: 'ellos/ellas/ustedes'
+};
+
+const REGULAR_ENDINGS = {
+  preterite: {
+    ar: { yo: 'é', tú: 'aste', él: 'ó', nosotros: 'amos', vosotros: 'asteis', ellos: 'aron' },
+    er: { yo: 'í', tú: 'iste', él: 'ió', nosotros: 'imos', vosotros: 'isteis', ellos: 'ieron' },
+    ir: { yo: 'í', tú: 'iste', él: 'ió', nosotros: 'imos', vosotros: 'isteis', ellos: 'ieron' }
+  },
+  imperfect: {
+    ar: { yo: 'aba', tú: 'abas', él: 'aba', nosotros: 'ábamos', vosotros: 'abais', ellos: 'aban' },
+    er: { yo: 'ía', tú: 'ías', él: 'ía', nosotros: 'íamos', vosotros: 'íais', ellos: 'ían' },
+    ir: { yo: 'ía', tú: 'ías', él: 'ía', nosotros: 'íamos', vosotros: 'íais', ellos: 'ían' }
+  }
+};
+
+const SPELLING_CHANGES = {
+  buscar: { yo_pret_stem: 'busqué' },
+  llegar: { yo_pret_stem: 'llegué' },
+  pagar: { yo_pret_stem: 'pagué' },
+  empezar: { yo_pret_stem: 'empecé' }
+};
+
+const STEM_CHANGERS = {
+  dormir:  { stem3: 'durm' },
+  morir:   { stem3: 'mur' },
+  pedir:   { stem3: 'pid' },
+  sentir:  { stem3: 'sint' },
+  servir:  { stem3: 'sirv' },
+  preferir:{ stem3: 'prefir' },
+  repetir: { stem3: 'repit' }
+};
+
+const IRREGULARS = {
+  ser: {
+    preterite: { yo:'fui', tú:'fuiste', él:'fue', nosotros:'fuimos', vosotros:'fuisteis', ellos:'fueron' },
+    imperfect: { yo:'era', tú:'eras', él:'era', nosotros:'éramos', vosotros:'erais', ellos:'eran' }
+  },
+  ir: {
+    preterite: { yo:'fui', tú:'fuiste', él:'fue', nosotros:'fuimos', vosotros:'fuisteis', ellos:'fueron' },
+    imperfect: { yo:'iba', tú:'ibas', él:'iba', nosotros:'íbamos', vosotros:'ibais', ellos:'iban' }
+  },
+  ver: {
+    preterite: { yo:'vi', tú:'viste', él:'vio', nosotros:'vimos', vosotros:'visteis', ellos:'vieron' },
+    imperfect: { yo:'veía', tú:'veías', él:'veía', nosotros:'veíamos', vosotros:'veíais', ellos:'veían' }
+  },
+  dar: { preterite: { yo:'di', tú:'diste', él:'dio', nosotros:'dimos', vosotros:'disteis', ellos:'dieron' } },
+  tener: { preterite: { yo:'tuve', tú:'tuviste', él:'tuvo', nosotros:'tuvimos', vosotros:'tuvisteis', ellos:'tuvieron' } },
+  estar: { preterite: { yo:'estuve', tú:'estuviste', él:'estuvo', nosotros:'estuvimos', vosotros:'estuvisteis', ellos:'estuvieron' } },
+  hacer: { preterite: { yo:'hice', tú:'hiciste', él:'hizo', nosotros:'hicimos', vosotros:'hicisteis', ellos:'hicieron' } },
+  decir: { preterite: { yo:'dije', tú:'dijiste', él:'dijo', nosotros:'dijimos', vosotros:'dijisteis', ellos:'dijeron' } },
+  poder: { preterite: { yo:'pude', tú:'pudiste', él:'pudo', nosotros:'pudimos', vosotros:'pudisteis', ellos:'pudieron' } },
+  poner: { preterite: { yo:'puse', tú:'pusiste', él:'puso', nosotros:'pusimos', vosotros:'pusisteis', ellos:'pusieron' } },
+  saber: { preterite: { yo:'supe', tú:'supiste', él:'supo', nosotros:'supimos', vosotros:'supisteis', ellos:'supieron' } },
+  venir: { preterite: { yo:'vine', tú:'viniste', él:'vino', nosotros:'vinimos', vosotros:'vinisteis', ellos:'vinieron' } },
+  querer: { preterite: { yo:'quise', tú:'quisiste', él:'quiso', nosotros:'quisimos', vosotros:'quisisteis', ellos:'quisieron' } },
+  traer: { preterite: { yo:'traje', tú:'trajiste', él:'trajo', nosotros:'trajimos', vosotros:'trajisteis', ellos:'trajeron' } },
+  andar: { preterite: { yo:'anduve', tú:'anduviste', él:'anduvo', nosotros:'anduvimos', vosotros:'anduvisteis', ellos:'anduvieron' } },
+  conducir: { preterite: { yo:'conduje', tú:'condujiste', él:'condujo', nosotros:'condujimos', vosotros:'condujisteis', ellos:'condujeron' } },
+  producir: { preterite: { yo:'produje', tú:'produjiste', él:'produjo', nosotros:'produjimos', vosotros:'produjisteis', ellos:'produjeron' } },
+  leer: { preterite: { él:'leyó', ellos:'leyeron' } }
+};
+
+const VERB_CATS = {
+  regular: [
+    'hablar','caminar','estudiar','trabajar','cantar','bailar','mirar','escuchar','comprar',
+    'llegar','buscar','pagar','empezar',
+    'comer','beber','aprender','correr','vender','leer','comprender',
+    'vivir','escribir','recibir','abrir','subir','decidir'
+  ],
+  tier1: ['ser','ir','tener','estar','hacer','decir','dar'],
+  tier2: ['poder','poner','saber','venir','querer','traer'],
+  tier3: ['andar','conducir','producir'],
+  stemchange: ['dormir','pedir','sentir','servir','morir','preferir','repetir']
+};
+
+function getVerbType(verb) {
+  const ending = verb.slice(-2);
+  if (ending === 'ar') return 'ar';
+  if (ending === 'er') return 'er';
+  if (ending === 'ir') return 'ir';
+  return 'ar';
+}
+
+function conjugate(verb, tense, person) {
+  if (IRREGULARS[verb] && IRREGULARS[verb][tense] && IRREGULARS[verb][tense][person]) {
+    return IRREGULARS[verb][tense][person];
+  }
+  const vtype = getVerbType(verb);
+  const stem = verb.slice(0, -2);
+  if (tense === 'preterite') {
+    if (person === 'yo' && SPELLING_CHANGES[verb]) return SPELLING_CHANGES[verb].yo_pret_stem;
+    if (STEM_CHANGERS[verb] && (person === 'él' || person === 'ellos')) {
+      return STEM_CHANGERS[verb].stem3 + REGULAR_ENDINGS.preterite.ir[person];
+    }
+  }
+  return stem + REGULAR_ENDINGS[tense][vtype][person];
+}
+
+function normalize(s) {
+  return s.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+// ============ QUESTION GENERATION ============
+
+function generateQuestions(verbs, tenses, count) {
+  const pool = [];
+  for (const verb of verbs)
+    for (const tense of tenses)
+      for (const person of PERSONS)
+        pool.push({ verb, tense, person });
+  shuffle(pool);
+  return pool.slice(0, count);
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function getUniqueConjugations(verb, tense) {
+  const seen = new Set();
+  const forms = [];
+  for (const person of PERSONS) {
+    const form = conjugate(verb, tense, person);
+    if (!seen.has(form)) {
+      seen.add(form);
+      forms.push(form);
+    }
+  }
+  return forms;
+}
+
+function getAllPlayableVerbs() {
+  return [...new Set([
+    ...VERB_CATS.regular,
+    ...VERB_CATS.tier1,
+    ...VERB_CATS.tier2,
+    ...VERB_CATS.tier3,
+    ...VERB_CATS.stemchange
+  ])];
+}
+
+function getFakeForms(verb, tense, person, correct) {
+  const stem = verb.slice(0, -2);
+  const vtype = getVerbType(verb);
+  const forms = [];
+  if (
+    IRREGULARS[verb]?.[tense]?.[person] ||
+    (tense === 'preterite' && person === 'yo' && SPELLING_CHANGES[verb]) ||
+    (tense === 'preterite' && STEM_CHANGERS[verb] && (person === 'él' || person === 'ellos'))
+  ) {
+    forms.push(stem + REGULAR_ENDINGS[tense][vtype][person]);
+  }
+  for (const altType of ['ar', 'er', 'ir']) {
+    if (altType === vtype) continue;
+    forms.push(stem + REGULAR_ENDINGS[tense][altType][person]);
+  }
+  return [...new Set(forms)].filter(form => form !== correct);
+}
+
+function getDifferentWordForm(verb, tense, person, correct, verbPool = []) {
+  const candidates = [...new Set([...(verbPool || []), ...getAllPlayableVerbs()])].filter(v => v !== verb);
+  shuffle(candidates);
+  for (const otherVerb of candidates) {
+    const form = conjugate(otherVerb, tense, person);
+    if (form !== correct) return form;
+  }
+  return null;
+}
+
+function generateEasyOptions(verb, tense, correct) {
+  const otherForms = shuffle(getUniqueConjugations(verb, tense).filter(form => form !== correct));
+  return shuffle([verb, correct, otherForms[0], otherForms[1]]);
+}
+
+function generateMediumOptions(verb, tense) {
+  return shuffle([verb, ...getUniqueConjugations(verb, tense)]);
+}
+
+function generateHardOptions(verb, tense, person, correct, verbPool = []) {
+  const options = new Set([correct]);
+  const fakeForms = shuffle(getFakeForms(verb, tense, person, correct));
+  const sameVerbForms = shuffle(getUniqueConjugations(verb, tense).filter(form => form !== correct));
+  const otherTense = tense === 'preterite' ? 'imperfect' : 'preterite';
+  const wrongTense = conjugate(verb, otherTense, person);
+  const differentWord = getDifferentWordForm(verb, tense, person, correct, verbPool);
+
+  if (fakeForms[0]) options.add(fakeForms[0]);
+  if (differentWord) options.add(differentWord);
+
+  const fallbackPool = shuffle([
+    ...sameVerbForms,
+    wrongTense,
+    ...fakeForms.slice(1)
+  ].filter(form => form && form !== correct));
+
+  for (const form of fallbackPool) {
+    if (options.size >= 4) break;
+    options.add(form);
+  }
+
+  return shuffle([...options].slice(0, 4));
+}
+
+// ============ STATS ============
+
+function loadStats() {
+  try { const s = localStorage.getItem('spanish_drill_stats'); return s ? JSON.parse(s) : {}; } catch { return {}; }
+}
+function saveStats(stats) {
+  try { localStorage.setItem('spanish_drill_stats', JSON.stringify(stats)); } catch {}
+}
+function recordStat(stats, verb, tense, person, correct) {
+  const key = `${verb}_${tense}_${person}`;
+  if (!stats[key]) stats[key] = { verb, tense, person, correct: 0, total: 0 };
+  stats[key].total++;
+  if (correct) stats[key].correct++;
+  saveStats(stats);
+}
+function getWeakVerbs(stats) {
+  const byVerb = {};
+  for (const s of Object.values(stats)) {
+    if (!byVerb[s.verb]) byVerb[s.verb] = { correct: 0, total: 0 };
+    byVerb[s.verb].correct += s.correct;
+    byVerb[s.verb].total += s.total;
+  }
+  return Object.entries(byVerb)
+    .map(([verb, d]) => ({ verb, pct: Math.round(100 * d.correct / d.total), total: d.total }))
+    .filter(x => x.total >= 2)
+    .sort((a, b) => a.pct - b.pct)
+    .slice(0, 8);
+}
+
+const DIFFICULTY_LABELS = {
+  easy: 'Easy',
+  medium: 'Medium',
+  hard: 'Hard'
+};
+
+const IRREGULAR_STEM_HINTS = {
+  tener: 'tuv',
+  estar: 'estuv',
+  hacer: 'hic',
+  decir: 'dij',
+  poder: 'pud',
+  poner: 'pus',
+  saber: 'sup',
+  venir: 'vin',
+  querer: 'quis',
+  traer: 'traj',
+  andar: 'anduv',
+  conducir: 'conduj',
+  producir: 'produj'
+};
+
+// ============ APP STATE ============
+
+let state = {
+  screen: 'start', mode: null, questions: [], current: 0,
+  score: 0, streak: 0, missed: [], answered: false,
+  timer: 10, timerInterval: null, stats: loadStats(), retryMode: false,
+  difficulty: 'medium', hintsEnabled: false, availableVerbs: [], availableTenses: []
+};
+
+const app = document.getElementById('app');
+
+// Track mouse for button glow
+app.addEventListener('mousemove', e => {
+  const btn = e.target.closest('.btn');
+  if (btn) {
+    const rect = btn.getBoundingClientRect();
+    btn.style.setProperty('--mx', ((e.clientX - rect.left) / rect.width * 100) + '%');
+    btn.style.setProperty('--my', ((e.clientY - rect.top) / rect.height * 100) + '%');
+  }
+});
+
+// ============ RENDERING ============
+
+function render() {
+  if (state.screen === 'start') renderStart();
+  else if (state.screen === 'game') renderGame();
+  else if (state.screen === 'results') renderResults();
+}
+
+function renderStart() {
+  if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
+  app.innerHTML = `
+    <div class="screen-enter">
+      <h1>Spanish Conjugation Drill</h1>
+      <p class="subtitle">Preterite & Imperfect — Recalibrated for Regular Verbs</p>
+      
+      <button class="btn btn-highlight" id="btn-quick-start">🚀 Quick Start: Regulars Only</button>
+
+      <div class="filter-section">
+        <h3>Tenses</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="f-pret" checked> Preterite</label>
+          <label><input type="checkbox" id="f-imp" checked> Imperfect</label>
+        </div>
+      </div>
+      <div class="filter-section">
+        <h3>Verb Categories</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="f-reg" checked> Regular verbs</label>
+          <label><input type="checkbox" id="f-t1"> Tier 1 irregulars</label>
+          <label><input type="checkbox" id="f-t2"> Tier 2 irregulars</label>
+          <label><input type="checkbox" id="f-t3"> Tier 3 stretch</label>
+          <label><input type="checkbox" id="f-sc"> Stem-changers</label>
+        </div>
+      </div>
+      <div class="filter-section">
+        <h3>Multiple Choice Difficulty</h3>
+        <div class="checkbox-group">
+          <label><input type="radio" name="difficulty" id="d-easy" value="easy"> Easy</label>
+          <label><input type="radio" name="difficulty" id="d-medium" value="medium" checked> Medium</label>
+          <label><input type="radio" name="difficulty" id="d-hard" value="hard"> Hard</label>
+        </div>
+        <p class="helper-text">Easy: the infinitive plus 3 forms from the same verb. Medium: the infinitive plus every unique form for that tense. Hard: 4 choices with one correct answer, plus fake and cross-verb distractors.</p>
+      </div>
+      <div class="filter-section">
+        <h3>Helpers</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="f-hints"> Hint mode</label>
+        </div>
+      </div>
+      <div class="mode-buttons">
+        <button class="btn btn-primary" id="btn-mc">Multiple Choice</button>
+        <button class="btn btn-secondary" id="btn-frq">Free Response</button>
+        <button class="cheat-btn" id="btn-cheat">Cheat Sheet</button>
+      </div>
+      ${getWeakVerbsHTML()}
+    </div>
+  `;
+  const checkValid = () => {
+    const valid = (ck('f-pret') || ck('f-imp')) && (ck('f-reg') || ck('f-t1') || ck('f-t2') || ck('f-t3') || ck('f-sc'));
+    document.getElementById('btn-mc').disabled = !valid;
+    document.getElementById('btn-frq').disabled = !valid;
+  };
+  document.querySelectorAll('.checkbox-group input').forEach(el => el.addEventListener('change', checkValid));
+  checkValid();
+  
+  document.getElementById('btn-quick-start').onclick = () => {
+      document.getElementById('f-pret').checked = true;
+      document.getElementById('f-imp').checked = true;
+      document.getElementById('f-reg').checked = true;
+      document.getElementById('f-t1').checked = false;
+      document.getElementById('f-t2').checked = false;
+      document.getElementById('f-t3').checked = false;
+      document.getElementById('f-sc').checked = false;
+      startGame('mc');
+  };
+  
+  document.getElementById('btn-mc').onclick = () => startGame('mc');
+  document.getElementById('btn-frq').onclick = () => startGame('frq');
+}
+
+function ck(id) { return document.getElementById(id)?.checked; }
+function selectedDifficulty() { return document.querySelector('input[name="difficulty"]:checked')?.value || 'medium'; }
+
+function getWeakVerbsHTML() {
+  const weak = getWeakVerbs(state.stats);
+  if (weak.length === 0) return '';
+  return `<div class="weak-verbs"><h3>Weakest Verbs</h3>
+    ${weak.map(w => `<div class="weak-verb-item"><span>${w.verb}</span><span class="pct">${w.pct}% (${w.total} attempts)</span></div>`).join('')}
+  </div>`;
+}
+
+function startGame(mode) {
+  const tenses = [];
+  if (ck('f-pret')) tenses.push('preterite');
+  if (ck('f-imp')) tenses.push('imperfect');
+  let verbs = [];
+  if (ck('f-reg')) verbs.push(...VERB_CATS.regular);
+  if (ck('f-t1')) verbs.push(...VERB_CATS.tier1);
+  if (ck('f-t2')) verbs.push(...VERB_CATS.tier2);
+  if (ck('f-t3')) verbs.push(...VERB_CATS.tier3);
+  if (ck('f-sc')) verbs.push(...VERB_CATS.stemchange);
+  state.difficulty = selectedDifficulty();
+  state.hintsEnabled = ck('f-hints');
+  state.availableVerbs = [...new Set(verbs)];
+  state.availableTenses = [...tenses];
+  state.mode = mode; state.screen = 'game';
+  state.questions = generateQuestions(verbs, tenses, 20);
+  state.current = 0; state.score = 0; state.streak = 0;
+  state.missed = []; state.answered = false; state.retryMode = false;
+  render();
+}
+
+function getMultiplier() {
+  if (state.streak >= 10) return 3;
+  if (state.streak >= 5) return 2;
+  return 1;
+}
+
+function renderGame() {
+  if (state.current >= state.questions.length) { state.screen = 'results'; render(); return; }
+  const q = state.questions[state.current];
+  const correct = conjugate(q.verb, q.tense, q.person);
+  const mult = getMultiplier();
+  let hudTimer = '';
+  if (state.mode === 'mc' && !state.answered) hudTimer = `<span class="timer">${state.timer}s</span>`;
+  const modeMeta = state.mode === 'mc' ? `${DIFFICULTY_LABELS[state.difficulty]} Multiple Choice` : 'Free Response';
+  const hintHTML = state.hintsEnabled ? renderHint(q) : '';
+  const body = state.mode === 'mc' ? renderMCBody(q, correct) : renderFRQBody(q, correct);
+
+  app.innerHTML = `
+    <div class="hud">
+      <span>Q ${state.current + 1}/${state.questions.length}</span>
+      <span class="score">Score: ${state.score}</span>
+      <span class="streak${state.streak > 0 ? ' streak-pop' : ''}">${state.streak > 0 ? state.streak + (mult > 1 ? ' (' + mult + 'x)' : '') : ''}</span>
+      ${hudTimer}
+      <button class="cheat-btn" id="btn-cheat-game" style="padding:4px 10px;font-size:0.8rem;">Cheat Sheet</button>
+    </div>
+    <div class="progress-bar"><div class="fill" style="width:${100*state.current/state.questions.length}%"></div></div>
+    <div class="question-meta">${modeMeta}${state.hintsEnabled ? ' | Hint mode' : ''}</div>
+    <div class="question-card">
+      <p>Conjugate <span class="verb">${q.verb}</span> in the <span class="tense">${q.tense}</span>,<br>
+      <span class="subject">${PERSON_LABELS[q.person]}</span> form.</p>
+    </div>
+    ${hintHTML}
+    ${body}
+  `;
+  if (state.mode === 'mc' && !state.answered) startTimer();
+  if (state.mode === 'frq' && !state.answered) {
+    const inp = document.getElementById('frq-input');
+    if (inp) { inp.focus(); inp.addEventListener('keydown', e => { if (e.key === 'Enter') submitFRQ(); }); }
+  }
+}
+
+function renderMCBody(q, correct) {
+  if (!q._options) {
+    if (state.difficulty === 'easy') q._options = generateEasyOptions(q.verb, q.tense, correct);
+    else if (state.difficulty === 'medium') q._options = generateMediumOptions(q.verb, q.tense);
+    else q._options = generateHardOptions(q.verb, q.tense, q.person, correct, state.availableVerbs);
+  }
+  return `<div class="options">
+    ${q._options.map((opt, i) => {
+      let cls = 'option-btn';
+      if (opt === q.verb) cls += ' option-verb';
+      if (state.answered) {
+        cls += ' locked';
+        if (opt === correct) cls += ' correct';
+        else if (opt === q._selected) cls += ' wrong';
+      }
+      return `<button class="${cls}" data-idx="${i}">${opt}</button>`;
+    }).join('')}
+  </div>
+  ${state.answered ? '<div class="next-btn-wrap"><button class="btn btn-primary" id="next-btn">Next</button></div>' : ''}`;
+}
+
+function renderFRQBody(q, correct) {
+  if (state.answered) {
+    const ok = q._frqCorrect;
+    return `<div class="frq-feedback ${ok ? 'correct' : 'wrong'}">
+      ${ok ? 'Correct!' : `You typed: "${q._frqAnswer}"`}<br>
+      Correct form: <strong>${correct}</strong>
+    </div>
+    <div class="next-btn-wrap"><button class="btn btn-primary" id="next-btn">Next</button></div>`;
+  }
+  return `<input type="text" class="frq-input" id="frq-input" placeholder="Type your answer..." autocomplete="off" spellcheck="false">
+  <div class="next-btn-wrap"><button class="btn btn-primary" id="frq-submit">Submit</button></div>`;
+}
+
+function getHintText(verb, tense, person) {
+  const vtype = getVerbType(verb);
+  const stem = verb.slice(0, -2);
+  const ending = REGULAR_ENDINGS[tense][vtype][person];
+
+  if (tense === 'preterite' && person === 'yo' && SPELLING_CHANGES[verb]) {
+    return `Yo preterite spelling change: keep the regular ${ending} sound, but change the spelling before it.`;
+  }
+
+  if (tense === 'preterite' && STEM_CHANGERS[verb] && (person === 'él' || person === 'ellos')) {
+    return `Third-person preterite stem change: use ${STEM_CHANGERS[verb].stem3}- with the ${ending} ending.`;
+  }
+
+  if (IRREGULARS[verb]?.[tense]?.[person]) {
+    if (verb === 'ser' && tense === 'preterite') return 'Fully irregular preterite: think fui, fuiste, fue...';
+    if (verb === 'ir' && tense === 'preterite') return 'Same preterite pattern as ser: fui, fuiste, fue...';
+    if (verb === 'ser' && tense === 'imperfect') return 'Fully irregular imperfect: think era, eras, era...';
+    if (verb === 'ir' && tense === 'imperfect') return 'Fully irregular imperfect: think iba, ibas, iba...';
+    if (verb === 'ver' && tense === 'imperfect') return 'Irregular imperfect: keep the e in the stem, as in veia.';
+    if (verb === 'dar' && tense === 'preterite') return 'Short irregular preterite: di, diste, dio...';
+    if (IRREGULAR_STEM_HINTS[verb]) {
+      let extra = `Look for the ${IRREGULAR_STEM_HINTS[verb]}- stem.`;
+      if (verb === 'hacer' && person === 'él') extra += ' Watch for the z in hizo.';
+      if (['decir', 'traer', 'conducir', 'producir'].includes(verb) && person === 'ellos') extra += ' J-stem ellos forms take -eron.';
+      return `Irregular ${tense}: ${extra}`;
+    }
+  }
+
+  return `Regular ${vtype.toUpperCase()} ${tense}: use the ${stem}- stem with the ${PERSON_LABELS[person]} ending ${ending}.`;
+}
+
+function renderHint(q) {
+  return `<div class="hint-card">
+    <div class="hint-label">Hint</div>
+    <div class="hint-text">${getHintText(q.verb, q.tense, q.person)}</div>
+  </div>`;
+}
+
+function startTimer() {
+  if (state.timerInterval) clearInterval(state.timerInterval);
+  state.timer = 10;
+  state.timerInterval = setInterval(() => {
+    state.timer--;
+    const el = document.querySelector('.timer');
+    if (el) {
+      el.textContent = state.timer + 's';
+      if (state.timer <= 3) {
+        el.classList.add('timer-urgent');
+        setTimeout(() => el.classList.remove('timer-urgent'), 250);
+      }
+    }
+    if (state.timer <= 0) clearInterval(state.timerInterval);
+  }, 1000);
+}
+
+// Score float
+function showScoreFloat(el, points, isCorrect) {
+  const rect = el.getBoundingClientRect();
+  const float = document.createElement('div');
+  float.className = 'score-float' + (isCorrect ? '' : ' wrong-float');
+  float.textContent = isCorrect ? `+${points}` : 'X';
+  float.style.left = rect.left + rect.width / 2 - 20 + 'px';
+  float.style.top = rect.top - 10 + 'px';
+  document.body.appendChild(float);
+  setTimeout(() => float.remove(), 900);
+}
+
+// ============ CHEAT SHEET ============
+
+function getVerbCategory(verb) {
+  if (VERB_CATS.tier1.includes(verb)) return 'Tier 1 Irregular';
+  if (VERB_CATS.tier2.includes(verb)) return 'Tier 2 Irregular';
+  if (VERB_CATS.tier3.includes(verb)) return 'Tier 3 Stretch';
+  if (VERB_CATS.stemchange.includes(verb)) return 'Stem-changer';
+  return 'Regular';
+}
+
+function renderCheatTable(tense) {
+  const allVerbs = [...VERB_CATS.regular, ...VERB_CATS.tier1, ...VERB_CATS.tier2, ...VERB_CATS.tier3, ...VERB_CATS.stemchange];
+  const categories = ['Regular', 'Tier 1 Irregular', 'Tier 2 Irregular', 'Tier 3 Stretch', 'Stem-changer'];
+  let html = '<table class="cheat-table"><thead><tr><th>Verb</th>';
+  for (const p of PERSONS) html += `<th>${PERSON_LABELS[p]}</th>`;
+  html += '</tr></thead><tbody>';
+  for (const cat of categories) {
+    const verbs = allVerbs.filter(v => getVerbCategory(v) === cat);
+    if (verbs.length === 0) continue;
+    html += `<tr><td colspan="${PERSONS.length+1}" class="cheat-section-label">${cat}</td></tr>`;
+    for (const verb of verbs) {
+      html += `<tr><td class="verb-name">${verb}</td>`;
+      for (const p of PERSONS) {
+        const form = conjugate(verb, tense, p);
+        const isIrr = IRREGULARS[verb]?.[tense]?.[p] ||
+          (tense === 'preterite' && p === 'yo' && SPELLING_CHANGES[verb]) ||
+          (tense === 'preterite' && STEM_CHANGERS[verb] && (p === 'él' || p === 'ellos'));
+        html += `<td style="${isIrr ? 'color:#f39c12;font-weight:600' : ''}">${form}</td>`;
+      }
+      html += '</tr>';
+    }
+  }
+  return html + '</tbody></table>';
+}
+
+function showCheatSheet() {
+  const overlay = document.createElement('div');
+  overlay.className = 'cheat-overlay';
+  overlay.innerHTML = `<div class="cheat-modal">
+    <button class="close-btn" id="cheat-close">&times;</button>
+    <h2>Conjugation Cheat Sheet</h2>
+    <p style="color:#666;font-size:0.85rem;margin-bottom:4px;">Irregular forms in <span style="color:#f39c12;">gold</span></p>
+    <div class="cheat-tabs">
+      <button class="cheat-tab active" data-tense="preterite">Preterite</button>
+      <button class="cheat-tab" data-tense="imperfect">Imperfect</button>
+    </div>
+    <div id="cheat-table-wrap">${renderCheatTable('preterite')}</div>
+  </div>`;
+  document.body.appendChild(overlay);
+  overlay.querySelector('#cheat-close').onclick = () => overlay.remove();
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
+  overlay.querySelectorAll('.cheat-tab').forEach(tab => {
+    tab.onclick = () => {
+      overlay.querySelectorAll('.cheat-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      overlay.querySelector('#cheat-table-wrap').innerHTML = renderCheatTable(tab.dataset.tense);
+    };
+  });
+}
+
+// ============ EVENTS ============
+
+app.addEventListener('click', e => {
+  if (e.target.id === 'btn-cheat' || e.target.id === 'btn-cheat-game') { showCheatSheet(); return; }
+
+  if (e.target.classList.contains('option-btn') && !state.answered && state.mode === 'mc') {
+    const q = state.questions[state.current];
+    const correct = conjugate(q.verb, q.tense, q.person);
+    const selected = q._options[parseInt(e.target.dataset.idx)];
+    q._selected = selected;
+    state.answered = true;
+    if (state.timerInterval) clearInterval(state.timerInterval);
+    const isCorrect = selected === correct;
+    if (isCorrect) {
+      state.streak++;
+      const pts = 100 * getMultiplier();
+      state.score += pts;
+      showScoreFloat(e.target, pts, true);
+      showFlash('correct');
+      // Confetti on streaks
+      if (state.streak >= 3) {
+        const rect = e.target.getBoundingClientRect();
+        spawnConfetti(rect.left + rect.width/2, rect.top, state.streak >= 10 ? 50 : state.streak >= 5 ? 30 : 15);
+      }
+    } else {
+      state.streak = 0;
+      state.missed.push({ verb: q.verb, tense: q.tense, person: q.person, correct, given: selected });
+      showScoreFloat(e.target, 0, false);
+      showFlash('wrong');
+    }
+    recordStat(state.stats, q.verb, q.tense, q.person, isCorrect);
+    render();
+  }
+
+  if (e.target.id === 'frq-submit') submitFRQ();
+  if (e.target.id === 'next-btn') { state.current++; state.answered = false; render(); }
+  if (e.target.id === 'btn-home') { state.screen = 'start'; render(); }
+  if (e.target.id === 'btn-retry-missed') retryMissed();
+  if (e.target.id === 'btn-new-round') { state.screen = 'start'; render(); }
+});
+
+function submitFRQ() {
+  if (state.answered) return;
+  const inp = document.getElementById('frq-input');
+  if (!inp || !inp.value.trim()) return;
+  const answer = inp.value;
+  const q = state.questions[state.current];
+  const correct = conjugate(q.verb, q.tense, q.person);
+  const isCorrect = normalize(answer) === normalize(correct);
+  q._frqAnswer = answer; q._frqCorrect = isCorrect;
+  state.answered = true;
+  if (isCorrect) {
+    state.streak++;
+    const pts = 100 * getMultiplier();
+    state.score += pts;
+    showScoreFloat(inp, pts, true);
+    showFlash('correct');
+    if (state.streak >= 3) {
+      const rect = inp.getBoundingClientRect();
+      spawnConfetti(rect.left + rect.width/2, rect.top, state.streak >= 10 ? 50 : state.streak >= 5 ? 30 : 15);
+    }
+  } else {
+    state.streak = 0;
+    state.missed.push({ verb: q.verb, tense: q.tense, person: q.person, correct, given: answer });
+    showScoreFloat(inp, 0, false);
+    showFlash('wrong');
+  }
+  recordStat(state.stats, q.verb, q.tense, q.person, isCorrect);
+  render();
+}
+
+function retryMissed() {
+  if (state.missed.length === 0) return;
+  state.questions = state.missed.map(m => ({ verb: m.verb, tense: m.tense, person: m.person }));
+  state.current = 0; state.score = 0; state.streak = 0;
+  state.missed = []; state.answered = false;
+  state.screen = 'game'; state.retryMode = true;
+  render();
+}
+
+function renderResults() {
+  if (state.timerInterval) { clearInterval(state.timerInterval); state.timerInterval = null; }
+  const total = state.questions.length;
+  const correctCount = total - state.missed.length;
+  const accuracy = Math.round(100 * correctCount / total);
+
+  // Big confetti burst for good scores
+  if (accuracy >= 80) {
+    setTimeout(() => {
+      spawnConfetti(window.innerWidth / 2, window.innerHeight / 3, accuracy === 100 ? 80 : 40);
+    }, 300);
+  }
+
+  // Animated score counter
+  const scoreId = 'score-counter-' + Date.now();
+
+  app.innerHTML = `<div class="results screen-enter">
+    <h2>${state.retryMode ? 'Retry Results' : 'Round Complete!'}</h2>
+    <div class="big-score" id="${scoreId}">0</div>
+    <div class="accuracy">${correctCount}/${total} correct — ${accuracy}% accuracy</div>
+    ${state.missed.length > 0 ? `<div class="missed-list">
+      <h3 style="margin-bottom:8px;color:#e74c3c;">Missed Questions</h3>
+      ${state.missed.map((m,i) => `<div class="missed-item" style="--i:${i}">
+        <span class="prompt-text">${m.verb} / ${m.tense} / ${PERSON_LABELS[m.person]}</span><br>
+        <span class="answer-text">correct: ${m.correct}</span>
+        <span class="user-text" style="margin-left:12px;">yours: ${m.given}</span>
+      </div>`).join('')}
+    </div>` : `<p style="color:#4ecca3;margin:16px 0;animation:fadeInUp 0.4s ease-out 0.3s both;">Perfect round!</p>`}
+    <div class="results-buttons">
+      <button class="btn btn-primary" id="btn-home">Home</button>
+      ${state.missed.length > 0 ? '<button class="btn btn-danger" id="btn-retry-missed">Retry Missed</button>' : ''}
+      <button class="btn btn-secondary" id="btn-new-round">New Round</button>
+    </div>
+    ${getWeakVerbsHTML()}
+  </div>`;
+
+  // Animate score counter
+  const scoreEl = document.getElementById(scoreId);
+  if (scoreEl && state.score > 0) {
+    let current = 0;
+    const target = state.score;
+    const duration = 600;
+    const start = performance.now();
+    function tick(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+      current = Math.round(target * eased);
+      scoreEl.textContent = current;
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  state.retryMode = false;
+}
+
+render();
+</script>
+</body>
+</html>

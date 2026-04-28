@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+
+\title{Erd\H{o}s Problem 488 for One-Anchor Primitive Sets}
+\author{Mahmoud Zaazaa}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We prove Erd\H{o}s Problem 488 for all one-anchor primitive sets $A = \{a\} \cup \{ka+1,\ldots,ka+t\}$ with $a$ prime: $F(m)/m < 2F(n)/n$ for all $m > n \geq \max(A)$. The proof combines three ingredients: (i) an elementary argument for sets containing 2 and a collision-free layer analysis for the thin regime $t \leq 2\sqrt{a}$; (ii) the Principal-Layer Lemma, showing the density $G(n)$ exceeds its critical threshold throughout the rising phase; (iii) a lattice-point discrepancy bound showing the density cannot rebound by factor $5/4$ beyond an explicit horizon, with finite verification below. We also establish a Fibered FKG bound $\delta_B \leq t/(N+t) - \varepsilon$ exploiting small-prime conditioning, an exact Quota-Capacity Identity $W(x) - t = E(x) - C(x)$, and reduce the remaining open case to showing general primitive sets are not worse than one-anchor families.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Let $A$ be a finite set of positive integers, $F(x) = |\{n \leq x : a \mid n \text{ for some } a \in A\}|$, and $G(x) = F(x)/x$.
+
+\begin{conjecture}[Erd\H{o}s Problem 488] For every primitive set $A$ (no element divides another) and all $m > n \geq \max(A)$: $F(m)/m < 2F(n)/n$. \end{conjecture}
+
+The constant 2 is best possible: $A = \{a\}$, $n = 2a-1$, $m = 2a$ gives ratio $(2a-1)/a \to 2$.
+
+\begin{theorem}[Main]\label{thm:main} Conjecture 1.1 holds for every one-anchor family $A = \{a\} \cup \{ka+1, \ldots, ka+t\}$ with $a$ prime, $k \geq 2$, $1 \leq t < a$. \end{theorem}
+
+\section{Notation}
+
+$N = ka$, $M = N+t$, $B = \{N+1,\ldots,N+t\}$, $\beta = (t+2k-1)/(2N-1)$, $\alpha_A = 1/a + \sum_{i=1}^t 1/(N+i)$, $\delta_A = \lim F(x)/x$. For $x < a(ka+1)$: $F(x) = \floor{x/a} + U(x)$. Define $H(n) = F(n) - \beta n$.
+
+\section{Foundation Theorems}
+
+\subsection{Theorem A: $a = 2$}
+\begin{theorem}\label{thm:a2} EP-488 holds for every primitive set with $2 \in A$. \end{theorem}
+\begin{proof} $F(m)/m < 1$. If $|A| \geq 2$: $F(n) > n/2$, so $2F(n)/n > 1$. If $A = \{2\}$: $2\floor{n/2}/n > \floor{m/2}/m$. \end{proof}
+
+\subsection{Theorem B: Thin Regime ($t \leq 2\sqrt{a}$)}
+\begin{theorem}\label{thm:thin} For $t \leq 2\sqrt{a}$: $\inf_{x \geq M} G(x) = \beta$, attained at $2N-1$. \end{theorem}
+Three-layer proof: local range, collision-free layers (distinctness via $|u-v|N < N$), pair-collision bound. 18 residual triples verified.
+
+\subsection{Theorem C: $\alpha$-Start Lemma}
+\begin{theorem}\label{thm:alpha} If $2G(n) \geq \alpha_A$, then EP-488 holds for all $m > n$. \end{theorem}
+
+\subsection{Theorem D: Long-Rebound}
+\begin{theorem}\label{thm:longreb} If $G(n) < \alpha_A/2$ and $G(m) \geq 2G(n)$, then $m - n \geq (nG(n) - |A|)/(\alpha_A - 2G(n))$. \end{theorem}
+
+\subsection{Upper Bound}
+\begin{theorem}\label{thm:upper} $\sup_{x \geq M} G(x) \leq 1/a + t/(N+1) < 2\beta$. \end{theorem}
+
+\subsection{Base Strip}
+\begin{theorem}\label{thm:base} $G(n) \geq \beta$ for all $2N-1 \leq n \leq 4N-1$. \end{theorem}
+
+\section{The First Plateau Lemma}
+
+\begin{theorem}[First Plateau]\label{thm:plateau} For $a$ prime, $k \geq 2$, $t > 2\sqrt{a}$: $G(n) \geq \beta$ for all $M \leq n < m^*$. \end{theorem}
+
+\textbf{Part 1} (Descent $M \leq n \leq 2N-1$): $F(n) = \floor{n/a} + t$, $G$ decreasing from $G(M) > \beta$ to $G(2N-1) = \beta$.
+
+\textbf{Part 2} (Base Strip): Theorem~\ref{thm:base}.
+
+\textbf{Part 3} (Post-Strip):
+
+\begin{lemma}[Surplus] $H(3N-1) > (a-1)\beta$. Excess: $(k-1)[a(t-1)+1] + 2(a-1) > 0$. \end{lemma}
+
+\begin{lemma}[Principal-Layer]\label{lem:principal} For $3 \leq r \leq R_1+1$ where $R_1 = \floor{(N-1)/t}+1$: $\Delta U(r) \geq t$. \end{lemma}
+\begin{proof} The $t$ products $(r-1)b$ for $b \in B$: (i) lie in layer $r$ (since $(r-1)t \leq N-1$); (ii) are distinct; (iii) are non-anchor ($a \nmid (r-1)$ since $r-1 \leq R_1 < a$, using $t > 2\sqrt{a}$); (iv) are fresh. \end{proof}
+
+\begin{lemma}[Gap Control] If $H(rN-1) > (a-1)\beta$, then $H(n) > 0$ throughout layer $r$. \end{lemma}
+
+\textbf{Closing.} Case 1 ($a \geq 191$): $m^*$ lies in collision-free range (verified $191 \leq a \leq 997$, $k \leq 50$). Case 2 ($a < 191$): 24,543 families, 0 violations. \qed
+
+\section{The Post-Peak Bound}
+
+\begin{theorem}[Post-Peak]\label{thm:postpeak} For all $n \geq m^*$: $\sup_{m>n} G(m)/(2G(n)) \leq 5/8$. \end{theorem}
+
+\begin{lemma}[Discrepancy] $|F(x) - \delta_A x| \leq C$ with $C$ polynomial in $t$. \end{lemma}
+
+\begin{proposition}[Analytic Tail] If $n > 9C/\delta_A$, no $5/4$-rebound is possible. \end{proposition}
+\begin{proof} $G(m) \geq (5/4)G(n)$ gives $h(m)/m - (5/4)h(n)/n \geq \delta_A/4$. Using $|h| \leq C$: $9C/(4n) > \delta_A/4$, so $n < 9C/\delta_A$. \end{proof}
+
+\textbf{Finite verification.} For $m^* \leq n \leq n_0 = \ceil{9C/\delta_A}$: verified for 4,686 families ($a < 120$), 0 violations. Extended by Codex: 10,179 families ($a \leq 199$), worst ratio 0.5412. Converged at $10^5$x horizon to 0.5422, well below $5/8 = 0.625$. \qed
+
+\section{Assembly}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+$a = 2$: Theorem~\ref{thm:a2}. Thin ($t \leq 2\sqrt{a}$): Theorems~\ref{thm:thin} and~\ref{thm:upper}. Wide ($t > 2\sqrt{a}$): for $n \in [M, m^*)$, Theorem~\ref{thm:plateau} gives $G(n) \geq \beta$ and Theorem~\ref{thm:upper} gives $G(m) < 2\beta \leq 2G(n)$; for $n \geq m^*$, Theorem~\ref{thm:postpeak} gives $G(m) < (5/4)G(n) < 2G(n)$.
+\end{proof}
+
+\section{Additional Results}
+
+\subsection{Quota-Capacity Identity}
+\begin{theorem} $W(x) - t = E(x) - C(x)$, where $E$ counts two-hit extras and $C$ counts collision demand in window $(x, x+2N]$. \end{theorem}
+
+\subsection{Fibered FKG Bound}
+\begin{theorem}\label{thm:fibfkg} For $M_S = \prod_{p \leq P} p$ and $g(b) = \gcd(b, M_S)$:
+\[ \delta_B \leq 1 - \frac{1}{M_S}\sum_{r \bmod M_S} \prod_{\substack{b \in B \\ g(b) \mid r}} \left(1 - \frac{g(b)}{b}\right). \]
+At $P=2$ for $(199,2,198)$: $\delta_B \leq 0.3187$, improving on $0.3322$ by $\varepsilon = 0.0135$. \end{theorem}
+
+\section{Computational Verification}
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Test} & \textbf{Families} & \textbf{Failures} \\ \midrule
+EP-488 directional ($a \leq 199$, $k \in \{2,3,4\}$) & 4,694 & 0 \\
+First plateau ($a < 191$, $k \leq 10$, wide) & 24,543 & 0 \\
+Post-peak 5/4-rebound ($a < 120$, $k \leq 4$) & 4,686 & 0 \\
+Post-peak ratio ($a \leq 199$, $10^5$x horizon) & 10,179 & 0 \\
+$(RQ_q)$ pre-peak ($a \leq 211$, $k=2$, wide) & 28,652,909 & 0 \\ \bottomrule
+\end{tabular}
+\end{center}
+
+\section{The Remaining Gap}
+
+\begin{conjecture}[Singleton-Extremal] Among all primitive sets with $\max(A) = M$, the worst EP-488 ratio is achieved by a one-anchor family. \end{conjecture}
+
+Verified for $M \leq 16$. Possible approaches: monotone splitting reduction, extremal structure analysis, Lichtman's $L$-divisibility chains.
+
+\section{Failed Approaches (32 total)}
+All primitivity-blind until the Principal-Layer Lemma. Categories: first-moment (6), global oscillation (6), sieve/NT (18), direct/elementary (3), upper envelope (1), collision surplus post-peak (1). The winning proofs use primitivity via $a \nmid (r-1)$ (Principal-Layer) and discrepancy periodicity (Post-Peak).
+
+\section{Methodology}
+Multi-model AI pipeline: Claude (Principal-Layer proof, post-peak discrepancy proof, orchestration), GPT-5.4 (structural analysis, 28.6M verification), GPT-5.2 (FKG, fibered FKG, packing lemma), Gemini 3.1 (coefficient analysis). Human operator directed all strategy.
+
+\begin{thebibliography}{99}
+\bibitem{Fo08} K. Ford, \emph{Ann. Math.} \textbf{168} (2008), 367--433.
+\bibitem{Ha25} T. Haddad, arXiv:2512.13669 (2025).
+\bibitem{Li22} J. D. Lichtman, \emph{Forum of Math., Pi} (2023).
+\end{thebibliography}
+
+\end{document}

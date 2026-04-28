@@ -1,0 +1,41 @@
+{
+  "delta_max": 1200,
+  "max_deltas": 80,
+  "mode": "seed-pairs",
+  "seed_rows": [
+    36,
+    468,
+    692,
+    1028
+  ],
+  "seed_width": 3,
+  "selected_delta_count": 5,
+  "selected_deltas": [
+    {
+      "delta": 36,
+      "seed_column_support": 3,
+      "source": "seed-row"
+    },
+    {
+      "delta": 468,
+      "seed_column_support": 3,
+      "source": "seed-row"
+    },
+    {
+      "delta": 692,
+      "seed_column_support": 3,
+      "source": "seed-row"
+    },
+    {
+      "delta": 1028,
+      "seed_column_support": 3,
+      "source": "seed-row"
+    },
+    {
+      "delta": 1134,
+      "seed_column_support": 2,
+      "source": "seed-pair"
+    }
+  ],
+  "truncated_extra_count": 0
+}

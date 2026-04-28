@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-12T23-40-33-autoprove-551b-ep488_coprime_core_prove",
+  "status": "done",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "theorem coprime_core_ineq (N M : Nat) (hN : 6 \u2264 N) (hM : N < M) :\n    N * (M / 2 + M / 3 - M / 6) \u2264 2 * M * (N / 2 + N / 3 - N / 6) := by\n  sorry",
+  "started_at": "2026-04-12T23:40:33Z",
+  "finished_at": "2026-04-12T23:46:30Z",
+  "duration_s": 356.79,
+  "result_text": "Committed. Session complete \u2014 the sorry is filled.\n\n## Autoprove Summary\n\n**Reason stopped:** completion\n\n| Metric | Value |\n|--------|-------|\n| Sorries before | 1 |\n| Sorries after | 0 |\n| Cycles run | 1 |\n| Stuck cycles | 0 |\n| Deep invocations | 0 |\n| Time elapsed | ~4m |\n\n**Proof strategy:** Decomposed the nonlinear inequality `N * f(M) \u2264 2*M * f(N)` (where `f(k) = k/2 + k/3 - k/6`) into two linear sub-goals via a `calc` chain:\n\n1. `f(M) \u2264 M` \u2014 trivial bound on inclusion-exclusion count, solved by `omega`\n2. `N \u2264 2 * f(N)` for `N \u2265 6` \u2014 since `f(N) \u2265 2N/3` in Nat arithmetic, solved by `omega`\n\nThe `calc` steps bridge these with `Nat.mul_le_mul_left` and associativity/commutativity rewrites.\n\n**Handoff:** All sorries filled. Clean build with no warnings.\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-12T23-40-33-autoprove-551b-ep488_coprime_core_prove.log",
+  "worker_pid": 937,
+  "last_heartbeat_at": 1776037587.4811473,
+  "_started_monotonic": 1776037233.9347572
+}

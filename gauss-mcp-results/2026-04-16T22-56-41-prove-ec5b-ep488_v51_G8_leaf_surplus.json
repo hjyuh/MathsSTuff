@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T22-56-41-prove-ec5b-ep488_v51_G8_leaf_surplus",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v51 / G8: Exact leaf-surplus identity (5.4-\u03b2)\n-- Claim: 2*\u03b5_n = 2 + x_3 - x_1 + \u03c4_n, derived from v48 identities:\n--   \u03b5_n = c - \u03c4_n\n--   |E| = |\u039b_n| + 2*\u03c4_n\n--   |\u039b_n| - |C| = (x_3 - x_1 - \u03c4_n)/2\n--   c = |E| - |C| + 1\n--\n-- This is a pure algebraic identity given the four hypotheses. In a clean\n-- Lean version we'd have these as definitions, but for this atomic check\n-- we can express it as: given the four numeric relations, derive the fifth.\n\nimport Mathlib.Tactic\n\n/-- Given the four defining identities (\u03b5 = c - \u03c4), (|E| = |\u039b| + 2\u03c4),\n    (|\u039b| - |C| = (x_3 - x_1 - \u03c4)/2), (c = |E| - |C| + 1),\n    conclude 2\u03b5 = 2 + x_3 - x_1 + \u03c4.\n    For Nat-safety, we state the doubled form to avoid division. -/\ntheorem leaf_surplus_identity\n    (eps c tau E Lambda Csize x3 x1 : \u2124)\n    (h_eps : eps = c - tau)\n    (h_edge : E = Lambda + 2 * tau)\n    (h_branch : 2 * (Lambda - Csize) = x3 - x1 - tau)\n    (h_cyclo : c = E - Csize + 1) :\n    2 * eps = 2 + x3 - x1 + tau := by\n  sorry\n",
+  "started_at": "2026-04-16T22:56:41Z",
+  "finished_at": "2026-04-17T00:19:00Z",
+  "duration_s": 4940.46,
+  "result_text": "Clean compilation confirmed. The proof is complete.\n\n---\n\n## Cycle 1 Complete \u2014 1/1 sorry filled\n\n**Theorem:** `leaf_surplus_identity`\n**Tactic:** `omega` \u2014 pure integer linear arithmetic closes this in one step.\n\n**Algebraic verification:** The four hypotheses give a system of linear equations over `\u2124`. Substituting:\n- `2 * eps = 2 * (c - tau) = 2c - 2tau`\n- `c = (Lambda + 2*tau) - Csize + 1`, so `2c = 2*Lambda + 4*tau - 2*Csize + 2`\n- `2c - 2tau = 2*(Lambda - Csize) + 2*tau + 2 = (x3 - x1 - tau) + 2*tau + 2 = 2 + x3 - x1 + tau` \u2713\n\n**File:** `GaussTest/EP488_LeafSurplus.lean`\n\nCommit this? **[yes / yes-all / no / never]**\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-56-41-prove-ec5b-ep488_v51_G8_leaf_surplus.log",
+  "worker_pid": 4198,
+  "last_heartbeat_at": 1776385137.644111,
+  "_started_monotonic": 1776380201.651918
+}

@@ -1,0 +1,1312 @@
+{
+  "N_values": [
+    493920,
+    9774765,
+    19511685,
+    46687680
+  ],
+  "compatibility_curves": [
+    {
+      "I": [
+        2,
+        3,
+        4
+      ],
+      "d_point_count": 8,
+      "d_point_samples": [
+        {
+          "W": "-10302",
+          "Z_abs": "1483285515822"
+        },
+        {
+          "W": "-2982",
+          "Z_abs": "167154046038"
+        },
+        {
+          "W": "-1106",
+          "Z_abs": "100406549474"
+        },
+        {
+          "W": "-714",
+          "Z_abs": "94494066534"
+        },
+        {
+          "W": "714",
+          "Z_abs": "94494066534"
+        },
+        {
+          "W": "1106",
+          "Z_abs": "100406549474"
+        },
+        {
+          "W": "2982",
+          "Z_abs": "167154046038"
+        },
+        {
+          "W": "10302",
+          "Z_abs": "1483285515822"
+        }
+      ],
+      "f": "W^6 + 74492370*W^4 + 1483720127885025*W^2 + 8153241563769555708000",
+      "genus": 2,
+      "jacobian_rank_bounds_via_split": [
+        8,
+        8
+      ],
+      "lift_point_count": 8,
+      "lift_points": [
+        {
+          "W": "-10302",
+          "Z_abs": "1483285515822",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        },
+        {
+          "W": "-2982",
+          "Z_abs": "167154046038",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "-1106",
+          "Z_abs": "100406549474",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "-714",
+          "Z_abs": "94494066534",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "714",
+          "Z_abs": "94494066534",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "1106",
+          "Z_abs": "100406549474",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "2982",
+          "Z_abs": "167154046038",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "10302",
+          "Z_abs": "1483285515822",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        }
+      ],
+      "m": 1,
+      "old_W_values": [
+        "-10302",
+        "-2982",
+        "-1106",
+        "-714",
+        "714",
+        "1106",
+        "2982",
+        "10302"
+      ],
+      "quartic_rank_bounds": [
+        4,
+        4
+      ],
+      "search_den_bound": 1,
+      "search_num_bound": 20000,
+      "square_t_point_count": 8,
+      "square_t_points": [
+        {
+          "W": "-10302",
+          "Z_abs": "1483285515822",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        },
+        {
+          "W": "-2982",
+          "Z_abs": "167154046038",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "-1106",
+          "Z_abs": "100406549474",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "-714",
+          "Z_abs": "94494066534",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "714",
+          "Z_abs": "94494066534",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "1106",
+          "Z_abs": "100406549474",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "2982",
+          "Z_abs": "167154046038",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "10302",
+          "Z_abs": "1483285515822",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        }
+      ],
+      "triple_factor": "234",
+      "triple_rank_bounds": [
+        4,
+        4
+      ]
+    },
+    {
+      "I": [
+        1,
+        3,
+        4
+      ],
+      "d_point_count": 8,
+      "d_point_samples": [
+        {
+          "W": "-10743",
+          "Z_abs": "1422396666108"
+        },
+        {
+          "W": "-4263",
+          "Z_abs": "116925490332"
+        },
+        {
+          "W": "-3241",
+          "Z_abs": "34264006084"
+        },
+        {
+          "W": "-3129",
+          "Z_abs": "21562404444"
+        },
+        {
+          "W": "3129",
+          "Z_abs": "21562404444"
+        },
+        {
+          "W": "3241",
+          "Z_abs": "34264006084"
+        },
+        {
+          "W": "4263",
+          "Z_abs": "116925490332"
+        },
+        {
+          "W": "10743",
+          "Z_abs": "1422396666108"
+        }
+      ],
+      "f": "W^6 + 37368990*W^4 - 73531787588775*W^2 - 3335703679281075921000",
+      "genus": 2,
+      "jacobian_rank_bounds_via_split": [
+        10,
+        10
+      ],
+      "lift_point_count": 8,
+      "lift_points": [
+        {
+          "W": "-10743",
+          "Z_abs": "1422396666108",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        },
+        {
+          "W": "-4263",
+          "Z_abs": "116925490332",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "-3241",
+          "Z_abs": "34264006084",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "-3129",
+          "Z_abs": "21562404444",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "3129",
+          "Z_abs": "21562404444",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "3241",
+          "Z_abs": "34264006084",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "4263",
+          "Z_abs": "116925490332",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "10743",
+          "Z_abs": "1422396666108",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        }
+      ],
+      "m": 2,
+      "old_W_values": [
+        "-10743",
+        "-4263",
+        "-3241",
+        "-3129",
+        "3129",
+        "3241",
+        "4263",
+        "10743"
+      ],
+      "quartic_rank_bounds": [
+        4,
+        4
+      ],
+      "search_den_bound": 1,
+      "search_num_bound": 20000,
+      "square_t_point_count": 8,
+      "square_t_points": [
+        {
+          "W": "-10743",
+          "Z_abs": "1422396666108",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        },
+        {
+          "W": "-4263",
+          "Z_abs": "116925490332",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "-3241",
+          "Z_abs": "34264006084",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "-3129",
+          "Z_abs": "21562404444",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "3129",
+          "Z_abs": "21562404444",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "3241",
+          "Z_abs": "34264006084",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "4263",
+          "Z_abs": "116925490332",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "10743",
+          "Z_abs": "1422396666108",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        }
+      ],
+      "triple_factor": "134",
+      "triple_rank_bounds": [
+        6,
+        6
+      ]
+    },
+    {
+      "I": [
+        1,
+        2,
+        4
+      ],
+      "d_point_count": 8,
+      "d_point_samples": [
+        {
+          "W": "-11187",
+          "Z_abs": "1365943272012"
+        },
+        {
+          "W": "-5283",
+          "Z_abs": "94350438252"
+        },
+        {
+          "W": "-4499",
+          "Z_abs": "24683183756"
+        },
+        {
+          "W": "-4419",
+          "Z_abs": "15267880404"
+        },
+        {
+          "W": "4419",
+          "Z_abs": "15267880404"
+        },
+        {
+          "W": "4499",
+          "Z_abs": "24683183756"
+        },
+        {
+          "W": "5283",
+          "Z_abs": "94350438252"
+        },
+        {
+          "W": "11187",
+          "Z_abs": "1365943272012"
+        }
+      ],
+      "f": "W^6 - 1578690*W^4 - 596262719402775*W^2 + 5032300100813866881000",
+      "genus": 2,
+      "jacobian_rank_bounds_via_split": [
+        7,
+        9
+      ],
+      "lift_point_count": 8,
+      "lift_points": [
+        {
+          "W": "-11187",
+          "Z_abs": "1365943272012",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        },
+        {
+          "W": "-5283",
+          "Z_abs": "94350438252",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "-4499",
+          "Z_abs": "24683183756",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "-4419",
+          "Z_abs": "15267880404",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "4419",
+          "Z_abs": "15267880404",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "4499",
+          "Z_abs": "24683183756",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "5283",
+          "Z_abs": "94350438252",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "11187",
+          "Z_abs": "1365943272012",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        }
+      ],
+      "m": 3,
+      "old_W_values": [
+        "-11187",
+        "-5283",
+        "-4499",
+        "-4419",
+        "4419",
+        "4499",
+        "5283",
+        "11187"
+      ],
+      "quartic_rank_bounds": [
+        4,
+        4
+      ],
+      "search_den_bound": 1,
+      "search_num_bound": 20000,
+      "square_t_point_count": 8,
+      "square_t_points": [
+        {
+          "W": "-11187",
+          "Z_abs": "1365943272012",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        },
+        {
+          "W": "-5283",
+          "Z_abs": "94350438252",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "-4499",
+          "Z_abs": "24683183756",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "-4419",
+          "Z_abs": "15267880404",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "4419",
+          "Z_abs": "15267880404",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "4499",
+          "Z_abs": "24683183756",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "5283",
+          "Z_abs": "94350438252",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "11187",
+          "Z_abs": "1365943272012",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        }
+      ],
+      "triple_factor": "124",
+      "triple_rank_bounds": [
+        3,
+        5
+      ]
+    },
+    {
+      "I": [
+        1,
+        2,
+        3
+      ],
+      "d_point_count": 8,
+      "d_point_samples": [
+        {
+          "W": "-12342",
+          "Z_abs": "1238114356182"
+        },
+        {
+          "W": "-7422",
+          "Z_abs": "67158901278"
+        },
+        {
+          "W": "-6886",
+          "Z_abs": "16126872454"
+        },
+        {
+          "W": "-6834",
+          "Z_abs": "9872514414"
+        },
+        {
+          "W": "6834",
+          "Z_abs": "9872514414"
+        },
+        {
+          "W": "6886",
+          "Z_abs": "16126872454"
+        },
+        {
+          "W": "7422",
+          "Z_abs": "67158901278"
+        },
+        {
+          "W": "12342",
+          "Z_abs": "1238114356182"
+        }
+      ],
+      "f": "W^6 - 110282670*W^4 + 3963652920677025*W^2 - 46339048312557348348000",
+      "genus": 2,
+      "jacobian_rank_bounds_via_split": [
+        8,
+        10
+      ],
+      "lift_point_count": 8,
+      "lift_points": [
+        {
+          "W": "-12342",
+          "Z_abs": "1238114356182",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        },
+        {
+          "W": "-7422",
+          "Z_abs": "67158901278",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "-6886",
+          "Z_abs": "16126872454",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "-6834",
+          "Z_abs": "9872514414",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "6834",
+          "Z_abs": "9872514414",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "6886",
+          "Z_abs": "16126872454",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "7422",
+          "Z_abs": "67158901278",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "12342",
+          "Z_abs": "1238114356182",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        }
+      ],
+      "m": 4,
+      "old_W_values": [
+        "-12342",
+        "-7422",
+        "-6886",
+        "-6834",
+        "6834",
+        "6886",
+        "7422",
+        "12342"
+      ],
+      "quartic_rank_bounds": [
+        4,
+        4
+      ],
+      "search_den_bound": 1,
+      "search_num_bound": 20000,
+      "square_t_point_count": 8,
+      "square_t_points": [
+        {
+          "W": "-12342",
+          "Z_abs": "1238114356182",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        },
+        {
+          "W": "-7422",
+          "Z_abs": "67158901278",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "-6886",
+          "Z_abs": "16126872454",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "-6834",
+          "Z_abs": "9872514414",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "6834",
+          "Z_abs": "9872514414",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "714",
+            "3129",
+            "4419",
+            "6834"
+          ],
+          "t": "15876",
+          "t_square": true
+        },
+        {
+          "W": "6886",
+          "Z_abs": "16126872454",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "1106",
+            "3241",
+            "4499",
+            "6886"
+          ],
+          "t": "729316",
+          "t_square": true
+        },
+        {
+          "W": "7422",
+          "Z_abs": "67158901278",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "2982",
+            "4263",
+            "5283",
+            "7422"
+          ],
+          "t": "8398404",
+          "t_square": true
+        },
+        {
+          "W": "12342",
+          "Z_abs": "1238114356182",
+          "lifts_to_C": true,
+          "old_W_abs": true,
+          "roots": [
+            "10302",
+            "10743",
+            "11187",
+            "12342"
+          ],
+          "t": "105637284",
+          "t_square": true
+        }
+      ],
+      "triple_factor": "123",
+      "triple_rank_bounds": [
+        4,
+        6
+      ]
+    }
+  ],
+  "deltas": [
+    252,
+    1708,
+    5796,
+    20556
+  ],
+  "old_t": [
+    15876,
+    729316,
+    8398404,
+    105637284
+  ],
+  "quartic_minimal_model": "Elliptic Curve defined by y^2 + x*y + y = x^3 - x^2 - 1927361459574525859736*x + 15132774508136508378096009642651 over Rational Field",
+  "quartic_rank_bounds": [
+    4,
+    4
+  ],
+  "quartic_rank_error": null,
+  "triple_factors": {
+    "123": {
+      "indices": [
+        1,
+        2,
+        3
+      ],
+      "minimal_model": "Elliptic Curve defined by y^2 = x^3 - x^2 - 1116496050608*x + 18855031614605712 over Rational Field",
+      "pivot": 1,
+      "rank_bounds": [
+        4,
+        6
+      ],
+      "rank_error": null
+    },
+    "124": {
+      "indices": [
+        1,
+        2,
+        4
+      ],
+      "minimal_model": "Elliptic Curve defined by y^2 + x*y = x^3 - x^2 - 460720272717*x + 101128315729851441 over Rational Field",
+      "pivot": 1,
+      "rank_bounds": [
+        3,
+        5
+      ],
+      "rank_error": null
+    },
+    "134": {
+      "indices": [
+        1,
+        3,
+        4
+      ],
+      "minimal_model": "Elliptic Curve defined by y^2 + x*y = x^3 + x^2 - 415904520675*x + 30985868609285625 over Rational Field",
+      "pivot": 1,
+      "rank_bounds": [
+        6,
+        6
+      ],
+      "rank_error": null
+    },
+    "234": {
+      "indices": [
+        2,
+        3,
+        4
+      ],
+      "minimal_model": "Elliptic Curve defined by y^2 = x^3 - x^2 - 4518324298608*x + 2648898986833421712 over Rational Field",
+      "pivot": 2,
+      "rank_bounds": [
+        4,
+        4
+      ],
+      "rank_error": null
+    }
+  },
+  "yold": [
+    [
+      714,
+      3129,
+      4419,
+      6834
+    ],
+    [
+      1106,
+      3241,
+      4499,
+      6886
+    ],
+    [
+      2982,
+      4263,
+      5283,
+      7422
+    ],
+    [
+      10302,
+      10743,
+      11187,
+      12342
+    ]
+  ]
+}

@@ -1,0 +1,478 @@
+LINEAR CORRELATIONS AMONGST NUMBERS REPRESENTED
+BY POSITIVE DEFINITE BINARY QUADRATIC FORMS
+LILIAN MATTHIESEN
+Abstract. Let f1, . . . , ft be positive deﬁnite binary quadratic forms, and letRfi(n) =
+|{(x, y) : fi(x, y) = n}| denote the corresponding representation functions. Employing
+methods developed by Green and Tao, we deduce asymptotics for linear correlations
+of these representation functions. More precisely, we study the expression
+En∈K∩[−N,N ]d
+t∏
+i=1
+Rfi(ψi(n)) ,
+where the ψi form a system of aﬃne linear forms no two of which are aﬃnely related,
+and where K is a convex body.
+The minor arc analysis builds on the observation that polynomial subsequences
+of equidistributed nilsequences are still equidistributed, an observation that could be
+useful in treating the minor arcs of other arithmetic questions.
+As a very quick application we give asymptotics to the number of simultaneous
+zeros of certain systems of quadratic equations in 8 or more variables.
+Contents
+1. Introduction 2
+2. A majorant for the representation function via the Kronecker sum 7
+3. A reduction of the main theorem 11
+4. Distribution in residue classes 13
+5. Results from the theory of binary quadratic forms 14
+6. Representation in Z/qZ 17
+7. W -trick 21
+8. Local factors and the reduction of the main theorem to a W -tricked version 24
+9. Linear forms and correlation conditions 29
+10. Application of the transference principle 37
+11. Non-correlation with nilsequences 39
+12. A special choice of major and minor arcs is necessary 41
+13. A brief overview of the concepts around nilsequences 42
+14. Reduction from nilmanifolds to the abelian setting 43
+15. Equidistribution of polynomial subsequences via Weyl’s inequality 46
+16. The factorisation into minor and major arcs 52
+17. Reduction to the case of minor arc nilsequences 56
+18. Completion of the non-correlation estimate 57
+References 59
+2010 Mathematics Subject Classiﬁcation. 11N37 (11E25).
+1
+arXiv:1106.4690v3  [math.NT]  19 Jun 2012
+
+---PAGE---
+
+2 LILIAN MATTHIESEN
+1. Introduction
+The distribution of prime numbers shares many properties with the distribution of
+numbers that are representable as a sum of two squares, an analogy that is occasionally
+employed to obtain model problems for questions about the primes. Let us consider the
+distributions of the two sets in arithmetic progressions. Starting with the average orders,
+we have on the one hand the Prime Number Theorem, asserting that π(x)∼ x
+log x. For
+the set S of sums of two squares on the other hand, Landau [17] proved an analogous
+asymptotic in 1908, namely
+∑
+n⩽x
+1S(n)∼ B x√log x ,
+where B = 1√
+2
+∏
+p≡3 (mod 4)(1− p−2)−1/2.
+Turning towards more general arithmetic progressions, let a and q be coprime in-
+tegers, then the primes congruent to a (mod q) satisfy π(x; q, a)∼ x
+φ(q) logx. Building
+on Landau’s result and the analogy to primes, Prachar [20] proved in the 1950s that,
+when furthermore a≡ 1 (mod gcd(4, q)) holds, sums of two squares show the following
+behaviour1
+∑
+n⩽x
+n≡a (mod q)
+1S(n)∼ Bq
+x√log x ,
+where
+Bq = Bq−1 (4, q)
+(2, q)
+∏
+p≡3 (mod 4)
+p|q
+(1 + p−1) .
+The factor (4 , q)/(2, q) describes that the density of sums of two squares is twice as
+high in the progression n≡ 1 (mod 4) as it is in n≡ 1 (mod 2). From pairs ( a, q)
+that are not coprime, one needs to remove those choices from consideration that lead
+to whole progressions entirely lying outside the set S. Examples are integers n such
+that n≡ 3 (mod 32), which are never a sum of two squares, or, numbers of the form
+(3· 5)n + 32, which can only be a sum of two squares when 3 |n. When excluding such
+classes a (mod q), the constant Bq only needs to be adapted by restricting the product
+over p≡ 3 (mod 4) to primes dividing q/ gcd(a, q).
+Thus, both sets, the primes and the sums of two squares, show some uniformity in the
+distribution in residue classes once one excludes residue classes that for obvious reason
+contain too few elements.
+It is natural to ask whether this uniformity carries further: is, for instance, the
+distribution uniform enough to determine asymptotically the density of solutions to
+linear equations within these sets? More precisely, we are interested in an asymptotic
+for correlations of the form
+∑
+n∈Zd∩K
+t∏
+i=1
+f(ψi(n)) ,
+where the ψi : Zd → Z are aﬃne linear forms and where the arithmetic function
+f : Z→ R is either the characteristic function 1 S of sums of two squares, or it is
+chosen to be the characteristic function of primes.
+1This compact formulation of the result is due to Iwaniec [15].
+
+---PAGE---
+
+LINEAR CORRELATIONS AMONGST NUMBERS WEIGHTED BY Rf 3
+Green and Tao studied these correlations in the case of the primes in [8]. They
+replaced for this purpose the sparse set of primes by a weighted version of asymptotic
+density 1 which is given by the von Mangoldt function. We shall not normalise the
+characteristic function 1 S in an analogous way, but instead consider the intrinsically
+weighted function that is given by the representation function of sums of two squares,
+R(n) =|{(x, y)∈ Z : x2 + y2 = n}|. Counting lattice points in a circle of radius
+√
+N
+immediately shows that the representation function has indeed an asymptotic density
+given by ∑
+n⩽N R(n)∼ πN . As we will see, the nilpotent Hardy-Littlewood method
+which Green and Tao developed to handle linear correlations among the primes can also
+be employed in the case of the representation function R(n).
+Instead of restricting attention to representations as sums of two squares, the slightly
+more general case of representation by a positive deﬁnite binary quadratic formf(x, y) =
+ax2 + bxy + cy2 will be considered. The corresponding representation function is then
+given by Rf(n) =|{(x, y) : f(x, y) = n}|.
+Notation. Throughout the paper, we write [ N] for the set of numbers{1, . . . , N} and
+e(x) for exp(2 πx). We let vp : N→ N0 denote the p-adic valuation. If T is a ﬁnite set,
+we use the expectation notation Et∈T to abbreviate 1
+|T|
+∑
+t∈T . A linear correlation is
+deﬁned along a system Ψ = ( ψ1, . . . , ψt) : Zd→ Zt of aﬃne linear forms. Such a system
+may be written as Ψ( n) = Ψ(0) + ˙Ψ(n), for a linear map ˙Ψ. We regard ˙Ψ as ﬁxed,
+while Ψ(0) may, for instance, depend on K. Thus, all implicit constants in asymptotic
+notation, such as O(), o() and≪, are allowed to depend on the coeﬃcients of the linear
+map ˙Ψ, the dimensions d and t of the domain and the target space of Ψ, and on the
+discriminants of the forms f1, . . . , ft.
+Methods and results. The nilpotent Hardy-Littlewood method comprises a scheme
+that allows to obtain for any given arithmetic function h with suﬃciently quasi-random
+behaviour an asymptotic for the expression
+∑
+n∈K∩Zd
+t∏
+i=1
+h(ψi(n)) ,
+where K⊂ Rd is convex and satisﬁes ψi⊂ [1, N] for each i∈{ 1, . . . , t}. We proceed to
+describe the basic set-up for the method. There are two main requirements on h. One
+is that h has small Gowers-uniformity norms (see Section 10) and the other is that one
+can ﬁnd a majorant ν :{1, . . . , N}→ R>0 such that
+1. ( majorant property ) the point-wise estimate h(n)⩽ Cν (n) is satisﬁed for an
+absolute constant C independent of N,
+2. ( density condition) h has positive relative density in ν in the sense that
+En⩽N h(n)∼ C′En⩽N ν(n),
+3. ( pseudorandomness) ν is a pseudorandom measure.
+A pseudorandom measure resembles a true probability measure. Apart from requiring
+its total mass to be approximately 1, that is, En⩽N ν(n) = 1+ o(1), there are two further
+deﬁning conditions for a pseudorandom measure: the linear forms condition and the
+correlation condition. Each of them places some independence requirements upon ν.
+
+---PAGE---
+
+4 LILIAN MATTHIESEN
+The linear forms condition for instance requires
+En∈K∩Zd
+t∏
+i=1
+ν(ψi(n)) = 1 + o(1)
+to hold for certain systems of aﬃne linear forms. Once in possession of such a pseu-
+dorandom majorant, a number of tools are available. We will describe them as we
+encounter them.
+Regarding the ﬁrst condition on h, which was the smallness of certain Gowers-
+uniformity norms, there is an explicit (and quite strong) necessary condition that has
+to be satisﬁed: h must be equidistributed in residue classes to small moduli. The res-
+ults quoted at the beginning of this introduction show that neither the characteristic
+function 1S(n), nor its weighted version r(n) meet this requirement. In such a situation,
+it may be possible to decompose the function h into a sum of functions that are more
+uniformly behaved and consider each of these functions separately. This decomposition
+is known as W -trick and will be carried out in Section 7.
+In Section 2 we construct a majorant for the representation function attached to a
+primitive form f. This majorant will be slightly modiﬁed in accordance to the W -trick
+in Section 7. In Section 9 we check that our majorant is indeed pseudorandom.
+In the course of the minor arc analysis, which starts in Section 11, we observe that
+polynomial subsequences of δ-equidistributed linear nilsequences are still reasonably
+equidistributed. See Proposition 15.3 below. This result will be deduced from the
+quantitative equidistribution theory Green and Tao worked out in [10]. In connection
+with their factorisation theorem [10, Thm 1.19], it could prove a useful tool for the
+minor arc analysis of a wider range of arithmetic problems.
+Due to the quite complex foundations of the Green-Tao methods it proved not feasible
+to provide a self-contained account of it here. This paper therefore strongly depends on
+[8]. It furthermore relies on results about the divisor function from [18], which will be
+used in the construction of the pseudorandom majorants.
+Results. In [18] a pseudorandom majorant for the normalised divisor function ˜τ(n) =
+(log N)−1 ∑
+d|n 1 has been constructed. Here we shall combine this majorant with a siev-
+ing majorant to obtain a pseudorandom majorant for the function Rf(n) which counts
+the number of representations of n by a primitive positive deﬁnite binary quadratic
+form; results for the non-primitive case are immediate corollaries.
+With this majorant at hand, we obtain, employing the machinery from [6, 8] in com-
+bination with the inverse theorem for the Gowers-uniformity norms [11], an asymptotic
+for the representation function Rf evaluated along systems of linear equations:
+Theorem 1.1. Let f1, . . . ft be primitive positive deﬁnite binary quadratic forms. Let
+Ψ = ( ψ1, . . . , ψt) : Zd→ Zt be a system of aﬃne linear forms such that no two forms
+ψi and ψj are aﬃnely dependent. Suppose that the coeﬃcients of the linear part ˙Ψ are
+bounded and that K⊂ [−N, N]d is a convex body such that Ψ(K)⊂ [0, N]t. Then
+∑
+n∈Zd∩K
+Rf1(ψ1(n)) . . . Rft(ψt(n)) = β∞
+∏
+p
+βp + o(N d) ,
+where
+β∞ = vol(K)
+t∏
+i=1
+2π√−Di
+,
+
+---PAGE---
+
+LINEAR CORRELATIONS AMONGST NUMBERS WEIGHTED BY Rf 5
+and
+βp = lim
+m→∞
+Ea∈(Z/pmZ)d
+∏
+i∈[t]
+ρfi,ψi(a)(pm)
+pm ,
+with ρf,A(q) denoting the local number of representations of A (mod q) by f, that is,
+ρf,A(q) :=|{(x, y)∈ [q]2 : f(x, y)≡ A (mod q)}| .
+Theorem 1.1 extends previous results by Heath-Brown [12] and improvements thereof
+by Browning and de la Bret` eche [1], where the case of sums of two squares, fi(x, y) =
+x2 + y2, for i = 1 , . . . ,4, together with systems Ψ : Z2 → Z4 was considered. We
+emphasise, however, that, in contrast to the results from [12] and [1], we unfortunately
+do not obtain explicit error terms in our asymptotic.
+The most interesting case of correlation along a system of aﬃne linear forms is cer-
+tainly the ‘inﬁnite complexity’ case of
+En⩽N Rf(n + a1) . . . Rf(n + ad) ,
+corresponding to the prime-tuples problem. In this case the linear forms involved are
+not independent and thus an asymptotic would give very strong information on the
+regularity of distribution of the function involved. Results of this type lie out of reach
+of the Green-Tao Hardy-Littlewood method.
+It is worth mentioning at this point a recent related result of Henriot [13], which
+provides a correct order upper bound for En⩽N F (|Q1(n)|, . . . ,|Qt(n)|), where F : Nt→
+R⩾0 belongs to a family of functions that does include F (n1, . . . , nt) = ∏t
+i=1 Rfi(ni),
+and where the Qi are coprime irreducible polynomials. The bounds in this result are
+independent of the discriminant of the polynomial Q1 . . . Qt.
+Theorem 1.1 has some natural arithmetic consequences. Analysing the frequency
+of 4-term arithmetic progressions in sums of two squares (weighted by the represent-
+ation function) may be viewed as a special case of studying the (average) number of
+simultaneous zeros of a pair of diagonal quadratic equations, namely solutions to
+x2
+1 + x2
+2 −2x2
+3− 2x2
+4 + x2
+5 + x2
+6 = 0
+x2
+3 + x2
+4− 2x2
+5− 2x2
+6 + x2
+7 + x2
+8 = 0 .
+While the respective system for 3-term progressions may easily be handled by the circle
+method, Heath-Brown mentions in [12] that in order to give an asymptotic for the
+number of 4-term arithmetic progressions in sums of two squares “it would appear that
+one would require a version of the ‘Kloosterman reﬁnement’ for a double integral”.
+Browning and Munshi [2] have succeeded in showing that the circle method can in fact
+be employed to study any pair of quadratic equations in n⩾ 9 variables that takes the
+form
+F1(x3, . . . , xn) =−c(x2
+1 + x2
+2), F 2(x3, . . . , xn) = 0 .
+Previously, the classical Hardy-Littlewood method had been successfully applied to pairs
+of diagonal quadratic equations in at least 9 variables:
+Theorem 1.2 (Cook [3]). Let F, G : Z9→ Z be integral diagonal quadratic forms such
+that for all real λ, µ, not both zero, λF + µG is an indeﬁnite form in at least 5 variables.
+Then there is some positive constant K0 such that the number of simultaneous integral
+zeros of F and G in the box
+P⩽ xi⩽ CP, i = 1, . . . ,9 ,
+
+---PAGE---
+
+6 LILIAN MATTHIESEN
+is given by
+N (P ) = K0P 5 + o(P 5) as P→∞ .
+Our result, which is in fact an analogue of [8, Thm. 1.8], considers certain highly
+singular systems of quadratic equations in 8 or more variables.
+Theorem 1.3. Let t⩾ 4 and let f1, . . . , ft be primitive positive deﬁnite binary quadratic
+forms. For an integer s⩽ t− 2, let A∈ Ms×t(Z) be a full rank matrix whose row-span
+over Q contains no non-trivial element with less than 3 non-zero entries.
+Deﬁne a height function H : Z2t→ R⩾0 by
+H(x) = max
+j∈{1,...,t}
+√
+fj(x2j−1, x2j) .
+Then the simultaneous zeros of the system of quadratic forms
+Fi(x1, . . . , x2t) =
+t∑
+j=1
+ai,jfj(x2j−1, x2j) , i ∈{ 1, . . . , s} ,
+satisﬁes the following asymptotic:
+|{x∈ Z2t : H(x)⩽ N, F 1(x) =··· = Fs(x) = 0}| = (2π)t
+√
+|D1 . . . Dt|
+α∞
+∏
+p
+αp + o(N 2t) ,
+where
+αp := lim
+m→∞
+|{x∈ (Z/pmZ)2t : F1(x)≡···≡ Fs(x)≡ 0 (mod pm)}|
+(pm)2t−s
+and
+α∞ :=|{z∈{ 1, . . . , N2}t : Az = 0}| .
+We conclude this introduction with the fairly short deduction of Theorem 1.3.
+Proof of Theorem 1.3 from Theorem 1.1. The number of simultaneous zeros of bounded
+height of the forms F1, . . . , Ft can be reinterpreted in terms of representation functions:
+|{x∈ Z2t : F1(x) =··· = Ft(x) = 0, H(x)⩽ N}| =
+∑
+z∈[N2]t:Az=0
+t∏
+j=1
+rfj(zj) . (1.1)
+To turn the latter expression into the form of a linear correlation, we may follow [8,§4]:
+Pick a basis for the integer lattice
+Γ :={z∈ Zt : Az = 0} .
+Since A has full rank, Γ has rank d := t− s, and thus there are linear forms ψ1, . . . , ψt :
+Zd→ Z such that
+Γ ={(ψ1(n), . . . , ψt(n)) : n∈ Zd} .
+This system of forms has ﬁnite complexity, as otherwise we would ﬁnd i̸= j such that
+αiψi = αjψj for some non-zero integers αi, αj. Hence,
+Γ ={z∈ Zt : Az = 0, αizi− αjzj = 0} ,
+which implies by the full rank assumption on A that the row-space of A contains a
+non-trivial element with less than 3 non-zero entries, a contradiction.
+
+---PAGE---
+
+LINEAR CORRELATIONS AMONGST NUMBERS WEIGHTED BY Rf 7
+Thus, (1.1) takes a form to which Theorem 1.1 applies and we obtain:
+|{x∈ Z2t : F1(x) =··· = Fs(x) = 0, H(x)⩽ N}|
+=
+∑
+n∈Nd∩Ψ−1([1,N2]t)
+t∏
+j=1
+rfj(ψj(nj))
+= vol(Rd
+⩾0∩ Ψ−1([0, N2]t)) (2π)t
+√
+|D1 . . . Dt|
+∏
+p
+βp + o(N 2d) .
+Note that
+vol(Rd
+⩾0∩ Ψ−1([0, N2]t)) =|{n∈ Zd : Ψ(n)∈ [0, N2]t}| + o(N 2d)
+=|{z∈{ 1, . . . N2}t : Az = 0}| + o(N 2d) ,
+which justiﬁes to deﬁne α∞ :=|{z∈{ 1, . . . N2}t : Az = 0}|. It remains to interpret the
+local factors βp in terms of F1, . . . , Ft. If m is suﬃciently large, the Z-basis (ψj)j∈[d] of
+Γ gives rise to a basis of {z∈ (Z/pmZ)t : Az≡ 0 (mod pm)}, whence
+Ea∈(Z/pmZ)d
+t∏
+j=1
+ρfj ,ψj(a)(pm)
+pm
+= p−m(t+d)
+∑
+a∈(Z/pmZ)d
+t∏
+j=1
+|{(x2j−1, x2j)∈ [pm]2 : fj(x2j−1, x2j)≡ ψj(a) (mod pm)}|
+=|{x∈ (Z/pmZ)2t : F1(x)≡···≡ Fs(x)≡ 0 (mod pm)}|
+(pm)2t−s ,
+which yields βp = αp for all primes p. □
+2. A majorant for the representation function via the Kronecker sum
+Preliminaries and notation. Recall that a binary quadratic form f(x, y) = ax2 +
+bxy + cy2 is primitive when ( a, b, c) = 1 and that its discriminant is given by D(f) =
+b2− 4ac. Throughout this paper all binary quadratic forms will be assumed to be
+positive deﬁnite. The number of ways a form f represents an integer n is described by
+the representation function Rf : Z→ Z, deﬁned by
+Rf(n) :=|{(x, y) : f(x, y) = n}| .
+In order to make use of some multiplicative properties of Rf, we introduce the function
+rf : Z→ Z, deﬁned by
+rf(n) := Rf(n)/k(D) ,
+where k(D) denotes the number of automorphs of binary forms of discriminant D. We
+have k(D) = 6, 4, 2 according to D =−3, D =−4 or D <−4, respectively.
+Closely related to rf is the function rD(f) : Z→ Z which counts—up to the factor
+k(D)—the number of ways n is represented by any equivalence class of forms of dis-
+criminant D = D(f). We deﬁne rD(f) by
+rD(f)(n) :=
+∑
+D(f′)=D(f)
+rf′(n) ,
+
+---PAGE---
+
+8 LILIAN MATTHIESEN
+where f′ runs through a complete system of representatives of primitive forms of dis-
+criminant equal to D(f).
+The function rD(f) majorises rf and has some properties that suggests it may be a
+good candidate to start the construction of a pseudorandom majorant with: on the one
+hand, the number h(D) of equivalence classes of primitive forms of discriminant D is
+ﬁnite, and thus the average order of rD(f) is comparable to the average order of rf; on
+the other hand, rD(f) has an arithmetic representation as a divisor sum, a structure that
+proved to be very suited for the construction of a pseudorandom majorant in both [6]
+and [18].
+Let f be a primitive positive deﬁnite form of discriminant D. Then rf(n) = 0 for
+n < 0 and rf(0) = 1. For positive integers n coprime to D, rD has the representation
+rD(f)(n) =
+∑
+d|n
+(D
+d
+)
+as a character sum, where the symbol is a Kronecker symbol. For general n, we pick up
+another factor which depends only on gcd(n, D) and the parities of the α in ∏
+p|D,pα∥n pα.
+We will see in Corollary 5.1 that
+rD(f)(n)≪D
+∑
+d|n
+(D
+d
+)
+(2.1)
+holds for all n∈ N.
+Recall that the Kronecker symbol is only non-zero when its entries are coprime and
+that furthermore the following lemma holds; see for instance [4, Thm. 1.14].
+Lemma 2.1. If D≡ 0, 1 (mod 4) is a non-zero integer, then there is a unique character
+χD : (Z/DZ)∗→{− 1, 1} such that χD
+(
+p (mod D)
+)
+=
+(
+D
+p
+)
+for odd p coprime to D.
+LetQD denote the set of primes for which χD(p) =−1. Note that this is the union
+of the primes in a collection of progressions modulo D. By multiplicativity we have
+∑
+d|n
+(D
+d
+)
+=
+∑
+d|n
+χD(d) =
+∏
+pa∥n
+(1+ χD(p)+··· + χD(pa)) = τD(n)
+∏
+pα∥n,p∈QD
+1
+2(1+(−1)α) ,
+(2.2)
+where
+τD(m) =
+∏
+pa∥m,χD(p)=1
+(a + 1) .
+We denote byPD the set of primes for which χD(p) = 1. Thus, a square-free number
+n is represented by some form of discriminant D(f) only if all of its prime factors belong
+toPD or divide D(f).
+We can say a little more about the sets PD andQD: Since χ is a non-principal
+character taking values±1, the fact that ∑
+a∈(Z/DZ)∗ χ(a) = 0 implies that bothPD and
+QD are the union of the primes in exactlyφ(D)
+2 progressions modulo D. Thus, the square-
+free numbers that are coprime to D and representable by some form of discriminant D
+are those numbers whose prime factors belong to a set comprising asymptotically half
+the prime numbers.

@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T01-26-23-prove-5d78-F23_lower_v3",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- F_{2,3}(T) = T \u2212 \u230aT/2\u230b \u2212 \u230aT/3\u230b + \u230aT/6\u230b satisfies T \u2212 1 \u2264 3\u00b7F(T). \n    Proof: case split on T mod 6. -/\ntheorem F23_lower (T : \u2115) :\n    (T : \u2124) - 1 \u2264 3 * ((T : \u2124) - ((T / 2 : \u2115) : \u2124) - ((T / 3 : \u2115) : \u2124) + ((T / 6 : \u2115) : \u2124)) := by\n  sorry",
+  "started_at": "2026-04-16T01:26:23Z",
+  "finished_at": "2026-04-16T02:15:36Z",
+  "duration_s": 2952.27,
+  "result_text": "No diagnostics in the `F23_lower` range \u2014 the proof compiles cleanly.\n\n## Cycle 1 Complete\n\n**Filled: 1/1 sorry** \u2014 `F23_lower` proved by `omega`.\n\nLean's `omega` tactic handles the mixed \u2115-division / \u2124-cast arithmetic automatically, so no manual case split on `T mod 6` was needed.\n\n---\n\nCommit this? **[yes / yes-all / no / never]**\n\nAfter that:\n- **[stop]** \u2014 save progress and exit\n- Run `/lean4:golf` on touched file?\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T01-26-23-prove-5d78-F23_lower_v3.log",
+  "worker_pid": 3053,
+  "last_heartbeat_at": 1776305734.9807994,
+  "_started_monotonic": 1776302783.9813025
+}

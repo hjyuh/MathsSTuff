@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visualizing △ABC vs △CDA</title>
+<style>
+  :root {
+    --bg:#0f1216; --panel:#161b22; --panel-2:#1c222c;
+    --ink:#e6edf3; --muted:#9da7b3;
+    --accent:#4cc2ff; --accent-2:#f7b955;
+    --line:#2a313c; --pink:#ff7ac2; --teal:#5ddccf;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+  .wrap{max-width:980px;margin:0 auto;padding:28px 22px 100px}
+  h1{font-size:26px;margin:8px 0 2px}
+  h2{font-size:20px;margin:28px 0 6px;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:6px}
+  h3{font-size:16px;margin:18px 0 4px;color:var(--accent-2)}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}
+  .fig{background:#fff;border-radius:10px;padding:10px;border:1px solid var(--line);display:flex;justify-content:center}
+  .fig svg{width:100%;height:auto;max-width:520px}
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+  .caption{color:var(--muted);font-size:13px;margin-top:8px;text-align:center}
+  .map{background:var(--panel-2);border-radius:10px;padding:12px;margin-top:10px}
+  .map table{width:100%;border-collapse:collapse;font-size:15px}
+  .map th,.map td{padding:6px 10px;border-bottom:1px solid var(--line);text-align:left}
+  .map th{color:var(--accent-2)}
+  .lbl{font-family:Georgia,serif;font-size:15px;fill:#111;font-weight:bold}
+  .lbl-sm{font-family:Georgia,serif;font-size:12px;fill:#333}
+  .tag{display:inline-block;background:#203042;color:#cfe6ff;border:1px solid #2b4561;border-radius:20px;padding:2px 10px;font-size:13px;margin:2px 4px 2px 0}
+  .pink{color:var(--pink)} .teal{color:var(--teal)}
+  .box{background:var(--panel-2);border-left:3px solid var(--accent);padding:12px 16px;border-radius:8px;margin:12px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Visualizing △ABC ≅ △CDA</h1>
+<p class="muted">Watch the figure build up one detail at a time — exactly the way you should do it on paper.</p>
+
+<!-- ============== STEP 1 ============== -->
+<div class="step">
+  <h2>Step 1. Draw segment AB</h2>
+  <p>Just put it somewhere. Don't stress about which direction — pick horizontal because it's easy to reason about.</p>
+  <div class="fig">
+    <svg viewBox="0 0 480 220">
+      <line x1="80" y1="80" x2="280" y2="80" stroke="#111" stroke-width="3"/>
+      <circle cx="80" cy="80" r="4" fill="#111"/>
+      <circle cx="280" cy="80" r="4" fill="#111"/>
+      <text x="68" y="72" class="lbl">A</text>
+      <text x="284" y="72" class="lbl">B</text>
+    </svg>
+  </div>
+  <div class="caption">Segment AB, just floating on the page.</div>
+</div>
+
+<!-- ============== STEP 2 ============== -->
+<div class="step">
+  <h2>Step 2. Apply "AB ∥ DC"</h2>
+  <p>We need a second segment DC that is <strong>parallel to AB</strong>. Parallel just means "same direction, never touches." Draw it below AB going the same way.</p>
+  <p class="muted">Crucial nuance: the problem says "DC", not "CD". So going left → right along the bottom, the label order is <strong>D first, then C</strong>. (Most textbooks keep the labels going around the shape in order — A, B, C, D — so D ends up under A and C ends up under B.)</p>
+  <div class="fig">
+    <svg viewBox="0 0 480 220">
+      <line x1="80" y1="60" x2="280" y2="60" stroke="#111" stroke-width="3"/>
+      <circle cx="80" cy="60" r="4" fill="#111"/>
+      <circle cx="280" cy="60" r="4" fill="#111"/>
+      <text x="68" y="52" class="lbl">A</text>
+      <text x="284" y="52" class="lbl">B</text>
+      <!-- DC below, but the letters from left to right are D then C -->
+      <line x1="80" y1="170" x2="280" y2="170" stroke="#111" stroke-width="3"/>
+      <circle cx="80" cy="170" r="4" fill="#111"/>
+      <circle cx="280" cy="170" r="4" fill="#111"/>
+      <text x="68" y="190" class="lbl">D</text>
+      <text x="284" y="190" class="lbl">C</text>
+      <!-- arrow marks showing parallel -->
+      <polygon points="175,56 185,60 175,64" fill="#c0392b"/>
+      <polygon points="175,166 185,170 175,174" fill="#c0392b"/>
+    </svg>
+  </div>
+  <div class="caption">Two segments with matching arrow marks = parallel. Notice D sits below A, and C sits below B.</div>
+</div>
+
+<!-- ============== STEP 3 ============== -->
+<div class="step">
+  <h2>Step 3. Apply "AB ≅ DC"</h2>
+  <p>The second given says the two segments are the same length. Add a tick mark to each to show they're congruent.</p>
+  <div class="fig">
+    <svg viewBox="0 0 480 220">
+      <line x1="80" y1="60" x2="280" y2="60" stroke="#111" stroke-width="3"/>
+      <line x1="80" y1="170" x2="280" y2="170" stroke="#111" stroke-width="3"/>
+      <circle cx="80" cy="60" r="4" fill="#111"/>
+      <circle cx="280" cy="60" r="4" fill="#111"/>
+      <circle cx="80" cy="170" r="4" fill="#111"/>
+      <circle cx="280" cy="170" r="4" fill="#111"/>
+      <text x="68" y="52" class="lbl">A</text>
+      <text x="284" y="52" class="lbl">B</text>
+      <text x="68" y="190" class="lbl">D</text>
+      <text x="284" y="190" class="lbl">C</text>
+      <!-- parallel arrows -->
+      <polygon points="175,56 185,60 175,64" fill="#c0392b"/>
+      <polygon points="175,166 185,170 175,174" fill="#c0392b"/>
+      <!-- tick marks for congruent lengths -->
+      <line x1="178" y1="56" x2="178" y2="64" stroke="#2980b9" stroke-width="2.5"/>
+      <line x1="178" y1="166" x2="178" y2="174" stroke="#2980b9" stroke-width="2.5"/>
+    </svg>
+  </div>
+  <div class="caption">Blue tick marks = same length. Red arrows = parallel.</div>
+</div>
+
+<!-- ============== STEP 4 ============== -->
+<div class="step">
+  <h2>Step 4. Close the figure — connect AD and BC</h2>
+  <p>The problem mentions four vertices (A, B, C, D), so the figure is a quadrilateral. Connect the unconnected pairs: A to D on the left, B to C on the right. Now you have a <strong>parallelogram ABCD</strong>.</p>
+  <p class="muted">Why is it automatically a parallelogram? Theorem: if one pair of opposite sides is both parallel AND congruent, the quadrilateral must be a parallelogram. That's exactly what the givens hand you.</p>
+  <div class="fig">
+    <svg viewBox="0 0 480 220">
+      <polygon points="80,60 280,60 280,170 80,170" fill="#f7fafc" stroke="#111" stroke-width="3"/>
+      <text x="68" y="52" class="lbl">A</text>
+      <text x="284" y="52" class="lbl">B</text>
+      <text x="68" y="190" class="lbl">D</text>
+      <text x="284" y="190" class="lbl">C</text>
+      <polygon points="175,56 185,60 175,64" fill="#c0392b"/>
+      <polygon points="175,166 185,170 175,174" fill="#c0392b"/>
+      <line x1="178" y1="56" x2="178" y2="64" stroke="#2980b9" stroke-width="2.5"/>
+      <line x1="178" y1="166" x2="178" y2="174" stroke="#2980b9" stroke-width="2.5"/>
+    </svg>
+  </div>
+  <div class="caption">Parallelogram ABCD. Vertices go around in alphabetical order.</div>
+</div>
+
+<!-- ============== STEP 5 ============== -->
+<div class="step">
+  <h2>Step 5. Draw the diagonal AC</h2>
+  <p>The proof wants us to work with two triangles — but right now we only see a quadrilateral. To get two triangles we need to slice the parallelogram with a line. The two vertices showing up in both triangle names (△ABC and △CDA) are A and C, so the slice goes from A to C.</p>
+  <div class="fig">
+    <svg viewBox="0 0 480 220">
+      <polygon points="80,60 280,60 280,170 80,170" fill="#f7fafc" stroke="#111" stroke-width="3"/>
+      <line x1="80" y1="60" x2="280" y2="170" stroke="#c0392b" stroke-width="3"/>
+      <text x="68" y="52" class="lbl">A</text>
+      <text x="284" y="52" class="lbl">B</text>
+      <text x="68" y="190" class="lbl">D</text>
+      <text x="284" y="190" class="lbl">C</text>
+      <polygon points="175,56 185,60 175,64" fill="#c0392b"/>
+      <polygon points="175,166 185,170 175,174" fill="#c0392b"/>
+      <line x1="178" y1="56" x2="178" y2="64" stroke="#2980b9" stroke-width="2.5"/>
+      <line x1="178" y1="166" x2="178" y2="174" stroke="#2980b9" stroke-width="2.5"/>
+    </svg>
+  </div>
+  <div class="caption">The red line AC is the <em>diagonal</em>. It cuts the parallelogram into two triangles.</div>
+</div>
+
+<!-- ============== STEP 6 ============== -->
+<div class="step">
+  <h2>Step 6. See the two triangles separately</h2>
+  <p>This is the part you said you struggle with — "I can't visualize ABC and CDA." So here they are <em>separately</em>, side by side, each shaded a different color.</p>
+  <div class="grid">
+    <div>
+      <div class="fig">
+        <svg viewBox="0 0 340 240">
+          <polygon points="60,40 280,40 280,200" fill="#ffd4ea" stroke="#b0367e" stroke-width="3"/>
+          <text x="48" y="32" class="lbl">A</text>
+          <text x="284" y="32" class="lbl">B</text>
+          <text x="284" y="220" class="lbl">C</text>
+        </svg>
+      </div>
+      <div class="caption"><span class="pink">△ABC</span> — the top-right half of the parallelogram. Trace: A (top-left) → B (top-right) → C (bottom-right) → back to A.</div>
+    </div>
+    <div>
+      <div class="fig">
+        <svg viewBox="0 0 340 240">
+          <polygon points="280,40 60,200 280,200" fill="#c8f5ee" stroke="#2a8a7a" stroke-width="3"/>
+          <text x="48" y="220" class="lbl">D</text>
+          <text x="284" y="32" class="lbl">A</text>
+          <text x="284" y="220" class="lbl">C</text>
+        </svg>
+      </div>
+      <div class="caption"><span class="teal">△CDA</span> — the bottom-left half, flipped out so you can see it alone. Trace: C (bottom-right) → D (bottom-left) → A (top-right) → back to C.</div>
+    </div>
+  </div>
+  <div class="box">
+    <strong>Critical insight:</strong> the two triangles share the diagonal AC as a side. △ABC has side AC running from A (top) down to C (bottom). △CDA has side CA running from C (bottom) up to A (top). Same physical segment, traced in opposite directions.
+  </div>
+</div>
+
+<!-- ============== STEP 7 ============== -->
+<div class="step">
+  <h2>Step 7. Reading "△ABC ≅ △CDA" — the correspondence</h2>
+  <p>When we write <strong>△ABC ≅ △CDA</strong>, the vertex order is a sentence. Match them up position by position:</p>
+  <div class="map">
+    <table>
+      <tr><th>Position in the name</th><th>△ABC</th><th>△CDA</th><th>So ___ ↔ ___</th></tr>
+      <tr><td>1st letter</td><td>A</td><td>C</td><td><span class="pink">A</span> ↔ <span class="teal">C</span></td></tr>
+      <tr><td>2nd letter</td><td>B</td><td>D</td><td><span class="pink">B</span> ↔ <span class="teal">D</span></td></tr>
+      <tr><td>3rd letter</td><td>C</td><td>A</td><td><span class="pink">C</span> ↔ <span class="teal">A</span></td></tr>
+    </table>
+  </div>
+  <p>From the vertex correspondence you read off the <strong>side and angle correspondence</strong>:</p>
+  <div class="map">
+    <table>
+      <tr><th>Side of △ABC</th><th>matches</th><th>Side of △CDA</th></tr>
+      <tr><td>AB (between 1st &amp; 2nd letter)</td><td>↔</td><td>CD (between 1st &amp; 2nd letter)</td></tr>
+      <tr><td>BC (between 2nd &amp; 3rd letter)</td><td>↔</td><td>DA (between 2nd &amp; 3rd letter)</td></tr>
+      <tr><td>AC (between 1st &amp; 3rd letter)</td><td>↔</td><td>CA (between 1st &amp; 3rd letter)</td></tr>
+    </table>
+  </div>
+  <p>Same for angles: ∠A ↔ ∠C, ∠B ↔ ∠D, ∠C ↔ ∠A (reading off the 1st-letter vertex).</p>
+</div>
+
+<!-- ============== STEP 8 ============== -->
+<div class="step">
+  <h2>Step 8. Why did we write △ABC ≅ △CDA and not △ABC ≅ △ACD?</h2>
+  <p>Because the order has to <strong>match the physical positions</strong>. Pick any corresponding piece and check that the ≅ statement agrees with it.</p>
+  <p>Example: the given tells us AB ≅ DC. For the congruence statement to agree, the side AB in the first triangle must line up with a side in the second triangle that equals DC.</p>
+  <p><span class="tag">△ABC ≅ △CDA</span> → AB ↔ CD. Same segment as DC (just named backward). ✓</p>
+  <p><span class="tag" style="background:#3a1e24;color:#ff7a90;border-color:#5a2a32">△ABC ≅ △ACD</span> → AB ↔ AC. But AC is the diagonal, not something we know anything about. ✗</p>
+  <div class="box">
+    <strong>Memory trick for correspondence order:</strong> write the two triangles in a T-chart with letters aligned:
+    <pre style="color:#cfe6ff;background:#0b1320;padding:8px 10px;border-radius:6px;margin-top:6px">△ABC
+△CDA
+-----
+A↔C   B↔D   C↔A</pre>
+    Every pair of matched letters is a corresponding vertex. Read off sides and angles from there.
+  </div>
+</div>
+
+<!-- ============== STEP 9: full proof with highlighted correspondence ============== -->
+<div class="step">
+  <h2>Step 9. Now the proof, with the picture in mind</h2>
+  <p>Here is the same two-column proof as before, but now every line has a visual meaning you can trace in the figure above.</p>
+  <div class="map">
+    <table>
+      <tr><th>#</th><th>Statement</th><th>Reason</th><th>What to see in the picture</th></tr>
+      <tr><td>1</td><td>AB ∥ DC</td><td>Given</td><td>Red arrows on top and bottom sides.</td></tr>
+      <tr><td>2</td><td>AB ≅ DC</td><td>Given</td><td>Blue tick marks on top and bottom.</td></tr>
+      <tr><td>3</td><td>AC ≅ CA</td><td>Reflexive Property</td><td>The diagonal belongs to both triangles — same segment, same length.</td></tr>
+      <tr><td>4</td><td>∠BAC ≅ ∠DCA</td><td>Alternate Interior Angles (AB ∥ DC with transversal AC)</td><td>The diagonal cuts both parallel lines; Z-shaped pair of angles on opposite sides of the diagonal.</td></tr>
+      <tr><td>5</td><td>△ABC ≅ △CDA</td><td>SAS (from 2, 4, 3)</td><td>Side AB ↔ side CD; angle at A ↔ angle at C; side AC ↔ side CA. "Side–angle–side" with the angle sandwiched.</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ============== how to always match up triangles ============== -->
+<h2>General technique for matching up triangles</h2>
+<div class="step">
+  <ol>
+    <li><strong>Put the two triangles on the page side-by-side in the same orientation</strong> (if you have to mentally flip or rotate one, actually do it on scratch paper).</li>
+    <li><strong>Use the givens to pair up matching parts</strong> (equal sides, equal angles, shared sides).</li>
+    <li><strong>Write the ≅ statement so the letters line up by position</strong>: first letter with first letter, etc.</li>
+    <li><strong>Sanity check:</strong> pick a known equal side, e.g. AB ≅ DC. Your ≅ statement must have A and B in matching positions with D and C in the other triangle (or C and D — a segment is named either direction).</li>
+  </ol>
+</div>
+
+<p class="muted" style="margin-top:36px;">Go back and re-read the proof on the main tutor page — it should click now.</p>
+
+</div>
+</body>
+</html>

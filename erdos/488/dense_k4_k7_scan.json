@@ -1,0 +1,209 @@
+{
+  "R_scans": {
+    "k4_max100": {
+      "k": 4,
+      "maxA": 100,
+      "dense_count": 1754643,
+      "nonpositive_R_count": 0,
+      "min_R": 0.010555555555555554,
+      "min_R_set": [
+        40,
+        60,
+        90,
+        100
+      ],
+      "min_R_exact": "19/1800",
+      "first_nonpositive_set": null,
+      "first_nonpositive_R": null,
+      "first_nonpositive_R_exact": null,
+      "elapsed_seconds": 1.251
+    },
+    "k5_max50": {
+      "k": 5,
+      "maxA": 50,
+      "dense_count": 708060,
+      "nonpositive_R_count": 7,
+      "min_R": -0.038888888888889084,
+      "min_R_set": [
+        4,
+        6,
+        9,
+        10,
+        15
+      ],
+      "min_R_exact": "-7/180",
+      "first_nonpositive_set": [
+        4,
+        6,
+        9,
+        10,
+        15
+      ],
+      "first_nonpositive_R": -0.038888888888889084,
+      "first_nonpositive_R_exact": "-7/180",
+      "elapsed_seconds": 0.605
+    },
+    "k6_max50": {
+      "k": 6,
+      "maxA": 50,
+      "dense_count": 3950713,
+      "nonpositive_R_count": 518,
+      "min_R": -0.14047619047619064,
+      "min_R_set": [
+        4,
+        6,
+        9,
+        10,
+        14,
+        15
+      ],
+      "min_R_exact": "-59/420",
+      "first_nonpositive_set": [
+        4,
+        5,
+        6,
+        9,
+        14,
+        21
+      ],
+      "first_nonpositive_R": -0.030952380952380842,
+      "first_nonpositive_R_exact": "-13/420",
+      "elapsed_seconds": 20.031
+    },
+    "k7_max50": {
+      "k": 7,
+      "maxA": 50,
+      "dense_count": 16731440,
+      "nonpositive_R_count": 12764,
+      "min_R": -0.27222222222222237,
+      "min_R_set": [
+        4,
+        6,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "min_R_exact": "-49/180",
+      "first_nonpositive_set": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13
+      ],
+      "first_nonpositive_R": -0.02014097014097005,
+      "first_nonpositive_R_exact": "-3629/180180",
+      "elapsed_seconds": 54.433
+    }
+  },
+  "dense_quad_ep": {
+    "dense_count": 1754643,
+    "certified_count": 1754643,
+    "worst_upper_bound": 0.9798216782808093,
+    "worst_upper_set": [
+      97,
+      98,
+      99,
+      100
+    ],
+    "worst_upper_n": 193,
+    "worst_upper_minG": 0.02072538860103627,
+    "exact_candidate_count": 15,
+    "exact_worst_ratio": 0.9768971197789351,
+    "exact_worst_set": [
+      97,
+      98,
+      99,
+      100
+    ],
+    "exact_worst_n": 193,
+    "exact_worst_m": 9409,
+    "elapsed_seconds": 51.988
+  },
+  "C_consecutive": {
+    "k4_max100": {
+      "k": 4,
+      "maxA": 100,
+      "best_C": 7.2682582745474065,
+      "best_set": [
+        94,
+        95,
+        96,
+        97
+      ],
+      "best_argmax": 848443,
+      "best_delta": 0.04112859468258274,
+      "elapsed_seconds": 0.772
+    },
+    "k5_max50": {
+      "k": 5,
+      "maxA": 50,
+      "best_C": 10.576348342405254,
+      "best_set": [
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "best_argmax": 85182,
+      "best_delta": 0.10592116114134917,
+      "elapsed_seconds": 0.196
+    },
+    "k6_max50": {
+      "k": 6,
+      "maxA": 50,
+      "best_C": 15.217878937814021,
+      "best_set": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "best_argmax": 81395,
+      "best_delta": 0.1253174995876628,
+      "elapsed_seconds": 0.212
+    },
+    "k7_max50": {
+      "k": 7,
+      "maxA": 50,
+      "best_C": 22.37371823495596,
+      "best_set": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "best_argmax": 75931,
+      "best_delta": 0.146651219109915,
+      "elapsed_seconds": 0.228
+    }
+  },
+  "C_quad_slice_min70": {
+    "min_a": 70,
+    "maxA": 100,
+    "dense_count": 31465,
+    "best_C": 7.2682582745474065,
+    "best_set": [
+      94,
+      95,
+      96,
+      97
+    ],
+    "best_argmax": 848443,
+    "best_delta": 0.04112859468258274,
+    "elapsed_seconds": 579.345
+  },
+  "totals": {
+    "elapsed_seconds": 709.06
+  }
+}

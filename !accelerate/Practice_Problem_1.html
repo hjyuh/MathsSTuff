@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Practice Problem — Angle Bisector in Isosceles</title>
+<style>
+  :root { --bg:#0f1216; --panel:#161b22; --panel-2:#1c222c; --ink:#e6edf3;
+          --muted:#9da7b3; --accent:#4cc2ff; --accent-2:#f7b955; --line:#2a313c; }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+  .wrap{max-width:880px;margin:0 auto;padding:28px 22px 80px}
+  h1{font-size:24px;margin:6px 0 2px}
+  h2{font-size:18px;margin:20px 0 6px;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:4px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}
+  .fig{background:#fff;border-radius:10px;padding:10px;border:1px solid var(--line);display:flex;justify-content:center}
+  .fig svg{width:100%;height:auto;max-width:460px}
+  .caption{color:var(--muted);font-size:13px;margin-top:8px;text-align:center}
+  .q{background:#1e2a3a;border-radius:10px;padding:12px 14px;margin:10px 0;border-left:3px solid var(--accent-2)}
+  .lbl{font-family:Georgia,serif;font-size:16px;fill:#111;font-weight:bold}
+  .tick{stroke:#c0392b;stroke-width:2.5}
+  .arc{stroke:#8e44ad;fill:none;stroke-width:2}
+  .shared{stroke:#2a6;stroke-width:2.5}
+  .legend{font-size:13px;color:var(--muted);margin-top:10px}
+  .legend span{display:inline-block;margin-right:14px}
+  .sw{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:middle;margin-right:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Practice Problem — Angle Bisector in an Isosceles Triangle</h1>
+
+<div class="card">
+  <h2>The setup</h2>
+  <p><strong>Given:</strong> △PQR is isosceles with PQ ≅ PR. Point S lies on segment QR, and PS bisects ∠QPR.</p>
+  <p><strong>Prove:</strong> △PQS ≅ △PRS</p>
+</div>
+
+<div class="card">
+  <h2>The figure</h2>
+  <div class="fig">
+    <svg viewBox="0 0 360 260">
+      <!-- triangle PQR -->
+      <polygon points="180,30 70,220 290,220" fill="#e8f4fd" stroke="#111" stroke-width="2.5"/>
+      <!-- bisector PS, S on QR -->
+      <line x1="180" y1="30" x2="180" y2="220" stroke="#2a6" stroke-width="2.5"/>
+      <!-- vertex labels -->
+      <text x="170" y="22" class="lbl">P</text>
+      <text x="56" y="236" class="lbl">Q</text>
+      <text x="296" y="236" class="lbl">R</text>
+      <text x="174" y="238" style="font-family:Georgia,serif;font-size:13px;fill:#333">S</text>
+      <!-- tick marks PQ and PR -->
+      <line x1="118" y1="130" x2="128" y2="120" class="tick"/>
+      <line x1="232" y1="130" x2="242" y2="120" class="tick"/>
+      <!-- arcs showing angle bisector at P -->
+      <path d="M 168 62 A 14 14 0 0 0 180 70" class="arc"/>
+      <path d="M 180 70 A 14 14 0 0 0 192 62" class="arc"/>
+    </svg>
+  </div>
+  <div class="caption">PQ ≅ PR (red tick marks). PS bisects ∠QPR (purple arcs at P). PS is shared by both smaller triangles.</div>
+  <div class="legend">
+    <span><span class="sw" style="background:#c0392b"></span>tick marks = PQ ≅ PR (given)</span>
+    <span><span class="sw" style="background:#8e44ad"></span>purple arcs = bisected angle at P</span>
+    <span><span class="sw" style="background:#2a6"></span>green = shared side PS</span>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Before writing the proof, answer these three questions</h2>
+  <div class="q"><strong>Q1.</strong> The two triangles you're proving congruent are △PQS and △PRS. What piece do both triangles share?</div>
+  <div class="q"><strong>Q2.</strong> What does "PS bisects ∠QPR" give you about the two angles at vertex P?</div>
+  <div class="q"><strong>Q3.</strong> Count: how many pieces of △PQS ≅ △PRS do you now know to be congruent, and what is the name of the theorem that lets you conclude the triangles are congruent?</div>
+</div>
+
+</div>
+</body>
+</html>

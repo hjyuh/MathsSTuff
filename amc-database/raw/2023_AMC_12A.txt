@@ -1,0 +1,2289 @@
+=== Problem 1 ===
+Cities
+
+Choices: {'A': '20', 'B': '24', 'C': '25', 'D': '26', 'E': '27</math>'}
+Answer: E
+
+--- Solution 1 ---
+This is a <math>d=st</math> problem, so let <math>x</math> be the time it takes to meet. We can write the following equation:
+<cmath>12x+18x=45</cmath>
+Solving gives us <math>x=1.5</math>. The <math>18x</math> is Alicia so <math>18\times1.5=\boxed{\textbf{(E) 27}}</math>
+
+--- Solution 2 ---
+The relative speed of the two is <math>18+12=30</math>, so <math>\frac{3}{2}</math> hours would be required to travel <math>45</math> miles. <math>d=st</math>, so <math>x=18\cdot\frac{3}{2}=\boxed{\textbf{(E) 27}}</math>
+
+--- Solution 3 ---
+Since <math>18</math> mph is <math>\frac{3}{2}</math> times <math>12</math> mph, Alicia will travel <math>\frac{3}{2}</math> times as far as Beth. If <math>x</math> is the distance Beth travels, <cmath>\frac{3}{2}x+x=45</cmath> <cmath>\frac{5}{2}x=45</cmath> <cmath>x=18</cmath>Since this is the amount Beth traveled, the amount that Alicia traveled was <cmath>45-18=\boxed{\textbf{(E) 27}}</cmath>
+
+--- Solution 4 ---
+Alice and Barbara close in on each other at 30mph. Since they are 45 miles apart, they will meet in t = d/s = 45miles / 30mph = 3/2 hours. We can either calculate the distance Alice travels at 18mph or the distance Barbara travels at 12mph; since we want the distance from Alice, we go with the former. Alice (and Barbara) will meet in 1 1/2 hours at 18mph x 3/2 hours = 27 miles from A. <math>\boxed{\textbf{(E) 27}}</math>
+
+--- Solution 5 ---
+We know that Alice approaches Beth at <math>18</math> mph and Beth approaches Alice at <math>12</math> mph. If we consider that if Alice moves <math>18</math> miles at the same time Beth moves <math>12</math> miles —> <math>15</math> miles left. Alice then moves <math>9</math> more miles at the same time as Beth moves <math>6</math> more miles. Alice has moved <math>27</math> miles from point A at the same time that Beth has moved <math>18</math> miles from point B, meaning that Alice and Beth meet <math>27</math> miles from point A.
+
+--- Solution 6 ---
+We know that Beth starts 45 miles away from City A, let’s create two equations:
+Alice-> <math>18t=d</math>
+Beth->  <math>-12t+45=d</math> [-12 is the slope; 45 is the y-intercept]
+
+Solve the system:
+
+<math>18t=-12t+45
+30t=45
+t=1.5</math>
+
+So, <math>18(1.5)=</math> <math>\boxed{\textbf{(E) 27}}</math>
+
+--- Solution 7 ---
+Since Alicia and Beth's speeds are constant, they are directly proportional to their distances covered, so the ratio of their speeds is equal to the ratio of their covered distances. Since Alicia travels <math>\frac{18}{30} = \frac{3}{5}</math> of their combined speed, she travels <math>\frac{3}{5}\cdot 45 = \boxed{\textbf{(E)}\ 27}</math> of the total distance.
+
+-Benedict T (countmath1)
+
+--- Solution 8 ---
+[[Image:2023_AMC12B_Q1_P1.png|thumb|left|460px]]
+[[Image:2023AMC12B_Q1_P2.png|thumb|left|460px]]
+Note that Alicia and Beth must have travelled 45 miles together in order for them to meet together. While travelling the 45 miles, Alicia came closer towards Beth and Beth came closer towards Alicia. Since Alicia is travelling faster than Beth, we know that they will meet slightly closer towards city B from the middle. Also, the distance remaining between Alicia and Beth as they bike toward each other is proportional to their combined velocity. The combined velocity is <math>18t + 12t = 30t</math>. The time it takes to travel 45 miles going at 30 miles per hour can be calculated using simple algebra.
+
+Let <math>t</math> be the time it takes for Alicia and Beth to meet together.
+
+\begin{align*}
+18t + 12t = 45 \\
+30t = 45 \\
+t = \frac{3}{2}
+\end{align*}
+
+It takes <math>\frac{3}{2}</math>  hours of cycling by both Alicia and Beth at their respective biking speeds in order to meet together. Also, note that the question asks for the distance from City A they will be when they meet. This is the same as the distance travelled by Alicia from City A. Alicia travels at 18 mph, which turns into a distance = speed x time question. 
+
+\begin{align*}
+d &= st \\
+d &= 18 \times \frac{3}{2} \\
+d &= 27
+\end{align*}
+The distance from City A when Alicia and Beth meet is <math>\boxed{\textbf{(E)}\ 27}</math>.
+
+Note - Even though it might seem like there is a lot of work for this problem, it would typically take a very short time to think this entire process out.
+
+
+=== Problem 2 ===
+The weight of
+
+Choices: {'A': '1\\frac{4}{5}', 'B': '2', 'C': '2\\frac{2}{5}', 'D': '3', 'E': '3\\frac{3}{5}</math>'}
+Answer: A
+
+--- Solution 1 ---
+Use a system of equations. Let <math>x</math> be the weight of a pizza and <math>y</math> be the weight of a cup of orange slices.
+We have <cmath>\frac{1}{3}x+\frac{7}{2}y=\frac{3}{4}x+\frac{1}{2}y.</cmath>
+Rearranging, we get <cmath>\begin{align*}
+\frac{5}{12}x&=3y, \\
+x&=\frac{36}{5}y.
+\end{align*}</cmath>
+Plugging in <math>\frac{1}{4}</math> pounds for <math>y</math> by the given gives <math>\frac{9}{5}=\boxed{\textbf{(A) }1\frac{4}{5}}.</math>
+
+--- Solution 2 ---
+Let:
+<math>p</math> be the weight of a pizza.
+<math>o</math> be the weight of a cup of orange.
+
+From the problem, we know that <math>o = \frac{1}{4}</math>.
+
+Write the equation below:
+<cmath>\frac{1}{3} p + \frac{7}{2}\cdot\frac{1}{4} = \frac{3}{4} p + \frac{1}{2}\cdot\frac{1}{4}</cmath>
+
+Solving for <math>p</math>:
+<math>\frac{5}{12} p = \frac{3}{4}</math>
+
+<math>p = \frac{9}{5} = \boxed{\textbf{(A) }1\frac{4}{5}}.</math>
+
+--- Solution 3 ---
+<math>\frac{P}{3} + \frac{7}{2} R = \frac{3}{4} P + \frac{R}{2}</math> where <math>P</math> is the pizza weight and <math>R</math> is the weight of cup of oranges
+Since oranges weigh <math>\frac{1}{4}</math> pound per cup, the oranges on the LHS weigh <math>\frac{7}{2}</math> cups x <math>\frac{1}{4}</math> pounds/cup = <math>\frac{7}{8}</math> pound,
+and those on the RHS weigh <math>\frac{1}{2}</math> cup x <math>\frac{1}{4}</math> pounds/cup = <math>\frac{1}{8}</math> pound.
+
+So <math>\frac{P}{3}</math> + <math>\frac{7}{8}</math> pound = <math>\frac{3}{4} P</math> + <math>\frac{1}{8}</math> pound; <math>\frac{P}{3}</math> + <math>\frac{3}{4}</math> pound = <math>\frac{3}{4} P</math>.
+
+Multiplying both sides by <math>\text{lcm}(3,4) = 12</math>, we have
+<math>4P + 9 = 9P</math>; <math>5P = 9</math>; <math>P</math> = weight of a large pizza = <math>\frac{9}{5}</math> pounds = <math>\boxed{\textbf{(A)}1 \frac{4}{5}}</math> pounds.
+
+
+=== Problem 3 ===
+How many positive perfect squares less than
+
+Choices: {'A': '8', 'B': '9', 'C': '10', 'D': '11', 'E': '12</math>'}
+Answer: A
+
+--- Solution 1 ---
+Since <math>\left \lfloor{\sqrt{2023}}\right \rfloor = 44</math>, there are <math>\left \lfloor{\frac{44}{5}}\right \rfloor = \boxed{\textbf{(A) 8}}</math> perfect squares less than 2023 that are divisible by 5.
+
+--- Solution 2 ---
+Since <math>5</math> is square-free, each solution must be divisible by <math>5^2=25</math>. We take <math>\left \lfloor{\frac{2023}{25}}\right \rfloor = 80</math> and see that there are <math>\boxed{\textbf{(A) 8}}</math> positive perfect squares no greater than <math>80</math>.
+
+--- Solution 3 ---
+Since the perfect squares have to be divisible by 5, then we know it has to be 5 times some number squared <math>(5 \ cdot x)^{2}</math>. With this information, you can figure out every single product of 5 and another number squared to count how many perfect squares are divisible by 5 that are less than 2023. (EX: <math>5^{2} = 25, 10^{2} = 100, ... 40^{2} = 1600</math>) With this you get a max of <math>40^{2}</math>, or  <math>\left \lfloor{\frac{44}{5}}\right \rfloor = \boxed{\textbf{(A) 8}}</math> solutions.
+
+--- Solution 4 ---
+The way of BlueShardow refined:
+
+All it takes is to recall that 45 squared is 2025, and 45 is 5 x 9. So all the squares of 5 x 1, 5 x 2, 5 x 3 so on are divisible by 5. So the answer is 8. It can be done even if one does not remember that 45 squared is 2025, all it takes is intuition. One can easily see mentally that 5 x 8 that is 40 squared is 1600, and then one has to do just one more computation and see that 5 x 9 that is 45 squared exceeds 2023, so the answer is 8. 
+
+
+Note that you can find the square of any number that ends in 5 by taking the number 5 more than it and the number 5 less than it, multiplying those together, and adding 25. For example, to calculate the square of 45, you do 40 x 50 = 2000, and 2000 + 25 = 2025.
+
+And then you know that it goes up from <math>1</math> to <math>44</math>, and the multiples of five are {<math>5</math>, <math>10</math>..., <math>35</math>, <math>40</math>}, dividing each of them by <math>5</math>, you get {<math>1</math>, <math>2</math>..., <math>7</math>, <math>8</math>}, therefore, the answer is <math>\boxed{\textbf{(A) 8}}</math>
+
+
+=== Problem 4 ===
+How many digits are in the base-ten representation of
+
+Choices: {'A': '~14', 'B': '~15', 'C': '~16', 'D': '~17', 'E': '~18</math>'}
+Answer: E
+
+--- Solution 1 ---
+Prime factorizing this gives us <math>2^{15}\cdot3^{5}\cdot5^{15}=10^{15}\cdot3^5=243\cdot10^{15}</math>.
+
+<math>10^{15}</math> has <math>16</math> digits and <math>243</math> = <math>2.43*10^{2}</math> gives us <math>3</math> more digits. <math>16+2=\text{\boxed{\textbf{(E) }18}}</math>
+
+<math>2.43*10^{17}</math> has <math>18</math> digits
+
+--- Solution 2 ---
+Multiplying it out, we get that <math>8^5 \cdot 5^{10} \cdot 15^5 = 243000000000000000</math>. Counting, we have the answer is <math>\text{\boxed{\textbf{(E) }18}}</math>
+
+--- Solution 3 ---
+All the exponents have a common factor of <math>5</math> which we can factor out. This leaves us with <math>(8 \cdot 5^2 \cdot 15)^5 = (3000)^5 = (3 \cdot 1000)^5</math>. We can then distribute the power leaving us with <math>3^5 \cdot 10^{3 \cdot 5} = 243 \cdot 10^{15}</math>. This would be <math>243</math> followed by <math>15</math> zeros resulting in our answer being <math>15+3=\text{\boxed{\textbf{(E)}18}}</math>
+
+
+=== Problem 5 ===
+Janet rolls a standard
+
+Choices: {'A': '\\frac{2}{9}', 'B': '\\frac{49}{216}', 'C': '\\frac{25}{108}', 'D': '\\frac{17}{72}', 'E': '\\frac{13}{54}</math>'}
+Answer: B
+
+--- Solution 1 ---
+There are <math>3</math> cases where the running total will equal <math>3</math>: one roll; two rolls; or three rolls:
+
+'''Case 1:'''
+The chance of rolling a running total of <math>3</math>, namely <math>(3)</math> in exactly one roll is <math>\frac{1}{6}</math>.
+
+'''Case 2:'''
+The chance of rolling a running total of <math>3</math> in exactly two rolls, namely <math>(1, 2)</math> and <math>(2, 1)</math> is <math>\frac{1}{6}\cdot\frac{1}{6}\cdot2=\frac{1}{18}</math>.
+
+'''Case 3:'''
+The chance of rolling a running total of 3 in exactly three rolls, namely <math>(1, 1, 1)</math> is <math>\frac{1}{6}\cdot\frac{1}{6}\cdot\frac{1}{6}=\frac{1}{216}</math>.
+
+Using the rule of sum we have <math>\frac{1}{6}+\frac{1}{18}+\frac{1}{216}=\boxed{\textbf{(B) }\frac{49}{216}}</math>.
+
+--- Solution 2 ---
+Because there is only a maximum of 3 rolls we must count (running total = 3 means there can't be a fourth roll counted), we can simply list out all of the probabilities.
+
+If we roll a 1 on the first, the rolls that follow must be 2 or {1,1}, with the following results not mattering. This leaves a probability of <math>\frac{1}{6}\times\frac{1}{6} + \frac{1}{6}\times\frac{1}{6}\times\frac{1}{6} = \frac{7}{216}</math>.
+
+If we roll a 2 on the first, the roll that follows must be 1, resulting in a probability of <math>\frac{1}{6}\times\frac{1}{6} = \frac{1}{36}</math>.
+
+If we roll a 3 on the first, the following rolls do not matter, resulting in a probability of <math>\frac{1}{6}</math>.
+Any roll greater than three will result in a running total greater than 3 no matter what, so those cases can be ignored.
+Summing the answers, we have <math>\frac{7}{216} + \frac{1}{36} + \frac{1}{6} = \frac{7+6+36}{216} = \boxed{\textbf{(B) }\frac{49}{216}}</math>.
+
+--- Solution 3 ---
+Consider sequences of 4 integers with each integer between 1 and 6, the number of permutations of 6 numbers is <math>6^4=1296</math>. 
+
+The following 4 types of sequences that might generate a running total of the numbers to be equal to 3 (x, y, or z denotes any integer between 1 and 6).
+
+Sequence #1, (1, 1, 1, x): there are <math>6</math> possible sequences. 
+
+Sequence #2, (1, 2, x, y): there are <math>6^2 = 36</math> possible sequences. 
+
+Sequence #3, (2, 1, x, y): there are <math>6^2 = 36</math> possible sequences. 
+
+Sequence #4, (3, x, y, z): there are <math>6^3 = 216</math> possible sequences.
+
+Out of 1296 possible sequences, there are a total of <math>6 + 36 + 36 + 216 = 294</math> sequences that qualify. Hence, the probability is <math>294 / 1296 = \boxed{\textbf{(B) }\frac{49}{216}}</math>
+
+
+=== Problem 6 ===
+Points
+
+Choices: {'A': '~2\\sqrt{11}', 'B': '~4\\sqrt{3}', 'C': '~8', 'D': '~4\\sqrt{5}', 'E': '~9</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>A(6+m,2+n)</math> and <math>B(6-m,2-n)</math>, since <math>(6,2)</math> is their midpoint. Thus, we must find <math>2m</math>. We find two equations due to <math>A,B</math> both lying on the function <math>y=\log_{2}x</math>. The two equations are then <math>\log_{2}(6+m)=2+n</math> and <math>\log_{2}(6-m)=2-n</math>. Now add these two equations to obtain <math>\log_{2}(6+m)+\log_{2}(6-m)=4</math>. By logarithm rules, we get <math>\log_{2}((6+m)(6-m))=4</math>. By raising 2 to the power of  both sides, we obtain <math>(6+m)(6-m)=16</math>. We then get <cmath>36-m^2=16 \rightarrow m^2=20 \rightarrow m=2\sqrt{5}</cmath>. Since we're looking for <math>2m</math>, we obtain <math>(2)(2\sqrt{5})=\boxed{\textbf{(D) }4\sqrt{5}}</math>
+
+--- Solution 2 ---
+We have <math>\frac{x_A + x_B}{2} = 6</math> and <math>\frac{\log_2 x_A + \log_2 x_B}{2} = 2</math>. The first equation becomes <math>x_A + x_B = 12,</math> and the second becomes <math>\log_2(x_A x_B) = 4,</math> so <math>x_A x_B = 16.</math>
+Then
+<cmath>
+\begin{align*}
+\left| x_A - x_B \right|
+& = \sqrt{\left( x_A + x_B \right)^2 - 4 x_A x_B} \\
+& = \boxed{\textbf{(D) } 4 \sqrt{5}}.
+\end{align*}
+</cmath>
+
+--- Solution 3 ---
+Basically, we can use the midpoint formula 
+
+assume that the points are <math>(x_1,y_1)</math> and <math>(x_2,y_2)</math>
+
+assume that the points are (<math>x_1</math>,<math>\log_{2}(x_1)</math>) and (<math>x_2</math>,<math>\log_{2}(x_2)</math>)
+
+
+midpoint formula is (<math>\frac{x_1+x_2}{2}</math>,<math>\frac{\log_{2}(x_1)+\log_{2}(x_2)}{2}</math>)
+
+
+thus
+<math>x_1+x_2=12</math>
+<math>x_2=12-x_1</math>
+and 
+<math>\log_{2}(x_1)+\log_{2}(x_2)=4</math>
+<math>\log_{2}(x_1)+\log_{2}(12-x_1)=\log_{2}(16)</math>
+
+<math>\log_{2}((12x_1-x_1^2)/16)=0</math>
+
+since
+<math>2^0=1</math>
+so,
+
+<math>12x_1-x_1^2=16</math>
+
+<math>12x_1-x_1^2-16=0</math>
+for simplicity lets say <math>x_1 = x</math>
+
+<math>12x-x^2=16</math>. We rearrange to get <math>x^2-12x+16=0</math>.
+
+put this into quadratic formula and you should get
+
+<math>x_1=6+2\sqrt{5}</math>
+Therefore,
+<math>x_1=6+2\sqrt{5}-(6-2\sqrt{5})</math>
+
+which equals <math>6-6+4\sqrt{5}=\boxed{\textbf{(D) }4\sqrt{5}}</math>
+
+--- Solution 4 ---
+Similar to above, but solve for <math>x = 2^y</math> in terms of <math>y</math>:
+
+<math>(2^{y}+2^{2+(2-y)})/2= 6 </math>
+
+<math>2^y + 2^{4-y} = 12 </math>
+
+<math> (2^y)^2 + 2^4 = 12(2^y) </math>
+
+<math> x^2 -12x + 16 = 0 </math>
+
+Distance between roots of the quadratic is the discriminant: <math>\sqrt{{12}^2 - 4(1)(16)} = \sqrt{80} = \boxed{\textbf{(D) }4\sqrt{5}}</math>
+
+
+=== Problem 7 ===
+A digital display shows the current date as an
+
+Choices: {'A': '~5', 'B': '~6', 'C': '~7', 'D': '~8', 'E': '~9</math>'}
+Answer: E
+
+--- Solution 1 ---
+Do careful casework by each month. Make sure to start with 2023. In the month and the date, we need a <math>0</math>, a <math>3</math>, and two digits repeated (which has to be <math>1</math> and <math>2</math> after consideration). After the casework, we get <math>\boxed{\textbf{(E)}
+For curious readers, the numbers (in chronological order) are:
+
+ 20230113
+ 20230131
+ 20230223
+ 20230311
+ 20230322
+ 20231013
+ 20231031
+ 20231103
+ 20231130
+
+--- Solution 2 ---
+There is one <math>3</math>, so we need one more (three more means that either the month or units digit of the day is <math>3</math>). For the same reason, we need one more <math>0</math>. 	
+ 	
+
+If <math>3</math> is the units digit of the month, then the <math>0</math> can be in either of the three remaining slots. For the first case (tens digit of the month), then the last two digits must match (<math>11, 22</math>). For the second (tens digit of the day), we must have the other two be <math>1</math>, as a month can't start with <math>2</math> or <math>0</math>. There are <math>3</math> successes this way. 
+ 	
+
+If <math>3</math> is the tens digit of the day, then <math>0</math> can be either the tens digit of the month or the units digit of the day. For the first case, <math>1</math> must go in the other slots. For the second, the other two slots must be <math>1</math> as well. There are <math>2</math> successes here. 
+	
+
+If <math>3</math> is the units digit of the day, then <math>0</math> could go in any of the <math>3</math> remaining slots again. If it's the tens digit of the day, then the other digits must be <math>1</math>. If <math>0</math> is the units digit of the day, then the other two slots must both be <math>1</math>. If <math>0</math> is the tens digit of the month, then the other two slots can be either both <math>1</math> or both <math>2</math>. In total, there are <math>4</math> successes here. 
+	
+Summing through all cases, there are <math>3 + 2 + 4 = \boxed{\textbf{(E)}
+-Benedict T (countmath1)
+
+--- Solution 3 ---
+We start with <math>2023----</math> we need an extra <math>0</math> and an extra <math>3</math>. So we have at least one of those extras in the days, except we can have the month <math>03</math>. We now have <math>6</math> possible months <math>01,02,03,10,11,12</math>. For month <math>1</math> we have two cases, we now have to add in another 1, and the possible days are <math>13,31</math>. For month <math>2</math> we need an extra <math>2</math> so we can have the day <math>23</math> note that we can't use <math>32</math> because it is to large. Now for month <math>3</math> we can have any number and multiply it by <math>11</math> so we have the solution <math>11,22</math>. For October we need a <math>1</math> and a <math>3</math> so we have <math>13,31</math> as our choices. For November we have two choices which are <math>03,30</math>.Now for December we have <math>0</math> options. Summing <math>2+1+2+2+2</math> we get <math>\boxed{\textbf{(E)}
+
+
+=== Problem 8 ===
+Maureen is keeping track of the mean of her quiz scores this semester. If Maureen scores an
+
+Choices: {'A': '4', 'B': '5', 'C': '6', 'D': '7', 'E': '8</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>a</math> represent the amount of tests taken previously and <math>x</math> the mean of the scores taken previously. 
+
+We can write the following equations:
+
+<cmath>\frac{ax+11}{a+1}=x+1\qquad (1)</cmath>
+<cmath>\frac{ax+33}{a+3}=x+2\qquad (2)</cmath>
+
+Multiplying equation <math>(1)</math> by <math>(a+1)</math> and solving, we get:
+<cmath>ax+11=ax+a+x+1</cmath>
+<cmath>11=a+x+1</cmath>
+<cmath>a+x=10\qquad (3)</cmath>
+
+Multiplying equation <math>(2)</math> by <math>(a+3)</math> and solving, we get:
+<cmath>ax+33=ax+2a+3x+6</cmath>
+<cmath>33=2a+3x+6</cmath>
+<cmath>2a+3x=27\qquad (4)</cmath>
+
+Solving the system of equations for <math>(3)</math> and <math>(4)</math>, we find that <math>a=3</math> and <math>x=\boxed{\textbf{(D) }7}</math>.
+
+--- Solution 2 ---
+Suppose Maureen took <math>n</math> tests with an average of <math>m</math>.
+
+If she takes another test, her new average is <math>\frac{(nm+11)}{(n+1)}=m+1</math>
+
+Cross-multiplying: <math>nm+11=nm+n+m+1</math>, so <math>n+m=10</math>.
+
+If she takes <math>3</math> more tests, her new average is <math>\frac{(nm+33)}{(n+3)}=m+2</math>
+
+Cross-multiplying: <math>nm+33=nm+2n+3m+6</math>, so <math>2n+3m=27</math>.
+
+But <math>2n+3m</math> can also be written as <math>2(n+m)+m=20+m</math>. Therefore <math>m=27-20=\boxed{\textbf{(D) }7}</math>
+
+--- Solution 3 ---
+Let <math>s</math> represent the sum of Maureen's test scores previously and <math>t</math> be the number of scores taken previously.
+
+So, <math>\frac{s+11}{t+1} = \frac{s}{t}+1</math> and <math>\frac{s+33}{t+3} = \frac{s}{t}+2</math>
+
+We can use the first equation to write <math>s</math> in terms of <math>t</math>.
+
+We then substitute this into the second equation: <math>\frac{-t^2+10t+33}{t+3} = \frac{-t^2+10t}{t}+2</math>
+
+From here, we should solve for t: multiply both sides by (<math>t</math>) and then (<math>t+3</math>), combining like terms to get <math>t^2-3t=0</math>. Factorize to get <math>t=0</math> or <math>t=3</math>, and therefore <math>t=3</math> (makes sense for the problem).
+
+We substitute this to get <math>s=21</math>.
+
+Therefore, the solution to the problem is <math>\frac{21}{3}=</math> <math>\boxed{\textbf{(D) }7}</math>
+
+--- Solution 4 ---
+Let's consider all the answer choices. If the average is <math>8</math>, then, we can assume that all her test choices were <math>8</math>. We can see that she must have gotten <math>8</math> twice, in order for another score of <math>11</math> to bring her average up by one. However, adding three <math>11</math>'s will not bring her score up to 10. Continuing this process for the answer choices, we see that the answer is <math>\boxed{\textbf{(D) }7}</math>
+
+--- Solution 5 ---
+Let <math>n</math> be the number of existing quizzes. So after one more test, score <math>11</math> has <math>n+1</math> extra points to distribute to <math>n+1</math> quizzes. Also, after three more quizzes, there will be <math>3(n+1)</math> extra points to distribute to the <math>n+3</math> quizzes. So <math>3n+3=2(n+3)</math>. This means <math>n=3</math>. <math>n+1</math> extra points means original mean (average) is <math>7</math>
+
+
+=== Problem 9 ===
+A square of area
+
+Choices: {'A': '\\frac15', 'B': '\\frac14', 'C': '2-\\sqrt3', 'D': '\\sqrt3-\\sqrt2', 'E': '\\sqrt2-1</math>'}
+Answer: C
+
+--- Solution 1 ---
+The side lengths of the inner square and outer square are <math>\sqrt{2}</math> and <math>\sqrt{3}</math> respectively. Let the shorter side of our triangle be <math>x</math>, thus the longer leg is <math>\sqrt{3}-x</math>. 
+Hence, by the Pythagorean Theorem, we have 
+<cmath>\begin{align*}
+(\sqrt{3}-x)^2+x^2&=(\sqrt{2})^2 \\
+3-2\sqrt{3}x+x^2+x^2&=2 \\
+2x^2-2\sqrt{3}x+1&=0.
+\end{align*}</cmath>
+By the quadratic formula, we find that <math>x=\frac{\sqrt{3}\pm1}{2}</math>, so the answer is <math>\frac{\sqrt{3}-1}{\sqrt{3}+1}=\boxed{\textbf{(C) }2-\sqrt3}.</math>
+
+--- Solution 2 ---
+Looking at the diagram, we know that the square inscribed in the square with area <math>3</math> has area <math>2</math>. Thus, the area outside of the small square is <math>3-2=1.</math> This area is composed of <math>4</math> congruent triangles, so we know that each triangle has an area of <math>\dfrac14</math>. 
+
+From solution <math>1</math>, the base (short side of the triangle) has a length <math>x</math> and the height <math>\sqrt{3} - x</math>, which means that <math>\frac{x\left(\sqrt{3} - x\right)}{2} = \frac{1}{4}</math>. 
+
+We can turn this into a quadratic equation: <math>x^2-x\sqrt{3}+\frac{1}{2} = 0</math>. 
+
+By using the quadratic formula, we get <math>x=\frac{\sqrt{3}\pm1}{2}</math>.Therefore, the answer is <math>\frac{\sqrt{3}-1}{\sqrt{3}+1}=\boxed{\textbf{(C) }2-\sqrt3}.</math>
+
+
+(Clarity & formatting edits by Technodoggo)
+
+--- Solution 3 ---
+Let <math>x</math> be the ratio of the shorter leg to the longer leg, and <math>y</math> be the length of longer leg. The length of the shorter leg will be <math>xy</math>.
+
+Because the sum of two legs is the side length of the outside square, we have <math>xy + y = \sqrt{3}</math>, which means <math>(xy)^2 + y^2 + 2xy^2 = 3</math>. Using the Pythagorean Theorem for the shaded right triangle, we also have <math>(xy)^2 + y^2 = 2</math>. Solving both equations, we get <math>2xy^2 = 1</math>. Using <math>y^2=\frac{1}{2x}</math> to substitute <math>y</math> in the second equation, we get <math>x^2\cdot \frac{1}{2x} + \frac{1}{2x} = 2</math>. Hence, <math>x^2 - 4x + 1 = 0</math>. By using the quadratic formula, we get <math>x=2\pm \sqrt3</math>. Because <math>x</math> be the ratio of the shorter leg to the longer leg, it is always less than <math>1</math>. Therefore, the answer is <math>\boxed{\textbf{(C) }2-\sqrt3}</math>.
+
+--- Solution 4 ---
+The side length of the bigger square is equal to <math>\sqrt{3}</math>, while the side length of the smaller square is <math>\sqrt{2}</math>. Let <math>x</math> be the shorter leg and <math>y</math> be the longer one. Clearly, <math>x+y=\sqrt{3}</math>, and <math>xy=\frac{1}{2}</math>. Using Vieta's to build a quadratic, we get <cmath>x^2-\sqrt{3}x+\frac{1}{2}=0.</cmath> Solving, we get <math>x=\frac{\sqrt{3}-1}{2}</math> and <math>y=\frac{\sqrt{3}+1}{2}</math>. Thus,  we find <math>\frac{x}{y}=\frac{\sqrt{3}-1}{\sqrt{3}+1}=\frac{(\sqrt{3}-1)^2}{(\sqrt{3}+1)\cdot(\sqrt{3}-1)}=\frac{4-2\sqrt{3}}{2}=\boxed{\textbf{(C) }2-\sqrt3}</math>.
+
+--- Solution 5 ---
+Let <math>\theta</math> be the angle opposite the smaller leg. We want to find <math>\tan\theta</math>.
+
+The area of the triangle is <math>\frac{1}{2}\left(\sqrt{2}\sin\theta\right)\left(\sqrt{2}\cos\theta\right)=\frac{1}{2}\sin 2\theta=\frac{1}{4},</math> which implies <math>\sin 2\theta = \frac{1}{2},</math> or <math>\theta=15^\circ</math>. Therefore <math>\tan \theta = \boxed{\textbf{(C) }2-\sqrt3}</math>
+
+--- Solution 6 ---
+Allow a and b to be the sides of a triangle. WLOG, suppose <math>a > b. </math>We want to find <math>\frac{b}{a}</math>. Notice that the area of a triangle is <math>\frac{3-2}{4}</math>, which results in <math>\frac{1}{4}</math>. Thus, <math>ab = \frac{1}{2}</math>. However, the square of the hypotenuse of this triangle is <math>a^2+b^2</math>, but also <math>2</math>. We can write <math>b</math> as <math>\frac{1}{2a}</math>, and then plug it in. We get <math>a^2+\frac{1}{4a^2} = 2</math>, so <math>4a^4-8a^2+1 = 0</math>. Applying the quadratic formula, <math>a^2 = \frac{8 \pm 4\sqrt{3}}{2}</math>, or <math>4 \pm 2\sqrt3</math>. However, since <math>a</math> and <math>b</math> must both be solutions of the quadratic, since both equations were cyclic. Since <math>a>b</math>, then <math>a^2 = 4+2\sqrt3</math>, and <math>b^2 = 4-2\sqrt3</math>. To find <math>\frac{b}{a}</math>, we can simply find the square root of <math>\frac{b^2}{a^2}</math>. This is <math>\sqrt{\frac{4-2\sqrt3}{4+2\sqrt3}} = \sqrt{\frac{2-\sqrt3}{2+\sqrt3}} = \sqrt{(2-\sqrt3)(2-\sqrt3)} = \boxed {2-\sqrt3}</math>, so the answer is <math>\boxed {C}</math>. - Sepehr2010
+
+--- Solution 7 ---
+Let <math>a</math> be the length of the shorter leg and <math>b</math> be the longer leg. By the Pythagorean theorem, we can derive that <math>a^2+b^2=2</math>. Using area we can also derive that <math>2ab=1</math>. <math>(a+b)^2=3</math> as given in the diagram, we can find that <math>(a-b)^2=1</math> because <math>4ab=2</math>. This means that <math>b+a=\sqrt{3}</math> and <math>b-a=1</math>. Adding the equations gives <math>b=\frac{\sqrt{3}+1}{2}</math> and when <math>b</math> is plugged in <math>a = \frac{\sqrt{3}-1}{2}</math>. Rationalizing the denominators gives us <math>\boxed{\textbf{(C) } 2-\sqrt{3}}</math>.
+
+--- Solution 8 ---
+Let <imath>s</imath> be the length of the shorter leg, <imath>l</imath> the longer leg, and <imath>t</imath> the desired ratio. We have:
+<cmath>s^2+l^2=2 \text{ and } \frac{1}{2}sl=\frac{1}{4}</cmath>
+The former dividing the latter gives:
+<cmath>t+\frac{1}{t}=4</cmath>
+Solve this for <imath>t</imath>.
+Multiply by <imath>t</imath>:
+<cmath>t^2+1=4t</cmath>
+Subtract -4t to get a quadratic:
+<cmath>t^2-4t+1=0</cmath> Use the quadratic formula to get:
+<cmath>2 \pm \sqrt{3}</cmath>
+And since the smaller one is the first one, the solution has to be less than 1, so the answer is the one less than 1, the answer is
+<imath>\boxed{\textbf{(C) }2-\sqrt3}</imath>
+
+
+=== Problem 10 ===
+Positive real numbers
+
+Choices: {'A': '\\ 12', 'B': '\\ 18', 'C': '\\ 24', 'D': '\\ 36', 'E': '\\ 42</math>'}
+Answer: D
+
+--- Solution 1 ---
+Because <math>y^3=x^2</math>, set <math>x=a^3</math>, <math>y=a^2</math> (<math>a\neq 0</math>). Put them in <math>(y-x)^2=4y^2</math> we get <math>(a^2(a-1))^2=4a^4</math> which implies <math>a^2-2a+1=4</math>. Solve the equation to get <math>a=3</math> or <math>-1</math>. Since <math>x</math> and <math>y</math> are positive, <math>a=3</math> and <math>x+y=3^3+3^2=\boxed{\textbf{(D)} 36}</math>.
+
+--- Solution 2 ---
+Let's take the second equation and square root both sides. This will obtain <math>y-x = \pm2y</math>. Solving the case where <math>y-x=+2y</math>, we'd find that <math>x=-y</math>. This is known to be false because both <math>x</math> and <math>y</math> have to be positive, and <math>x=-y</math> implies that at least one of the variables is not positive. So we instead solve the case where <math>y-x=-2y</math>. This means that <math>x=3y</math>. Inputting this value into the first equation, we find <math>y^3 = (3y)^2</math>, from which <math>y=9</math>.
+
+This means that <math>x=3y=3(9)=27</math>. Therefore, <math>x+y=9+27=\boxed{36}</math>
+
+
+== Solution 3: Quadratic formula== 
+First, expand: 
+
+<imath>(y-x)^2 = 4y^2</imath>
+
+<imath>y^2-2xy+x^2 = 4y^2</imath>
+
+<imath>y^2-2yx+x^2 = 4y^2</imath>
+
+<imath>x^2-2xy-3y^2 = 0</imath>
+
+<imath>x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</imath>
+
+consider 
+a=1
+b=-2y
+c=-3y^2
+
+<imath>x=\frac{2y\pm\sqrt{(-2y)^2-4(1)(-3y^2)}}{2a}</imath>
+
+<imath>x=\frac{2y\pm\sqrt{16y^2}}{2a}</imath>
+
+<imath>\frac{2y+4y}{2}</imath> or <imath>\frac{2y-4y}{2}</imath>
+
+<imath>x=y+2y</imath> and <imath>x=y-2y</imath>
+
+<imath>x=3y</imath> and <imath>x=-y</imath>
+
+we can see both x and y will be positive in <imath>x=3y</imath>
+
+now do same as solution 2
+<cmath>y^3 = (3y)^2</cmath>
+<cmath>y^3 = 9y^2</cmath>
+<cmath>y=9</cmath>
+This means that <imath>x=3y=3(9)=27</imath>. Therefore, <imath>x+y=9+27=\boxed{36}</imath>
+
+alternate solving similar to solution 5(
+Since <imath>x+y = 0</imath> would result in one of them being negative (or just look at the answer choices; it is not 0), <imath>x-3y = 0</imath> so <imath>x = 3y</imath>. plugging back into <imath>y^3 = x^2</imath> gives <imath>y = 9</imath> and then <imath>x=27</imath>, so <imath>x+y</imath> is <imath>\boxed{36}</imath>.
+
+== Solution 4: Substitution== 
+
+Since <math>a^2 = |a|^2</math>, we can rewrite the second equation as <math>(x-y)^2=4y^2</math>
+
+Let <math>u=x+y</math>. The second equation becomes
+
+
+<cmath>(u-2y)^2 = 4y^2</cmath>
+<cmath>u^2 - 4uy = 0</cmath>
+<cmath>u = 4y</cmath>
+<cmath>x+y = 4y</cmath>
+<cmath>x = 3y.</cmath>
+
+Substituting this into the first equation, we have 
+
+<cmath>y^3 = (3y)^2,</cmath>
+so <math>x = 9</math>. 
+
+Hence <math>x = 27</math> and <math>x + y = \boxed{\textbf{(D)} 36}.</math>
+
+-Benedict T (countmath1)
+
+== Solution 5: Difference of Squares==
+
+We will use the difference of squares in the second equation.
+
+<cmath>(y-x)^2=4y^2</cmath>
+<cmath>(y-x)^2-(2y)^2=0</cmath>
+<cmath>(y-x-2y)(y-x+2y)=0</cmath>
+<cmath>-(x+y)(3y-x)=0</cmath>
+
+Since x and y are positive, x+y is non-zero. Thus, <cmath>3y=x</cmath>.
+
+Substituting into the first equation:
+
+<cmath>y^3=x^2</cmath>
+<cmath>y^3=9y^2</cmath>
+<cmath>y=9, x=27 \rightarrow x+y=\boxed{\textbf{(D)} 36}</cmath>
+
+
+=== Problem 11 ===
+What is the degree measure of the acute angle formed by lines with slopes
+
+Choices: {'A': '~30', 'B': '~37.5', 'C': '~45', 'D': '~52.5', 'E': '~60</math>'}
+Answer: C
+
+--- Solution 1 ---
+Remind that <math>\text{slope}=\dfrac{\Delta y}{\Delta x}=\tan \theta</math> where <math>\theta</math> is the angle between the slope and <math>x</math>-axis. <math>k_1=2=\tan \alpha</math>, <math>k_2=\dfrac{1}{3}=\tan \beta</math>. The angle formed by the two lines is <math>\alpha-\beta</math>. <math>\tan(\alpha-\beta)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}=\dfrac{2-1/3}{1+2\cdot 1/3}=1</math>. Therefore, <math>\alpha-\beta=\boxed{\textbf{(C)} 45^\circ}</math>.
+
+--- Solution 2 ---
+We can take any two lines of this form, since the angle between them will always be the same. Let's take <math>y=2x</math> for the line with slope of 2 and <math>y=\frac{1}{3}x</math> for the line with slope of 1/3. Let's take 3 lattice points and create a triangle. Let's use <math>(0,0)</math>, <math>(1,2)</math>, and <math>(3,1)</math>. The distance between the origin and <math>(1,2)</math> is <math>\sqrt{5}</math>. The distance between the origin and <math>(3,1)</math> is <math>\sqrt{10}</math>. The distance between <math>(1,2)</math> and <math>(3,1)</math> is <math>\sqrt{5}</math>. We notice that we have a triangle with 3 side lengths: <math>\sqrt{5}</math>, <math>\sqrt{5}</math>, and <math>\sqrt{10}</math>. This forms a 45-45-90 triangle, meaning that the angle is <math>\boxed{45^\circ}</math>.
+
+
+==Solution 2.b==
+
+WLOG, allow the line with slope <math>2</math> to pass through point <math>O = (0, 0)</math> and point <math>A = (1, 2)</math>, and the line with slope <math>\frac{1}{3}</math> to pass through point <math>O</math> and point <math>B = (3, 1)</math>. Notice that the slope of line <math>\overline{AB}</math> is <math>\frac{1 - 2}{3 - 1} = -\frac{1}{2}</math> and is hence perpendicular to line <math>\overline{OA}</math>. Drawing <math>\triangle OAB</math>, we have <math>\overline{OA} = \overline{AB} = \sqrt{(1)^2 + (2)^2} = \sqrt{5}</math>, so <math>\triangle OAB</math> is an isosceles right triangle. Therefore, the desired angle is <math>\angle AOB = \boxed{\textbf{(C)}\ 45^\circ}.</math>
+
+--- Solution 3 ---
+Follow Solution 2 up until the lattice points section. Let's use <math>(0,0)</math>, <math>(2,4)</math>, and <math>(9,3)</math>. The distance between the origin and <math>(2,4)</math> is <math>\sqrt{20}</math>. The distance between the origin and <math>(9,3)</math> is <math>\sqrt{90}</math>. The distance between <math>(2,4)</math> and <math>(9,3)</math> is <math>\sqrt{50}</math>. Using the Law of Cosines, we see the <math>50 = 90 + 20 - 2\times\sqrt{20}</math> <math>\times\sqrt{90}</math> <math>\times\cos(\theta)</math>, where <math>\theta</math> is the angle we are looking for. 
+
+Simplifying, we get <math>-60 = -2\times(\sqrt{20}) \times(\sqrt{90}) \times\cos(\theta)</math>.
+
+<math>30 =  \sqrt{1800} \times\cos(\theta)</math>.
+
+<math>30 =  30\sqrt{2} \times\cos(\theta)</math>.
+
+<math>\frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}= \cos(\theta)</math>.
+
+Thus, <math>\theta = \boxed{\textbf{(C)} 45^\circ}</math>
+
+--- Solution 4 ---
+We can set up vectors <math>\vec{a} = <1,2></math> and <math>\vec{b} = <3,1></math> to represent the two lines. We know that <math>\frac{\vec{a} \cdot \vec{b}}{|\vec{a}| |\vec{b}|} = \cos \theta</math>. Plugging the vectors in gives us <math>\cos \theta = \frac{5}{5\sqrt{2}} = \frac{1}{\sqrt{2}}</math>.  From this we get that <math>\theta = \boxed{\textbf{(C)} 45^\circ}</math>.
+
+--- Solution 5 ---
+Let <math>Z_1 = 3 + i</math> and <math>Z_2 = 1 + 2i</math>
+<cmath>\begin{align*}
+Z_2 &= Z_1 \cdot re^{i\theta} \\
+1+2i&=(3+i) \cdot re^{i\theta} \\
+1+2i&=(3 + i) \cdot r(\cos\theta + i\sin\theta) \\
+1+2i&=3r\cos\theta - r\sin\theta  + 3ri\sin\theta + ri\cos\theta \\
+\end{align*}</cmath>
+
+From this we have:
+<cmath>\begin{align}
+1 &= 3r\cos\theta - r\sin\theta \\
+2 &= r\cos\theta + 3r\sin\theta 
+\end{align}</cmath>
+
+To solve this we must compute <math>r</math>
+<cmath>\begin{align*}
+r &= \frac{|Z_2|}{|Z_1|} \\
+&= \frac{\sqrt{5}}{\sqrt{10}} \\
+&= \frac{\sqrt{2}}{2}
+\end{align*}</cmath>
+
+Using elimination we have:
+<math>3\cdot(2) - (1)</math>
+<cmath>\begin{align*}
+5 &= 10r\sin\theta \\
+\frac{1}{2r} &= \sin\theta \\
+\frac{1}{2\frac{\sqrt{2}}{2}} &= \sin\theta \\
+\frac{\sqrt{2}}{2} &= \sin\theta \\
+\theta &= \boxed{\textbf{(C)}  45^\circ} \\
+\end{align*}</cmath>
+
+
+
+==Solution 5.b (Complex Numbers - Simpler)==
+
+Let <math>Z_1 = 3 + i</math> and <math>Z_2 = 1 + 2i</math>
+<cmath>\begin{align*}
+Z_2  &= Z_1 \cdot re^{i\theta} \\
+1+2i &=(3+i) \cdot re^{i\theta} \\
+\frac{1+2i}{3+i} &= re^{i\theta} \\
+\frac{(1+2i)(3-i)}{(3+i)(3-i)} &= re^{i\theta} \\
+\frac{3+2+6i-i}{(3+i)(3-i)} &= re^{i\theta} \\  
+tan(\theta) &= 5/5  \\
+ \theta  &= \boxed{\textbf{(C)}  45^\circ} \\
+\end{align*}</cmath>
+
+--- Solution 6 ---
+The lines <math>y = 2x, y = \frac {1}{3}x</math>, and <math>x = 3</math> form a large right triangle and a small right triangle. Call the angle that is formed by the x-axis and the line <math>y = 2x </math> <math> \alpha</math>, and call the angle that is formed by the x-axis and the line <math>y = \frac {1}{3}x</math> <math>\beta</math>. We try to find <math>\sin (\alpha - \beta)</math> first, and then try to see if any of the answer choices match up. 
+
+<math>\sin (\alpha - \beta)</math> = <math>\sin \alpha</math> <math>\cos \beta</math> - <math>\sin \beta</math> <math>\cos \alpha</math>. 
+
+Using soh-cah-toa, we find that <math>\sin \alpha = \frac {2}{\sqrt 5}, \sin \beta = \frac {1}{\sqrt 10}, \cos \alpha = \frac {1}{\sqrt 5}, </math> and <math>\cos \beta = \frac {3}{\sqrt 10}</math>. 
+
+Plugging it all in, we find that <math>\sin (\alpha - \beta) = \frac {5}{\sqrt {50}}</math>, which is equivalent to <math>\frac {\sqrt 2}{2}</math>. Since <math>\sin (\alpha - \beta) = \frac {\sqrt 2}{2}</math>, we get that <math>\alpha - \beta = 45^{\circ}</math>. Therefore, the answer is <math>\boxed {\textbf {(C)} 45^{\circ}}</math>. 
+
+
+=Solution 7 (Cheese)=
+AMC 12 does not allow graph paper or protractor. https://amc-reg.maa.org/manual/AMC1012B.pdf
+
+Using a makeshift ruler, draw an accurate to-scale diagram. You can do this by simply drawing the two lines such that they intersect at the origin. Then, measure the angle by eye or by folding paper to observe that they form a 45 degree angle.
+The answer is <math>\boxed{45^\circ}</math>.
+
+
+=== Problem 12 ===
+What is the value of
+<cmath> 2^3 - 1^3 + 4^3 - 3^3 + 6^3 - 5^3 + \dots + 18^3 - 17^3?</cmath>
+
+Choices: {'A': '2023', 'B': '2679', 'C': '2941', 'D': '3159', 'E': '3235</math>'}
+Answer: D
+
+--- Solution 1 ---
+To solve this problem, we will be using difference of cube, sum of squares and sum of arithmetic sequence formulas.
+
+<cmath>2^3-1^3+4^3-3^3+6^3-5^3+...+18^3-17^3</cmath>
+
+<math>=(2-1)(2^2+1 \cdot 2+1^2)+(4-3)(4^2+4 \cdot 3+3^2)+(6-5)(6^2+6 \cdot 5+5^2)+...+(18-17)(18^2+18 \cdot 17+17^2)</math>
+
+<math>=(2^2+1 \cdot 2+1^2)+(4^2+4 \cdot 3+3^2)+(6^2+6 \cdot 5+5^2)+...+(18^2+18 \cdot 17+17^2)</math>
+
+<math>=1^2+2^2+3^2+4^2+5^2+6^2...+17^2+18^2+1 \cdot 2+3 \cdot 4+5 \cdot 6+...+17 \cdot 18</math>
+
+<math>=\frac{18(18+1)(36+1)}{6}+1 \cdot 2+3 \cdot 4+5 \cdot 6+...+17 \cdot 18</math>
+
+we could rewrite the second part as <math>\sum_{n=1}^{9}(2n-1)(2n)</math>
+
+<math>(2n-1)(2n)=4n^2-2n</math>
+
+<math>\sum_{n=1}^{9}4n^2=4(\frac{9(9+1)(18+1)}{6})</math>
+
+<math>\sum_{n=1}^{9}-2n=-2(\frac{9(9+1)}{2})</math>
+
+Hence,
+
+<math>1 \cdot 2+3 \cdot 4+5 \cdot 6+...+17 \cdot 18 = 4(\frac{9(9+1)(18+1)}{6})-2(\frac{9(9+1)}{2})</math>
+
+Adding everything up:
+
+<math>2^3-1^3+4^3-3^3+6^3-5^3+...+18^3-17^3</math>
+
+<math>=\frac{18(18+1)(36+1)}{6}+4(\frac{9(9+1)(18+1)}{6})-2(\frac{9(9+1)}{2})</math>
+
+<math>=3(19)(37)+6(10)(19)-9(10)</math>
+
+<math>=2109+1140-90</math>
+
+<math>=\boxed{\textbf{(D) } 3159}</math>
+
+--- Solution 2 ---
+Think about <math>2^3+4^3+6^3+...+18^3</math>. Once we factor out <math>2^3=8</math>, we get <math>1^3+2^3+...+9^3</math>, which can be found using the sum of cubes formula, <math>(\frac{n(n+1)}{2})^2</math>. Now think about <math>1^3+3^3+...+17^3</math>. This is just the previous sum subtracted from the total sum of <math>18</math> cubes. So now we have the two things we need to add. The sum of all the even cubes is <math>8\cdot (\frac{90}{2})^2\rightarrow 8\cdot 2025 = 16200</math>. The sum of all cubes from <math>1^3</math> to <math>18^3</math> is <math>(\frac{18\cdot 19}{2})^2=29241</math>. The sum of the odd cubes is then <math>29241-16200=13041</math>. Thus we get <math>16200-13041=\boxed{\textbf{(D) } 3159}</math>
+
+--- Solution 3 ---
+Using the same sum of cubes formula, we can rewrite as <math>2(2^3 + 4^3 + ... + 18^3) - (1^3 + 2^3 + ... + 18^3)</math>
+
+<math>= 2(2^3)(1^3 + ... + 9^3) - (1^3 + ... + 18^3)</math>
+
+<math>= 16(5 \cdot 9)^2 - (9 \cdot 19)^2 = 9^2(20^2 - 19^2) = 81 \cdot 39 = \boxed{\textbf{(D) } 3159}</math>
+
+--- Solution 4 ---
+For any real numbers <math>x</math> and <math>y</math>, <math>x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=(x-y)^3+3xy(x-y)</math>. 
+
+When <math>x = y + 1</math>, with the above formula, we will get <math>x^3-y^3=1^3+3xy=1 + 3xy</math>.
+
+Therefore, 
+
+<math>2^3 - 1^3 + 4^3 - 3^3 + \dots + 18^3 - 17^3</math>
+
+<math>= (1 + 3\cdot 1\cdot 2) + (1 + 3\cdot 3\cdot 4) + \dots + (1 + 3\cdot 17\cdot 18)</math>
+
+<math>= 9 + 3\cdot (1\cdot 2 + 3\cdot 4 + \dots + 17\cdot 18)</math>
+
+<math>= 9 + 3 \cdot (2 + 12 + 30 + 56 + 90 + 132 + 182 + 240 + 306)</math>
+
+<math>= 9 + 3 \cdot 1050</math>
+
+<math>= \boxed{\textbf{(D) } 3159}</math>
+
+
+Alternatively, to avoid the long sum, 
+
+<math> (1\cdot 2 + 3\cdot 4 + \dots + 17\cdot 18) \\
+ = (2^2)(9(10)(19)/6) - (2)(9(10)/2) \\
+=(2)(9)(10)(2(19/6) - 1/2) \\
+= 180(35/6) = 35(30) = 1050</math>
+
+--- Solution 5 ---
+We rewrite the sum as 
+
+<cmath>\sum_{k=1}^{9}(2k)^3-(2k-1)^3</cmath>
+<cmath>=\sum_{k=1}^{9} 12k^2 - 6k + 1</cmath>
+<cmath>=12\sum_{k=1}^{9}k^2 - 6\sum_{k=1}^{9}k + 9</cmath>
+<cmath>=12\cdot\frac{9\cdot 10\cdot 19}{6} -6\cdot \frac{9\cdot 10}{2} + 9</cmath>
+<cmath>=3420 - 270 + 9 = \boxed{\textbf{(D) } 3159}</cmath>
+
+-Benedict T (countmath1)
+
+--- Solution 6 ---
+We see <math>=12\cdot\frac{9\cdot 10\cdot 19}{6} -6\cdot \frac{9\cdot 10}{2} + 9 = 9\cdot (12\cdot\frac{10\cdot 19}{6} -6\cdot \frac{10}{2} + 1)</math> which is clearly a multiple of 9. The only answer choice which is a multiple of 9 is <math>\boxed{\textbf{(D) } 3159}</math>
+
+--- Solution 7 ---
+<math> 2^3 - 1^3 + 4^3 - 3^3 + 6^3 - 5^3 + \dots + 18^3 - 17^3</math>
+
+<math>=8-1+64-27+216-125+512-343+1000-729+1728-1331+2744-2197+4096-3375+5832-4913</math>
+
+<math>= \boxed{\textbf{(D) } 3159}</math>
+
+--- Solution 8 ---
+Reduce all terms mod 9. This yields:
+
+<math> 2^3 - 1^3 + 4^3 - 3^3 + 6^3 - 5^3 + \dots + 18^3 - 17^3</math>
+<math> \equiv -1 - 1 + 1 - 0 + 0 - -1 + -1 - 1 + 1 - 0 + 0 - -1 + -1 - 1 + 1 - 0 +0 - -1 (\mod 9)</math>
+<math> \equiv 0 (\mod 9)</math>
+
+The only answer choice which is also ≡0 mod 9 is <math>= \boxed{\textbf{(D) } 3159}</math>
+
+
+=== Problem 13 ===
+In a table tennis tournament every participant played every other participant exactly once. Although there were twice as many right-handed players as left-handed players, the number of games won by left-handed players was
+
+Choices: {'A': '15', 'B': '36', 'C': '45', 'D': '48', 'E': '66</math>'}
+Answer: B
+
+--- Solution 1 ---
+We know that the total amount of games must be the sum of games won by left and right handed players. Then, we can write <imath>g = l + r</imath>, and since <imath>l = 1.4r</imath>, <imath>g = 2.4r</imath>. Given that <imath>r</imath> and <imath>g</imath> are both integers, <imath>g/2.4</imath> also must be an integer. From here we can see that <imath>g</imath> must be divisible by 12, leaving only answers B and D. Now we know the formula for how many games are played in this tournament is <imath>n(n-1)/2</imath>, the sum of the first <imath>n-1</imath> numbers. Now, setting 36 and 48 equal to the equation will show that two consecutive numbers must have a product of 72 or 96. Clearly, <imath>72=8*9</imath>, so the answer is <imath>\boxed{\textbf{(B) }36}</imath>.
+
+--- Solution 2 ---
+First, we know that every player played every other player, so there's a total of <imath>\dbinom{n}{2}</imath> games since each pair of players forms a bijection to a game. Therefore, that rules out D. Also, if the right-handed players won a total of <imath>x</imath> games, the left-handed players must have won a total of <imath>\dfrac{7}{5}x</imath> games, meaning that the total number of games played was <imath>\dfrac{12}{5}x</imath>. Thus, the total number of games must be divisible by <imath>12</imath>. Therefore leaving only answer choices B and D. Since answer choice D doesn't satisfy the first condition, the only answer that satisfies both conditions is <imath>\boxed{\textbf{(B) }36}</imath>
+
+
+
+A simpler way is to know that the result must be a number in the form <imath>\dbinom{n}{2}</imath> games. This eliminates D. Then write a expression that equals the answer, 1.4x+x=n games total. Only 48 and 36 satisfy so 36 is the answer which is <imath>\boxed{\textbf{(B) }36}</imath>
+
+--- Solution 3 ---
+Let <imath>r</imath> be the amount of games the right-handed won. Since the left-handed won <imath>1.4r</imath> games, the total number of games played can be expressed as <imath>(2.4)r</imath>, or <imath>12/5r</imath>, meaning that the answer is divisible by 12. This brings us down to two answer choices, <imath>B</imath> and <imath>D</imath>. 
+We note that the answer is some number <imath>x</imath> choose <imath>2</imath>. This means the answer is in the form <imath>x(x-1)/2</imath>. Since answer choice D gives <imath>48 = x(x-1)/2</imath>, and <imath>96 = x(x-1)</imath> has no integer solutions, we know that <imath>\boxed{\textbf{(B) }36}</imath> is the only possible choice.
+
+--- Solution 4 ---
+Here is the rigid way to prove that <imath>36</imath> is the only answer. Let the number of left-handed players be <imath>n</imath>, so the number of right-handed players is <imath>2n</imath>. The number of games won by the left-handed players comes in two ways: 
+*The games played by two left-left pairs, which is <imath>\frac{n(n-1)}{2}</imath>, and 
+*The games played by left-right pairs, which we'll call <imath>x</imath>. 
+Note that <imath>x\leq 2n^2,</imath> which is the total number of games played by left-right pairs. Using the same logic for right-right pairs and right-left pairs, we have that <cmath>\frac{\frac{n(n-1)}{2}+x}{\frac{2n(2n-1)}{2}+2n^2-x}=1.4,</cmath> which gives <cmath>x=\frac{17n^2}{8}-\frac{3n}{8}.</cmath> 
+We know that <imath>x\leq 2n^2</imath>, applying that becomes
+<cmath>\begin{align*}
+\frac{17n^2}{8}-\frac{3n}{8} &\le 2n^2 \\
+17n^2 - 3n &\le 16n^2 \\
+n^2 - 3n &\le 0 \\
+n &\le 3.
+\end{align*}</cmath>
+(We can safely divide by <imath>n</imath> because it must be positive). So the total number of players <imath>p</imath> can only be <imath>3</imath>, <imath>6</imath>, and <imath>9</imath>. 
+
+Since the total number of games <imath>p(p-1)/2</imath>  is <imath>1.4+1 = \frac{12}{5}</imath> times a non-negative integer number of games won by righties, <imath>p(p-1)</imath> must be a multiple of <imath>12(2) = 24</imath>. Among <imath>\{3,6,9\}</imath>, only <imath>p = 9</imath> satisfies this condition,  so the total number of games is <imath>\frac{(9)(8)}{2} = \boxed{\textbf{(B)}\ 36}.</imath>
+
+--- Solution 5 ---
+If there are <imath>n</imath> players, the total number of games played must be <imath>\binom{n}{2}</imath>, so it has to be a triangular number. The ratio of games won by left-handed to right-handed players is <imath>7:5</imath>, so the number of games played must also be divisible by <imath>12</imath>. Finally, we notice that only <imath>\boxed{\textbf{(B) }36}</imath> satisfies both of these conditions.
+
+
+==Solution 5.1 (Slightly Faster)==
+
+We know that the number of games played must be a triangular number, which elimiates <imath>{\textbf{(D)}48}</imath>, then we see that there are twice as many right-handed players as left-handed ones. Which means that the total number of players must be divisible by <imath>3</imath>, and since each player can't play themselves, we can add <imath>1</imath> to the largest number in the sequence, since <imath>1 + 2 + 3 + \dots + 8</imath> is the only one which the amount of players is divisble by <imath>3(9 players)</imath>, <imath>\boxed{\textbf{(B) }36}</imath> is the answer
+
+--- Solution 6 ---
+Call the number of games x, the number of games won by right handed player R, and by left handed players L. L+R=x and L=1.4 R. Therefore, x/2.4 must be an integer, which leaves only 36 and 48. Then, note x must be half the product of two consecutive numbers (the number of possible combinations of two people) and we can eliminate 48.
+
+
+How is this cheese... it is literally the first solution but scaled down
+
+-Shreyansh
+
+EXACTLY... the first solution is also cheese.
+
+-AndrewZhong2012
+
+--- Solution 7 ---
+Let the number of people be <imath>n</imath>. This means that there will be <imath>\frac{n(n-1)}{2}</imath> games played. We can now eliminate <imath>\textbf{(D)}</imath> because it's not a triangular number. The problem states that there are twice as many right handed people as left handed people with no ambidextrous people. Based on this, we can say that the number of people (or <imath>n</imath>) has to be divisible by 3. Because the number of games won by left-handed people is 40% more than the number of games won by right-handed people, we can set the ratio between the number of games won by left-handed to right-handed as <imath>\frac{7}{5}</imath>. The sum of the numerator and the denominator is 12. This means that the number of games must be divisible by 12. Thus, the only answer choice that fits the conditions above is answer <imath>\boxed{\textbf{(B) }36}</imath>.
+
+
+
+==Solution 8(Pairing) - easiest noncheese==
+
+
+Case 1: in-group pairing
+
+
+In every pair where both players use the same hand, the win rate is always \(50\%\). This is because the total number of such pairs is even — any factorial other than the trivial case \(1!\) is even, and \(1\) is insufficient to form a pair. Thus, no player is left out, and in each pair exactly one player wins and one loses, giving a win‑loss ratio of \(1:1\). In other words, this case completely cancels out due to its balanced win‑loss ratio.
+
+
+Case 2: cross-group pairing
+
+
+For convenience, let left‑handed players be denoted by \(L\) and right‑handed players by \(R\). The problem gives the ratio \(R : L = 1 : 2\). This means each \(L\) plays \(2L\) times as many games as an \(R\). From this, the total number of cross‑group games is \(2L \times L = 2L^2\).
+
+The problem also states that the ratio of \(L\) wins to \(R\) wins is \(7:5\), so the total number of wins in this case must be divisible by \(5 + 7 = 12\). We therefore require \(2L^2\) to be divisible by \(12\). Simplifying gives \(L^2 \mid 6\). The smallest perfect square divisible by \(6\) is \(\boxed{\textbf{(B)}\ 36}\).
+
+
+=== Problem 14 ===
+How many complex numbers satisfy the equation
+
+Choices: {'A': '~2', 'B': '~3', 'C': '~5', 'D': '~6', 'E': '~7</math>'}
+Answer: E
+
+--- Solution 1 ---
+When <math>z^5=\overline{z}</math>, there are two conditions: either <math>z=0</math> or <math>z\neq 0</math>. When <math>z\neq 0</math>, since <math>|z^5|=|\overline{z}|</math>, <math>|z|=1</math>. <math>z^5\cdot z=z^6=\overline{z}\cdot z=|z|^2=1</math>. Consider the <math>r(\cos \theta +i\sin \theta)</math> form, when <math>z^6=1</math>, there are 6 different solutions for <math>z</math>. Therefore, the number of complex numbers satisfying <math>z^5=\bar{z}</math> is <math>\boxed{\textbf{(E)} 7}</math>.
+
+--- Solution 2 ---
+Let <math>z = re^{i\theta}.</math> We now have <math>\overline{z} = re^{-i\theta},</math> and want to solve 
+
+<cmath>r^5e^{5i\theta} = re^{-i\theta}.</cmath>
+
+From this, we have <math>r = 0</math> as a solution, which gives <math>z = 0</math>. If <math>r\neq 0</math>, then we divide by it, yielding 
+
+<cmath>r^4e^{5i\theta} = e^{-i\theta}.</cmath>
+
+Dividing both sides by <math>e^{-i\theta}</math> yields <math>r^4e^{6i\theta} = 1</math>. 
+Taking the magnitude of both sides tells us that <math>r^4 = 1</math>, so <math>r^2 = \pm 1</math>. However, if <math>r^2 = -1</math>, then <math>r = \pm i</math>, but <math>r</math> must be real. Therefore, <math>r^2 = 1</math>. 
+
+Multiplying both sides by <math>r^2</math>, 
+
+<cmath>r^6\cdot e^{6i\theta} = z^6 = 1.</cmath>
+
+Each of the <math>6</math>th roots of unity is a solution to this, so there are <math>6 + 1 = \boxed{\textbf{(E)}\ 7}</math> solutions. 
+
+-Benedict T (countmath 1)
+
+--- Solution 3 ---
+Let <math>z = a+bi</math>.
+
+Then, our equation becomes: 
+<math>(a+bi)^5=a-bi</math>
+
+Note that since every single term in the expansion contains either an <math>a</math> or <math>b</math>, simply setting <math>a=0</math> and <math>b=0</math> yields a solution.
+
+Now, considering the other case that either <math>a</math> or <math>b</math> does not equal <math>0</math>:
+
+Multiplying both sides by <math>a+bi</math> (or <math>z</math>), we get:
+<math>(a+bi)^6=a^2+b^2</math> (since <math>i^2=-1</math>).
+
+Substituting <math>z</math> back into the left hand side, we get:
+<math>z^6=a^2+b^2</math>
+
+Note that this will have 6 distinct, non-zero solutions since in this case, we consider that either <math>a</math> or <math>b</math> is not <math>0</math>, and these are simply the sixth roots of a positive real number.
+
+Adding up the solutions, we get <math>1+6=</math> <math>\boxed{\textbf{(E)} 7}</math>
+
+-SwordOfJustice
+
+--- Solution 4 ---
+Using the fact that <math>z\bar{z}=|z|^2</math>, we rewrite our equation as <math>z^6=|z|^2</math>.  Now, let <math>r</math> represent <math>|z|</math>. We know that <math>r^6 = r^2</math>; hence, we have <math>r^6-r^2=r^2(r^4-1)=0</math>. 
+
+From here, we have two cases: <math>r=0</math>, or <math>r=1</math>. In the case that <math>r=0</math>, we have <math>z^6=0</math> hence <math>z=0</math>. This gives one solution. Alternatively, if <math>r=1</math>, then we have <math>z^6=1</math>, giving <math>6</math> solutions for each root of unity.
+
+
+Therefore, the answer is <math>6+1=</math> <math>\boxed{\textbf{(E)} 7}</math>.
+
+
+- xHypotenuse
+
+
+=== Problem 15 ===
+Usain is walking for exercise by zigzagging across a
+
+Choices: {'A': '~\\arccos\\frac{5}{6}', 'B': '~\\arccos\\frac{4}{5}', 'C': '~\\arccos\\frac{3}{10}', 'D': '~\\arcsin\\frac{4}{5}', 'E': '~\\arcsin\\frac{5}{6}</math>'}
+Answer: A
+
+--- Solution 1 ---
+By "unfolding" <math>APQRS</math> into a straight line, we get a right angled triangle <math>ABS'</math>.
+
+<asy>
+import olympiad;
+draw((-50,15)--(50,15));
+draw((50,15)--(50,-15));
+draw((50,-15)--(-50,-15));
+draw((-50,-15)--(-50,15));
+draw((-50,-15)--(-22.5,15));
+draw((-22.5,15)--(5,-15));
+draw((5,-15)--(32.5,15));
+draw((32.5,15)--(50,-4.090909090909));
+label("$\theta$", (-41.5,-10.5));
+label("$\theta$", (-13,10.5));
+label("$\theta$", (15.5,-10.5));
+label("$\theta$", (43,10.5));
+dot((-50,15));
+dot((-50,-15));
+dot((50,15));
+dot((50,-15));
+dot((50,-4.09090909090909));
+label("$D$",(-58,15));
+label("$A$",(-58,-15));
+label("$C$",(58,15));
+label("$B$",(58,-15));
+label("$S$",(58,-4.0909090909));
+dot((-22.5,15));
+dot((5,-15));
+dot((32.5,15));
+dot((5,45));
+dot((32.5,75));
+dot((50,94.09090909090909));
+draw((-22.5,15)--(50,94.09090909090909));
+draw((50,-4.09090909090909)--(50,94.09090909090909));
+label("$P$",(-22.5,23));
+label("$Q$",(5,-23));
+label("$R$",(32.5,23));
+label("$Q'$",(5,35));
+label("$R'$",(32.5,85));
+label("$S'$",(58,94.09090909090909));
+</asy>
+It follows that
+<cmath>\begin{align*}
+\cos(\theta)&=\frac{100}{120} \\
+\theta&=\boxed{\textbf{(A) } \arccos\left(\frac{5}{6}\right)}.
+\end{align*}</cmath>
+
+--- Solution 2 ---
+Drop an altitude from <math>P</math> to <math>AB</math> and let its base be <math>x</math>. Note that if we repeat this for <math>Q</math> and <math>R</math>, all four right triangles (including <math>\triangle{RSC}</math>) will have the same trig ratios. By proportion, the hypotenuse <math>AP</math> is <math>\frac{x}{100}(120) = \frac65 x</math>, so <math>\cos\theta = \frac{x}{(\frac65x)} = \frac56 \Rightarrow \theta = \boxed{\textbf{(A) }\arccos{\frac56}}</math>.
+
+--- Solution 3 ---
+We can let <math>x</math> be the length of one of the full segments of the zigzag. We can then notice that <math>\sin\theta = \frac{30}{x}</math>. By Pythagorean Theorem, we see that <math>DP = \sqrt{x^2 - 900}</math>. This implies that: <cmath>RC = 100 - 3\sqrt{x^2 - 900}.</cmath> We also realize that <math>RS = 120 - 3x</math>, so this means that: <cmath>\cos\theta = \frac{100 - 3\sqrt{x^2 - 900}}{120 - 3x}.</cmath> We can then substitute <math>x = \frac{30}{\sin\theta}</math>, so this gives:
+<cmath>\begin{align*}
+\cos\theta &= \frac{100 - 3\sqrt{x^2 - 900}}{120 - 3x}\\
+&= \frac{100 - 3\sqrt{\frac{900}{\sin^2\theta} - 900}}{120 - \frac{90}{\sin\theta}}\\
+&= \frac{100 - 90\sqrt{\csc^2\theta - 1}}{120 - \frac{90}{\sin\theta}}\\
+&= \frac{100 - \frac{90}{\tan\theta}}{120 - \frac{90}{\sin\theta}}\\
+&= \frac{100\sin\theta - 90\cos\theta}{120\sin\theta - 90}\\
+&= \frac{10\sin\theta - 9\cos\theta}{12\sin\theta - 9}\\
+\end{align*}</cmath>
+
+Now we have: <cmath>\cos\theta = \frac{10\sin\theta - 9\cos\theta}{12\sin\theta - 9},</cmath> meaning that: <cmath>12\sin\theta\cos\theta - 9\cos\theta = 10\sin\theta - 9\cos\theta \implies \cos\theta = \frac{10}{12} = \frac56.</cmath>
+This means that <math>\theta = \arccos\left(\frac56\right)</math>, giving us <math>\boxed{\textbf{A}}</math>
+
+--- Solution 4 ---
+Let <math>x</math> be the length of <math>DP</math>. Apply the Pythagoras theorem on <math>\triangle{ADP}</math> to get <math>AP = \sqrt{900 + x^2}</math>, which is also the length of every zigzag segment. 
+
+There are <math>\frac{100}{x}</math> such segments. Thus the total length formed by the zigzags is 
+<cmath>\frac{100}{x} \times \sqrt{900+x^2} = 120</cmath>
+<cmath>\sqrt{900+x^2} = \frac{6}{5}x</cmath>
+<cmath>900 + x^2 = \frac{36}{25}x^2</cmath>
+<cmath>x = \frac{150}{\sqrt{11}} = DP</cmath>
+<cmath>AP = \sqrt{900 + x^2} = \frac{180}{\sqrt{11}}</cmath>
+<cmath>\cos\theta = \frac{DP}{AP} = \frac{5}{6}</cmath>
+<cmath>\theta=\boxed{\textbf{(A) } \arccos\left(\frac{5}{6}\right)}</cmath>
+
+(note that <math>\frac{100}{x}</math> is not an integer, but it doesn't matter because of similar triangles. The length of the incomplete segment is always proportionate to the length of the incomplete base)
+
+--- Solution 5 ---
+Imagine that Usain walks at a constant speed. The horizontal component of Usain's velocity does not change. (Imagine a beam of light reflecting off of mirrors. A mirror only changes the velocity of light in the direction perpendicular to the mirror.) The horizontal component of Usain's velocity divided by his total velocity must be <math>\frac{100}{120}</math>. Therefore <cmath>\theta=\boxed{\textbf{(A) } \arccos\left(\frac{5}{6}\right)}</cmath>.
+
+--- Solution 6 ---
+Although the diagram is not fully accurate, we can use it to some extent. 
+
+It's given that the length of the rectangle is <math>100</math> and the total length of the path Usain is taking is <math>120</math>, so Usain will walk <math>\frac{120}{100} = \frac{6}{5}</math> longer than he would if he were just to walk along the rectangle. Therefore for each point along his path, he will travel <math>\frac{6}{5}</math> farther than he would if he were just to walk along the rectangle. 
+
+Drop a perpendicular from point <math>P</math> to point <math>Q</math> on <math>\overline{AB}</math>. Let <math>AQ = x</math>: it follows that <math>QP = 30</math> and <math>PA = \frac{6}{5}x.</math> By the Pythagorean Theorem, 
+
+<cmath>x^2 + 900 = \frac{36}{25}x,</cmath>
+
+so <math>x = \frac{150}{\sqrt{11}}</math> and <math>\frac{6x}{5} = \frac{180}{\sqrt{11}}</math>. 
+
+Now, <math>\cos\theta = \frac{\frac{150}{\sqrt{11}}}{\frac{180}{\sqrt{11}}} = \frac{5}{6}</math> and <math>\theta = \boxed{\textbf{(A) } \arccos\left(\frac{5}{6}\right)}.</math>
+
+
+-Benedict T (countmath1)
+
+
+=== Problem 16 ===
+Consider the set of complex numbers
+
+Choices: {'A': '~20', 'B': '~21', 'C': '~22', 'D': '~23', 'E': '~24</math>'}
+Answer: B
+
+--- Solution 1 ---
+First, substitute in <imath>z=a+bi</imath>.
+
+<cmath>|1+(a+bi)+(a+bi)^2|=4</cmath>
+<cmath>|(1+a+a^2-b^2)+ (b+2ab)i|=4</cmath>
+<cmath>(1+a+a^2-b^2)^2+ (b+2ab)^2=16</cmath>
+<cmath>(1+a+a^2-b^2)^2+ b^2(1+4a+4a^2)=16</cmath>
+
+Let <imath>p=b^2</imath> and <imath>q=1+a+a^2</imath>
+
+<cmath>(q-p)^2+ p(4q-3)=16</cmath>
+<cmath>p^2-2pq+q^2   + 4pq -3p=16</cmath>
+
+We are trying to maximize <imath>b=\sqrt p</imath>, so we'll turn the equation into a quadratic to solve for <imath>p</imath> in terms of <imath>q</imath>.
+
+<cmath>p^2+(2q-3)p+(q^2-16)=0</cmath>
+<cmath>p=\frac{(-2q+3)\pm \sqrt{-12q+73}}{2}</cmath>
+
+We want to maximize <imath>p</imath>. Since <imath>q</imath> is always negatively contributing to <imath>p</imath>'s value, we want to minimize <imath>q</imath>.
+
+Due to the trivial inequality:
+<imath>q=1+a+a^2=(a+\frac 12)^2+\frac{3}4 \geq \frac{3}4</imath> 
+
+If we plug <imath>q</imath>'s minimum value in, we get that <imath>p</imath>'s maximum value is
+<cmath>p=\frac{(-2(\frac 34)+3)+ \sqrt{-12(\frac 34)+73}}{2}=\frac{\frac 32+ 8}{2}=\frac{19}{4}</cmath>
+
+Then
+<cmath>b=\frac{\sqrt{19}}{2}</cmath>
+and
+<cmath>m+n=\boxed{\textbf{(B)}
+- CherryBerry
+
+--- Solution 2 ---
+We are given that <imath>1+z+z^2=c</imath> where <imath>c</imath> is some complex number with magnitude <imath>4</imath>. Rearranging the quadratic to standard form and applying the quadratic formula, we have
+<cmath>z=\frac{-1\pm \sqrt{1^2-4(1)(1-c)}}{2}=\frac{-1\pm\sqrt{4c-3}}{2}.</cmath>
+
+The imaginary part of <imath>z</imath> is maximized when <imath>c=-4</imath>. (Why? See note below.)
+
+Thus <imath>z=-\tfrac 12 \pm i \tfrac{\sqrt{19}}{2}</imath>, and so the answer is <imath>\boxed{\textbf{(B)}
+
+Note: You can cheese/fakesolve <imath>c</imath> by assuming <imath>c</imath> is real. But there is a good reason for it, within the parameters of this problem:
+
+<imath>c</imath> lies on a circle of radius 4, centered at the origin. Thus, <imath>{4c-3}</imath> is also a circle, centered at <imath>-3</imath>. Luckily, the center of this adjusted circle is a negative real number, so the most negative point on that circle (<imath>w = -19</imath>) has the largest magnitude (and so its square root also has the largest magnitude of any square root), and its positive square root is the most purely imaginary square root ("vertical"). [We ignore the alternative negative square root, since the problem asks for the most positive value.] 
+
+Thus, <imath>\text{Im}(\sqrt w) = r \sin(\theta)</imath> has both the largest <imath>r</imath> and largest <imath>\sin(\theta)</imath> of any square root of <imath>4c-3</imath>, and so the largest product <imath>r \sin(\theta)</imath>. (See note2 for more details)
+
+[This argument and overall solution would not work if <imath>-3</imath> were instead a positive or non-real number, which would happen if the original problem had <imath>|C+Bz+Az^2|=4</imath> with <imath>B^2-4AC > 0 </imath>.]
+
+Note 2: 
+<asy>
+size(250);
+import TrigMacros;
+rr_cartesian_axes(-22,19,-19,19,complexplane=true, usegrid = false);
+Label f;
+f.p=fontsize(4); 
+dot((-3, 0), red);
+label("$(-3, 0)$", (-3, 0), NW);
+dot((0,0));
+draw(circle((-3, 0), 16), red);
+dot((-19, 0), blue);
+label("$w(-19, 0)$", (-19, 0), NW);
+</asy>
+
+The circle in the graph is all the possible values of <imath>4c - 3</imath>. 
+Let <imath>{4c - 3} = re ^ {i\theta}</imath>. 
+
+<imath>{4c - 3} = re ^ {i\theta} \implies \sqrt{4c - 3} = \sqrt{re ^ {i\theta}} = \sqrt{r} e ^ {i\frac{\theta}{2}}</imath>. 
+Therefore, <imath>Im(\sqrt{4c - 3}) = \sqrt{r}\sin(\frac{\theta}{2})</imath>. 
+
+At <imath>w(-19, 0)</imath> as in the graph, <imath>\theta = \pi</imath> and <imath>r = 19</imath>. 
+So <imath>\sqrt{r}</imath> and <imath>\sin(\frac{\theta}{2})</imath> are all at their maximum, which means that <imath>Im(\sqrt{4c - 3})</imath> is at its maximum.
+
+--- Solution 3 ---
+<asy>
+size(250);
+import TrigMacros;
+rr_cartesian_axes(-6,5,-5,5,complexplane=true, usegrid = true);
+Label f;
+f.p=fontsize(6); 
+xaxis(-6,5,Ticks(f, 1.0)); 
+yaxis(-5,5,Ticks(f, 1.0));
+dot((0,0));
+draw(circle((-3/4, 0), 4), red + dashed);
+dot((-19/4, 0), blue);
+label("$\phi$", (-19/4, 0), NW);
+dot((0, 2.18), blue);
+label("$v'$", (0, 2.18), NE);
+draw(ellipse((0,0),1.8,2.18), green);
+</asy>
+We can write the given condition as <cmath>\left|\left(z+\frac{1}{2}\right)^2 + \frac{3}{4}\right| = 4.</cmath>
+Letting <imath>u = \left(z+\frac{1}{2}\right)^2</imath>, the equation <imath>\left|u + \frac{3}{4}\right| = 4</imath> equates to the circle centered at <imath>-\frac{3}{4}</imath> with radius <imath>4</imath> in the complex plane, call it <imath>\omega</imath>. Thus the locus of <imath>\left(z+\frac{1}{2}\right)^2</imath> is <imath>\omega</imath>. Let <imath>v = z+\frac{1}{2}</imath>, and since the <imath>+\frac{1}{2}</imath> does not change <imath>z</imath>'s imaginary part, we now need to find <imath>v</imath> with the largest imaginary part such that <imath>v^2</imath> lies on <imath>\omega</imath>. 
+
+Note that the point on <imath>\omega</imath> with largest magnitude is <imath>19/4</imath> and has argument <imath>\pi</imath>, call it <imath>\phi</imath> (The leftmost point on <imath>\omega</imath>). The value <imath>v'</imath> with positive imaginary part such that <imath>(v')^2 = \phi</imath> has an argument of <imath>\frac{\pi}{2}</imath> and a magnitude of <imath>\frac{\sqrt{19}}{2}</imath>. 
+
+
+Since across all values of <imath>v</imath> the imaginary part is given by <imath>r\sin{\theta}</imath> and <imath>v'</imath> has the largest possible <imath>r</imath> and the largest possible value of <imath>\sin{\theta},</imath> it must have the largest imaginary part. 
+
+
+This can non-rigorously be seen by sketching the oval which is the locus of <imath>v</imath>. 
+
+
+This gives <imath>19 + 2 \implies \boxed{\textbf{(B)}
+
+--- Solution 4 ---
+To start, we factor <imath>1+z+z^2</imath> to get:
+<cmath>\left|\left(z-\frac{-1+\sqrt{3}i}{2}\right)\cdot\left(z-\frac{-1-\sqrt{3}i}{2}\right)\right|=4.</cmath>
+Note that since the magnitude of a product of complex numbers is equal to the product of the magnitudes:
+<cmath>\left|\left(z+\frac{1-\sqrt{3}i}{2}\right)\right|\cdot\left|\left(z+\frac{1+\sqrt{3}i}{2}\right)\right|=4.</cmath>
+Now, we substitute <imath>z=a+bi</imath> (Note that we are trying to maximize <imath>b</imath>):
+<cmath>\left|a+\frac{1}{2}+\left(b+\frac{\sqrt{3}}{2}\right)i\right|\cdot\left|a+\frac{1}{2}+\left(b-\frac{\sqrt{3}}{2}\right)i\right|=4.</cmath>
+Since we are trying to maximize <imath>b</imath>, we want the real parts of the components to be as small as possible, which we can do by setting <imath>a=-\frac{1}{2}</imath>. This leaves us with:
+<cmath>\begin{align*}
+\left|\left(b+\frac{\sqrt{3}}{2}\right)i\right|\cdot\left|\left(b-\frac{\sqrt{3}}{2}\right)i\right|&=4 \\
+\left(b+\frac{\sqrt{3}}{2}\right)\left(b-\frac{\sqrt{3}}{2}\right)&=4 \\
+b^2-\frac{3}{4}&=4 \\
+b^2&=\frac{19}{4} \\
+b&=\frac{\sqrt{19}}{2}.
+\end{align*}</cmath>
+This gives us <imath>19 + 2=\boxed{\textbf{(B)}
+
+--- Solution 5 ---
+<math>z^2+z+1</math> reminds me of <math>(z-1)(z^2+z+1)=z^3-1</math>.
+Complex numbers <math>z</math> that satisfies <math>|1+z+z^{2}|=4</math> either comply to <math>1+z+z^{2}=4</math> or <math>1+z+z^{2}=-4</math>.
+In another words, complex numbers <math>z</math> that satisfy <math>(z-1)(z^2+z+1)=4(z-1)</math> or <math>(z-1)(z^2+z+1)=-4(z-1)</math> corresponds to complex numbers <math>z</math> that satisfies <math>|1+z+z^{2}|=4</math>.
+===Case I: <math>(z-1)(z^2+z+1)=4(z-1)</math>===
+<math>(z-1)(z^2+z+1)=4(z-1)</math> could be rewritten as <math>z^3-1=4(z-1)</math>.
+<cmath>
+z^3-4z+3=0
+</cmath>
+By substituting 1 for <math>z</math> and using synthetic division, it is evident that <math>z^3-4z+3=(z-1)(z^2+z-3)=0</math>.
+<cmath>
+z=1 \text{ or } z=\frac{-1\pm\sqrt{13}}{2}
+</cmath>
+===Case II: <math>(z-1)(z^2+z+1)=-4(z-1)</math>===
+<math>(z-1)(z^2+z+1)=-4(z-1)</math> could be rewritten as <math>z^3-1=-4(z-1)</math>.
+<cmath>
+z^3+4z-5=0
+</cmath>
+By substituting 1 for <math>z</math> and using synthetic division, it is evident that <math>z^3+4z-5=(z-1)(z^2+z+5)=0</math>.
+<cmath>
+z=1 \text{ or } z=\frac{-1\pm\sqrt{-19}}{2}
+</cmath>
+===Determining the Maximum Value of the Imaginary Part of <math>z</math>===
+It is important to note the 1 cannot be a value for <math>z</math> because while multiplying <math>(z-1)</math> to both sides, 1 became a solution for <math>z</math>. Therefore, four values for possible <math>z</math> are <math>\frac{-1\pm\sqrt{13}}{2} \text{ and } \frac{-1\pm\sqrt{-19}}{2}</math>.
+Because <math>m</math> and <math>n</math> are positive integers, the only possible value for <math>m+n</math> is <math>19+2</math>, or <math>\boxed{(B) \text{ } 21}</math>.
+
+
+=== Problem 17 ===
+Flora the frog starts at
+
+Choices: {'A': '\\frac{5}{512}', 'B': '\\frac{45}{1024}', 'C': '\\frac{127}{1024}', 'D': '\\frac{511}{1024}', 'E': '\\frac{1}{2}</math>'}
+Answer: E
+
+--- Solution 1 ---
+Initially, the probability of landing at <math>10</math> and landing past <math>10</math> (summing the infinte series) are exactly the same. Landing before 10 repeats this initial condition, with a different irrelevant scaling factor. Therefore, the probability must be <math>\boxed{\textbf{(E)}
+
+--- Solution 2 ---
+Let's denote <math>f(n)</math> as the probability of reaching <math>n</math> from <math>0</math>. We immediately see that <math>f(0) = 1</math>, and <math>f(1) = \frac{1}{2}</math>, since there's only one way to get to 1 from 0. Just jump!
+
+Now, let's write an expression for <math>f(10)</math>. Suppose we know <math>f(9),f(8),\dotsc,f(2)</math>.  
+
+The probability of reaching 10 from some integer <math>k < 10</math> will be <math>\frac{1}{2^{10-k}}</math> (use the formula given in the problem!)
+The probability of reaching that integer <math>k</math> from <math>0</math> is going to be <math>f(k)</math>. Then, the probability of going from <math>0 \to \underbrace{ k \to 10}_{\text{one jump}}</math> will be <cmath>\mathbb{P}(\text{Reaching } 10 \text{ from } 0 \text { while passing through } k) = f(k) \cdot \frac{1}{2^{10-k}}</cmath> 
+We want the probability of reaching 10 from anywhere though, so what we can do is sum over all passing points <math>k</math>, i.e.
+<cmath>f(10) = \sum_{k=0}^9 \mathbb{P}(\text{Reaching } 10 \text{ from } 0 \text { while passing through } k) = \sum_{k=0}^9 \frac{1}{2^{10-k}} \cdot f(k)</cmath>
+
+Now that we have expressed our problem formally, we can actually start solving it!
+
+Let's calculate <math>f(9)</math> (our expression is actually a general fact, not just limited to <math>10</math>).
+<cmath>f(9) = \sum_{k=0}^8 \frac{1}{2^{9-k}} \cdot f(k)</cmath>
+<cmath>\frac{f(9)}{2} = \sum_{k=0}^8 \frac{1}{2^{10-k}} \cdot f(k)</cmath>
+Hmm, we see that the first 8 terms of <math>\frac{f(9)}{2}</math> are exactly the first 8 terms of <math>f(10)</math>. Let's substitute it in.
+<cmath>f(10) = \frac{1}{2} \cdot f(9) + \color{red} \sum_{k=0}^8 \frac{1}{2^{10-k}} \cdot f(k)</cmath>
+<cmath>f(10) = \frac{1}{2} \cdot f(9) + \color{red} \frac{1}{2} \cdot f(9)</cmath>
+<cmath>f(10) = f(9)</cmath>
+Isn't that interesting. Turns out, this reasoning can be extended all the way to <math>f(10) = f(9) = \dotsc = f(2) = f(1)</math>.   
+
+
+It breaks at <math>f(1) \neq f(0)</math>, since <math>f(1) = \frac{1}{2} f(0)</math>. Anyway, with this, we see that the answer is just 
+
+<math>f(10) = f(1) = \boxed{\textbf{(E)} \ \frac{1}{2}}</math>
+
+--- Solution 3 ---
+In order to find the probability of landing on 10, we must multiply the amount of successful combinations by the probability of those combinations. Notice for any successful combination of steps, the probability must always be <math>\frac{1}{2^{10}}</math>. Now, we only need to find the amount of possibilities for steps since we know the probability of each combination occurring is the same. This can be done using sticks and stones <math>C_{0}^{9}+C_{1}^{9}+C_{2}^{9}+...+C_{9}^{9} = 2^9</math>. Hence the final answer is <math>\frac{2^{9}}{2^{10}}</math> or <math>\boxed{\textbf{(E)} \frac{1}{2}}</math>
+
+
+Note that an alternative way of thinking the number of possible steps is that for each number from <math>1</math> to <math>9</math>, there are 2 possibilities: Flora lands on this number or Flora doesn't land on this number. Thus there are <math>2^9</math> total possible combination of steps
+
+
+== Solution 3.1 ==
+Like said above, the probability of each successful combination is always <math>\frac{1}{2^{10}}</math>. A simple way of thinking about counting each combination is visualizing a series. Let's make a series with 10 terms, where 1 means that Flora touches the lilypad and 0 means that she does not: <math>a_1, a_2, a_3, a_4, a_5, a_6, a_7, a_8, a_9, a_{10}</math>. In this set, <math>a_i</math> is either <math>0</math> or <math>1</math>. Note that the last lilypad, <math>a_{10}</math> must always be <math>1</math> for a successful combination. Now we just need to find the number of different ways to make <math>a_1</math> through <math>a_9</math> <math>0</math> or <math>1</math>. This is obviously <math>2^{9} = 512</math>. <math>\frac{512}{1024}</math> = <math>\boxed{\textbf{(E)} \frac{1}{2}}</math>
+
+--- Solution 4 ---
+The probability frog lands on 1 is trivially <math>\frac{1}{2}.</math>
+
+The probability frog lands on 2 is <math>\frac{1}{4} + \frac{1}{2}\cdot \frac{1}{2} = \frac{1}{2},</math> from the two cases 0-2 and 0-1-2.
+
+The probability frog lands on 3 is <math>\frac{1}{8} + 2\cdot \frac{1}{2} \cdot \frac{1}{4} + \frac{1}{2}\cdot \frac{1}{2}\cdot \frac{1}{2} = \frac{1}{2}</math> from the cases 0-3, 0-1-3 and 0-2-3, 0-1-2-3.
+
+The probability frog lands on 4 is <math>\frac{1}{16} + 2\cdot \frac{1}{2} \cdot \frac{1}{8} + \frac{1}{4}\cdot \frac{1}{4} + 3\cdot \frac{1}{2}\cdot \frac{1}{2}\cdot \frac{1}{4} + \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{2}</math> from the cases 0-4, 0-1-4 and 0-3-4, 0-2-4, 0-1-2-4 and 0-1-3-4 and 0-2-3-4, 0-1-2-3-4.
+
+It looks like the probability is <math>\frac{1}{2}</math> regardless of the ending number. Therefore, we choose <math>\boxed{\textbf{(E)} \frac{1}{2}}</math>
+
+--- Solution 5 ---
+No matter what the probability of getting to the end has a probability of <math>\frac{1}{1024}</math>
+
+So the thing is how many ways to jump from the first spot to the last spot.
+
+Given it requires <math>n</math> steps to reach the end, there are <math>\binom{10-1}{n-1}=\binom{9}{n-1}</math> ways to get the end.
+
+<math>\sum_{n=1}^{10}\binom{9}{n-1}=2^9=512\implies \frac{1}{2}</math>
+
+--- Solution 6 ---
+A more rigorous proof to solution 4.
+
+Let <math>P_n</math> represents the probability of Flora landing on number n 
+
+We hypothesize that <math>P_n = \frac{1}{2}, \forall n \ge 1</math> 
+
+Base case: <math>P_1 = \frac{1}{2}</math> as shown in solution 4 
+
+Induction steps: 
+
+<cmath>P_n = \frac{P_{n-1}}{2} + \frac{P_{n-2}}{4} + \dots + \frac{P_{n-m}}{2^m} \dots + \frac{P_0}{2^n}</cmath>
+We assume that <math>P_{n-1} = P_{n-2} = \dots = P_1 = \frac{1}{2}</math> and <math>P_0 = 1</math> is true
+<cmath>P_n = \frac{1}{4} + \frac{1}{8} + \dots + \frac{1}{2^{n-1}} + \frac{1}{2^n} + \frac{1}{2^n}</cmath> 
+(it's obvious here that this will add up to <math>\frac{1}{2}</math> but to be 100% rigorous we do sum of geometric sequences )
+<cmath>P_n = \frac{\frac{1}{4}(1 - (\frac{1}{2})^{n-1})}{1 - \frac{1}{2}} + \frac{1}{2^n}</cmath>
+<cmath>P_n = \frac{2^{n-1} - 1}{2^n} + \frac{1}{2^n}</cmath>
+<cmath>P_n = \frac{2^{n-1}}{2^n} = \frac{1}{2}</cmath>
+Thus, since our base case is true, by induction every <math>P_n = \frac{1}{2}</math> for <math>n \ge 1</math> and <math>P_{10} = \boxed{\textbf{(E)} \frac{1}{2}}</math>
+
+--- Solution 7 ---
+Let <math>f(z)=\sum\limits_{k=1}^{\infty}\left(\frac{z}{2}\right)^{k}=\frac{\frac{z}{2}}{1-\frac{z}{2}}=\frac{z}{2-z}</math>. The coefficient of <math>z^{n}</math> in <math>f(z)</math> is the probability of reaching <math>n</math> in exactly one step. Now, write <math>g(z)=\sum\limits_{k=1}^{\infty}f(z)^{k}=\frac{f(z)}{1-f(z)}</math>. Then, the coefficient of <math>z^{n}</math> in <math>g(z)</math> is the probability of reaching <math>n</math> at some point, since we either do it in one step, two steps, etc. Now, we simplify <cmath>g(z)=\frac{\frac{z}{2-z}}{1-\frac{z}{2-z}}=\frac{z}{2-2z}=\frac{1}{2} \cdot \frac{z}{1-z}=\sum\limits_{n=1}^{\infty}\frac{1}{2}z^{n}.</cmath> Therefore, the probability of eventually reaching <math>n</math> is <math>\frac{1}{2}</math> for all <math>n\geq1</math>, so our answer is <math>\boxed{\textbf{(E)}\frac{1}{2}}</math>.
+
+--- Solution 8 ---
+We can start off by doing casework for the amount of jumps we take to reach <math>10</math>:  
+
+\begin{align}
+\text{C_1: One jump} &\Longrightarrow \frac{1}{2^{10}} = \frac{1}{1024}
+\end{align}
+
+and then after doing a few, we realize that the probabilty is just equal to:
+
+\begin{align}
+\dfrac{\text{Number of ways to split 10 into positive integers}}{2^{10}}
+\end{align}
+
+Now, we can just use stars and bars for each case which we find to be <math>\binom{9}{0} + \binom{9}{1} + ... \binom{9}{8} + \binom{9}{9} = 2^9</math>, so our answer is just <math>\dfrac{2^9}{2^{10}} = \boxed{\textbf{(E)}\frac{1}{2}}</math>
+-jb2015007
+
+
+=== Problem 18 ===
+Circle
+
+Choices: {'A': '\\frac{1}{14}', 'B': '\\frac{1}{12}', 'C': '\\frac{1}{10}', 'D': '\\frac{3}{28}', 'E': '\\frac{1}{9}</math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+import olympiad;
+size(10cm);
+draw(circle((0,0),0.75), gray(0.7));
+draw(circle((-0.25,0),1), gray(0.7));
+draw(circle((0.25,0),1), gray(0.7));
+draw(circle((0,6/7),3/28), gray(0.7));
+pair A = (0,0), B = (-0.25,0), C = (0.25,0), D = (0,6/7), EE = (-0.95710678118, 0.70710678118), F = (0.95710678118, -0.70710678118), G = (0,0), T=(0.75,0);
+dot(D);
+dot(G);
+draw(B--EE, dashed+gray(0.7));
+draw(C--F, dashed+gray(0.7));
+dot(C, gray(0.9));
+draw(B--C, gray(0.7));
+draw(B--A);
+draw(A--D);
+draw(B--D);
+draw(B--T);
+label("$\frac{1}{4}$", (-0.125, -0.125));
+label("$r + \frac{3}{4}$", (0.2, 3/7));
+label("$1 - r$", (-0.29, 3/7));
+label("$O$",A,S);
+label("$A$",B,S);
+dot("$B$",C,S);
+dot("$T$",T,E);
+label("$1$", (-.85, 0.70));
+label("$1$", (.85, -.7));
+markscalefactor=0.05;
+</asy>
+
+Let <imath>O</imath> be the center of the midpoint of the line segment connecting both the centers, say <imath>A</imath> and <imath>B</imath>.
+
+Let the point of tangency with the inscribed circle and the right larger circles be <imath>T</imath>. 
+
+Then <imath>OT = BO + BT = BO + AT - \frac{1}{2} = \frac{1}{4} + 1 - \frac{1}{2} = \frac{3}{4}.</imath>
+
+Since <imath>C_4</imath> is internally tangent to <imath>C_1</imath>, center of <imath>C_4</imath>, <imath>C_1</imath> and their tangent point must be on the same line.
+
+Now, if we connect centers of <imath>C_4</imath>, <imath>C_3</imath> and <imath>C_1</imath>/<imath>C_2</imath>, we get a right angled triangle.
+
+Let the radius of <imath>C_4</imath> equal <imath>r</imath>. With the pythagorean theorem on our triangle, we have
+
+<cmath>\left(r+\frac{3}{4}\right)^2+\left(\frac{1}{4}\right)^2=(1-r)^2</cmath>
+
+Solving this equation gives us
+
+<cmath>r = \boxed{\textbf{(D) } \frac{3}{28}}</cmath>
+
+
+
+
+==Solution 2: Estimation==
+Draw 2 lines from the middle segment's endpoints to an intersection of <math>C_1</math> and <math>C_2</math>. Draw the perpendicular bisector of the middle segment until it reaches one of the intersections. We see this becomes a right triangle with a hypotenuse of <math>1</math> and one leg length of <math>\dfrac14</math>. Using the Pythagorean theorem, the other leg length is <math>\dfrac{\sqrt{15}}{4}</math>. Also drawing <math>C_1</math>'s radius along the segment of <math>\dfrac12</math> allows us to find the that radius of the middle circle is <math>\dfrac34</math>. 
+
+Finally notice that <math>r_{C_3} + 2 r_{C_4}</math> is really close to <math>\dfrac{\sqrt{15}}{4}</math>. 
+<math>2 r_{C_4} = \dfrac{\sqrt{15} - 3}{4}</math>, so <math>r_{C_4} = \dfrac{\sqrt{15} - 3}{8}</math>. This is really close to <math>\dfrac18</math> and the closest answer to that is <math>\boxed{\text{D) }\dfrac{3}{28}}</math>
+
+
+=== Problem 19 ===
+What is the product of all the solutions to the equation <cmath>\log_{7x}2023 \cdot \log_{289x} 2023 = \log_{2023x} 2023?</cmath>
+
+Choices: {'A': '(\\log_{2023}7 \\cdot \\log_{2023}289)^2', 'B': '\\log_{2023}7 \\cdot \\log_{2023}289', 'C': '1\n\\\\\n\\\\', 'D': '\\log_{7}2023 \\cdot \\log_{289}2023', 'E': '(\\log_{7}2023 \\cdot \\log_{289}2023)^2</math>'}
+Answer: C
+
+--- Solution 1 ---
+For <math>\log_{7x}2023\cdot \log_{289x}2023=\log_{2023x}2023</math>, transform it into <math>\dfrac{\ln 289+\ln 7}{\ln 7 + \ln x}\cdot \dfrac{\ln 289+\ln 7}{\ln 289 + \ln x}=\dfrac{\ln 289+\ln 7}{\ln 289+\ln 7+\ln x}</math>. Replace <math>\ln x</math> with <math>y</math>. Because we want to find the product of all solutions of <math>x</math>, it is equivalent to finding the exponential of the sum of all solutions of <math>y</math>. Change the equation to standard quadratic equation form, the term with 1 power of <math>y</math> is canceled.  By using Vieta, we see that since there does not exist a <math>by</math> term, <math>\sum y=0</math> and <math>\prod x=e^0=\boxed{\textbf{(C)} 1}</math>.
+
+--- Solution 2 ---
+<cmath>\log_{7x}2023\cdot \log_{289x}2023=\log_{2023x}2023</cmath>
+
+Rearranging it give us:
+
+<cmath>\log_{2023}7x\cdot \log_{2023}289x=\log_{2023}2023x</cmath>
+
+<cmath>(\log_{2023}7+\log_{2023}x)(\log_{2023}289+\log_{2023}x)=(\log_{2023}2023+\log_{2023}x)</cmath>
+
+let <math>\log_{2023}x</math> be <math>a</math>, we get
+
+<cmath>(\log_{2023}7+a)(\log_{2023}289+a)=1+a</cmath>
+
+<cmath>a^2+(\log_{2023}7+\log_{2023}289)a+\log_{2023}7 \cdot \log_{2023}289=1+a</cmath>
+
+<cmath>a^2+\log_{2023}7 \cdot \log_{2023}289-1=0</cmath>
+
+by Vieta's Formulas,
+
+<cmath>a_1+a_2=0</cmath>
+
+<cmath>\log_{2023}{x_1}+\log_{2023}{x_2}=0</cmath>
+
+<cmath>\log_{2023}{x_1x_2}=0</cmath>
+
+<cmath>x_1x_2=\boxed{\textbf{(C)} 1}</cmath>
+
+
+～edited by DRA777
+
+--- Solution 3 ---
+Similar to solution 1, change the bases first
+<cmath>\frac{\ln 289+\ln 7}{\ln7 + \ln{x}} \cdot \frac{\ln 289+\ln 7}{2\ln17 + \ln{x}} = \frac{\ln 289+\ln 7}{\ln7 + 2\ln17 + \ln{x}}</cmath>
+Cancel and cross multiply to get
+<cmath>(\ln7 + 2\ln17)(\ln7 + 2\ln17 + \ln{x}) = (\ln7 + \ln{x})(2\ln17 + \ln{x})</cmath>
+Simplify to get
+<cmath>(\ln{x})^2 = 4(\ln17)^2 + 2\ln17\ln7 + (\ln7)^2</cmath>
+<cmath>\ln{x} = \pm \sqrt{4(\ln17)^2 + 2\ln17\ln7 + (\ln7)^2}</cmath>
+The sum of all possible <math>\ln{x}</math> is 0, thus the product of all solutions of <math>x</math> is <math>\boxed{\textbf{(C)} 1}</math>
+
+--- Solution 4 ---
+We take the reciprocal of both sides:
+<cmath>\frac{1}{\log_{7x}2023}\cdot \frac{1}{\log_{289x}2023}=\frac{1}{\log_{2023x}2023}.</cmath> Using logarithm properties, we have <cmath>\log_{2023}7x\cdot \log_{2023}289x=\log_{2023}2023x.</cmath> Simplify to obtain <cmath>2023x^2=2023x,</cmath> from which we have <math>x=\boxed{\textbf{(C)} 1}</math>
+
+
+This solution works for this problem by chance but do note that the simplification step to get <cmath>2023x^2=2023x</cmath>is not how log properties work and that the actual solutions for x are <cmath> x = e^{ \pm \sqrt{ln^2(7)+ln(17)ln(2092529)}}</cmath> (as shown in solution 3) which multiply to 1
+
+--- Solution 5 ---
+First, we take the reciprocal of both sides. We get <cmath>\frac{1}{\log_{7x}2023}\cdot \frac{1}{\log_{289x}2023}=\frac{1}{\log_{2023x}2023}.</cmath>
+Flip the logarithms to get <cmath>\log_{2023}7x\cdot \log_{2023}289x=\log_{2023}2023x.</cmath>
+
+Now we can use <math>\log_{a}bc=\log_{a}b+\log_{a}c</math>. We get <cmath>\log_{2023}7+\log_{2023}x+\log_{2023}289+\log_{2023}x=\log_{2023}2023+\log_{2023}x.</cmath> The <math>\log_{2023}7+\log_{2023}289</math> and <math>\log_{2023}2023</math> terms cancel, giving <cmath>2\cdot\log_{2023}x=\log_{2023}x</cmath> so now we are sure that <math>\log_{2023}x=0</math>, so the only solution is <math>x=\boxed{\textbf{(C)} 1}</math>.
+
+--- Solution 6 ---
+We can begin by changing the logarithms' base to <math>x</math> and simplifying:
+<math>\newline</math>
+<math>\frac{(\log_{x} 2023)^2}{\log_{x} 7 +1} \cdot \frac{1}{\log_{x} 289 + 1} = 1</math>
+<math>\newline</math>
+After that, we can multiply the denominator on the <math>\text{LHS}</math> on both sides, resulting in:
+<math>\newline</math>
+<math>(\log_{x} 2023)^2 = (\log_{x} 7 +1)(\log_{x} 289 +1)</math>
+<math>\newline</math>
+<math>(\log_{x} 2023)^2 = \log_{x} 2023 + \log_{x} 7 + \log_{x} 289 + 1</math>
+<math>\newline</math>
+<math>(\log_{x} 2023)^2 = 2\log_{x} 2023 + 1</math>
+<math>\newline</math>
+Now, we can substitute some variable <math>a</math> as <math>\log_{x} 2023</math>, giving the quadratic <math>a^2-2a-1=0</math>. By Vieta's, the product of the roots is <math>1</math>, thus the solution is <math>\boxed{\textbf{(C)} 1}</math>.
+
+
+=== Problem 20 ===
+Rows 1, 2, 3, 4, and 5 of a triangular array of integers are shown below:
+
+<asy>
+size(4.5cm);
+label("$1$", (0,0));
+label("$1$", (-0.5,-2/3));
+label("$1$", (0.5,-2/3));
+label("$1$", (-1,-4/3));
+label("$3$", (0,-4/3));
+label("$1$", (1,-4/3));
+label("$1$", (-1.5,-2));
+label("$5$", (-0.5,-2));
+label("$5$", (0.5,-2));
+label("$1$", (1.5,-2));
+label("$1$", (-2,-8/3));
+label("$7$", (-1,-8/3));
+label("$11$", (0,-8/3));
+label("$7$", (1,-8/3));
+label("$1$", (2,-8/3));
+</asy>
+
+Each row after the first row is formed by placing a 1 at each end of the row, and each interior entry is 1 greater than the sum of the two numbers diagonally above it in the previous row. What is the units digit of the sum of the 2023 numbers in the 2023rd row?
+
+Choices: {'A': '1', 'B': '3', 'C': '5', 'D': '7', 'E': '9</math>'}
+Answer: C
+
+--- Solution 1 ---
+First, let <imath>R(n)</imath> be the sum of the <imath>n</imath>th row. Now, with some observation and math instinct, we can guess that <imath>R(n) = 2^n - n</imath>.
+
+Now we try to prove it by induction,
+
+<imath>R(1) = 2^n - n = 2^1 - 1 = 1</imath> (works for base case)
+
+<imath>R(k) = 2^k - k</imath>
+
+<imath>R(k+1) = 2^{k+1} - (k + 1) = 2(2^k) - k - 1</imath>
+
+By definition from the question, the next row is always<imath>:</imath> 
+
+Double the sum of last row (Imagine each number from last row branches off toward left and right to the next row), plus # of new row, minus 2 (minus leftmost and rightmost's 1)
+
+Which gives us <imath>:</imath>
+
+<imath>2(2^k - k) + (k + 1) - 2 = 2(2^k) - k - 1</imath>
+
+Hence, proven
+
+Last, simply substitute <imath>n = 2023</imath>, we get <imath>R(2023) = 2^{2023} - 2023</imath>
+
+Last digit of <imath>2^{2023}</imath> is <imath>8</imath>, <imath>8-3 = \boxed{\textbf{(C) } 5}</imath>
+
+--- Solution 2 ---
+In a normal Pascal's Triangle with a row's elements being <imath>a_1, a_2, a_3... a_n,</imath> the following row's elements will sum to: 
+<cmath>a_1 + (a_1 + a_2) + (a_2 + a_3)...(a_{n-1} + a_n) + a_n = 2(a_1 + a_2 + a_3 + ... + a_n).</cmath>
+So the sum of the elements in the next row are double that of the previous row in a Pascal's Triangle.
+
+Now, in this specific problem, for every consecutive pair of numbers in the previous row, an extra <imath>1</imath> is added. There are <imath>n - 1</imath> pairs in the previous row to add ones to, but we have to subtract <imath>1</imath> because of the two <imath>1</imath>s on the sides which don't change. Let <imath>S_n</imath> represent the sum of the elements on the <imath>nth</imath> row. Then we have: <cmath>S_n = 2(S_{n - 1}) + n - 1 - 1 = 2(S_{n - 1}) + n - 2.</cmath> 
+
+So <cmath>S_{2023} = 2S_{2022} + 2021 = 2(2(S_{2021}) + 2020) + 2021 = 2(2(2S_{2020} + 2019) + 2020) + 2021 = \dots</cmath> 
+
+Notice the pattern. At <imath>S_{2021}</imath> we had: 
+<cmath>S_{2023} = 2^{2} \cdot S_{2021} + 2^{1} \cdot 2020 + 2^{0} \cdot 2021</cmath> 
+And at <imath>S_{2020}</imath> we had: 
+<cmath>S_{2023} = 2^{3} \cdot S_{2020} + 2^{2} \cdot 2019 + 2^{1} \cdot 2020 + 2^{0} \cdot 2021</cmath> 
+Aside from the first term, the exponents and constant always sum to the same number. We can generalize <imath>S_{2023}</imath> based on where we stop for <imath>S_{n}:</imath> 
+
+<cmath>S_{2023} = 2^{k}S_{2023 - k} + \sum_{j=0}^{k-1} 2^j(2021 - j)</cmath>
+
+Let <imath>k = 2022</imath>: 
+<cmath>S_{2023} = 2^{2022}S_{1} + \sum_{j=0}^{2021} 2^j(2021 - j) = 2^{2023} + \sum_{j=0}^{2021} 2^j\cdot2021 - \sum_{j=0}^{2021} 2^{j}\cdot j</cmath> 
+We apply the sum of geometric sequences formula to the first part of the summation:
+<cmath>\sum_{j=0}^{2021} 2^j\cdot2021 = 2021(2^{2022} - 1)</cmath> 
+
+Now we expand the second part of the summation:
+
+<cmath>\sum_{j=0}^{2021} 2^{j}\cdot j = 2^{0} \cdot 0 + 2^{1} \cdot 1 + ... + 2021 \cdot 2^{2021}</cmath> 
+Then multiply this by <imath>2</imath> to get another expression:
+<cmath>2\sum_{j=0}^{2021} 2^{j}\cdot j = 2^{1} \cdot 0 + 2^{2} \cdot 1 + ... + 2021 \cdot 2^{2022}</cmath> 
+Subtract the two expressions:
+<cmath>-\sum_{j=0}^{2021} 2^{j}\cdot j = 0 \cdot 2^{0} + (1 - 0) \cdot 2^{1} + (2 - 1) \cdot 2^{2} + ... + (2021 - 2020)\cdot 2^{2021} - 2021 \cdot 2^{2022} = </cmath>
+<cmath>2^{0} + 2^{1} + 2^{2} + ... + 2^{2021} - 2021 \cdot 2^{2022}</cmath>
+
+This can again be simplified using the geometric sequence sum formula to finally get
+  
+<cmath>\sum_{j=0}^{2021} 2^{j}\cdot j  = 2020\cdot2^{2022} + 2</cmath> 
+
+Plugging this back into the overall expression finally gives us: 
+
+<cmath>S_{2023} = 2^{2022}S_{1} + 2021(2^{2022} - 1) - 2020\cdot2^{2022} - 2</cmath> 
+
+Since <imath>S_{1}</imath> is just <imath>1</imath> we have: 
+
+<cmath>S_{2023} = 2^{2022} + 2^{2022} - 2023 = 2^{2023} - 2023.</cmath> 
+
+Take this mod <imath>10</imath> to get the last digit:
+<imath>2^{2023} - 2023 \equiv 8 - 3 \equiv \boxed{5} \pmod{10}.</imath>
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 3 ---
+Let the sum of the numbers in row <imath>2022</imath> be <imath>S_{2022}</imath>. Let each number in row <imath>2022</imath> be <imath>x_i</imath> where <imath>1 \leq i \leq 2022</imath>. 
+
+Then 
+<cmath>\begin{align*}
+S_{2023}&=1+(x_1+x_2+1)+(x_2+x_3+1)+...+(x_{2021}+x_{2022}+ 1)+1 \\
+S_{2023}&=x_1+2(S_{2022}-x_1-x_{2022})+2023+x_{2022} \\
+S_{2023} &= 2S_{2022} + 2021
+\end{align*}</cmath>
+
+From this we can establish:
+<cmath>\begin{align*}
+S_n &= 2S_{n-1} + n-2 \\
+S_{n-1} &= 2S_{n-2} + n-3 \\
+S_n - S_{n-1} &= 2S_{n-1} - 2S_{n-2} + 1
+\end{align*}</cmath>
+
+Let 
+<imath>B_{n} =  S_n - S_{n-1}</imath>
+
+From this we have:
+<cmath>\begin{align*}
+B_n + 1 &= 2(B_{n-1} + 1) \\
+B_n &= 2^{n-1} - 1 \\
+S_n - S_{n-1} &= 2^{n-1} - 1 \\
+S_n &= 2^{n-1} + 2^{n-2} + ... + 2^1 - (n-1) + S_1 \\
+S_n &= 2^n - n \\
+S_{2023} &= 2^{2023} - 2023
+\end{align*}</cmath>
+
+The problem requires us to find the last digit of <imath>S_{2023}</imath>. We can use modular arithmetic.
+<cmath>\begin{align*}
+S_{2023} &= 2^{2023} - 2023 \\
+2^{2023} - 2023 &\equiv 8 - 3\pmod{10} \\
+&\equiv \boxed{\textbf{(C) } 5} \pmod{10} \\
+\end{align*}</cmath>
+
+
+==Solution 3.b simpler ==
+<cmath>\begin{align*} 
+S_n &= 2S_{n-1} + n-2 \\
+S_n + An + B &= 2(S_{n-1} + A(n-1) + B) \\
+A = 1 , B = 0 \\
+S_n + n &= 2 (S_{n-1} + n-1) = 2^{n-1} (S_1+1) 
+\end{align*}</cmath>
+continue with the rest from solution 2
+
+--- Solution 4 ---
+Let the sum of the <imath>n^{th}</imath> row be <imath>S_n</imath>.
+
+For each of the <imath>n-2</imath> non-1 entries in the <imath>n^{th}</imath> row, they are equal to the sum of the <imath>2</imath> numbers diagonally above it in the <imath>n-1^{th}</imath> row plus <imath>1</imath>. Therefore all <imath>n-3</imath> non-1 entries in the <imath>n-1^{th}</imath> row appear twice in the sum of the <imath>n-2</imath> non-1 entries in the <imath>n^{th}</imath> row, the two <imath>1</imath>s on each end of the <imath>n-1^{th}</imath> row only appear once in the sum of the <imath>n-2</imath> non-1 entries in the <imath>n^{th}</imath> row. Additionally, additional <imath>1</imath>s are placed at each end of the <imath>n^{th}</imath> row. Hence, <imath>S_n = 2(S_{n-1} - 1) + n-2 + 1 + 1 = 2 S_{n-1} + n - 2</imath>
+
+[[File:2023AMC12AP20 1.png|center|700px]]
+
+<imath>S_4 = 1+5+5+1 = 12</imath>, <imath>S_5 = 1+7+11+7+1 = 27</imath>. By using the recursive formula, <imath>S_5 = 2 \cdot S_4 + 5-2 = 27</imath>
+
+<cmath>S_n = 2 S_{n-1} + n - 2</cmath>
+<cmath>S_n + n = 2 S_{n-1} + 2n - 2</cmath>
+<cmath>S_n + n = 2( S_{n-1} + n - 1)</cmath>
+<imath>S_n + n</imath> is a geometric sequence by a ratio of <imath>2</imath>
+
+<imath>\because \quad S_1 = 1</imath>
+
+<imath>\therefore \quad S_n + n = 2^n</imath>, <imath>S_n = 2^n - n</imath>
+
+<imath>S_{2023} = 2^{2023} - 2023</imath>
+
+The unit digit of powers of <imath>2</imath> is periodic by a cycle of <imath>4</imath> digits: <imath>2</imath>, <imath>4</imath>, <imath>8</imath>, <imath>6</imath>. <imath>2023 = 3 \mod 4</imath>, the unit digit of <imath>2^{2023}</imath> is <imath>8</imath>.
+
+Therefore, the unit digit of <imath>S_{2023}</imath> is <imath>8-3 = \boxed{\textbf{(C) } 5}</imath>
+
+--- Solution 5 ---
+Consider Pascal's triangle as the starting point. In the Pascal's triangle depicted below, the sum of the numbers in the <imath>n</imath>th row is <imath>2^{(n-1)}</imath>. For the 2023rd row in the Pascal's triangle, the sum of numbers is <imath>2^{2022}</imath>.
+
+<asy>
+size(4.5cm);
+label("$1$", (0,0));
+label("$1$", (-0.5,-2/3));
+label("$1$", (0.5,-2/3));
+label("$1$", (-1,-4/3));
+label("$2$", (0,-4/3));
+label("$1$", (1,-4/3));
+label("$1$", (-1.5,-2));
+label("$3$", (-0.5,-2));
+label("$3$", (0.5,-2));
+label("$1$", (1.5,-2));
+label("$1$", (-2,-8/3));
+label("$4$", (-1,-8/3));
+label("$6$", (0,-8/3));
+label("$4$", (1,-8/3));
+label("$1$", (2,-8/3));
+</asy>
+
+For the triangular array of integers in the problem, 1 is added to each interior entry, which propagates to two numbers diagonally below it in the next row, making the sum of numbers in the next row to increase by 2. And the addition of 1 continues to propagate to the next row, which makes the sum of numbers in the row below the next to increase by 4.
+
+Examine the following triangular array of 1's, which indicates the 1's being added to each position of corresponding numbers in the Pascal's triangle.
+
+<asy>
+size(4.5cm);
+label("$0$", (0,0));
+label("$0$", (-0.5,-2/3));
+label("$0$", (0.5,-2/3));
+label("$0$", (-1,-4/3));
+label("$1$", (0,-4/3));
+label("$0$", (1,-4/3));
+label("$0$", (-1.5,-2));
+label("$1$", (-0.5,-2));
+label("$1$", (0.5,-2));
+label("$0$", (1.5,-2));
+label("$0$", (-2,-8/3));
+label("$1$", (-1,-8/3));
+label("$1$", (0,-8/3));
+label("$1$", (1,-8/3));
+label("$0$", (2,-8/3));
+</asy>
+
+For the 3rd row, 1 is added to the original number in the same position in the Pascal's triangle. And the addition of 1 in the 3rd row makes the sum of numbers in the 4th row to increase by 2, and makes the sum of numbers in the 5th row to increase by 4, and so forth. Therefore, the addition of a 1 in the 3rd row makes the sum of numbers in the 2023rd row to increase by <imath>2^{2023-3}=2^{2020}</imath>. And similarly, the addition of each 1 in the 4th row makes the number of numbers in the 2023rd row to increase by <imath>2^{2023-4}=2^{2019}</imath>. The 1's being added between the 3rd and 2022nd rows impact on the sum of numbers in the 2023rd row to increase by <imath>2^{2020} + 2 \cdot 2^{2019} + 3 \cdot 2^{2018} + \dots + 2020 \cdot 2^1 = \sum_{n=1}^{2020}(n \cdot 2^{(2021-n)})</imath>.
+
+Therefore, the sum of numbers in the 2023rd row is the aggregation of the sum of numbers in the 2023rd row in the Pascal's triangle, the impact of addition of 1's between the 3rd row and the 2022nd row, and the addition of 1's on 2021 interior entries in the 2023rd row, which is <imath>2^{2022} + \sum_{n=1}^{2020}(n \cdot 2^{(2021-n)}) + 2021</imath>.
+
+Because <imath>2^{2022} = 2^{2020+2} = 16^{505} \cdot 2^2 = 16^{505} \cdot 4</imath> and <imath>16^k</imath> will always ends with 6 as the unit digit, the unit digit of <imath>2^{2022}</imath> is 4. 
+
+For <imath>\sum_{n=1}^{2020}(n \cdot 2^{(2021-n)})</imath>, we can solve the sum of geometric sequence to be <imath>{2^{2022} - 4 - 2020 \cdot 2}</imath>, which has 0 for the unit digit.
+
+Therefore, for the sum of numbers in the 2023rd row, which is <imath>2^{2022} + \sum_{n=1}^{2020}(n \cdot 2^{(2021-n)}) + 2021</imath>, its unit digit is <imath>4 + 0 + 1 = \boxed{\textbf{(C) } 5}</imath>.
+
+--- Solution 6 ---
+Observe that:
+<imath>S_n = 2{S_{n-1}} + (n-2) \\
+= 2{S_{n-1}} + D_{n} \\
+ = 2{S_{n-1}} + D_{n-1} + 1 
+</imath>
+where <imath>D_1=-1</imath>, and <imath>D_n=D_{n-1}+1</imath> for <imath>n>1</imath>.
+
+Make a table of values, <imath>(S_n, D_n) \mod 2</imath> and <imath>(S_n, D_n) \mod 5</imath>, a until the cycle completes for each. (<imath>\mod 2</imath> has period <imath>1</imath>; <imath>\mod 5</imath> has period <imath>20</imath>).
+( In both cases, there is no "head" that is not part of the cycle.)
+
+Mod 2:
+<imath>S_{2023} \equiv S_{2023 \mod 2}  \equiv   S_1  = (1\cdot 2 +0)\cdot 0 + 1 \equiv 1 \pmod 2</imath>
+
+Mod 5:
+<imath>S_{2023} \equiv S_{2023 \mod 20}  \equiv   S_3 \equiv (1\cdot 2 +0)\cdot 2 + 1 \equiv 5 \pmod 5</imath>
+
+Thus <imath>S_{2023} \mod 10 = \boxed{\textbf{(C) } 5}</imath>.
+
+==Solution 7: Newton's Little Formula==
+The triangle provided by the question may be rewritten with Pascal's Triangle being the starting point.
+
+<asy>
+usepackage("color");
+texpreamble("\usepackage{color}");
+
+size(6cm); // Reduced from 8cm
+
+// Reduced spacing
+real dx = 1.2;
+real dy = 0.6;
+
+// Level 0
+label(Label("$1$", align=Center), (0, 0));
+
+// Level 1
+label(Label("$1$", align=Center), (-dx/2, -dy));
+label(Label("$1$", align=Center), ( dx/2, -dy));
+
+// Level 2
+label(Label("$1$", align=Center), (-dx, -2*dy));
+label(Label("$2+\textcolor{red}{1}$", align=Center), (0, -2*dy));
+label(Label("$1$", align=Center), (dx, -2*dy));
+
+// Level 3
+label(Label("$1$", align=Center), (-1.5*dx, -3*dy));
+label(Label("$3+\textcolor{red}{2}$", align=Center), (-0.5*dx, -3*dy));
+label(Label("$3+\textcolor{red}{2}$", align=Center), (0.5*dx, -3*dy));
+label(Label("$1$", align=Center), (1.5*dx, -3*dy));
+
+// Level 4
+label(Label("$1$", align=Center), (-2*dx, -4*dy));
+label(Label("$4+\textcolor{red}{3}$", align=Center), (-dx, -4*dy));
+label(Label("$4+\textcolor{red}{5}$", align=Center), (0, -4*dy));
+label(Label("$4+\textcolor{red}{3}$", align=Center), (dx, -4*dy));
+label(Label("$1$", align=Center), (2*dx, -4*dy));
+
+label(Label("$\vdots$", align=Center), (0, -5*dy));
+</asy>
+
+The numbers in Pascal's Triangle could be written with combinations. Moreover, the following equation is true.
+
+<cmath>\sum_{k=0}^{n}{}_nC_k=2^n</cmath>
+
+Therefore, the sum of every number in <imath>n^{th}</imath> row of a Pascal's Triangle is <imath>2^{n}</imath>.
+
+
+Another triangle with the red colored number could be written to evaluate the sum of the red numbers in each row.
+
+<asy>
+size(2.5cm);
+label("$\textcolor{red}{1}$", (0, 0));
+label("$\textcolor{red}{2}$", (0.1/2, -0.08));
+label("$\textcolor{red}{2}$", (-0.1/2, -0.08));
+label("$\textcolor{red}{3}$", (-0.1,   -2*0.08));
+label("$\textcolor{red}{5}$", ( 0,   -2*0.08));
+label("$\textcolor{red}{3}$", ( 0.1,   -2*0.08));
+label("$\vdots$", (0, -3*0.08));
+</asy>
+
+The sum of numbers in each line could be investigated.
+<cmath>
+\begin{array}{c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c}
+1 &   & 4 &   & 11 &    & 26 &    & 53 & \dots \\
+  & 3 &   & 7 &    & 15 &    & 27 & \dots   &  \\
+  &   & 4 &   & 8  &    & 12 & \dots   &    &  \\ 
+  &   &   & 4 &    & 4  & \dots   &    &    &  \\
+\end{array}
+</cmath>
+Using Newton's Little Formula, it is evident that the following equation is true.
+
+<cmath>a_n=1\cdot{}_{n-1}C_0+3\cdot{}_{n-1}C_1+4\cdot{}_{n-1}C_2+4\cdot{}_{n-1}C_3</cmath>
+
+With all the tools, the last digit, or the remainder when divided by 10, of the sum of the numbers in the 2023rd row may be computed. Let <imath>x</imath> be the last digit. Moreover,  <imath>a_{2020}</imath> is equivalent to the sum of red numbers in 2023rd row of the original triangle.
+\begin{align*}
+2^{2020}+1\cdot{}_{2020}C_0+3\cdot{}_{2020}C_1+4\cdot{}_{2020}C_2+4\cdot{}_{2020}C_3 &\equiv x\pmod{10} \\
+&\equiv 2^{2022}+1+3\cdot2020+2\cdot2020\cdot2019 \\
+&\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }+2\cdot2020\cdot673\cdot2018 \pmod{10} \\
+&=2^{2022}+1 \pmod{10} \\
+&=4+1 \pmod{10} \\
+&=5 \pmod{10}
+\end{align*}
+
+Answer: <imath>\boxed{(C) 5}</imath>
+
+
+=== Problem 21 ===
+If
+
+Choices: {'A': '~\\frac{7}{22}', 'B': '~\\frac13', 'C': '~\\frac38', 'D': '~\\frac5{12}', 'E': '~\\frac12</math>'}
+Answer: A
+
+--- Solution 1 ---
+To find the total amount of vertices we first find the amount of edges, and that is <math>\frac{20 \times 3}{2}</math>. Next, to find the amount of vertices we can use Euler's characteristic, <math>V - E + F = 2</math>, and therefore the amount of vertices is <math>12</math> 
+
+So there are <math>\binom{12}{3} = 220</math> ways to choose 3 distinct points.
+
+Now, the furthest distance we can get from one point to another point in an icosahedron is 3. Which gives us a range of <math>1 \leq d(Q, R), d(R, S) \leq 3</math>
+
+With some case work, we get two cases:
+
+Case 1: <math>d(Q, R) = 3; d(R, S) = 1, 2</math>
+
+Since we have only one way to choose Q, that is, the opposite point from R, we have one option for Q and any of the other points could work for S.
+
+Then, we get <math>12 \times 1 \times 10 = 120</math> (ways to choose R × ways to choose Q × ways to choose S)
+
+Case 2: <math>d(Q, R) = 2; d(R, S) = 1</math>
+
+We can visualize the icosahedron as 4 rows, first row with 1 vertex, second row with 5 vertices, third row with 5 vertices and fourth row with 1 vertex. We set R as the one vertex on the first row, and we have 12 options for R. Then, Q can be any of the 5 points on the third row and finally S can be one of the 5 points on the second row.
+
+Therefore, we have <math>12 \times 5 \times 5 = 300</math> (ways to choose R × ways to choose Q × ways to choose S)
+
+In total, we have <math>420</math> ways, but we must divide by <math>3!</math> to account for permutations, giving us <math>70/220 = \boxed{\textbf{(A) } 7/22}.</math>
+
+~lptoggled, edited by [https://artofproblemsolving.com/wiki/index.php/User:grogg007 grogg007], ESAOPS, weimi23, and trevian1
+
+--- Solution 2 ---
+In total, there are <math>\binom{12}{3}=220</math> ways to select the points. However, if we look at the denominators of <math>B,C,D</math>, they are <math>3,8,12</math> which are not divisors of <math>220</math>. Also <math>\frac{1}{2}</math> is impossible as cases like <math>d(Q, R) = d(R, S)</math> exist. The only answer choice left is <math>\boxed{\textbf{(A) } \frac{7}{22}}</math>
+
+Note: this cheese is actually wrong because the total number of ways to select the points is actually <math>12 \times 11 \times 10 = 1320</math> as order matters, so all denominators are possible. Rather, you can arrive at the same conclusion by fixing R WLOG, leading to <math>11 \times 10 = 110</math> ways in total, which works for the original cheese.. 
+(Actual way)
+
+Fix an arbitrary point, to select the rest <math>2</math> points, there are <math>11\cdot 10 =110</math> ways. To make <math>d(Q, R)=d(R, S), d=1/2</math>. Which means there are in total <math>2\cdot 5 \cdot 4 = 40</math> ways to make the distance the same. <math>\frac{1}{2}(1-\frac{40}{110})= \boxed{\textbf{(A) } \frac{7}{22}}</math>
+
+--- Solution 3 ---
+We can imagine the icosahedron as having 4 layers. 1 vertex at the top, 5 vertices below connected to the top vertex, 5 vertices below that which are 2 edges away from the top vertex, and one vertex at the bottom that is 3 edges away. WLOG because the icosahedron is symmetric around all vertices, we can say that R is the vertex at the top. So now, we just need to find the probability that S is on a layer closer to the top than Q. We can do casework on the layer S is on to get 
+<cmath>\frac{5}{11} \cdot \frac{6}{10} + \frac{5}{11} \cdot \frac{1}{10} = \frac{35}{110} = \frac{7}{22}</cmath>
+So the answer is <math>\boxed{\textbf{(A) }\frac{7}{22}}</math>. 
+
+-awesomeparrot
+
+--- Solution 4 ---
+We can actually see that the probability that <math>d(Q, R) > d(R, S)</math> is the exact same as <math>d(Q, R) < d(R, S)</math> because <math>d(Q, R)</math> and <math>d(R, S)</math> have no difference. (In other words, we can just swap Q and S, meaning that can be called the same probability-wise.) Therefore, we want to find the probability that <math>d(Q, R) = d(R, S)</math>.
+
+WLOG, we can rotate the icosahedron so that R is the top of the icosahedron. Then we can divide this into 2 cases:
+
+1. They are on the second layer
+
+There are 5 ways to put one point, and 4 ways to put the other point such that <math>d(Q, R) = d(R, S) = 1</math>. So, there are <math>5 \cdot 4 = 20</math> ways to put them on the second layer.
+
+2. They are on the third layer
+
+There are 5 ways to put one point, and 4 ways to put the other point such that <math>d(Q, R) = d(R, S) = 2</math>. So, there are <math>5 \cdot 4 = 20</math> ways to put them on the third layer.
+
+The total number of ways to choose P and S are <math>11 \cdot 10 = 110</math> (because there are 12 vertices), so the probability that <math>d(Q, R) = d(R, S)</math> is <math>\frac{20+20}{110} = \frac{4}{11}</math>.
+
+Therefore, the probability that <math>d(Q, R) > d(R, S)</math> is <math>\frac{1 - \frac{4}{11}}{2} = \boxed{\textbf{(A) }\frac{7}{22}}</math>
+
+--- Solution 5 ---
+We know that there are <math>20</math> faces. Each of those faces has <math>3</math> borders (since each is a triangle), and each edge is used as a border twice (for each face on either side). Thus, there are <math>\dfrac{20\cdot3}2=30</math> edges. 
+
+Euler's formula states that <math>V-E+F=2</math> for all convex polyhedra, so we know that <math>2-F+E=12</math> vertices. 
+
+The answer can be counted by first counting the number of possible paths that will yield <math>d(Q, R) > d(R, S)</math> and dividing it by <math>12\cdot11\cdot10</math> (or <math>\dbinom{12}3</math>, depending on the approach). In either case, one will divide by <math>11</math> somewhere in the denominator. We can then hope that there will be no factor of <math>11</math> in the numerator (which would cancel the <math>11</math> in the denominator out), and answer the only option that has an <math>11</math> in the denominator: <math>\boxed{\textbf{(A) }\frac{7}{22}}</math>. 
+
+
+Additional note by "Fruitz": One can eliminate <math>1/2</math> by symmetry if you swap the new sign.
+
+Another note by "andliu766": A shorter way to find the number of vertices and edges is to use the fact that the MAA logo is an icosahedron. :)
+
+==Solution 6 (Case Work(similar to 3))==
+
+[[File:2023AMC12AP21.png|center|200px]]
+
+WLOG, let R be at the top-most vertex of the icosahedron. There are <math>2</math> cases where <math>d(Q, R) > d(R, S)</math>.
+
+Case 1: <math>Q</math> is at the bottom-most vertex
+
+If <math>Q</math> is at the bottom-most vertex, no matter where <math>S</math> is, <math>d(Q, R) > d(R, S)</math>. The probability that <math>Q</math> is at the bottom-most vertex is <math>\frac{1}{11}</math>
+
+Case 2: <math>Q</math> is at the second layer
+
+If <math>Q</math> is at the second layer, <math>S</math> must be at the first layer, for <math>d(Q, R) > d(R, S)</math> to be true. The probability that <math>Q</math> is at the second layer, and <math>S</math> is at the first layer is <math>\frac{5}{11} \cdot \frac{5}{10} = \frac{5}{22}</math>
+
+<cmath>\frac{1}{11} + \frac{5}{22} = \boxed{\textbf{(A) }\frac{7}{22}}</cmath>
+
+
+===Supplement===
+First, we have 20 faces of equilateral triangles. But each edge is shared by two faces hence there are thus <math>\frac{20 \cdot 3}{2}=30</math> edges. 
+
+Now by Euler's formula <math>V-E+F=2 \Rightarrow V-30+20=2 \Rightarrow V=12.</math> 
+
+Furthermore, the number of triangles (<math>n</math>) that meet at one vertex can be found as follows. Note that there are <math>12</math> total vertices. Without accounting for overcounting, <math>\text{total number of vertices} = \text{number of faces} \cdot \text{vertices per face} = 20 \cdot 3 = 60.</math> But since we now know that there are only <math>12</math> vertices and that each vertex is shared by <math>n</math> triangles, you find that there are 5 triangles that meet at one vertex.
+
+Once we pick R as the topmost vertex, there are 11 possible vertices remaining for <math>Q.</math> Continue as follows in this solution.
+
+--- Solution 6 ---
+Since the icosahedron is symmetric polyhedron, we can rotate it so that R is on the topmost vertex. Since Q and 
+S basically the same, we can first count the probability that <math>d(Q,R) = d(R,S)</math>.
+
+<math>\mathfrak{Case} \ \mathfrak{1}: d(Q,R) = d(R,S) = 1</math>
+
+There are 5 points <math>P</math> such that <math>d(Q,P) = 1</math>. There is <math>5 \times 4 = \boxed{20}</math> ways to choose Q and S in this case.
+
+<math>\mathfrak{Case} \ \mathfrak{2}: d(Q,R) = d(R,S) = 2</math>
+
+There are 5 points <math>P</math> such that <math>d(Q,P) = 2</math>. There is <math>5 \times 4 = \boxed{20}</math> ways to choose Q and S in this case.
+
+<math>\mathfrak{Case} \ \mathfrak{3}: d(Q,R) = d(R,S) = 3</math>
+
+There is 1 point <math>P</math> such that <math>d(Q,P) = 3</math>. There is <math>1 \times 0 = \boxed{0}</math> ways to choose Q and S in this case.
+
+<math>\mathfrak{Final} \ \mathfrak{solution}</math>
+
+There are 11 points <math>P</math> that are distinct from R. There is <math>11 \times 10 = \boxed{110}</math> ways to choose Q and S. There is <math>20 + 20 + 0 = \boxed{40}</math> ways to choose Q and S such that <math>d(Q,R) = d(R,S)</math>. There is <math>\frac{110-40}{2} = 35</math> ways to choose Q and S such that <math>d(Q, R) > d(R, S)</math>. The probability that <math>d(Q, R) > d(R, S)</math> is therefore <math>\frac{35}{110} = \frac{7}{22}</math> which corresponds to answer choice <math>\boxed{A}</math>
+
+
+==Solution 8 (Dodecahedron Schlegel (Planar Graph) Diagram)==
+[[file:A-plane-representation-of-the-dodecahedron.png]]
+
+Instead of thinking this problem as vertices of a icosahedron, think of it as faces of a dodecahedron. Our middle face is <math>R</math> and we first choose <math>Q</math> and <math>S</math> to be the faces with distance <math>1</math> from the middle face. There are <math>\binom{5}{2}</math> ways of doing that. Then we choose <math>Q</math> and <math>S</math> to be the faces with distance <math>2</math> from the middle face. There are <math>\binom{5}{2}</math> ways of doing that. Our answer is therefore <math>\frac{1}{2}\left(1-\frac{2\binom{5}{2}}{\binom{11}{2}}\right)=\boxed{\textbf{(A) }\frac{7}{22}}</math>
+
+
+Note: You can do the same analysis on the vertices of the icosahedron using its diagram, which is less to draw because it has fewer (12) vertices and the same number (30) of edges. But this diagram is either less symmetrical or non-planar. (There's no good place to put the last vertex (diametrically opposite the first/central vertex), except in the same place as the first vertex.)
+
+--- Solution 7 ---
+Note that the vertices of an icosahedron are in a <math>1-5-5-1</math> configuration.
+
+We will denote the probability of event <math>A</math> happening as <math>P(A)</math>
+
+We should also note that <math>P(d(Q, R) > d(R, S)) + P(d(Q, R) < d(R, S)) + P(d(Q, R) = d(R, S)) = 1</math>
+
+Also, <math>P(d(Q, R) > d(R, S)) = P(d(Q, R) < d(R, S))</math> since <math>Q</math> and <math>S</math> are basically the same.
+
+Therefore, what we are trying to find is just <math>\frac{1-P(d(Q, R) = d(R, S))}{2}</math> which can easily be computed when we fix <math>R</math> at the top vertex in the <math>1-5-5-1</math> structure.
+
+Since all the points are distinct (stated in problem), the conditions are only satisfied where <math>Q</math> and <math>S</math> are at <math>5</math>s of the <math>1-5-5-1</math> structure.
+
+<math>P(d(Q, R) = d(R, S)) = 2 \cdot \frac{5}{11} \cdot \frac{4}{10} = \frac{4}{11}</math> since we have to choose one of the <math>5</math> out of <math>11</math> possible vertices and another one of <math>4</math> out of <math>10</math> two times.
+
+And the answer is <math>\frac{1-\frac{4}{11}}{2} = \boxed{ \textbf{(A) } \frac{7}{22}}</math>
+
+
+=== Problem 22 ===
+Let
+
+Choices: {'A': '~-1536', 'B': '~96', 'C': '~108', 'D': '~116', 'E': '~144</math>'}
+Answer: B
+
+--- Solution 1 ---
+First, we note that <imath>f(1) = 1</imath>, since the only divisor of <imath>1</imath> is itself.   
+
+
+Then, let's look at <imath>f(p)</imath> for <imath>p</imath> a prime. We see that
+<cmath>\sum_{d \mid p} d \cdot f\left(\frac{p}{d}\right) = 1</cmath>
+<cmath>1 \cdot f(p) + p \cdot f(1) = 1</cmath>
+<cmath>f(p) = 1 - p \cdot f(1)</cmath>
+<cmath>f(p) = 1-p</cmath>
+Nice.   
+
+Now consider <imath>f(p^k)</imath>, for <imath>k \in \mathbb{N}</imath>. 
+<cmath>\sum_{d \mid p^k} d \cdot f\left(\frac{p^k}{d}\right) = 1</cmath>
+<cmath>1 \cdot f(p^k) + p \cdot f(p^{k-1}) + p^2 \cdot f(p^{k-2}) + \dotsc + p^k f(1) = 1</cmath>.  
+
+
+It can be (strongly) inductively shown that <imath>f(p^k) = f(p) = 1-p</imath>. Here's how.    
+
+We already showed <imath>k=1</imath> works. Suppose it holds for <imath>k = n</imath>, then
+
+<cmath>1 \cdot f(p^n) + p \cdot f(p^{n-1}) + p^2 \cdot f(p^{n-2}) + \dotsc + p^n f(1) = 1 \implies f(p^m) = 1-p \; \forall \; m \leqslant n</cmath>
+
+For <imath>k = n+1</imath>, we have
+
+<cmath>1 \cdot f(p^{n+1}) + p \cdot f(p^{n}) + p^2 \cdot f(p^{n-1}) + \dotsc + p^{n+1} f(1) = 1</cmath>, then using <imath>f(p^m) = 1-p \; \forall \; m \leqslant n</imath>, we simplify to
+
+<cmath>1 \cdot f(p^{n+1}) + p \cdot (1-p) + p^2 \cdot (1-p) + \dotsc + p^n \cdot (1-p) + p^{n+1} f(1) = 1</cmath>
+<cmath>f(p^{n+1}) + \sum_{i=1}^n p^i (1-p) + p^{n+1} = 1</cmath>
+<cmath>f(p^{n+1}) + p(1 - p^n) + p^{n+1} = 1</cmath>
+<cmath>f(p^{n+1}) + p = 1 \implies f(p^{n+1}) = 1-p</cmath>.   
+
+Very nice! Now, we need to show that this function is multiplicative, i.e. <imath>f(pq) = f(p) \cdot f(q)</imath> for <imath>\textbf{distinct}</imath> <imath>p,q</imath> prime.
+It's pretty standard, let's go through it quickly.
+<cmath>\sum_{d \mid pq} d \cdot f\left(\frac{pq}{d}\right) = 1</cmath>
+<cmath>1 \cdot f(pq) + p \cdot f(q) + q \cdot f(p) + pq \cdot f(1) = 1</cmath>
+Using our formulas from earlier, we have
+<cmath>f(pq) + p(1-q) + q(1-p) + pq = 1 \implies f(pq) = 1 - p(1-q) - q(1-p) - pq = (1-p)(1-q) = f(p) \cdot f(q)</cmath>
+
+Great! We're almost done now. 
+Let's actually plug in <imath>2023 = 7 \cdot 17^2</imath> into the original formula. 
+<cmath>\sum_{d \mid 2023} d \cdot f\left(\frac{2023}{d}\right) = 1</cmath>
+<cmath>1 \cdot f(2023) + 7 \cdot f(17^2) + 17 \cdot f(7 \cdot 17) + 7 \cdot 17 \cdot f(17) + 17^2 \cdot f(7) + 7 \cdot 17^2 \cdot f(1) = 1</cmath>
+Let's use our formulas! We know 
+<cmath>f(7) = 1-7 = -6</cmath>
+<cmath>f(17) = 1-17 = -16</cmath>
+<cmath>f(7 \cdot 17) = f(7) \cdot f(17) = (-6) \cdot (-16) = 96</cmath>
+<cmath>f(17^2) = f(17) = -16</cmath>
+
+So plugging ALL that in, we have
+<cmath>f(2023) = 1 - \left(7 \cdot (-16) + 17 \cdot (-6) \cdot (-16) + 7 \cdot 17 \cdot (-16) + 17^2 \cdot (-6) + 7 \cdot 17^2\right)</cmath>
+
+which, be my guest simplifying, is <imath>\boxed{\textbf{(B)} \ 96}</imath>
+
+--- Solution 2 ---
+First, change the problem into an easier form.
+<cmath>\sum_{d\mid n}d\cdot f(\frac{n}{d} )=\sum_{d\mid n}\frac{n}{d}f(d)=1</cmath>
+So now we get 
+<cmath>\frac{1}{n}= \sum_{d\mid n}\frac{f(d)}{d}</cmath>
+Also, notice that both <imath>\frac{f(d)}{d}</imath> and <imath>\frac{1}{n}</imath> are arithmetic functions. Applying Möbius inversion formula, we get
+<cmath>\frac{f(n)}{n}=\sum_{d\mid n}\frac{ \mu (d) }{\frac{n}{d} }=\frac{1}{n} \sum_{d\mid n}d\cdot \mu (d) </cmath>
+So 
+<cmath>f(n)=1-p_1-p_2-...+p_1p_2+...=(1-p_1)(1-p_2)...=\prod_{p\mid n}(1-p)</cmath>
+So the answer should be <imath>f(2023)=\prod_{p\mid 2023}(1-p)=(1-7)(1-17)=\boxed{\textbf{(B)} \ 96}</imath>
+
+--- Solution 3 ---
+From the problem, we want to find <imath>f(2023)</imath>. Using the problem, we get <imath>f(2023)+7f(289)+17f(119)+119f(17)+289f(7)+2023f(1)=1</imath>. By plugging in factors of <imath>2023</imath>, we get
+<cmath>
+\begin{align}
+f(7)+7f(1)=1\\
+f(17)+17f(1)=1\\
+f(119)+7f(17)+17f(7)+119f(1)=1\\
+f(289)+17f(17)+289f(1)=1
+\end{align}
+</cmath>
+Notice that <imath>(4)-17(2)=f(289)</imath>, so <imath>f(289)=-16</imath>. Similarly, notice that <imath>(3)-17(1)=f(119)+7f(17)=-16</imath>. Now, substituting this all back into our equation to solve for <imath>f(2023)</imath>, we get
+<cmath>
+\begin{align*}
+f(2023)+7f(289)+17(f(119)+7f(17))+289(f(7)+7f(1))=1\\
+f(2023)+7 \cdot (-16) + 17 \cdot (-16) + 289 \cdot (1) = 1\\
+f(2023)=\boxed{\textbf{(B)} \ 96}
+\end{align*}
+</cmath>
+-PhunsukhWangdu
+
+--- Solution 4 ---
+Consider any <imath>n \in \Bbb N</imath> with prime factorization <imath>n = \Pi_{i=1}^k p_i^{\alpha_i}</imath>.
+Thus, the equation given in this problem can be equivalently written as
+<cmath>
+\[
+\sum_{\beta_1 = 0}^{\alpha_1}
+\sum_{\beta_2 = 0}^{\alpha_2}
+\cdots
+\sum_{\beta_k = 0}^{\alpha_k}
+\Pi_{i=1}^k p_i^{\alpha_i - \beta_i}
+\cdot
+f \left( \Pi_{i=1}^k p_i^{\beta_i} \right)
+= 1 .
+\]
+</cmath>
+
+<imath>\noindent \textbf{Special case 1}</imath>: <imath>n = 1</imath>.
+
+We have <imath>f \left( 1 \right) = 1</imath>.
+
+<imath>\noindent \textbf{Special case 2}</imath>: <imath>n</imath> is a prime.
+
+We have
+<cmath>
+\[
+1 \cdot f \left( n \right) + n \cdot f \left( 1 \right) = 1 .
+\]
+</cmath>
+
+Thus, <imath>f \left( n \right) = 1 - n</imath>.
+
+<imath>\noindent \textbf{Special case 3}</imath>: <imath>n</imath> is the square of a prime, <imath>n = p_1^2</imath>.
+
+We have
+<cmath>
+\[
+1 \cdot f \left( p_1^2 \right) + p_1 \cdot f \left( p_1 \right) + p_1^2 \cdot f \left( 1 \right) = 1.
+\]
+</cmath>
+
+Thus, <imath>f \left( p_1^2 \right) = 1 - p_1</imath>.
+
+<imath>\noindent \textbf{Special case 4}</imath>: <imath>n</imath> is the product of two distinct primes, <imath>n = p_1 p_2</imath>.
+
+We have
+<cmath>
+\[
+1 \cdot f \left( p_1 p_2 \right) + p_1 \cdot f \left( p_2 \right) + p_2 \cdot f \left( p_1 \right) + p_1 p_2 \cdot f \left( 1 \right) = 1.
+\]
+</cmath>
+
+Thus, <imath>f \left( p_1 p_2 \right) = 1 - p_1 - p_2 + p_1 p_2</imath>.
+
+<imath>\noindent \textbf{Special case 5}</imath>: <imath>n</imath> takes the form <imath>n = p_1^2 p_2</imath>, where <imath>p_1</imath> and <imath>p_2</imath> are two distinct primes.
+
+We have
+<cmath>
+\[
+1 \cdot f \left( p_1^2 p_2 \right) + p_1 \cdot f \left( p_1 p_2 \right) + p_1^2 \cdot f \left( p_2 \right) + p_2 \cdot f \left( p_1^2 \right)
++ p_1 p_2 f \left( p_1 \right) + p_1^2 p_2 f \left( 1 \right) = 1.
+\]
+</cmath>
+
+Thus, <imath>f \left( p_1^2 p_2 \right) = 1 - p_1 - p_2 + p_1 p_2</imath>.
+
+The prime factorization of 2023 is <imath>7 \cdot 17^2</imath>.
+Therefore,
+<cmath>
+\begin{align*}
+f \left( 2023 \right) & = 1 - 7 - 17 + 7 \cdot 17 \\
+& = \boxed{\textbf{(B) 96}}.
+\end{align*}
+</cmath>
+
+--- Solution 5 ---
+In the below, denote <imath>\operatorname{id}(x)=x</imath> and <imath>1(x)=1</imath>, and let the Dirichlet convolution of <imath>f</imath> and <imath>g</imath> be <imath>f*g</imath>. Denote the Dirichlet inverse of <imath>f</imath> as <imath>f^{-1}</imath>. Also, let the Dirichlet series of <imath>f</imath> evaluated at <imath>s</imath> be:
+<cmath>DG_f(s)=\sum_{n=1}^{\infty}\frac{f(n)}{n^s}.</cmath>
+Let <imath>\zeta(s)</imath> be the Riemann zeta function.
+
+We note that <imath>\sum_{d|n}{d\cdot f\left(\frac{n}{d}\right)}=1</imath> is equivalent to <imath>f=1*\operatorname{id}^{-1}</imath>. We state a well-known theorem:
+<cmath>DG_f(s)DG_g(s)=DG_{f*g}(s)</cmath>.
+By this:
+<cmath>DG_{\operatorname{id}^{-1}}(s)=\frac{1}{DG_{\operatorname{id}}(s)}=\frac{1}{\zeta(s-1)}.</cmath>
+We know also that:
+<cmath>\sum_{n=1}^{\infty}\frac{\mu(n)}{n^s}=\frac{1}{\zeta(s)}</cmath>,
+so:
+<cmath>DG_{\operatorname{id}^{-1}}(s)=\sum_{n=1}^{\infty}\frac{n\mu(n)}{n^s},</cmath>
+i.e., <imath>\operatorname{id}^{-1}(n)=n\mu(n).</imath> Thus:
+\begin{align*}
+f(2023)&=\left(\operatorname{id}^{-1}*1\right)(2023)\\
+&=\sum_{d|2023}{n\mu(n)}\\
+&=\mu(1)+7\mu(7)+17\mu(17)+7\cdot 17\mu(7\cdot 17)\\
+&= 7\cdot 17-7-17+1\\
+&=96
+\end{align*}
+
+Hence we choose <imath>\boxed{(B)}</imath>.
+
+
+=== Problem 23 ===
+How many ordered pairs of positive real numbers
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '\\text{an infinite number}</math>'}
+Answer: B
+
+
+=== Problem 24 ===
+Let
+
+Choices: {'A': '1', 'B': '3', 'C': '5', 'D': '7', 'E': '9</math>'}
+Answer: C
+
+--- Solution 1 ---
+Consider any sequence with <math>n</math> terms. Every number has such choices: never appear, appear the first time in the first spot, appear the first time in the second spot ..., and appear the first time in the <math>n</math>th spot, which means every number has <math>(n+1)</math> choices to show up in the sequence. Consequently, for each sequence with length <math>n</math>, there are <math>(n+1)^{10}</math> possible ways.
+
+Thus, the desired value is <math>\sum_{n=1}^{10}(n+1)^{10}\equiv \boxed{\textbf{(C) } 5}\pmod{10}</math>.
+
+--- Solution 2 ---
+Let <math>f(x,\ell)</math> be the number of sequences <math>A_1</math>, <math>A_2</math>, <math>\dots</math>, <math>A_\ell</math> such that each <math>A_i</math> is a subset of <math>\{1, 2,\dots,x\}</math>, and <math>A_i</math> is a subset of <math>A_{i+1}</math> for <math>i=1</math>, <math>2\dots</math>, <math>\ell-1</math>. Then <math>f(x,1)=2^x</math> and <math>f(0,\ell)=1</math>.
+
+If <math>\ell\ge2</math> and <math>x\ge1</math>, we need to get a recursive formula for <math>f(x,\ell)</math>: If <math>|A_1|=i</math>, then <math>A_1</math> has <math>\text C_x^i</math> possibilities, and the subsequence <math>\{A_i\}_{2\le i\le\ell}</math> has <math>f(x-i,\ell-1)</math> possibilities. Hence
+<cmath>f(x,\ell)=\sum_{i=0}^x\text C_x^if(x-i,\ell-1).</cmath>
+By applying this formula and only considering  modulo <math>10</math>, we get <math>f(1,2)=3</math>, <math>f(1,3)=4</math>, <math>f(1,4)=5</math>, <math>f(1,5)=6</math>, <math>f(1,6)=7</math>, <math>f(1,7)=8</math>, <math>f(1,8)=9</math>, <math>f(1,9)=0</math>, <math>f(1,10)=1</math>, <math>f(2,2)=9</math>, <math>f(2,3)=6</math>, <math>f(2,4)=5</math>, <math>f(2,5)=6</math>, <math>f(2,6)=9</math>, <math>f(2,7)=4</math>, <math>f(2,8)=1</math>, <math>f(2,9)=0</math>, <math>f(2,10)=1</math>, <math>f(3,2)=7</math>, <math>f(3,3)=4</math>, <math>f(3,4)=5</math>, <math>f(3,5)=6</math>, <math>f(3,6)=3</math>, <math>f(3,7)=2</math>, <math>f(3,8)=9</math>, <math>f(3,9)=0</math>, <math>f(3,10)=1</math>, <math>f(4,2)=1</math>, <math>f(4,3)=6</math>, <math>f(4,4)=5</math>, <math>f(4,5)=6</math>, <math>f(4,6)=1</math>, <math>f(4,7)=6</math>, <math>f(4,8)=1</math>, <math>f(4,9)=0</math>, <math>f(4,10)=1</math>, <math>f(5,2)=3</math>, <math>f(5,3)=4</math>, <math>f(5,4)=5</math>, <math>f(5,5)=6</math>, <math>f(5,6)=7</math>, <math>f(5,7)=8</math>, <math>f(5,8)=9</math>, <math>f(5,9)=0</math>, <math>f(5,10)=1</math>, <math>f(6,2)=9</math>, <math>f(6,3)=6</math>, <math>f(6,4)=5</math>, <math>f(6,5)=6</math>, <math>f(6,6)=9</math>, <math>f(6,7)=4</math>, <math>f(6,8)=1</math>, <math>f(6,9)=0</math>, <math>f(6,10)=1</math>, <math>f(7,2)=7</math>, <math>f(7,3)=4</math>, <math>f(7,4)=5</math>, <math>f(7,5)=6</math>, <math>f(7,6)=3</math>, <math>f(7,7)=2</math>, <math>f(7,8)=9</math>, <math>f(7,9)=0</math>, <math>f(7,10)=1</math>, <math>f(8,2)=1</math>, <math>f(8,3)=6</math>, <math>f(8,4)=5</math>, <math>f(8,5)=6</math>, <math>f(8,6)=1</math>, <math>f(8,7)=6</math>, <math>f(8,8)=1</math>, <math>f(8,9)=0</math>, <math>f(8,10)=1</math>, <math>f(9,2)=3</math>, <math>f(9,3)=4</math>, <math>f(9,4)=5</math>, <math>f(9,5)=6</math>, <math>f(9,6)=7</math>, <math>f(9,7)=8</math>, <math>f(9,8)=9</math>, <math>f(9,9)=0</math>, <math>f(9,10)=1</math>, <math>f(10,2)=9</math>, <math>f(10,3)=6</math>, <math>f(10,4)=5</math>, <math>f(10,5)=6</math>, <math>f(10,6)=9</math>, <math>f(10,7)=4</math>, <math>f(10,8)=1</math>, <math>f(10,9)=0</math>, <math>f(10,10)=1</math>.
+
+Lastly, we get <math>K\equiv\textstyle\sum\limits_{i=1}^{10}f(10,i)\equiv\boxed{\textbf{(C) } 5}\pmod{10}</math>.
+
+--- Solution 3 ---
+Seeing that all the answers are different modulus 5, and that 10 is divisible by 5, we cheese this problem. 
+
+Let <math>A_1, A_2, \cdots, A_n</math> be one sequence satisfying the constraints of the problem. Let <math>b_1, b_2, \cdots, b_n, b_{n+1}</math> be the sequence of nonnegative integers such that <math>A_k</math> has <math>b_k</math> elements for all <math>1\leq{}k\leq{}n</math>, and <math>b_{n+1}=10</math>. Note that we can generate the number of valid sequences of <math>A</math> by first generating all sequences of <math>b</math> such that <math>b_i\leq{}b_{i+1}</math> for all <math>1\leq{}i<n</math>, then choosing the elements from <math>A_{k+1}</math> that we keep in <math>A_k</math>, given the sequence of <math>b</math> as the restraint for the number of elements. For each sequence <math>b_1, b_2, \cdots{}, b_{n+1}</math>, there are <math>\prod_{i=2}^{n+1}\binom{b_i}{b_{i-1}}</math> corresponding sequences for <math>A</math>. Now, consider two cases - either all terms in <math>b</math> are either 0, 5, or 10, or there is at least one term in <math>b</math> that is neither 0, 5 nor 10. In the second case, consider the last term in <math>b</math> that is not 10 or 5, say <math>b_m</math>. However, that implies <math>b_{m+1}=10</math>, and so the number of corresponding sequences of <math>A</math> is <math>\binom{10}{b_m}\cdot{}</math> something or <math>\binom{5}{b_m}\cdot</math> something, which is always a multiple of <math>5</math>. Therefore, we only need to consider sequences of <math>b</math> where each term is <math>0</math> <math>5</math> or <math>10</math>. If all terms in <math>b</math> are 0 or 10, then for each <math>1\leq{}n\leq{}10</math> there are <math>n+1</math> sequences of <math>b</math> (since there are <math>n+1</math> places to turn from <math>0</math> to <math>10</math>), for a total of <math>2+3+\cdots+11=65\equiv0</math> (mod 5). If there exists at least one term <math>b_k=5</math>, then we use stars and bars to count the number of sequences of <math>b</math>, and each sequence of <math>b</math> corresponds to <math>\binom{10}{5}</math> sequences of <math>A</math>. For each <math>n</math>, we must have at least one term of <math>5</math>. After that, there are <math>n-1</math> stars and <math>2</math> bars (separating <math>0</math> to <math>5</math> and <math>5</math> to <math>10</math>), so that is <math>\binom{n+1}{2}</math> sequences of <math>b</math>. So the sum is <math>\binom{2}{2}+\binom{3}{2}+\cdots+\binom{11}{2}=\binom{12}{3}\equiv0</math> (mod 5). Therefore, the answer is 0 mod 5, and it must be <math>\boxed{\textbf{(C) } 5}</math>
+
+--- Solution 4 ---
+We observe that in each sequence, if element <math>e \in A_i</math>, then <math>e \in A_j</math> for all <math>j \geq i</math>.
+Therefore, to determine a sequence with a fixed length <math>n</math>, we only need to determine the first set <math>A_i</math> that each element in <math>\left\{ 1, 2, \cdots , 10 \right\}</math> is inserted into, or an element is never inserted into any subset.
+
+We have
+<cmath>
+\begin{align*}
+K & = \sum_{n = 1}^{10} \left( n + 1 \right)^{10} \\
+& = \sum_{m = 2}^{11} m^{10} .
+\end{align*}
+</cmath>
+
+Recalling or noticing that  <math>x^n \equiv x^{n
+\mod 4} \pmod {10}</math>, then, 
+Modulo 10, we have
+<cmath>
+\begin{align*}
+K & \equiv \sum_{m = 2}^{11} m^2 \\
+& \equiv \sum_{m = 1}^{11} m^2 - 1^2 \\
+& \equiv \frac{11 \cdot \left( 11 + 1 \right) \left( 2 \cdot 11 + 1 \right)}{6} - 1\\
+& \equiv 505 \\
+& \equiv \boxed{\textbf{(C) 5}}  .
+\end{align*}
+</cmath>
+
+
+Slightly easier, observe that <math>11^{10} \equiv 1^{10 }\pmod {10}</math>, so, working <math>{\mod 10}</math>, we have 
+
+<cmath>
+\begin{align*}
+K & \equiv \sum_{m = 2}^{11} m^2 \\
+& \equiv \sum_{m = 1}^{10} m^2 \\
+& \equiv \frac{10 \cdot \left( 10 + 1 \right) \left( 2 \cdot 10 + 1 \right)}{6} \\
+& \equiv \frac{10 \cdot 11 \cdot 21}{6} \\
+& \equiv 5 \cdot 11 \cdot 7 \\
+& \equiv \boxed{ 5}
+\end{align*}
+</cmath>
+
+--- Solution 5 ---
+(See 2021 AIME II P6 for a better understanding; it covers similar material, albeit with a bit more manipulation)
+
+
+We try this for <imath>n=1</imath>. Clearly, this is just the number of subsets, giving <imath>2^{10}</imath> sequences. 
+
+
+For <imath>n=2</imath>, we have <imath>3</imath> choices for each element in the list:
+
+<imath>1</imath>. The element is in both <imath>A_1</imath> and <imath>A_2</imath>. 
+
+<imath>2</imath>. The element is in only <imath>A_2</imath> and NOT in <imath>A_1</imath>. 
+
+<imath>3</imath>. The element is in neither <imath>A_1</imath> nor <imath>A_2</imath>. 
+
+Hence, we have <imath>3^{10}</imath> sequences.
+
+
+For <imath>n=3</imath>, we follow a similar logic; we have <imath>4</imath> choices for each element in the list:
+
+<imath>1</imath>. The element is in all of <imath>A_3</imath> , <imath>A_2</imath>, and <imath>A_1</imath>.
+
+<imath>2</imath>. The element is in only <imath>A_3</imath> and <imath>A_2</imath>.
+
+<imath>3</imath>. The element is in only <imath>A_3</imath>.
+
+<imath>4</imath>. The element is in none of the above.
+
+Hence, we have <imath>4^{10}</imath> sequences.
+
+
+Continuing so, the total number of sequences sums to <imath>2^{10} + 3^{10} + 4^{10} + ... + 11^{10}</imath>. By using mod patterns to find the units digit, we easily arrive at <imath>\boxed{\textbf{(C) } 5}</imath> as our answer.
+
+
+
+~edited by [[User:Zhixing|Zhixing]]
+
+
+=== Problem 25 ===
+There is a unique sequence of integers
+
+Choices: {'A': '-2023', 'B': '-2022', 'C': '-1', 'D': '1', 'E': '2023</math>'}
+Answer: C
+
+--- Solution 1 ---
+<cmath>
+\begin{align*}
+\cos 2023 x + i \sin 2023 x
+&= (\cos x + i \sin x)^{2023}\\
+&= \cos^{2023} x + \binom{2023}{1} \cos^{2022} x (i\sin x) + \binom{2023}{2} \cos^{2021} x (i \sin x)^{2} +\binom{2023}{3} \cos^{2020} x (i \sin x)^{3}\\
+&+ \dots + \binom{2023}{2022} \cos x (i \sin x)^{2022} + (i \sin x)^{2023}\\
+&= \cos^{2023} x + i \binom{2023}{1} \cos^{2022} x \sin x - \binom{2023}{2} \cos^{2021} x \sin^{2} x - i\binom{2023}{3} \cos^{2020} x \sin^{3} x + \dots\\
+&- \binom{2023}{2022} \cos x \sin^{2022} x - i \sin^{2023} x\\
+\end{align*}</cmath>
+
+By equating real and imaginary parts:
+
+<cmath>\cos 2023 x = \cos^{2023} x - \binom{2023}{2} \cos^{2021} x \sin^{2} x + \dots - \binom{2023}{2022} \cos x \sin^{2022} x</cmath>
+
+<cmath>\sin 2023 x = \binom{2023}{1} \cos^{2022} x \sin x - \binom{2023}{3} \cos^{2020} x \sin^{3} x + \dots - \sin^{2023} x</cmath>
+
+<cmath>
+\begin{align*}
+\tan2023x 
+&= \frac{ \sin2023x }{ \cos2023x } = \frac{ \binom{2023}{1} \cos^{2022} x \sin x - \binom{2023}{3} \cos^{2020} x \sin^{3} x + \dots - \sin^{2023} x }{ \cos^{2023} x - \binom{2023}{2} \cos^{2021} x \sin^{2} x + \dots - \binom{2023}{2022} \cos x \sin^{2022} x }\\
+&= \frac{ \binom{2023}{1} \frac{\cos^{2022} x \sin x}{\cos^{2023} x} - \binom{2023}{3} \frac{\cos^{2020} x \sin^{3} x}{\cos^{2023} x} + \dots - \frac{\sin^{2023} x}{\cos^{2023} x} }{ \frac{\cos^{2023} x}{\cos^{2023} x} - \binom{2023}{2} \frac{\cos^{2021} x \sin^{2} x}{\cos^{2023} x} + \dots - \binom{2023}{2022} \frac{\cos x \sin^{2022} x}{\cos^{2023} x}
+ }\\
+&= \frac{ \binom{2023}{1} \tan x - \binom{2023}{3} \tan^{3}x + \dots - \tan^{2023}x }{ 1 - \binom{2023}{2} \tan^{2}x + \dots - \binom{2023}{2022} \tan^{2022} x }\\
+\end{align*}</cmath>
+
+<cmath>a_{2023} = \boxed{\textbf{(C)}-1}</cmath>
+
+This problem is the same as problem 7.64 in the Art of Problem Solving textbook Precalculus chapter 7 that asks to prove <math>\tan{nx} = \frac{\binom{n}{1}\tan{x} - \binom{n}{3}\tan^{3}{x} + \binom{n}{5}\tan^{5}{x} - \binom{n}{7}\tan^{7}{x} + \dots}{1 - \binom{n}{2}\tan^{2}{x} + \binom{n}{4}\tan^{4}{x}  - \binom{n}{6}\tan^{6}{x} + \dots}</math>
+
+--- Solution 2 ---
+Note that <math>\tan{kx} = \frac{\binom{k}{1}\tan{x} - \binom{k}{3}\tan^{3}{x} + \cdots \pm \binom{k}{k}\tan^{k}{x}}{\binom{k}{0}\tan^{0}{x} - \binom{k}{2}\tan^{2}{x} + \cdots \pm \binom{k}{k-1}\tan^{k-1}{x}}</math>, where k is odd and the sign of each term alternates between positive and negative. To realize this during the test, you should know the formulas of <math>\tan{2x}, \tan{3x},</math> and <math>\tan{4x}</math>, and can notice the pattern from that. The expression given essentially matches the formula of <math>\tan{kx}</math> exactly. <math>a_{2023}</math> is evidently equivalent to <math>\pm\binom{2023}{2023}</math>, or 1. However, it could be positive or negative. Notice that in the numerator, whenever the exponent of the tangent term is congruent to 1 mod 4, the term is positive. Whenever the exponent of the tangent term is 3 mod 4, the term is negative. 2023, which is assigned to k, is congruent to 3 mod 4. This means that the term of <math>\binom{k}{k}\tan^{k}{x}</math> is <math>\boxed{\textbf{(C) } -1}</math>.
+
+
+Notice: If you have time and don't know <math>\tan{3x}</math> and <math>\tan{4x}</math>, you'd have to keep deriving <math>\tan{kx}</math> until you see the pattern.
+
+--- Solution 3 ---
+For odd <math>n</math>, we have
+<cmath>
+\begin{align*}
+\tan nx
+& = \frac{\sin nx}{\cos nx} \\
+& = \frac{\frac{1}{2i} \left( e^{i n x} - e^{-i n x} \right)}
+{\frac{1}{2} \left( e^{i n x} + e^{-i n x} \right)} \\
+& = - i \frac{e^{i n x} - e^{-i n x}}{e^{i n x} + e^{-i n x}} \\
+& = - i  \frac{\left( \cos x + i \sin x \right)^n - \left( \cos x - i \sin x \right)^n}
+{\left( \cos x + i \sin x \right)^n + \left( \cos x - i \sin x \right)^n} \\
+& = \frac{ - 2 i \sum_{m=0}^{(n-1)/2} \binom{n}{2m + 1} \left( \cos x \right)^{n - 2m - 1} \left( i \sin x \right)^{2m + 1}}
+{2 \sum_{m=0}^{(n-1)/2} \binom{n}{2m}
+\left( \cos x \right)^{n - 2m} \left( i \sin x \right)^{2m}} \\
+& = \frac{ \frac{1}{\left( \cos x \right)^n} \sum_{m=0}^{(n-1)/2} \binom{n}{2m + 1} \left( \cos x \right)^{n - 2m - 1} \left( i \sin x \right)^{2m + 1}}
+{i \frac{1}{\left( \cos x \right)^n} \sum_{m=0}^{(n-1)/2} \binom{n}{2m}
+\left( \cos x \right)^{n - 2m} \left( i \sin x \right)^{2m}} \\
+& = \frac{ \sum_{m=0}^{(n-1)/2} \binom{n}{2m + 1} \left( i \tan x \right)^{2m + 1}}
+{i \sum_{m=0}^{(n-1)/2} \binom{n}{2m}
+\left( i \tan x \right)^{2m}} \\
+& = \frac{ \sum_{m=0}^{(n-1)/2} \binom{n}{2m + 1} \left( \tan x \right)^{2m + 1}
+i^{2m + 1}}
+{\sum_{m=0}^{(n-1)/2} \binom{n}{2m}
+\left( \tan x \right)^{2m} i^{2m + 1}} \\
+& = \frac{ \sum_{m=0}^{(n-1)/2} \binom{n}{2m + 1} \left( \tan x \right)^{2m + 1}
+\left( -1 \right)^m}
+{\sum_{m=0}^{(n-1)/2} \binom{n}{2m}
+\left( \tan x \right)^{2m} \left( -1 \right)^m} 
+.
+\end{align*}
+</cmath>
+
+Thus, for <math>n = 2023</math>, we have
+<cmath>
+\begin{align*}
+a_{2023} & = \binom{2023}{2023} \left( -1 \right)^{(2023-1)/2} \\
+& = \left( -1 \right)^{1011} \\
+& = \boxed{\textbf{(C) -1}}.
+\end{align*}
+</cmath>
+
+--- Solution 4 ---
+We can use recursion to find a pattern for this problem. Notice that,
+<cmath>
+\begin{align*}
+\tan x &= \tan x\\
+\tan 2x &= \dfrac{\tan x + \tan x}{1 - \tan^2 x} = \dfrac{2\tan x}{1 - \tan^2 x}\\
+\tan 3x &= \dfrac{\tan 2x + \tan x}{1 - \tan 2x \tan x} = \dfrac{3\tan x - \tan^3 x}{1 - 3\tan^2 x}
+\end{align*}
+</cmath>
+The coefficient of the highest degree term seems to be always <math>\pm 1</math>. Now, we prove this by an imcomplete  mathematical induction.
+
+* Firstly, we suppose <math>n</math> is odd, and <math>\tan nx = \dfrac{a_1\tan x + a_3\tan^3 x + \cdots + a_n\tan^n x}{a_0 + a_2\tan^2 x + \cdots + a_{n - 1}\tan^{n - 1} x}</math>, then
+
+<cmath>
+\begin{align*}
+\tan(n + 1)x &= \dfrac{\tan nx + \tan x}{1 - \tan nx \tan x}\\
+&= \dfrac{\dfrac{a_1\tan x + a_3\tan^3 x + \cdots + a_n\tan^n x}{a_0 + a_2\tan^2 x + \cdots + a_{n - 1}\tan^{n - 1} x} + \tan x}{1 - \dfrac{a_1\tan x + a_3\tan^3 x + \cdots + a_n\tan^n x}{a_0 + a_2\tan^2 x + \cdots + a_{n - 1}\tan^{n - 1} x}\tan x}\\
+&= \dfrac{a_1\tan x + a_3\tan^3 x + \cdots + a_n\tan^n x + a_0\tan x + a_2\tan^3 x + \cdots + a_{n - 1}\tan^n x}{a_0 + a_2\tan^2x + \cdots + a_{n - 1}\tan^{n - 1}x - a_1\tan^2 x - a_3\tan^4 x - \cdots \boxed{-a_n\tan^{n + 1} x}}
+\end{align*}
+</cmath>
+
+The coefficient of the highest degree term becomes <math>-a_n</math>.
+
+* Secondly, we suppose <math>n</math> is even, and <math>\tan nx = \dfrac{a_1\tan x + a_3\tan^3 x + \cdots + a_{n - 1}\tan^{n - 1} x}{a_0 + a_2\tan^2 x + \cdots + a_n\tan^n x}</math>, then
+<cmath>
+\begin{align*}
+\tan(n + 1)x &= \dfrac{\tan nx + \tan x}{1 - \tan nx \tan x}\\
+&= \dfrac{\dfrac{a_1\tan x + a_3\tan^3 x + \cdots + a_{n - 1}\tan^{n - 1} x}{a_0 + a_2\tan^2 x + \cdots + a_n\tan^n x} + \tan x}{1 - \dfrac{a_1\tan x + a_3\tan^3 x + \cdots + a_{n - 1}\tan^{n - 1} x}{a_0 + a_2\tan^2 x + \cdots + a_n\tan^n x}\tan x}\\
+&= \dfrac{a_1\tan x + a_3\tan^3 x + \cdots + a_{n - 1}\tan^{n - 1} x + a_0\tan x + a_2\tan^3 x + \cdots \boxed{+ a_n\tan^{n + 1} x}}{a_0 + a_2\tan^2 x + \cdots + a_n\tan^n x - a_1\tan^2 x - a_3\tan^4 x - \cdots - a_{n - 1}\tan^n x}
+\end{align*}
+</cmath>
+The coefficient of the highest degree term remains <math>a_n</math>.
+
+When <math>n = 1</math>, <math>a_n = 1</math>. During the process of <math>n</math> increasing to 2023, <math>a_n</math> changed its sign a total of <math>2022 \div 2 = 1011</math> times.
+
+Hence, <math>a_{2023} = 1 \times (-1)^{1011} = \boxed{\textbf{(C)}-1}</math>
+
+--- Solution 5 ---
+Notice that <math>\tan 2x = \dfrac{2 \tan x}{1 - \tan^2 x}</math>, and <math>\tan 3x = \dfrac{3 \tan x - \tan^3 x}{1-3 \tan^2 x}</math>
+Since this is the AMC, conjecture that some pattern is to be found within the last term of the expansion of <math>\tan nx</math>.
+Guess that the sign of the last term alternates between <math>+</math> and <math>-</math>. Indeed, for odd coefficients the last term has a negative sign, so choose <math>\boxed{\textbf{(C)}-1}</math>
+
+

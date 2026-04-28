@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-14T02-12-40-autoprove-c854-ep488_slot_bound",
+  "status": "error",
+  "session_id": "",
+  "command": "/autoprove",
+  "input": "-- Each element r > q/2 has at most 2 multiples in any interval of length q.\n-- Since Slot filters to those not divisible by q, there are at most 2.\n\n-- Simplified version that avoids the Finset machinery:\n-- For r > q/2, the number of multiples of r in any interval of length q is \u2264 2.\n\ntheorem slot_bound (q r : \u2115) (hr : q / 2 < r) (hq : 0 < q) :\n    \u2200 a : \u2115, ((Finset.Icc a (a + q)).filter (fun t => r \u2223 t)).card \u2264 2 := by\n  sorry",
+  "started_at": "2026-04-14T02:12:40Z",
+  "finished_at": "2026-04-14T02:13:14Z",
+  "duration_s": 34.22,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca2rXk8dwQ2Stzj6G9gYr\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-14T02-12-40-autoprove-c854-ep488_slot_bound.log",
+  "worker_pid": 3447,
+  "last_heartbeat_at": 1776132791.2926338,
+  "_started_monotonic": 1776132760.3879087
+}

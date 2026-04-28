@@ -1,0 +1,604 @@
+=== Problem 1 ===
+Which of the following values is the largest?
+
+Choices: {'A': '2+0+1+7', 'B': '2 \\times 0 +1+7', 'C': '2+0 \\times 1 + 7', 'D': '2+0+1 \\times 7', 'E': '2 \\times 0 \\times 1 \\times 7</math>'}
+Answer: A
+
+--- Solution 1 ---
+We will compute each expression.
+
+A) <math>2 + 0 + 1 + 7 = 10</math>
+
+B) <math>2 \times 0 + 1 + 7 = 8</math>
+
+C) <math>2 + 0 \times 1 + 7 = 9</math>
+
+D) <math>2 + 0 + 1 \times 7 = 9</math>
+
+E) <math>2 \times 0 \times 1 \times 7 = 0</math>
+
+Ordering these, we get <math>10, 8, 9, 9, 0</math>. Out of these, <math>10</math> is the largest number and option <math>(A)</math> adds up to <math>10</math>. Therefore, the answer is <math>\boxed{\textbf{(A) } 2+0+1+7}</math>.
+
+- SBose
+
+--- Solution 2 ---
+We immediately see that every one of the choices, except for A and D, has a number multiplied by <math>0</math>. This will only make the expression's value smaller. We are left with A and D, but in D, <math>1</math> is multiplied by <math>7</math> to get <math>7</math>, whereas in answer choice A, we get <math>8</math> out of <math>7</math> and <math>1</math>, instead of <math>7</math>. Therefore, <math>\boxed{\textbf{(A) } 2+0+1+7}</math> is your answer.
+
+
+https://youtu.be/S1gAyiyQWYo
+
+
+=== Problem 2 ===
+Alicia, Brenda, and Colby were the candidates in a recent election for student president. The pie chart below shows how the votes were distributed among the three candidates. If Brenda received
+
+Choices: {'A': '70', 'B': '84', 'C': '100', 'D': '106', 'E': '120</math>'}
+Answer: E
+
+--- Solution 1 ---
+Let <math>x</math> be the total amount of votes casted. From the chart, Brenda received <math>30\%</math> of the votes and had <math>36</math> votes. We can express this relationship as <math>\frac{30}{100}x=36</math>. Solving for <math>x</math>, we get <math>x=\boxed{\textbf{(E)}\ 120}.</math>
+
+--- Solution 2 ---
+We're being asked for the total number of votes cast -- that represents <math>100\%</math> of the total number of votes. Brenda received <math>36</math> votes, which is <math>\frac{30}{100} = \frac{3}{10}</math> of the total number of votes. Multiplying <math>36</math> by <math>\frac{10}{3},</math> we get the total number of votes, which is <math>\boxed{\textbf{(E)}\ 120}.</math>
+
+--- Solution 3 ---
+If <math>36</math> votes is <math>\frac{3}{10}</math> of all the votes, we can divide that by <math>3</math> to get <math>12</math> as 10%, and then we can multiply the <math>12</math> by <math>10</math> to get to <math>120</math>. So, the answer is <math>\boxed{\textbf{(E)}\ 120}.</math>
+
+
+=== Problem 3 ===
+What is the value of the expression
+
+Choices: {'A': '4', 'B': '4\\sqrt{2}', 'C': '8', 'D': '8\\sqrt{2}', 'E': '16</math>'}
+Answer: C
+
+--- Solution 1 ---
+<math>\sqrt{16\sqrt{8\sqrt{4}}}</math> = <math>\sqrt{16\sqrt{8\cdot 2}}</math> = <math>\sqrt{16\sqrt{16}}</math> = <math>\sqrt{16\cdot 4}</math> = <math>\sqrt{64}</math> = <math>\boxed{\textbf{(C)}\ 8}</math>.
+
+==Worse Solution==
+
+We solve the general form expression <math>\sqrt{a\sqrt{b\sqrt{c}}}</math>. Note, 
+<cmath>\sqrt{a\sqrt{b\sqrt{c}}}=(a^4b^2c^1)^\frac{1}{8}</cmath>
+Thus our answer is, 
+<cmath>(16^4\cdot8^24^1)^\frac{1}{8}=16777216^{\frac{1}{8}}=8</cmath>
+
+
+=== Problem 4 ===
+When
+
+Choices: {'A': '210', 'B': '240', 'C': '2100', 'D': '2400', 'E': '24000</math>'}
+Answer: D
+
+--- Solution 1 ---
+We can approximate <imath>7,928,564</imath> to <imath>8,000,000</imath> and <imath>0.000315</imath> to <imath>0.0003.</imath> Multiplying the two yields <imath>2400. </imath> Thus, it shows our answer is <imath>\boxed{\textbf{(D)}\ 2400}.</imath>
+
+
+=== Problem 5 ===
+What is the value of the expression
+
+Choices: {'A': '1020', 'B': '1120', 'C': '1220', 'D': '2240', 'E': '3360</math>'}
+Answer: B
+
+--- Solution 1 ---
+Directly calculating:
+
+We evaluate both the top and bottom: <imath>\frac{40320}{36}</imath>. This simplifies to <imath>\boxed{\textbf{(B)}\ 1120}</imath>.
+
+--- Solution 2 ---
+It is well known that the sum of all numbers from <math>1</math> to <math>n</math> is <math>\frac{n(n+1)}{2}</math>. Therefore, the denominator is equal to <math>\frac{8 \cdot 9}{2} = 4 \cdot 9 = 2 \cdot 3 \cdot 6</math>. Now, we can cancel the factors of <math>2</math>, <math>3</math>, and <math>6</math> from both the numerator and denominator, only leaving <math>8 \cdot 7 \cdot 5 \cdot 4 \cdot 1</math>. This evaluates to <math>\boxed{\textbf{(B)}\ 1120}</math>.
+
+--- Solution 3 ---
+First, we evaluate <math>1 + 2 + 3 + 4 + 5 + 6 + 7 + 8</math> to get 36. We notice that <math>36</math> is <math>6</math> squared, so we can factor the denominator like <math>\frac{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8}{6 \cdot 6}</math> then cancel the 6s out to get <math>\frac{4 \cdot 5 \cdot 7 \cdot 8}{1}</math>. Now that we have escaped fraction form, we multiply <math>4 \cdot 5 \cdot 7 \cdot 8</math>. Multiplying these, we get <math>\boxed{\textbf{(B)}\ 1120}</math>.
+
+
+=== Problem 6 ===
+If the degree measures of the angles of a triangle are in the ratio
+
+Choices: {'A': '18', 'B': '36', 'C': '60', 'D': '72', 'E': '90</math>'}
+Answer: D
+
+--- Solution 1 ---
+The sum of the ratios is <math>10</math>.  Since the sum of the angles of a triangle is <math>180^{\circ}</math>, the ratio can be scaled up to <math>54:54:72</math> <math>(3\cdot 18:3\cdot 18:4\cdot 18).</math>  The numbers in the ratio <math>54:54:72</math> represent the angles of the triangle.  The question asks for the largest, so the answer is <math>\boxed{\textbf{(D) }72}</math>.
+
+--- Solution 2 ---
+We can denote the angles of the triangle as <math>3x</math>, <math>3x</math>, <math>4x</math>. Due to the sum of the angles in a triangle, <math>3x+3x+4x=180^{\circ}\implies x=18^{\circ}</math>. The greatest angle is <math>4x</math> and after substitution we get <math>\boxed{\textbf{(D) }72}</math>.
+
+
+=== Problem 7 ===
+Let
+
+Choices: {'A': '11', 'B': '19', 'C': '101', 'D': '111', 'E': '1111</math>'}
+Answer: A
+
+--- Solution 1 ---
+To check, if a number is divisible by 19, take its unit digit and multiply it by 2, then add the result to the rest of the number, and repeat this step until the number is reduced to two digits. If the result is divisible by 19, then the original number is also divisible by 19.
+
+After we got 19 eliminated, we can see that the other options have a lot of 1's in them. The divisibility rule for 11 is add alternating digits up, then take the difference of them. The example number works like that. If we add variables, ABCDEF to make number ABCABC, we can see that (A+C+B) - (B+A+C) = 0. Which is divisible by 11, so our answer choice is <math>\boxed{\textbf{(A)}\ 11}</math>.
+
+by: CHECKMATE2021 (edited by CHECKMATE2021)
+
+--- Solution 2 ---
+We are given one of the numbers that can represent <math>Z</math>, so we can just try out the options to see which one is a factor of <math>247247</math>. By the previous solution, 19 does not work even though it is a factor of the example number. We get <math>\boxed{\textbf{(A)}\ 11}</math>.
+
+--- Solution 3 ---
+Similar to solution 1, let <math>Z=ABCABC</math>. To prove it is divisible by 11, we can compute its alternating sum, which is <math>A-B+C-A+B-C=0</math>, which is divisible by 11. Therefore, the answer is <math>\boxed{\textbf{(A)}\ 11}</math>.
+
+--- Solution 4 ---
+We can find that all numbers like <imath>Z</imath> are divisible by 1001. 1001 is 7 x 11 x 13 and when we divide 11, we get a whole number. So, the answer is <imath>\boxed{\textbf{(A)}\ 11}</imath>.
+
+
+=== Problem 8 ===
+Malcolm wants to visit Isabella after school today and knows the street where she lives but doesn't know her house number. She tells him, "My house number has two digits, and exactly three of the following four statements about it are true."
+
+(1) It is prime.
+
+(2) It is even
+
+(3) It is divisible by 7.
+
+(4) One of its digits is 9.
+
+This information allows Malcolm to determine Isabella's house number. What is its units digit?
+
+Choices: {'A': '4', 'B': '6', 'C': '7', 'D': '8', 'E': '9</math>'}
+Answer: D
+
+--- Solution 1 ---
+Notice that (1) cannot be true. Otherwise, the number would have to be prime and be either even or divisible by 7. This only happens if the number is 2 or 7, neither of which are two-digit numbers, so we run into a contradiction. Thus, we must have (2), (3), and (4) be true. By (2), the <math>2</math>-digit number is even, and thus, the digit in the tens place must be <math>9</math>. The only even <math>2</math>-digit number starting with <math>9</math> and divisible by <math>7</math> is <math>98</math>, which has a units digit of <math>\boxed{\textbf{(D)}\ 8}.</math>
+
+
+=== Problem 9 ===
+All of Marcy's marbles are blue, red, green, or yellow. One third of her marbles are blue, one fourth of them are red, and six of them are green. What is the smallest number of yellow marbles?
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '5</math>'}
+Answer: D
+
+--- Solution 1 ---
+The <imath>6</imath> green marbles and yellow marbles form <imath>1 - \frac{1}{3} - \frac{1}{4} = \frac{5}{12}</imath> of the total marbles. Now, suppose the total number of marbles is <imath>x</imath>. We know the number of yellow marbles is <imath>\frac{5}{12}x - 6</imath> and a positive integer. Therefore, <imath>12</imath> must divide <imath>x</imath>. Trying the smallest multiples of <imath>12</imath> for <imath>x</imath>, we see that when <imath>x = 12</imath>, we get there are <imath>-1</imath> yellow marbles, which is impossible. However when <imath>x = 24</imath>, there are <imath>\frac{5}{12} \cdot 24 - 6 = \boxed{\textbf{(D) }4}</imath> yellow marbles, which must be the smallest possible.
+
+--- Solution 2 ---
+Since <imath>\frac{1}{3}</imath> of the marbles are blue and <imath>\frac{1}{4}</imath> are red, it is clear that the total number of marbles must be divisible by <imath>12</imath>. If there are <imath>12</imath> marbles, then <imath>4</imath> are blue, <imath>3</imath> are red, and <imath>6</imath> are green, meaning that there are <imath>-1</imath> yellow marbles. This is impossible. Trying the next multiple of <imath>12</imath>, <imath>24</imath>, we find that <imath>8</imath> are green, <imath>6</imath> are red, and <imath>6</imath> are green, meaning that the minimum number of yellow marbles is <imath>\boxed{\textbf{(D) }4}</imath>.
+
+--- Solution 3 ---
+Assume the total number of marbles is <imath>x</imath>. Since <imath>\frac{1}{3}</imath> of her marbles are blue the total number of blue marbles she has is <imath>\frac{x}{3}</imath>. Similarly she has <imath>\frac{x}{4}</imath> red marbles. Saying that the number of yellow marbles is y we get this equation <imath>\frac{x}{3}+\frac{x}{4}+6+y=x</imath>. Simplifying it we get <imath>\frac{7x}{12}+6+y=x</imath> which becomes <imath>6+y=\frac{5x}{12}</imath> multiplying <imath>\frac{12}{5}</imath> on both sides we get <imath>\frac{12(6+y)}{5}=x</imath>. Because <imath>x</imath> is a natural number <imath>12(6+y)</imath> has to be divisible by 5. This means that <imath>6+y</imath> has to be divisible by 5. The value that satisfies that and is in the answer choices in <imath>\boxed{\textbf{(D) }4}</imath>.
+
+
+=== Problem 10 ===
+A box contains five cards, numbered 1, 2, 3, 4, and 5. Three cards are selected randomly without replacement from the box. What is the probability that 4 is the largest value selected?
+
+Choices: {'A': '\\frac{1}{10}', 'B': '\\frac{1}{5}', 'C': '\\frac{3}{10}', 'D': '\\frac{2}{5}', 'E': '\\frac{1}{2}</math>'}
+Answer: C
+
+--- Solution 1 ---
+There are <imath>\binom{5}{3}</imath> possible groups of cards that can be selected. If <imath>4</imath> is the largest card selected, then the other two cards must be either <imath>1</imath>, <imath>2</imath>, or <imath>3</imath>, for a total <imath>\binom{3}{2}</imath> groups of cards. Then, the probability is just <imath>{\frac{{\dbinom{3}{2}}}{{\dbinom{5}{3}}}} = \boxed{{\textbf{(C) }} {\frac{3}{10}}}</imath>.
+
+--- Solution 2 ---
+P (no 5)= <imath>\frac{4}{5}</imath> * <imath>\frac{3}{4}</imath> * <imath>\frac{2}{3}</imath> = <imath>\frac{2}{5}</imath>. This is the fraction of total cases with no fives.
+p (no 4 and no 5)= <imath>\frac{3}{5}</imath> * <imath>\frac{2}{4}</imath> * <imath>\frac{1}{3}</imath> = <imath>\frac{6}{60}</imath> = <imath>\frac{1}{10}</imath>. This is the intersection of no fours and no fives. Subtract the fraction of no fours and no fives from that of no fives. <imath>\frac{2}{5} - \frac{1}{10} = \frac{3}{10} = \boxed{{\textbf{(C) }} {\frac{3}{10}}}</imath>.
+
+--- Solution 3 ---
+Pick any desirable situation. Let's say you first draw a 4, then a 3, then a 2. The probability of that is <imath>\frac{1}{5}</imath> * <imath>\frac{1}{4}</imath> * <imath>\frac{1}{3}</imath>, which is <imath>\frac{1}{60}</imath>. And for this case, it doesn't matter if you first draw a 3 or a 2. The probability of drawing a 4, a 3, and a 2 in any order is <imath>\frac{1}{60}</imath>. 
+
+Next, list other desirable situations. You can draw a 4, 3, 1, or a 4,2,1, regardless of order. So, our desirable situations are 4,3,2, then 4,3,1, and lastly 4,2,1, regardless of order.
+
+Now, for each desirable situation, there are 3!=6 ways to arrange the numbers. That means that there are 6 ways to arrange 4,3,1, then 6 ways to arrange 4,2,1, and 6 ways to arrange 4,3,2. 6*3=18, which means, accounting for order, there are 18 desirable outcomes. 
+
+The probability of each desirable outcome is <imath>\frac{1}{60}</imath>. Since there are 18 of them, the probability that 4 is the highest value selected is <imath>\frac{1}{60}</imath>*18, which equals <imath>\frac{18}{60}</imath>, which simplifies to the answer,<imath>\frac{3}{10}</imath>.
+
+
+This might be a lengthy explanation, but the idea behind it is pretty simple, and it doesn't take long for it to find the answer. Wish you luck on the AMC8!
+
+--- Solution 4 ---
+First we have to find the probability that we choose a <imath>5</imath>. One of the three numbers is <imath>5</imath> and the other two have to be chosen from the set <imath>\{1,2,3,4\}</imath> so the number of sets with 5 as the largest number is <imath>\binom{4}{2}=6</imath>. The number of ways to choose a set of three from <imath>\{1,2,3,4,5\}</imath> is <imath>\binom{5}{3}=10</imath>, so that means that the probability that <imath>4</imath> is the highest number in the set is <imath>10/10-6/10=4/10</imath> right... nope! This is wrong because one of these sets that don't have 5 as the largest value also doesn't have <imath>4</imath> as it's largest value! We have over counted! So, we find the number of ways where <imath>4</imath> isn't in the set either. There is only one possibility because <imath>\binom{3}{3}=1</imath>. This means that there are only three ways to have a set with 4 as the largest value, so we find the probability to be <imath>\boxed{{\textbf{(C) }} {\frac{3}{10}}}</imath>.
+
+
+=== Problem 11 ===
+A square-shaped floor is covered with congruent square tiles. If the total number of tiles that lie on the two diagonals is 37, how many tiles cover the floor?
+
+Choices: {'A': '148', 'B': '324', 'C': '361', 'D': '1296', 'E': '1369</math>'}
+Answer: C
+
+--- Solution 1 ---
+Since the number of tiles lying on both diagonals is <math>37</math>, counting one tile twice, there are <math>37=2x-1\implies x=19</math> tiles on each side, where x is the number of tiles on the side length of the square. This is because the number of tiles on the square's diagonal is equal to the number of tiles on the square's side length.Therefore, our answer is <math>19^2=\boxed{\textbf{(C)}\ 361}</math>.
+
+
+~Edits and Add-On's by [[User: Wrenmath|WrenMath]]
+
+--- Solution 2 ---
+Visualize it as 4 separate diagonals connecting to one square in the middle. Each square on the diagonal corresponds to one square of horizontal/vertical distance (because it's a square). So, we figure out the length of each separate diagonal, multiply by two, and then add 1. (Realize that we can just join two of the separate diagonals on opposite sides together to save some time in calculations.) Therefore, the edge length is: <cmath>\frac{37-1}{4} \cdot 2 + 1 = 19</cmath>
+Thus, our solution is <math>19^2 = \boxed{\textbf{(C)}\ 361}</math>.
+
+
+~Minor Edits by [[User: Wrenmath|WrenMath]]
+
+
+=== Problem 12 ===
+The smallest positive integer greater than 1 that leaves a remainder of 1 when divided by 4, 5, and 6 lies between which of the following pairs of numbers?
+
+Choices: {'A': '2\\text{ and }19', 'B': '20\\text{ and }39', 'C': '40\\text{ and }59', 'D': '60\\text{ and }79', 'E': '80\\text{ and }124</math>'}
+Answer: D
+
+--- Solution 1 ---
+Since the remainder is the same for all numbers, then we will only need to find the lowest common multiple of the three given numbers, and add the given remainder.The <math>\operatorname{LCM}(4,5,6)</math> is <math>60</math>. Since <math>60+1=61</math>, that is in the range of <math>\boxed{\textbf{(D)}\ \text{60 and 79}}.</math>
+
+--- Solution 2 ---
+Call the number we want to find <math>n</math>. We can say that
+<cmath>n \equiv 1 \mod 4</cmath>
+<cmath>n \equiv 1 \mod 5</cmath>
+<cmath>n \equiv 1 \mod 6.</cmath>
+We can also say that <math>n-1</math> is divisible by <math>4,5</math>, and <math>6.</math>
+Therefore, <math>n-1=lcm(4,5,6)=60</math>, so <math>n=60+1=61</math> which is in the range of <math>\boxed{\textbf{(D)}\ \text{60 and 79}}.</math>
+
+
+=== Problem 13 ===
+Peter, Emma, and Kyler played chess with each other. Peter won 4 games and lost 2 games. Emma won 3 games and lost 3 games. If Kyler lost 3 games, how many games did he win?
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4</math>'}
+Answer: B
+
+--- Solution 1 ---
+Given <math>n</math> games, there must be a total of <math>n</math> wins and <math>n</math> losses. Hence, <math>4 + 3 + K = 2 + 3 + 3</math> where <math>K</math> is Kyler's wins. <math>K = 1</math>, so our final answer is <math>\boxed{\textbf{(B)}\ 1}.</math>
+
+
+=== Problem 14 ===
+Chloe and Zoe are both students in Ms. Demeanor's math class. Last night, they each solved half of the problems in their homework assignment alone and then solved the other half together. Chloe had correct answers to only
+
+Choices: {'A': '89', 'B': '92', 'C': '93', 'D': '96', 'E': '98</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let the number of questions that they solved alone be <math>x</math>. Let the percentage of problems they correctly solve together be <math>a</math>%. 
+As given, <cmath>\frac{80x}{100} + \frac{ax}{100} = \frac{2 \cdot 88x}{100}</cmath>. 
+
+Hence, <math>a = 96</math>. 
+
+Zoe got <math>\frac{90x}{100} + \frac{ax}{100} = \frac{186x}{100}</math> problems right out of <math>2x</math>. Therefore, Zoe got <math>\frac{\frac{186x}{100}}{2x} = \frac{93}{100} = \boxed{\textbf{(C) } 93}</math> percent of the problems correct.
+
+--- Solution 2 ---
+Assume the total amount of problems is <math>100</math> per half homework assignment since we are dealing with percentages, not values. Then, we know that Chloe got <math>80</math> problems correct by herself and got <math>176</math> problems correct overall. We also know that Zoe had <math>90</math> problems she did correctly alone. We can see that the total amount of correct problems Chloe and Zoe did together was <math>176-80=96</math>. Therefore, Zoe did <math>96+90=186</math> problems out of <math>200</math> problems correctly. This is <math>\boxed{\textbf{(C) } 93}</math> percent.
+
+--- Solution 3 ---
+In the problem, we can see that Chloe solved 80% of the problems she solved alone, but 88% of her answers are correct. If 80 and another number's average is 88, the other number must be 96. Then, Zoe solved 90% of the problems she did alone, but 96% of her answers were correct. Then, the average of 90 and 96 is <math>\boxed{\textbf{(C) } 93}</math>.
+
+--- Solution 4 ---
+(Slightly different Solution)
+Suppose we said that there were <math>100</math> problems in their assignment. Then, Chloe had <math>40</math> correct and <math>10</math> incorrect on her portion, and 
+<math>48</math> correct and <math>2</math> incorrect on the portion she and Zoe solved. Zoe has <math>45</math> correct and <math>5</math> incorrect on her portion, and <math>48</math> correct and <math>2</math> incorrect on the portion that she and Chloe solved. Then, Zoe has <math>48 + 45 = 93</math> correct answers out of <math>100</math>, so the answer is <math>\boxed{\textbf{(C) } 93}</math>. 
+
+-HW73
+
+--- Solution 5 ---
+Let the total number of problems be <math>t</math>. Let the percentage of the number of problems that Chloe and Zoe did together and got right be <math>x</math>. As we can see, Chloe got <math>80</math>% of <math> \frac {1}{2} </math> of the total problems right, hence,  <math>{0.80 \cdot \frac{1}{2}t}</math> . We also know that Chloe got <math>88</math>% of <math>t</math> problems right altogether, making it <math>{0.88 \cdot t}</math> total problems right. If we add <math>x</math> to the percentage of correct problems that Chloe solved alone, then that should be equal to the total number of problems that Chloe got right, making the equation:  <math>{0.80 \cdot \frac{1}{2}t} + x = {0.88 \cdot t}</math>. Solving that, we get <math>x = 0.48t</math>. We also know that Zoe got <math>90</math>% of <math> \frac {1}{2} </math> of the total problems right, making it <math>{0.90 \cdot \frac{1}{2}t}</math>. We now add that amount to the percentage of problems that Chloe and Zoe got right together, making <math>{0.90 \cdot \frac{1}{2}t}+ 0.48t</math>. Solving that, we get <math>0.93t</math>, which is equal to <math>93</math>%; hence, <math>\boxed{\textbf{(C) } 93}</math>.
+
+-fn106068
+
+
+=== Problem 15 ===
+In the arrangement of letters and numerals below, by how many different paths can one spell AMC8? Beginning at the A in the middle, a path allows only moves from one letter to an adjacent (above, below, left, or right, but not diagonal) letter. One example of such a path is traced in the picture.
+<asy>
+fill((0.5, 4.5)--(1.5,4.5)--(1.5,2.5)--(0.5,2.5)--cycle,lightgray);
+fill((1.5,3.5)--(2.5,3.5)--(2.5,1.5)--(1.5,1.5)--cycle,lightgray);
+label("$8$", (1, 0));
+label("$C$", (2, 0));
+label("$8$", (3, 0));
+label("$8$", (0, 1));
+label("$C$", (1, 1));
+label("$M$", (2, 1));
+label("$C$", (3, 1));
+label("$8$", (4, 1));
+label("$C$", (0, 2));
+label("$M$", (1, 2));
+label("$A$", (2, 2));
+label("$M$", (3, 2));
+label("$C$", (4, 2));
+label("$8$", (0, 3));
+label("$C$", (1, 3));
+label("$M$", (2, 3));
+label("$C$", (3, 3));
+label("$8$", (4, 3));
+label("$8$", (1, 4));
+label("$C$", (2, 4));
+label("$8$", (3, 4));</asy>
+
+Choices: {'A': '8', 'B': '9', 'C': '12', 'D': '24', 'E': '36</math>'}
+Answer: D
+
+--- Solution 1 ---
+Notice that the upper-most section contains a 3 by 3 square that looks like:
+
+<asy>label("$8$", (1, 2)); label("$C$", (2, 2)); label("$8$", (3, 2)); label("$C$", (1, 1)); label("$M$", (2, 1)); label("$C$", (3, 1)); label("$M$", (1, 0)); label("$A$", (2, 0)); label("$M$", (3, 0));</asy>
+
+
+It has 6 paths in which you can spell out AMC8. You will find four identical copies of this square in the figure, so multiply <math>{6 \cdot 4}</math> to get <math>\boxed{\textbf{(D)}\ 24}</math> total paths.
+
+--- Solution 2 ---
+There are three different kinds of paths that are on this diagram. The first kind is when you directly count <math>A</math>, <math>M</math>, <math>C</math> in a straight line. The second is when you count <math>A</math>, turn left or right to get <math>M</math>, then go up or down to count <math>8</math> and <math>C</math>. The third is the one where you start with <math>A</math>, move up or down to count <math>M</math>, turn left or right to count <math>C</math>, then move straight again to get <math>8</math>.
+
+There are 8 paths for each kind of path, making for <math>8 \cdot 3=\boxed{\textbf{(D)}\ 24}</math> paths.
+
+--- Solution 3 ---
+Notice that the <math>A</math> is adjacent to <math>4</math> <math>M</math>s, each <math>M</math> is adjacent to <math>3</math> <math>C</math>s, and each <math>C</math> is adjacent to <math>2</math> <math>8</math>'s. So for each <math>A</math>, there are <math>4</math> <math>M</math>s, and for each <math>M</math>, there are <math>3</math> <math>C</math>s, and for each <math>C</math>, there are <math>2</math> <math>8</math>s. Thus, the answer is <math>1\cdot 4\cdot 3\cdot 2 = \boxed{\textbf{(D)}\ 24}.</math>
+
+--- Solution 4 ---
+We can do this problem by computing how many ways there are to get to each letter (in order). There is <math>1</math> way to get to the <math>A</math> in the center. We can only get to each of the other <math>M</math>s by going there from the <math>A</math>, so there is <math>1</math> way to get to each of the four <math>M</math>s. For the <math>C</math>s, we notice that four <math>C</math>s are surrounded by one <math>M</math>, and four <math>C</math>s are surrounded by two <math>M</math>s. Finally, each of the <math>8</math>s is surrounded by one <math>C</math> with one way to get there and one <math>C</math> with two ways to get there. Therefore, there are three paths to any of the <math>8</math>s. Since there are eight <math>8</math>s, the answer is <math>3 \cdot 8 = \boxed{\textbf{(D)}\ 24}.</math>
+
+
+=== Problem 16 ===
+In the figure below, choose point
+
+Choices: {'A': '\\frac{3}{4}', 'B': '\\frac{3}{2}', 'C': '2', 'D': '\\frac{12}{5}', 'E': '\\frac{5}{2}</math>'}
+Answer: D
+
+--- Solution 1 ---
+We know that the perimeters of the two small triangles are <imath>3+CD+AD</imath> and <imath>4+BD+AD</imath>. Setting both equal and using <imath>BD+CD = 5</imath>, we have <imath>BD = 2</imath> and <imath>CD = 3</imath>. Now, we simply have to find the area of <imath>\triangle ABD</imath>. Since <imath>\frac{BD}{CD} = \frac{2}{3}</imath>, we must have <imath>\frac{[ABD]}{[ACD]} = 2/3</imath>. Combining this with the fact that <imath>[ABC] = [ABD] + [ACD] = \frac{3\cdot4}{2} = 6</imath>, we get <imath>[ABD] = \frac{2}{5}[ABC] = \frac{2}{5} \cdot 6 = \boxed{\textbf{(D) } \frac{12}{5}}</imath>.
+
+--- Solution 2 ---
+Since <imath>\overline{AC}</imath> is <imath>1</imath> less than <imath>\overline{BC}</imath>, <imath>\overline{CD}</imath> must be <imath>1</imath> more than <imath>\overline{BD}</imath> to equate the perimeter. Hence, <imath>\overline{BD}+\overline{BD}+1=5</imath>, so <imath>\overline{BD}=2</imath>. Therefore, the area of <imath>\triangle ABD</imath> is <imath>\frac{(2)(4)(\sin B)}{2}=4(\frac{3}{5})=\boxed{\textbf{(D) } \frac{12}{5}}</imath>
+
+--- Solution 3 ---
+Letting point A be (0,0) we get point B to be (4,0) and point C to be (0,3). The line BC has a slope of <imath>-\frac{3}{4}</imath> and it has intercepts the y-axis at (0,3) so the equation for line BC is <imath>y=-\frac{3}{4}x+3</imath>. Using the same methods from solution 1 and solution 2 you can find out that CD is 3. The equation of a circle centered at (0,3) with radius 3 is <imath>x^2+(y-3)^2=9</imath>. Plugging in y you get <imath>x^2+(-\frac{3}{4}x)^2=9</imath>. Simplifying it you get <imath>x^2+\frac{9}{16}x^2=9</imath>. Multiplying it my 16 and adding you get <imath>25x^2=144</imath> which becomes <imath>x=12/5</imath> after solving for the positive answer. You can then plug in <imath>x=12/5</imath> back into the slope intercept equation and you get <imath>y=-\frac{3}{4}(\frac{12}{5})+3</imath> which becomes <imath>y=6/5</imath>. Letting that be the height you can see that the base is 4 so the area is <imath>\frac{1}{2}(\frac{6}{5})(4)</imath>. Which becomes <imath>\boxed{\textbf{(D) } \frac{12}{5}}</imath>.
+
+Note: This uses coordinate geometry which could be useful when you don't know how to solve a geometric problem
+
+
+=== Problem 17 ===
+Starting with some gold coins and some empty treasure chests, I tried to put
+
+Choices: {'A': '9', 'B': '27', 'C': '45', 'D': '63', 'E': '81</math>'}
+Answer: C
+
+--- Solution 1 ---
+We can represent the amount of gold with <math>g</math> and the amount of chests with <math>c</math>. We can use the problem to make the following equations:
+<cmath>9c-18 = g</cmath>
+<cmath>6c+3 = g</cmath>
+
+We do this because for 9 chests there are 2 empty and if 9 were in each 9 multiplied by 2 is 18 left.
+
+Therefore, <math>6c+3 = 9c-18.</math> This implies that <math>c = 7.</math> We therefore have <math>g = 45.</math> So, our answer is <math>\boxed{\textbf{(C)}\ 45}</math>.
+
+--- Solution 2 ---
+With <math>9</math> coins, there are <math>\frac{9}{9}+2=1+2=3</math> chests, by the first condition. These don't fit in with the second condition, so we move onto <math>27</math> coins. By the same first condition, there are <math>5</math> chests(<math>\frac{27}{9}+2</math>). This also doesn't fit with the second condition. So, onto <math>45</math> coins. The first condition implies that there are <math>\frac{45}{9}+2=7</math> chests, which DOES fit with the second condition, since <math>6\cdot7+3=42+3=45</math>. Thus, the desired value is <math>\boxed{\textbf{(C)}\ 45}</math>.
+
+
+=== Problem 18 ===
+In the non-convex quadrilateral
+
+Choices: {'A': '12', 'B': '24', 'C': '26', 'D': '30', 'E': '36</math>'}
+Answer: B
+
+--- Solution 1 ---
+We first connect point <math>B</math> with point <math>D</math>. 
+
+<asy>draw((0,0)--(2.4,3.6)--(0,5)--(12,0)--(0,0)); draw((0,0)--(0,5)); label("$B$", (0, 0), SW); label("$A$", (12, 0), ESE); label("$C$", (2.4, 3.6), SE); label("$D$", (0, 5), N);</asy> 
+
+We can see that <math>\triangle BCD</math> is a 3-4-5 right triangle. We can also see that <math>\triangle BDA</math> is a right triangle, by the 5-12-13 Pythagorean triple. With these lengths, we can solve the problem. The area of <math>\triangle BDA</math> is <math>\frac{5\cdot 12}{2}</math>, and the area of <math>\triangle BCD</math> is <math>\frac{3\cdot 4}{2}</math>. Thus, the area of quadrilateral <math>ABCD</math> is <math>30-6 = \boxed{\textbf{(B)}\ 24}.</math>
+
+--- Solution 2 ---
+<math>\triangle BCD</math> is a 3-4-5 right triangle. So the area of <math>\triangle BCD</math> is 6. Then we can use Heron's formula to compute the area of <math>\triangle ABD</math> whose sides have lengths 5,12,and 13. The area of <math>\triangle ABD</math> = <math>\sqrt{s(s-5)(s-12)(s-13)}</math> , where s is the semi-perimeter of the triangle, that is <math>s=(5+12+13)/2=15.</math> Thus, the area of <math>\triangle ABD</math> is 30, so the area of <math>ABCD</math> is <math>30-6 = \boxed{\textbf{(B)}\ 24}.</math> ---LarryFlora
+
+
+=== Problem 19 ===
+For any positive integer
+
+Choices: {'A': '23', 'B': '24', 'C': '25', 'D': '26', 'E': '27</math>'}
+Answer: D
+
+--- Solution 1 ---
+Factoring out <imath>98!+99!+100!</imath>, we have <imath>98! (1+99+99*100)</imath>, which is <imath>98! (10000)</imath>. Next, <imath>98!</imath> has <imath>\left\lfloor\frac{98}{5}\right\rfloor + \left\lfloor\frac{98}{25}\right\rfloor = 19 + 3 = 22</imath> factors of <imath>5</imath>. The <imath>19</imath> is because of all the multiples of <imath>5</imath>.The <imath>3</imath> is because of all the multiples of <imath>25</imath>. Now, <imath>10,000</imath> has <imath>4</imath> factors of <imath>5</imath>, so there are a total of <imath>22 + 4 = \boxed{\textbf{(D)}\ 26}</imath> factors of <imath>5</imath>.
+
+
+Note: Do you know what formula this uses? Most AMC 8 test takers won't know it. 
+It's [[Legendre's Formula]].
+
+
+=== Problem 20 ===
+An integer between
+
+Choices: {'A': '\\frac{14}{75}', 'B': '\\frac{56}{225}', 'C': '\\frac{107}{400}', 'D': '\\frac{7}{25}', 'E': '\\frac{9}{25}</math>'}
+Answer: B
+
+--- Solution 1 ---
+There are <imath>5</imath> options for the last digit <imath>(1,3,5,7,9)</imath> as the integer must be odd. The first digit now has <imath>8</imath> options left (it can't be <imath>0</imath> or the same as the last digit). The second digit also has <imath>8</imath> options left (it can't be the same as the first or last digit). Finally, the third digit has <imath>7</imath> options (it can't be the same as the three digits that are already chosen). 
+
+Since there are <imath>9,000</imath> total integers, our answer is <cmath>\frac{8 \cdot 8 \cdot 7 \cdot 5}{9000} = \boxed{\textbf{(B)}\ \frac{56}{225}}.</cmath>
+
+
+=== Problem 21 ===
+Suppose
+
+Choices: {'A': '0', 'B': '1\\text{ and }-1', 'C': '2\\text{ and }-2', 'D': '0,2,\\text{ and }-2', 'E': '0,1,\\text{ and }-1</math>'}
+Answer: A
+
+--- Solution 1 ---
+There are <math>2</math> cases to consider:
+
+Case <math>1</math>: <math>2</math> of <math>a</math>, <math>b</math>, and <math>c</math> are positive and the other is negative. Without loss of generality (WLOG), we can assume that <math>a</math> and <math>b</math> are positive and <math>c</math> is negative. In this case, we have that <cmath>\frac{a}{|a|}+\frac{b}{|b|}+\frac{c}{|c|}+\frac{abc}{|abc|}=1+1-1-1=0.</cmath>
+
+Case <math>2</math>: <math>2</math> of <math>a</math>, <math>b</math>, and <math>c</math> are negative and the other is positive. WLOG, we can assume that <math>a</math> and <math>b</math> are negative and <math>c</math> is positive. In this case, we have that <cmath>\frac{a}{|a|}+\frac{b}{|b|}+\frac{c}{|c|}+\frac{abc}{|abc|}=-1-1+1+1=0.</cmath>
+
+Note these are the only valid cases, for neither <math>3</math> negatives nor <math>3</math> positives would work as they cannot sum up to <math>0</math>. In both cases, we get that the given expression equals <math>\boxed{\textbf{(A)}\ 0}</math>.
+
+
+=== Problem 22 ===
+In the right triangle
+
+Choices: {'A': '\\frac{7}{6}', 'B': '\\frac{13}{5}', 'C': '\\frac{59}{18}', 'D': '\\frac{10}{3}', 'E': '\\frac{60}{13}</math>'}
+Answer: D
+
+--- Solution 1 ---
+We can draw another radius from the center to the point of tangency. This angle, <imath>\angle{ODB}</imath>, is <imath>90^\circ</imath>. Label the center <imath>O</imath>, the point of tangency <imath>D</imath>, and the radius <imath>r</imath>. 
+<asy>
+draw((0,0)--(12,0)--(12,5)--(0,0));
+draw(arc((8.67,0),(12,0),(5.33,0)));
+label("$A$", (0,0), W);
+label("$C$", (12,0), E);
+label("$B$", (12,5), NE);
+label("$12$", (6, 0), S);
+label("$5$", (12, 2.5), E);
+draw((8.665,0)--(7.4,3.07));
+label("$O$", (8.665, 0), S);
+label("$D$", (7.4, 3.1), NW);
+label("$r$", (11, 0), S);
+label("$r$", (7.6, 1), W);
+</asy>
+
+Since <imath>ODBC</imath> is a kite, then <imath>DB=CB=5</imath>. Also, <imath>AD=13-5=8</imath>. By the [[Pythagorean Theorem]], <imath>r^2 + 8^2=(12-r)^2</imath>. Solving, <imath>r^2+64=144-24r+r^2 \Rightarrow 24r=80 \Rightarrow \boxed{\textbf{(D) }\frac{10}{3}}</imath>.
+
+--- Solution 2 ---
+If we reflect triangle <imath> ABC </imath> over line <imath> AC </imath>, we will get isosceles triangle <imath> ABD </imath>. By the [[Pythagorean Theorem]], we are capable of finding out that the <imath> AB = AD = 13 </imath>. Hence, <imath> \tan \frac{\angle BAD}{2} = \tan \angle BAC = \frac{5}{12} </imath>. Therefore, as of triangle <imath> ABD </imath>, the radius of its inscribed circle <imath> r = \frac{tan \frac{\angle BAD}{2}\cdot (AB + AD - BD)}{2} = \frac{\frac{5}{12} \cdot 16}{2} = \boxed{\textbf{(D) }\frac{10}{3}}</imath>
+
+~[[User:Bloggish|Bloggish]]
+
+--- Solution 3 ---
+Similar to solution 2, we reflect <imath>\triangle ABC</imath> over line <imath>\overline{AC}</imath> and label the reflection of point <imath>B</imath> as <imath>D</imath>. As <imath>AB = AD = 13</imath> by the Pythagorean Theorem, we use the formula <imath>rs=A</imath>, where <imath>r</imath> is the inradius (what we're trying to find), <imath>s</imath> is the semiperimeter (<imath>\frac{\overline{AB}+\overline{AD}+\overline{BD}}{2}</imath>), and <imath>A</imath> is the area of the triangle in which the incircle is inscribed in. Substitution gives: <cmath>r=\frac{\frac{10\cdot12}{2}}{\frac{13+13+10}{2}}</cmath>
+<cmath>r=\frac{60}{18}</cmath>
+<cmath>r=\boxed{\textbf{(D) }\frac{10}{3}}</cmath>
+
+--- Solution 4 ---
+Using the labels from Solution 1, we can express the area of the entire triangle as <imath>[\triangle ABC] = [\triangle ADO] + [\triangle DBO] + [\triangle OBC]</imath>. Using <imath>Area_{\triangle} = \frac{1}{2}bh</imath> for each term yields <imath>\frac{1}{2}(AC)(CB) + \frac{1}{2}(AD)(DO) + \frac{1}{2}(BD)(DO) + \frac{1}{2}(OC)(CB)</imath>. By equal tangents, <imath>DB = CB = 5</imath>. By the [[Pythagorean Theorem]], <imath>AB = \sqrt{12^2 + 5^2} = 13</imath>. It follows that <imath>AD = AB - DB = 13 - 5 = 8</imath>. Lastly, because both segments are radii of the semicircle, <imath>OD = OC = r</imath>. Plugging in, we get 
+<cmath>\frac{1}{2}(12)(5) + \frac{1}{2}(8)(r) + \frac{1}{2}(5)(r) + \frac{1}{2}(r)(5)</cmath> 
+<cmath>30 = 4r + \frac{5}{2}r + \frac{5}{2}r</cmath> 
+<cmath>30 = 9r</cmath>
+<cmath>r = \boxed{\textbf{(D) }\frac{10}{3}}</cmath>
+
+--- Solution 5 ---
+As in Solution 1, we get the following diagram:
+
+<asy>
+draw((0,0)--(12,0)--(12,5)--(0,0));
+draw(arc((8.67,0),(12,0),(5.33,0)));
+label("$A$", (0,0), W);
+label("$C$", (12,0), E);
+label("$B$", (12,5), NE);
+label("$12$", (6, 0), S);
+label("$5$", (12, 2.5), E);
+draw((8.665,0)--(7.4,3.07));
+label("$O$", (8.665, 0), S);
+label("$D$", (7.4, 3.1), NW);
+label("$r$", (11, 0), S);
+label("$r$", (7.6, 1), W);
+</asy>
+
+We notice that since both triangles <imath>ABC</imath> and <imath>AOD</imath> share angle <imath>A</imath>, they are similar. Then we can say that (since <imath>DB=CB=5</imath> and <imath>AD=13-5=8</imath>) <imath>\frac{AD}{AC} = \frac{OD}{CB} \Rightarrow \frac{8}{12} = \frac{r}{5}</imath>. Solving, we get <imath>r = \frac{40}{12} = \boxed{\textbf{(D) }\frac{10}{3}}</imath>. 
+P.S: Full credit for the unedited asymptote goes to MrThinker who made it in Solution 1.
+
+
+=== Problem 23 ===
+Each day for four days, Linda traveled for one hour at a speed that resulted in her traveling one mile in an integer number of minutes. Each day after the first, her speed decreased so that the number of minutes to travel one mile increased by 5 minutes over the preceding day. Each of the four days, her distance traveled was also an integer number of miles. What was the total number of miles for the four trips?
+
+Choices: {'A': '10', 'B': '15', 'C': '25', 'D': '50', 'E': '82</math>'}
+Answer: C
+
+--- Solution 1 ---
+It is well known that <math>\text{Distance}=\text{Speed} \cdot \text{Time}</math>. In the question, we want distance. From the question, we have that the time is <math>60</math> minutes or <math>1</math> hour.  By the equation derived from <math>\text{Distance}=\text{Speed} \cdot \text{Time}</math>, we have <math>\text{Speed}=\frac{\text{Distance}}{\text{Time}}</math>, so the speed is <math>1</math> mile per <math>x</math> minutes. Because we want the distance, we multiply the time and speed together yielding <math>60\text{ mins}\cdot \frac{1\text{ mile}}{x\text{ mins}}</math>. The minutes cancel out, so now we have <math>\dfrac{60}{x}</math> as our distance for the first day. The distance for the following days are:
+<cmath>\dfrac{60}{x},\dfrac{60}{x+5},\dfrac{60}{x+10},\dfrac{60}{x+15}.</cmath>
+We know that <math>x,x+5,x+10,x+15</math> are all factors of <math>60</math>, therefore, <math>x=5</math> because the factors have to be in an arithmetic sequence with the common difference being <math>5</math> and <math>x=5</math> is the only solution.
+<cmath>\dfrac{60}{5}+\dfrac{60}{10}+\dfrac{60}{15}+\dfrac{60}{20}=12+6+4+3=\boxed{\textbf{(C)}\ 25}.</cmath>
+
+
+=== Problem 24 ===
+Mrs. Sanders has three grandchildren, who call her regularly. One calls her every three days, one calls her every four days, and one calls her every five days. All three called her on December 31, 2016. On how many days during the next year did she not receive a phone call from any of her grandchildren?
+
+Choices: {'A': '78', 'B': '80', 'C': '144', 'D': '146', 'E': '152</math>'}
+Answer: D
+
+--- Solution 1 ---
+We use Principle of Inclusion-Exclusion. There are <math>365</math> days in the year, and we subtract the days that she gets at least <math>1</math> phone call, which is <cmath> \left \lfloor \frac{365}{3} \right \rfloor +  \left \lfloor \frac{365}{4} \right \rfloor +  \left \lfloor \frac{365}{5} \right \rfloor.</cmath>
+
+To this result we add the number of days where she gets at least <math>2</math> phone calls in a day because we double subtracted these days, which is <cmath>\left \lfloor \frac{365}{12} \right \rfloor +  \left \lfloor \frac{365}{15} \right \rfloor +  \left \lfloor \frac{365}{20} \right \rfloor.</cmath>
+
+We now subtract the number of days where she gets three phone calls, which is <math>\left \lfloor \frac{365}{60} \right \rfloor.</math> Therefore, our answer is <cmath>365 - \left( \left \lfloor \frac{365}{3} \right \rfloor +  \left \lfloor \frac{365}{4} \right \rfloor +  \left \lfloor \frac{365}{5} \right \rfloor \right) +  \left( \left \lfloor \frac{365}{12} \right \rfloor +  \left \lfloor \frac{365}{15} \right \rfloor +  \left \lfloor \frac{365}{20} \right \rfloor \right) - \left \lfloor \frac{365}{60} \right \rfloor = 365 - 285+72 - 6 = \boxed{\textbf{(D) }146}.</cmath>
+
+--- Solution 2 ---
+Note that <imath>\operatorname{lcm}(3,4,5)=60,</imath> so there is a cycle every <imath>60</imath> days.
+
+As shown below, all days in a cycle that Mrs. Sanders receives a phone call from any of her grandchildren are colored in red, yellow, or green.
+<asy>
+/* Made by MRENTHUSIASM */
+size(7cm);
+
+fill((2,6)--(3,6)--(3,5)--(2,5)--cycle,red);
+fill((5,6)--(6,6)--(6,5)--(5,5)--cycle,red);
+fill((8,6)--(9,6)--(9,5)--(8,5)--cycle,red);
+fill((1,5)--(2,5)--(2,4.5)--(1,4.5)--cycle,red);
+fill((4,5)--(5,5)--(5,4.5)--(4,4.5)--cycle,red);
+fill((7,5)--(8,5)--(8,4)--(7,4)--cycle,red);
+fill((0,4)--(1,4)--(1,3)--(0,3)--cycle,red);
+fill((3,4)--(4,4)--(4,3.5)--(3,3.5)--cycle,red);
+fill((6,4)--(7,4)--(7,3)--(6,3)--cycle,red);
+fill((9,4)--(10,4)--(10,3.5)--(9,3.5)--cycle,red);
+fill((2,3)--(3,3)--(3,2)--(2,2)--cycle,red);
+fill((5,3)--(6,3)--(6,2.5)--(5,2.5)--cycle,red);
+fill((8,3)--(9,3)--(9,2)--(8,2)--cycle,red);
+fill((1,2)--(2,2)--(2,1)--(1,1)--cycle,red);
+fill((4,2)--(5,2)--(5,1.5)--(4,1.5)--cycle,red);
+fill((7,2)--(8,2)--(8,1.5)--(7,1.5)--cycle,red);
+fill((0,1)--(1,1)--(1,0)--(0,0)--cycle,red);
+fill((3,1)--(4,1)--(4,0)--(3,0)--cycle,red);
+fill((6,1)--(7,1)--(7,0)--(6,0)--cycle,red);
+fill((9,1)--(10,1)--(10,2/3)--(9,2/3)--cycle,red);
+fill((3,6)--(4,6)--(4,5)--(3,5)--cycle,yellow);
+fill((7,6)--(8,6)--(8,5)--(7,5)--cycle,yellow);
+fill((1,4.5)--(2,4.5)--(2,4)--(1,4)--cycle,yellow);
+fill((5,5)--(6,5)--(6,4)--(5,4)--cycle,yellow);
+fill((9,5)--(10,5)--(10,4.5)--(9,4.5)--cycle,yellow);
+fill((3,3.5)--(4,3.5)--(4,3)--(3,3)--cycle,yellow);
+fill((7,4)--(8,4)--(8,3)--(7,3)--cycle,yellow);
+fill((1,3)--(2,3)--(2,2)--(1,2)--cycle,yellow);
+fill((5,2.5)--(6,2.5)--(6,2)--(5,2)--cycle,yellow);
+fill((9,3)--(10,3)--(10,2.5)--(9,2.5)--cycle,yellow);
+fill((3,2)--(4,2)--(4,1)--(3,1)--cycle,yellow);
+fill((7,1.5)--(8,1.5)--(8,1)--(7,1)--cycle,yellow);
+fill((1,1)--(2,1)--(2,0)--(1,0)--cycle,yellow);
+fill((5,1)--(6,1)--(6,0)--(5,0)--cycle,yellow);
+fill((9,2/3)--(10,2/3)--(10,1/3)--(9,1/3)--cycle,yellow);
+fill((4,6)--(5,6)--(5,5)--(4,5)--cycle,green);
+fill((9,6)--(10,6)--(10,5)--(9,5)--cycle,green);
+fill((4,4.5)--(5,4.5)--(5,4)--(4,4)--cycle,green);
+fill((9,4.5)--(10,4.5)--(10,4)--(9,4)--cycle,green);
+fill((4,4)--(5,4)--(5,3)--(4,3)--cycle,green);
+fill((9,3.5)--(10,3.5)--(10,3)--(9,3)--cycle,green);
+fill((4,3)--(5,3)--(5,2)--(4,2)--cycle,green);
+fill((9,2.5)--(10,2.5)--(10,2)--(9,2)--cycle,green);
+fill((4,1.5)--(5,1.5)--(5,1)--(4,1)--cycle,green);
+fill((9,2)--(10,2)--(10,1)--(9,1)--cycle,green);
+fill((4,1)--(5,1)--(5,0)--(4,0)--cycle,green);
+fill((9,1/3)--(10,1/3)--(10,0)--(9,0)--cycle,green);
+
+real cur = 1;
+for (real i=6; i>0; --i) {
+   for (real j=0; j<10; ++j) {
+      label("$"+string(cur)+"$",(j+0.5,i-0.5));
+      ++cur;
+   }
+}
+
+add(grid(10,6,linewidth(1.25)));
+</asy>
+The year 2017 has <imath>365</imath> days, or <imath>6</imath> cycles and <imath>5</imath> days.
+
+* For each cycle, there are <imath>24</imath> days that Mrs. Sanders does not receive a phone call, as indicated by the white squares.
+
+* For the last <imath>5</imath> days, there are <imath>2</imath> days that Mrs. Sanders does not receive a phone call, as indicated by the first <imath>5</imath> days in a cycle.
+
+Together, the answer is <imath>24\cdot6+2=\boxed{\textbf{(D) }146}.</imath>
+
+--- Solution 3 ---
+For any randomly chosen day, there is a <math>\frac{2}{3}</math> chance the first child does not call her, a <math>\frac{3}{4}</math> chance the second child does not call her and a <math>\frac{4}{5}</math> chance the third child does not call her. So, in a randomly chosen day, there is a <math>\frac{2}{3} \times \frac{3}{4} \times \frac{4}{5} = \frac{2}{5}</math> chance no child calls her.
+
+In particular, this "unrigorous" reasoning becomes rigorous, by linearity of expectation, when we take a sample of <math>360</math> days; over the first <math>360</math> days, <math>360 \times \frac{2}{5} = 144</math> days will go without a phone call. Now, we simply check the remaining days; on day <math>361</math> and <math>362</math>, nobody calls her; on day <math>363</math>, the child that calls every three days will call her; on day <math>364</math>, the child that calls every four days will call her; on day <math>365</math>, the child that calls every five days will call her. Thus, we add two more days to <math>144</math>, to get our answer of <math>\boxed{\textbf{(D) }146}</math>.
+
+
+=== Problem 25 ===
+In the figure shown,
+
+Choices: {'A': '3\\sqrt{3}-\\pi', 'B': '4\\sqrt{3}-\\frac{4\\pi}{3}', 'C': '2\\sqrt{3}', 'D': '4\\sqrt{3}-\\frac{2\\pi}{3}', 'E': '4+\\frac{4\\pi}{3}</math>'}
+Answer: B
+
+--- Solution 1 ---
+<asy>draw((1,1.732)--(2,3.464)--(3,1.732)); draw(arc((0,0),(2,0),(1,1.732))); draw(arc((4,0),(3,1.732),(2,0))); label("$U$", (2,3.464), N); label("$S$", (1,1.732), W); label("$T$", (3,1.732), E); label("$R$", (2,0), S);</asy>
+
+In addition to the given diagram, we can draw lines <math>\overline{SR}</math> and <math>\overline{RT}.</math> The area of rhombus <math>SRTU</math> is half the product of its diagonals, which is <math>\frac{2\sqrt3 \cdot 2}{2}=2\sqrt3</math>. However, we have to subtract off the circular segments. The area of those can be found by computing the area of the circle with radius 2, multiplying it by <math>\frac{1}{6}</math>, then finally subtracting the area of an equilateral triangle with a side length 2 from the sector. The sum of the areas of the circular segments is <math>2(\frac{4 \pi}{6}-\sqrt3).</math> The area of rhombus <math>SRTU</math> minus the circular segments is <math>2\sqrt3-\frac{4 \pi}{3}+2\sqrt3= \boxed{\textbf{(B)}\ 4\sqrt{3}-\frac{4\pi}{3}}.</math>
+
+--- Solution 2 ---
+We can extend <math>\overline{US}</math>, <math>\overline{UT}</math> to <math>X</math> and <math>Y</math>, respectively, such that <math>X</math> and <math>Y</math> are collinear to point <math>R</math>. Connect <math>\overline{XY}</math>. We can see points <math>X</math>, <math>Y</math> are probably circle centers of arc <math>SR</math>, <math>TR</math>, respectively. So, <math>\overline{XS} = 2 = \overline{TY}</math>. Thus, <math>\triangle{UXY}</math> is equilateral. The area of <math>\triangle{UXY}</math> is <math>\frac{\sqrt{3}}{4} \cdot 4^2</math>, or <math>4\sqrt{3}</math>, and both one sixth circles total up to <math>\frac{4\pi}{3}</math>. Finally, the answer is <math>\boxed{\textbf{(B)} 4\sqrt{3}-\frac{4\pi}{3}}</math>.
+
+

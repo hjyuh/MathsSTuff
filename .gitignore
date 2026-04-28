@@ -26,6 +26,8 @@ The Art of Problem Solving*.pdf
 # !erdos/38/p38_cube_note.pdf
 
 # Compiled
+node_modules/
+.edge-tmp/
 *.o
 *.pyc
 __pycache__/

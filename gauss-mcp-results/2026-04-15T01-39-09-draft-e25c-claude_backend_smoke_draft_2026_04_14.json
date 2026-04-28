@@ -1,0 +1,19 @@
+{
+  "job_id": "2026-04-15T01-39-09-draft-e25c-claude_backend_smoke_draft_2026_04_14",
+  "status": "done",
+  "session_id": "",
+  "command": "/draft",
+  "input": "In Lean, draft a proof that for any natural number n, n + 0 = n.",
+  "started_at": "2026-04-15T01:39:09Z",
+  "finished_at": "2026-04-15T01:40:33Z",
+  "duration_s": 83.61,
+  "result_text": "Good, I see the project structure. Now I'll draft the skeleton. This is a trivial claim \u2014 `n + 0 = n` for natural numbers is `Nat.add_zero` from `Init.Core`, provable by `simp`, `omega`, or direct application. Let me present the draft.\n\n---\n\n## Draft: `n + 0 = n` for natural numbers\n\n**Claim (informal):** For any natural number *n*, we have *n* + 0 = *n*.\n\n**Mathlib status:** This is already proved as `Nat.add_zero` in `Init.Core` (no import needed \u2014 it's in the Lean prelude). The statement is:\n\n```\ntheorem Nat.add_zero (n : \u2115) : n + 0 = n\n```\n\n**Drafted skeleton:**\n\n```lean\ntheorem add_zero_eq (n : \u2115) : n + 0 = n := by\n  sorry\n```\n\nSeveral one-line proofs close this immediately:\n\n| Tactic | Why it works |\n|--------|-------------|\n| `simp` | `Nat.add_zero` is a default simp lemma |\n| `omega` | linear arithmetic over `\u2115` |\n| `exact Nat.add_zero n` | direct application of the existing lemma |\n| `rfl` | `0` is the neutral element by definition, so `n + 0` reduces to `n` |\n\nThe simplest proof is just `rfl`, since `Nat.add` is defined by recursion on the second argument and `Nat.add n 0 = n` holds definitionally.\n\n---\n\n### Depth check\n\nWhat would you like to do next?\n\n- **Show proof state** \u2014 inspect the goal with `lean_goal`\n- **Alternative formalization** \u2014 e.g., state it for `Int`, or as `\u2200 n, n + 0 = n`, or use `AddMonoid` generalization\n- **Fill the sorry** \u2014 run `/lean4:prove` to complete the proof\n- **Save to file** \u2014 write to scratch or a project file\n",
+  "lean_code_blocks": [
+    "theorem add_zero_eq (n : \u2115) : n + 0 = n := by\n  sorry"
+  ],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-15T01-39-09-draft-e25c-claude_backend_smoke_draft_2026_04_14.log",
+  "worker_pid": 7865,
+  "last_heartbeat_at": 1776217229.8970046,
+  "_started_monotonic": 1776217149.4547668
+}

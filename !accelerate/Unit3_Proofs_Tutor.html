@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unit 3 — Triangles & Proofs Tutor</title>
+<style>
+  :root {
+    --bg: #0f1216;
+    --panel: #161b22;
+    --panel-2: #1c222c;
+    --ink: #e6edf3;
+    --muted: #9da7b3;
+    --accent: #4cc2ff;
+    --accent-2: #f7b955;
+    --good: #5ddc9a;
+    --bad: #ff7a90;
+    --line: #2a313c;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 22px 100px; }
+  h1 { font-size: 28px; margin: 8px 0 2px; letter-spacing: -.2px; }
+  h2 { font-size: 22px; margin: 32px 0 8px; color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { font-size: 17px; margin: 20px 0 6px; color: var(--accent-2); }
+  h4 { font-size: 15px; margin: 14px 0 4px; color: var(--ink); }
+  p, li { color: var(--ink); }
+  small, .muted { color: var(--muted); }
+  .sub { color: var(--muted); margin-top: 0; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 18px;
+    margin: 14px 0;
+  }
+  .grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .fig {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid var(--line);
+  }
+  .fig svg { width: 100%; height: auto; max-width: 420px; }
+  .caption { color: var(--muted); font-size: 13px; margin-top: 6px; text-align: center; }
+  .kbd {
+    background: #0b1320;
+    color: #cfe6ff;
+    border: 1px solid #21314a;
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 13px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: #203042;
+    color: #cfe6ff;
+    border: 1px solid #2b4561;
+    margin-right: 4px;
+  }
+  .good { color: var(--good); }
+  .bad { color: var(--bad); }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--accent-2); font-weight: 600; }
+  .proof {
+    background: var(--panel-2);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-top: 8px;
+    border-left: 3px solid var(--accent);
+  }
+  .proof table th { color: var(--accent); }
+  .pill {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 14px;
+    font-size: 12px;
+    background: #1e3a30;
+    color: var(--good);
+    border: 1px solid #2a5a48;
+    margin-right: 6px;
+  }
+  .pill.bad { background: #3a1e24; color: var(--bad); border-color: #5a2a32; }
+  details {
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin: 8px 0;
+  }
+  summary { cursor: pointer; color: var(--accent-2); font-weight: 600; }
+  nav.toc {
+    position: sticky; top: 0;
+    background: rgba(15,18,22,.92);
+    backdrop-filter: blur(10px);
+    padding: 10px 6px;
+    border-bottom: 1px solid var(--line);
+    z-index: 10;
+  }
+  nav.toc a {
+    display: inline-block; margin: 2px 10px 2px 0;
+    color: var(--accent); text-decoration: none; font-size: 13px;
+  }
+  nav.toc a:hover { text-decoration: underline; }
+  .q { background: #1e2a3a; border-radius: 10px; padding: 12px 14px; margin: 10px 0; border-left: 3px solid var(--accent-2); }
+  .tickmark { stroke: #c0392b; stroke-width: 2; }
+  .tickmark2 { stroke: #2980b9; stroke-width: 2; }
+  .arc-mark { stroke: #8e44ad; fill: none; stroke-width: 2; }
+  .arc-mark2 { stroke: #16a085; fill: none; stroke-width: 2; }
+  .lbl { font-family: "Georgia", serif; font-size: 14px; fill: #111; }
+  .lbl-sm { font-family: "Georgia", serif; font-size: 12px; fill: #333; }
+  .lbl-angle { font-family: "Georgia", serif; font-size: 13px; fill: #5a1f7a; font-style: italic; }
+</style>
+</head>
+<body>
+
+<nav class="toc">
+  <div class="wrap" style="padding:6px 22px;">
+    <a href="#intro">Intro</a>
+    <a href="#angle-sum">Angle Sum</a>
+    <a href="#exterior">Exterior Angle</a>
+    <a href="#inequality">Triangle Inequality</a>
+    <a href="#isosceles">Isosceles</a>
+    <a href="#sss">SSS</a>
+    <a href="#sas">SAS</a>
+    <a href="#asa">ASA</a>
+    <a href="#aas">AAS</a>
+    <a href="#hl">HL</a>
+    <a href="#ssa">SSA (Fails)</a>
+    <a href="#cpctc">CPCTC</a>
+    <a href="#proof-1">Proof 1</a>
+    <a href="#proof-2">Proof 2</a>
+    <a href="#proof-3">Proof 3</a>
+    <a href="#proof-4">Proof 4</a>
+    <a href="#practice">Practice</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<h1 id="intro">Unit 3 — Triangles, Congruence & Two-Column Proofs</h1>
+<p class="sub">Honors Geometry · visual tutor · focus on building proofs correctly</p>
+
+<div class="card">
+  <p><strong>How to use this page:</strong> read one section, stare at the figure until it clicks, then read the proof. Each proof is numbered — each <em>statement</em> has a matching <em>reason</em>. Your job isn't to memorize, it's to recognize which rule lets you take the next step.</p>
+  <p class="muted">Color code: <span class="tag">tick marks</span> = congruent sides · <span class="tag" style="background:#3a2a45;color:#e0c2ff;border-color:#5a3f6f;">arcs</span> = congruent angles · <span class="tag" style="background:#2a3a26;color:#c8e6b0;border-color:#3f6631;">green square</span> = right angle.</p>
+</div>
+
+<!-- ========== TRIANGLE CLASSIFICATION ========== -->
+<h2>Triangle classifications at a glance</h2>
+<p>Before any proof, name the triangle. Classification by sides (scalene / isosceles / equilateral) and by angles (acute / right / obtuse / equiangular). These labels <em>tell you which theorems are available</em>.</p>
+
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 300 200">
+        <polygon points="40,170 260,170 180,40" fill="#fef5e7" stroke="#222" stroke-width="2"/>
+        <text x="140" y="195" class="lbl">Scalene</text>
+      </svg>
+    </div>
+    <div class="caption">All sides different · all angles different</div>
+  </div>
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 300 200">
+        <polygon points="50,170 250,170 150,40" fill="#e8f4fd" stroke="#222" stroke-width="2"/>
+        <!-- tick marks on the two equal sides -->
+        <line x1="96" y1="108" x2="104" y2="98" class="tickmark"/>
+        <line x1="196" y1="108" x2="204" y2="98" class="tickmark"/>
+        <text x="140" y="195" class="lbl">Isosceles</text>
+      </svg>
+    </div>
+    <div class="caption">Two equal sides (legs) · two equal base angles</div>
+  </div>
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 300 200">
+        <polygon points="60,170 240,170 150,15" fill="#eafbf0" stroke="#222" stroke-width="2"/>
+        <line x1="100" y1="100" x2="108" y2="92" class="tickmark"/>
+        <line x1="192" y1="100" x2="200" y2="92" class="tickmark"/>
+        <line x1="148" y1="172" x2="152" y2="182" class="tickmark"/>
+        <text x="140" y="195" class="lbl">Equilateral</text>
+      </svg>
+    </div>
+    <div class="caption">All sides equal · every angle = 60°</div>
+  </div>
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 300 200">
+        <polygon points="50,170 250,170 50,40" fill="#fdeaea" stroke="#222" stroke-width="2"/>
+        <!-- right-angle square -->
+        <rect x="50" y="156" width="14" height="14" fill="none" stroke="#2a6" stroke-width="2"/>
+        <text x="140" y="195" class="lbl">Right</text>
+      </svg>
+    </div>
+    <div class="caption">One 90° angle · legs + hypotenuse (opposite the right angle)</div>
+  </div>
+</div>
+
+<!-- ========== ANGLE SUM ========== -->
+<h2 id="angle-sum">Triangle Angle Sum Theorem</h2>
+<p><strong>The three interior angles of any triangle add to 180°.</strong> The proof uses a line through one vertex parallel to the opposite side.</p>
+
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 340 230">
+        <!-- parallel line through A -->
+        <line x1="10" y1="30" x2="330" y2="30" stroke="#888" stroke-dasharray="5,4"/>
+        <text x="12" y="22" class="lbl-sm">line through A parallel to BC</text>
+        <!-- triangle -->
+        <polygon points="60,180 290,180 170,30" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <!-- transversals extended (dashed) -->
+        <line x1="170" y1="30" x2="60" y2="180" stroke="#222" stroke-width="2"/>
+        <line x1="170" y1="30" x2="290" y2="180" stroke="#222" stroke-width="2"/>
+        <!-- vertex labels -->
+        <text x="170" y="22" class="lbl">A</text>
+        <text x="48" y="196" class="lbl">B</text>
+        <text x="296" y="196" class="lbl">C</text>
+        <!-- angle arcs at A (the three pieces along the straight line) -->
+        <path d="M 140 30 A 30 30 0 0 1 165 46" class="arc-mark2"/>
+        <path d="M 175 46 A 30 30 0 0 1 200 30" class="arc-mark"/>
+        <path d="M 165 46 A 15 15 0 0 1 175 46" class="arc-mark" stroke="#8e44ad"/>
+        <!-- labels for angles -->
+        <text x="118" y="25" class="lbl-angle">∠B'</text>
+        <text x="200" y="25" class="lbl-angle">∠C'</text>
+        <text x="165" y="62" class="lbl-angle">∠A</text>
+        <!-- arcs at B and C -->
+        <path d="M 80 180 A 20 20 0 0 0 70 168" class="arc-mark2"/>
+        <text x="82" y="172" class="lbl-angle">∠B</text>
+        <path d="M 270 180 A 20 20 0 0 1 283 168" class="arc-mark"/>
+        <text x="258" y="172" class="lbl-angle">∠C</text>
+      </svg>
+    </div>
+    <div class="caption">∠B' ≅ ∠B and ∠C' ≅ ∠C as alternate interior angles. ∠B' + ∠A + ∠C' = 180° (straight line) ⇒ ∠A + ∠B + ∠C = 180°.</div>
+  </div>
+  <div class="proof">
+    <h4>Two-column proof of the Angle Sum Theorem</h4>
+    <table>
+      <tr><th>#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td>1</td><td>Draw line ℓ through A parallel to BC</td><td>Parallel postulate</td></tr>
+      <tr><td>2</td><td>∠B' ≅ ∠B ; ∠C' ≅ ∠C</td><td>Alternate interior angles (ℓ ∥ BC)</td></tr>
+      <tr><td>3</td><td>∠B' + ∠A + ∠C' = 180°</td><td>Angles on a straight line</td></tr>
+      <tr><td>4</td><td>∠B + ∠A + ∠C = 180°</td><td>Substitution (from 2 into 3)</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ========== EXTERIOR ANGLE ========== -->
+<h2 id="exterior">Exterior Angle Theorem</h2>
+<p><strong>An exterior angle of a triangle equals the sum of the two <em>remote</em> (non-adjacent) interior angles.</strong></p>
+
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 360 220">
+        <polygon points="60,180 240,180 160,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <!-- extend BC to D -->
+        <line x1="240" y1="180" x2="340" y2="180" stroke="#222" stroke-width="2"/>
+        <circle cx="340" cy="180" r="3" fill="#222"/>
+        <!-- labels -->
+        <text x="160" y="32" class="lbl">A</text>
+        <text x="48" y="196" class="lbl">B</text>
+        <text x="234" y="200" class="lbl">C</text>
+        <text x="342" y="200" class="lbl">D</text>
+        <!-- interior angle arcs -->
+        <path d="M 80 180 A 20 20 0 0 0 70 168" class="arc-mark2"/>
+        <text x="84" y="174" class="lbl-angle">B</text>
+        <path d="M 150 55 A 18 18 0 0 1 170 55" class="arc-mark"/>
+        <text x="155" y="75" class="lbl-angle">A</text>
+        <!-- exterior angle at C -->
+        <path d="M 258 180 A 22 22 0 0 0 250 162" class="arc-mark2" stroke="#c0392b"/>
+        <text x="260" y="170" class="lbl-angle" fill="#c0392b">ext</text>
+      </svg>
+    </div>
+    <div class="caption">Exterior ∠ACD = ∠A + ∠B (the two "remote" interior angles).</div>
+  </div>
+  <div class="proof">
+    <h4>Proof of the Exterior Angle Theorem</h4>
+    <table>
+      <tr><th>#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td>1</td><td>∠A + ∠B + ∠ACB = 180°</td><td>Triangle Angle Sum</td></tr>
+      <tr><td>2</td><td>∠ACB + ∠ACD = 180°</td><td>Linear pair</td></tr>
+      <tr><td>3</td><td>∠A + ∠B + ∠ACB = ∠ACB + ∠ACD</td><td>Substitution (both = 180°)</td></tr>
+      <tr><td>4</td><td>∠A + ∠B = ∠ACD</td><td>Subtraction property</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ========== TRIANGLE INEQUALITY ========== -->
+<h2 id="inequality">Triangle Inequality Theorem</h2>
+<p>For sides <em>a, b, c</em>: each side is shorter than the sum of the other two and longer than their difference: <span class="kbd">|b − c| &lt; a &lt; b + c</span>.</p>
+<div class="card">
+  <strong>Fast check:</strong> sort the sides and verify <em>short + middle &gt; long</em>. That single check is enough.
+  <ul>
+    <li>3, 4, 5 → 3+4 = 7 &gt; 5 ✅</li>
+    <li>2, 3, 6 → 2+3 = 5 &lt; 6 ❌ (no triangle)</li>
+    <li>Range problem: if two sides are 5 and 8, the third must satisfy <strong>3 &lt; x &lt; 13</strong>.</li>
+  </ul>
+</div>
+
+<!-- ========== ISOSCELES ========== -->
+<h2 id="isosceles">Isosceles Triangle Theorem (and converse)</h2>
+<p><strong>If AB ≅ AC, then ∠B ≅ ∠C.</strong> And conversely: if ∠B ≅ ∠C, then AB ≅ AC.</p>
+
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 320 240">
+        <polygon points="60,200 260,200 160,30" fill="#e8f4fd" stroke="#222" stroke-width="2"/>
+        <!-- angle bisector from A to midpoint D of BC -->
+        <line x1="160" y1="30" x2="160" y2="200" stroke="#c0392b" stroke-width="2" stroke-dasharray="5,4"/>
+        <!-- tick marks on AB and AC -->
+        <line x1="106" y1="118" x2="114" y2="108" class="tickmark"/>
+        <line x1="206" y1="118" x2="214" y2="108" class="tickmark"/>
+        <!-- right-angle marker at D -->
+        <rect x="160" y="186" width="14" height="14" fill="none" stroke="#2a6" stroke-width="2"/>
+        <!-- tick marks on BD and DC -->
+        <line x1="108" y1="196" x2="108" y2="204" class="tickmark2"/>
+        <line x1="212" y1="196" x2="212" y2="204" class="tickmark2"/>
+        <!-- arcs at B, C -->
+        <path d="M 80 200 A 20 20 0 0 0 70 188" class="arc-mark"/>
+        <path d="M 240 200 A 20 20 0 0 1 250 188" class="arc-mark"/>
+        <text x="158" y="22" class="lbl">A</text>
+        <text x="46" y="216" class="lbl">B</text>
+        <text x="266" y="216" class="lbl">C</text>
+        <text x="150" y="220" class="lbl-sm">D</text>
+      </svg>
+    </div>
+    <div class="caption">In an isosceles triangle, the median from A to BC is also the altitude, the angle bisector, and the perpendicular bisector of BC — all the same line.</div>
+  </div>
+  <div class="proof">
+    <h4>Proof: AB ≅ AC ⇒ ∠B ≅ ∠C</h4>
+    <table>
+      <tr><th>#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td>1</td><td>Draw AD, the angle bisector of ∠BAC, with D on BC</td><td>Every angle has a bisector</td></tr>
+      <tr><td>2</td><td>AB ≅ AC</td><td>Given</td></tr>
+      <tr><td>3</td><td>∠BAD ≅ ∠CAD</td><td>Definition of angle bisector</td></tr>
+      <tr><td>4</td><td>AD ≅ AD</td><td>Reflexive Property</td></tr>
+      <tr><td>5</td><td>△ABD ≅ △ACD</td><td>SAS (from 2, 3, 4)</td></tr>
+      <tr><td>6</td><td>∠B ≅ ∠C</td><td>CPCTC</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ========== FIVE CONGRUENCE THEOREMS ========== -->
+<h2>The 5 Triangle Congruence Theorems</h2>
+<p class="sub">Each one says: "if these 3 specific things match, <em>all 6 parts match</em>, so the triangles are congruent." The correspondence order of the vertices matters.</p>
+
+<h3 id="sss">SSS — Side·Side·Side</h3>
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 360 200">
+        <polygon points="30,170 150,170 95,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <polygon points="210,170 330,170 275,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <!-- tick marks: 1, 2, 3 -->
+        <line x1="85" y1="170" x2="85" y2="178" class="tickmark"/>
+        <line x1="95" y1="170" x2="95" y2="178" class="tickmark"/>
+        <line x1="265" y1="170" x2="265" y2="178" class="tickmark"/>
+        <line x1="275" y1="170" x2="275" y2="178" class="tickmark"/>
+        <line x1="58" y1="108" x2="66" y2="100" class="tickmark2"/>
+        <line x1="238" y1="108" x2="246" y2="100" class="tickmark2"/>
+        <line x1="125" y1="108" x2="133" y2="100" stroke="#16a085" stroke-width="2"/>
+        <line x1="305" y1="108" x2="313" y2="100" stroke="#16a085" stroke-width="2"/>
+        <text x="85" y="32" class="lbl-sm">all three sides match</text>
+      </svg>
+    </div>
+    <div class="caption">Three pairs of sides congruent ⇒ triangles congruent.</div>
+  </div>
+  <div>
+    <p>Uniqueness argument: there is essentially <em>one</em> triangle with three given side lengths (ignore reflection). Rigid!</p>
+    <p><strong>When to reach for it:</strong> you've been given or can derive all three side pairs as congruent.</p>
+  </div>
+</div>
+
+<h3 id="sas">SAS — Side·<em>Angle between them</em>·Side</h3>
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 360 200">
+        <polygon points="30,170 150,170 60,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <polygon points="210,170 330,170 240,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <!-- SAS marks: two sides + included angle -->
+        <line x1="85" y1="170" x2="85" y2="178" class="tickmark"/>
+        <line x1="265" y1="170" x2="265" y2="178" class="tickmark"/>
+        <line x1="42" y1="108" x2="50" y2="100" class="tickmark2"/>
+        <line x1="222" y1="108" x2="230" y2="100" class="tickmark2"/>
+        <!-- included angle arcs at bottom-left vertex -->
+        <path d="M 50 170 A 20 20 0 0 0 44 154" class="arc-mark"/>
+        <path d="M 230 170 A 20 20 0 0 0 224 154" class="arc-mark"/>
+      </svg>
+    </div>
+    <div class="caption"><strong>Angle must be BETWEEN the two sides.</strong> The "included angle" — that's what makes SAS work.</div>
+  </div>
+  <div>
+    <p>Why it works: fix the angle, lay down the two sides from its vertex — the third side is forced.</p>
+    <p class="muted">Watch out: SAS ≠ SSA. If the angle isn't the included one, you can't use SAS.</p>
+  </div>
+</div>
+
+<h3 id="asa">ASA — Angle·<em>Side between them</em>·Angle</h3>
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 360 200">
+        <polygon points="30,170 150,170 90,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <polygon points="210,170 330,170 270,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <!-- ASA marks: two angles + included side -->
+        <path d="M 50 170 A 18 18 0 0 0 44 156" class="arc-mark"/>
+        <path d="M 230 170 A 18 18 0 0 0 224 156" class="arc-mark"/>
+        <path d="M 130 170 A 18 18 0 0 1 136 156" class="arc-mark2"/>
+        <path d="M 310 170 A 18 18 0 0 1 316 156" class="arc-mark2"/>
+        <line x1="85" y1="170" x2="85" y2="178" class="tickmark"/>
+        <line x1="265" y1="170" x2="265" y2="178" class="tickmark"/>
+      </svg>
+    </div>
+    <div class="caption"><strong>Side between the two known angles.</strong></div>
+  </div>
+  <div>
+    <p>Two angles fix the third (angle-sum), so shape is determined. One side locks the size. Done.</p>
+  </div>
+</div>
+
+<h3 id="aas">AAS — Angle·Angle·<em>Non-included</em> Side</h3>
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 360 200">
+        <polygon points="30,170 150,170 90,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <polygon points="210,170 330,170 270,40" fill="#f7fafc" stroke="#222" stroke-width="2"/>
+        <!-- two angles at bottom + one side that is NOT between them (slanted side) -->
+        <path d="M 50 170 A 18 18 0 0 0 44 156" class="arc-mark"/>
+        <path d="M 230 170 A 18 18 0 0 0 224 156" class="arc-mark"/>
+        <path d="M 130 170 A 18 18 0 0 1 136 156" class="arc-mark2"/>
+        <path d="M 310 170 A 18 18 0 0 1 316 156" class="arc-mark2"/>
+        <!-- non-included side (the slanted left side) -->
+        <line x1="58" y1="108" x2="66" y2="100" class="tickmark"/>
+        <line x1="238" y1="108" x2="246" y2="100" class="tickmark"/>
+      </svg>
+    </div>
+    <div class="caption">Side is NOT between the two known angles.</div>
+  </div>
+  <div>
+    <p>AAS = ASA in disguise (the third angle is determined by the other two, which slides the "known side" back between a pair of angles).</p>
+  </div>
+</div>
+
+<h3 id="hl">HL — Hypotenuse·Leg (right triangles only!)</h3>
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 360 200">
+        <polygon points="40,170 160,170 40,50" fill="#fdeaea" stroke="#222" stroke-width="2"/>
+        <polygon points="220,170 340,170 220,50" fill="#fdeaea" stroke="#222" stroke-width="2"/>
+        <rect x="40" y="156" width="14" height="14" fill="none" stroke="#2a6" stroke-width="2"/>
+        <rect x="220" y="156" width="14" height="14" fill="none" stroke="#2a6" stroke-width="2"/>
+        <!-- hypotenuse tick -->
+        <line x1="96" y1="110" x2="104" y2="118" class="tickmark"/>
+        <line x1="276" y1="110" x2="284" y2="118" class="tickmark"/>
+        <!-- leg tick -->
+        <line x1="96" y1="170" x2="96" y2="178" class="tickmark2"/>
+        <line x1="276" y1="170" x2="276" y2="178" class="tickmark2"/>
+      </svg>
+    </div>
+    <div class="caption">Both have 90° angle + congruent hypotenuses + one congruent leg.</div>
+  </div>
+  <div>
+    <p>The Pythagorean theorem fills in the missing leg, so HL is essentially SSS in disguise — but only for right triangles.</p>
+  </div>
+</div>
+
+<!-- ========== SSA FAILS ========== -->
+<h2 id="ssa">Why SSA doesn't work — the ambiguous case</h2>
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 360 240">
+        <!-- common vertex A with angle A, side AB of some length -->
+        <line x1="40" y1="220" x2="320" y2="220" stroke="#222" stroke-width="2"/>
+        <line x1="40" y1="220" x2="260" y2="60" stroke="#222" stroke-width="2"/>
+        <!-- arc for angle A -->
+        <path d="M 80 220 A 40 40 0 0 0 70 193" class="arc-mark"/>
+        <text x="82" y="212" class="lbl-angle">A</text>
+        <!-- circle centered at B = (200, 220) radius 80 — gives two intersection points with the lower ray -->
+        <circle cx="200" cy="220" r="80" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <!-- two possible C points (intersections of circle with the top ray). Compute roughly: -->
+        <circle cx="128" cy="139" r="4" fill="#c0392b"/>
+        <circle cx="260" cy="61" r="4" fill="#c0392b"/>
+        <!-- draw the two triangles' BC sides -->
+        <line x1="200" y1="220" x2="128" y2="139" stroke="#c0392b" stroke-width="2"/>
+        <line x1="200" y1="220" x2="260" y2="61" stroke="#c0392b" stroke-width="2"/>
+        <text x="22" y="236" class="lbl">A</text>
+        <text x="196" y="236" class="lbl">B</text>
+        <text x="112" y="135" class="lbl">C₁</text>
+        <text x="262" y="55" class="lbl">C₂</text>
+      </svg>
+    </div>
+    <div class="caption">One angle, two sides (with the angle NOT between them): the arc from B can hit the top ray in <em>two</em> places, so the triangle isn't unique.</div>
+  </div>
+  <div>
+    <p>If you know ∠A, AB, and BC — with the known angle <em>opposite</em> one of the known sides — there can be 0, 1, or 2 valid triangles. So SSA is not a congruence theorem.</p>
+    <p><strong>Exception:</strong> If the triangle is a right triangle, use <span class="kbd">HL</span> instead. If you also know a second angle, switch to <span class="kbd">AAS</span>.</p>
+  </div>
+</div>
+
+<!-- ========== CPCTC ========== -->
+<h2 id="cpctc">CPCTC — Corresponding Parts of Congruent Triangles are Congruent</h2>
+<p>CPCTC is what you use <em>after</em> you've proved two triangles congruent. It's the rule that lets you say "therefore those other sides/angles are equal too."</p>
+<div class="card">
+  <strong>Ordering rule of thumb for every two-column proof in this unit:</strong>
+  <ol>
+    <li>List the givens.</li>
+    <li>Pick up extra free facts (reflexive side, vertical angles, definitions of midpoint/bisector, etc.).</li>
+    <li>Cite one of SSS / SAS / ASA / AAS / HL to establish △ ≅ △.</li>
+    <li>Use CPCTC to conclude whatever side or angle the problem asked about.</li>
+  </ol>
+</div>
+
+<!-- ========== PROOF 1 ========== -->
+<h2 id="proof-1">Worked Proof 1 — Isosceles triangle, altitude from apex</h2>
+<p><strong>Given:</strong> △ABC with AB ≅ AC; D is the midpoint of BC. <strong>Prove:</strong> ∠ADB ≅ ∠ADC (and therefore AD ⊥ BC).</p>
+
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 340 240">
+        <polygon points="60,200 280,200 170,30" fill="#e8f4fd" stroke="#222" stroke-width="2"/>
+        <line x1="170" y1="30" x2="170" y2="200" stroke="#c0392b" stroke-width="2"/>
+        <!-- tick marks for AB=AC -->
+        <line x1="110" y1="120" x2="118" y2="110" class="tickmark"/>
+        <line x1="222" y1="120" x2="230" y2="110" class="tickmark"/>
+        <!-- midpoint tick for BD = DC -->
+        <line x1="118" y1="196" x2="118" y2="204" class="tickmark2"/>
+        <line x1="222" y1="196" x2="222" y2="204" class="tickmark2"/>
+        <text x="168" y="22" class="lbl">A</text>
+        <text x="48" y="216" class="lbl">B</text>
+        <text x="286" y="216" class="lbl">C</text>
+        <text x="160" y="218" class="lbl-sm">D</text>
+      </svg>
+    </div>
+  </div>
+  <div class="proof">
+    <table>
+      <tr><th>#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td>1</td><td>AB ≅ AC</td><td>Given</td></tr>
+      <tr><td>2</td><td>D is the midpoint of BC</td><td>Given</td></tr>
+      <tr><td>3</td><td>BD ≅ DC</td><td>Definition of midpoint</td></tr>
+      <tr><td>4</td><td>AD ≅ AD</td><td>Reflexive Property</td></tr>
+      <tr><td>5</td><td>△ABD ≅ △ACD</td><td>SSS (1, 3, 4)</td></tr>
+      <tr><td>6</td><td>∠ADB ≅ ∠ADC</td><td>CPCTC</td></tr>
+      <tr><td>7</td><td>∠ADB + ∠ADC = 180°</td><td>Linear pair (B–D–C collinear)</td></tr>
+      <tr><td>8</td><td>2·∠ADB = 180°  ⇒  ∠ADB = 90°</td><td>Substitution &amp; division</td></tr>
+      <tr><td>9</td><td>AD ⊥ BC</td><td>Definition of perpendicular</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ========== PROOF 2 ========== -->
+<h2 id="proof-2">Worked Proof 2 — Vertical angles + SAS</h2>
+<p><strong>Given:</strong> segments AC and BD intersect at point O, with AO ≅ CO and BO ≅ DO. <strong>Prove:</strong> △AOB ≅ △COD.</p>
+
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 340 220">
+        <line x1="30" y1="60" x2="310" y2="160" stroke="#222" stroke-width="2"/>
+        <line x1="30" y1="160" x2="310" y2="60" stroke="#222" stroke-width="2"/>
+        <!-- intersection at roughly (170, 110) -->
+        <circle cx="170" cy="110" r="3" fill="#222"/>
+        <text x="30" y="54" class="lbl">A</text>
+        <text x="310" y="54" class="lbl">D</text>
+        <text x="30" y="176" class="lbl">B</text>
+        <text x="310" y="176" class="lbl">C</text>
+        <text x="176" y="104" class="lbl-sm">O</text>
+        <!-- tick marks -->
+        <line x1="96" y1="84" x2="104" y2="76" class="tickmark"/>
+        <line x1="234" y1="134" x2="242" y2="126" class="tickmark"/>
+        <line x1="96" y1="136" x2="104" y2="144" class="tickmark2"/>
+        <line x1="234" y1="80" x2="242" y2="88" class="tickmark2"/>
+        <!-- vertical angle arcs at O -->
+        <path d="M 150 108 A 18 18 0 0 1 154 124" class="arc-mark"/>
+        <path d="M 188 94 A 18 18 0 0 1 192 110" class="arc-mark"/>
+      </svg>
+    </div>
+    <div class="caption">∠AOB and ∠COD are vertical angles — automatically congruent.</div>
+  </div>
+  <div class="proof">
+    <table>
+      <tr><th>#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td>1</td><td>AO ≅ CO ; BO ≅ DO</td><td>Given</td></tr>
+      <tr><td>2</td><td>∠AOB ≅ ∠COD</td><td>Vertical Angles Theorem</td></tr>
+      <tr><td>3</td><td>△AOB ≅ △COD</td><td>SAS (1, 2, 1)</td></tr>
+    </table>
+    <p class="muted" style="margin-top:6px;">Notice the two pairs of sides <em>share</em> the included angle at O — that's what makes SAS the right tool.</p>
+  </div>
+</div>
+
+<!-- ========== PROOF 3 ========== -->
+<h2 id="proof-3">Worked Proof 3 — Parallel lines + ASA</h2>
+<p><strong>Given:</strong> AB ∥ CD, and M is the midpoint of BC. <strong>Prove:</strong> △ABM ≅ △DCM.</p>
+
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 360 220">
+        <line x1="20" y1="50" x2="340" y2="50" stroke="#888" stroke-dasharray="5,4"/>
+        <line x1="20" y1="170" x2="340" y2="170" stroke="#888" stroke-dasharray="5,4"/>
+        <!-- triangle ABM going up, DCM going down -->
+        <line x1="80" y1="50" x2="280" y2="170" stroke="#222" stroke-width="2"/>
+        <line x1="80" y1="50" x2="180" y2="110" stroke="#222" stroke-width="2"/>
+        <line x1="180" y1="110" x2="280" y2="170" stroke="#222" stroke-width="2"/>
+        <line x1="260" y1="50" x2="80" y2="170" stroke="#222" stroke-width="2"/>
+        <line x1="260" y1="50" x2="180" y2="110" stroke="#222" stroke-width="2"/>
+        <line x1="180" y1="110" x2="80" y2="170" stroke="#222" stroke-width="2"/>
+        <!-- vertical from B to C -->
+        <circle cx="180" cy="110" r="3" fill="#222"/>
+        <!-- labels -->
+        <text x="68" y="44" class="lbl">A</text>
+        <text x="260" y="44" class="lbl">D</text>
+        <text x="176" y="102" class="lbl-sm">M</text>
+        <text x="60" y="184" class="lbl">C</text>
+        <text x="284" y="184" class="lbl">B</text>
+        <!-- alternate interior angle arcs -->
+        <path d="M 94 50 A 20 20 0 0 1 112 58" class="arc-mark"/>
+        <path d="M 265 170 A 20 20 0 0 0 248 162" class="arc-mark"/>
+        <!-- tick marks BM = CM -->
+        <line x1="225" y1="136" x2="233" y2="144" class="tickmark2"/>
+        <line x1="130" y1="136" x2="138" y2="144" class="tickmark2"/>
+      </svg>
+    </div>
+    <div class="caption">M is the midpoint of BC. AB ∥ CD gives alternate interior angles, and vertical angles at M give the second angle.</div>
+  </div>
+  <div class="proof">
+    <table>
+      <tr><th>#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td>1</td><td>AB ∥ CD</td><td>Given</td></tr>
+      <tr><td>2</td><td>M is midpoint of BC</td><td>Given</td></tr>
+      <tr><td>3</td><td>BM ≅ CM</td><td>Definition of midpoint</td></tr>
+      <tr><td>4</td><td>∠ABM ≅ ∠DCM</td><td>Alternate interior angles (AB ∥ CD, transversal BC)</td></tr>
+      <tr><td>5</td><td>∠AMB ≅ ∠DMC</td><td>Vertical Angles Theorem</td></tr>
+      <tr><td>6</td><td>△ABM ≅ △DCM</td><td>ASA (from 4, 3, 5)</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ========== PROOF 4 ========== -->
+<h2 id="proof-4">Worked Proof 4 — CPCTC finishes the job</h2>
+<p><strong>Given:</strong> AB ≅ AD and BC ≅ DC. <strong>Prove:</strong> ∠B ≅ ∠D.</p>
+
+<div class="grid">
+  <div>
+    <div class="fig">
+      <svg viewBox="0 0 340 240">
+        <polygon points="170,20 60,120 170,220 280,120" fill="#e8f4fd" stroke="#222" stroke-width="2"/>
+        <line x1="170" y1="20" x2="170" y2="220" stroke="#c0392b" stroke-dasharray="4,3"/>
+        <!-- tick marks AB = AD (top sides) -->
+        <line x1="112" y1="73" x2="120" y2="63" class="tickmark"/>
+        <line x1="220" y1="73" x2="228" y2="63" class="tickmark"/>
+        <!-- tick marks BC = DC (bottom sides) -->
+        <line x1="112" y1="170" x2="120" y2="180" class="tickmark2"/>
+        <line x1="220" y1="170" x2="228" y2="180" class="tickmark2"/>
+        <text x="168" y="15" class="lbl">A</text>
+        <text x="46" y="130" class="lbl">B</text>
+        <text x="286" y="130" class="lbl">D</text>
+        <text x="168" y="235" class="lbl">C</text>
+      </svg>
+    </div>
+    <div class="caption">AC is a shared ("reflexive") side. Kite-shape: AB ≅ AD, BC ≅ DC.</div>
+  </div>
+  <div class="proof">
+    <table>
+      <tr><th>#</th><th>Statement</th><th>Reason</th></tr>
+      <tr><td>1</td><td>AB ≅ AD</td><td>Given</td></tr>
+      <tr><td>2</td><td>BC ≅ DC</td><td>Given</td></tr>
+      <tr><td>3</td><td>AC ≅ AC</td><td>Reflexive Property</td></tr>
+      <tr><td>4</td><td>△ABC ≅ △ADC</td><td>SSS (1, 2, 3)</td></tr>
+      <tr><td>5</td><td>∠B ≅ ∠D</td><td>CPCTC</td></tr>
+    </table>
+    <p class="muted" style="margin-top:6px;">The move: "same segment on both sides" = reflexive. Always check for it — it's free.</p>
+  </div>
+</div>
+
+<!-- ========== PRACTICE ========== -->
+<h2 id="practice">Practice — name the theorem</h2>
+<p>For each of the following, decide which congruence theorem (if any) applies. Toggle the answer.</p>
+
+<details>
+  <summary>1. In △ABC and △XYZ: AB ≅ XY, BC ≅ YZ, ∠B ≅ ∠Y.</summary>
+  <p><span class="pill">SAS</span> ∠B is the included angle between sides AB and BC.</p>
+</details>
+
+<details>
+  <summary>2. ∠A ≅ ∠X, AB ≅ XY, ∠B ≅ ∠Y.</summary>
+  <p><span class="pill">ASA</span> AB is the included side between ∠A and ∠B.</p>
+</details>
+
+<details>
+  <summary>3. ∠A ≅ ∠X, ∠B ≅ ∠Y, BC ≅ YZ.</summary>
+  <p><span class="pill">AAS</span> BC is a non-included side relative to ∠A, ∠X.</p>
+</details>
+
+<details>
+  <summary>4. AB ≅ XY, BC ≅ YZ, ∠A ≅ ∠X.</summary>
+  <p><span class="pill bad">NOT valid — SSA</span> The angle is not between the two sides. Ambiguous case.</p>
+</details>
+
+<details>
+  <summary>5. Right triangles with AC ≅ XZ (hypotenuses) and BC ≅ YZ (legs).</summary>
+  <p><span class="pill">HL</span> Right triangle + hypotenuse + leg.</p>
+</details>
+
+<details>
+  <summary>6. AB ≅ XY, BC ≅ YZ, AC ≅ XZ.</summary>
+  <p><span class="pill">SSS</span> All three sides match.</p>
+</details>
+
+<details>
+  <summary>7. Two sides 5 and 12. What's the range of the third side?</summary>
+  <p><span class="pill">Triangle Inequality</span> 7 &lt; x &lt; 17 (difference &lt; x &lt; sum).</p>
+</details>
+
+<details>
+  <summary>8. In △ABC the exterior angle at C is 130° and ∠A = 70°. Find ∠B.</summary>
+  <p><span class="pill">Exterior Angle Theorem</span> 130° = ∠A + ∠B ⇒ ∠B = 60°.</p>
+</details>
+
+<h2>Checklist before you start any proof</h2>
+<div class="card">
+  <ol>
+    <li><strong>Mark the diagram.</strong> Tick marks for equal sides; arcs for equal angles; a small square for a right angle.</li>
+    <li><strong>Find the "free" facts:</strong> reflexive shared side/angle, vertical angles, linear pair, midpoint splits, bisectors, parallel lines giving alt-int angles.</li>
+    <li><strong>Count what you have</strong> for the pair of triangles: three pieces? Which three? Then pick SSS, SAS, ASA, AAS, or HL.</li>
+    <li><strong>Write the congruence statement</strong> in matching order (△ABC ≅ △XYZ means A↔X, B↔Y, C↔Z).</li>
+    <li><strong>If the "Prove" asks about something besides the triangle congruence</strong>, finish with CPCTC.</li>
+  </ol>
+</div>
+
+<p class="muted" style="margin-top:36px;">End of Unit 3 core. Next session we'll drill into special segments (medians, altitudes, perpendicular bisectors, angle bisectors) and the four triangle centers (centroid, orthocenter, circumcenter, incenter). Then coordinate proofs.</p>
+
+</div>
+</body>
+</html>

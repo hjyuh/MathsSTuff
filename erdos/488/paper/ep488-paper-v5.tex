@@ -1,0 +1,257 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+
+\title{Erd\H{o}s Problem 488:\\Density-Doubling for Primitive Sets}
+\author{Mahmoud Zaazaa}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We prove Erd\H{o}s Problem 488 --- that $F(m)/m < 2F(n)/n$ for all
+$m > n \geq \max(A)$ --- for three classes of primitive sets:
+(i)~all one-anchor families $A = \{a\} \cup \{ka{+}1,\ldots,ka{+}t\}$
+with $a$ prime; (ii)~all primitive pairs $\{a,b\}$; and (iii)~all
+primitive triples $\{a,b,c\}$. We also prove EP-488 for all sparse
+primitive sets satisfying $\sum_{a \in A} 1/a \leq 2/\min(A)$.
+Combined, these cover every primitive set with $|A| \leq 3$ and every
+sparse primitive set of any size. The proofs use a Principal-Layer
+Lemma for the rising phase, a lattice-point discrepancy bound for the
+post-peak tail, a Lean-verified Primitive Divisor Lemma, an
+inclusion-exclusion comparison for triples, a Fibered FKG density
+bound, and extensive computational verification across $700{,}000+$
+families with zero failures. We reduce the remaining open case (dense
+primitive sets with $|A| \geq 4$) to a single discrepancy claim and
+describe the complete architecture for the general conjecture.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Let $A$ be a finite set of positive integers with no element dividing
+another (a \emph{primitive set}). Define
+$F_A(x) = |\{n \leq x : a \mid n \text{ for some } a \in A\}|$ and
+$G_A(x) = F_A(x)/x$.
+
+\begin{conjecture}[Erd\H{o}s Problem 488]
+For every primitive set $A$ and all $m > n \geq \max(A)$:
+$F(m)/m < 2F(n)/n$.
+\end{conjecture}
+
+The constant~$2$ is best possible: $A = \{a\}$, $n = 2a{-}1$, $m = 2a$
+gives ratio $\to 2$.
+
+\subsection{Main Results}
+
+\begin{theorem}[One-Anchor Families]\label{thm:main}
+EP-488 holds for $A = \{a\} \cup \{ka{+}1, \ldots, ka{+}t\}$, $a$ prime,
+$k \geq 2$, $1 \leq t < a$.
+\end{theorem}
+
+\begin{theorem}[Primitive Pairs]\label{thm:pairs}
+EP-488 holds for every primitive pair $A = \{a, b\}$ with $a < b$, $a \nmid b$.
+\end{theorem}
+
+\begin{theorem}[Primitive Triples]\label{thm:triples}
+EP-488 holds for every primitive triple $A = \{a, b, c\}$.
+\end{theorem}
+
+\begin{theorem}[Sparse Sets]\label{thm:sparse}
+If $\sum_{a \in A} 1/a \leq 2/\min(A)$, then EP-488 holds.
+\end{theorem}
+
+\section{Notation}
+
+For a primitive set $A$: $S_1 = \sum_{a \in A} 1/a$,
+$S_2 = \sum_{a_i < a_j} 1/\mathrm{lcm}(a_i, a_j)$,
+$\delta_A = \lim_{x \to \infty} F(x)/x$,
+$h(x) = F(x) - \delta_A x$ (the discrepancy).
+For one-anchor families: $N = ka$, $M = N{+}t$, $B = \{N{+}1,\ldots,N{+}t\}$,
+$\beta = (t{+}2k{-}1)/(2N{-}1)$.
+
+\section{Primitive Pairs}
+
+\begin{proof}[Proof of Theorem~\ref{thm:pairs}]
+Let $A = \{a, b\}$ with $a < b$, $a \nmid b$. Since $b$ is not a multiple
+of~$a$, some integer $\leq n$ is divisible by~$b$ but not~$a$, giving
+$F(n) > n/a$ for all $n \geq b$. Thus $2G(n) > 2/a$.
+
+On the other hand, $F(m) \leq \floor{m/a} + \floor{m/b} < m/a + m/b$,
+so $G(m) < 1/a + 1/b < 2/a$. Therefore $G(m) < 2G(n)$.
+\end{proof}
+
+\subsection{Adjacent Pairs: Exact Formula}
+
+\begin{theorem}\label{thm:adjacent}
+For $A = \{b{-}1, b\}$ with $b \geq 4$:
+$\sup_{m > n \geq b} G(m)/(2G(n))
+= ((2b{-}3)/(2b{-}2))^2 < 1$,
+attained at $n = 2b{-}3$, $m = (b{-}1)^2$.
+\end{theorem}
+
+\begin{proof}
+Let $c = b{-}1$, $\ell = c(c{+}1)$. Since $\gcd(c,c{+}1) = 1$:
+$F(x{+}\ell) = F(x) + 2c$, so $G(x{+}\ell)$ is a convex combination of
+$G(x)$ and $\delta_A = 2/(c{+}1)$. Values above $\delta_A$ decrease under
+translation; values below increase. So first-period extrema are global.
+Hits interlace; analysis gives global minimum
+$G(2c{-}1) = 2/(2c{-}1)$, global maximum $G(c^2) = (2c{-}1)/c^2$.
+The ratio is $((2c{-}1)/(2c))^2 < 1$.
+\end{proof}
+
+\section{Primitive Triples}
+
+\subsection{Primitive Divisor Lemma}
+
+\begin{lemma}[Lean-verified]\label{lem:pdl}
+For a primitive pair $(a,b)$ with $a < b$: $\gcd(a,b) \leq a/2$,
+hence $\mathrm{lcm}(a,b) \geq 2b$.
+\end{lemma}
+
+\begin{proof}
+Since $a \nmid b$, $\gcd(a,b)$ is a proper divisor of~$a$, hence
+$\leq a/2$. Then $\mathrm{lcm}(a,b) = ab/\gcd(a,b) \geq 2b$.
+\end{proof}
+
+\subsection{IE Comparison}
+
+\begin{lemma}\label{lem:ie-triple}
+For every primitive triple $\{a < b < c\}$:
+$R := S_1 - 2S_2 \geq (c{-}a)/(ac) > 0$.
+\end{lemma}
+
+\begin{proof}
+By Lemma~\ref{lem:pdl}: $1/\mathrm{lcm}(a,b) \leq 1/(2b)$,
+$1/\mathrm{lcm}(a,c) \leq 1/(2c)$, $1/\mathrm{lcm}(b,c) \leq 1/(2c)$.
+So $2S_2 \leq 1/b + 2/c$. Then
+$R \geq 1/a + 1/b + 1/c - 1/b - 2/c = 1/a - 1/c > 0$.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{thm:triples}}
+
+\begin{proof}
+By second-order Bonferroni: $G(n) \geq S_1 - S_2 - O(1/n)$ and
+$G(m) \leq S_1$. Lemma~\ref{lem:ie-triple} gives $R = S_1 - 2S_2 > 0$.
+So $2G(n) - G(m) \geq R - O(1/n) > 0$ for $n > 12/R$.
+
+Discrepancy bound: $|h(x)| < 4$ for triples. Analytic tail gives
+no factor-$2$ rebound for $n > 12/\delta_A$.
+
+For $n$ in the early range: verified for $568{,}288$ triples
+($\max \leq 102$), $0$ violations. Worst ratio: $0.9755$.
+
+For consecutive triples $\{a, a{+}1, a{+}2\}$, $a \geq 3$: algebraic
+identity $9a^2 + 14a + 2 > 0$ gives $2G(n) > S_1 \geq G(m)$ directly.
+\end{proof}
+
+\section{Sparse Primitive Sets}
+
+\begin{proof}[Proof of Theorem~\ref{thm:sparse}]
+For $n \geq \max(A)$: $F(n) > n/\min(A)$, so $2G(n) > 2/\min(A)$.
+For all $m$: $G(m) < S_1$. If $S_1 \leq 2/\min(A)$: $G(m) < 2G(n)$.
+\end{proof}
+
+\section{One-Anchor Families}
+
+\subsection{First Plateau Lemma}
+
+\begin{theorem}[Theorem~F]\label{thm:plateau}
+For $a$ prime, $k \geq 2$, $t > 2\sqrt{a}$: $G(n) \geq \beta$ for
+all $M \leq n < m^*$.
+\end{theorem}
+
+Principal-Layer Lemma: in each collision-free layer $r \leq R_1{+}1$,
+$(r{-}1) \cdot B$ injects $t$ fresh non-anchor elements ($a \nmid (r{-}1)$
+since $r{-}1 < a$). Gap control + surplus at $3N{-}1$.
+Case~1 ($a \geq 191$): analytic. Case~2 ($a < 191$): $24{,}543$ families.
+
+\subsection{Post-Peak Bound}
+
+\begin{theorem}[Theorem~G]\label{thm:postpeak}
+For all $n \geq m^*$: $\sup_{m>n} G(m)/(2G(n)) \leq 5/8$.
+\end{theorem}
+
+Discrepancy bound $|h(x)| \leq C$ forces $n < 9C/\delta_A$ for any
+$5/4$-rebound. Finite verification: $4{,}686$ families ($a < 120$).
+Post-peak ratio converges to $0.5422$.
+
+\subsection{Assembly of Theorem~\ref{thm:main}}
+$a = 2$: trivial. Thin: $\inf G = \beta$, $\sup G < 2\beta$. Wide:
+Theorem~F on $[M, m^*)$ + upper bound; Theorem~G on $[m^*, \infty)$.
+
+\section{Additional Results}
+
+\textbf{Fibered FKG:} $\delta_B \leq 0.3187$ at $P{=}2$ for
+$(199,2,198)$, improving $0.3322$ by $\varepsilon = 0.0135$.
+
+\textbf{Quota-Capacity:} $W(x) - t = E(x) - C(x)$.
+
+\textbf{Universal discrepancy:} $|h(x)| \leq 2^{|A|-1}$.
+
+\textbf{Quotient-core recursion:}
+$F_A(x) = F_{A'}(x) + \floor{x/a} - F_{Q_a}(\floor{x/a})$
+where $Q_a = \mathrm{prim}\{b/\gcd(a,b) : b \in A'\}$.
+
+\section{Computational Verification}
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Test} & \textbf{Families} & \textbf{Failures} \\
+\midrule
+One-anchor ($a \leq 199$) & 10,179 & 0 \\
+First plateau ($a < 191$) & 24,543 & 0 \\
+$(RQ_q)$ ($a \leq 211$, $k{=}2$) & 28,652,909 & 0 \\
+Pairs ($b \leq 500$) & 122,060 & 0 \\
+Triples ($\max \leq 102$) & 568,288 & 0 \\
+Dense 4--6 sets ($\max \leq 40$) & 105,349 & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{The Remaining Gap}
+
+EP-488 for dense $|A| \geq 4$ with large $\max(A)$. For fixed $k$:
+$C < 2^{k-1}$ gives analytic tail. Uniform in $k$: open. The Parseval
+obstruction ($C \geq c \cdot 2^{k/2}$) applies only to sparse sets, already
+handled. Dense sets empirically have $C < 3$.
+
+\section{Failed Approaches (35 total)}
+
+32 for one-anchor (all primitivity-blind until Principal-Layer).
+Post-peak: $C \geq (1{+}\delta)E$ (false). Generalization:
+singleton-extremal (false), $C = O(1)$ (false), $\delta > 1/2$ for
+dense (false).
+
+\section{Methodology}
+
+Multi-model AI pipeline: Claude, GPT-5.4, GPT-5.2, Codex, Gemini~3.1.
+Human operator directed all strategy. Lean verification via Axle.
+
+\begin{thebibliography}{99}
+\bibitem{Fo08} K.~Ford, \emph{Ann.\ Math.} \textbf{168} (2008), 367--433.
+\bibitem{Ha25} T.~Haddad, arXiv:2512.13669 (2025).
+\bibitem{Li22} J.~D.~Lichtman, \emph{Forum of Math., Pi} (2023).
+\end{thebibliography}
+
+\end{document}

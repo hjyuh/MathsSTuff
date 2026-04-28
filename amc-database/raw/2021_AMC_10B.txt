@@ -1,0 +1,1364 @@
+=== Problem 1 ===
+How many integer values of
+
+Choices: {'A': '~9', 'B': '~10', 'C': '~18', 'D': '~19', 'E': '~20</math>'}
+Answer: 
+
+
+=== Problem 2 ===
+What is the value of
+
+Choices: {'A': '~0', 'B': '~4\\sqrt{3}-6', 'C': '~6', 'D': '~4\\sqrt{3}', 'E': '~4\\sqrt{3} + 6</math>'}
+Answer: D
+
+--- Solution 1 ---
+Note that the square root of any number squared is always the absolute value of the squared number because the square root function will only return a nonnegative number. By squaring both <math>3</math> and <math>2\sqrt{3}</math>, we see that <math>2\sqrt{3}>3</math>, thus <math>3-2\sqrt{3}</math> is negative, so we must take the absolute value of <math>3-2\sqrt{3}</math>, which is just <math>2\sqrt{3}-3</math>. Knowing this, the first term in the expression equals <math>2\sqrt{3}-3</math> and the second term is <math>3+2\sqrt3</math>, and summing the two gives <math>\boxed{\textbf{(D)}
+
+--- Solution 2 ---
+Let <math>x = \sqrt{(3-2\sqrt{3})^2}+\sqrt{(3+2\sqrt{3})^2}</math>, then <math>x^2 = (3-2\sqrt{3})^2+2\sqrt{(-3)^2}+(3+2\sqrt3)^2</math>. The <math>2\sqrt{(-3)^2}</math> term is there due to difference of squares when you simplify <math>2ab</math> from <math>(a + b)^2</math>. Simplifying the expression gives us <math>x^2 = 48</math>, so <math>x=\boxed{\textbf{(D)}
+
+--- Solution 3 ---
+Memorizing your square roots from 1 - 10 are really important for cheesing some AMC problems, so try to memorize them.
+
+\( \sqrt{3} \) is about 1.7.
+
+We then substitute \( \sqrt{3} \) for 1.7 to solve this.
+
+We get
+
+<cmath>
+\sqrt{(3-2 \cdot 1.7)^2} + \sqrt{(3+2 \cdot 1.7)^2}
+</cmath>
+
+<cmath>
+= \sqrt{(-0.4)^2} + \sqrt{(6.4)^2}
+</cmath>
+
+<cmath>
+= \sqrt{0.16} + \sqrt{6.4^2}
+</cmath>
+
+<cmath>
+= 0.4 + 6.4
+</cmath>
+
+<cmath>
+= 6.8
+</cmath>
+
+Looking at the answer choices, we see that <math>\boxed{\textbf{(D)}
+
+
+=== Problem 3 ===
+In an after-school program for juniors and seniors, there is a debate team with an equal number of students from each class on the team. Among the
+
+Choices: {'A': '~5', 'B': '~6', 'C': '~8', 'D': '~11', 'E': '~20</math>'}
+Answer: C
+
+--- Solution 1 ---
+Say there are <math>j</math> juniors and <math>s</math> seniors in the program. Converting percentages to fractions, <math>\frac{j}{4}</math> and <math>\frac{s}{10}</math> are on the debate team, and since an equal number of juniors and seniors are on the debate team, <math>\frac{j}{4} = \frac{s}{10}.</math>
+
+Cross-multiplying and simplifying we get <math>5j=2s.</math> Additionally, since there are <math>28</math> students in the program, <math>j+s = 28.</math> It is now a matter of solving the system of equations <cmath>5j=2s</cmath><cmath>j+s=28,</cmath> and the solution is <math>j = 8, s = 20.</math> Since we want the number of juniors, the answer is <cmath>\boxed{(C) \text{ } 8}.</cmath>
+
+-[[User:PureSwag|PureSwag]]
+
+--- Solution 2 ---
+Clearly, the number of seniors must be a number divisible by <math>10</math>, since <math>10\%</math> points to a whole number, so the number of seniors must be either <math>10</math> or <math>20</math>. If there are ten seniors, there is <math>1</math> senior on the debate team, which would mean that there are <math>4</math> juniors, since <math>10\%s</math> = <math>25\%j</math>. This is impossible, so the number of seniors is 20, and the number of juniors is <math>28-20=8\rightarrow \boxed{C}</math>.
+
+Note that by using the answer choices, we could automatically rule out 10.
+
+--- Solution 3 ---
+Since there are an equal number of juniors and seniors on the debate team, suppose there are <math>x</math> juniors and <math>x</math> seniors. This number represents <math>25\% =\frac{1}{4}</math> of the juniors and <math>10\%= \frac{1}{10}</math> of the seniors, which tells us that there are <math>4x</math> juniors and <math>10x</math> seniors. There are <math>28</math> juniors and seniors in the program altogether, so we get 
+<cmath>10x+4x=28,</cmath>
+<cmath>14x=28,</cmath>
+<cmath>x=2. </cmath>
+Which means there are <math>4x=8</math> juniors on the debate team, <math>\boxed{\text{(C)} \, 8}</math>.
+
+--- Solution 4 ---
+The amount of juniors must be a multiple of <math>4</math>, since exactly <math>\frac{1}{4}</math> of the students are on the debate team. Thus, we can immediately see that <math>\boxed{C}</math> and <math>\boxed{E}</math> are the only possibilities for the number of juniors. However, if there are <math>20</math> juniors, then there are <math>8</math> seniors, so it is not true that <math>1/10</math> of the seniors are on the debate team, since <math>\frac{1}{10} \cdot 8 = \frac{4}{5}</math>, which is not an integer. Thus, we conclude that there are <math>8</math> juniors, so the answer is <math>\boxed{C}</math>.
+
+
+=== Problem 4 ===
+At a math contest,
+
+Choices: {'A': '~23', 'B': '~32', 'C': '~37', 'D': '~41', 'E': '~64</math>'}
+Answer: B
+
+--- Solution 1 ---
+There are <math>46</math> blue students paired with a blue partner. The other <math>11</math> students wearing blue shirts must each be paired with a partner wearing a shirt of the opposite color. There are <math>64</math> yellow students remaining. Therefore the requested number of pairs is <math>\tfrac{64}{2}=\boxed{\textbf{(B)}
+
+
+=== Problem 5 ===
+The ages of Jonie's four cousins are distinct single-digit positive integers. Two of the cousins' ages multiplied together give
+
+Choices: {'A': '~21', 'B': '~22', 'C': '~23', 'D': '~24', 'E': '~25</math>'}
+Answer: B
+
+--- Solution 1 ---
+First look at the two cousins' ages that multiply to <math>24</math>. Since the ages must be single-digit, the ages must either be <math>3 \text{ and } 8</math> or <math>4 \text{ and } 6.</math>
+
+Next, look at the two cousins' ages that multiply to <math>30</math>. Since the ages must be single-digit, the only ages that work are <math>5 \text{ and } 6.</math> Remembering that all the ages must all be distinct, the only solution that works is when the ages are <math>3, 8</math> and <math>5, 6</math>.
+
+We are required to find the sum of the ages, which is <cmath>3 + 8 + 5 + 6 = \boxed{\textbf{(B)} 
+-[[User:PureSwag|PureSwag]]
+
+
+=== Problem 6 ===
+Ms. Blackwell gives an exam to two classes. The mean of the scores of the students in the morning class is
+
+Choices: {'A': '~74', 'B': '~75', 'C': '~76', 'D': '~77', 'E': '~78</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let there be <math>3x</math> students in the morning class and <math>4x</math> students in the afternoon class. The total number of students is <math>3x + 4x = 7x</math>. The average is <math>\frac{3x\cdot84 + 4x\cdot70}{7x}=76</math>. Therefore, the answer is <math>\boxed{\textbf{(C)}
+
+--- Solution 2 ---
+Suppose the morning class has <math>m</math> students and the afternoon class has <math>a</math> students. We have the following table:
+<cmath>\begin{array}{c|c|c|c}
+& & & \\ [-2.5ex]
+& \textbf{\# of Students} & \textbf{Mean} & \textbf{Total} \\
+\hline
+& & & \\ [-2.5ex]
+\textbf{Morning} & m & 84 & 84m \\
+\hline
+& & & \\ [-2.5ex]
+\textbf{Afternoon} & a & 70 & 70a
+\end{array}</cmath>
+We are also given that <math>\frac ma=\frac34,</math> which rearranges as <math>m=\frac34a.</math>
+
+The mean of the scores of all the students is <cmath>\frac{84m+70a}{m+a}=\frac{84\left(\frac34a\right)+70a}{\frac34a+a}=\frac{133a}{\frac74a}=133\cdot\frac47=\boxed{\textbf{(C)}
+
+--- Solution 3 ---
+Of the average, <math>\frac{3}{3+4}=\frac{3}{7}</math> of the scores came from the morning class and <math>\frac{4}{7}</math> came from the afternoon class. The average is <math>\frac{3}{7}\cdot 84+\frac{4}{7}\cdot 70=\boxed{\textbf{(C)}
+
+--- Solution 4 ---
+WLOG, assume there are <imath>3</imath> students in the morning class and <imath>4</imath> in the afternoon class. Then the average is <imath>\frac{3\cdot 84 + 4\cdot 70}{7}=\boxed{\textbf{(C)}
+
+--- Solution 5 ---
+Let <imath>S_1</imath> be the sum of the morning class's scores, and <imath>S_2</imath> be the sum of the afternoon class's scores. Let <imath>3x</imath> be the number of students in the morning class, and <imath>4x</imath> be the number of students in the afternoon class. We can write <imath>\frac{S_1}{3x}=84</imath> and <imath>\frac{S_2}{4x}=70</imath>, so <imath>S_2 = 70 \cdot 4x</imath> and <imath>S_1 = 84 \cdot 3x</imath>. Adding these, we get <imath>S_1 + S_2 = x(70 \cdot 4 + 84 \cdot 3)</imath>. We want to find the mean, which is <imath>\frac{S_1+S_2}{7x}</imath>, so dividing by <imath>7x</imath> on both sides of the equation, we get the mean to be <imath>10 \cdot 4 + 12 \cdot 3 = \boxed{\textbf{(C)}
+
+
+=== Problem 7 ===
+In a plane, four circles with radii
+
+Choices: {'A': '24\\pi', 'B': '32\\pi', 'C': '64\\pi', 'D': '65\\pi', 'E': '84\\pi</math>'}
+Answer: D
+
+--- Solution 1 ---
+Suppose that line <math>\ell</math> is horizontal, and each circle lies either north or south to <math>\ell.</math> We construct the circles one by one:
+<ol style="margin-left: 1.5em;">
+  <li>Without the loss of generality, we draw the circle with radius <math>7</math> north to <math>\ell.</math></li><p>
+  <li>To maximize the area of region <math>S,</math> we draw the circle with radius <math>5</math> south to <math>\ell.</math></li><p>
+  <li>Now, we need to subtract the circle with radius <math>3</math> <i><b>at least</b></i>. The optimal situation is that the circle with radius <math>3</math> encompasses the circle with radius <math>1,</math> in which we do not need to subtract more. That is, the two smallest circles are on the same side of <math>\ell,</math> but can be on either side. </li>
+</ol>
+The diagram below shows one possible configuration of the four circles:
+<asy>
+/* diagram made by samrocksnature, edited by MRENTHUSIASM */
+pair A=(10,0);
+pair B=(-10,0);
+draw(A--B);
+filldraw(circle((0,7),7),yellow);
+filldraw(circle((0,-5),5),yellow);
+filldraw(circle((0,-3),3),white);
+filldraw(circle((0,-1),1),white);
+dot((0,0));
+label("$A$",(0,0),(0,1.5));
+label("$\ell$",(10,0),(1.5,0));
+</asy>
+Together, the answer is <math>\pi\cdot7^2+\pi\cdot5^2-\pi\cdot3^2=\boxed{\textbf{(D) }65\pi}.</math>
+
+
+=== Problem 8 ===
+Mr. Zhou places all the integers from
+
+Choices: {'A': '~367', 'B': '~368', 'C': '~369', 'D': '~379', 'E': '~380</math>'}
+Answer: A
+
+--- Solution 1 ---
+In the diagram below, the red arrows indicate the progression of numbers. In the second row from the top, the greatest number and the least number are <math>D</math> and <math>E,</math> respectively. Note that the numbers in the yellow cells are consecutive odd perfect squares, as we can prove by induction.
+<asy> 
+/* Made by MRENTHUSIASM */
+size(11.5cm);
+
+for (real i=7.5; i<=14.5; ++i) 
+{
+	fill((i+0.5,i+0.5)--(i-0.5,i+0.5)--(i-0.5,i-0.5)--(i+0.5,i-0.5)--cycle,yellow);
+}
+
+fill((2,14)--(1,14)--(1,13)--(2,13)--cycle,green);
+fill((1,14)--(0,14)--(0,13)--(1,13)--cycle,green);
+
+label("$A$",(14.5,14.5));
+label("$B$",(13.5,13.5));
+label("$C$",(0.5,14.5));
+label("$E$",(1.5,13.5));
+label("$D$",(0.5,13.5));
+
+add(grid(15,15,linewidth(1.25)));
+
+draw((1.5,13.5)--(14.5,13.5)--(14.5,0.5)--(0.5,0.5)--(0.5,14.5)--(14.5,14.5),red+linewidth(1.125),EndArrow);
+</asy>
+By observations, we proceed as follows:
+<cmath>\begin{alignat*}{6}
+A=15^2=225, \ B=13^2=169 
+\quad &\implies \quad &C &= \hspace{1mm}&&A-14\hspace{1mm} &= 211& \\ 
+\quad &\implies \quad &D &= &&C-1  &= 210& \\ 
+\quad &\implies \quad &E &= &&B-12 &= 157&. 
+\end{alignat*}</cmath>
+Therefore, the answer is <math>D+E=\boxed{\textbf{(A)}
+
+--- Solution 2 ---
+In the diagram below, the red arrows indicate the progression of numbers. In the second row from the top, the greatest number and the least number are <math>C</math> and <math>G,</math> respectively.
+<asy>
+/* Made by MRENTHUSIASM */
+size(11.5cm);
+
+fill((2,14)--(1,14)--(1,13)--(2,13)--cycle,green);
+fill((1,14)--(0,14)--(0,13)--(1,13)--cycle,green);
+
+label("$A$",(14.5,14.5));
+label("$B$",(0.5,14.5));
+label("$C$",(0.5,13.5));
+label("$D$",(0.5,0.5));
+label("$E$",(14.5,0.5));
+label("$F$",(14.5,13.5));
+label("$G$",(1.5,13.5));
+
+add(grid(15,15,linewidth(1.25)));
+
+draw((1.5,13.5)--(14.5,13.5)--(14.5,0.5)--(0.5,0.5)--(0.5,14.5)--(14.5,14.5),red+linewidth(1.125),EndArrow);
+</asy>
+By observations, we proceed as follows:
+<cmath>\begin{alignat*}{6}
+A=15^2=225 
+\quad &\implies \quad &B &= \hspace{1mm}&&A-14\hspace{1mm} &= 211& \\ 
+\quad &\implies \quad &C &= &&B-1  &= 210& \\ 
+\quad &\implies \quad &D &= &&C-13 &= 197& \\
+\quad &\implies \quad &E &= &&D-14 &= 183& \\
+\quad &\implies \quad &F &= &&E-13 &= 170& \\
+\quad &\implies \quad &G &= &&F-13 &= 157&. 
+\end{alignat*}</cmath>
+Therefore, the answer is <math>C+G=\boxed{\textbf{(A)}
+
+--- Solution 3 ---
+From the full diagram below, the answer is <math>210+157=\boxed{\textbf{(A)} 
+<asy>
+/* Made by MRENTHUSIASM */
+size(11.5cm);
+
+fill((2,14)--(1,14)--(1,13)--(2,13)--cycle,green);
+fill((1,14)--(0,14)--(0,13)--(1,13)--cycle,green);
+
+add(grid(15,15,linewidth(1.25)));
+
+int adj = 1;
+int curDown = 2;
+int curLeft = 4;
+int curUp = 6;
+int curRight = 8;
+
+label("$1$",(7.5,7.5));
+
+for (int len = 3; len<=15; len+=2)
+{
+	for (int i=1; i<=len-1; ++i) 
+   		{
+			label("$"+string(curDown)+"$",(7.5+adj,7.5+adj-i));
+    		label("$"+string(curLeft)+"$",(7.5+adj-i,7.5-adj)); 
+    		label("$"+string(curUp)+"$",(7.5-adj,7.5-adj+i));
+    		label("$"+string(curRight)+"$",(7.5-adj+i,7.5+adj));
+    		++curDown;
+    		++curLeft;
+    		++curUp;
+    		++curRight;
+		}
+	++adj;
+    curDown = len^2 + 1;
+    curLeft = len^2 + len + 2;
+    curUp = len^2 + 2*len + 3;
+    curRight = len^2 + 3*len + 4;
+}
+</asy>
+<b>This solution is extremely time-consuming and error-prone. Please do not try it in a real competition unless you have no other options.</b>
+
+
+=== Problem 9 ===
+The point
+
+Choices: {'A': '~1', 'B': '~3', 'C': '~5', 'D': '~7', 'E': '~9</math>'}
+Answer: D
+
+--- Solution 1 ---
+The final image of <math>P</math> is <math>(-6,3)</math>. We know the reflection rule for reflecting over <math>y=-x</math> is <math>(x,y) \rightarrow (-y, -x)</math>. So before the reflection and after rotation the point is <math>(-3,6)</math>.
+
+By definition of rotation, the slope between <math>(-3,6)</math> and <math>(1,5)</math> must be perpendicular to the slope between <math>(a,b)</math> and <math>(1,5)</math>. The first slope is <math>\frac{5-6}{1-(-3)} = \frac{-1}{4}</math>. This means the slope of <math>P</math> and <math>(1,5)</math> is <math>4</math>.
+
+Rotations also preserve distance to the center of rotation, and since we only "travelled" up and down by the slope once to get from <math>(-3,6)</math> to <math>(1,5)</math> it follows we shall only use the slope once to travel from <math>(1,5)</math> to <math>P</math>.
+
+Therefore point <math>P</math> is located at <math>(1+1, 5+4) = (2,9)</math>. The answer is <math>9-2 = 7 = \boxed{\textbf{(D)} 
+-abhinavg0627
+
+--- Solution 2 ---
+Let us reconstruct that coordinate plane as the complex plane. Then, the point <math>P(a, b)</math> becomes <math>a+b\cdot{i}</math>. 
+A <math>90^\circ</math> rotation around the point <math>(1, 5)</math> can be done by translating the point <math>(1, 5)</math> to the origin, rotating around the origin by 
+<math>90^\circ</math>, and then translating the origin back to the point <math>(1, 5)</math>.
+<cmath>a+b\cdot{i}  \implies (a-1)+(b-5)\cdot{i} \implies ((a-1)+(b-5)\cdot{i})\cdot{i} = 5-b+(a-1)i \implies 5+1-b+(a-1+5)i = 6-b+(a+4)i.</cmath> 
+By basis reflection rules, the reflection of <math>(-6, 3)</math> about the line <math>y = -x</math> is <math>(-3, 6)</math>. 
+Hence, we have <cmath>6-b+(a+4)i = -3+6i \implies b=9, a=2,</cmath> from which <math>b-a = 9-2 = \boxed{\textbf{(D)}
+
+--- Solution 3 ---
+The problem gives a series of transformations and proceeds to give the resultant point, being <math>(-6,3)=P</math>. Therefore, all we must do is reverse it. First, we reverse the last transformation by computing the distance from the point <math>(-6,3)</math> to <math>y=-x</math> by using the formula <math>d=\frac{|Ax+By+C|}{\sqrt{A^2+B^2}}</math>. Where <math>Ax+By+C</math> is the standard form of a line. Computing, we obtain that <math>d=\frac{3\sqrt{2}}{2}</math>. We also know that this is magnitude is at an angle of <math>\frac{\pi}{4}</math>. Therefore, to do the transformation, we double that vector and add it to the point. We get:
+
+<math>P^{'}=P+2\overrightarrow{v}</math>
+<math>\implies P'=(-6,3)+\left\langle 3\sqrt{2}\cdot \frac{\sqrt{2}}{2},3\sqrt{2}\cdot \frac{\sqrt{2}}{2} \right \rangle </math>
+<math>\implies P'=(-3,6)</math>. 
+
+Now, we must reverse the second transformation. To do so, realize that <math>P'-(1,5)\Leftrightarrow \overrightarrow{v_{2}}=\left\langle -4,1 \right\rangle </math>. Simply make this vector perpendicular by switching the <math>x</math> and <math>y</math> components and switching the sign of the initial <math>y</math> component. Therefore, we get <math>\overrightarrow{v_{2\bot }}=\left\langle 1,4 \right\rangle </math>. Therefore, adding this vector to <math>(1,5)</math> yields <math>(2,9)</math>, which leads us to <math>9-2 = \boxed{\textbf{(D)}
+
+--- Solution 4 ---
+Using the same method as in Solution 1, we can obtain that the point before the reflection is <math>(-3,6)</math>. 
+If we let the original point be <math>(x, y)</math>, then we can use that the starting point is <math>(1,5)</math> to obtain two vectors <math>\langle -4,1 \rangle</math> and <math>\langle x-1, y-5 \rangle</math>.
+We know that two vectors are perpendicular if their dot product is equal to <math>0</math>, and that both points are the same distance (<math>   \sqrt {17}</math>) from <math>(1,5)</math>. 
+
+Therefore, we can write two equations using these vectors:
+<math>(x-1)^2 + (y-5)^2 = 17</math> (from distance and pythagorean theorem) and <math>-4x+y-1 = 0</math> (from dot product)
+
+Solving, we simplify the second equation to <math>y=4x+1</math>, and plug it into the first equation.
+We obtain <math>(x-1)^2 + (4x-4)^2 = 17</math>. We can simplify this to the quadratic <math>17x^2-34x=0</math>. 
+When we factor out <math>17x</math>, we find that <math>x = 2</math> or <math>x = 0</math>. However, <math>x</math> cannot equal <math>0</math>.
+Therefore, <math>x = 2</math>, and plugging this into the second equation gives us that <math>y = 9</math>. 
+Since the point is <math>(9, 2)</math>, we compute <math>9-2 = \boxed{\textbf{(D)}
+
+--- Solution 5 ---
+Using the same method as in Solution 1 reflecting <math>(-6,3)</math> about the line <math>y = -x</math> gives us <math>(-3,6).</math>
+
+Let the original point be <math>\langle x,y \rangle.</math> From point <math>(1,5),</math> we form the vectors <math>\langle -4,1 \rangle</math> and <math>\langle x-1, y-5 \rangle</math> that extend out from the initial point. If they are perpendicular, we know that their dot product has to equal zero. Therefore, <cmath>\langle -4,1 \rangle \cdot \langle x-1, y-5 \rangle = 0 \implies -4x+y-1= 0.</cmath>Now, we have to do some guess and check from the multiple choices. Let <math>y - x = A</math> where <math>A</math> is one of the answer choices. Then, <math>A -3x = 1.</math> By intuition and logical reasoning we deduce that <math>A</math> must be <math>1 \pmod 3</math> so that brings our potential answers down to <math>\text{\textbf{(A)}}</math> and <math>\text{\textbf{(C)}}.</math> If <math>A = 1</math> from <math>\text{\textbf{(A)}},</math> then <math>x = 0,</math> which we can quickly rule out since we know thar <math>P</math> rotated counterclockwise not clockwise. Hence, <math>\boxed{\textbf{(D)}
+
+--- Solution 6 ---
+The last thing that happened was the reflection over the line <math>y = -x</math>, so we reverse that by reflecting <math>(-6,3)</math> over <math>y = -x</math> to get <math>(-3,6)</math>. Now, we have to rotate it <math>\textbf{clockwise}</math>, to reverse the first step. To rotate <math>(-3,6)</math> over the point <math>(1,5)</math> clockwise 90 degrees, we can subtract <math>1</math> from each x-coordinate and subtract <math>5</math> from each y-coordinate. That way, we only have to rotate <math>(-4,1)</math> clockwise 90 degrees over the origin <math>(0,0)</math>. This is pretty easy to do in your head, so you get <math>(1,4)</math>. But we are not, done, we still have to add <math>1</math> to each x-coordinate and add <math>5</math> to each y-coordinate, to get <math>(2,9)</math>, so our final answer is <math>9 - 2 = 7</math>, which is <math>\boxed{\textbf{(D)}
+
+
+=== Problem 10 ===
+An inverted cone with base radius
+
+Choices: {'A': '1.5', 'B': '3', 'C': '4', 'D': '4.5', 'E': '6</math>'}
+Answer: A
+
+--- Solution 1 ---
+The volume of a cone is <math>\frac{1}{3} \cdot\pi \cdot r^2 \cdot h</math> where <math>r</math> is the base radius and <math>h</math> is the height. The water completely fills up the cone so the volume of the water is <math>\frac{1}{3}\cdot18\cdot144\pi = 6\cdot144\pi</math>.
+
+The volume of a cylinder is <math>\pi \cdot r^2 \cdot h</math> so the volume of the water in the cylinder would be <math>24\cdot24\cdot\pi\cdot h</math>.
+
+We can equate these two expressions because the water volume stays the same like this <math>24\cdot24\cdot\pi\cdot h = 6\cdot144\pi</math>. We get <math>4h = 6</math> and <math>h=\frac{6}{4}</math>.
+
+So the answer is <math>\boxed{\textbf{(A)}
+
+--- Solution 2 ---
+The water completely fills up the cone. For now, assume the radius of both cone and cylinder are the same. Then the cone has <math>\frac{1}{3}</math> of the volume of the cylinder, and so the height is divided by <math>3</math>. Then, from the problem statement, the radius is doubled, meaning the area of the base is quadrupled (since <math>2^2 = 4</math>).
+
+Therefore, the height is divided by <math>3</math> and divided by <math>4</math>, which is <math>18 \div 3 \div 4 = \boxed{\textbf{(A)}
+
+
+=== Problem 11 ===
+Grandma has just finished baking a large rectangular pan of brownies. She is planning to make rectangular pieces of equal size and shape, with straight cuts parallel to the sides of the pan. Each cut must be made entirely across the pan. Grandma wants to make the same number of interior pieces as pieces along the perimeter of the pan. What is the greatest possible number of brownies she can produce?
+
+Choices: {'A': '~24', 'B': '~30', 'C': '~48', 'D': '~60', 'E': '~64</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let the side lengths of the rectangular pan be <math>m</math> and <math>n</math>. It follows that <math>(m-2)(n-2) = \frac{mn}{2}</math>, since half of the brownie pieces are in the interior. This gives <math>2(m-2)(n-2) = mn \iff mn - 4m - 4n + 8 = 0</math>. Adding <math>8</math> to both sides and applying [[Simon's Favorite Factoring Trick]], we obtain <math>(m-4)(n-4) = 8</math>. Since <math>m</math> and <math>n</math> are both positive, we obtain <math>(m, n) = (5, 12), (6, 8)</math> (up to ordering). By inspection, <math>5 \cdot 12 = \boxed{\textbf{(D) }60}</math> maximizes the number of brownies.
+
+--- Solution 2 ---
+Obviously, no side of the rectangular pan can have less than <math>5</math> brownies beside it. We let one side of the pan have <math>5</math> brownies, and let the number of brownies on its adjacent side be <math>x</math>. Therefore, <math>5x=2\cdot3(x-2)</math>, and solving yields <math>x=12</math> and there are <math>5\cdot12=60</math> brownies in the pan. <math>64</math> is the only choice larger than <math>60</math>, but it cannot be the answer since the only way to fit <math>64</math> brownies in a pan without letting a side of it have less than <math>5</math> brownies beside it is by forming a square of <math>8</math> brownies on each side, which does not meet the requirement. Thus the answer is <math>\boxed{\textbf{(D) }60}</math>.
+
+-SmileKat32
+
+--- Solution 3 ---
+Let the '''interior''' of the pan have <math>n</math> vertical cuts and <math>m</math> horizontal cuts. We see that <math>mn = 2(m + n) + 4</math>. We want the greatest possible value of <math>(m+2)(n+2) = 2mn.</math> Expanding the first equation we get <cmath>mn = 2m + 2n + 4 \implies (m-2)n = 2m + 4 \implies n = \frac{2m + 4}{m - 2}.</cmath> In the first quadrant, this is a rational function which decreases as <math>m</math> approaches infinity. So we want the smallest value for <math>m</math> for the largest value of <math>n</math>. We know <math>m \geq 3</math>. If <math>m = 3, n = 10.</math> And we know since the function only decreases from here, these must be the greatest possible values. So the answer is <math>2mn = 2\cdot 30 = \boxed{60}.</math>
+
+~[[User:grogg007|grogg007]]
+
+--- Solution 4 ---
+Let <math>m</math>be the number of brownies on the top horizontal side of the pan and let <math>n</math> be the number of brownies on the leftmost vertical side of the pan. The total number of brownies in the interior is then <math>(m-2)(n-2).</math> Then, the number of brownies on the perimeter would be <math>2m+2n-4.</math> Expanding the left side we get: <math>mn-2m-2n+4.</math> Bringing the right side of the equation to the left side and adding 8 to both the sides we get <math>(n-4)(m-4)=8.</math> Making a table, we get that the highest number possible would be 60 brownies. 
+
+-nambha
+
+
+=== Problem 12 ===
+Let
+
+Choices: {'A': '~1 : 16', 'B': '~1 : 15', 'C': '~1 : 14', 'D': '~1 : 8', 'E': '~1 : 3</math>'}
+Answer: C
+
+--- Solution 1 ---
+Prime factorize <math>N</math> to get <math>N=2^{3} \cdot 3^{5} \cdot 5\cdot 7\cdot 17^{2}</math>. For each odd divisor <math>n</math> of <math>N</math>, there exist even divisors <math>2n, 4n, 8n</math> of <math>N</math>, therefore the ratio is <math>1:(2+4+8)=\boxed{\textbf{(C)}
+
+--- Solution 2 ---
+Prime factorizing <math>N</math>, we see <math>N=2^{3} \cdot 3^{5} \cdot 5\cdot 7\cdot 17^{2}</math>.
+The sum of <math>N</math>'s odd divisors are the sum of the factors of <math>N</math> without <math>2</math>, and the sum of the even divisors is the sum of the odds subtracted by the total sum of divisors. 
+
+BY SUM OF FACTORS FORMULA (search it up if you don't know): 
+The formula is actually for all factors, but we can just take out the <math>2^3</math>, so we have:
+
+The sum of odd divisors is given by <cmath>a = (1+3+3^2 + 3^3 + 3^4 + 3^5)(1 + 5)(1+7)(1+17+17^2)</cmath> and the total sum of divisors is <cmath>(1+2+4+8)(1+3+3^2 + 3^3 + 3^4 + 3^5)(1 + 5)(1+7)(1+17+17^2) = 15a.</cmath> Thus, our ratio is <cmath>\frac{a}{15a-a} = \frac{a}{14a} = \boxed{\textbf{(C)}
+
+--- Solution 3 ---
+Prime factorizing <math>N</math>, we have that there is <math>2^3</math> in our factorization. Now, call the sum of the odd divisors <math>k</math>. We know that if we multiply k by 2, we will have even divisors. So, we can multiply k by 2, <math>2^2, 2^3</math> respectively to get 14k as the sum of the even divisors. Therefore, the answer is <cmath>\frac{k}{14k} = \boxed{\textbf{(C)}
+
+
+=== Problem 13 ===
+Let
+
+Choices: {'A': '~10', 'B': '~11', 'C': '~13', 'D': '~15', 'E': '~16</math>'}
+Answer: B
+
+--- Solution 1 ---
+We can start by setting up an equation to convert <math>\underline{32d}</math> base <math>n</math> to base 10. To convert this to base 10, it would be <math>3{n}^2+2n+d.</math> Because it is equal to 263, we can set this equation to 263. Finally, subtract <math>d</math> from both sides to get <math>3{n}^2+2n = 263-d</math>.
+
+We can also set up equations to convert <math>\underline{324}</math> base <math>n</math> and <math>\underline{11d1}</math> base 6 to base 10. The equation to covert <math>\underline{324}</math> base <math>n</math> to base 10 is <math>3{n}^2+2n+4.</math> The equation to convert <math>\underline{11d1}</math> base 6 to base 10 is <math>{6}^3+{6}^2+6d+1.</math>
+
+Simplify <math>{6}^3+{6}^2+6d+1</math> so it becomes <math>6d+253.</math> Setting the above equations equal to each other, we have 
+<cmath>3{n}^2+2n+4 = 6d+253.</cmath> 
+Subtracting 4 from both sides gets <math>3{n}^2+2n = 6d+249.</math>
+
+We can then use equations
+<cmath>3{n}^2+2n = 263-d</cmath>
+<cmath>3{n}^2+2n = 6d+249</cmath>
+to solve for <math>d</math>. Set <math>263-d</math> equal to <math>6d+249</math> and solve to find that <math>d=2</math>.
+
+Plug <math>d=2</math> back into the equation <math>3{n}^2+2n = 263-d</math>. Subtract 261 from both sides to get your final equation of <math>3{n}^2+2n-261 = 0.</math> We solve using the quadratic formula to find that the solutions are <math>9</math> and <math>-29/3.</math> Because the base must be positive, <math>n=9.</math>
+
+Adding 2 to 9 gets <math>\boxed{\textbf{(B)} 
+-Zeusthemoose (edited for readability)
+-solution corrected by Billowingsweater
+
+--- Solution 2 ---
+<math>32d</math> is greater than <math>263</math> when both are interpreted in base 10, so <math>n</math> is less than <math>10</math>. Some trial and error gives <math>n=9</math>. <math>263</math> in base 9 is <math>322</math>, so the answer is <math>9+2=\boxed{\textbf{(B)} 
+-SmileKat32
+
+--- Solution 3 ---
+We have
+<cmath>3n^2 + 2n + d = 263</cmath>
+<cmath>3n^2 + 2n + 4 = 6^3 + 6^2 + 6d + 1</cmath>
+Subtracting the 2nd from the 1st equation we get 
+<cmath>\begin{align*}
+d-4 &= 263 - (216 + 36 + 6d + 1) \\
+&= 263 - 253 - 6d \\
+&= 10 - 6d 
+\end{align*}</cmath>
+Thus we have <math>d=2.</math>
+Substituting into the first, we have <math>3n^2 + 2n + 2 = 263 \Rightarrow 3n^2 + 2n - 261 = 0.</math>
+Factoring, we have <math>(n-9)(3n+29)=0.</math>
+A digit cannot be negative, so we have <math>n=9.</math>
+Thus, <math>d+n=2+9=\boxed{\textbf{(B)} 
+mathboy282 signing off
+
+--- Solution 4 ---
+Find that <math>d=2</math> using one of the methods above. Then we have that <math>3n^2 + 2n = 261</math>. We know that <math>n</math> is an integer, so we can solve the equation <math>n(3n+2)=261</math> (this is guaranteed to have a solution if we did this correctly). The prime factorization of <math>261</math> is <math>3^2 \cdot 29</math>, so the corresponding factor pairs are <math>(1, 261)</math>, <math>(3,87)</math>, and <math>(9,29)</math>. If <math>n = 9</math>, then the equation is true, so <math>n + d = 9 + 2 = \boxed{\textbf{(B)} 
+Note: This solution provides an alternate way to complete the final part of the problem if, like me, you really dislike quadratics.
+
+
+=== Problem 14 ===
+Three equally spaced parallel lines intersect a circle, creating three chords of lengths
+
+Choices: {'A': '~5\\frac{1}{2}', 'B': '~6', 'C': '~6\\frac{1}{2}', 'D': '~7', 'E': '~7\\frac{1}{2}</math>'}
+Answer: B
+
+--- Solution 1 ---
+<asy>
+size(8cm);
+pair O = (0, 0), A = (0, 3), B = (0, 9), R = (19, 3), L = (17, 9);
+draw(O--A--B);
+draw(O--R);
+draw(O--L);
+label("$A$", A, NE);
+label("$B$", B, N);
+label("$R$", R, NE);
+label("$L$", L, NE);
+label("$O$", O, S);
+label("$d$", O--A, W);
+label("$2d$", A--B, W);
+label("$r$", O--R, S);
+label("$r$", O--L, NW);
+dot(O);
+dot(A);
+dot(B);
+dot(R);
+dot(L);
+
+draw(circle((0, 0), sqrt(370)));
+draw(-R -- (R.x, -R.y));
+draw((-R.x, R.y) -- R);
+draw((-L.x, L.y) -- L);
+</asy>
+
+
+
+Since two parallel chords have the same length (<math>38</math>), they must be equidistant from the center of the circle. Let the perpendicular distance of each chord from the center of the circle be <math>d</math>. Thus, the distance from the center of the circle to the chord of length <math>34</math> is 
+
+<cmath>2d + d = 3d</cmath>
+
+and the distance between each of the chords is just <math>2d</math>. Let the radius of the circle be <math>r</math>. Drawing radii to the points where the lines intersect the circle, we create two different right triangles: 
+
+- One with base <math>\frac{38}{2}= 19</math>, height <math>d</math>, and hypotenuse <math>r</math>  (<math>\triangle RAO</math> on the diagram)
+
+- Another with base <math>\frac{34}{2} = 17</math>, height <math>3d</math>, and hypotenuse <math>r</math>  (<math>\triangle LBO</math> on the diagram)
+
+By the Pythagorean theorem, we can create the following system of equations:
+
+<cmath>19^2 + d^2 = r^2</cmath>
+
+<cmath>17^2 + (2d + d)^2 = r^2</cmath>
+
+Solving, we find <math>d = 3</math>, so <math>2d = \boxed{\textbf{(B)}\ 6}</math>.
+
+--- Solution 2 ---
+Because we know that the equation of a circle is <math>(x-a)^2 + (y-b)^2 = r^2</math> where the center of the circle is <math>(a, b)</math> and the radius is <math>r</math>, we can find the equation of this circle by centering it on the origin. Doing this, we get that the equation is <math>x^2 + y^2 = r^2</math>. Now, we can set the distance between the chords as <math>2d</math> so the distance from the chord with length <math>38</math> to the diameter is <math>d</math>. 
+
+Therefore, the following points are on the circle as the y-axis splits the chord in half, that is where we get our <math>x</math> value:
+
+<math>(19, d)</math>
+
+<math>(19, -d)</math>
+
+<math>(17, -3d)</math>
+
+
+Now, we can plug one of the first two value in as well as the last one to get the following equations:
+
+<cmath>19^2 + d^2 = r^2</cmath>
+
+<cmath>17^2 + (3d)^2 = r^2</cmath>
+
+Subtracting these two equations, we get <math>19^2 - 17^2 = 8d^2</math> - therefore, we get <math>72 = 8d^2 \rightarrow d^2 = 9 \rightarrow d = 3</math>. We want to find <math>2d = 6</math> because that's the distance between two chords. So, our answer is <math>\boxed{B}</math>.
+
+--- Solution 3 ---
+<asy>
+real r=sqrt(370);
+draw(circle((0, 0), r));
+pair A = (-19, 3);
+pair B = (19, 3);
+draw(A--B);
+pair C = (-19, -3);
+pair D = (19, -3);
+draw(C--D);
+pair E = (-17, -9);
+pair F = (17, -9);
+draw(E--F);
+pair O = (0, 0);
+pair P = (0, -3);
+pair Q = (0, -9);
+draw(O--Q);
+draw(O--C);
+draw(O--D);
+draw(O--E);
+draw(O--F);
+label("$O$", O, N);
+label("$C$", C, SW);
+label("$D$", D, SE);
+label("$E$", E, SW);
+label("$F$", F, SE);
+label("$P$", P, SW);
+label("$Q$", Q, S);
+</asy>
+If <math>d</math> is the requested distance, and <math>r</math> is the radius of the circle, Stewart's Theorem applied to <math>\triangle OCD</math> with cevian <math>\overleftrightarrow{OP}</math> gives <cmath>19\cdot 38\cdot 19 + \tfrac{1}{2}d\cdot 38\cdot\tfrac{1}{2}d=19r^{2}+19r^{2}.</cmath> This simplifies to <math>13718+\tfrac{19}{2}d^{2}=38r^{2}</math>. Similarly, another round of Stewart's Theorem applied to <math>\triangle OEF</math> with cevian <math>\overleftrightarrow{OQ}</math> gives <cmath>17\cdot 34\cdot 17 + \tfrac{3}{2}d\cdot 34\cdot\tfrac{3}{2}d=17r^{2}+17r^{2}.</cmath> This simplifies to <math>9826+\tfrac{153}{2}d^{2}=34r^{2}</math>. Dividing the top equation by <math>38</math> and the bottom equation by <math>34</math> results in the system of equations 
+<cmath>\begin{align*}
+361+\tfrac{1}{4}d^{2} &= r^{2} \\
+289+\tfrac{9}{4}d^{2} &= r^{2} \\
+\end{align*}</cmath>
+By transitive, <math>361+\tfrac{1}{4}d^{2}=289+\tfrac{9}{4}d^{2}</math>. Therefore <math>(\tfrac{9}{4}-\tfrac{1}{4})d^{2}=361-289\rightarrow 2d^{2}=72\rightarrow d^{2}=36\rightarrow d=\boxed{\textbf{(B)}
+
+
+=== Problem 15 ===
+The real number
+
+Choices: {'A': '~-1', 'B': '~0', 'C': '~1', 'D': '~2', 'E': '~\\sqrt{5}</math>'}
+Answer: B
+
+--- Solution 1 ---
+We square <math>x+\frac{1}{x}=\sqrt5</math> to get <math>x^2+2+\frac{1}{x^2}=5</math>. We subtract 2 on both sides for <math>x^2+\frac{1}{x^2}=3</math> and square again, and see that <math>x^4+2+\frac{1}{x^4}=9</math> so <math>x^4+\frac{1}{x^4}=7</math>. We can factor out <math>x^7</math> from our original expression of <math>x^{11}-7x^7+x^3</math> to get that it is equal to <math>x^7(x^4-7+\frac{1}{x^4})</math>. Therefore because <math>x^4+\frac{1}{x^4}</math> is 7, it is equal to <math>x^7(0)=\boxed{\textbf{(B) } 0}</math>.
+
+--- Solution 2 ---
+Multiplying both sides by <math>x</math> and using the quadratic formula, we get <math>\frac{\sqrt{5} \pm 1}{2}</math>. We can assume that it is <math>\frac{\sqrt{5}+1}{2}</math>, and notice that this is the golden mean <math>\varphi</math>, which is well-known to be a solution the equation <math>x^2-x-1=0</math>, i.e. we have <math>x^2=x+1</math>. Repeatedly using this on the given (you can also just note Fibonacci numbers), 
+<cmath> \begin{align*} 
+(x^{11})-7x^7+x^3 &= (x^{10}+x^9)-7x^7+x^3 \\
+&=(2x^9+x^8)-7x^7+x^3 \\
+&=(3x^8+2x^7)-7x^7+x^3 \\
+&=(3x^8-5x^7)+x^3 \\
+&=(-2x^7+3x^6)+x^3 \\
+&=(x^6-2x^5)+x^3 \\
+&=(-x^5+x^4+x^3) \\
+&=-x^3(x^2-x-1) = \boxed{\textbf{(B) } 0}
+\end{align*}</cmath>
+
+--- Solution 3 ---
+We can immediately note that the exponents of <math>x^{11}-7x^7+x^3</math> are an arithmetic sequence, so they are symmetric around the middle term. So, <math>x^{11}-7x^7+x^3 = x^7(x^4-7+\frac{1}{x^4})</math>. We can see that since <math>x+\frac{1}{x} = \sqrt{5}</math>, <math>x^2+2+\frac{1}{x^2} = 5</math> and therefore <math>x^2+\frac{1}{x^2} = 3</math>. Continuing from here, we get <math>x^4+2+\frac{1}{x^4} = 9</math>, so <math>x^4-7+\frac{1}{x^4} = 0</math>. We don't even need to find what <math>x^7</math> is! This is since <math>x^7\cdot0</math> is evidently <math>\boxed{\textbf{(B) } 0}</math>, which is our answer.
+
+--- Solution 4 ---
+We begin by multiplying <math>x+\frac{1}{x} = \sqrt{5}</math> by <math>x</math>, resulting in <math>x^2+1 = \sqrt{5}x</math>. Now we see this equation: <math>x^{11}-7x^{7}+x^3</math>. The terms all have <math>x^3</math> in common, so we can factor that out, and what we're looking for becomes <math>x^3(x^8-7x^4+1)</math>. Looking back to our original equation, we have <math>x^2+1 = \sqrt{5}x</math>, which is equal to <math>x^2 = \sqrt{5}x-1</math>. Using this, we can evaluate <math>x^4</math> to be <math>5x^2-2\sqrt{5}x+1</math>, and we see that there is another <math>x^2</math>, so we put substitute it in again, resulting in <math>3\sqrt{5}x-4</math>. Using the same way, we find that <math>x^8</math> is <math>21\sqrt{5}x-29</math>. We put this into <math>x^3(x^8-7x^4+1)</math>, resulting in <math>x^3(0)</math>, so the answer is <math>\boxed{(B)
+
+--- Solution 5 ---
+The equation we are given is <math>x+\tfrac{1}{x}=\sqrt{5}...</math> Yuck. Fractions and radicals! We multiply both sides by <math>x,</math> square, and re-arrange to get <cmath>x^2+1=\sqrt{5}x \implies x^4+2x^2+1=5x^2 \implies x^4-3x^2+1=0.</cmath> Now, let us consider the expression we wish to acquire. Factoring out <math>x^3,</math> we have <cmath>x^3\left(x^8-7x^4+1\right) = x^3\left(x^8+2x^4+1-9x^4\right).</cmath> Then, we notice that <math>x^8+2x^4+1=\left(x^4+1\right)^2.</math> Furthermore, <cmath>x^4+1=3x^2 \implies \left(x^4+1\right)^2=x^8+2x^4+1=9x^4.</cmath> Thus, our answer is <cmath>x^3\left(9x^4-9x^4\right) = x^3 \cdot 0 = \boxed{\textbf{(B)}}
+
+--- Solution 6 ---
+Multiplying by x and solving, we get that <math>x = \frac{\sqrt{5} \pm 1}{2}.</math> Note that whether or not we take <math>x = \frac{\sqrt{5} + 1}{2}</math> or we take <math>\frac{\sqrt{5} - 1}{2},</math> our answer has to be the same. Thus, we take <math>x = \frac{\sqrt{5} - 1}{2} \approx 0.62</math>. Since this number is small, taking it to high powers like <math>11</math>, <math>7</math>, and <math>3</math> will make the number very close to <math>0</math>, so the answer is <math>\boxed{(B)
+
+--- Solution 7 ---
+We know that <math>x+\frac{1}{x}=\sqrt{5}</math>. Multiply both sides by <math>x</math> to get <math>x^2+1=x\sqrt{5}</math>
+Squaring both sides: <cmath>x^4+2x^2+1=5x^2</cmath>
+Subtract <math>2x^2</math> from both sides: <cmath>x^4+1=3x^2</cmath>
+Squaring both sides: <cmath>x^8+2x^4+1=9x^4</cmath>
+Subtract <math>9x^4</math> from both sides: <cmath>x^8-7x^4+1=0</cmath>
+Multiply <math>x^3</math> on both sides: <cmath>x^{11}-7x^7+x^3=\fbox{(B) 0}</cmath>
+
+--- Solution 8 ---
+Squaring <math>x+\frac{1}{x}=\sqrt{5}</math> yields <math>x^2+2+\frac{1}{x^2}=5</math>. We subtract <math>2</math> from both sides, yielding <math>x^2+\frac{1}{x^2}=3</math>, and, squaring again, we end up with <math>x^4+2+\frac{1}{x^4}=9</math>. Subtracting <math>2</math> from both sides again, we end up with <math>x^4+\frac{1}{x^4}=7</math>. Observe that <math>7</math> is the coefficient of the <math>x^7</math> term in our second equation, <math>x^{11}-7x^{7}+x^3</math>. We can now substitute <math>x^4+\frac{1}{x^4}</math> into the second equation to result in <math>x^{11}-\left(x^4+\frac{1}{x^4}\right)x^{7}+x^3</math>. Multiplying the middle term out yields <math>x^{11}-x^{11}-x^{3}+x^{3}</math>, and all of the terms cancel out. Therefore, the answer is <math>\boxed{(B)
+
+
+=== Problem 16 ===
+Call a positive integer an uphill integer if every digit is strictly greater than the previous digit. For example,
+
+Choices: {'A': '~4', 'B': '~5', 'C': '~6', 'D': '~7', 'E': '~8</math>'}
+Answer: C
+
+--- Solution 1 ---
+The divisibility rule of <math>15</math> is that the number must be congruent to <math>0</math> mod <math>3</math> and congruent to <math>0</math> mod <math>5</math>. Being divisible by <math>5</math> means that it must end with a <math>5</math> or a <math>0</math>. We can rule out the case when the number ends with a <math>0</math> immediately because the only integer that is uphill and ends with a <math>0</math> is <math>0</math> which is not positive. So now we know that the number ends with a <math>5</math>. Looking at the answer choices, the answer choices are all pretty small, so we can generate all of the numbers that are uphill and are divisible by <math>3</math>. These numbers are <math>15, 45, 135, 345, 1245, 12345</math>, or <math>\boxed{\textbf{(C)}
+
+--- Solution 2 ---
+First, note how the number must end in either <math>5</math> or <math>0</math> in order to satisfying being divisible by <math>15</math>. However, the number can't end in <math>0</math> because it's not strictly greater than the previous digits. Thus, our number must end in <math>5</math>. We do casework on the number of digits.
+
+<b>Case 1:</b> <math>1</math> digit. No numbers work, so <math>0</math> numbers.
+
+<b>Case 2:</b> <math>2</math> digits. We have the numbers <math>15, 45,</math> and <math>75</math>, but <math>75</math> isn't an uphill number, so <math>2</math> numbers
+
+<b>Case 3:</b> <math>3</math> digits. We have the numbers <math>135, 345</math>, so <math>2</math> numbers.
+
+<b>Case 4:</b> <math>4</math> digits. We have the numbers <math>1235, 1245</math> and <math>2345</math>, but only <math>1245</math> satisfies this condition, so <math>1</math> number.
+
+<b>Case 5:</b> <math>5</math> digits. We have only <math>12345</math>, so <math>1</math> number.
+
+Adding these up, we have <math>2+2+1+1=\boxed{\textbf{(C)}
+
+--- Solution 3 ---
+Like solution 2, we can proceed by using casework. A number is divisible by <math>15</math> if is divisible by <math>3</math> and <math>5.</math> In this case, the units digit must be <math>5,</math> otherwise no number can be formed.
+
+'''Case 1: sum of digits = 6'''
+
+There is only one number, <math>15.</math>
+
+'''Case 2: sum of digits = 9'''
+
+There are two numbers: <math>45</math> and <math>135.</math>
+
+'''Case 3: sum of digits = 12'''
+
+There are two numbers: <math>345</math> and <math>1245.</math>
+
+'''Case 4: sum of digits = 15'''
+
+There is only one number, <math>12345.</math>
+
+We can see that we have exhausted all cases, because in order to have a larger sum of digits, then a number greater than <math>5</math> needs to be used, breaking the conditions of the problem. The answer is <math>\boxed{\textbf{(C)}
+
+--- Solution 4 ---
+An integer is divisible by <math>15</math> if it is divisible by <math>3</math> and <math>5</math>. Divisibility by <math>5</math> means ending in <math>0</math> or <math>5</math>, but since no digit is less than <math>0</math>, the only uphill integer ending in <math>0</math> could be <math>0</math>, which is not positive. This means the integer must end in <math>5</math>.
+
+All uphill integers ending in <math>5</math> are formed by picking any subset of the sequence <math>(1,2,3,4)</math> of digits (keeping their order), then appending a <math>5</math>. Divisibility by <math>3</math> means the sum of the digits is a multiple of <math>3</math>, so our choice of digits must add to <math>0</math> modulo <math>3</math>.
+
+<math>5 \equiv -1 \pmod{3}</math>, so the other digits we pick must add to <math>1</math> modulo <math>3</math>. Since <math>(1,2,3,4) \equiv (1,-1,0,1) \pmod{3}</math>, we can pick either nothing, or one residue <math>1</math> (from <math>1</math> or <math>4</math>) and one residue <math>-1</math> (from <math>2</math>), and we can then optionally add a residue <math>0</math> (from <math>3</math>). This gives <math>(1+2\cdot1)\cdot2 = \boxed{\textbf{(C)}
+~[[User:emerald_block|emerald_block]]
+
+--- Solution 5 ---
+First, by intuition note how the number must end in either <math>5</math> or <math>0</math> in order to satisfying being divisible by <math>15</math>. However, the number can't end in <math>0</math> because it's not greater than the previous digits and it has to be positive. Thus, our number must end in <math>5</math>. Now we can do casework on the number of digits.
+
+<b>Case 1:</b> <math>1</math> digit. Only <math>0</math> is a a <math>1</math> digit number that is divisible by <math>15</math> but it must be positive, so <math>0</math> numbers.
+
+<b>Case 2:</b> <math>2</math> digits. We have to find numbers that end in <math>5</math> and is divisible by <math>3</math>, so we get <math>15, 45,</math> and <math>75</math>, but <math>75</math> isn't an uphill number, so we only have <math>2</math> numbers.
+
+<b>Case 3:</b> <math>3</math> digits. Finding <math>3</math> digits is the same as removing <math>2</math> digits that add to a multiple off <math>3</math> from <math>12345</math>, so we can remove <math>24</math> and <math>15</math> becoming <math>135</math> and <math>234</math> respectively, so we have <math>2</math> numbers.
+
+<b>Case 4:</b> <math>4</math> digits. This is the same as removing one multiple of <math>3</math> from <math>12345</math> so removing <math>3</math> becomes <math>1245</math>, so we have <math>1</math> number.
+
+<b>Case 5:</b> <math>5</math> digits. We have only <math>12345</math>, so <math>1</math> number.
+
+Adding these up, we have <math>2+2+1+1=\boxed{\textbf{(C)} 
+~[[User:T3chn0b14d3|T3CHN0B14D3]]
+
+Note: This is my first solution so please forgive me for any errors, thank you.
+
+
+=== Problem 17 ===
+Ravon, Oscar, Aditi, Tyrone, and Kim play a card game. Each person is given
+
+Choices: {'A': '\\text{Ravon was given card 3.}</math>'}
+Answer: C
+
+--- Solution 1 ---
+By logical deduction, we consider the scores from lowest to highest:
+<cmath>\begin{align*}
+\text{Oscar's score is 4.} &\implies \text{Oscar is given cards 1 and 3.} \\
+&\implies \text{Aditi is given cards 2 and 5.} \\
+&\implies \text{Ravon is given cards 4 and 7.} && (\bigstar) \\
+&\implies \text{Tyrone is given cards 6 and 10.} \\
+&\implies \text{Kim is given cards 8 and 9.}
+\end{align*}</cmath>
+Therefore, the answer is <math>\boxed{\textbf{(C) }\text{Ravon was given card 4.}}</math>
+
+Certainly, if we read the answer choices sooner, then we can stop at <math>(\bigstar)</math> and pick <math>\textbf{(C)}.</math>
+
+--- Solution 2 ---
+Rather than figuring out each person's cards individually, we can use elimination. Let's eliminate answer choices <math>\boxed{\textbf{(B)}}</math> and <math>\boxed{\textbf{(D)}}</math> since if one is true, then the other also must (Aditi's cards add up to <math>7</math>). However, since there is only one solution, it holds true that neither of these can be true. We also know that Oscar's cards added up to 4, and since he can't have two of the same, he must have a <math>1</math> and a <math>3</math>, eliminating <math>\boxed{\textbf{(A)}}</math>. Furthermore, if Tyrone got a <math>9</math>, his other card must be a <math>7</math>, which makes it impossible for Kim to have 17 points with the remaining cards. Thus, the only option remaining is <math>\boxed{\textbf{(C) }\text{Ravon was given card 4.}}</math>
+
+
+=== Problem 18 ===
+A fair
+
+Choices: {'A': '~\\frac{1}{120}', 'B': '~\\frac{1}{32}', 'C': '~\\frac{1}{20}', 'D': '~\\frac{3}{20}', 'E': '~\\frac{1}{6}</math>'}
+Answer: C
+
+--- Solution 1 ---
+Since 3 out of 6 of the numbers are even, there is a <imath>\frac36</imath> chance that the first number we choose is even. 
+
+Since the number rolled first is irrelevant, we don't have to consider it. Therefore there are 2 even numbers out of the 5 choices left. There is a <imath>\frac{2}{5}</imath> chance that the next number that is distinct from the first is even. 
+
+There is a <imath>\frac{1}{4}</imath> chance that the next number distinct from the first two is even. (There is only one even integer left.
+)
+With all the even integers taken, the next integer rolled must be odd.
+
+<imath>\frac{3}{6} \cdot \frac{2}{5} \cdot \frac{1}{4} = \frac{1}{20}</imath>, so the answer is <imath>\boxed{\textbf{(C) }\frac{1}{20}}.</imath>
+
+
+This solution does not explain why the first number is irrelevant.
+
+--- Solution 2 ---
+Every set of three numbers chosen from <math>\{1,2,3,4,5,6\}</math> has an equal chance of being the first 3 distinct numbers rolled.
+
+Therefore, the probability that the first 3 distinct numbers are <math>\{2,4,6\}</math> is <math>\frac{1}{{6 \choose 3}}=\boxed{(C)
+
+--- Solution 3 ---
+Note that the problem is basically asking us to find the probability that in some permutation of <math>1,2,3,4,5,6</math> that we get the three even numbers in the first three spots.
+
+There are <math>6!</math> ways to order the <math>6</math> numbers and <math>3!(3!)</math> ways to order the evens in the first three spots and the odds in the next three spots.
+
+Therefore the probability is <math>\frac{3!(3!)}{6!} = \frac{1}{20} = \boxed{\textbf{(C)}}</math>.
+
+--- Solution 4 ---
+Let <math>P_n</math> denote the probability that the first odd number appears on roll <math>n</math> and all our conditions are met. We now proceed with complementary counting. 
+
+For <math>n \le 3</math>, it's impossible to have all <math>3</math> evens appear before an odd. Note that for <math>n \ge 4,</math> <cmath>P_n = \frac {1}{2^{n}} - \frac {1}{2^{n}} \left(\frac{\binom{3}{2}(2^{n-1}-2)+\binom{3}{1}}{3^{n-1}}\right)</cmath> since there's a <math>\frac {1}{2^{n}}</math> chance that the first odd appears on roll <math>n</math> (disregarding the other conditions) and the other term is subtracting the probability that less than <math>3</math> of the evens show up before the first odd roll. Simplifying, we arrive at <cmath>P_n= \frac {1}{2^{n}} - \left(\frac {3(2^{n-1})-3}{2^{n} \cdot 3^{n-1}}\right) = \frac {1}{2^{n}} - \frac {1}{2 \cdot 3^{n-2}} + \frac{1}{2^{n} \cdot 3^{n-2}}.</cmath>
+
+Summing for all <math>n</math>, we get our answer of <cmath>\left (\frac {1}{2^{4}} + \frac {1}{2^{5}} + ... \right) - \left (\frac {1}{2 \cdot 3^{2}} + \frac {1}{2 \cdot 3^{3}} + ... \right) + \left (\frac {1}{2^{4} \cdot 3^{2}} + \frac {1}{2^{5} \cdot 3^{3}} + ... \right) = \left (\frac {1}{8} \right) - \left(\frac {\frac {1}{18}}{ \frac{2}{3}} \right) + \left(\frac {\frac {1}{144}}{\frac {5}{6}} \right) = \frac {1}{8} - \frac {1}{12} + \frac{1}{120} = \boxed{\textbf{(C) }\frac{1}{20}.}</cmath>
+
+--- Solution 5 ---
+Let <math> E_n </math> be that probability that the condition in the problem is satisfied given that we need <math> n </math> more distinct even numbers. Then, 
+<cmath> E_1=\frac{1}{6}+\frac{1}{3}\cdot E_1+\frac{1}{2}\cdot 0, </cmath>
+since there is a <math> \frac{1}{3} </math> probability that we will roll an even number we already have rolled and will be in the same position again. Solving, we find that <math> E_1=\frac{1}{4} </math>. 
+
+We can apply the same concept for <math> E_2 </math> and <math> E_3 </math>. We find that <cmath> E_2=\frac{1}{3}\cdot E_1+\frac{1}{6}\cdot E_2+\frac{1}{2}\cdot 0, </cmath> and so <math> E_2=\frac{1}{10} </math>. Also, <cmath> E_3=\frac{1}{2}\cdot E_2+\frac{1}{2}\cdot 0, </cmath> so <math> E_3=\frac{1}{20} </math>. Since the problem is asking for <math> E_3 </math>, our answer is <math> \boxed{\textbf{(C) }\frac{1}{20}} </math>. -BorealBear
+
+--- Solution 6 ---
+Let's say that our even integers are found in the first <math>n</math> numbers where n must be greater than or equal to <math>3</math>. Then, we can form an argument based on this. There are <math>3^n</math> total ways to assign even numbers being <math>(</math>2<math>, </math>4<math>, </math>6<math>)</math> to each space. Furthermore, we must subtract the cases where we have only a single even integer present in the total <math>n</math> spaces and the case where there are only <math>2</math> distinct even integers present. There is <math>1</math> way we can have a single even integer in the entire <math>n</math> spaces, therefore giving us just <math>1</math> option for each of the three integers, so we have <math>3</math> total cases for this. Moreover, the amount of cases with just <math>2</math> distinct even integers is <math>2^n</math> but subtract the cases where all of the n spaces is either a single integer giving us <math>2^n-2</math>, but we multiply by <math>3C2</math> because of the ways to choose <math>2</math> distinct even integers that are used in the sequence of <math>n</math>. Finally, we have <math>\sum_{n=3}^{\infty} \frac{(3^n-3-3(2^n-2))}{6^n}</math> note: we must divide all of this by <math>6^n</math> for probability. Additionally, over the entire summation, we multiply by <math>1/2</math> because of the <math>1/2</math> probability of selecting an odd at the end of all the evens. Therefore, if you compute this using infinite geometric sequences, you get <math>1/20</math>. <math>\boxed{\textbf{(C) }\frac{1}{20}.}</math>
+
+--- Solution 7 ---
+We know that the sequence with odd ending will eventually add up to probability 1. 
+
+For every even number appears at least once, let's look at the complementary, i.e. without some even numbers <math>{2, 4, 6}</math>. 
+<math>A = \{ \text{without} 2\}, B = \{ \text{without} 4\}, C = \{ \text{without} 6\}</math>.
+
+<math>1 - A\cup B\cup C = 1 - (A + B + C - A\cap B - B\cap C - A\cap C + A\cap B\cap C)</math>
+
+Let <math>f(x) = \frac{1}{2} + x\frac{1}{2} + x^2\frac{1}{2} + \ldots = \frac{1}{2} \frac{1}{1-x}</math>
+
+2 even numbers left <math>|A|=|B|=|C|: f(\frac{2}{6}) = \frac{1}{2} \frac{1}{1-\frac{1}{3}} = \frac{3}{4}</math>,
+
+1 even number left <math>|A\cap B| = |B\cap C| = |A\cap C|: f(\frac{1}{6}) = \frac{1}{2} \frac{1}{1-\frac{1}{6}} = \frac{3}{5}</math>
+
+0 even number left <math>|A\cap B\cap C|: f(0) = \frac{1}{2}</math>
+
+ans <math>= 1 - A\cup B\cup C = 1- (\frac{3}{4} * 3 - \frac{3}{5} * 3 + \frac{1}{2}) = \frac{1}{20}</math>
+
+--- Solution 8 ---
+We don't care what happens after we pick the first three distinct even numbers. This can be done is <math>3! = 6</math> ways. Totally there are <math>6 \cdot 5 \cdot 4</math> ways to pick three distinct numbers. So the answer is <math>\frac{6}{6\cdot5\cdot4} = \frac{1}{20}</math>.
+
+--- Solution 9 ---
+We can use complementary counting for this problem by eliminating the chances that we get 0,1, and 2 even numbers before the odd number. To get 0 even numbers before the odd number has a probability of 3/6 or 1/2. To get 1 even number before the odd number has a probability of 3/6*3/5 which is 3/10 (0.3). To get the probability of 2 even numbers before the odd number it is 3/6*2/5*3/4 which is 3/20 (0.15). Now we eliminate all of these cases to get the answer to the question by doing 1-(0.5+0.3+0.15) which is equal to 0.05 or 1/20 so the answer is C 1/20
+
+--- Solution 10 ---
+We can first try to find an expression for, given <math>n</math> dice rolls, the probability that it contains only all the even digits. Firstly, we know that it must be <math>\frac{1}{2^{n}}\cdot</math>(the probability that it contains only even digits). 
+We can do complementary counting to find an expression for the probability that it contains all digits. For all the cases where the sequence does not contain all digits, we know that it must be a sequence of two digits, each one being one or the other. This works out to <math>2^{n}</math>, but it has to be multiplied by 3 (for the 3 possible choices of 2 digits) and have 3 subtracted from it (because we will double count the cases where it's only one digit repeated). Then, we can put it over the total number of cases, <math>3^{n}</math>. 
+
+This gives <math>1 - \frac{3\cdot2^{n}-3}{3^{n}} = 1 - \frac{2^{n}-1}{3^{n-1}} = \frac{3^{n-1}-2^{n}+1}{3^{n-1}}</math>
+We can then multiply this by the probability that it contains only even digits, giving <math>\frac{3^{n-1}-2^{n}+1}{3^{n-1}\cdot2^{n}}</math>. We still need to make sure we don't double count, as we don't explicitly state that the next digit will be odd. So, the final answer will be the result of <math>\sum_{n=3}^{\infty}\frac{3^{n-1}-2^{n}+1}{3^{n-1}\cdot2^{n+1}}</math>
+
+We can continue to simplify the expression to <math>\sum_{n=3}^{\infty} \frac{3^n\cdot\frac{1}{3}-2^n+1}{3^n\cdot 2^n\cdot \frac{2}{3}} = \frac{3}{2} \cdot\sum_{n=3}^{\infty} \frac{\frac{1}{3}\cdot 3^n-2^n+1}{6^n}</math>. 
+
+This becomes the sum <math>\frac{3}{2} \cdot \sum_{n=3}^{\infty} \frac{1}{3} \cdot \frac{1}{2^n} - \frac{1}{3^n} + \frac{1}{6^n}</math>, which is <math>\frac{3}{2} \cdot (\frac{1}{12} - \frac{1}{18} + \frac{1}{180}) = \frac{3}{2}\cdot\frac{1}{30} = \boxed{\textbf{(C) }\frac{1}{20}}</math>
+
+--- Solution 11 ---
+We need to have every even number from <math>1</math> to <math>6</math> at least once before we get an odd number. We find that the probability of the first number being even is <math>\dfrac{3}{6} = \dfrac{1}{2}</math>. Regardless of what the first number is, the probability of the second number being distinct and even is <math>\dfrac{2}{5}</math>, because now only <math>2</math> even numbers are left. Next, the probability of the third number being even and distinct is <math>\dfrac{1}{4}</math>. The final number must be odd, and it can be any of the <math>3</math> odd numbers, thus <math>\dfrac{1}{2}</math>. Multiplying these all out yields <math>\dfrac{1}{2} \cdot \dfrac{2}{5} \cdot \dfrac{1}{4} \cdot \dfrac{1}{2} = \dfrac{1}{40}</math>. Now, this is the probability that all even numbers appear exactly once before the odd number, and we haven't accounted for the fact that an even number could appear more than once. Since any even number can appear more than once, we multiply <math>\dfrac{1}{40}</math> by <math>\dfrac{1}{2}</math>. We could keep multiplying by <math>\dfrac{1}{2}</math> infinitely before we get an odd number, thus we use the infinite geometric sequence sum formula (we could have <math>3</math> even numbers, all the way to <math>\infty</math> even numbers before we get our first odd number, so that's why we're summing the probabilities). Our first term, <math>a_1</math> is <math>\dfrac{1}{40}</math>, and the common ratio is <math>\dfrac{1}{2}</math>. Plugging it into the formula <math>\dfrac{a_1}{1-r}</math>, we get <math>\dfrac{\dfrac{1}{40}}{1-\dfrac{1}{2}} = \dfrac{\dfrac{1}{40}}{\dfrac{1}{2}} = \dfrac{1}{40} \cdot 2 = \dfrac{1}{20}</math>, and we are done. Therefore, our answer is <math>\boxed{\textbf{(C) }\frac{1}{20}.}</math>
+
+
+=== Problem 19 ===
+Suppose that
+
+Choices: {'A': '36.2', 'B': '36.4', 'C': '36.6', 'D': '36.8', 'E': '37</math>'}
+Answer: C
+
+--- Solution 1 ---
+We can then say that \( \frac{A+S(n)}{n+1} = 32 \), \( \frac{S(n)}{n} = 35 \), and \( \frac{B+S(n)}{n+1} = 40 \). 
+
+Expanding gives us \( A+S(n) = 32n+32 \), \( S(n) = 35n \), and \( B+S(n) = 40n+40 \). 
+
+Substituting \( S(n) = 35n \) to all gives us \( A+35n=32n+32 \) and \( B+35n=40n+40 \). 
+
+Solving for \( A \) and \( B \) gives \( A=-3n+32 \) and \( B = 5n+40 \). 
+
+We now need to find \( \frac{S(n)+A+B}{n+2} \). We substitute everything to get \( \frac{35n+(-3n+32)+(5n+40)}{n+2} \), or \( \frac{37n+72}{n+2} \). 
+
+Say that the answer to this is \( Z \). Then, \( Z \) needs to be a number that makes \( n \) a positive integer. The only options that work is <math>\boxed{\textbf{(C) }36.6}</math> and <math>\boxed{\textbf{(D) }36.8}</math>. 
+
+However, if 36.6 is an option, we get \( n=3 \). So that means that \(A\) is \(23\) and \(B\) is \(55\), and \( S(n)=105 \). But if there is \(3\) terms, then the middle number is \(105\), but we said that \( B \) is the largest number in the set, so therefore our answer cannot be <math>\boxed{\textbf{(C) }36.6}</math> and is instead <math>\boxed{\textbf{(D) }36.8}</math> and now, we're finished!
+
+
+===Solution 1 Alternative Ending===
+If A is smaller than B by 72 therefore from the equation on the top you can find out that \(N = 8\) using substitution the plug it in to the equation \( \frac{37n+72}{n+2} \) then you will get that Z = <math>\boxed{\textbf{(D) }36.8}</math>. 
+
+This was more efficient then the last part.
+
+--- Solution 2 ---
+Let the lowest value be <math>L</math> and the highest <math>G</math>, and let the sum be <math>Z</math> and the amount of numbers <math>n</math>. We have <math>\frac{Z-G}{n-1}=32</math>, <math>\frac{Z-L-G}{n-2}=35</math>, <math>\frac{Z-L}{n-1}=40</math>, and <math>G=L+72</math>. Clearing denominators gives <math>Z-G=32n-32</math>, <math>Z-L-G=35n-70</math>, and <math>Z-L=40n-40</math>. We use <math>G=L+72</math> to turn the first equation into <math>Z-L=32n+40</math>. Since <math>Z-L=40(n-1)</math> we substitute it into the equation which gives <math>n=10</math>. Turning the second into <math>Z-2L=35n+2</math> using <math>G=L+72</math> we see <math>L=8</math> and <math>Z=368</math> so the average is <math>\frac{Z}{n}=\boxed{\textbf{(D) }36.8}</math>
+
+--- Solution 3 ---
+Let <math>x</math> be the greatest integer, <math>y</math> be the smallest, <math>z</math> be the sum of the numbers in S excluding <math>x</math> and <math>y</math>, and <math>k</math> be the number of elements in S.
+
+Then, <math>S=x+y+z</math>
+
+First, when the greatest integer is removed, <math>\frac{S-x}{k-1}=32</math>
+
+When the smallest integer is also removed, <math>\frac{S-x-y}{k-2}=35</math>
+
+When the greatest integer is added back, <math>\frac{S-y}{k-1}=40</math>
+
+We are given that <math>x=y+72</math>
+
+
+After you substitute <math>x=y+72</math>, you have 3 equations with 3 unknowns <math>S,</math>, <math>y</math> and <math>k</math>.
+
+<math>S-y-72=32k-32</math>
+
+<math>S-2y-72=35k-70</math>
+
+<math>S-y=40k-40</math>
+
+This can be easily solved to yield <math>k=10</math>, <math>y=8</math>, <math>S=368</math>.
+
+<math>\therefore</math> average value of all integers in the set <math>=S/k = 368/10 = \boxed{\textbf{(D) }36.8}</math>
+
+--- Solution 4 ---
+We should plug in <math>36.2</math> and assume everything is true except the <math>35</math> part. We then calculate that part and end up with <math>35.75</math>. We also see with the formulas we used with the plug in that when you increase by <math>0.2</math> the <math>35.75</math> part decreases by <math>0.25</math>. The answer is then <math>\boxed{\textbf{(D) }36.8}</math>. You can work backwards because it is multiple choice and you don't have to do critical thinking.
+
+--- Solution 5 ---
+Let <math>S = \{a_1, a_2, a_3, \hdots, a_n\}</math> with <math>a_1 < a_2 < a_3 < \hdots < a_n.</math> We are given the following: <cmath>{\begin{cases} \sum_{i=1}^{n-1} a_i = 32(n-1) = 32n-32, \\ \sum_{i=2}^n a_i = 40(n-1) = 40n-40, \\ \sum_{i=2}^{n-1} a_i = 35(n-2) = 35n-70, \\ a_n-a_1 = 72 \implies a_1 + 72 = a_n. \end{cases}}</cmath> Subtracting the third equation from the sum of the first two, we find that <cmath>\sum_{i=1}^n a_i = \left(32n-32\right) + \left(40n-40\right) - \left(35n-70\right) = 37n - 2.</cmath> Furthermore, from the fourth equation, we have <cmath>\sum_{i=2}^{n} a_i - \sum_{i=1}^{n-1} a_i = \left[\left(a_1 + 72\right) + \sum_{i=2}^{n-1} a_i\right] - \left[\left(a_1\right) + \sum_{i=2}^{n-1} a_i\right] = \left(40n-40\right)-\left(32n-32\right).</cmath> Combining like terms and simplifying, we have <cmath>72 = 8n-8 \implies 8n = 80 \implies n=10.</cmath> Thus, the sum of the elements in <math>S</math> is <math>37 \cdot 10 - 2 = 368,</math> and since there are 10 elements in <math>S,</math> the average of the elements in <math>S</math> is <math>\tfrac{368}{10}=\boxed{\textbf{(D) }36.8}</math>
+
+--- Solution 6 ---
+Let <math>n</math> be the number of elements in <math>S, m_l = 32, \Sigma_l = m_l \cdot (n-1), m_g = 40,  \Sigma_g = m_g \cdot (n-1), m_{lg} = 35,  \Sigma_lg = m_{lg} \cdot (n-2).</math>
+<cmath>\Sigma_g - \Sigma_l = 72 = (n-1) \cdot (m_g - m_l) \implies n = 1 + \frac {72}{m_g - m_l} = 1 + \frac {72}{40-32}=10.</cmath>
+<cmath>m = \frac {\Sigma_g + \Sigma_l - \Sigma_{lg}}{n} = \frac {40 \cdot 9 + 32 \cdot 9 - 35 \cdot 8}{10} = 36.8.</cmath>
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+
+=== Problem 20 ===
+The figure is constructed from
+
+Choices: {'A': '~20', 'B': '~21', 'C': '~22', 'D': '~23', 'E': '~24</math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy>
+/* Made by samrocksnature, adapted by Tucker, then adjusted by samrocksnature again, then adjusted by erics118 xD*/
+pair A=(-2.4638,4.10658);
+pair B=(-4,2.6567453480756127);
+pair C=(-3.47132,0.6335248637894945);
+pair D=(-1.464483379039766,0.6335248637894945);
+pair E=(-0.956630463955801,2.6567453480756127);
+pair F=(-1.85,2);
+pair G=(-3.1,2);
+draw(A--G--A--F, lightgray);
+draw(B--F--C, lightgray);
+draw(E--G--D, lightgray);
+dot(F^^G, lightgray);
+draw(A--B--C--D--E--A);
+draw(A--C--A--D);
+label("A",A,N);
+label("B",B,W);
+label("C",C,S);
+label("D",D,S);
+label("E",E,dir(0));
+dot(A^^B^^C^^D^^E);
+</asy>
+
+Draw diagonals <math>AC</math> and <math>AD</math> to split the pentagon into three parts. We can compute the area for each triangle and sum them up at the end. For triangles <math>ABC</math> and <math>ADE</math>, they each have area <math>2\cdot\frac{1}{2}\cdot\frac{4\sqrt{3}}{4}=\sqrt{3}</math>. For triangle <math>ACD</math>, we can see that <math>AC=AD=2\sqrt{3}</math> and <math>CD=2</math>. Using Pythagorean Theorem, the altitude for this triangle is <math>\sqrt{11}</math>, so the area is <math>\sqrt{11}</math>. Adding each part up, we get <math>2\sqrt{3}+\sqrt{11}=\sqrt{12}+\sqrt{11} \implies \boxed{\textbf{(D)} 
+Note: Another easier way to find the areas would be to use the formula <math>A=\frac12ab\sin C</math> - erringbubble
+
+
+=== Problem 21 ===
+A square piece of paper has side length
+
+Choices: {'A': '~2', 'B': '~1+\\frac{2}{3}\\sqrt{3}', 'C': '~\\frac{13}{6}', 'D': '~1 + \\frac{3}{4}\\sqrt{3}', 'E': '~\\frac{7}{3}'}
+Answer: A
+
+--- Solution 1 ---
+We can set the point on <math>CD</math> where the fold occurs as point <math>F</math>. Then, we can set <math>FD</math> as <math>x</math>, and <math>CF</math> as <math>1-x</math> because of symmetry due to the fold. It can be recognized that this is a right triangle, and solving for <math>x</math>, we get, 
+
+<cmath>x^2 + \left(\frac{1}{3}\right)^2 = (1-x)^2 \rightarrow x^2 + \frac{1}{9} = x^2 - 2x + 1 \rightarrow x=\frac{4}{9}</cmath>
+
+We know this is a 3-4-5 triangle because the side lengths are <math>\frac{3}{9}, \frac{4}{9}, \frac{5}{9}</math>. We also know that <math>EAC'</math> is similar to <math>C'DF</math> because angle <math>EC'F</math> is a right angle. Now, we can use similarity to find out that the perimeter is just the perimeter of <math>C'DF \times \frac{AC'}{DF}</math>. That's just <math>\frac{4}{3} \times \frac{\frac{2}{3}}{\frac{4}{9}} = \frac{4}{3} \times \frac{3}{2} = 2</math>. Therefore, the final answer is <math>\boxed{\textbf{(A)}
+
+--- Solution 2 ---
+Let the line we're reflecting over be <math>\ell</math>, and let the points where it hits <math>AB</math> and <math>CD</math>, be <math>M</math> and <math>N</math>, respectively. Notice, to reflect over a line we find the perpendicular passing through the midpoint of the two points (which are the reflected and the original). So, we first find the equation of the line <math>\ell</math>. The segment <math>CC'</math> has slope <math>\frac{0 - 1}{1 - 2/3} = -3</math>, implying line <math>\ell</math> has a slope of <math>\frac{1}{3}</math>. Also, the midpoint of segment <math>CC'</math> is <math>\left( \frac{5}{6}, \frac{1}{2} \right)</math>, so line <math>\ell</math> passes through this point. Then, we get the equation of line <math>\ell</math> is simply <math>y = \frac{1}{3} x + \frac{2}{9}</math>. Then, if the point where <math>B</math> is reflected over line <math>\ell</math> is <math>B'</math>, then we get <math>BB'</math> is the line <math>y = -3x</math>. The intersection of <math>\ell</math> and segment <math>BB'</math> is <math>\left( - \frac{1}{15}, \frac{1}{5} \right)</math>. So, we get <math>B' = \left(- \frac{2}{15}, \frac{2}{5} \right)</math>. Then, line segment <math>B'C'</math> has equation <math>y = \frac{3}{4} x + \frac{1}{2}</math>, so the point <math>E</math> is the <math>y</math>-intercept, or <math>\left(0, \frac{1}{2} \right)</math>. This implies that <math>AE = \frac{1}{2}, AC' = \frac{2}{3}</math>, and by the Pythagorean Theorem, <math>EC' = \frac{5}{6}</math> (or you could notice <math>\triangle AEC'</math> is a <math>3-4-5</math> right triangle). Then, the perimeter is <math>\frac{1}{2} + \frac{2}{3} + \frac{5}{6} = 2</math>, so our answer is <math>\boxed{\textbf{(A)} 
+==Solution 3 (Fakesolve):==
+Assume that E is the midpoint of <math>\overline{AB}</math>. Then, <math>\overline{AE}=\frac{1}{2}</math> and since <math>C'D=\frac{1}{3}</math>, <math>\overline{AC'}=\frac{2}{3}</math>. By the Pythagorean Theorem, <math>\overline{EC'}=\frac{5}{6}</math>. It easily follows that our desired perimeter is <math>\boxed{\textbf{(A)} 
+Note: This method is only correct because it turns out that <math>AE</math> does in fact equal <math>\frac{1}{2}</math>. However, since it is already given that <math>C'D</math> is <math>\frac{1}{3}</math>. all points are fized and we cannot make any assumptions on <math>AE'</math>s length.
+
+--- Solution 3 ---
+As described in Solution 1, we can find that <math>DF=\frac{4}{9}</math>, and <math>C'F = \frac{5}{9}.</math> 
+
+
+Then, we can find we can find the length of <math>\overline{AE}</math> by expressing the length of <math>\overline{EF}</math> in two different ways, in terms of <math>AE</math>. If let <math>AE = a</math>, by the Pythagorean Theorem we have that <math>EC' = \sqrt{a^2 + \left(\frac{2}{3}\right)^2} = \sqrt{a^2 + \frac{4}{9}}.</math> Therefore, since we know that <math>\angle EC'F</math> is right, by Pythagoras again we have that <math>EF = \sqrt{\left(\sqrt{a^2+\frac{4}{9}}\right)^2 + \left(\frac{5}{9}\right)^2} = \sqrt{a^2 + \frac{61}{81}}.</math>
+
+
+Another way we can express <math>EF</math> is by using Pythagoras on <math>\triangle XEF</math>, where <math>X</math> is the foot of the perpendicular from <math>F</math> to <math>\overline{AE}.</math> We see that <math>ADFX</math> is a rectangle, so we know that <math>AD = 1 = FX</math>. Secondly, since <math>FD = \frac{4}{9}, EX = a - \frac{4}{9}</math>. Therefore, through the Pythagorean Theorem, we find that <math>EF = \sqrt{\left(a-\frac{4}{9}\right)^2 + 1^2} = \sqrt{a^2 - \frac{8}{9}a +\frac{97}{81}}.</math>
+
+Since we have found two expressions for the same length, we have the equation <math>\sqrt{a^2 + \frac{61}{81}} = \sqrt{a^2 - \frac{8}{9}a +\frac{97}{81}}.</math> Solving this, we find that <math>a=\frac{1}{2}</math>.
+
+Finally, we see that the perimeter of <math>\triangle AEC'</math> is <math>\frac{1}{2} + \frac{2}{3} + \sqrt{\left(\frac{1}{2}\right)^2 + \frac{4}{9}},</math> which we can simplify to be <math>2</math>. Thus, the answer is <math>\boxed{\textbf{(A)}
+
+--- Solution 4 ---
+Draw a perpendicular line from <math>\overline{AB}</math> at <math>E</math>, and let it intersect <math>\overline{DC}</math> at <math>E'</math>. The angle between <math>\overline{AB}</math> and <math>\overline{EE'}</math> is <math>2\theta</math>, where <math>\theta</math> is the angle between the fold and a line perpendicular to <math>\overline{AD}</math>. The slope of the fold is <math>\frac{1}{3}</math> because it is perpendicular to <math>\overline{CC'}</math> (<math>\overline{CC'}</math> has a slope of <math>-3</math> using points <math>C'</math> and <math>C</math>, and perpendicular lines have slopes negative inverses of each other). Using tangent double angle formula, the slope of <math>\overline{EC'}</math> is <math>\frac{3}{4}</math>, which implies <math>\overline{AE}</math> = <math>\frac{1}{2}</math>. By the Pythagorean Theorem, <math>\overline{EC'}=\frac{5}{6}</math>. It easily follows that our desired perimeter is <math>\boxed{\textbf{(A)}
+
+--- Solution 5 ---
+It is easy to prove that the ratio of the sum of the larger leg and hypotenuse to the smaller leg depends monotonically on the angle of a right triangle, which means:
+<cmath>C' F + DF = CF + DF = CD = AD = 3 C'D \implies C' D : DF : C' F = 3 : 4 : 5.</cmath>
+
+For a similar triangle, the ratio of the perimeter to the larger leg is <math>\frac {3 + 4 +5}{4} = 3.</math>
+
+<math>\triangle AEC'  \sim \triangle DC'F \implies</math> the perimeter of triangle <math>\bigtriangleup AEC'</math> is <math>3 AC' = \boxed{\textbf{(A)} 
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+
+=== Problem 22 ===
+Ang, Ben, and Jasmin each have
+
+Choices: {'A': '~47', 'B': '~94', 'C': '~227', 'D': '~471', 'E': '~542</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let our denominator be <math>(5!)^3</math>, so we consider all possible distributions.
+
+We use PIE (Principle of Inclusion and Exclusion) to count the successful ones.
+
+When we have at <math>1</math> box with all <math>3</math> blocks the same color in that box, there are <math>_{5} C _{1} \cdot _{5} P _{1} \cdot (4!)^3</math> ways for the distributions to occur (<math>_{5} C _{1}</math> for selecting one of the five boxes for a uniform color, <math>_{5} P _{1}</math> for choosing the color for that box, <math>4!</math> for each of the three people to place their remaining items).
+
+However, we overcounted those distributions where two boxes had uniform color, and there are <math>_{5} C _{2} \cdot _{5} P _{2} \cdot (3!)^3</math> ways for the distributions to occur (<math>_{5} C _{2}</math> for selecting two of the five boxes for a uniform color, <math>_{5} P _{2}</math> for choosing the color for those boxes, <math>3!</math> for each of the three people to place their remaining items).
+
+Again, we need to re-add back in the distributions with three boxes of uniform color... and so on so forth.
+
+Our success by PIE is <cmath>_{5} C _{1} \cdot _{5} P _{1} \cdot (4!)^3 - _{5} C _{2} \cdot _{5} P _{2} \cdot (3!)^3 + _{5} C _{3} \cdot _{5} P _{3} \cdot (2!)^3 - _{5} C _{4} \cdot _{5} P _{4} \cdot (1!)^3 + _{5} C _{5} \cdot _{5} P _{5} \cdot (0!)^3 = 120 \cdot 2556.</cmath>
+<cmath>\frac{120 \cdot 2556}{120^3}=\frac{71}{400},</cmath> yielding an answer of <math>\boxed{\textbf{(D) }471}</math>.
+
+=== Alternate Simplification ===
+As In Solution 1, the probability is
+<cmath>\frac{\binom{5}{1}\cdot 5\cdot (4!)^3 - \binom{5}{2}\cdot 5\cdot 4\cdot (3!)^3 + \binom{5}{3}\cdot 5\cdot 4\cdot 3\cdot (2!)^3 - \binom{5}{4}\cdot 5\cdot 4\cdot 3\cdot 2\cdot (1!)^3 + \binom{5}{5}\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{(5!)^3}</cmath>
+<cmath> = \frac{5\cdot 5\cdot (4!)^3 - 10\cdot 5\cdot 4\cdot (3!)^3 + 10\cdot 5\cdot 4\cdot 3\cdot (2!)^3 - 5\cdot 5! + 5!}{(5!)^3}.</cmath>
+Dividing by <math>5!</math>, we get
+<cmath>\frac{5\cdot (4!)^2 - 10\cdot (3!)^2 + 10\cdot (2!)^2 - 5 + 1}{(5!)^2}.</cmath>
+Dividing by <math>4</math>, we get
+<cmath>\frac{5\cdot 6\cdot 24 - 10\cdot 9 + 10 - 1}{30\cdot 120}.</cmath>
+Dividing by <math>9</math>, we get
+<cmath>\frac{5\cdot 2\cdot 8 - 10 + 1}{10\cdot 40} = \frac{71}{400} \implies \boxed{\textbf{(D) }471}.</cmath>
+
+--- Solution 2 ---
+Use complementary counting. 
+Denote <math>T_n</math> as the total number of ways to put <math>n</math> colors to <math>n</math> boxes by 3 people out of which <math>f_n</math> ways are such that no box has uniform color. Notice <math>T_n = (n!)^3</math>. From this setup we see the question is asking for <math>1-\frac{f_5}{(5!)^3}</math>. To find <math>f_5</math> we want to exclude the cases of a) one box of the same color, b) 2 boxes of the same color, c) 3 boxes of same color, d) 4 boxes of the same color, and e) 5 boxes of the same color. Cases d) and e) coincide. From this, we have
+
+<cmath>f_5=T_5 -{\binom{5}{1}\binom{5}{1}\cdot f_4 - \binom{5}{2}\binom{5}{2}\cdot 2!\cdot f_3 - \binom{5}{3}\binom{5}{3}\cdot 3!\cdot f_2 - 5!}</cmath>
+
+In case b), there are <math>\binom{5}{2}</math> ways to choose 2 boxes that have the same color, <math>\binom{5}{2}</math> ways to choose the two colors, 2! ways to permute the 2 chosen colors, and <math>f_3</math> ways so that the remaining 3 boxes don’t have the same color. The same goes for cases a) and c). In case e), the total number of ways to permute 5 colors is <math>5!</math>. Now, we just need to calculate <math>f_2</math>, <math>f_3</math> and <math>f_4</math>.
+
+We have <math>f_2=T_2-2 = (2!)^3 - 2 = 6</math>, since we subtract the number of cases where the boxes contain uniform colors, which is 2. 
+
+In the same way, <math>f_3=T_3-\Big[3!+ \binom{3}{1}\binom{3}{1}\cdot f_2 \Big] = 156 </math> - again, we must subtract the number of ways at least 1 box has uniform color. There are <math>3!</math> ways if 3 boxes each contains uniform color. Two boxes each contains uniform color is the same as previous. If one box has the same color, there are <math>\binom{3}{1}</math> ways to pick a box, and <math>\binom{3}{1}</math> ways to pick a color for that box, 1! ways to permute the chosen color, and <math>f_2</math> ways for the remaining 2 boxes to have non-uniform colors. Similarly, <math>f_4=(4!)^3-\Big[ 4!+ \binom{4}{2}\binom{4}{2}\cdot 2! \cdot f_2+ \binom{4}{1}\binom{4}{1}\cdot f_3\Big] = 10,872</math>
+
+Thus, <math>f_5 = f_5=(5!)^3-\Big[\binom{5}{1}\binom{5}{1}\cdot f_4+ \binom{5}{2}\binom{5}{2}\cdot 2!\cdot f_3+\binom{5}{3}\binom{5}{3}\cdot 3!\cdot f_2 + 5!\Big] = (5!)^3 - 306,720</math>
+
+Thus, the probability is <math>\frac{306,720}{(5!)^3} = 71/400</math> and the answer is <math>\boxed{\textbf{(D) }471}</math>
+
+-angelinasheeen
+
+--- Solution 3 ---
+WLOG fix which block Ang places into each box. (This can also be thought of as labeling each box by the color of Ang's block.) There are then <math>(5!)^2</math> total possibilities.
+
+As in [[#Solution 1 (Principle of Inclusion-Exclusion)|Solution 1]], we use PIE. With <math>1</math> box of uniform color, there are <math>{}_{5} C _{1} \cdot (4!)^2</math> possibilities (<math>{}_{5} C _{1}</math> for selecting one of the five boxes (whose color is fixed by Ang), <math>4!</math> for each of Ben and Jasmin to place their remaining items). We overcounted cases with <math>2</math> boxes, of which there are <math>{}_{5} C _{2} \cdot (3!)^2</math> possibilities, and so on.
+
+The probability is thus
+<cmath>\frac{{}_{5} C _{1} \cdot (4!)^2 - {}_{5} C _{2} \cdot (3!)^2 + {}_{5} C _{3} \cdot (2!)^2 - {}_{5} C _{4} \cdot (1!)^2 + {}_{5} C _{5} \cdot (0!)^2}{(5!)^2}</cmath>
+<cmath>= \frac{5 \cdot (4!)^2 - 10 \cdot (3!)^2 + 10 \cdot (2!)^2 - 5 + 1}{(5!)^2}</cmath>
+at which point we can proceed as in the [[#Alternate simplification|Alternate simplification]] to simplify to <math>\frac{71}{400} \implies \boxed{\textbf{(D)}
+~[[User:emerald_block|emerald_block]]
+
+--- Solution 4 ---
+<math>!n</math> denotes the number of derangements of <math>n</math> elements, i.e. the number of permutations where no element appears in its original position. Recall the recursive formula <math>!0 = 1, !1 = 0, !n = (n-1)(!(n-1)+{!}(n-2))</math>.
+
+
+We will consider the number of candidate boxes (ones that currently remain uniform-color) after each person places their blocks.
+
+After Ang, all <math>5</math> boxes are candidates, and each has a fixed color its blocks must be to remain uniform-color.
+
+Ben has <math>5!</math> total ways to place blocks. There are <math>\tbinom{5}{k}\cdot{!}k</math> ways to disqualify <math>k</math> candidates, <math>0 \le k \le 5</math>. (There are <math>\tbinom{5}{k}</math> ways to choose the candidates to disqualify, and <math>!k</math> ways to arrange the disqualified candidates' same-color blocks.)
+
+
+Jasmin has <math>5!</math> total ways to place blocks. Currently, <math>k</math> boxes are no longer candidates. Consider the number of ways for Jasmin to place blocks such that no box remains a candidate, where <math>n</math> is the number of boxes and <math>k</math> is the number of non-candidates, and call it <math>D(n,k)</math> (not to be confused with partial derangements). We wish to find <math>5!-D(5,k)</math> for each <math>k</math>, <math>0 \le k \le 5</math>.
+
+Notice that <math>D(n,0) = {!}n</math>, since all boxes are candidates and no block can be placed in the same-colored box. Also notice the recursive formula <math>D(n,k) = D(n-1,k-1)+D(n,k-1)</math>, since the first non-candidate box can either contain its same-color block (in which case it can be ignored), or a different-color block (in which case it can be treated as a candidate).
+
+We can make a table (<math>n</math> horizontal, <math>k</math> vertical):
+<cmath>\begin{array}{r|rrrrrr}
+D(n,k) & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+0 & 1 & 0 & 1 & 2 & 9 & 44 \\
+1 & & 1 & 1 & 3 & 11 & 53 \\
+2 & & & 2 & 4 & 14 & 64 \\
+3 & & & & 6 & 18 & 78 \\
+4 & & & & & 24 & 96 \\
+5 & & & & & & 120 \\
+\end{array}</cmath>
+(Note that <math>D(n,n) = n!</math> since there are no candidates to begin with, which checks out with the diagonal.)
+
+The desired values of <math>D(5,k)</math> are in the rightmost column.
+
+
+The probability that at least one box is of uniform color is thus
+<cmath>\begin{align*}
+& \frac{\sum_{k=0}^{5}{\left(\binom{5}{k}\cdot{!}k\right)(5!-D(5,k))}}{(5!)^2} \\
+={}& \frac{(1\cdot1)(120-44)+(5\cdot0)(120-53)+(10\cdot1)(120-64)+(10\cdot2)(120-78)+(5\cdot9)(120-96)+(1\cdot44)(120-120)}{(5!)^2} \\
+={}& \frac{76+0+560+840+1080+0}{(5!)^2} \\
+={}& \frac{19+140+210+270}{(5!)(5\cdot3\cdot2)} \\
+={}& \frac{639}{(5!)(5\cdot3\cdot2)} \\
+={}& \frac{71}{(5\cdot4\cdot2)(5\cdot2)} \\
+={}& \frac{71}{400} \implies \boxed{\textbf{(D)}
+\end{align*}</cmath>
+
+~[[User:emerald_block|emerald_block]]
+
+
+=== Problem 23 ===
+A square with side length
+
+Choices: {'A': '~64', 'B': '~66', 'C': '~68', 'D': '~70', 'E': '~72</math>'}
+Answer: C
+
+--- Solution 1 ---
+To find the probability, we look at the <math>\frac{\text{success region}}{\text{total possible region}}</math>. For the coin to be completely contained within the square, we must have the distance from the center of the coin to a side of the square to be at least <math>\frac{1}{2}</math>, as it's the radius of the coin. This implies the <math>\text{total possible region}</math> is a square with side length <math>8 - \frac{1}{2} - \frac{1}{2} = 7</math>, with an area of <math>49</math>. Now, we consider cases where needs to land to partially cover a black region.
+
+<b> Near The Center Square </b>
+
+We can have the center of the coin land within <math>\frac{1}{2}</math> outside of the center square, or inside of the center square.  So, we have a region with <math>\frac{1}{2}</math> emanating from every point on the exterior of the square, forming four quarter circles and four rectangles. The four quarter circles combine to make a full circle of radius <math>\frac{1}{2}</math>, so the area is <math>\frac{\pi}{4}</math>. The area of a rectangle is <math>2 \sqrt 2 \cdot \frac{1}{2} = \sqrt 2</math>, so <math>4</math> of them combine to an area of <math>4 \sqrt 2</math>. The area of the black square is simply <math>\left(2\sqrt 2\right)^2 = 8</math>. So, for this case, we have a combined total of <math>8 + 4\sqrt 2 + \frac{\pi}{4}</math>. Onto the second (and last) case.
+
+<b> Near A Triangle </b>
+
+We can also have the coin land within <math>\frac{1}{2}</math> outside of one of the triangles. By symmetry, we can just find the successful region for one of them, then multiply by <math>4</math>. Consider the above diagram. We can draw an altitude from the bottom corner of the square to hit the hypotenuse of the green triangle. The length of this when passing through the black region is <math>\sqrt 2</math>, and when passing through the white region (while being contained in the green triangle) is <math>\frac{1}{2}</math>. However, we have to subtract off when it doesn't pass through the red square. Then, it's the hypotenuse of a small isosceles right triangle with side lengths of <math>\dfrac{1}{2}</math> which is <math>\dfrac{\sqrt{2}}{2}.</math> So, the altitude of the green triangle is <math>\sqrt 2 + \frac{1}{2} - \frac{\sqrt 2}{2} = \frac{\sqrt 2 + 1}{2}</math>. Then, recall, the area of an isosceles right triangle is <math>h^2</math>, where <math>h</math> is the altitude from the right angle. So, squaring this, we get <math>\frac{3 + 2\sqrt 2}{4}</math>. Now, we have to multiply this by <math>4</math> to account for all of the black triangles, to get <math>3 + 2\sqrt 2</math> as the final area for this case. 
+
+<b> Finishing </b>
+
+Then, to have the coin touching a black region, we add up the area of our successful regions, or <math>8 + 4\sqrt 2 + \frac{\pi}{4} + 3 + 2\sqrt 2 = 11 + 6\sqrt 2 + \frac{\pi}{4} = \frac{44 + 24\sqrt 2 + \pi}{4}</math>. The total region is <math>49</math>, so our probability is <math>\frac{\frac{44 + 24\sqrt 2 + \pi}{4}}{49} = \frac{44 + 24\sqrt 2 + \pi}{196}</math>, which implies <math>a+b = 44+24 = 68</math>. This corresponds to answer choice <math>\boxed{\textbf{(C)} 
+
+
+
+===Image===
+[[File:2021 10B23.png]]
+
+
+=== Problem 24 ===
+Arjun and Beth play a game in which they take turns removing one brick or two adjacent bricks from one "wall" among a set of several walls of bricks, with gaps possibly creating new walls. The walls are one brick tall. For example, a set of walls of sizes
+
+Choices: {'A': '(6,1,1)', 'B': '(6,2,1)', 'C': '(6,2,2)', 'D': '(6,3,1)', 'E': '(6,3,2)</math>'}
+Answer: B
+
+--- Solution 1 ---
+We say that a game state is an N-position if it is winning for the next player (the player to move), and a P-position if it is winning for the other player. We are trying to find which of the given states is a P-position.
+
+First we note that symmetrical positions are P-positions, as the second player can win by mirroring the first player's moves. It follows that <math>(6, 1, 1)</math> is an N-position, since we can win by moving to <math>(2, 2, 1, 1)</math>; this rules out <math>\textbf{(A)}</math>. We next look at <math>(6, 2, 1)</math>. The possible next states are
+<cmath>(6, 2), \enskip (6, 1, 1), \enskip (6, 1), \enskip (5, 2, 1), \enskip (4, 2, 1, 1), \enskip (4, 2, 1), \enskip (3, 2, 2, 1), \enskip (3, 2, 1, 1), \enskip (2, 2, 2, 1).</cmath>
+None of these are symmetrical, so we might reasonably suspect that they are all N-positions. Indeed, it just so happens that for all of these states except <math>(6, 2)</math> and <math>(6, 1)</math>, we can win by moving to <math>(2, 2, 1, 1)</math>; it remains to check that <math>(6, 2)</math> and <math>(6, 1)</math> are N-positions.
+
+To save ourselves work, it would be nice if we could find a single P-position directly reachable from both <math>(6, 2)</math> and <math>(6, 1)</math>. We notice that <math>(3, 2, 1)</math> is directly reachable from both states, so it would suffice to show that <math>(3, 2, 1)</math> is a P-position. Indeed, the possible next states are
+<cmath>(3, 2), \enskip (3, 1, 1), \enskip (3, 1), \enskip (2, 2, 1), \enskip (2, 1, 1, 1), \enskip (2, 1, 1),</cmath>
+which allow for the following refutations:
+
+<cmath>\begin{align*}
+&(3, 2) \to (2, 2), && &&(3, 1, 1) \to (1, 1, 1, 1), && &&(3, 1) \to (1, 1), \\
+&(2, 2, 1) \to (2, 2), && &&(2, 1, 1, 1) \to (1, 1, 1, 1), && &&(2, 1, 1) \to (1, 1).
+\end{align*}</cmath>
+
+Hence, <math>(3, 2, 1)</math> is a P-position, so <math>(6, 2)</math> and <math>(6, 1)</math> are both N-positions, along with all other possible next states from <math>(6, 2, 1)</math> as noted before. Thus, <math>(6, 2, 1)</math> is a P-position, so our answer is <math>\boxed{\textbf{(B)}}</math>. (For completeness, we could also rule out <math>\textbf{(C)}</math>, <math>\textbf{(D)}</math> and <math>\textbf{(E)}</math> as in Solution 2.)
+
+-Note: In general, this game is very complicated. For example <math>(8, 7, 5, 3, 2)</math> is winning for the first player but good luck showing that.
+
+--- Solution 2 ---
+<math>(6,1,1)</math> can be turned into <math>(2,2,1,1)</math> by Arjun, which is symmetric, so Beth will lose.
+
+<math>(6,3,1)</math> can be turned into <math>(3,1,3,1)</math> by Arjun, which is symmetric, so Beth will lose.
+
+<math>(6,2,2)</math> can be turned into <math>(2,2,2,2)</math> by Arjun, which is symmetric, so Beth will lose.
+
+<math>(6,3,2)</math> can be turned into <math>(3,2,3,2)</math> by Arjun, which is symmetric, so Beth will lose.
+
+That leaves <math>(6,2,1)</math> or <math>\boxed{\textbf{(B)}}</math>.
+
+--- Solution 3 ---
+Let the nim-value of the ending game state, where someone has just removed the final brick, be <math>0</math>. Then, any game state with a nim-value of <math>0</math> is losing. It is well-known that the nim-value of a supergame (a combination of two or more individual games) is the binary xor function on the nim-values of the individual games that compose the supergame. Therefore, we calculate the nim-values of the states with a single wall up to <math>6</math> bricks long (since the answer choices only go up to <math>6</math>). 
+
+First, the game with <math>1</math> brick has a nim-value of <math>1</math>. 
+
+Similarly, the game with <math>2</math> bricks has a nim-value of <math>2</math>.
+
+Next, we consider a <math>3</math> brick wall. After the next move, the possible resulting game states are <math>1</math> brick, a <math>2</math> brick wall, or <math>2</math> separate bricks. The first two options have nim-values of <math>1</math> and <math>2</math>. The final option has a nim-value of <math>1\oplus 1 = 0</math>, so the nim-value of this game state is <math>3</math>. 
+
+Next, the <math>4</math> brick wall. The possible states are a <math>2</math> brick wall, a <math>3</math> brick wall, a <math>2</math> brick wall and a <math>1</math> brick wall, or a <math>1</math> brick wall and a <math>1</math> brick wall. The nim-values of these states are <math>2</math>, <math>3</math>, <math>3</math>, and <math>0</math>, respectively, and hence the nim-value of this game state is <math>1</math>.
+
+[Why is the nim-value of it <math>1</math>? - awesomediabrine
+
+https://en.wikipedia.org/wiki/Mex_(mathematics)]
+
+The possible game states after the <math>5</math> brick wall are the following: a <math>3</math> brick wall, a <math>4</math> brick wall, a <math>3</math> brick wall and a <math>1</math> brick wall, a two <math>2</math> brick walls, and a <math>2</math> brick wall plus a <math>1</math> brick wall. The nim-values of these are <math>3</math>, <math>1</math>, <math>2</math>, <math>0</math>, and <math>3</math>, respectively, meaning the nim-value of a <math>5</math> brick wall is <math>4</math>. 
+
+Finally, we find the nim-value of a <math>6</math> brick wall. The possible states are a <math>5</math> brick wall, a <math>4</math> brick wall and a <math>1</math> brick wall, a <math>3</math> brick wall and a <math>2</math> brick wall, a <math>4</math> brick wall, a <math>3</math> brick wall and a <math>1</math> brick wall, and finally two <math>2</math> brick walls. The nim-values of these game states are <math>4</math>, <math>0</math>, <math>1</math>, <math>1</math>, <math>2</math>, and <math>0</math>, respectively. This means the <math>6</math> brick wall has a nim-value of <math>3</math>. 
+
+The problem is asking which of the answer choices is losing, or has a nim-value of <math>0</math>. We see that option <math>\textbf{(A)}</math> has a nim-value of <math>3\oplus1\oplus1=3</math>, option <math>\textbf{(B)}</math> has a nim-value of <math>3\oplus2\oplus1=0</math>, option <math>\textbf{(C)}</math> has a nim-value of <math>3\oplus2\oplus2=3</math>, option <math>\textbf{(D)}</math> has a nim-value of <math>3\oplus3\oplus1=1</math>, and option <math>\textbf{(E)}</math> has a nim-value of <math>3\oplus3\oplus2=2</math>, so the answer is <math>\boxed{\textbf{(B) }(6, 2, 1)}</math>.
+
+This method can also be extended to solve the note after the first solution. The nim-values of the <math>7</math> brick wall and the <math>8</math> brick wall are <math>2</math> and <math>1</math>, using the same method as above. The nim-value of <math>(8, 7, 5, 3, 2)</math> is therefore <math>1\oplus2\oplus4\oplus3\oplus2 = 6</math>, which is winning.
+
+--- Solution 4 ---
+Consider the following, much simpler game.
+
+Arjun and Beth can each either take 1 or 2 bricks from the right-hand-side of a continuous row of initially <math>n</math> bricks.
+It is easy to see that for <math>n</math> a multiple of 3, Beth can "mirror" whatever Arjun plays: if he takes 1, she takes 2, and if he takes 2, she takes 1. With this strategy, Beth always takes the last brick. If <math>n</math> is not a multiple of 3, then Arjun takes whichever amount puts Beth in the losing position.
+
+The total number of bricks in the initial states given by the answer choices is <math>8, 9, 10, 10, 11</math>. Thus, answer choice <math>\textbf{(B)}</math> appears promising as a winning position for Beth. The difference between this game and the simplified game is that in certain positions, namely those consisting of fragments of size only 1, taking 2 bricks is not allowed. We can assume that for the starting position <math>(6, 2, 1)</math>, Beth always has a move to ensure that she can continue to mirror Arjun throughout the game. (This could be proven rigorously with lots of casework. In particular, she must avoid providing Arjun with a position of 3 continuous bricks, because then he could take the middle block and force a win.) The assumption seems reasonable, so the answer is <math>\boxed{\textbf{(B)}}</math>.
+
+--- Solution 5 ---
+We can start by guessing and checking our solutions. Let's start with <math>A</math>, <math>(6,1,1)</math>. Arjun goes first, and he has a winning strategy. His strategy is to cut the 6 block in half, so whatever Beth does, Arjun will copy. If we see this in practice, Arjun has made the block in to <math>(2,2,1,1)</math>. If Beth takes 1, he will take one. If Beth takes 2, he will take 2 as well.
+
+Then, we can guess solution <math>B</math>, <math>(6,2,1)</math>. If Arjun starts by taking 1 of the blocks, he will either have <math>(6,1,1)</math>, <math>(6,2)</math>, <math>(x,y,2,1)</math> (Where <math>x+y = 5</math>). If he has <math>(6,1,1)</math>, Beth can take 2 out of the middle of <math>(6,1,1)</math> to get <math>(2,2,1,1)</math> which we know Arjun will lose because we know by symmetry from answer choice <math>A</math>. If he has <math>(6,2)</math>, Beth will take out one from the edge, and we get <math>(5,2)</math>. Beth can now copy whatever Arjun does, so she will win. 
+
+Next, if he takes one out to get <math>(x,y,2,1)</math>, we can either have <math>(4,1,2,1)</math> or <math>(3,2,2,1)</math>. If it is the first case, Beth can take the edge 2 out of the 4, which gives us <math>(2,1,2,1)</math> and whatever Arjun does, Beth can do, so she has established a win. If it is the 2nd case, Beth can take out 2 from the 3 to get <math>(1,2,2,1)</math>, in which, Beth can copy whatever Arjun does, so Beth will win. So in all 4 cases, Beth wins. So our answer is  <math>\boxed{\textbf{(B)}}</math>
+
+--- Solution 6 ---
+In many game problems, the winning strategy is to simply copy all of your opponent's moves. Since you will always have a valid move if you mirror a valid move, you must move last and win.
+
+Then, if Arjun can make the game "mirrorable" in his first move, then he can just copy all of Beth's moves after that.
+
+<math>(6,1,1)</math> can be turned into <math>(2,2,1,1)</math> by Arjun. Any move Beth makes, Arjun can just copy on the other block with same value. For example, if Beth took one block off the first <math>2</math>, Arjun takes one block off the second <math>2</math>.
+
+<math>(6,2,2)</math> turns into <math>(2,2,2,2)</math>.
+
+<math>(6,3,1)</math> turns into <math>(3,1,3,1)</math>.
+
+<math>(6,3,2)</math> turns into <math>(3,2,3,2)</math>.
+
+There are definitely other ways to split, but Arjun must win these games. This leaves answer <math>\boxed{B(6,2,1)}</math>.
+
+--- Solution 7 ---
+We will call the <math>6</math>-wall the main game and the remaining walls the side game.
+It is clear that if there is no side game, Arjun can win by taking the middle two walls out. However, if Beth is ever able to force Arjun to take two turns in a row on the main game, their roles will swap and she will win. To do so, she must force Arjun to take two turns in a row, which means she needs to take the last wall in the side game. In other words, we can reduce the problem into Beth winning a game with starting configuration ignoring the <math>6</math>-wall.
+
+From here, it's clear that Beth loses <math>(1,1)</math>, <math>(2,2)</math>, and <math>(3,2)</math>. However, Beth does win both <math>(3,1)</math> and <math>(2,1)</math>. However, with the <math>(3,1)</math> case, Arjun can instead start the game by splitting the <math>(3,1)</math> into <math>(1, 1, 1)</math>, which would swap their roles. Since Arjun now wins the side game, Beth will lose the <math>(3,1)</math> case, making the answer <math>\boxed{B(6, 2, 1)}</math>
+
+
+=== Problem 25 ===
+Let
+
+Choices: {'A': '~31', 'B': '~47', 'C': '~62', 'D': '~72', 'E': '~85</math>'}
+Answer: E
+
+--- Solution 1 ---
+First, we find a numerical representation for the number of lattice points in <math>S</math> that are under the line <math>y=mx. </math> For any value of <math>x,</math> the highest lattice point under <math>y=mx</math> is <math>\lfloor mx \rfloor. </math> Because every lattice point from <math>(x, 1)</math> to <math>(x, \lfloor mx \rfloor)</math> is under the line, the total number of lattice points under the line is <math>\sum_{x=1}^{30}(\lfloor mx \rfloor). </math>
+
+
+Now, we proceed by finding lower and upper bounds for <math>m. </math> To find the lower bound, we start with an approximation. If <math>300</math> lattice points are below the line, then around <math>\frac{1}{3}</math> of the area formed by <math>S</math> is under the line. By using the formula for a triangle's area, we find that when <math>x=30, y \approx 20. </math> Solving for <math>m</math> assuming that <math>(30, 20)</math> is a point on the line, we get <math>m = \frac{2}{3}. </math> Plugging in <math>m</math> to <math>\sum_{x=1}^{30}(\lfloor mx \rfloor), </math> we get:
+
+<cmath>\sum_{x=1}^{30}(\lfloor \frac{2}{3}x \rfloor) = 0 + 1 + 2 + 2 + 3 + \cdots + 18 + 18 + 19 + 20</cmath>
+
+We have a repeat every <math>3</math> values (every time <math>y=\frac{2}{3}x</math> goes through a lattice point). Thus, we can use arithmetic sequences to calculate the value above:
+
+<cmath>\sum_{x=1}^{30}(\lfloor \frac{2}{3}x \rfloor) = 0 + 1 + 2 + 2 + 3 + \cdots + 18 + 18 + 19 + 20</cmath><cmath>=\frac{20(21)}{2} + 2 + 4 + 6 + \cdots + 18 </cmath><cmath>=210 + \frac{20}{2}\cdot 9</cmath><cmath>=300</cmath>
+
+This means that <math>\frac{2}{3}</math> is a possible value of <math>m. </math> Furthermore, it is the lower bound for <math>m. </math> This is because <math>y=\frac{2}{3}x</math> goes through many points (such as <math>(21, 14)</math>). If <math>m</math> was lower, <math>y=mx</math> would no longer go through some of these points, and there would be less than <math>300</math> lattice points under it.
+
+Now, we find an upper bound for <math>m. </math> Imagine increasing <math>m</math> slowly and rotating the line <math>y=mx, </math> starting from the lower bound of <math>m=\frac{2}{3}. </math>The upper bound for <math>m</math> occurs when <math>y=mx</math> intersects a lattice point again (look at this problem to get a better idea of what's happening: https://artofproblemsolving.com/wiki/index.php/2011_AMC_10B_Problems/Problem_24).
+
+In other words, we are looking for the first <math>m > \frac{2}{3}</math> that is expressible as a ratio of positive integers <math>\frac{p}{q}</math> with <math>q \le 30. </math> For each <math>q=1,\dots,30</math>, the smallest multiple of <math>\frac{1}{q}</math> which exceeds <math>\frac{2}{3}</math> is <math>1, \frac{2}{2}, \frac{3}{3}, \frac{3}{4}, \frac{4}{5}, \cdots , \frac{19}{27}, \frac{19}{28}, \frac{20}{29}, \frac{21}{30}</math> respectively, and the smallest of these is <math>\frac{19}{28}. </math>
+
+Alternatively, see the method of finding upper bounds in solution 2.
+
+The lower bound is <math>\frac{2}{3}</math> and the upper bound is <math>\frac{19}{28}. </math> Their difference is <math>\frac{1}{84}, </math> so the answer is <math>1 + 84 = \boxed{85}. </math>
+
+
+
+An alternative would be using Farey fractions and the mediant theorem to find the upper bound. <math>\frac{2}{3}</math> and <math>\frac{7}{10}</math> gives <math>\frac{9}{13},</math> and so on using Farey addition. 
+
+The above alternative can be made quicker by using a different Farey sequence rule. The Farey sequence rule states that if <math>\frac{a}{b}</math> and <math>\frac{c}{d}</math> are adjacent in a Farey sequence, we have bc - ad = 1 (see https://en.wikipedia.org/wiki/Farey_sequence#Farey_neighbours). We use the rule with a = 2, b = 3, so we have 3c - 2d = 1. Starting with d = 30 (since d ≤ 30), we see that c would be noninteger and the same can be shown for d = 29. When d = 28, c = 19 so the range is [<math>\frac{2}{3}</math>, <math>\frac{19}{28}</math>] => <math>\frac{1}{84}</math> => <math>\boxed{85}</math>
+
+
+An alternative approach with the same methodology can be done using Pick's Theorem. Wikipedia page: https://en.wikipedia.org/wiki/Pick%27s_theorem. It's a formula to find the number of lattice points strictly inside a polygon. Approximation of the lower bound is still necessary.
+
+--- Solution 2 ---
+Based on area ratios between a square of side length <math>30</math> and a triangle with base <math>30</math>, we estimate that the slope <math>m</math> of the line we want is approximately <math>\frac{2}{3}</math>. Following this estimate, we see if there are approximately <math>30 \cdot 30 - 300 = 600</math> lattice points above the line <math>y=\frac{2}{3}x</math>.
+
+Counting the number of lattice points with <math>x=1</math> above the line, the number of lattice points with <math>x=2</math> above the line, and so on, we find that the total number of lattice points above the line is <math>30+29+28+28+27+26+26 \ldots+ 10</math>, with the even integers repeating every third term. We see that the average of the <math>30</math> terms is <math>20</math>, which means that exactly <math>20 \cdot 30 = 600</math> lattice points above the line as desired. This gives a lower bound because any decrease in the slope of the line would cause points that were already on the line to shift to being above it.
+
+To find the upper bound, notice that each lattice point less than <math>1</math> unit above the line is either <math>\frac{1}{3}</math> or <math>\frac{2}{3}</math> above. Since the slope through a point is the y-coordinate divided by the x-coordinate, a shift in the slope will increase the y-value of the higher x-coordinates more than the y-value of the lower x-coordinates. So, we turn our attention to <math>x=28, 29, 30</math> for which the line <math>y=\frac{2}{3}x</math> intersects at <math>y= \frac{56}{3}, \frac{58}{3}, 20</math>. The point <math>(30,20)</math> is already counted, and we can clearly see that if we slowly increase the slope of the line, we will first hit the point <math>(28,19)</math> since <math>(28, \frac{56}{3})</math> is the closest to it. The equation of the line which goes through both the origin and <math>(28,19)</math> is <math>y=\frac{19}{28}x</math>. This gives an upper bound of <math>m=\frac{19}{28}</math>. 
+
+Taking the upper bound of <math>m</math> and subtracting the lower bound yields <math>\frac{19}{28}-\frac{2}{3}=\frac{1}{84}</math>. The answer is therefore <math>1+84=</math> <math>\boxed{\textbf{(E)}
+
+--- Solution 3 ---
+As the procedure shown in the Solution 1, the lower bound of <math>m </math> is <math> \frac{2}{3}. </math>
+Here I give a more logic way to show how to find the upper bound of <math>m. </math>
+Denote <math>N=\sum_{x=1}^{30}(\lfloor mx \rfloor) </math> as the number of lattice points in <math>S</math>.
+
+<math>N = \lfloor m \rfloor+\lfloor 2m \rfloor+\lfloor 3m \rfloor+\cdots+\lfloor 30m \rfloor = 300 .</math>
+
+Let <math>m = \frac{2}{3}+k </math>. for <math>\forall x_{i}\le 30, x\in N^{*},  \lfloor mx_{i} \rfloor = \lfloor \frac{2}{3}x+xk \rfloor. </math>
+
+Our target is finding the minimum value of <math>k</math> which can increase one unit of <math>\lfloor mx_{i} \rfloor .</math>
+
+Notice that:
+
+When <math> x_{i} = 3n, \lfloor mx_{i} \rfloor = \lfloor 2n+(3n)k \rfloor  </math> We don't have to discuss this case.
+
+When <math> x_{i} = 3n+1, \lfloor mx_{i} \rfloor = \lfloor 2n+\frac{2}{3}+(3n+1)k \rfloor, k_{min1}=\frac{1}{3(3n+1)}.  </math>
+
+When <math> x_{i} = 3n+2, \lfloor mx_{i} \rfloor = \lfloor 2n+1+\frac{1}{3}+(3n+2)k \rfloor, k_{min2}=\frac{2}{3(3n+2)}.  </math>  
+
+Here <math>n\in N^{*}, n \le 9.</math>
+
+Denote <math> k_{min}=min\left \{k_{min1},k_{min2}  \right \}. </math>
+
+Obviously <math>k_{min1} </math> and <math>k_{min2}</math> are decreasing. Let's considering the situation when <math>n=9.</math>
+
+<math>k_{min}=min\left\{\frac{1}{84},\frac{2}{87}\right\}=\frac{1}{84}.</math>
+
+This means that the answer is just <math>\frac{1}{84}</math>, so <math>a+b=85</math>.  Choose <math>\boxed{E}.</math>
+
+--- Solution 4 ---
+It's easier to calculate the number of lattice points inside a rectangle with vertices <math>(0,0)</math>, <math>(p,0)</math>, <math>(p,q)</math>, <math>(0,q)</math>. Those lattice points are divided by the diagonal <math>y = \frac{p}{q} \cdot x</math> into <math>2</math> halves. In this problem the number of lattice points on or below the diagonal and <math>x \ge 1</math> is
+ <math>\frac{1}{2} [(p+1)(q+1) - d] + d - (p+1)</math>, <math>d</math> is the number of lattice points on the diagonal, <math>d \ge 2</math>
+
+<math>(p+1)(q+1)</math> is the total number of lattice points inside the rectangle. Subtract the number of lattice points on the diagonal, divided by 2 is the number of lattice points below the diagonal, add the number of lattice points on the diagonal, and subtract the lattice points on the <math>x</math> axis, then we get the total number of lattice points on or below the diagonal and <math>x \ge 1</math>.
+
+There are <math>900</math> lattice points in total. <math>300</math> is <math>\frac{1}{3}</math> of <math>900</math>. The <math>x</math> coordinate of the top-right vertex of the rectangle is <math>30</math>, <math>\frac{1}{2} \cdot 30 \cdot 20 = 300</math>. I guess the <math>y</math> coordinate of the top-right vertex of the rectangle is <math>20</math>. Now I am going to verify that.  The slope of the diagonal is <math>\frac{20}{30} = \frac{2}{3}</math>, there are <math>11</math> lattice points on the diagonal. Substitute <math>(p,q)=(30, 20)</math>, <math>d=11</math> to the above formula:
+
+ <math>\frac{1}{2} [(30+1)(10+1) - 11] + 11 - (30+1) = 300</math>
+
+Because there are <math>11</math> lattice points on line <math>y = \frac{2}{3}x</math>, if <math>m < \frac{2}{3}</math>, then the number of lattice points on or below the line is less than <math>300</math>. So <math>m = \frac{2}{3}</math> is the lower bound.
+
+Now I am going to calculate the upper bound. From <math>\frac{b}{a} < \frac{b+1}{a+1}</math>,
+
+<math>\frac{2}{3} = \frac{18}{27} < \frac{19}{28}</math>
+
+<math>\frac{2}{3} = \frac{20}{30} < \frac{21}{31} < \frac{19}{28}</math>
+
+<asy>
+/* Created by Brendanb4321, modified by isabelchen */
+import graph;
+size(18cm);
+defaultpen(fontsize(9pt));
+xaxis(0,31,Ticks(1.0));
+yaxis(0,22,Ticks(1.0));
+
+draw((0,0)--(30,20));
+draw((0,0)--(30,30*19/28), dotted);
+draw((0,0)--(31,31*21/31), dotted);
+
+for (int i = 1; i<=31; ++i) {
+for (int j = 1; j<=2/3*i+1; ++j) {
+dot((i,j));
+}
+}
+
+dot((28,19), red);
+dot((31,21), blue);
+label("$m=2/3$", (33,20));
+label("$m=21/31$", (33,21));
+label("$m=19/28$", (33,22));
+
+</asy>
+
+If <math>m = \frac{21}{31}</math>, I will calculate by using the rectangle with blue vertex <math>(p,q) = (31, 21)</math>, then subtract lattice points on line <math>x = 31</math>, which is <math>21</math>. There are 2 lattice points on the diagonal, <math>d=2</math>.
+
+ <math>\frac{1}{2} [(31+1)(21+1) - 2] + 2 - (31+1) - 21 = 300</math>, same as that of <math>m = \frac{2}{3}</math>
+
+If <math>m = \frac{19}{28}</math>, I will calculate by using the rectangle with red vertex <math>(p,q) = (28, 19)</math>, then add lattice points on line <math>x = 29</math> and <math>x = 30</math>, which is <math>19 + 20 = 39</math>. There are 2 lattice points on the diagonal, <math>d=2</math>.
+
+ <math>\frac{1}{2} [(28+1)(19+1) - 2] + 2 - (28+1) + 39 = 301</math>, <math>1</math> more than that of <math>m = \frac{2}{3}</math>
+
+When <math>m</math> increases, more lattice points falls below the line <math>y = mx</math>. Any value larger than <math>\frac{19}{28}</math> has more than <math>301</math> lattice points on or below <math>y = \frac{19}{28} x</math>. So the upper bound is <math>\frac{19}{28}</math>.
+
+<math>\frac{19}{28}-\frac{2}{3}=\frac{1}{84}</math>, <math>\boxed{\textbf{(E)}
+
+--- Solution 5 ---
+The lower bound of <math>m</math> is <math>\frac23 = \frac{20}{30}</math>. Inside the rectangle with vertices <math>(0,0)</math>, <math>(30,0)</math>, <math>(30,20)</math>, <math>(0, 20)</math> and diagonal <math>y = \frac23 x</math>, there are <math>(30-1)(20-1) = 551</math> lattice points inside, not including the edges. There are <math>9</math> lattice points on diagonal <math>y = \frac23 x</math> inside the rectangle, <math>551 + 9 = 560</math>. Half of the <math>560</math> lattice points are below diagonal <math>y = \frac23 x</math>, <math>560 \cdot \frac12 = 280</math>. There are <math>20</math> lattice points on edge <math>x = 30</math>, <math>280 + 20 = 300</math>. Once <math>m < \frac23</math>, the <math>9</math> lattice points on diagonal <math>y = \frac23 x</math> will be above the new diagonal, making the number of lattice points on and below the diagonal less than <math>300</math>.
+
+Now we are going to calculate the upper bound by the following formula:
+ The number of lattice points inside rectangle <math>(0,0)</math>, <math>(a,0)</math>, <math>(a, b)</math>, <math>(0, b)</math> and below diagonal <math>y = \frac{b}{a}x</math> is <math>\frac{(a-1)(b-1)}{2}</math>, where <math>a</math> and <math>b</math> are relatively prime.
+ There are <math>(a-1)(b-1)</math> lattice points inside the rectangle. Because <math>a</math> and <math>b</math> are relatively prime, the only lattice points on the diagonal are <math>(0,0)</math> and <math>(a,b)</math>. By symmetry, half of the lattice points are below the diagonal.
+
+<asy>
+/* Created by isabelchen */
+import graph;
+size(8cm);
+defaultpen(fontsize(9pt));
+xaxis(0,8);
+yaxis(0,6);
+
+draw((0,0)--(7,5));
+draw((7,0)--(7,5));
+draw((0,5)--(7,5));
+
+dot((0,0)); dot((1,0)); dot((2,0)); dot((3,0)); dot((4,0)); dot((5,0)); dot((6,0)); dot((7,0)); dot((8,0)); dot((0,1)); dot((1,1)); dot((2,1)); dot((3,1)); dot((4,1)); dot((5,1)); dot((6,1)); dot((7,1)); dot((8,1)); dot((0,2)); dot((1,2)); dot((2,2)); dot((3,2)); dot((4,2)); dot((5,2)); dot((6,2)); dot((7,2)); dot((8,2)); dot((0,3)); dot((1,3)); dot((2,3)); dot((3,3)); dot((4,3)); dot((5,3)); dot((6,3)); dot((7,3)); dot((8,3)); dot((0,4)); dot((1,4)); dot((2,4)); dot((3,4)); dot((4,4)); dot((5,4)); dot((6,4)); dot((7,4)); dot((8,4)); dot((0,5)); dot((1,5)); dot((2,5)); dot((3,5)); dot((4,5)); dot((5,5)); dot((6,5)); dot((7,5)); dot((8,5)); dot((0,6)); dot((1,6)); dot((2,6)); dot((3,6)); dot((4,6)); dot((5,6)); dot((6,6)); dot((7,6)); dot((8,6)); 
+
+label("$(0,0)$", (0,0), SW); 
+label("$(a, b)$", (7,5), NE); 
+dot((7,0)); 
+label("$a$", (7,0), S); 
+dot((0,5)); 
+label("$b$", (0,5), W);
+</asy>
+
+<math>\frac{2}{3} = \frac{20}{30} < \frac{21}{31} < \frac{19}{28}</math>
+
+When <math>a = 31</math>, <math>b = 21</math>, <math>\frac{(31-1)(21-1)}{2} = 300</math>.
+
+When <math>a = 28</math>, <math>b = 19</math>, <math>\frac{(28-1)(19-1)}{2} = 243</math>. Below the line <math>y = \frac{19}{28} x</math>, there are <math>19</math> lattice points on line <math>x = 28</math>, <math>19</math> lattice points on line <math>x = 29</math>, <math>20</math> lattice points on line <math>x = 30</math>, <math>243 + 19 + 19 + 20 = 301</math>. 
+
+More lattice points fall below the line <math>y = mx</math> as <math>m</math> increases. There are more than <math>301</math> lattice points on and below the line for any <math>m</math> greater than <math>\frac{19}{28}</math>. Therefore, the upper bound is <math>\frac{19}{28}</math>.
+
+<math>\frac{19}{28}-\frac{2}{3}=\frac{1}{84}</math>, so <math>1+84=\boxed{\textbf{(E)} 
+
+===Remark===
+
+<math>\lfloor \frac{b}{a} k \rfloor</math> is the number of lattice points on line <math>x = k</math>, below line <math>y = \frac{b}{a} x</math> and above the <math>x</math> axis, where <math>k</math> is an integer and <math>0<k<a</math>. Therefore, <math>\sum_{k=1}^{a-1} \lfloor \frac{b}{a} k \rfloor</math> is the number of lattice points inside the rectangle <math>(0,0)</math>, <math>(a,0)</math>, <math>(a, b)</math>, <math>(0, b)</math>, below diagonal <math>y = \frac{b}{a} x</math>. If <math>a</math> and <math>b</math> are relatively prime, <math>\sum_{k=1}^{a-1} \lfloor \frac{b}{a} k \rfloor = \frac{(a-1)(b-1)}{2}</math>, as explained in solution 5. This problem is about finding the upper and lower bound of <math>\frac{b}{a}</math>, given <math>\sum_{k=1}^{30} \lfloor \frac{b}{a} k \rfloor = 300</math>. The same problem can have geometric representation as stated in the original problem, or algebraic representation as stated here.
+
+--- Solution 6 ---
+As the procedure shown in the Solution 1, the lower bound of <math>m </math> is <math> \frac{2}{3}</math>, whose equation is <math>2x - 3y = 0</math>.
+
+Now, we are going to find the upper bound of <math>m</math>.
+
+The signed distance between a point <math>(x_0,\ y_0)</math> and the line <math>2x - 3y = 0</math> is <cmath>d = \frac{2x_0 - 3y_0}{\sqrt{2^2 + 3^3}}</cmath>
+
+If <math>(x_0,\ y_0)</math> is the lowest lattice point above the line, then it should have the largest values of coordinates among all the solutions of <math>2x_0 - 3y_0 = 1</math>, because among the points with the shortest distance from the line, the slope of the farthest point to the origin is the smallest. Solve the inequality:<cmath>2x - 3y = 1,\ 1 \leq x \leq 30</cmath>
+
+We obtain <math>(x_0,\ y_0) = (28,\ 19)</math>, so the upper bound of <math>m = \frac{19}{28}</math>.
+
+<math>\frac{19}{28}-\frac{2}{3}=\frac{1}{84}</math>, <math>\boxed{\textbf{(E)}
+
+

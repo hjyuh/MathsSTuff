@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-04-16T22-57-31-prove-3e69-ep488_v51_G5_resubmit_local_min",
+  "status": "done",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v51 / G5 (resubmit): Degree-3 is strict local minimum\n-- Shows each potential smaller neighbor (2a/3, 3a/4, 3a/5, 4a/5) is below q/2\n-- when a < 3q/5.\n\nimport Mathlib.Tactic\n\n/-- If a < 3q/5, then 2*(2a/3) < q (i.e. 2a/3 < q/2). -/\ntheorem smaller_2a_3_below_q_2\n    {q a : \u2115}\n    (hq : 0 < q)\n    (ha : 5 * a < 3 * q)\n    (hdiv : 3 \u2223 a) :\n    2 * (2 * a / 3) < q := by\n  sorry\n\n/-- If a < 3q/5, then 2*(3a/4) < q. -/\ntheorem smaller_3a_4_below_q_2\n    {q a : \u2115}\n    (hq : 0 < q)\n    (ha : 5 * a < 3 * q)\n    (hdiv : 4 \u2223 a) :\n    2 * (3 * a / 4) < q := by\n  sorry\n\n/-- If a < 3q/5, then 2*(4a/5) < q. -/\ntheorem smaller_4a_5_below_q_2\n    {q a : \u2115}\n    (hq : 0 < q)\n    (ha : 5 * a < 3 * q)\n    (hdiv : 5 \u2223 a) :\n    2 * (4 * a / 5) < q := by\n  sorry\n",
+  "started_at": "2026-04-16T22:57:31Z",
+  "finished_at": "2026-04-17T00:19:34Z",
+  "duration_s": 4923.21,
+  "result_text": "## Session Complete\n\n**Filled: 3/3 sorries** \u2014 all in `G5_DegreeThreeMinimum.lean`\n\n| Theorem | Strategy | Status |\n|---------|----------|--------|\n| `smaller_2a_3_below_q_2` | `obtain` divisibility witness, `rw` to cancel `/3`, `omega` | done |\n| `smaller_3a_4_below_q_2` | `obtain` divisibility witness, `rw` to cancel `/4`, `omega` | done |\n| `smaller_4a_5_below_q_2` | `obtain` divisibility witness, `rw` to cancel `/5`, `omega` | done |\n\n**Proof pattern**: Each proof (1) unpacks `d \u2223 a` as `a = d * k` via `obtain \u27e8k, rfl\u27e9`, (2) uses a `ring` rewrite to put the numerator in `d * (\u2026)` form so `Nat.mul_div_cancel_left` eliminates the division, then (3) `omega` closes the resulting linear arithmetic goal from `5 * (d * k) < 3 * q` and `0 < q`.\n\n**Commits:** 0 new (no commit requested yet)\n\nCommit this? **[yes / yes-all / no / never]**\n",
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-57-31-prove-3e69-ep488_v51_G5_resubmit_local_min.log",
+  "worker_pid": 4560,
+  "last_heartbeat_at": 1776385169.844627,
+  "_started_monotonic": 1776380251.9031053
+}

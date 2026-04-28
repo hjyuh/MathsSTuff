@@ -4,26 +4,32 @@
 
 For an integer `n >= 1`, define
 
-`D(n) = {|a-b| : ab = n}`.
+```text
+D(n) = {|a-b| : ab = n}.
+```
 
 Question: for every `k >= 1`, do there exist integers
 
-`N_1 < ... < N_k`
+```text
+N_1 < ... < N_k
+```
 
 such that
 
-`|D(N_1) ∩ ... ∩ D(N_k)| >= k`?
+```text
+|D(N_1) cap ... cap D(N_k)| >= k?
+```
 
 Known:
 
-- `k = 2`: Erdős-Rosenfeld
-- `k = 3`: Jiménez-Urroz
+- `k = 2`: Erdos-Rosenfeld
+- `k = 3`: Jimenez-Urroz
 - `k = 4`: Bremner
 - `k = 5`: first open case
 
-## Current local plan
+## Current Local Plan
 
-This workspace implements the first computational attack for `k = 5`.
+This workspace implements computational and algebraic attacks for `k = 5`.
 
 The search is based on the bipartite graph:
 
@@ -33,12 +39,23 @@ The search is based on the bipartite graph:
 
 Then `k = 5` becomes a `K_{5,5}` biclique search.
 
+The current best local inputs are Bremner's verified `K_{4,4}` certificates,
+recorded in:
+
+```text
+results/bremner-example-1-k44-certificate.json
+results/bremner-example-2-k44-certificate.json
+results/bremner-example-3-k44-certificate.json
+```
+
+See `known-constructions.md` and `sprint-4-bremner-found.md`.
+
 ## Stage A
 
 Stage A is deliberately conservative:
 
 - generate candidate numbers `n = m^2` where `m` is smooth over small primes
-- compute `D(n) ∩ [0, Delta]`
+- compute `D(n) cap [0, Delta]`
 - build the inverted index `delta -> {candidate ids}`
 - run an Eclat-style search for 5 deltas with at least 5 common candidates
 - log strong `k = 4` intersections even if `k = 5` is not found
@@ -64,12 +81,12 @@ or on single-config generators:
 
 Outputs land in `out_stageA/`.
 
-## Python fallback
+## Python Fallback
 
 If you do not have a C++ compiler installed, use the pure Python Stage A search:
 
 ```powershell
-cd C:\Users\z20ma\Documents\MathsSTuff\erdos\885
+cd C:\Users\z20ma\OneDrive\Documents\!math\erdos\885
 python .\stageA_search.py
 ```
 
@@ -100,15 +117,15 @@ python .\stageA_search.py `
 The Python version keeps the same basic pipeline:
 
 - generate structured candidates, either:
-  - smooth near-squares `n = m^2 * t`, or
-  - close smooth factor pairs `n = u*v` with `u ≈ v`
-- compute `D(n) ∩ [0, Delta]`
+- smooth near-squares `n = m^2 * t`, or
+- close smooth factor pairs `n = u*v` with `u approx v`
+- compute `D(n) cap [0, Delta]`
 - build `delta -> {candidate ids}`
 - search for `K_{5,5}` bicliques
-- log strong pair/triple/`k=4` intersections even if `k=5` is not found
+- log strong pair/triple/`k = 4` intersections even if `k = 5` is not found
 - recover sample factor pairs `(a,b)` for logged `(n, delta)` relations
 
-## Direct delta-first fallback
+## Direct Delta-First Fallback
 
 If candidate-family search looks too biased, use the direct delta-first search:
 
@@ -116,8 +133,10 @@ If candidate-family search looks too biased, use the direct delta-first search:
 python .\delta_first_search.py --x 100000000 --delta-max 5000 --out-dir out_delta_first_run1
 ```
 
-This does **not** guess a family of `n` first. It builds the exact sets
+This does not guess a family of `n` first. It builds the exact sets
 
-`S_delta = { a(a+delta) : a >= 1, a(a+delta) <= X }`
+```text
+S_delta = { a(a+delta) : a >= 1, a(a+delta) <= X }
+```
 
 and then searches for large common intersections of these `S_delta`.

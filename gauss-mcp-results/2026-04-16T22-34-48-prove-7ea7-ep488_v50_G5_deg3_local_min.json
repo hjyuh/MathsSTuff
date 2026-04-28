@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T22-34-48-prove-7ea7-ep488_v50_G5_deg3_local_min",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "-- EP-488 v50 / G5: Degree-3 is strict local minimum\n-- Claim: If deg_B(a) = 3, every neighbor of a in the n-LCM graph is > a.\n-- Proof: potential smaller neighbors would be 2a/3, 3a/4, 3a/5, or 4a/5.\n-- All are < q/2 when a < 3q/5, so none can lie in C \u2282 (q/2, q].\n--\n-- Simplified target: show each of the four expressions is < q/2 under a < 3q/5.\n\nimport Mathlib.Tactic\n\n/-- If a < 3q/5, then 2a/3 < 2q/5 < q/2. -/\ntheorem smaller_neighbor_2a_3_below_q_2\n    {q a : \u2115}\n    (hq : 0 < q)\n    (ha : 5 * a < 3 * q)  -- a < 3q/5\n    (hdiv : 3 \u2223 a) :\n    2 * (2 * a / 3) < q := by\n  sorry\n\n/-- If a < 3q/5, then 3a/4 < 9q/20 < q/2. -/\ntheorem smaller_neighbor_3a_4_below_q_2\n    {q a : \u2115}\n    (hq : 0 < q)\n    (ha : 5 * a < 3 * q)\n    (hdiv : 4 \u2223 a) :\n    2 * (3 * a / 4) < q := by\n  sorry\n\n/-- If a < 3q/5, then 4a/5 < 12q/25 < q/2. -/\ntheorem smaller_neighbor_4a_5_below_q_2\n    {q a : \u2115}\n    (hq : 0 < q)\n    (ha : 5 * a < 3 * q)\n    (hdiv : 5 \u2223 a) :\n    2 * (4 * a / 5) < q := by\n  sorry\n",
+  "started_at": "2026-04-16T22:34:48Z",
+  "finished_at": "2026-04-16T22:35:02Z",
+  "duration_s": 13.88,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Failed to authenticate. API Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid authentication credentials\"},\"request_id\":\"req_011Ca8FKRGgg6isLTHZ7QFVF\"}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T22-34-48-prove-7ea7-ep488_v50_G5_deg3_local_min.log",
+  "worker_pid": 2784,
+  "last_heartbeat_at": 1776378898.7634566,
+  "_started_monotonic": 1776378888.5712802
+}

@@ -1,0 +1,1025 @@
+=== Problem 1 ===
+What is the value of
+
+Choices: {'A': '\\ 70', 'B': '\\ 97', 'C': '\\ 127', 'D': '\\ 159', 'E': '\\ 729</math>'}
+Answer: C
+
+--- Solution 1 ---
+Notice this is the term <math>a_6</math> in a recursive sequence, defined recursively as <math>a_1 = 3, a_n = 2a_{n-1} + 1.</math> Thus:
+<cmath>\begin{split}
+a_2 = 3 \cdot 2 + 1 = 7.\\
+a_3 = 7 \cdot 2 + 1 = 15.\\
+a_4 = 15 \cdot 2 + 1 = 31.\\
+a_5 = 31 \cdot 2 + 1 = 63.\\
+a_6 = 63 \cdot 2 + 1 = \boxed{\textbf{(C)}\ 127}
+\end{split}</cmath>
+
+Minor LaTeX edits by fasterthanlight
+
+--- Solution 2 ---
+Starting to compute the inner expressions, we see the results are <math>1, 3, 7, 15, \ldots</math>. This is always <math>1</math> less than a power of <math>2</math>. The only admissible answer choice by this rule is thus <math>\boxed{\textbf{(C)}\ 127}</math>.
+
+--- Solution 3 ---
+Working our way from the innermost parenthesis outwards and directly computing, we have <math>\boxed{\textbf{(C) } 127}</math>.
+
+--- Solution 4 ---
+If you distribute this you get a sum of the powers of <math>2</math>.  The largest power of <math>2</math> in the series is <math>64</math>, so the sum is <math>\boxed{\textbf{(C)}\ 127}</math>.
+
+--- Solution 5 ---
+<math>(2(2(2(2(2(2+1)+1)+1)+1)+1)+1)</math>
+<math>=(2(2(2(2(2(3)+1)+1)+1)+1)+1)</math>
+<math>=(2(2(2(2(6+1)+1)+1)+1)+1)</math>
+<math>=(2(2(2(2(7)+1)+1)+1)+1)</math>
+<math>=(2(2(2(14+1)+1)+1)+1)</math>
+<math>=(2(2(2(15)+1)+1)+1)</math>
+<math>=(2(2(30+1)+1)+1)</math>
+<math>=(2(2(31)+1)+1)</math>
+<math>=(2(62+1)+1)</math>
+<math>=(2(63)+1)</math>
+<math>=(126+1)</math>
+<math>=127 \Longrightarrow \boxed{\textbf{(C)}\ 127}</math>.
+
+--- Solution 6 ---
+Notice that <math>x^6 + x^5 + x^4 + x^3 + x^2 + x + 1 = x (x (x (x (x (x + 1) + 1) + 1) + 1) + 1) + 1</math>. Substituting <math>2</math> for <math>x</math>, we get <cmath>2(2(2(2(2(2+1)+1)+1)+1)+1)+1 = 2^6 + 2^5 + 2^4 + 2^3 + 2^2 + 2 + 1 = 2^7 - 1 \Longrightarrow \boxed{\textbf{(C)}\ 127}</cmath>
+
+--- Solution 7 ---
+Notice that there are 5 instances where the sum is multiplied by <math>2</math>. That gives us <math>2^5 = 32</math>. Separate the addition part into <math>3</math> and the <math>1</math>. Multiply the <math>3</math> by <math>32</math>, giving <math>96</math>. Then notice that the <math>1</math> is multiplied by increasing powers of two; therefore, it is equal to <math>2^5-1</math>. Then add these two parts. <math>96+31=\boxed{\textbf{(C)}\ 127}</math>
+
+
+=== Problem 2 ===
+Pablo buys popsicles for his friends. The store sells single popsicles for
+
+Choices: {'A': '\\ 8', 'B': '\\ 11', 'C': '\\ 12', 'D': '\\ 13', 'E': '\\ 15</math>'}
+Answer: D
+
+--- Solution 1 ---
+<math>\$3</math> boxes give us the most popsicles/dollar, so we want to buy as many of those as possible. After buying <math>2</math>, we have <math>\$2</math> left. We cannot buy a third <math>\$3</math> box, so we opt for the <math>\$2</math> box instead (since it has a higher popsicles/dollar ratio than the <math>\$1</math> pack). We're now out of money. We bought <math>5+5+3=13</math> popsicles, so the answer is <math>\boxed{\textbf{(D) }13}</math>.
+
+
+=== Problem 3 ===
+Tamara has three rows of two
+
+Choices: {'A': '\\ 72', 'B': '\\ 78', 'C': '\\ 90', 'D': '\\ 120', 'E': '\\ 150</math>'}
+Answer: B
+
+--- Solution 1 ---
+Finding the area of the shaded walkway can be achieved by computing the total area of Tamara's garden and then subtracting the combined area of her six flower beds.
+
+Since the width of Tamara's garden contains three margins, the total width is <math>2\cdot 6+3\cdot 1 = 15</math> feet.
+
+Similarly, the height of Tamara's garden is <math>3\cdot 2+4\cdot 1 = 10</math> feet.
+
+Therefore, the total area of the garden is <math>15\cdot 10 =150</math> square feet.
+
+Finally, since the six flower beds each have an area of <math>2\cdot 6 = 12</math> square feet, the area we seek is <math>150 - 6\cdot 12</math>, and our answer is <math> \boxed{\textbf{(B)}\ 78}</math>
+
+--- Solution 2 ---
+The long horizontal walkways have an area of <math>15 ft^{2}</math> each, and there are <math>4</math> of them <math>\longrightarrow 60 ft^{2}</math>.
+
+The short vertical walkways have an area of <math>2 ft^{2}</math> each, and there are <math>9</math> of them <math>\longrightarrow 18 ft^{2}</math>.
+
+Adding the areas together, we have <math>60 ft^{2} + 18 ft^{2} = 78 ft^{2} \Longrightarrow \boxed{\textbf{(B)}\ 78}</math>.
+
+
+=== Problem 4 ===
+Mia is “helping” her mom pick up
+
+Choices: {'A': '\\ 13.5', 'B': '\\ 14', 'C': '\\ 14.5', 'D': '\\ 15', 'E': '\\ 15.5</math>'}
+Answer: 
+
+--- Solution 1 ---
+Every <math>30</math> seconds, <math>3</math> toys are put in the box and <math>2</math> toys are taken out, so the number of toys in the box increases by <math>3-2=1</math> every <math>30</math> seconds. Then after <math>27 \times 30 = 810</math> seconds (or <math>13 \frac{1}{2}</math> minutes), there are <math>27</math> toys in the box. Mia's mom will then put the remaining <math>3</math> toys into the box after <math>30</math> more seconds, so the total time taken is <math>27\times 30+30=840</math> seconds, or <math>\boxed{(\textbf{B})\ 14}</math> minutes.
+
+Note: During the last time Mia's mom will complete picking up the <math>30</math> toys(before Mia can take <math>2</math> out) which is the reason that you calculate up to <math>27</math> and then the rest.
+
+
+=== Problem 5 ===
+The sum of two nonzero real numbers is
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ 4', 'D': '\\ 8', 'E': '\\ 12</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let the two real numbers be <math>x,y</math>. We are given that <math>x+y=4xy,</math> and dividing both sides by <math>xy</math>, <math>\frac{x}{xy}+\frac{y}{xy}=4.</math>
+
+<cmath>\frac{1}{y}+\frac{1}{x}=\boxed{\textbf{(C) } 4}.</cmath>
+
+Note: we can easily verify that this is the correct answer; for example, <math>\left(\frac{1}{2}, \frac{1}{2}\right)</math> works, and the sum of their reciprocals is <math>4</math>.
+
+--- Solution 2 ---
+Instead of using algebra, another approach at this problem would be to notice the fact that one of the nonzero numbers has to be a fraction.
+See for yourself. And by looking into fractions, we immediately see that <math>\frac{1}{3}</math> and <math>1</math> would fit the rule. <math>\boxed{\textbf{(C)} 4}.</math>
+
+--- Solution 3 ---
+Notice that from the information given above, <math>x+y=4xy</math>
+
+Because the sum of the reciprocals of two numbers is just the sum of the two numbers over the product of the two numbers or <math>\frac{x+y}{xy}</math> 
+
+We can solve this by substituting <math>x+y\implies 4xy</math>.
+
+Our answer is simply <math>\frac{4xy}{xy}\implies4</math>.
+
+Therefore, the answer is <math>\boxed{\textbf{(C) } 4}</math>.
+
+
+=== Problem 6 ===
+Ms. Carroll promised that anyone who got all the multiple choice questions right on the upcoming exam would receive an A on the exam. Which of these statements necessarily follows logically?
+
+Choices: {'A': '\\ \\text{If Lewis did not receive an A, then he got all of the multiple choice questions wrong.}\\\\', 'B': '\\ \\text{If Lewis did not receive an A, then he got at least one of the multiple choice questions wrong.}\\\\', 'C': '\\ \\text{If Lewis got at least one of the multiple choice questions wrong, then he did not receive an A. }\\\\', 'D': '\\ \\text{If Lewis received an A, then he got all of the multiple choice questions right.}\\\\', 'E': '\\ \\text{If Lewis received an A, then he got at least one of the multiple choice questions right.}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Rewriting the given statement: "if someone got all the multiple choice questions right on the upcoming exam then he or she would receive an A on the exam."
+If that someone is Lewis the statement becomes: "if Lewis got all the multiple choice questions right, then he would receive an A on the exam."
+
+The contrapositive: "If Lewis did ''not'' receive an A, then he did ''not'' get all of them right"
+
+The contrapositive (in other words): "If Lewis did not get an A, then he got at least one of the multiple choice questions wrong".
+
+B is also equivalent to the contrapositive of the original statement, which implies that it must be true, so the answer is <math>\boxed{\textbf{(B)}\text{ If Lewis did not receive an A, then he got at least one of the multiple choice questions wrong.}}</math>.
+
+* Note that answer choice (B) is the contrapositive of the given statement. (That is, it has been negated as well as reversed.) We know that the contrapositive is always true if the given statement is true.
+
+--- Solution 2 ---
+Note: An A is usually 90%-100% of the questions correct.
+ 
+<math>\textbf{(A)}</math> False. If Lewis did not receive an A, that does not mean he got ''all'' the multiple-choice questions wrong. For example, he might get 19/20 or 18/20, which still accounts for an A.
+
+<math>\textbf{(B)}</math> True. If Lewis did not receive an A, then he must have got at least one wrong. Otherwise, Lewis would have gotten an A.
+
+<math>\textbf{(C)}</math> False. Again, Lewis can get 19/20 or 18/20, which is still an A. 
+
+<math>\textbf{(D)}</math> False. The above situation can happen.
+ 
+<math>\textbf{(E)}</math> False. Lewis can get 17/20 or less but it is not an A.
+
+Therefore, our answer is <math>\boxed{\textbf{(B)}}.</math>
+
+
+
+<!-- edits by MrThinker-->
+
+
+=== Problem 7 ===
+Jerry and Silvia wanted to go from the southwest corner of a square field to the northeast corner. Jerry walked due east and then due north to reach the goal, but Silvia headed northeast and reached the goal walking in a straight line. Which of the following is closest to how much shorter Silvia's trip was, compared to Jerry's trip?
+
+Choices: {'A': '\\ 30\\%', 'B': '\\ 40\\%', 'C': '\\ 50\\%', 'D': '\\ 60\\%', 'E': '\\ 70\\%</math>'}
+Answer: A
+
+--- Solution 1 ---
+Let <math>j</math> represent how far Jerry walked, and <math>s</math> represent how far Silvia walked. Since the field is a square, and Jerry walked two sides of it, while Silvia walked the diagonal, we can simply define the side of the square field to be one, and find the distances they walked. Since Jerry walked two sides, 
+<math>j = 2</math>
+Since Silvia walked the diagonal, she walked the hypotenuse of a <math>45</math>, <math>45</math>, <math>90</math> triangle with leg length <math>1</math>. Thus,
+<math>s = \sqrt{2} = 1.414...</math>
+We can then take 
+<math>\frac{j-s}{j} \approx \frac{2 - 1.4}{2}=0.3 \implies \boxed{\textbf{(A)}\ 30\%}</math>
+
+--- Solution 2 ---
+We can assume that Jerry's path is <math>100</math> units in length. By that logic, Silvia's path is <math>\frac{100\cdot\sqrt{2}}{2}=50\sqrt{2}</math>. We can assume that <math>\sqrt{2}\approx1.4</math>, so we find that Jerry's path is <math>70</math> units in length. We can now subtract the two paths, and find out that the answer is <math>\boxed{\textbf{(A)}\ 30\%}</math>.
+
+
+=== Problem 8 ===
+At a gathering of
+
+Choices: {'A': '\\ 240', 'B': '\\ 245', 'C': '\\ 290', 'D': '\\ 480', 'E': '\\ 490</math>'}
+Answer: B
+
+--- Solution 1 ---
+Each one of the ten people has to shake hands with all the <math>20</math> other people they don’t know. So <math>10\cdot20 = 200</math>. From there, we calculate how many handshakes occurred between the people who don’t know each other. This is simply counting how many ways to choose two people to shake hands from <math>10</math>, or <math>\binom{10}{2} = 45</math>. Thus the answer is <math>200 + 45 = \boxed{\textbf{(B)}\ 245}</math>.
+
+--- Solution 2 ---
+We can also use complementary counting. First of all, <math>\dbinom{30}{2}=435</math> handshakes or hugs occur. Then, if we can find the number of hugs, then we can subtract it from <math>435</math> to find the handshakes. Hugs only happen between the <math>20</math> people who know each other, so there are <math>\dbinom{20}{2}=190</math> hugs. <math>435-190= \boxed{\textbf{(B)}\ 245}</math>.
+
+--- Solution 3 ---
+We can focus on how many handshakes the <math>10</math> people who don't know anybody get. 
+
+The first person gets <math>29</math> handshakes with other people not him/herself, the second person gets <math>28</math> handshakes with other people not him/herself and not the first person, ..., and the tenth receives <math>20</math> handshakes with other people not him/herself and not the first, second, ..., ninth person. We can write this as the sum of an arithmetic sequence:
+
+<math>\frac{10(20+29)}{2}\implies 5(49)\implies 245.</math>
+Therefore, the answer is <math>\boxed{\textbf{(B)}\ 245}</math>
+
+--- Solution 4 ---
+First, we can find out the number of handshakes that the <math>10</math> people who don't know anybody share with the <math>20</math> other people. This is simply <math>10 \cdot 20 = 200</math>. Next, we need to find out the number of handshakes that are shared within the <math>10</math> people who don't know anybody. Here, we can use the formula <math>\frac{n(n-1)}{2}</math>, where <math>n</math> is the number of people being counted. The reason we divide by <math>2</math> is because <math>n(n-1)</math> counts the case where the <math>1^{st}</math> person shakes hands with the <math>2^{nd}</math> person <math>and</math> the case where the <math>2^{nd}</math> shakes hands with the <math>1^{st}</math> (and these 2 cases are the same). Thus, plugging <math>n=10</math> gives us <math>\frac{10 \cdot 9}{2} \implies 45</math>. Adding up the 2 cases gives us <math>200+45=\boxed{\textbf{(B)}\ 245}</math>
+
+
+=== Problem 9 ===
+Minnie rides on a flat road at
+
+Choices: {'A': '\\ 45', 'B': '\\ 60', 'C': '\\ 65', 'D': '\\ 90', 'E': '\\ 95</math>'}
+Answer: C
+
+--- Solution 1 ---
+The distance from town <math>A</math> to town <math>B</math> is <math>10</math> km uphill, and since Minnie rides uphill at a speed of <math>5</math> kph, it will take her <math>2</math> hours. Next, she will ride from town <math>B</math> to town <math>C</math>, a distance of <math>15</math> km all downhill. Since Minnie rides downhill at a speed of <math>30</math> kph, it will take her half an hour. Finally, she rides from town <math>C</math> back to town <math>A</math>, a flat distance of <math>20</math> km. Minnie rides on a flat road at <math>20</math> kph, so this will take her <math>1</math> hour. Her entire trip takes her <math>3.5</math> hours.
+
+Then, Penny will go from town <math>A</math> to town <math>C</math>, a flat distance of <math>20</math> km. Since Penny rides on a flat road at <math>30</math> kph, it will take her <math>\frac{2}{3}</math> of an hour. Next Penny will go from town <math>C</math> to town <math>B</math>, which is uphill for Penny. Since Penny rides at a speed of <math>10</math> kph uphill, and town <math>C</math> and <math>B</math> are <math>15</math> km apart, it will take her <math>1.5</math> hours. Finally, Penny goes from Town <math>B</math> back to town <math>A</math>, a distance of <math>10</math> km downhill. Since Penny rides downhill at <math>40</math> kph, it will only take her <math>\frac{1}{4}</math> of an hour. In total, it takes her <math>29/12</math> hours, which simplifies to <math>2</math> hours and <math>25</math> minutes.
+Finally, Penny's <math>2</math>hr <math>25</math>min trip was <math>\boxed{\textbf{(C)}\ 65}</math> minutes less than Minnie's <math>3</math>hr <math>30</math>min trip.
+
+
+=== Problem 10 ===
+Joy has
+
+Choices: {'A': '\\ 16', 'B': '\\ 17', 'C': '\\ 18', 'D': '\\ 19', 'E': '\\ 20</math>'}
+Answer: B
+
+--- Solution 1 ---
+The triangle inequality generalizes to all polygons, so <math>x < 3+7+15</math> and <math>15<x+3+7</math> yields <math>5<x<25</math>. Now, we know that there are <math>19</math> numbers between <math>5</math> and <math>25</math> exclusive, but we must subtract <math>2</math> to account for the 2 lengths already used that are between those numbers, which gives <math>19-2=\boxed{\textbf{(B)}\ 17}</math>
+
+
+=== Problem 11 ===
+The region consisting of all points in three-dimensional space within
+
+Choices: {'A': '\\ 6', 'B': '\\ 12', 'C': '\\ 18', 'D': '\\ 20', 'E': '\\ 24</math>'}
+Answer: D
+
+--- Solution 1 ---
+In order to solve this problem, we must first visualize what the region looks like. We know that, in a three dimensional space, the region consisting of all points within <math>3</math> units of a point would be a sphere with radius <math>3</math>.  However, we need to find the region containing all points within <math>3</math> units of a segment.  It can be seen that our region is a cylinder with two hemispheres/endcaps on either end.  We know the volume of our region, so we set up the following equation (the volume of our cylinder + the volume of our two hemispheres will equal <math>216 \pi</math>):
+
+<math>\frac{4 \pi }{3} \cdot 3^3+9 \pi x=216 \pi</math>, where <math>x</math> is equal to the length of our line segment.
+
+Solving, we find that <math>x = \boxed{\textbf{(D)}\ 20}</math>.
+
+--- Solution 2 ---
+Because this is just a cylinder and <math>2</math> hemispheres ("half spheres"), and the radius is <math>3</math>, the volume of the <math>2</math> hemispheres is <math>\frac{4(3^3)\pi}{3} = 36 \pi</math>. Since we also know that the volume of this whole thing is <math>216 \pi</math>, we do <math>216 \pi-36 \pi</math> to get <math>180 \pi</math> as the volume of the cylinder. Thus the height is <math>180 \pi</math> divided by the area of the base, or <math>\frac{180 \pi}{9\pi}=20</math>, so our answer is <math>\boxed{\textbf{(D)}\ 20}.</math>
+
+
+=== Problem 12 ===
+Let
+
+Choices: {'A': '\\ \\text{a single point}', 'B': '\\ \\text{two intersecting lines} \\\\', 'C': '\\ \\text{ three lines whose pairwise intersections are three distinct points} \\\\', 'D': '\\ \\text{a triangle}', 'E': '\\ \\text{three rays with a common endpoint}</math>'}
+Answer: E
+
+--- Solution 1 ---
+If the two equal values are <math>3</math> and <math>x+2</math>, then <math>x=1</math>. Also, <math>y-4\le 3</math> because <math>3</math> is the common value. Solving for <math>y</math>, we get <math>y \le 7</math>. Therefore the portion of the line <math>x=1</math> where <math>y \le 7</math> is part of <math>S</math>. This is a ray with an endpoint of <math>(1, 7)</math>.
+
+Similar to the process above, we assume that the two equal values are <math>3</math> and <math>y-4</math>. Solving the equation <math>3=y-4</math> then <math>y=7</math>. Also, <math>x+2\le 3</math> because 3 is the common value. Solving for <math>x</math>, we get <math>x\le1</math>. Therefore the portion of the line <math>y=7</math> where <math>x\le 1</math> is also part of <math>S</math>. This is another ray with the same endpoint as the above ray: <math>(1, 7)</math>.
+
+If <math>x+2</math> and <math>y-4</math> are the two equal values, then <math>x+2=y-4</math>. Solving the equation for <math>y</math>, we get <math>y=x+6</math>. Also <math>3\le y-4</math> because <math>y-4</math> is one way to express the common value. Solving for <math>y</math>, we get <math>y\ge 7</math>. We also know <math>3\le x+2</math>, so <math>x\ge 1</math>.Therefore the portion of the line <math>y=x+6</math> where <math>y\ge 7</math> is part of <math>S</math> like the other two rays. The lowest possible value that can be achieved is also <math>(1, 7)</math>.
+
+Since <math>S</math> is made up of three rays with common endpoint <math>(1, 7)</math>, the answer is <math>\boxed{\textbf{(E) }\text{three rays with a common endpoint}}</math>
+
+==Solution 2 (Graphing \(S\))==
+
+Similar to above, we make three equations.
+
+\( 3 = x + 2 \)
+
+\( 3 = y - 4 \)
+
+\( x + 2 = y - 4 \)
+
+and solve them in terms of a linear equation
+
+\( x = 1 \)
+
+\( y = 7 \)
+
+\( x + 6 = y \)
+
+We proceed to graph each of the three equations.
+
+[[File:Amc10a 2017 q12.png | center | 650]]
+
+We now see that no third value is less than the common point. Therefore, we want the overlapping region of \( y \ge 7 \) and \( x \ge 1 \).
+
+There are three lines in this region that start at a point \((1, 7)\). A line that extends forever starting at any point is called a ray. Because we have three of these lines, particularly \( x = 1 \), \( y = 7 \), and \( x + 6 = y \), we have <math>\boxed{\textbf{(E) }\text{three rays with a common endpoint}}</math>.
+
+
+=== Problem 13 ===
+Define a sequence recursively by
+
+Choices: {'A': '\\ 6', 'B': '\\ 7', 'C': '\\ 8', 'D': '\\ 9', 'E': '\\ 10</math>'}
+Answer: D
+
+--- Solution 1 ---
+A pattern starts to emerge as the function is continued. The repeating pattern is <math>0,1,1,2,0,2,2,1\ldots</math> The problem asks for the sum of eight consecutive terms in the sequence. Because there are eight numbers in the repeating pattern, we just need to find the sum of the numbers in the sequence, which is <math>\boxed{\textbf{(D)}\ 9}</math>
+
+
+=== Problem 14 ===
+Every week Roger pays for a movie ticket and a soda out of his allowance. Last week, Roger's allowance was
+
+Choices: {'A': '\\ 9\\%', 'B': '\\ 19\\%', 'C': '\\ 22\\%', 'D': '\\ 23\\%', 'E': '\\ 25\\%</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>m</math> = cost of movie ticket<br>
+Let <math>s</math>  = cost of soda
+
+We can create two equations:
+
+<cmath>m = \frac{1}{5}(A - s)</cmath>
+<cmath>s  = \frac{1}{20}(A - m)</cmath>
+
+Substituting we get: <br>
+
+<cmath>m = \frac{1}{5}(A - \frac{1}{20}(A - m))</cmath>
+which yields:<br>
+<cmath>m = \frac{19}{99}A</cmath>
+
+Now we can find s and we get:<br>
+
+<cmath>s = \frac{4}{99}A</cmath>
+
+Since we want to find what fraction of <math>A</math> did Roger pay for his movie ticket and soda, we add <math>m</math> and <math>s</math> to get:
+
+<cmath>\frac{19}{99}A + \frac{4}{99}A \implies \boxed{\textbf{(D)}\ 23\%}</cmath>
+
+--- Solution 2 ---
+We have two equations from the problem:
+<math>5M=A-S</math> and 
+<math>20S=A-M</math>
+If we replace <math>A</math> with <math>100</math> we get a system of equations, and the sum of the values of <math>M</math> and <math>S</math> is the percentage of <math>A</math>.
+Solving, we get <math>S=\frac{400}{99}</math> and <math>M=\frac{1900}{99}</math>.
+Adding, we get <math>\frac{2300}{99}</math>, which is closest to <math>23</math> which is <math>\boxed{\textbf{(D)}\ 23\%}</math>.
+
+--- Solution 3 ---
+Let <math>m</math> be the price of a movie ticket and <math>s</math> be the price of a soda.
+
+Then, 
+
+<cmath>m=\frac{A-s}{5}</cmath>
+and
+<cmath>s=\frac{A-m}{20}</cmath>
+Then, we can turn this into
+<cmath>5m=A-s</cmath>
+<cmath>20s=A-m</cmath>
+
+Subtracting and getting rid of A, we have <math>20s-5m=-m+s \rightarrow 19s=4m</math>. Assuming WLOG (without loss of generality) that <math>s=4</math>, <math>m=19</math>, thus making a solution for this equation. Substituting this into the 1st equation, we get <math>A=99</math>. Hence, <math>\frac{m+s}{A} = \frac{19+4}{99} \approx \boxed{\textbf{(D)}\ 23\%}</math>
+
+
+=== Problem 15 ===
+Chloé chooses a real number uniformly at random from the interval
+
+Choices: {'A': '\\ \\frac{1}{2}', 'B': '\\ \\frac{2}{3}', 'C': '\\ \\frac{3}{4}', 'D': '\\ \\frac{5}{6}', 'E': '\\ \\frac{7}{8}</math>'}
+Answer: C
+
+--- Solution 1 ---
+We can use geometric probability to solve this.
+Suppose a point <math>(x,y)</math> lies in the <math>xy</math>-plane. Let <math>x</math> be Chloe's number and <math>y</math> be Laurent's number. Then obviously we want <math>y>x</math>, which basically gives us a region above a line. We know that Chloe's number is in the interval <math>[0,2017]</math> and Laurent's number is in the interval <math>[0,4034]</math>, so we can create a rectangle in the plane, whose length is <math>2017</math> and whose width is <math>4034</math>. Drawing it out and dividing into 4 congruent triangles, we see that Laurent's winning area is 3 triangles and Chloe's  is 1 triangle. <math>\boxed{\textbf{(C)}\ \frac{3}{4}}</math>.
+
+--- Solution 2 ---
+Scale down by <math>2017</math> to get that Chloe picks from <math>[0,1]</math> and Laurent picks from <math>[0,2]</math>. There are an infinite number of cases for the number that Chloe picks, but they are all centered around the average of <math>0.5</math>. Therefore, Laurent has a winning range of <math>[X, 2]</math>, where the average value of <math>X</math> is <math>0.5</math>. Thus the average winning length is <math>2-0.5=1.5</math> out of a total length of <math>2-0=2</math>. Therefore, the probability is <math>1.5/2=15/20=\boxed{\frac{3}{4} \space \text{(C)}}.</math>
+
+--- Solution 3 ---
+In total there are <math>2018\times4034</math> ways in which Laurene and Chloe can choose numbers (as same number cannot be chosen by both). If Chloe chooses 2017, then Lauren has 2017 ways to win. If Chloe chooses 2016, Lauren has 2018 ways to win, and so on until Chloe chooses 0, Lauren has 4034 ways to win. Thus the answer is:
+
+<math>\frac{\text{number of ways lauren can win}}{\text{number of combinations}}=\frac{2017+2018+2019...+4034}{2018\times4034}</math>
+
+Using arithmetic series formula:
+
+<math>\frac{\frac{1}{2}(2018)(2017+4034)}{2018\times4034}=\frac{3}{4}</math>
+
+<math>\fbox{C}</math> is the correct answer.
+
+
+NOTE: Because the problem says real numbers, not integers, this solution may not always work.
+
+--- Solution 4 ---
+Let Laurene's number \(L \in [0, 4034]\) and Chloé's number \(C \in [0, 2017]\). There is \(\frac{1}{2}\) chance where \(L \in (2017, 4034]\), in which case \(L > C\) regardless of Chloé's number. If \(L \in [0, 2017]\), again by \(\frac{1}{2}\) chance, \(C\) and \(L\) are independently chosen real numbers within the same interval. Then by symmetry, there's equal chance of one being greater than the other; this gives us \(\frac{1}{2} \times \frac{1}{2}\) chance.
+
+The answer is \(\frac{1}{2} + \frac{1}{2} \times \frac{1}{2} = \boxed{\textbf{(C)}\ \frac{3}{4}}\)
+
+
+=== Problem 16 ===
+There are 10 horses, named Horse 1, Horse 2,
+
+Choices: {'A': '\\ 2', 'B': '\\ 3', 'C': '\\ 4', 'D': '\\ 5', 'E': '\\ 6</math>'}
+Answer: B
+
+--- Solution 1 ---
+If we have horses, <math>a_1, a_2, \ldots, a_n</math>, then any number that is a multiple of all those numbers is a time when all horses will meet at the starting point. The least of these numbers is the LCM. To minimize the LCM, we need the smallest primes, and we need to repeat them a lot. By inspection, we find that <math>\text{LCM}(1,2,3,2\cdot2,2\cdot3) = 12</math>. Finally, <math>1+2 = \boxed{\textbf{(B) }3}</math>.
+
+--- Solution 2 ---
+We are trying to find the smallest number that has <math>5</math> one-digit divisors. Therefore we try to find the LCM for smaller digits, such as <math>1</math>,<math> 2</math>, <math>3</math>, or <math>4</math>. We quickly consider <math>12</math> since it is the smallest number that is the LCM of <math>1</math>, <math>2</math>, <math>3</math> and <math>4</math>. Since <math>12</math> has <math>5</math> single-digit divisors, namely <math>1</math>, <math>2</math>, <math>3</math>, <math>4</math>, and <math>6</math>, our answer is <math>1+2 = \boxed{\textbf{(B)}\ 3}</math>
+
+--- Solution 3 ---
+First, for 5 horses to simultaneously pass the starting line after <math>T</math> seconds, <math>T</math> must be divisible by the amount of seconds it takes each of the 5 horses to pass the starting line, meaning all of the horses must be divisors of <math>T</math>, and therefore meaning <math>T</math> must have at least <math>5</math> <math>1</math>-digit divisors. Since we want to minimize <math>T</math>, we will start by guessing the lowest natural number, <math>1</math>. <math>1</math> has only <math>1</math> factor, so it does not work, we now repeat the process for the numbers between <math>2</math> and <math>12</math> (This should not take more than a minute) to get that <math>12</math> is the first number to have <math>5</math> or more single-digit divisors (<math>1, 2, 3, 4, 6</math>). The sum of the digits of <math>12</math> is <math>1+2 = \boxed{\textbf{(B)}\ 3}</math>, which is our answer.
+
+Note that this solution is rather fast with this problem because the numbers given in the question are low, this may not always be the case, however, when given higher numbers.
+
+--- Solution 4 ---
+By inspection, <math>(1, 2, 3, 4, 6)</math> yields the lowest answer of <math>12</math> and the sum of the digits is <math>1+2 \Longrightarrow \boxed{\textbf{(B)}\ 3}</math>
+
+
+=== Problem 17 ===
+Distinct points
+
+Choices: {'A': '\\ 3', 'B': '\\ 5', 'C': '\\ 3\\sqrt{5}', 'D': '\\ 7', 'E': '\\ 5\\sqrt{2}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Because <math>P</math>, <math>Q</math>, <math>R</math>, and <math>S</math> are lattice points, there are only a few coordinates that actually satisfy the equation. The coordinates are <math>(\pm 3,\pm 4), (\pm 4, \pm 3), (0,\pm 5),</math> and <math>(\pm 5,0).</math> We want to maximize <math>PQ</math> and minimize <math>RS.</math> They also have to be non perfect squares, because they are both irrational. The greatest value of <math>PQ</math> happens when <math>P</math> and <math>Q</math> are almost directly across from each other and are in different quadrants. For example, the endpoints of the segment could be <math>(-4,3)</math> and <math>(3,-4)</math> because the two points are almost across from each other. Another possible pair could be <math>(-4,3)</math> and <math>(5,0)</math>. To find out which segment is longer, we have to compare the distances from their endpoints to a diameter (which must be the longest possible segment). The closest diameter would be from <math>(-4,3)</math> to <math>(4,-3)</math>. The distance between <math>(3,-4)</math> and <math>(-4,3)</math> is greater than the distance between <math>(5,0)</math> and <math>(4,-3)</math>. Therefore, the segment from <math>(3,-4)</math> to <math>(-4,3)</math> is the longest attainable (the other possible coordinates for <math>P</math> and <math>Q</math> are <math>(4,3)</math> and <math>(-3, -4)</math>, <math>(3, 4)</math> and <math>(-4, -3)</math>, <math>(-3, 4)</math> and <math>(4, -3)</math>. The least value of <math>RS</math> is when the two endpoints are in the same quadrant and are very close to each other. This can occur when, for example, <math>R</math> is <math>(3,4)</math> and <math>S</math> is <math>(4,3).</math> They are in the same quadrant and no other point on the circle with integer coordinates is closer to the point <math>(3,4)</math> than <math>(4,3)</math> and vice versa. Using the distance formula, we get that <math>PQ</math> is <math>\sqrt{98}</math> and that <math>RS</math> is <math>\sqrt{2}.</math> <math>\frac{\sqrt{98}}{\sqrt{2}}=\sqrt{49}=\boxed{\mathrm{\textbf{(D)}}\ 7}</math>
+
+--- Solution 2 ---
+We can look at the option choices. Since we are aiming for the highest possible ratio, let's try using <math>7</math> (though <math>5 \sqrt{2}</math> actually is the highest ratio.) Now, looking at the problem alone, we know that to have the largest ratio possible, we have to let <math>RS</math> be the minimum possible value while at the same time using integer coordinates. Thus, the smallest possible value of <math>RS</math> is <math>\sqrt{1^{2}+1^{2}} = \sqrt{2}</math>. Assuming that <math>\frac{PQ}{RS} = 7</math>, we plug in <math>RS = \sqrt{2}</math> and solve for <math>PQ</math>: <math>PQ=7\sqrt{2}</math>. Remember, we don't know if this is possible yet, we are only trying to figure out if it is. But for what values of <math>x</math> and <math>y</math> does <math>\sqrt{x^{2}+y^{2}}=7\sqrt2</math>? We see that this can easily be made into a <math>45-45-90</math> triangle. But, instead of substituting <math>y=x</math> into the equation and then using a whole lot of algebra, we can save time and use the little trick, that if in a <math>45-45-90</math> triangle, the two <math>45</math> degree sides have side length <math>s</math>, then the hypotenuse is <math>s\sqrt2</math>. Using this, we can see that <math>s=7</math>, and since our equation does in fact yield a sensible solution, we can be assured that our answer is <math>\boxed{\mathrm{\textbf{(D)}}\ 7}</math>.
+
+Quality Control by fasterthanlight
+
+(Note by Carrot_Karen: We tried <math>7</math>, but some might be confused why we concluded that it was the answer after verifying without trying the others, like why wasn't option <math>\textbf{(E)}</math> tried? This is because the problem can only have one correct answer, so if we have an option that already works, we can conclude that none of the others work and <math>\textbf{(D)}</math> is the answer.
+
+comment:(but in other problems, they had different answer choices that worked, so you cant be sure.)
+
+(Note by Pinotation: The above reasoning for why <math>\textbf{(E)}</math> was not tried is incorrect. Option <math>\textbf{(E)}</math> is gotten by not reading the question thoroughly and choosing the diameter as the longest length. Then, to get the shortest length, you choose points \((-3, -4)\) and \((-4,-3)\) to get a length of \( \sqrt{2} \). This then gives \( \frac{PQ}{RS} = \frac{10}{\sqrt{2}} = 5\sqrt{2} \). This answer is gotten from assuming the diameter, which is 10, but the questions states that PQ and RS are irrational lengths. That is the reason why the answer is <math>\boxed{\mathrm{\textbf{(D)}}\ 7}</math> and not <math>\textbf{(E)}</math>. You may also check out [https://www.youtube.com/watch?v=yglVmoj6jaM  Beauty Of Math's] video linked here.)
+
+--- Solution 3 ---
+By inspection, when <math> R</math> is at <math>(3, 4)</math> and <math> S</math> is at <math>(4, 3),</math> it makes <math>RS</math> as small as possible with a distance of <math>\sqrt{2}</math>. The greatest possible length of <math>PQ</math> arises when <math> P</math> is at <math>(-3, 4)</math> and <math> Q</math> is at <math>(4, -3).</math> Using the distance formula, we find that <math>PQ</math> has a length of <math>7\sqrt{2}.</math> The requested fraction is then <math>\dfrac{PQ}{RS} = \dfrac{7\sqrt{2}}{\sqrt{2}} = \boxed{\mathrm{\textbf{(D)}}\ 7}</math>.
+
+
+=== Problem 18 ===
+Amelia has a coin that lands heads with probability
+
+Choices: {'A': '\\ 1', 'B': '\\ 2', 'C': '\\ 3', 'D': '\\ 4', 'E': '\\ 5</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>P</math> be the probability Amelia wins. Note that <math>P = \text{chance she wins on her first turn} + \text{chance she gets to her turn again}\cdot P</math>, since if she gets to her turn again, she is back where she started with probability of winning <math>P</math>. The chance she wins on her first turn is <math>\frac{1}{3}</math>. The chance she makes it to her turn again is a combination of her failing to win the first turn - <math>\frac{2}{3}</math> and Blaine failing to win - <math>\frac{3}{5}</math>. Multiplying gives us <math>\frac{2}{5}</math>. Thus,
+<cmath>P = \frac{1}{3} + \frac{2}{5}P</cmath>
+Therefore, <math>P = \frac{5}{9}</math>, so the answer is <math>9-5=\boxed{\textbf{(D)}\ 4}</math>.
+
+--- Solution 2 ---
+Let <math>P</math> be the probability Amelia wins. Note that <math>P = \text{chance she wins on her first turn} + \text{chance she gets to her second turn}\cdot \frac{1}{3} + \text{chance she gets to her third turn}\cdot \frac{1}{3} \cdots</math> This can be represented as an infinite geometric series: <cmath>P=\frac{\frac{1}{3}}{1-\frac{2}{3}\cdot \frac{3}{5}} = \frac{\frac{1}{3}}{1-\frac{2}{5}} = \frac{\frac{1}{3}}{\frac{3}{5}} = \frac{1}{3}\cdot \frac{5}{3} = \frac{5}{9}.</cmath> 
+Therefore, <math>P = \frac{5}{9}</math>, so the answer is <math>9-5 = \boxed{\textbf{(D)}\ 4}.</math>
+
+Solution by ktong
+
+--- Solution 3 ---
+We can solve this by using 'casework,' the cases being:
+Case 1: Amelia wins on her first turn.
+Case 2 Amelia wins on her second turn.
+and so on.
+
+The probability of her winning on her first turn is <math>\dfrac13</math>. The probability of all the other cases is determined by the probability that Amelia and Blaine all lose until Amelia's turn on which she is supposed to win. So, the total probability of Amelia winning is:
+<cmath>\dfrac{1}{3}+\left(\dfrac{2}{3}\cdot\dfrac{3}{5}\right)\cdot\dfrac{1}{3}+\left(\dfrac{2}{3}\cdot\dfrac{3}{5}\right)^2\cdot\dfrac{1}{3}+\cdots.</cmath>
+Factoring out <math>\dfrac13</math> we get a geometric series:
+<cmath>\dfrac{1}{3}\left(1+\dfrac{2}{5}+\left(\dfrac{2}{5}\right)^2+\cdots\right) = \dfrac{1}{3}\cdot\dfrac{1}{3/5} = \boxed{\dfrac59}.</cmath>
+
+Extracting the desired result, we get <math>9-5 = \boxed{\textbf{(D)} \ 4}</math>.
+
+-ConfidentKoala4
+
+
+=== Problem 19 ===
+Alice refuses to sit next to either Bob or Carla. Derek refuses to sit next to Eric. How many ways are there for the five of them to sit in a row of 5 chairs under these conditions?
+
+Choices: {'A': '\\ 12', 'B': '\\ 16', 'C': '\\ 28', 'D': '\\ 32', 'E': '\\ 40</math>'}
+Answer: C
+
+--- Solution 1 ---
+Label the seats (from left to right) <math>1</math> through <math>5</math>. The number of ways to seat Derek and Eric in the five seats with no restrictions is <math>5 \cdot 4=20</math>. The number of ways to seat Derek and Eric such that they sit next to each other is <math>8</math> (we can treat Derek and Eric as a "block". There are four ways to seat this "block", and two ways to permute Derek and Eric, for a total of <math>4\cdot 2=8</math>), so the number of ways such that Derek and Eric don't sit next to each other is <math>20-8=12</math>. Note that once Derek and Eric are seated, we can divide into three cases. 
+
+The first case is that they sit at each end. There are two ways to seat Derek and Eric. But this is impossible because then Alice, Bob, and Carla would have to sit in some order in the middle three seats which would lead to Alice sitting next to Bob or Carla, a contradiction. So this case gives us <math>0</math> ways.
+
+Another possible case is if Derek and Eric sit in seats <math>2</math> and <math>4</math> in some order. There are <math>2</math> possible ways to seat Derek and Eric like this. This leaves Alice, Bob, and Carla to sit in any order in the remaining three seats. Since no two of these three seats are consecutive, there are <math>3!=6</math> ways to do this. So the second case gives us <math>2 \cdot 6=12</math> total ways.
+
+The last case is if once Derek and Eric are seated, exactly one pair of consecutive seats are available. There are <math>12-2-2=8</math> ways to seat Derek and Eric like this. Once they are seated like this, Alice cannot sit in one of the two consecutive available seats without sitting next to Bob or Carla. So Alice has to sit in the other remaining chair. Then, there are two ways to seat Bob and Carla in the remaining two seats (which are consecutive). So this case gives us <math>8 \cdot 2=16</math> ways.
+
+So in total there are <math>12+16=28</math> ways. Our answer is <math>\boxed{\textbf{(C)}\ 28}</math>.
+<br>
+Minor <math>\LaTeX</math> edits by fasterthanlight :)
+
+Minor clarity edits by Carrot_Karen
+
+==Solution 3: PIE==
+
+We start with complementary counting. After all, it's much easier to count the cases where some of these restraints are true, than when they aren't.
+
+PIE (principle of inclusion and exclusion):
+Let's count the total number of cases where one of these is true:
+
+When Alice is with Bob:
+<math>2\cdot4!=48</math>
+
+When Alice is with Carla:
+<math>2\cdot4!=48</math>
+
+When Derek is with Eric:
+<math>2\cdot4!=48</math>
+
+Then, we count the cases where two of these are true.
+
+Alice is next to Carla, and Alice is also next to Bob.
+There are two ways to rearrange Alice, Bob, and Carla so that this is true:
+BAC and CAB.
+<math>2\cdot3!=12</math>
+
+Alice is next to Carla, and Derek is also next to Eric.
+<math>2\cdot2\cdot3!=24</math>
+
+Alice is next to Bob, and Derek is also next to Eric.
+<math>2\cdot2\cdot3!=24</math>
+
+Finally, we count the cases where all three of these are true:
+<math>2\cdot2\cdot2=8</math>
+
+We add up the cases where one of these are true:
+<math>48\cdot3=144</math>
+
+Subtract the cases where two of these are true:
+<math>144-60=84</math>
+
+And finally add back the cases where three of these are true:
+<math>84+8=92</math>
+
+Thus, our answer is <math>5!-92=28</math>, or <math>\boxed{\textbf{(C)} 
+
+
+ty
+
+
+
+==Solution 4: Enumeration and casework of Alice's position==
+To find the number of ways, we do casework.
+
+Case 1: Alice sits in the first seat (leftmost)
+Since Alice refuses to sit with Bob and Carla, then the seat on her immediate right must be Derek or Eric. The middle seat must be Bob or Carla (because Derek and Eric refuse to sit together). The seat to the right of the middle seat could be whoever is left over from Derek and Eric, or whoever is left together from Bob and Carla. The last seat only has one person left. There are <math>4</math> ways to permute Bob, Carla, Derek, and Eric, and <math>2</math> ways to pick who goes in the seat to the right of the middle seat, for <math>4\cdot2=8</math> seating arrangements here.
+
+Case 2: Alice sits in the second seat
+Derek and Eric must be on both sides of Alice because otherwise, we would have to put Bob or Carla next to Alice which is forbidden. Then Bob and Carla take the remaining two seats. There are <math>4</math> ways to permute and <math>4</math> arrangements here.
+
+Case 3: Alice sits in the middle seat
+Once again, Derek and Eric must be on both sides of Alice, and Bob and Carla need to take the two remaining seats. There are also <math>4</math> ways to permute and <math>4</math> arrangements here.
+
+Case 4: Alice sits in the fourth seat
+By symmetry, this is the same as case 2. There are <math>4</math> arrangements.
+
+Case 5: Alice sits in the last seat (rightmost)
+By symmetry, this is the same as case 1. There are <math>8</math> arrangements.
+
+Adding up the cases, there are <math>8+4+4+4+8=28</math> total seating arrangements <math>\Longrightarrow \boxed{\textbf{(C) } 28}</math>
+
+
+P.S. For this question, it is possible and slightly less insanity-inducing to list out every combination and make an educated guess from there, but is not recommended unless you've given up all hope from doing the solutions above this one :P
+
+
+=== Problem 20 ===
+Let
+
+Choices: {'A': '\\ 1', 'B': '\\ 3', 'C': '\\ 12', 'D': '\\ 1239', 'E': '\\ 1265</math>'}
+Answer: D
+
+--- Solution 1 ---
+Note that <math>n \equiv S(n) \pmod{9}</math>. This can be seen from the fact that <math>\sum_{k=0}^{n}10^{k}a_k \equiv \sum_{k=0}^{n}a_k \pmod{9}</math>. Thus, if <math>S(n) = 1274</math>, then <math>n \equiv 5 \pmod{9}</math>, and thus <math>n+1 \equiv S(n+1) \equiv 6 \pmod{9}</math>. The only answer choice that satisfies <math>n+1 \equiv 6 \pmod{9}</math> is <math>\boxed{\textbf{(D)} 1239}</math>.
+
+--- Solution 2 ---
+We disregard the case that the sum of <math> S(N) </math> is <math>0</math> because that would indicate that the number must be <math>0</math> itself, which is not allowed. Therefore, every positive integer <math> N \ge 1 </math> can be denoted in the modular 9 format with <math> N \bmod 9 </math>. Thus we have <math> S(N) \bmod 9 \). In this case, we have \( S(n) = 1274 </math>, and therefore we have <math> S(n) \bmod 9 \equiv 1274 \bmod 9 \equiv 5 \bmod 9 </math>. Thus, \( S(n+1) \) must be congruent to <math>6 \bmod 9</math>, and the only value that satisfies this is <math>\boxed{\textbf{(D)}\ 1239}</math>
+
+--- Solution 3 ---
+One divisibility rule that we can use for this problem is that a multiple of <math>9</math> will always have its digits sum to a multiple of <math>9</math>. We can find out that the least number of digits the number <math>n</math> has is <math>142</math>, with <math>141</math> <math>9</math>'s and <math>1</math> <math>5</math>, assuming the rule above. No matter what arrangement or different digits we use, the divisibility rule stays the same. To make the problem simpler, we can just use the <math>141</math> <math>9</math>'s and <math>1</math> <math>5</math>. By randomly mixing the digits up, we are likely to get: <math>9999</math>...<math>9995999</math>...<math>9999</math>. By adding <math>1</math> to this number, we get: <math>9999</math>...<math>9996000</math>...<math>0000</math>.
+Knowing that <math>n+1</math> is divisible by <math>9</math> when <math>6</math>, we can subtract <math>6</math> from every available choice, and see if the number is divisible by <math>9</math> afterwards.
+After subtracting <math>6</math> from every number, we can conclude that <math>1233</math> (originally <math>1239</math>) is the only number divisible by <math>9</math>. 
+So our answer is <math>\boxed{\textbf{(D)}\ 1239}</math>.
+
+--- Solution 4 ---
+The number <math>n</math> can be viewed as having some unique digits in the front, following by a certain number of nines. We can then evaluate each potential answer choice.
+
+If <math>A</math> is correct, then <math>n</math> must be some number <math>99999999...9</math>, because when we add one to <math>99999999...9</math> we get <math>10000000...00</math>. Thus, if <math>1</math> is the correct answer, then the equation <math>9x=1274</math> must have an integer solution (i.e. <math>1274</math> must be divisible by <math>9</math>). But since it does not, <math>1</math> is not the correct answer.
+
+If <math>B</math> is correct, then <math>n</math> must be some number <math>29999999...9</math>, because when we add one to <math>29999999...9</math>, we get <math>30000000...00</math>. Thus, if <math>3</math> is the correct answer, then the equation <math>2+9x=1274</math> must have an integer solution. But since it does not, <math>3</math> is not the correct answer.
+
+Based on what we have done for evaluating the previous two answer choices, we can create an equation we can use to evaluate the final three possibilities. Notice that if <math>S(n+1)=N</math>, then <math>n</math> must be a number whose initial digits sum to <math>N-1</math>, and whose other, terminating digits, are all <math>9</math>. Thus, we can evaluate the three final possibilities by seeing if the equation <math>(N-1)+9x=1274</math> has an integer solution.
+
+The equation does not have an integer solution for <math>N=12</math>, so <math>C</math> is not correct. However, the equation does have an integer solution for <math>N=1239</math> (<math>x=4</math>), so <math>\boxed{\textbf{(D)}
+
+--- Solution 5 ---
+If adding <math>1</math> to <math>n</math> does not carry any of its digits, then <math>S(n+1)=S(n)+1</math> (ex: <math>25+1=26</math>. Sum of digits <math>7 \rightarrow 8</math>). But since no answer choice is <math>1275</math>, that means <math>n</math> has some amount of <math>9</math>'s from right to left. 
+
+When <math>n+1</math>, some <math>9</math>'s will bump to 0, not affected its<math>\pmod 9</math>. But the first non-9 digit (from right to left) will be bumped up by 1. So <math>S(n) + 1 \pmod {9} \equiv S(n+1) \pmod{9}</math>. For example, <math>34999+1=35000</math>, and the sum of digits <math>7+27 \rightarrow 8+0</math>.
+
+Since <math>S(n) \equiv 5 \pmod{9}</math>, that means <math>S(n+1) \equiv 6 \pmod{9}</math>. The only answer choice that meets this requirement is <math>\boxed{\textbf{(D) } 1239}.</math>
+
+--- Solution 6 ---
+We note quickly from the given value of <math>S(n)</math> that the form of n is likely going to be of the form <math>999999999...X9...9999</math>  
+where X is a natural number between 1 and 9 inclusive
+
+This allows us to create the following equation
+
+
+<math>S(n+1)=1275 - 9y= A </math>
+
+where <math>A</math> is an answer choice and <math>y</math> is any natural number
+
+Plugging in answer choices for <math>A</math> we quickly see that 
+<math>\boxed{\textbf{(D) } 1239}.</math> is our answer
+
+<math>\textbf{Note}</math>: we do have a second possible form for <math>n</math> which is 
+
+<math>99999...993</math> 
+
+and thus <math>n+1 = 99999...994</math> and <math>S(n+1)=1273</math>
+
+but since <math>1273</math> is not an answer choice we can disregard this case
+
+--- Solution 7 ---
+This is a very complex solution so I recommend you read the previous ones before this.
+
+Looking at the answer choices we first take A.
+
+We see that A cannot work as if it was 1, that means that the number must be 1 followed by \( n \) amounts of zero's, and this cannot work as \( S(n) \) itself is not divisible by 9.
+
+We look at 3 and notice that we have two cases. Either it is \( 1 + 2 + n \) zero's or it is 3 followed by \( n \) zero's. Case 2 is obviously false as subtracting 2 still doesn't make \( S(n) \) divisible by 9, and \( 1 + 2 + n \) zero's also doesn't work as even when we subtract 3 from the total, \( S(n) \) proceeds to still not be divisible by 9.
+
+We look at 12 an immediately notice this can't be true as it needs to be divisible by 3 and 4 and the number itself cannot be both divisible by 3 and by 2 as when adding 1 to \( S(n) \) gives 1275, which is odd.
+
+We look at 1239 and see that the sum of the digits is exactly 1 greater than \( S(n) \), making it a possibility.
+
+We see that 1265 has a sum that is exactly the same as \( S(n) \). This means that the subaverage of the number lies between an interval of 9. But the sum \( S(n) \) itself is not divisible by 9, proving that the subaverage is false.
+
+Our only answer is <math>\boxed{\textbf{(D) } 1239}.</math>
+
+
+=== Problem 21 ===
+A square with side length
+
+Choices: {'A': '\\dfrac{12}{13}', 'B': '\\dfrac{35}{37}', 'C': '1', 'D': '\\dfrac{37}{35}', 'E': '\\dfrac{13}{12}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Analyze the first right triangle.
+
+<asy>
+pair A,B,C;
+pair D, e, F;
+A = (0,0);
+B = (4,0);
+C = (0,3);
+
+D = (0, 12/7);
+e = (12/7 , 12/7);
+F = (12/7, 0);
+
+draw(A--B--C--cycle);
+draw(D--e--F);
+
+label("$x$", D/2, W);
+label("$A$", A, SW);
+label("$B$", B, SE);
+label("$C$", C, N);
+label("$D$", D, W);
+label("$E$", e, NE);
+label("$F$", F, S);
+</asy>
+
+Note that <math>\triangle ABC</math> and <math>\triangle FBE</math> are similar, so <math>\frac{BF}{FE} = \frac{AB}{AC}</math>. This can be written as <math>\frac{4-x}{x}=\frac{4}{3}</math>. Solving, <math>x = \frac{12}{7}</math>.
+
+Now we analyze the second triangle.
+
+
+<asy>
+pair A,B,C;
+pair q, R, S, T;
+A = (0,0);
+B = (4,0);
+C = (0,3);
+
+q = (1.297, 0);
+R = (2.27 , 1.297);
+S = (0.973, 2.27);
+T  = (0, 0.973);
+
+draw(A--B--C--cycle);
+draw(q--R--S--T--cycle);
+
+label("$y$", (q+R)/2, NW);
+label("$A'$", A, SW);
+label("$B'$", B, SE);
+label("$C'$", C, N);
+label("$Q$", (q-(0,0.3)));
+label("$R$", R, NE);
+label("$S$", S, NE);
+label("$T$", T, W);
+</asy>
+
+Similarly, <math>\triangle A'B'C'</math> and <math>\triangle RB'Q</math> are similar, so <math>RB' = \frac{4}{3}y</math>, and <math>C'S = \frac{3}{4}y</math>. Thus, <math>C'B' = C'S + SR + RB' = \frac{4}{3}y + y + \frac{3}{4}y = 5</math>. Solving for <math>y</math>, we get <math>y = \frac{60}{37}</math>. Thus, <math>\frac{x}{y} = \boxed{\textbf{(D)}\:\frac{37}{35}}</math>.
+
+--- Solution 2 ---
+Set the right-angle vertex of the triangle as <math>(0,0)</math>. Notice that the hypotenuse of the triangle, as depicted in solution one, can be described by <math>y = 3 - \frac{3}{4}x</math>, while <math>AE</math> can be describe by <math>y=x</math>. Hence, we may solve for <math>x</math> by solving <math> 3- \frac{3}{4}x = x</math>, which yields <math>\frac{12}{7}</math>.
+
+Proceed by finding the value of y via the method described in solution 1, and we will get <math>y = \frac{60}{37}</math>. Thus, <math>\frac{x}{y} = \boxed{\textbf{(D)}\:\frac{37}{35}}</math>.
+
+
+=== Problem 22 ===
+Sides
+
+Choices: {'A': '\\ \\frac{4\\sqrt{3}\\pi}{27}-\\frac{1}{3}', 'B': '\\ \\frac{\\sqrt{3}}{2}-\\frac{\\pi}{8}', 'C': '\\ \\frac{1}{2}', 'D': '\\ \\sqrt{3}-\\frac{2\\sqrt{3}\\pi}{9}', 'E': '\\ \\frac{4}{3}-\\frac{4\\sqrt{3}\\pi}{27}</math>'}
+Answer: E
+
+--- Solution 1 ---
+<asy>
+real sqrt3 = 1.73205080757;
+draw(Circle((4, 4), 4));
+draw((4-2*sqrt3,6)--(4,4)--(4+2*sqrt3,6)--(4-2*sqrt3,6)--(4,12)--(4+2*sqrt3,6));
+label("A", (4, 12.4));
+label("B", (-.3, 6.3));
+label("C", (8.3, 6.3));
+label("O", (4, 3.4));
+</asy>
+Let the radius of the circle be <math>r</math>, and let its center be <math>O</math>. Since <math>\overline{AB}</math> and <math>\overline{AC}</math> are tangent to circle <math>O</math>, then <math>\angle OBA = \angle OCA = 90^{\circ}</math>, so <math>\angle BOC = 120^{\circ}</math>. Therefore, since <math>\overline{OB}</math> and <math>\overline{OC}</math> are equal to <math>r</math>, then (pick your favorite method) <math>\overline{BC} = r\sqrt{3}</math>. The area of the equilateral triangle is <math>\frac{(r\sqrt{3})^2 \sqrt{3}}4 = \frac{3r^2 \sqrt{3}}4</math>, and the area of the sector we are subtracting from it is <math>\frac 13 \pi r^2 - \frac 12 \cdot r\sqrt{3} \cdot \frac{r}2 = \frac{\pi r^2}3 -\frac{r^2 \sqrt{3}}4</math>. The area outside of the circle is <math> \frac{3r^2 \sqrt{3}}4-\left(\frac{\pi r^2}3 -\frac{r^2 \sqrt{3}}4\right) = r^2 \sqrt{3} - \frac{\pi r^2}3</math>. Therefore, the [[answer]] is <cmath>\frac{r^2 \sqrt{3} - \frac{\pi r^2}3}{\frac{3r^2 \sqrt{3}}4} = \boxed{\textbf{(E) } \frac 43 - \frac{4\sqrt 3 \pi}{27}}</cmath>
+
+--- Solution 2 ---
+<asy>
+real sqrt3 = 1.73205080757;
+draw(Circle((4, 4), 4));
+draw((4-2*sqrt3,6)--(4,4)--(4+2*sqrt3,6)--(4-2*sqrt3,6)--(4,12)--(4+2*sqrt3,6));
+draw((4, 6)--(4, 4));
+label("A", (4, 12.4));
+label("B", (-.3, 6.3));
+label("C", (8.3, 6.3));
+label("O", (4, 3.4));
+label("D", (4, 6.6));
+</asy>
+(same diagram as Solution 1)
+
+Without the Loss of Generality, let the side length of the triangle be <math>1</math>. 
+
+Then, the area of the triangle is <math>\frac{\sqrt{3}}{4}</math>. We are looking for the area of the portion inside the triangle but outside the circle divided by the area of the triangle. Since <math>m\angle ABO = 90^{\circ}=m\angle ACO = 90^{\circ}</math>, and <math>m\angle ABC = m\angle ACB = 60^{\circ}</math>, we know <math>m\angle OBC=m\angle OCB=30^{\circ}</math>, and <math>m\angle BOC = 120^{\circ}</math>. Drop an angle bisector of <math>O</math> onto <math>BC</math>, call the point of intersection <math>D</math>. By SAS congruence, <math>\triangle BDO \cong \triangle CDO</math>, by CPCTC (Congruent Parts of Congruent Triangles are Congruent) <math>BD \cong DC</math> and they both measure <math>\frac{1}{2}</math>. By 30-60-90 triangle, <math>OC = BO = \frac{\sqrt{3}}{3}</math>. The area of the sector bounded by arc BC is one-third the area of circle O, whose area is <math>\left(\frac{\sqrt{3}}{3}\right)^{2}\pi=\frac{1}{3}\pi</math>. Therefore, the area of the sector bounded by arc BC is <math>\frac{1}{3}\cdot\frac{1}{3}\pi=\frac{\pi}{9}</math>. 
+
+We are nearly there. By 30-60-90 triangle, we know <math>DO = \frac{\sqrt{3}}{6}</math>, so the area of <math>\triangle BOC</math> is <math>\frac{1\cdot\frac{\sqrt{3}}{6}}{2}=\frac{\sqrt{3}}{12}</math>. The area of the region inside both the triangle and circle is the area of the sector bounded by arc BC minus the area of <math>\triangle BOC</math>: <math>\frac{\pi}{9}-\frac{\sqrt{3}}{12}</math>. The area of the region outside of the circle but inside the triangle is <math>\frac{\sqrt{3}}{4}-\left(\frac{\pi}{9}-\frac{\sqrt{3}}{12}\right)=\frac{\sqrt{3}}{4}-\frac{\pi}{9}+\frac{\sqrt{3}}{12}=\frac{\sqrt{3}}{3}-\frac{\pi}{9}</math> and the ratio is <math>\frac{\frac{\sqrt{3}}{3}-\frac{\pi}{9}}{\frac{\sqrt{3}}{4}}=\left(\frac{\sqrt{3}}{3}-\frac{\pi}{9}\right)\cdot\frac{4}{\sqrt{3}}=\frac{4\sqrt{3}}{3\sqrt{3}}-\frac{4\pi}{9\sqrt{3}}=\frac{4}{3}-\frac{4\sqrt{3}\pi}{27} \Longrightarrow \boxed{\textbf{(E) } \frac 43 - \frac{4\sqrt 3 \pi}{27}}</math>.
+
+
+=== Problem 23 ===
+How many triangles with positive area have all their vertices at points
+
+Choices: {'A': '\\ 2128', 'B': '\\ 2148', 'C': '\\ 2160', 'D': '\\ 2200', 'E': '\\ 2300</math>'}
+Answer: 
+
+--- Solution 1 ---
+We can solve this by finding all the combinations, then subtracting the ones that are on the same line. There are <math>25</math> points in all, from <math>(1,1)</math> to <math>(5,5)</math>, so <math>\dbinom{25}3</math> is <math>\frac{25\cdot 24\cdot 23}{3\cdot 2 \cdot 1}</math>, which simplifies to <math>2300</math>.
+Now we count the ones that are on the same line. We see that any three points chosen from <math>(1,1)</math> and <math>(1,5)</math> would be on the same line, so <math>\dbinom53</math> is <math>10</math>, and there are <math>5</math> rows, <math>5</math> columns, and <math>2</math> long diagonals, so that results in <math>120</math>.
+We can also count the ones with <math>4</math> on a diagonal. That is <math>\dbinom43</math>, which is 4, and there are <math>4</math> of those diagonals, so that results in <math>16</math>.
+We can count the ones with only <math>3</math> on a diagonal, and there are <math>4</math> diagonals like that, so that results in <math>4</math>.
+We can also count the ones with a slope of <math>\frac12</math>, <math>2</math>, <math>-\frac12</math>, or <math>-2</math>, with <math>3</math> points in each. Note that there are <math>3</math> such lines, for each slope, present in the grid. In total, this results in <math>12</math>.
+Finally, we subtract all the ones in a line from <math>2300</math>, so we have <math>2300-120-16-4-12=\boxed{(\textbf{B})\ 2148}</math>
+
+--- Solution 2 ---
+There are <math>5 \times 5 = 25</math> total points in all. So, there are <math>\dbinom{25}3 = 2300</math> ways to choose the three vertices for the triangle. However, there are some cases where they 3 points chosen results in a straight line. 
+
+There are <math>10 \times 10 = 100</math> cases where the 3 points chosen make up a vertical or horizontal line.
+
+There are <math>2\left(1+\dbinom{4}3+\dbinom{5}3+\dbinom{4}3+1\right)=40</math> cases where the 3 points all land on the diagonals of the square.
+
+There are <math>3 \times 4=12</math> ways where the 3 points make the a slope of <math>\frac{1}{2}</math>, <math>-\frac{1}{2}</math>, <math>2</math>, and <math>-2</math>.
+
+Hence, there are <math>100+40+12=152</math> cases where the chosen 3 points make a line. The answer would be <math>2300-152=\boxed{(\textbf{B})\ 2148}</math>
+
+
+=== Problem 24 ===
+For certain real numbers
+
+Choices: {'A': '\\ -9009', 'B': '\\ -8008', 'C': '\\ -7007', 'D': '\\ -6006', 'E': '\\ -5005</math>'}
+Answer: C
+
+--- Solution 1 ---
+<math>f(x)</math> must have four roots, three of which are roots of <math>g(x)</math>. Using the fact that every polynomial has a unique factorization into its roots, and since the leading coefficient of <math>f(x)</math> and <math>g(x)</math> are the same, we know that
+
+<cmath>f(x)=g(x)(x+p)</cmath>
+
+where <math>-p\in\mathbb{R}</math> is the fourth root of <math>f(x)</math>. 
+(Using <math>(x+p) = (x-r))</math> instead of <math>(x-r)</math> makes the following computations less messy.)
+Substituting <math>g(x)</math> and expanding, we find that
+
+<cmath>\begin{align*}f(x)&=(x^3+ax^2+x+10)(x+p)\\
+&=x^4+(a+p)x^3+(1+ap)x^2+(10+p)x+10p.\end{align*}</cmath>
+
+Comparing coefficients with <math>f(x)</math>, we see that
+
+<cmath>\begin{align*}
+a+p&=1\\
+1+ap=b\\
+10+p&=100\\
+10p&=c.\\
+\end{align*}</cmath>
+
+
+Let's solve for <math>a,b,c,</math> and <math>p</math>. Since <math>10+p=100</math>, <math>p=90</math>.
+
+Since <math>a+p=1</math>, <math>a=-89</math>. 
+
+(Solution 1.1 branches from here and takes a shortcut.)
+
+<math>c=(10)(90)=900</math>.
+
+Then, since <math>b=1+ap</math>, <math>b=-8009</math>. Thus,
+
+<cmath>f(x)=x^4+x^3-8009x^2+100x+900.</cmath>
+
+(Solution 1.2 branches from here and takes another shortcut)
+
+Taking <math>f(1)</math>, we find that
+
+<cmath>\begin{align*}
+f(1)&=1^4+1^3-8009(1)^2+100(1)+900\\
+&=1+1-8009+100+900\\
+&=\boxed{\bold{(C)}\, -7007}.\\
+\end{align*}</cmath>
+
+===Solution 1.1===
+A faster ending to Solution 1 is as follows.
+
+<cmath>\begin{align*}
+f(1)&=(1+p)(1^3+a\cdot1^2+1+10)\\
+&=(91)(-77)\\
+&= (7)(13)(11)(-7) = (1001)(-7) \\
+&=\boxed{\bold{(C)}\, -7007}.\\
+\end{align*}</cmath>
+
+===Solution 1.2===
+Also a faster ending to Solution 1 is as follows.
+
+To find <math>f(1)</math> we just need to find the sum of the coefficients which is <math>1 + 1 - 8009 + 100 + 900= \boxed{\bold{(C)} \ , -7007}.</math>
+
+~[[User: Yiyj1|Yiyj1]]
+
+--- Solution 2 ---
+We notice that the constant term of <math>f(x)=c</math> and the constant term in <math>g(x)=10</math>. Because <math>f(x)</math> can be factored as <math>g(x) \cdot (x- r)</math> (where <math>r</math> is the unshared root of <math>f(x)</math>, we see that using the constant term, <math>-10 \cdot r = c</math> and therefore <math>r = -\frac{c}{10}</math>.
+Now we once again write <math>f(x)</math> out in factored form: 
+
+<cmath>f(x) = g(x)\cdot (x-r) = (x^3+ax^2+x+10)(x+\frac{c}{10})</cmath>.
+
+We can expand the expression on the right-hand side to get:
+
+<cmath>f(x) = x^4+(a+\frac{c}{10})x^3+(1+\frac{ac}{10})x^2+(10+\frac{c}{10})x+c</cmath>
+
+Now we have <math>f(x) = x^4+(a+\frac{c}{10})x^3+(1+\frac{ac}{10})x^2+(10+\frac{c}{10})x+c=x^4+x^3+bx^2+100x+c</math>.
+
+Simply looking at the coefficients for each corresponding term (knowing that they must be equal), we have the equations:
+<cmath>10+\frac{c}{10}=100 \Rightarrow c=900</cmath>
+<cmath>a+\frac{c}{10} = 1, c=900 \Rightarrow a + 90 =1 \Rightarrow a= -89</cmath>
+
+and finally,
+
+<cmath>1+\frac{ac}{10} = b = 1+\frac{-89 \cdot 900}{10} = b = -8009</cmath>.
+
+We know that <math>f(1)</math> is the sum of its coefficients, hence <math>1+1+b+100+c</math>. We substitute the values we obtained for <math>b</math> and <math>c</math> into this expression to get <math>f(1) = 1 + 1 + (-8009) + 100 + 900 = \boxed{\textbf{(C)}\,-7007}</math>.
+
+--- Solution 3 ---
+Let <math>r_1,r_2,</math> and <math>r_3</math> be the roots of <math>g(x)</math>. Let <math>r_4</math> be the additional root of <math>f(x)</math>. Then from Vieta's formulas on the quadratic term of <math>g(x)</math> and the cubic term of <math>f(x)</math>, we obtain the following:
+
+<cmath>\begin{align*}
+r_1+r_2+r_3&=-a \\ 
+r_1+r_2+r_3+r_4&=-1
+\end{align*}</cmath>
+
+Thus <math>r_4=a-1</math>.
+
+Now applying Vieta's formulas on the constant term of <math>g(x)</math>, the linear term of <math>g(x)</math>, and the linear term of <math>f(x)</math>, we obtain:
+
+<cmath>\begin{align*}
+r_1r_2r_3  & = -10\\
+r_1r_2+r_2r_3+r_3r_1 &= 1\\ 
+r_1r_2r_3+r_2r_3r_4+r_3r_4r_1+r_4r_1r_2  & = -100\\
+\end{align*}</cmath>
+
+Substituting for <math>r_1r_2r_3</math> in the bottom equation and factoring the remainder of the expression, we obtain:
+
+<cmath>-10+(r_1r_2+r_2r_3+r_3r_1)r_4=-10+r_4=-100</cmath>
+
+It follows that <math>r_4=-90</math>. But <math>r_4=a-1</math> so <math>a=-89</math>
+
+Now we can factor <math>f(x)</math> in terms of <math>g(x)</math> as
+
+<cmath>f(x)=(x-r_4)g(x)=(x+90)g(x)</cmath>
+
+Then <math>f(1)=91g(1)</math> and
+
+<cmath>g(1)=1^3-89\cdot 1^2+1+10=-77</cmath>
+
+Hence <math>f(1)=91\cdot(-77)=\boxed{\textbf{(C)}\,-7007}</math>.
+
+--- Solution 4 ---
+Let the roots of <math>g(x)</math> be <math>r_1</math>, <math>r_2</math>, and <math>r_3</math>. Let the roots of <math>f(x)</math> be <math>r_1</math>, <math>r_2</math>, <math>r_3</math>, and <math>r_4</math>. From Vieta's, we have:
+<cmath>\begin{align*}
+r_1+r_2+r_3=-a \\
+r_1+r_2+r_3+r_4=-1 \\
+r_4=a-1
+\end{align*}</cmath>
+The fourth root is <math>a-1</math>. Since <math>r_1</math>, <math>r_2</math>, and <math>r_3</math> are common roots, we have:
+<cmath>\begin{align*}
+f(x)=g(x)(x-(a-1)) \\
+f(1)=g(1)(1-(a-1)) \\
+f(1)=(a+12)(2-a) \\
+f(1)=-(a+12)(a-2) \\
+\end{align*}</cmath>
+Let <math>a-2=k</math>:
+<cmath>\begin{align*}
+f(1)=-k(k+14)
+\end{align*}</cmath>
+Note that <math>-7007=-1001\cdot(7)=-(7\cdot(11)\cdot(13))\cdot(7)=-91\cdot(77)</math>
+This gives us a pretty good guess of <math>\boxed{\textbf{(C)}\, -7007}</math>.
+
+--- Solution 5 ---
+First off, let's get rid of the <math>x^4</math> term by finding <math>h(x)=f(x)-xg(x)</math>. This polynomial consists of the difference of two polynomials with <math>3</math> common factors, so it must also have these factors. The polynomial is <math>h(x)=(1-a)x^3 + (b-1)x^2 + 90x + c</math>, and must be equal to <math>(1-a)g(x)</math>. Equating the coefficients, we get <math>3</math> equations. We will tackle the situation one equation at a time, starting the <math>x</math> terms. Looking at the coefficients, we get <math>\dfrac{90}{1-a} = 1</math>. <cmath>\therefore 90=1-a.</cmath> The solution to the previous is obviously <math>a=-89</math>. We can now find <math>b</math> and <math>c</math>. <math>\dfrac{b-1}{1-a} = a</math>, <cmath>\therefore b-1=a(1-a)=-89*90=-8010</cmath> and <math>b=-8009</math>. Finally <math>\dfrac{c}{1-a} = 10</math>, <cmath>\therefore c=10(1-a)=10*90=900</cmath> Solving the original problem, <math>f(1)=1 + 1 + b + 100 + c = 102+b+c=102+900-8009=\boxed{\textbf{(C)}\, -7007}</math>.
+
+--- Solution 6 ---
+Simple polynomial division is a feasible method. Even though we have variables, we can equate terms at the end of the division so that we can cancel terms. Doing the division of <math>\frac{f(x)}{g(x)}</math> eventually brings us the final step <math>(1-a)x^3 + (b-1)x^2 + 90x + c</math> minus <math>(1-a)x^3 - (a-a^2)x^2 + (1-a)x + 10(1-a)</math> after we multiply <math>f(x)</math> by <math>(1-a)</math>. Now we equate coefficients of same-degree <math>x</math> terms. This gives us <math> 10(1-a) = c, b-1 = a - a^2, 1-a = 90 \Rightarrow a = -89, c = 900, b = -8009</math>. We are interested in finding <math>f(1)</math>, which equals <math>1^4 + 1^3 -8009\cdot1^2 + 100\cdot1 + 900 = \boxed{\textbf{(C)}\,-7007}</math>.
+
+--- Solution 7 ---
+We first note that <math>f(x) = g(x) \cdot q(x) + r(x)</math> where <math>q</math> is the quotient function and <math>r</math> is the remainder function.
+
+Clearly, <math>r(x) = 0</math> because every single root in <math>g</math> is also in <math>f</math>, thus implying <math>g</math> divides <math>f</math>.
+So, we wish to find <math>f(1) = g(1) \cdot q(1)</math>.
+
+Such an expression for <math>g(1)</math> is pretty clean here as we can obtain <math>g(1) = a + 12</math>, so we rewrite <math>f(1) = (a + 12) \cdot q(1)</math>.
+Well, now we need to know how <math>q</math> is expressed in order to obtain <math>q(1)</math>. This motivates us to long divide to obtain the quotient function. After simple long division <math>q(x) = x + (1 - a)</math>. In addition, what is left over, namely <math>r(x)</math>, has a constant piece of <math>a + 89</math> (you'll see in a few sentences why we only care about particularly the constant piece).
+
+Now we can write: <math>f(1) = (a + 12) \cdot (2 - a)</math>.
+
+Now, as we have already established <math>r(x) = 0</math> for ALL <math>x</math> that means <math>r(0)</math> or the constant piece is <math>0</math>, so <math>89 + a = 0</math>, in which we obtain <math>a = -89</math>. We now plug this back into our equation for <math>f(1)</math> to get <math>(-89 + 12)(2 - (89)) = -77 \cdot 91 = \boxed{\textbf{(C)}\,-7007}</math>.
+
+--- Solution 8 ---
+Since <math>\text{deg(f(x))}=\text{deg(g(x))}+1</math>, we can write<cmath>(f(x)=g(x)\left(x-r \right) \Longrightarrow \left(x^3+ax^2+x+10 \right) \left(x-r \right)=x^4+x^3+bx^2+100x+c.</cmath>Expanding this we get<cmath>x^4+\left(a-r \right)x^3+\left(1-ar \right)x^2+\left(10-r \right)x-10r=x^4+x^3+bx^2+100+c.</cmath>From coefficient matching we get the following equations:<cmath>a-r=1</cmath><cmath>1-ar=b</cmath><cmath>10-r=100</cmath><cmath>c=-10r.</cmath>Obviously, the third equation results in <math>r</math> being <math>=90</math>, and plugging that into the fourth equation we get <math>c=900</math>. Now, we can also plug in <math>r=-90</math> to the first equation to get <math>a=-89</math>. Finally, plugging <math>a</math> and <math>r</math> into the second equation we find that <math>b=-8009</math>. We are asked to find <math>f(1)</math> which is simply <math>b+c+102 = 7007 \Longrightarrow \boxed{C}</math>.
+
+-jb2015007
+
+==General Notes==
+<math>f(1)</math> for any polynomial is simply the sum of the coefficients of the polynomial.
+
+<math>f(x)/g(x) = x+r</math> must have real <math>r</math>. Both <math>f</math> and <math>g</math> have all real coefficients, and so odd-degree <math>g</math> must have an odd number of real roots, and even-degree <math>f</math> must have an even number of real roots, so <math>f</math>'s single additional root must be real.
+
+
+<math>77 * 91 = 7 * 11 * 7 * 13</math>, and <math>7*11*13=1001</math> is a good number sense fact to know. It's interesting because <math>1001= 10^3+1</math> and the 3 nearest primes to <math> 10 </math> are <math>7,11,13</math>.
+
+
+=== Problem 25 ===
+How many integers between
+
+Choices: {'A': '\\ 226', 'B': '\\ 243', 'C': '\\ 270', 'D': '\\ 469', 'E': '\\ 486</math>'}
+Answer: A
+
+--- Solution 1 ---
+There are 81 multiples of 11 between <math>100</math> and <math>999</math> inclusive. Some have digits repeated twice, making 3 permutations.
+
+Others that have no repeated digits have 6 permutations, but switching the hundreds and units digits also yield a multiple of 11. Switching shows we have overcounted by a factor of 2, so assign  <math>6 \div 2 = 3</math> permutations to each multiple.
+
+There are now 81*3 = 243 permutations, but we have overcounted*. (At this point, we can already conclude that the solution is 226) Some multiples of 11 have <math>0</math> as a digit. Since <math>0</math> cannot be the digit of the hundreds place, we must subtract a permutation for each. 
+
+There are 110, 220, 330 ... 990, yielding 9 extra permutations
+
+Also, there are 209, 308, 407...902, yielding 8 more permutations.
+
+Now, just subtract these 17 from the total (243) to get 226. <math>\boxed{\textbf{(A) } 226}</math>
+
+*If short on time, observe that 226 is the only answer choice less than 243, and therefore is the only feasible answer.
+
+--- Solution 2 ---
+We note that we only have to consider multiples of <math>11</math> and see how many valid permutations each has. We can do casework on the number of repeating digits that the multiple of <math>11</math> has:
+
+<math>\textbf{Case 1:}</math> All three digits are the same. 
+By inspection, we find that there are no multiples of <math>11</math> here.
+
+<math>\textbf{Case 2:}</math> Two of the digits are the same, and the third is different.
+
+<math>\textbf{Case 2a:}</math>
+There are <math>8</math> multiples of <math>11</math> without a zero that have this property:
+<math>121</math>, <math>242</math>, <math>363</math>, <math>484</math>, <math>616</math>, <math>737</math>, <math>858</math>, <math>979</math>.
+Each contributes <math>3</math> valid permutations, so there are <math>8 \cdot 3 = 24</math> permutations in this subcase.
+
+<math>\textbf{Case 2b:}</math>
+There are <math>9</math> multiples of <math>11</math> with a zero that have this property:
+<math>110</math>, <math>220</math>, <math>330</math>, <math>440</math>, <math>550</math>, <math>660</math>, <math>770</math>, <math>880</math>, <math>990</math>.
+Each one contributes <math>2</math> valid permutations (the first digit can't be zero), so there are <math>9 \cdot 2 = 18</math> permutations in this subcase.
+
+<math>\textbf{Case 3:}</math> All the digits are different.
+Since there are <math>\frac{990-110}{11}+1 = 81</math> multiples of <math>11</math> between <math>100</math> and <math>999</math>, there are <math>81-8-9 = 64</math> multiples of <math>11</math> remaining in this case. However, <math>8</math> of them contain a zero, namely <math>209</math>, <math>308</math>, <math>407</math>, <math>506</math>, <math>605</math>, <math>704</math>, <math>803</math>, and <math>902</math>. Each of those multiples of <math>11</math> contributes <math>2 \cdot 2=4</math> valid permutations, but we overcounted by a factor of <math>2</math>; every permutation of <math>209</math>, for example, is also a permutation of <math>902</math>. Therefore, there are <math>8 \cdot 4 / 2 = 16</math>. Therefore, there are <math>64-8=56</math> remaining multiples of <math>11</math> without a <math>0</math> in this case. Each one contributes <math>3! = 6</math> valid permutations, but once again, we overcounted by a factor of <math>2</math> (note that if a number ABC is a multiple of <math>11</math>, then so is CBA). Therefore, there are <math>56 \cdot 6 / 2 = 168</math> valid permutations in this subcase.
+
+Adding up all the permutations from all the cases, we have <math>24+18+16+168 = \boxed{\textbf{(A) } 226}</math>.
+
+--- Solution 3 ---
+We can first overcount and then subtract.
+We know that there are <math>81</math> multiples of <math>11</math>.
+
+We can then multiply by <math>6</math> for each permutation of these multiples. (Yet some multiples do not have six distinct permutations.)
+
+Now divide by <math>2</math>, because if a number <math>abc</math> with digits <math>a</math>, <math>b</math>, and <math>c</math> is a multiple of <math>11</math>, then <math>cba</math> is also a multiple of <math>11</math> so we have counted the same permutations twice. 
+
+Basically, each multiple of <math>11</math> has its own <math>3</math> permutations (say <math>abc</math> has <math>abc</math> <math>acb</math> and <math>bac</math> whereas <math>cba</math> has <math>cba</math> <math>cab</math> and <math>bca</math>). We know that each multiple of <math>11</math> has at least <math>3</math> permutations because it cannot have <math>3</math> repeating digits.
+
+Hence we have <math>243</math> permutations without subtracting for overcounting.
+Now note that we overcounted cases in which we have <math>0</math>'s at the start of each number. So, in theory, we could just answer <math>A</math> and then move on.
+
+If we want to solve it, then we continue.
+
+We overcounted cases where the middle digit of the number is <math>0</math> and the last digit is <math>0</math>.
+
+Note that we assigned each multiple of <math>11</math> three permutations.
+
+The last digit is <math>0</math> gives <math>9</math> possibilities where we overcounted by <math>1</math> permutation for each of <math>110, 220, ... , 990</math>.
+
+The middle digit is <math>0</math> gives <math>8</math> possibilities where we overcount by <math>1</math>.
+<math>605, 704, 803, 902</math> and <math>506, 407, 308, 209</math>
+
+Subtracting <math>17</math> gives <math>\boxed{\textbf{(A) } 226}</math>.
+
+Now, we may ask if there is further overlap (i.e if two of <math>abc</math> and <math>bac</math> and <math>acb</math> were multiples of <math>11</math>). Thankfully, using divisibility rules, this can never happen, as taking the divisibility rule mod <math>11</math> and adding, we get that <math>2a</math>, <math>2b</math>, or <math>2c</math>  is congruent to <math>0\ (mod\ 11)</math>. Since <math>a, b, c</math> are digits, this can never happen as none of them can equal <math>11</math> and they can't equal <math>0</math> as they are the leading digit of a three-digit number in each of the cases.
+
+--- Solution 4 ---
+Taken from solution three, we notice that there are a total of <math>81</math> multiples of <math>11</math> between <math>100</math> and <math>999</math>, and each of them have at most <math>6</math> permutation (and thus is a permutations of <math>6</math> numbers), giving us a maximum of <math>486</math> valid numbers. 
+
+However, if <math>abc</math> can be divided by <math>11</math>, so can <math>cba</math>, which is distinct if <math> c \neq a</math>. And if <math>c = a</math> then <math>abc</math> and <math>cba</math> have the same permutations. Either way, we have doubled counted. 
+This reduces the number of permutations to <math>486/2 =  243</math>. 
+
+Furthermore, if <math>a=b</math> or <math>c=0</math> (which turn out to be equivalent conditions! for example <math>220</math>), not all (inverse) permutations are distinct (<math>\mathbf{2}20 = 2\mathbf{2}0</math>) or valid (<math>022</math>). (There are 9 of these.) 
+
+Similarly, for <math>a0b</math>, not all (inverse) permutations are valid. (There are 8 of these.)
+
+As long as you notice at least one example of one of these 3 cases, you may infer that the answer must be smaller than <math>243</math>. This leaves us with only one possible answer: <math>\boxed{\textbf{(A) } 226}</math>.
+
+

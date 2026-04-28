@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-14T12-19-09-draft-a6f8-smoke_codex_add_zero",
+  "status": "error",
+  "session_id": "",
+  "command": "/draft",
+  "input": "For all natural numbers n, n + 0 = n.",
+  "started_at": "2026-04-14T12:19:09Z",
+  "finished_at": "2026-04-14T12:19:10Z",
+  "duration_s": 0.84,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Error: stdin is not a terminal"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-14T12-19-09-draft-a6f8-smoke_codex_add_zero.log",
+  "worker_pid": 1379,
+  "last_heartbeat_at": 1776169149.6887622,
+  "_started_monotonic": 1776169149.4866412
+}

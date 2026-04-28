@@ -59,6 +59,32 @@
             <button id="open-home-pc-kasm" class="secondary home-pc-link" type="button" disabled>Open via Kasm</button>
           </div>
         </section>
+        <section id="dns-lab-panel" class="dns-lab-panel" hidden>
+          <div class="auth-row">
+            <p class="section-label">DNS Lab</p>
+            <p id="dns-lab-line" class="status-line">Using the default resolver mode.</p>
+          </div>
+          <div class="dns-grid">
+            <label class="dns-field">
+              <span>Resolver</span>
+              <select id="dns-mode">
+                <option value="system">Docker default DNS</option>
+                <option value="cloudflare-malware">Cloudflare malware DNS</option>
+                <option value="cloudflare-family">Cloudflare family DNS</option>
+                <option value="custom-dns">Custom DNS servers</option>
+                <option value="browser-doh">Chromium secure DNS</option>
+              </select>
+            </label>
+            <label class="dns-field">
+              <span>Custom DNS</span>
+              <input id="dns-servers" type="text" inputmode="text" placeholder="1.1.1.3,1.0.0.3" autocomplete="off" />
+            </label>
+            <label class="dns-field dns-field-wide">
+              <span>DoH Template</span>
+              <input id="doh-template" type="url" placeholder="https://cloudflare-dns.com/dns-query" autocomplete="off" />
+            </label>
+          </div>
+        </section>
         <div class="actions">
           <button id="start-session" class="primary" disabled>Start Session</button>
           <button id="stop-session" class="secondary" disabled>Stop Session</button>
@@ -83,6 +109,10 @@
               <div>
                 <dt>Worker Image</dt>
                 <dd id="worker-image">Checking...</dd>
+              </div>
+              <div>
+                <dt>Resolver</dt>
+                <dd id="session-dns-mode">Not started</dd>
               </div>
               <div>
                 <dt>Quota</dt>

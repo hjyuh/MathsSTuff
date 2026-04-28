@@ -1,0 +1,1313 @@
+=== Problem 1 ===
+What is the value of <cmath>2^{\left(0^{\left(1^9\right)}\right)}+\left(\left(2^0\right)^1\right)^9?</cmath>
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4</math>'}
+Answer: C
+
+--- Solution 1 ---
+<math>2^{\left(0^{\left(1^9\right)}\right)}+\left(\left(2^0\right)^1\right)^9=  1+1 = \boxed{\textbf{(C) } 2}</math>.
+
+
+=== Problem 2 ===
+What is the hundreds digit of
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '4', 'E': '5</math>'}
+Answer: A
+
+--- Solution 1 ---
+Because we know that <imath>5^3</imath> is a factor of <imath>15!</imath> and <imath>20!</imath>, the last three digits of both numbers is a <imath>0</imath>, this means that the difference of the hundreds digits is also <imath>\boxed{\textbf{(A) }0}</imath>.
+
+--- Solution 2 ---
+We can clearly see that <imath>20! \equiv 15! \equiv 0 \pmod{1000}</imath>, so <imath>20! - 15! \equiv 0 \pmod{100}</imath> meaning that the last two digits are equal to <imath>00</imath> and the hundreds digit is <imath>\boxed{\textbf{(A)}\ 0}</imath>.
+
+--abhinavg0627
+
+--- Solution 3 ---
+<imath>20!= 2432902008176640000</imath>
+and <imath>15!= 1307674368000</imath>
+
+Then, we see that the hundreds digit is <imath>0-0=\boxed{\textbf{(A)}\ 0}</imath>.
+
+
+Please do not do this and only use this solution as a last resort.
+
+Note for people not used to comp. math: This is a completely reasonable way to solve this problem.
+
+--- Solution 4 ---
+The prime factorization of <imath>15!</imath> (it is easier than it seems) is <imath>2^{11} * 3^6 * 5^3 * 7^2 * 11 * 13</imath>
+
+Notice that it includes <imath>2^3 * 5^3</imath> which is 1000
+
+Therefore 15! and 20! are both multiples of 1000, the hundreds place is <imath>\boxed{\textbf{(A)}\ 0}</imath>.
+
+
+=== Problem 3 ===
+Ana and Bonita are born on the same date in different years,
+
+Choices: {'A': '3', 'B': '5', 'C': '9', 'D': '12', 'E': '15</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let <math>A</math> be the age of Ana and <math>B</math> be the age of Bonita. Then,
+
+<cmath>A-1 = 5(B-1)</cmath>
+and
+<cmath>A = B^2.</cmath>
+
+Substituting the second equation into the first gives us
+
+<cmath>B^2-1 = 5(B-1).</cmath>
+
+By using difference of squares and dividing, <math>B=4.</math> Moreover, <math>A=B^2=16.</math>
+
+The answer is <math>16-4 = \boxed{\textbf{(D) }12}</math>.
+
+--- Solution 2 ---
+Simple guess and check works. Start with all the square numbers - <math>1</math>, <math>4</math>, <math>9</math>, <math>16</math>, <math>25</math>, <math>36</math>, etc. (probably stop at around <math>100</math> since at that point it wouldn't make sense). If Ana is <math>9</math>, then Bonita is <math>3</math>, so in the previous year, Ana's age was <math>4</math> times greater than Bonita's. If Ana is <math>16</math>, then Bonita is <math>4</math>, and Ana's age was <math>5</math> times greater than Bonita's in the previous year, as required. The difference in the ages is <math>16 - 4 = \boxed{\textbf{(D) }12}</math>.
+
+--- Solution 3 ---
+The second sentence of the problem says that Ana's age was once <math>5</math> times Bonita's age. Therefore, the difference of the ages <math>n</math> must be divisible by <math>4.</math> The only answer choice which is divisible by <math>4</math> is <math>\boxed{\textbf{(D) }12}</math>.
+
+
+=== Problem 4 ===
+A box contains
+
+Choices: {'A': '75', 'B': '76', 'C': '79', 'D': '84', 'E': '91</math>'}
+Answer: B
+
+--- Solution 1 ---
+We try to find the worst case scenario where we can find the maximum number of balls that can be drawn while getting <math><15</math> of each color by applying the [[pigeonhole principle]] and through this we get a perfect guarantee. 
+Namely, we can draw up to <math>14</math> red balls, <math>14</math> green balls, <math>14</math> yellow balls, <math>13</math> blue balls, <math>11</math> white balls, and <math>9</math> black balls, for a total of <math>75</math> balls, without drawing <math>15</math> balls of any one color. Drawing one more ball guarantees that we will get <math>15</math> balls of one color — either red, green, or yellow. Thus, the answer is <math>75 + 1 = \boxed{\textbf{(B) } 76}</math>.
+
+--- Solution 2 ---
+After a thorough look through the answer choices we see that 75 and 76 are only one from each other, AoPs may have predicted that some people might silly this problem and pick 75 after seeing that it was an answer choice. Also accounting the fact that this is problem 4 you can relatively safely pick 76 immediately after seeing the answer choices.
+
+
+Note: but, we would need to know that it's possible to silly and choose the answer choice of 75 after adding 14(3)+13+11+9=75 and forgetting to add 1. Thus, better to make the quick calculation rather than use a cheese.
+
+
+=== Problem 5 ===
+What is the greatest number of consecutive integers whose sum is
+
+Choices: {'A': '9', 'B': '25', 'C': '45', 'D': '90', 'E': '120</math>'}
+Answer: D
+
+--- Solution 1 ---
+We might at first think that the answer would be <math>9</math>, because <math>1+2+3 \dots +n = 45</math> when <math>n = 9</math>. But note that the problem says that they can be integers, not necessarily positive. Observe also that every term in the sequence <math>-44, -43, \cdots, 44, 45</math> cancels out except <math>45</math>.  Thus, the answer is, intuitively, <math>\boxed{\textbf{(D) } 90 }</math> integers.
+
+Though impractical, a proof of maximality can proceed as follows:  Let the desired sequence of consecutive integers be <math>a, a+1, \cdots, a+(N-1)</math>, where there are <math>N</math> terms, and we want to maximize <math>N</math>.  Then the sum of the terms in this sequence is <math>aN + \frac{(N-1)(N)}{2}=45</math>.  Rearranging and factoring, this reduces to <math>N(2a+N-1) = 90</math>.  Since <math>N</math> must divide <math>90</math>, and we know that <math>90</math> is an attainable value of the sum, <math>90</math> must be the maximum.
+
+--- Solution 2 ---
+To maximize the number of integers, we need to make the average of them as low as possible while still being positive. The average can be <math>\frac12</math> if the middle two numbers are <math>0</math> and <math>1</math>, so the answer is <math>\frac{45}{\frac12}=\boxed{\textbf{(D) } 90 }</math>.
+
+===Solution 2a (more detailed ver. of Solution 2)
+
+--- Solution 3 ---
+If we want the answer to have as many terms as possible, we need to make as many terms cancel out as much as we can. Because <math>45 - 1 <</math> <math>\frac12</math>60 so we can eliminate <math>E</math>. Now lets make every integer cancel to zero except for <math>45</math> and then we account for <math>0</math> and <math>45</math> to get <math>44*2+1+1=\boxed{\textbf{(D) }90}</math>. Pls help me clarify idk how to explain it clearer.
+
+
+=== Problem 6 ===
+For how many of the following types of quadrilaterals does there exist a point in the plane of the quadrilateral that is equidistant from all four vertices of the quadrilateral?
+*a square
+*a rectangle that is not a square
+*a rhombus that is not a square
+*a parallelogram that is not a rectangle or a rhombus
+*an isosceles trapezoid that is not a parallelogram
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '5</math>'}
+Answer: C
+
+--- Solution 1 ---
+This question is simply asking how many of the listed quadrilaterals are cyclic (since the point equidistant from all four vertices would be the center of the circumscribed circle). A square, a rectangle, and an isosceles trapezoid (that isn't a parallelogram) are all cyclic, and the other two are not. Thus, the answer is <math>\boxed{\textbf{(C) } 3}</math>.
+
+--- Solution 2 ---
+We can use a process of elimination. Going down the list, we can see a square obviously works. A rectangle that is not a square works as well. Both rhombi and parallelograms don't have a point that is equidistant, but isosceles trapezoids do have such a point. Say we inscribe trapezoid ABCD in a semicircle. This point would thus be the center, so the answer is <math>\boxed{\textbf{(C) } 3}</math>.
+
+--- Solution 3 ---
+The perpendicular bisector of a line segment is the locus of all points that are equidistant from the endpoints. The question then boils down to finding the shapes where the perpendicular bisectors of the sides all intersect at a point. This is true for a square, rectangle, and isosceles trapezoid, so the answer is <math>\boxed{\textbf{(C) } 3}</math>.
+
+
+=== Problem 7 ===
+Two lines with slopes
+
+Choices: {'A': '4', 'B': '4\\sqrt{2}', 'C': '6', 'D': '8', 'E': '6\\sqrt{2}</math>'}
+Answer: C
+
+--- Solution 1 ---
+Let's first work out the slope-intercept form of all three lines:
+<math>(x,y)=(2,2)</math> and <math>y=\frac{x}{2} + b</math> implies <math>2=\frac{2}{2} +b=> 2=1+b</math> so <math>b=1</math>, while <math>y=2x + c</math> implies <math>2= 2 \cdot 2+c=> 2=4+c</math> so <math>c=-2</math>. Also, <math>x+y=10</math> implies <math>y=-x+10</math>. Thus the lines are <math>y=\frac{x}{2} +1, y=2x-2,</math> and <math>y=-x+10</math>. 
+Now we find the intersection points between each of the lines with <math>y=-x+10</math>, which are <math>(6,4)</math> and <math>(4,6)</math>. Using the distance formula and then the Pythagorean Theorem, we see that we have an isosceles triangle with base <math>2\sqrt{2}</math> and height <math>3\sqrt{2}</math>, whose area is <math>\boxed{\textbf{(C) }6}</math>.
+
+--- Solution 2 ---
+Like in the other solutions, solve the systems of equations to see that the triangle's two other vertices are at <math>(4, 6)</math> and <math>(6, 4)</math>. Then apply Heron's Formula: the semi-perimeter will be <math>s = \sqrt{2} + \sqrt{20}</math>, so the area reduces nicely to a difference of squares, making it <math>\boxed{\textbf{(C) }6}</math>.
+
+--- Solution 3 ---
+Like in the other solutions, we find, either using algebra or simply by drawing the lines on squared paper, that the three points of intersection are <math>(2, 2)</math>, <math>(4, 6)</math>, and <math>(6, 4)</math>. We can now draw the bounding square with vertices <math>(2, 2)</math>, <math>(2, 6)</math>, <math>(6, 6)</math> and <math>(6, 2)</math>, and deduce that the triangle's area is <math>16-4-2-4=\boxed{\textbf{(C) }6}</math>.
+
+--- Solution 4 ---
+Like in other solutions, we find that the three points of intersection are  <math>(2, 2)</math>, <math>(4, 6)</math>, and <math>(6, 4)</math>. Using graph paper, we can see that this triangle has <math>6</math> boundary lattice points and <math>4</math> interior lattice points. By Pick's Theorem, the area is <math>\frac62 + 4 - 1 = \boxed{\textbf{(C) }6}</math>.
+
+--- Solution 5 ---
+Like in other solutions, we find the three points of intersection. Label these <math>A (2, 2)</math>, <math>B (4, 6)</math>, and <math>C (6, 4)</math>. By the Pythagorean Theorem, <math>AB = AC = 2\sqrt5</math> and <math>BC = 2\sqrt2</math>. By the Law of Cosines,
+<cmath>\cos A = \frac{(2\sqrt5)^2 + (2\sqrt5)^2 - (2\sqrt2)^2}{2 \cdot 2\sqrt5 \cdot 2\sqrt5} = \frac{20 + 20 - 8}{40} = \frac{32}{40} = \frac45</cmath>
+Therefore, <math>\sin A = \sqrt{1 - \cos^2 A} = \frac35</math>, so the area is <math>\frac12 bc \sin A = \frac12 \cdot 2\sqrt5 \cdot 2\sqrt5 \cdot \frac35 = \boxed{\textbf{(C) }6}</math>.
+
+--- Solution 6 ---
+Like in other solutions, we find that the three points of intersection are  <math>(2, 2)</math>, <math>(4, 6)</math>, and <math>(6, 4)</math>. The area of the triangle is half the absolute value of the determinant of the matrix determined by these points.
+<cmath>
+\frac12\begin{Vmatrix}
+2&2&1\\
+4&6&1\\
+6&4&1\\
+\end{Vmatrix} = \frac12|-12| = \frac12 \cdot 12 = \boxed{\textbf{(C) }6}</cmath>
+
+--- Solution 7 ---
+Like in other solutions, we find the three points of intersection. Label these <math>A (2, 2)</math>, <math>B (4, 6)</math>, and <math>C (6, 4)</math>. Then vectors <math>\overrightarrow{AB} = \langle 2, 4 \rangle</math> and <math>\overrightarrow{AC} = \langle 4, 2 \rangle</math>. The area of the triangle is half the magnitude of the cross product of these two vectors.
+<cmath>
+\frac12\begin{Vmatrix}
+i&j&k\\
+2&4&0\\
+4&2&0\\
+\end{Vmatrix} = \frac12|-12k| = \frac12 \cdot 12 = \boxed{\textbf{(C) }6}</cmath>
+
+--- Solution 8 ---
+Like in other solutions, we find that the three points of intersection are <math>(2, 2)</math>, <math>(4, 6)</math>, and <math>(6, 4)</math>. By the Pythagorean theorem, this is an isosceles triangle with base <math>2\sqrt2</math> and equal length <math>2\sqrt5</math>. The area of an isosceles triangle with base <math>b</math> and equal length <math>l</math> is <math>\frac{b\sqrt{4l^2-b^2}}{4}</math>. Plugging  in <math>b = 2\sqrt2</math> and <math>l = 2\sqrt5</math>,
+<cmath>\frac{2\sqrt2 \cdot \sqrt{80-8}}{4} = \frac{\sqrt{576}}{4} = \frac{24}{4} = \boxed{\textbf{(C) }6}</cmath>
+
+--- Solution 9 ---
+Like in other solutions, we find the three points of intersection. Label these <math>A (2, 2)</math>, <math>B (4, 6)</math>, and <math>C (6, 4)</math>. By the Pythagorean Theorem, <math>AB = AC = 2\sqrt5</math> and <math>BC = 2\sqrt2</math>. By the Law of Cosines,
+<cmath>\cos A = \frac{(2\sqrt5)^2 + (2\sqrt5)^2 - (2\sqrt2)^2}{2 \cdot 2\sqrt5 \cdot 2\sqrt5} = \frac{20 + 20 - 8}{40} = \frac{32}{40} = \frac45</cmath>
+Therefore, <math>\sin A = \sqrt{1 - \cos^2 A} = \frac35</math>. By the extended Law of Sines,
+<cmath>2R = \frac{a}{\sin A} = \frac{2\sqrt2}{\frac35} = \frac{10\sqrt2}{3}</cmath>
+<cmath>R = \frac{5\sqrt2}{3}</cmath>
+Then the area is <math>\frac{abc}{4R} = \frac{2\sqrt2 \cdot 2\sqrt5^2}{4 \cdot \frac{5\sqrt2}{3}} = \boxed{\textbf{(C) }6}</math>.
+
+--- Solution 10 ---
+The area of a triangle formed by three lines,
+<cmath>a_1x + a_2y + a_3 = 0</cmath>
+<cmath>b_1x + b_2y + b_3 = 0</cmath>
+<cmath>c_1x + c_2y + c_3 = 0</cmath>
+is the absolute value of
+<cmath>\frac12 \cdot \frac{1}{(b_1c_2-b_2c_1)(a_1c_2-a_2c_1)(a_1b_2-a_2b_1)} \cdot \begin{vmatrix}
+a_1&a_2&a_3\\
+b_1&b_2&b_3\\
+c_1&c_2&c_3\\
+\end{vmatrix}^2</cmath>
+Plugging in the three lines,
+<cmath>-x + 2y - 2 = 0</cmath>
+<cmath>-2x + y + 2 = 0</cmath>
+<cmath>x + y - 10 = 0</cmath>
+the area is the absolute value of
+<cmath>\frac12 \cdot \frac{1}{(-2-1)(-1-2)(-1+4)} \cdot \begin{vmatrix}
+-1&2&-2\\
+-2&1&2\\
+1&1&-10\\
+\end{vmatrix}^2 = \frac12 \cdot \frac{1}{27} \cdot 18^2 = \boxed{\textbf{(C) }6}</cmath>
+Source: Orrick, Michael L. “THE AREA OF A TRIANGLE FORMED BY THREE LINES.” Pi Mu Epsilon Journal, vol. 7, no. 5, 1981, pp. 294–298. JSTOR, www.jstor.org/stable/24336991.
+
+--- Solution 11 ---
+Like in other solutions, we find that our triangle is isosceles with legs of <math>2\sqrt5</math> and base <math>2\sqrt2</math>. Then, the semi - perimeter of our triangle is, <cmath>\frac{4\sqrt5+2\sqrt2}{2} = 2\sqrt5 + \sqrt2.</cmath> Applying Heron's formula, we find that the area of this triangle is equivalent to <cmath>\sqrt{{(2\sqrt5+\sqrt2)}{(2\sqrt5-\sqrt2)}{(2)}} = \sqrt{{(20-2)}{(2)}} = \boxed{\textbf{(C) }6}.</cmath>
+
+--- Solution 12 ---
+Like in the other solutions, we find that the three points of intersection are <math>(2, 2)</math>, <math>(4, 6)</math>, and <math>(6, 4)</math>. By the shoelace theorem, we have <cmath>\dfrac{1}{2} \left|(2*4 + 6*6 + 4*2) - (2*6 + 4*4 + 6*2) \right|</cmath> Evaluating this we get our answer of <math>\boxed{\textbf{(C) }6}.</math>
+
+
+=== Problem 8 ===
+The figure below shows line
+
+Choices: {'A': '0', 'B': '1', 'C': '2', 'D': '3', 'E': '4</math>'}
+Answer: 
+
+--- Solution 1 ---
+Statement <math>1</math> is true. A <math>180^{\circ}</math> rotation about the point half way between an up-facing square and a down-facing square will yield the same figure. 
+
+Statement <math>2</math> is also true. A translation to the left or right will place the image onto itself when the figures above and below the line realign (the figure goes on infinitely in both directions). 
+
+Statement <math>3</math> is false. A reflection across line <math>\ell</math> will change the up-facing squares to down-facing squares and vice versa. 
+
+Finally, statement <math>4</math> is also false because it will cause the diagonal lines extending from the squares to switch direction. 
+
+Thus, <math>\fbox {\textbf{(C)}  2}</math> statements are true.
+
+
+=== Problem 9 ===
+What is the greatest three-digit positive integer
+
+Choices: {'A': '995', 'B': '996', 'C': '997', 'D': '998', 'E': '999</math>'}
+Answer: B
+
+--- Solution 1 ---
+The sum of the first <math>n</math> positive integers is <math>\frac{(n)(n+1)}{2}</math>, and we want this to not be a divisor of <math>n!</math> (the product of the first <math>n</math> positive integers). Notice that if and only if <math>n+1</math> were composite, all of its factors would be less than or equal to <math>n</math>, which means they would be able to cancel with the factors in <math>n!</math>. Thus, the sum of <math>n</math> positive integers would be a divisor of <math>n!</math> when <math>n+1</math> is composite. (Note: This is true for all positive integers except for 1 because 2 is not a divisor/factor of 1.) Hence in this case, <math>n+1</math> must instead be prime. The greatest three-digit integer that is prime is <math>997</math>, so we subtract <math>1</math> to get <math>n=\boxed{\textbf{(B) } 996}</math>.
+
+===Solution 1.1===
+The sum of the first \( n \) positive integers starting from 1 is \( \frac{n(n+1)}{2} \). The product of the first \( n \) positive integers starting from \( n \), then going to \( (n-1) \), all the way down to 1, is \( n! \). If there exists a number such that \( n! / \frac{n(n-1)}{2} = +\mathbb{Z} \), then we call that solution invalid. \( n! / \frac{n(n-1)}{2} \) is just \( \frac{2n!}{n(n+1)} \). We see that the first term of \( n! \), which is \( n \), will cancel out with the \( n \) term on the denominator. In order for \( n-1 \) to not cancel out, it needs to be a prime number. The only answer choice that satisfies this <math>n=\boxed{\textbf{(B) } 996}</math>.
+
+--- Solution 2 ---
+As in Solution 1, we deduce that <math>n+1</math> must be prime. 
+
+It's hard to remember all of your primes up to a thousand, so we eliminate answer choices
+choices <math>A</math>, <math>C</math>, and <math>E</math> don't work because <math>n+1</math> is even, and all even numbers are divisible by two, which makes choices <math>A</math>, <math>C</math>, and <math>E</math> composite and not prime. 
+
+Choice <math>D</math> also does not work since <math>999</math> is divisible by <math>9</math>, which means it's a composite number and not prime. Thus, the correct answer must be <math>\boxed{\textbf{(B) } 996}</math>.
+
+--- Solution 3 ---
+The sum of the first <math>n</math> positive integers is <math>\frac{(n)(n+1)}{2}</math> and the product of the positive integers upto <math>n</math> is <math>n!</math>. The quotient of the two is -
+
+<math>\frac{(2)(n!)}{(n)(n+1)}</math>
+
+which simplifies to <math>\frac{(2)((n-1)!)}{n+1}</math>. Thus, <math>n+1</math> must be odd for the remainder to not be 0 (as <math>2</math> will multiply with some number in <math>n!</math>, cancelling out <math>n+1</math> if it is even, which leaves us with the answer choices <math>n = 996</math> and <math>n = 998</math>. Notice that <math>n + 1</math> must also be prime as otherwise there will be a factor of <math>n + 1</math> in <math>2</math> x <math>n!</math> somewhere. So either <math>997</math> or <math>999</math> must be prime - <math>999</math> is obviously not prime as it is divisible by 9, so our answer should be <math>n</math> where <math>n + 1 = 997</math>, and so our answer is <math>n = 996</math> or <math>\boxed{\textbf{(B) } 996}</math>.
+
+- youtube.com/indianmathguy
+
+
+=== Problem 10 ===
+A rectangular floor that is
+
+Choices: {'A': '17', 'B': '25', 'C': '26', 'D': '27', 'E': '28</math>'}
+Answer: C
+
+--- Solution 1 ---
+The number of tiles the bug visits is equal to <math>1</math> plus the number of times it crosses a horizontal or vertical line.  As it must cross <math>16</math> horizontal lines and <math>9</math> vertical lines, it must be that the bug visits a total of <math>16+9+1 = \boxed{\textbf{(C) }26}</math> squares.
+
+''Note'': The general formula for this is <math>a+b-\gcd(a,b)</math>, because it is the number of vertical/horizontal lines crossed minus the number of corners crossed (to avoid double counting). In this particular problem, it was <math>16 + 9 - 1</math> (since <math>\text{gcd}(16,9) = 1</math>), which is <math>24</math>, but then you add <math>2</math> because the first tile and the last tile are counted, which in the general formula are not counted.
+
+One can see why it is gcd(a,b) due to slope
+
+''Comment'': The above note defines a, b incorrectly. One counter example is a 17x9 grid, which should result in 25 tiles. However, <math>\text{gcd}(16, 8) = 8</math>. Here <math>a+b-\gcd(a,b)</math> is correct when a = 17 and b = 9.
+
+--- Solution 2 ---
+A 1x1 tile has a diagonal length of \( \sqrt{2} \). The rectangle has a diagonal length of \( 50\sqrt{2} \). So we get \( 50\sqrt{2}/\sqrt{2} = 50\). 
+
+However, we are overcounting by double because each diagonal is shared by 2 segments that overlap an area, so we divide \( 50/2 = 25 \). 
+
+However, now we are not including the last square, which is alone and has no overlap, so we add back 1 to get \( 25+1 =\)<math>\boxed{\textbf{(C) }26}</math>.
+
+--- Solution 3 ---
+We can also draw a diagram or scale model of the entire rectangular floor (optionally with grid paper and/or a ruler so it will be to scale), then simply count the number of tiles the path crosses. To make this slightly easier, we can divide the full grid into <math>4</math> sections, and just draw one of these <math>5</math> feet by <math>8.5</math> feet sections.
+
+<asy>
+unitsize(20);
+for(int i =0; i<= 7; ++i) {
+for(int j =0; j<= 4; ++j) {
+draw((i,j)--(i+1,j)--(i+1,j+1)--(i,j+1)--cycle);
+}
+
+for(int k =0; k<= 4; ++k) {
+draw((8,k)--(8.5,k)--(8.5,k+1)--(8,k+1)--cycle);
+}
+
+}
+
+draw((0,5)--(8.5,0)--cycle);
+</asy>
+
+Though it may appear that the line we drew comes very close to several points, we know that since <math>10</math> and <math>17</math> are relatively prime (numbers where the only positive integer that divides both of them is 1, a.k.a. numbers with a gcd of 1), the line will not actually pass through any of these points, so the total number of squares crossed will be the same regardless of which side we count. If we count the number of squares the line passes through using the diagram, we get <math>13</math> squares. We can then multiply this by 2 to find out the total number of squares the bug passes through on the rectangular floor giving us a total of <math>2 \cdot 13 = \boxed{\textbf{(C) }26}</math>.
+
+--- Solution 4 ---
+We can see that the big <math>10</math> by <math>17</math> rectangle can be split into <math>2</math> smaller <math>5</math> by <math>17</math> rectangles. This means that the number of small rectangles is divisible by <math>2</math>. This also means that the number of small rectangles in the <math>5</math> by <math>17</math> rectangles is an odd number since it can't be divided into any smaller triangles. Thus the only number that meets the requirements is <math>\boxed{\textbf{(C) } 26}</math>.
+
+
+=== Problem 11 ===
+How many positive integer divisors of
+
+Choices: {'A': '32', 'B': '36', 'C': '37', 'D': '39', 'E': '41</math>'}
+Answer: C
+
+--- Solution 1 ---
+Prime factorizing <math>201^9</math>, we get <math>3^9\cdot67^9</math>. 
+A perfect square must have even powers of its prime factors, so our possible choices for our exponents to get a perfect square are <math>0, 2, 4, 6, 8</math> for both <math>3</math> and <math>67</math>. This yields <math>5\cdot5 = 25</math> perfect squares. 
+
+Perfect cubes must have multiples of <math>3</math> for each of their prime factors' exponents, so we have either <math>0, 3, 6</math>, or <math>9</math> for both <math>3</math> and <math>67</math>, which yields <math>4\cdot4 = 16</math> perfect cubes, for a total of <math>25+16 = 41</math>. 
+
+Subtracting the overcounted powers of <math>6</math> (<math>3^0\cdot67^0</math> , <math>3^0\cdot67^6</math> , <math>3^6\cdot67^0</math>, and <math>3^6\cdot67^6</math>), we get <math>41-4 = \boxed{\textbf{(C) }37}</math>.
+
+--- Solution 2 ---
+Observe that <math>201 = 67 \cdot 3</math>. Now divide into cases:
+
+'''Case 1''': The factor is <math>3^n</math>. Then we can have <math>n = 2</math>, <math>3</math>, <math>4</math>, <math>6</math>, <math>8</math>, or <math>9</math>. 
+
+'''Case 2''': The factor is <math>67^n</math>. This is the same as Case 1.
+
+'''Case 3''': The factor is some combination of <math>3</math>s and <math>67</math>s.
+
+This would be easy if we could just have any combination, as that would simply give <math>6 \cdot 6</math>. However, we must pair the numbers that generate squares with the numbers that generate squares and the same for cubes. In simpler terms, let's organize our values for <math>n</math>.
+
+<math>n = 2</math> is a "square" because it would give a factor of this number that is a perfect square. More generally, it is even.
+
+<math>n = 3</math> is a "cube" because it would give a factor of this number that is a perfect cube. More generally, it is a multiple of <math>3</math>.
+
+<math>n = 4</math> is a "square".
+
+<math>n = 6</math> is interesting, since it's both a "square" and a "cube". Don't count this as either because this would double-count, so we will count this in another case.
+
+<math>n = 8</math> is a "square"
+
+<math>n = 9</math> is a "cube".
+
+Now let's consider subcases:
+
+'''Subcase 1''': The squares are with each other.
+
+Since we have <math>3</math> square terms, and they would pair with <math>3</math> other square terms, we get <math>3 \cdot 3 = 9</math> possibilities.
+
+'''Subcase 2''': The cubes are with each other.
+
+Since we have <math>2</math> cube terms, and they would pair with <math>2</math> other cube terms, we get <math>2 \cdot 2 = 4</math> possibilities.
+
+'''Subcase 3''': A number pairs with <math>n=6</math>.
+
+Since any number can pair with <math>n=6</math> (as it gives both a square and a cube), there would be <math>6</math> possibilities. Remember however that there can be two different bases (<math>3</math> and <math>67</math>), and they would produce different results. Thus, there are in fact <math>6 \cdot 2 = 12</math> possibilities.
+
+Finally, summing the cases gives <math>6+6+9+4+12 = \boxed{\textbf{(C) }37}</math>.
+
+--- Solution 3 ---
+Notice that <imath>201=3 \cdot 67</imath>. We factorize <imath>201^9</imath> to get <imath>3^9 \cdot 67^9</imath>. We then list perfect squares and cubes.
+<imath>3^2</imath>, <imath>3^4</imath>, <imath>3^6</imath>, <imath>3^8</imath>. <imath>3^3</imath>, <imath>3^6</imath>, <imath>3^9</imath>. <imath>67^2</imath>, <imath>67^4</imath>, <imath>67^6</imath>, <imath>67^8</imath>. <imath>67^3</imath>, <imath>67^6</imath>, <imath>67^9</imath>. Notice that the powers of <imath>6</imath> overlap. We must not forget <imath>1</imath> though. Of course, all of these factors already work. This gives us <imath>15-2=3</imath>. Next, we count the perfect squares. Since there are <imath>4</imath> options we have <imath>4 \cdot 4=16</imath>. We do the same for the perfect cubes except with 3 options this time, and we have <imath>3 \cdot 3=9</imath>. However, we accidentally overcounted <imath>3^6 \cdot 67^6</imath>. We add our answers and subtract <imath>1</imath> to get <imath>13+16+9-1 = \boxed{\textbf{(C) }37}</imath>
+
+
+=== Problem 12 ===
+Melanie computes the mean
+
+Choices: {'A': '\\mu < d < M', 'B': 'M < d < \\mu', 'C': 'd = M =\\mu', 'D': 'd < M < \\mu', 'E': 'd < \\mu < M</math>'}
+Answer: E
+
+--- Solution 1 ---
+First of all, <math>d</math> obviously has to be smaller than <math>M</math>, since when calculating <math>M</math>, we must take into account the <math>29</math>s, <math>30</math>s, and <math>31</math>s. So we can eliminate choices <math>B</math> and <math>C</math>. Since there are <math>365</math> total entries, the median, <math>M</math>, must be the <math>183\text{rd}</math> one, at which point we note that <math>12 \cdot 15</math> is <math>180</math>, so <math>16</math> has to be the median (because <math>183</math> is between <math>12 \cdot 15 + 1 = 181</math> and <math>12 \cdot 16 = 192</math>). Now, the mean, <math>\mu</math>, must be smaller than <math>16</math>, since there are many fewer <math>29</math>s, <math>30</math>s, and <math>31</math>s. <math>d</math> is less than <math>\mu</math>, because when calculating <math>\mu</math>, we would include <math>29</math>, <math>30</math>, and <math>31</math>. Thus the answer is <math>\boxed{\textbf{(E) } d < \mu < M}</math>.
+
+--- Solution 2 ---
+As in Solution 1, we find that the median is <math>16</math>. Then, looking at the modes <math>(1-28)</math>, we realize that even if we were to have <math>12</math> of each, their median would remain the same, being <math>14.5</math>. As for the mean, we note that the mean of the first <math>28</math> is simply the same as the median of them, which is <math>14.5</math>. Hence, since we in fact have <math>29</math>'s, <math>30</math>'s, and <math>31</math>'s, the mean has to be higher than <math>14.5</math>. On the other hand, since there are fewer <math>29</math>'s, <math>30</math>'s, and <math>31</math>'s than the rest of the numbers, the mean has to be lower than <math>16</math> (the median). By comparing these values, the answer is <math>\boxed{\textbf{(E) } d < \mu < M}</math>.
+
+--- Solution 3 ---
+We can solve this problem simply by carefully calculating each of the values, which turn out to be <math>M=16</math>, <math>d=14.5</math>, and <math>\mu = \frac{\sum_{n=1}^{30} 12n - 29 - 30 +31*7}{365} \approx 15.7</math>. Thus the answer is <math>\boxed{\textbf{(E) } d < \mu < M}</math>.
+
+--- Solution 4 ---
+We learned that a mean is more accurate than a median, but when in the face of a list with greater size and almost no variety, \( \mu < M \). We can quite easily calculate \( d = 14.5 \), and can see that the median will obviously be greater than the median of the mode, and the mean of the entire list will obviously be greater than the median of the modes as it is more accurate. Therefore our answer is <math>\boxed{\textbf{(E) } d < \mu < M}</math>.
+
+
+=== Problem 13 ===
+Let
+
+Choices: {'A': '90', 'B': '100', 'C': '105', 'D': '110', 'E': '120</math>'}
+Answer: D
+
+--- Solution 1 ---
+<asy> unitsize(40);draw((-1,0)--(1,0)--(0,2.75)--cycle);draw(circumcircle((-1,0),(0,0),(0,2.75)));label("$A$",(1,0),SE);label("$C$",(0,2.75),N);label("$B$",(-1,0),SW);label("$E$",(0,0),S);label("$D$",(0.77,0.64),E);draw((0,0)--(0,2.75));draw((-1,0)--(0.77,0.64));</asy>
+
+Drawing it out, we see <imath>\angle BDC</imath> and <imath>\angle BEC</imath> are right angles, as they are inscribed in a semicircle. Using the fact that it is an isosceles triangle, we find <imath>\angle ABC=70^{\circ}</imath>. We can find <imath>\angle ECB=20^{\circ}</imath> and <imath>\angle DBC=50^{\circ}</imath> by the triangle angle sum on <imath>\triangle ECB</imath> and <imath>\triangle DBC</imath>. 
+
+<cmath>\angle BDC+\angle DCB+\angle DBC=180^{\circ}\implies90^{\circ}+40^{\circ}+\angle DBC=180^{\circ}\implies\angle DBC=50^{\circ}</cmath>
+
+<cmath>\angle BEC+\angle EBC+\angle ECB=180^{\circ}\implies90^{\circ}+70^{\circ}+\angle ECB=180^{\circ}\implies\angle ECB=20^{\circ}</cmath>
+
+Then, we take triangle <imath>BFC</imath>, and find <imath>\angle BFC=180^{\circ}-50^{\circ}-20^{\circ}=\boxed{\textbf{(D) } 110^{\circ}}.</imath>
+
+--- Solution 2 ---
+Alternatively, we could have used similar triangles. We start similarly to Solution 1.
+
+Drawing it out, we see <imath>\angle BDC</imath> and <imath>\angle BEC</imath> are right angles, as they are inscribed in a semicircle. Therefore, <cmath>\angle BDA = 180^{\circ} - \angle BDC = 180^{\circ} - 90^{\circ} = 90^{\circ}.</cmath>
+
+So, <imath>\triangle BEF \sim BDA</imath> by AA Similarity, since <imath>\angle EBF = \angle DBA</imath> and <imath>\angle BEC = 90^{\circ} = \angle BDA</imath>. 
+Thus, we know <cmath>\angle EFB = \angle DAB = \angle CAB = 70^{\circ}.</cmath>
+
+Finally, we deduce <cmath>\angle BFC = 180^{\circ} - \angle EFB = 180^{\circ} - 70^{\circ} = \boxed{\textbf{(D) } 110^{\circ}}.</cmath>
+
+--- Solution 3 ---
+Through the property of angles formed by intersecting chords, we find that
+<cmath>m\angle BFC=\frac{m\overarc{BC}+m\overarc{DE}}{2}</cmath>
+
+Through the Outside Angles Theorem, we find that
+<cmath>m\angle CAB = \frac{m\overarc{BC}-m\overarc{DE}}{2}</cmath>
+
+Adding the two equations gives us
+<cmath>m\angle BFC + m\angle CAB = m\overarc{BC}\implies m\angle BFC=m\overarc{BC} - m\angle CAB</cmath>
+
+Since <imath>\overarc{BC}</imath> is the diameter, <imath>m\overarc{BC}=180^{\circ}</imath>, and because <imath>\triangle ABC</imath> is isosceles and <imath>m\angle ACB=40^{\circ}</imath>, we have <imath>m\angle CAB=70^{\circ}</imath>. Thus
+<cmath>m\angle BFC=180^{\circ}-70^{\circ}=\boxed{\textbf{(D) } 110^{\circ}}</cmath>
+
+--- Solution 4 ---
+Notice that if <imath>\angle BEC = 90^{\circ}</imath>, then <imath>\angle BCE</imath> and <imath>\angle ACE</imath> must be <imath>20^{\circ}</imath>. Using cyclic quadrilateral properties (or the properties of a subtended arc), we can find that <imath>\angle EBD \cong \angle ECD = 20^{\circ}</imath>. Thus <imath>\angle CBF = 70 - 20 = 50^{\circ}</imath>, and so <imath>\angle BFC = 180 - 20 - 50 = 110^{\circ}</imath>, which is <imath>\boxed{\textbf{(D)}}</imath>.
+
+--- Solution 5 ---
+<imath>\triangle{ABC}</imath> is isosceles so <imath>\angle{CAB}=70^{\circ}</imath>. Since <imath>CB</imath> is a diameter, <imath>\angle{CDB}=\angle{CEB}=90^{\circ}</imath>. Quadrilateral <imath>ADFE</imath> is cyclic since <imath>\angle{ADF}+\angle{AEF}=180^{\circ}</imath>. Therefore <imath>\angle{BFC}=\angle{DFE}=180^{\circ}-\angle{CAB}=\boxed{110^{\circ}}</imath>
+
+--- Solution 6 ---
+Label the center of the circle \( M \). Then, we can say that angle \( DME \) must be congruent to angle \( DAE \) as they both share the same arc \( DE \). So therefore angle \( DME = 70^\circ \). The angle \( CFB \) is inscribed on the diameter, but it doesn't touch the circumference of the circle. Therefore angle \( DME \) is supplementary to angle \( CFB \), so our answer is \( 180^\circ - DME = 180^\circ - 70^\circ = \) <imath>\boxed{110^{\circ}}</imath>.
+
+--- Solution 7 ---
+<imath>\angle{BEC}=90</imath> (Thales Theorem)
+
+<imath>\angle{BEC} bisects \angle{ACB}</imath> (Properties of the altitude of an isosceles triangle) 
+
+
+<imath>\angle{ECD}=20</imath>
+
+<imath>\angle{BDC}=90</imath> (Thales Theorem)
+
+<imath>\angle{CFD} = 180 - 90 - 20 = 70</imath> (Interior angles of a triangle)
+
+<imath>\boxed{\angle{BFC} = 110}</imath> (Linear Pair)
+
+
+=== Problem 14 ===
+For a set of four distinct lines in a plane, there are exactly
+
+Choices: {'A': '14', 'B': '16', 'C': '18', 'D': '19', 'E': '21</math>'}
+Answer: D
+
+--- Solution 1 ---
+It is possible to obtain <math>0</math>, <math>1</math>, <math>3</math>, <math>4</math>, <math>5</math>, and <math>6</math> points of intersection, as demonstrated in the following figures:
+
+
+<asy>
+unitsize(2cm);
+real d = 2.5;
+draw((-1,.6)--(1,.6),Arrows);
+draw((-1,.2)--(1,.2),Arrows);
+draw((-1,-.2)--(1,-.2),Arrows);
+draw((-1,-.6)--(1,-.6),Arrows);
+
+draw((-1+d,0)--(1+d,0),Arrows);
+draw((0+d,1)--(0+d,-1),Arrows);
+draw(dir(45)+(d,0)--dir(45+180)+(d,0),Arrows);
+draw(dir(135)+(d,0)--dir(135+180)+(d,0),Arrows);
+dot((0+d,0));
+
+draw((-1+2*d,sqrt(3)/3)--(1+2*d,sqrt(3)/3),Arrows);
+draw((-1/4-1/2+2*d, sqrt(3)/12-sqrt(3)/2)--(-1/4+1/2+2*d,sqrt(3)/12+sqrt(3)/2),Arrows);
+draw((1/4+1/2+2*d, sqrt(3)/12-sqrt(3)/2)--(1/4-1/2+2*d,sqrt(3)/12+sqrt(3)/2),Arrows);
+draw((-1+2*d,-sqrt(3)/6)--(1+2*d,-sqrt(3)/6),Arrows);
+dot((0+2*d,sqrt(3)/3));
+dot((-1/2+2*d,-sqrt(3)/6));
+dot((1/2+2*d,-sqrt(3)/6));
+
+draw((-1/3,1-d)--(-1/3,-1-d),Arrows);
+
+draw((1/3,1-d)--(1/3,-1-d),Arrows);
+draw((-1,-1/3-d)--(1,-1/3-d),Arrows);
+draw((-1,1/3-d)--(1,1/3-d),Arrows);
+dot((1/3,1/3-d));
+dot((-1/3,1/3-d));
+dot((1/3,-1/3-d));
+dot((-1/3,-1/3-d));
+
+draw((-1+d,sqrt(3)/12-d)--(1+d,sqrt(3)/12-d),Arrows);
+draw((-1/4-1/2+d, sqrt(3)/12-sqrt(3)/2-d)--(-1/4+1/2+d,sqrt(3)/12+sqrt(3)/2-d),Arrows);
+draw((1/4+1/2+d, sqrt(3)/12-sqrt(3)/2-d)--(1/4-1/2+d,sqrt(3)/12+sqrt(3)/2-d),Arrows);
+draw((-1+d,-sqrt(3)/6-d)--(1+d,-sqrt(3)/6-d),Arrows);
+dot((0+d,sqrt(3)/3-d));
+dot((-1/2+d,-sqrt(3)/6-d));
+dot((1/2+d,-sqrt(3)/6-d));
+dot((-1/4+d,sqrt(3)/12-d));
+dot((1/4+d,sqrt(3)/12-d));
+
+draw((-1/4-1/2+2*d, sqrt(3)/12-sqrt(3)/2-d)--(-1/4+1/2+2*d,sqrt(3)/12+sqrt(3)/2-d),Arrows);
+draw((1/4+1/2+2*d, sqrt(3)/12-sqrt(3)/2-d)--(1/4-1/2+2*d,sqrt(3)/12+sqrt(3)/2-d),Arrows);
+draw(dir(30)+(2*d,-d)--dir(30+180)+(2*d,-d),Arrows);
+draw(dir(150)+(2*d,-d)--dir(-30)+(2*d,-d),Arrows);
+dot((0+2*d,0-d));
+dot((0+2*d,sqrt(3)/3-d));
+dot((-1/2+2*d,-sqrt(3)/6-d));
+dot((1/2+2*d,-sqrt(3)/6-d));
+dot((-1/4+2*d,sqrt(3)/12-d));
+dot((1/4+2*d,sqrt(3)/12-d));
+</asy>
+
+It is clear that the maximum number of possible intersections is <math>{4 \choose 2} = 6</math>, since each pair of lines can intersect at most once. In addition, by looking at the answer choices, we know that we cannot have 7 points of intersection or else our answer would be greater than the given answer choices. Our answer is given by the sum <math>0+1+3+4+5+6=\boxed{\textbf{(D)} 19}</math>.
+
+
+=== Problem 15 ===
+A sequence of numbers is defined recursively by
+
+Choices: {'A': '2020', 'B': '4039', 'C': '6057', 'D': '6061', 'E': '8078</math>'}
+Answer: E
+
+--- Solution 1 ---
+Using the recursive formula, we find <math>a_3=\frac{3}{11}</math>, <math>a_4=\frac{3}{15}</math>, and so on. It appears that <math>a_n=\frac{3}{4n-1}</math>, for all <math>n</math>. Setting <math>n=2019</math>, we find <math>a_{2019}=\frac{3}{8075}</math>, so the answer is <math>\boxed{\textbf{(E) }8078}</math>.
+
+To prove this formula, we use induction. We are given that <math>a_1=1</math> and <math>a_2=\frac{3}{7}</math>, which satisfy our formula. Now assume the formula holds true for all <math>n\le m</math> for some positive integer <math>m</math>. By our assumption, <math>a_{m-1}=\frac{3}{4m-5}</math> and <math>a_m=\frac{3}{4m-1}</math>. Using the recursive formula, <cmath>a_{m+1}=\frac{a_{m-1}\cdot a_m}{2a_{m-1}-a_m}=\frac{\frac{3}{4m-5}\cdot\frac{3}{4m-1}}{2\cdot\frac{3}{4m-5}-\frac{3}{4m-1}}=\frac{\left(\frac{3}{4m-5}\cdot\frac{3}{4m-1}\right)(4m-5)(4m-1)}{\left(2\cdot\frac{3}{4m-5}-\frac{3}{4m-1}\right)(4m-5)(4m-1)}=\frac{9}{6(4m-1)-3(4m-5)}=\frac{3}{4(m+1)-1},</cmath>
+so our induction is complete.
+
+--- Solution 2 ---
+We have <math>\frac{1}{a_n} = \frac{2a_{n-2}-a_{n-1}}{a_{n-2} \cdot a_{n-1}}=\frac{2}{a_{n-1}}-\frac{1}{a_{n-2}}</math>, in other words, <math>\frac{1}{a_n}-\frac{1}{a_{n-1}} = \frac{1}{a_{n-1}}-\frac{1}{a_{n-2}}</math>. So <math>\{\frac{1}{a_n}\}</math> is an arithmetic sequence with step size <math>\frac{7}{3}-1=\frac{4}{3}</math>, which means <math>\frac{1}{a_{2019}} = 1+2018 \cdot \frac{4}{3} = \frac{8075}{3}</math>. Since the numerator and the denominator are relatively prime, the answer is <math>\boxed{\textbf{(E) } 8078}</math>.
+
+-eric2020 (modified by Dolphindesigner)
+
+--- Solution 3 ---
+It seems reasonable to transform the equation into something else. Let <math>a_{n}=x</math>, <math>a_{n-1}=y</math>, and <math>a_{n-2}=z</math>. Therefore, we have <cmath>x=\frac{zy}{2z-y}</cmath>
+<cmath>2xz-xy=zy</cmath>
+<cmath>2xz=y(x+z)</cmath>
+<cmath>y=\frac{2xz}{x+z}</cmath>
+Thus, <math>y</math> is the harmonic mean of <math>x</math> and <math>z</math>. This implies <math>a_{n}</math> is a harmonic sequence or equivalently <math>b_{n}=\frac{1}{a_{n}}</math> is arithmetic. Now, we have <math>b_{1}=1</math>, <math>b_{2}=\frac{7}{3}</math>, <math>b_{3}=\frac{11}{3}</math>, and so on. Since the common difference is <math>\frac{4}{3}</math>, we can express <math>b_{n}</math> explicitly as <math>b_{n}=\frac{4}{3}(n-1)+1</math>. This gives <math>b_{2019}=\frac{4}{3}(2019-1)+1=\frac{8075}{3}</math> which implies <math>a_{2019}=\frac{3}{8075}=\frac{p}{q}</math>. <math>p+q=\boxed{\textbf{(E) } 8078}</math>
+
+--- Solution 4 ---
+Notice that<cmath>a_n = \frac{1}{\frac{2}{a_{n-1}} - \frac{1}{a_{n-2}}}.</cmath>Therefore,<cmath>\frac{1}{a_n} = \frac{2}{a_{n-1}} - \frac{1}{a_{n-2}}, \ \ \implies \ \ \frac{\frac{1}{a_n} + \frac{1}{a_{n-2}}}{2} = \frac{1}{a_{n-1}}.</cmath>Therefore, the sequence <math>b_n = \frac{1}{a_n}</math> is an arithmetic sequence. Notice that the common difference of <math>b</math> is <math>\frac{4}{3},</math> and therefore<cmath>b_{2019} = b_1 + 2018 \bigg(\frac{4}{3}\bigg) = 1 + 2018 \bigg(\frac{4}{3} \bigg) = \frac{8075}{3}.</cmath>Therefore, we see that <math>a_{2019} = \frac{3}{8075},</math> so that <math>p + q = \boxed{\text{(E) } 8078}.</math>
+
+
+Note: This is similar to solutions #2 and #3, although you can notice that in #2's case the new sequence <math>B</math> actually forms an arithmetic sequence.
+
+--- Solution 5 ---
+We have <math>\frac{1}{a_n} = \frac{2a_{n-2}-a_{n-1}}{a_{n-2} \cdot a_{n-1}}=\frac{2}{a_{n-1}}-\frac{1}{a_{n-2}}</math>, 
+
+let <math>b_n = \frac{1}{a_n}</math> , then <math> b_n = 2b_{n-1} - b_{n-2}</math> 
+
+, this is 2nd order linear homogeneous recurrence sequence, 
+
+the characteristic equation for this is <math>x^2 -2x +1 = 0</math>, which has double root x=1
+
+so <math>b_n = (c_1 + c_2 \cdot n) \cdot 1^n </math>
+
+plug in <math>b_1 = \frac{1}{a_1} = 1 = c_1 + c_2 \cdot 1, b_2 = \frac{1}{a_2}= \frac{7}{3} =c_1 + c_2 \cdot 2   </math>
+
+we solve <math>c_1 = -\frac{1}{3} , c_2=\frac{4}{3}</math>, so <math>b_n = -\frac{1}{3} + \frac{4}{3} \cdot n </math>
+
+so  <math> {b_{2019}} = -\frac{1}{3} + \frac{4}{3} \cdot 2019 = \frac{8075}{3}</math>. 
+
+<math>a_{2019} = \frac{1}{b_{2019}} = \frac{3}{8075}</math> 
+
+Since the numerator and the denominator are relatively prime, the answer is <math>\boxed{\textbf{(E) } 8078}</math>.
+
+*note: characteristic equation is overkill for this simple one but is more generic solution for other parameter values.
+
+
+=== Problem 16 ===
+The figure below shows
+
+Choices: {'A': '4 \\pi \\sqrt{3}', 'B': '7 \\pi', 'C': '\\pi\\left(3\\sqrt{3} +2\\right)', 'D': '10 \\pi \\left(\\sqrt{3} - 1\\right)', 'E': '\\pi\\left(\\sqrt{3} + 6\\right)'}
+Answer: A
+
+--- Solution 1 ---
+<asy>
+unitsize(20);filldraw(circle((0,0),2*sqrt(3)+1),rgb(0.5,0.5,0.5));filldraw(circle((-2,0),1),white);filldraw(circle((0,0),1),white);filldraw(circle((2,0),1),white);filldraw(circle((1,sqrt(3)),1),white);filldraw(circle((3,sqrt(3)),1),white);filldraw(circle((-1,sqrt(3)),1),white);filldraw(circle((-3,sqrt(3)),1),white);filldraw(circle((1,-1*sqrt(3)),1),white);filldraw(circle((3,-1*sqrt(3)),1),white);filldraw(circle((-1,-1*sqrt(3)),1),white);filldraw(circle((-3,-1*sqrt(3)),1),white);filldraw(circle((0,2*sqrt(3)),1),white);filldraw(circle((0,-2*sqrt(3)),1),white);
+
+pair O,A,B,C,H;
+O=(0,0);
+A=(-1,sqrt(3));
+B=(1,sqrt(3));
+C=(0,sqrt(3)*2);
+H=(0,sqrt(3));
+draw(O--A);
+draw(A--C);
+draw(B--C);
+draw(O--B);
+draw(A--B);
+draw(O--C);
+dot(A);
+dot(B);
+dot(C);
+dot(O);
+label("A",A, W);
+label("O",O,S);
+label("B",B,E);
+label("C",C, N);
+label("H",H, NE);
+</asy>
+
+In the diagram above, notice that triangle <math>OAB</math> and triangle <math>ABC</math> are congruent and equilateral with side length <math>2</math>. We can see the radius of the larger circle is <math>2\overline{OH} + 1</math>. Using <math>30^{\circ}-60^{\circ}-90^{\circ}</math> triangles, we know <math>\overline{OH} = \sqrt{3}</math>. Therefore, the radius of the larger circle is <math>2\sqrt{3}+1</math>.
+
+The area of the larger circle is thus <math>\left(2\sqrt{3}+1\right)^2 \pi = \left(13+4\sqrt{3}\right)\pi</math>, and the sum of the areas of the smaller circles is <math>13\pi</math>, so the area of the dark region is <math>\left(13+4\sqrt{3}\right)\pi-13\pi = \boxed{\textbf{(A) } 4 \pi \sqrt{3}}</math>.
+
+--- Solution 2 ---
+We can form an equilateral triangle with side length <math>6</math> from the centers of three of the unit circles tangent to the outer circle. The radius of the outer circle is the circumradius of the triangle plus <math>1</math>. By using <math>R = \frac{abc}{4K}</math> or <math>R=\frac{a}{2\sin{A}}</math>, we get the radius as <math>\frac{6}{\sqrt{3}}+1</math>.
+
+The shaded area is thus <math>\pi((\frac{6}{\sqrt{3}}+1)^2-13) = \boxed{\textbf{(A) } 4 \pi \sqrt{3}}</math>.
+
+--- Solution 3 ---
+Like in Solution 2, we can form an equilateral triangle with side length <math>6</math> from the centers of three of the unit circles tangent to the outer circle. We can find the height of this triangle to be <math>3\sqrt{3}</math>. Then, we can form another equilateral triangle from the centers of the second and third circles in the third row and the center of the bottom circle with side length <math>2</math>. The height of this triangle is clearly <math>\sqrt{3}</math>. Therefore the diameter of the large circle is <math>4\sqrt{3} + 2</math> and the radius is <math>\frac{4\sqrt{3}+2}{2} = 2\sqrt{3} + 1</math>. The area of the large circle is thus <math>\pi\left(2\sqrt{3} + 1\right)^{2} = \pi \cdot \left(13 + 4\sqrt{3}\right) = 13\pi + 4\pi\sqrt{3}</math>. The total area of the <math>13</math> smaller circles is <math>13\pi</math>, so the shaded area is <math>\left(13\pi + 4\pi\sqrt{3}\right) - 13\pi = \boxed{\textbf{(A) } 4 \pi \sqrt{3}}</math>.
+
+--- Solution 4 ---
+<asy>
+unitsize(20);filldraw(circle((0,0),2*sqrt(3)+1),rgb(0.5,0.5,0.5));filldraw(circle((-2,0),1),white);filldraw(circle((0,0),1),white);filldraw(circle((2,0),1),white);filldraw(circle((1,sqrt(3)),1),white);filldraw(circle((3,sqrt(3)),1),white);filldraw(circle((-1,sqrt(3)),1),white);filldraw(circle((-3,sqrt(3)),1),white);filldraw(circle((1,-1*sqrt(3)),1),white);filldraw(circle((3,-1*sqrt(3)),1),white);filldraw(circle((-1,-1*sqrt(3)),1),white);filldraw(circle((-3,-1*sqrt(3)),1),white);filldraw(circle((0,2*sqrt(3)),1),white);filldraw(circle((0,-2*sqrt(3)),1),white);
+
+pair A,B,C;
+A=(0,sqrt(3)*2);
+B=(-2,0);
+C=(0,0);
+draw(A--B);
+draw(A--C);
+draw(B--C);
+dot(A);
+dot(B);
+dot(C);
+label("A",A, N);
+label("B",B, W);
+label("C",C, S);
+</asy>
+
+In the diagram above, <math>AB=4</math> and <math>BC=2</math>, so <math>AC=\sqrt{4^2-2^2}=2\sqrt{3}</math>. The larger circle's radius is <math>AC+1=2\sqrt{3}+1</math>, so the larger circle's area is <math>\pi\left(2\sqrt{3}+1\right)^2=\pi\left(13+4\sqrt{3}\right)=13\pi+4\pi\sqrt{3}</math>. Now, subtracting the combined area of the smaller circles gives <math>13\pi+4\pi\sqrt{3}-13\pi=\boxed{\textbf{(A) } 4 \pi \sqrt{3}}</math>.
+
+
+=== Problem 17 ===
+A child builds towers using identically shaped cubes of different colors. How many different towers with a height
+
+Choices: {'A': '24', 'B': '288', 'C': '312', 'D': '1,260', 'E': '40,320</math>'}
+Answer: D
+
+--- Solution 1 ---
+Arranging eight cubes is the same as arranging the nine cubes first, and then removing the last cube. In other words, there is a one-to-one correspondence between every arrangement of nine cubes, and every actual valid arrangement. Thus, we initially get <math>9!</math>. However, we have overcounted, because the red cubes can be permuted to have the same overall arrangement, and the same applies with the blue and green cubes. Thus, we have to divide by the <math>2!</math> ways to arrange the red cubes, the <math>3!</math> ways to arrange the blue cubes, and the <math>4!</math> ways to arrange the green cubes. Thus we have <math>\frac {9!} {2! \cdot 3! \cdot  4!} = \boxed{\textbf{(D) } 1,260}</math> different possible towers.
+
+''Note'':
+this can be written more compactly as
+<cmath>\binom{9}{2,3,4}=\binom{9}{2}\binom{9-2}{3}\binom{9-(2+3)}{4} = \boxed{1,260}</cmath>
+
+--- Solution 2 ---
+We can divide the problem into three cases, each representing one cube to be excluded:
+
+'''Case 1''': The red cube is excluded. This gives us the problem of arranging one red cube, three blue cubes, and four green cubes. The number of possible arrangements is <math>\frac{8!}{4!\cdot3!}=280</math>. Note that we do not need to multiply by the number of red cubes because there is no way to distinguish between the first red cube and the second.
+
+'''Case 2''': The blue cube is excluded. This gives us the problem of arranging two red cubes, two blue cubes, and four green cubes. The number of possible arrangements is <math>\frac{8!}{2!\cdot2!\cdot4!}=420</math>.
+
+'''Case 3''': The green cube is excluded. This gives us the problem of arranging two red cubes, three blue cubes, and three green cubes. The number of possible arrangements is <math>\frac{8!}{2!\cdot3!\cdot3!}=560</math>.
+
+Adding up the individual cases from above gives the answer as <math>280+420+560=\boxed{\textbf{(D) } 1,260}</math>.
+
+==Solution 3 (Educated Guess (Under 1 minute) )==
+
+We start by doing the casework for Case 1, as stated in Solution 2. We see that it would be = <math>280</math>. This eliminates answer choices A, B, and C since they are all too small. Then we see the answer choice E is way too big. This makes us choose <math>\boxed{\textbf{(D) } 1,260}</math>..
+
+
+=== Problem 18 ===
+For some positive integer
+
+Choices: {'A': '13', 'B': '14', 'C': '15', 'D': '16', 'E': '17</math>'}
+Answer: D
+
+--- Solution 1 ---
+We can expand the fraction <imath>0.\overline{23}_k</imath> as follows: <imath>0.\overline{23}_k = 2\cdot k^{-1} + 3 \cdot k^{-2} + 2 \cdot k^{-3} + 3 \cdot k^{-4} + \cdots</imath>
+
+Notice that this is equivalent to 
+<cmath>2( k^{-1} + k^{-3} + k^{-5} + ... ) + 3 (k^{-2} + k^{-4} + k^{-6} + \cdots )</cmath>
+
+By summing the geometric series and simplifying, we have <imath>\frac{2k+3}{k^2-1} = \frac{7}{51}</imath>. Solving this quadratic equation (or simply testing the answer choices) yields the answer <imath>k = \boxed{\textbf{(D) }16}</imath>.
+
+--- Solution 2 ---
+Let <imath>a = 0.2323\dots_k</imath>. Therefore, <imath>k^2a=23.2323\dots_k</imath>.
+
+From this, we see that <imath>k^2a-a=23_k</imath>, so <imath>a = \frac{23_k}{k^2-1} = \frac{2k+3}{k^2-1} = \frac{7}{51}</imath>.
+
+Now, similar to in Solution 1, we can either test if <imath>2k+3</imath> is a multiple of <imath>7</imath> with the answer choices, or actually solve the quadratic, so that the answer is <imath>\boxed{\textbf{(D) }16}</imath>.
+
+--- Solution 3 ---
+Just as in Solution 1, we arrive at the equation <imath>\frac{2k+3}{k^2-1}=\frac{7}{51}</imath>.
+
+Therefore now, we can rewrite this as <imath>\frac{2k+3}{(k-1)(k+1)}=\frac{7}{51}=\frac{7}{3\cdot 17}</imath>. Notice that <imath>2k+3=2(k+1)+1=2(k-1)+5</imath>. As <imath>17</imath> is a prime number, we therefore must have that one of <imath>k-1</imath> and <imath>k+1</imath> is divisible by <imath>17</imath>. Now, checking each of the answer choices, this will lead us to the answer <imath>\boxed{\textbf{(D) }16}</imath>.
+
+--- Solution 4 ---
+Assuming you are familiar with the rules for basic repeating decimals, <imath>0.232323... = \frac{23}{99}</imath>. Now we want our base, <imath>k</imath>, to conform to <imath>23\equiv7\pmod k</imath> and <imath>99\equiv51\pmod k</imath>, the reason being that we wish to convert the number from base <imath>10</imath> to base <imath>k</imath>. Given the first equation, we know that <imath>k</imath> must equal 9, 16, 23, or generally, <imath>7n+2</imath>. The only number in this set that is one of the multiple choices is <imath>16</imath>. When we test this on the second equation, <imath>99\equiv51\pmod k</imath>, it comes to be true. Therefore, our answer is <imath>\boxed{\textbf{(D) }16}</imath>.
+
+--- Solution 5 ---
+Note that the LHS equals <cmath>\bigg(\frac{2}{k} + \frac{2}{k^3} + \cdots \bigg) + \bigg(\frac{3}{k^2} + \frac{3}{k^4} + \cdots \bigg) = \frac{\frac{2}{k}}{1 - \frac{1}{k^2}} + \frac{\frac{3}{k^2}}{1 - \frac{1}{k^2}} = \frac{2k+3}{k^2-1},</cmath> from which we see our equation becomes <cmath>\frac{2k+3}{k^2-1} = \frac{7}{51}, \ \ \implies \ \ 51(2k+3) = 7(k^2-1).</cmath> 
+
+Note that <imath>17</imath> therefore divides <imath>k^2 - 1,</imath> but as <imath>17</imath> is prime this therefore implies <cmath>k \equiv \pm 1 \pmod{17}.</cmath> (Warning: This would not be necessarily true if <imath>17</imath> were composite.) Note that <imath>\boxed{\textbf{(D)} 16 }</imath> is the only answer choice congruent satisfying this modular congruence, thus completing the problem. <imath>\square</imath>
+
+--- Solution 6 ---
+We can find that we just estimate the first two digits and can get <imath>\frac{2}{k} + \frac{2}{k^2} = \frac{7}{51}</imath> and plug in some values and expand into <imath>\frac{2k+2}{k^2} = \frac{7}{51}</imath> and plugin some values and find that for 16, <imath>\frac{34}{256}</imath> is very close to our target of <imath>\frac{7}{51}</imath> so our answer is <imath>\boxed{\textbf{(D) }16}</imath>.
+
+--- Solution 7 ---
+The fraction \( 23/99 = 0.23232323... \)
+
+We have the base representation of \( 7/51 \).
+
+There exists some fraction \( a/b \) such that \( 7/51 \cdot a/b = 23/99 \).
+
+\( a = 23/7 \), \( b = 99/51 \). Our fraction is then \( a/b = (23/7) / (99/51) \Rightarrow (23 \times 51) / (7 \times 99) \Rightarrow 1173/693 \).
+
+Bases must be a multiple of the square of a number. We see that \( \sqrt{1173} \) is about 34 and \( \sqrt{693} \) is about 26. We subtract to get a common square, which is \( 34-26 = 8 \).
+
+Our answer must be a multiple of 8, and the only one is <imath>\boxed{\textbf{(D) }16}</imath>.
+
+--- Solution 8 ---
+Notice how \( 23/99 = 0.232323232323\ldots \), but round it down to \( 0.23 \).
+\( 7/51 \) is around \( 0.13 \).
+We then have \( 0.23 - 0.13 = 0.1 \).
+
+Multiply by 1000 to get \( 0.1 \times 1000 = 100 \).
+
+The fraction is the base \( k \) number multiplied by another number divided by 100. The number that gets closest to the number 100 when multiplied by another number is <imath>\boxed{\textbf{(D) }16}</imath>.
+
+
+=== Problem 19 ===
+What is the least possible value of
+<cmath>(x+1)(x+2)(x+3)(x+4)+2019</cmath>where
+
+Choices: {'A': '2017', 'B': '2018', 'C': '2019', 'D': '2020', 'E': '2021</math>'}
+Answer: B
+
+--- Solution 1 ---
+Grouping the first and last terms and two middle terms gives <math>(x^2+5x+4)(x^2+5x+6)+2019</math>, which can be simplified to <math>(x^2+5x+5)^2-1+2019</math>. Noting that squares are nonnegative, and verifying that <math>x^2+5x+5=0</math> for some real <math>x</math>, the answer is <math>\boxed{\textbf{(B) } 2018}</math>.
+
+--- Solution 2 ---
+The largest number that makes this expression minimal is \( x = -1 \). This gives 2019, so is the answer 2019? Well, before we jump to conclusions, we need to understand that there may exist a number around or between the interval \( [-1, 0] \) such that this number \( n \) can make a smaller number. This interval is 1 unit long, so our answer is \( 2019 - 1 = \) <math>\boxed{\textbf{(B) } 2018}</math>.
+
+--- Solution 3 ---
+Let <math>a=x+\tfrac{5}{2}</math>. Then the expression <math>(x+1)(x+2)(x+3)(x+4)</math> becomes <math>\left(a-\tfrac{3}{2}\right)\left(a-\tfrac{1}{2}\right)\left(a+\tfrac{1}{2}\right)\left(a+\tfrac{3}{2}\right)</math>. 
+
+We can now use the difference of two squares to get <math>\left(a^2-\tfrac{9}{4}\right)\left(a^2-\tfrac{1}{4}\right)</math>, and expand this to get <math>a^4-\tfrac{5}{2}a^2+\tfrac{9}{16}</math>.
+
+Refactor this by completing the square to get <math>\left(a^2-\tfrac{5}{4}\right)^2-1</math>, which has a minimum value of <math>-1</math>. The answer is thus <math>2019-1=\boxed{\textbf{(B) }2018}</math>.
+
+--- Solution 4 ---
+Similar to Solution 1, grouping the first and last terms and the middle terms, we get <math>(x^2+5x+4)(x^2+5x+6)+2019</math>. 
+
+Letting <math>y=x^2+5x</math>, we get the expression <math>(y+4)(y+6)+2019</math>. Now, we can find the critical points of <math>(y+4)(y+6)</math> to minimize the function:
+
+<math>\frac{d}{dy}(y^2+10y+24)=0</math>
+
+<math>2y+10=0</math>
+
+<math>2y=-10</math>
+
+<math>y=-5,0</math>
+
+To minimize the result, we use <math>y=-5</math>. Hence, the minimum is <math>(-5+4)(-5+6)=-1</math>, so <math>-1+2019 = \boxed{\textbf{(B) }2018}</math>.
+
+''Note'': We could also have used the result that minimum/maximum point of a parabola <math>y = ax^2 + bx + c</math> occurs at <math>x=-\frac{b}{2a}</math>.
+
+''Note 2:'' This solution is somewhat "lucky", since when we define variables to equal a function, and create another function out of these variables, the domain of such function may vary from the initial one. This is important because the maximum and minimum value of a function is dependent on its domain, e.g:
+
+<math>f(x)=x^2</math> has no maximum value in the the integers, but once restricting the domain to <math>(-5, 5)</math> the maximum value of <math>f(x)</math> is <math>25</math>.
+
+Also, observe that if we were to evaluate this by taking the derivative of <math>(x+1)(x+2)(x+3)(x+4)+2019</math>, we would get <math>-5</math> as the <math>x</math>-value to obtain the minimum <math>y</math>-value of this expression. It can be seen that <math>-5</math> is actually an inflection point, instead of a minimum or maximum. 
+
+-Note 2 from Benedict T (countmath1)
+
+--- Solution 5 ---
+The expression is negative when an odd number of the factors are negative. This happens when <math>-2 < x < -1</math> or <math>-4 < x < -3</math>. Plugging in <math>x = -\frac32</math> or <math>x = -\frac72</math> yields <math>-\frac{15}{16}</math>, which is very close to <math>-1</math>. Thus the answer is <math>-1 + 2019 = \boxed{\textbf{(B) }2018}</math>.
+
+--- Solution 6 ---
+Answer choices <math>C</math>, <math>D</math>, and <math>E</math> are impossible, since <math>(x+1)(x+2)(x+3)(x+4)</math> can be negative (as seen when e.g. <math>x = -\frac{3}{2}</math>). Plug in <math>x = -\frac{3}{2}</math> to see that it becomes <math>2019 - \frac{15}{16}</math>, so round this to <math>\boxed{\textbf{(B) }2018}</math>.
+
+We can also see that the limit of the function is at least <math>-1</math> since at the minimum, two of the numbers are less than <math>1</math>, but two are between <math>1</math> and <math>2</math>.
+
+--- Solution 7 ---
+We can ignore the <math>2019</math> and consider it later, as it is a constant. By difference of squares, we can group this into <math>\left((x+2.5)^2-0.5^2\right)\left((x+2.5)^2-1.5^2\right)</math>. We pull a factor of <math>4</math> into each term to avoid dealing with decimals: 
+
+<cmath>\dfrac{\left((2x+5)^2-1\right)\left((2x+5)^2-9\right)}{16}.</cmath>
+
+Now, we let <math>a=2x+5</math>. Our expression becomes: 
+
+<cmath>\dfrac{(a-1)(a-9)}{16}=\dfrac{a^2-10a+9}{16}.</cmath>
+
+Taking the derivative, we get <math>\dfrac{2a-10}{16}=\dfrac{a-5}8.</math> This is equal to <math>0</math> when <math>a=5</math>, and plugging in <math>a=5</math>, we get the expression is equal to <math>-1</math> and therefore our answer is <math>2019-1=\boxed{\text{(B)}
+
+
+=== Problem 20 ===
+The numbers
+
+Choices: {'A': '\\dfrac{1}{21}', 'B': '\\dfrac{1}{14}', 'C': '\\dfrac{5}{63}', 'D': '\\dfrac{2}{21}', 'E': '\\dfrac{1}{7}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Note that odd sums can only be formed by <math>(e,e,o)</math> or <math>(o,o,o),</math> so we focus on placing the evens: we need to have each even be with another even in each row/column. Because there are only <math>5</math> odd numbers overall, we can only have <math>1</math> <math>(o,o,o)</math> row and <math>1</math> <math>(o,o,o)</math> column. It can be seen that there are <math>3 \cdot 3 = 9</math> ways to do this. There  are then <math>5!</math> ways to permute the odd numbers, and <math>4!</math> ways to permute the even numbers, thus giving the answer as <math>\frac{9 \cdot 5! \cdot 4!}{9!}=\boxed{\textbf{(B) }\frac{1}{14}}</math>.
+
+
+(Minor edits by JeffersonJ and monkey_land)
+
+--- Solution 2 ---
+By the [https://artofproblemsolving.com/wiki/index.php/Pigeonhole_Principle Pigeonhole Principle], there must be at least one row with <math>2</math> or more odd numbers in it. Therefore, that row must contain <math>3</math> odd numbers in order to have an odd sum. The same thing can be done with the columns. Thus we simply have to choose one row and one column to be filled with odd numbers, so the number of valid odd/even configurations (without regard to which particular odd and even  numbers are placed where) is <math>3 \cdot 3 = 9</math>. The denominator will be <math>\binom{9}{4}</math>, the total number of ways we could choose which <math>4</math> of the <math>9</math> squares will contain an even number. Hence the answer is <cmath>\frac{9}{\binom{9}{4}}=\boxed{\textbf{(B) }\frac{1}{14}}</cmath>
+
+- The Pigeonhole Principle isn't really necessary here: After noting from the first solution that any row that contains evens must contain two evens, the result follows that the four evens must form the corners of a rectangle.
+
+--- Solution 3 ---
+Note that there are 5 odds and 4 evens, and for three numbers to sum an odd number, either 1 or three must be odd. Hence, one column must be all odd and one row must be all odd. First, we choose a row, for which there are three choices and within the row P(5,3). There are 3! ways to order the remaining odds and 4! ways to order the evens. The total possible ways is 9!. <math>\frac{3 \cdot P(5,3) \cdot 3! \cdot 4!}{9!}=\boxed{\textbf{(B) }\frac{1}{14}}</math>
+
+--- Solution 4 ---
+Note that the odd sums are only formed by, <math>(O, O, O)</math> or any permutation of <math>(O, E, E)</math>. When looking at a 3x3 box, we realize that there must always be one column that is odd and one row that is odd. Calculating the probability of one permutation of this we get:
+{| class="wikitable" style="margin:auto; color:black; background-color:#ffffff;"
+|-style="vertical-align:middle;"
+| style="height:100px; width:100px; text-align:center;" |Odd - <math>\frac{5}{9}</math>||Odd - <math>\frac{4}{8}</math>||Odd - <math>\frac{3}{7}</math> 
+|-style="vertical-align:middle;"
+| style="height:100px; width:100px; text-align:center;" |Odd - <math>\frac{2}{6}</math> ||  Even   ||  Even 
+|-style="vertical-align:middle;"
+| style="height:100px; width:100px; text-align:center;" |Odd - <math>\frac{1}{5}</math> ||  Even   ||  Even 
+|} 
+<math>\frac{5!}{P(9,5)} = \frac{5 \cdot 4\cdot 3 \cdot 2 \cdot 1}{9 \cdot 8\cdot 7 \cdot 6 \cdot 5} = \frac{1}{126} </math>
+
+Now, there are 9 ways you can get this particular permutation (3 choices for all odd row, 3 choices for all odd column), so multiplying the result by <math>9</math>, we get:
+
+<cmath>\frac{1}{126} \cdot 9 = \frac{9}{126} = \boxed{\textbf{(B) }\frac{1}{14}}</cmath>
+
+We could also calculate the probability of all the even numbers being grouped, which can only happen in 4 ways. This is similar to the solution above but requires less work. Solving you would get <math>1/56</math> for the 4 even numbers to be grouped together, but you must multiplfy by 4 to account for the 4 corners. Solving, your answer is 1/14
+
+--- Solution 5 ---
+To get an odd sum we need <math>\text{odd} + \text{odd} + \text{odd}</math> or we need <math>\text{odd} + \text{even} + \text{even}</math>. Note that there are <math>9!</math> ways to arrange the numbers. Also notice that there are <math>4</math> even numbers and <math>5</math> odd numbers from <math>1</math> through <math>9</math>. 
+
+The number of ways to arrange the even numbers is <math>4!</math> and the number of ways to arrange the odd numbers is <math>5!</math>. Now a common strategy is to deal with the category with fewer numbers so this suggests for us to look at even numbers and try something out. 
+
+Since we have <math>4</math> even numbers we need to split two evens to one row and two evens to another row. Note that there are <math>\tbinom{3}{2}</math> ways to choose the rows, and the <math>\tbinom{3}{2}</math> to choose where the two even numbers go in that row. The odd numbers go wherever there is a spot left which means we don't need to care about them. So we totally have <math>9</math> ways to place the even numbers. 
+
+Don't forget, we still need to arrange these even and odd numbers and like mentioned above there are <math>4!</math> and <math>5!</math> ways respectively.  
+
+Therefore our answer is simply <cmath>\frac{5! \cdot 4! \cdot 9}{9!} = \frac{1}{7\cdot 2} = \boxed{\frac{1}{14}}.</cmath>
+
+--- Solution 6 ---
+We need to know the number of successful outcomes/Total outcomes. We start by the total number of ways to place the odd numbers, which is <math>\binom{9}{5}</math>, which is because there are <math>5</math> odd number between <math>1</math> and <math>9</math>. Note we need <math>1</math> odd number and <math>2</math> even numbers OR <math>3</math> odd numbers in each row to satisfy our conditions. We have <math>3</math> types of arrangements for the number of successful outcomes, we could have all the even numbers on the corners, which is <math>1</math> case, We could have the odd numbers arranged like a T, which has <math>4</math> cases (you could twist them around), and you have the even numbers in a <math>2</math> by <math>2</math> square, and you have <math>4</math> cases for that. We have <math>9</math> successful cases and <math>126</math> total cases, so the probability is <math>\frac{9}{126}</math> = <math>\frac{1}{14}</math> which is <math>\boxed{\textbf{(B) }\frac{1}{14}}</math>
+
+--- Solution 7 ---
+Since we only care about the parity of the sum of our rows and columns, let's take everything modulo <math>2</math>. We can see that there will be <math>5</math> odd numbers, and <math>4</math> even numbers. Testing a few configurations, we realize that if we have one complete row and column of <math>1 \text{s}</math>, the sum of all rows and columns will be odd. We find <math>3</math> distinct configurations: 
+<cmath>\begin{tabular}{ |c|c|c| } 
+\hline
+1 & 1 & 1 \\ 
+\hline
+1 & 0 & 0 \\ 
+\hline
+1 & 0 & 0 \\ 
+\hline
+\end{tabular}
+\
+\
+\
+\
+\begin{tabular}{ |c|c|c| } 
+\hline
+1 & 0 & 0 \\ 
+\hline
+1 & 1 & 1 \\ 
+\hline
+1 & 0 & 0 \\ 
+\hline
+\end{tabular}
+\
+\
+\
+\
+\begin{tabular}{ |c|c|c| } 
+\hline
+0 & 1 & 0 \\ 
+\hline
+1 & 1 & 1 \\ 
+\hline
+0 & 1 & 0 \\ 
+\hline
+\end{tabular}</cmath>
+We can see that rotating the first configuration by <math>90^{\circ}, 180^{\circ}, 270^{\circ},</math> and <math>360^{\circ}</math>, will give us <math>4</math> cases for this configuration. Similarly, the second configuration has <math>4</math> cases by the same rotations. The third configuration only has <math>1</math> case because its rotational symmetry is <math>90^{\circ}</math>. There are <math>5! \cdot 4!</math> ways to choose the odd and even numbers for all of the configurations, so our answer is <math>\frac{(4+4+1)(5!\cdot 4!)}{9!}=\boxed{\textbf{(B) }\frac{1}{14}}</math>.
+
+<math>\textbf{Note:}</math> We can also realize that there are <math>9</math> places for the row and column of <math>1 \text{s}</math> to overlap, resulting in <math>9</math> cases for all of the possible configurations.
+
+
+=== Problem 21 ===
+A sphere with center
+
+Choices: {'A': '2\\sqrt{3}', 'B': '4', 'C': '3\\sqrt{2}', 'D': '2\\sqrt{5}', 'E': '5</math>'}
+Answer: D
+
+--- Solution 1 ---
+The triangle is placed on the sphere so that its three sides are tangent to the sphere. The cross-section of the sphere created by the plane of the triangle is also the incircle of the triangle. To find the inradius, use <math>\text{area} = \text{inradius} \cdot \text{semiperimeter}</math>. The area of the triangle can be found by drawing an altitude from the vertex between sides with length <math>15</math> to the midpoint of the side with length <math>24</math>. The Pythagorean triple <math>9</math> - <math>12</math> - <math>15</math> allows us easily to determine that the base is <math>24</math> and the height is <math>9</math>. The formula <math>\frac {\text{base} \cdot \text{height}} {2}</math> can also be used to find the area of the triangle as <math>108</math>, while the semiperimeter is simply <math>\frac {15 + 15 + 24} {2} = 27</math>. After plugging into the equation, we thus get <math>108 = \text{inradius} \cdot 27</math>, so the inradius is <math>4</math>. Now, let the distance between <math>O</math> and the triangle be <math>x</math>. Choose a point on the incircle and denote it by <math>A</math>. The distance <math>OA</math> is <math>6</math>, because it is just the radius of the sphere. The distance from point <math>A</math> to the center of the incircle is <math>4</math>, because it is the radius of the incircle. By using the Pythagorean Theorem, we thus find <math>x = \sqrt{6^2-4^2}=\sqrt{20} = \boxed{\textbf {(D) } 2 \sqrt {5}}</math>.
+
+--- Solution 2 ---
+Drop an altitude on the isosceles triangle. Let the resulting 3-4-5 right triangle <math>ABC</math> have <math>AB=15</math> and <math>BC=12</math>. By special triangle, <math>AC=9</math>. Let <math>r</math> be the circle's radius. Let the circle's center be <math>O</math> and <math>D</math> be the closest point on <math>AB</math> to <math>O</math>.
+
+
+Then, <math>OD=r</math>. Obviously, <math>ODBC</math> is a kite. Thus, <math>BC=DB=12</math>, and <math>AD=15-DB=3</math>. <math>AO=AC-r=9-r</math>. By Pythagoras, <math>AD^2+OD^2=AO^2</math>, so <math>3^2+r^2=(9-r)^2</math>. The <math>r^2</math> terms cancel out, and <math>r=4</math>. 
+
+
+As before, using Pythagoras again, the distance is <math>\sqrt{6^2-4^2}=\boxed{\textbf{(D)}2\sqrt{5}}</math>
+
+(Solution by BJHHar)
+
+--- Solution 3 ---
+As in Solution 1, we note that by the Pythagorean Theorem, the height of the triangle is <math>9</math>, and that the three sides of the triangle are tangent to the sphere, so the circle in the cross-section of the sphere is the incenter of the triangle. 
+
+Recall that the inradius is the intersection of the angle bisectors. To find the inradius of the incircle, we use the Angle Bisector Theorem.
+<asy>
+draw((0,0)--(12,9)--(24,0)--cycle);
+dot((0,0));
+dot((12,9));
+dot((24,0));
+dot((12,0));
+label("$A$",(0,0),SW);
+label("$B$",(12,9),N);
+label("$C$",(24,0),SE);
+label("$D$",(12,-1/2),S);
+label("$I$",(12,4),SE);
+
+draw((12,9)--(12,0), dashed);
+draw(circle((12,4),4));
+draw((0,0)--(216/13,216/39));
+dot((12,4));
+label("$15$", (6,9/2),NW);
+label("$12$", (6,-1),S);
+
+</asy>
+<cmath>\begin{split}&\frac{AB}{BI}=\frac{AD}{DI} \\
+\Rightarrow \ &\frac{15}{BI}=\frac{12}{DI} \\
+\Rightarrow \ &\frac{BI}{5}=\frac{DI}{4}\end{split}</cmath>
+Since we know that <math>BI+DI</math> (the height) is equal to <math>9</math>, <math>DI</math> (the inradius) is <math>4</math>.
+From here, the problem can be solved in the same way as in Solution 1. The answer is <math>\boxed{\textbf {(D) } 2 \sqrt{5}}</math>.
+
+--- Solution 4 ---
+First, we label a few points:
+<asy>
+draw((0,0)--(12,9)--(24,0)--cycle);
+draw((12,9)--(12,0), dashed);
+draw((11.5,0)--(11.5,0.5)--(12,0.5));
+draw(circle((12,4),4));
+draw((12,4)--(48/5, 36/5));
+dot((12,4));
+label("$15$", (6,9/2),NW);
+label("$15$", (18,9/2),NE);
+
+label("$r$",(54/5, 28/5), SW);
+label("$12$", (6,-1),S);
+label("$I$",(12,4),SE);
+label("$A$",(0,0),SW);
+label("$B$",(12,9),N);
+label("$C$",(24,0),SE);
+label("$D$",(12,-1/2),S);
+label("$E$",(48/5, 36/5),NW);
+</asy>
+
+We have that <math>\triangle{BDC}</math> is a <math>3-4-5</math> triangle, so, as in Solution 1, <math>BD = 9</math>.
+From this, we know that <math>\overline{BI}=9-r</math>.
+Since <math>AB</math> is tangent to circle <math>I</math>, we also know <math>IEB</math> is a right triangle. <math>\triangle{BIE}</math> and <math>\triangle{BDA}</math> share angle <math>DBA</math>, so <math>\triangle{BIE} \sim \triangle{BDA}</math> since they have two equal angles.
+Hence, by this similarity, <math>\dfrac{9-r}{5}=\dfrac{r}{4}</math>. Cross-multiplying, we get <math>36-4r =5r</math>, which gives <math>r=4</math>.
+We now take another cross section of the sphere, perpendicular to the plane of the triangle.
+
+<asy>
+draw(circle((6,6),6));
+draw((6,6)--(1.75735931,1.75735931)--(6,1.75735931)--cycle);
+dot((6,6));
+dot((1.75735931,1.75735931));
+dot((6,1.75735931));
+
+label("$O$", (6,6),N);
+label("$6$", (3.87867965,3.87867965),NW);
+label("$4$", (3.87867965,1.75735931),SE);
+</asy>
+
+Using the Pythagorean Theorem, we find that the distance from the center to the plane is <math>\boxed{\textbf {(D) } 2 \sqrt{5}}</math>.
+
+==Community Discussion==
+https://artofproblemsolving.com/community/c3h1988124
+
+
+=== Problem 22 ===
+Real numbers between 0 and 1, inclusive, are chosen in the following manner. A fair coin is flipped. If it lands heads, then it is flipped again and the chosen number is 0 if the second flip is heads and 1 if the second flip is tails. On the other hand, if the first coin flip is tails, then the number is chosen uniformly at random from the closed interval
+
+Choices: {'A': '\\frac{1}{3}', 'B': '\\frac{7}{16}', 'C': '\\frac{1}{2}', 'D': '\\frac{9}{16}', 'E': '\\frac{2}{3}</math>'}
+Answer: B
+
+--- Solution 1 ---
+There are several cases depending on what the first coin flip is when determining <math>x</math> and what the first coin flip is when determining <math>y</math>.
+
+The four cases are:
+
+'''Case 1''': <math>x</math> is either <math>0</math> or <math>1</math>, and <math>y</math> is either <math>0</math> or <math>1</math>.
+
+'''Case 2''': <math>x</math> is either <math>0</math> or <math>1</math>, and <math>y</math> is chosen from the interval <math>[0,1]</math>.
+
+'''Case 3''': <math>x</math> is is chosen from the interval <math>[0,1]</math>, and <math>y</math> is either <math>0</math> or <math>1</math>.
+
+'''Case 4''': <math>x</math> is is chosen from the interval <math>[0,1]</math>, and <math>y</math> is also chosen from the interval <math>[0,1]</math>.
+
+Each case has a <math>\frac{1}{4}</math> chance of occurring (as it requires two coin flips).
+
+For Case 1, we need <math>x</math> and <math>y</math> to be different. Therefore, the probability for success in Case 1 is <math>\frac{1}{2}</math>.
+
+For Case 2, if <math>x</math> is 0, we need <math>y</math> to be in the interval <math>\left(\frac{1}{2}, 1\right]</math>. If <math>x</math> is 1, we need <math>y</math> to be in the interval <math>\left[0, \frac{1}{2}\right)</math>. Regardless of what <math>x</math> is, the probability for success for Case 2 is <math>\frac{1}{2}</math>.
+
+By symmetry, Case 3 has the same success rate as Case 2.
+
+For Case 4, we must use geometric probability because there are an infinite number of pairs <math>(x, y)</math> that can be selected, whether they satisfy the inequality or not. Graphing <math>|x-y| > \tfrac{1}{2}</math> gives us the following picture where the shaded area is the set of all the points that fulfill the inequality:
+
+<asy>
+filldraw((0,0)--(0,1)--(1/2,1)--(0,1/2)--cycle,black+linewidth(1));
+filldraw((0,0)--(1,0)--(1,1/2)--(1/2,0)--cycle,black+linewidth(1));
+draw((0,0)--(0,1)--(1,1)--(1,0)--cycle);
+</asy>
+
+The shaded area is <math>\frac{1}{4}</math>, which means the probability for success for case 4 is <math>\frac{1}{4}</math> (since the total area of the bounding square, containing all possible pairs, is <math>1</math>).
+
+Adding up the success rates from each case, we get:
+
+<math>\left(\frac{1}{4}\right) \cdot \left(\frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \frac{1}{4}\right) = \boxed{\textbf{(B) }\frac{7}{16}}</math>.
+
+--- Solution 2 ---
+Taking into account that there are two options for the result of the first coin flip, there are four possible combinations with equal possibility of initial coins flips.
+
+(1) x: heads, y: heads
+
+(2) x: heads, y: tails
+
+(3) x: tails, y: heads
+
+(4) x: tails, y: tails
+
+(1) Because x and y both must be integers, so it's simple to see that the probability that <math>|x-y| > \tfrac{1}{2}</math> is <math>\frac{1}{2}</math>.
+
+(2) Since x has to be an integer it is also easy to see that the probability is again <math>\frac{1}{2}</math>.
+
+(3) This is the same as case 2 so the probability is <math>\frac{1}{2}</math>.
+
+(4) This one is a little bit tricky. You could use geometric probability shown above, but if you don't understand it or happened to not think of it, there is another solution that involves using the multiple choice answers. 
+
+First, the probability we have so far is <math>\frac{3}{8}</math>.This is greater than <math>\frac{1}{3}</math> so <math>A</math> is the not the answer. It is either <math>B, C, D,</math> or <math>E</math>. Let's draw out the probability with two parallel lines on a paper with represent a number line from <math>0-1</math>. The concept is to compare one point and find the fraction of the other line that contains points that are at least <math>\frac{1}{2}</math> away from it. If the point we choose is on the endpoints, then the fraction of the other line that works is exactly <math>\frac{1}{2}</math>. But as we move this point closer to the middle, the deadzone (area where the other point cannot be) grows, diminishing the probability. Finally, when it is directly in the middle, there are no points that pass the requirements except at <math>1</math> and <math>0</math>.
+
+So, looking at the choices again, we have <math>\frac{7}{16}</math>, <math>\frac{1}{2}</math>, <math>\frac{9}{16}</math>, and <math>\frac{2}{3}</math>. 
+
+<math>\frac{1}{2}</math> is exactly <math>\frac{1}{8}</math> more than the probability we had before. Notice that this is impossible because we proved that the average probability of the fourth case is lower than <math>\frac{1}{2}</math>, so the answer is <math>\boxed{B}</math>.
+
+-jackshi2006
+
+--- Solution 3 ---
+First, calculate the conditional probabilities:
+
+<math>P(x\in[0,\frac{1}{2}) \mid x\in[0,1]) = \frac{1}{2}</math>,  <math>P(|x-y|>\frac{1}{2} \mid x\in[0,1], y=1) = \frac{1}{2}</math>
+
+<math>P(x\in(\frac{1}{2},1] \mid x\in[0,1]) = \frac{1}{2}</math>,  <math>P(|x-y|>\frac{1}{2} \mid x\in[0,1], y=0) = \frac{1}{2}</math>
+
+<math>P(y\in[0,\frac{1}{2}) \mid y\in[0,1]) = \frac{1}{2}</math>,  <math>P(|x-y|>\frac{1}{2} \mid x=1, y\in[0,1]) = \frac{1}{2}</math>
+
+<math>P(y\in(\frac{1}{2},1] \mid y\in[0,1]) = \frac{1}{2}</math>,  <math>P(|x-y|>\frac{1}{2} \mid x=0, y\in[0,1]) = \frac{1}{2}</math>
+
+As stated in Solution 1, <math>P(|x-y|>\frac{1}{2} \mid x\in[0,1], y\in[0,1]) = \frac{1}{4}</math>
+
+Next, calculate the dependent event probabilities by <math>P(A \cap B)= P(A \mid B) \cdot P(B)</math>, draw a table to calculate <math>P(|x-y|>\frac{1}{2})</math> by the dependent events:
+
+<cmath>\[ \begin{array}[b]{cccc}
+ & P(x=0)=\frac{1}{4} & P(x=1)=\frac{1}{4} & P(x \in [0,1])=\frac{1}{2} \\
+ &  &  &  \\
+P(y=0)=\frac{1}{4} & 0 & \frac{1}{4} \cdot \frac{1}{4} = \frac{1}{16} & \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{4} = \frac{1}{16} \\
+ &  &  &  \\
+P(y=1)=\frac{1}{4} & \frac{1}{4} \cdot \frac{1}{4} = \frac{1}{16} & 0 & \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{4} = \frac{1}{16} \\
+ &  &  &  \\
+P(y \in [0,1])=\frac{1}{2} & \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{4} = \frac{1}{16} & \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{4} = \frac{1}{16} & \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{4} = \frac{1}{16} 
+\end{array} \]</cmath>
+
+The sum of all the cell values is <math>\boxed{\textbf{(B)}\frac{7}{16}}</math>
+
+--- Solution 4 ---
+Notice the probability that <math>|x-y| > \tfrac{1}{2}</math> is equal to <math>2</math> times the probability that <math>x-y > \tfrac{1}{2}</math>.
+
+For <math>x-y > \tfrac{1}{2}</math> to be true; there are <math>4</math> cases.
+
+Case <math>1</math>: <math>x</math> flips <math>T</math> and <math>y</math> flips <math>T</math>
+
+When <math>x</math> flips <math>T</math> and <math>y</math> flips <math>T</math>, both <math>x</math> and <math>y</math> are randomly chosen from the interval <math>[0,1]</math>. The probability that <math>x-y > \tfrac{1}{2}</math> when both <math>x</math> and <math>y</math> are randomly chosen from the interval <math>[0,1]</math> is <math>\frac18</math>, as illustrated in the geometric probability diagram below.
+
+<asy>
+size(3cm,0);
+filldraw((0,0)--(1,0)--(1,1/2)--(1/2,0)--cycle,black+linewidth(1));
+draw((0,0)--(0,1)--(1,1)--(1,0)--cycle);
+</asy>
+
+Therefore, the probability for Case <math>1</math> is <math>\frac12 \cdot \frac12 \cdot \frac18 = \frac{1}{32}</math>
+
+Case <math>2</math>: <math>x</math> flips <math>HT</math> and <math>y</math> flips <math>T</math>
+
+When <math>x</math> flips <math>HT</math> and <math>y</math> flips <math>T</math>, <math>x=1</math>, and <math>y</math> is randomly chosen from the interval <math>[0,1]</math>. The probability that <math>x-y > \tfrac{1}{2}</math> when <math>x=1</math>, and <math>y</math> is randomly chosen from the interval <math>[0,1]</math> is <math>\frac12</math> (<math>y</math> has to be between <math>[0,\frac12]</math>).
+
+Therefore, the probability for Case <math>2</math> is <math>\frac12 \cdot \frac12 \cdot \frac12 \cdot \frac12 = \frac{1}{16}</math>
+
+Case <math>3</math>: <math>x</math> flips <math>T</math> and <math>y</math> flips <math>HH</math>
+
+When <math>x</math> flips <math>T</math> and <math>y</math> flips <math>HH</math>, <math>x</math> is randomly chosen from the interval <math>[0,1]</math>, and <math>y = 0</math>. The probability that <math>x-y > \tfrac{1}{2}</math> when <math>x</math> is randomly chosen from the interval <math>[0,1]</math>, and <math>y = 0 </math>is <math>\frac12</math> (<math>x</math> has to be between <math>[\frac12,1]</math>).
+
+Therefore, the probability for Case <math>3</math> is <math>\frac12 \cdot \frac12 \cdot \frac12 \cdot \frac12 = \frac{1}{16}</math>
+
+Case <math>4</math>: <math>x</math> flips <math>HT</math> and <math>y</math> flips <math>HH</math>
+
+When <math>x</math> flips <math>HT</math> and <math>y</math> flips <math>HH</math>, <math>x=1</math>, and <math>y = 0</math>. The probability that <math>x-y > \frac{1}{2}</math> when <math>x=1</math>, and <math>y = 0</math> is <math>1</math>.
+
+Therefore, the probability for Case <math>4</math> is <math>\frac12 \cdot \frac12 \cdot \frac12 \cdot \frac12 \cdot 1= \frac{1}{16}</math>
+
+Hence, the answer is <math>2(\frac{1}{32} + \frac{1}{16} + \frac{1}{16} + \frac{1}{16}) = \boxed{\textbf{(B)}\frac{7}{16}}</math>
+
+--- Solution 5 ---
+The probability of choosing <math>0</math> and <math>1</math> with the first coin landing on heads are both <math>\frac{1}{4}</math>. The probability of choosing a number less than <math>\frac{1}{2}</math>, <math>l</math>, and a number greater than <math>\frac{1}{2}</math>, <math>g</math>, with the first coin landing on tails are both <math>\frac{1}{4}</math>.
+
+For pairs <math>(x, y)</math>, the probability of choosing <math>(0, 1)</math>, <math>(1, 0)</math>, <math>(0, g)</math>, <math>(g, 0)</math>, <math>(1, l)</math> and <math>(l, 1)</math> are all <math>\frac{1}{16}</math>. However, <math>(l, g)</math> and <math>(g, l)</math> are <math>\frac{1}{32}</math> respectively.
+
+Therefore, <math>\frac{1}{16} \cdot 6 + \frac{1}{32} \cdot 2 = \boxed{\textbf{(B) } \frac{7}{16}}</math>.
+
+--- Solution 6 ---
+Notice how if we choose \( x = 0 \) and \( y \in [0, 1/2) \), we then see that there is going to be a chance that is slightly less than \( 1/2 \). We then see that this is apparent for \( y=0 \) and \( x \in [0, 1/2) \).
+
+Now, if \( x = 0 \) and \( y = 0 \), this is obviously not going to work, so we have to subtract a case. The same applies for \( x = 1 \) and \( y = 1 \), and we subtract another case.
+
+Additionally, we can include \( x = 1 \), \( y = 0 \) and \( y = 0 \), \( x = 1 \), giving us 2 cases that work, and we see that this is part of the \( (1/2 , 1] \) interval, and therefore it doesn't change the outcome.
+
+We are looking for a solution that is slightly less than \( 1/2 \). The only one is <math>\boxed{\textbf{(B) } \frac{7}{16}}</math>
+
+
+=== Problem 23 ===
+Travis has to babysit the terrible Thompson triplets. Knowing that they love big numbers, Travis devises a counting game for them. First Tadd will say the number
+
+Choices: {'A': '\\ 5743', 'B': '\\ 5885', 'C': '\\ 5979', 'D': '\\ 6001', 'E': '\\ 6011\n </math>'}
+Answer: C
+
+--- Solution 1 ---
+Define a ''round'' as one complete rotation through each of the three children, and define a ''turn'' as the portion when one child says his numbers (similar to how a game is played).
+
+We create a table to keep track of what numbers each child says for each round.
+
+<math>
+
+ \begin{tabular}{||c c c c||} 
+ \hline
+ Round & Tadd & Todd & Tucker \\ [0.5ex] 
+ \hline\hline
+ 1 & 1 & 2-3 & 4-6 \\ 
+ \hline
+ 2 & 7-10 & 11-15 & 16-21 \\
+ \hline
+ 3 & 22-28 & 29-36 & 37-45 \\
+ \hline
+ 4 & 46-55 & 56-66 & 67-78 \\ [1ex] 
+ \hline
+\end{tabular}
+
+</math>
+
+
+
+Tadd says <math>1</math> number in round 1, <math>4</math> numbers in round 2, <math>7</math> numbers in round 3, and in general <math>3n - 2</math> numbers in round n. At the end of round n, the number of numbers Tadd has said so far is <math>1 + 4 + 7 + \dots + (3n - 2) = \frac{n(3n-1)}{2}</math>, by the sum of arithmetic series formula. 
+
+We find that <math>\dfrac{37(110)}{2}=2035</math>, so Tadd says his 2035th number at the end of his turn in round 37. That also means that Tadd says his 2019th number in round 37. At the end of Tadd's turn in round 37, the children have, in total, completed <math>36+36+37=109</math> turns. In general, at the end of turn <math>n</math>, the nth triangular number is said, or <math>\dfrac{n(n+1)}{2}</math>. So at the end of turn 109 (or the end of Tadd's turn in round 37), Tadd says the number <math>\dfrac{109(110)}{2}=5995</math>. Recalling that this was the 2035th number said by Tadd, so the 2019th number he said was <math>5995-16=5979</math>.
+
+Thus, the answer is <math>\boxed{\textbf{(C) }5979}</math>.
+
+--- Solution 2 ---
+Firstly, as in Solution 1, we list how many numbers Tadd says, Todd says, and Tucker says in each round.
+
+Tadd: <math>1, 4, 7, 10, 13 \cdots</math>
+
+Todd: <math>2, 5, 8, 11, 14 \cdots</math>
+
+Tucker: <math>3, 6, 9, 12, 15 \cdots</math>
+
+We can find a general formula for the number of numbers each of the kids say after the <math>n</math>th round. For Tadd, we can either use the arithmetic series sum formula (like in Solution 1) or standard summation results to get <math>\sum_{i=1}^n 3n-2=-2n+3\sum_{i=1}^n n=-2n+\frac{3n(n+1)}{2}=\frac{3n^2-n}{2}</math>.
+
+Now, to find the number of rotations Tadd and his siblings go through before Tadd says his <math>2019</math>th number, we know the inequality <math>\frac{3n^2-n}{2}<2019</math> must be satisfied, and testing numbers gives the maximum integer value of <math>n</math> as <math>36</math>.
+
+The next main insight, in order to simplify the computation process, is to notice that the <math>2019</math>th number Tadd says is simply the number of numbers Todd and Tucker say plus the <math>2019</math> Tadd says, which will be the answer since Tadd goes first.
+
+Carrying out the calculation thus becomes quite simple:
+
+<cmath>\left(\sum_{i=1}^{36} 3n+\sum_{i=1}^{36} 3n-1\right)+2019=\left(\sum_{i=1}^{36} 6n-1\right)+2019=(5+11+17...+215)+2019=\frac{36(220)}{2}+2019</cmath>
+
+At this point, we can note that the last digit of the answer is <math>9</math>, which gives <math>\boxed{\textbf{(C) }5979}</math>. (Completing the calculation will confirm the answer, if you have time.)
+
+--- Solution 3 ---
+Think of a turn as adding a block or an interval of numbers to each person. Here are the first couple "blocks" that Tadd has (a block will be denoted in interval notation): [<math>1</math>], [<math>7</math>-<math>10</math>], [<math>22</math>-<math>28</math>], [<math>46</math>-<math>55</math>]. From simple inspection, we can notice two things.
+
+<math>1</math>) The start points of each interval is increasing arithmetically by  <math>9</math>.
+
+<math>2</math>) The length of each "block" is increasing by <math>3</math>. 
+
+Since each block length is increasing by 3, then we want <math>1</math>+<math>4</math>+<math>7</math>+..<math>3n-2</math> = <math>2019</math> or <math>n(3n-1)/2 = 2019</math>, where <math>n</math> is the amount of blocks we have. In a short amount of time, you will see that <math>n</math> is not an integer from that equation, but thats perfectly okay since we can just find an <math>n</math> that gets it close to 2019, then we can work from there. From inspection, you will see that a good n value that does that exact job is <math>37</math>. 
+
+We can then deduce that the start point of the <math>37</math>th block will be <math>1+(6+15+24..+321) = 5887</math> if we refer to fact <math>1</math>. We can easily find the length of 37th block by <math>36*3+1 = 109</math> if we refer to fact <math>2</math>. Remember that the length increases by <math>3</math> for each block. So we then can deduce that our endpoint for the 37th block is <math>5887+109-1 = 5995</math>. The endpoint of the <math>37</math>th block will be the <math>2035</math>th number said because we can plug <math>37</math> into <math>n(3n-1)/2</math>, which tells us how many numbers Tadd has said where <math>n</math> is the number of blocks Tadd has. From there we know that the <math>2019</math>th number is in <math>37</math>th block, so that means we can take our endpoint and subtract <math>2035-2019 = 16</math> from the endpoint of the <math>37</math>th block, which is <math>5995</math>, so we get <math>5995-16 = 5979</math> or  <math>\boxed{\textbf{(C) }5979}</math>.
+
+--- Solution 4 ---
+Tadd first starts with number, says 4 numbers after, then 7, etc.
+
+Notice how the difference between each one is 3, and therefore the total numbers said on each iteration would be <math>3x - 1</math>. Obviouisly, <math>2019</math> is unobtainable from the sum of the first <math>n</math> numbers, so at most, we want another number that is an iteration of <math>3x</math>. Therefore we want a number that satisfies both \( 2019 \mod 3 \equiv 0 \) and \( x \mod 3 \equiv 0 \).
+
+The only number that works is <math>\boxed{\textbf{(C) }5979}</math>
+
+
+=== Problem 24 ===
+Let
+
+Choices: {'A': '243', 'B': '244', 'C': '245', 'D': '246', 'E': '247</math>'}
+Answer: B
+
+--- Solution 1 ---
+Multiplying both sides by <math>(s-p)(s-q)(s-r)</math> yields
+<cmath>1 = A(s-q)(s-r) + B(s-p)(s-r) + C(s-p)(s-q)</cmath>
+As this is a polynomial identity, and it is true for infinitely many <math>s</math>, it must be true for all <math>s</math> (since a polynomial with infinitely many roots must in fact be the constant polynomial <math>0</math>). This means we can plug in <math>s = p</math> to find that <math>\frac1A = (p-q)(p-r)</math>.  Similarly, we can find <math>\frac1B = (q-p)(q-r)</math> and <math>\frac1C = (r-p)(r-q)</math>.  Summing them up, we get that <cmath>\frac1A + \frac1B + \frac1C = p^2 + q^2 + r^2 - pq - qr - pr</cmath>
+We can express <math>p^2 + q^2 + r^2 = (p+q+r)^2 - 2(pq + qr + pr)</math>, and by Vieta's Formulas, we know that this expression is equal to <math>484</math>. Vieta's also gives <math>pq + qr + pr = 80</math> (which we also used to find <math>p^2+q^2+r^2</math>), so the answer is <math>484 -240 = \boxed{\textbf{(B) } 244}</math>. 
+
+''Note'': this process of substituting in the 'forbidden' values in the original identity is a standard technique for partial fraction decomposition, as taught in calculus classes.  
+
+-very small latex edit from countmath1 :)
+
+Minor rephrasing for correctness and clarity
+
+--- Solution 2 ---
+Solution 1 uses a trick from Calculus that seemingly contradicts the restriction <imath>s\not\in\{p,q,r\}</imath>. Here is a solution with pure elementary algebra.
+<cmath>A(s-q)(s-r) + B(s-p)(s-r) + C(s-p)(s-q)=1</cmath>
+<cmath>s^2(A+B+C)-s(Aq+Ar+Bp+Br+Cp+Cq)+(Aqr+Bpr+Cpq-1)=0</cmath>
+<cmath>\begin{cases}
+A+B+C=0 & (1)\\
+Aq+Ar+Bp+Br+Cp+Cq=0 & (2)\\
+Aqr+Bpr+Cpq=1 & (3)
+\end{cases}</cmath>
+From <imath>(1)</imath> we get <imath>A=-(B+C)</imath>, <imath>B=-(A+C)</imath>, <imath>C=-(A+B)</imath>, substituting them in <imath>(2)</imath>, we get <imath>Ap + Bq + Cr=0</imath>  <imath>(4)</imath>
+
+<imath>(4)- (1) \cdot r</imath>, <imath>A(p-r)+B(q-r)=0</imath>  <imath>(5)</imath>
+
+<imath>(3) - (1) \cdot pq</imath>, <imath>Aq(r-p)+Bp(r-q)=1</imath>  <imath>(6)</imath>
+
+<imath>(6) + (5) \cdot p</imath>, <imath>A(r-p)(q-p)=1</imath>
+
+<imath>A = \frac{1}{(r-p)(q-p)}</imath>, by symmetry, <imath>B = \frac{1}{(r-q)(p-q)}</imath>, <imath>C = \frac{1}{(q-r)(p-r)}</imath>
+
+The rest is similar to solution 1, we get <imath>\boxed{\textbf{(B) } 244}</imath>
+
+
+=== Problem 25 ===
+For how many integers
+
+Choices: {'A': '31', 'B': '32', 'C': '33', 'D': '34', 'E': '35</math>'}
+Answer: D
+
+--- Solution 1 ---
+The main insight is that 
+
+<cmath>\frac{(n^2)!}{(n!)^{n+1}}</cmath> 
+
+is always an integer. This is true because it is precisely the number of ways to split up <math>n^2</math> objects into <math>n</math> unordered groups of size <math>n</math>. Thus,
+
+<cmath>\frac{(n^2-1)!}{(n!)^n}=\frac{(n^2)!}{(n!)^{n+1}}\cdot\frac{n!}{n^2}</cmath>
+
+is an integer if <math>n^2 \mid n!</math>, or in other words, if <math>\frac{(n-1)!}{n}</math>, is an integer. This condition is false precisely when <math>n=4</math> or <math>n</math> is prime, by [[Wilson's Theorem]]. There are <math>15</math> primes between <math>1</math> and <math>50</math>, inclusive, so there are <math>15 + 1 = 16</math> terms for which
+
+<cmath>\frac{(n^2-1)!}{(n!)^{n}}</cmath>
+
+is potentially not an integer. It can be easily verified that the above expression is not an integer for <math>n=4</math> as there are more factors of <math>2</math> in the denominator than the numerator. Similarly, it can be verified that the above expression is not an integer for any prime <math>n=p</math>, as there are more factors of p in the denominator than the numerator. Thus all <math>16</math> values of n make the expression not an integer and the answer is <math>50-16=\boxed{\textbf{(D)}\ 34}</math>.
+
+SideNote: Another method to prove that <cmath>\frac{(n^2)!}{(n!)^{n+1}}</cmath> is always an integer is instead as follows using Number Theory. Notice that <math>n</math> will divide the numerator <math>n+1</math> times, since <math>n^2 = n \times n</math> contains not one but two factors of <math>n.</math> Also, for <math>a < n,</math> notice that <math>a</math> divides <math>(n^2)!</math> at least <cmath>\lfloor \frac{n^2}{a} \rfloor \ge \lfloor \frac{n^2}{n-1} \rfloor \ge \lfloor \frac{n^2 - 1}{n-1} \rfloor \ge n+1</cmath> times. Thus, each integer from <math>1</math> to <math>n</math> will divide <math>(n^2)!</math> at least <math>n+1</math> times, which proves such a lemma. <math>\square{}</math>
+
+--- Solution 2 ---
+We can use the P-Adic Valuation (more info could be found here: [[Mathematical notation]]) of n to solve this problem (recall the P-Adic Valuation of 'n' is denoted by <math>v_p (n)</math> and is defined as the greatest power of some prime 'p' that divides n. For example, <math>v_2 (6)=1</math> or <math>v_7 (245)=2</math> .) Using Legendre's formula, we know that :
+
+<cmath> v_p (n!)= \sum_{i=1}^\infty   \lfloor \frac {n}{p^i} \rfloor </cmath>
+
+Seeing factorials involved in the problem, this prompts us to use [[Legendre's Formula]] where n is a power of a prime.
+
+We also know that , <math>v_p (m^n) = n \cdot v_p (m)</math> .
+Knowing that <math>a\mid b</math> if <math>v_p (a) \le v_p (b)</math> , we have that :
+
+<cmath> n \cdot v_p (n!) \le v_p ((n^2 -1 )!) </cmath> and we must find all n for which this is true.
+
+If we plug in <math>n=p</math>, by Legendre's we get two equations:
+
+<cmath> v_p ((n^2 -1)!) = \sum_{i=1}^\infty  \lfloor \frac {n^2 -1}{p^i} \rfloor = (p-1)+0+...+0 = p-1 </cmath>
+
+And we also get :
+
+<cmath> v_p ((n!)^n) = n \cdot v_p (n!)= n \cdot \sum_{i=1}^\infty   \lfloor \frac {n}{p^i} \rfloor = p \cdot ( 1+0+...0) = p </cmath>
+
+But we are asked to prove that <math> n \cdot v_p (n!) \le v_p ((n^2 -1 )!) \Longrightarrow p \le p-1 </math> which is false for all 'n' where n is prime.
+
+Now we try the same for <math>n=p^2</math> , where p is a prime. By Legendre we arrive at:
+
+<cmath>v_p ((p^4 -1)!) = p^3 + p^2 + p -3</cmath> 
+
+(as <math>v_p(p^4!) = p^3 + p^2 + p + 1</math> and <math>p^4</math> contains 4 factors of <math>p</math>) and 
+
+<cmath>p^2 \cdot v_p (p^2 !) = p^3 + p^2 </cmath>
+
+Then we get:
+
+<cmath> p^2 \cdot v_p (p!) \le v_p ((n^4 -1)!) \Longrightarrow p^3 + p^2 \le p^3 + p^2 + p -3 </cmath> Which is true for all primes except for 2, so <math>2^2 = 4</math> doesn't work. It can easily be verified that for all <math>n=p^i</math> where <math>i</math> is an integer greater than 2, satisfies the inequality :<cmath> n \cdot v_p (n!) \le v_p ((n^2 -1 )!).</cmath>
+
+Therefore, there are 16 values that don't work and <math> 50-16 = \boxed{\mathbf{(D)}\ 34}</math> values that work.
+
+--- Solution 3 ---
+Notice all <math>15</math> primes don't work as there are <math>n</math> factors of <math>n</math> in the denominator and <math>n-1</math> factors of <math>n</math> in the numerator, as easily seen through the denominator <math>n^n</math> and the numerator <math>(n^2-1)!,</math> which doesn't get quite to <math>n^2</math> hence it is one short of a factor of <math>n</math>, through <math>1n, 2n, \cdots, (n-1)n</math>. Further experimentation finds that <math>n=4</math> does not work as there are 11 factors of 2 in the numerator and 12 in the denominator. We also find that it seems that all other values of <math>n</math> where <math>n</math> is a square of a prime work. So we get <math>50-15-1=\boxed{34}</math> and that happens to be right. 
+
+~[[BS2012]]
+
+

@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T00-27-22-prove-6ec9-f_supermodular_false_family",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- The unrestricted supermodularity is FALSE: infinite counterexample family.\n    For u \u2265 4, with a=2u, b=3u, n=5u\u22121, m=7u:\n    f(gcd) + f(lcm) = (21u+7) + (1\u22125u) = 16u+8\n    f(a) + f(b) = (13u+3) + (4u+2) = 17u+5\n    Difference = 3\u2212u < 0. -/\ntheorem f_supermodular_false_family (u : \u2115) (hu : 4 \u2264 u) :\n    let n := 5 * u - 1\n    let m := 7 * u\n    let a := 2 * u\n    let b := 3 * u\n    2 * (m : \u2124) * ((n / Nat.gcd a b : \u2115) : \u2124) - (n : \u2124) * ((m / Nat.gcd a b : \u2115) : \u2124) +\n    (2 * (m : \u2124) * ((n / Nat.lcm a b : \u2115) : \u2124) - (n : \u2124) * ((m / Nat.lcm a b : \u2115) : \u2124)) <\n    2 * (m : \u2124) * ((n / a : \u2115) : \u2124) - (n : \u2124) * ((m / a : \u2115) : \u2124) +\n    (2 * (m : \u2124) * ((n / b : \u2115) : \u2124) - (n : \u2124) * ((m / b : \u2115) : \u2124)) := by\n  sorry",
+  "started_at": "2026-04-16T00:27:22Z",
+  "finished_at": "2026-04-16T00:27:22Z",
+  "duration_s": 0.22,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "resolver_failure",
+    "message": "AutoformalizePreflightError: No active Gauss project found. Use `/project init`, `/project convert`, or `/project use <path>` first. Run `/project init`, `/project convert`, or `/project use <path>` first.",
+    "log_tail": ""
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-27-22-prove-6ec9-f_supermodular_false_family.log",
+  "worker_pid": 1256,
+  "last_heartbeat_at": 1776299242.5602703,
+  "_started_monotonic": 1776299242.4065561
+}

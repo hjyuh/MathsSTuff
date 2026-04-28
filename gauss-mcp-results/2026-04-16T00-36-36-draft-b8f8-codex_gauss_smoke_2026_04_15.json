@@ -1,0 +1,19 @@
+{
+  "job_id": "2026-04-16T00-36-36-draft-b8f8-codex_gauss_smoke_2026_04_15",
+  "status": "done",
+  "session_id": "",
+  "command": "/draft",
+  "input": "import Mathlib\n\nexample : True := by\n  trivial",
+  "started_at": "2026-04-16T00:36:36Z",
+  "finished_at": "2026-04-16T00:42:32Z",
+  "duration_s": 355.73,
+  "result_text": "Elaboration check passes (only the expected `sorry` remains).\n\n## Drafted Skeleton\n\n```lean\nimport Mathlib\n\nexample : True := by\n  sorry\n```\n\n**Informal reading:** \"True is provable\" \u2014 the simplest possible proposition in Lean's type theory, inhabited by `True.intro`.\n\nThe original proof (`trivial`) works directly; `sorry` is the placeholder for the prove pass.\n\n---\n\n## Depth Check\n\nWhat would you like to do next?\n\n- **Show proof state** \u2014 inspect the goal at the `sorry`\n- **Alternative formalization** \u2014 e.g., term-mode `trivial` or `True.intro` instead of tactic proof\n- **Send to `/lean4:prove`** \u2014 fill the `sorry` interactively\n- **Save to scratch / write to file** \u2014 persist the skeleton\n",
+  "lean_code_blocks": [
+    "import Mathlib\n\nexample : True := by\n  sorry"
+  ],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-36-36-draft-b8f8-codex_gauss_smoke_2026_04_15.log",
+  "worker_pid": 1956,
+  "last_heartbeat_at": 1776300150.8017344,
+  "_started_monotonic": 1776299796.548349
+}

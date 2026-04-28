@@ -1,0 +1,880 @@
+=== Problem 1 ===
+An amusement park has a collection of scale models, with ratio
+
+Choices: {'A': '14', 'B': '15', 'C': '16', 'D': '18', 'E': '20</math>'}
+Answer: A
+
+--- Solution 1 ---
+You can see that since the ratio of real building's heights to the model building's height is <math>1:20</math>. We also know that the U.S Capitol is <math>289</math> feet in real life, so to find the height of the model, we divide by 20. That gives us <math>14.45</math> which rounds to 14. Therefore, to the nearest whole number, the duplicate is <math>\boxed{\textbf{(A) }14}</math>.
+
+--- Solution 2 ---
+We can compute <math>\frac{289}{20}</math> and round our answer to get <math>\boxed{\textbf{(A) }14}</math>.
+It is basically Solution 1 without the ratio calculation. However, Solution 1 is referring further to the problem.
+
+--- Solution 3 ---
+We know that <math> 20 \cdot 14 = 280 ,</math> and that <math> 20 \cdot 15 = 300 .</math> These are the multiples of <math>20</math> around <math>289 ,</math> and the closest one of those is <math>280.</math> Therefore, the answer is <math> \dfrac {280} {20} = \boxed{\textbf{(A) }14} .</math>
+
+
+=== Problem 2 ===
+What is the value of the product<cmath>\left(1+\frac{1}{1}\right)\cdot\left(1+\frac{1}{2}\right)\cdot\left(1+\frac{1}{3}\right)\cdot\left(1+\frac{1}{4}\right)\cdot\left(1+\frac{1}{5}\right)\cdot\left(1+\frac{1}{6}\right)?</cmath>
+
+Choices: {'A': '\\frac{7}{6}', 'B': '\\frac{4}{3}', 'C': '\\frac{7}{2}', 'D': '7', 'E': '8</math>'}
+Answer: D
+
+--- Solution 1 ---
+By adding up the numbers in each of the <imath>6</imath> parentheses, we get: 
+
+<imath>\frac{2}{1} \cdot \frac{3}{2} \cdot \frac{4}{3} \cdot \frac{5}{4} \cdot \frac{6}{5} \cdot \frac{7}{6}</imath>.
+
+Using telescoping, most of the terms cancel out diagonally. We are left with <imath>\frac{7}{1}</imath> which is equivalent to <imath>7</imath>. Thus, the answer would be <imath>\boxed{\textbf{(D) }7}</imath>.
+
+Also, you can also make the fractions <imath>\frac{7!}{6!}</imath>, which also yields <imath>\boxed{\textbf{(D) }7}</imath>
+
+--- Solution 2 ---
+<imath>\frac{2}{1} \cdot \frac{3}{2} \cdot \frac{4}{3} \cdot \frac{5}{4} \cdot \frac{6}{5} \cdot \frac{7}{6} = \boxed{\textbf{(D)}\ 7}</imath>.
+
+
+=== Problem 3 ===
+Students Arn, Bob, Cyd, Dan, Eve, and Fon are arranged in that order in a circle. They start counting: Arn first, then Bob, and so forth. When the number contains a 7 as a digit (such as 47) or is a multiple of 7 that person leaves the circle and the counting continues. Who is the last one present in the circle?
+
+Choices: {'A': '\\text{Arn}', 'B': '\\text{Bob}', 'C': '\\text{Cyd}', 'D': '\\text{Dan}', 'E': '\\text{Eve}</math>'}
+Answer: D
+
+--- Solution 1 ---
+The five numbers which cause people to leave the circle are <math>7, 14, 17, 21,</math> and <math>27.</math>
+
+The most straightforward way to do this would be to draw out the circle with the people, and cross off people as you count.
+
+Assuming the six people start with <math>1</math>, Arn counts <math>7</math> so he leaves first. Then, Cyd counts <math>14</math> as there are <math>7</math> numbers to be counted from this point. Then, Fon, Bob, and Eve, count, <math>17,</math> <math>21,</math> and <math>27</math>, respectively, so the last one standing is Dan. Hence, the answer would be <math>\boxed{\textbf{(D) }\text{Dan}}</math>.
+
+--- Solution 2 ---
+Assign each person a position: Arn is in position <imath>1</imath>, Bob in <imath>2</imath>, etc. Note that if there are <imath>n</imath> people standing in a circle, a person will say a number that is congruent to their position modulo <imath>n</imath>. It follows that if there are <imath>k</imath> numbers to be said (with someone leaving on the <imath>kth</imath>), the person that leaves will stand in position <imath>k\pmod{n}.</imath>
+
+The five numbers which cause people to leave the circle are <imath>7, 14, 17, 21,</imath> and <imath>27.</imath> Since there are initially <imath>6</imath> people in the circle, so the person who leaves stands in position <imath>7\equiv 1\pmod 6</imath>, or position <imath>1</imath>. 
+
+Arn now leaves, and because Bob is the next person to say a number, we reassign the positions such that Bob is in position <imath>1</imath>, Cyd in <imath>2</imath>, and Fon in <imath>5</imath>. There are <imath>7</imath> more numbers to be said, and someone leaves on the <imath>7th</imath>. It follows that the person who leaves stands in position <imath>7\equiv 2\pmod 5</imath>.
+
+Cyd leaves the circle, and <imath>4</imath> people remain, namely Bob, Dan, Eve, and Fon. Assign the position numbers such that Dan has <imath>1</imath>, Eve <imath>2</imath>, etc. There are <imath>3</imath> more numbers to be said, and someone leaves on the <imath>3rd</imath>. The person standing in position <imath>3</imath> (Fon) now leaves. 
+
+There are two people left, Eve and Dan, with Dan in position <imath>1</imath> now. There are <imath>6</imath> more numbers to be said, and Eve is standing in position <imath>6\equiv 0\pmod 2</imath>, so she leaves. 
+
+The last person standing is <imath>\boxed{\textbf{(D) }\text{Dan}}</imath>.
+
+-Benedict T (countmath1)
+
+
+=== Problem 4 ===
+The twelve-sided figure shown has been drawn on
+
+Choices: {'A': '12', 'B': '12.5', 'C': '13', 'D': '13.5', 'E': '14</math>'}
+Answer: C
+
+--- Solution 1 ---
+We count <math>3 \cdot 3=9</math> unit squares in the middle, and <math>8</math> small triangles, which gives 4 rectangles each with an area of <math>1</math>. Thus, the answer is <math>9+4=\boxed{\textbf{(C) } 13}</math>.
+
+--- Solution 2 ---
+We can see here that there are <math>9</math> total squares in the middle. We also see that the triangles that make the corners of the shape have an area half the squares' area. Then, we can easily find that each corner has an area of one square and there are <math>4</math> corners so we add that to the original 9 squares to get <math>9+4=\boxed{\textbf{(C) } 13}</math>. That is how I did it.
+
+--- Solution 3 ---
+We can apply Pick's Theorem here. There are <math>8</math> lattice points, and <math>12</math> lattice points on the boundary. Then,
+
+<cmath> 8 + 12 \div 2 - 1 = \boxed {\textbf{(C) }13}.</cmath>
+
+--- Solution 4 ---
+Use the [[Shoelace Theorem]] and get <math>\boxed{\textbf{(C) } 13}</math>.
+
+
+=== Problem 5 ===
+What is the value of
+
+Choices: {'A': '-1010', 'B': '-1009', 'C': '1008', 'D': '1009', 'E': '1010</math>'}
+Answer: E
+
+--- Solution 1 ---
+Rearranging the terms, we get <imath>(1-2)+(3-4)+(5-6)+...(2017-2018)+2019</imath>, and our answer is <imath>-1009+2019=\boxed{\textbf{(E) }1010}</imath>.
+
+If you were stuck on this problem, refer to AoPS arithmetic lessons.
+
+--- Solution 2 ---
+We can see that the last numbers of each of the sets (even numbers and odd numbers) have a difference of two. So, do the second last ones and so on. Now, all we need to find is the number of integers in any of the sets (I chose even) to get <math>\boxed{\textbf{(E) }1010}</math>.
+
+--- Solution 3 ---
+It is similar to the Solution 1: 
+Rearranging the terms, we get <math>1+(3-2)+(5-4)+(6-5)...(2017-2016)+(2019-2018)</math>, and our answer is <math>1+1009=\boxed{\textbf{(E) }1010}</math>.
+
+--- Solution 4 ---
+Note that the sum of consecutive odd numbers can be expressed as a square, namely <imath>1+3+5+7+...+2017+2019 = 1010^2</imath>. We can modify the negative numbers in the same way by adding 1 to each negative term, factoring a negative sign, and accounting for the extra 1's by subtracting 1009. We then have <imath>1010^2-1009^2-1009</imath>. Using difference of squares, we obtain <imath>(1010+1009)(1010-1009)-1009 = 2019-1009 = \boxed{1010}</imath>.
+
+--- Solution 5 ---
+The sum of odd numbers can be represented as the number of consecutive odds starting from one, squared. Since 2019 is (2019+1)/2, there are 1010 odd numbers. Therefore, the sum of the odd numbers is
+<cmath>1010^2 \quad \text{or} \quad 1010 \times 1010.</cmath>
+
+The sum of even numbers up to 2018 is calculated by noting that there are 2018/2 = 1009 even numbers. Using the formula for the sum of the first n even numbers, n(n+1), we get
+<cmath>1009 \times (1009+1) \quad \text{or} \quad 1009 \times 1010.</cmath>
+
+The difference between these two sums is
+<cmath>1010 \times 1010 - 1009 \times 1010 = 1010.</cmath>
+
+Thus, the correct answer is <math>-1009+2019=\boxed{\textbf{(E) }1010}</math>.
+
+
+=== Problem 6 ===
+On a trip to the beach, Anh traveled 50 miles on the highway and 10 miles on a coastal access road. He drove three times as fast on the highway as on the coastal road. If Anh spent 30 minutes driving on the coastal road, how many minutes did his entire trip take?
+
+Choices: {'A': '50', 'B': '70', 'C': '80', 'D': '90', 'E': '100</math>'}
+Answer: C
+
+--- Solution 1 ---
+Since Anh spends half an hour to drive 10 miles on the coastal road, his speed is [mathjax]r=\dfrac dt=\dfrac{10}{0.5}=20[/mathjax] mph. His speed on the highway then is [mathjax]60[/mathjax] mph. He drives [mathjax]50[/mathjax] miles, so he drives for [mathjax]\dfrac{5}{6}[/mathjax] hours, which is equal to [mathjax]50[/mathjax] minutes (Note that [mathjax]60[/mathjax] miles per hour is the same as [mathjax]1[/mathjax] mile per minute). The total amount of minutes spent on his trip is [mathjax]30+50\implies \boxed{\textbf{(C) }80}[/mathjax].
+
+--- Solution 2 ---
+Since Anh drives [mathjax]3[/mathjax] times as fast on the highway, it takes him [mathjax]\dfrac{1}{3}[/mathjax] of the time to drive [mathjax]10[/mathjax] miles on the highway than on the coastal road. [mathjax]\dfrac{1}{3}[/mathjax] of [mathjax]30[/mathjax] is [mathjax]10[/mathjax], and since he drives [mathjax]50[/mathjax] miles on the highway, we multiply [mathjax]10[/mathjax] by [mathjax]5[/mathjax] to get [mathjax]50[/mathjax]. This means it took him [mathjax]50[/mathjax] minutes to drive on the highway, and if we add the [mathjax]30[/mathjax] minutes it took for him to drive on the coastal road, we would get [mathjax]\boxed{\textbf{(C) }80}[/mathjax].
+
+-UnstoppableGoddess
+(helped by qkddud)
+
+
+=== Problem 7 ===
+The
+
+Choices: {'A': '1', 'B': '3', 'C': '5', 'D': '6', 'E': '7</math>'}
+Answer: B
+
+--- Solution 1 ---
+We use the property that the digits of a number must sum to a multiple of <imath>9</imath> if it are divisible by <imath>9</imath>. This means <imath>2+0+1+8+U</imath> must be divisible by <imath>9</imath>. The only possible value for <imath>U</imath> then must be <imath>7</imath>. Since we are looking for the remainder when divided by <imath>8</imath>, we can ignore the thousands. The remainder when <imath>187</imath> is divided by <imath>8</imath> is <imath>\boxed{\textbf{(B) }3}</imath>.
+
+If you got stuck on this problem, refer to AOPS Number Theory. You're smart.
+
+-InterstellerApex, Nivaar
+
+Quick addon:
+
+<imath>187-160</imath> (<imath>8 \times 20</imath>)<imath>=27</imath>. <imath>27-24</imath> (<imath>8 \times 3</imath>)=<imath>3</imath>. Therefore, the answer is <imath>\boxed{\textbf{(B) }3}</imath>.
+
+
+=== Problem 8 ===
+John Pork asked the members of his health class how many days last week they exercised for at least 30 minutes. The results are summarized in the following bar graph, where the heights of the bars represent the number of students.
+
+<asy>
+size(8cm);
+void drawbar(real x, real h) {
+  fill((x-0.15,0.5)--(x+0.15,0.5)--(x+0.15,h)--(x-0.15,h)--cycle,gray);
+}
+draw((0.5,0.5)--(7.5,0.5)--(7.5,5)--(0.5,5)--cycle);
+for (real i=1; i<5; i=i+0.5) {
+  draw((0.5,i)--(7.5,i),gray);
+}
+drawbar(1.0,1.0);
+drawbar(2.0,2.0);
+drawbar(3.0,1.5);
+drawbar(4.0,3.5);
+drawbar(5.0,4.5);
+drawbar(6.0,2.0);
+drawbar(7.0,1.5);
+for (int i=1; i<8; ++i) {
+  label("$"+string(i)+"$",(i,0.25));
+}
+for (int i=1; i<9; ++i) {
+  label("$"+string(i)+"$",(0.5,0.5*(i+1)),W);
+}
+label("Number of Days of Exercise",(4,-0.1));
+label(rotate(90)*"Number of Students",(-0.1,2.75));
+</asy>
+What was the mean number of days of exercise last week, rounded to the nearest hundredth, reported by the students in John Pork's class?
+
+Choices: {'A': '3.50', 'B': '3.57', 'C': '4.36', 'D': '4.50', 'E': '5.00'}
+Answer: C
+
+--- Solution 1 ---
+The mean, or average number of days is the total number of days divided by the total number of students. The total number of days is <imath>1\cdot 1+2\cdot 3+3\cdot 2+4\cdot 6+5\cdot 8+6\cdot 3+7\cdot 2=109</imath>. The total number of students is <imath>1+3+2+6+8+3+2=25</imath>. Hence, <imath>\frac{109}{25}=\boxed{\textbf{(C) } 4.36}</imath>.
+
+This problem is a good example of times when the problem statement may give information that may seem important to solving the problem, but turns out it's just there to mess around with you.
+
+
+In my opinion, I think that it's not a good example of that.
+
+
+I don't think it is a good example either.
+
+
+Agreed. Can someone explain another solution? Thanks.
+
+-Flexo3168
+
+
+=== Problem 9 ===
+Tyler is tiling the floor of his 12 foot by 16 foot living room. He plans to place one-foot by one-foot square tiles to form a border along the edges of the room and to fill in the rest of the floor with two-foot by two-foot square tiles. How many tiles will he use?
+
+Choices: {'A': '48', 'B': '87', 'C': '91', 'D': '96', 'E': '120'}
+Answer: B
+
+--- Solution 1 ---
+He will place <imath>(12\cdot2)+((16-2)\cdot2)=52</imath> tiles around the border. For the inner part of the room, we have <imath>10\cdot14=140</imath> square feet. Each tile takes up <imath>2^{2}</imath>, or <imath>4</imath> square feet, so he will use <imath>\frac{140}{4}=35</imath> tiles for the inner part of the room. Thus, the answer is <imath>52+35= \boxed{\textbf{(B) }87}</imath>.
+
+--- Solution 2 ---
+The area around the border: <math>(12 \cdot 2) + (14 \cdot 2) = 52</math>. The area of tiles around the border: <math>1 \cdot 1 = 1</math>. Therefore, <math>\frac{52}{1} = 52</math> is the number of tiles around the border.
+
+The inner part will have <math>(12 - 2)(16 - 2) = 140</math>. The area of those tiles are <math>2 \cdot 2 = 4</math>. <math>\frac{140}{4} = 35</math> is the amount of tiles for the inner part. So, <math>52 + 35 = \boxed{87}</math>.
+
+
+=== Problem 10 ===
+The
+
+Choices: {'A': '\\frac{3}{7}', 'B': '\\frac{7}{12}', 'C': '\\frac{12}{7}', 'D': '\\frac{7}{4}', 'E': '\\frac{7}{3}</math>'}
+Answer: C
+
+--- Solution 1 ---
+The sum of the reciprocals is <imath>\frac{1}{1} + \frac{1}{2} + \frac{1}{4}= \frac{7}{4}</imath>. Their average is <imath>\frac{7}{12}</imath>. Taking the reciprocal of this gives <imath>\boxed{\textbf{(C) }\frac{12}{7}}</imath>.
+
+
+=== Problem 11 ===
+Abby, Bridget, and four of their classmates will be seated in two rows of three for a group picture, as shown.
+
+<cmath>\begin{eqnarray*}
+\text{X}&\quad\text{X}\quad&\text{X} \\
+\text{X}&\quad\text{X}\quad&\text{X} 
+\end{eqnarray*}</cmath>
+
+If the seating positions are assigned randomly, what is the probability that Abby and Bridget are adjacent to each other in the same row or the same column?
+
+Choices: {'A': '\\frac{1}{3}', 'B': '\\frac{2}{5}', 'C': '\\frac{7}{15}', 'D': '\\frac{1}{2}', 'E': '\\frac{2}{3}</math>'}
+Answer: C
+
+--- Solution 1 ---
+There are a total of <math>6 !</math> ways to arrange the kids.
+
+Abby and Bridget can sit in 3 ways if they are adjacent in the same column:
+<cmath>\begin{eqnarray*}
+\text{A}&\quad\text{X}\quad&\text{X} \\
+\text{B}&\quad\text{X}\quad&\text{X} 
+\end{eqnarray*}</cmath>
+
+
+<cmath>\begin{eqnarray*}
+\text{X}&\quad\text{A}\quad&\text{X} \\
+\text{X}&\quad\text{B}\quad&\text{X} 
+\end{eqnarray*}</cmath>
+
+
+<cmath>\begin{eqnarray*}
+\text{X}&\quad\text{X}\quad&\text{A} \\
+\text{X}&\quad\text{X}\quad&\text{B} 
+\end{eqnarray*}</cmath>
+
+
+For each of these seat positions, Abby and Bridget can switch seats, and the other 4 people can be arranged in <math>4!</math> ways which results in a total of <math>3 \times 2 \times 4!</math> ways to arrange them. 
+
+
+By the same logic, there are 4 ways for Abby and Bridget to be placed if they are adjacent in the same row: they can swap seats, and the other <math>4</math> people can be arranged in <math>4!</math> ways for a total of <math>4 \times 2 \times 4!</math> ways to arrange them.
+
+
+We sum the 2 possibilities up to get <math>\frac{(3\cdot2)\cdot4!+(4\cdot2)\cdot4!}{6!} = \frac{14\cdot4!}{6!}=\boxed{\frac{7}{15}}</math> or <math>\textbf{(C)}</math>.
+
+If you got stuck on this problem, refer to AOPS Probability and Combinations.
+
+--- Solution 2 ---
+We can ignore other students, and treat Abby and Bridget as indistinguishable (since we only care about adjacency, not their order). Thus, the total number of ways is <math>n(S) = _{6}C_{2} = 15</math> .
+In one row, they can be adjacent 2 ways:  <math>2 \cdot 2 rows = 4</math>. 
+In one column, they can only be adjacent 1 way: <math>1 \cdot 3 cols = 3</math>. 
+Add these cases <math>4+3=7</math>, and therefore, P(Abby and Bridget sitting adjacent) is <math>\boxed{\textbf{(C) }\frac{7}{15}}</math>.
+
+--- Solution 3 ---
+We can split the seating into two separate cases: if Abby is sitting on the corners, and if Abby isn't. If Abby is sitting in the corners, there is a <imath>\frac{2}{5}</imath> chance Bridget is sitting next to Abby, so there is a <imath>\frac{2}{5} \cdot \frac{4}{6} = \frac{4}{15}</imath> chance for the first case. Meanwhile, if Abby is sitting in the middle row, there is a <imath>\frac{3}{5}</imath> chance Bridget is sitting next to Abby, so there is a <imath>\frac{3}{5} \cdot \frac{2}{6} = \frac{1}{5}</imath> chance for the second case. Therefore, P(Abby and Bridget are sitting adjacent to each other) is <imath>\frac{4}{15} + \frac{1}{5} = \boxed{\frac{7}{15}}</imath> , or <imath>\boxed{\textbf{C}}</imath>.
+
+
+=== Problem 12 ===
+The clock in Sri's car, which is not accurate, gains time at a constant rate. One day as he begins shopping, he notes that his car clock and his watch (which is accurate) both say 12:00 noon. When he is done shopping, his watch says 12:30 and his car clock says 12:35. Later that day, Sri loses his watch. He looks at his car clock and it says 7:00. What is the actual time?
+
+Choices: {'A': '5:50', 'B': '6:00', 'C': '6:30', 'D': '6:55', 'E': '8:10</math>'}
+Answer: B
+
+--- Solution 1 ---
+We see that every <math>35</math> minutes the clock passes, the watch passes <math>30</math> minutes. That means that the clock is <math>\frac{7}{6}</math> as fast the watch, so we can set up proportions. 
+<math>\dfrac{\text{car clock}}{\text{watch}}=\dfrac{7}{6}=\dfrac{7 \text{ hours}}{x \text{ hours}}</math>. Cross-multiplying we get <math>x=6</math>. Now, this is obviously redundant, because we could just eyeball it to see that the watch would have passed <math>6</math> hours. But this method is better when the numbers are a bit more complex, which makes it both easier and reliable. Either way, our answer is <math>\boxed{\textbf{(B) }6:00}</math>.
+
+--BakedPotato66
+--Rishi09
+
+--- Solution 2 ---
+The ratio of the car clock to the watch clock is a ratio of 35:30 or 7:6 due to the clock being ahead by 5 minutes after 30 minutes has passed. This means that when the car clock passes <math>7</math> hours, the watch has passed <math>6</math> hours, meaning that the time would be <math>\boxed{\textbf{(B) }6:00}</math>.
+
+--- Solution 3 ---
+From 12:00 pm (noon) to 7:00 pm, the car clock has passed 12 35-minute cycles (12 X 35 = 420) because 7 hours = 420 minutes. So, 12 30-minute cycles (12 X 30 = 360) for the watch time are 360 minutes, which is 6 hours. Therefore, 6 hours added to 12:00 pm (noon) makes the answer <math>\boxed{\textbf{(B) }6:00}</math>.
+
+--- Solution 4 ---
+7 hours have passed since 12:00 pm and 7 hours = 420 minutes because there are 60 minutes in an hour. Because every 35 minutes, the clock is ahead by 5 minutes, you need to divide 420 by 35 to find out how many times it happens. 420 divided by 35 is 12. Then you would multiply 12 by 5 because the clock is ahead by 5 minutes. 12 times 5 is 60, so that means that the clock is ahead by 60 minutes. In order to find the watch's time, you must find what was 60 minutes earlier than 7:00 which is <imath>\boxed{\textbf{(B) }6:00}</imath>.
+
+--- Solution 5 ---
+If his car clock says it's 12:35 when it's actually 12:30, then that means that the car clock gains 10 minutes for every actual hour that has passed. Then, with this knowledge, you can make a chart:
+
+Actual Time | Car Clock
+-------------------------
+12:00       | 12:00
+-------------------------
+1:00        | 1:10
+-------------------------
+2:00        | 2:20
+-------------------------
+3:00        | 3:30
+-------------------------
+2:00        | 2:20
+-------------------------
+3:00        | 3:30
+-------------------------
+4:00        | 4:40
+-------------------------
+5:00        | 5:50
+-------------------------
+6:00        | 7:00
+-------------------------
+
+As you can see, the answer is <imath>\boxed{\textbf{(B) }6:00}</imath>.
+
+
+=== Problem 13 ===
+Laila took five math tests, each worth a maximum of 100 points. Laila's score on each test was an integer between 0 and 100, inclusive. Laila received the same score on the first four tests, and she received a higher score on the last test. Her average score on the five tests was 82. How many values are possible for Laila's score on the last test?
+
+Choices: {'A': '4', 'B': '5', 'C': '9', 'D': '10', 'E': '18</math>'}
+Answer: A
+
+--- Solution 1 ---
+Say Laila gets a value of <math>x</math> on her first 4 tests, and a value of <math>y</math> on her last test. Thus, <math>4x+y=82 \cdot 5=410</math>. 
+
+Because <math>x</math> and <math>y</math> are different, <math>x</math> must be less than <math>82</math> and <math>y</math> must be greater than <math>82</math>. When <math>x</math> decreases by <math>1</math>, <math>y</math> must increase by <math>4</math> to keep the total constant. 
+
+The greatest value for <math>y</math> is <math>98</math> (as <math>y=100</math> would make <math>x</math> non-integer). In the range <math>83\le y\le 98</math>, only <math>4</math> values for <math>y</math> result in integer values for <math>x</math>: 86, 90, 94 and 98.  Thus, the answer is <math>\boxed{\textbf{(A) }4}</math>.
+
+--- Solution 2 ---
+The average score is <math>82</math> which leads us to suppose that Laila got all <math>82</math> points for the tests. We know that Laila got the same points in the first four tests and they are all lower than the last test. Let the first four tests be <math>81</math> points, then the last test must be <math>86</math> points to keep the average fixed. Continue to decrement the first four tests to identify other possible combinations. The possible points for the fifth test are <math>86</math>, <math>90</math>, <math>94</math>, <math>98</math>. The answer is <math>\boxed{\textbf{(A) }4}</math>.
+
+
+=== Problem 14 ===
+Let
+
+Choices: {'A': '15', 'B': '16', 'C': '17', 'D': '18', 'E': '20</math>'}
+Answer: D
+
+--- Solution 1 ---
+If we start off with the first digit, we know that it can't be <math>9</math> since <math>9</math> is not a factor of <math>120</math>. We go down to the digit <math>8</math>, which does work since it is a factor of <math>120</math>. Now, we have to know what digits will take up the remaining four spots. To find this result, just divide <math>\frac{120}{8}=15</math>. The next place can be <math>5</math>, as it is the largest factor, aside from <math>15</math>. Consequently, our next three values will be <math>3,1</math> and <math>1</math> if we use the same logic. Therefore, our five-digit number is <math>85311</math>, so the sum is <math>8+5+3+1+1=18\implies \boxed{\textbf{(D) }18}</math>.
+
+--- Solution 2 ---
+<math>120</math> is <math>5!</math>, so we have <math>(5)(4)(3)(2)(1) = 120</math>. (Alternatively, you could identify the prime factors <math>(5)(3)(2)(2)(2) = 120</math>.) Now look for the largest digit you can create by combining these factors. 
+
+<math>8=4 \cdot 2</math>
+
+Use this largest digit for the ten-thousands place: <math>8</math>_ , _ _ _
+
+Next you use the <math>5</math> and the <math>3</math> for the next places: <math>85,3</math> _ _ (You can't use <math>3 \cdot 2=6</math> because the <math>2</math> was used to make <math>8</math>.) 
+
+Fill the remaining places with 1: <math>85,311</math>
+
+<math> = (5)(8)(3)(1)(1) =120</math>
+
+<math>8+5+3+1+1=\boxed{\textbf{(D) }18}</math>.
+
+
+=== Problem 15 ===
+In the diagram below, a diameter of each of the two smaller circles is a radius of the larger circle. If the two smaller circles have a combined area of
+
+Choices: {'A': '\\frac{1}{4}', 'B': '\\frac{1}{3}', 'C': '\\frac{1}{2}', 'D': '1', 'E': '\\frac{\\pi}{2}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Let the radius of the large circle be <math>R</math>. Then, the radius of the smaller circles are <math>\frac R2</math>. The areas of the circles are directly proportional to the square of the radii, so the ratio of the area of the small circle to the large one is <math>\frac 14</math> (<math>\frac {R^2}{4}</math> is <math>\frac 14</math> of <math>R^2</math>.) This means the combined area of the 2 smaller circles is half of the larger circle, and therefore the shaded region is equal to the combined area of the 2 smaller circles, which is <math>\boxed{\textbf{(D) } 1}</math>.
+
+--- Solution 2 ---
+Let the radius of the two smaller circles be <math>r</math>. It follows that the area of one of the smaller circles is <math>{\pi}r^2</math>. Thus, the area of the two inner circles combined would evaluate to <math>2{\pi}r^2</math> which is <math>1</math>. Since the radius of the bigger circle is two times that of the smaller circles (the diameter), the radius of the larger circle in terms of <math>r</math> would be <math>2r</math>. The area of the larger circle would come to <math>(2r)^2{\pi} = 4{\pi}r^2</math>. 
+
+Subtracting the area of the smaller circles from that of the larger circle (since that would be the shaded region), we have <cmath>4{\pi}r^2 - 2{\pi}r^2 = 2{\pi}r^2 = 1.</cmath>
+
+Therefore, the area of the shaded region is <math>\boxed{\textbf{(D) } 1}</math>.
+
+--- Solution 3 ---
+The area of a small circle is <math>\frac{1}{2}= \pi r^2</math>. Solving, we get <math>r = \sqrt{\frac{1}{2\pi}}</math>.
+
+The radius of the large circle is <math>R=2r</math>.  The area of the large circle is <math>{\pi}R^2={\pi}(2r)^2=4{\pi}r^2=4{\pi}\frac{1}{2\pi}=2</math>.
+
+Subtract the area of the small circles from the area of the large circle to get the area of the shaded region: <math>2-1=</math> <math>\boxed{\textbf{(D) } 1}</math>.
+
+--- Solution 4 ---
+To get the area of the small circles, we can get the equation <math>\frac{1}{2}= \pi r^2</math>. Solving for <math>r</math>, we get <math>r = \sqrt{\frac{1}{2\pi}}</math>. Then, we can get the radius of the big circle by doubling the small circle's radius, and that gives
+<math>2\sqrt{\frac{1}{2\pi}}</math>. Because the area of a circle is <math>\pi r^2</math>, you'll have to square the answer and multiple it by <math>\pi</math>. After you square it, you'll get <math>4 \cdot \frac{1}{2\pi}</math>, which equals to <math>\frac{4}{2\pi}</math>. Since the area of a circle is <math>\pi r^2</math>, we get <math>\pi \cdot \frac{4}{2\pi}</math>, and that equals <math>\frac{4\pi}{2\pi}</math>, which equals 2. Since each of the circles' area is <math>\frac{1}{2}</math>, the combined area of the small circles is <math>1</math>. Since <math>2-1=1</math>, the area of the shaded region is <math>\boxed{\textbf{(D) } 1}</math>.
+
+--- Solution 5 ---
+Since the smaller circles are equivalent, the area of each of them is <math>\frac{1}{2}</math> square unit. Since the diameter of each of the two smaller circles is a radius of the larger circle, their areas must be in a ratio of <math>1:2</math>. This tells us that the area of the larger circle is double the area of the smaller circle, giving us <math>\frac{1}{2} \cdot 2 = \boxed{\textbf{(D) } 1}</math>.
+
+~ [[User:Aoum|aoum]]
+
+
+=== Problem 16 ===
+Professor Chang has nine different language books lined up on a bookshelf: two Arabic, three German, and four Spanish. How many ways are there to arrange the nine books on the shelf keeping the Arabic books together and keeping the Spanish books together?
+
+Choices: {'A': '1440', 'B': '2880', 'C': '5760', 'D': '182,440', 'E': '362,880</math>'}
+Answer: C
+
+--- Solution 1 ---
+To solve this, treat the two Arabic books as one unit and the four Spanish books as another unit. Along with the three German books, you now have five units to arrange.
+
+You can arrange these five units in <imath>5!</imath> ways. Within the Arabic block, the two books can be arranged in <imath>2!</imath> ways, and within the Spanish block, the four books can be arranged in <imath>4!</imath> ways.
+
+
+So now we try to find the german book possibilities, (Arabic block), (Spanish block), German book 1, German book 2, German book 3. 5!
+
+
+Multiplying all these possibilities(2!,4!,5!) gives the total number of arrangements which is <imath>\boxed{\textbf{(C) }5760}.</imath> ways to arrange the nine books while keeping the Arabic and Spanish books together.
+-TORPEDOROCKS
+
+
+=== Problem 17 ===
+Bella begins to walk from her house toward her friend Ella's house. At the same time, Ella begins to ride her bicycle toward Bella's house. They each maintain a constant speed, and Ella rides 5 times as fast as Bella walks. The distance between their houses is
+
+Choices: {'A': '704', 'B': '845', 'C': '1056', 'D': '1760', 'E': '3520</math>'}
+Answer: A
+
+--- Solution 1 ---
+Every 10 feet Bella goes, Ella goes 50 feet, which means a total of 60 feet. They need to travel that 60 feet <math>10560\div60=176</math> times to travel the entire 2 miles. Since Bella goes 10 feet 176 times, this means that she travels a total of 1760 feet. And since she walks 2.5 feet each step, <math>1760\div2.5=\boxed{\textbf{(A) }704}</math>
+
+--- Solution 2 ---
+We know that Bella goes 2.5 feet per step and since Ella rides 5 times faster than Bella she must go 12.5 feet on her bike for every step of Bella's. For Bell
+
+--- Solution 3 ---
+We can turn <imath>2 \tfrac{1}{2}</imath> into an improper fraction. It will then become <imath>\frac{5}{2}</imath>. Since Ella bikes 5 times faster, we multiply <imath>\frac{5}{2}\cdot 5=\frac{25}{2}</imath>. Then we add <imath>\frac{5}{2}+\frac{25}{2}</imath> to find the distance they walk and bike together for each step of Bella's: <imath>\frac{30}{2} = 15</imath>. This means that they travel 15 ft. of distance for each step that Bella takes. Divide 10,560 by 15 to find that Bella takes }704}$ steps.
+
+
+=== Problem 18 ===
+How many positive factors does
+
+Choices: {'A': '9', 'B': '12', 'C': '28', 'D': '36', 'E': '42</math>'}
+Answer: E
+
+--- Solution 1 ---
+We can first find the prime factorization of <math>23,232</math>, which is <math>2^6\cdot3^1\cdot11^2</math>. Now, we add one to our powers and multiply. Therefore, the answer is <math>(6+1)\cdot(1+1)\cdot(2+1)=7\cdot2\cdot3=\boxed{\textbf{(E) }42}</math>
+
+Note:
+23232 is a large number, so we can look for shortcuts to factor it. 
+One way to factor it quickly is to use 3 and 11 divisibility rules to observe that <math>23232 = 3 \cdot 7744 = 3 \cdot 11 \cdot 704 = 3 \cdot 11^2 \cdot 64 = 3^1  \cdot 11^2  \cdot  2^6</math>.
+
+Another way is to spot the "32" and compute that <math>23232 = 32\cdot(101 + 10000/16) = 32\cdot (101+ 5^4) = 32\cdot 726 = 32 \cdot 11 \cdot 66</math>.
+
+A third way to factor it is to observe <math>23232 = 24000 - 768</math>. Factoring out the 3 gives us <math>3(8000 - 256)</math>. Since <math>8000 = 2^6 \cdot 5^3</math> and <math>256 = 2^8</math>, we have <math>2^6 \cdot 3 (5^3 - 2^2) = 2^6 \cdot 3 (125-4) = 2^6 \cdot 3 \cdot 121 = 2^6 \cdot 3 \cdot 11^2</math>.
+
+--- Solution 2 ---
+Observe that <imath>69696</imath> = <imath>264^2</imath>, so this is <imath>\frac{1}{3}</imath> of <imath>264^2</imath> which is <imath>88 \cdot 264 = 11^2 \cdot 8^2 \cdot 3 = 11^2 \cdot 2^6 \cdot 3</imath>, which has <imath>3 \cdot 7 \cdot 2 = 42</imath> factors. The answer is <imath>\boxed{\textbf{(E) }42}</imath>.
+
+
+=== Problem 19 ===
+In a sign pyramid a cell gets a "+" if the two cells below it have the same sign, and it gets a "-" if the two cells below it have different signs. The diagram below illustrates a sign pyramid with four levels. How many possible ways are there to fill the four cells in the bottom row to produce a "+" at the top of the pyramid?
+
+<asy>
+unitsize(2cm);
+path box = (-0.5,-0.2)--(-0.5,0.2)--(0.5,0.2)--(0.5,-0.2)--cycle;
+draw(box); label("$+$",(0,0));
+draw(shift(1,0)*box); label("$-$",(1,0));
+draw(shift(2,0)*box); label("$+$",(2,0));
+draw(shift(3,0)*box); label("$-$",(3,0));
+draw(shift(0.5,0.4)*box); label("$-$",(0.5,0.4));
+draw(shift(1.5,0.4)*box); label("$-$",(1.5,0.4));
+draw(shift(2.5,0.4)*box); label("$-$",(2.5,0.4));
+draw(shift(1,0.8)*box); label("$+$",(1,0.8));
+draw(shift(2,0.8)*box); label("$+$",(2,0.8));
+draw(shift(1.5,1.2)*box); label("$+$",(1.5,1.2));
+</asy>
+
+Choices: {'A': '2', 'B': '4', 'C': '8', 'D': '12', 'E': '16</math>'}
+Answer: C
+
+--- Solution 1 ---
+You could just make out all of the patterns that make the top positive. In this case, you would have the following patterns: 
+
++−−+, −++−, −−−−, ++++, −+−+, +−+−, ++−−, −−++. There are 8 patterns and so the answer is <imath>\boxed{\textbf{(C) } 8}</imath>.
+
+-NinjaBoi2000
+
+--- Solution 2 ---
+The top box is fixed by the problem. 
+
+Choose the left 3 bottom-row boxes freely. There are <imath>2^3=8</imath> ways.
+
+Then the left 2 boxes on the row above are determined.
+
+Then the left 1 box on the row above that is determined
+
+Then the right 1 box on that row is determined.
+
+Then the right 1 box on the row below is determined.
+
+Then the right 1 box on the bottom row is determined, completing the diagram.
+
+So the answer is <imath>\boxed{\textbf{(C) } 8}</imath>.
+
+--- Solution 3 ---
+Let the plus sign represent 1 and the negative sign represent -1. 
+
+The four numbers on the bottom are <imath>a</imath>, <imath>b</imath>, <imath>c</imath>, and <imath>d</imath>, which are either 1 or -1.
+
+<asy>
+unitsize(2cm);
+path box = (-0.5,-0.2)--(-0.5,0.2)--(0.5,0.2)--(0.5,-0.2)--cycle;
+draw(box); label("$a$",(0,0));
+draw(shift(1,0)*box); label("$b$",(1,0));
+draw(shift(2,0)*box); label("$c$",(2,0));
+draw(shift(3,0)*box); label("$d$",(3,0));
+draw(shift(0.5,0.4)*box); label("$ab$",(0.5,0.4));
+draw(shift(1.5,0.4)*box); label("$bc$",(1.5,0.4));
+draw(shift(2.5,0.4)*box); label("$cd$",(2.5,0.4));
+draw(shift(1,0.8)*box); label("$ab^2c$",(1,0.8));
+draw(shift(2,0.8)*box); label("$bc^2d$",(2,0.8));
+draw(shift(1.5,1.2)*box); label("$ab^3c^3d$",(1.5,1.2));
+</asy>
+
+Which means <imath>ab^3c^3d</imath> = 1. Since <imath>b</imath> and <imath>c</imath> are either 1 or -1, <imath>b^3 = b</imath> and <imath>c^3 = c</imath>. This shows that <imath>abcd</imath> = 1. 
+
+Therefore either <imath>a</imath>, <imath>b</imath>, <imath>c</imath>, and <imath>d</imath> are all positive or negative, or 2 are positive and 2 are negative.
+
+There are 2 ways where <imath>a</imath>, <imath>b</imath>, <imath>c</imath>, and <imath>d</imath> are 1 (1, 1, 1, 1) and (-1, -1, -1, -1)
+
+There are 6 ways where 2 variables are positive and 2 are negative: (1, 1, -1, -1), (1, -1, 1, -1), (-1, 1, 1, -1), (-1, -1, 1, 1), (-1, 1, -1, 1), and (-1, -1, 1, 1).
+
+So the answer is <imath>\boxed{\textbf{(C) } 8}</imath>.
+
+Note: This result can also be achieved by realizing that there are <imath>4! / 2! 2! = 6</imath> ways to arrange <imath>2</imath> negatives and <imath>2</imath> positives and <imath>1</imath> way each to arrange four of one sign.
+
+--- Solution 4 ---
+The pyramid is built on the basic 3 blocks pattern: one above and two below. The basic pattern has four possible symbols and half of them have a <imath>+</imath> on the above, half of them have a <imath>-</imath> above. So, for the lowest layer with <imath>4</imath> blocks, there are <imath>2^4=16</imath> possible combinations and half of them will lead to a <imath>+</imath> (or <imath>-</imath>) on the top. The answer is <imath>16/2=\boxed{\textbf{(C) } 8}</imath>.
+
+If you notice this rule, you can give the answer whatever how many layers you have. The answer will be <imath>2^{n-1}</imath> for the layer with <imath>n</imath> blocks.
+
+==Solution 5, Casework==
+
+We can use casework to solve this problem.
+The only way for the top cell to have a <imath>+</imath> in it is if the third row of the pyramid (the one with <imath>2</imath> cells) is either <imath>--</imath> or <imath>++</imath>. First, let's pretend that the third row of the pyramid is <imath>++</imath>. The only way for that to happen is if the second row (the one with <imath>3</imath> cells) is --- or <imath>+++</imath>. Now, let's pretend that the second is <imath>+++</imath>. That would have <imath>2</imath> possibilities for the first row (the one with <imath>4</imath> cells), <imath>++++</imath> and <imath>----</imath>. Next, let's pretend that the second row is ---. That makes two more possibilities for the first row, <imath>-+-+</imath> and <imath>+-+-</imath>. Now, let's pretend that the 3rd row is <imath>--</imath>, which means that the second row is either <imath>-+-</imath> or <imath>+-+</imath>. You will soon find that <imath>-+-</imath> find <imath>2</imath> possibilities for the first row, <imath>-++-</imath> or <imath>-++-</imath>, and <imath>2</imath> possibilities for <imath>+-+</imath>, <imath>--++</imath> and <imath>++--</imath>.
+Together, we find that the answer is <imath>2+2+2+2=\boxed{\textbf{(C) } 8}</imath>.
+
+--- Solution 5 ---
+There are two choices for the uppermost: <imath>+</imath> or <imath>-</imath>. There are 16 cases in total (<imath>2^4</imath>). Half of 16 is 8. The answer is <imath>\boxed{\textbf{(C) } 8}</imath>.
+
+(Note: this is not recommended for solving, just an idea after solving.)
+
+--- Solution 6 ---
+If you pick the signs for two boxes at random, there is equal probability that the one above them will be either a <imath>+</imath> or a <imath>-</imath>. There are 16(<imath>2^4</imath>) cases possible for the bottom four, so half of that, <imath>\boxed{\textbf{(C) } 8}</imath>, is the answer.
+
+--- Solution 7 ---
+To get a plus on the top, you either need 4 negatives (- - - -), 4 positives (++++), or 2 negative signs and 2 positive signs. So the number of ways you can get a plus on the top would be 2 plus the number of ways you can arrange 2 negative signs and 2 positive signs. The formula for distinct arrangements (permutations) in a set with repetition is :
+
+<cmath>P=\frac{n!}{n_{1}!n_{2}!n_{3}!\cdots n_{k}!}</cmath>
+
+
+
+So using this formula, you solve for 4!/(2!*2!), which equals 6. So the number of ways you get a plus on top would be 2+6, which equals <imath>\boxed{\textbf{(C) } 8}</imath>.
+
+--- Solution 8 ---
+The top block must be positive so below it two box must be of same sign. 
+Now if we arrange the bottom row as following pattern such that according to that the row above bottom will be changed and so on , so that the 3rd two blocks are of same sign hence the top block will be positive.(Draw separate diagram and do yourself to understand )
+
++−−+,  −++−, −−−−, ++++, −+−+, +−+−, ++−−, −−++. 
+
+There are 8 patterns .
+Hence <imath>\boxed{\textbf{(C) } 8}</imath>.
+
+
+=== Problem 20 ===
+In
+
+Choices: {'A': '\\frac{4}{9}', 'B': '\\frac{1}{2}', 'C': '\\frac{5}{9}', 'D': '\\frac{3}{5}', 'E': '\\frac{2}{3}</math>'}
+Answer: A
+
+--- Solution 1 ---
+By similar triangles, we have <math>[ADE] = \frac{1}{9}[ABC]</math>. Similarly, we see that [mathjax][BEF] = \dfrac{4}{9}[ABC][/mathjax]. Using this information, we get <cmath>[ACFE] = \frac{5}{9}[ABC].</cmath> Then, since <math>[ADE] = \frac{1}{9}[ABC]</math>, it follows that the [mathjax][CDEF] = \dfrac{4}{9}[ABC][/mathjax]. Thus, the answer would be <math>\boxed{\textbf{(A) } \frac{4}{9}}</math>.
+
+Sidenote: [mathjax][ABC][/mathjax] denotes the area of triangle [mathjax]ABC[/mathjax]. Similarly, [mathjax][ABCD][/mathjax] denotes the area of figure [mathjax]ABCD[/mathjax].
+
+--- Solution 2 ---
+Let <math>a = DE</math> and <math>b =</math> the height of <math>\triangle ABC</math>. We can extend <math>\triangle ABC</math> to form a parallelogram, which would equal <math>3a \cdot 3b</math>. The smaller parallelogram is <math>a</math> times <math>2b</math>. The smaller parallelogram is <math>\frac{2}{9}</math> of the larger parallelogram, so the answer would be <math>\frac{2}{9} \cdot 2</math>, since the triangle is <math>\frac{1}{2}</math> of the parallelogram, so the answer is <math>\boxed{\textbf{(A) } \frac{4}{9}}</math>.
+
+By babyzombievillager with credits to many others who helped with the solution :D
+
+--- Solution 3 ---
+<imath>\triangle{ADE} \sim \triangle{ABC} \sim \triangle{EFB}</imath>. We can substitute <imath>\overline{DA}</imath> as <imath>\frac{1}{3}x</imath> and <imath>\overline{CD}</imath> as <imath>\frac{2}{3}x</imath>, where <imath>x</imath> is <imath>\overline{AC}</imath>. Side <imath>\overline{CB}</imath> having, distance <imath>y</imath>, has <imath>2</imath> parts also. And, <imath>\overline{CF}</imath> and <imath>\overline{FB}</imath> are <imath>\frac{1}{3}y</imath> and <imath>\frac{2}{3}y</imath> respectfully. You can consider the height of <imath>\triangle{ADE}</imath> and <imath>\triangle{EFB}</imath> as <imath>z</imath> and <imath>2z</imath> respectfully. The area of <imath>\triangle{ADE}</imath> is <imath>\frac{1\cdot z}{2}=0.5z</imath> because the area formula for a triangle is <imath>\frac{1}{2}bh</imath> or <imath>\frac{bh}{2}</imath>. The area of <imath>\triangle{EFB}</imath> will be <imath>\frac{2\cdot 2z}{2}=2z</imath>. So, the area of <imath>\triangle{ABC}</imath> will be <imath>\frac{3\cdot (2z+z)}{2}=\frac{3\cdot 3z}{2}=\frac{9z}{2}=4.5z</imath>. The area of parallelogram <imath>CDEF</imath> will be <imath>4.5z-(0.5z+2z)=4.5z-2.5z=2z</imath>. Parallelogram <imath>CDEF</imath> to <imath>\triangle{ABC}= \frac{2z}{4.5z}=\frac{2}{4.5}=\frac{4}{9}</imath>. The answer is <imath>\boxed{\textbf{(A) } \frac{4}{9}}</imath>.
+
+
+=== Problem 21 ===
+How many positive three-digit integers have a remainder of 2 when divided by 6, a remainder of 5 when divided by 9, and a remainder of 7 when divided by 11?
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '5</math>'}
+Answer: E
+
+--- Solution 1 ---
+Looking at the values, we notice that <math>11-7=4</math>, <math>9-5=4</math> and <math>6-2=4</math>. This means we are looking for a value that is four less than a multiple of <math>11</math>, <math>9</math>, and <math>6</math>. The least common multiple of these numbers is <math>11\cdot3^{2}\cdot2=198</math>, so the numbers that fulfill this can be written as <math>198k-4</math>, where <math>k</math> is a positive integer.  This value is only a three-digit integer when <math>k</math> is <math>1, 2, 3, 4</math> or <math>5</math>, which gives <math>194, 392, 590, 788,</math> and <math>986</math> respectively. Thus, we have <math>5</math> values, so our answer is <math>\boxed{\textbf{(E) }5}</math>.
+
+--- Solution 2 ---
+Let us create the equations: <math>6x+2 = 9y+5 = 11z+7</math>, and we know <math>100 \leq 11z+7 <1000</math>, it gives us <math>9 \leq z \leq 90</math>, which is the range of the value of z. Because of <math>6x+2=11z+7</math>, then <math>6x=11z+5=6z+5(z+1)</math>, so <math>(z+1)</math> must be a multiple of 6. Because of <math>9y+5=11z+7</math>, then <math>9y=11z+2=9z+2(z+1)</math>, so <math>(z+1)</math> must also be a multiple of <math>9</math>. Hence, the value of <math>(z+1)</math> must be a common multiple of <math>6</math> and <math>9</math>, which means multiples of <math>18 (LCM \text{ of }\ 6, 9)</math>. So, let's say <math>z+1 = 18p</math>; then, <math>9 \leq z = 18p-1 \leq 90</math>,  so <math>1 \leq p \leq 91/18\ or \ 1 \leq p \leq 5</math>. Thus, the answer is <math>\boxed{\textbf{(E) }5}</math>.
+
+--- Solution 3 ---
+By the [[Chinese Remainder Theorem]], we have that all solutions are in the form <math>x=198k+194</math> where <math>k\in \mathbb{Z}.</math> Counting the number of values, we get <math>\boxed{\textbf{(E) }5}.</math>
+
+--- Solution 4 ---
+We can use modular arithmetic. Set up the equations: <math>x \equiv 2 \mod 6,</math> <math>x \equiv 5 \mod 9,</math> and <math>x \equiv 7 \mod 11.</math> These equations can also be written as <math>x+4 \equiv 0 \mod 6,</math> <math>x+4 \equiv 0 \mod 9,</math> and <math>x+4 \equiv 0 \mod 11.</math> Since <math>x+4</math> is congruent to numbers <math>6, 9,</math> and <math>11,</math> then it must also be congruent to their LCM. Thus, <math>x+4 \equiv 0 \mod 198,</math> since 198 is the LCM of <math>6, 9,</math> and <math>11.</math> Since these numbers have to be three digits, they can only be <math>194, 392, 590, 788,</math> and <math>986.</math> This gives us the answer of <math>\boxed{\textbf{(E) }5}.</math>
+
+--- Solution 5 ---
+Let <math>N</math> be the three digit positive integer. <math>N = 6a + 2 = 9b + 5 = 11c + 7</math>. Then, we add four to all sides and write <math>N + 4 = 6(a+1) = 9(b+1) = 11(c+1)</math>. Now, we know that <math>N + 4</math> is divisible by 6, 9, and 11. The LCM of 6, 9, and 11 is equal to 198, so <math>N = 198k - 4</math>. From this, we can figure out that <math>N</math> can be 5 different three digit numbers -- <math>194, 392, 590, 788,</math> and <math>986</math>. <math>\therefore</math>, the answer is <math>\boxed{\textbf{(E) }5}.</math>
+
+
+=== Problem 22 ===
+Point
+
+Choices: {'A': '100', 'B': '108', 'C': '120', 'D': '135', 'E': '144</math>'}
+Answer: B
+
+--- Solution 1 ---
+We can use analytic geometry for this problem.
+
+Let us start by giving <math>D</math> the coordinate <math>(0,0)</math>, <math>A</math> the coordinate <math>(0,1)</math>, and so forth. <math>\overline{AC}</math> and <math>\overline{EB}</math> can be represented by the equations <math>y=-x+1</math> and <math>y=2x-1</math>, respectively. Solving for their intersection gives point <math>F</math> coordinates <math>\left(\frac{2}{3},\frac{1}{3}\right)</math>. 
+
+Now, we can see that <math>\triangle</math><math>EFC</math>’s area is simply <math>\frac{\frac{1}{2}\cdot\frac{1}{3}}{2}</math> or <math>\frac{1}{12}</math>. This means that pentagon <math>ABCEF</math>’s area is <math>\frac{1}{2}+\frac{1}{12}=\frac{7}{12}</math> of the entire square, and it follows that quadrilateral <math>AFED</math>’s area is <math>\frac{5}{12}</math> of the square. 
+
+The area of the square is then <math>\frac{45}{\frac{5}{12}}=9\cdot12=\boxed{\textbf{(B) } 108}</math>.
+
+--- Solution 2 ---
+Let <imath>x</imath> be the sides of the square. <imath>\triangle ABC</imath> has half the area of the square.
+<imath>\triangle FEC</imath> has base equal to half the square side length, and by AA Similarity with <imath>\triangle FBA</imath>, it has <imath>\frac{1}{1+2}= \frac{1}{3}</imath> the height, so has <imath>\dfrac1{12}</imath>th of the area of square(<imath>\dfrac1{2}</imath>*<imath>\dfrac1{2}</imath>*<imath>\dfrac1{3}</imath> according to the triangle area formula). Thus, the area of the quadrilateral is <imath>1-\frac{1}{3}-\frac{1}{12}=\frac{5}{12}</imath> of the area of the square. We get <imath>\frac{1}{3}</imath> because since the side length ratio of <imath>EC</imath> to <imath>AB</imath> is 2, the area ratio would be <imath>4</imath>. Hence, <imath>\frac{1}{12}</imath> <imath>\cdot</imath> <imath>4 = \frac{1}{3}.</imath> 
+
+The area of <imath>\triangle ADC</imath> is <imath>\frac{x \cdot x}{2}.</imath> Thus, the area of <imath>AFED</imath> equals to the area of <imath>\triangle ADC</imath> minus the area of <imath>\triangle FEC</imath>, which is <imath>\frac{1}{12}</imath> of <imath>x^2</imath> (the area of the square).
+
+We can write the equation:
+<imath>\frac{x^2}{2} - \frac{x^2}{12} = 45.</imath>
+
+Solving the equation, we get <imath>x=\sqrt{108}.</imath>
+
+The area of the square is then <imath>\sqrt{108} \cdot \sqrt{108} =\boxed{\textbf{(B) } 108}</imath>.
+
+--- Solution 3 ---
+Extend <math>\overline{AD}</math> and <math>\overline{BE}</math> to meet at <math>X</math>. Drop an altitude from <math>F</math> to <math>\overline{CE}</math> and call it <math>h</math>. Also, call <math>\overline{CE}</math> <math>x</math>. As stated before, we have <math>\triangle ABF \sim \triangle CEF</math>, so the ratio of their heights is in a <math>1:2</math> ratio, making the altitude from <math>F</math> to <math>\overline{AB}</math> <math>2h</math>. Note that this means that the side of the square is <math>3h</math>. In addition, <math>\triangle XDE \sim \triangle XAB</math> by AA Similarity in a <math>1:2</math> ratio. This means that the square's side length is <math>2x</math>, making <math>3h=2x</math>.
+
+Now, note that <math>[ADEF]=[XAB]-[XDE]-[ABF]</math>. We have <math>[\triangle XAB]=(4x)(2x)/2=4x^2,</math> <math>[\triangle XDE]=(x)(2x)/2=x^2,</math> and <math>[\triangle ABF]=(2x)(2h)/2=(2x)(4x/3)/2=4x^2/3.</math> Subtracting makes <math>[ADEF]=4x^2-x^2-4x^2/3=5x^2/3.</math> We are given that <math>[ADEF]=45,</math> so <math>5x^2/3=45 \Rightarrow x^2=27.</math> Therefore, <math>x= 3 \sqrt{3},</math> so our answer is <math>(2x)^2=4x^2=4(27)=\boxed{\textbf{(B) }108}.</math>
+
+--- Solution 4 ---
+Solution with Cartesian and Barycentric Coordinates:
+
+We start with the following:
+
+Claim: Given a square <math>ABCD</math>, let <math>E</math> be the midpoint of <math>\overline{DC}</math> and let <math>BE\cap AC = F</math>. Then <math>\frac {AF}{FC}=2</math>.
+
+Proof: We use Cartesian coordinates. Let <math>D</math> be the origin, <math>A=(0,1),C=(0,1),B=(1,1)</math>. We have that <math>\overline{AC}</math> and <math>\overline{EB}</math> are governed by the equations <math>y=-x+1</math> and <math>y=2x-1</math>, respectively. Solving, <math>F=\left(\frac{2}{3},\frac{1}{3}\right)</math>. The result follows. <math>\square</math>
+
+Now, we apply Barycentric Coordinates w.r.t. <math>\triangle ACD</math>. We let <math>A=(1,0,0),D=(0,1,0),C=(0,0,1)</math>. Then <math>E=(0,\tfrac 12,\tfrac 12),F=(\tfrac 13,0,\tfrac 23)</math>. 
+
+In the barycentric coordinate system, the area formula is <math>[XYZ]=\begin{vmatrix} x_{1} &y_{1}  &z_{1} \\ x_{2} &y_{2}  &z_{2} \\   x_{3}& y_{3} & z_{3} \end{vmatrix}\cdot [ABC]</math> where <math>\triangle XYZ</math> is a random triangle and <math>\triangle ABC</math> is the reference triangle. Using this, we find that<cmath>\frac{[FEC]}{[ACD]}=\begin{vmatrix} 0&0&1\\ 0&\tfrac 12&\tfrac 12\\ \tfrac 13&0&\tfrac 23 \end{vmatrix}=\frac16.</cmath> Let <math>[FEC]=x</math> so that <math>[ACD]=45+x</math>. Then, we have <math>\frac{x}{x+45}=\frac 16 \Rightarrow x=9</math>, so the answer is <math>2(45+9)=\boxed{108}</math>.
+
+Note: Please do not learn Barycentric Coordinates for the AMC 8.
+
+--- Solution 5 ---
+<math>\triangle ABF \sim \triangle FEC</math>, and the bases <math>AB</math> and <math>EC</math> are in the ratio <math>2:1</math>, so <math>\frac{[\triangle ABF]}{[\triangle FEC]}=\left(\frac{2}{1}\right)^2=\frac{4}{1}</math>, and <math>[\triangle ABF]=4\cdot[\triangle FEC]</math>
+
+It is obvious that <math>[AFED]+[\triangle FEC]=45+[\triangle FEC]=\frac{1}{2}\cdot[ABCD]</math>
+
+and <math>[AFED]+[\triangle ABF]=45+4\cdot[\triangle FEC]=\frac{3}{4}\cdot[ABCD]</math>
+
+Solving the two equations we get <math>[ABCD]=\boxed{\textbf{(B)}108}</math>
+
+- bbidev
+
+--- Solution 6 ---
+Since we know that point <math>E</math> is the midpoint of square with area <math>4x^2</math> (Side length of <math>2x</math>) we can easily tell that <math>\overline{EC}</math> is equal to <math>\overline{DE}</math>. This especially helpful when we realize that <math>\triangle ECF\sim \triangle ABF</math>. Our setup is over, it is time to solve! 
+
+We can label the area of <math>\triangle ECF</math> as <math>a</math>, which means that <math>\triangle ABF</math> has an area of <math>4a</math> (This is because the width and height doubles which means the area is four times that of <math>\triangle ECF</math>). Since we know that the area of quadrilateral <math>ADEF</math> is <math>45</math>, this means that <math>45+a=2x^2</math>(half of the area due to diagonal). 
+
+Now we should find the area of trapezoid <math>ABED</math>. Since the bases are <math>x</math> and <math>2x</math> and the height is also <math>2x</math>, we can plug these values into the formula for the area of the trapezoid(<math>\tfrac{b_{1}+b_{2}}{2}\cdot h</math>), and we will get the area as <math>3x^2</math> which is equal to <math>45+4a</math>. We now have our two equations: <math>45+a=2x^2</math> and <math>45+4a=3x^3</math>.
+
+We can now multiply the first equation by four so we can easily subtract the variable <math>a</math>. Doing this we acquire <math>180+4a=8x^2</math>, and when we subtract both equations, we get <math>135=5x^2</math>. Remember, if we want to find the area, we have to look for <math>4x^2</math>, which is <math>\frac{135}{5} \cdot 4</math>. 135 divided by 5 is 27, and 27 times 4 is  <math>\boxed{\textbf{(B)}108}</math>.
+
+
+=== Problem 23 ===
+From a regular octagon, a triangle is formed by connecting three randomly chosen vertices of the octagon. What is the probability that at least one of the sides of the triangle is also a side of the octagon?
+
+<asy>
+size(3cm);
+pair A[];
+for (int i=0; i<9; ++i) {
+A[i] = rotate(22.5+45*i)*(1,0);
+}
+filldraw(A[0]--A[1]--A[2]--A[3]--A[4]--A[5]--A[6]--A[7]--cycle,gray,black);
+for (int i=0; i<8; ++i) { dot(A[i]); }
+</asy>
+
+Choices: {'A': '\\frac{2}{7}', 'B': '\\frac{5}{42}', 'C': '\\frac{11}{14}', 'D': '\\frac{5}{7}', 'E': '\\frac{6}{7}</math>'}
+Answer: D
+
+--- Solution 1 ---
+Firstly, we calculate the amount of all possible triangles. It is <imath>C_8^3=56</imath>. Then, we consider how many triangles have at least a edge which is also the edge of octagon. 
+
+If the triangle shares only one edge with the octagon, fix an edge, we can choose <imath>4</imath> different vertices for the triangle. Thus, there are <imath>8\times 4=32</imath> possible triangles. If the triangle shares its two edges with the octagon, obviously, there are only <imath>8</imath> possible triangles. <imath>\frac{32+8}{56}=\boxed{\textbf{(D)}\frac{5}{7}}</imath>.
+
+--- Solution 2 ---
+We split into two cases:
+
+Case 1: Exactly one side is chosen.  
+There are 4 lines that each contain 1 side of the octagon, and there are 8 points on the octagon. Thus, the total number of such lines is:
+\begin{align}
+8 \cdot 4 &= 32.
+\end{align}
+
+Case 2: Exactly two sides are chosen.  
+The number of ways to choose 2 points on the octagon is:
+\begin{align}
+\binom{8}{1} &= 8.
+\end{align}
+
+Adding the results from both cases, the total is:
+\begin{align}
+32 + 8 &= \boxed{40}.
+\end{align}
+
+This is the numerator. To find the denominator we do <imath>C_8^3=56</imath>. Thus, our final answer is <imath>{40/56= \boxed{\textbf{(D)}\frac{5}{7}}}</imath>. 
+
+-jb2015007
+
+-FrankensteinQuixoteCabin
+
+
+=== Problem 24 ===
+In the cube
+
+Choices: {'A': '\\frac{5}{4}', 'B': '\\frac{4}{3}', 'C': '\\frac{3}{2}', 'D': '\\frac{25}{16}', 'E': '\\frac{9}{4}</math>'}
+Answer: C
+
+--- Solution 1 ---
+Note that <math>EJCI</math> is a rhombus by symmetry.
+Let the side length of the cube be <math>s</math>. By the Pythagorean theorem, <math>EC= s\sqrt 3</math> and <math>JI= s\sqrt 2</math>. Since the area of a rhombus is half the product of its diagonals, the area of the cross section is <math>\frac{s^2\sqrt 6}{2}</math>. This gives <math>R = \frac{\sqrt 6}2</math>. Thus, <math>R^2 = \boxed{\textbf{(C) } \frac{3}{2}}</math>.
+
+--- Solution 2 ---
+This time, instead of using a variable like we did in Solution 1, <imath>s</imath>, for the side length as in the above solution, choose an easy value for <imath>s</imath> such as <imath>2</imath>. In the above solution, <imath>s^2</imath> cancels out in the end, so ultimately the answers are equivalent.
+
+--- Solution 3 ---
+If the edges of the cube have same lengths <math> a </math>, <math> A </math> is the origin, <math> \vec{AD }</math> is the positive <math> x </math> direction, <math> \vec{AE} </math> is the positive <math> y </math> direction, and <math> \vec{AB }</math> is the positive <math> z </math> direction. Therefore, we have <math> E(0,a,0), I(a,\frac{a}{2},0), C(a,0,a), </math> and <math> J(0,\frac{a}{2},a) </math>. Hence, we can figure out that:
+
+<cmath> |EC|=\sqrt{a^2 + a^2 + a^2}=\sqrt{3}a </cmath>
+
+<cmath> |IJ|=\sqrt{a^2 + 0 + a^2}=\sqrt{2}a </cmath>
+
+Note that <math>EJCI</math> is a rhombus, so <math> R=\frac{\sqrt{6}a^2}{2a^2}=\frac{\sqrt{6}}{2} </math>. Finally, we can see that the answer is <math> R^2=\frac{6}{4}=\boxed{\textbf{(C) } \frac{3}{2}} </math>
+
+~[[User:Bloggish|Bloggish]]
+
+--- Solution 4 ---
+We can solve this with 3D Cartesian coordinates. Assume WLOG that the sides of the square are of length <imath>2</imath>.  Let <imath>C</imath> be the origin and let <imath>\vec{CD}</imath> be the positive <imath>x</imath> direction, <imath>\vec{CG}</imath> be the positive <imath>y</imath> direction, and <imath>\vec{CB}</imath> be the positive <imath>z</imath> direction. We find that <imath>I=(2,1,0),J=(0,1,2),E=(2,2,2)</imath>. 
+
+Notice that <imath>CI=CJ=EI=EJ=\sqrt{5}</imath> so <imath>EJCI</imath> is a rhombus. Furthermore, by the distance formula, <imath>IJ=\sqrt8</imath>. 
+
+By the Law of Cosines on <imath>\triangle JCI</imath> we have <imath>\cos \angle JCI=\frac{\sqrt5^2+ \sqrt5^2-\sqrt8^2}{2\cdot \sqrt5\cdot \sqrt5}=\frac 15</imath>. By the Law of Cosines on <imath>\triangle JEI</imath> we have <imath>\cos \angle JEI=\frac{\sqrt5^2+ \sqrt5^2-\sqrt8^2}{2\cdot \sqrt5\cdot \sqrt5}=\frac 15</imath>.
+
+Brahmagupta's formula states given a quadrilateral <imath>ABCD</imath> with sides <imath>a,b,c,d</imath> then <cmath>[ABCD]=\sqrt{(s-a)(s-b)(s-c)(s-d)-abcd\cos^2\left({\frac{B+D}{2}}\right)}</cmath>where <imath>s=\frac{a+b+c+d}2</imath>. Using this formula, we find that<cmath>[EJCI]=\sqrt{(2\sqrt5-\sqrt5)(2\sqrt5-\sqrt5)(2\sqrt5-\sqrt5)(2\sqrt5-\sqrt5)-\sqrt 5^4(\tfrac 15)^2}=2\sqrt{6}.</cmath> 
+
+Using Brahmagupta's formula again, we can find that <imath>[ABCD]=\sqrt{(4-2)(4-2)(4-2)(4-2)-2^4\cdot \cos \left(\frac{90^\circ+90^\circ}2\right)}=\sqrt{16}=4</imath>. 
+
+The answer is thus <imath>\left(\frac{2\sqrt6}{4}\right)^2=\frac 32</imath> so we circle answer choice <imath>\boxed{\textbf{(C) } \frac{3}{2}} </imath>
+
+--- Solution 5 ---
+We will use the following
+
+Theorem: Suppose we have a quadrilateral with edges of length <math>a,b,c,d</math> (in that order) and diagonals of length <math>p, q</math>. Bretschneider's formula states that the area <math>[ABCD]=\frac{1}{4} \cdot \sqrt{4p^2q^2-(b^2+d^2-a^2-c^2)^2}</math>.
+
+Proof: Here is one of my favorite proofs of this with vector geometry. 
+
+Suppose a quadrilateral has sides <math>\vec{a}, \vec{b}, \vec{c}, \vec{d}</math> such that <math>\vec{a} + \vec{b} + \vec{c} + \vec{d} = \vec{0}</math> and that the diagonals of the quadrilateral are <math>\vec{p} = \vec{b} + \vec{c} = -\vec{a} - \vec{d}</math> and <math>\vec{q} = \vec{a} + \vec{b} = -\vec{c} - \vec{d}</math>. The area of any such quadrilateral is <math>\frac{1}{2} |\vec{p} \times \vec{q}|</math>.
+
+
+<math>K = \frac{1}{2} |\vec{p} \times \vec{q}|</math>
+
+Lagrange's Identity states that <math>|\vec{a}|^2|\vec{b}|^2-(\vec{a}\cdot\vec{b})^2=|\vec{a}\times\vec{b}|^2 \implies \sqrt{|\vec{a}|^2|\vec{b}|^2-(\vec{a}\cdot\vec{b})^2}=|\vec{a}\times\vec{b}|</math>. Therefore:
+
+<math>K = \frac{1}{2} \sqrt{|\vec{p}|^2|\vec{q}|^2 - (\vec{p} \cdot \vec{q})^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - (2 \vec{p} \cdot \vec{q})^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [2 (\vec{b} + \vec{c}) \cdot (\vec{a} + \vec{b})]^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [2 \vec{b} \cdot (\vec{a} + \vec{b}) + 2 \vec{c} \cdot (\vec{a} + \vec{b})]^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [-2 \vec{b} \cdot (\vec{c} + \vec{d}) + 2 \vec{c} \cdot (\vec{a} + \vec{b})]^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [-2 \vec{b} \cdot \vec{c} - 2 \vec{b} \cdot \vec{d} + 2 \vec{a} \cdot \vec{c} + 2 \vec{b} \cdot \vec{c}]^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [2 \vec{a} \cdot \vec{c} - 2 \vec{b} \cdot \vec{d}]^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - ([(\vec{a} + \vec{c})\cdot(\vec{a} + \vec{c}) - \vec{a}\cdot\vec{a} - \vec{c}\cdot\vec{c}] - [(\vec{b} + \vec{d})\cdot(\vec{b} + \vec{d}) - \vec{b}\cdot\vec{b} - \vec{d}\cdot\vec{d}])^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [|\vec{b}|^2 + |\vec{d}|^2 - |\vec{a}|^2 - |\vec{c}|^2 + (\vec{a} + \vec{c})\cdot(\vec{a} + \vec{c}) - (\vec{b} + \vec{d})\cdot(\vec{b} + \vec{d})]^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [|\vec{b}|^2 + |\vec{d}|^2 - |\vec{a}|^2 - |\vec{c}|^2 + |\vec{a} + \vec{c}|^2 - |\vec{b} + \vec{d}|^2]^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [|\vec{b}|^2 + |\vec{d}|^2 - |\vec{a}|^2 - |\vec{c}|^2 + |\vec{a} + \vec{c}|^2 - |-(\vec{a} + \vec{c})|^2]^2}</math>
+
+<math>= \frac{1}{4} \sqrt{4 |\vec{p}|^2|\vec{q}|^2 - [|\vec{b}|^2 + |\vec{d}|^2 - |\vec{a}|^2 - |\vec{c}|^2]^2}</math>
+
+Then, if <math>a, b, c, d</math> represent <math>|\vec{a}|, |\vec{b}|, |\vec{c}|, |\vec{d}|</math> (and are thus the side lengths) while <math>p, q</math> represent <math>|\vec{p}|, |\vec{q}|</math> (and are thus the diagonal lengths), the area of a quadrilateral is:
+
+<cmath>K = \frac{1}{4} \sqrt{4p^2q^2 - (b^2 + d^2 - a^2 - c^2)^2}</cmath> <math>\square</math>
+
+Back to the problem. We use vectors. WLOG suppose the cube has sides of length <math>2</math>. Let <math>C</math> be the origin and let <math>\vec{CD}</math> be the <math>x</math> direction, <math>\vec{CG}</math> be the <math>y</math> direction, and <math>\vec{CB}</math> be the <math>z</math> direction. 
+
+Then, <math>\vec{CI}=\vec{JE}=\begin{pmatrix} 2\\1\\0\end{pmatrix}</math> and <math>\vec{CJ}=\vec{IE}=\begin{pmatrix} 0\\1\\2\end{pmatrix}</math>. Let <math>\angle JCI=\theta</math>. Dot product gives <math>\cos \theta=\left(\frac{\begin{pmatrix} 2\\1\\0\end{pmatrix} \cdot \begin{pmatrix} 0\\1\\2\end{pmatrix}}{|\begin{pmatrix} 2\\1\\0\end{pmatrix}||\begin{pmatrix} 0\\1\\2\end{pmatrix}|}\right)=\frac 15.</math>
+
+Hence, <math>\vec {IJ}=\sqrt{|\vec{CI}|+|\vec{CJ}|-2\cdot \vec{CI}\cdot \vec{CJ}\cos \theta}=\sqrt{|\begin{pmatrix} 2\\1\\0\end{pmatrix}|+|\begin{pmatrix} 0\\1\\2\end{pmatrix}|-2\cdot \begin{pmatrix} 2\\1\\0\end{pmatrix} \cdot\begin{pmatrix} 0\\1\\2\end{pmatrix} \cdot \frac 15} \iff |\vec{IJ}|=2\sqrt2</math>.
+
+Now, notice that <math>\vec{CE}=\vec{CI}+\vec{CJ}=\begin{pmatrix} 2\\1\\0\end{pmatrix}+\begin{pmatrix} 0\\1\\2\end{pmatrix}=\begin{pmatrix} 2\\2\\2\end{pmatrix}</math> so <math>|\vec{CE}|=|\begin{pmatrix} 2\\2\\2\end{pmatrix}|=2\sqrt3</math>.
+
+Using Bretschneider's formula, we obtain <math>[EJCI]=\frac{1}{4} \cdot \sqrt{4|\vec{IJ}|^2|\vec{CE}|^2-(|\vec{CJ}|^2+|\vec{IE}|^2-|\vec{JE}|^2-|\vec{CI}|^2)^2}=\frac 14\sqrt{4\cdot (2\sqrt2)^2\cdot (2\sqrt3)^2-(5^2+5^2-5^2-5^2)^2}=2\sqrt6</math>.
+
+Using Bretschneider's formula again, we can find that <math>[ABCD]=\sqrt{(4-2)(4-2)(4-2)(4-2)-2^4\cdot \cos \left(\frac{90^\circ+90^\circ}2\right)}=\sqrt{16}=4</math>.
+
+Hence, the answer is <math>\left(\frac{2\sqrt6}{4}\right)^2=\frac 32</math> so we circle answer choice <math>C</math>.
+
+
+Note: Of course this is a solution made by Franz Liszt.
+
+--- Solution 6 ---
+We can simply plug in values and find \( R \) to eliminate the variables and avoid the complicated algebra. Let’s assume the side length of the cube is \( 4 \). The given figure is a rhombus because all its sides are equal, but the angles are not \( 90^\circ \). To find the area of the rhombus, we need to calculate the lengths of the two diagonals.
+
+The formula for the space diagonal of a cube is \( \sqrt{3}s \), so \( \overline{CE} = 4\sqrt{3} \). By symmetry, \( \overline{IJ} = \overline{BD} = 4\sqrt{2} \). Now, we can find the area of the rhombus using the formula for the area of a rhombus, which is the product of the diagonals divided by 2:
+
+\begin{align*}
+\text{Area} &= \frac{4\sqrt{3} \cdot 4\sqrt{2}}{2} \\
+&= 8\sqrt{6}.
+\end{align*}
+
+Next, the area of one of the cube’s faces is simply \( 4^2 = 16 \). So, \( R \) is:
+
+<math>{\left(\frac{8\sqrt6}{16}\right)^2}</math>= <math>{\boxed{\textbf{(C)}\frac{3}{2}}}</math>.
+
+
+-jb2015007
+
+(Minor edits by FrankensteinQuixoteCabin)
+
+
+=== Problem 25 ===
+How many perfect cubes lie between
+
+Choices: {'A': '4', 'B': '9', 'C': '10', 'D': '57', 'E': '58</math>'}
+Answer: E
+
+--- Solution 1 ---
+First, <imath>2^8+1=257</imath>. Then, <imath>2^{18}+1=262145</imath>. Now, we can see how many perfect cubes are between these two parameters. By guessing and checking, we find that it starts from <imath>7</imath> and ends with <imath>64</imath>. Now, by counting how many numbers are between these, we find the answer to be <imath>\boxed{\textbf{(E) }58}</imath>.
+(You can do this, but it will still take a few minutes. Try to do something else)
+
+==Solution 2 (If you do not notice that <imath>2^{18}=(2^6)^3=64^3</imath>)==
+
+There is not so much guessing and checking after we find that it starts from <imath>7</imath> because <imath>7^3=343</imath>, which is over <imath>2^8+1=257</imath>. We can start guessing with the 10, answer C, as it is the middle value. Adding 10 to 7 gives us 17 and <imath>17^3 = 4,913</imath>, which is a bit low. So, we move "up" to 57, answer D. Adding 57 to 7 gives us 64 and <imath>64^3 = 262,144</imath>, which is perfect for the <imath>2^{18}+1=262,145</imath>. But we are not done. Since it is inclusive, we must add 1 to this solution, which give us <imath>\boxed{\textbf{(E) }58}</imath>.
+
+--- Solution 2 ---
+We can immediately evaluate <imath>2^8+1</imath> which gives us <imath>257</imath> and the smallest perfect cube greater than that is <imath>343 = 7^3</imath>, and you also immediately notice that <imath>2^{18} = (2^6)^3 = 64^3</imath>. Now, all we have to do is count the cubes, which equals:
+\begin{align}
+64-7+1 &= \boxed{\textbf{(E) }58}
+\end{align}
+
+-jb2015007
+
+--- Solution 3 ---
+We know that <imath>2^8+1=257</imath> which is only a little higher than <imath>6^3=216</imath>. This means that the lower bound of this is <imath>7^3</imath>. <imath>2^{18}</imath> is the same thing is <imath>64^3</imath>, which must be the upper bound. This results in <imath>64-7+1= \boxed{\textbf{(E) }58}</imath>
+
+

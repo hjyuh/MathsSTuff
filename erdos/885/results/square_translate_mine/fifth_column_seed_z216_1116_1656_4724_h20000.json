@@ -1,0 +1,336 @@
+{
+  "seed": "custom",
+  "N_values": [
+    274833,
+    1225728,
+    3368448,
+    30159360
+  ],
+  "deltas": [
+    432,
+    2232,
+    3312,
+    9448
+  ],
+  "height_bound": 20000,
+  "prime_bound": 200,
+  "max_classes": 500000,
+  "crt_modulus": 14550466931,
+  "crt_class_count": 483840,
+  "used_primes": [
+    7,
+    11,
+    13,
+    19,
+    23,
+    29,
+    31,
+    37
+  ],
+  "prime_data": [
+    {
+      "p": 7,
+      "survivors": 4,
+      "density": 0.5714285714285714,
+      "used": true
+    },
+    {
+      "p": 11,
+      "survivors": 4,
+      "density": 0.36363636363636365,
+      "used": true
+    },
+    {
+      "p": 13,
+      "survivors": 4,
+      "density": 0.3076923076923077,
+      "used": true
+    },
+    {
+      "p": 17,
+      "survivors": 8,
+      "density": 0.47058823529411764,
+      "used": false
+    },
+    {
+      "p": 19,
+      "survivors": 6,
+      "density": 0.3157894736842105,
+      "used": true
+    },
+    {
+      "p": 23,
+      "survivors": 5,
+      "density": 0.21739130434782608,
+      "used": true
+    },
+    {
+      "p": 29,
+      "survivors": 6,
+      "density": 0.20689655172413793,
+      "used": true
+    },
+    {
+      "p": 31,
+      "survivors": 7,
+      "density": 0.22580645161290322,
+      "used": true
+    },
+    {
+      "p": 37,
+      "survivors": 6,
+      "density": 0.16216216216216217,
+      "used": true
+    },
+    {
+      "p": 41,
+      "survivors": 8,
+      "density": 0.1951219512195122,
+      "used": false
+    },
+    {
+      "p": 43,
+      "survivors": 12,
+      "density": 0.27906976744186046,
+      "used": false
+    },
+    {
+      "p": 47,
+      "survivors": 10,
+      "density": 0.2127659574468085,
+      "used": false
+    },
+    {
+      "p": 53,
+      "survivors": 8,
+      "density": 0.1509433962264151,
+      "used": false
+    },
+    {
+      "p": 59,
+      "survivors": 8,
+      "density": 0.13559322033898305,
+      "used": false
+    },
+    {
+      "p": 61,
+      "survivors": 8,
+      "density": 0.13114754098360656,
+      "used": false
+    },
+    {
+      "p": 67,
+      "survivors": 10,
+      "density": 0.14925373134328357,
+      "used": false
+    },
+    {
+      "p": 71,
+      "survivors": 10,
+      "density": 0.14084507042253522,
+      "used": false
+    },
+    {
+      "p": 73,
+      "survivors": 8,
+      "density": 0.1095890410958904,
+      "used": false
+    },
+    {
+      "p": 79,
+      "survivors": 8,
+      "density": 0.10126582278481013,
+      "used": false
+    },
+    {
+      "p": 83,
+      "survivors": 10,
+      "density": 0.12048192771084337,
+      "used": false
+    },
+    {
+      "p": 89,
+      "survivors": 10,
+      "density": 0.11235955056179775,
+      "used": false
+    },
+    {
+      "p": 97,
+      "survivors": 10,
+      "density": 0.10309278350515463,
+      "used": false
+    },
+    {
+      "p": 101,
+      "survivors": 10,
+      "density": 0.09900990099009901,
+      "used": false
+    },
+    {
+      "p": 103,
+      "survivors": 8,
+      "density": 0.07766990291262135,
+      "used": false
+    },
+    {
+      "p": 107,
+      "survivors": 8,
+      "density": 0.07476635514018691,
+      "used": false
+    },
+    {
+      "p": 109,
+      "survivors": 12,
+      "density": 0.11009174311926606,
+      "used": false
+    },
+    {
+      "p": 113,
+      "survivors": 18,
+      "density": 0.1592920353982301,
+      "used": false
+    },
+    {
+      "p": 127,
+      "survivors": 12,
+      "density": 0.09448818897637795,
+      "used": false
+    },
+    {
+      "p": 131,
+      "survivors": 12,
+      "density": 0.0916030534351145,
+      "used": false
+    },
+    {
+      "p": 137,
+      "survivors": 14,
+      "density": 0.10218978102189781,
+      "used": false
+    },
+    {
+      "p": 139,
+      "survivors": 12,
+      "density": 0.08633093525179857,
+      "used": false
+    },
+    {
+      "p": 149,
+      "survivors": 8,
+      "density": 0.053691275167785234,
+      "used": false
+    },
+    {
+      "p": 151,
+      "survivors": 10,
+      "density": 0.06622516556291391,
+      "used": false
+    },
+    {
+      "p": 157,
+      "survivors": 14,
+      "density": 0.08917197452229299,
+      "used": false
+    },
+    {
+      "p": 163,
+      "survivors": 16,
+      "density": 0.09815950920245399,
+      "used": false
+    },
+    {
+      "p": 167,
+      "survivors": 12,
+      "density": 0.0718562874251497,
+      "used": false
+    },
+    {
+      "p": 173,
+      "survivors": 14,
+      "density": 0.08092485549132948,
+      "used": false
+    },
+    {
+      "p": 179,
+      "survivors": 18,
+      "density": 0.1005586592178771,
+      "used": false
+    },
+    {
+      "p": 181,
+      "survivors": 16,
+      "density": 0.08839779005524862,
+      "used": false
+    },
+    {
+      "p": 191,
+      "survivors": 12,
+      "density": 0.06282722513089005,
+      "used": false
+    },
+    {
+      "p": 193,
+      "survivors": 16,
+      "density": 0.08290155440414508,
+      "used": false
+    },
+    {
+      "p": 197,
+      "survivors": 16,
+      "density": 0.08121827411167512,
+      "used": false
+    },
+    {
+      "p": 199,
+      "survivors": 16,
+      "density": 0.08040201005025126,
+      "used": false
+    }
+  ],
+  "candidate_count": 9836,
+  "hit_count": 8,
+  "new_hit_count": 0,
+  "hits": [
+    {
+      "X": "-216/1",
+      "exact_fifth_column": true,
+      "old_column_abs": true
+    },
+    {
+      "X": "216/1",
+      "exact_fifth_column": true,
+      "old_column_abs": true
+    },
+    {
+      "X": "-4724/1",
+      "exact_fifth_column": true,
+      "old_column_abs": true
+    },
+    {
+      "X": "4724/1",
+      "exact_fifth_column": true,
+      "old_column_abs": true
+    },
+    {
+      "X": "-1656/1",
+      "exact_fifth_column": true,
+      "old_column_abs": true
+    },
+    {
+      "X": "1656/1",
+      "exact_fifth_column": true,
+      "old_column_abs": true
+    },
+    {
+      "X": "1116/1",
+      "exact_fifth_column": true,
+      "old_column_abs": true
+    },
+    {
+      "X": "-1116/1",
+      "exact_fifth_column": true,
+      "old_column_abs": true
+    }
+  ],
+  "new_hits": []
+}

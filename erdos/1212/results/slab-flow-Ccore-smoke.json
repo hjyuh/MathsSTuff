@@ -1,0 +1,96 @@
+{
+  "buffers": [
+    {
+      "kind": "power",
+      "name": "theta=0.36",
+      "parameter": 0.36
+    }
+  ],
+  "cap": 5000,
+  "core_multiplier": 2.1,
+  "include_incomplete_slabs": false,
+  "results": [
+    {
+      "buffer": {
+        "kind": "power",
+        "name": "theta=0.36",
+        "parameter": 0.36
+      },
+      "buffered_pairs_before_core_filter": 2578,
+      "cap": 5000,
+      "core_multiplier": 2.1,
+      "earliest_to_top_path": {
+        "certificate": [
+          [
+            3127,
+            3139
+          ],
+          [
+            3139,
+            3149
+          ]
+        ],
+        "certificate_truncated": false,
+        "start_slab_index": 11,
+        "start_slab_label": "[2048,4096)",
+        "transitions": 1
+      },
+      "global_best_path": {
+        "certificate": [
+          [
+            3127,
+            3139
+          ],
+          [
+            3139,
+            3149
+          ]
+        ],
+        "certificate_truncated": false,
+        "max_reached_slab_index": 11,
+        "max_reached_slab_label": "[2048,4096)",
+        "transitions": 1
+      },
+      "include_incomplete_slabs": false,
+      "right_core_pairs_before_slab_filter": 18,
+      "right_core_pairs_in_flow_graph": 13,
+      "slabs": {
+        "[1024,2048)": {
+          "complete_slab": true,
+          "core_outdegree_max": 0,
+          "core_outdegree_mean": 0.0,
+          "core_states": 1,
+          "core_zero_outdegree_fraction": 1.0,
+          "longest_core_path_transitions": 0,
+          "max_reached_slab_index": 10,
+          "max_reached_slab_label": "[1024,2048)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 10,
+          "survive_to_top_slab_count": 0,
+          "survive_to_top_slab_fraction": 0.0
+        },
+        "[2048,4096)": {
+          "complete_slab": true,
+          "core_outdegree_max": 1,
+          "core_outdegree_mean": 0.16666666666666666,
+          "core_states": 12,
+          "core_zero_outdegree_fraction": 0.8333333333333334,
+          "longest_core_path_transitions": 1,
+          "max_reached_slab_index": 11,
+          "max_reached_slab_label": "[2048,4096)",
+          "reach_next_slab_count": 0,
+          "reach_next_slab_fraction": 0.0,
+          "slab_index": 11,
+          "survive_to_top_slab_count": 12,
+          "survive_to_top_slab_fraction": 1.0
+        }
+      },
+      "source_cap": 4977,
+      "successor_cap": 5023,
+      "top_slab_index": 11,
+      "top_slab_label": "[2048,4096)"
+    }
+  ],
+  "source_cap": 4977
+}

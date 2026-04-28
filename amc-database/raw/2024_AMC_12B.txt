@@ -1,0 +1,1956 @@
+=== Problem 1 ===
+In a long line of people arranged left to right, the 1013th person from the left is also the 1010th person from the right. How many people are in the line?
+
+Choices: {'A': '2021', 'B': '2022', 'C': '2023', 'D': '2024', 'E': '2025</math>'}
+Answer: D
+
+--- Solution 1 ---
+If the person is the 1013th from the left, that means there is 1012 people to their left.
+If the person is the 1010th from the right, that means there is 1009 people to their right.
+Therefore, there are <math>1012 + 1 + 1009 = \boxed{\textbf{(B) } 2022}</math> people in line.
+
+--- Solution 2 ---
+The person is <math>1013</math>rd person from the left is also the <math>1010</math>th person from the right, so the same person is counted twice.
+
+Therefore, there are <math>1013+1010-1=\boxed{\textbf{(B) } 2022}</math> people in line.
+
+<math>\boxed{\textbf{(B) } 2022}</math>
+
+--- Solution 3 ---
+We can look at a smaller case where it is the <math>4</math>th person from the left and the <math>2</math>nd person from the right. Listing out the people as numbers gives us a list of <math>1,2,3,4,5.</math> We see that the total number of people is the position from the left + the position from the right - 1, which in the case above is <math>4+2-1=5.</math> Plugging in <math>1013</math> and <math>1010</math> gives us <math>1013+1010-1=\boxed{\textbf{(B) } 2022}</math>
+
+--- Solution 4 ---
+Since the person is the 1013th person from the left and the 1010th person from the right, there are 1009 people after the 1013th person. 
+
+Therefore, there are 1013 + 1009 = <math>\boxed{\textbf{(B) } 2022}</math> people in line.
+
+(Note: Similarly, you can perceive this information as 1012 people to the left of 1010 people and proceed.)
+
+--- Solution 5 ---
+Think of a Pattern
+
+If 4 people: p1, p2, p3, p4 and you are 2nd from right and third from left
+
+So just add 1013+1010 and subtract 1 since you are overcounting yourself twice. 
+
+We then get, 1013 + 1009 = <math>\boxed{\textbf{(B) } 2022}</math>
+
+
+=== Problem 2 ===
+What is
+
+Choices: {'A': '-120', 'B': '0', 'C': '120', 'D': '600', 'E': '720 </math>'}
+Answer: B
+
+--- Solution 1 ---
+<math>10! = 10 \cdot 9 \cdot 8 \cdot 7! = 720 \cdot 7!</math>
+
+<math>6! \cdot 7! = 720 \cdot 7!</math>
+
+Therefore, the equation is equal to <math>720 \cdot 7! - 720 \cdot 7! = \boxed{\textbf{(B) }0}</math>
+
+[ONLY FOR CERTAIN CHINESE TESTPAPERS]
+
+<math>0 - 5! = \boxed{\textbf{(A) }-120}</math>
+
+--- Solution 2 ---
+Factoring out <math>7!</math> gives <cmath>7!(10\cdot9\cdot8-1\cdot6!).</cmath> Since <math>10\cdot9\cdot8=6!=720</math>, the answer is <math>\boxed{\text{(B) }0}</math> 
+
+Factoring <math>6!</math> also works, it just makes the expression in the parenthesis a little harder to compute.
+
+--- Solution 3 ---
+Note that <math>10! - 7! \cdot 6!</math> must be divisible by <math>7</math>, and <math>\boxed{\text{(B) }0}</math> is the only option divisible by <math>7</math>.
+
+--- Solution 4 ---
+<math>10! - 7! \cdot 6!</math> can be split into two parts, <math>10!</math> and <math>7! \cdot 6!</math>. 
+We can break the <math>6!</math> into <math>(2 \cdot 4)(3 \cdot 5 \cdot 6)</math>
+The <math>2 \cdot 4</math> part makes <math>8</math>, and the <math>3 \cdot 5 \cdot 6</math> part makes <math>90</math>, which is <math>9 \cdot 10</math>. 
+We still have the 7!, and we can multiply it by <math>8 \cdot 9 \cdot 10</math>. This is clearly equivalent to <math>10!</math>, so our solution is <math>10! - 10! = </math><math>\boxed{\text{(B) }0}</math>.
+
+--- Solution 5 ---
+<math>10! = 3,628,800</math>, <math>7! = 5,040</math>, and <math>6! = 720</math>. Of course, if you're fast enough, you can do <math>5,040 \cdot 720 = 3,628,800</math>. Therefore, <math>3,628,800 - 3,628,800 = \boxed{\text{(B) }0}</math>.
+
+-pepper2831
+
+
+=== Problem 3 ===
+For how many integer values of
+
+Choices: {'A': '16', 'B': '17', 'C': '19', 'D': '20', 'E': '21</math>'}
+Answer: C
+
+--- Solution 1 ---
+<imath>\pi = 3.14159\dots</imath> is slightly less than <imath>\dfrac{22}{7} = 3.\overline{142857}</imath>. So <imath>7\pi \approx 21.9</imath>
+The inequality expands to be <imath>-21.9 \le 2x \le 21.9</imath>. We find that <imath>x</imath> can take the integer values between <imath>-10</imath> and <imath>10</imath> inclusive. There are <imath>\boxed{\text{E. }21}</imath> such values.
+
+Note that if you did not know whether <imath>\pi</imath> was greater than or less than <imath>\dfrac{22}{7}</imath>, then you might perform casework. In the case that <imath>\pi > \dfrac{22}{7}</imath>, the valid solutions are between <imath>-11</imath> and <imath>11</imath> inclusive: <imath>23</imath> solutions. Since, <imath>23</imath> is not an answer choice, we can be confident that <imath>\pi < \dfrac{22}{7}</imath>, and that <imath>\boxed{\text{E. } 21}</imath> is the correct answer.
+
+
+Test advice: If you are in the test and do not know if <imath>\frac{22}{7}</imath> is bigger or smaller than <imath>\pi</imath>, you can use the extremely sophisticated method of just dividing <imath>\dfrac{22}{7}</imath> via long division. Once you get to <imath>3.142</imath> you realise that you don't need to divide further since <imath>\pi = 3.1416</imath> when rounded to 4 decimal places.Therefore, you do not include <imath>11</imath> and <imath>-11</imath> and the answer is 21.
+
+--- Solution 2 ---
+<imath>7\pi</imath> is incredibly close to <imath>22</imath>, but doesn't reach it. This can be both computed by using <imath>\pi\approx3.142\implies7\cdot3.142=21.994<22</imath> or assumed. Therefore, including both positive and negative values, the answer is <imath>\{-10,-9,...,9,10\}\implies\boxed{\text{(E) }21}</imath>.
+
+
+=== Problem 4 ===
+Balls numbered
+
+Choices: {'A': 'A', 'B': 'B', 'C': 'C', 'D': 'D', 'E': 'E</math>'}
+Answer: 
+
+--- Solution 1 ---
+Consider the triangular array of numbers:
+<cmath>1</cmath>
+<cmath>2, 3</cmath>
+<cmath>4, 5, 6</cmath>
+<cmath>7, 8, 9, 10</cmath>
+<cmath>11, 12, 13, 14, 15</cmath>
+<cmath>\vdots</cmath>.
+
+The numbers in a row congruent to <math>1 \bmod{5}</math> will be in bucket A. Similarly, the numbers in a row congruent to <math>2, 3, 4, 0 \bmod{5}</math> will be in buckets B, C, D, and E respectively. Note that the <math>n^\text{th}</math> row ends with the <math>n^\text{th}</math> triangle number, <math>\frac{n(n+1)}{2}</math>.
+
+We must find values of <math>n</math> that make <math>\frac{n(n+1)}{2}</math> close to <math>2024</math>.
+<cmath>\frac{n(n+1)}{2} \approx 2024</cmath>
+<cmath>n(n+1) \approx 4048</cmath>
+<cmath>n^2 \approx 4048</cmath>
+<cmath>n \approx 63</cmath>
+
+Trying <math>n = 63</math> we find that <math>\frac{n(n+1)}{2} = 2016</math>. Since <math>2016</math> will be the last ball in row <math>63</math>, ball <math>2024</math> will be in row <math>64</math>. Since <math>64 \equiv 4 \bmod{5}</math>, ball <math>2024</math> will be placed in bucket <math>\boxed{\text{D. } D}</math>.
+
+--- Solution 2 ---
+[[Image: 2024_AMC_12B_P04.jpeg|thumb|center|600px|]]
+
+
+=== Problem 5 ===
+In the following expression, Melanie changed some of the plus signs to minus signs:<cmath> 1 + 3+5+7+\cdots+97+99</cmath>When the new expression was evaluated, it was negative. What is the least number of plus signs that Melanie could have changed to minus signs?
+
+Choices: {'A': '14', 'B': '15', 'C': '16', 'D': '17', 'E': '18 </math>'}
+Answer: B
+
+--- Solution 1 ---
+Recall that the sum of the first <math>n</math> odd numbers is <math>n^2</math>. Thus <cmath>1 + 3 + 5 + 7+ \dots + 97 + 99 = 50^2 = 2500.</cmath>
+
+If we want to minimize the number of sign flips to make the number negative, we must flip the signs corresponding to the values with largest absolute value. This will result in the inequality <cmath>1 + 3 + 5 +\dots + (2n - 3) + (2n - 1) - (2n + 1) - (2n + 3)-\dots - 97 - 99 < 0.</cmath>
+
+The positive section of the sum will contribute <math>n^2</math>, and the negative section will contribute <math>-(2500-n^2) = (n^2 - 2500)</math>. The inequality simplifies to
+<cmath>n^2 + (n^2 - 2500) < 0</cmath>
+<cmath>2n^2 < 2500</cmath>
+<cmath>n^2 < 1250</cmath>
+The greatest positive value of <math>n</math> satisfying the inequality is <math>n = 35</math>, corresponding to <math>35</math> positive numbers, and <math>\boxed{\text{B. } 15}</math> negatives.
+
+ALEX
+
+--- Solution 2 ---
+The formula for the sum of all odd positive integers from <math>1</math> to <math>2n-1</math> is <cmath>1+3+5+...+2n-3+2n-1=n^2.</cmath>Therefore, the given sum evaluates to <cmath>99=2(50)-1\implies 50^2=2500.</cmath> Since we're looking for the minimum possible sign changes, we focus on the largest numbers in the set to change to negative.
+
+If we change the sign of a number <math>n</math> to negative, then the sum decreases by <math>2n</math>. Therefore, we're looking for a subset of numbers that add to greater than <math>2500/2=1250</math>.
+
+Now we look at the answer choices.
+
+<math>\text{(A) }14</math> means that we're changing the signs of the numbers <math>\{73,75,...,99\}</math>, and <math>73+75+...+99=\dfrac{(73+99)\cdot(\frac{99-73}{2}+1)}{2}=1204</math>. 
+
+Now this so slightly happens to be less than <math>1250</math>, and <math>\text{(B) } 15</math> means we're adding <math>71</math> to the set, too. Since <math>71>1250-1204=46</math>, then the answer is <math>\boxed{\text{(B) }15}</math>
+
+--- Solution 3 ---
+Note that as mentioned above, <math>1 + 3 + 5... + 2n - 1 = n^{2}</math>. So, the sum of the first 50 odd numbers is equal to 2500, and we need to find the smallest integer such that <math>2k^{2} < 50^{2}</math>. Taking the square root, <math>k = 25\sqrt{2}</math>, keeping in mind we need to take the floor <math>2k^{2}</math> needs to be slightly less than 2500. Using an approximation of <math>\sqrt{2} = 1.4, 25 * \frac{7}{5}</math> is 35, so our answer is <math>\boxed{\text{(B) }15}</math>
+
+--- Solution 4 ---
+As mentioned above, <math>1 + 3 + 5... + 2n - 1 = n^{2}</math>. This will be especially important in this solution. The sum of the original expression is 2500, so the combined (positive) sum of the negatives must be greater than half of this, i.e. <math>1250</math>. We are looking to minimize the number of negative numbers, so we only convert the last numbers to negatives. Let <math>99 = o_1 = 100-1</math>, <math>97 = o_2 = 100 - 3</math>, and for any <math>n</math>, <math>o_n = 100-(2n-1)</math>. Then the sum of all numbers up till <math>o_n</math> is <math>100n - n^{2}</math>. This sum needs to be greater than 1250, i.e.:
+
+<math>100n-n^{2} > 1250</math>
+
+Testing out <math>n</math> from the solution set yields the minimum value of <math>n=15</math>. The answer is therefore <math>\boxed{\text{(B) }15}</math>.
+
+
+=== Problem 6 ===
+The national debt of the United States is on track to reach
+
+Choices: {'A': '18', 'B': '20', 'C': '22', 'D': '24', 'E': '26 </math>'}
+Answer: 
+
+--- Solution 1 ---
+Generally, the number of digits of number <math>n</math> in base <math>b</math> is
+<cmath>\lfloor \log_b n \rfloor + 1.</cmath>
+In this question, it is <math>\lfloor \log_{5} (5\times 10^{13})\rfloor+1</math>.
+Note that 
+<cmath>\begin{align*}
+\log_{5} (5\times 10^{13}) &= 1+\frac{13}{\log_{10} 5} \\
+&\approx 1+\frac{13}{0.7} \\
+&\approx 19.5
+\end{align*}</cmath>
+Hence, our answer is <math>\fbox{\textbf{(B)} 20}</math>
+
+--- Solution 2 ---
+We see that <math>5\times 10^{13} = 2^{13} \cdot 5^{14}</math> and <math>2^{13} = 8192</math>. Converting this to base <math>5</math> gives us <math>230232</math> (trust me it doesn't take that long). So the final number in base <math>5</math> is <math>230232</math> with <math>14</math> zeroes at the end, which gives us <math>6 + 14 = 20</math> digits. So the answer is <math>\fbox{\textbf{(B)} 20}</math>.
+
+
+Note - Base Conversion Step 
+
+To convert the number <math>8192</math> from base 10 to base 5, we follow these steps:
+
+1. Divide the number by 5 repeatedly, noting the quotient and remainder each time.
+
+2. Stop when the quotient becomes 0, then read the remainders from bottom to top.
+
+<cmath>
+8192 \div 5 = 1638 \text{ remainder } 2
+</cmath>
+<cmath>
+1638 \div 5 = 327 \text{ remainder } 3
+</cmath>
+<cmath>
+327 \div 5 = 65 \text{ remainder } 2
+</cmath>
+<cmath>
+65 \div 5 = 13 \text{ remainder } 0
+</cmath>
+<cmath>
+13 \div 5 = 2 \text{ remainder } 3
+</cmath>
+<cmath>
+2 \div 5 = 0 \text{ remainder } 2
+</cmath>
+
+Now, reading the remainders from bottom to top:<math> 2, 3, 0, 2, 3, 2 </math>.
+
+Thus, <math>8192</math> in base 5 is:
+
+<cmath>
+\boxed{230232_5}
+</cmath>
+
+Note - an approximation you can use here to convert 8192 to base 5: since <math>5^5 = 3125</math> and <math>5^6 = 15625</math>, we automatically know that you need 6 digits to represent <math>2^{13}</math> in base 5.
+
+--- Solution 3 ---
+<math>5 \times 10^{13} = 5 \times (5^{13} \times 2^{13}) = 2^{13} \times 5^{14} = 8192 \times 5^{14}.</math>
+
+<math>5^5 = 3125</math> and <math>5^6 = 15625</math> (or just notice that it must be <math>> 8192</math>) <math>\implies 5^5 < 8192 < 5^6 \implies 5^{19} < 5 \times 10^{13} < 5^{20}</math>.
+
+Since an integer <math>x</math> has <math>n</math> base-<math>a</math> digits when it satisfies <math>a^{n-1} \le x < a^n</math>, it follows that <math>5 \times 10^{13}</math> requires <math>\fbox{\textbf{(B)} 20}</math> base-5 digits.
+
+
+=== Problem 7 ===
+In the figure below
+
+Choices: {'A': '13', 'B': '14', 'C': '15', 'D': '16', 'E': '17 </math>'}
+Answer: C
+
+--- Solution 1 ---
+We know that <math>WX = 4</math>, <math>WZ = 8</math>, so <math>YZ = 4</math> and <math>YX = 8</math>. Since <math>\angle WMA = 90^\circ</math>, triangles <math>WXM</math> and <math>MYA</math> are similar. Therefore, <math>\frac{WX}{MY} = \frac{XM}{YA}</math>, which gives <math>\frac{4}{8 - XM} = \frac{XM}{4 - ZA}</math>. We also know that the areas of triangles <math>WXM</math> and <math>WAZ</math> are equal, so <math>WX \cdot XM = WZ \cdot ZA</math>, which implies <math>4 \cdot XM = 8 \cdot ZA</math>. Substituting this into the previous equation, we get <math>\frac{4}{8 - 2ZA} = \frac{2ZA}{4 - ZA}</math>, yielding <math>ZA = 1</math> and <math>XM = 2</math>. Thus,
+
+<cmath>
+\triangle WMA = 4 \cdot 8 - \frac{4 \cdot 2}{2} - \frac{8 \cdot 1}{2} - \frac{6 \cdot 3}{2} = \boxed{\textbf{(C) }15}
+</cmath>
+
+--- Solution 2 ---
+Let <math>XM=b</math>, <math>ZA = a</math>, <math>4\cdot b= 8\cdot a</math>, <math>b = 2a</math>, 
+<cmath>WM^2 + AM^2 = AW^2</cmath>
+<cmath>(b^2+4^2) + (4-a)^2 + (8-b)^2  = (a^2 + 8^2)</cmath>
+<math>a=1</math>, <math>b=2</math> , 
+<cmath>
+\triangle WMA = area(WXYZ) - \triangle WZA- \triangle WXM- \triangle MYA = 32 - 4-4-9 = \boxed{\textbf{(C) }15}
+</cmath>
+
+--- Solution 3 ---
+Assign ZA as <math>x</math>, then AY as <math>4 - x</math>. Assign XM as <math>y</math> and MY as <math>8 - y</math>. Since triangles WXM and WZA are equal in area, we can say <math>8x = 4y</math>, so <math>y = 2x</math>. Then, therefore, XM is <math>2x</math> and MY has length <math>8 - 2x</math>. We can use the Pythagorean theorem to find WM, which is actually <math>\sqrt{(2x)^2 + 4^2)} = \sqrt{4x^2 + 16}</math>. We don't factor it yet - we are going to find <math>x</math> again using the Pythagorean Theorem. Similarly, finding MA is just the square root of the squares of AY and MY individually, or <math>\sqrt{(8 - 2x)^2 + (4 - x)^2} = \sqrt{64 - 32x + 4x^2 + 16 - 8x + x^2} = \sqrt{5x^2 - 40x + 80}</math>. Then simply, WA is really <math>\sqrt{x^2 + 64}</math>.
+
+Now we have the three sides of the right triangle: <math>\sqrt{4x^2 + 16}</math>, <math>\sqrt{5x^2 - 40x + 80}</math>, and <math>\sqrt{x^2 + 64}</math>. Per the Pythagorean theorem again, we can see <math>(4x^2 + 16) + (5x^2 - 40x + 80) = (x^2 + 64)</math>. Combining like terms gives us <math>8x^2 - 40x + 32 = 0</math>, then dividing by 8 gives <math>x^2 - 5x + 4 = 0</math>. As this elementary and well-known quadratic gives us the roots of <math>1</math> and <math>4</math>, we can see it is a bit weird to have <math>x = 4</math>, as then point Z is point A. So we'll assume <math>x = 1</math>. We have two legs of the triangle by plugging in the sides with x in them, given that <math>x = 1</math>: <math>\sqrt{20}</math> and <math>\sqrt{45}</math>. We should know that <math>20 \cdot 45 = 900</math>, and <math>\sqrt{900} = 30.</math> Dividing by 2 reveals us our answer: <math>\boxed{\textbf{(C) }15}</math>
+
+
+
+note: to further prove that 1 is the correct root, note that setting A at Z makes WZA have area 0. Therefore, WXM also has to have an area of 0. This makes it impossible for angle WMA to be a right angle, as WMA would simply become a right triangle with half the area of WXYZ, making MWA the right angle.
+
+--- Solution 4 ---
+We are given <math>WX = 4</math>, <math>WZ = 8</math>. △ WXM and △ MYA have equal area, so let <math>XM = 2x</math> and <math>ZA = x</math>. <math>MY = 8-2x</math> and <math>AY = 4-x</math>. 
+From this, we can conclude that <math>\frac{MY}{AY} = \frac{8-2x}{4-x} = \frac{2}{1}</math>
+
+Since <math>WM</math> intersects parallel lines <math>WZ</math> and <math>XY</math>, <math>\angle ZWM = \angle WMZ</math>. <math>\angle ZWM + \angle MWX = 90^\circ</math>, so <math>180^\circ - 90^\circ = \angle WMZ + \angle AMY</math>. Thus, <math>\angle MWX = \angle AMY</math> and <math>\Delta WXM</math> 
+Corresponding sides of similar triangles are proportional, so <math>\frac{WX}{XM} = \frac{MY}{AY}</math> or <math>\frac{4}{2x} = \frac{2}{1}</math>. It is clear that <math>2x = 2</math>, and <math>x = 1</math>. Now, all we have to do is subtract the area of the rectangle by each of the three triangles.
+
+
+<math>\Delta WMA</math> = <math>8 \cdot 4</math> - <math>\left(\frac{1}{2} \cdot 4 \cdot 2 \right)</math> - <math>\left(\frac{1}{2} \cdot 8 \cdot 1 \right)</math> - <math>\left(\frac{1}{2} \cdot 6 \cdot 3 \right)</math>
+
+<math>\Delta WMA</math> = <math>32 - 4 - 4 - 9</math>
+
+<math>\Delta WMA</math> = <math>\boxed{\textbf{(C) }15}</math>
+
+--- Solution 5 ---
+Taking a look at the diagram bruh, points <imath>M</imath> and <imath>A</imath> seem to divide <imath>\overline{XY}</imath> and <imath>\overline{YZ}</imath> into <imath>1:3</imath> ratios. With this assumption in mind, <imath>XM=2</imath>, <imath>MY=6</imath>, <imath>YA=3</imath>, and <imath>AZ=1</imath>. This means that the areas of <imath>\triangle WXM</imath> and <imath>\triangle WZA</imath> are <imath>\frac{4(2)}{2}=4</imath> and <imath>\frac{8(1)}{2}=4</imath> respectively, and the area of <imath>\triangle MAY</imath> is <imath>\frac{6(3)}{2}=9</imath>. The area of rectangle <imath>WXYZ=4(8)=32</imath>, so subtracting the areas of triangles <imath>WXM</imath>, <imath>WZA</imath>, and <imath>MAY</imath>, we get that the area of <imath>\triangle WMA=32-4-4-9=\boxed{\textbf{(C) 15}}</imath>
+
+
+==China Test Solution (Finding <math>\triangle MAY</math>)==
+From solution 3, instead of finding the area of <math>\triangle WMA</math>, we instead find  the area of <math>\triangle MAY</math>. Then <math>x = 1</math> then we have <math>MA = 8 - 2x = 6</math>. Again, since <math>AY = 4 - x</math>, then <math>AY = 4 - 1 = 3.</math> The area of a triangle with legs <math>3</math> and <math>6</math> is <math>\frac{3 * 6}{2} = \boxed{9}</math>.
+
+
+-minor edits by fireball9746
+
+can someone pls explain why <math>\triangle MAY</math> has the same area as <math>\triangle WMA</math>
+
+^ To the person above:
+Under the problem, there’s a note that says some tests in China asked for the area of <math>\triangle MAY</math>. - trevian1
+
+
+=== Problem 8 ===
+What value of
+
+Choices: {'A': '25', 'B': '32', 'C': '36', 'D': '42', 'E': '48</math>'}
+Answer: C
+
+--- Solution 1 ---
+We have
+\begin{align*}
+\log_2x\cdot\log_3x&=2(\log_2x+\log_3x) \\
+1&=\frac{2(\log_2x+\log_3x)}{\log_2x\cdot\log_3x} \\
+1&=2(\frac{1}{\log_3x}+\frac{1}{\log_2x}) \\
+1&=2(\log_x3+\log_x2) \\
+\log_x6&=\frac{1}{2} \\
+x^{\frac{1}{2}}&=6 \\
+x&=36
+\end{align*}
+so <math>\boxed{\textbf{(C) }36}</math>
+
+--- Solution 2 ---
+\begin{align*}
+\frac{\log_2x \cdot \log_3x}{\log_2x+\log_3x} &= 2 \\[6pt]
+\log_2x \cdot \log_3x &= 2(\log_2x+\log_3x) \\[6pt]
+\log_2x \cdot \log_3x &= 2\log_2x + 2\log_3x \\[6pt]
+\frac{\log x}{\log 2} \cdot \frac{\log x}{\log 3} &= 2\frac{\log x}{\log 2} + 2\frac{\log x}{\log 3} \\[6pt]
+\frac{(\log x)^2}{\log 2 \cdot \log 3} &= \frac{2\log x \cdot \log 3 + 2\log x \cdot \log 2}{\log 2 \cdot \log 3} \\[6pt]
+(\log x)^2 &= 2\log x \cdot \log 3 + 2\log x \cdot \log 2 \\[6pt]
+(\log x)^2 &= 2\log x(\log 2 + \log 3) \\[6pt]
+\log x &= 2(\log 2 + \log 3) \\[6pt]
+x &= 10^{2(\log 2 + \log 3)} \\[6pt]
+x &= (10^{\log 2} \cdot 10^{\log 3})^2 \\[6pt]
+x &= (2 \cdot 3)^2 = 6^2 = \boxed{\textbf{(C) }36}
+\end{align*}
+
+--- Solution 3 ---
+Let <math>a=\log_2x</math> and <math>b=\log_3x</math>. This gives us the equation <cmath>\frac{ab}{a+b}=2.</cmath>
+
+Then, from our definitions of <math>a</math> and <math>b</math>, <math>2^a=x</math> and <math>3^b=x</math>, so <math>2^a=3^b.</math> Taking the logarithm base <math>3</math> of both sides of this equation gives us <math>\log_3 2^a=b</math>, hence <math>a \log_3 2=b.</math> 
+Now, we substitute <math>a \log_3 2</math> for <math>b</math> in the equation, which gives <cmath>\frac{a \cdot a \log_3 2}{a+a \log_3 2}=2.</cmath>Notice that we can factor out an <math>a</math> in the numerator and denominator, if <math>a \neq 0,</math> and doing so yields <cmath>\frac{a \log_3 2}{1+\log_3 2}=2.</cmath> We know that <math>1= \log_3 3,</math> so putting that in gives us <cmath>\frac{a \log_3 2}{\log_3 3+\log_3 2}=2 \implies \frac{a \log_3 2}{\log_3 6}=2.</cmath>So, <math>a=2 \cdot  \frac{\log_3 6}{\log_3 2}</math>, which, using the change of base formula, is equivalent to <math>2 \cdot \log_2 6,</math> thus, <cmath>a=2 \cdot \log_2 6= \log _2 6^2= \log _2 36.</cmath> Finally, using our original definition of <math>a,</math> we have <cmath>a = \log_2 x=\log_2 36,</cmath> so <math>x=\boxed{\textbf{(C) }36}.</math>
+
+
+=== Problem 9 ===
+A dartboard is the region
+
+Choices: {'A': '39', 'B': '71', 'C': '73', 'D': '75', 'E': '135 </math>'}
+Answer: B
+
+--- Solution 1 ---
+Inequalities of the form <math>|x|+|y| \le 8</math> are well-known and correspond to a square in space with centre at origin and vertices at <math>(8, 0)</math>, <math>(-8, 0)</math>, <math>(0, 8)</math>, <math>(0, -8)</math>.
+The diagonal length of this square is clearly <math>16</math>, so it has an area of 
+<cmath>\frac{1}{2} \cdot 16 \cdot 16 = 128</cmath>
+Now,
+<cmath>(x^2 + y^2 - 25)^2 \le 49</cmath>
+Converting to polar form,
+<cmath>r^2 - 25 \le 7 \implies r \le \sqrt{32},</cmath>
+and
+<cmath>r^2 - 25 \ge -7\implies r\ge \sqrt{18}.</cmath>
+
+The intersection of these inequalities is the circular region <math>T</math> for which every circle in <math>T</math> has a radius between <math>\sqrt{18}</math> and <math>\sqrt{32}</math>, inclusive. The area of such a region is thus <math>\pi(32-18)=14\pi.</math> The requested probability is therefore <math>\frac{14\pi}{128} = \frac{7\pi}{64},</math> yielding <math>(m,n)=(7,64).</math> We have <math>m+n=7+64=\boxed{\textbf{(B)}\ 71}.</math>
+
+-AbhiSood1234, countmath1
+
+--- Solution 2 ---
+Expressing the Area of Region \( B \)
+
+Region \( B \) consists of points where \( |x| + |y| \le 8 \)
+
+In each quadrant, this can be expressed by the following functions:
+
+First quadrant: \( y = 8 - x \)
+Second quadrant: \( y = 8 + x \)
+Third quadrant: \( y = -8 - x \)
+Fourth quadrant: \( y = -8 + x \)
+
+In the first quadrant, \( x \) ranges from 0 to 8, and \( y \) ranges from 0 to \( 8 - x \). Thus, the area in the first quadrant is:
+<cmath> 
+\text{Area of first quadrant} = \int_0^8 \int_0^{8 - x} \, dy \, dx 
+</cmath>
+<cmath> 
+= \int_0^8 [y]_{y=0}^{y=8-x} \, dx = \int_0^8 (8 - x) \, dx 
+</cmath>
+<cmath> 
+= \left[ 8x - \frac{x^2}{2} \right]_0^8 = 64 - 32 = 32 
+</cmath>
+The total area of region \( B \) is:
+<cmath> 
+\text{Area of } B = 4 \times 32 = 128 
+</cmath>
+
+Expressing the Area of Region \( T \)
+Region \( T \) is defined by the inequality \( (x^2 + y^2 - 25)^2 \le 49 \), which can be rewritten as:
+<cmath> 
+18 \le x^2 + y^2 \le 32 
+</cmath>
+
+To find the area, we switch to polar coordinates with \( x = r \cos \theta \) and \( y = r \sin \theta \), where \( x^2 + y^2 = r^2 \). Here, \( r \) ranges from \( \sqrt{18} \) to \( \sqrt{32} \), and \( \theta \) ranges from 0 to \( 2\pi \).
+
+The area of \( T \) can then be found by:
+<cmath> 
+\text{Area of } T = \int_0^{2\pi} \int_{\sqrt{18}}^{\sqrt{32}} r \, dr \, d\theta 
+</cmath>
+<cmath> 
+= \int_0^{2\pi} \left[ \frac{r^2}{2} \right]_{r=\sqrt{18}}^{r=\sqrt{32}} \, d\theta = \int_0^{2\pi} \left( \frac{32}{2} - \frac{18}{2} \right) \, d\theta 
+</cmath>
+<cmath> 
+= \int_0^{2\pi} 7 \, d\theta = 14\pi 
+</cmath>
+
+The probability \( P \) that a dart lands in region \( T \) is the area of \( T \) divided by the area of \( B \):
+<cmath> 
+P = \frac{\text{Area of } T}{\text{Area of } B} = \frac{14\pi}{128} = \frac{7\pi}{64} 
+</cmath>
+
+So the probability is of the form \( \frac{m}{n} \pi \), where \( m = 7 \) and \( n = 64 \), so \( m + n = 7 + 64 = 71 \).
+
+<cmath> 
+\boxed{\textbf{(B)}\ 71}
+</cmath>
+
+--- Solution 3 ---
+[[Image: 2024_AMC_12B_P09.jpeg|thumb|center|600px|]]
+
+
+=== Problem 10 ===
+A list of 9 real numbers consists of
+
+Choices: {'A': '1', 'B': '2', 'C': '3', 'D': '4', 'E': '\\text{infinitely many}</math>'}
+Answer: C
+
+--- Solution 1 ---
+<math>\textbf{First Case}</math>
+
+We start off by knowing that there must exist an ordered pair \( (0,y,z) \) and a big term 7 such that the range is satisfied and the median could also be satisfied. Because \( x \le y \le z \), we say \( x=0 \). Then, we get the sum 24.8. We need \( \frac{24.8 +y +z}{9} \in \mathbb{Z} \). This means that we need the nearest multiple of 9, which is 36, and we get \( y+z = 11.2 \). We need one of these to be the median, WLOG say \( y \). Then, \( y \in \{4,5\} \). So if \( y=4 \), we get \( z=7.2 \), and if \( y=5 \), we get 6.2. We see that if \( z=6.2 \), the range will still remain as 7, and therefore the one ordered triple \( (0,5,6.2) \) satisfies this.
+
+We know that the median can be \( y \), so we have \( y \in \{4,5\} \). We do casework on 4 and 5.
+
+<math>\textbf{Case 1}</math>
+
+Say \( y=4 \). Then, because we already know there exists an ordered triple where \( z \) is not the largest, there must exist at least one ordered triple where \( z \) is, so we say \( z-x=7 \). We also know that the mean must be divisible by 9. Quickly summing each number up we get 24.8. The next number divisible by 9 is 36. We add \( y \) to get 28.8. We then know \( x+z=36-28.8=7.2 \). The smallest values give \( x=0.1 \) and \( z=7.1 \). This satisfies our constraints.
+
+We don't want any errors, so we check the next sum, which is 45. We get then \( 7.2=x+z \) and \( z-x=7 \). This gives \( x=4.6 \) and \( z=11.6 \). This is a contradiction, as \( x \le y \le z \), and the values incrementally become too large, and therefore we only have one ordered triple for this case, which is \( (0.1,4,7.1) \)
+
+<math>\textbf{Case 2}</math>
+
+We now check \( y=5 \). This makes our sum 29.8. The nearest multiple of 9 is 36, again. This gives us \( 6.2 = x+z \) and \( z-x=7 \). Solving gives us -0.4 and 6.6. This however doesn't work, as 6.6 is not the greatest value.
+
+We decide to check the next multiple of 9, which is 45. This gives us \( 15.2 = x+z \) and \( z-x=7 \). This gives us \( x=4.1 \) and \( z=11.1 \). This also doesn't work, as \( x \) becomes incrementally larger, and therefore there are no ordered triples that satisfy this.
+
+<math>\textbf{Last Case}</math>
+
+We have one more case, and that is \(x\) is not the first number, but \( z \) is the last, meaning \( z-1=7 \), and \( z=8 \). This means that \( \frac{24.8+x+y+z}{9} \in \mathbb{Z} \). So, if \( z=8 \), we get 32.8. We again see that we need the nearest multiple of 9 which is 36, and we get \( 3.2 = x+y \). We see that \( x \) and \( y \) still need to be a integer median and 3.2 is too small, so 36 cannot work. We try 45, and see \( 12.2 = x+y \). After some trial and error, we see that \( x=6 \) and \( y=6.2 \), giving us the ordered triple \( (6,6.2,8) \). Continuing as before shows us that \( x \) again incrementally increases, and therefore we have only one ordered triple.
+
+We have <math>\boxed{\textbf{(C) }3}</math> ordered triples. These are \( (0.1,4,7.1) \), \( (0,5,6.2) \), and \( (6,6.2,8) \).
+
+--- Solution 2 ---
+This is a more advanced solution, but it gives the answer really fast. Plus, it is always better to expand your knowledge.
+
+This solution is so overpowered that you don't even need to sum the decimals up. :-)
+
+Consider the arrangements like a circle. There are 3 terms; \( x \), \( y \), and \( z \), so we arrange them into a circle. We use the circular gap theorem to solve this, which is 
+<cmath>
+C(nA) = \frac{n}{k} \binom{n-k-1}{k-1}
+</cmath>
+
+We see that there are 3 terms. We need either 1 adjacent from the other, two adjacent from one, or three adjacent.
+
+Also keep in note that if the combinatorial part of \( C(nA) \) is invalid, it is just 0.
+
+We then have \( k \in \{1, 2, 3\} \).
+
+We then have 3 cases,
+
+<math>\textbf{Case 1:}</math> <math>k \in \{1\}</math>
+
+We have \(  \frac{3}{1} \cdot \binom{3-1-1}{1-1} = \frac{3}{1} \cdot 1 = 3 \) ways to do this.
+
+<math>\textbf{Case 2:}</math> <math>k \in \{2\}</math>
+
+We have \( \frac{3}{2} \cdot \binom{3-2-1}{2-1} \). The combinatorial part of this is \( \binom{0}{1} \), which is invalid and therefore 0. Therefore there are \( \frac{3}{2} \times 0 = 0 \) cases.
+
+<math>\textbf{Case 3:}</math> <math>k \in \{3\}</math>
+
+We have \( \frac{3}{3} \cdot \binom{3-3-1}{3-1} \). The combinatorial part of this is \( \binom{-1}{2} \), and again, this is invalid, and therefore 0. There is then \( 1 \times 0 = 0 \) cases.
+
+Our answer is \( 3 + 0 + 0 =  \) <math>\boxed{\textbf{(C) }3}</math>
+
+
+===Disclaimer Solution 2===
+This theorem requires practice to use and when to use it. For example, if they said that this list is non circular or is strictly linear, then we may not solve it like this. However, these specifications have not been said in this problem.
+
+For disclaimer, don't use this formula everywhere. A clear example is that in a problem involving linear arrangements, this method will never work.
+
+Below are some practice problems that I highly recommend you try so you can understand this theorem and its applications better.
+
+Check them below.
+
+[https://artofproblemsolving.com/wiki/index.php/2014_AMC_10B_Problems/Problem_24 2014 AMC 10B Q24]
+
+[https://artofproblemsolving.com/wiki/index.php/2017_AMC_10B_Problems/Problem_18?srsltid=AfmBOoorbWvdWI5mJYkf_XsGNK8N7JEX7G2S4w13Uy_lkqkFIXMbqJQc 2017 AMC 10B Q18]
+
+[https://artofproblemsolving.com/wiki/index.php/1983_AIME_Problems/Problem_7?srsltid=AfmBOoo2Rma8yq6kbV0holdmtaa2Zr2ezKPOD6cPyGa0Xs8GcMtwEf3J 1983 AIME Q7]
+
+Also, it is helpful to note \( C_n(A) = \frac{n}{k} \binom{n-k-1}{k-1} \) = \( \binom{n}{2k} \).
+
+--- Solution 3 ---
+The sum of the six existing numbers is <math>24.8</math>. For the mean to be an integer, the sum of the remaining three numbers <math>x,y,z</math> and the remaining six must be divisible by <math>9</math>; thus <math>x+y+z</math> must equal either <math>2.2,11.2,20.2</math>. However, one of <math>x,y,z</math> must be the median since the middle four numbers in the original set are all non-integral. As a result, we can eliminate <math>2.2</math> since the sum would be too small to allow for one of <math>x,y,z</math> to be the median (notice that negative numbers are not permitted since the range would be greater than <math>7</math>). This leaves two cases.
+
+For the <math>x+y+z=20.2</math> case, notice that all three must be less than or equal to <math>8</math> due to the range restriction. However, also notice that <math>y</math> and <math>z</math> must be on the higher end of the range, meaning that the new median would have to fall between the new middle numbers <math>5.2</math> and <math>6.2</math>. Thus <math>x=6</math>, and we can manipulate the numbers to make the range <math>7</math> by making <math>z=8</math> and thus <math>y=6.2</math>, providing one case in <math>(6,6.2,8)</math>.
+
+For the <math>x+y+z=11.2</math> case, we note that the average of the three would fall near the median, signaling that one of the numbers would be the median, one would fall lesser than the median, and one would reach greater than the median. Thus we let the median be <math>y</math>. Since adding a number to each side of the set would not change the median, we know that the median must fall between the two middle numbers <math>3.2,5.2</math>. Then we find two triples <math>(0.1,4,7.1)</math> and <math>(0,5,6.2)</math>, resulting in <math>\boxed{\textbf{(C) }3}</math>.
+
+--- Solution 4 ---
+We can do casework on the range. We have four possible cases:
+
+<math>x<1</math>, <math>z<7</math>
+
+<math>x>1</math>, <math>z<7</math>
+
+<math>x<1</math>, <math>z>7</math>
+
+<math>x>1</math>, <math>z>7</math>
+
+These encapsulate all possible values of <math>x</math> and <math>z</math> we can choose, so we're not leaving anything out. As we'll see, the problem will become simpler this way. Since we want integer mean, first note the sum of the values given to be <math>24.8</math>: when we add <math>x,y,z</math>, it must be a multiple of <math>9</math> to yield an integer mean. Also remember that the median of an increasing list of <math>9</math> numbers is the fifth number.
+
+<math>\textbf{Case 1:}</math>
+
+Since <math>x<1</math>, <math>z<7</math>, <math>x</math> must be the minimum of this list of numbers and <math>7</math> is the max: so the range is <math>7-x</math>. This must be equal to <math>7</math>, so <math>x=0</math>. Now we try to make the median an integer.
+With <math>x=0</math>, the fifth smallest number currently is <math>5.2</math>, which is clearly not an integer. But if we stick <math>y</math> or <math>z</math> in between <math>3.2</math> and <math>5.2</math>, then the median will be an integer. So let one of <math>y,z</math> be <math>4</math>: then the sum of all the numbers we have so far is <math>28.8</math>. To make this a multiple of <math>9</math>, the last number has to be <math>7.2</math> to add up to <math>36</math>. However, we said that <math>z<7</math>, so this violates the bounds of this case. So then we set <math>y=5</math>, so our sum is <math>29.9</math>: then <math>z=36-29.9 = 6.2</math>. Here everything checks out, so for this case there is one solution: <math>(0,5,6.2)</math>.
+
+<math>\textbf{Case 2:}</math>
+
+Since <math>x>1</math> and <math>z<7</math>, the minimum is <math>1</math> and the maximum is <math>7</math>. Thus the range is always <math>6</math>, but we need the range to be <math>7</math>, so this case has no solutions.
+
+<math>\textbf{Case 3:}</math>
+
+We have <math>x<1, z>7</math>. Our minimum is <math>x</math> and our maximum is <math>z</math>, so the range is <math>z-x = 7</math>. Since <math>x<1</math>, the median still falls on <math>5.2</math>, so <math>y</math> can be either <math>4</math> or <math>5</math> to make the median an integer. For now, suppose <math>y=4</math>. Our sum is now <math>28.8+x+z</math>, which we set to the nearest multiple of <math>9:</math> <math>36</math>. Thus <math>x+z = 7.2</math>. Now we have a system of equations: we add them to get <math>2z = 14.2 \implies z = 7.1 \implies x = 0.1</math>. Since the values of <math>z</math> and <math>x</math> satisfy our case, this is a possible solution.
+
+Now suppose <math>y=5</math>. Our sum is <math>29.8+x+z</math>, which must be equal to <math>36</math>, so <math>x+z = 6.2</math>. Adding the equations, we have <math>2z = 13.2 \implies z = 6.6</math>. But this violates our assumption that <math>z>7</math>, so this has no solutions.
+
+Therefore this case has one solution: <math>(0.1,4,7.1)</math>.
+
+<math>\textbf{Case 4:}</math>
+
+Since <math>x>1, z>7</math>, the max is <math>z</math> and the min is <math>1</math>. Thus <math>z-1 = 7 \implies z = 8</math>. Now the median is between <math>5.2</math> and <math>6.2</math>, so <math>x</math> or <math>y</math> must take the value <math>6</math>. Our sum is now <math>24.8+6+8 = 38.8</math>, and adding the last number has to equal <math>45</math>. Thus the last number is <math>6.2</math>, and this yields one solution: <math>(6,6.2,8)</math>.
+
+
+
+
+Therefore we've found three solutions. These cases encompass all possible real values of <math>x</math> and <math>z</math>, so we know we've left nothing out. The answer is <math>\boxed{\textbf{(C) }3}</math>
+
+--- Solution 5 ---
+We can start doing casework on the numbers. Notice that the median can either be four, five or six because there has to be one or two numbers on one side. We can start bashing everything out, starting from letting <math>x=a, y=4, z=7+a</math>. Now plugging into the sequence, we get that <math>a, 1, 2.2, 3.2, 4, 5.2, 6.2, 7, 7+a</math>. Notice that the sum of the numbers (not including <math>x, y, z</math> is <math>24.8</math>. To make this mean an integer, <math>x+y+z</math> must have a decimal <math>0.2</math> when added up. Now, plugging in our values into the mean gets us <math>35.8+2a=9k</math> for some integer <math>k</math>. Notice that <math>0\leq a\leq 1</math>, so the only value for <math>a</math> is <math>0.1</math>, so we found our first ordered triplet, <math>(0.1, 4, 7.1)</math>. Let’s make the median <math>5</math> now. Then we have to put <math>x</math> and one side and <math>z</math> on the other to “balance” the numbers, or make it so that there are 4 numbers on each side of <math>5</math>. Now, we can see that <math>x</math> is <math>0</math>, and solving for <math>z</math>, we get that <math>z=6.2</math>. We get our second triple is <math>(0, 5, 6.2)</math>. Now coming to our third case scenario, we use <math>6</math> as the median. Clearly it means that <math>x</math> has to be the median, so that <math>y</math> and <math>z</math> can be on the same side as <math>x</math>. <cmath>1, 2.2, 3.2, 5.2, 6, 6.2, y, 7, z</cmath> We will use this diagram. Notice that <math>z</math> has to be <math>8</math>, and solving for <math>y</math> yields <math>y=6.2</math>, so we found our third and last triplet, <math>(6, 6.2, 8)</math>, meaning that <math>\boxed{C}</math> is the right answer.
+
+
+==Solution 6 (Cheese）==
+
+Answer choice E is too big and answer choices A,B are both too small, so get rid of A,B, and E. Then, after checking the answer choices respectively, you get 3 as the final answer. Therefore, the answer is answer choice <imath>\boxed{\textbf{(C) }3}</imath>.
+
+
+Note: The answer to AMC problems is never, EVER infinitely many. Also, the top part wasn't mine, it was somebody else. 
+
+
+"Worst Solution EVER"
+-CheerfulFrog
+
+==Solution 7 (A (still interesting but slightly better) cheese)==
+
+Ignore the fact that \( x \le y \le z \). Then we know that there should be some ordered pair \((0,y,z)\), \((x,0,z)\), and \((x,y,0)\), where we can permute \( x \), \( y \), or \( z \) such that they do satisfy \( x \le y \le z \). Our answer is then \(\boxed{\textbf{(C) }3}\).
+
+
+=== Problem 11 ===
+Let
+
+Choices: {'A': '\\frac{11}{45}', 'B': '\\frac{22}{45}', 'C': '\\frac{89}{180}', 'D': '\\frac{1}{2}', 'E': '\\frac{91}{180} </math>'}
+Answer: E
+
+--- Solution 1 ---
+Add up <math>x_1</math> with <math>x_{89}</math>, <math>x_2</math> with <math>x_{88}</math>, and <math>x_i</math> with <math>x_{90-i}</math>. Notice
+<cmath>x_i+x_{90-i}=\sin^2(i^{\circ})+\sin^2((90-i)^{\circ})=\sin^2(i^{\circ})+\cos^2(i^{\circ})=1 </cmath>
+by the Pythagorean identity. Since we can pair up <math>1</math> with <math>89</math> and keep going until <math>44</math> with <math>46</math>, we get
+<cmath>x_1+x_2+\dots+x_{90}=44+x_{45}+x_{90}=44+\left(\frac{\sqrt{2}}{2}\right)^2+1^2=\frac{91}{2} </cmath>
+Hence the mean is <math>\boxed{\textbf{(E) }\frac{91}{180}}</math>
+
+--- Solution 2 ---
+We can add a term <math>x_0</math> into the list, and the total sum of the terms won't be affected since <math>x_0=0</math>. Once <math>x_0</math> is added into the list, the average of the <math>91</math> terms is clearly <math>\frac{1}{2}</math>. Hence the total sum of the terms is <math>\frac{91}{2}</math>. To get the average of the original <math>90</math>, we merely divide by <math>90</math> to get <math>\frac{91}{180}</math>. Hence the mean is <math>\boxed{\textbf{(E) }\frac{91}{180}}</math>
+
+This method is called constructing a variable (although most of you already know).
+
+--- Solution 3 ---
+If we use radians to rewrite the question, we have: <math>x_n=\sin^2\left(\frac{n\pi}{2\times90}\right)</math>. Notice that <math>90</math> have no specialty beyond any other integers, so we can use some inductive processes.
+
+If we change <math>90</math> to <math>2</math>: <cmath>\frac{\sin^2\left(\frac{\pi}{4}\right)+\sin^2\left(\frac{2\pi}{4}\right)}{2}=\frac{\left(\frac{1}{\sqrt{2}}\right)^2+\left(1\right)^2}{2}=\frac{\frac{1}{2}+1}{2}=\frac{3}{4}\,.</cmath>
+
+If we change <math>90</math> to <math>3</math>: <cmath>\frac{\sin^2\left(\frac{\pi}{6}\right)+\sin^2\left(\frac{2\pi}{6}\right)+\sin^2\left(\frac{3\pi}{6}\right)}{3}=\frac{\left(\frac{1}{2}\right)^2+\left(\frac{\sqrt{3}}{2}\right)^2+\left(1\right)^2}{3}=\frac{\frac{1}{4}+\frac{3}{4}+1}{3}=\frac{2}{3}=\frac{4}{6}\,.</cmath>
+
+By intuition, although not rigorous at all, we can guess out the solution if we change <math>90</math> into <math>k</math>, we get <math>\frac{k+1}{2k}</math>. Thus, if we plug in <math>k=90</math>, we get <math>\frac{90+1}{2\times90}=\boxed{\mathbf{(E)}\,\frac{91}{180}}</math>
+
+--- Solution 4 ---
+[[Image: 2024_AMC_12B_P11.jpeg|thumb|center|600px|]]
+
+--- Solution 5 ---
+Note that <math>\sin^2(x) = \frac{1 - \cos(2x)}{2}</math>. We want to determine <math>\frac{1}{90}\sum_{n = 1}^{90} \sin^2(n^{\circ})</math>. 
+
+<cmath>
+\begin{align*}
+&= \frac{1}{90} \sum_{n = 1}^{90} \frac{1 - \cos(2n)}{2} \\
+&= \frac{1}{2} -\frac{1}{180}\sum_{n = 1}^{90} \cos(2n) \\
+\end{align*}
+</cmath>
+
+Graphing <math>\cos(x)</math>, we can pair <math>\cos(2^{\circ}) + \cos(178^{\circ}) = 0</math> and so on. We are left with <math>\cos(90^{\circ}) + \cos(180^{\circ}) = -1</math>. 
+
+Our answer is <math>\frac{1}{2} + \frac{1}{180} = \boxed{\textbf{(E) }\frac{91}{180}}</math>
+
+--- Solution 6 ---
+Let \( f(n) = \sin^2(n^\circ) \)
+
+The function \( f(n) = \sin^2(n) \) is continuous for all real values of \( n \). We want to find the average value of \( f(n) \) over the interval: <math>\left[\frac{\pi}{180}, \frac{\pi}{2}\right]</math> 
+
+While there are 90 discrete terms meaning \( f(n)\) isn't actually continuous, the interval is very small compared to 90, so calculating the average over EVERY term in the interval will be very close to calculating the average over 90 terms, so we can instead calculate the average value from <math>\frac{\pi}{180}</math> to <math>\frac{\pi}{2}</math>
+
+The average value of \( f(n) \) is <math>\frac{1}{\frac{\pi}{2} - \frac{\pi}{180}} \int_{1\cdot\frac{\pi}{180}}^{90\cdot\frac{\pi}{180}} \sin^{2}(x) \, dx = \frac{180}{89\pi} \int_{\pi/180}^{\pi/2} \sin^2(x) \, dx</math>
+
+
+We can solve this integral using the power-reduction identity: <math>\sin^2(x) = \frac{1 - \cos(2x)}{2}</math>
+
+<math>\frac{180}{89\pi} \int_{\pi/180}^{\pi/2} \frac{1 - \cos(2x)}{2} \, dx</math> 
+<math>= \frac{180}{89\pi} \left.\left(\frac{x}{2} - \frac{\sin(2x)}{4}\right)\right|_{\pi/180}^{\pi/2}</math> 
+<math>= \frac{180}{89\pi} \left[ \left(\frac{\pi}{4} - 0\right) - \left(\frac{\pi}{360} - \frac{\sin\left(\frac{\pi}{90}\right)}{4}\right) \right]</math> 
+<math>= \frac{180}{89\pi} \left( \frac{89\pi}{360} + \frac{\sin\left(\frac{\pi}{90}\right)}{4} \right)</math>
+
+
+The taylor series of <math>\sin(\theta) = \theta - \frac{\theta^3}{6} + \frac{\theta^5}{120} - \cdots</math>
+
+Because <math>\sin\left(\frac{\pi}{90}\right)</math> is a small angle, we can use a first-order taylor approximation and approximate <math>\sin\left(\frac{\pi}{90}\right) \approx \frac{\pi}{90}</math>
+
+Hence, our result is <math>\frac{180}{89\pi}\left(\frac{89\pi}{360} + \frac{\pi}{360}\right) = \frac{180}{89\pi}\cdot\frac{90\pi}{360} = \frac{180}{89\pi}\cdot\frac{\pi}{4} = \frac{45}{89}</math>
+
+
+While <math>\frac{45}{89}</math> isn't an option, it is greater than <math>\frac{1}{2}</math>, and out of the given options, only <math>\frac{91}{180}</math> is greater than <math>\frac{1}{2}</math> (We approximated <math>\sin\left(\frac{\pi}{90}\right)</math> with a first-order taylor approximation and calculated the average value over the interval instead of over 90 discrete values, but it's close enough to <math>\frac{91}{180}</math>).
+
+So the answer is <math>\boxed{\textbf{(E) }\frac{91}{180}}</math>
+
+-sourodeepdeb
+
+
+=== Problem 12 ===
+Suppose
+
+Choices: {'A': '~\\frac{3}{4}', 'B': '~1', 'C': '~\\frac{4}{3}', 'D': '~\\frac{3}{2}', 'E': '~\\frac{5}{3}</math>'}
+Answer: D
+
+--- Solution 1 ---
+By making a rough estimate of where <math>z</math>, <math>z^2</math>, and <math>z^3</math> are on the complex plane, we can draw a pretty accurate diagram (like above.) 
+
+Here, points <math>Z_1</math>, <math>Z_2</math>, and <math>Z_3</math> lie at the coordinates of <math>z</math>, <math>z^2</math>, and <math>z^3</math> respectively, and <math>O</math> is the origin.
+
+We're given <math>|z|=2</math>, so <math>|z^2|=|z|^2=4</math> and <math>|z^3|=|z|^3 = 8</math>. This gives us <math>OZ_1=2</math>, <math>OZ_2=4</math>, and <math>OZ_3=8</math>.
+
+Additionally, we know that <math>\angle{Z_1OZ_2}\cong\angle{Z_2OZ_3}</math> (since every power of <math>z</math> rotates around the origin by the same angle.) We set these angles equal to <math>\theta</math>.
+
+We have that 
+\begin{align*}
+[OZ_1Z_2Z_3]&=[OZ_1Z_2]+[OZ_2Z_3] \\
+&=\frac{1}{2}\cdot2\cdot4 \sin\theta+\frac{1}{2}\cdot4\cdot8 \sin\theta \\
+&=4\sin\theta+16\sin\theta \\
+&=20 \sin\theta
+\end{align*}
+
+Since this is equal to <math>15</math>, we have <math>20\sin\theta=15</math>, so <math>\sin\theta=\frac{3}{4}</math>.
+
+Thus, <math>\text{Im}(z)=|z|\sin(\theta)=2(\frac{3}{4})=\boxed{\textbf{(D) }\frac{3}{2}}</math>.
+
+--- Solution 2 ---
+We have the vertices:
+
+<math> 0 </math> at<math>(0, 0)</math> , <math> z </math> at<math>(2\cos \theta, 2\sin \theta)</math> , <math> z^2 </math> at<math>(4\cos 2\theta, 4\sin 2\theta)</math> , <math> z^3 </math> at<math>(8\cos 3\theta, 8\sin 3\theta)</math>
+
+The Shoelace formula for the area is:
+<cmath>
+= \frac{1}{2} \left| x_1 y_2 + x_2 y_3 + x_3 y_4 + x_4 y_1 - (y_1 x_2 + y_2 x_3 + y_3 x_4 + y_4 x_1) \right|.
+</cmath>
+<cmath>
+= \frac{1}{2} \left| 0 + 2\cos \theta \cdot 4\sin 2\theta + 4\cos 2\theta \cdot 8\sin 3\theta - (2\sin \theta \cdot 4\cos 2\theta + 4\sin 2\theta \cdot 8\cos 3\theta) \right|.
+</cmath>
+<cmath>
+= \frac{1}{2} \left| 8\cos \theta \sin 2\theta + 32\cos 2\theta \sin 3\theta - 8\sin \theta \cos 2\theta - 32\sin 2\theta \cos 3\theta \right|
+</cmath>
+<cmath>
+= \frac{1}{2} \left|(8\cos \theta \sin 2\theta - 8\sin \theta \cos 2\theta)  + (32\cos 2\theta \sin 3\theta - 32\sin 2\theta \cos 3\theta)  \right|</cmath>
+<cmath>
+= \frac{1}{2} \left|8\sin(2\theta - \theta)  + 32\sin(3\theta - 2\theta)  \right|
+</cmath>
+<cmath>
+= \frac{1}{2} \left| 8\sin \theta + 32\sin \theta \right| 
+</cmath>
+<cmath>= \frac{1}{2} \left| 40\sin \theta \right|
+</cmath>
+Given that the area is 15:
+<cmath>
+\frac{1}{2} \left| 40\sin \theta \right| = 15.
+</cmath>
+<cmath>
+20|\sin \theta| = 15 \implies |\sin \theta| = \frac{3}{4}.
+</cmath>
+Since <math>  \theta </math> corresponds to a complex number <math> z </math> with a positive imaginary part, we have:
+
+<cmath>
+\sin \theta = \frac{3}{4}.
+</cmath>
+<cmath>
+\text{Imaginary part} = 2\sin \theta = 2 \times \frac{3}{4} = \boxed{\textbf{(D) }\frac{3}{2}}.
+</cmath>
+
+--- Solution 3 ---
+Let <math>z = a + bi</math>, so <math>z^2 = a^2 + 2abi - b^2</math> and <math>z^3 = a^3 + 3a^2 bi - 3ab^2 - b^3 i</math>. Therefore, converting <math>0, z, z^2, z^3</math> from complex coordinates to Cartesian coordinates gives us the following.
+
+<cmath>(0, 0)</cmath>
+
+<cmath>(a, b)</cmath>
+
+<cmath>(a^2 - b^2, 2ab)</cmath>
+
+<cmath>(a^3 - 3ab^2, 3a^2 b - b^3)</cmath>
+
+The Shoelace Theorem tells us that the area is
+
+<cmath>\frac{1}{2} \Bigg| \Big[ (0)(b) + (a)(2ab) + (a^2 - b^2)(3a^2 b - b^3) + (a^3 - 3ab^2)(0) \Big] - \Big[ (0)(a) + (b)(a^2 - b^2) + (2ab)(a^3 - 3ab^2) + (3a^2 b - b^3)(0) \Big] \Bigg|</cmath>
+
+<cmath>= \frac{1}{2} \Bigg| \Big[ (0) + (2a^2 b) + (3a^4 b - a^2 b^3 - 3a^2 b^3 + b^5) + (0) \Big] - \Big[ (0) + (a^2 b - b^3) + (2a^4 b - 6a^2 b^3) + (0) \Big] \Bigg|</cmath>
+
+<cmath>= \frac{1}{2} \Big| [3a^4 b - 4a^2 b^3 + b^5 + 2a^2 b] - [2a^4 b - 6a^2 b^3 + a^2 b - b^3] \Big|</cmath>
+
+<cmath>= \frac{1}{2} | a^4 b + 2a^2 b^3 + b^5 + a^2 b + b^3 |.</cmath>
+
+We know that <math>|z| = |a + bi| = \sqrt{a^2 + b^2} = 2</math>, so <math>a^2 = 4 - b^2</math>. Substituting this gives us this:
+
+<cmath>\frac{1}{2} \Big| (4 - b^2)^2 b + 2(4 - b^2)b^3 + b^5 + (4 - b^2)b + b^3 \Big|</cmath>
+
+<cmath>= \frac{1}{2} \Big| (16b - 8b^3 + b^5) + (8b^3 - 2b^5) + b^5 + (4b - b^3) + b^3 \Big|</cmath>
+
+<cmath>= \frac{1}{2} | 0b^5 + 0b^3 + 20b|</cmath>
+
+<cmath>= 15.</cmath>
+
+In other words,
+
+<cmath>|10b| = 15</cmath>
+
+<cmath>b = \textbf{(D) } \frac{3}{2}.</cmath>
+
+
+=== Problem 13 ===
+There are real numbers
+
+Choices: {'A': '-54', 'B': '-46', 'C': '-34', 'D': '-16', 'E': '16 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Adding up the first and second equation, we get:
+<cmath>
+\begin{align*}
+h + k &= 2x^2 + 2y^2 - 16x - 4y \\
+&= 2x^2 - 16x + 2y^2 - 4y \\
+&= 2(x^2 - 8x) + 2(y^2 - 2y) \\ 
+&= 2(x^2 - 8x + 16) - (2)(16) + 2(y^2 - 2y + 1) - (2)(1) \\
+&= 2(x - 4)^2 + 2(y - 1)^2 - 34
+\end{align*}
+</cmath>
+All squared values must be greater than or equal to <imath>0</imath>. As we are aiming for the minimum value, we set the two squared terms to be <imath>0</imath>. 
+
+This leads to <imath>\min(h + k) = 0 + 0 - 34 = \boxed{\textbf{(C)} -34}</imath>
+
+--- Solution 2 ---
+[[Image:2024_amc_12B_P13_V2.PNG|thumb|center|500px|]]
+
+<cmath>(x-3)^2 + (y-4)^2 = h + 25 </cmath>
+<cmath>(x-5)^2 + (y+2)^2 = k + 29 </cmath>
+The distance between 2 circle centers is <cmath>(O_{1}O_{2})^2 = (5-3)^2 + (4 - (-2)) ^2 = 40 </cmath>
+The 2 circles must intersect given there exists one or more pairs of (x,y), connecting <math>O_{1}O_{2}</math> and any pair of the 2 circle intersection points gives us a triangle with 3 sides, then    
+<cmath> radius (O_{1}) + radius (O_{2}) \geq O_{1}O_{2} </cmath> 
+<cmath>\sqrt{h+25} + \sqrt{k+29}   \geq  2\cdot\sqrt{10} </cmath>
+Note that they will be equal if and only if the circles are tangent,
+
+Applying the AM-GM inequality (<math> 2(a^2 + b^2) \geq (a+b)^2</math>) in the steps below, we get  
+<cmath>
+  h + k + 54 = (h + 25) + (k + 29) =\sqrt{(h + 25)}^2 + \sqrt{(k + 29)}^2 \geq \frac{\left(\sqrt{h + 25} + \sqrt{k + 29}\right)^2}{2}
+\geq   \frac{\left(2\sqrt{10}\right)^2}{2} = 20.
+</cmath>
+
+Therefore, <math>h + k \geq 20 - 54 = \boxed{C -34} </math>.  
+
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Cyantist luckuso],
+
+--- Solution 3 ---
+[[Image: 2024_AMC_12B_P13.jpeg|thumb|center|600px|]]
+
+--- Solution 4 ---
+Begin by completing the square for each equation:
+<cmath>(x-3)^2 + (y-4)^2 = h + 25</cmath>
+<cmath>(x-5)^2 + (y+2)^2 = k + 29</cmath>
+
+We notice that <math>x = 4</math> minimizes the sum of <math>(x-3)^2</math> and <math>(x-5)^2</math>, and <math>y = 1</math> minimizes the sum of <math>(y-4)^2</math> and <math>(y+2)^2</math>. Plug those values into both equations to get <math>1 + 9 = h + 25</math> and <math>1 + 9 = k + 29</math>. Add the two equations to get <math>20 = h + k + 54</math>. Therefore, the minimum value of <math>h + k</math> is <math>\boxed{\textbf{(C)} -34}</math>.
+
+
+=== Problem 14 ===
+How many different remainders can result when the
+
+Choices: {'A': '1', 'B': '2', 'C': '5', 'D': '25', 'E': '125 </math>'}
+Answer: B
+
+--- Solution 1 ---
+First note that the [[Euler's totient function]] of <imath>125</imath> is <imath>100</imath>. We can set up two cases, which depend on whether a number is relatively prime to <imath>125.</imath>
+
+If <imath>n</imath> is relatively prime to <imath>125</imath>, then <imath>n^{100} \equiv 1 \pmod{125}</imath> because of [[Euler's Totient Theorem]]. 
+
+If <imath>n</imath> is not relatively prime to <imath>125</imath>, it must have a factor of <imath>5</imath>. Express <imath>n</imath> as <imath>5m</imath>, where <imath>m</imath> is some integer. Then <imath>n^{100} \equiv (5m)^{100} \equiv 5^{100}\cdot m^{100} \equiv 125 \cdot 5^{97} \cdot m^{100} \equiv 0 \pmod{125}</imath>.
+
+Therefore, <imath>n^{100}</imath> can only be congruent to <imath>0</imath> or <imath>1 \pmod{125}</imath>. Our answer is <imath>\boxed{2}</imath>.
+
+
+==Sidenote: Proof of Euler's Theorem==
+
+Euler's Theorem states that <imath>a^{\phi(n)}\equiv 1\pmod{n}</imath>, where <imath>\phi(n)</imath> is Euler's totient function, which counts the number of positive integers <imath>x</imath> such that <imath>1\le x \le n</imath> and <imath>\gcd(x,n)=1</imath>. Note that this only works for positive integer <imath>a</imath> such that <imath>\gcd(a,n)=1.</imath>
+
+Consider the set of distinct positive integers <imath>S=\{x_1,x_2,\ldots x_{\phi(n)}\}</imath> such that <imath>1\le x_i\le n</imath> and <imath>\gcd(x_i,n)=1.</imath> Multiply all terms by <imath>a</imath> to create <imath>aS=\{ax_1,ax_2,\ldots ax_{\phi(n)}\}.</imath> First, we prove that <imath>\gcd(ax_i,n)=1</imath> for any <imath>x_i</imath> using contradiction. Let <imath>p</imath> be a prime such that <imath>p \mid ax_i</imath> and <imath>p \mid n.</imath> This means that either <imath>p \mid a</imath> or <imath>p \mid x_i,</imath> which is not possible since both <imath>\gcd(a,n)</imath> and <imath>\gcd(x_i,n)=1.</imath>  Next we show that no two elements in set <imath>aS</imath> are congruent modulo <imath>n.</imath> Let <imath>x_i</imath> and <imath>x_j</imath> exist such that <imath>ax_i\equiv ax_j \pmod{n}.</imath> Multiplying both sides by <imath>a^{-1}</imath>(which exists) gives <imath>x_i\equiv x_j\pmod{n}.</imath> This means that if <imath>x_i \not\equiv x_j \pmod{n},</imath> then <imath>ax_i \not\equiv ax_j \pmod{n}.</imath> Now we multiply all terms in each set, and note that each residue appears exactly once in both sets, so we have: <cmath>a^{\phi(n)}\cdot \prod_{i=1}^{\phi(n)} x_i \equiv \prod_{i=1}^{\phi(n)} x_i \pmod{n}.</cmath> Because each <imath>x_i</imath> has the property that <imath>\gcd(x_i,n)=1,</imath> we must have that <imath>\gcd(\prod_{i=1}^{\phi(n)} x_i,n)=1.</imath> Then multiplying both sides by the inverse of product thereof gives <imath>a^{\phi(n)}\equiv 1\pmod{n}.</imath> <imath>\blacksquare</imath>
+
+--- Solution 2 ---
+Note that
+
+<cmath>(5+n)^{100} = {100 \choose 0} 5^{100} + {100 \choose 1} 5^{99} n + {100 \choose 2} 5^{98} n^2 + \cdots + {100 \choose 97} 5^3 n^{97} + {100 \choose 98} 5^2 n^{98} + {100 \choose 99} 5 n^{99} + {100 \choose 100} n^{100}.</cmath>
+
+Taking this mod <imath>125</imath>, we can ignore most of the terms except the for the last <imath>3</imath>:
+
+<cmath>{100 \choose 98} 5^2 n^{98} + {100 \choose 99} 5 n^{99} + {100 \choose 100} n^{100} \equiv 4950 \cdot 5^2 n^{98} + 100 \cdot 5 n^{99} + n^{100} \equiv n^{100} \pmod {125},</cmath>
+
+so <imath>(5+n)^{100} \equiv n^{100}</imath>. Substituting <imath>-n</imath> for <imath>n</imath>, we get <imath>(5-n)^{100} \equiv n^{100}</imath>. Therefore, the remainders when divided by <imath>125</imath> repeat every <imath>5</imath> integers, so we only need to check the <imath>100</imath>th powers of <imath>0, 1, 2, 3, 4</imath>. But we have that <imath>(5-1)^{100} \equiv 1^{100}</imath> and <imath>(5-2)^{100} \equiv 2^{100}</imath>, so we really only need to check <imath>0, 1, 2</imath>. We know that <imath>0, 1</imath> produce different remainders, so the answer to the problem is either <imath>2</imath> or <imath>3</imath>. But <imath>3</imath> is not an answer choice, so the answer is <imath>\boxed{\textbf{(B) } 2}</imath>.
+
+--- Solution 3 ---
+[[Image: 2024_AMC_12B_P18.jpeg|thumb|center|600px|]]
+
+--- Solution 4 ---
+Firstly, I interpreted the problem algebraically. In other words, let <imath>{x}</imath> be an integer. Since we're raising it to the <imath>{100}</imath>th power and <imath>{100}</imath> is even, we don't have to worry about negative values of <imath>{x}</imath>. Now, we break <imath>{125}</imath> into three factors of <imath>{5}</imath>. I first considered this when we're dividing by <imath>{5}</imath>. Okay so we can write the problem as below:
+
+<imath>x^{100}\equiv r \bmod{5}</imath>. Now, in the world of mod(5), everything is much easier to figure out. Take <imath>x\equiv 0 \bmod{5}</imath>. Now, obviously <imath>x^{100}</imath> will bring up a remainder of <imath>{0}</imath> if <imath>{x}</imath> itself is a multiple of 5. Now, <imath>x\equiv 1 \bmod{5}</imath>. In this case, notice how <imath>1^{100}</imath> is congruent to 1 in the mod(5) world. So in this case, we would have a remainder of 1. Considering <imath>x\equiv 2 \bmod{5}</imath>, it's a little more tricky. Notice <imath>2^{100}</imath> is equal to <imath>1024^{10}</imath> and <imath>{1024}</imath> is 1 less than a multiple of 5. So <imath>{1024}</imath> will be congruent to  <imath>-1 \bmod{5}</imath> and raising it to the power of 10 will bring up a remainder of 1 yet again. Similarly, is <imath>x\equiv 3 \bmod{5}</imath> or <imath>x\equiv 4 \bmod{5}</imath>, you would notice both these cases will bring up a remainder of 1 again. So in the mod(5) world, we seem to only have remainders of <imath>{0}</imath> and <imath>{1}</imath>. Interesting!
+Therefore, since <imath>{125}</imath> is just <imath>{3}</imath> factors of <imath>{5}</imath>, we may say that in mod(125), we would have the same exact remainders namely <imath>{0}</imath> and <imath>{1}</imath>. Therefore, we would only have <imath>{2}</imath> possible remainders. This brings an answer of <imath>\boxed{\textbf{(B)} \; 2}</imath>.
+
+
+=== Problem 15 ===
+A triangle in the coordinate plane has vertices
+
+Choices: {'A': '\\log_2\\frac{\\sqrt3}7', 'B': '\\log_2\\frac3{\\sqrt7}', 'C': '\\log_2\\frac7{\\sqrt3}', 'D': '\\log_2\\frac{11}{\\sqrt7}', 'E': '\\log_2\\frac{11}{\\sqrt3}</math>'}
+Answer: B
+
+--- Solution 1 ---
+We rewrite:
+<math>A(0,1)</math>
+<math>B(\log _{2} 3, 2)</math>
+<math>C(\log _{2} 7, 3)</math>.
+
+From here we setup Shoelace Theorem and obtain:
+<math>\frac{1}{2}(2(\log _{2} 3) - log _{2} 7)</math>.
+
+Following log properties and simplifying gives <math>\boxed{\textbf{(B) }\log_2 \frac{3}{\sqrt{7}}}</math>.
+
+--- Solution 2 ---
+To calculate the area of a triangle formed by three points \( A(x_1, y_1) \), \( B(x_2, y_2) \), and \( C(x_3, y_3) \) on a Cartesian coordinate plane, you can use the following formula:
+<cmath>
+\text{Area} = \frac{1}{2} \left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|
+</cmath>
+The coordinates are:<math>A(0, 1)</math>, <math>B(\log_2 3, 2)</math>, <math>C(\log_2 7, 3)</math>
+
+Taking a numerical value into account:
+<cmath>
+\text{Area} = \frac{1}{2} \left| 0 \cdot (2 - 3) + \log_2 3 \cdot (3 - 1) + \log_2 7 \cdot (1 - 2) \right|
+</cmath>
+Simplify:
+<cmath>
+= \frac{1}{2} \left| 0 + \log_2 3 \cdot 2 + \log_2 7 \cdot (-1) \right|
+</cmath>
+<cmath>
+= \frac{1}{2} \left| \log_2 (3^2) - \log_2 7 \right|
+</cmath>
+<cmath>
+= \frac{1}{2} \left| \log_2 \frac{9}{7} \right|
+</cmath>
+Thus, the area is:<math>\text{Area} = \frac{1}{2} \left| \log_2 \frac{9}{7} \right|</math> = <math>\boxed{\textbf{(B) }\log_2 \frac{3}{\sqrt{7}}}</math>
+
+--- Solution 3 ---
+[[File:AMC 12B 2024 Problem15.png|None]]
+
+In the graph above, the biggest triangle has legs <math>\log_2 7</math> and <math>2</math>. Its area is then <math>\log_2 7</math>.
+
+
+There are 3 smaller shapes as well:
+
+
+1. Triangle 1. Legs = <math>\log_2 3</math> and <math>1</math>. Area = <math>\frac{1}{2}\log_2 3 = \log_2 \sqrt{3}</math>.;
+
+
+2. Triangle 2. Legs = <math>\log_2\frac{7}{3}</math> and <math>1</math>. Area = <math>\frac{1}{2}\log_2 \frac{7}{3} = \log_2 \frac{\sqrt{7}}{\sqrt{3}}</math>;
+
+
+3. Rectangle. Legs = <math>\log_2\frac{7}{3}</math> and <math>1</math>. Area = <math>\log_2\frac{7}{3}</math>.;
+
+
+The area of the triangle is therefore <math>\log_2 7 - \log_2 \sqrt{3} - \log_2 \frac{\sqrt{7}}{\sqrt{3}} - \log_2\frac{7}{3}</math>.
+This is equivalent to <math>\log_2 7*\frac{1}{\sqrt{3}}*\frac{\sqrt{3}}{\sqrt{7}}*\frac{3}{7}</math> which simplifies to <math>\boxed{\textbf{(B)}\log_2 \frac{3}{\sqrt{7}}}</math>.
+
+
+=== Problem 16 ===
+A group of
+
+Choices: {'A': '5', 'B': '6', 'C': '7', 'D': '8', 'E': '9 </math>'}
+Answer: A
+
+--- Solution 1 ---
+There are <math>{16 \choose 4}</math> ways to choose the first committee, <math>{12 \choose 4}</math> ways to choose the second, <math>{8 \choose 4}</math> for the third, and <math>{4 \choose 4}=1</math> for the fourth. Since the committees are indistinguishable, we need to divide the product by <math>4!</math>. Thus the <math>16</math> people can be grouped in
+<cmath>\frac{1}{4!}{16 \choose 4}{12 \choose 4}{8 \choose 4}{4 \choose 4}=\frac{16!}{(4!)^5}</cmath>
+ways.
+
+In each committee, there are <math>4 \cdot 3=12</math> ways to choose the chairperson and secretary, so <math>12^4</math> ways for all <math>4</math> committees. Therefore, there are
+<cmath>\frac{16!}{(4!)^5}12^4</cmath>
+total possibilities.
+
+Since <math>16!</math> contains <math>6</math> factors of <math>3</math>, <math>(4!)^5</math> contains <math>5</math>, and <math>12^4</math> contains <math>4</math>, <math>r=6-5+4=\boxed{\textbf{(A) }5}</math>.
+
+--- Solution 2 ---
+There are <math>\binom{16}{4,4,4,4}</math> ways to choose the 4 committees. You have to divide by another 4! since the order of the committees does not matter. Furthermore, in each committee, you can have <math>4 \cdot 3</math> ways to choose chairperson and secretary. Hence a total of <math>\lfloor{\frac{16}{3}\rfloor}+\lfloor{\frac{16}{9}\rfloor}+4-5=5.</math>
+
+--- Solution 3 ---
+There will be <math>16</math> ways to pick the chairperson of the first committee, then <math>15</math> to pick the secretary, and lastly <math>{14 \choose 2}</math> ways to pick the other two members of the first committee. Similarly, we can complete the rest of the terms as follows:
+<cmath>\frac{(16)(15){14 \choose 2}(12)(11){10 \choose 2}(8)(7){6\choose 2}(4)(3){2\choose 2}}{4!}</cmath>
+We notice the numerator has at most <math>3^6</math>, and the denominator has just <math>3</math>. Thus, the value of <math>r</math> in question is <math>\boxed{\textbf{(A)}\ 5}</math>.
+
+--- Solution 4 ---
+We can convert the question into arranging people in a line of length <math>16</math>.
+
+First, arrange all <math>16</math> people in a line. There are <math>16!</math> possible ways to do this. Then, divide the line into <math>4</math> groups of <math>4</math>, which represent the committees. Since the committees are indistinguishable, we divide by the number of ways to permute the <math>4</math> groups, <math>4!</math>.  
+
+Within each group of <math>4</math>, the first two positions in the line are assigned as the chairperson and the secretary, while the remaining two are ordinary members. Since the roles of chairperson and secretary are distinct, but the order of the remaining two members does not matter, we divide by <math>2</math> for each group. Thus, we divide by <math>2^4</math> to account for all <math>4</math> committees.  
+
+The total number of ways to assign people into committees with roles is given by:
+<cmath>
+\frac{16!}{4! \cdot 2^4}.
+</cmath>  
+(This is equivalent to Solution 1's <math>\frac{16!}{(4!)^5} \cdot 12^4</math>.)
+
+To find <math>r</math>, we use Legendre's Formula to count the total power of <math>3</math> in <math>16!</math>:  
+<cmath>
+\lfloor \frac{16}{3} \rfloor + \lfloor \frac{16}{9} \rfloor = 5 + 1 = 6.
+</cmath>  
+Each <math>4!</math> contributes one factor of <math>3</math>, and since we divide by <math>4!</math> a total of <math>1</math> times, we subtract <math>1</math> from <math>6</math>:  
+<cmath>
+6 - 1 = 5.
+</cmath>  
+Thus, the value of <math>r</math> is <math>\boxed{5}</math>.
+
+
+=== Problem 17 ===
+Integers
+
+Choices: {'A': '\\frac{1}{240}', 'B': '\\frac{1}{221}', 'C': '\\frac{1}{105}', 'D': '\\frac{1}{84}', 'E': '\\frac{1}{63}</math>'}
+Answer: C
+
+--- Solution 1 ---
+Since <math>-10 \le a,b \le 10</math>, there are 21 integers to choose from, and <math>P(21,2) = 21 \times 20 = 420</math> equally likely ordered pairs <math>(a,b)</math>.
+
+Applying Vieta's formulas, 
+
+<math>x_1 \cdot x_2  \cdot x_3  = -6</math>
+
+<math> x_1 + x_2+ x_3 = -a </math>
+
+<math> x_1 \cdot x_2 + x_1 \cdot x_3  + x_3 \cdot x_2  = b</math>
+
+Cases:
+
+(1)  <math> (x_1,x_2,x_3)  = (-1,1,6) , b = -1, a=-6</math>  valid 
+
+(2)  <math> (x_1,x_2,x_3)  = ( 1,2,-3) , b = -7, a=0</math>  valid 
+
+(3)  <math> (x_1,x_2,x_3)  = (1,-2,3) , b = -5, a=-2</math>  valid 
+
+(4)  <math> (x_1,x_2,x_3)  = (-1,2,3) , b = 1, a=-4</math>  valid 
+
+(5)  <math> (x_1,x_2,x_3)  = (-1,-2,-3) , b = 11</math> invalid 
+
+the total event space is <math>21  \cdot (21- 1)</math> (choice of select a times choice of selecting b given no-replacement) 
+
+hence, our answer is <math>\frac{4}{21 \cdot 20} =   \boxed{\textbf{(C) }\frac{1}{105}}</math>
+ 
+
+==Solution 1.1 (desperation)==
+As obtained in Solution 1, we get that there are <math>P(21,2) = 420</math> equally likely ordered pairs <math>(a,b)</math>, which means that the denominator will likely be a factor of 420, which leaves answers C and D, and if you are lucky enough, you can guess that the answer is <math>\boxed{\textbf{(C) }\frac{1}{105}}</math>. If you're not lucky enough, however, that's a math instinct skill issue, and I recommend you get instinct first before you do math.
+
+
+=== Problem 18 ===
+The Fibonacci numbers are defined by
+
+Choices: {'A': '318', 'B': '319', 'C': '320', 'D': '321', 'E': '322</math>'}
+Answer: B
+
+--- Solution 1 ---
+The first <imath>20</imath> terms are <imath>F_n = 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765</imath>
+
+So the answer is <imath>1 +  3 + 4 + 7 + 11 + 18 + 29 + 47 + 76 + 123 =  \boxed{(B) 319} </imath>. 
+*Do not do this unless you have no other option or no time to find a smarter way
+
+--- Solution 2 ---
+Plug in a few numbers to see if there is a pattern. List out a few Fibonacci numbers, and then try them on the equation. You'll find that <math>{\frac{F_2}{F_1}} = {\frac{1}{1}} = 1, {\frac{F_4}{F_2}} = {\frac{3}{1}} = 3, {\frac{F_6}{F_3}} = {\frac{8}{2}} = 4,</math> and <math>{\frac{F_8}{F_4}} = {\frac{21}{3}} = 7.</math> The pattern is that then ten fractions are in their own leapfrog sequence with the starting two terms being <math>1</math> and <math>3</math>, which can be written as <math>G_1 = 1, G_2 = 3, G_n = G_{n-1} + G_{n-2}</math> for <math>n \geq 3.</math> The problem is asking for the sum of the ten terms <math>G_1 + G_2 + G_3 + ... + G_{10}</math>, and after adding up the first ten terms <math>1 + 3 + 4 + 7 + 11 + 18 + 29 + 47 + 76 + 123</math>, you arrive at the solution <math>\boxed{\textbf{(B) }319}.</math>
+
+--- Solution 3 ---
+Using characteristic equation <math>x^2=x+1</math> and starting terms <math>F_1 =1, F_2=1</math>, we get <math>F_n=\frac{1}{\sqrt{5}} (A^n- B^n) </math>, A= <math>\frac{1+\sqrt{5}}{2}</math> , B = <math>\frac{1-\sqrt{5}}{2}</math> 
+
+Define a new sequence (this is actually a Lucas sequence) <cmath>  L_n = \frac{F_{2n}}{F_{n}} = \frac{A^{2n} - B^{2n}}{A^{n} - B^{n}} =A^n+B^n </cmath>
+
+Given that <math>L_n</math> has the same 2 roots (A,B) as the characteristic equation <math>x^2=x+1</math> it implies that <math>  L_{n}  =L_{n-1}  + L_{n-2} </math>. It can also be verified below. 
+Noticing <math> A^2 = A + 1 </math> and <math> B^2 = B + 1 </math>, 
+Therefore,
+<cmath>
+L_n = A^n + B^n  =  A^2 \cdot A^{n-2} + B^2 \cdot B^{n-2}  =  (A +1) \cdot A^{n-2} + (B+1) \cdot B^{n-2} = (A^{n-1} + B^{n-1}) + (A^{n-2} + B^{n-2}) = L_{n-1} + L_{n-2} .
+</cmath>
+
+Calculating the first 10 terms using the recurrence relation <math>  L_{n}  =L_{n-1}  + L_{n-2} </math> and the initial values <math> L_1 = 1 </math> and <math> L_2 = 3 </math>, we get:
+<cmath>
+L_1 = 1, \quad L_2 = 3, \quad L_3 = 4, \quad L_4 = 7, \quad L_5 = 11 </cmath>
+
+<cmath>\quad L_6 = 18, \quad L_7 = 29, \quad L_8 = 47, \quad L_9 = 76, \quad L_{10} = 123
+</cmath>
+
+So the answer is <math> 1 + 3 + 4 + 7 + 11 + 18 + 29 + 47 + 76 + 123 = \boxed{\textbf{(B) }319} </math>.
+
+--- Solution 4 ---
+<cmath>
+S_k = \sum_{n=1}^{k} L_n = \sum_{n=1}^{k} (A^n + B^n) = \sum_{n=1}^{k} A^n + \sum_{n=1}^{k} B^n = \frac{A(1 - A^k)}{1 - A} + \frac{B(1 - B^k)}{1 - B}
+</cmath>
+
+Recall the sum formula for a geometric series:
+<cmath>
+\sum_{n=1}^{k} r^n = r + r^2 + \cdots + r^k = \frac{r(1 - r^k)}{1 - r}, \quad \text{for } r \neq 1
+</cmath>
+   
+To simplify further, notice that:
+<imath> A = \frac{1 + \sqrt{5}}{2} </imath> and <imath> B = \frac{1 - \sqrt{5}}{2} </imath> are roots of <imath> x^2 = x + 1 </imath>, so:
+<cmath>
+1 - A = B \quad \text{and} \quad 1 - B = A.
+</cmath>
+
+<cmath>
+S_k = \frac{A(1 - A^k)}{B} + \frac{B(1 - B^k)}{A} = \frac{A^{k+2} - A^2 + B^{k+2} - B^2}{A \cdot B}  =  \frac{A^{k+2}  + B^{k+2} -   (A^2+  B^2) }{A \cdot B}  = A^{k+2}  + B^{k+2} -3 = L_{n+2} - 3
+</cmath>
+
+This formula <imath>S_k =  A^{k+2}  + B^{k+2} - 3 </imath> gives us a direct way to calculate the sum of <imath> L_n </imath> for any <imath> k </imath>.
+
+<cmath>L_{2n} = (A^n + B^n)^2 - 2 \cdot (AB)^n = L_{n} - 2 \cdot (-1) ^n</cmath>
+<cmath>L_{2n+1} = (A^n + B^n)(A^{n+1} + B^{n+1}) -  (AB)^n(A+B) = L_{n}L_{n+1} - (-1)^n</cmath>
+
+<cmath>L_{12} = (L_{6} )^2 -2 = (L_{3}^2 + 2 )^2 -2  = (4^2 + 2 )^2 - 2  = 324 - 2 = 322  </cmath>
+
+Hence, <cmath>\sum_{n=1}^{10} = L_{12} -3 = 322 - 3 =  \boxed{(B) 319} </cmath>
+
+*Please do not do this on an actually exam in AMC 10 and only do it when you have no time in AMC 12
+
+--- Solution 5 ---
+Remember that for any <math> n\ge0 </math>, <cmath> \frac{F_{2n}}{F_{n}} = L_{n} </cmath>
+This can be found in 9.4.3 (b) of Inter Counting ( Serengeti 22)
+
+so the answer is <math> 1 + 3 + 4 + 7 + 11 + 18 + 29 + 47 + 76 + 123 = \boxed{(B) 319} </math>.
+
+--- Solution 6 ---
+If you are well-versed in identities relating Fibonacci numbers (or spot this pattern by induction) then you may see that
+
+<cmath>
+F_{2n}=F_{n}(F_{n-1}+F_{n+1})
+</cmath>
+
+Then we can say that the sum required is just <math>(F_0+F_1+...+F_9)+(F_2+F_3+...+F_{11})</math> (and we take <math>F_0=0</math>). There is not much we can do to aid our calculation, so we directly calculate the answer using the sequence <math>1</math>, <math>1</math>, <math>2</math>, <math>3</math>, <math>5</math>, <math>8</math>, <math>13</math>, <math>21</math>, <math>34</math>, <math>55</math>, <math>89</math>. You should get <math>\boxed{(B) 319}</math>.
+
+(If you are interested, this identity can be proved using the inductive process as well as using the fact <math>F_{n}F_{n+1}-F_{n-2}F_{n-1}=F_{2n-1}</math>.)
+
+-lisztepos
+
+--- Solution 7 ---
+This solution is motivated by solution 3.
+
+The explicit formula for Fibonacci numbers is
+<cmath>
+F_n = \frac{1}{\sqrt{5}} \left( \frac{1 + \sqrt{5}}{2} \right)^n - \frac{1}{\sqrt{5}} \left( \frac{1 - \sqrt{5}}{2} \right)^n
+</cmath>
+Therefore,
+<cmath>
+F_{2n} = \frac{1}{\sqrt{5}} \left( \frac{1 + \sqrt{5}}{2} \right)^{2n} - \frac{1}{\sqrt{5}} \left( \frac{1 - \sqrt{5}}{2} \right)^{2n}
+</cmath>
+Using the explicit formulas, the equation for <math>\frac{F_{2n}}{F_n}</math> could be computed.
+<cmath>
+\begin{align*}
+    \frac{F_{2n}}{F_n}
+    &= \frac{\frac{1}{\sqrt{5}} \left( \frac{1 + \sqrt{5}}{2} \right)^n - \frac{1}{\sqrt{5}} \left( \frac{1 - \sqrt{5}}{2} \right)^n}{\frac{1}{\sqrt{5}} \left( \frac{1 + \sqrt{5}}{2} \right)^{2n} - \frac{1}{\sqrt{5}} \left( \frac{1 - \sqrt{5}}{2} \right)^{2n}} \\
+    &= \left( \frac{1 + \sqrt{5}}{2} \right)^n + \left( \frac{1 - \sqrt{5}}{2} \right)^n
+\end{align*}
+</cmath>
+The square roots in the numbers <math>\frac{1 + \sqrt{5}}{2}</math> and <math>\frac{1 - \sqrt{5}}{2}</math> could be removed by adding or multiplying the numbers. Therefore, let <math>\alpha = \frac{1 + \sqrt{5}}{2}</math> and <math>\beta = \frac{1 - \sqrt{5}}{2}</math>.
+
+
+Notice that <math>\alpha + \beta = 1</math> and <math>\alpha\beta = -1</math>. In other words, <math>\alpha</math> and <math>\beta</math> are the roots of the equation <math>x^2 - x - 1 = 0</math>.
+<cmath>
+\begin{align*}
+    \alpha^2 &= \alpha + 1 \\
+    \beta^2 &= \beta + 1 \\
+    \alpha^2 \alpha^n &= \alpha^{n + 1} + \alpha^n \\
+    \beta^2 \beta^n &= \beta^{n + 1} + \beta^n
+\end{align*}
+</cmath>
+Let <math>a_i = \alpha^i</math> and <math>b_i = \beta^i</math> for convenience. Notice that <math>a_{n + 2} + b_{n + 2} = a_{n + 1} + b_{n + 1} + a_n + b_n</math>. Let <math>f_n = a_n + b_n</math>. Observe that <math>f_{n + 2} = f_{n + 1} + f_n</math>.
+
+
+<math>f_1 = 1</math> and <math>f_2 = 3</math> are known. Moreover, <math>f_n</math> share the property of Fibonacci numbers. Note that every sequence <math>F_n</math> that forms a new term by adding two previous terms have the following property.
+<cmath>
+\sum_{k=1}^{n} F_k = F_{n+2} - F_2 \qquad (n \geq 1)
+</cmath>
+Therefore,
+<cmath>
+\sum_{k=1}^{10} F_k = F_{12} - 3.
+</cmath>
+Moreover, <math>\{f_n\}_{n=1}^\infty \coloneq \{ 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, 199, 322, \dots \}</math>.
+Therefore, <math>322 - 3 = \boxed{\textbf{(B) }319}</math>.
+
+--- Solution 8 ---
+Of course, olympiad algebra mains recall that for any <math> n\ge0 </math>, <cmath> \frac{F_{2n}}{F_{n}} = L_{n} </cmath> where <math>L_{n}</math> denotes the Lucas numbers. A well known Fibonacci identity is that
+<cmath>
+\sum_{k=1}^{n} F_k = F_{n+2} - F_2 \qquad (n \geq 1)
+</cmath>
+Now we also know <cmath> L_{n} = F_{n-1}+F_{n+1} </cmath> which further nukes the problem if you do not feel like calculating Lucas numbers. Either way, we should get an answer of <math>\boxed{\textbf{(B) }319}</math>.
+
+Remark: All proofs of these identities are on Wikipedia.
+
+
+=== Problem 19 ===
+Equilateral
+
+Choices: {'A': '~\\frac{3}{4}', 'B': '~\\frac{5\\sqrt{3}}{11}', 'C': '~\\frac{4}{5}', 'D': '~\\frac{11}{13}', 'E': '~\\frac{7\\sqrt{3}}{13}</math>'}
+Answer: B
+
+--- Solution 1 ---
+Let O be circumcenter of the equilateral triangle 
+
+Easily get <math>OF = \frac{14\sqrt{3}}{3}</math>
+
+<math>2 \cdot (\triangle(OFC) + \triangle(OCE)) =  OF^2 \cdot \sin(\theta) + OF^2 \cdot \sin(120 - \theta)</math>
+<cmath> = \frac{14^2 \cdot 3}{9} (   \sin(\theta)  +  \sin(120 - \theta) )   </cmath>
+<cmath> = \frac{196}{3}  (   \sin(\theta)  +  \sin(120 - \theta) )   </cmath>
+<cmath> = 2 \cdot {\frac{1}{3}  } \cdot(ADBECF) = 2\cdot \frac{91\sqrt{3}}{3} </cmath>
+
+<cmath> \sin(\theta)  +  \sin(120 - \theta) = \frac{13\sqrt{3}}{14}  </cmath>
+<cmath> \sin(\theta)  +   \frac{ \sqrt{3}}{2}\cos(  \theta) +\frac{ \sqrt{1}}{2}\sin(  \theta) = \frac{13\sqrt{3}}{14}  </cmath>
+<cmath> \sqrt{3} \sin(  \theta) + \cos(  \theta) = \frac{13 }{7}  </cmath>
+<cmath> \cos(  \theta)  = \frac{13 }{7}  - \sqrt{3} \sin(  \theta) </cmath>
+<cmath> \frac{169 }{49}  - \frac{26\sqrt{3} }{7} \sin(  \theta)  + 4 \sin(  \theta)^2 = 1 </cmath>
+<cmath> \sin(  \theta)  = \frac{5\sqrt{3} }{14}  or \frac{4\sqrt{3} }{7}  </cmath>
+<math>\frac{4\sqrt{3} }{7} </math> is invalid given <math>\theta \leq 60^\circ </math> , <math>\sin(\theta ) < \sin( 60^\circ ) = \frac{\sqrt{3} }{2} = \frac{\sqrt{3} \cdot 3.5}{7} </math>
+<cmath>  \cos(  \theta)  = \frac{11 }{14}  </cmath>
+<cmath>  \tan(  \theta)  = \frac{5\sqrt{3} }{11} \boxed{B } </cmath>
+
+--- Solution 2 ---
+From <math>\triangle ABC</math>'s side lengths of 14, we get
+<cmath>OF = OC = OE = \frac{14\sqrt{3}}{3}.</cmath>
+We let <math>\angle FOC = \theta</math>
+And <math>\angle EOC = 120 - \theta</math>
+
+The answer would be <math>3([\triangle FOC] + [\triangle COE])</math>
+
+Which area <math>\triangle FOC</math> = <math>\frac{1}{2}\left(\frac{14\sqrt{3}}{3}\right)^2 \sin(\theta)</math>
+
+And area <math>\triangle COE</math> = <math>\frac{1}{2}\left(\frac{14\sqrt{3}}{3}\right)^2 \sin(120 - \theta)</math>
+
+So we have that 
+<cmath>3\cdot \frac{1}{2}\cdot \left(\frac{14\sqrt{3}}{3}\right)^2 (\sin(\theta)+\sin(120 - \theta)) = 91\sqrt{3}</cmath>
+
+Which means
+<cmath>\sin(\theta)+\sin(120 - \theta) = \frac{91\sqrt{3}}{98}</cmath>
+<cmath>\frac{1}{2}\cos(\theta)+\frac{\sqrt{3}}{2}\sin(\theta) = \frac{91}{98}</cmath>
+<cmath>\sin(\theta + 30) = \frac{91}{98}</cmath>
+<cmath>\cos (\theta + 30) = \frac{21\sqrt{3}}{98}</cmath> 
+<cmath>\tan(\theta + 30) = \frac{91}{21\sqrt{3}} = \frac{91\sqrt{3}}{63}</cmath>
+
+Now, <math>\tan(\theta)</math> can be calculated using the addition identity, which gives the answer of 
+
+<cmath>\boxed{\text{(B) }\frac{5\sqrt{3}}{11}}.</cmath>
+
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Cyantist luckuso] (fixed Latex error )
+
+--- Solution 3 ---
+<asy>
+// Modified Asymptote diagram with correct right angle mark and alpha label.
+
+import olympiad;
+defaultpen(fontsize(13));
+size(200);
+
+// Circumradius R = 14*sqrt(3)/3
+real R = 14*sqrt(3)/3;
+
+// Define original points with scaling
+pair O = (0,0);
+pair A = R * dir(225);
+pair B = R * dir(-15);
+pair C = R * dir(105);
+pair D = rotate(38.21, O) * A;
+pair E = rotate(38.21, O) * B;
+pair F = rotate(38.21, O) * C;
+
+// Point H: Foot of altitude from B to DE
+pair DE_vec = E - D;
+pair perp_DE = (DE_vec.y, -DE_vec.x); // Rotate -90 degrees
+perp_DE = perp_DE / length(perp_DE); // Unit vector
+pair H = B - (2*sqrt(3)) * perp_DE; // Corrected direction
+
+// Point M: Extend BH to M, BM = 13*sqrt(3)/3
+pair BH_vec = H - B;
+pair BM_unit = BH_vec / length(BH_vec); // Unit vector along BH
+pair M = B + (13*sqrt(3)/3) * BM_unit; // BM = 13*sqrt(3)/3
+
+// Point P: Midpoint of BE
+pair P = (B + E) / 2;
+
+// Draw original triangles and polygon
+draw(A--B--C--A, gray+0.4);
+draw(D--E--F--D, gray+0.4);
+draw(A--D--B--E--C--F--A, black+0.9);
+
+// Draw new dashed segments
+draw(B--H, black+0.7+dashed);
+draw(H--M, black+0.7+dashed);
+draw(O--M, black+0.7+dashed);
+draw(O--P, black+0.7+dashed);
+draw(P--E, black+0.7+dashed);
+draw(O--B, black+0.7+dashed);
+
+// Draw right angle marker at OMB
+draw(rightanglemark(B, M, O, 15)); // Right angle at M, size 15
+
+// Draw dots and labels
+dot(O);
+dot("$O$", O, dir(180));
+dot("$A$", A, dir(A));
+dot("$B$", B, dir(B));
+dot("$C$", C, dir(C));
+dot("$D$", D, dir(D));
+dot("$E$", E, dir(E));
+dot("$F$", F, dir(F));
+dot("$H$", H, dir(270));
+dot("$M$", M, dir(90));
+dot("$P$", P, dir(0));
+
+// Label angle POB as alpha, to the right of O
+draw(anglemark(B, O, P, 50)); // Angle mark at O
+label("$\alpha$", O + (1.5, -.23), dir(0)); // Position to the right of O
+</asy>
+
+Let the circumcenter of the circle inscribing this polygon be <math>O</math>. The area of the equilateral triangle is <math>\frac{\sqrt{3}}{4}*196=49\sqrt{3}</math>. The area of one of the three smaller triangles, say <math>\triangle{DBE}</math> is <math>14\sqrt{3}</math>. Let <math>BH</math> be the altitude of <math>\triangle{DBE}</math>, so if we extend <math>BH</math> to point <math>M</math> where <math>MO\perp{BM}</math>, we get right triangle <math>\triangle{OMB}</math>. Note that the height <math>BH=2\sqrt{3}</math>, computed given the area and side length <math>14</math>, so <math>MB=MH+HB=\frac{7\sqrt{3}}{3}+2\sqrt{3}=\frac{13\sqrt{3}}{3}</math>. <math>OB=\frac{14\sqrt{3}}{3}</math> so Pythag gives <math>OM=\sqrt{OB^2-MB^2}=3</math>. This means that <math>HE=7-OM=4</math>, so Pythag gives <math>BE=2\sqrt{7}</math>. Let <math>\frac{\theta}{2}=\alpha</math> and the midpoint of <math>BE</math> be <math>P</math> so that <math>BP=PE=\sqrt{7}</math>, so that Pythag on <math>\triangle{OPE}</math> gives <math>OP=\sqrt{OE^2-PE^2}=\sqrt{\frac{175}{3}}</math>. Then <math>\tan{\alpha}=\frac{\sqrt{7}}{\sqrt{\frac{175}{3}}}=\frac{\sqrt{3}}{5}</math>. Then <math>\tan{2\alpha}=\tan{\theta}=\frac{\frac{2\sqrt{3}}{5}}{1-\frac{3}{25}}=\boxed{\frac{5\sqrt{3}}{11}}</math>.
+
+-Magnetoninja
+
+--- Solution 4 ---
+<cmath>[\triangle ABD] = \frac{[ADBECF]-[\triangle ABC]}{3} = \frac{91\sqrt{3}-49\sqrt{3}}{3} = 14\sqrt{3}</cmath> 
+
+Let <math>M</math> be the intersection of <math>AB</math> and <math>DE</math>. Since <math>DMB</math> is isosceles and <math>\angle AMD = \theta</math>, we have <math>\angle ABD = \theta/2</math>. Also, all of the hexagon's internal angles are equal, so <math>\angle ADB = 120^\circ</math>.
+<asy>
+defaultpen(fontsize(13));
+size(220);
+
+// Base points and rotation
+pair O = (0,0);
+pair A = dir(225);
+pair B = dir(-15);
+pair D = rotate(38.21, O)*A;
+pair E = rotate(38.21, O)*B;
+
+// Intersection point of AB and DE
+pair M = extension(A, B, D, E);
+
+// Triangle and segments
+defaultpen(fontsize(13));
+size(220);
+
+// Base triangle from rotated figure
+pair O = (0,0);
+pair A = dir(225);
+pair B = dir(-15);
+pair D = rotate(38.21, O)*A;
+pair E = rotate(38.21, O)*B;
+
+// M is intersection of AB and DE
+pair M = extension(A, B, D, E);
+
+// Draw triangle and segment
+draw(A--B--D--cycle, black+0.9);
+draw(D--M, gray + dashed);
+
+// Draw angle theta at AMD
+real r = 0.1;
+path thetaArc = arc(M, r, degrees(D - M), degrees(A - M));
+draw(thetaArc, gray);
+label("$\theta$", M + (r+0.1)*dir((degrees(D - M) + degrees(A - M))/2), gray);
+
+// Draw congruence ticks on MB and MD
+pair u1 = unit(B - M), u2 = unit(D - M);
+pair tick1a = midpoint(M--B) + rotate(90)*u1 * 0.04;
+pair tick1b = midpoint(M--B) + rotate(-90)*u1 * 0.04;
+pair tick2a = midpoint(M--D) + rotate(90)*u2 * 0.04;
+pair tick2b = midpoint(M--D) + rotate(-90)*u2 * 0.04;
+draw(tick1a--tick1b, gray);
+draw(tick2a--tick2b, gray);
+
+// Labels
+dot("$A$", A, dir(A));
+dot("$B$", B, dir(B));
+dot("$D$", D, dir(D));
+dot("$M$", M, N);
+</asy>
+Using the side-angle-side area formula:
+<cmath>14\sqrt{3} = \frac{1}{2} \cdot 14 \cdot BD \cdot \sin\left(\frac{\theta}{2}\right) \Rightarrow BD = \frac{2\sqrt{3}}{\sin(\theta/2)}.</cmath>
+
+Apply Law of Sines on <math>\triangle ABD</math> with <math>\angle DAB = 60^\circ - \theta/2</math>:
+<cmath>\frac{14}{\sin 120^\circ} = \frac{BD}{\sin(60^\circ - \theta/2)}</cmath>
+<cmath>\frac{28}{\sqrt{3}} = \frac{2\sqrt{3}}{\sin(\theta/2)\sin(60^\circ - \theta/2)}.</cmath>
+<cmath>\sin(\theta/2)\sin(60^\circ - \theta/2) = \frac{3}{14}.</cmath>
+Using trig identities:
+<cmath>\sqrt{\frac{1-\cos(\theta)}{2}} \cdot (\sin(60^\circ)\cos(\theta/2) - \sin(\theta/2)\cos(60^\circ)) = \frac{3}{14}</cmath>
+<cmath>\sqrt{\frac{1-\cos(\theta)}{2}} \cdot \left(\frac{\sqrt{3}}{2}\cos(\theta/2) - \frac{1}{2}\sin(\theta/2)\right) = \frac{3}{14}</cmath>
+<cmath>\sqrt{\frac{1-\cos(\theta)}{2}} \cdot \left(\frac{\sqrt{3}}{2} \sqrt{\frac{1+\cos(\theta)}{2}} - \frac{1}{2} \sqrt{\frac{1-\cos(\theta)}{2}} \right) = \frac{3}{14}</cmath>
+<cmath>\left(\frac{\sqrt{3}}{2}\sqrt{\frac{1-\cos^2(\theta)}{4}} - \frac{1}{2}\left(\frac{1-\cos(\theta)}{2}\right)\right) = \frac{3}{14}</cmath>
+<cmath>\frac{\sqrt{3}\sin\theta}{4} - \frac{(1-\cos\theta)}{4} = \frac{3}{14}</cmath>
+<cmath>\sqrt{3}\sin\theta + \cos\theta = \frac{13}{7}</cmath>
+<cmath>\cos\theta = \frac{13}{7} - \sqrt{3}\sin\theta.</cmath>
+
+Substitute into <math>\sin^2\theta + \cos^2\theta = 1</math>:
+<cmath>\left(\frac{13}{7} - \sqrt{3}\sin\theta\right)^2 + \sin^2\theta = 1.</cmath>
+<cmath>4\sin^2\theta - \frac{26\sqrt{3}}{7}\sin\theta + \frac{120}{49} = 0.</cmath>
+
+Solving:
+<cmath>\sin\theta = \frac{5\sqrt{3}}{14} \quad (\text{valid root}), \quad \cos\theta = \frac{11}{14} \Rightarrow \tan\theta = \frac{5\sqrt{3}}{11}.</cmath>
+
+<cmath>\boxed{\text{(B) }\frac{5\sqrt{3}}{11}}</cmath>
+
+
+=== Problem 20 ===
+Suppose
+
+Choices: {'A': '909', 'B': '910', 'C': '911', 'D': '912', 'E': '913</math>'}
+Answer: 
+
+--- Solution 1 ---
+Let the midpoint of <math>BC</math> be <math>M</math>, and let the length <math>BM = CM = a</math>. We know there are limits to the value of <math>x</math>, and these limits can probably be found through the triangle inequality. But the triangle inequality relates the third side length <math>BC</math> to <math>AC</math> and <math>AB</math>, and doesn't contain any information about the median. Therefore we're going to have to write the side <math>BC</math> in terms of <math>x</math> and then use the triangle inequality to find bounds on <math>x</math>.
+
+We use Stewart's theorem to relate <math>BC</math> to the median <math>AM</math>: <math>man + dad = bmb + cnc</math>. In this case <math>m = \frac{a}2</math>, <math>n=\frac{a}2</math>, <math>a = m+n</math>, <math>d = x</math>, <math>b = 42</math>, <math>c = 40</math>.
+
+Therefore we get the equation <math>2a^3 + 2ax^2 = a \cdot 42^2 + a \cdot 40^2</math>
+
+<math>2a^2 + 2x^2 = 42^2 + 40^2</math>. 
+
+Notice that since <math>20-21-29</math> is a pythagorean triple, this means <math>2a^2 + 2x^2 = 58^2</math>. 
+
+<cmath>\implies a^2 = \frac{58^2}{2}-x^2</cmath>
+<cmath>\implies a = \sqrt{\frac{58^2}{2}-x^2}</cmath>
+
+By triangle inequality, <math>2a+40>42 \implies a>1 </math> and <math>40+42>2a \implies a<41</math>
+
+Let's tackle the first inequality: <cmath>\sqrt{\frac{58^2}{2}-x^2}>1 \implies x^2 < \frac{58^2}{2}-1</cmath>
+
+<cmath>\implies x^2 < \frac{40^2+42^2}{2}-1 \implies x^2<41^2</cmath>
+
+Here we use the property that <math>\frac{x^2+(x+2)^2}{2}-1 = (x+1)^2</math>.
+
+Therefore in this case, <math>x<41</math>.
+
+For the second inequality, <cmath>\sqrt{\frac{58^2}{2}-x^2} < 41 \implies x^2 > \frac{58^2}{2}-41^2</cmath>
+
+<cmath>\implies x^2 > \frac{58^2}{2}-1 + 1 - 41^2</cmath>
+
+<cmath>\implies x^2 > 41^2 + 1 - 41^2 \implies x^2 > 1 \implies x > 1</cmath>
+
+Therefore we have <math>1<x<41</math>, so the domain of <math>f(x)</math> is <math>(1,41)</math>.
+
+
+The area of this triangle is <math>\frac{1}{2} 42 \cdot 40 \cdot \sin(\theta)</math>. The maximum value of the area occurs when the triangle is right, i.e. <math>\theta = 90^{\circ}</math>. Then the area is <math>\frac{1}{2} \cdot 40 \cdot 42 = 840</math>. The length of the median of a right triangle is half the length of it's hypotenuse, which squared is <math>40^2+42^2 = 58^2</math>. Thus the length of <math>x</math> is <math>29</math>.
+
+Our final answer is <math>1+41+840+29 = \boxed{\textbf{911 } (C)}</math>
+
+--- Solution 2 ---
+[[Image:2024_amc_12B_P20.PNG|thumb|center|300px|]]
+
+
+Let midpoint of <math>BC</math> as <math>M</math>, extends <math>AM</math> to <math>D</math> and <math>MD=x</math>, 
+
+triangle <math>ACD</math>  has <math>3</math> sides <math>(40,42,2x)</math> , based on triangle inequality,  
+<cmath> 42 - 40 <  2x < 42 + 40 </cmath> 
+<cmath>1 < x  < 41</cmath>
+so <cmath>p = 1, q=41</cmath> 
+
+<cmath>2\cdot f(x) =   40 \cdot 42 \cdot \sin(A) \le 2\cdot840</cmath> 
+so <math>r = 840 </math>
+which is achieved when <math>A = 90^\circ</math> , then <math>\angle ACD = 90^\circ</math> 
+<cmath>(2x)^2 = 40^2 + 42^2 </cmath>
+<cmath>x = 29</cmath> 
+<cmath>s= 29 </cmath>
+<cmath>p+q+s+r = 1 + 41 + 29 + 840 = \fbox{\textbf{(C) } 911}</cmath>
+
+--- Solution 3 ---
+Let A = (0, 0) , B =(b, 0) , C= (<math>c\cos\theta , c\sin\theta </math>)
+<cmath>
+M = \left(\frac{b + c\cos\theta}{2}, \frac{c\sin\theta}{2}\right).
+</cmath>
+
+
+<cmath>
+AM = x = \sqrt{\left(\frac{b + c\cos\theta}{2}\right)^2 + \left(\frac{c\sin\theta}{2}\right)^2} =  \frac{\sqrt{c^2 + 2bc\cos\theta+b^2}}{2}.
+</cmath>
+
+When <math> \cos\theta = 1 </math>:
+<cmath>
+x = \frac{\sqrt{(c+b)^2}}{2} = \frac{c+b}{2} = \frac{42+40}{2} = 41.
+</cmath>
+
+When <math> \cos\theta = -1 </math>:
+<cmath>
+x = \frac{\sqrt{(c-b)^2}}{2} = \frac{c-b}{2} = \frac{42-40}{2} = 1.
+</cmath>
+The domain of <math> f(x) </math> is the open interval:
+<cmath>
+\boxed{(1, 41)}.
+</cmath>
+
+The rest follows Solution 2
+
+--- Solution 4 ---
+Here's a faster way to solve this problem using Apollonius's Theorem (which is a special case of Stewart's Theorem for medians). In this case, <math>{x}^2= \frac{1}{4}*(2{AB}^2+2{AC}^2-{BC}^2)</math>. 
+So, <math>x^2=1682-\frac{1}{4}*{BC}^2.</math>
+
+
+We know that, by the Triangle Inequality, <math>2<BC<82</math>. Applying these to Apollonius, we have that the minimum value of <math>x</math> is <math>x=1</math> and the maximum value is <math>x=41</math> (both cannot be reached, however). 
+
+
+The rest of the solution follows Solution 1.
+
+--- Solution 5 ---
+Let the midpoint of <math>BC</math> be <math>D</math>. Then, by the Median Length Formula:
+<math>2*AD^2 = AB^2 - BD^2 + AC^2 - CD^2</math>.
+If we let <math>BC = 2n</math> and <math>AD = x</math>, then we get the relationship that:
+<math>x = \sqrt{1682-n^2}</math>.
+By the Triangle Inequality <math>2 < BC < 82</math>, so <math>1 < n < 41</math>. 
+This means that the domain of x is <math>(\sqrt{1}, \sqrt{1681}) = (1, 41)</math>.
+
+The rest follows Solution 1.
+
+--- Solution 6 ---
+By letting BC equal <imath>{2a}</imath>, we can use Heron's formula to calculate the area. Notice the semi-perimeter is just
+<imath>\frac{40 + 42 + 2a}{2}</imath> which is just <imath>{a + 41}</imath>. Next, by Heron's formula, the area of ABC is:
+<imath>\sqrt{(a + 41)(a + 1)(a - 1)(41 - a)}</imath> which simplifies to the
+<imath>\sqrt{(a^2 - 1)(41^2 - a^2)}</imath>.
+We now know that the domain of <imath>{f(x)}</imath> is just the domain of <imath>\sqrt{(a^2 - 1)(41^2 - a^2)}</imath>. This domain is very easy to calculate. We see that <imath>a^{2} > </imath>1 and
+<imath>a^{2} < </imath><imath>41^{2}</imath>.
+Because <imath>{a}</imath> is always positive, we see that <imath>{a}</imath> is in the open interval <imath>{(1, 41)}</imath>. Now, we find the maximum of <imath>{f(x)}</imath>. By the AM-GM inequality, we have:
+<imath>\frac{((a^2 - 1) + (41^2 - a^2))}{2}</imath> ≥ <imath>\sqrt{(a^2 - 1)(41^2 - a^2)}</imath>. Simplifying and letting
+<imath>\sqrt{(a^2 - 1)(41^2 - a^2)}</imath> = <imath>{f(x)}</imath>, we get that <imath>{f(x)}</imath> ≤ <imath>\frac{41^2 - 1}{2}</imath> = <imath>{840}</imath>. We know by AM-GM that
+<imath>{f(x)}</imath> = <imath>{840}</imath> if and only if <imath>a^{2} - </imath>1 = <imath>41^{2}  - </imath><imath>a^{2}</imath>. Solving, <imath>{a}</imath> = <imath>{29}</imath>. Therefore, we have found the domain of <imath>{f}</imath> is the open interval <imath>{(1, 41)}</imath> and the maximum of <imath>{f}</imath> is <imath>{840}</imath> which occurs at <imath>{x}</imath> = <imath>{29}</imath>(Apply Stewart's to triangle ABC when knowing that BC = <imath>{58}</imath>.) Adding these up, we get <imath>{1 + 41 + 840 + 29}</imath> = <imath>{911}</imath> or <imath>\boxed{C}</imath>.
+
+
+==Solution 7 (Cheese (Barely Any Risk and So Much Easier))==
+We can easily see that <imath>\text{Dom}(f)=(1, 41)</imath> by considering extreme cases of degenerate triangles (<imath>B</imath> is on <imath>AC</imath> or <imath>A</imath> is on <imath>BC</imath>). Then, the maximum area is extremely likely to be when the triangle is right, which happens when <imath>BC=58</imath> (<imath>20-21-29</imath> triangle, but scaled up). The area of this triangle is <imath>840</imath>. Since <imath>40 \approx 42</imath>, the median length is approximately equal to the altitude length, which is <imath>\frac{1680}{58}=\frac{840}{29}=\frac{870-30}{29}=30-\frac{30}{29} \approx 29</imath>. Thus, the answer is <imath>1+41+840+29= \boxed{(\text{C}) \; 911}</imath>.
+
+
+=== Problem 21 ===
+The measures of the smallest angles of three different right triangles sum to
+
+Choices: {'A': '40', 'B': '126', 'C': '154', 'D': '176', 'E': '208 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <math>\alpha</math> and <math>\beta</math> be the smallest angles of the <math>3-4-5</math> and <math>5-12-13</math> triangles respectively. We have
+<cmath>\tan(\alpha)=\frac{3}{4} \text{ and } \tan(\beta)=\frac{5}{12}</cmath>
+Then
+<cmath>\tan(\alpha+\beta)=\frac{\frac{3}{4}+\frac{5}{12}}{1-\frac{3}{4}\cdot\frac{5}{12}}=\frac{56}{33}</cmath>
+Let <math>\theta</math> be the smallest angle of the third triangle. Consider
+<cmath>\tan{90^\circ}=\tan((\alpha+\beta)+\theta)=\frac{\frac{56}{33}+\tan{\theta}}{1-\frac{56}{33}\cdot\tan{\theta}}</cmath>
+In order for this to be undefined, we need
+<cmath>1-\frac{56}{33}\cdot\tan{\theta}=0</cmath>
+so
+<cmath>\tan{\theta}=\frac{33}{56}</cmath>
+Hence the base side lengths of the third triangle are <math>33</math> and <math>56</math>. By the Pythagorean Theorem, the hypotenuse of the third triangle is <math>65</math>, so the perimeter is <math>33+56+65=\boxed{\textbf{(C) }154}</math>.
+
+--- Solution 2 ---
+The smallest angle of <math>3-4-5</math> triangle can be viewed as the arguement of <math>4+3i</math>, and the smallest angle of <math>5-12-13</math> triangle can be viewed as the arguement of <math>12+5i</math>.
+
+Hence, if we assume the ratio of the two shortest length of the last triangle is <math>1:k</math> (<math>k</math> being some rational number), then we can derive the following formula of the sum of their arguement.
+Since their arguement adds up to <math>\frac{\pi}{2}</math>, it's the arguement of <math>i</math>. Hence, <cmath>\left(4+3i\right)\left(12+5i\right)\left(k+i\right)=ni\,,</cmath> where <math>n</math> is some real number.
+
+Solving the equation, we get <cmath>56k-33=0\,,\quad 33k+56=n\,.</cmath> Hence <math>k=\frac{33}{56}</math>
+
+Since the sidelength of the theird triangle are co-prime integers, two of its sides are <math>33</math> and <math>56</math>. And the last side is <math>\sqrt{33^2+56^2}=65</math>, hence, the parameter of the third triangle if <math>33+56+65=\boxed{\mathbf{(C)}\,154}</math>.
+
+--- Solution 3 ---
+Denote the smallest angle of the <math>3-4-5</math> triangle as <math>\alpha</math>, the smallest angle of the <math>5-12-13</math> triangle as <math>\beta</math>, and the smallest angle of the triangle we are trying to solve for as <math>\theta</math>. We then have
+<cmath>\alpha + \beta + \theta = 90</cmath>
+<cmath>\alpha + \beta = 90 - \theta</cmath>
+<cmath>\sin{(\alpha + \beta)} = \sin{(90 - \theta)} = \cos{\theta}</cmath>
+<cmath>\cos{\theta} = \sin{\alpha}\cos{\beta} + \cos{\alpha}\sin{\beta} = (\frac{3}{5})(\frac{12}{13}) + (\frac{4}{5})(\frac{5}{13}) = \frac{56}{65}</cmath>
+Taking the hypotenuse to be <math>65</math> and one of the legs to be <math>56</math>, we compute the last leg to be <math>\sqrt{65^2 - 56^2} = \sqrt{(65-56)(65+56)} = \sqrt{9*121} = 3*11 = 33</math>
+
+Giving us a final answer of <math>65 + 56 + 33 = \boxed{\textbf{(C) }154}</math>.
+
+
+===Solution 3.1 (Different Flavor of the same thing)===
+
+Consider <math>\sin(\theta) = \sin(90 - (\alpha + \beta)) = \cos(\alpha + \beta) = \frac{33}{65}</math> using the cosine addition identity. Instead of using the Pythagorean theorem, we can use Euclid's formula since we're dealing with primitive triples.
+
+<cmath>65 = a^2 + b^2</cmath>
+<cmath>33 = a^2 - b^2</cmath>
+
+Combining that, we get <math>a = 7</math> and <math>b=4</math>. Using this, we can get that the other leg must be <math>2ab = 56</math>. We add the lengths and get that the perimeter is <math>56 + 65 + 33 = \boxed{154}</math>.
+
+--- Solution 4 ---
+[[File:Pithagor triangles 13 5 65.png|300px|right]]
+Let's arrange the triangles <math>BCD (5-12-13), BCE (9-12-15)</math> and <math>ABE</math> as shown in the diagram.
+<cmath>F = AE \cap BC.</cmath>
+<cmath>AE \perp AB, DB \perp AB \implies \triangle BCD \sim \triangle FCE \sim \triangle FAB \implies</cmath>
+<cmath>EF = \frac{9 \cdot 13}{5}, CF = \frac{9 \cdot 12}{5}, BF = BC + CF = \frac{12 \cdot 14}{5},</cmath>
+<cmath>\frac {AB}{CE} = \frac {BF}{EF} \implies AB =  \frac{12 \cdot 14}{13},</cmath> 
+<cmath>AE = AF - EF = BF \cdot \frac {12}{13} - EF = \frac {99}{13} \implies</cmath>
+<cmath>AE : AB : BE = 99 : 12 \cdot 14 : 15 \cdot 13 = 33 : 56 : 65 \implies 65 + 56 + 33 = \boxed{\textbf{(C) }154}</cmath>
+'''vladimir.shelomovskii@gmail.com, vvsss'''
+
+--- Solution 5 ---
+Suppose the triangle has legs <math>a, b</math>. We want 
+<cmath>\arctan \frac{3}{4} + \arctan\frac{5}{12} + \arctan\frac{a}{b} = \frac{\pi}{2}.</cmath>
+This is equivalent to
+<cmath>
+\begin{align*}
+    \arg{e^{i\arctan\frac{3}{4}}\cdot e^{i\arctan\frac{5}{12}}\cdot e^{i\arctan\frac{a}{b}}} &= \frac{\pi}{2}\\
+    \arg(4+3i)(12+5i)(b+ai) &= \frac{\pi}{2}\\  
+   \arg\left( (33b -56a)+(33a + 56b)i\right) &= \frac{\pi}{2}
+\end{align*}
+</cmath>
+Since the argument of this complex number is <math>\frac{\pi}{2},</math> its real part must be <math>0</math>. Matching real and imaginary parts yields <math>33b = 56a,</math> or <math>b = \frac{56}{33}a</math>. The smallest pair <math>(a, b)</math> that works is <math>(33, 56),</math> which yields a hypotenuse of <math>65.</math> The perimeter of this triangle is <math>33 + 56 + 65 = \boxed{\textbf{(C)\ 154}}.</math>
+
+-Benedict T (countmath1)
+
+--- Solution 6 ---
+We can start by scaling the <math>3-4-5</math> right triangle up by a factor of <math>3</math> and "gluing" it to the <math>5-12-13</math> triangle's longer leg. Let <math>\alpha</math>, <math>\beta</math>, and <math>\theta</math> be the smallest angles in the <math>3-4-5</math>, <math>5-12-13</math> and unknown triangle respectively. We can construct the following diagram of the two known triangles.
+<asy>
+pair A = (0,0);
+pair B = (5,0);
+pair C = (14,0);
+pair D = (5,12);
+
+draw(A--C--D--cycle);
+draw(B--D);
+
+draw(rightanglemark(A,B,D,20));
+
+label("5", A--B, S);
+label("9", B--C, S);
+label("15", C--D, NE);
+label("13", D--A, NW);
+label("12", B--D, E);
+
+label("$\beta$", D, 6*dir(257));
+label("$\alpha$", D, 4*dir(287));
+</asy>
+
+We can also construct a diagram for the third, unknown triangle like so. We know that <math>\alpha+\beta+\theta=90</math>, and therefore that <math>\theta=90-\alpha-\beta</math>. We also know that the other acute angle in this third triangle will have a measure of <math>\alpha+\beta</math> by the triangle angle sum theorem.
+<asy>
+pair A = (0,0);
+pair B = (56,0);
+pair C = (56,33);
+
+draw(A--B--C--cycle);
+
+draw(rightanglemark(A,B,C,50));
+
+label("$90-\alpha-\beta$", A, 8*dir(12));
+label("$\alpha+\beta$", C, 6*dir(242));
+</asy>
+We can use the law of cosines on the triangle in the first diagram to get the equation <math>14^2=15^2+13^2-2(13)(15)\cos{(\alpha+\beta)}</math>. Isolating <math>\cos{(\alpha+\beta)}</math>, we get <math>-198=-390\cos{(\alpha+\beta)}</math>, which further simplifies to <math>\cos{(\alpha+\beta)}=\frac{198}{390}</math>. Since the third triangle has to be a primitive Pythagorean triple, we must take this trig ratio into its most simple form, namely <math>\cos{(\alpha+\beta)}=\frac{33}{65}</math>. Using this information in our second diagram, we know that the smaller, adjacent leg must have length <math>33</math>, and the hypotenuse must have length <math>65</math>. We can then use the Pythagorean theorem to find the other, unknown leg, which has length <math>56</math>. Adding these three lengths together, we find that the perimeter of this right triangle is <math>33+56+65=\boxed{\textbf{(C)\ 154}}</math>.
+
+
+===Solution 6.1 (Faster Ending)===
+Instead of computing <math>\sqrt{65^2-33^2}</math> to find the second leg in the unknown triangle by hand, we can use process of elimination. <math>\textbf{(B)}\ 126</math> and <math>\textbf{(C)}\ 154</math> are the only answers within the realm of possibility, because <math>\textbf{(A)}\ 40</math>  would entitle a triangle with a negative side length, and <math>\textbf{(D)}\ 176</math> and <math>\textbf{(E)}\ 208</math> would require legs greater than the length of the hypotenuse. The answer choice <math>\textbf{(B)}\ 126</math> would force the second leg to have a length of <math>28</math>, which is smaller than the smallest leg in the triangle. (We know that the leg with length <math>33</math> is the smallest leg in the triangle by the side-angle relationship theorem, because it is opposite the smallest angle in the triangle.) Therefore, the only valid answer choice remaining is <math>\boxed{\textbf{(C)\ 154}}</math>.
+
+--- Solution 7 ---
+[[File:AMC 12B 2024 Problem 21.png|None]]
+
+Set up a coordinate system. Let <math>(0, 0)</math>, <math>(4, 0)</math>, and <math>(0, 3)</math> be the vertices of the base <math>3-4-5</math> right triangle. In this case, the three smallest angles will all be at <math>(4, 0)</math>, and one of the coordinates of the unknown triangle has to lie on the line <math>x = 4</math>. Now, scale down the <math>5-12-13</math> triangle by <math>\frac{5}{12}</math> so that the new sides are <math>\frac{25}{12}-5-\frac{65}{12}</math>, and place the side with length 5 at the coordinates <math>(0, 3)</math> and <math>(4, 0)</math>. The line passing through these two points can be written as <math>y = -\frac{3}{4}x + 3</math>, so the perpendicular of this line at <math>(0, 3)</math> can be written as <math>y = \frac{4}{3}x + 3</math>. Since the length of the other side is <math>\frac{25}{12}</math>, after drawing smaller <math>3-4-5</math> right triangles, we find that the third coordinate of the <math>\frac{25}{12}-5-\frac{65}{12}</math> is at <math>(\frac{5}{4}, \frac{14}{3})</math>. This coordinate will be one of the coordinates for our unknown triangle. We can place the other coordinate of the unknown triangle at <math>(4, \frac{14}{3})</math> and the third is, by definition, at <math>(4, 0)</math>. The distance from <math>(\frac{5}{4}, \frac{14}{3})</math> to <math>(4, \frac{14}{3})</math> is <math>\frac{11}{4}</math>, and the distance from <math>(4, \frac{14}{3})</math> to <math>(4, 0)</math> is <math>\frac{14}{3}</math>, and from before, the distance from <math>(\frac{5}{4}, \frac{14}{3})</math> to <math>(4, 0)</math> is <math>\frac{65}{12}</math>. Scaling up the sides so that they are integers, we see that the side lengths make a <math>33-56-65</math> right triangle. The perimeter is then <math>33+56+65=\boxed{\textbf{(C)\ 154}}</math>.
+
+--- Solution 8 ---
+Because the three smallest angles add up to <math>90^\circ</math>, you can imagine putting the <math>3-4-5</math> and <math>5-12-13</math> triangles on the <math>y</math>-axis and <math>x</math>-axis, respectively, in the first quadrant. So that all 3 triangles will have their smallest angle meet at the origin and exactly fill up the first quadrant.
+[[File:AMC_12B_2024_Problem_21_Triangles.png|center]]
+Now the <math>3-4-5</math> and <math>5-12-13</math> triangles describe the vectors <math>\langle 3, 4 \rangle</math> and <math>\langle 12, 5 \rangle</math> with the smallest angle of the third triangle, <math>\theta</math>, between them. We can find <math>cos(\theta)</math> by taking the dot product and dividing by the magnitudes of the vectors (which are the hypotenuses that we know to be 5 and 13).
+
+<cmath>
+\begin{align*}
+    \cos \theta = \frac{\langle 3, 4 \rangle \cdot \langle 12, 5 \rangle}{\|\langle 3, 4 \rangle\| \, \|\langle 12, 5 \rangle\|} = \frac{3 \cdot 12 + 4 \cdot 5}{5 \cdot 13} = \frac{56}{65}
+\end{align*}
+</cmath>
+
+This ratio <math>\cos \theta = \frac{56}{65}</math> describes the third triangle to have a hypotenuse with length <math>65</math>, one leg with length <math>56</math>, and another leg with length <math>\sqrt{65^2 - 56^2} = \sqrt{(65 - 56)(65 + 56)} = \sqrt{9 \cdot 121} = 33</math> by Pythagorean and difference of squares.
+
+The perimeter is then <math>65 + 56 + 33 = \boxed{\textbf{(C)\ 154}}</math>
+
+
+=== Problem 22 ===
+Let
+
+Choices: {'A': '13', 'B': '14', 'C': '15', 'D': '16', 'E': '17 </math>'}
+Answer: C
+
+--- Solution 1 ---
+Let <math>AB=c</math>, <math>BC=a</math>, <math>AC=b</math>. According to the law of sines,
+<cmath>\frac{b}{a}=\frac{\sin \angle B}{\sin \angle A}=2\cos \angle A</cmath>
+
+According to the law of cosines,
+<cmath>\cos \angle A=\frac{b^2+c^2-a^2}{2bc}</cmath>
+
+Hence,
+<cmath>\frac{b}{a}=\frac{b^2+c^2-a^2}{bc}</cmath>
+
+This simplifies to <math>b^2=a(a+c)</math>. We want to find the positive integer solution <math>(a, b, c)</math> to this equation such that <math>a, b, c</math> forms a triangle, and <math>a+b+c</math> is minimized. We proceed by casework on the value of <math>b</math>. Remember that <math>a<a+c</math>.
+
+Case <math>1</math>: <math>b=1</math>
+
+Clearly, this case yields no valid solutions.
+
+Case <math>2</math>: <math>b=2</math>
+
+For this case, we must have <math>a=1</math> and <math>c=3</math>. However, <math>(1, 2, 3)</math> does not form a triangle. Hence this case yields no valid solutions.
+ 
+Case <math>3</math>: <math>b=3</math>
+
+For this case, we must have <math>a=1</math> and <math>c=8</math>. However, <math>(1, 3, 8)</math> does not form a triangle. Hence this case yields no valid solutions.
+
+Case <math>4</math>: <math>b=4</math>
+
+For this case, <math>a=1</math> and <math>c=15</math>, or <math>a=2</math> and <math>c=6</math>. As one can check, this case also yields no valid solutions
+
+Case <math>5</math>: <math>b=5</math>
+
+For this case, we must have <math>a=1</math> and <math>c=24</math>. There are no valid solutions
+
+Case <math>6</math>: <math>b=6</math>
+
+For this case, <math>a=2</math> and <math>c=16</math>, or <math>a=4</math> and <math>c=5</math>, or <math>a=3</math> and <math>c=9</math>. The only valid solution for this case is <math>(4, 6, 5)</math>, which yields a perimeter of <math>15</math>.
+
+When <math>b\ge 7</math>, it is easy to see that <math>a+c>7</math>. Hence <math>a+b+c>14</math>, which means <math>a+b+c\ge15</math>. Therefore, the answer is <math>\fbox{\textbf{(C) }15}</math>
+
+--- Solution 2 ---
+Let <math>\overline{BC}=a</math>, <math>\overline{AC}=b</math>, <math>\overline{AB}=c</math>. Extend <math>C</math> to point <math>D</math> on <math>\overline{AB}</math> such that <math>\angle ACD = \angle CAD</math>. This means <math>\triangle CDA</math> is isosceles, so <math>CD=DA</math>. Since <math>\angle CDB</math> is the exterior angle of <math>\triangle CDA</math>, we have <cmath>\angle CDB=m+m=2m=\angle CBD.</cmath> Thus, <math>\triangle CBD</math> is isosceles, so <math>CB=CD=DA=a.</math> Then, draw the altitude of <math>\triangle CBD</math>, from <math>C</math> to <math>\overline{BD}</math>, and let this point be <math>H</math>. Let <math>BH=HD=x</math>. Then, by Pythagorean Theorem, 
+\begin{align*}
+CH^2&=a^2-x^2 \\
+CH^2&= b^2 - (c+x)^2.\\
+\end{align*}
+Thus, <cmath>a^2-x^2=b^2-(c-x)^2.</cmath> Solving for <math>x</math>, we have <math>x=\frac{a^2-b^2+c^2}{2c}.</math> Since <math>2x=c-a</math>, we have <cmath>c-a=\frac{a^2-b^2+c^2}{c},</cmath> and simplifying, we get <math>b^2=a^2+ac.</math> Now we can consider cases on what <math>a</math> is. (Note: Although there looks to be quite a few cases, they are just trivial and usually only take up to a few seconds max).
+
+Case <math>1</math>: <math>a=1</math>.
+
+This means <math>b^2=c+1</math>, so the least possible values are <math>b=2</math>, <math>c=3</math>, but this does not work as it does not satisfy the triangle inequality. Similarly, <math>b=3</math>, <math>c=8</math> also does not satisfy it. Anything larger goes beyond the answer choices, so we stop checking this case.
+
+Case <math>2</math>: <math>a=2</math>
+This means <math>b^2=2c+4</math>, so the least possible values for <math>b</math> and <math>c</math> are <math>b=4</math>,<math>c=6</math>, but this does not satisfy the triangle inequality, and anything larger does not satisfy the answer choices.
+
+Case <math>3</math>: <math>a=3</math>
+This means <math>b^2=3c+9</math>, and the least possible value for <math>b</math> is <math>b=6</math>, which occurs when <math>c=9</math>. Unfortunately, this also does not satisfy the triangle inequality, and similarly, any <math>b > 6</math> means the perimeter will get too big.
+
+Case <math>4</math>: <math>a=4</math>
+This means <math>b^2=4c+16</math>, so we have <math>b=6,c=5,a=4</math>, so the least possible perimeter so far is <math>4+5+6=15</math>.
+
+Case <math>5</math>: <math>a=5</math>
+We have <math>b^2=5c+25</math>, so least possible value for <math>b</math> is <math>b=10</math>, which already does not work as <math>a=5</math>, and the minimum perimeter is <math>15</math> already.
+
+Case <math>6</math>: <math>a=6</math>
+We have <math>b^2=6c+36</math>, so <math>b=10</math>, which already does not work.
+
+Then, notice that when <math>a\geq 7</math>, we also must have <math>b\geq8</math> and <math>c\geq1</math>, so <math>a+b+c \geq 16</math>, so the least possible perimeter is <math>\boxed{\textbf{(C) }15}.</math>
+
+--- Solution 3 ---
+<cmath> \frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)} </cmath>
+<cmath> \frac{a}{\sin(A)} = \frac{b}{\sin(2A)} = \frac{c}{\sin(\pi- 3A)} = \frac{c}{\sin(3A)} </cmath>
+<cmath> \frac{a}{\sin(A)} = \frac{b}{2\sin(A)\cos(A)} = \frac{c}{3\sin(A) - 4\sin^3(A)} </cmath>
+<cmath> b = 2\cos(A)a </cmath>
+<cmath> c = (3 - 4\sin^2(A) ) a = (4\cos^2(A)-1)a </cmath>
+<cmath> A+B = A+2A < 180^{\circ} </cmath>
+<cmath> A < 60^{\circ} ,  \frac{1}{2} <  cos(A)  < 1 </cmath>
+
+<cmath> a:b:c = 1: 2\cos(A) : 4\cos^2(A)-1 </cmath>
+<math>\cos(A)</math> must be rational, let's evaluate some small values
+
+case #1: <math>\cos(A) = \frac{1}{2}</math> invalid since = <math>\frac{1}{2}</math>   
+
+case #2: <math>\cos(A) = \frac{1}{3}</math> invalid since < <math>\frac{1}{2}</math> 
+
+case #3: <math>\cos(A) = \frac{2}{3}</math> give <math>{1: \frac{4}{3} :  \frac{7}{9}  }</math> with side <math>9:12:7</math> , perimeter = 28 
+
+case #4: <math>\cos(A) = \frac{1}{4}</math> invalid since < <math>\frac{1}{2}</math> 
+
+case #5: <math>\cos(A) = \frac{3}{4}</math> give <math>{1: \frac{3}{2} :  \frac{5}{4}  }</math> with side <math>4:6:5</math>, perimeter = 15
+ 
+case #6: <math>\cos(A) = \frac{3}{5}</math> give <math>{1: \frac{6}{5} :  \frac{11}{25}  }</math> with side <math>25:30:11</math> 
+
+case #7: <math>\cos(A) = \frac{4}{5}</math> give <math>{1: \frac{8}{5} :  \frac{39}{25}  }</math> with side <math>25:40:39</math> 
+
+case #8: <math>\cos(A) = \frac{4}{6}</math> same as <math>\frac{2}{3}</math>
+
+case #9: <math>\cos(A) = \frac{5}{6}</math> give <math>{1: \frac{5}{3} :  \frac{16}{9}  }</math> with side (9:15:16) 
+
+case #10: when <math>a \geq 7, b =2cos(A)*a > 2*  \frac{1}{2}*7 = 7 , a+b+c > 15</math>  
+
+<math>\boxed{\textbf{(C) }15}</math>
+
+--- Solution 4 ---
+Draw the circumcircle of <math>\triangle{ABC}</math> and let the angle bisector of <math>\angle{B}</math> meet the circle at <math>D</math>
+
+By fact 5 we have <math>CD=AD, \angle{CBD}=\angle{ABD}=\angle{CAB}=\angle{DAC}, \angle{CBA}=\angle{DAB}</math>, thus <math>AC=BD, CD=CB</math>
+
+By Ptolemy, we have <math>c^2=(a+b)CD, CD=\frac{c^2}{a+b}=a, a^2+ab=c^2</math>. Try some numbers and the answer is <math>(4,5,6)\implies \boxed{15}</math>
+
+--- Solution 5 ---
+Let <math>\angle A=\theta</math>, then <math>\angle B=2\theta</math>.
+
+Find <math>D</math> on <math>AB</math> such that <math>\angle ACD=\theta</math>. Thus, <math>\angle CDB=\angle A+\angle ACD=2\theta</math>. So <math>AD=CD=BD</math>.
+
+Find <math>E</math> on <math>BD</math> such that <math>CE\perp BD</math>. Apparently, this gives <math>E</math> as the mid-point of <math>BD</math>.
+
+Let the length of <math>BC</math> be <math>x</math>. Then <math>AB</math> can be expressed as <math>AD+BD=AD+2BE=x+2x\cos 2\theta</math>.
+
+Since <math>CE=x\sin 2\theta</math>, the length of <math>AC</math> can be expressed as <math>2x\cos\theta</math> (using double angle formula).
+
+Now we need to determine the range of <math>\theta</math>.
+
+The above conditions are only valid if <math>\angle B</math> is an acute angle.(the strict proof will be shown in the end*) So <math>\theta<45^\circ</math>, this yields <math>\cos\theta\in\left(\frac{\sqrt{2}}{2},1\right)</math>.
+
+Let <math>\cos\theta=\frac{p}{q}</math>, where <math>(p,q)=1</math>.
+
+To minimize the perimeter, the denominator needs to be as small as possible. In this way, a small <math>x</math> can be used to integrate the side length.
+
+Test <math>q=2</math>, <math>\frac{1}{2}</math> is not in the range.
+
+Test <math>q=3</math>, <math>\frac{1}{3}</math> and <math>\frac{2}{3}</math> are not in the range (since <math>0.67<0.71</math>).
+
+Test <math>q=4</math>, <math>\frac{3}{4}</math> is in the range. In this case, the smallest <math>x</math> that make side length integer is <math>4</math>, since the side length is <math>x</math>, <math>\frac{5}{4}x</math> and <math>\frac{3}{2}x</math> So the perimeter is <math>4+5+6=15</math>.
+
+So <math>\boxed{\textbf{(C) }15}</math> is the correct answer.
+
+When <math>q</math> becomes bigger, a larger <math>x</math> is required to integrate the length, thus cannot give the minimum perimeter.
+
+If <math>\angle B>90^\circ</math>, <math>\angle A+\angle B>135^\circ</math>,then<math>\angle C<45^\circ</math>. This will result in point D on the extension of AB, meaning that <math>\angle CDB+\angle CBD<180^\circ</math>. Hence, <math>2\angle B<180^\circ</math>,<math>\angle B<90^\circ</math>, which contradicts our condition. If <math>\angle B=90^\circ</math>,The triangle is isosceles right triangle. So, the ratio of sides is <math>1:1:\sqrt{2}</math>, which, obviously means the length cannot be all integers.
+
+--- Solution 6 ---
+Extend the angle bisector of <math>\angle B</math> to point <math>P</math> on <math>\overline{AC}.</math> We have <math>\triangle BPC \sim ABC,</math> so <math>\frac{m}{b} = \frac{b}{c},</math> yielding <math>m = \frac{b^2}{c}.</math> By the angle bisector theorem, <math>\frac{b}{a} = \frac{m}{n},</math> so <math>\frac{ma}{b} = \frac{ab}{c} = n</math> after substitution. We also have <math>m + n = c,</math> so 
+<cmath>\frac{b^2}{c} + \frac{ab}{c} = c \implies b^2 + ab = b(b + a) = c^2,</cmath>
+for <math>a, b, c \in \mathbb{Z}_{> 0}.</math> We can't have <math>b=1</math> for any integral triangle. If <math>b = 2</math> then <math>2a + 4 = c^2</math>, which gives <math>c = 4</math> and <math>a = 6,</math> which fails the triangle inequality. If <math>b=3</math> then <math>a = 9</math> and <math>c = 6</math>, which fails again. If <math>b = 4</math>, then <math>(a, c) = (5, 6)</math>, which works and yields a perimeter of <math>15</math>. If <math>b=5</math>, then <math>(a, c) = (15, 10),</math> and if <math>b = 6</math>, then <math>(a, c) = (18, 12),</math> which fails again.
+
+If <math>b \geq 7</math> then <math>a+b>7,</math> yielding a minimum perimeter of <math>\boxed{\textbf{(C)\ 15}},</math> which was already achieved.
+
+-Benedict T (countmath1)
+
+--- Solution 7 ---
+Let <math>AB=c</math>, <math>BC=a</math>, <math>AC=b</math>. 
+
+Our goal is to find
+
+<cmath>\min_{a,b,c \in \mathbb{N}} a+b+c</cmath>
+
+By the law of sines,
+
+<cmath> \frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)} </cmath>
+
+Substituting <math>B=2A</math> and <math>C = 180^\circ - A - B</math>:
+
+<cmath> \frac{a}{\sin(A)} = \frac{b}{\sin(2A)} = \frac{c}{\sin(180^\circ-3A)} = \frac{c}{\sin(3A)} </cmath>
+
+We will attempt to cancel the <math>\sin(A)</math> factor in the denominator. Using multiple-angle trigonometric identities, 
+
+<cmath>\sin(2A) = 2\sin(A)\cos(A)</cmath>
+<cmath>\sin(3A) = \sin(A)(4\cos^2(A)-1)</cmath>
+
+we obtain:
+
+<cmath> \frac{a}{\sin(A)} = \frac{b}{2\sin(A)\cos(A)} = \frac{c}{\sin(A)(4\cos^2(A)-1))} </cmath>
+
+which simplifies to:
+
+<cmath> a = \frac{b}{2\cos(A)} = \frac{c}{(4\cos^2(A)-1))} </cmath>
+
+We notice that the term <math>2\cos(A)</math> appears multiple times. For convenience, let <math>t:=2\cos(A)</math>. Then, rewriting <math>b</math> and <math>c</math> in terms of <math>a</math>, we get:
+
+<cmath>b=ta</cmath>
+<cmath>c=(t^2-1)a</cmath>
+
+We now rewrite the original goal in terms of <math>t</math> and <math>a</math>. Notice that since <math>a,b,c \in \mathbb{N}</math>, then the perimeter <math>a+b+c \in \mathbb{N}</math>. Hence,
+
+<cmath> a+b+c = a + ta + (t^2-1)a </cmath>
+<cmath>= at(t+1) \in \mathbb{N}</cmath>
+
+This means that <math>t \in \mathbb{Q}</math>, so let <math>t := \frac{m}{n}</math> with <math>m,n \in \mathbb{N}</math>. To minimize
+
+<cmath>a+b+c = at(t+1) = a\left(\frac{m^2}{n^2}+\frac{m}{n}\right)</cmath> 
+
+we set <math>a = n^2</math> to ensure the perimeter is an integer, and the objective becomes
+
+<cmath>\min_{m,n \in \mathbb{N}} m(m+n) </cmath>
+
+Notice that to have a valid triangle, <math>c=(t^2-1)a>0</math> implies <math>t^2 - 1 > 0</math> so <math>t > 1</math>.
+
+In addition, due to the triangle inequality, we must have <math>c < a + b</math>, such that
+
+<cmath> (t^2-1)a < a + ta </cmath>
+
+Since <math>a>0</math>, we can safely divide through, yielding <math> t > 2</math>. Overall, we have <math>1<t<2</math>, or equivalently, <math>n<m<2n</math>. The smallest pair satisfying this condition is <math>n=2</math>, <math>m=3</math>, yielding a perimeter of <math>15</math>. (Notice, to have a valid integer between <math>n</math> and <math>2n</math>, there must be a gap of at least <math>1</math> in between, implying <math>2n-n-1=n-1\ge 1</math>, so setting <math>n=2</math> yields the minimum.) Increasing <math>m</math> or <math>n</math> will increase the perimeter, so this is the global minimum. Hence the answer is:
+
+<cmath>\boxed{\textbf{(C)\ 15}}</cmath>
+
+
+=== Problem 23 ===
+A right pyramid has regular octagon
+
+Choices: {'A': '1', 'B': '\\frac{1+\\sqrt2}{2}', 'C': '\\sqrt2', 'D': '\\frac32', 'E': '\\frac{2+\\sqrt2}{3} </math>'}
+Answer: B
+
+--- Solution 1 ---
+To find the height of the pyramid, we need the length from the center of the octagon (denote as <math>I</math>) to its vertices and the length of AV. 
+
+From symmetry, we know that <math>\overline{AV} = \overline{DV}</math>, therefore <math>\triangle{AVD}</math> is a 45-45-90 triangle. Denote <math>\overline{AV}</math> as <math>x</math> so that <math>\overline{AD} = x\sqrt{2}</math>. Doing some geometry on the isosceles trapezoid <math>ABCD</math> (we know this from the fact that it is a regular octagon) reveals that <math>\overline{AD}=1+2(\sqrt{2}/2)=1+\sqrt{2}</math> and <math>\overline{AV}=(\overline{AD})/\sqrt{2}=(\sqrt{2}+2)/2</math>. 
+
+To find the length <math>\overline{IA}</math>, we cut the octagon into 8 triangles, each with a smallest angle of 45 degrees. Using the law of cosines on <math>\triangle{AIB}</math> we find that <math>{\overline{IA}}^2=(2+\sqrt{2})/2</math>. 
+
+Finally, using the pythagorean theorem, we can find that <math>{\overline{IV}}^2={\overline{AV}}^2-{\overline{IA}}^2= {((\sqrt{2}+2)/2)}^2 - (2+\sqrt{2})/2 = \boxed{(1+\sqrt{2})/2}</math> which is answer choice <math>\boxed{B}</math>.
+
+～username2333
+
+--- Solution 2 ---
+Let <math>O</math> be the center of the regular octagon. Connect <math>AD</math>, and let <math>I</math> be the midpoint of line segment <math>AD</math>. It is easy to see that <math>VI=\frac{1}{2} AD=\frac{1+\sqrt{2}}{2}</math> and <math>OI=\frac{1}{2}AH=\frac{1}{4}</math>. Hence, 
+<cmath>VO^2=VI^2-OI^2</cmath>
+<cmath>=\left(\frac{1+\sqrt{2}}{2}\right)^2-\frac{1}{4}</cmath>
+<cmath>=\frac{1+\sqrt{2}}{2}</cmath> 
+Hence, the answer is <math>\boxed{B}</math>.
+
+--- Solution 3 ---
+[[Image: 2024_AMC_12B_P23.jpeg|thumb|center|600px|]]
+
+--- Solution 4 ---
+[[File:AMC_12B_2024_Problem23.png|None]]
+
+Firstly, scale each of the sides up by <math>2\sqrt{2}</math>, and split the octagon into half. Next, divide the octagon into a rectangle and the isosceles trapezoid, and let <math>A</math> and <math>D</math> be the points where the shapes coincide. Also, let <math>I</math> be the center of the rectangle (which is also the center of the octagon.) By drawing <math>45-45-90</math> triangles in the trapezoid, we see that <math>AD = 4+2\sqrt{2}</math>. Now, consider the length of <math>AI</math>. It is half of the diagonal of the rectangle, and since the diagonal is just <math>\sqrt{(2\sqrt{2})^{2}+(4+2\sqrt{2})^{2}} = \sqrt{8+24+16\sqrt{2}} = \sqrt{32+16\sqrt{2}}</math>, the length of AI is just <math>\sqrt{8+4\sqrt{2}}</math>. Now, consider triangle <math>ADV</math>. The apex of a regular pyramid is defined to be equidistant from every vertex, and since segments <math>AV</math> and <math>DV</math> are perpendicular, then triangle <math>ADV</math> is a <math>45-45-90</math> right triangle with the right angle at <math>V</math>. This means that both <math>AV</math> and <math>DV</math> can be written as <math>\frac{AD}{\sqrt{2}} = \frac{4+2\sqrt{2}}{\sqrt{2}} = 2\sqrt{2} + 2</math>. Finally, since <math>IV</math> is perpendicular to base <math>ABCDEFGH</math>, then <math>AIV</math> is a right triangle. Applying Pythagorean Theorem yields <math>IV^{2} = (2\sqrt{2} + 2)^{2} - (8+4\sqrt{2}) = 4+4\sqrt{2}</math>. However, initially we had scaled each of the sides by <math>2\sqrt{2}</math>, so we have to divide the answer by the square of that, so the real answer is then <math>\frac{1+\sqrt{2}}{2}</math>. Therefore the answer is then <math>\boxed{\textbf{(B) }\frac{1+\sqrt2}{2}}</math>
+
+--- Solution 5 ---
+Consider the vectors <math>\vec{AV}</math> and <math>\vec{DV}</math>.
+If we use a coordinate plane where one of the axes is parallel to one of the sides of the octagon, we can calculate each of the vectors to be
+<cmath>\vec{AV} = \left\langle \frac{1}{2},  \frac{1+\sqrt{2}}{2}, h \right\rangle</cmath>
+<cmath>\vec{DV} = \left\langle \frac{1}{2},  \frac{-1-\sqrt{2}}{2}, h \right\rangle</cmath>
+Now, we must have <math>\vec{AV} \cdot \vec{DV} = 0</math> if the vectors are perpendicular to each other, so
+<cmath>\left\langle \frac{1}{2},  \frac{-1-\sqrt{2}}{2}, h \right\rangle \cdot \left\langle \frac{1}{2},  \frac{1+\sqrt{2}}{2}, h \right\rangle = \frac{1}{4} - \frac{3 + 2\sqrt{2}}{4} + h^2 = 0</cmath>
+<cmath>h^2=\frac{2+2\sqrt{2}}{4}=\frac{1+\sqrt{2}}{2}</cmath>
+
+Yielding answer choice <math>\boxed{B}</math>.
+
+
+==Only B and D looks normal , guess one using掐头去尾
+
+
+=== Problem 24 ===
+What is the number of ordered triples
+
+Choices: {'A': '2', 'B': '3', 'C': '4', 'D': '5', 'E': '6</math>'}
+Answer: 
+
+--- Solution 1 ---
+First we derive the relationship between the inradius of a triangle <math>r</math>, and its three altitudes <math>a, b, c</math>.
+Using an area argument, we can get the following well known result
+<cmath>\left(\frac{AB+BC+AC}{2}\right)r=A</cmath>
+where <math>AB, BC, AC</math> are the side lengths of <math>\triangle ABC</math>, and <math>A</math> is the triangle's area. Substituting <math>A=\frac{1}{2}\cdot AB\cdot c</math> into the above we get
+<cmath>\frac{r}{c}=\frac{AB}{AB+BC+AC}</cmath>
+Similarly, we can get
+<cmath>\frac{r}{b}=\frac{AC}{AB+BC+AC}</cmath>
+<cmath>\frac{r}{a}=\frac{BC}{AB+BC+AC}</cmath>
+Hence,
+\begin{align}\label{e1}
+\frac{1}{r}=\frac{1}{a}+\frac{1}{b}+\frac{1}{c}
+\end{align}
+
+Note that there exists a unique, non-degenerate triangle with altitudes <math>a, b, c</math> if and only if <math>\frac{1}{a}, \frac{1}{b}, \frac{1}{c}</math> are the side lengths of a non-degenerate triangle, i.e., <math>\frac{1}{b}+\frac{1}{c}>\frac{1}{a}</math>. 
+
+With this in mind, it remains to find all positive integer solutions <math>(r, a, b, c)</math> to the above such that <math>\frac{1}{b}+\frac{1}{c}>\frac{1}{a}</math>, and <math>a\le b\le c\le 9</math>. We do this by doing casework on the value of <math>r</math>. 
+
+Since <math>r</math> is a positive integer, <math>r\ge 1</math>. Since <math>a\le b\le c\le 9</math>, <math>\frac{1}{r}\ge \frac{1}{3}</math>, so <math>r\le3</math>. The only possible values for <math>r</math> are 1, 2, and 3.
+
+Case 1: <math>r=1</math>
+
+For this case, we can't have <math>a\ge 4</math>, since <math>\frac{1}{a}+\frac{1}{b}+\frac{1}{c}</math> would be too small. When <math>a=3</math>, we must have <math>b=c=3</math>. When <math>a\le2</math>, we would have <math>\frac{1}{b}+\frac{1}{c}\le\frac{1}{a}</math>, which doesn't work. Hence this case only yields one valid solution <math>(1, 3, 3, 3)</math>
+
+Case 2: <math>r=2</math>
+
+For this case, we can't have <math>a\ge 7</math>, for the same reason as in Case 1. When <math>a=6</math>, we must have <math>b=c=6</math>. When <math>a=5</math>, we must have <math>b=5, c=10</math> or <math>b=10, c=5</math>. Regardless, <math>10</math> appears, so it is not a valid solution. When <math>a\le4</math>, <math>\frac{1}{b}+\frac{1}{c}\le\frac{1}{a}</math>. Hence, this case also only yields one valid solution <math>(2, 6, 6, 6)</math>
+
+Case 3: <math>r=3</math>
+
+The only possible solution is <math>(3, 9, 9, 9)</math>, and clearly it is a valid solution.
+
+Hence the only valid solutions are <math>(1, 3, 3, 3), (2, 6, 6, 6), (3, 9, 9, 9)</math>, and our answer is <math>\fbox{\textbf{(B) }3}</math>
+
+--- Solution 2 ---
+Note that some equilateral triangles with irrational side lengths will have rational altitudes and as a result, a rational inradius. Therefore, the ordered pairs <math>(a, b, c)=(3, 3, 3)</math>, <math>(a, b, c)=(6, 6, 6)</math>, and <math>(a, b, c)=(9, 9, 9)</math> yield integer inradii, and we can make an educated guess that the answer is <math>\fbox{\textbf{(B) }3}</math>
+
+
+=== Problem 25 ===
+Pablo will decorate each of
+
+Choices: {'A': '243', 'B': '245', 'C': '247', 'D': '249', 'E': '251</math>'}
+Answer: 
+
+--- Solution 1 ---
+Let <math>a</math> be the number of balls that are both striped and red, <math>x</math> be the number of balls that are striped but blue, and <math>y</math> be the number of balls that are red but dotted. Then there must be <math>6-a-x-y</math> balls that are dotted and blue.
+
+Let <math>A</math> be the event, "the ball Frida selects is red", and <math>B</math> be the event, "the ball Frida selects is striped". <math>A</math> and <math>B</math> are independent if and only if <math>\frac{a}{6}=\frac{a+x}{6}\cdot\frac{a+y}{6}</math>, i.e.,
+<cmath>6a=(a+x)(a+y)</cmath>
+
+Before we continue, I'd like to clarify that the sample space <math>S</math>, under which we are computing probability that <math>A</math> and <math>B</math> are independent, consists of <math>4^6</math> total outcomes, each equally likely. Notice that once given <math>a, x, y</math>, there are <math>{6\choose a}{6-a \choose x}{6-a-x \choose y}=\frac{6!}{a!x!y!(6-a-x-y)!}</math> corresponding outcomes.
+
+Now, it remains to find all nonnegative integer solutions <math>(a, x, y)</math> to the above equation such that <math>a+x+y<6</math>, add up all the corresponding outcomes, and then divide by <math>4^6</math>. We can find the solutions relatively easily by doing casework on <math>a=0, 1, 2, 3, 4, 5, 6</math>. Long story short, one finds the solutions to be
+<cmath>(0, 0, 0), (0, 0, 1)\cdots (0, 0, 6)</cmath>
+<cmath>(0, 1, 0), (0, 2, 0)\cdots (0, 6, 0)</cmath>
+<cmath>(1, 5, 0), (1, 0, 5), (1, 2, 1), (1, 1, 2)</cmath>
+<cmath>(2, 4, 0), (2, 0, 4) (2, 2, 1), (2, 1, 2)</cmath>
+<cmath>(3, 3, 0), (3, 0, 3)</cmath>
+<cmath>(4, 2, 0), (4, 0, 2)</cmath>
+<cmath>(5, 1, 0), (5, 0, 1)</cmath>
+<cmath>(6, 0, 0)</cmath>
+
+There are little tricks we can use to make the process of adding up the corresponding outcomes faster. First, we notice that the first, second, and last row of solutions contributes <math>2^7=128</math> outcomes. Then we can take advantage of the symmetry between <math>x, y</math> to add up the rest of the outcomes. In the end we get
+<cmath>128+2(6+180+15+180+20+15+6)=972</cmath>
+
+Hence, the probability is <math>\frac{972}{4^6}=\frac{243}{2^{10}}</math>. Therefore, the answer is <math>\fbox{\textbf{(A) } 243}</math>
+
+
+==Solution 2 Symmetry + Observations = 5 min solve==
+Let <math>S</math> be the number of balls with stripes, <math>R</math> the number of red balls, and <math>N</math> the number of balls that are red and have stripes.
+Now, <math>P(A\ \text{and}\ B) = P(A) \cdot P(B) \Rightarrow \frac{N}{6}=\frac{S \cdot R}{36}</math>, or <math>6N = SR</math>.
+
+Make the trivial observation that whenever <math>S</math> or <math>R</math> equals <math>0</math>, or both equal <math>6</math>, there is one unique <math>N</math> satisfying the equality.
+Notice for <math>S = 0</math> and <math>R</math> going from <math>0</math> to <math>6</math>, we have a total probability of <math>\frac{2^6}{2^{12}}</math> due to binomial theorem.
+By symmetry, we must multiply by <math>2</math> to account for switching <math>R</math> and <math>S</math>, and another <math>2</math> for the case where <math>S=R=6</math>. Finally, we subtract the four overlapping cases <math>(0, 0), (0, 6), (6,0),</math> and <math>(6, 6)</math>, where each pair has format <math>(S, R)</math>.
+Thus, the total probability is <math>\frac{4 \cdot 2^6 - 4}{2^{12}}</math>.
+
+Now, there are <math>4</math> more pairs <math>(S,R)</math> that satisfy the condition, namely <math>(2, 3), (3, 4), (3, 2),</math> and <math>(4, 3)</math>.
+
+Again, make the trivial observation that each of these have the same probability due to <math>R/S</math> invariance and similar distribution. 
+
+For a single pair, take <math>(2, 3)</math> as an example. We know <math>N=1</math>, and we fix <math>S</math>. The probability is therefore <math>\frac{\binom{6}{3} \binom{3}{1} \binom{3}{1}}{2^{12}} = \frac{180}{2^{12}}</math>.
+
+Adding all of them up, we get <math>\frac{4 \cdot 2^6 - 4 + 180 \cdot 4}{2^{12}} = \frac{2^6+179}{2^{10}} = \frac{243}{1024}</math>.
+Thus, the answer is <math>\boxed{A}</math>.
+
+

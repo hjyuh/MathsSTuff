@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 19: Exponents and Logarithms — Study Guide</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] }
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" crossorigin="anonymous"></script>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --text: #1a1a1a;
+    --accent: #2563eb;
+    --border: #d4d4d4;
+    --card-bg: #ffffff;
+    --highlight: #eff6ff;
+    --warning-bg: #fef3c7;
+    --warning-border: #f59e0b;
+    --tip-bg: #ecfdf5;
+    --tip-border: #10b981;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.25rem;
+    color: var(--accent);
+  }
+  .subtitle {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.45rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--accent);
+    color: var(--accent);
+  }
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  p { margin-bottom: 0.9rem; }
+  table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.45rem 0.75rem;
+    text-align: center;
+  }
+  th { background: var(--highlight); font-weight: 600; }
+  tr:nth-child(even) { background: #f9f9f9; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .formula-box {
+    background: var(--highlight);
+    border-left: 4px solid var(--accent);
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .warning {
+    background: var(--warning-bg);
+    border-left: 4px solid var(--warning-border);
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .tip {
+    background: var(--tip-bg);
+    border-left: 4px solid var(--tip-border);
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .example {
+    background: #f8f5ff;
+    border-left: 4px solid #7c3aed;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .example strong { color: #7c3aed; }
+  details {
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+  details summary {
+    font-weight: 600;
+    color: var(--accent);
+    padding: 0.3rem 0;
+  }
+  details[open] summary { margin-bottom: 0.4rem; }
+  details .answer {
+    background: var(--highlight);
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+  }
+  ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
+  li { margin-bottom: 0.35rem; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+  .toc { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.5rem; margin-bottom: 2rem; }
+  .toc h3 { margin-top: 0; }
+  .toc ol { margin-bottom: 0; }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>Chapter 19: Exponents and Logarithms</h1>
+<p class="subtitle">AoPS Introduction to Algebra — Study Guide</p>
+
+<div class="toc">
+  <h3>Contents</h3>
+  <ol>
+    <li><a href="#s1">Exponential Functions</a></li>
+    <li><a href="#s2">Show Me the Money (Interest)</a></li>
+    <li><a href="#s3">Interest-ing Problems</a></li>
+    <li><a href="#s4">What is a Logarithm?</a></li>
+    <li><a href="#s5">Summary &amp; Key Formulas</a></li>
+    <li><a href="#s6">Self-Check Questions</a></li>
+    <li><a href="#s7">Exercises to Prioritize</a></li>
+  </ol>
+</div>
+
+<!-- ====== SECTION 19.1 ====== -->
+<h2 id="s1">19.1 — Exponential Functions</h2>
+
+<h3>Core Idea</h3>
+<p>In an expression like \(a^x\), when \(a\) is a constant greater than 1 and \(x\) is the variable, we call \(f(x) = a^x\) an <strong>exponential function</strong>. These functions grow incredibly fast — that's <strong>exponential growth</strong>.</p>
+
+<h3>The Rice on the Chessboard</h3>
+<p>Two girls choose rewards from a king:</p>
+<ul>
+  <li><strong>Arial's deal (linear):</strong> 1 grain on day 1, then 10 more each day. Her function is \(A(n) = 10n - 9\). Growth by a constant <em>amount</em>.</li>
+  <li><strong>Meena's deal (exponential):</strong> 1 grain on day 1, doubling each day. Her function is \(M(n) = 2^{n-1}\). Growth by a constant <em>factor</em>.</li>
+</ul>
+<p>At first Arial gets more, but by day 7 Meena overtakes her. By day 21 Meena receives over 1 million grains. <strong>Exponential growth always eventually dominates linear growth.</strong></p>
+
+<h3>Graphing \(f(x) = 2^x\)</h3>
+<table>
+  <tr><th>\(x\)</th><th>\(f(x)\)</th></tr>
+  <tr><td>\(-10\)</td><td>\(1/1024\)</td></tr>
+  <tr><td>\(-2\)</td><td>\(1/4\)</td></tr>
+  <tr><td>\(-1\)</td><td>\(1/2\)</td></tr>
+  <tr><td>\(0\)</td><td>\(1\)</td></tr>
+  <tr><td>\(1\)</td><td>\(2\)</td></tr>
+  <tr><td>\(2\)</td><td>\(4\)</td></tr>
+  <tr><td>\(5\)</td><td>\(32\)</td></tr>
+  <tr><td>\(10\)</td><td>\(1024\)</td></tr>
+</table>
+
+<div class="formula-box">
+  <strong>Key facts about \(f(x) = 2^x\):</strong><br>
+  <strong>Domain:</strong> all real numbers (you can input any \(x\))<br>
+  <strong>Range:</strong> all positive numbers (\(2^x\) is never zero or negative)<br>
+  As \(x \to -\infty\), the function approaches 0 but never reaches it.<br>
+  As \(x\) increases, the function "explodes" upward.
+</div>
+
+<h3>Solving Exponential Equations</h3>
+
+<p><strong>Strategy 1: Match the bases.</strong> If \(a^m = a^n\) and \(a > 1\), then \(m = n\).</p>
+<div class="example">
+  <strong>Example:</strong> Solve \(3^{2x} = 3^{x-5}\).<br>
+  Bases are the same, so set exponents equal: \(2x = x - 5\), giving \(x = -5\).
+</div>
+
+<p><strong>Strategy 2: Rewrite everything with the same base.</strong></p>
+<div class="example">
+  <strong>Example:</strong> Solve \(2^{(16^x)} = 16^{(2^x)}\).<br>
+  Since \(16 = 2^4\), rewrite as \(2^{(2^4)^x} = (2^4)^{(2^x)}\).<br>
+  Use \((a^b)^c = a^{bc}\) to get \(2^{4x} = 2^{2+x}\).<br>
+  Match exponents: \(4x = 2 + x\), so \(x = 2/3\).
+</div>
+
+<p><strong>Strategy 3: Substitution.</strong> When variables are stuck in exponents, substitute \(y = a^x\) to create a familiar equation.</p>
+<div class="example">
+  <strong>Example:</strong> Solve \(4^x - 33 \cdot 2^{x-1} + 8 = 0\).<br>
+  Rewrite: \(2^{2x} - \tfrac{33}{2}\cdot 2^x + 8 = 0\).<br>
+  Let \(y = 2^x\). Then \(y^2 - \tfrac{33y}{2} + 8 = 0\), so \(2y^2 - 33y + 16 = 0\).<br>
+  Factor: \((2y - 1)(y - 16) = 0\), giving \(y = 1/2\) or \(y = 16\).<br>
+  Back-substitute: \(2^x = 1/2 \Rightarrow x = -1\), and \(2^x = 16 \Rightarrow x = 4\).
+</div>
+
+<div class="warning">
+  <strong>Warning — Don't confuse these two rules:</strong><br>
+  \((a^b)^c = a^{bc}\) — power of a power: <strong>multiply</strong> exponents<br>
+  \((a^b)(a^c) = a^{b+c}\) — product of same base: <strong>add</strong> exponents
+</div>
+
+<h3>Real-World Application: Carbon Dating</h3>
+<p>Carbon-14 has a <strong>half-life</strong> of ~5700 years. The equation \(\left(\frac{1}{2}\right)^t = \frac{a}{b}\) tells you how many half-lives have passed (where \(a\) = current amount, \(b\) = original amount). The fossil's age is \(5700t\) years.</p>
+
+<hr>
+
+<!-- ====== SECTION 19.2 ====== -->
+<h2 id="s2">19.2 — Show Me the Money</h2>
+
+<h3>Simple Interest</h3>
+<p>Interest is charged only on the original <strong>principal</strong> (the amount borrowed/invested). You add the same dollar amount each year — this is <em>linear</em>.</p>
+
+<div class="formula-box">
+  <strong>Simple Interest Formula:</strong> After \(n\) years at rate \(r\%\) on principal \(\$k\):
+  \[\text{Total} = \left(1 + \frac{nr}{100}\right)(\$k)\]
+</div>
+
+<h3>Compound Interest</h3>
+<p>Interest is charged on the total amount (principal + accumulated interest). Each year you <strong>multiply</strong> by the same factor — this is <em>exponential</em>.</p>
+
+<div class="formula-box">
+  <strong>Compound Interest (Annually):</strong> After \(n\) years at rate \(r\%\) on principal \(\$k\):
+  \[\text{Total} = \left(1 + \frac{r}{100}\right)^n (\$k)\]
+</div>
+
+<h3>Simple vs. Compound: Side by Side</h3>
+<p>\(\$5{,}000\) invested at 9%:</p>
+<table>
+  <tr><th>Years</th><th>Simple Interest</th><th>Compounded Annually</th></tr>
+  <tr><td>1</td><td>\(\$5{,}450\)</td><td>\(\$5{,}450.00\)</td></tr>
+  <tr><td>2</td><td>\(\$5{,}900\)</td><td>\(\$5{,}940.50\)</td></tr>
+  <tr><td>5</td><td>\(\$7{,}250\)</td><td>\(\$7{,}693.12\)</td></tr>
+  <tr><td>10</td><td>\(\$9{,}500\)</td><td>\(\$11{,}836.82\)</td></tr>
+  <tr><td>30</td><td>\(\$18{,}500\)</td><td>\(\$66{,}338.39\)</td></tr>
+  <tr><td>50</td><td>\(\$27{,}500\)</td><td>\(\$371{,}787.60\)</td></tr>
+</table>
+
+<div class="tip">
+  <strong>Key insight:</strong> The difference between simple and compound interest is the same as the difference between addition and multiplication. Simple interest <em>adds</em> the same amount each year. Compound interest <em>multiplies</em> by the same factor each year.
+</div>
+
+<h3>Compounding Multiple Times per Year</h3>
+<p>If interest compounds \(m\) times per year:</p>
+<div class="formula-box">
+  <strong>General Compound Interest:</strong> Rate \(r\%\), compounded \(m\) times/year, for \(n\) years:
+  \[\text{Total} = \left(1 + \frac{r}{100m}\right)^{nm} (\$k)\]
+</div>
+
+<div class="example">
+  <strong>Example:</strong> \(\$10{,}000\) at 14% compounded quarterly (\(m = 4\)) for 1 year:<br>
+  \(\left(1 + \frac{0.14}{4}\right)^4 (\$10{,}000) = (1.035)^4 (\$10{,}000) \approx \$11{,}475.23\)
+</div>
+
+<h3>The Number \(e\)</h3>
+<p>As you compound more and more frequently, the total approaches a limit connected to the constant:</p>
+\[e = \lim_{n \to \infty}\left(1 + \frac{1}{n}\right)^n \approx 2.71828\]
+<p>This constant is as important in mathematics as \(\pi\).</p>
+
+<hr>
+
+<!-- ====== SECTION 19.3 ====== -->
+<h2 id="s3">19.3 — Interest-ing Problems</h2>
+
+<h3>Finding the Interest Rate</h3>
+<p>Set up the compound interest formula and solve for \(r\).</p>
+<div class="example">
+  <strong>Example:</strong> Sayeed borrows \(\$2{,}300\) compounded annually for 5 years and owes \(\$3{,}301.95\). What is the rate?<br><br>
+  \(2300\left(1 + \frac{r}{100}\right)^5 = 3301.95\)<br>
+  \(\left(1 + \frac{r}{100}\right)^5 \approx 1.436\)<br>
+  Take the 5th root: \(1 + \frac{r}{100} \approx 1.075\)<br>
+  So \(r \approx 7.5\%\).
+</div>
+
+<h3>Present Value</h3>
+<p>The <strong>present value</strong> of a future amount is what you'd need to invest <em>today</em> to have that amount later. To find future value you multiply by a growth factor; to find present value you <em>divide</em> by it.</p>
+
+<div class="formula-box">
+  <strong>Present Value:</strong> The present value of \(\$m\) paid \(n\) years from now at annual compound rate \(r\%\) is:
+  \[\text{Present value} = \frac{\$m}{\left(1 + \frac{r}{100}\right)^n}\]
+</div>
+
+<div class="example">
+  <strong>Example:</strong> To have \(\$1{,}000{,}000\) in 10 years at 10% compounded semi-annually:<br>
+  \(\frac{\$1{,}000{,}000}{(1.05)^{20}} \approx \$376{,}889.48\) — invest this amount today.
+</div>
+
+<h3>Equal Loan Payments</h3>
+<p>Think of a multi-year loan as several smaller loans, one per payment. The present values of all payments must add up to the total borrowed.</p>
+
+<div class="example">
+  <strong>Example:</strong> A 3-year, \(\$10{,}000\) loan at 6% compounded annually with equal payments of \(\$x\):<br>
+  \[\frac{x}{1.06} + \frac{x}{1.06^2} + \frac{x}{1.06^3} = 10{,}000\]
+  Solving gives \(x \approx \$3{,}741.10\) per year.
+</div>
+
+<hr>
+
+<!-- ====== SECTION 19.4 ====== -->
+<h2 id="s4">19.4 — What is a Logarithm?</h2>
+
+<h3>Definition</h3>
+<p>A <strong>logarithm</strong> answers: "What power must I raise the base to in order to get this number?"</p>
+
+<div class="formula-box">
+  <strong>The fundamental equivalence</strong> (requires \(a > 0\) and \(a \neq 1\)):
+  \[\log_a b = c \quad \Longleftrightarrow \quad a^c = b\]
+  The left side is <strong>logarithmic form</strong>. The right side is <strong>exponential form</strong>.<br>
+  Converting between these two forms is the single most important skill in this section.
+</div>
+
+<h3>Key Identity</h3>
+<div class="formula-box">
+  \[\log_a a^p = p\]
+  <em>"What power do I raise \(a\) to in order to get \(a^p\)?" — obviously \(p\).</em>
+</div>
+
+<h3>Evaluating Logarithms</h3>
+<table>
+  <tr><th>Expression</th><th>Think…</th><th>Answer</th></tr>
+  <tr><td>\(\log_3 81\)</td><td>\(3^? = 81 \to 3^4\)</td><td>\(4\)</td></tr>
+  <tr><td>\(\log_{10} 100000\)</td><td>\(10^? = 100000 \to 10^5\)</td><td>\(5\)</td></tr>
+  <tr><td>\(\log_8 2\)</td><td>\(8^{1/3} = 2\)</td><td>\(1/3\)</td></tr>
+  <tr><td>\(\log_5 \sqrt[3]{25}\)</td><td>\(\sqrt[3]{25} = 5^{2/3}\)</td><td>\(2/3\)</td></tr>
+  <tr><td>\(\log_2 \frac{1}{8}\)</td><td>\(2^{-3} = \frac{1}{8}\)</td><td>\(-3\)</td></tr>
+  <tr><td>\(\log_{1/2} \sqrt{2}\)</td><td>\((1/2)^{-1/2} = \sqrt{2}\)</td><td>\(-1/2\)</td></tr>
+</table>
+
+<div class="tip">
+  <strong>Technique:</strong> Convert all numbers to the same base, then use \(\log_a a^p = p\).
+</div>
+
+<h3>Graphing \(f(x) = \log_3 x\)</h3>
+<table>
+  <tr><th>\(x\)</th><th>\(y\)</th></tr>
+  <tr><td>\(1/81\)</td><td>\(-4\)</td></tr>
+  <tr><td>\(1/3\)</td><td>\(-1\)</td></tr>
+  <tr><td>\(1\)</td><td>\(0\)</td></tr>
+  <tr><td>\(3\)</td><td>\(1\)</td></tr>
+  <tr><td>\(9\)</td><td>\(2\)</td></tr>
+  <tr><td>\(81\)</td><td>\(4\)</td></tr>
+</table>
+
+<div class="formula-box">
+  <strong>Key facts about \(f(x) = \log_3 x\):</strong><br>
+  <strong>Domain:</strong> all positive numbers (\(x > 0\); can't take the log of 0 or a negative number)<br>
+  <strong>Range:</strong> all real numbers<br>
+  <strong>\(x\)-intercept:</strong> always \((1, 0)\) because \(\log_a 1 = 0\) for any valid base<br>
+  <strong>Inverse:</strong> \(f(x) = \log_3 x\) and \(g(x) = 3^x\) are inverse functions — their graphs are mirror images over the line \(y = x\).
+</div>
+
+<h3>Common and Natural Logarithms</h3>
+<ul>
+  <li><strong>Common logarithm</strong> (\(\log_{10}\)): Scientists often write just "\(\log\)" to mean base 10.</li>
+  <li><strong>Natural logarithm</strong> (\(\log_e\)): Mathematicians write "\(\ln\)" for base \(e\).</li>
+</ul>
+<p>When you see "\(\log\)" without a base, check context to know if it means base 10 or base \(e\).</p>
+
+<h3>Solving Logarithmic Equations</h3>
+<p>The main technique: <strong>convert to exponential form</strong>.</p>
+
+<div class="example">
+  <strong>Example:</strong> Evaluate \(\log_{3\sqrt{3}}\!\left(\frac{1}{81}\right)\).<br><br>
+  Let \(x = \log_{3\sqrt{3}}\!\left(\frac{1}{81}\right)\), so \((3\sqrt{3})^x = \frac{1}{81}\).<br>
+  Rewrite: \((3^{3/2})^x = 3^{-4}\), so \(3^{3x/2} = 3^{-4}\).<br>
+  Match exponents: \(\frac{3x}{2} = -4\), giving \(x = -\frac{8}{3}\).
+</div>
+
+<div class="example">
+  <strong>Example:</strong> If \(3 = k \cdot 2^r\) and \(15 = k \cdot 4^r\), find \(r\).<br><br>
+  Divide the equations: \(\frac{15}{3} = \frac{4^r}{2^r} = 2^r\), so \(2^r = 5\).<br>
+  Therefore \(r = \log_2 5\). (This can't be simplified further, and that's okay — logarithms <em>are</em> numbers.)
+</div>
+
+<h3>Useful Property (Previewed)</h3>
+<div class="formula-box">
+  \[\log_a b^c = c \log_a b\]
+  You can pull exponents out in front of logarithms. You'll prove this in Exercise 19.4.10.
+</div>
+
+<hr>
+
+<!-- ====== SECTION 19.5 ====== -->
+<h2 id="s5">19.5 — Summary &amp; Key Formulas</h2>
+
+<table>
+  <tr><th>Situation</th><th>Formula</th></tr>
+  <tr><td>Simple interest (\(r\%\), \(n\) years)</td><td>\(\left(1 + \frac{nr}{100}\right)(\$k)\)</td></tr>
+  <tr><td>Compound interest (annually)</td><td>\(\left(1 + \frac{r}{100}\right)^n (\$k)\)</td></tr>
+  <tr><td>Compound interest (\(m\) times/year)</td><td>\(\left(1 + \frac{r}{100m}\right)^{nm} (\$k)\)</td></tr>
+  <tr><td>Present value (annually compounded)</td><td>\(\dfrac{\$m}{\left(1 + \frac{r}{100}\right)^n}\)</td></tr>
+  <tr><td>Log \(\leftrightarrow\) Exponential</td><td>\(\log_a b = c \iff a^c = b\)</td></tr>
+  <tr><td>Log of a power</td><td>\(\log_a a^p = p\)</td></tr>
+  <tr><td>Exponent out front</td><td>\(\log_a b^c = c\log_a b\)</td></tr>
+</table>
+
+<h3>Problem-Solving Strategies</h3>
+<ol>
+  <li><strong>Substitution</strong> can turn complicated exponential equations into simpler forms (often quadratics).</li>
+  <li><strong>Compound interest = multiplication.</strong> Each period, multiply by a growth factor. Simple interest = addition.</li>
+  <li><strong>Present value</strong> lets you compare payments made at different times by converting them all to today's dollars.</li>
+  <li><strong>Converting between log and exponential form</strong> is the key to solving most log/exponent problems.</li>
+  <li><strong>Match bases</strong> whenever possible — rewrite all constants with the same base, then equate exponents.</li>
+  <li><strong>Multiply/divide entire equations</strong> (not just add/subtract) to eliminate variables in systems.</li>
+</ol>
+
+<hr>
+
+<!-- ====== SELF-CHECK ====== -->
+<h2 id="s6">Self-Check Questions</h2>
+<p>Try each one before revealing the answer.</p>
+
+<div class="card">
+  <strong>Q1.</strong> Solve \(5^{2r-3} = 25\).
+  <details><summary>Show answer</summary>
+    <div class="answer">\(25 = 5^2\), so \(2r - 3 = 2\), giving \(r = 5/2\).</div>
+  </details>
+</div>
+
+<div class="card">
+  <strong>Q2.</strong> You invest \(\$10{,}000\) at 10% simple interest for 5 years. How much do you have?
+  <details><summary>Show answer</summary>
+    <div class="answer">\(\left(1 + 5 \times 0.10\right)(\$10{,}000) = 1.5 \times \$10{,}000 = \$15{,}000\).</div>
+  </details>
+</div>
+
+<div class="card">
+  <strong>Q3.</strong> You invest \(\$10{,}000\) at 10% compounded annually for 5 years. How much do you have?
+  <details><summary>Show answer</summary>
+    <div class="answer">\((1.10)^5(\$10{,}000) \approx \$16{,}105.10\).</div>
+  </details>
+</div>
+
+<div class="card">
+  <strong>Q4.</strong> Evaluate \(\log_4 32\).
+  <details><summary>Show answer</summary>
+    <div class="answer">\(4 = 2^2\) and \(32 = 2^5\), so \(\log_4 32 = \frac{5}{2}\).</div>
+  </details>
+</div>
+
+<div class="card">
+  <strong>Q5.</strong> Find all solutions to \(2^{2x} - 8 \cdot 2^x + 12 = 0\).
+  <details><summary>Show answer</summary>
+    <div class="answer">Let \(y = 2^x\). Then \(y^2 - 8y + 12 = 0\), so \((y-2)(y-6) = 0\).<br>
+    \(y = 2 \Rightarrow x = 1\), or \(y = 6 \Rightarrow x = \log_2 6\).</div>
+  </details>
+</div>
+
+<div class="card">
+  <strong>Q6.</strong> What is the present value of \(\$50{,}000\) paid 10 years from now at 8% compounded annually?
+  <details><summary>Show answer</summary>
+    <div class="answer">\(\dfrac{\$50{,}000}{(1.08)^{10}} \approx \$23{,}159.67\).</div>
+  </details>
+</div>
+
+<hr>
+
+<!-- ====== EXERCISES ====== -->
+<h2 id="s7">Exercises to Prioritize</h2>
+<p>If your time is limited, focus on these from the chapter:</p>
+<ul>
+  <li><strong>19.1.6</strong> — Substitution with exponentials (the core technique)</li>
+  <li><strong>19.2.1</strong> — Computing simple vs. compound interest</li>
+  <li><strong>19.3.2</strong> — Working backward to find how much to invest</li>
+  <li><strong>19.4.1 – 19.4.4</strong> — Evaluating logarithms (build fluency)</li>
+  <li><strong>19.4.6</strong> — Solving for \(x\) in terms of \(y\) with logarithms</li>
+  <li><strong>19.23</strong> — Substitution challenge (review problem)</li>
+  <li><strong>19.28</strong> — Present value decision-making (review problem)</li>
+</ul>
+
+</body>
+</html>

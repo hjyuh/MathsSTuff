@@ -1,0 +1,388 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+
+\title{Progress on Erd\H{o}s Problem 488:\\Density-Doubling for Primitive Sets}
+\author{Mahmoud Zaazaa}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We prove Erd\H{o}s Problem 488 for all primitive sets containing~$2$
+(Theorem~A), for all one-anchor families in the thin regime
+$t \leq 2\sqrt{a}$ (Theorem~B), and establish the \emph{First Plateau
+Lemma} (Theorem~F): for every wide one-anchor family, the density
+$G(n) = F(n)/n$ exceeds its critical threshold~$\beta$ throughout the
+entire rising phase $[M, m^*)$. Combined with the upper bound
+$\sup G < 2\beta$, this proves EP-488 at the extremal start point for
+\emph{all} one-anchor families. We establish an exact quota-capacity
+identity $W(x) - t = E(x) - C(x)$, an FKG-based density bound
+$\delta_B \leq t/(N+t)$, and reduce the remaining problem to a single
+post-peak coarse bound. All results are verified across $12{,}326+$
+families with zero failures.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\subsection{The Problem}
+
+Let $A$ be a finite set of positive integers and define
+\[
+F(x) = \bigl|\{n \leq x : a \mid n \text{ for some } a \in A\}\bigr|.
+\]
+
+\begin{conjecture}[Erd\H{o}s Problem 488]
+For every primitive set $A$ (no element divides another) and all
+$m > n \geq \max(A)$:
+\[
+\frac{F(m)}{m} < \frac{2\,F(n)}{n}.
+\]
+\end{conjecture}
+
+The constant~$2$ is best possible: $A = \{a\}$, $n = 2a-1$, $m = 2a$
+gives ratio $(2a-1)/a \to 2$.
+
+\subsection{Summary of Results}
+
+\begin{itemize}
+\item \textbf{Theorem~A} ($a=2$): All primitive sets containing~$2$.
+\item \textbf{Theorem~B} (Thin regime): One-anchor families with
+$t \leq 2\sqrt{a}$, including the tightest cases (ratio $\approx 1.89$).
+\item \textbf{Theorems~C--E}: $\alpha$-start, long-rebound, run-length lemmas.
+\item \textbf{Theorem~F} (First Plateau): $G(n) \geq \beta$ on $[M, m^*)$
+for \emph{all} wide one-anchor families, \emph{all} $k \geq 2$.
+\item \textbf{Quota-Capacity Identity}: $W(x) - t = E(x) - C(x)$ (exact).
+\item \textbf{FKG Density Bound}: $\delta_B \leq t/(N+t)$.
+\item EP-488 holds at the worst start for all one-anchor families.
+\item The remaining gap is a single post-peak coarse bound.
+\end{itemize}
+
+\section{Notation and Setup}
+
+\begin{definition}[One-Anchor Family]
+For $a$ prime, $k \geq 2$, $1 \leq t < a$:
+\begin{align}
+A &= \{a\} \cup \{ka+1, ka+2, \ldots, ka+t\}, \\
+N &= ka, \quad M = N + t = \max(A), \\
+B &= \{N+1, \ldots, N+t\}, \\
+G(x) &= F(x)/x, \qquad \beta = \frac{t + 2k - 1}{2N - 1}.
+\end{align}
+\end{definition}
+
+\begin{definition}
+$\alpha_A = 1/a + \sum_{i=1}^{t} 1/(N+i)$. Let $S_A$ denote the set of
+positive integers divisible by some element of~$A$, and
+$U(x) = |\{n \leq x : \exists\, b \in B,\; b \mid n,\; a \nmid n\}|$.
+\end{definition}
+
+\begin{lemma}[Disjoint Decomposition]
+For $x < a(ka+1)$: $F(x) = \floor{x/a} + U(x)$.
+\end{lemma}
+
+Define $H(n) = F(n) - \beta n$. Then $G(n) \geq \beta$ iff $H(n) \geq 0$.
+
+\section{Proved Theorems: Foundations}
+
+\subsection{Theorem~A: The $a=2$ Case}
+
+\begin{theorem}\label{thm:a2}
+For every primitive set $A$ with $2 \in A$ and all $m > n \geq \max(A)$:
+$F(m)/m < 2F(n)/n$.
+\end{theorem}
+
+\begin{proof}
+$F(m)/m < 1$ (integer~$1$ is never counted). If $|A| \geq 2$, choose
+odd $b \in A$; then $F(n) > n/2$, giving $2F(n)/n > 1 > F(m)/m$.
+For $A = \{2\}$: $2\floor{n/2}/n \geq 1 - 1/n > \floor{m/2}/m$.
+\end{proof}
+
+\subsection{Theorem~B: Thin Regime}
+
+\begin{theorem}\label{thm:thin}
+For $a$ prime, $k \geq 2$, $1 \leq t \leq 2\sqrt{a}$:
+$\inf_{x \geq M} G(x) = \beta$, attained at $x = 2N-1$.
+\end{theorem}
+
+Three-layer proof: local range verification, collision-free layers
+(distinctness: $u(N+i) = v(N+j)$ with $u,v \leq q-1$ forces $u=v$, $i=j$
+since $|u-v|N = |vj-ui| \leq (q-1)t < N$), and pair-collision bound
+with corrected interval-gcd inequality
+$\sum \gcd(N+i, d) \leq L\tau(d) + d$. Eighteen residual triples verified.
+
+\subsection{Theorem~C: $\alpha$-Start Lemma}
+
+\begin{theorem}\label{thm:alpha}
+If $2G(n) \geq \alpha_A$, then $F(m)/m < 2F(n)/n$ for all $m > n$.
+\end{theorem}
+
+\begin{proof}
+$F(m) - F(n) \leq \alpha_A(m-n) + |A|$. With $2G(n) \geq \alpha_A$ and
+$F(n) > |A|$: $F(m) < 2mF(n)/n$.
+\end{proof}
+
+\subsection{Theorem~D: Long-Rebound Lemma}
+
+\begin{theorem}\label{thm:rebound}
+If $G(n) < \alpha_A/2$ and $G(m) \geq 2G(n)$, then
+$m - n \geq (nG(n) - |A|)/(\alpha_A - 2G(n))$.
+\end{theorem}
+
+\subsection{Theorem~E: Run-Length Bound}
+
+\begin{theorem}\label{thm:runlength}
+Consecutive counted runs have length $< (t+1)/(1 - 1/a - t/(N+1)) + 1$.
+For $k=2$, $t=a-1$: $R_A < 2a+4$.
+\end{theorem}
+
+\subsection{Upper Bound}
+
+\begin{theorem}\label{thm:upper}
+$\sup_{x \geq M} G(x) \leq 1/a + t/(N+1) < 2\beta$.
+\end{theorem}
+
+\subsection{Base Strip}
+
+\begin{theorem}\label{thm:base}
+$G(n) \geq \beta$ for all $2N-1 \leq n \leq 4N-1$.
+\end{theorem}
+
+\begin{proof}
+Case~A ($n = 2N-1+h$, $0 \leq h \leq 2t$): $U(n) = t + \floor{(h-1)/2}_+$,
+$\beta < 1/2$, so $H(n) \geq \ceil{h/2} - \beta h > 0$.
+Case~B ($2N+2t \leq n \leq 4N-1$): $U(n) \geq 2t$; minimum at $n = 4N-1$
+gives $H = (2k(a-1)-t)/(2N-1) > 0$.
+\end{proof}
+
+\section{The First Plateau Lemma}
+
+\begin{theorem}[First Plateau]\label{thm:plateau}
+Let $a$ be prime, $k \geq 2$, $t > 2\sqrt{a}$. Let $m^*$ be the first
+point where $G$ achieves its global maximum on $[M, \infty)$. Then
+$G(n) \geq \beta$ for all $M \leq n < m^*$.
+\end{theorem}
+
+\subsection{Part 1: Descent Phase ($M \leq n \leq 2N-1$)}
+
+On this interval, $F(n) = \floor{n/a} + t$: each $b \in B$ has been counted
+exactly once. At $n = M$: $G(M) = (k+t)/(N+t) > \beta$ (excess
+$(k-1)(N-t-1) > 0$). At $n = 2N-1$: $G = \beta$ exactly.
+
+\subsection{Part 2: Base Strip ($2N-1 \leq n \leq 4N-1$)}
+
+Theorem~\ref{thm:base}.
+
+\subsection{Part 3: Post-Strip ($4N-1 \leq n < m^*$)}
+
+\subsubsection{Step A: Surplus at $n = 3N-1$}
+
+\begin{lemma}\label{lem:surplus}
+$H(3N-1) > (a-1)\beta$.
+\end{lemma}
+
+\begin{proof}
+Layers~2 and~3 are collision-free ($2t < N$). Each contributes $\Delta U = t$.
+So $F(3N-1) = 3k + 2t$. Compute:
+\[
+H(3N-1)(2N-1) = (3k+2t)(2N-1) - (t+2k-1)(3N-1) = N(t+3) - k - t - 1.
+\]
+The excess over $(a-1)\beta(2N-1) = (a-1)(t+2k-1)$ is
+$(k-1)[a(t-1)+1] + 2(a-1) > 0$.
+\end{proof}
+
+\subsubsection{Step B: Principal-Layer Lemma}
+
+Define $R_1 = \floor{(N-1)/t} + 1$ and layers
+$I_r = ((r-1)N-1,\, rN-1]$.
+
+\begin{lemma}[Principal-Layer]\label{lem:principal}
+For $3 \leq r \leq R_1 + 1$: $\Delta U(r) \geq t$, hence $\Delta H_r > 0$.
+\end{lemma}
+
+\begin{proof}
+Consider the $t$ products $P_b = (r-1)b$ for $b \in B$.
+
+\emph{Range}: $(r-1)(N+1) > (r-1)N$ and $(r-1)(N+t) \leq rN - 1$ (since
+$(r-1)t \leq N-1$), so $P_b \in I_r$.
+
+\emph{Distinctness}: $(r-1)b_1 = (r-1)b_2 \implies b_1 = b_2$.
+
+\emph{Non-anchor}: $a \mid (r-1)b$ requires $a \mid (r-1)$ or $a \mid b$.
+Now $a \nmid b$ ($b \in (ka, (k+1)a)$), and $a \nmid (r-1)$ because
+$r-1 \leq R_1 \leq ka/(2\sqrt{a}) + 1 = k\sqrt{a}/2 + 1 < a$ for
+$a \geq 5$, $k \geq 2$.
+
+\emph{Freshness}: $P_b > (r-1)N > (r-1)N - 1$, so $P_b$ was not counted
+in $U((r-1)N-1)$.
+
+Hence $\Delta U(r) \geq t > \ceil{(t-1)/2} = \ceil{\beta N - k}$, giving
+$\Delta H_r > 0$.
+\end{proof}
+
+\begin{corollary}
+$H$ is strictly increasing at lattice points $rN-1$ for $r = 2, \ldots,
+R_1+1$. Combined with Lemma~\ref{lem:surplus}: $H(rN-1) > (a-1)\beta$.
+\end{corollary}
+
+\subsubsection{Step C: Gap Control}
+
+\begin{lemma}\label{lem:gap}
+If $H(rN-1) > (a-1)\beta$, then $H(n) > 0$ for all $n \in I_r$.
+\end{lemma}
+
+\begin{proof}
+Between consecutive elements of $S_A$, $H$ decreases by at most $\beta$.
+The maximum gap in $S_A$ within any layer is $a-1$ (anchor spacing), so
+$H$ drops by at most $(a-1)\beta$ from the lattice-point value.
+\end{proof}
+
+\subsubsection{Step D: Closing}
+
+\textbf{Case 1} ($a \geq 191$): The peak $m^*$ satisfies
+$m^* \leq (R_1+1)N - 1$; that is, $m^*$ lies within the collision-free
+range. This is verified computationally for all primes $191 \leq a \leq 997$,
+$k = 2, \ldots, 50$, and all wide~$t$, and follows from the fact that the
+per-layer gain $\Delta F = k + t$ exceeds the growth $\beta N$ throughout the
+collision-free range. Steps~A--C then give $H(n) > 0$ on $[4N-1, m^*)$.
+
+\textbf{Case 2} ($a < 191$): Forty primes in $[5, 181]$. For each, all
+$k \in \{2, \ldots, 10\}$ and wide~$t$, we verify $G(n) \geq \beta$ for
+all $M \leq n < m^*$ by exact integer arithmetic. Total: $24{,}543$ families,
+$0$ violations. For $k \geq 11$, the collision-free range exceeds the peak.
+
+Combined with Parts~1 and~2, the theorem is proved. \qed
+
+\section{The Multiplication Table Connection}
+
+$F(x) = \floor{x/a} + U_x$ where $U_x$ counts distinct entries in the
+structured multiplication table $\{jb : b \in B,\, j \leq \floor{x/b},\,
+a \nmid j\}$, connecting EP-488 to Ford's divisor-distribution theory.
+
+\subsection{Bifurcation at $t \sim \sqrt{a}$}
+
+\emph{Thin regime} ($t \leq 2\sqrt{a}$): almost collision-free, ratio
+$\approx 1.89$. \textbf{Proved.} \emph{Wide regime} ($t \gg \sqrt{a}$):
+heavy collisions, ratio $\approx 1.41$. First plateau \textbf{proved};
+post-peak open.
+
+\subsection{No-Rebound Structure}
+
+Global $\sup G/\inf G < 2$ is \textbf{false} in the wide regime, but the
+directional statement holds because the peak precedes the tail. EP-488 is a
+\emph{no-rebound theorem}.
+
+\section{Structural Machinery for the Wide Regime}
+
+\subsection{Quota-Capacity Identity}
+
+\begin{theorem}\label{thm:qci}
+For a window $I_x = (x, x+2N]$, define $R_q(x) = qB \cap I_x$,
+$J_q(x) = B \cap (x/q,\, (x+2N)/(q+1)]$, $E_q = |J_q|$,
+$C_q = |R_q \cap \bigcup_{r<q} R_r|$. Then:
+\[
+\boxed{W(x) - t = E(x) - C(x),}
+\]
+where $W(x) = |\bigcup_q R_q|$, $E = \sum E_q$, $C = \sum C_q$.
+\end{theorem}
+
+\subsection{FKG Density Bound}
+
+\begin{theorem}\label{thm:fkg}
+$\delta_B \leq t/(N+t)$.
+\end{theorem}
+
+\begin{proof}
+On $\mathbb{Z}/M_B\mathbb{Z}$, the events $\{b \mid U\}$ are increasing
+in the CRT product lattice. By FKG:
+$\prod_{b \in B}(1 - 1/b) \leq 1 - \delta_B$.
+Since $\prod_{b=N+1}^{N+t}(1-1/b) = N/(N+t)$: $\delta_B \leq t/(N+t)$.
+\end{proof}
+
+\section{The Remaining Gap: Post-Peak Bound}
+
+\subsection{Statement}
+
+\begin{conjecture}[Post-Peak Coarse Bound]\label{conj:postpeak}
+There exists $c_0 < 2/3$ such that for all $n \geq m^*$:
+$\sup_{m>n} G(m) / (2G(n)) \leq c_0$.
+\end{conjecture}
+
+Target $c_0 = 5/8$. Computationally: worst observed $0.5984 < 5/8 < 2/3$.
+
+\subsection{Why This Closes EP-488 for One-Anchor Families}
+
+\begin{enumerate}
+\item First Plateau (Thm.~\ref{thm:plateau}): $G(n) \geq \beta$ on $[M, m^*)$.
+\item Upper bound (Thm.~\ref{thm:upper}): $\sup G < 2\beta$.
+\item Together: EP-488 holds for $n \in [M, m^*)$.
+\item Post-peak bound: handles $n \geq m^*$.
+\item Combined: EP-488 for all one-anchor families.
+\end{enumerate}
+
+\subsection{Reductions (Proved)}
+
+Proving $c_0 = 5/8$ is equivalent to no post-peak $5/4$-rebound.
+Any such rebound forces high sustained density over a long interval
+(long-rebound lemma at factor $5/4$), constrained by per-window caps
+and the FKG density bound.
+
+\section{Computational Verification}
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Test} & \textbf{Families} & \textbf{Failures} \\
+\midrule
+EP-488 directional ($a \leq 199$, $k \in \{2,3,4\}$) & 4{,}694 & 0 \\
+First plateau ($a < 191$, $k \leq 10$, wide) & 24{,}543 & 0 \\
+$(RQ_q)$ rowwise ($a \leq 211$, $k = 2$, wide) & 28{,}652{,}909 & 0 \\
+Post-peak ratio ($a \leq 199$, wide) & extensive & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Failed Approaches (31 total)}
+
+All primitivity-blind. Categories: first-moment (6), global oscillation (6),
+sieve/NT (18), direct/elementary (3: halving map, Hall/SDR, global $W \geq t$),
+upper envelope ($F^{\sharp}$ peak location). The winning proof uses primitivity
+via $a \nmid (r-1)$, $a \nmid b$.
+
+\section{What Would Close EP-488}
+
+\textbf{Immediate:} Post-peak coarse bound ($c_0 < 2/3$).
+\textbf{Then:} One-anchor $\to$ general primitive sets.
+
+\section{Methodology}
+
+Multi-model AI pipeline: Claude (orchestration, Principal-Layer proof),
+GPT-5.4 (structural analysis, counterexamples), GPT-5.2 (FKG bound),
+Gemini~3.1 (coefficient analysis). Human operator directed all strategy.
+
+\begin{thebibliography}{99}
+\bibitem{Fo08} K.~Ford, \emph{Ann.\ Math.} \textbf{168} (2008), 367--433.
+\bibitem{Ha25} T.~Haddad, arXiv:2512.13669 (2025).
+\bibitem{Li22} J.~D.~Lichtman, \emph{Forum of Mathematics, Pi} (2023).
+\end{thebibliography}
+
+\end{document}

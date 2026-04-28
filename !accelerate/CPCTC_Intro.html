@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CPCTC — Intro & Skeleton</title>
+<style>
+  :root { --bg:#0f1216; --panel:#161b22; --panel-2:#1c222c; --ink:#e6edf3;
+          --muted:#9da7b3; --accent:#4cc2ff; --accent-2:#f7b955; --line:#2a313c;
+          --good:#3fb950; --bad:#f85149; }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  .wrap{max-width:900px;margin:0 auto;padding:28px 22px 80px}
+  h1{font-size:26px;margin:6px 0 14px}
+  h2{font-size:19px;margin:22px 0 8px;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:4px}
+  h3{font-size:16px;margin:16px 0 6px;color:var(--accent-2)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:14px 0}
+  .skeleton{background:#1a2332;border-left:3px solid var(--accent);padding:12px 16px;border-radius:8px;margin:12px 0}
+  .skeleton ol{margin:6px 0 0 20px;padding:0}
+  .skeleton li{margin:6px 0}
+  .fig{background:#fff;border-radius:10px;padding:12px;border:1px solid var(--line);display:flex;justify-content:center;margin:10px 0}
+  .fig svg{width:100%;height:auto;max-width:420px}
+  .caption{color:var(--muted);font-size:13px;margin-top:6px;text-align:center}
+  table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top}
+  th{background:var(--panel-2);text-align:left;color:var(--accent)}
+  td.num{width:40px;text-align:center;color:var(--muted);font-weight:bold}
+  .q{background:#1e2a3a;border-radius:10px;padding:12px 14px;margin:10px 0;border-left:3px solid var(--accent-2)}
+  .lbl{font-family:Georgia,serif;font-size:16px;fill:#111;font-weight:bold}
+  .tick{stroke:#c0392b;stroke-width:2.5}
+  .tick2{stroke:#1f77b4;stroke-width:2.5}
+  .arc{stroke:#8e44ad;fill:none;stroke-width:2}
+  .shared{stroke:#2a6;stroke-width:2.5}
+  details{margin:8px 0}
+  summary{cursor:pointer;color:var(--accent);padding:6px 0}
+  .hl{background:#3b2a00;padding:2px 6px;border-radius:4px}
+  code{background:var(--panel-2);padding:2px 6px;border-radius:4px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>CPCTC — The 3-Step Skeleton</h1>
+
+<div class="card">
+  <h2>Core idea</h2>
+  <p><strong>CPCTC</strong> = <em>Corresponding Parts of Congruent Triangles are Congruent.</em></p>
+  <p>It is <strong>not</strong> a congruence theorem (SSS, SAS, ASA, AAS, HL are the congruence theorems). CPCTC is what you use <em>after</em> you've already proven two triangles congruent — to conclude that a <strong>specific pair of sides or angles</strong> (one that wasn't in the givens) is congruent.</p>
+  <p><strong>Signal that a problem needs CPCTC:</strong> the "Prove" statement is about a single pair of segments or a single pair of angles — not about two whole triangles.</p>
+  <ul>
+    <li>"Prove AB ≅ CD" → CPCTC job</li>
+    <li>"Prove ∠X ≅ ∠Y" → CPCTC job</li>
+    <li>"Prove △ABC ≅ △DEF" → NOT a CPCTC job (just a regular triangle congruence proof)</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>The skeleton — every CPCTC proof follows this</h2>
+  <div class="skeleton">
+    <ol>
+      <li><strong>Find the two triangles</strong> that contain the pair you're asked to prove congruent. (One triangle holds one piece, the other triangle holds the other piece.)</li>
+      <li><strong>Prove those triangles congruent</strong> using SSS, SAS, ASA, AAS, or HL.</li>
+      <li><strong>Conclude</strong> the pair is congruent <strong>by CPCTC.</strong></li>
+    </ol>
+  </div>
+  <p>The entire game is step 1 — spotting which triangles the two pieces live in. Once you've named the triangles, steps 2 and 3 are mechanical.</p>
+</div>
+
+<div class="card">
+  <h2>Worked example</h2>
+  <p><strong>Given:</strong> M is the midpoint of AB. M is the midpoint of CD. (So AB and CD cross at M, and M splits each in half.)</p>
+  <p><strong>Prove:</strong> AC ≅ BD</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 360 240">
+      <!-- segment AB -->
+      <line x1="40" y1="60" x2="320" y2="180" stroke="#111" stroke-width="2"/>
+      <!-- segment CD -->
+      <line x1="40" y1="180" x2="320" y2="60" stroke="#111" stroke-width="2"/>
+      <!-- M at intersection -->
+      <circle cx="180" cy="120" r="3" fill="#111"/>
+      <!-- AC -->
+      <line x1="40" y1="60" x2="40" y2="180" stroke="#c0392b" stroke-width="2.5" opacity="0.35"/>
+      <!-- BD -->
+      <line x1="320" y1="180" x2="320" y2="60" stroke="#c0392b" stroke-width="2.5" opacity="0.35"/>
+      <!-- tick marks showing AM ≅ MB -->
+      <line x1="105" y1="85" x2="115" y2="95" class="tick"/>
+      <line x1="245" y1="145" x2="255" y2="155" class="tick"/>
+      <!-- tick marks showing CM ≅ MD (double ticks) -->
+      <line x1="105" y1="155" x2="115" y2="145" class="tick2"/>
+      <line x1="100" y1="150" x2="110" y2="140" class="tick2"/>
+      <line x1="245" y1="95" x2="255" y2="85" class="tick2"/>
+      <line x1="240" y1="90" x2="250" y2="80" class="tick2"/>
+      <!-- labels -->
+      <text x="20" y="60" class="lbl">A</text>
+      <text x="326" y="186" class="lbl">B</text>
+      <text x="20" y="186" class="lbl">D</text>
+      <text x="326" y="60" class="lbl">C</text>
+      <text x="186" y="118" style="font-family:Georgia,serif;font-size:14px;fill:#111;font-weight:bold">M</text>
+    </svg>
+  </div>
+  <div class="caption">AB and CD cross at M. Red ticks: AM ≅ MB. Blue double-ticks: CM ≅ MD. We want AC ≅ BD (the faint red verticals — they're not literally vertical, just the two pieces we're chasing).</div>
+
+  <h3>Step 1: Find the triangles</h3>
+  <p>AC lives in <strong>△AMC</strong>. BD lives in <strong>△BMD</strong>. Those are our two triangles.</p>
+
+  <h3>Step 2: Prove △AMC ≅ △BMD</h3>
+  <ul>
+    <li>AM ≅ MB (M is midpoint of AB, given)</li>
+    <li>CM ≅ MD (M is midpoint of CD, given)</li>
+    <li>∠AMC ≅ ∠BMD (vertical angles — they're across from each other at M)</li>
+    <li>That's 2 sides + included angle → <strong>SAS</strong> ✓</li>
+  </ul>
+
+  <h3>Step 3: AC ≅ BD by CPCTC</h3>
+
+  <h3>Two-column version</h3>
+  <table>
+    <tr><th style="width:40px">#</th><th>Statement</th><th>Reason</th></tr>
+    <tr><td class="num">1</td><td>M is the midpoint of AB</td><td>Given</td></tr>
+    <tr><td class="num">2</td><td>AM ≅ MB</td><td>Definition of midpoint</td></tr>
+    <tr><td class="num">3</td><td>M is the midpoint of CD</td><td>Given</td></tr>
+    <tr><td class="num">4</td><td>CM ≅ MD</td><td>Definition of midpoint</td></tr>
+    <tr><td class="num">5</td><td>∠AMC ≅ ∠BMD</td><td>Vertical angles are congruent</td></tr>
+    <tr><td class="num">6</td><td>△AMC ≅ △BMD</td><td>SAS (from 2, 5, 4)</td></tr>
+    <tr><td class="num">7</td><td><strong>AC ≅ BD</strong></td><td><strong>CPCTC</strong></td></tr>
+  </table>
+
+  <p><em>Notice:</em> lines 1–6 prove the triangles congruent. Line 7 is the one CPCTC line — it finally answers what the problem actually asked.</p>
+</div>
+
+<div class="card">
+  <h2>Practice — try this one tonight</h2>
+  <p><strong>Given:</strong> BD bisects ∠ABC. BD bisects ∠ADC.</p>
+  <p><strong>Prove:</strong> AB ≅ CB</p>
+
+  <div class="fig">
+    <svg viewBox="0 0 360 260">
+      <!-- kite ABCD -->
+      <polygon points="180,30 90,130 180,230 270,130" fill="#e8f4fd" stroke="#111" stroke-width="2.5"/>
+      <!-- diagonal BD -->
+      <line x1="90" y1="130" x2="270" y2="130" stroke="#2a6" stroke-width="2.5"/>
+      <!-- bisector arcs at B -->
+      <path d="M 108 122 A 14 14 0 0 0 108 138" class="arc"/>
+      <path d="M 118 118 A 20 20 0 0 0 118 142" class="arc"/>
+      <!-- bisector arcs at D -->
+      <path d="M 252 122 A 14 14 0 0 1 252 138" class="arc"/>
+      <path d="M 242 118 A 20 20 0 0 1 242 142" class="arc"/>
+      <!-- labels -->
+      <text x="174" y="22" class="lbl">A</text>
+      <text x="72" y="136" class="lbl">B</text>
+      <text x="174" y="250" class="lbl">C</text>
+      <text x="278" y="136" class="lbl">D</text>
+    </svg>
+  </div>
+  <div class="caption">BD (green) bisects both ∠ABC and ∠ADC. Prove AB ≅ CB.</div>
+
+  <h3>Scaffolding questions (answer these before writing the proof):</h3>
+  <div class="q"><strong>S1.</strong> AB lives in which triangle? CB lives in which triangle? (Those are the two triangles you need.)</div>
+  <div class="q"><strong>S2.</strong> What does "BD bisects ∠ABC" give you? What does "BD bisects ∠ADC" give you?</div>
+  <div class="q"><strong>S3.</strong> The two triangles share a side. Which side?</div>
+  <div class="q"><strong>S4.</strong> Count what you have: how many angles, how many sides? Which congruence theorem fits?</div>
+
+  <details>
+    <summary>Show solution (only peek after trying)</summary>
+    <div style="padding:10px 0">
+      <p><strong>Triangles:</strong> △ABD and △CBD.</p>
+      <table>
+        <tr><th style="width:40px">#</th><th>Statement</th><th>Reason</th></tr>
+        <tr><td class="num">1</td><td>BD bisects ∠ABC</td><td>Given</td></tr>
+        <tr><td class="num">2</td><td>∠ABD ≅ ∠CBD</td><td>Definition of angle bisector</td></tr>
+        <tr><td class="num">3</td><td>BD bisects ∠ADC</td><td>Given</td></tr>
+        <tr><td class="num">4</td><td>∠ADB ≅ ∠CDB</td><td>Definition of angle bisector</td></tr>
+        <tr><td class="num">5</td><td>BD ≅ BD</td><td>Reflexive property</td></tr>
+        <tr><td class="num">6</td><td>△ABD ≅ △CBD</td><td>ASA (angle 2, side 5, angle 4)</td></tr>
+        <tr><td class="num">7</td><td><strong>AB ≅ CB</strong></td><td><strong>CPCTC</strong></td></tr>
+      </table>
+      <p><em>Notice:</em> 2 angles + the included side BD = ASA. BD is included because it connects vertex B (home of one angle) and vertex D (home of the other angle).</p>
+    </div>
+  </details>
+</div>
+
+<div class="card">
+  <h2>What to remember</h2>
+  <ul>
+    <li>If the "Prove" targets a single pair of sides or angles → it's a CPCTC problem.</li>
+    <li>Find the two triangles → prove them congruent → invoke CPCTC on the last line. Always.</li>
+    <li>CPCTC is never the reason you use to prove the triangles themselves congruent. It's only for <em>parts</em>, after the triangle-congruence work is already done.</li>
+  </ul>
+</div>
+
+</div>
+</body>
+</html>

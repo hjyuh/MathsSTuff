@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-04-16T00-27-11-prove-81ea-coarse_scaling",
+  "status": "error",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\n/-- Coarse scaling: n\u00b7F(M) \u2264 m\u00b7F(N) + 2m + 2n where F_{u,v}(T) counts integers \u2264T coprime to u,v. \n    Key steps: nM \u2212 mN < m (from Euclidean division), and \u03b7 bounds give the +2m+2n slack. -/\ntheorem coarse_scaling (m n g u v : \u2115)\n    (hg : 0 < g) (hu : 0 < u) (hv : 0 < v) (hmn : n < m) :\n    (n : \u2124) * ((m/g : \u2124) - ((m/g : \u2115) / u : \u2124) - ((m/g : \u2115) / v : \u2124) + ((m/g : \u2115) / (u*v) : \u2124)) \u2264\n    (m : \u2124) * ((n/g : \u2124) - ((n/g : \u2115) / u : \u2124) - ((n/g : \u2115) / v : \u2124) + ((n/g : \u2115) / (u*v) : \u2124)) + 2 * (m : \u2124) + 2 * (n : \u2124) := by\n  sorry",
+  "started_at": "2026-04-16T00:27:11Z",
+  "finished_at": "2026-04-16T00:27:11Z",
+  "duration_s": 0.22,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "resolver_failure",
+    "message": "AutoformalizePreflightError: No active Gauss project found. Use `/project init`, `/project convert`, or `/project use <path>` first. Run `/project init`, `/project convert`, or `/project use <path>` first.",
+    "log_tail": ""
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-04-16T00-27-11-prove-81ea-coarse_scaling.log",
+  "worker_pid": 1253,
+  "last_heartbeat_at": 1776299231.6718462,
+  "_started_monotonic": 1776299231.5168633
+}

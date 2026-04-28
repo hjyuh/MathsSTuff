@@ -1,0 +1,15 @@
+{
+  "N_values": [
+    79200,
+    227205,
+    1258560
+  ],
+  "common_delta_count": 4,
+  "common_deltas": [
+    36,
+    468,
+    692,
+    1028
+  ],
+  "delta_max": null
+}
