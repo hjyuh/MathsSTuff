@@ -1,0 +1,584 @@
+{
+  "q_max": 24,
+  "m_factor": 20,
+  "n_factor": 8,
+  "max_subset_size": 4,
+  "checked": 98706894,
+  "violations": [],
+  "worst": [
+    {
+      "ratio_num": 89,
+      "ratio_den": 126,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 89,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7063492063492064
+    },
+    {
+      "ratio_num": 74,
+      "ratio_den": 105,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 74,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7047619047619048
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7023809523809523
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 88,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 12,
+      "C": [
+        9
+      ],
+      "n": 44,
+      "m": 63,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 73,
+      "ratio_den": 105,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 73,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6952380952380952
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 87,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 58,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 8,
+      "C": [
+        6
+      ],
+      "n": 29,
+      "m": 42,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 24,
+      "ratio_den": 35,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 72,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6857142857142857
+    }
+  ],
+  "worst_no_current_bad": [
+    {
+      "ratio_num": 89,
+      "ratio_den": 126,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 89,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7063492063492064
+    },
+    {
+      "ratio_num": 74,
+      "ratio_den": 105,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 74,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7047619047619048
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7023809523809523
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 88,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 12,
+      "C": [
+        9
+      ],
+      "n": 44,
+      "m": 63,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 73,
+      "ratio_den": 105,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 73,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6952380952380952
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 87,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 58,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 8,
+      "C": [
+        6
+      ],
+      "n": 29,
+      "m": 42,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 24,
+      "ratio_den": 35,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 72,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6857142857142857
+    }
+  ],
+  "worst_no_any_bad": [
+    {
+      "ratio_num": 89,
+      "ratio_den": 126,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 89,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7063492063492064
+    },
+    {
+      "ratio_num": 74,
+      "ratio_den": 105,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 74,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7047619047619048
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7023809523809523
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 88,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 12,
+      "C": [
+        9
+      ],
+      "n": 44,
+      "m": 63,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 73,
+      "ratio_den": 105,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 73,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6952380952380952
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 24,
+      "C": [
+        18
+      ],
+      "n": 87,
+      "m": 126,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 58,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 8,
+      "C": [
+        6
+      ],
+      "n": 29,
+      "m": 42,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 24,
+      "ratio_den": 35,
+      "q": 20,
+      "C": [
+        15
+      ],
+      "n": 72,
+      "m": 105,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6857142857142857
+    }
+  ]
+}

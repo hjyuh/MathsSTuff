@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wave Quest Honors</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="brand-mark" aria-hidden="true">WQ</span>
+          <div>
+            <h1>Wave Quest Honors</h1>
+            <p>Waves Honors packet practice</p>
+          </div>
+        </div>
+        <div class="status-grid" aria-label="Game status">
+          <div>
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span>Streak</span>
+            <strong id="streak">0</strong>
+          </div>
+          <div>
+            <span>Round</span>
+            <strong id="round">0/0</strong>
+          </div>
+          <div>
+            <span>Time</span>
+            <strong id="timer">0:00</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="setup-panel" id="setupPanel">
+        <div class="wave-stage">
+          <svg class="wave-art" viewBox="0 0 960 540" role="img" aria-label="Wave practice game art">
+            <defs>
+              <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#15213a"></stop>
+                <stop offset="0.52" stop-color="#276a83"></stop>
+                <stop offset="1" stop-color="#f1bd4b"></stop>
+              </linearGradient>
+              <linearGradient id="waveFill" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#67d9ee"></stop>
+                <stop offset="1" stop-color="#176fa0"></stop>
+              </linearGradient>
+              <linearGradient id="spectrum" x1="0" x2="1">
+                <stop offset="0" stop-color="#d84d3f"></stop>
+                <stop offset="0.2" stop-color="#f3b43f"></stop>
+                <stop offset="0.4" stop-color="#35a46b"></stop>
+                <stop offset="0.6" stop-color="#2c78d6"></stop>
+                <stop offset="0.8" stop-color="#8f4fd1"></stop>
+                <stop offset="1" stop-color="#202638"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="960" height="540" fill="url(#sky)"></rect>
+            <circle cx="790" cy="96" r="54" fill="#ffe8a3" opacity="0.96"></circle>
+            <path d="M0 380 C80 332 158 358 240 318 C330 274 406 312 492 284 C616 244 724 284 960 242 L960 540 L0 540 Z" fill="#17333f" opacity="0.62"></path>
+            <path class="hero-wave hero-wave-a" d="M0 370 C82 296 170 444 250 370 C330 296 420 444 500 370 C580 296 670 444 750 370 C830 296 908 444 960 370 L960 540 L0 540 Z" fill="url(#waveFill)" opacity="0.92"></path>
+            <path class="hero-wave hero-wave-b" d="M0 430 C80 360 160 500 240 430 C320 360 400 500 480 430 C560 360 640 500 720 430 C800 360 880 500 960 430 L960 540 L0 540 Z" fill="#0f4b77" opacity="0.76"></path>
+            <path d="M134 142 L808 142" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" opacity="0.8"></path>
+            <path d="M150 142 C202 74 250 210 304 142 C356 74 404 210 458 142 C510 74 558 210 612 142 C664 74 712 210 766 142" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"></path>
+            <path d="M150 240 L766 240" stroke="url(#spectrum)" stroke-width="24" stroke-linecap="round"></path>
+            <circle cx="150" cy="240" r="12" fill="#d84d3f"></circle>
+            <circle cx="766" cy="240" r="12" fill="#202638"></circle>
+          </svg>
+          <div class="deck-stat-row">
+            <div>
+              <span>Study Cards</span>
+              <strong id="cardCount">0</strong>
+            </div>
+            <div>
+              <span>Game Items</span>
+              <strong id="questionCount">0</strong>
+            </div>
+            <div>
+              <span>Best</span>
+              <strong id="bestScore">0</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-controls">
+          <div class="field-row">
+            <label for="playerName">Player</label>
+            <input id="playerName" type="text" maxlength="18" value="Player 1">
+          </div>
+          <div class="segmented" role="group" aria-label="Question mode">
+            <button class="segment active" type="button" data-mode="mixed">Mixed</button>
+            <button class="segment" type="button" data-mode="vocab">Vocab</button>
+            <button class="segment" type="button" data-mode="math">Math</button>
+            <button class="segment" type="button" data-mode="packet">Packet</button>
+          </div>
+          <div class="field-row compact">
+            <label for="roundCount">Rounds</label>
+            <input id="roundCount" type="number" min="5" max="160" value="60">
+          </div>
+          <div class="toggle-row">
+            <input id="timerToggle" type="checkbox" checked>
+            <label for="timerToggle">Timed</label>
+          </div>
+          <button class="primary-action" type="button" id="startBtn">Start Game</button>
+        </div>
+      </section>
+
+      <section class="study-panel" id="studyPanel">
+        <div class="packet-panel">
+          <div class="panel-heading">
+            <h2>Packet Checklist</h2>
+            <span id="sectionCount">0 sections</span>
+          </div>
+          <div class="packet-list" id="packetList"></div>
+        </div>
+        <div class="deck-panel">
+          <div class="panel-heading">
+            <h2>Study Deck</h2>
+            <span>Terms and quick answers</span>
+          </div>
+          <div class="deck-list" id="deckList"></div>
+        </div>
+      </section>
+
+      <section class="game-panel hidden" id="gamePanel" aria-live="polite">
+        <div class="question-stage">
+          <div class="category-pill" id="categoryLabel"></div>
+          <div class="prompt-card">
+            <span id="modeLabel">Mixed</span>
+            <strong id="promptText"></strong>
+          </div>
+          <div class="wave-meter" aria-label="Streak meter">
+            <span id="meterFill"></span>
+          </div>
+        </div>
+        <aside class="play-panel">
+          <div class="answer-grid" id="answerGrid"></div>
+          <div class="feedback-panel hidden" id="feedbackPanel">
+            <div class="feedback-copy">
+              <span id="feedbackKicker">Result</span>
+              <strong id="feedbackTitle"></strong>
+              <p id="feedbackText"></p>
+            </div>
+            <button class="primary-action" type="button" id="nextBtn">Next Round</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="end-panel hidden" id="endPanel">
+        <div class="final-score">
+          <span>Final Score</span>
+          <strong id="finalScore">0</strong>
+          <p id="finalSummary"></p>
+        </div>
+        <div class="review-list" id="reviewList"></div>
+        <div class="end-actions">
+          <button class="secondary-action" type="button" id="reviewMissedBtn">Review Missed</button>
+          <button class="primary-action" type="button" id="playAgainBtn">Play Again</button>
+        </div>
+      </section>
+    </main>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

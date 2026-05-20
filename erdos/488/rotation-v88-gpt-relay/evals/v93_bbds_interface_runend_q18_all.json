@@ -1,0 +1,1157 @@
+{
+  "q_max": 18,
+  "m_factor": 30,
+  "n_factor": 10,
+  "max_subset_size": null,
+  "min_subset_size": 1,
+  "connected_only": false,
+  "run_end_only": true,
+  "checked": 1726966,
+  "violations": [],
+  "worst": [
+    {
+      "ratio_num": 59,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7023809523809523
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 12,
+      "C": [
+        9
+      ],
+      "n": 44,
+      "m": 63,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 8,
+      "C": [
+        6
+      ],
+      "n": 29,
+      "m": 42,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 2,
+      "ratio_den": 3,
+      "q": 4,
+      "C": [
+        3
+      ],
+      "n": 14,
+      "m": 21,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6666666666666666
+    },
+    {
+      "ratio_num": 71,
+      "ratio_den": 108,
+      "q": 15,
+      "C": [
+        12
+      ],
+      "n": 71,
+      "m": 108,
+      "Dn": 4,
+      "Dm": 8,
+      "h": 4,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6574074074074074
+    },
+    {
+      "ratio_num": 67,
+      "ratio_den": 102,
+      "q": 18,
+      "C": [
+        17
+      ],
+      "n": 67,
+      "m": 68,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6568627450980392
+    },
+    {
+      "ratio_num": 21,
+      "ratio_den": 32,
+      "q": 18,
+      "C": [
+        16
+      ],
+      "n": 63,
+      "m": 64,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.65625
+    },
+    {
+      "ratio_num": 21,
+      "ratio_den": 32,
+      "q": 17,
+      "C": [
+        16
+      ],
+      "n": 63,
+      "m": 64,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.65625
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 18,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 18,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 17,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 16,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 18,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 17,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 15,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 53,
+      "ratio_den": 81,
+      "q": 15,
+      "C": [
+        9
+      ],
+      "n": 53,
+      "m": 81,
+      "Dn": 4,
+      "Dm": 8,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.654320987654321
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 17,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 16,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 15,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    }
+  ],
+  "worst_no_current_bad": [
+    {
+      "ratio_num": 59,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7023809523809523
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 12,
+      "C": [
+        9
+      ],
+      "n": 44,
+      "m": 63,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 8,
+      "C": [
+        6
+      ],
+      "n": 29,
+      "m": 42,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 2,
+      "ratio_den": 3,
+      "q": 4,
+      "C": [
+        3
+      ],
+      "n": 14,
+      "m": 21,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6666666666666666
+    },
+    {
+      "ratio_num": 71,
+      "ratio_den": 108,
+      "q": 15,
+      "C": [
+        12
+      ],
+      "n": 71,
+      "m": 108,
+      "Dn": 4,
+      "Dm": 8,
+      "h": 4,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6574074074074074
+    },
+    {
+      "ratio_num": 67,
+      "ratio_den": 102,
+      "q": 18,
+      "C": [
+        17
+      ],
+      "n": 67,
+      "m": 68,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6568627450980392
+    },
+    {
+      "ratio_num": 21,
+      "ratio_den": 32,
+      "q": 18,
+      "C": [
+        16
+      ],
+      "n": 63,
+      "m": 64,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.65625
+    },
+    {
+      "ratio_num": 21,
+      "ratio_den": 32,
+      "q": 17,
+      "C": [
+        16
+      ],
+      "n": 63,
+      "m": 64,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.65625
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 18,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 18,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 17,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 16,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 18,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 17,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 15,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 53,
+      "ratio_den": 81,
+      "q": 15,
+      "C": [
+        9
+      ],
+      "n": 53,
+      "m": 81,
+      "Dn": 4,
+      "Dm": 8,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.654320987654321
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 17,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 16,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 15,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    }
+  ],
+  "worst_no_any_bad": [
+    {
+      "ratio_num": 59,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 84,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.7023809523809523
+    },
+    {
+      "ratio_num": 44,
+      "ratio_den": 63,
+      "q": 12,
+      "C": [
+        9
+      ],
+      "n": 44,
+      "m": 63,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6984126984126984
+    },
+    {
+      "ratio_num": 29,
+      "ratio_den": 42,
+      "q": 8,
+      "C": [
+        6
+      ],
+      "n": 29,
+      "m": 42,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6904761904761905
+    },
+    {
+      "ratio_num": 2,
+      "ratio_den": 3,
+      "q": 4,
+      "C": [
+        3
+      ],
+      "n": 14,
+      "m": 21,
+      "Dn": 3,
+      "Dm": 6,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6666666666666666
+    },
+    {
+      "ratio_num": 71,
+      "ratio_den": 108,
+      "q": 15,
+      "C": [
+        12
+      ],
+      "n": 71,
+      "m": 108,
+      "Dn": 4,
+      "Dm": 8,
+      "h": 4,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6574074074074074
+    },
+    {
+      "ratio_num": 67,
+      "ratio_den": 102,
+      "q": 18,
+      "C": [
+        17
+      ],
+      "n": 67,
+      "m": 68,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6568627450980392
+    },
+    {
+      "ratio_num": 21,
+      "ratio_den": 32,
+      "q": 18,
+      "C": [
+        16
+      ],
+      "n": 63,
+      "m": 64,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.65625
+    },
+    {
+      "ratio_num": 21,
+      "ratio_den": 32,
+      "q": 17,
+      "C": [
+        16
+      ],
+      "n": 63,
+      "m": 64,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.65625
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 18,
+      "C": [
+        12
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 18,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 17,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 59,
+      "ratio_den": 90,
+      "q": 16,
+      "C": [
+        15
+      ],
+      "n": 59,
+      "m": 60,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6555555555555556
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 18,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 17,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 16,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 55,
+      "ratio_den": 84,
+      "q": 15,
+      "C": [
+        14
+      ],
+      "n": 55,
+      "m": 56,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6547619047619048
+    },
+    {
+      "ratio_num": 53,
+      "ratio_den": 81,
+      "q": 15,
+      "C": [
+        9
+      ],
+      "n": 53,
+      "m": 81,
+      "Dn": 4,
+      "Dm": 8,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.654320987654321
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 17,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 16,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    },
+    {
+      "ratio_num": 17,
+      "ratio_den": 26,
+      "q": 15,
+      "C": [
+        13
+      ],
+      "n": 51,
+      "m": 52,
+      "Dn": 3,
+      "Dm": 4,
+      "h": 3,
+      "current_bad": false,
+      "any_bad_ge3_to_h": false,
+      "bad_blocks_ge3_to_h": [],
+      "block_cov_h": 1,
+      "slot_mass_h": 1,
+      "ratio_float": 0.6538461538461539
+    }
+  ]
+}

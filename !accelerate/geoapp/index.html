@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Honors Geometry Problem Database</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>Honors Geometry Problem Database</h1>
+        <p id="sourceSummary">Loading database...</p>
+      </div>
+      <div class="header-stats" aria-label="Database summary">
+        <div>
+          <span id="totalCount">800</span>
+          <small>Problems</small>
+        </div>
+        <div>
+          <span id="visibleCount">0</span>
+          <small>Shown</small>
+        </div>
+        <div>
+          <span id="proofCount">0</span>
+          <small>Proofs</small>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <aside class="filters" aria-label="Problem filters">
+        <div class="filter-group">
+          <label for="searchInput">Search</label>
+          <input id="searchInput" type="search" placeholder="Topic, standard, keyword, ID" autocomplete="off" />
+        </div>
+
+        <div class="filter-grid">
+          <div class="filter-group">
+            <label for="unitSelect">Unit</label>
+            <select id="unitSelect">
+              <option value="all">All units</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="difficultySelect">Difficulty</label>
+            <select id="difficultySelect">
+              <option value="all">All difficulties</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="typeSelect">Type</label>
+            <select id="typeSelect">
+              <option value="all">All types</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="standardSelect">Standard</label>
+            <select id="standardSelect">
+              <option value="all">All standards</option>
+            </select>
+          </div>
+        </div>
+
+        <label class="check-row">
+          <input id="proofOnly" type="checkbox" />
+          <span>Proof problems only</span>
+        </label>
+
+        <div class="unit-strip" id="unitStrip" aria-label="Unit shortcuts"></div>
+      </aside>
+
+      <section class="content-pane" aria-label="Problem browser">
+        <div class="list-toolbar">
+          <strong id="listTitle">Problems</strong>
+          <button id="resetButton" type="button">Reset</button>
+        </div>
+        <div id="problemList" class="problem-list" aria-live="polite"></div>
+      </section>
+
+      <article class="detail-pane" aria-label="Selected problem">
+        <div class="detail-meta">
+          <span id="detailUnit">Unit</span>
+          <span id="detailDifficulty">Difficulty</span>
+          <span id="detailType">Type</span>
+        </div>
+        <h2 id="detailTitle">Select a problem</h2>
+        <p id="detailStandard" class="standard-line"></p>
+
+        <figure class="visual-frame">
+          <img id="detailVisual" alt="" />
+          <figcaption id="detailAlt"></figcaption>
+        </figure>
+
+        <section class="problem-section">
+          <h3>Question</h3>
+          <p id="detailQuestion"></p>
+        </section>
+
+        <section class="problem-section">
+          <h3>Answer</h3>
+          <p id="detailAnswer"></p>
+        </section>
+
+        <section class="problem-section">
+          <h3>Explanation</h3>
+          <p id="detailExplanation"></p>
+        </section>
+
+        <section id="proofSection" class="problem-section">
+          <h3>Proof</h3>
+          <p id="detailProof"></p>
+        </section>
+
+        <section class="problem-section">
+          <h3>Source Alignment</h3>
+          <p id="detailAlignment"></p>
+        </section>
+      </article>
+    </main>
+
+    <script src="data/honors_geometry_problem_database.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

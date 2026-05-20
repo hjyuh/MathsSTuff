@@ -1,0 +1,21 @@
+{
+  "job_id": "2026-05-19T23-34-06-autoformalize-8caf-autoformalize_smoke_test",
+  "status": "error",
+  "session_id": "",
+  "command": "/autoformalize",
+  "input": "For every natural number n, the sum of the first n positive odd numbers equals n squared. That is, 1 + 3 + 5 + ... + (2n - 1) = n^2.",
+  "started_at": "2026-05-19T23:34:06Z",
+  "finished_at": "2026-05-19T23:34:33Z",
+  "duration_s": 26.58,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": {
+    "type": "gauss_exit",
+    "message": "child exited with code 1",
+    "log_tail": "Reading additional input from stdin...\nOpenAI Codex v0.120.0 (research preview)\n--------\nworkdir: /mnt/c/Users/z20ma/OneDrive/Documents/!math/gauss-test\nmodel: gpt-5.2-codex\nprovider: openai\napproval: never\nsandbox: danger-full-access\nreasoning effort: none\nreasoning summaries: none\nsession id: 019e4297-1063-7790-8527-de394aca21e5\n--------\nuser\nYou are in a Gauss-managed Lean workflow session. Read the startup context at /home/z20ma/.gauss/autoformalize/codex/managed/startup/20260519-183409-autoformalize.md first. Then explicitly invoke the `$lean4` skill and follow the requested Lean workflow in the active project. Important: `/lean4:*` entries in the startup context are skill workflow names, not shell commands, so do not try to execute them in bash. The staged skill entrypoint is /home/z20ma/.gauss/autoformalize/codex/managed/codex-home/.agents/skills/lean4/SKILL.md. The matching workflow guide is /home/z20ma/.gauss/autoformalize/assets/lean4-skills/plugins/lean4/commands/autoformalize.md.\nERROR: {\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.2-codex' model is not supported when using Codex with a ChatGPT account.\"}}\nERROR: {\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-5.2-codex' model is not supported when using Codex with a ChatGPT account.\"}}"
+  },
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-05-19T23-34-06-autoformalize-8caf-autoformalize_smoke_test.log",
+  "worker_pid": 2765,
+  "last_heartbeat_at": 1779233672.5483847,
+  "_started_monotonic": 1779233646.4279203
+}

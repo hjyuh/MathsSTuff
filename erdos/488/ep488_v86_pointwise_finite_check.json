@@ -1,0 +1,1241 @@
+{
+  "case_count": 18,
+  "all_ok": true,
+  "cases": [
+    {
+      "R": 2,
+      "D": [],
+      "L": 1,
+      "A_R": 2,
+      "target": "4/3",
+      "period_density": "1",
+      "period_density_slack": "1/3",
+      "worst_value": "1",
+      "worst_M": 3,
+      "worst_slack": "1/3",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 3,
+          "value": "1",
+          "slack": "1/3"
+        }
+      ]
+    },
+    {
+      "R": 2,
+      "D": [
+        2
+      ],
+      "L": 2,
+      "A_R": 1,
+      "target": "2/3",
+      "period_density": "1/2",
+      "period_density_slack": "1/6",
+      "worst_value": "2/3",
+      "worst_M": 3,
+      "worst_slack": "0",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 4,
+          "value": "1/2",
+          "slack": "1/6"
+        },
+        {
+          "residue": 1,
+          "M": 3,
+          "value": "2/3",
+          "slack": "0"
+        }
+      ]
+    },
+    {
+      "R": 3,
+      "D": [],
+      "L": 1,
+      "A_R": 3,
+      "target": "3/2",
+      "period_density": "1",
+      "period_density_slack": "1/2",
+      "worst_value": "1",
+      "worst_M": 4,
+      "worst_slack": "1/2",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 4,
+          "value": "1",
+          "slack": "1/2"
+        }
+      ]
+    },
+    {
+      "R": 3,
+      "D": [
+        2
+      ],
+      "L": 2,
+      "A_R": 2,
+      "target": "1",
+      "period_density": "1/2",
+      "period_density_slack": "1/2",
+      "worst_value": "3/5",
+      "worst_M": 5,
+      "worst_slack": "2/5",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 4,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 1,
+          "M": 5,
+          "value": "3/5",
+          "slack": "2/5"
+        }
+      ]
+    },
+    {
+      "R": 3,
+      "D": [
+        3
+      ],
+      "L": 3,
+      "A_R": 2,
+      "target": "1",
+      "period_density": "2/3",
+      "period_density_slack": "1/3",
+      "worst_value": "4/5",
+      "worst_M": 5,
+      "worst_slack": "1/5",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 6,
+          "value": "2/3",
+          "slack": "1/3"
+        },
+        {
+          "residue": 1,
+          "M": 4,
+          "value": "3/4",
+          "slack": "1/4"
+        },
+        {
+          "residue": 2,
+          "M": 5,
+          "value": "4/5",
+          "slack": "1/5"
+        }
+      ]
+    },
+    {
+      "R": 3,
+      "D": [
+        2,
+        3
+      ],
+      "L": 6,
+      "A_R": 1,
+      "target": "1/2",
+      "period_density": "1/3",
+      "period_density_slack": "1/6",
+      "worst_value": "3/7",
+      "worst_M": 7,
+      "worst_slack": "1/14",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 6,
+          "value": "1/3",
+          "slack": "1/6"
+        },
+        {
+          "residue": 1,
+          "M": 7,
+          "value": "3/7",
+          "slack": "1/14"
+        },
+        {
+          "residue": 2,
+          "M": 8,
+          "value": "3/8",
+          "slack": "1/8"
+        },
+        {
+          "residue": 3,
+          "M": 9,
+          "value": "1/3",
+          "slack": "1/6"
+        },
+        {
+          "residue": 4,
+          "M": 4,
+          "value": "1/4",
+          "slack": "1/4"
+        },
+        {
+          "residue": 5,
+          "M": 5,
+          "value": "2/5",
+          "slack": "1/10"
+        }
+      ]
+    },
+    {
+      "R": 4,
+      "D": [],
+      "L": 1,
+      "A_R": 4,
+      "target": "8/5",
+      "period_density": "1",
+      "period_density_slack": "3/5",
+      "worst_value": "1",
+      "worst_M": 5,
+      "worst_slack": "3/5",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 5,
+          "value": "1",
+          "slack": "3/5"
+        }
+      ]
+    },
+    {
+      "R": 4,
+      "D": [
+        3
+      ],
+      "L": 3,
+      "A_R": 3,
+      "target": "6/5",
+      "period_density": "2/3",
+      "period_density_slack": "8/15",
+      "worst_value": "4/5",
+      "worst_M": 5,
+      "worst_slack": "2/5",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 6,
+          "value": "2/3",
+          "slack": "8/15"
+        },
+        {
+          "residue": 1,
+          "M": 7,
+          "value": "5/7",
+          "slack": "17/35"
+        },
+        {
+          "residue": 2,
+          "M": 5,
+          "value": "4/5",
+          "slack": "2/5"
+        }
+      ]
+    },
+    {
+      "R": 4,
+      "D": [
+        4
+      ],
+      "L": 4,
+      "A_R": 3,
+      "target": "6/5",
+      "period_density": "3/4",
+      "period_density_slack": "9/20",
+      "worst_value": "6/7",
+      "worst_M": 7,
+      "worst_slack": "12/35",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 8,
+          "value": "3/4",
+          "slack": "9/20"
+        },
+        {
+          "residue": 1,
+          "M": 5,
+          "value": "4/5",
+          "slack": "2/5"
+        },
+        {
+          "residue": 2,
+          "M": 6,
+          "value": "5/6",
+          "slack": "11/30"
+        },
+        {
+          "residue": 3,
+          "M": 7,
+          "value": "6/7",
+          "slack": "12/35"
+        }
+      ]
+    },
+    {
+      "R": 4,
+      "D": [
+        3,
+        4
+      ],
+      "L": 12,
+      "A_R": 2,
+      "target": "4/5",
+      "period_density": "1/2",
+      "period_density_slack": "3/10",
+      "worst_value": "3/5",
+      "worst_M": 5,
+      "worst_slack": "1/5",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 12,
+          "value": "1/2",
+          "slack": "3/10"
+        },
+        {
+          "residue": 1,
+          "M": 13,
+          "value": "7/13",
+          "slack": "17/65"
+        },
+        {
+          "residue": 2,
+          "M": 14,
+          "value": "4/7",
+          "slack": "8/35"
+        },
+        {
+          "residue": 3,
+          "M": 15,
+          "value": "8/15",
+          "slack": "4/15"
+        },
+        {
+          "residue": 4,
+          "M": 16,
+          "value": "1/2",
+          "slack": "3/10"
+        },
+        {
+          "residue": 5,
+          "M": 5,
+          "value": "3/5",
+          "slack": "1/5"
+        },
+        {
+          "residue": 6,
+          "M": 6,
+          "value": "1/2",
+          "slack": "3/10"
+        },
+        {
+          "residue": 7,
+          "M": 7,
+          "value": "4/7",
+          "slack": "8/35"
+        },
+        {
+          "residue": 8,
+          "M": 8,
+          "value": "1/2",
+          "slack": "3/10"
+        },
+        {
+          "residue": 9,
+          "M": 9,
+          "value": "4/9",
+          "slack": "16/45"
+        },
+        {
+          "residue": 10,
+          "M": 10,
+          "value": "1/2",
+          "slack": "3/10"
+        },
+        {
+          "residue": 11,
+          "M": 11,
+          "value": "6/11",
+          "slack": "14/55"
+        }
+      ]
+    },
+    {
+      "R": 5,
+      "D": [],
+      "L": 1,
+      "A_R": 5,
+      "target": "5/3",
+      "period_density": "1",
+      "period_density_slack": "2/3",
+      "worst_value": "1",
+      "worst_M": 6,
+      "worst_slack": "2/3",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 6,
+          "value": "1",
+          "slack": "2/3"
+        }
+      ]
+    },
+    {
+      "R": 5,
+      "D": [
+        3
+      ],
+      "L": 3,
+      "A_R": 4,
+      "target": "4/3",
+      "period_density": "2/3",
+      "period_density_slack": "2/3",
+      "worst_value": "3/4",
+      "worst_M": 8,
+      "worst_slack": "7/12",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 6,
+          "value": "2/3",
+          "slack": "2/3"
+        },
+        {
+          "residue": 1,
+          "M": 7,
+          "value": "5/7",
+          "slack": "13/21"
+        },
+        {
+          "residue": 2,
+          "M": 8,
+          "value": "3/4",
+          "slack": "7/12"
+        }
+      ]
+    },
+    {
+      "R": 5,
+      "D": [
+        4
+      ],
+      "L": 4,
+      "A_R": 4,
+      "target": "4/3",
+      "period_density": "3/4",
+      "period_density_slack": "7/12",
+      "worst_value": "6/7",
+      "worst_M": 7,
+      "worst_slack": "10/21",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 8,
+          "value": "3/4",
+          "slack": "7/12"
+        },
+        {
+          "residue": 1,
+          "M": 9,
+          "value": "7/9",
+          "slack": "5/9"
+        },
+        {
+          "residue": 2,
+          "M": 6,
+          "value": "5/6",
+          "slack": "1/2"
+        },
+        {
+          "residue": 3,
+          "M": 7,
+          "value": "6/7",
+          "slack": "10/21"
+        }
+      ]
+    },
+    {
+      "R": 5,
+      "D": [
+        5
+      ],
+      "L": 5,
+      "A_R": 4,
+      "target": "4/3",
+      "period_density": "4/5",
+      "period_density_slack": "8/15",
+      "worst_value": "8/9",
+      "worst_M": 9,
+      "worst_slack": "4/9",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 10,
+          "value": "4/5",
+          "slack": "8/15"
+        },
+        {
+          "residue": 1,
+          "M": 6,
+          "value": "5/6",
+          "slack": "1/2"
+        },
+        {
+          "residue": 2,
+          "M": 7,
+          "value": "6/7",
+          "slack": "10/21"
+        },
+        {
+          "residue": 3,
+          "M": 8,
+          "value": "7/8",
+          "slack": "11/24"
+        },
+        {
+          "residue": 4,
+          "M": 9,
+          "value": "8/9",
+          "slack": "4/9"
+        }
+      ]
+    },
+    {
+      "R": 5,
+      "D": [
+        3,
+        4
+      ],
+      "L": 12,
+      "A_R": 3,
+      "target": "1",
+      "period_density": "1/2",
+      "period_density_slack": "1/2",
+      "worst_value": "4/7",
+      "worst_M": 14,
+      "worst_slack": "3/7",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 12,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 1,
+          "M": 13,
+          "value": "7/13",
+          "slack": "6/13"
+        },
+        {
+          "residue": 2,
+          "M": 14,
+          "value": "4/7",
+          "slack": "3/7"
+        },
+        {
+          "residue": 3,
+          "M": 15,
+          "value": "8/15",
+          "slack": "7/15"
+        },
+        {
+          "residue": 4,
+          "M": 16,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 5,
+          "M": 17,
+          "value": "9/17",
+          "slack": "8/17"
+        },
+        {
+          "residue": 6,
+          "M": 6,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 7,
+          "M": 7,
+          "value": "4/7",
+          "slack": "3/7"
+        },
+        {
+          "residue": 8,
+          "M": 8,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 9,
+          "M": 9,
+          "value": "4/9",
+          "slack": "5/9"
+        },
+        {
+          "residue": 10,
+          "M": 10,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 11,
+          "M": 11,
+          "value": "6/11",
+          "slack": "5/11"
+        }
+      ]
+    },
+    {
+      "R": 5,
+      "D": [
+        3,
+        5
+      ],
+      "L": 15,
+      "A_R": 3,
+      "target": "1",
+      "period_density": "8/15",
+      "period_density_slack": "7/15",
+      "worst_value": "5/8",
+      "worst_M": 8,
+      "worst_slack": "3/8",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 15,
+          "value": "8/15",
+          "slack": "7/15"
+        },
+        {
+          "residue": 1,
+          "M": 16,
+          "value": "9/16",
+          "slack": "7/16"
+        },
+        {
+          "residue": 2,
+          "M": 17,
+          "value": "10/17",
+          "slack": "7/17"
+        },
+        {
+          "residue": 3,
+          "M": 18,
+          "value": "5/9",
+          "slack": "4/9"
+        },
+        {
+          "residue": 4,
+          "M": 19,
+          "value": "11/19",
+          "slack": "8/19"
+        },
+        {
+          "residue": 5,
+          "M": 20,
+          "value": "11/20",
+          "slack": "9/20"
+        },
+        {
+          "residue": 6,
+          "M": 6,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 7,
+          "M": 7,
+          "value": "4/7",
+          "slack": "3/7"
+        },
+        {
+          "residue": 8,
+          "M": 8,
+          "value": "5/8",
+          "slack": "3/8"
+        },
+        {
+          "residue": 9,
+          "M": 9,
+          "value": "5/9",
+          "slack": "4/9"
+        },
+        {
+          "residue": 10,
+          "M": 10,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 11,
+          "M": 11,
+          "value": "6/11",
+          "slack": "5/11"
+        },
+        {
+          "residue": 12,
+          "M": 12,
+          "value": "1/2",
+          "slack": "1/2"
+        },
+        {
+          "residue": 13,
+          "M": 13,
+          "value": "7/13",
+          "slack": "6/13"
+        },
+        {
+          "residue": 14,
+          "M": 14,
+          "value": "4/7",
+          "slack": "3/7"
+        }
+      ]
+    },
+    {
+      "R": 5,
+      "D": [
+        4,
+        5
+      ],
+      "L": 20,
+      "A_R": 3,
+      "target": "1",
+      "period_density": "3/5",
+      "period_density_slack": "2/5",
+      "worst_value": "5/7",
+      "worst_M": 7,
+      "worst_slack": "2/7",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 20,
+          "value": "3/5",
+          "slack": "2/5"
+        },
+        {
+          "residue": 1,
+          "M": 21,
+          "value": "13/21",
+          "slack": "8/21"
+        },
+        {
+          "residue": 2,
+          "M": 22,
+          "value": "7/11",
+          "slack": "4/11"
+        },
+        {
+          "residue": 3,
+          "M": 23,
+          "value": "15/23",
+          "slack": "8/23"
+        },
+        {
+          "residue": 4,
+          "M": 24,
+          "value": "5/8",
+          "slack": "3/8"
+        },
+        {
+          "residue": 5,
+          "M": 25,
+          "value": "3/5",
+          "slack": "2/5"
+        },
+        {
+          "residue": 6,
+          "M": 6,
+          "value": "2/3",
+          "slack": "1/3"
+        },
+        {
+          "residue": 7,
+          "M": 7,
+          "value": "5/7",
+          "slack": "2/7"
+        },
+        {
+          "residue": 8,
+          "M": 8,
+          "value": "5/8",
+          "slack": "3/8"
+        },
+        {
+          "residue": 9,
+          "M": 9,
+          "value": "2/3",
+          "slack": "1/3"
+        },
+        {
+          "residue": 10,
+          "M": 10,
+          "value": "3/5",
+          "slack": "2/5"
+        },
+        {
+          "residue": 11,
+          "M": 11,
+          "value": "7/11",
+          "slack": "4/11"
+        },
+        {
+          "residue": 12,
+          "M": 12,
+          "value": "7/12",
+          "slack": "5/12"
+        },
+        {
+          "residue": 13,
+          "M": 13,
+          "value": "8/13",
+          "slack": "5/13"
+        },
+        {
+          "residue": 14,
+          "M": 14,
+          "value": "9/14",
+          "slack": "5/14"
+        },
+        {
+          "residue": 15,
+          "M": 15,
+          "value": "3/5",
+          "slack": "2/5"
+        },
+        {
+          "residue": 16,
+          "M": 16,
+          "value": "9/16",
+          "slack": "7/16"
+        },
+        {
+          "residue": 17,
+          "M": 17,
+          "value": "10/17",
+          "slack": "7/17"
+        },
+        {
+          "residue": 18,
+          "M": 18,
+          "value": "11/18",
+          "slack": "7/18"
+        },
+        {
+          "residue": 19,
+          "M": 19,
+          "value": "12/19",
+          "slack": "7/19"
+        }
+      ]
+    },
+    {
+      "R": 5,
+      "D": [
+        3,
+        4,
+        5
+      ],
+      "L": 60,
+      "A_R": 2,
+      "target": "2/3",
+      "period_density": "2/5",
+      "period_density_slack": "4/15",
+      "worst_value": "10/23",
+      "worst_M": 23,
+      "worst_slack": "16/69",
+      "ok": true,
+      "residue_checks": [
+        {
+          "residue": 0,
+          "M": 60,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 1,
+          "M": 61,
+          "value": "25/61",
+          "slack": "47/183"
+        },
+        {
+          "residue": 2,
+          "M": 62,
+          "value": "13/31",
+          "slack": "23/93"
+        },
+        {
+          "residue": 3,
+          "M": 63,
+          "value": "26/63",
+          "slack": "16/63"
+        },
+        {
+          "residue": 4,
+          "M": 64,
+          "value": "13/32",
+          "slack": "25/96"
+        },
+        {
+          "residue": 5,
+          "M": 65,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 6,
+          "M": 6,
+          "value": "1/3",
+          "slack": "1/3"
+        },
+        {
+          "residue": 7,
+          "M": 7,
+          "value": "3/7",
+          "slack": "5/21"
+        },
+        {
+          "residue": 8,
+          "M": 8,
+          "value": "3/8",
+          "slack": "7/24"
+        },
+        {
+          "residue": 9,
+          "M": 9,
+          "value": "1/3",
+          "slack": "1/3"
+        },
+        {
+          "residue": 10,
+          "M": 10,
+          "value": "3/10",
+          "slack": "11/30"
+        },
+        {
+          "residue": 11,
+          "M": 11,
+          "value": "4/11",
+          "slack": "10/33"
+        },
+        {
+          "residue": 12,
+          "M": 12,
+          "value": "1/3",
+          "slack": "1/3"
+        },
+        {
+          "residue": 13,
+          "M": 13,
+          "value": "5/13",
+          "slack": "11/39"
+        },
+        {
+          "residue": 14,
+          "M": 14,
+          "value": "3/7",
+          "slack": "5/21"
+        },
+        {
+          "residue": 15,
+          "M": 15,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 16,
+          "M": 16,
+          "value": "3/8",
+          "slack": "7/24"
+        },
+        {
+          "residue": 17,
+          "M": 17,
+          "value": "7/17",
+          "slack": "13/51"
+        },
+        {
+          "residue": 18,
+          "M": 18,
+          "value": "7/18",
+          "slack": "5/18"
+        },
+        {
+          "residue": 19,
+          "M": 19,
+          "value": "8/19",
+          "slack": "14/57"
+        },
+        {
+          "residue": 20,
+          "M": 20,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 21,
+          "M": 21,
+          "value": "8/21",
+          "slack": "2/7"
+        },
+        {
+          "residue": 22,
+          "M": 22,
+          "value": "9/22",
+          "slack": "17/66"
+        },
+        {
+          "residue": 23,
+          "M": 23,
+          "value": "10/23",
+          "slack": "16/69"
+        },
+        {
+          "residue": 24,
+          "M": 24,
+          "value": "5/12",
+          "slack": "1/4"
+        },
+        {
+          "residue": 25,
+          "M": 25,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 26,
+          "M": 26,
+          "value": "11/26",
+          "slack": "19/78"
+        },
+        {
+          "residue": 27,
+          "M": 27,
+          "value": "11/27",
+          "slack": "7/27"
+        },
+        {
+          "residue": 28,
+          "M": 28,
+          "value": "11/28",
+          "slack": "23/84"
+        },
+        {
+          "residue": 29,
+          "M": 29,
+          "value": "12/29",
+          "slack": "22/87"
+        },
+        {
+          "residue": 30,
+          "M": 30,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 31,
+          "M": 31,
+          "value": "13/31",
+          "slack": "23/93"
+        },
+        {
+          "residue": 32,
+          "M": 32,
+          "value": "13/32",
+          "slack": "25/96"
+        },
+        {
+          "residue": 33,
+          "M": 33,
+          "value": "13/33",
+          "slack": "3/11"
+        },
+        {
+          "residue": 34,
+          "M": 34,
+          "value": "7/17",
+          "slack": "13/51"
+        },
+        {
+          "residue": 35,
+          "M": 35,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 36,
+          "M": 36,
+          "value": "7/18",
+          "slack": "5/18"
+        },
+        {
+          "residue": 37,
+          "M": 37,
+          "value": "15/37",
+          "slack": "29/111"
+        },
+        {
+          "residue": 38,
+          "M": 38,
+          "value": "8/19",
+          "slack": "14/57"
+        },
+        {
+          "residue": 39,
+          "M": 39,
+          "value": "16/39",
+          "slack": "10/39"
+        },
+        {
+          "residue": 40,
+          "M": 40,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 41,
+          "M": 41,
+          "value": "17/41",
+          "slack": "31/123"
+        },
+        {
+          "residue": 42,
+          "M": 42,
+          "value": "17/42",
+          "slack": "11/42"
+        },
+        {
+          "residue": 43,
+          "M": 43,
+          "value": "18/43",
+          "slack": "32/129"
+        },
+        {
+          "residue": 44,
+          "M": 44,
+          "value": "9/22",
+          "slack": "17/66"
+        },
+        {
+          "residue": 45,
+          "M": 45,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 46,
+          "M": 46,
+          "value": "19/46",
+          "slack": "35/138"
+        },
+        {
+          "residue": 47,
+          "M": 47,
+          "value": "20/47",
+          "slack": "34/141"
+        },
+        {
+          "residue": 48,
+          "M": 48,
+          "value": "5/12",
+          "slack": "1/4"
+        },
+        {
+          "residue": 49,
+          "M": 49,
+          "value": "3/7",
+          "slack": "5/21"
+        },
+        {
+          "residue": 50,
+          "M": 50,
+          "value": "21/50",
+          "slack": "37/150"
+        },
+        {
+          "residue": 51,
+          "M": 51,
+          "value": "7/17",
+          "slack": "13/51"
+        },
+        {
+          "residue": 52,
+          "M": 52,
+          "value": "21/52",
+          "slack": "41/156"
+        },
+        {
+          "residue": 53,
+          "M": 53,
+          "value": "22/53",
+          "slack": "40/159"
+        },
+        {
+          "residue": 54,
+          "M": 54,
+          "value": "11/27",
+          "slack": "7/27"
+        },
+        {
+          "residue": 55,
+          "M": 55,
+          "value": "2/5",
+          "slack": "4/15"
+        },
+        {
+          "residue": 56,
+          "M": 56,
+          "value": "11/28",
+          "slack": "23/84"
+        },
+        {
+          "residue": 57,
+          "M": 57,
+          "value": "22/57",
+          "slack": "16/57"
+        },
+        {
+          "residue": 58,
+          "M": 58,
+          "value": "23/58",
+          "slack": "47/174"
+        },
+        {
+          "residue": 59,
+          "M": 59,
+          "value": "24/59",
+          "slack": "46/177"
+        }
+      ]
+    }
+  ]
+}

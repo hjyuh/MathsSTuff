@@ -1,0 +1,970 @@
+{
+  "motifs_json": "ep488_v63_a4_normalized_cycle_motifs_len16.json",
+  "period_cap": 2000000,
+  "status_counts": {
+    "vertex_correction_possible": 1,
+    "proved": 8
+  },
+  "rows": [
+    {
+      "ordered_cycle": [
+        12,
+        15,
+        20
+      ],
+      "normalized_cycle": [
+        12,
+        15,
+        20
+      ],
+      "length": 3,
+      "bounds": {
+        "lower": "20",
+        "upper": "24",
+        "edge_max": 60
+      },
+      "vertex_obstructions": [
+        {
+          "p": 15,
+          "h": 3,
+          "hp": 45,
+          "r_interval": "(45/24,45/20)",
+          "possible_r": [
+            2
+          ]
+        }
+      ],
+      "vertex_obstruction_count": 1,
+      "lower_B": {
+        "lower": "20",
+        "upper": "24",
+        "edge_max": 60,
+        "y_min": 60,
+        "y_max": 71,
+        "B_lower": "1/4",
+        "worst_y": {
+          "y": 71,
+          "H_raw": 9,
+          "B_lower": "1/4"
+        },
+        "rows": [
+          {
+            "y": 60,
+            "H_raw": 9,
+            "B_lower": "18/61"
+          },
+          {
+            "y": 61,
+            "H_raw": 9,
+            "B_lower": "9/31"
+          },
+          {
+            "y": 62,
+            "H_raw": 9,
+            "B_lower": "2/7"
+          },
+          {
+            "y": 63,
+            "H_raw": 9,
+            "B_lower": "9/32"
+          },
+          {
+            "y": 64,
+            "H_raw": 9,
+            "B_lower": "18/65"
+          },
+          {
+            "y": 65,
+            "H_raw": 9,
+            "B_lower": "3/11"
+          },
+          {
+            "y": 66,
+            "H_raw": 9,
+            "B_lower": "18/67"
+          },
+          {
+            "y": 67,
+            "H_raw": 9,
+            "B_lower": "9/34"
+          },
+          {
+            "y": 68,
+            "H_raw": 9,
+            "B_lower": "6/23"
+          },
+          {
+            "y": 69,
+            "H_raw": 9,
+            "B_lower": "9/35"
+          },
+          {
+            "y": 70,
+            "H_raw": 9,
+            "B_lower": "18/71"
+          },
+          {
+            "y": 71,
+            "H_raw": 9,
+            "B_lower": "1/4"
+          }
+        ]
+      },
+      "period": 120,
+      "slope": "23/120",
+      "status": "vertex_correction_possible"
+    },
+    {
+      "ordered_cycle": [
+        8,
+        10,
+        15,
+        9,
+        12
+      ],
+      "normalized_cycle": [
+        8,
+        9,
+        10,
+        12,
+        15
+      ],
+      "length": 5,
+      "bounds": {
+        "lower": "15",
+        "upper": "16",
+        "edge_max": 45
+      },
+      "vertex_obstructions": [],
+      "vertex_obstruction_count": 0,
+      "lower_B": {
+        "lower": "15",
+        "upper": "16",
+        "edge_max": 45,
+        "y_min": 45,
+        "y_max": 47,
+        "B_lower": "5/8",
+        "worst_y": {
+          "y": 47,
+          "H_raw": 15,
+          "B_lower": "5/8"
+        },
+        "rows": [
+          {
+            "y": 45,
+            "H_raw": 15,
+            "B_lower": "15/23"
+          },
+          {
+            "y": 46,
+            "H_raw": 15,
+            "B_lower": "30/47"
+          },
+          {
+            "y": 47,
+            "H_raw": 15,
+            "B_lower": "5/8"
+          }
+        ]
+      },
+      "period": 720,
+      "slope": "149/360",
+      "status": "proved",
+      "worst_period_row": {
+        "k": 48,
+        "A": 17,
+        "A_over_k": "17/48",
+        "margin": "13"
+      },
+      "failures": []
+    },
+    {
+      "ordered_cycle": [
+        24,
+        36,
+        27,
+        45,
+        30,
+        40
+      ],
+      "normalized_cycle": [
+        24,
+        27,
+        30,
+        36,
+        40,
+        45
+      ],
+      "length": 6,
+      "bounds": {
+        "lower": "45",
+        "upper": "48",
+        "edge_max": 135
+      },
+      "vertex_obstructions": [],
+      "vertex_obstruction_count": 0,
+      "lower_B": {
+        "lower": "45",
+        "upper": "48",
+        "edge_max": 135,
+        "y_min": 135,
+        "y_max": 143,
+        "B_lower": "17/72",
+        "worst_y": {
+          "y": 143,
+          "H_raw": 17,
+          "B_lower": "17/72"
+        },
+        "rows": [
+          {
+            "y": 135,
+            "H_raw": 17,
+            "B_lower": "1/4"
+          },
+          {
+            "y": 136,
+            "H_raw": 17,
+            "B_lower": "34/137"
+          },
+          {
+            "y": 137,
+            "H_raw": 17,
+            "B_lower": "17/69"
+          },
+          {
+            "y": 138,
+            "H_raw": 17,
+            "B_lower": "34/139"
+          },
+          {
+            "y": 139,
+            "H_raw": 17,
+            "B_lower": "17/70"
+          },
+          {
+            "y": 140,
+            "H_raw": 17,
+            "B_lower": "34/141"
+          },
+          {
+            "y": 141,
+            "H_raw": 17,
+            "B_lower": "17/71"
+          },
+          {
+            "y": 142,
+            "H_raw": 17,
+            "B_lower": "34/143"
+          },
+          {
+            "y": 143,
+            "H_raw": 17,
+            "B_lower": "17/72"
+          }
+        ]
+      },
+      "period": 2160,
+      "slope": "343/2160",
+      "status": "proved",
+      "worst_period_row": {
+        "k": 135,
+        "A": 17,
+        "A_over_k": "17/135",
+        "margin": "119/8"
+      },
+      "failures": []
+    },
+    {
+      "ordered_cycle": [
+        32,
+        40,
+        60,
+        45,
+        36,
+        48
+      ],
+      "normalized_cycle": [
+        32,
+        36,
+        40,
+        45,
+        48,
+        60
+      ],
+      "length": 6,
+      "bounds": {
+        "lower": "60",
+        "upper": "64",
+        "edge_max": 180
+      },
+      "vertex_obstructions": [],
+      "vertex_obstruction_count": 0,
+      "lower_B": {
+        "lower": "60",
+        "upper": "64",
+        "edge_max": 180,
+        "y_min": 180,
+        "y_max": 191,
+        "B_lower": "3/16",
+        "worst_y": {
+          "y": 191,
+          "H_raw": 18,
+          "B_lower": "3/16"
+        },
+        "rows": [
+          {
+            "y": 180,
+            "H_raw": 18,
+            "B_lower": "36/181"
+          },
+          {
+            "y": 181,
+            "H_raw": 18,
+            "B_lower": "18/91"
+          },
+          {
+            "y": 182,
+            "H_raw": 18,
+            "B_lower": "12/61"
+          },
+          {
+            "y": 183,
+            "H_raw": 18,
+            "B_lower": "9/46"
+          },
+          {
+            "y": 184,
+            "H_raw": 18,
+            "B_lower": "36/185"
+          },
+          {
+            "y": 185,
+            "H_raw": 18,
+            "B_lower": "6/31"
+          },
+          {
+            "y": 186,
+            "H_raw": 18,
+            "B_lower": "36/187"
+          },
+          {
+            "y": 187,
+            "H_raw": 18,
+            "B_lower": "9/47"
+          },
+          {
+            "y": 188,
+            "H_raw": 18,
+            "B_lower": "4/21"
+          },
+          {
+            "y": 189,
+            "H_raw": 18,
+            "B_lower": "18/95"
+          },
+          {
+            "y": 190,
+            "H_raw": 18,
+            "B_lower": "36/191"
+          },
+          {
+            "y": 191,
+            "H_raw": 18,
+            "B_lower": "3/16"
+          }
+        ]
+      },
+      "period": 2880,
+      "slope": "59/480",
+      "status": "proved",
+      "worst_period_row": {
+        "k": 180,
+        "A": 18,
+        "A_over_k": "1/10",
+        "margin": "63/4"
+      },
+      "failures": []
+    },
+    {
+      "ordered_cycle": [
+        27,
+        36,
+        48,
+        32,
+        40,
+        30,
+        45
+      ],
+      "normalized_cycle": [
+        27,
+        30,
+        32,
+        36,
+        40,
+        45,
+        48
+      ],
+      "length": 7,
+      "bounds": {
+        "lower": "160/3",
+        "upper": "54",
+        "edge_max": 160
+      },
+      "vertex_obstructions": [],
+      "vertex_obstruction_count": 0,
+      "lower_B": {
+        "lower": "160/3",
+        "upper": "54",
+        "edge_max": 160,
+        "y_min": 160,
+        "y_max": 161,
+        "B_lower": "22/81",
+        "worst_y": {
+          "y": 161,
+          "H_raw": 22,
+          "B_lower": "22/81"
+        },
+        "rows": [
+          {
+            "y": 160,
+            "H_raw": 22,
+            "B_lower": "44/161"
+          },
+          {
+            "y": 161,
+            "H_raw": 22,
+            "B_lower": "22/81"
+          }
+        ]
+      },
+      "period": 8640,
+      "slope": "145/864",
+      "status": "proved",
+      "worst_period_row": {
+        "k": 162,
+        "A": 23,
+        "A_over_k": "23/162",
+        "margin": "21"
+      },
+      "failures": []
+    },
+    {
+      "ordered_cycle": [
+        96,
+        144,
+        108,
+        135,
+        180,
+        120,
+        160
+      ],
+      "normalized_cycle": [
+        96,
+        108,
+        120,
+        135,
+        144,
+        160,
+        180
+      ],
+      "length": 7,
+      "bounds": {
+        "lower": "180",
+        "upper": "192",
+        "edge_max": 540
+      },
+      "vertex_obstructions": [],
+      "vertex_obstruction_count": 0,
+      "lower_B": {
+        "lower": "180",
+        "upper": "192",
+        "edge_max": 540,
+        "y_min": 540,
+        "y_max": 575,
+        "B_lower": "5/72",
+        "worst_y": {
+          "y": 575,
+          "H_raw": 20,
+          "B_lower": "5/72"
+        },
+        "rows": [
+          {
+            "y": 540,
+            "H_raw": 20,
+            "B_lower": "40/541"
+          },
+          {
+            "y": 541,
+            "H_raw": 20,
+            "B_lower": "20/271"
+          },
+          {
+            "y": 542,
+            "H_raw": 20,
+            "B_lower": "40/543"
+          },
+          {
+            "y": 543,
+            "H_raw": 20,
+            "B_lower": "5/68"
+          },
+          {
+            "y": 544,
+            "H_raw": 20,
+            "B_lower": "8/109"
+          },
+          {
+            "y": 545,
+            "H_raw": 20,
+            "B_lower": "20/273"
+          },
+          {
+            "y": 546,
+            "H_raw": 20,
+            "B_lower": "40/547"
+          },
+          {
+            "y": 547,
+            "H_raw": 20,
+            "B_lower": "10/137"
+          },
+          {
+            "y": 548,
+            "H_raw": 20,
+            "B_lower": "40/549"
+          },
+          {
+            "y": 549,
+            "H_raw": 20,
+            "B_lower": "4/55"
+          },
+          {
+            "y": 550,
+            "H_raw": 20,
+            "B_lower": "40/551"
+          },
+          {
+            "y": 551,
+            "H_raw": 20,
+            "B_lower": "5/69"
+          },
+          {
+            "y": 552,
+            "H_raw": 20,
+            "B_lower": "40/553"
+          },
+          {
+            "y": 553,
+            "H_raw": 20,
+            "B_lower": "20/277"
+          },
+          {
+            "y": 554,
+            "H_raw": 20,
+            "B_lower": "8/111"
+          },
+          {
+            "y": 555,
+            "H_raw": 20,
+            "B_lower": "10/139"
+          },
+          {
+            "y": 556,
+            "H_raw": 20,
+            "B_lower": "40/557"
+          },
+          {
+            "y": 557,
+            "H_raw": 20,
+            "B_lower": "20/279"
+          },
+          {
+            "y": 558,
+            "H_raw": 20,
+            "B_lower": "40/559"
+          },
+          {
+            "y": 559,
+            "H_raw": 20,
+            "B_lower": "1/14"
+          },
+          {
+            "y": 560,
+            "H_raw": 20,
+            "B_lower": "40/561"
+          },
+          {
+            "y": 561,
+            "H_raw": 20,
+            "B_lower": "20/281"
+          },
+          {
+            "y": 562,
+            "H_raw": 20,
+            "B_lower": "40/563"
+          },
+          {
+            "y": 563,
+            "H_raw": 20,
+            "B_lower": "10/141"
+          },
+          {
+            "y": 564,
+            "H_raw": 20,
+            "B_lower": "8/113"
+          },
+          {
+            "y": 565,
+            "H_raw": 20,
+            "B_lower": "20/283"
+          },
+          {
+            "y": 566,
+            "H_raw": 20,
+            "B_lower": "40/567"
+          },
+          {
+            "y": 567,
+            "H_raw": 20,
+            "B_lower": "5/71"
+          },
+          {
+            "y": 568,
+            "H_raw": 20,
+            "B_lower": "40/569"
+          },
+          {
+            "y": 569,
+            "H_raw": 20,
+            "B_lower": "4/57"
+          },
+          {
+            "y": 570,
+            "H_raw": 20,
+            "B_lower": "40/571"
+          },
+          {
+            "y": 571,
+            "H_raw": 20,
+            "B_lower": "10/143"
+          },
+          {
+            "y": 572,
+            "H_raw": 20,
+            "B_lower": "40/573"
+          },
+          {
+            "y": 573,
+            "H_raw": 20,
+            "B_lower": "20/287"
+          },
+          {
+            "y": 574,
+            "H_raw": 20,
+            "B_lower": "8/115"
+          },
+          {
+            "y": 575,
+            "H_raw": 20,
+            "B_lower": "5/72"
+          }
+        ]
+      },
+      "period": 8640,
+      "slope": "133/2880",
+      "status": "proved",
+      "worst_period_row": {
+        "k": 540,
+        "A": 20,
+        "A_over_k": "1/27",
+        "margin": "35/2"
+      },
+      "failures": []
+    },
+    {
+      "ordered_cycle": [
+        81,
+        108,
+        144,
+        96,
+        160,
+        120,
+        90,
+        135
+      ],
+      "normalized_cycle": [
+        81,
+        90,
+        96,
+        108,
+        120,
+        135,
+        144,
+        160
+      ],
+      "length": 8,
+      "bounds": {
+        "lower": "160",
+        "upper": "162",
+        "edge_max": 480
+      },
+      "vertex_obstructions": [],
+      "vertex_obstruction_count": 0,
+      "lower_B": {
+        "lower": "160",
+        "upper": "162",
+        "edge_max": 480,
+        "y_min": 480,
+        "y_max": 485,
+        "B_lower": "8/81",
+        "worst_y": {
+          "y": 485,
+          "H_raw": 24,
+          "B_lower": "8/81"
+        },
+        "rows": [
+          {
+            "y": 480,
+            "H_raw": 24,
+            "B_lower": "48/481"
+          },
+          {
+            "y": 481,
+            "H_raw": 24,
+            "B_lower": "24/241"
+          },
+          {
+            "y": 482,
+            "H_raw": 24,
+            "B_lower": "16/161"
+          },
+          {
+            "y": 483,
+            "H_raw": 24,
+            "B_lower": "12/121"
+          },
+          {
+            "y": 484,
+            "H_raw": 24,
+            "B_lower": "48/485"
+          },
+          {
+            "y": 485,
+            "H_raw": 24,
+            "B_lower": "8/81"
+          }
+        ]
+      },
+      "period": 25920,
+      "slope": "317/5184",
+      "status": "proved",
+      "worst_period_row": {
+        "k": 486,
+        "A": 25,
+        "A_over_k": "25/486",
+        "margin": "23"
+      },
+      "failures": []
+    },
+    {
+      "ordered_cycle": [
+        108,
+        135,
+        180,
+        120,
+        160,
+        128,
+        192,
+        144
+      ],
+      "normalized_cycle": [
+        108,
+        120,
+        128,
+        135,
+        144,
+        160,
+        180,
+        192
+      ],
+      "length": 8,
+      "bounds": {
+        "lower": "640/3",
+        "upper": "216",
+        "edge_max": 640
+      },
+      "vertex_obstructions": [],
+      "vertex_obstruction_count": 0,
+      "lower_B": {
+        "lower": "640/3",
+        "upper": "216",
+        "edge_max": 640,
+        "y_min": 640,
+        "y_max": 647,
+        "B_lower": "25/324",
+        "worst_y": {
+          "y": 647,
+          "H_raw": 25,
+          "B_lower": "25/324"
+        },
+        "rows": [
+          {
+            "y": 640,
+            "H_raw": 25,
+            "B_lower": "50/641"
+          },
+          {
+            "y": 641,
+            "H_raw": 25,
+            "B_lower": "25/321"
+          },
+          {
+            "y": 642,
+            "H_raw": 25,
+            "B_lower": "50/643"
+          },
+          {
+            "y": 643,
+            "H_raw": 25,
+            "B_lower": "25/322"
+          },
+          {
+            "y": 644,
+            "H_raw": 25,
+            "B_lower": "10/129"
+          },
+          {
+            "y": 645,
+            "H_raw": 25,
+            "B_lower": "25/323"
+          },
+          {
+            "y": 646,
+            "H_raw": 25,
+            "B_lower": "50/647"
+          },
+          {
+            "y": 647,
+            "H_raw": 25,
+            "B_lower": "25/324"
+          }
+        ]
+      },
+      "period": 34560,
+      "slope": "31/640",
+      "status": "proved",
+      "worst_period_row": {
+        "k": 648,
+        "A": 26,
+        "A_over_k": "13/324",
+        "margin": "24"
+      },
+      "failures": []
+    },
+    {
+      "ordered_cycle": [
+        135,
+        180,
+        144,
+        240,
+        160,
+        200,
+        150,
+        225
+      ],
+      "normalized_cycle": [
+        135,
+        144,
+        150,
+        160,
+        180,
+        200,
+        225,
+        240
+      ],
+      "length": 8,
+      "bounds": {
+        "lower": "800/3",
+        "upper": "270",
+        "edge_max": 800
+      },
+      "vertex_obstructions": [],
+      "vertex_obstruction_count": 0,
+      "lower_B": {
+        "lower": "800/3",
+        "upper": "270",
+        "edge_max": 800,
+        "y_min": 800,
+        "y_max": 809,
+        "B_lower": "26/405",
+        "worst_y": {
+          "y": 809,
+          "H_raw": 26,
+          "B_lower": "26/405"
+        },
+        "rows": [
+          {
+            "y": 800,
+            "H_raw": 26,
+            "B_lower": "52/801"
+          },
+          {
+            "y": 801,
+            "H_raw": 26,
+            "B_lower": "26/401"
+          },
+          {
+            "y": 802,
+            "H_raw": 26,
+            "B_lower": "52/803"
+          },
+          {
+            "y": 803,
+            "H_raw": 26,
+            "B_lower": "13/201"
+          },
+          {
+            "y": 804,
+            "H_raw": 26,
+            "B_lower": "52/805"
+          },
+          {
+            "y": 805,
+            "H_raw": 26,
+            "B_lower": "2/31"
+          },
+          {
+            "y": 806,
+            "H_raw": 26,
+            "B_lower": "52/807"
+          },
+          {
+            "y": 807,
+            "H_raw": 26,
+            "B_lower": "13/202"
+          },
+          {
+            "y": 808,
+            "H_raw": 26,
+            "B_lower": "52/809"
+          },
+          {
+            "y": 809,
+            "H_raw": 26,
+            "B_lower": "26/405"
+          }
+        ]
+      },
+      "period": 43200,
+      "slope": "43/1080",
+      "status": "proved",
+      "worst_period_row": {
+        "k": 810,
+        "A": 27,
+        "A_over_k": "1/30",
+        "margin": "25"
+      },
+      "failures": []
+    }
+  ]
+}

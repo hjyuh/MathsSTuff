@@ -1,0 +1,17 @@
+{
+  "job_id": "2026-05-20T01-35-56-prove-ad77-erdos_396_full_statement",
+  "status": "running",
+  "session_id": "",
+  "command": "/prove",
+  "input": "import Mathlib\n\nopen Nat\n\n/-- Erd\u0151s Problem 396: For every k, there exists n such that\n    n(n-1)(n-2)...(n-k) divides the central binomial coefficient C(2n,n). -/\ntheorem erdos_396 : \u2200 k : \u2115, \u2203 n : \u2115, n.descFactorial (k + 1) \u2223 Nat.centralBinom n := by\n  sorry\n",
+  "started_at": "2026-05-20T01:35:56Z",
+  "finished_at": null,
+  "duration_s": null,
+  "result_text": null,
+  "lean_code_blocks": [],
+  "error": null,
+  "log_file": "/home/z20ma/.gauss-mcp/jobs/2026-05-20T01-35-56-prove-ad77-erdos_396_full_statement.log",
+  "worker_pid": 11430,
+  "last_heartbeat_at": 1779243381.8010342,
+  "_started_monotonic": 1779240956.519734
+}

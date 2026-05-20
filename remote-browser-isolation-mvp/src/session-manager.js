@@ -84,6 +84,8 @@ export class SessionManager {
     this.workspaceBrowserZoom = normalizeZoom(options.workspaceBrowserZoom, 1.25);
     this.audioEnabled = options.audioEnabled ?? true;
     this.pcmAudioEnabled = options.pcmAudioEnabled ?? false;
+    this.prepullWorkspaceImage = options.prepullWorkspaceImage ?? true;
+    this.imagePullTimeoutMs = options.imagePullTimeoutMs ?? 15 * 60 * 1000;
     this.dnsLabEnabled = Boolean(options.dnsLabEnabled);
     this.defaultDnsProfile = normalizeDnsProfile({
       mode: options.defaultDnsMode,
@@ -96,6 +98,14 @@ export class SessionManager {
     this.sessions = new Map();
     this.dockerVersionPromise = null;
     this.resolvedDockerBin = null;
+    this.imageReadyPromise = null;
+    this.imageWarmup = {
+      ready: false,
+      warming: false,
+      lastError: '',
+      lastStartedAt: null,
+      lastCompletedAt: null
+    };
     this.cleanupTimer = setInterval(() => {
       this.stopExpiredSessions().catch((error) => {
         console.error('Failed to reap expired sessions:', error);
@@ -118,16 +128,32 @@ export class SessionManager {
         });
       }, 0).unref?.();
     }
+
+    if (this.prepullWorkspaceImage) {
+      setTimeout(() => {
+        this.queueWorkspaceImageWarmup('startup')?.catch((error) => {
+          console.warn('Workspace image startup warmup failed:', error.message);
+        });
+      }, 0).unref?.();
+    }
   }
 
   async getHealth() {
     try {
       const dockerVersion = await this.ensureDocker();
+      this.queueWorkspaceImageWarmup('health')?.catch(() => {});
+      const imageReady = this.prepullWorkspaceImage ? this.imageWarmup.ready : true;
+      const warmingImage = this.prepullWorkspaceImage ? this.imageWarmup.warming : false;
       return {
-        ok: true,
+        ok: imageReady,
         dockerAvailable: true,
         dockerVersion,
         image: this.image,
+        imageReady,
+        warmingImage,
+        imageError: this.imageWarmup.lastError || null,
+        imageLastStartedAt: this.imageWarmup.lastStartedAt?.toISOString() ?? null,
+        imageLastCompletedAt: this.imageWarmup.lastCompletedAt?.toISOString() ?? null,
         activeSessions: this.sessions.size,
         workspacePort: this.streamPort,
         workerProvider: this.workerProvider,
@@ -152,6 +178,11 @@ export class SessionManager {
         dockerAvailable: false,
         error: error.message,
         image: this.image,
+        imageReady: false,
+        warmingImage: this.prepullWorkspaceImage ? this.imageWarmup.warming : false,
+        imageError: this.imageWarmup.lastError || null,
+        imageLastStartedAt: this.imageWarmup.lastStartedAt?.toISOString() ?? null,
+        imageLastCompletedAt: this.imageWarmup.lastCompletedAt?.toISOString() ?? null,
         activeSessions: this.sessions.size,
         workspacePort: this.streamPort,
         workerProvider: this.workerProvider,
@@ -173,6 +204,51 @@ export class SessionManager {
     }
   }
 
+  queueWorkspaceImageWarmup(reason = 'background') {
+    if (!this.prepullWorkspaceImage || this.imageWarmup.ready || this.imageReadyPromise) {
+      return this.imageReadyPromise;
+    }
+
+    this.imageWarmup.warming = true;
+    this.imageWarmup.lastError = '';
+    this.imageWarmup.lastStartedAt = new Date();
+
+    this.imageReadyPromise = this.pullWorkspaceImage(reason)
+      .then(() => {
+        this.imageWarmup.ready = true;
+        this.imageWarmup.warming = false;
+        this.imageWarmup.lastCompletedAt = new Date();
+      })
+      .catch((error) => {
+        this.imageWarmup.ready = false;
+        this.imageWarmup.warming = false;
+        this.imageWarmup.lastError = error.message;
+        throw error;
+      })
+      .finally(() => {
+        this.imageReadyPromise = null;
+      });
+
+    return this.imageReadyPromise;
+  }
+
+  async ensureWorkspaceImage() {
+    if (this.imageWarmup.ready) {
+      return;
+    }
+
+    const pendingWarmup = this.queueWorkspaceImageWarmup('session-create');
+    if (pendingWarmup) {
+      await pendingWarmup;
+      return;
+    }
+
+    await this.pullWorkspaceImage('session-create');
+    this.imageWarmup.ready = true;
+    this.imageWarmup.warming = false;
+    this.imageWarmup.lastCompletedAt = new Date();
+  }
+
   async createSession(options = {}) {
     const ownerId = String(options.ownerId ?? '').trim();
     if (!ownerId) {
@@ -180,6 +256,7 @@ export class SessionManager {
     }
 
     const dockerVersion = await this.ensureDocker();
+    await this.ensureWorkspaceImage();
     const initialUrl = normalizeInitialUrl(options.initialUrl);
     const dnsProfile = this.resolveSessionDnsProfile(options.dnsProfile);
     const id = createHexToken(8);
@@ -326,6 +403,19 @@ export class SessionManager {
     }
 
     return this.dockerVersionPromise;
+  }
+
+  async pullWorkspaceImage(reason) {
+    const dockerBin = await this.resolveDockerBin();
+    await execFileAsync(dockerBin, ['pull', this.image], {
+      timeout: this.imagePullTimeoutMs,
+      env: buildDockerEnv(dockerBin)
+    }).catch((error) => {
+      const stderr = error.stderr?.trim();
+      const stdout = error.stdout?.trim();
+      const detail = stderr || stdout || error.message;
+      throw new Error(`Workspace image warmup failed during ${reason}: ${detail}`);
+    });
   }
 
   async startContainer(session) {

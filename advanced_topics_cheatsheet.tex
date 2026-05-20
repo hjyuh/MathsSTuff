@@ -1,0 +1,828 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+
+\title{Advanced Algebra II and Precalculus Cheat Sheet}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Laws of Sines and Cosines}
+
+\subsection*{1. Law of Sines}
+
+Use Law of Sines when you know an angle and its opposite side.
+
+\[
+\frac{a}{\sin A}
+=
+\frac{b}{\sin B}
+=
+\frac{c}{\sin C}
+\]
+
+Equivalent form:
+
+\[
+\frac{\sin A}{a}
+=
+\frac{\sin B}{b}
+=
+\frac{\sin C}{c}
+\]
+
+Example:
+
+\[
+A=40^\circ,\quad a=10,\quad B=70^\circ
+\]
+
+Find \(b\):
+
+\[
+\frac{a}{\sin A}=\frac{b}{\sin B}
+\]
+
+\[
+\frac{10}{\sin40^\circ}
+=
+\frac{b}{\sin70^\circ}
+\]
+
+\[
+b=
+\frac{10\sin70^\circ}{\sin40^\circ}
+\]
+
+\subsection*{2. Law of Cosines}
+
+Use Law of Cosines when you know two sides and the included angle, or all three sides.
+
+\[
+c^2=a^2+b^2-2ab\cos C
+\]
+
+Example:
+
+\[
+a=5,\quad b=7,\quad C=60^\circ
+\]
+
+\[
+c^2=5^2+7^2-2(5)(7)\cos60^\circ
+\]
+
+\[
+c^2=25+49-70\cdot\frac{1}{2}
+\]
+
+\[
+c^2=39
+\]
+
+\[
+c=\sqrt{39}
+\]
+
+\subsection*{3. Solve a Triangle}
+
+To solve a triangle means to find all missing sides and angles.
+
+Always remember:
+
+\[
+A+B+C=180^\circ
+\]
+
+Checklist:
+
+\begin{enumerate}
+  \item If you have an opposite side-angle pair, use Law of Sines.
+  \item If you have two sides and the included angle, use Law of Cosines.
+  \item If you have all three sides, use Law of Cosines to find an angle.
+  \item Use \(A+B+C=180^\circ\) to finish.
+\end{enumerate}
+
+\subsection*{4. Area of a Triangle: Sine Formula}
+
+Use this when you know two sides and the included angle.
+
+\[
+K=\frac{1}{2}ab\sin C
+\]
+
+Example:
+
+\[
+a=8,\quad b=10,\quad C=30^\circ
+\]
+
+\[
+K=\frac{1}{2}(8)(10)\sin30^\circ
+\]
+
+\[
+K=40\cdot\frac{1}{2}=20
+\]
+
+\section*{Ellipses on the Coordinate Plane}
+
+An ellipse is an oval. The center is \((h,k)\).
+
+\subsection*{Horizontal Ellipse}
+
+\[
+\frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1
+\qquad
+a>b
+\]
+
+\[
+\text{center}=(h,k)
+\]
+
+\[
+\text{vertices}=(h\pm a,k)
+\]
+
+\[
+\text{co-vertices}=(h,k\pm b)
+\]
+
+\[
+c^2=a^2-b^2
+\]
+
+\[
+\text{foci}=(h\pm c,k)
+\]
+
+\subsection*{Vertical Ellipse}
+
+\[
+\frac{(x-h)^2}{b^2}+\frac{(y-k)^2}{a^2}=1
+\qquad
+a>b
+\]
+
+\[
+\text{center}=(h,k)
+\]
+
+\[
+\text{vertices}=(h,k\pm a)
+\]
+
+\[
+\text{co-vertices}=(h\pm b,k)
+\]
+
+\[
+c^2=a^2-b^2
+\]
+
+\[
+\text{foci}=(h,k\pm c)
+\]
+
+\subsection*{1. Find the Center, Vertices, or Co-Vertices}
+
+Example:
+
+\[
+\frac{(x-2)^2}{25}+\frac{(y+1)^2}{9}=1
+\]
+
+\[
+\text{center}=(2,-1)
+\]
+
+Since \(25>9\), the major axis is horizontal.
+
+\[
+a^2=25,\quad a=5
+\]
+
+\[
+b^2=9,\quad b=3
+\]
+
+\[
+\text{vertices}=(2\pm5,-1)=(-3,-1),(7,-1)
+\]
+
+\[
+\text{co-vertices}=(2,-1\pm3)=(2,-4),(2,2)
+\]
+
+\subsection*{2. Find the Length of the Major or Minor Axis}
+
+\[
+\text{major axis length}=2a
+\]
+
+\[
+\text{minor axis length}=2b
+\]
+
+For:
+
+\[
+\frac{(x-2)^2}{25}+\frac{(y+1)^2}{9}=1
+\]
+
+\[
+2a=10,\quad 2b=6
+\]
+
+\subsection*{3. Find the Foci}
+
+\[
+c^2=a^2-b^2
+\]
+
+For:
+
+\[
+a^2=25,\quad b^2=9
+\]
+
+\[
+c^2=25-9=16
+\]
+
+\[
+c=4
+\]
+
+Horizontal ellipse:
+
+\[
+\text{foci}=(2\pm4,-1)=(-2,-1),(6,-1)
+\]
+
+\subsection*{4. Write Equations of Ellipses from Graphs}
+
+From a graph:
+
+\begin{enumerate}
+  \item Find the center \((h,k)\).
+  \item Find \(a\), the distance from center to a vertex.
+  \item Find \(b\), the distance from center to a co-vertex.
+  \item Put the bigger denominator under the direction of the major axis.
+\end{enumerate}
+
+Example: center \((1,2)\), horizontal vertex distance \(4\), vertical co-vertex distance \(3\).
+
+\[
+\frac{(x-1)^2}{16}+\frac{(y-2)^2}{9}=1
+\]
+
+\subsection*{5. Write Equations of Ellipses Using Properties}
+
+Example: center \((-2,5)\), vertices \((-2,9)\) and \((-2,1)\), minor axis length \(6\).
+
+The vertices move vertically, so the major axis is vertical.
+
+\[
+a=4,\quad a^2=16
+\]
+
+\[
+2b=6,\quad b=3,\quad b^2=9
+\]
+
+\[
+\frac{(x+2)^2}{9}+\frac{(y-5)^2}{16}=1
+\]
+
+\subsection*{6. Convert General Form to Standard Form}
+
+General form often looks like:
+
+\[
+Ax^2+By^2+Cx+Dy+E=0
+\]
+
+Steps:
+
+\begin{enumerate}
+  \item Group \(x\)-terms and \(y\)-terms.
+  \item Factor coefficients from squared groups.
+  \item Complete the square.
+  \item Move the constant.
+  \item Divide so the right side becomes \(1\).
+\end{enumerate}
+
+Example:
+
+\[
+4x^2+9y^2-16x+18y-11=0
+\]
+
+\[
+4(x^2-4x)+9(y^2+2y)=11
+\]
+
+\[
+4(x^2-4x+4)+9(y^2+2y+1)=11+16+9
+\]
+
+\[
+4(x-2)^2+9(y+1)^2=36
+\]
+
+\[
+\frac{(x-2)^2}{9}+\frac{(y+1)^2}{4}=1
+\]
+
+\subsection*{7. Find Properties from General Form}
+
+First convert to standard form, then read center, vertices, co-vertices, axes, and foci.
+
+\section*{Hyperbolas on the Coordinate Plane}
+
+A hyperbola has two branches. The center is \((h,k)\).
+
+\subsection*{Horizontal Hyperbola}
+
+\[
+\frac{(x-h)^2}{a^2}-\frac{(y-k)^2}{b^2}=1
+\]
+
+\[
+\text{vertices}=(h\pm a,k)
+\]
+
+\[
+c^2=a^2+b^2
+\]
+
+\[
+\text{foci}=(h\pm c,k)
+\]
+
+\[
+\text{asymptotes: }y-k=\pm\frac{b}{a}(x-h)
+\]
+
+\subsection*{Vertical Hyperbola}
+
+\[
+\frac{(y-k)^2}{a^2}-\frac{(x-h)^2}{b^2}=1
+\]
+
+\[
+\text{vertices}=(h,k\pm a)
+\]
+
+\[
+c^2=a^2+b^2
+\]
+
+\[
+\text{foci}=(h,k\pm c)
+\]
+
+\[
+\text{asymptotes: }y-k=\pm\frac{a}{b}(x-h)
+\]
+
+\subsection*{1. Find the Center}
+
+Example:
+
+\[
+\frac{(x-3)^2}{16}-\frac{(y+2)^2}{9}=1
+\]
+
+\[
+\text{center}=(3,-2)
+\]
+
+\subsection*{2. Find the Vertices}
+
+Since the positive term is the \(x\)-term, the hyperbola opens left and right.
+
+\[
+a^2=16,\quad a=4
+\]
+
+\[
+\text{vertices}=(3\pm4,-2)=(-1,-2),(7,-2)
+\]
+
+\subsection*{3. Length of Transverse or Conjugate Axes}
+
+\[
+\text{transverse axis length}=2a
+\]
+
+\[
+\text{conjugate axis length}=2b
+\]
+
+For:
+
+\[
+\frac{(x-3)^2}{16}-\frac{(y+2)^2}{9}=1
+\]
+
+\[
+2a=8,\quad 2b=6
+\]
+
+\subsection*{4. Equations for the Asymptotes}
+
+Horizontal hyperbola:
+
+\[
+y-k=\pm\frac{b}{a}(x-h)
+\]
+
+Example:
+
+\[
+\frac{(x-3)^2}{16}-\frac{(y+2)^2}{9}=1
+\]
+
+\[
+h=3,\quad k=-2,\quad a=4,\quad b=3
+\]
+
+\[
+y+2=\pm\frac{3}{4}(x-3)
+\]
+
+\subsection*{5. Find the Foci}
+
+For hyperbolas:
+
+\[
+c^2=a^2+b^2
+\]
+
+Example:
+
+\[
+a^2=16,\quad b^2=9
+\]
+
+\[
+c^2=16+9=25
+\]
+
+\[
+c=5
+\]
+
+Horizontal hyperbola:
+
+\[
+\text{foci}=(3\pm5,-2)=(-2,-2),(8,-2)
+\]
+
+\subsection*{6. Write Equations from Graphs}
+
+From a graph:
+
+\begin{enumerate}
+  \item Find the center \((h,k)\).
+  \item Decide if it opens left/right or up/down.
+  \item Find \(a\), the distance from center to vertex.
+  \item Find \(b\) using the rectangle/asymptote slope, if given.
+  \item Put the opening direction first and positive.
+\end{enumerate}
+
+\subsection*{7. Write Equations Using Properties}
+
+Example: center \((0,1)\), opens up/down, vertex distance \(3\), conjugate half-length \(2\).
+
+\[
+a=3,\quad b=2
+\]
+
+Vertical hyperbola:
+
+\[
+\frac{(y-1)^2}{9}-\frac{x^2}{4}=1
+\]
+
+\subsection*{8. Convert General Form to Standard Form}
+
+Steps:
+
+\begin{enumerate}
+  \item Group \(x\)-terms and \(y\)-terms.
+  \item Factor coefficients.
+  \item Complete the square.
+  \item Move the constant.
+  \item Divide so the right side becomes \(1\).
+\end{enumerate}
+
+Example:
+
+\[
+9x^2-4y^2-54x-16y+29=0
+\]
+
+\[
+9(x^2-6x)-4(y^2+4y)=-29
+\]
+
+\[
+9(x^2-6x+9)-4(y^2+4y+4)=-29+81-16
+\]
+
+\[
+9(x-3)^2-4(y+2)^2=36
+\]
+
+\[
+\frac{(x-3)^2}{4}-\frac{(y+2)^2}{9}=1
+\]
+
+\subsection*{9. Find Properties from General Form}
+
+First convert to standard form, then read the center, opening direction, vertices, axis lengths, asymptotes, and foci.
+
+\section*{Probability}
+
+\subsection*{1. Counting Principle}
+
+If one choice has \(m\) options and another has \(n\) options, total outcomes are:
+
+\[
+m\cdot n
+\]
+
+Example: \(4\) shirts and \(3\) pants.
+
+\[
+4\cdot3=12
+\]
+
+\subsection*{2. Combinations and Permutations}
+
+Permutation means order matters.
+
+\[
+nP r=\frac{n!}{(n-r)!}
+\]
+
+Combination means order does not matter.
+
+\[
+nC r=\frac{n!}{r!(n-r)!}
+\]
+
+Example:
+
+\[
+5P2=\frac{5!}{3!}=5\cdot4=20
+\]
+
+\[
+5C2=\frac{5!}{2!3!}=10
+\]
+
+\subsection*{3. Probabilities Using Combinations and Permutations}
+
+\[
+P(\text{event})=
+\frac{\text{favorable outcomes}}{\text{total outcomes}}
+\]
+
+Example: choose \(2\) students from \(5\). Probability that two specific students are chosen:
+
+\[
+\text{total}=5C2=10
+\]
+
+\[
+\text{favorable}=1
+\]
+
+\[
+P=\frac{1}{10}
+\]
+
+\section*{Binomial Probability Distributions}
+
+Use binomial probability when:
+
+\begin{enumerate}
+  \item There are a fixed number of trials, \(n\).
+  \item Each trial has success or failure.
+  \item Probability of success is constant, \(p\).
+  \item Trials are independent.
+\end{enumerate}
+
+\subsection*{1. Find Probabilities Using the Binomial Distribution}
+
+\[
+P(X=k)=
+{n\choose k}p^k(1-p)^{n-k}
+\]
+
+Example: \(n=5\), \(p=0.4\), find \(P(X=2)\).
+
+\[
+P(X=2)=
+{5\choose2}(0.4)^2(0.6)^3
+\]
+
+\[
+=10(0.16)(0.216)=0.3456
+\]
+
+\subsection*{2. Mean, Variance, and Standard Deviation}
+
+For a binomial distribution:
+
+\[
+\mu=np
+\]
+
+\[
+\sigma^2=np(1-p)
+\]
+
+\[
+\sigma=\sqrt{np(1-p)}
+\]
+
+Example: \(n=20\), \(p=0.3\).
+
+\[
+\mu=20(0.3)=6
+\]
+
+\[
+\sigma^2=20(0.3)(0.7)=4.2
+\]
+
+\[
+\sigma=\sqrt{4.2}
+\]
+
+\subsection*{3. Normal Approximation to Binomial}
+
+Use normal approximation when:
+
+\[
+np\ge 10
+\]
+
+and
+
+\[
+n(1-p)\ge 10
+\]
+
+Mean and standard deviation:
+
+\[
+\mu=np
+\]
+
+\[
+\sigma=\sqrt{np(1-p)}
+\]
+
+Use continuity correction:
+
+\[
+P(X\le k)\approx P(Y<k+0.5)
+\]
+
+\[
+P(X\ge k)\approx P(Y>k-0.5)
+\]
+
+\[
+P(X=k)\approx P(k-0.5<Y<k+0.5)
+\]
+
+\section*{Distributions of Sample Means}
+
+\subsection*{1. Distributions of Sample Means}
+
+If a population has mean \(\mu\) and standard deviation \(\sigma\), then sample means have:
+
+\[
+\mu_{\bar{x}}=\mu
+\]
+
+\[
+\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}
+\]
+
+The value \(\sigma_{\bar{x}}\) is called the standard error.
+
+Example:
+
+\[
+\mu=80,\quad \sigma=12,\quad n=36
+\]
+
+\[
+\mu_{\bar{x}}=80
+\]
+
+\[
+\sigma_{\bar{x}}=\frac{12}{\sqrt{36}}=2
+\]
+
+\subsection*{2. The Central Limit Theorem}
+
+The Central Limit Theorem says that for large enough \(n\), the distribution of sample means is approximately normal.
+
+Usually:
+
+\[
+n\ge30
+\]
+
+is considered large enough.
+
+Use:
+
+\[
+z=\frac{\bar{x}-\mu}{\sigma/\sqrt{n}}
+\]
+
+Example:
+
+\[
+\mu=100,\quad \sigma=15,\quad n=36,\quad \bar{x}=105
+\]
+
+\[
+z=
+\frac{105-100}{15/\sqrt{36}}
+\]
+
+\[
+=\frac{5}{15/6}
+=\frac{5}{2.5}=2
+\]
+
+\section*{Quick Formula Sheet}
+
+\[
+\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}
+\]
+
+\[
+c^2=a^2+b^2-2ab\cos C
+\]
+
+\[
+K=\frac{1}{2}ab\sin C
+\]
+
+\[
+\text{Ellipse: }c^2=a^2-b^2
+\]
+
+\[
+\text{Hyperbola: }c^2=a^2+b^2
+\]
+
+\[
+\text{Ellipse major axis}=2a,\qquad \text{minor axis}=2b
+\]
+
+\[
+\text{Hyperbola transverse axis}=2a,\qquad \text{conjugate axis}=2b
+\]
+
+\[
+nPr=\frac{n!}{(n-r)!}
+\]
+
+\[
+nCr=\frac{n!}{r!(n-r)!}
+\]
+
+\[
+P(X=k)={n\choose k}p^k(1-p)^{n-k}
+\]
+
+\[
+\mu=np,\qquad \sigma=\sqrt{np(1-p)}
+\]
+
+\[
+\mu_{\bar{x}}=\mu,\qquad \sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}
+\]
+
+\[
+z=\frac{\bar{x}-\mu}{\sigma/\sqrt{n}}
+\]
+
+\end{document}

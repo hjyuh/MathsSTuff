@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Night Shift Arena</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game"></canvas>
+
+      <section id="role-panel" class="panel role-panel">
+        <p class="eyebrow">Browser multiplayer prototype</p>
+        <h1>Night Shift Arena</h1>
+        <p class="summary">
+          Original free-movement horror match. Guards survive the night with office controls.
+          Mascots roam the building and try to reach them.
+        </p>
+        <label>
+          Display name
+          <input id="name-input" maxlength="18" autocomplete="off" value="Player" />
+        </label>
+        <div class="role-grid">
+          <button id="guard-button" class="role-button guard">
+            <span>Guard</span>
+            <small>Hold the office, manage power, close the shutter.</small>
+          </button>
+          <button id="mascot-button" class="role-button mascot">
+            <span>Mascot</span>
+            <small>Roam faster, flank through halls, tag guards.</small>
+          </button>
+        </div>
+      </section>
+
+      <section id="hud" class="hud">
+        <div class="hud-row">
+          <div class="meter">
+            <span>Power</span>
+            <div class="bar"><i id="power-bar"></i></div>
+            <strong id="power-text">100%</strong>
+          </div>
+          <div class="status">
+            <span id="role-text">Spectator</span>
+            <strong id="timer-text">Lobby</strong>
+          </div>
+          <div class="control-cluster">
+            <button id="left-door-button" title="Toggle left office shutter">Left</button>
+            <button id="camera-button" title="Open camera monitor">Cams</button>
+            <button id="right-door-button" title="Toggle right office shutter">Right</button>
+          </div>
+        </div>
+        <div class="hint" id="hint-text">Choose a role. Click the game to lock your mouse.</div>
+      </section>
+
+      <div id="reticle" class="reticle hidden"></div>
+
+      <section id="camera-overlay" class="camera-overlay hidden">
+        <div class="camera-frame">
+          <div class="camera-topline">
+            <strong id="camera-name">CAM 01</strong>
+            <span id="camera-status">LIVE</span>
+          </div>
+          <div id="camera-feed" class="camera-feed"></div>
+          <div class="camera-tabs">
+            <button data-camera="stage">Stage</button>
+            <button data-camera="left">Left Hall</button>
+            <button data-camera="right">Right Hall</button>
+            <button data-camera="office">Office</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel roster">
+        <h2>Players</h2>
+        <ul id="roster-list"></ul>
+      </aside>
+
+      <aside class="panel feed">
+        <h2>Feed</h2>
+        <ul id="event-feed"></ul>
+      </aside>
+
+      <div id="round-banner" class="round-banner hidden">
+        <strong id="round-title"></strong>
+        <button id="reset-button">Reset round</button>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -104,6 +104,8 @@ On Windows, if Docker is installed while terminals are already open, restart the
 - `RBI_WORKSPACE_MIN_QUALITY`: minimum dynamic stream quality (`0-9`)
 - `RBI_WORKSPACE_MAX_QUALITY`: maximum dynamic stream quality (`0-9`)
 - `RBI_WORKSPACE_BROWSER_ZOOM`: Chromium device scale factor for larger text, usually `1`, `1.25`, or `1.5`
+- `RBI_PREPULL_WORKSPACE_IMAGE`: pre-pull the workspace image during app startup so the first user session does not pay the full Docker image pull cost
+- `RBI_IMAGE_PULL_TIMEOUT_MINUTES`: maximum time to allow for workspace image warmup/pull before surfacing an error
 
 ### Audio
 

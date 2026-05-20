@@ -1,0 +1,13 @@
+{
+  "induced": {
+    "connected_induced_subsets_checked": 214494,
+    "epsilon_ge_2_subsets": 0,
+    "m_factor": 100,
+    "n_stride": 1,
+    "near_misses": [],
+    "q_max": 160,
+    "size_cap": 18,
+    "union_certified": 0,
+    "violations": []
+  }
+}

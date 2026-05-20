@@ -1,0 +1,1 @@
+I’ll separate block-additive facts from top-window-specific input, avoiding the invalid total-deletion argument. The pivotal question is whether any biconnected block can have negative epsilon.

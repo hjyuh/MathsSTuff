@@ -1,0 +1,232 @@
+{
+  "sources": [
+    "ep488_v78_a2_full_component_exact_q1500.json",
+    "ep488_v79_a2_exact_check_1501_1535.json",
+    "ep488_v79_a2_exact_check_q2251.json",
+    "ep488_v79_a2_exact_check_q3751.json",
+    "ep488_v79_a2_smooth_motif_representative_certs_q10000.json"
+  ],
+  "by_source": {
+    "ep488_v78_a2_full_component_exact_q1500.json": {
+      "row_count": 28026,
+      "bad_delta_ge_half_count": 0,
+      "max_delta_over_B": {
+        "source": "ep488_v78_a2_full_component_exact_q1500.json",
+        "kind": "exact_row",
+        "q": 479,
+        "n": 1436,
+        "size": 14,
+        "epsilon": 2,
+        "delta_over_B": "50365187/100877400",
+        "delta_over_D_over_n": "50365187/50438700"
+      },
+      "max_best_over_B": {
+        "source": "ep488_v78_a2_full_component_exact_q1500.json",
+        "kind": "exact_row",
+        "q": 479,
+        "n": 1436,
+        "size": 14,
+        "epsilon": 2,
+        "best_over_B": "14719/28431"
+      },
+      "max_cutoff_over_n": {
+        "source": "ep488_v78_a2_full_component_exact_q1500.json",
+        "kind": "exact_row",
+        "q": 1151,
+        "n": 3452,
+        "size": 19,
+        "epsilon": 2,
+        "cutoff": 8128,
+        "cutoff_over_n": "2032/863"
+      },
+      "bad_delta_ge_half_rows": []
+    },
+    "ep488_v79_a2_exact_check_1501_1535.json": {
+      "row_count": 1890,
+      "bad_delta_ge_half_count": 0,
+      "max_delta_over_B": {
+        "source": "ep488_v79_a2_exact_check_1501_1535.json",
+        "kind": "exact_row",
+        "q": 1534,
+        "n": 4601,
+        "size": 20,
+        "epsilon": 2,
+        "delta_over_B": "232692358901/492045840000",
+        "delta_over_D_over_n": "232692358901/246022920000"
+      },
+      "max_best_over_B": {
+        "source": "ep488_v79_a2_exact_check_1501_1535.json",
+        "kind": "exact_row",
+        "q": 1535,
+        "n": 4604,
+        "size": 20,
+        "epsilon": 2,
+        "best_over_B": "8057/15840"
+      },
+      "max_cutoff_over_n": {
+        "source": "ep488_v79_a2_exact_check_1501_1535.json",
+        "kind": "exact_row",
+        "q": 1534,
+        "n": 4601,
+        "size": 20,
+        "epsilon": 2,
+        "cutoff": 10633,
+        "cutoff_over_n": "10633/4601"
+      },
+      "bad_delta_ge_half_rows": []
+    },
+    "ep488_v79_a2_exact_check_q2251.json": {
+      "row_count": 273,
+      "bad_delta_ge_half_count": 0,
+      "max_delta_over_B": {
+        "source": "ep488_v79_a2_exact_check_q2251.json",
+        "kind": "exact_row",
+        "q": 2251,
+        "n": 6749,
+        "size": 22,
+        "epsilon": 2,
+        "delta_over_B": "3888105649/8261782272",
+        "delta_over_D_over_n": "3888105649/4130891136"
+      },
+      "max_best_over_B": {
+        "source": "ep488_v79_a2_exact_check_q2251.json",
+        "kind": "exact_row",
+        "q": 2251,
+        "n": 6560,
+        "size": 22,
+        "epsilon": 2,
+        "best_over_B": "96760/190269"
+      },
+      "max_cutoff_over_n": {
+        "source": "ep488_v79_a2_exact_check_q2251.json",
+        "kind": "exact_row",
+        "q": 2251,
+        "n": 6560,
+        "size": 22,
+        "epsilon": 2,
+        "cutoff": 15442,
+        "cutoff_over_n": "7721/3280"
+      },
+      "bad_delta_ge_half_rows": []
+    },
+    "ep488_v79_a2_exact_check_q3751.json": {
+      "row_count": 453,
+      "bad_delta_ge_half_count": 0,
+      "max_delta_over_B": {
+        "source": "ep488_v79_a2_exact_check_q3751.json",
+        "kind": "exact_row",
+        "q": 3751,
+        "n": 11249,
+        "size": 26,
+        "epsilon": 3,
+        "delta_over_B": "7848258565/16567296768",
+        "delta_over_D_over_n": "7848258565/8283648384"
+      },
+      "max_best_over_B": {
+        "source": "ep488_v79_a2_exact_check_q3751.json",
+        "kind": "exact_row",
+        "q": 3751,
+        "n": 10934,
+        "size": 26,
+        "epsilon": 2,
+        "best_over_B": "55451/109350"
+      },
+      "max_cutoff_over_n": {
+        "source": "ep488_v79_a2_exact_check_q3751.json",
+        "kind": "exact_row",
+        "q": 3751,
+        "n": 10934,
+        "size": 26,
+        "epsilon": 2,
+        "cutoff": 26083,
+        "cutoff_over_n": "26083/10934"
+      },
+      "bad_delta_ge_half_rows": []
+    },
+    "ep488_v79_a2_smooth_motif_representative_certs_q10000.json": {
+      "row_count": 120,
+      "bad_delta_ge_half_count": 0,
+      "max_delta_over_B": {
+        "source": "ep488_v79_a2_smooth_motif_representative_certs_q10000.json",
+        "kind": "representative",
+        "q": 1921,
+        "n": 5760,
+        "size": 17,
+        "epsilon": [
+          2
+        ],
+        "delta_over_B": "1173568/2437749",
+        "delta_over_D_over_n": "2347136/2437749"
+      },
+      "max_best_over_B": {
+        "source": "ep488_v79_a2_smooth_motif_representative_certs_q10000.json",
+        "kind": "representative",
+        "q": 1921,
+        "n": 5760,
+        "size": 17,
+        "epsilon": [
+          2
+        ],
+        "best_over_B": "765/1504"
+      },
+      "max_cutoff_over_n": {
+        "source": "ep488_v79_a2_smooth_motif_representative_certs_q10000.json",
+        "kind": "representative",
+        "q": 5001,
+        "n": 15000,
+        "size": 26,
+        "epsilon": [
+          2
+        ],
+        "cutoff": 36489,
+        "cutoff_over_n": "12163/5000"
+      },
+      "bad_delta_ge_half_rows": []
+    }
+  },
+  "combined": {
+    "row_count": 30762,
+    "bad_delta_ge_half_count": 0,
+    "max_delta_over_B": {
+      "source": "ep488_v78_a2_full_component_exact_q1500.json",
+      "kind": "exact_row",
+      "q": 479,
+      "n": 1436,
+      "size": 14,
+      "epsilon": 2,
+      "delta_over_B": "50365187/100877400",
+      "delta_over_D_over_n": "50365187/50438700"
+    },
+    "max_best_over_B": {
+      "source": "ep488_v78_a2_full_component_exact_q1500.json",
+      "kind": "exact_row",
+      "q": 479,
+      "n": 1436,
+      "size": 14,
+      "epsilon": 2,
+      "best_over_B": "14719/28431"
+    },
+    "max_cutoff_over_n": {
+      "source": "ep488_v79_a2_smooth_motif_representative_certs_q10000.json",
+      "kind": "representative",
+      "q": 5001,
+      "n": 15000,
+      "size": 26,
+      "epsilon": [
+        2
+      ],
+      "cutoff": 36489,
+      "cutoff_over_n": "12163/5000"
+    },
+    "bad_delta_ge_half_rows": []
+  },
+  "singleton_counterexample_to_unconditional_gap": {
+    "q": 101,
+    "C": "{100}",
+    "n": 253,
+    "D_C_n": 2,
+    "delta": "1/101",
+    "D_C_n_over_n": "2/253",
+    "delta_over_D_C_n_over_n": "253/202"
+  }
+}

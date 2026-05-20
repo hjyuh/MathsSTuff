@@ -1,0 +1,701 @@
+{
+  "max_cycles": 4,
+  "path_limit": 20,
+  "max_cutoff": 10000000,
+  "case_count": 3,
+  "elapsed_seconds": 0.1733686923980713,
+  "cases": [
+    {
+      "case": {
+        "name": "q479_size14_full_component",
+        "q": 479,
+        "n": 1436,
+        "C": [
+          240,
+          243,
+          256,
+          270,
+          288,
+          300,
+          320,
+          324,
+          360,
+          384,
+          400,
+          405,
+          432,
+          450
+        ]
+      },
+      "edge_count": 16,
+      "cycle_count": 6,
+      "cycle_length_counts": {
+        "3": 1,
+        "5": 1,
+        "6": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1
+      },
+      "candidate_mask_count": 9,
+      "minimal_core_count": 1,
+      "status_counts": {
+        "certified": 1
+      },
+      "size_counts": {
+        "13": 1
+      },
+      "epsilon_counts": {
+        "2": 1
+      },
+      "max_best_over_B": {
+        "C": [
+          240,
+          243,
+          256,
+          270,
+          288,
+          300,
+          320,
+          324,
+          360,
+          384,
+          405,
+          432,
+          450
+        ],
+        "size": 13,
+        "cyclomatic": 2,
+        "tau": 0,
+        "epsilon": 2,
+        "D_n": 37,
+        "certificate": {
+          "B": "37/718",
+          "delta": "1673/64665",
+          "delta_over_B": "1201214/2392605",
+          "eta": "1191391/46429470",
+          "E": "78",
+          "terms": 39,
+          "cutoff": 3039,
+          "status": "certified",
+          "best": [
+            "13/486",
+            1458,
+            39
+          ],
+          "best_over_B": "4667/8991",
+          "failures": []
+        }
+      },
+      "max_delta_over_B": {
+        "C": [
+          240,
+          243,
+          256,
+          270,
+          288,
+          300,
+          320,
+          324,
+          360,
+          384,
+          405,
+          432,
+          450
+        ],
+        "size": 13,
+        "cyclomatic": 2,
+        "tau": 0,
+        "epsilon": 2,
+        "D_n": 37,
+        "certificate": {
+          "B": "37/718",
+          "delta": "1673/64665",
+          "delta_over_B": "1201214/2392605",
+          "eta": "1191391/46429470",
+          "E": "78",
+          "terms": 39,
+          "cutoff": 3039,
+          "status": "certified",
+          "best": [
+            "13/486",
+            1458,
+            39
+          ],
+          "best_over_B": "4667/8991",
+          "failures": []
+        }
+      },
+      "minimal_cores": [
+        {
+          "C": [
+            240,
+            243,
+            256,
+            270,
+            288,
+            300,
+            320,
+            324,
+            360,
+            384,
+            405,
+            432,
+            450
+          ],
+          "size": 13,
+          "cyclomatic": 2,
+          "tau": 0,
+          "epsilon": 2,
+          "D_n": 37,
+          "certificate": {
+            "B": "37/718",
+            "delta": "1673/64665",
+            "delta_over_B": "1201214/2392605",
+            "eta": "1191391/46429470",
+            "E": "78",
+            "terms": 39,
+            "cutoff": 3039,
+            "status": "certified",
+            "best": [
+              "13/486",
+              1458,
+              39
+            ],
+            "best_over_B": "4667/8991",
+            "failures": []
+          }
+        }
+      ],
+      "elapsed_seconds": 0.024374723434448242
+    },
+    {
+      "case": {
+        "name": "q1921_size17_smooth_representative",
+        "q": 1921,
+        "n": 5760,
+        "C": [
+          972,
+          1024,
+          1080,
+          1152,
+          1200,
+          1280,
+          1296,
+          1350,
+          1440,
+          1458,
+          1500,
+          1536,
+          1600,
+          1620,
+          1728,
+          1800,
+          1920
+        ]
+      },
+      "edge_count": 19,
+      "cycle_count": 7,
+      "cycle_length_counts": {
+        "3": 2,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "11": 1
+      },
+      "candidate_mask_count": 12,
+      "minimal_core_count": 1,
+      "status_counts": {
+        "certified": 1
+      },
+      "size_counts": {
+        "11": 1
+      },
+      "epsilon_counts": {
+        "2": 1
+      },
+      "max_best_over_B": {
+        "C": [
+          972,
+          1024,
+          1080,
+          1152,
+          1280,
+          1296,
+          1440,
+          1536,
+          1620,
+          1728,
+          1920
+        ],
+        "size": 11,
+        "cyclomatic": 3,
+        "tau": 1,
+        "epsilon": 2,
+        "D_n": 32,
+        "certificate": {
+          "B": "1/90",
+          "delta": "94/17289",
+          "delta_over_B": "940/1921",
+          "eta": "109/19210",
+          "E": "62",
+          "terms": 30,
+          "cutoff": 10926,
+          "status": "certified",
+          "best": [
+            "11/1944",
+            5832,
+            33
+          ],
+          "best_over_B": "55/108",
+          "failures": []
+        }
+      },
+      "max_delta_over_B": {
+        "C": [
+          972,
+          1024,
+          1080,
+          1152,
+          1280,
+          1296,
+          1440,
+          1536,
+          1620,
+          1728,
+          1920
+        ],
+        "size": 11,
+        "cyclomatic": 3,
+        "tau": 1,
+        "epsilon": 2,
+        "D_n": 32,
+        "certificate": {
+          "B": "1/90",
+          "delta": "94/17289",
+          "delta_over_B": "940/1921",
+          "eta": "109/19210",
+          "E": "62",
+          "terms": 30,
+          "cutoff": 10926,
+          "status": "certified",
+          "best": [
+            "11/1944",
+            5832,
+            33
+          ],
+          "best_over_B": "55/108",
+          "failures": []
+        }
+      },
+      "minimal_cores": [
+        {
+          "C": [
+            972,
+            1024,
+            1080,
+            1152,
+            1280,
+            1296,
+            1440,
+            1536,
+            1620,
+            1728,
+            1920
+          ],
+          "size": 11,
+          "cyclomatic": 3,
+          "tau": 1,
+          "epsilon": 2,
+          "D_n": 32,
+          "certificate": {
+            "B": "1/90",
+            "delta": "94/17289",
+            "delta_over_B": "940/1921",
+            "eta": "109/19210",
+            "E": "62",
+            "terms": 30,
+            "cutoff": 10926,
+            "status": "certified",
+            "best": [
+              "11/1944",
+              5832,
+              33
+            ],
+            "best_over_B": "55/108",
+            "failures": []
+          }
+        }
+      ],
+      "elapsed_seconds": 0.03647303581237793
+    },
+    {
+      "case": {
+        "name": "q1535_size20_exact_new_motif",
+        "q": 1535,
+        "n": 4604,
+        "C": [
+          768,
+          800,
+          810,
+          864,
+          900,
+          960,
+          972,
+          1000,
+          1024,
+          1080,
+          1125,
+          1152,
+          1200,
+          1215,
+          1280,
+          1296,
+          1350,
+          1440,
+          1458,
+          1500
+        ]
+      },
+      "edge_count": 24,
+      "cycle_count": 9,
+      "cycle_length_counts": {
+        "3": 3,
+        "5": 2,
+        "6": 3,
+        "7": 1
+      },
+      "candidate_mask_count": 25,
+      "minimal_core_count": 1,
+      "status_counts": {
+        "certified": 1
+      },
+      "size_counts": {
+        "13": 1
+      },
+      "epsilon_counts": {
+        "2": 1
+      },
+      "max_best_over_B": {
+        "C": [
+          768,
+          800,
+          810,
+          864,
+          900,
+          960,
+          1000,
+          1080,
+          1152,
+          1200,
+          1350,
+          1440,
+          1500
+        ],
+        "size": 13,
+        "cyclomatic": 3,
+        "tau": 1,
+        "epsilon": 2,
+        "D_n": 38,
+        "certificate": {
+          "B": "19/1151",
+          "delta": "6023/736800",
+          "delta_over_B": "364867/736800",
+          "eta": "7066727/848056800",
+          "E": "78",
+          "terms": 38,
+          "cutoff": 9360,
+          "status": "certified",
+          "best": [
+            "13/1536",
+            4608,
+            39
+          ],
+          "best_over_B": "14963/29184",
+          "failures": []
+        }
+      },
+      "max_delta_over_B": {
+        "C": [
+          768,
+          800,
+          810,
+          864,
+          900,
+          960,
+          1000,
+          1080,
+          1152,
+          1200,
+          1350,
+          1440,
+          1500
+        ],
+        "size": 13,
+        "cyclomatic": 3,
+        "tau": 1,
+        "epsilon": 2,
+        "D_n": 38,
+        "certificate": {
+          "B": "19/1151",
+          "delta": "6023/736800",
+          "delta_over_B": "364867/736800",
+          "eta": "7066727/848056800",
+          "E": "78",
+          "terms": 38,
+          "cutoff": 9360,
+          "status": "certified",
+          "best": [
+            "13/1536",
+            4608,
+            39
+          ],
+          "best_over_B": "14963/29184",
+          "failures": []
+        }
+      },
+      "minimal_cores": [
+        {
+          "C": [
+            768,
+            800,
+            810,
+            864,
+            900,
+            960,
+            1000,
+            1080,
+            1152,
+            1200,
+            1350,
+            1440,
+            1500
+          ],
+          "size": 13,
+          "cyclomatic": 3,
+          "tau": 1,
+          "epsilon": 2,
+          "D_n": 38,
+          "certificate": {
+            "B": "19/1151",
+            "delta": "6023/736800",
+            "delta_over_B": "364867/736800",
+            "eta": "7066727/848056800",
+            "E": "78",
+            "terms": 38,
+            "cutoff": 9360,
+            "status": "certified",
+            "best": [
+              "13/1536",
+              4608,
+              39
+            ],
+            "best_over_B": "14963/29184",
+            "failures": []
+          }
+        }
+      ],
+      "elapsed_seconds": 0.11234927177429199
+    }
+  ],
+  "compact_cases": [
+    {
+      "name": "q479_size14_full_component",
+      "q": 479,
+      "n": 1436,
+      "full_size": 14,
+      "edge_count": 16,
+      "cycle_count": 6,
+      "candidate_mask_count": 9,
+      "minimal_core_count": 1,
+      "status_counts": {
+        "certified": 1
+      },
+      "size_counts": {
+        "13": 1
+      },
+      "epsilon_counts": {
+        "2": 1
+      },
+      "max_delta_over_B": {
+        "C": [
+          240,
+          243,
+          256,
+          270,
+          288,
+          300,
+          320,
+          324,
+          360,
+          384,
+          405,
+          432,
+          450
+        ],
+        "size": 13,
+        "epsilon": 2,
+        "D_n": 37,
+        "status": "certified",
+        "delta_over_B": "1201214/2392605",
+        "best_over_B": "4667/8991",
+        "cutoff": 3039
+      },
+      "max_best_over_B": {
+        "C": [
+          240,
+          243,
+          256,
+          270,
+          288,
+          300,
+          320,
+          324,
+          360,
+          384,
+          405,
+          432,
+          450
+        ],
+        "size": 13,
+        "epsilon": 2,
+        "D_n": 37,
+        "status": "certified",
+        "delta_over_B": "1201214/2392605",
+        "best_over_B": "4667/8991",
+        "cutoff": 3039
+      }
+    },
+    {
+      "name": "q1921_size17_smooth_representative",
+      "q": 1921,
+      "n": 5760,
+      "full_size": 17,
+      "edge_count": 19,
+      "cycle_count": 7,
+      "candidate_mask_count": 12,
+      "minimal_core_count": 1,
+      "status_counts": {
+        "certified": 1
+      },
+      "size_counts": {
+        "11": 1
+      },
+      "epsilon_counts": {
+        "2": 1
+      },
+      "max_delta_over_B": {
+        "C": [
+          972,
+          1024,
+          1080,
+          1152,
+          1280,
+          1296,
+          1440,
+          1536,
+          1620,
+          1728,
+          1920
+        ],
+        "size": 11,
+        "epsilon": 2,
+        "D_n": 32,
+        "status": "certified",
+        "delta_over_B": "940/1921",
+        "best_over_B": "55/108",
+        "cutoff": 10926
+      },
+      "max_best_over_B": {
+        "C": [
+          972,
+          1024,
+          1080,
+          1152,
+          1280,
+          1296,
+          1440,
+          1536,
+          1620,
+          1728,
+          1920
+        ],
+        "size": 11,
+        "epsilon": 2,
+        "D_n": 32,
+        "status": "certified",
+        "delta_over_B": "940/1921",
+        "best_over_B": "55/108",
+        "cutoff": 10926
+      }
+    },
+    {
+      "name": "q1535_size20_exact_new_motif",
+      "q": 1535,
+      "n": 4604,
+      "full_size": 20,
+      "edge_count": 24,
+      "cycle_count": 9,
+      "candidate_mask_count": 25,
+      "minimal_core_count": 1,
+      "status_counts": {
+        "certified": 1
+      },
+      "size_counts": {
+        "13": 1
+      },
+      "epsilon_counts": {
+        "2": 1
+      },
+      "max_delta_over_B": {
+        "C": [
+          768,
+          800,
+          810,
+          864,
+          900,
+          960,
+          1000,
+          1080,
+          1152,
+          1200,
+          1350,
+          1440,
+          1500
+        ],
+        "size": 13,
+        "epsilon": 2,
+        "D_n": 38,
+        "status": "certified",
+        "delta_over_B": "364867/736800",
+        "best_over_B": "14963/29184",
+        "cutoff": 9360
+      },
+      "max_best_over_B": {
+        "C": [
+          768,
+          800,
+          810,
+          864,
+          900,
+          960,
+          1000,
+          1080,
+          1152,
+          1200,
+          1350,
+          1440,
+          1500
+        ],
+        "size": 13,
+        "epsilon": 2,
+        "D_n": 38,
+        "status": "certified",
+        "delta_over_B": "364867/736800",
+        "best_over_B": "14963/29184",
+        "cutoff": 9360
+      }
+    }
+  ]
+}

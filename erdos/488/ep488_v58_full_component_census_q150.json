@@ -1,0 +1,11 @@
+{
+  "q_max": 150,
+  "max_cert_size": 22,
+  "max_cutoff": 10000000,
+  "component_count": 11547,
+  "high_defect_count": 0,
+  "status_counts": {},
+  "top_certified_by_best_over_B": [],
+  "high_defect_rows": [],
+  "elapsed_seconds": 1.2635705471038818
+}

@@ -1,0 +1,29 @@
+{
+  "checked": 13403885,
+  "m_factor": 20,
+  "max_subset_size": null,
+  "q_max": 22,
+  "violations": [],
+  "worst_D_ratio": "11/14",
+  "worst_D_row": {
+    "C": [
+      14
+    ],
+    "D_m": 4,
+    "D_n": 2,
+    "m": 70,
+    "n": 55,
+    "q": 21
+  },
+  "worst_F_ratio": "65/88",
+  "worst_F_row": {
+    "F_m": 3,
+    "F_n": 2,
+    "Q": [
+      22
+    ],
+    "m": 66,
+    "n": 65,
+    "q": 22
+  }
+}

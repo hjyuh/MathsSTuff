@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diameter Inscribed Angle Proof</title>
+  <style>
+    :root {
+      --bg: #f7f3ea;
+      --ink: #1f2933;
+      --muted: #6b7280;
+      --circle: #2563eb;
+      --arc: #f97316;
+      --angle: #dc2626;
+      --panel: #fffaf0;
+      --good: #15803d;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(249, 115, 22, 0.12), transparent 36rem),
+        linear-gradient(135deg, #fff7ed, var(--bg));
+      color: var(--ink);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1;
+    }
+
+    .subtitle {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(320px, 1.1fr) minmax(300px, 0.9fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .card {
+      background: rgba(255, 250, 240, 0.88);
+      border: 1px solid rgba(31, 41, 51, 0.12);
+      border-radius: 22px;
+      box-shadow: 0 18px 48px rgba(31, 41, 51, 0.12);
+      padding: 18px;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 15px;
+      font: 700 15px/1.1 Georgia, "Times New Roman", serif;
+      color: white;
+      background: var(--ink);
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: #9a3412;
+    }
+
+    .step {
+      min-height: 196px;
+      background: white;
+      border-radius: 16px;
+      padding: 18px;
+      border: 1px solid rgba(31, 41, 51, 0.1);
+    }
+
+    .label {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .statement {
+      font-size: 25px;
+      margin: 8px 0 12px;
+    }
+
+    .reason {
+      font-size: 18px;
+      line-height: 1.45;
+    }
+
+    .math {
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 12px;
+      background: #f3f4f6;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 18px;
+      white-space: pre-wrap;
+    }
+
+    .quiz {
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      background: #ecfdf5;
+      border: 1px solid rgba(21, 128, 61, 0.25);
+    }
+
+    input {
+      width: 80px;
+      padding: 9px 10px;
+      border: 1px solid rgba(31, 41, 51, 0.25);
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    #feedback {
+      margin-top: 8px;
+      font-weight: 700;
+    }
+
+    .hidden {
+      opacity: 0.16;
+    }
+
+    @media (max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Why a Diameter Makes a 90° Inscribed Angle</h1>
+    <p class="subtitle">Click through the proof. The key jump is: inscribed angle = half the intercepted arc.</p>
+
+    <section class="layout">
+      <div class="card">
+        <svg viewBox="0 0 520 430" aria-label="Circle proof diagram">
+          <circle cx="260" cy="215" r="155" fill="#fff" stroke="var(--circle)" stroke-width="5" />
+          <line x1="105" y1="215" x2="415" y2="215" stroke="#111827" stroke-width="5" />
+          <line x1="105" y1="215" x2="260" y2="80" stroke="#111827" stroke-width="4" />
+          <line x1="260" y1="80" x2="415" y2="215" stroke="#111827" stroke-width="4" />
+          <circle cx="260" cy="215" r="5" fill="#111827" />
+          <circle cx="105" cy="215" r="6" fill="#111827" />
+          <circle cx="415" cy="215" r="6" fill="#111827" />
+          <circle cx="260" cy="80" r="6" fill="#111827" />
+
+          <path id="arc" d="M 105 215 A 155 155 0 0 1 415 215" fill="none" stroke="var(--arc)" stroke-width="9" stroke-linecap="round" />
+          <path id="angleMark" d="M 240 97 Q 260 116 280 97" fill="none" stroke="var(--angle)" stroke-width="5" stroke-linecap="round" />
+
+          <text x="92" y="248" font-size="26" font-weight="700">X</text>
+          <text x="423" y="248" font-size="26" font-weight="700">Y</text>
+          <text x="268" y="73" font-size="26" font-weight="700">Z</text>
+          <text x="270" y="235" font-size="24" font-weight="700">O</text>
+          <text x="218" y="35" fill="var(--angle)" font-size="22" font-weight="700">∠XZY</text>
+          <text id="arcLabel" x="220" y="390" fill="var(--arc)" font-size="23" font-weight="700">arc XY = 180°</text>
+          <text id="diameterLabel" x="218" y="205" fill="#111827" font-size="22" font-weight="700">diameter XY</text>
+        </svg>
+      </div>
+
+      <div class="card">
+        <div class="step">
+          <div class="label">Step <span id="stepNumber">1</span> of 6</div>
+          <div class="statement" id="statement"></div>
+          <div class="reason" id="reason"></div>
+          <div class="math" id="math"></div>
+        </div>
+
+        <div class="controls">
+          <button id="prev">Previous</button>
+          <button id="next">Next</button>
+          <button class="secondary" id="reset">Reset</button>
+        </div>
+
+        <div class="quiz">
+          <div class="label">Quick Test</div>
+          <p>If an intercepted arc is <strong>180°</strong>, the inscribed angle is:</p>
+          <input id="answer" inputmode="numeric" placeholder="?" /> degrees
+          <button id="check">Check</button>
+          <div id="feedback"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const steps = [
+      {
+        statement: "XY is a diameter.",
+        reason: "That means XY passes through the center and cuts the circle exactly in half.",
+        math: "given: XY is a diameter"
+      },
+      {
+        statement: "A diameter creates a semicircle.",
+        reason: "The arc from X to Y across one half of the circle is a semicircle.",
+        math: "arc XY = 180°"
+      },
+      {
+        statement: "∠XZY intercepts arc XY.",
+        reason: "The angle’s sides hit the circle at X and Y, so the arc between X and Y is the intercepted arc.",
+        math: "∠XZY points at arc XY"
+      },
+      {
+        statement: "Use the inscribed angle theorem.",
+        reason: "This is the key rule: an angle sitting on the circle is half the arc it intercepts.",
+        math: "m∠XZY = 1/2 · m(arc XY)"
+      },
+      {
+        statement: "Substitute 180° for the arc.",
+        reason: "Step 2 already told us arc XY is 180°, so we replace m(arc XY) with 180°.",
+        math: "m∠XZY = 1/2 · 180°"
+      },
+      {
+        statement: "Simplify.",
+        reason: "Half of 180° is 90°, so the inscribed angle is a right angle.",
+        math: "m∠XZY = 90°"
+      }
+    ];
+
+    let index = 0;
+    const stepNumber = document.getElementById("stepNumber");
+    const statement = document.getElementById("statement");
+    const reason = document.getElementById("reason");
+    const math = document.getElementById("math");
+    const arc = document.getElementById("arc");
+    const arcLabel = document.getElementById("arcLabel");
+    const angleMark = document.getElementById("angleMark");
+    const diameterLabel = document.getElementById("diameterLabel");
+
+    function render() {
+      const step = steps[index];
+      stepNumber.textContent = String(index + 1);
+      statement.textContent = step.statement;
+      reason.textContent = step.reason;
+      math.textContent = step.math;
+
+      arc.classList.toggle("hidden", index < 1);
+      arcLabel.classList.toggle("hidden", index < 1);
+      angleMark.classList.toggle("hidden", index < 2);
+      diameterLabel.classList.toggle("hidden", index > 1);
+    }
+
+    document.getElementById("next").addEventListener("click", () => {
+      index = Math.min(index + 1, steps.length - 1);
+      render();
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+      index = Math.max(index - 1, 0);
+      render();
+    });
+
+    document.getElementById("reset").addEventListener("click", () => {
+      index = 0;
+      render();
+    });
+
+    document.getElementById("check").addEventListener("click", () => {
+      const raw = document.getElementById("answer").value.trim();
+      const feedback = document.getElementById("feedback");
+      if (raw === "90") {
+        feedback.style.color = "var(--good)";
+        feedback.textContent = "Correct. Half of 180° is 90°.";
+      } else {
+        feedback.style.color = "var(--angle)";
+        feedback.textContent = "Not quite. Use: inscribed angle = half the arc.";
+      }
+    });
+
+    render();
+  </script>
+</body>
+</html>

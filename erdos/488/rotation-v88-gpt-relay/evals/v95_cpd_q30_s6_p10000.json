@@ -1,0 +1,10 @@
+{
+  "q_max": 30,
+  "max_subset_size": 6,
+  "min_subset_size": 1,
+  "p_max": 10000,
+  "checked": 10562,
+  "skipped_period": 22174,
+  "no_bad_period": 2692,
+  "failures": []
+}

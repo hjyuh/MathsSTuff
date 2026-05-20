@@ -1,0 +1,1 @@
+I’ll separate non-articulation vertices, where deletion still gives local control, from articulation structure, and check the repaired invariants on the two q=10936 cores.

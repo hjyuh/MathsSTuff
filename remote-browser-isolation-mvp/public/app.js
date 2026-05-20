@@ -55,7 +55,8 @@ const state = {
   auth: null,
   adminCredentials: [],
   workspaceMode: 'kasm',
-  pollTimer: null
+  pollTimer: null,
+  healthTimer: null
 };
 
 init().catch((error) => {
@@ -171,16 +172,19 @@ async function init() {
 
 async function loadHealth() {
   const response = await fetch(apiUrl('/health'));
-  const health = await response.json();
+  const health = await readJson(response);
   state.health = health;
   workerImage.textContent = health.image;
   configureDnsLabFromHealth(health);
   const audioMode = health.audioEnabled ? (health.pcmAudioEnabled ? 'PCM high-fidelity audio' : 'compressed audio') : 'audio disabled';
+  scheduleHealthRefresh();
   setStatus(
     health.ok
-      ? `Docker is available. ${audioMode}. Sessions expire after ${health.ttlMinutes} minutes.`
-      : health.error,
-    !health.ok
+      ? `Workspace image is ready. ${audioMode}. Sessions expire after ${health.ttlMinutes} minutes.`
+      : health.warmingImage
+        ? 'Preparing the Docker workspace image. First launch after a reset can take a couple of minutes.'
+        : (health.imageError || health.error || 'Docker is still starting.'),
+    !health.ok && !health.warmingImage
   );
 }
 
@@ -414,12 +418,28 @@ async function createSession(options = {}) {
     return null;
   }
 
+  await loadHealth();
+  if (!state.health?.ok) {
+    setStatus(
+      state.health?.warmingImage
+        ? 'Still preparing the Docker workspace image. Try again once warmup finishes.'
+        : (state.health?.imageError || state.health?.error || 'Docker is not ready yet.'),
+      true
+    );
+    render();
+    return null;
+  }
+
   clearPollTimer();
   startButton.disabled = true;
   setStatus(options.statusMessage || 'Starting a new browser worker. This takes a few seconds.', false);
+  const slowCreateTimer = window.setTimeout(() => {
+    setStatus('Still starting the browser worker. Docker cold starts can take a little longer after a restart.', false);
+  }, 12_000);
 
   const dnsProfileResult = readDnsProfileRequest();
   if (!dnsProfileResult.ok) {
+    window.clearTimeout(slowCreateTimer);
     startButton.disabled = false;
     setDnsLabStatus(dnsProfileResult.error, true);
     setStatus(dnsProfileResult.error, true);
@@ -443,16 +463,19 @@ async function createSession(options = {}) {
 
   const payload = await readJson(response);
   if (response.status === 401) {
+    window.clearTimeout(slowCreateTimer);
     await handleAuthExpired();
     return null;
   }
 
   if (!response.ok) {
+    window.clearTimeout(slowCreateTimer);
     startButton.disabled = false;
     setStatus(payload.error || 'Failed to start a browser worker.', true);
     return null;
   }
 
+  window.clearTimeout(slowCreateTimer);
   activateSession(payload);
   await refreshAuthSnapshot();
   await loadSessionList();
@@ -1041,6 +1064,8 @@ function render() {
   const hasSavedSessions = state.sessions.length > 0;
   const hasHomePc = canUseHomePc();
   const homePcSelected = hasHomePc && state.workspaceMode === 'home-pc';
+  const healthReady = Boolean(state.health?.ok);
+  const healthWarming = Boolean(state.health?.warmingImage);
 
   loginForm.hidden = hasAuth || bootstrap.site.authMode === 'guest';
   logoutButton.hidden = !hasAuth || isGuest;
@@ -1051,7 +1076,7 @@ function render() {
   chooseKasmButton.dataset.selected = homePcSelected ? 'false' : 'true';
   chooseHomePcButton.dataset.selected = homePcSelected ? 'true' : 'false';
 
-  startButton.disabled = homePcSelected || hasSession || !state.health?.ok || !hasAuth;
+  startButton.disabled = homePcSelected || hasSession || !healthReady || !hasAuth;
   stopButton.disabled = homePcSelected || !hasSession;
   refreshSessionsButton.disabled = homePcSelected || !hasAuth;
   sessionPicker.disabled = homePcSelected || !hasAuth || !hasSavedSessions;
@@ -1061,7 +1086,7 @@ function render() {
   openLink.href = hasSession ? 'about:blank' : '#';
   openHomePcLink.classList.toggle('disabled', !getHomePcUrl());
   openHomePcLink.href = getHomePcUrl() || '#';
-  openHomePcKasmButton.disabled = !hasAuth || !getHomePcUrl();
+  openHomePcKasmButton.disabled = !hasAuth || !getHomePcUrl() || !healthReady;
   homePcLine.textContent = getHomePcUrl()
     ? 'Home PC access is available for this account.'
     : 'Home PC access is enabled for this account, but RBI_HOME_PC_URL is not configured yet.';
@@ -1099,10 +1124,41 @@ function render() {
       : 'Set RBI_HOME_PC_URL to your private remote desktop link, then restart the app.';
     sessionFrame.removeAttribute('src');
   } else {
-    viewerPlaceholder.querySelector('p').textContent = 'The KasmVNC-backed Chromium workspace will appear here after the container comes online.';
+    viewerPlaceholder.querySelector('p').textContent = healthWarming
+      ? 'Docker is still preparing the Chromium workspace image. When warmup finishes, new sessions will start normally.'
+      : 'The KasmVNC-backed Chromium workspace will appear here after the container comes online.';
   }
 
   renderDnsLabControls();
+}
+
+function scheduleHealthRefresh() {
+  if (state.health?.ok) {
+    clearHealthRefreshTimer();
+    return;
+  }
+
+  if (state.healthTimer) {
+    return;
+  }
+
+  state.healthTimer = window.setInterval(async () => {
+    try {
+      await loadHealth();
+      render();
+    } catch (error) {
+      setStatus(error.message, true);
+    }
+  }, 5_000);
+}
+
+function clearHealthRefreshTimer() {
+  if (!state.healthTimer) {
+    return;
+  }
+
+  window.clearInterval(state.healthTimer);
+  state.healthTimer = null;
 }
 
 function renderSessionPicker() {

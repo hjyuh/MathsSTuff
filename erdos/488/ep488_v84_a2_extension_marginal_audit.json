@@ -1,0 +1,100 @@
+{
+  "regressions": [
+    {
+      "name": "theta13",
+      "q": 451,
+      "n": 1350,
+      "size": 13,
+      "eta": "8812/304425",
+      "weakest_deletion_marginal": {
+        "a": 405,
+        "mu": "67/101475"
+      },
+      "negative_deletion_marginal_count": 0
+    },
+    {
+      "name": "Kimi",
+      "q": 427,
+      "n": 1280,
+      "size": 16,
+      "eta": "7279831/184464000",
+      "weakest_deletion_marginal": {
+        "a": 375,
+        "mu": "13849/20496000"
+      },
+      "negative_deletion_marginal_count": 0
+    },
+    {
+      "name": "v56",
+      "q": 71440,
+      "n": 213189,
+      "size": 19,
+      "eta": "15700975779116456429501422939962293/58174382838562688550787417989092892240",
+      "weakest_deletion_marginal": {
+        "a": 60345,
+        "mu": "33617877822/8711725270816555"
+      },
+      "negative_deletion_marginal_count": 0
+    }
+  ],
+  "v82_one_vertex": {
+    "source": "ep488_v82_a2_one_vertex_extension_audit.json",
+    "row_count": 1852,
+    "negative_mu_count": 0,
+    "worst_mu": {
+      "case_name": "v79_motif_077_size26_q9001",
+      "q": 9001,
+      "n": 27000,
+      "core_size": 15,
+      "added": 7200,
+      "extended_epsilon": 3,
+      "mu": "4501/121513500",
+      "best_over_B": "13500/27001",
+      "delta_over_B": "399375/828092"
+    },
+    "negative_examples": []
+  },
+  "v83_two_vertex": {
+    "source": "ep488_v83_a2_two_vertex_extension_audit.json",
+    "row_count": 10933,
+    "total_mu_negative_count": 0,
+    "worst_total_mu": {
+      "case_name": "v79_motif_077_size26_q9001",
+      "q": 9001,
+      "n": 27000,
+      "core_size": 15,
+      "added": [
+        7200,
+        7290
+      ],
+      "extended_epsilon": 3,
+      "extension_component_count": 1,
+      "total_mu": "42509/364540500",
+      "best_over_B": "13500/27001"
+    },
+    "step_mu_check_count": 43732,
+    "step_mu_negative_count": 0,
+    "worst_step_mu": {
+      "case_name": "v79_motif_089_size27_q7500",
+      "q": 7500,
+      "n": 21600,
+      "core_size": 13,
+      "added": [
+        4860,
+        7290
+      ],
+      "order": [
+        4860,
+        7290
+      ],
+      "stage": "second",
+      "vertex": 7290,
+      "extended_epsilon": 2,
+      "mu": "7/291600",
+      "best_over_B": "560/1107"
+    },
+    "negative_total_examples": [],
+    "negative_step_examples": []
+  },
+  "eta_cache_entries": 12985
+}

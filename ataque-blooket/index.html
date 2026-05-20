@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cookie Clash</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="brand-mark" aria-hidden="true">CC</span>
+          <div>
+            <h1>Cookie Clash</h1>
+            <p>Ataque Writing: preterite vs. imperfect</p>
+          </div>
+        </div>
+        <div class="status-grid" aria-label="Game status">
+          <div>
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span>Streak</span>
+            <strong id="streak">0</strong>
+          </div>
+          <div>
+            <span>Round</span>
+            <strong id="round">0/26</strong>
+          </div>
+          <div>
+            <span>Time</span>
+            <strong id="timer">0:00</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="setup-panel" id="setupPanel">
+        <div class="title-preview">
+          <img src="assets/slides/slide-01-question.png" alt="Unidad 5 title slide">
+        </div>
+        <div class="setup-controls">
+          <div class="field-row">
+            <label for="playerName">Player</label>
+            <input id="playerName" type="text" maxlength="18" value="Player 1">
+          </div>
+          <div class="segmented" role="group" aria-label="Question mode">
+            <button class="segment active" type="button" data-mode="translation">Translation</button>
+            <button class="segment" type="button" data-mode="tense">Tense</button>
+          </div>
+          <div class="field-row compact">
+            <label for="roundCount">Rounds</label>
+            <input id="roundCount" type="number" min="5" max="26" value="26">
+          </div>
+          <div class="toggle-row">
+            <input id="timerToggle" type="checkbox" checked>
+            <label for="timerToggle">Timed</label>
+          </div>
+          <button class="primary-action" type="button" id="startBtn">Start Game</button>
+        </div>
+      </section>
+
+      <section class="game-panel hidden" id="gamePanel" aria-live="polite">
+        <div class="slide-stage">
+          <img id="questionImage" src="" alt="">
+        </div>
+        <aside class="play-panel">
+          <div class="prompt-strip">
+            <span id="modeLabel">Translation</span>
+            <strong id="promptText"></strong>
+          </div>
+          <div class="answer-grid" id="answerGrid"></div>
+          <div class="feedback-panel hidden" id="feedbackPanel">
+            <div class="feedback-copy">
+              <span id="feedbackKicker">Result</span>
+              <strong id="feedbackTitle"></strong>
+              <p id="feedbackText"></p>
+            </div>
+            <img id="answerImage" src="" alt="">
+            <button class="primary-action" type="button" id="nextBtn">Next Round</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="end-panel hidden" id="endPanel">
+        <div class="final-score">
+          <span>Final Score</span>
+          <strong id="finalScore">0</strong>
+          <p id="finalSummary"></p>
+        </div>
+        <div class="review-list" id="reviewList"></div>
+        <div class="end-actions">
+          <button class="secondary-action" type="button" id="reviewMissedBtn">Review Missed</button>
+          <button class="primary-action" type="button" id="playAgainBtn">Play Again</button>
+        </div>
+      </section>
+    </main>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

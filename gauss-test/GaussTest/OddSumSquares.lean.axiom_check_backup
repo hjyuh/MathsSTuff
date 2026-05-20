@@ -1,0 +1,12 @@
+import Mathlib.Algebra.BigOperators.Intervals
+import Mathlib.Tactic
+
+open scoped BigOperators
+
+theorem sum_first_odds (n : ℕ) : ∑ i in Finset.range n, (2 * i + 1) = n ^ 2 := by
+  induction n with
+  | zero =>
+      simp
+  | succ n ih =>
+      simp [Finset.sum_range_succ, ih]
+      ring

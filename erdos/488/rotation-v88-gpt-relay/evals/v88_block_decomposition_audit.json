@@ -1,0 +1,1790 @@
+{
+  "max_block_count": 9,
+  "new_sample_core_count": 31,
+  "old_core_count": 158,
+  "partition_counts": {
+    "[1, 1]": 54,
+    "[2]": 135
+  },
+  "positive_block_count_counts": {
+    "1": 135,
+    "2": 54
+  },
+  "rows_with_nontrivial_block_tree": 54,
+  "sample_nontrivial": [
+    {
+      "C": [
+        384,
+        400,
+        405,
+        432,
+        450,
+        480,
+        500,
+        540,
+        576,
+        600,
+        675,
+        720,
+        750
+      ],
+      "block_count": 5,
+      "blocks": [
+        {
+          "C": [
+            384,
+            432,
+            480,
+            540,
+            576,
+            720
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            400,
+            450,
+            500,
+            600,
+            750
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            450,
+            675
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            405,
+            675
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            405,
+            540
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_008_size18_q751",
+      "core_epsilon": 2,
+      "n": 2250,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 751,
+      "size": 13
+    },
+    {
+      "C": [
+        576,
+        600,
+        640,
+        648,
+        675,
+        720,
+        750,
+        800,
+        864,
+        900,
+        960,
+        1080,
+        1125
+      ],
+      "block_count": 5,
+      "blocks": [
+        {
+          "C": [
+            576,
+            648,
+            720,
+            864,
+            960,
+            1080
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            600,
+            675,
+            750,
+            900,
+            1125
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            640,
+            960
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            640,
+            800
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            600,
+            800
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_010_size19_q1126",
+      "core_epsilon": 2,
+      "n": 3375,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 1126,
+      "size": 13
+    },
+    {
+      "C": [
+        640,
+        648,
+        720,
+        729,
+        800,
+        810,
+        960,
+        972,
+        1080,
+        1200,
+        1215
+      ],
+      "block_count": 3,
+      "blocks": [
+        {
+          "C": [
+            648,
+            729,
+            810,
+            972,
+            1080,
+            1215
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            640,
+            720,
+            800,
+            960,
+            1200
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            720,
+            1080
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_013_size20_q1216",
+      "core_epsilon": 2,
+      "n": 3645,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 1216,
+      "size": 11
+    },
+    {
+      "C": [
+        768,
+        800,
+        810,
+        864,
+        900,
+        960,
+        1000,
+        1080,
+        1152,
+        1200,
+        1350,
+        1440,
+        1500
+      ],
+      "block_count": 5,
+      "blocks": [
+        {
+          "C": [
+            768,
+            864,
+            960,
+            1080,
+            1152,
+            1440
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            800,
+            900,
+            1000,
+            1200,
+            1500
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            900,
+            1350
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            810,
+            1350
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            810,
+            1080
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_014_size20_q1501",
+      "core_epsilon": 2,
+      "n": 4500,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 1501,
+      "size": 13
+    },
+    {
+      "C": [
+        640,
+        648,
+        720,
+        729,
+        800,
+        810,
+        960,
+        972,
+        1080,
+        1200,
+        1215
+      ],
+      "block_count": 3,
+      "blocks": [
+        {
+          "C": [
+            648,
+            729,
+            810,
+            972,
+            1080,
+            1215
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            640,
+            720,
+            800,
+            960,
+            1200
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            720,
+            1080
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_017_size21_q1251",
+      "core_epsilon": 2,
+      "n": 3750,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 1251,
+      "size": 11
+    },
+    {
+      "C": [
+        675,
+        720,
+        729,
+        750,
+        768,
+        800,
+        810,
+        864,
+        900,
+        960,
+        972,
+        1000,
+        1080,
+        1125,
+        1152,
+        1200,
+        1215,
+        1296
+      ],
+      "block_count": 2,
+      "blocks": [
+        {
+          "C": [
+            675,
+            720,
+            750,
+            800,
+            900,
+            1000,
+            1125,
+            1200
+          ],
+          "beta": 2,
+          "edges": 9,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 8
+        },
+        {
+          "C": [
+            720,
+            729,
+            768,
+            810,
+            864,
+            960,
+            972,
+            1080,
+            1152,
+            1215,
+            1296
+          ],
+          "beta": 1,
+          "edges": 11,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 11
+        }
+      ],
+      "case_name": "v79_motif_019_size21_q1334",
+      "core_epsilon": 2,
+      "n": 4000,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 1334,
+      "size": 18
+    },
+    {
+      "C": [
+        1280,
+        1296,
+        1440,
+        1458,
+        1600,
+        1620,
+        1920,
+        1944,
+        2160,
+        2400,
+        2430
+      ],
+      "block_count": 3,
+      "blocks": [
+        {
+          "C": [
+            1296,
+            1458,
+            1620,
+            1944,
+            2160,
+            2430
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            1280,
+            1440,
+            1600,
+            1920,
+            2400
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            1440,
+            2160
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_029_size22_q2431",
+      "core_epsilon": 2,
+      "n": 7290,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 2431,
+      "size": 11
+    },
+    {
+      "C": [
+        1536,
+        1600,
+        1620,
+        1728,
+        1800,
+        1920,
+        2000,
+        2160,
+        2304,
+        2400,
+        2700,
+        2880,
+        3000
+      ],
+      "block_count": 5,
+      "blocks": [
+        {
+          "C": [
+            1536,
+            1728,
+            1920,
+            2160,
+            2304,
+            2880
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            1600,
+            1800,
+            2000,
+            2400,
+            3000
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            1800,
+            2700
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            1620,
+            2700
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            1620,
+            2160
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_030_size22_q3001",
+      "core_epsilon": 2,
+      "n": 9000,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 3001,
+      "size": 13
+    },
+    {
+      "C": [
+        1024,
+        1080,
+        1152,
+        1215,
+        1280,
+        1350,
+        1440,
+        1536,
+        1620,
+        1920,
+        2025
+      ],
+      "block_count": 3,
+      "blocks": [
+        {
+          "C": [
+            1024,
+            1152,
+            1280,
+            1440,
+            1536,
+            1920
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            1080,
+            1215,
+            1350,
+            1620,
+            2025
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            1080,
+            1440
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_032_size23_q2026",
+      "core_epsilon": 2,
+      "n": 6075,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 2026,
+      "size": 11
+    },
+    {
+      "C": [
+        1280,
+        1296,
+        1440,
+        1458,
+        1600,
+        1620,
+        1920,
+        1944,
+        2160,
+        2400,
+        2430
+      ],
+      "block_count": 3,
+      "blocks": [
+        {
+          "C": [
+            1296,
+            1458,
+            1620,
+            1944,
+            2160,
+            2430
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            1280,
+            1440,
+            1600,
+            1920,
+            2400
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            1440,
+            2160
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_039_size24_q2501",
+      "core_epsilon": 2,
+      "n": 7500,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 2501,
+      "size": 11
+    },
+    {
+      "C": [
+        1350,
+        1440,
+        1458,
+        1500,
+        1536,
+        1600,
+        1620,
+        1728,
+        1800,
+        1920,
+        1944,
+        2000,
+        2160,
+        2250,
+        2304,
+        2400,
+        2430,
+        2592
+      ],
+      "block_count": 2,
+      "blocks": [
+        {
+          "C": [
+            1350,
+            1440,
+            1500,
+            1600,
+            1800,
+            2000,
+            2250,
+            2400
+          ],
+          "beta": 2,
+          "edges": 9,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 8
+        },
+        {
+          "C": [
+            1440,
+            1458,
+            1536,
+            1620,
+            1728,
+            1920,
+            1944,
+            2160,
+            2304,
+            2430,
+            2592
+          ],
+          "beta": 1,
+          "edges": 11,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 11
+        }
+      ],
+      "case_name": "v79_motif_041_size24_q2667",
+      "core_epsilon": 2,
+      "n": 8000,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 2667,
+      "size": 18
+    },
+    {
+      "C": [
+        2304,
+        2400,
+        2560,
+        2592,
+        2700,
+        2880,
+        3000,
+        3200,
+        3456,
+        3600,
+        3840,
+        4320,
+        4500
+      ],
+      "block_count": 5,
+      "blocks": [
+        {
+          "C": [
+            2304,
+            2592,
+            2880,
+            3456,
+            3840,
+            4320
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            2400,
+            2700,
+            3000,
+            3600,
+            4500
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            2560,
+            3840
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2560,
+            3200
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2400,
+            3200
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_044_size24_q4501",
+      "core_epsilon": 2,
+      "n": 13500,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 4501,
+      "size": 13
+    },
+    {
+      "C": [
+        2304,
+        2400,
+        2430,
+        2592,
+        2700,
+        2880,
+        3000,
+        3240,
+        3456,
+        3600,
+        4050,
+        4320,
+        4500
+      ],
+      "block_count": 5,
+      "blocks": [
+        {
+          "C": [
+            2304,
+            2592,
+            2880,
+            3240,
+            3456,
+            4320
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            2400,
+            2700,
+            3000,
+            3600,
+            4500
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            2700,
+            4050
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2430,
+            4050
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2430,
+            3240
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_044_size24_q4501",
+      "core_epsilon": 2,
+      "n": 13500,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 4501,
+      "size": 13
+    },
+    {
+      "C": [
+        2560,
+        2592,
+        2880,
+        2916,
+        3200,
+        3240,
+        3840,
+        3888,
+        4320,
+        4800,
+        4860
+      ],
+      "block_count": 3,
+      "blocks": [
+        {
+          "C": [
+            2592,
+            2916,
+            3240,
+            3888,
+            4320,
+            4860
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            2560,
+            2880,
+            3200,
+            3840,
+            4800
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            2880,
+            4320
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_047_size24_q4861",
+      "core_epsilon": 2,
+      "n": 14580,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 4861,
+      "size": 11
+    },
+    {
+      "C": [
+        1944,
+        2000,
+        2025,
+        2160,
+        2187,
+        2250,
+        2430,
+        2500,
+        2700,
+        2916,
+        3000,
+        3240,
+        3375,
+        3645,
+        3750
+      ],
+      "block_count": 7,
+      "blocks": [
+        {
+          "C": [
+            1944,
+            2187,
+            2430,
+            2916,
+            3240,
+            3645
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            2000,
+            2250,
+            2500,
+            3000,
+            3750
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            2250,
+            3375
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2160,
+            3240
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2160,
+            2700
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2025,
+            3375
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2025,
+            2700
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_051_size25_q3840",
+      "core_epsilon": 2,
+      "n": 11250,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 3840,
+      "size": 15
+    },
+    {
+      "C": [
+        2000,
+        2025,
+        2048,
+        2160,
+        2250,
+        2304,
+        2500,
+        2560,
+        2700,
+        2880,
+        3000,
+        3072,
+        3375,
+        3750,
+        3840
+      ],
+      "block_count": 7,
+      "blocks": [
+        {
+          "C": [
+            2048,
+            2304,
+            2560,
+            2880,
+            3072,
+            3840
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            2000,
+            2250,
+            2500,
+            3000,
+            3750
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            2250,
+            3375
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2160,
+            2880
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2160,
+            2700
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2025,
+            3375
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2025,
+            2700
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_052_size25_q3888",
+      "core_epsilon": 2,
+      "n": 11520,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 3888,
+      "size": 15
+    },
+    {
+      "C": [
+        3000,
+        3072,
+        3200,
+        3240,
+        3375,
+        3456,
+        3600,
+        3750,
+        3840,
+        4000,
+        4320,
+        4500,
+        4608,
+        4800,
+        5400,
+        5625,
+        5760
+      ],
+      "block_count": 9,
+      "blocks": [
+        {
+          "C": [
+            3072,
+            3456,
+            3840,
+            4320,
+            4608,
+            5760
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            3000,
+            3375,
+            3750,
+            4500,
+            5625
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            3600,
+            5400
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            3600,
+            4800
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            3240,
+            5400
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            3240,
+            4320
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            3200,
+            4800
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            3200,
+            4000
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            3000,
+            4000
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_056_size25_q5832",
+      "core_epsilon": 2,
+      "n": 17280,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 5832,
+      "size": 17
+    },
+    {
+      "C": [
+        1728,
+        1800,
+        1920,
+        1944,
+        2025,
+        2160,
+        2250,
+        2400,
+        2592,
+        2700,
+        2880,
+        3240,
+        3375
+      ],
+      "block_count": 5,
+      "blocks": [
+        {
+          "C": [
+            1728,
+            1944,
+            2160,
+            2592,
+            2880,
+            3240
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            1800,
+            2025,
+            2250,
+            2700,
+            3375
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            1920,
+            2880
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            1920,
+            2400
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            1800,
+            2400
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_059_size26_q3376",
+      "core_epsilon": 2,
+      "n": 10125,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 3376,
+      "size": 13
+    },
+    {
+      "C": [
+        1800,
+        1920,
+        1944,
+        2025,
+        2048,
+        2160,
+        2250,
+        2304,
+        2400,
+        2560,
+        2592,
+        2700,
+        2880,
+        3072,
+        3240,
+        3375,
+        3456
+      ],
+      "block_count": 4,
+      "blocks": [
+        {
+          "C": [
+            1920,
+            1944,
+            2048,
+            2160,
+            2304,
+            2560,
+            2592,
+            2880,
+            3072,
+            3240,
+            3456
+          ],
+          "beta": 1,
+          "edges": 11,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 11
+        },
+        {
+          "C": [
+            1800,
+            2025,
+            2250,
+            2700,
+            3375
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            1920,
+            2400
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            1800,
+            2400
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_060_size26_q3457",
+      "core_epsilon": 2,
+      "n": 10368,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 3457,
+      "size": 17
+    },
+    {
+      "C": [
+        1944,
+        2000,
+        2025,
+        2160,
+        2187,
+        2250,
+        2430,
+        2500,
+        2700,
+        2916,
+        3000,
+        3240,
+        3375,
+        3645,
+        3750
+      ],
+      "block_count": 7,
+      "blocks": [
+        {
+          "C": [
+            1944,
+            2187,
+            2430,
+            2916,
+            3240,
+            3645
+          ],
+          "beta": 2,
+          "edges": 7,
+          "epsilon": 1,
+          "tau": 1,
+          "vertices": 6
+        },
+        {
+          "C": [
+            2000,
+            2250,
+            2500,
+            3000,
+            3750
+          ],
+          "beta": 1,
+          "edges": 5,
+          "epsilon": 1,
+          "tau": 0,
+          "vertices": 5
+        },
+        {
+          "C": [
+            2250,
+            3375
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2160,
+            3240
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2160,
+            2700
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2025,
+            3375
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        },
+        {
+          "C": [
+            2025,
+            2700
+          ],
+          "beta": 0,
+          "edges": 1,
+          "epsilon": 0,
+          "tau": 0,
+          "vertices": 2
+        }
+      ],
+      "case_name": "v79_motif_063_size26_q3841",
+      "core_epsilon": 2,
+      "n": 11250,
+      "positive_block_count": 2,
+      "positive_epsilon_partition": [
+        1,
+        1
+      ],
+      "q": 3841,
+      "size": 15
+    }
+  ]
+}
